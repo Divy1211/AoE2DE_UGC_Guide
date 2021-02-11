@@ -1,0 +1,55 @@
+site_name: The Ultimate Guide To AoE2DE UGC
+# site_url:
+docs_dir: docs/
+
+repo_name: "AoE2DE_UGC_Guide"
+repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
+
+# add pages:
+nav:
+  - About: index.md
+  - Documentation:
+    - Scenario Editors:
+      - What are scenarios: "scenarios/what are scenarios.md"
+      - Triggers:
+        - Conditions: "scenarios/triggers/conditions.md"
+        - Effects: "scenarios/triggers/effects.md"
+      - File Byte Structure: "scenarios/byte structure.md"
+    - RMS:
+      - What is an RMS: "rms/what is an rms.md"
+
+  
+markdown_extensions:
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
+  - pymdownx.caret # handling sub- and superscripts
+  - pymdownx.mark # highlighting of text
+  - pymdownx.tilde # strikethrough of text
+  - pymdownx.keys # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#keys
+  - pymdownx.tabbed # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/#tabbed
+  - pymdownx.details # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#details
+  - pymdownx.highlight # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  - pymdownx.superfences # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#superfences
+  - pymdownx.smartsymbols # supporting special characters like copyright symbol (c)
+  - pymdownx.arithmatex: # https://squidfunk.github.io/mkdocs-material/reference/mathjax/#arithmatex
+      generic: true
+  - pymdownx.tasklist: # https://squidfunk.github.io/mkdocs-material/reference/lists/#tasklist
+      custom_checkbox: true
+      clickable_checkbox: true
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+  name: material
+  language: en
+  favicon: imgs/code.svg
+  icon:
+    logo: fontawesome/solid/code
+  features:
+    # - navigation.tabs
+    - navigation.expand
+  palette:
+    scheme: slate
+    primary: red
+    accent: orange
+
