@@ -1,4 +1,4 @@
-*Disclaimer: this part of the guide has been written by me (KSneijders), the creator of this parser.*
+*Disclaimer: this part of the guide has been written by KSneijders (MrKirby), the creator of the parser.*
 
 ---
 
