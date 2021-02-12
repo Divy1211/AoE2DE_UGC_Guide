@@ -9,14 +9,25 @@ repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 nav:
   - About: index.md
   - Documentation:
-    - Scenario Editors:
-      - What are scenarios: "scenarios/what are scenarios.md"
+    - Custom Scenarios:
+      - Scenario Basics: "scenarios/basics.md"
       - Triggers:
-        - Conditions: "scenarios/triggers/conditions.md"
+        - Trigger Basics: "scenarios/triggers/basics.md"
+        - Trigger Settings: "scenarios/triggers/trigger_settings.md"
         - Effects: "scenarios/triggers/effects.md"
-      - File Byte Structure: "scenarios/byte structure.md"
+        - Variables: "scenarios/triggers/variables.md"
+        - Conditions: "scenarios/triggers/conditions.md"
+      - XS Scripts: "scenarios/xs.md"
+      - AoE2ScenarioParser:
+        - Python Installation: "scenarios/parser/py.md"
+        - Getting Started: "scenarios/parser/parser.md"
+      - File Byte Structure: "scenarios/byte_structure.md"
+    - Data Mods:
+      - Data Mod Basics: "data_mods/basics.md"
+      - Advanced Genie Editor: "data_mods/age.md"
     - RMS:
-      - What is an RMS: "rms/what is an rms.md"
+      - RMS Basics: "rms/basics.md"
+  - Publishing A Mod: "publishing_mods/publish.md"
 
   
 markdown_extensions:
