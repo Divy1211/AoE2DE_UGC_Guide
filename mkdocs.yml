@@ -27,9 +27,8 @@ nav:
       - Advanced Genie Editor: "data_mods/age.md"
     - RMS:
       - RMS Basics: "rms/basics.md"
-  - Publishing A Mod: "publishing_mods/publish.md"
+  - Publishing UGC: "publishing_ugc/publish.md"
 
-  
 markdown_extensions:
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
   - pymdownx.caret # handling sub- and superscripts
@@ -63,4 +62,3 @@ theme:
     scheme: slate
     primary: red
     accent: orange
-
