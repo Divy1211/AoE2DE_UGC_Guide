@@ -18,18 +18,19 @@ nav:
         - Variables: "scenarios/triggers/variables.md"
         - Conditions: "scenarios/triggers/conditions.md"
       - XS Scripts: "scenarios/xs.md"
-      - AoE2ScenarioParser:
-        - Python Installation: "scenarios/parser/py.md"
-        - Getting Started: "scenarios/parser/parser.md"
-      - File Byte Structure: "scenarios/byte_structure.md"
+      - Advanced:
+        - File Byte Structure: "scenarios/advanced/byte_structure.md"
+      - Useful Tools:
+        - AoE2ScenarioParser:
+          - Python Installation: "scenarios/useful_tools/parser/installtion.md"
+          - Getting Started: "scenarios/useful_tools/parser/getting_started.md"
     - Data Mods:
       - Data Mod Basics: "data_mods/basics.md"
       - Advanced Genie Editor: "data_mods/age.md"
     - RMS:
       - RMS Basics: "rms/basics.md"
-  - Publishing A Mod: "publishing_mods/publish.md"
+  - Publishing UGC: "publishing_ugc/publish.md"
 
-  
 markdown_extensions:
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
   - pymdownx.caret # handling sub- and superscripts
@@ -63,4 +64,3 @@ theme:
     scheme: slate
     primary: red
     accent: orange
-
