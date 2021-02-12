@@ -25,4 +25,4 @@ Yes, most of the topics covered in this file will apply to all older versions of
 This guide has been written by
 
 1. Alian713
-2. MrKirby
+2. KSneijders (MrKirby)
