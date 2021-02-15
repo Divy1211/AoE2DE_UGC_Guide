@@ -9,6 +9,10 @@ repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 nav:
   - About: index.md
   - Documentation:
+    - Game Mechanics:
+      - Damage Calculation: "general/damage_calculation.md"
+      - Attributes: "general/attributes.md"
+      - Resources: "general/resources.md"
     - Custom Scenarios:
       - Scenario Basics: "scenarios/basics.md"
       - Triggers:
@@ -17,6 +21,7 @@ nav:
         - Effects: "scenarios/triggers/effects.md"
         - Variables: "scenarios/triggers/variables.md"
         - Conditions: "scenarios/triggers/conditions.md"
+        - Tricks and Tips: "scenarios/tricks.md"
       - XS Scripts: "scenarios/xs.md"
       - Advanced:
         - File Byte Structure: "scenarios/advanced/byte_structure.md"
@@ -50,6 +55,9 @@ markdown_extensions:
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - style.css
 
 theme:
   name: material
