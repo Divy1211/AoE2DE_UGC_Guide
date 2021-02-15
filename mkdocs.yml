@@ -27,8 +27,8 @@ nav:
         - File Byte Structure: "scenarios/advanced/byte_structure.md"
       - Useful Tools:
         - AoE2ScenarioParser:
+          - About the parser: "scenarios/useful_tools/parser/about.md"
           - Python Installation: "scenarios/useful_tools/parser/installtion.md"
-          - Getting Started: "scenarios/useful_tools/parser/getting_started.md"
     - Data Mods:
       - Data Mod Basics: "data_mods/basics.md"
       - Advanced Genie Editor: "data_mods/age.md"
