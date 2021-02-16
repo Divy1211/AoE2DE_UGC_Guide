@@ -3,4 +3,4 @@ h1 { color: #f54242 !important;
 h2 { color: #ed324e; }
 h3 { color: #ec455e; }
 
-body { font-family: times-new-roman !important; }
+body { font-family: 'Times New Roman', Times, serif; } 

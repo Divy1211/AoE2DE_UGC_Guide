@@ -82,7 +82,7 @@ Remember, the top corner of the map is North!
 
 ### 1.6. Script Filename
 
-This is the place where you need to enter the name of any XS scripts that you are using in your map. XS scripts are covered in the `XS Scripts` segment of this guide
+This is the place where you need to enter the name of any XS scripts that you are using in your map. XS scripts are covered in the `XS Scripts` section of this guide
 
 ## 2. Global Victory
 
@@ -151,7 +151,7 @@ This option allows you to change the elevation of existing tiles on the map.
 
 1. `Brush Size`: allows you to pick how large of an area you want to affect on the map at once
 
-*Trick*: In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the `AoE2ScenarioParser` Segment of this guide.
+*Trick*: In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the `AoE2ScenarioParser` section of this guide.
 
 ### 3.3. Cliffs
 
@@ -176,8 +176,7 @@ This option allows you to selectively remove parts of the map in an area using a
 3. Invisible Units
 4. Layered Terrain
 5. Trees
-6. Units
-
+6. Units  
 Note: The layering mode option in this tab seems to have no effect on the way that elements are erased.
 
 ## 4. Options
@@ -195,7 +194,7 @@ Enable `Full Tech Tree`. Note that this is a global option, and not specific to 
 
 ### 4.4. Disable Objects
 Disable Buildings, Units or Techs by moving them from the `Full List` to the `Disabled List` by clicking the `<` arrow. remove an object from the disabled list by clicking `>`. The `<<` and `>>` move all items at once  
-Note: Using this option to disable objects is not recommended as there is a better way to do it via triggers which will be covered in the triggers segment of this guide.
+Note: Using this option to disable objects is not recommended as there is a better way to do it via triggers which will be covered in the triggers section of this guide.
 
 ### 4.5. Collide & Correcting
 Enabling this option makes stationary units move out the way to let moving units pass through. 
@@ -245,7 +244,51 @@ Swap the settings for the currently selected player with the specified player.
 Under the `Messages` tab, there are different options for displaying text in the scenario.
 
 ### 6.1. Scenario Instructions
-This 
+This option lets you set the text that is shown in the `Instructions` tab of the `Objectives Panel`.
+
+Note: The `Objective Panel` can be opened by clicking the button to the right of the Tech Tree button at the top of the screen.
+
+### 6.2. Objectives
+This option lets you set the text that is shown in the `Objectives` tab of the `Objectives Panel`.
+
+### 6.3. Hints
+This option lets you set the text that is shown in the `Hints` tab of the `Objectives Panel`.
+
+### 6.4. Scout
+This option lets you set the text that is shown in the `Scout` tab of the `Objectives Panel`.
+
+### 6.5. Victory
+This option lets you set the text that is shown to players who win the game before the statistics screen.
+
+### 6.6. Defeat
+This option lets you set the text that is shown to players who lose the game before the statistics screen.
+
+## 7. Units
+Under the `Units` tab, there are several options to place and manipulate units.
+
+### 7.1 Placing Units
+The game categorises all unit objects in the game into 4 categories, `Units`, `Buildings`, `Heroes`, `Others`.
+
+1. `Units` allows you to place down units that are most commonly seen in regular games.
+2. `Buildings` allows you to place down most of the different buildings in the game.
+3. `Heroes` allows you to place down the hero units used in campaigns and scenarios.
+4. `Others` these are miscellanious units that do not directly come under any of the above categories.
+
+Note: While placing these units, changing the player to Gaia will reveal additional hidden units like trees, mines, wolves and other units that only Gaia can own in normal games. There are additional units in the game that cannot be seen in the editor's lists even when using Gaia to place them.
+
+There are two ways to use these hidden units:
+
+1. Use a create object trigger with the hidden unit's object ID
+2. Use the Advanced Genie Editor (A.G.E.) to unhide hidden units in the editor to allow for manual placement.
+
+If you do not know how to do either of those, you can refer to the `Triggers` => `Effects` section of this guide for the first option, and/or refer to the `Useful Tools` => `Unhide Editor Units` section of this guide
+
+## 8. Cinematics
+
+## 9. Diplomacy
+
+## 10. Triggers
+
 
 ## Useful Hotkeys
 

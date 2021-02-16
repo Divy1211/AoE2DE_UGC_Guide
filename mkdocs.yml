@@ -7,7 +7,7 @@ repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 
 # add pages:
 nav:
-  - About: index.md
+  - About: "about.md"
   - Documentation:
     - Game Mechanics:
       - Damage Calculation: "general/damage_calculation.md"
@@ -26,12 +26,16 @@ nav:
       - Advanced:
         - File Byte Structure: "scenarios/advanced/byte_structure.md"
       - Useful Tools:
+        - Advanced Genie Editor:
+          - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
+          - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
         - AoE2ScenarioParser:
           - About the parser: "scenarios/useful_tools/parser/about.md"
           - Python Installation: "scenarios/useful_tools/parser/installtion.md"
     - Data Mods:
       - Data Mod Basics: "data_mods/basics.md"
-      - Advanced Genie Editor: "data_mods/age.md"
+      - Advanced Genie Editor:
+        - A.G.E. Basics: "data_mods/age/basics.md"
     - RMS:
       - RMS Basics: "rms/basics.md"
   - Publishing UGC: "publishing_ugc/publish.md"
@@ -52,9 +56,15 @@ markdown_extensions:
   - pymdownx.tasklist: # https://squidfunk.github.io/mkdocs-material/reference/lists/#tasklist
       custom_checkbox: true
       clickable_checkbox: true
+  - toc:
+      permalink: true
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search:
+      separator: '[\s\-\.\_]+'
 
 extra_css:
   - style.css
@@ -66,9 +76,16 @@ theme:
   icon:
     logo: fontawesome/solid/code
   features:
-    # - navigation.tabs
-    - navigation.expand
+    - navigation.tabs
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    # - navigation.expand
+    # - navigation.sections
   palette:
     scheme: slate
     primary: red
-    accent: orange
+    accent: red
+  font:
+    code: Source Code Pro
