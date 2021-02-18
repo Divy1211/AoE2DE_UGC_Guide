@@ -151,7 +151,7 @@ This option allows you to change the elevation of existing tiles on the map.
 
 1. `Brush Size`: allows you to pick how large of an area you want to affect on the map at once
 
-*Trick*: In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the `AoE2ScenarioParser` section of this guide.
+*Trick*: In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the `Useful Tools` => `AoE2ScenarioParser` section of this guide.
 
 ### 3.3. Cliffs
 
@@ -194,7 +194,7 @@ Enable `Full Tech Tree`. Note that this is a global option, and not specific to 
 
 ### 4.4. Disable Objects
 Disable Buildings, Units or Techs by moving them from the `Full List` to the `Disabled List` by clicking the `<` arrow. remove an object from the disabled list by clicking `>`. The `<<` and `>>` move all items at once  
-Note: Using this option to disable objects is not recommended as there is a better way to do it via triggers which will be covered in the triggers section of this guide.
+Note: Using this option to disable objects is not recommended as there is a better way to do it via triggers which are covered in the `Triggers` section of this guide.
 
 ### 4.5. Collide & Correcting
 Enabling this option makes stationary units move out the way to let moving units pass through. 
@@ -267,12 +267,16 @@ This option lets you set the text that is shown to players who lose the game bef
 Under the `Units` tab, there are several options to place and manipulate units.
 
 ### 7.1 Placing Units
+Units can be placed on the map from the 4 menus in this tab:
+
 The game categorises all unit objects in the game into 4 categories, `Units`, `Buildings`, `Heroes`, `Others`.
 
 1. `Units` allows you to place down units that are most commonly seen in regular games.
 2. `Buildings` allows you to place down most of the different buildings in the game.
 3. `Heroes` allows you to place down the hero units used in campaigns and scenarios.
 4. `Others` these are miscellanious units that do not directly come under any of the above categories.
+
+By default, units are placed in a random rotation, however scrolling up/down before placing a unit allows you to fix its rotation to whichever rotation you want. To go back to placing in a random rotation, select another unit in the menu and then re select the unit for placement.
 
 Note: While placing these units, changing the player to Gaia will reveal additional hidden units like trees, mines, wolves and other units that only Gaia can own in normal games. There are additional units in the game that cannot be seen in the editor's lists even when using Gaia to place them.
 
@@ -283,14 +287,51 @@ There are two ways to use these hidden units:
 
 If you do not know how to do either of those, you can refer to the `Triggers` => `Effects` section of this guide for the first option, and/or refer to the `Useful Tools` => `Unhide Editor Units` section of this guide
 
+### 7.2. Deleting Units
+Units that are already placed on the map can be deleted from the map by the following ways:
+
+1. The first and the most obvious option is to use the `Delete` option in this tab. This allows us to delete units one by one from the map.
+2. The first option can be tedious if you need to delete a large amount of units, thus the second option is to use the `Erase Units` option in the `Erase` menu under the `Terrain` tab. Refer to topic 3.5 of this section on more information about how to use the `Erase` option.
+
+### 7.3 Moving Units
+Units already placed on the map can be moved around on the map by using the `Move` option in this tab. While moving a unit, scrolling up/down will change the rotation of the unit being moved
+
+### 7.4 Rotating Units ~
+Units already placed on the map can be rotated by using the `Rotate` option in this tab. After the `Rotate` option is selected, clicking a unit will rotate it clockwise, and right clicking it will rotate it counter clockwise.
+
+### 7.5 Selecting Units 
+When selecting a unit, its statistics like HP, Attack, Armour and units garrisoned inside it are shown. Units inside other units can be deleted using the garrison delete.
+
+### 7.6 Converting Units
+This option allows you to convert existing units **from** one or more players **to** another player.
+
+When enabled, 9 new options (to the right) appear in the menu for selecting which players' units you want to convert **from**. The currently selected player (on the left) is the player the units will be converted **to**. After picking a `Brush Size` when you click on an area, all of the units belonging to the players being converted **from** will be converted **to** the selected player.
+
+Remember the players being converted **from** are selected on the right side using the checkboxes, and the player being converted **to** is the one selected in the dropdown to the left!
+
 ## 8. Cinematics
+Under the `Cinematics` tab, there are options to change the movie clips displayed before or after a scenario. These are mainly used in the campaigns, and functionality for chaning them in scenarios is bugged as of the time of the writing of this guide.
 
 ## 9. Diplomacy
+Under the `Diplomacy` tab, there are options to change the diplomacy settings of the game:
+
+### 9.1. Diplomacy Stance
+The grid of checkboxes to the right allows you to change each player's stance with all of the other players.
+
+### 9.2. Lock Teams
+This option makes it so that teams cannot be changed by players in the game. They can still be changed by triggers.
+
+### 9.3 Players Choose Teams
+Disabling this option will not allow players to pick teams in the lobby before the start of the game. The teams will not be locked however, and may still be changed in game **unless** the `Lock Teams` option is also enabled.
+
+### 9.4 Random Start Points
 
 ## 10. Triggers
+Under the `Triggers` tab, triggers can be added or removed from the scenario. Triggers are the most powerful component of a scenario as they allow us to do a plethora of different things in a game. They can be used to add more dynamics and game mechanics to a scenario, almost anything that you could think of (within the context of AoE2 and its own limits) is possible to do in some way using triggers.
 
 
-## Useful Hotkeys
+## 11. Useful Hotkeys
+Some hotkeys that are useful to know and make the workflow of making and testing a scenario faster
 
 1. Scrolling up and down on a dropdown list makes the values go up and down the lists as well
 2. Pressing or holding a letter in any object selection menu will cycle through the list of objects
