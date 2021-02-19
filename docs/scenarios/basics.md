@@ -294,9 +294,9 @@ Units that are already placed on the map can be deleted from the map by the foll
 2. The first option can be tedious if you need to delete a large amount of units, thus the second option is to use the `Erase Units` option in the `Erase` menu under the `Terrain` tab. Refer to topic 3.5 of this section on more information about how to use the `Erase` option.
 
 ### 7.3 Moving Units
-Units already placed on the map can be moved around on the map by using the `Move` option in this tab. While moving a unit, scrolling up/down will change the rotation of the unit being moved
+Units already placed on the map can be moved around on the map by using the `Move` option in this tab.
 
-### 7.4 Rotating Units ~
+### 7.4 Rotating Units
 Units already placed on the map can be rotated by using the `Rotate` option in this tab. After the `Rotate` option is selected, clicking a unit will rotate it clockwise, and right clicking it will rotate it counter clockwise.
 
 ### 7.5 Selecting Units 
@@ -321,13 +321,18 @@ The grid of checkboxes to the right allows you to change each player's stance wi
 ### 9.2. Lock Teams
 This option makes it so that teams cannot be changed by players in the game. They can still be changed by triggers.
 
-### 9.3 Players Choose Teams
+### 9.3. Players Choose Teams
 Disabling this option will not allow players to pick teams in the lobby before the start of the game. The teams will not be locked however, and may still be changed in game **unless** the `Lock Teams` option is also enabled.
 
-### 9.4 Random Start Points
+### 9.4. Random Start Points
+This option seems to have no effect on the game.  
+(Note: If you are aware of what this does, please reach out to one of the authors of this guide and let them know!)
+
 
 ## 10. Triggers
-Under the `Triggers` tab, triggers can be added or removed from the scenario. Triggers are the most powerful component of a scenario as they allow us to do a plethora of different things in a game. They can be used to add more dynamics and game mechanics to a scenario, almost anything that you could think of (within the context of AoE2 and its own limits) is possible to do in some way using triggers.
+Under the `Triggers` tab, triggers can be manipulated in a scenario. Triggers are the most powerful component of a scenario as they allow us to do a plethora of different things in a game. They can be used to add more dynamics and game mechanics to a scenario, almost anything that you could think of (within the context of AoE2 and its own limits) is possible to do in some way using triggers.
+
+Details about how to use triggers are covered in the triggers section of this guide.
 
 
 ## 11. Useful Hotkeys

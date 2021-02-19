@@ -1,6 +1,71 @@
-h1 { color: #f54242 !important;
-     font-family: Lucida Blackletter !important;}
-h2 { color: #ed324e; }
-h3 { color: #ec455e; }
+h1 { 
+     color: #f54242 !important;
+     font-family: Lucida Blackletter !important;
+}
+h2 { 
+     color: #ed324e;
+}
+h3 { 
+     color: #ec455e;
+}
 
-body { font-family: 'Times New Roman', Times, serif; } 
+body { 
+     font-family: 'Times New Roman', Times, serif;
+}
+
+tr:nth-child(even) {
+     background-color: #3a3c4e !important;
+}
+
+tr th {
+     background-color:#ef5552 !important;
+     color: #000000
+}
+tr:hover {
+     background-color: #45495f !important;
+}
+
+
+/* this code is used for different table styles in different tabs*/
+
+/* #cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(2),
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(4) {
+     background-color: #535571 !important;
+}
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(3):not(:first-child) {
+     background-color: #4a4c64 !important;
+}
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(2),
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(3),
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(4) {
+     background-color: #646986 !important;
+} */
+
+
+/* formatting for damage calculation table under topic 3.3. */
+
+#cs1 + div table tr:nth-child(2),
+#cs1 + div table tr:nth-child(4) {
+     background-color: #535571 !important;
+}
+#cs1 + div table tr:nth-child(3) {
+     background-color: #4a4c64 !important;
+}
+#cs1 + div table tr:hover:nth-child(2),
+#cs1 + div table tr:hover:nth-child(3),
+#cs1 + div table tr:hover:nth-child(4) {
+     background-color: #646986 !important;
+}
+
+
+/* formatting for damage calculation table under topic 3.4. */
+#cs2 + div table tr:nth-child(3) {
+     background-color: #4a4c64 !important;
+}
+#cs2 + div table tr:hover:nth-child(3) {
+     background-color: #646986 !important;
+}
+
+.arithmatex {
+     font-size: 1em;
+}
