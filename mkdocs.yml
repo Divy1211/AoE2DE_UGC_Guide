@@ -77,7 +77,7 @@ theme:
     logo: fontawesome/solid/code
   features:
     - navigation.tabs
-    - toc.integrate
+    # - toc.integrate
     - search.suggest
     - search.highlight
     - search.share
