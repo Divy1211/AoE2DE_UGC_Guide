@@ -246,4 +246,4 @@ A3. One of the unused damage classes can be used for this purpose. Giving the de
 
 ### 3.6. The Sicilian 50% Bonus Damage Reduction
 
-The damage from all classes except the `Base Melee (4)` and `Base Pierce (3)` is multiplied by 0.5 before it is added to the total damage.
+The damage from all classes except the `Base Melee (4)` and `Base Pierce (3)` is multiplied by 0.5 before it is added to the total damage for Sicilian units.
