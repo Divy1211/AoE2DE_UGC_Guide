@@ -70,9 +70,11 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     Thus, bigger targets are actually easier to hit, which explains why buildings are an easier target to hit for trebuchets than small units. 
 
-    The chances that a missed shot still manages to hit the target also depend on the distance between the target and the attacking unit. A target that is farther away is "visually" smaller, so it is easier for a missed shot to land outside the units hitbox. This image may help in explaining why:
+    The chances that a missed shot still manages to hit the target also depend on the distance between the target and the attacking unit. A target that is farther away is "visually" smaller, so it is easier for a missed shot to land outside the units hitbox. These images may help in explaining why:
 
     ![Visually Smaller](./imgs/visually_smaller.png "Targets that are farther away are visually smaller")
+
+    In this image, you can see that shots that were fired in the red area in the 2nd scenario would've hit if the target had been closer like in the first scenario, but since the target is far away, they actually miss.
 
     More technically, the visual angle of an object of the same size that is farther away is smaller, thus giving a smaller room for error for the shot in terms of the range of angles that will make the shot hit.
 

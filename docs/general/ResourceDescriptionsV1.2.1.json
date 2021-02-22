@@ -1,0 +1,1734 @@
+{
+    "0": {
+        "name": "Food",
+        "keyword": "Food",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "1": {
+        "name": "Wood",
+        "keyword": "Wood",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "2": {
+        "name": "Stone",
+        "keyword": "Stone",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "3": {
+        "name": "Gold",
+        "keyword": "Gold",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "4": {
+        "name": "Population Cap",
+        "keyword": "Current max pop",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "5": {
+        "name": "Conversion Range",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "6": {
+        "name": "Current Age",
+        "keyword": "Age name and icon at the top of the screen",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " Dark Age",
+            "1": " Feudal Age",
+            "2": " Castle Age",
+            "3": " Imperial Age"
+        },
+        "comment": "Setting this to an amount higher than 3 cycles the icon but keeps the age at imperial"
+    },
+    "7": {
+        "name": "Relics",
+        "keyword": "Number of relics held",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "8": {
+        "name": "Trade Bonus",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "9": {
+        "name": "Trade Goods",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "10": {
+        "name": "Trade Production",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "11": {
+        "name": "Current Population",
+        "keyword": "Current pop",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "12": {
+        "name": "Corpse Decay Time",
+        "keyword": "Time taken by corpses to decay",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": "Doesn't seem to do anything when changed"
+    },
+    "13": {
+        "name": "Remarkable Discovery",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "14": {
+        "name": "Monuments Captured",
+        "keyword": "Number of monuments owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "15": {
+        "name": "Meat Storage",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "16": {
+        "name": "Berry Storage",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "17": {
+        "name": "Fish Storage",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "18": {
+        "name": "Unused Resource",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "19": {
+        "name": "Total Units Owned",
+        "keyword": "Total units owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "20": {
+        "name": "Kills",
+        "keyword": "Total units killed",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "21": {
+        "name": "Research Count",
+        "keyword": "Research count",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "22": {
+        "name": "Exploration",
+        "keyword": "Percent map explored",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "23": {
+        "name": "Castle Age Tech ID",
+        "keyword": "Always 102",
+        "grammer": "",
+        "default_values": {},
+        "comment": "Nothing happens when you change this"
+    },
+    "24": {
+        "name": "Imperial Age Tech ID",
+        "keyword": "Always 103",
+        "grammer": "",
+        "default_values": {},
+        "comment": "Nothing happens when you change this"
+    },
+    "25": {
+        "name": "Feudal Age Tech ID",
+        "keyword": "Always 101",
+        "grammer": "",
+        "default_values": {},
+        "comment": "Nothing happens when you change this"
+    },
+    "26": {
+        "name": "Attack Sound Effect ID",
+        "keyword": "Always 0",
+        "grammer": "",
+        "default_values": {},
+        "comment": "Nothing happens when you change this"
+    },
+    "27": {
+        "name": "Enable Monk Conversion",
+        "keyword": "Boolean: allow enemy monk conversions",
+        "grammer": "by the source player",
+        "default_values": {
+            "0": " Don't Allow",
+            ">= 1": " Allow"
+        },
+        "comment": "Set to 1 when atonement is researched"
+    },
+    "28": {
+        "name": "Enable Building Conversions",
+        "keyword": "Boolean: allow enemy building conversions",
+        "grammer": "by the source player.",
+        "default_values": {
+            "0": " Don't Allow",
+            "1": " Allow",
+            ">=2": " Monks can convert buildings from range"
+        },
+        "comment": "Set to 1 when redemption is researched"
+    },
+    "29": {
+        "name": "Unused Resource 29",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "30": {
+        "name": "Building Limit",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "31": {
+        "name": "Food Limit",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "32": {
+        "name": "Bonus Population Cap",
+        "keyword": "Additional max pop space",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "10 for goths"
+    },
+    "33": {
+        "name": "Food Maintenance",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "34": {
+        "name": "Faith",
+        "keyword": "Boolean: faith researched",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": "Set to 1 when faith is researched, ONLY  a boolean value, does not force faith's effects if manually set to 1"
+    },
+    "35": {
+        "name": "Faith Recharge Rate",
+        "keyword": "Monk faith recovery rate",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "36": {
+        "name": "Farm Food",
+        "keyword": "Max farm food",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "37": {
+        "name": "Civilian Population",
+        "keyword": "Civilian pop",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "38": {
+        "name": "Unused Resource 38",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "39": {
+        "name": "All Techs Achieved",
+        "keyword": "Boolean: researched all enabled techs",
+        "grammer": "by the source player",
+        "default_values": {
+            "0": " when all techs not researched",
+            "1": " when all techs are researched"
+        },
+        "comment": ""
+    },
+    "40": {
+        "name": "Military Population",
+        "keyword": "Military pop",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "41": {
+        "name": "Conversions",
+        "keyword": "Number of units converted",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "42": {
+        "name": "Wonder",
+        "keyword": "Number of standing wonders",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "43": {
+        "name": "Razings",
+        "keyword": "Number of buildings destroyed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "44": {
+        "name": "Kill Ratio",
+        "keyword": "Ceil of kills/deaths",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "45": {
+        "name": "Player Killed",
+        "keyword": "Boolean: survival to finish",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " No",
+            "1": " Yes"
+        },
+        "comment": ""
+    },
+    "46": {
+        "name": "Tribute Inefficiency",
+        "keyword": "Tribute tax fraction",
+        "grammer": "imposed on the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "47": {
+        "name": "Gold Mining Productivity",
+        "keyword": "Longer lasting gold percent",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " Generic",
+            "10": " Mayans"
+        },
+        "comment": "Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+    },
+    "48": {
+        "name": "Town Center Unavailable",
+        "keyword": "Boolean: allow building tcs",
+        "grammer": "for the source player",
+        "default_values": {
+            "0": " No (Sudden Death)",
+            "1": " Yes"
+        },
+        "comment": ""
+    },
+    "49": {
+        "name": "Gold Counter",
+        "keyword": "Total gold collected",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "50": {
+        "name": "Reveal Ally",
+        "keyword": "Boolean: show ally los",
+        "grammer": "for the source player",
+        "default_values": {
+            "0": " No Allied Vision",
+            "1": " Allied Vision"
+        },
+        "comment": "Note - Once enabled, Allied vison cannot be undone"
+    },
+    "51": {
+        "name": "Houses",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "52": {
+        "name": "Monasteries",
+        "keyword": "Number of monasteries",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "53": {
+        "name": "Tribute Sent",
+        "keyword": "Amount tributed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "54": {
+        "name": "All Monuments Captured",
+        "keyword": "Boolean: all monuments captured",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "55": {
+        "name": "All Relics Captured",
+        "keyword": "Boolean: all relics captured",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "56": {
+        "name": "Ore",
+        "keyword": "SWGB ore",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "57": {
+        "name": "Captured Unit",
+        "keyword": "Number of units kidnapped",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "58": {
+        "name": "Dark Age Tech ID",
+        "keyword": "Always 104",
+        "grammer": "",
+        "default_values": {},
+        "comment": "Nothing happens when you change this"
+    },
+    "59": {
+        "name": "Trade Good Quality",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "60": {
+        "name": "Trade Market Level",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "61": {
+        "name": "Formations",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "62": {
+        "name": "Building House Rate",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "63": {
+        "name": "Gather Tax Rate",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "64": {
+        "name": "Gather Accumulation",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "65": {
+        "name": "Salvage Decay Rate",
+        "keyword": "Boat corpse decay rate",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "Changing this doesn't seem to do anything"
+    },
+    "66": {
+        "name": "Allow Formations",
+        "keyword": "Unused",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "67": {
+        "name": "Can Convert",
+        "keyword": "Boolean: allow enemy object conversions",
+        "grammer": "amount of the source player",
+        "default_values": {
+            "0": " Don't allow even regular unit conversion",
+            "1": " Allows regular unit conversion"
+        },
+        "comment": ""
+    },
+    "68": {
+        "name": "Hitpoints Killed",
+        "keyword": "Cumulative hp of all units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "69": {
+        "name": "Player1 Kills",
+        "keyword": "Number of player1 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "70": {
+        "name": "Player2 Kills",
+        "keyword": "Number of player2 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "71": {
+        "name": "Player3 Kills",
+        "keyword": "Number of player3 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "72": {
+        "name": "Player4 Kills",
+        "keyword": "Number of player4 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "73": {
+        "name": "Player5 Kills",
+        "keyword": "Number of player5 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "74": {
+        "name": "Player6 Kills",
+        "keyword": "Number of player6 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "75": {
+        "name": "Player7 Kills",
+        "keyword": "Number of player7 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "76": {
+        "name": "Player8 Kills",
+        "keyword": "Number of player8 units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "77": {
+        "name": "Conversion Resistance",
+        "keyword": "Coefficient of conversion resistance",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this."
+    },
+    "78": {
+        "name": "Trade Vig Rate",
+        "keyword": "Market exchange rate fraction",
+        "grammer": "for the source player",
+        "default_values": {
+            "0.3": " Generic rate",
+            "0.15": " after guilds",
+            "0.05": " for saracens"
+        },
+        "comment": ""
+    },
+    "79": {
+        "name": "Stone Mining Productivity",
+        "keyword": "Longer lasting stone percent",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " Generic",
+            "10": " Mayans"
+        },
+        "comment": "Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+    },
+    "80": {
+        "name": "Queued Count",
+        "keyword": "Amount of units in queue",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "Note that only the units waiting to be trained are considered in the queue so if an archery range has 3 archers being made, there is 1 archer that is being trained and 2 archers that are in queue"
+    },
+    "81": {
+        "name": "Training Count",
+        "keyword": "Amount of units being trained",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "Note that only the FIRST unit in each building is considered as being trained so if a town centre has 4 villagers being made, there is 1 archer that is being trained and 3 villagers that are in queue"
+    },
+    "82": {
+        "name": "Start with Packed Town Centre",
+        "keyword": "Boolean: started with PTWC",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing"
+    },
+    "83": {
+        "name": "Boarding Recharge Rate",
+        "keyword": "ABGAL faith recharge rate",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": "This is similar to monk's faith except for a special ship unit 536 called the ABGAL in the editor that can convert ships form 1 range away"
+    },
+    "84": {
+        "name": "Starting Villagers",
+        "keyword": "Number of starting villagers",
+        "grammer": "of the source player",
+        "default_values": {
+            "3": " For generic civs",
+            "4": " For Mayans",
+            "6": " For Chinese"
+        },
+        "comment": "Only works for RMS, Changing this manually in the editor does nothing x2 on budapest, x3 on metropolis"
+    },
+    "85": {
+        "name": "Research Cost Modifier",
+        "keyword": "Reduce tech cost to fraction",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "86": {
+        "name": "Research Time Modifier",
+        "keyword": "Reduce tech research time to fraction",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "87": {
+        "name": "Convert Boats",
+        "keyword": "Boolean: allow monks to convert boats",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "88": {
+        "name": "Fish Trap Food",
+        "keyword": "Max fishtrap food",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "89": {
+        "name": "Heal Rate Modifier",
+        "keyword": "Monk healing rate",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "90": {
+        "name": "Heal Range",
+        "keyword": "Monk heal range",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "91": {
+        "name": "Starting Food",
+        "keyword": "Starting food",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": "Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting food amount"
+    },
+    "92": {
+        "name": "Starting Wood",
+        "keyword": "Starting wood",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": "Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting wood amount"
+    },
+    "93": {
+        "name": "Starting Stone",
+        "keyword": "Starting stone",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": "Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting stone amount"
+    },
+    "94": {
+        "name": "Starting Gold",
+        "keyword": "Starting gold",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": "Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting gold amount"
+    },
+    "95": {
+        "name": "Loot",
+        "keyword": "Enable town centre packing",
+        "grammer": "for the source player",
+        "default_values": {
+            "0": " Normal",
+            "1": " Enables Pack Button on TC but it is bugged, if you click it then TC goes berserk",
+            ">=2": " No noticeable effect"
+        },
+        "comment": ""
+    },
+    "96": {
+        "name": "Berserker Heal Timer",
+        "keyword": "Time difference between berserker heal rate",
+        "grammer": "for source player",
+        "default_values": {},
+        "comment": "This is divided by two every time berserkergang is researched"
+    },
+    "97": {
+        "name": "Dominant Sheep Control",
+        "keyword": "Boolean: force sheep conversion",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " Normal Sheep conversion behaviour",
+            ">=1": " If another player does not also have this set to a non zero value, their sheep will force convert to source player"
+        },
+        "comment": "This is how the celt bonus of sheep not converting works"
+    },
+    "98": {
+        "name": "Object Cost Summation",
+        "keyword": "Total cost of all units and buildings owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "99": {
+        "name": "Research Cost Summation",
+        "keyword": "Total cost of all researches researched",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "100": {
+        "name": "Relic Income Summation",
+        "keyword": "Total relic gold generated",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "101": {
+        "name": "Trade Income Summation",
+        "keyword": "Total trade gold generated",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "102": {
+        "name": "Player1 Tribute",
+        "keyword": "Amount of resources tributed to player1",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "103": {
+        "name": "Player2 Tribute",
+        "keyword": "Amount of resources tributed to player2",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "104": {
+        "name": "Player3 Tribute",
+        "keyword": "Amount of resources tributed to player3",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "105": {
+        "name": "Player4 Tribute",
+        "keyword": "Amount of resources tributed to player4",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "106": {
+        "name": "Player5 Tribute",
+        "keyword": "Amount of resources tributed to player5",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "107": {
+        "name": "Player6 Tribute",
+        "keyword": "Amount of resources tributed to player6",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "108": {
+        "name": "Player7 Tribute",
+        "keyword": "Amount of resources tributed to player7",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "109": {
+        "name": "Player8 Tribute",
+        "keyword": "Amount of resources tributed to player8",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "110": {
+        "name": "Player1 Kill Value",
+        "keyword": "Cost of units of player1 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "111": {
+        "name": "Player2 Kill Value",
+        "keyword": "Cost of units of player2 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "112": {
+        "name": "Player3 Kill Value",
+        "keyword": "Cost of units of player3 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "113": {
+        "name": "Player4 Kill Value",
+        "keyword": "Cost of units of player4 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "114": {
+        "name": "Player5 Kill Value",
+        "keyword": "Cost of units of player5 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "115": {
+        "name": "Player6 Kill Value",
+        "keyword": "Cost of units of player6 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "116": {
+        "name": "Player7 Kill Value",
+        "keyword": "Cost of units of player7 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "117": {
+        "name": "Player8 Kill Value",
+        "keyword": "Cost of units of player8 killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "118": {
+        "name": "Player1 Razings",
+        "keyword": "Number of buildings destroyed of player1",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "119": {
+        "name": "Player2 Razings",
+        "keyword": "Number of buildings destroyed of player2",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "120": {
+        "name": "Player3 Razings",
+        "keyword": "Number of buildings destroyed of player3",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "121": {
+        "name": "Player4 Razings",
+        "keyword": "Number of buildings destroyed of player4",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "122": {
+        "name": "Player5 Razings",
+        "keyword": "Number of buildings destroyed of player5",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "123": {
+        "name": "Player6 Razings",
+        "keyword": "Number of buildings destroyed of player6",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "124": {
+        "name": "Player7 Razings",
+        "keyword": "Number of buildings destroyed of player7",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "125": {
+        "name": "Player8 Razings",
+        "keyword": "Number of buildings destroyed of player8",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "126": {
+        "name": "Player1 Razing Value",
+        "keyword": "Cost of buildings destroyed of player1",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "127": {
+        "name": "Player2 Razing Value",
+        "keyword": "Cost of buildings destroyed of player2",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "128": {
+        "name": "Player3 Razing Value",
+        "keyword": "Cost of buildings destroyed of player3",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "129": {
+        "name": "Player4 Razing Value",
+        "keyword": "Cost of buildings destroyed of player4",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "130": {
+        "name": "Player5 Razing Value",
+        "keyword": "Cost of buildings destroyed of player5",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "131": {
+        "name": "Player6 Razing Value",
+        "keyword": "Cost of buildings destroyed of player6",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "132": {
+        "name": "Player7 Razing Value",
+        "keyword": "Cost of buildings destroyed of player7",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "133": {
+        "name": "Player8 Razing Value",
+        "keyword": "Cost of buildings destroyed of player8",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "134": {
+        "name": "Castle",
+        "keyword": "Number of standing castles",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "135": {
+        "name": "Hit Point Razings",
+        "keyword": "Cumulative hp of all buildings destroyed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "136": {
+        "name": "Kills By Player1",
+        "keyword": "Number of units killed by player1",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "137": {
+        "name": "Kills By Player2",
+        "keyword": "Number of units killed by player2",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "138": {
+        "name": "Kills By Player3",
+        "keyword": "Number of units killed by player3",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "139": {
+        "name": "Kills By Player4",
+        "keyword": "Number of units killed by player4",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "140": {
+        "name": "Kills By Player5",
+        "keyword": "Number of units killed by player5",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "141": {
+        "name": "Kills By Player6",
+        "keyword": "Number of units killed by player6",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "142": {
+        "name": "Kills By Player7",
+        "keyword": "Number of units killed by player7",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "143": {
+        "name": "Kills By Player8",
+        "keyword": "Number of units killed by player8",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "144": {
+        "name": "Razings By Player1",
+        "keyword": "Number of buildings destroyed by player1",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "145": {
+        "name": "Razings By Player2",
+        "keyword": "Number of buildings destroyed by player2",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "146": {
+        "name": "Razings By Player3",
+        "keyword": "Number of buildings destroyed by player3",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "147": {
+        "name": "Razings By Player4",
+        "keyword": "Number of buildings destroyed by player4",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "148": {
+        "name": "Razings By Player5",
+        "keyword": "Number of buildings destroyed by player5",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "149": {
+        "name": "Razings By Player6",
+        "keyword": "Number of buildings destroyed by player6",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "150": {
+        "name": "Razings By Player7",
+        "keyword": "Number of buildings destroyed by player7",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "151": {
+        "name": "Razings By Player8",
+        "keyword": "Number of buildings destroyed by player8",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "152": {
+        "name": "Value Killed By Others",
+        "keyword": "Cumulative cost of units lost",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "153": {
+        "name": "Value Razed By Others",
+        "keyword": "Cumulative cost of buildings lost",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "154": {
+        "name": "Killed By Others",
+        "keyword": "Number of units killed by other players",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "155": {
+        "name": "Razed By Others",
+        "keyword": "Number of buildings destroyed by other players",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "156": {
+        "name": "Tribute From Player1",
+        "keyword": "Tribute received from player1",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "157": {
+        "name": "Tribute From Player2",
+        "keyword": "Tribute received from player2",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "158": {
+        "name": "Tribute From Player3",
+        "keyword": "Tribute received from player3",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "159": {
+        "name": "Tribute From Player4",
+        "keyword": "Tribute received from player4",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "160": {
+        "name": "Tribute From Player5",
+        "keyword": "Tribute received from player5",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "161": {
+        "name": "Tribute From Player6",
+        "keyword": "Tribute received from player6",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "162": {
+        "name": "Tribute From Player7",
+        "keyword": "Tribute received from player7",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "163": {
+        "name": "Tribute From Player8",
+        "keyword": "Tribute received from player8",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "164": {
+        "name": "Value Current Units",
+        "keyword": "Cumulative cost of alive units",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "165": {
+        "name": "Value Current Buildings",
+        "keyword": "Cumulative cost of standing buildings",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "166": {
+        "name": "Food Total",
+        "keyword": "Total food collected",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "167": {
+        "name": "Wood Total",
+        "keyword": "Total wood collected",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "168": {
+        "name": "Stone Total",
+        "keyword": "Total stone collected",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "169": {
+        "name": "Gold Total",
+        "keyword": "Total gold collected",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "170": {
+        "name": "Total Value Of Kills",
+        "keyword": "Cumulative cost of all units killed",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "171": {
+        "name": "Total Tribute Received ",
+        "keyword": "Total amount of resources received in tribute",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "172": {
+        "name": "Total Value Of Razings",
+        "keyword": "Cumulative cost of all buildings destroyed",
+        "grammer": "by of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "173": {
+        "name": "Total Castles Built",
+        "keyword": "Number of total castles built",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "174": {
+        "name": "Total Wonders Built",
+        "keyword": "Number of total wonders built",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "175": {
+        "name": "Tribute Score",
+        "keyword": "Tribute score",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "176": {
+        "name": "Convert Min Adj",
+        "keyword": "Additional monk seconds needed before conversion starts",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=870 by T-West"
+    },
+    "177": {
+        "name": "Convert Max Adj",
+        "keyword": "Additional monk seconds needed before forced conversion",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=870 by T-West"
+    },
+    "178": {
+        "name": "Convert Resist Min Adj",
+        "keyword": "Additional monk seconds needed before conversion starts",
+        "grammer": "against the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West"
+    },
+    "179": {
+        "name": "Convert Resist Max Adj",
+        "keyword": "Additional monk seconds needed before forced conversion",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West"
+    },
+    "180": {
+        "name": "Convert Building Min",
+        "keyword": "Building conversion min time",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West"
+    },
+    "181": {
+        "name": "Convert Building Max",
+        "keyword": "Building conversion max time",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West"
+    },
+    "182": {
+        "name": "Convert Building Chance",
+        "keyword": "Percent chance for monks to convert buildings",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West"
+    },
+    "183": {
+        "name": "Spies",
+        "keyword": "Boolean: show enemy los",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "184": {
+        "name": "Value Wonders Castles",
+        "keyword": "Total cost of all wonders and castles",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "185": {
+        "name": "Food Score",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "186": {
+        "name": "Wood Score",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "187": {
+        "name": "Stone Score",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "188": {
+        "name": "Gold Score",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "189": {
+        "name": "Wood Bonus",
+        "keyword": "Longer lasting wood percent",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " Generic",
+            "10": " Mayans"
+        },
+        "comment": "Side effect - also increases gathering speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+    },
+    "190": {
+        "name": "Food Bonus",
+        "keyword": "Longer lasting food percent",
+        "grammer": "of the source player",
+        "default_values": {
+            "0": " Generic",
+            "10": " Mayans"
+        },
+        "comment": "Side effect - also increases gathering speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+    },
+    "191": {
+        "name": "Relic Rate",
+        "keyword": "Relic gold generation rate",
+        "grammer": "for the source player",
+        "default_values": {
+            "0.5": " by default"
+        },
+        "comment": ""
+    },
+    "192": {
+        "name": "Heresy",
+        "keyword": "Boolean: converted units die",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "193": {
+        "name": "Theocracy",
+        "keyword": "Boolean: only one monk needs to regen faith after group conversion",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "194": {
+        "name": "Crenellations",
+        "keyword": "Boolean: researched crenellations",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": "Set to 1 if crenellations is researched, does not give the effect of crenellations, just a boolean"
+    },
+    "195": {
+        "name": "Construction Rate Mod",
+        "keyword": "Construction rate multiplier",
+        "grammer": "for the source player",
+        "default_values": {
+            "1.0": " Generic",
+            "1.3": " Spanish"
+        },
+        "comment": ""
+    },
+    "196": {
+        "name": "Hun Wonder Bonus",
+        "keyword": "Additional time for relic/wonder victories in one tenth of an year",
+        "grammer": "by any player",
+        "default_values": {},
+        "comment": "Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame This is additive per player Set to 1000 if atheism is researched"
+    },
+    "197": {
+        "name": "Spies Discount",
+        "keyword": "Boolean: give discount on spies",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": "Set to 1 if atheism is researched"
+    },
+    "198": {
+        "name": "Unknown Resource 198",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "199": {
+        "name": "Unknown Resource 199",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "200": {
+        "name": "Unknown Resource 200",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "201": {
+        "name": "Unknown Resource 201",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "202": {
+        "name": "Unknown Resource 202",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "203": {
+        "name": "Unknown Resource 203",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "204": {
+        "name": "Unknown Resource 204",
+        "keyword": "Unknown",
+        "grammer": "amount of source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "205": {
+        "name": "Feitoria Food Productivity",
+        "keyword": "Feitoria food production multiplier",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "206": {
+        "name": "Feitoria Wood Productivity",
+        "keyword": "Feitoria wood production multiplier",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "207": {
+        "name": "Feitoria Stone Productivity",
+        "keyword": "Feitoria stone production multiplier",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "208": {
+        "name": "Feitoria Gold Productivity",
+        "keyword": "Feitoria gold production multiplier",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "209": {
+        "name": "Reveal Enemy Town Centre",
+        "keyword": "Boolean: reveal enemy town centre location",
+        "grammer": "for the source player",
+        "default_values": {
+            "0": " Generic",
+            "5": " Vietnamese"
+        },
+        "comment": "The bonus works for all values >=1, the choice of setting it to 5 for vietnamese seems arbitrary Vietnamese reveal enemy tc location bonus"
+    },
+    "210": {
+        "name": "Reveal Relics",
+        "keyword": "Boolean: reveal relics on map",
+        "grammer": "amount of the source player",
+        "default_values": {
+            "-1": " Generic",
+            "42": " Burmese"
+        },
+        "comment": "Burmese reveal relics on map bonus (probably) Only works in RMS, Manually changing this in the editor does not seem to have any effects"
+    },
+    "211": {
+        "name": "Elevation Bonus Higher",
+        "keyword": "High elevation damage bonus fraction",
+        "grammer": "amount of the source player",
+        "default_values": {
+            "0.25": " generic",
+            "0.5": " tatars"
+        },
+        "comment": ""
+    },
+    "212": {
+        "name": "Elevation Bonus Lower",
+        "keyword": "Low elevation damage bonus fraction",
+        "grammer": "amount of the source player",
+        "default_values": {
+            "-0.25": " generic"
+        },
+        "comment": ""
+    },
+    "213": {
+        "name": "Raiding Productivity",
+        "keyword": "Keshik gold generation multiplier percent",
+        "grammer": "for the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "214": {
+        "name": "Mercenary Kipchak Count",
+        "keyword": "Total number of merc kipchak creatable",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": "Yes, the name of this resource is wrong in the editor"
+    },
+    "215": {
+        "name": "Mercenary Kipchak Limit",
+        "keyword": "Number of merc kipchak created",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": "Yes, the name of this resource is wrong in the editor"
+    },
+    "216": {
+        "name": "Shepherd Productivity",
+        "keyword": "Longer lasting sheep percent",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+    },
+    "217": {
+        "name": "Trigger Shared LOS",
+        "keyword": "Boolean: reveal ally",
+        "grammer": "for the source player",
+        "default_values": {
+            "0": " No Allied Vision",
+            "1": " Allied Vision"
+        },
+        "comment": "Note - Once enabled, Allied vison cannot be undone"
+    },
+    "218": {
+        "name": "Unknown Resource 218",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "219": {
+        "name": "Unknown Resource 219",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "220": {
+        "name": "Unknown Resource 220",
+        "keyword": "Unknown",
+        "grammer": "amount of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "221": {
+        "name": "Food Trickle From Monument",
+        "keyword": "Give 0.7925*value food per second if a monument is owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "222": {
+        "name": "Wood Trickle From Monument",
+        "keyword": "Give 0.7925*value wood per second if a monument is owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "223": {
+        "name": "Stone Trickle From Monument",
+        "keyword": "Give 0.7925*value stone per second if a monument is owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "224": {
+        "name": "Gold Trickle From Monument",
+        "keyword": "Give 0.7925*value gold per second if a monument is owned",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "225": {
+        "name": "Relic Food Production Rate",
+        "keyword": "Relic food production rate",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "226": {
+        "name": "Villagers Killed By Gaia",
+        "keyword": "Villagers lost to gaia",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "227": {
+        "name": "Villagers Killed By Animals",
+        "keyword": "Villagers lost to wild animals",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "228": {
+        "name": "Villagers Killed By AI Player",
+        "keyword": "Villagers lost to ais",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "229": {
+        "name": "Villagers Killed By Human Player",
+        "keyword": "Villagers lost to humans",
+        "grammer": "by the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "230": {
+        "name": "Food Trickle",
+        "keyword": "Food given per minute",
+        "grammer": "to the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "231": {
+        "name": "Wood Trickle",
+        "keyword": "Wood given per minute",
+        "grammer": "to the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "232": {
+        "name": "Stone Trickle",
+        "keyword": "Stone given per minute",
+        "grammer": "to the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "233": {
+        "name": "Gold Trickle",
+        "keyword": "Gold given per minute",
+        "grammer": "to the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "234": {
+        "name": "Spawn Limit",
+        "keyword": "Limit of the number of spawning buildings that spawn units from spawn command in a technology",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "235": {
+        "name": "Flemish Militia Population",
+        "keyword": "Number of flemish militia",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": ""
+    },
+    "236": {
+        "name": "Farming Gold Trickle",
+        "keyword": "Farming gold generation rate*0.01",
+        "grammer": "of the source player",
+        "default_values": {},
+        "comment": "used by the Burgundian Vineyards technology. Set to 0.15 when researched"
+    }
+}
