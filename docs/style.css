@@ -60,7 +60,7 @@ tr:hover {
 
 /* formatting for damage calculation table under topic 3.4. */
 #cs2 + div table tr:nth-child(3) {
-     background-color: #4a4c64 !important;
+     background-color: #535571 !important;
 }
 #cs2 + div table tr:hover:nth-child(3) {
      background-color: #646986 !important;

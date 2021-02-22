@@ -15,30 +15,30 @@ nav:
       - Resources: "general/resources.md"
     - Custom Scenarios:
       - Scenario Basics: "scenarios/basics.md"
-      - Triggers:
-        - Trigger Basics: "scenarios/triggers/basics.md"
-        - Trigger Settings: "scenarios/triggers/trigger_settings.md"
-        - Effects: "scenarios/triggers/effects.md"
-        - Variables: "scenarios/triggers/variables.md"
-        - Conditions: "scenarios/triggers/conditions.md"
-        - Tricks and Tips: "scenarios/tricks.md"
-      - XS Scripts: "scenarios/xs.md"
-      - Advanced:
-        - File Byte Structure: "scenarios/advanced/byte_structure.md"
+      # - Triggers:
+      #   - Trigger Basics: "scenarios/triggers/basics.md"
+      #   - Trigger Settings: "scenarios/triggers/trigger_settings.md"
+      #   - Effects: "scenarios/triggers/effects.md"
+      #   - Variables: "scenarios/triggers/variables.md"
+      #   - Conditions: "scenarios/triggers/conditions.md"
+      #   - Tricks and Tips: "scenarios/tricks.md"
+      # - XS Scripts: "scenarios/xs.md"
+      # - Advanced:
+      #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
       - Useful Tools:
-        - Advanced Genie Editor:
-          - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
-          - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
+        # - Advanced Genie Editor:
+        #   - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
+        #   - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
         - AoE2ScenarioParser:
           - About the parser: "scenarios/useful_tools/parser/about.md"
           - Python Installation: "scenarios/useful_tools/parser/installtion.md"
-    - Data Mods:
-      - Data Mod Basics: "data_mods/basics.md"
-      - Advanced Genie Editor:
-        - A.G.E. Basics: "data_mods/age/basics.md"
-    - RMS:
-      - RMS Basics: "rms/basics.md"
-  - Publishing UGC: "publishing_ugc/publish.md"
+  #   - Data Mods:
+  #     - Data Mod Basics: "data_mods/basics.md"
+  #     - Advanced Genie Editor:
+  #       - A.G.E. Basics: "data_mods/age/basics.md"
+  #   - RMS:
+  #     - RMS Basics: "rms/basics.md"
+  # - Publishing UGC: "publishing_ugc/publish.md"
 
 markdown_extensions:
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition

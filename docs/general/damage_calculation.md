@@ -16,7 +16,7 @@ Each unit in the game has two essential properties, a list of `Attack Classes` a
 
 ### 3.2. List of Damage Classes
 
-The following are all the damage classes that exist in the game:
+The following are all the damage classes along with their IDs that exist in the game: (Note that the Armour Classes have the same names and ids as the Attack classes, the reason for this will become clear once you read through the explanation provided below)
 
 |          **Class Name**           | **ID** |
 | :-------------------------------: | :----: |
@@ -90,8 +90,10 @@ For calculating the total amount of damage that this unupgraded Halberdier deals
 
 2. For each common damage class, subtract the armour of the defending unit from the attack of the attacking unit. Round up to 0 if you get a negative value.
 
-    Here, $\color{yellow} Ar_i$ is the armour of the $ith$ class for the War Elephant. For example, $\color{yellow} Ar_{19}$ refers to the `Unique Units` armour class of the War Elephant.  
-    $\color{#bfe3b4} At_i$ is the attack of the $ith$ class for the Halberdier. For example, $\color{#bfe3b4} At_{16}$ refers to the `Ships and saboteer` attack class of the Halberdier.
+    Here, $\color{yellow} Ar_i$ is the quantity of the armour class with id $i$ for the War Elephant. For example, $\color{yellow} Ar_{19}$ refers to the `Unique Units` armour class of the War Elephant.  
+    $\color{#bfe3b4} At_i$ is the quantity of the attack class with id $i$ for the Halberdier. For example, $\color{#bfe3b4} At_{16}$ refers to the `Ships and saboteer` attack class of the Halberdier.
+
+    (Note that the ids for every armour class in the game can be found in the table under the topic 3.2.)
 
     Melee Damage Class:
 
@@ -160,9 +162,11 @@ The General formula for damage calculation between any two units is thus:
 
 if $\color{#a66fb5} D$ is the set of common attack and armour classes for the two units,
 
-$\color{#bfe3b4} Ar_i$ is the defending unit's armour quantity of the $i$th armour class. For example, $\color{#bfe3b4} Ar_{19}$ refers to the `Unique Unit` armour class of the defending unit.
+$\color{#bfe3b4} Ar_i$ is quantity of the armour class with id $i$ for the defending unit. For example, $\color{#bfe3b4} Ar_{19}$ refers to the `Unique Unit` armour class of the defending unit.
 
-$\color{yellow} At_i$ is the attacking unit's attack quantity of the $i$th attack class. For example, $\color{yellow} At_1$ refers to the `Infantry` attack class of the unit.
+$\color{yellow} At_i$ is the quanitity of the attack class with id $i$ for the attacking unit. For example, $\color{yellow} At_1$ refers to the `Infantry` attack class of the unit.
+
+(Note that the ids for every armour class in the game can be found in the table under the topic 3.2.)
 
 then:
 
