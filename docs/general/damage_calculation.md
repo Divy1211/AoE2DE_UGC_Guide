@@ -1,4 +1,7 @@
 # The Armour & Attack Class System: The Backbone of Age of Empires II
+*Written by: Alian713*
+
+---
 
 ## 1. The Purpose
 

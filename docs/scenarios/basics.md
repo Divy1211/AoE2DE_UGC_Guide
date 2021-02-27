@@ -1,3 +1,7 @@
+*Written by: Alian713*
+
+---
+
 Custom Scenarios allow you to define your own, custom game modes. Literally, they are different "scenarios" the game can be played in.
 
 ## The Scenario Editor

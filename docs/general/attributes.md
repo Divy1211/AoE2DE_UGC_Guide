@@ -1,3 +1,7 @@
+*Written by: Alian713*
+
+---
+
 This page is a list of all the unit attributes that can be modified in the scenario editor and their purposes. If you know of any attributes that are not written on this page, or if the descriptions of the attributes are wrong, please let the authors of this guide know!
 
 ## 1. Hit Points

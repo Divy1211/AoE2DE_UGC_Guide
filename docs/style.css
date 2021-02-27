@@ -3,14 +3,31 @@ h1 {
      font-family: Lucida Blackletter !important;
 }
 h2 { 
-     color: #ed324e;
+     color: #ed324e !important;
 }
-h3 { 
-     color: #ec455e;
+h3, h4 { 
+     color: #ec455e !important;
 }
+
+/* header { 
+     background: url("imgs/test.png") center no-repeat fixed;
+     background-size: cover;
+     background-color: burlywood;
+     color: #000000;
+}
+nav { 
+     background: url("imgs/test.png") center no-repeat fixed;
+     background-size: cover;
+     background-color: burlywood;
+     color: #000000 !important;
+} */
 
 body { 
      font-family: 'Times New Roman', Times, serif;
+     /* background: url("imgs/test.jpg"); */
+     /* background-size: cover; */
+     /* background-color: burlywood;
+     color: #000000; */
 }
 
 tr:nth-child(even) {

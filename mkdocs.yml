@@ -22,7 +22,6 @@ nav:
       #   - Variables: "scenarios/triggers/variables.md"
       #   - Conditions: "scenarios/triggers/conditions.md"
       #   - Tricks and Tips: "scenarios/tricks.md"
-      # - XS Scripts: "scenarios/xs.md"
       # - Advanced:
       #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
       - Useful Tools:
@@ -30,8 +29,10 @@ nav:
         #   - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
         #   - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
         - AoE2ScenarioParser:
-          - About the parser: "scenarios/useful_tools/parser/about.md"
-          - Python Installation: "scenarios/useful_tools/parser/installtion.md"
+          - Parser Basics: "scenarios/useful_tools/parser/basics.md"
+    - XS Scripts: 
+      - For Beginners: "general/xs_beginner.md"
+      - For Programmers: "general/xs_programmer.md"
   #   - Data Mods:
   #     - Data Mod Basics: "data_mods/basics.md"
   #     - Advanced Genie Editor:
@@ -48,7 +49,12 @@ markdown_extensions:
   - pymdownx.keys # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#keys
   - pymdownx.tabbed # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/#tabbed
   - pymdownx.details # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#details
-  - pymdownx.highlight # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  - pymdownx.highlight: # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+      linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
   - pymdownx.superfences # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#superfences
   - pymdownx.smartsymbols # supporting special characters like copyright symbol (c)
   - pymdownx.arithmatex: # https://squidfunk.github.io/mkdocs-material/reference/mathjax/#arithmatex
@@ -81,7 +87,7 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-    # - navigation.expand
+    - navigation.expand
     # - navigation.sections
   palette:
     scheme: slate

@@ -1,6 +1,8 @@
-*Disclaimer: this part of the guide has been written by KSneijders (MrKirby), the creator of the parser.*
+*Written by: KSneijders (MrKirby)*
 
 ---
+
+## What is the Parser used for?
 
 When working with scenarios you might have had to do some repetitive tasks many times. Some common examples are: placing units in a grid, copying triggers for all players or creating many similar effects. These sorts of problems can easily be done using a programming language!
 
@@ -11,3 +13,21 @@ The parser works by reading a scenario file, and converting it to objects in the
 Check out the [official AoE2ScenarioParser documentation] for the most up-to-date installation guide and how to get started!
 
 [official AoE2ScenarioParser documentation]: https://aoe2scenarioparser.readthedocs.io/en/master/getting_started.html
+
+## Python Installation
+
+For the most up-to-date installation guide, you should check out the official `AoE2ScenarioParser` docs. 
+
+Which can be found [here].
+
+[here]: https://aoe2scenarioparser.readthedocs.io/en/master/install.html
+
+---
+
+You can install the project using pip:
+
+    pip install AoE2ScenarioParser
+
+If you don't know what pip is, you can read about it in [their documentation]
+
+[their documentation]: https://pip.pypa.io/en/stable/
