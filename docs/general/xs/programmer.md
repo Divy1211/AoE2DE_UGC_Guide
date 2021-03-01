@@ -313,6 +313,8 @@ rule chatTheValueOfA
 }
 ```
 
-There are a lot of built in XS functions that can interact with rules. Check the `Rules` topic under the `XS Scripting: Function Reference` Section of this guide.
+There are a lot of built in XS functions that can interact with rules. Check the `Rule Manipulation` topic under the `XS Scripting: Function Reference` Section of this guide.
+
+The variable `cActivationTime`, when used inside the block of a rule, gives the time of activation of the rule in seconds.
 
 With that, you now know everything that is currently known to work with XS Scripts. Good luck and have fun creating awesome maps!
