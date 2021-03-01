@@ -66,7 +66,7 @@ float xsVectorLength(Vector v)
 float xsVectorNormalize(Vector v)
 ```
 
-## Array
+## Array Manipulation
 
 ```java
 // Create an array of the given size of the corresponding data type.
