@@ -30,9 +30,11 @@ nav:
         #   - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
         - AoE2ScenarioParser:
           - Parser Basics: "scenarios/useful_tools/parser/basics.md"
-    - XS Scripts: 
-      - For Beginners: "general/xs_beginner.md"
-      - For Programmers: "general/xs_programmer.md"
+    - XS Scripting: 
+      - For Beginners: "general/xs/beginner.md"
+      - For Programmers: "general/xs/programmer.md"
+      - Functions Reference: "general/xs/functions.md"
+      - Constants Reference: "general/xs/constants.md"
   #   - Data Mods:
   #     - Data Mod Basics: "data_mods/basics.md"
   #     - Advanced Genie Editor:
