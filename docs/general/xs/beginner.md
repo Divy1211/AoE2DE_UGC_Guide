@@ -34,7 +34,7 @@ To use an XS:
 
     Note2: Additionally, the file `Constants.xs` contains a list of constants that can be used in any XS Script.
 
-3. Now open this file that you just created in your favourite text/code editor! If you don't have once already, using [Visual Studio Code (VSC)](https://code.visualstudio.com/download) is recommended.
+3. Now open this file that you just created in your favourite text/code editor! If you don't have one already, using [Visual Studio Code (VSC)](https://code.visualstudio.com/download) is recommended.
 
 4. To begin with using XS, write this basic code in the file:
 

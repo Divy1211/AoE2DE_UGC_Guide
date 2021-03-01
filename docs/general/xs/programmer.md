@@ -1,4 +1,4 @@
-# XS Scripting: A Programmer's Guide
+# XS Scripting: A Programmer's Reference
 *Written by: Alian713*
 
 ---
