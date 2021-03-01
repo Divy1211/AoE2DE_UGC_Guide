@@ -1,5 +1,7 @@
 *Written by: Alian713*
 
+---
+
 ## Rules
 
 ```java
