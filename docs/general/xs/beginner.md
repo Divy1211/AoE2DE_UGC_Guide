@@ -10,8 +10,8 @@ If you know how to program in any language then you're wasting your time on this
 If you're not a programmer, fear not! You are at the right place to learn all about XS!
 
 ## 1. What is XS?
-XS stands for External Subroutines and it is a custom programming language that was made by Ensamble Studios. An XS Script can be used in an RMS and Custom Scenarios, and it is a program that can perform calculations and execute different functions and effects.
 
+XS stands for External Subroutines and it is a custom programming language that was made by Ensamble Studios. An XS Script can be used in an RMS and Custom Scenarios, and it is a program that can perform calculations and execute different functions and effects.
 
 ## 2. Using an XS
 
@@ -564,6 +564,9 @@ Manipulating Vectors in XS is done in a bit of a special way:
         myVector = xsVectorSetY(myVector, y); // sets the y component of the vector
         myVector = xsVectorSetZ(myVector, z); // sets the z component of the vector
 
+        // alternatively, even shorter way to do this:
+        myVector = xsVectorSet(1, 2, 3);
+
         // here cInvalidVector is a pre-defined constant that XS recognises, it is the vector (-1, -1, -1)
         // Similarly, cOriginVector is a pre-defined constant that XS recognises, it is the vector (0, 0, 0)
     }
@@ -1051,6 +1054,8 @@ Code that is written like this, where:
 
 Is known as modular code! Writing code like this is considered a very very good programming practise. This way, others reading your code can easily read, and understand your code and get the idea of the big picture!
 
+However... Currently there is a bug (thxDE 11) due to which XS Scripts are not properly transfered to other players in the lobby. For now, a workaround is to manually give everyone the XS Scripts needed.
+
 ### 3.7. Scope of a Variable
 
 Every variable has a scope, i.e. an "area" of the code where it can be used. For example, you cannot use a variable before it has been initialised, that doesn't make sense!
@@ -1204,12 +1209,13 @@ Note that these Resize functions return a value of `#!java 1` every time, howeve
 
 ## 4. Rules
 
-A Rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a method. Its usage looks like:
+A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a function. Its usage looks like:
 
 ```java
 rule ruleNmae // This is the name of the rule. Follows same naming laws as variables.
 
-    active/inactive // this is the state of the rule, active means that runs by default, and inactive means that it wont run by default.
+    active/inactive // this is the initial state of the rule, active means that runs by default
+                    // and inactive means that it wont run by default.
                     // this is similar to how triggers work when you enable/disable them.
 
     minInterval <int> // the minimum time interval that must pass before the block is executed again
