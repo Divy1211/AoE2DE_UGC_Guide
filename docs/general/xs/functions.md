@@ -65,7 +65,7 @@ Vector xsVectorSet(float x, float y, float z)
 float xsVectorLength(Vector v)
 
 // Returns the normalized version of the given vector.
-float xsVectorNormalize(Vector v)
+Vector xsVectorNormalize(Vector v)
 ```
 
 ## Array Manipulation
@@ -110,15 +110,35 @@ int xsArrayGetSize(int arrayID)
 
 ## Mathematical Operations
 ```java
+// returns the absolute value (magnitude) of the number
 float abs(float x)
+
+// returns the square root of the number
 float sqrt(float x)
+
+// returns x raised to the power y
 float pow(float x, float y)
+
+// returns the sine of the angle in radians
 float sin(float x)
+
+// returns the cosine of the angle in radians
 float cos(float x)
+
+// returns the tangent of the angle in radians
 float tan(float x)
+
+// returns the inverse sine (arcsin) of the given length
 float asin(float x)
+
+// returns the inverse cosine (arccos) of the given length
 float acos(float x)
+
+// returns the inverse tangent (arctan) of the given length
 float atan(float x)
+
+// this is supposed to be the atan2(y, x) function but it only takes
+// one input? thxDE
 float atan2(float x)
 ```
 

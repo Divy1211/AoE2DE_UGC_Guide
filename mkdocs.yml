@@ -15,13 +15,12 @@ nav:
       - Resources: "general/resources.md"
     - Custom Scenarios:
       - Scenario Basics: "scenarios/basics.md"
-      # - Triggers:
-      #   - Trigger Basics: "scenarios/triggers/basics.md"
-      #   - Trigger Settings: "scenarios/triggers/trigger_settings.md"
+      - Triggers:
+        - Trigger Basics: "scenarios/triggers/basics.md"
       #   - Effects: "scenarios/triggers/effects.md"
       #   - Variables: "scenarios/triggers/variables.md"
       #   - Conditions: "scenarios/triggers/conditions.md"
-      #   - Tricks and Tips: "scenarios/tricks.md"
+      # - Tricks and Tips: "scenarios/tricks.md"
       # - Advanced:
       #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
       - Useful Tools:

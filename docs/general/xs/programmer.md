@@ -54,7 +54,7 @@ void test() {
 
 ### 2.2. In an RMS
 
-1. Open the RM Sceipt in a text editor
+1. Open the RM Script in a text editor
 2. At the very top, type `#includeXS "filename.xs"`. Here, `filename.xs` is the name of the file that you created above.
 3. You can call the functions in the XS Script anywhere in the RM Script.
 4. To test, load the RMS in a single player (or multi player) lobby and start the game.
@@ -313,7 +313,7 @@ rule chatTheValueOfA
 }
 ```
 
-There are a lot of built in XS functions that can interact with rules. Check the `Rule Manipulation` topic under the `XS Scripting: Function Reference` Section of this guide.
+There are a lot of built in XS functions that can interact with rules. Check the `Rules` topic under the `XS Scripting: Function Reference` Section of this guide.
 
 The variable `cActivationTime`, when used inside the block of a rule, gives the time of activation of the rule in seconds.
 
