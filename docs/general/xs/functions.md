@@ -142,7 +142,8 @@ float atan(float x)
 float atan2(float x)
 ```
 
-## Scenario Design
+## General Functions
+
 ```java
 // Gets the resource amount of the specified resource id of the specified player
 float xsPlayerAttribute(int playerNumber, int resourceID)
@@ -155,6 +156,15 @@ int xsTriggerVariable(int x)
 
 // Sets the value of the variable x
 void xsSetTriggerVariable(int x, int value)
+
+// Returns the number of players in the game
+int xsGetNumPlayers()
+
+// Shows a message in the game chat
+void xsChatData(String message, int value)
+
+// Returns the current gametime in seconds
+int xsGetTime()
 
 // Change the specified attribute of the specified unit or technology by the value
 // for the specified player. effectID is the id of the effect to use.
@@ -177,8 +187,8 @@ int xsGetContextPlayer()
 // It is currently unknown as to what this function does
 void xsSetContextPlayer(int playerID)
 
-// Returns the current gametime in seconds
-int xsGetTime()
+// Crashes the game... thxDE
+??? xsBreakPoint()
 
 // Setups a runtime event.  Don't use this.
 // It is currently unknown as to what this function does

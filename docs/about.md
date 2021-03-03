@@ -14,15 +14,17 @@ Its fun! You can make your wildest ideas come to life by making custom content. 
 
 ## Topics this guide covers
 
-This guide will cover Making Custom Scenarios, Data Modding and RM Scripting.
+This guide will cover Making Custom Scenarios, Data Modding and RM Scripting. Note that this is still a work in progress, so not all of the topics are available yet!
 
 ## Is this guide relevant for older versions of the game?
 
-Yes, most of the topics covered in this file will apply to all older versions of the game. Features specific to a certain version of the game will be marked.
+Yes, most of the topics covered in this file will apply to all older versions of the game.
 
-## Authors
+## About the Authors
 
 This guide has been written by
 
-1. Alian713
-2. KSneijders (MrKirby)
+| **Author**           | **Discord**   | **GitHub**                                               | **YouTube** | **Twitch** |
+| :-:                  | :-:           | :-:                                                      | :-:         | :-:        |   
+| Alian713             | Alian713#0069 | [here](https://github.com/Divy1211 "Alian's GitHub")     | -           | [here](https://www.twitch.tv/Alian713 "Alian's Twitch") |
+| KSneijders (MrKirby) | MrKirby#5063  | [here](https://github.com/KSneijders "MrKirby's GitHub") | -           | [here](https://www.twitch.tv/MrKirbyOfficial "MrKirby's Twitch") |

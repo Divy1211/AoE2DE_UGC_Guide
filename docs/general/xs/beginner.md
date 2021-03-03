@@ -46,8 +46,8 @@ To use an XS:
 and asterisk pair is a
 multi line comment */
 
-// Here, you are creating a function that is called 'test'.
-void test() {
+// Here, you are creating a function that is called 'main'.
+void main() {
     // this line says that you have an integer called 'a' that has a value of 10.
     // note that almost every statement in XS is ended with a semi colon,
     // just like in english we use periods to indicate the end of a sentence.
@@ -68,19 +68,19 @@ void test() {
 2. Under the `Map` tab, type the name of the XS Script that you created in the `Script Filename` field without the `.xs` at the end. For example, if your file is called `filename.xs` then you will write `filename` in this field.
 3. Now, under the `Triggers` tab in the editor, add a new trigger, then add a new effect. (If you do not know what a trigger/effect is, please go through the `Custom Scenarios: Triggers: Trigger Basics` section of this guide)
 4. From the `Effects List` select `Script Call`.
-5. You can now use the functions in the XS Script in the message box. For example, if your XS file has a function that is called `test` then to use it, you write `test();`
+5. You can now use the functions in the XS Script in the message box. For example, if your XS file has a function that is called `main()` then to use it, you write `main();`
 6. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
-7. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `test` function in the XS Script and `30` will be shown in the chat.
+7. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `main()` function in the XS Script and `30` will be shown in the chat.
 
 ### 2.2. In an RMS
 
 1. Open the RMS file in a text editor
 2. At the very top, type `#includeXS "filename.xs"`. Here, `filename.xs` is the name of the file that you created above.
-3. You can now use the functions in the XS file anywhere in the RMS. For example, if your XS file has a function that is called `test` then to use it, you write `test();`
-4. To test, load the RMS in a single player (or multi player) lobby and start the game. When the map is generated, the `test` function in the XS Script will run and `30` will be shown in the chat.
+3. The `main();` function that we made above is automatically run when a map is generated using the RMS.
+4. To test, load the RMS in a single player (or multi player) lobby and start the game. When the map is generated, the `main()` function in the XS Script will run and `30` will be shown in the chat.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
 
-Now that you have set up an XS file with a `test` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one, and things will become clearer.
+Now that you have set up an XS file with a `main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one, and things will become clearer.
 
 ## 3. Programming Concepts:
 
@@ -92,7 +92,7 @@ To do anything in an XS Script, we need constants. Any value that remains the sa
 Variables are like boxes that are used to store constants. Variables are values that can change during the execution of the script! Think about it this way, if a variable is a box that stores a constant, that constant can be taken out and another one can be put in.  Quite literally, it is a variable (it may change!). For example, the script that we saw earlier uses 3 variables, called `a` `b` and `c`.
 
 ```java
-void test() {
+void main() {
     int a = 10;
     int b = 20;
     int c = a+b;
@@ -148,7 +148,7 @@ Some questions that you might have now are:
 5. How do I actually change a variable?
 
     ```java
-    void test() {
+    void main() {
         int my_var = 20;
 
         // you only need to specify the data type of a variable once
@@ -185,7 +185,7 @@ Some questions that you might have now are:
     There is an exception to this rule:
 
     ```java
-    void test() {
+    void main() {
         int a = 10;
         float b = 20.5;
 
@@ -269,30 +269,15 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
     
     This gives you the exact result of division.
     
-    What if you mix a `#!java float` and an `#!java int`?
-
-    Firstly, anything that does not have a floating point (`.`) is automatically identified as an integer in XS.
-
-    This means, if you do `#!java 5.0/2` then `5.0` is identified as a `#!java float` and `2` and `#!java 2` is identified as an `#!java int`
-    
-    The way that XS identifies which behaviour to use is by the data type of the number before the frontslash in the division.
-    For example:
-    
-    `#!java 5.0/2 = 2.5`
-    
-    Here, the number before the `#!java /` is a `#!java float` and thus regular division is used
-
-    `#!java 5/2.0 = 2`.
-
-    Here, the number before the `#!java /` is an `#!java int` and thus, integer division is used.
-
-    The result of integer division is an `#!java int`, while the result of regular division is `#!java float`
+    What if you mix a `#!java float` and an `#!java int`? In that case, regular division is used.
 
 5. Modulo: `a%b` this gives you the remainder when dividing `a` by `b`.
 
+Note: due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!java 9*5.5` evaluates to `#!java 49` instead of `#!java 49.5`. However, `#!java 5.5*9` will correctly evaluate to `#!java 49.5`.
+
 For Example:
 ```java
-void test() {
+void main() {
     int a = 69;
     int b = 420;
     
@@ -320,6 +305,12 @@ void test() {
     // this will chat 5 in game (17%6 = 5)
     xsChatData("result of 17%6 = "+(17%6));
 
+    // this should chat 0.5 in game (2.5%1 = 0.5)
+    xsChatData("result of 17%6 = "+(2.5%1));
+    // Due to a bug at the moment, this will actually show 0.0
+    // Modulo on fractions does not work properly at this time.
+
+
     // Note that chat data does not send the same thing multiple consecutively
     // which means if two calculations have the same result, only the first
     // one is shown
@@ -343,7 +334,7 @@ Remember that when we use the `=` sign in programming, it is not a mathematical 
 If you want to increase or decrease the value of a variable by one, then writing `a = a + 1;` or `a = a - 1;` is one way to do it. Writing `a++;` or `a--;` is another way to do it.
 
 ```java
-void test() {
+void main() {
     int a = 10;
     
     // increase the value of a to 11
@@ -380,7 +371,7 @@ Note: These relational operators also work on `String` values, for example `a < 
 For Example:
 
 ```java
-void test() {
+void main() {
 
     // With numbers:
     int a = 10;
@@ -494,7 +485,7 @@ Note that if no brackets are used when writing these expressions the expression 
 
 For example:
 ```java
-void test() {
+void main() {
     int a = 10;
     int b = 20;
     int c = 30;
@@ -523,7 +514,7 @@ When two strings are joined to form a new string, it is known as concatenation. 
 
 For Example:
 ```java 
-void test() {
+void main() {
     String a = "this is ";
     String b = "string concatenation!";
     int c = 11;
@@ -551,7 +542,7 @@ Manipulating Vectors in XS is done in a bit of a special way:
     For example:
 
     ```java
-    void test() {
+    void main() {
         float x = 1.0;
         float y = 2.0;
         float z = 3.0;
@@ -577,7 +568,7 @@ Manipulating Vectors in XS is done in a bit of a special way:
     The X, Y and Z components of a vector can be accessed as follows:
 
     ```java
-    void test() {
+    void main() {
         Vector myVector = Vector(1, 2, 3);
 
         float x = xsVectorGetX(myVector); // gives you the X component of the vector
@@ -591,7 +582,7 @@ Manipulating Vectors in XS is done in a bit of a special way:
     The X, Y and Z components of a vector can be set as follows:
 
     ```java
-    void test() {
+    void main() {
         Vector myVector = Vector(1, 2, 3);
         myVector = xsVectorSetX(myVector, 10); // sets the X component of the vector
         myVector = xsVectorSetY(myVector, 20); // sets the y component of the vector
@@ -606,7 +597,7 @@ Manipulating Vectors in XS is done in a bit of a special way:
     If you know that you want to change all 3 components of a vector, it can be done in one go instead of in 3 separate lines like above:
 
     ```java
-    void test() {
+    void main() {
         Vector myVector = Vector(1, 2, 3);
         myVector = xsVectorSet(10, 20, 30);
     }
@@ -618,7 +609,7 @@ Manipulating Vectors in XS is done in a bit of a special way:
     Note: The length of a vector is given by $\sqrt{x^2+y^2+z^2}$
 
     ```java
-    void test() {
+    void main() {
         Vector myVector = Vector(1, 2, 3);
         float length = xsVectorLength(myVector);
     }
@@ -630,7 +621,7 @@ Manipulating Vectors in XS is done in a bit of a special way:
     Note: This new vector is given by $\left(\cfrac{x}{\sqrt{x^2+y^2+z^2}}, \cfrac{y}{\sqrt{x^2+y^2+z^2}}, \cfrac{z}{\sqrt{x^2+y^2+z^2}}\right)$
 
     ```java
-    void test() {
+    void main() {
         Vector myVector = Vector(1, 2, 3);
         Vector unitVectorAlongMyVector = xsVectorNormalize(myVector);
     }
@@ -654,7 +645,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
 
     Usage:
     ```java
-    void test() {
+    void main() {
         int a = 10;
         int b = 20;
         // if(boolean expression / variable / constant)
@@ -676,7 +667,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     If there is only one instruction that needs to be run inside an `#!java if` or `#!java else` then the curly braces `{}` can be omitted:
 
     ```java
-    void test() {
+    void main() {
         int a = 10;
         int b = 20;
         if(b > a)
@@ -689,7 +680,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     An `#!java if` statement does not need to be followed by an `#!java else` statement everytime
 
     ```java
-    void test() {
+    void main() {
         int a = 10;
         int b = 20;
         if(b > a)
@@ -700,7 +691,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     What if you need to check multiple conditions and do separate things for each case? this is when you use an `#!java if else if` statement!
 
     ```java
-    void test() {
+    void main() {
         int a = 10;
         int b = 20;
         if(b > a)
@@ -730,7 +721,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
         
         When you're ready, click the "Answer" to view the solution.
         ```java
-        void test() {
+        void main() {
             int a = 10;
             int b = 20;
             int c = 30;
@@ -749,7 +740,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     For example:
 
     ```java
-    void test() {
+    void main() {
         int a = 10;
         switch(a) {
             case 10: {
@@ -770,7 +761,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
 
     This is the same as doing:
     ```java
-    void test() {
+    void main() {
         int a = 10;
         if (a == 10) {
             xsChatData("if(a == 10)");
@@ -790,7 +781,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     Similar to `#!java if else`, if there is only one instruction to execute, the curly braces `{}` can be omitted:
     
     ```java
-    void test() {
+    void main() {
         int a = 10;
         switch(a) {
             case 10:
@@ -823,7 +814,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
     A `#java while` statement repeatedly executes a block of code as long as (while) something is `true`. This process of repeatedly executing the same block of code is known as iteration!
     For example:
     ```java
-    void test() {
+    void main() {
         int a = 0;
         while(a < 10) {
             xsChatData("a = "+a);
@@ -875,7 +866,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
         Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
 
         ```java
-        void test() {
+        void main() {
             int number = 1;
             int increase = 1;
             while(increase <= 15) {
@@ -892,7 +883,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
     
     For example:
     ```java
-    void test() {
+    void main() {
         for(a = 5; < 23) {
             xsChatData("a = "+a);
             // the for loop takes care of increasing the value
@@ -973,15 +964,15 @@ int max(int a = 0, int b = 0) {
     // a > b then the 2nd return statement will never run in the first place
 }
 
-void test() {
+void main() {
     // this is how the function is then used:
     xsChatData("max "+max(10, 20));
     // the values for the variables in the function are 
 }
-// wait, isn't this 'test' also a function that we've been using so far?
+// wait, isn't this 'main' also a function that we've been using so far?
 // yes it is! The 'void' signifies that it doesn't return any value
 
-// since there is nothing writting inside the brackets after 'test',
+// since there is nothing writting inside the brackets after 'main',
 // it does not take in any parameters either
 ```
 
@@ -1010,7 +1001,7 @@ If I have two files, `test.xs` and `VectorOperations.xs` in the same folder, the
     // If you do not know what absolute/relative paths are,
     // a quick google search will tell you more about them.
 
-    void test() {
+    void main() {
         Vector a = Vector(1, 2, 3);
         Vector b = Vector(3, 2, 1);
         xsChatData("dot: "+dotProduct(a, b));
@@ -1061,7 +1052,7 @@ However... Currently there is a bug (thxDE 11) due to which XS Scripts are not p
 Every variable has a scope, i.e. an "area" of the code where it can be used. For example, you cannot use a variable before it has been initialised, that doesn't make sense!
 
 ```java
-void test() {
+void main() {
     a++; // wait, a doesn't exist yet! you cannot do this.
     int a = 10;
 }
@@ -1071,14 +1062,14 @@ void test() {
 Similarly, Variables initialised inside one function can only be used in that particular function, and do not exist outside of them. These kinds of variables are known as local variables. For example:
 
 ```java
-void test() {
+void main() {
     int a = 10;
 }
-void test2() {
-    a++; // wait, a doesn't exist inside test2! you cannot do this.
-    // you can actually declare another variable named a inside of test2:
+void anotherFunction() {
+    a++; // wait, a doesn't exist inside another! you cannot do this.
+    // you can actually declare another variable named a inside of another:
     int a = 44;
-    // this a is completely different and independent from the a in test();
+    // this a is completely different and independent from the a in main();
 }
 ```
 
@@ -1086,10 +1077,10 @@ What if you want a variable that is shared between functions? A variable like th
 
 ```java
 int a = 10;
-void test() {
+void main() {
     a++;
 }
-void test2() {
+void anotherFunction() {
     a++;
 }
 ```
@@ -1206,6 +1197,53 @@ Note that these Resize functions return a value of `#!java 1` every time, howeve
 
 `#!java int xsArrayGetSize(int arrayID)` is also a useful array function that returns the size of the specified array.
 
+### 3.9. Type Casting
+
+Type casting is when a value of one data type is "transformed" into a value of another, similar data type. This is like taking an object stored in one type of container and putting it into another.
+
+For example, When you try to store an `#!java int` in a `#!java float`, it would work without any issues. It is similar to storing water in a bottle and then putting the water from that bottle into a flask. When you try to store a `#!java float` in an `#!java int` however, the fractional part of the `#!java float` is lost! This is like trying to put water from a water bottle into a paper bag. Some of the water will leak out!
+
+There are two kinds of type casting:
+
+1. Implicit Type Casting
+
+    Implicit type casting is done automatically by the script (hence implicit) when you assign one type of value to another, similar data type. For example:
+    ```java
+    void main() {
+        int a = 5;
+        float b = 3.9;
+        bool c = true;
+
+        // implicit type casting:
+        int d = c; // remember, true is 1 and false is 0
+        float e = c;
+        String f = ""+c; // just String f = c; will not work
+
+        // when type casting a float to an int, the fractional part of the number is lost!
+        // note that it is not rounded off, 3.9 would become 3 after type casting
+        int = b;
+        // anything other than a 0 gives true for a bool
+        bool = b;
+        String = ""+b;
+
+        float g = a;
+        // anything other than a 0 gives true for bool
+        bool h = a;
+        String i = ""+a; 
+    }
+    ```
+
+2. Explicit Type Casting
+
+    Explicit type casting is done manually by the programmer (hence explicit). For example:
+    ```java
+    void main() {
+        float a = 5.5;
+
+        float b = (int)a; // assigns 5.0 to b
+        float c = (int)22.5; // assigns 22.0 to c
+    }
+    ```
 
 ## 4. Rules
 

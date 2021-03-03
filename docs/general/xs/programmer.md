@@ -30,7 +30,7 @@ To use an XS:
 is a multiline
 comment
 */
-void test() {
+void main() {
     int a = 10;
     int b = 20;
 
@@ -48,7 +48,7 @@ void test() {
 2. Under the `Map` tab, type the name of the XS Script that you created in the `Script Filename` field without the `.xs` at the end. For example, if your file is called `filename.xs` then you will write `filename` in this field.
 3. Now, under the `Triggers` tab in the editor, add a new trigger, then add a new effect. (If you do not know what a trigger/effect is, please go through the `Custom Scenarios: Triggers: Trigger Basics` section of this guide)
 4. From the `Effects List` select `Script Call`.
-5. You can now call the `test();` function from the XS Script in the message box.
+5. You can now call the `main();` function from the XS Script in the message box.
 6. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
 7. Testing the scenario will execute any active script calls which will in turn call your function.
 
@@ -56,11 +56,11 @@ void test() {
 
 1. Open the RM Script in a text editor
 2. At the very top, type `#includeXS "filename.xs"`. Here, `filename.xs` is the name of the file that you created above.
-3. You can call the functions in the XS Script anywhere in the RM Script.
+3. The `main();` function is automatically called when a map is generated using the RMS.
 4. To test, load the RMS in a single player (or multi player) lobby and start the game.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
 
-Now that you have set up an XS file with a `test` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one:
+Now that you have set up an XS file with a `main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one:
 
 ## 3. Variables Data Types
 There are a total of 5 data types supported by XS, they are:
@@ -97,7 +97,7 @@ Refer to the `Mathematical Operatiosn` topic under the `XS Scripting: Function R
 Note:
 
 ```java
-void test() {
+void main() {
     int a = 10;
 
     // this does not work:
@@ -144,6 +144,8 @@ Note: These relational operators also work on strings, for example `a < b` tells
 
 Negation is not supported by XS.
 
+Note: due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!java 9*5.5` evaluates to `#!java 49` instead of `#!java 49.5`. However, `#!java 5.5*9` will correctly evaluate to `#!java 49.5`.
+
 ## 5. Flow Control Statements
 The following flow control statements are supported by XS:
 
@@ -152,7 +154,7 @@ The following flow control statements are supported by XS:
     Example Syntax:
 
     ```java
-    void test() {
+    void main() {
         int a = 10;
         float b = 20;
         int c = 30;
@@ -171,7 +173,7 @@ The following flow control statements are supported by XS:
     Example Syntax:
     
     ```java
-    void test() {
+    void main() {
         int a = 10;
         switch(a) {
             case 1 : {
@@ -195,7 +197,7 @@ The following flow control statements are supported by XS:
     Example Syntax:
     
     ```java
-    void test() {
+    void main() {
         int a = 0;
         while(a < 10) {
             xsChatData("a = "+a);
@@ -209,7 +211,7 @@ The following flow control statements are supported by XS:
     Syntax:
     
     ```java
-    void test() {
+    void main() {
         // this loops a from 0 to 10
         for(a = 0; < 10)
             xsChatData("a = "+a);
@@ -247,7 +249,7 @@ int max(int a = 0, int b = 0) {
     // the return value must always be inside parantheses.
 }
 
-void test() {
+void main() {
     xsChatData("max "+max(10, 20));
 }
 
@@ -261,13 +263,17 @@ include "absolute/or/relative/path/to/file.xs";
 
 However... Currently there is a bug (thxDE 11) due to which XS Scripts are not properly transfered to other players in the lobby. For now, a workaround is to manually give everyone the XS Scripts needed.
 
-### 3.8. Arrays
+## 7. Arrays
 
 Refer to the `Array Manipulation` topic under the `XS Scripting: Function Reference` section of this guide on how to use arrays.
 
 Standard syntax like `#!java int a[] = new int[10];` or `#!java a[2];` is not supported by XS.
 
-## 4. Rules
+## 8. Type Casting
+
+`#java int`, `#java float` and `bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!java String a = "this would work "+5.6;`. However, `#!java String a = 5.5;` will not work, instead use: `#!java String a = ""+5.5;`. Explicit type casting is done using: `#!java (<data type>)<variable or constant>`. Note that due to a current bug, explicit type casting does not work on variables.
+
+## 9. Rules
 
 A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a method. Its usage looks like:
 

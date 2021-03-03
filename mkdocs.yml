@@ -8,38 +8,38 @@ repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 # add pages:
 nav:
   - About: "about.md"
-  - Documentation:
-    - Game Mechanics:
-      - Damage Calculation: "general/damage_calculation.md"
-      - Attributes: "general/attributes.md"
-      - Resources: "general/resources.md"
-    - Custom Scenarios:
-      - Scenario Basics: "scenarios/basics.md"
-      # - Triggers:
-      #   - Trigger Basics: "scenarios/triggers/basics.md"
-      #   - Effects: "scenarios/triggers/effects.md"
-      #   - Variables: "scenarios/triggers/variables.md"
-      #   - Conditions: "scenarios/triggers/conditions.md"
-      # - Tricks and Tips: "scenarios/tricks.md"
-      # - Advanced:
-      #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
-      - Useful Tools:
-        # - Advanced Genie Editor:
-        #   - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
-        #   - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
-        - AoE2ScenarioParser:
-          - Parser Basics: "scenarios/useful_tools/parser/basics.md"
-    - XS Scripting: 
-      - For Beginners: "general/xs/beginner.md"
-      - For Programmers: "general/xs/programmer.md"
-      - Functions Reference: "general/xs/functions.md"
-  #   - Data Mods:
-  #     - Data Mod Basics: "data_mods/basics.md"
-  #     - Advanced Genie Editor:
-  #       - A.G.E. Basics: "data_mods/age/basics.md"
-  #   - RMS:
-  #     - RMS Basics: "rms/basics.md"
-  # - Publishing UGC: "publishing_ugc/publish.md"
+  - Game Mechanics:
+    - Damage Calculation: "general/damage_calculation.md"
+    - Attributes: "general/attributes.md"
+    - Resources: "general/resources.md"
+  - Custom Scenarios:
+    - Scenario Basics: "scenarios/basics.md"
+    # - Triggers:
+    #   - Trigger Basics: "scenarios/triggers/basics.md"
+    #   - Effects: "scenarios/triggers/effects.md"
+    #   - Variables: "scenarios/triggers/variables.md"
+    #   - Conditions: "scenarios/triggers/conditions.md"
+    # - Tricks and Tips: "scenarios/tricks.md"
+    # - Advanced:
+    #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
+    - Useful Tools:
+      # - Advanced Genie Editor:
+      #   - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
+      #   - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
+      - AoE2ScenarioParser:
+        - Parser Basics: "scenarios/useful_tools/parser/basics.md"
+  - XS Scripting: 
+    - For Beginners: "general/xs/beginner.md"
+    - For Programmers: "general/xs/programmer.md"
+    - Functions Reference: "general/xs/functions.md"
+    - Known Bugs: "general/xs/bugs.md"
+#   - Data Mods:
+#     - Data Mod Basics: "data_mods/basics.md"
+#     - Advanced Genie Editor:
+#       - A.G.E. Basics: "data_mods/age/basics.md"
+#   - RMS:
+#     - RMS Basics: "rms/basics.md"
+# - Publishing UGC: "publishing_ugc/publish.md"
 
 markdown_extensions:
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
