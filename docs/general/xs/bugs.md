@@ -9,7 +9,9 @@ Any new bugs discovered will be added to the list. This list will also be update
 If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the `About` page for relevant information about the authors.
 
 Game Version: `101.101.45340.0 6228353`
+
 Game Platform: Steam
+
 OS: Windows 10
 
 ## 1. XS Files do not Transfer in a Lobby
@@ -17,10 +19,10 @@ When playing in a multiplayer lobby, the required XS scripts are not transfered 
 
 Expected behaviour would be where the main XS script and all XS scripts imported in the main script using `include "fileName.xs";` are transfered to everyone.
 
-## XS Files in Mods are Not Detected
+## 2. XS Files in Mods are Not Detected
 XS scripts provided in a mod are not detected by the game. The path used in the mod for the script is: `<ModFolder>\resources\_common\xs\fileName.xs`
 
-## 2. Cannot Use Variables or Expressions in Vector Initialisation
+## 3. Cannot Use Variables or Expressions in Vector Initialisation
 
 When initialising a vector, expressions or variables cannot be used in the initialisation. For example:
 ```java
@@ -42,7 +44,7 @@ void main() {
 
 If you try this, you will get an error in the game.
 
-## 3. Missing Data Types Which are Officially Documented
+## 4. Missing Data Types Which are Officially Documented
 
 The `#!java long`, `#!java char` and `#!java double` data types do not exist, even though the official XS documentation references them. For example:
 
@@ -57,7 +59,7 @@ void main() {
 
 If you try this, you will get an error in the game.
 
-## 4. Unary Negative does not Work
+## 5. Unary Negative does not Work
 
 The unary negative operation does not work. For example:
 
@@ -78,7 +80,7 @@ void main() {
 }
 ```
 
-## 5. Explicit Type Casting does not Work on Variables or at Initialisation
+## 6. Explicit Type Casting does not Work on Variables or at Initialisation
 
 Explicit type casting does not work on variables, although it does work on constants. For example:
 
@@ -102,7 +104,7 @@ void main() {
 
 Note that this actually does not give you any errors, just that the type cast in lines `3` and `11` have no effect.
 
-## 6. Modulo Operator does not Work Properly with Floating Point Values
+## 7. Modulo Operator does not Work Properly with Floating Point Values
 
 Using the Modulo Operator on floats does not return the fractional part of the answer. For example:
 
@@ -115,7 +117,7 @@ void main() {
 ```
 
 
-## 7. Return Statements do not Work as Officially Documented
+## 8. Return Statements do not Work as Officially Documented
 Return statements do not work as they are officially documented. For example:
 
 ```java
@@ -131,7 +133,7 @@ void main() {
 
 If you try this, you will get an error in the game.
 
-## 8. Outputs of Operations are of the Wrong Data Type
+## 9. Outputs of Operations are of the Wrong Data Type
 
 The output type of an operation is determined by the first operand `a*b`. For example: `#!java 9*5.5` evaluates to `#!java 49` and not `#!java 49.5`. However, the expression `#!java 5.5*9` gives the correct result.
 
@@ -140,14 +142,14 @@ void main() {
     int a = 7;
     float b = 1.1;
     
-    // expceted `7/1.1 = 6.363636` but actually
+    // expected `7/1.1 = 6.363636` but actually
     // prints `7/1.1 = 6`
     xsChatData("7/1.1 = "+a/b);
 }
 
 ```
 
-## 9. Function Parameters and Returns do not Implicitly Type Cast
+## 10. Function Parameters and Returns do not Implicitly Type Cast
 
 Passing an `#!java int` to a function parameter that is supposed to be a `#!java float` gets used as an `#!java int` and is not type casted
 
@@ -173,13 +175,14 @@ void main() {
 }
 ```
 
-## 10. Quirky Behaviour With Return Statement
+## 11. Quirky Behaviour With Return Statement
 
 This behaviour is not understood well:
 
 ```java
 float test(float a = -1) {
-    return thisDoesNotMatterWhatIsGoingOn(a)/55 + 2*2; // thisDoesNot... is not a function
+     // thisDoesNot... is not a function
+    return thisDoesNotMatterWhatIsGoingOn(a)/55 + 2*2;
     // seems like this is completely ignoring the first term in the expression.
 }
 
@@ -190,13 +193,16 @@ void main() {
 }
 ```
 
-## 11. xsChatData Has a Few Weird Quirks
+## 12. xsChatData Has a Few Weird Quirks
 
 1. Cannot escape `%` symbols in the message, since they are considered special characters because of the `%d` and `%f` usage.
 
     ```java
     void main() {
+        // prints `this  will not appear in game`
         xsChatData("this % will not appear in game");
+        
+        // prints `neither will this \ appear in game`
         xsChatData("neither will this \% appear in game");
     }
     ```
@@ -208,7 +214,8 @@ void main() {
         // prints `this is an int: 5` as expected
         xsChatData("this is an int: %d", 5);
 
-        // prints `this is a float: 0.000000` while `this is a float: 5.600000` was expected
+        // expected `this is a float: 5.600000` but
+        // prints `this is a float: 0.000000`
         xsChatData("this is a float: %f", 5.6);
     }
     ```
