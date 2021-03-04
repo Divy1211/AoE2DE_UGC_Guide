@@ -1,3 +1,4 @@
+# Known Bugs in XS Scripting
 *Written by: Alian713*
 
 ---
@@ -89,7 +90,8 @@ void main() {
     float a = 5.5;
     float b = (int)a; // will outwright assign 0 to b
     
-    // expected `b = 5.000000` but prints `b = 0.000000`
+    // expected `b = 5.000000` but
+    // prints `b = 0.000000`
     xsChatData("b = "+b);
     
     b = 6.7;
@@ -97,12 +99,13 @@ void main() {
 
     b = (int)5.7; // this expression will do nothing
 
-    // expected `b = 5.000000` but prints `b = 6.7`
+    // expected `b = 5.000000` but
+    // prints `b = 6.700000`
     xsChatData("b (three) = "+b);
 }
 ```
 
-Note that this actually does not give you any errors, just that the type cast in lines `3` and `11` have no effect.
+Note that this actually does not give you any errors, just that the type casts in lines `3` and `11` have no effect.
 
 ## 7. Modulo Operator does not Work Properly with Floating Point Values
 
@@ -175,7 +178,22 @@ void main() {
 }
 ```
 
-## 11. Quirky Behaviour With Return Statement
+## 11. Cannot Declare Variables as `const` in Function Parameters
+
+It is not possible to declare a function parameter as a `#!java const` even though it is used in the `#!java xsChatData` function in the official documentation.
+
+```java
+float test(const float a = -1) {
+    return a*5;
+}
+void main() {
+    xsChatData("test = "+test(5));
+}
+```
+
+If you try this, you will get an error in the game.
+
+## 12. Quirky Behaviour With Return Statement
 
 This behaviour is not understood well:
 
@@ -193,7 +211,7 @@ void main() {
 }
 ```
 
-## 12. xsChatData Has a Few Weird Quirks
+## 13. xsChatData Has a Few Weird Quirks
 
 1. Cannot escape `%` symbols in the message, since they are considered special characters because of the `%d` and `%f` usage.
 

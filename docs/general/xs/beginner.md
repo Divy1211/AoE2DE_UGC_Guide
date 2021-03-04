@@ -879,7 +879,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
 
 2. The `#!java for` loop:
 
-    A `#java for` statement is specifically used to loop over a range of values, say `5 to 23`
+    A `#!java for` statement is specifically used to loop over a range of values, say `#!java 5` to `#!java 23`
     
     For example:
     ```java
@@ -889,7 +889,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
             // the for loop takes care of increasing the value
             // of a by one every time
 
-            //you cannot modify 'a' inside the for loop
+            // you cannot modify 'a' inside the for loop
         }
 
         // what if i wanted to go down from 10 to 0?
