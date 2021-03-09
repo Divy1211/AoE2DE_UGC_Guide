@@ -30,11 +30,14 @@ To use an XS:
     
     There should be 2 files in this folder already, called `Constants.xs` and `xs.txt`. In here, create a new file with any name ending with `.xs`. For example, the file can be called `filename.xs`
 
-    Note1: There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
+    Note 1: There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
 
-    Note2: Additionally, the file `Constants.xs` contains a list of constants that can be used in any XS Script.
+    Note 2: Additionally, the file `Constants.xs` contains a list of constants that can be used in any XS Script.
+    
 
 3. Now open this file that you just created in your favourite text/code editor! If you don't have one already, using [Visual Studio Code (VSC)](https://code.visualstudio.com/download) is recommended.
+
+    A VSC Extension for syntax highlighting and code auto completion for AoE XS Scripting can be found [here](https://marketplace.visualstudio.com/items?itemName=Divy.vscode-xs)
 
 4. To begin with using XS, write this basic code in the file:
 
@@ -1250,23 +1253,20 @@ There are two kinds of type casting:
 A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a function. Its usage looks like:
 
 ```java
-rule ruleNmae // This is the name of the rule. Follows same naming laws as variables.
+rule ruleName // This is the name of the rule. Follows same naming laws as variables.
 
     active/inactive // this is the initial state of the rule, active means that runs by default
                     // and inactive means that it wont run by default.
                     // this is similar to how triggers work when you enable/disable them.
-
-    minInterval <int> // the minimum time interval that must pass before the block is executed again
-
-    maxInterval <int> // the maximum time interval that may pass before the block has to be executed again
     
     group groupName // the group that this rule belongs to. Follows same naming laws as variables.
-    
-    runImmediately  // It is currently unknown as to what this option does
-    
+
+    minInterval <int> // the minimum time interval that must pass before the block is executed again
+    maxInterval <int> // the maximum time interval that may pass before the block has to be executed again
     highFrequency   // Loop the rule 60 times every physical second (this is independant of inagme speed)
                     // Only one of "highFrequency" or "minInterval" and "maxInterval" are used. Both cannot be used together
     
+    runImmediately  // It is currently unknown as to what this option does
     priority <int>    // rules are executed in order of their descending priority
 {
     // code to execute

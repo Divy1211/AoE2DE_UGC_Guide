@@ -7,7 +7,7 @@ repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 
 # add pages:
 nav:
-  - About: "about.md"
+  - About: "index.md"
   - Game Mechanics:
     - Damage Calculation: "general/damage_calculation.md"
     - Attributes: "general/attributes.md"
@@ -94,4 +94,5 @@ theme:
     primary: red
     accent: red
   font:
+    text: Roboto Slab
     code: Source Code Pro

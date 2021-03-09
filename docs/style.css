@@ -1,6 +1,6 @@
 h1 { 
      color: #f54242 !important;
-     font-family: Lucida Blackletter !important;
+     font-family: Centaur !important;
 }
 h2 { 
      color: #ed324e !important;
@@ -23,10 +23,10 @@ nav {
 } */
 
 body { 
-     font-family: 'Times New Roman', Times, serif;
-     /* background: url("imgs/test.jpg"); */
-     /* background-size: cover; */
-     /* background-color: burlywood;
+     font-weight: 200;
+     /* background: url("imgs/test.jpg");
+     background-size: cover;
+     background-color: burlywood;
      color: #000000; */
 }
 
