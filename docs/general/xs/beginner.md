@@ -239,7 +239,7 @@ While these are the only *laws* that you absolutely must follow, there are some 
 
 3. When you are writing a variable that is supposed to just store the value of a constant, one which you never intend to change, it is conventional to use capital letters and words are separated by underscores. For example: `#!java float PI = 3.14159;` or `#!java float GOLDEN_RATIO = 1.61803;`.
 
-4. Variable names should be precise and mnemonic. That is, they should indicate to a casual programmer their purpose. Usage of single variable names is discouraged unless it is a throwaway or temporary variable.wdww
+4. Variable names should be precise and mnemonic. That is, they should indicate to a casual programmer their purpose. Usage of single letter variable names is discouraged unless it is a throwaway or temporary variable.wdww
 
 ### 3.4. Operations
 
@@ -390,10 +390,10 @@ void main() {
     // this would chat 0
     xsChatData("(a+b) == b is"+((a+b) == b));
 
-    // this would assign true to g
+    // this would chat 1
     xsChatData("(a+b) >= c is"+((a+b) >= c));
 
-    // this would assign true to h
+    // this would chat 1
     xsChatData("b <= c is "+(b <= c));
 
     
@@ -411,10 +411,10 @@ void main() {
     // this is because alphabetically, str2 comes before str3
     xsChatData("str3 > str2 is "+(str3 > str2));
 
-    // this would assign true to f
+    // this would cha ttrue
     xsChatData("str3 == str4 is "+(str3 == str4));
 
-    // this would assign true to g
+    // this would cha ttrue
     xsChatData("str1 != str2 is "+(str1 != str2));
 }
 ```
@@ -638,7 +638,7 @@ There are two types of flow control statements:
 
 There are times in life when you need to make decisions, and these decisions depend on certain conditions. For example, suppose that you are in a class, then a decision that you might have to make would be:
 
-$\color{red} \text{if} \; \color{yellow} \text{you have a pen,} \; \color{red} \text{then} \; \color{white} \text{you can write on a piece of paper,} \; \color{red} \text{else} \; \color{white} \text{you borrow a pen from a classmate}$
+$\color{red} \text{if} \; \color{yellow} \text{you have a pen,} \; \color{red} \text{then} \; \color{white} \text{you can write on a piece of paper,} \; \color{red} \text{else} \; \color{white} \text{you borrow a pen}$
 
 Similarly, when writing a script, it might be needed to make decisions at some points in your code. Conditionals are decision making statements that can be used to chose which set of instructions to execute depending on given conditions. There are two types of conditionals suported by XS:
 
@@ -807,14 +807,14 @@ If you wanted to write out the times two table, you might do:
 
 $\color{red} \text{for} \; \color{yellow} \text{every} \; \color{green} \text{number} \; \color{red} \text{between 1 and 10} \; \color{white} \text{write }2\times \color{green} \text{number}$
 
-Similarly, when writing a script, it might be needed to repeat certain parts of your code multiple times. Loops are statements that can be used to repeatedly execute a block of code given a condition is true. There are two types of conditionals suported by XS:
+Similarly, when writing a script, it might be needed to repeat certain parts of your code multiple times. Loops are statements that can be used to repeatedly execute a block of code given a condition is true.
 
 Sometimes the need arises to repeatedly execute the same statement or a statement where only a few things are changing.
 Loops are statements that allow us to do exactly that! There are two types of loops suported by XS:
 
 1. The `#!java while` loop:
 
-    A `#java while` statement repeatedly executes a block of code as long as (while) something is `true`. This process of repeatedly executing the same block of code is known as iteration!
+    A `#!java while` statement repeatedly executes a block of code as long as (while) something is `true`. This process of repeatedly executing the same block of code is known as iteration!
     For example:
     ```java
     void main() {

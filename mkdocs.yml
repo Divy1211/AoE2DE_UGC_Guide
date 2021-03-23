@@ -1,11 +1,8 @@
 site_name: The Ultimate Guide To AoE2DE UGC
-# site_url:
 docs_dir: docs/
-
 repo_name: "AoE2DE_UGC_Guide"
 repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 
-# add pages:
 nav:
   - About: "index.md"
   - Game Mechanics:
@@ -14,9 +11,9 @@ nav:
     - Resources: "general/resources.md"
   - Custom Scenarios:
     - Scenario Basics: "scenarios/basics.md"
-    # - Triggers:
-    #   - Trigger Basics: "scenarios/triggers/basics.md"
-    #   - Effects: "scenarios/triggers/effects.md"
+    - Triggers:
+      - Trigger Basics: "scenarios/triggers/basics.md"
+      - Effects: "scenarios/triggers/effects.md"
     #   - Variables: "scenarios/triggers/variables.md"
     #   - Conditions: "scenarios/triggers/conditions.md"
     # - Tricks and Tips: "scenarios/tricks.md"

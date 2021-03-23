@@ -241,7 +241,7 @@ Q1. How does a Cataphract only take +16 damage from Halbderdiers instead of the 
 
 Q2. How does a leitis do damage while ignoring all armour?
 
-Q3. How to give bonus damage or bonud damage resistance to a particular unit?
+Q3. How to give bonus damage or bonus damage resistance to a particular unit?
 
 Before you move on to read the answers, try and think about how these bonus damages might be being achieved.
 
