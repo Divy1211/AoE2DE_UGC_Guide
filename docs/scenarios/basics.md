@@ -314,7 +314,7 @@ When enabled, 9 new options (to the right) appear in the menu for selecting whic
 Remember the players being converted **from** are selected on the right side using the checkboxes, and the player being converted **to** is the one selected in the dropdown to the left!
 
 ## 8. Cinematics
-Under the `Cinematics` tab, there are options to change the movie clips displayed before or after a scenario. These are mainly used in the campaigns, and functionality for chaning them in scenarios is bugged as of the time of the writing of this guide.
+Under the `Cinematics` tab, there are options to change the movie clips displayed before or after a scenario. These are mainly used in the campaigns, and functionality for changing them in scenarios is bugged as of the time of the writing of this guide.
 
 ## 9. Diplomacy
 Under the `Diplomacy` tab, there are options to change the diplomacy settings of the game:
