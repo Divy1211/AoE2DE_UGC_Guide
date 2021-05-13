@@ -290,7 +290,7 @@
             "show": true
         },
         {
-            "Name": "Cannot Use `%` Symbols In `xsChatData()`",
+            "Name": "Crash On Using `%` Symbols In `xsChatData()`",
             "Description" : "Cannot escape `%` symbols in the message, since they are considered special characters because of the `%d` and `%f` usage.",
             "Expected Behaviour": "It should be possible to escape the `%` character by using a backslash `\\`.",
             "Reproduction Steps": [
@@ -298,7 +298,7 @@
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
                 "Run the `main` function of the script in the scenario (it will run automatically in an RMS)",
-                "When a game is played using the scenario or RMS, the `%` characters in the messages do not appear on screen"
+                "When a game is played using the scenario or RMS, the game will crash"
             ],
             "Code Block": [
                 "```java",

@@ -50,13 +50,13 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 8
 
-- Purpose: This is the quantity of armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the `Damage Calculation` section of this guide. Note that changing the armour through this option will show it as being added to the base armour amount. (for example: 4+4)
+- Purpose: This is the quantity of armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation "Jump to: Game Mechanics > Damage Calculation") section of this guide. Note that changing the armour through this option will show it as being added to the base armour amount. (for example: 4+4)
 
 ## 9. Attack
 
 - ID: 9
 
-- Purpose: This is the quantity of attack a unit has on any of its `Attack Classes`. If you do not know what an `Attack Class` is, refer to the `Damage Calculation` section of this guide. Note that changing the attack through this option will show it as being added to the base attack amount. (for example: 6+2)
+- Purpose: This is the quantity of attack a unit has on any of its `Attack Classes`. If you do not know what an `Attack Class` is, refer to the [Damage Calculation](../damage_calculation "Jump to: Game Mechanics > Damage Calculation") section of this guide. Note that changing the attack through this option will show it as being added to the base attack amount. (for example: 6+2)
 
 ## 10. Attack Reload Time
 
@@ -115,7 +115,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 15
 
-- Purpose: This is the quantity of base armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the `Damage Calculation` section of this guide. Note that changing the armour through this option will show it as the base armour itself, and it will not be added to the regular amount.
+- Purpose: This is the quantity of base armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation "Jump to: Game Mechanics > Damage Calculation") section of this guide. Note that changing the armour through this option will show it as the base armour itself, and it will not be added to the regular amount.
 
 ## 16. Projectile Unit
 
@@ -151,7 +151,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 21
 
-- Purpose: This is the amount of 1st resource contained in any unit. Refer to A.G.E. to see which resource this is. If you do not know what A.G.E. is, refer to the `Data Mods` section of this guide.
+- Purpose: This is the amount of 1st resource contained in any unit. Refer to A.G.E. to see which resource this is. If you do not know what A.G.E. is, refer to the [Data Mods]("Jump to: Data Mods NON EXISTENT") section of this guide.
 
 ## 22. Blast Width
 
@@ -201,11 +201,11 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - Purpose: The button used for training any given unit. For example, Militia are trained by using the first button, hence the Button Location of Militia is 1. This number ranges from 0-15
 
-## 30. Blast Level
+## 30. Blast Attack Level
 
 - ID: 44
 
-- Purpose: This value determines which units a unit can cause inderect damage to. For example, mangonels can damage your own units, but scorpions cannot. Values:
+- Purpose: A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#31-blast-defense-level "Jump to: Blast Defense Level"). For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same.
 
     | **Effect**                                     |**Blast Level** |
     | :--------------------------------------------: | :----------:   |
@@ -214,43 +214,56 @@ This page is a list of all the unit attributes that can be modified in the scena
     |damage nearby allied units                      | 2              |
     |damage targeted unit only                       | 3              |
 
-## 31. Shown Attack
+## 31. Blast Defense Level
+
+- ID: 45
+
+- Purpose: A unit feels the blast damage from ***other*** units with ***equal or lower*** [Blast Attack Level](./#30-blast-attack-level "Jump to: Blast Attack Level"). For example, while onagers (blast attack: 1) can cut trees (blast defense 1), mangonels (blast attack: 2) cannot do the same.
+
+    | **Effect**                                     |**Blast Level** |
+    | :--------------------------------------------: | :----------:   |
+    |damage resources, nearby allied units and tress | 0              |
+    |damage trees, nearby allied units               | 1              |
+    |damage nearby allied units                      | 2              |
+    |damage targeted unit only                       | 3              |
+
+## 32. Shown Attack
 
 - ID: 46
 
 - Purpose: The amount of attack that is displayed as a unit's attack (may not actually be the true attack)
 
-## 32. Shown Range
+## 33. Shown Range
 
 - ID: 47
 
 - Purpose: The quantity that is displayed as a unit's attack ingame (may not actually be the true attack)
 
-## 33. Shown Melee Armor
+## 34. Shown Melee Armor
 
 - ID: 48
 
 - Purpose: The quantity that is displayed as a unit's melee armour ingame (may not actually be the true armour)
 
-## 34. Shown Pierce Armor
+## 35. Shown Pierce Armor
 
 - ID: 49
 
 - Purpose: The quantity that is displayed as a unit's pierce armour ingame (may not actually be the true armour)
 
-## 35. Object Name ID
+## 36. Object Name ID
 
 - ID: 50
 
 - Purpose: The string ID to use for the name of an object. A string ID is used for refering to strings that the game recognises by default. It can be used to automatically set names by using a value that the game recognises. Trying out the value 1 on a unit and seeing what happens is left as an excersise for the reader.
 
-## 36. Short Description ID
+## 37. Short Description ID
 
 - ID: 51
 
 - Purpose: The string ID for the Short Description of an object. A string ID is used for refering to strings that the game recognises by default. It can be used to automatically set a Short Description by using a value that the game recognises. Trying out the value 1 on a unit and seeing what happens is left as an excersise for the reader.
 
-## 37. Terrain Restriction ID
+## 38. Terrain Restriction ID
 
 - ID: 53
 
@@ -290,67 +303,73 @@ This page is a list of all the unit attributes that can be modified in the scena
 | Unknown2                      | 29                       |
 | Water Smallest Trail          | 30                       |
 
-## 38. Dead Unit ID
+## 39. Dead Unit ID
 
 - ID: 57
 
 - Purpose: This is the unit to spawn in place of any given unit when it dies. All dead corpses are actually units that just cannot be selected, meaning this value can be changed to a non dead unit. This is how the dismounted konnik spawns and how the exploding villagers mod works.
 
-## 39. Resource Costs
+## 40. HotKey ID
+
+- ID: 58
+
+- Purpose: This number determines which hotkey is assigned to a unit.
+
+## 41. Resource Costs
 
 - ID: 100
 
-- Purpose: Refers to the first resource cost of a unit. Refer to A.G.E. to see which resource cost that is. If you do not know what A.G.E. is, refer to the Data Mods section of this guide.
+- Purpose: Refers to the first resource cost of a unit. Refer to A.G.E. to see which resource cost that is. If you do not know what A.G.E. is, refer to the [Data Mods]("Jump to: Data Mods NON EXISTENT") section of this guide.
 
-## 40. Train Time
+## 42. Train Time
 
 - ID: 101
 
 - Purpose: This is the amount of time it takes to create a unit.
 
-## 41. Total Missiles
+## 43. Total Missiles
 
 - ID: 102
 
 - Purpose: This is the number of projectiles a unit fires. The Chu Ko Nu fires 3 and the Elite Chu Ko Nu fires 5.
 
-## 42. Food Costs
+## 44. Food Costs
 
 - ID: 103
 
 - Purpose: The food cost of a unit.
 
-## 43. Wood Costs
+## 45. Wood Costs
 
 - ID: 104
 
 - Purpose: The wood cost of a unit.
 
-## 44. Gold Costs
+## 46. Gold Costs
 
 - ID: 105
 
 - Purpose: The gold cost of a unit.
 
-## 45. Stone Costs
+## 47. Stone Costs
 
 - ID: 106
 
 - Purpose: The stone cost of a unit.
 
-## 46. Max Total Missiles
+## 48. Max Total Missiles
 
 - ID: 107
 
 - Purpose: The maximum number of projectiles a unit can fire when other units are garrisoned inside of it. A castle fires 5 projectiles by default but can fire more if units are garrisoned inside it. This attribute controls the maximum number of those
 
-## 47. Garrison Heal Rate
+## 49. Garrison Heal Rate
 
 - ID: 108
 
 - Purpose: The rate measured in HP/s at which garissoned units are healed inside a given building.
 
-## 48. Regeneration Rate
+## 50. Regeneration Rate
 
 - ID: 109
 

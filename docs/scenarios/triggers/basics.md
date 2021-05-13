@@ -42,7 +42,7 @@ When a trigger is selected, the settings related to it are displayed. The follow
 2. `Looping`: this property controls if the trigger deactivates itself after running once or if it repeatedly executes its effects when its conditions are fulfilled. Triggers loop once every second
 3. `Description`: this textbox is used for displaying objectives in the `Objectives` panel of the scenario. See the setting below:
 4. `Display as objective`: When this checkbox is selected, the text in the `Description` field is shown in the `Objectives` panel of the scenario. The `Objectives` panel is the one that is opened when you click the button next to the tech tree at the top of the screen ingame. This panel is visible to ALL players in the game.
-5. `Description String Table ID`: This field is the same as the `5.8. Name String ID` (refer to the topic `5.8.` of the `Scenario Basics` section of this guide)
+5. `Description String Table ID`: This field is the same as the [5.8. Name String ID](../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > 5.8. Name String ID")
 6. `Short Description`: This textbox is used for displaying objectives on screen ingame. See the setting below:
 7. `Display on Screen`: When this checkbox is selected, the text in the `Short Description` field is shown to the right side of the screen of ALL players in the game. If it does not show up for you when you enable this, try pressing the `F4` key (or the score button) a few times.
 8. `Make Header`: When this checkbox is selected and `Display on Screen` is also selected, that particular `Short Description` is displayed with a bigger font size.

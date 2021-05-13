@@ -5,7 +5,7 @@
 
 ## Are you a programmer?
 
-If you know how to program in any language then you're wasting your time on this page! See the XS Scripts: For Programmers instead, it is a shorter and more precise documentation since XS is just another programming language but with different syntax.
+If you know how to program in any language then you're wasting your time on this page! See the [For Programmers](../programmer/ "Jump to: XS Scripting > For Programmers") instead, it is a shorter and more precise documentation since XS is just another programming language but with different syntax.
 
 If you're not a programmer, fear not! You are at the right place to learn all about XS!
 
@@ -981,7 +981,7 @@ void main() {
 
 Function names follow the same laws and conventions that variable names do.
 
-A list of all known inbuilt XS functions and their descriptions are provided in the `Function Reference` section of this guide.
+A list of all known inbuilt XS functions and their descriptions are provided in the [Fucntion Reference](../functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
 
 #### 2. File Structure
 
@@ -1289,7 +1289,7 @@ rule chatTheValueOfA
 }
 ```
 
-There are a lot of built in XS functions that can interact with rules. Check the `Rules` topic under the `XS Scripting: Function Reference` Section of this guide.
+There are a lot of built in XS functions that can interact with rules. Check the [Rules](../functions/#1-rules "Jump to: XS Scripting > Function Reference > Rules") Section of this guide.
 
 The variable `cActivationTime`, when used inside the block of a rule, gives the time of activation of the rule in seconds.
 

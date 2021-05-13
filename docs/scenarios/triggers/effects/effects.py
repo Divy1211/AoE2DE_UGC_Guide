@@ -64,5 +64,5 @@ for effect_id, effect in effects.items():
     out+="\n"
     count+=1
 
-with open("./effect_test.md", "w") as file:
+with open("./effects.md", "w") as file:
     file.write(out)

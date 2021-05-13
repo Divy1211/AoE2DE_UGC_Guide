@@ -270,7 +270,7 @@ This option lets you set the text that is shown to players who lose the game bef
 ## 7. Units
 Under the `Units` tab, there are several options to place and manipulate units.
 
-### 7.1 Placing Units
+### 7.1. Placing Units
 Units can be placed on the map from the 4 menus in this tab:
 
 The game categorises all unit objects in the game into 4 categories, `Units`, `Buildings`, `Heroes`, `Others`.
@@ -289,24 +289,24 @@ There are two ways to use these hidden units:
 1. Use a create object trigger with the hidden unit's object ID
 2. Use the Advanced Genie Editor (A.G.E.) to unhide hidden units in the editor to allow for manual placement.
 
-If you do not know how to do either of those, you can refer to the `Triggers` => `Effects` section of this guide for the first option, and/or refer to the `Useful Tools` => `Unhide Editor Units` section of this guide
+If you do not know how to do either of those, you can refer to the [Effects]("Jump to: Custom Scenarios > Triggers > Effects NON EXISTENT") section of this guide for the first option, and/or refer to the [Unhide Editor Units]("Jump to: Unhide Editor Units NON EXISTENT") section of this guide
 
 ### 7.2. Deleting Units
 Units that are already placed on the map can be deleted from the map by the following ways:
 
 1. The first and the most obvious option is to use the `Delete` option in this tab. This allows us to delete units one by one from the map.
-2. The first option can be tedious if you need to delete a large amount of units, thus the second option is to use the `Erase Units` option in the `Erase` menu under the `Terrain` tab. Refer to topic 3.5 of this section on more information about how to use the `Erase` option.
+2. The first option can be tedious if you need to delete a large amount of units, thus the second option is to use the `Erase Units` option in the `Erase` menu under the `Terrain` tab. Refer to [3.5. Erase](./#35-erase "Jump to: 3.5. Erase") about how to use the `Erase` option.
 
-### 7.3 Moving Units
+### 7.3. Moving Units
 Units already placed on the map can be moved around on the map by using the `Move` option in this tab.
 
-### 7.4 Rotating Units
+### 7.4. Rotating Units
 Units already placed on the map can be rotated by using the `Rotate` option in this tab. After the `Rotate` option is selected, clicking a unit will rotate it clockwise, and right clicking it will rotate it counter clockwise.
 
-### 7.5 Selecting Units 
+### 7.5. Selecting Units 
 When selecting a unit, its statistics like HP, Attack, Armour and units garrisoned inside it are shown. Units inside other units can be deleted using the garrison delete.
 
-### 7.6 Converting Units
+### 7.6. Converting Units
 This option allows you to convert existing units **from** one or more players **to** another player.
 
 When enabled, 9 new options (to the right) appear in the menu for selecting which players' units you want to convert **from**. The currently selected player (on the left) is the player the units will be converted **to**. After picking a `Brush Size` when you click on an area, all of the units belonging to the players being converted **from** will be converted **to** the selected player.
@@ -365,3 +365,4 @@ Some hotkeys that are useful to know and make the workflow of making and testing
     9. `Ctrl+C` Switch to the `Cinematics` tab
     10. `Ctrl+V` Switch to the `Global Victory` tab
     11. `Ctrl+M` Switch to the `Map` tab
+    12. `Ctrl+Space` Test Scenario (Currently bugged, causes a crash in the game D:)

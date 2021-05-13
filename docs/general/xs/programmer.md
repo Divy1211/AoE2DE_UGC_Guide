@@ -3,7 +3,7 @@
 
 ---
 
-This is the most short and precise guide for XS Scripting that you will find, it does not give any introductions to programming topics and cuts right to the chase, if you are a programmer then this is perfect for you. If you are not a programmer fear not! Refer to the `XS Scritping: For Beginners` section of this guide instead.
+This is the most short and precise guide for XS Scripting that you will find, it does not give any introductions to programming topics and cuts right to the chase, if you are a programmer then this is perfect for you. If you are not a programmer fear not! Refer to the [For Beginners](../beginner/ "Jump to: XS Scripting > For Beginners") section of this guide instead.
 
 ## 1. What is XS?
 XS stands for External Subroutines and it is a custom programming language that was made by Ensamble Studios. An XS Script can be used in an RMS and Custom Scenarios, and it is a program that can perform calculations and execute different functions and effects.
@@ -76,7 +76,7 @@ There are a total of 5 data types supported by XS, they are:
 |`#!java Vector` | `#!java Vector v = Vector(1.2, 2.3, 3);` |
 
 A few things to note:
-1. Refer to the `Vector Manipulation` topic of the `XS Scripting: Function Reference` for all the different functions that can be used on vectors.
+1. Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to: XS Scripting > Function Reference > Vector Manipulation") section of this guide for all the different functions that can be used on vectors.
 2. Variables cannot be used in vector initialisation. For example: `#!java Vector v = Vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!java Vector v = xsVectorSet(x, y, z);` instead.
 3. Constant Variables
     Syntax `#!java const int a = 10;` or `#!java const float PI = 3.1415;` will declare an immutable variable.
@@ -94,7 +94,7 @@ A few things to note:
 | Division       | `a/b`      |
 | Modulo         | `a%b`      |
 
-Refer to the `Mathematical Operatiosn` topic under the `XS Scripting: Function Reference` section of this guide for useful mathematical functions.
+Refer to the [Mathematical Operations](../functions/#4-mathematical-operations "Jump to: XS Scripting > Function Reference > Mathematical Operations") section of this guide for useful mathematical functions.
 
 Note:
 
@@ -267,7 +267,7 @@ However... Currently there is a bug (thxDE 11) due to which XS Scripts are not p
 
 ## 7. Arrays
 
-Refer to the `Array Manipulation` topic under the `XS Scripting: Function Reference` section of this guide on how to use arrays.
+Refer to the [Array Manipulation](../functions/#3-array-manipulation "Jump to: XS Scriptig > Function Reference > Array Manipulation") section of this guide on how to use arrays.
 
 Standard syntax like `#!java int a[] = new int[10];` or `#!java a[2];` is not supported by XS.
 
@@ -318,7 +318,7 @@ rule chatTheValueOfA
 }
 ```
 
-There are a lot of built in XS functions that can interact with rules. Check the `Rules` topic under the `XS Scripting: Function Reference` Section of this guide.
+There are a lot of built in XS functions that can interact with rules. Check the [Rules](../functions/#1-rules "Jump to: XS Scripting > Function Reference > Rules") Section of this guide.
 
 The variable `cActivationTime`, when used inside the block of a rule, gives the time of activation of the rule in seconds.
 

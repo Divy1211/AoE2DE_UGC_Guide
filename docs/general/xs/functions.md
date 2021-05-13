@@ -2,7 +2,7 @@
 
 ---
 
-## Rules
+## 1. Rules
 
 ```java
 // Disables the given rule
@@ -45,7 +45,7 @@ void xsDisableRuleGroup(String ruleGroupName)
 bool xsIsRuleGroupEnabled(String ruleGroupName)
 ```
 
-## Vector Manipulation
+## 2. Vector Manipulation
 
 ```java
 // Return the x, y or z component of the given vector
@@ -68,7 +68,7 @@ float xsVectorLength(Vector v)
 Vector xsVectorNormalize(Vector v)
 ```
 
-## Array Manipulation
+## 3. Array Manipulation
 
 ```java
 // Create an array of the given size of the corresponding data type
@@ -108,7 +108,7 @@ int xsArrayResizeVector(int arrayID, int newSize)
 int xsArrayGetSize(int arrayID)
 ```
 
-## Mathematical Operations
+## 4. Mathematical Operations
 ```java
 // returns the absolute value (magnitude) of the number
 float abs(float x)
@@ -142,7 +142,7 @@ float atan(float x)
 float atan2(float x)
 ```
 
-## General Functions
+## 5. General Functions
 
 ```java
 // Gets the resource amount of the specified resource id of the specified player
@@ -169,11 +169,13 @@ int xsGetTime()
 // Change the specified attribute of the specified unit or technology by the value
 // for the specified player effectID is the id of the effect to use
 // This is practically equivalent to the Modify Attribute Effect
-// for more information on this, refer to the UserPatch Features section of this guide
+// for more information on this, refer to the UserPatch Features (link below) section of this guide
 void xsEffectAmount(int effectID, int unitOrTechnologyID, int attributeOrOperation, int value, int playerNumber)
 ```
 
-## Unknown Functionality
+[UserPatch Features]("Jump to: UserPatch Features NON EXISTENT")
+
+## 6. Unknown Functionality
 ```java
 // Blogs out all XS arrays
 // It is currently unknown as to what this function does

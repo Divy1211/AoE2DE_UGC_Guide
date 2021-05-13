@@ -60,7 +60,7 @@
         ],
         "tricks": [
             "Tributing negative resources actually gives the source player the resource and deducts that amount from the target player",
-            "TODO"
+            "Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound."
         ]
     },
     "6": {

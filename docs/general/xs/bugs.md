@@ -9,9 +9,9 @@ Any new bugs discovered will be added to the list. This list will also be update
 
 If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the `About` page for relevant information about the authors.
 
-Game Version: `101.101.45340.0 6228353`
+Game Version: `101.101.47820.0 6624001`
 
-Last Updated: `23.03.2021`
+Last Updated: `14.05.2021`
 
 Game Platform: Steam
 
@@ -266,7 +266,7 @@ void main() {
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
 5. When a game is played using the scenario or RMS, the `'const' is not a valid parameter type` error is shown
 
-### 11. Cannot Use `%` Symbols In `xsChatData()`
+### 11. Crash On Using `%` Symbols In `xsChatData()`
 
 Description: Cannot escape `%` symbols in the message, since they are considered special characters because of the `%d` and `%f` usage.
 
@@ -287,7 +287,7 @@ void main() {
 ```
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
-5. When a game is played using the scenario or RMS, the `%` characters in the messages do not appear on screen
+5. When a game is played using the scenario or RMS, the game will crash
 
 ### 12. Cannot Print `#!java 0` Or `#!java 1` At The Start Of The Line In `xsChatData()`
 
