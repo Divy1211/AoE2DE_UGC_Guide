@@ -181,7 +181,24 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 40
 
-- Purpose: Setting this to 1 makes units regenerate HP
+- Purpose: The hero status of a unit can control the following six properties:
+
+| **Property**                                | **Flag Value**  |
+|:-------------------------------------------:|:---------------:|
+| Full Hero Status (enables everything below) | 1               |
+| Cannot be converted                         | 2               |
+| Self Regeneration (0.5 HP/s)                | 4               |
+| Defensive Stance by Default                 | 8               |
+| Protected Formation by Default              | 16              |
+| Safe Delete Confirmation                    | 32              |
+
+For example, if we set the hero status of a knight to 2, a monk will not be able to convert it. If we set the hero status of a militia to 4, it will regenerate HP automatically.
+
+What if we want to enable multiple properties at once? This is achieved by adding the flag values for those properties together and setting the hero status to that value. For example, if we want to make a paladin both unconvertable and regenerate HP automatically, we can set its hero status to 2+4 = 6. This means that the hero status of a unit can take on any values in the range 1-63. If you set it to any other value, it does not have any effect on the unit
+
+This works because notice that there is one and only one way to add different flag values together to obtain a particular value for the hero status! For example, if we have a value of 20 for the hero status of a unit, the only way to make 20 from the above flag values is to add 4 and 16. Thus, we know that the properties corresponding to the flag values 4 (self regeneration) and 16 (protected formation by default) must be enabled for that unit.
+
+This is a consequence of the fact that every number can be represented as a unique sum of powers of two (binary numbers)
 
 ## 27. Frame Delay
 
@@ -373,4 +390,4 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 109
 
-- Purpose: The rate measured in HP/s at which units heal themselves.
+- Purpose: The rate measured in HP/s at which units heal themselves. This value is overridden to 0.5 HP/s if the flag for Self Regeneration is set in the [Hero Status](./#26-hero-status "Jump to: 26. Hero Status") of a unit.

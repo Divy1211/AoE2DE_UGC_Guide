@@ -23,6 +23,7 @@ The following are all the damage classes along with their IDs that exist in the 
 
 |          **Class Name**           | **ID** |
 | :-------------------------------: | :----: |
+|              Unused               |   0    |
 |             Infantry              |   1    |
 |           Turtle Ships            |   2    |
 |            Base Pierce            |   3    |
@@ -36,16 +37,16 @@ The following are all the damage classes along with their IDs that exist in the 
 |    All Buildings (except Port)    |   11   |
 |              Unused               |   12   |
 |           Stone Defense           |   13   |
-|        FE Predator Animals        |   14   |
+|        Predator Animals FE        |   14   |
 |              Archers              |   15   |
 |  Ships Saboteers (camels pre AK)  |   16   |
 |               Rams                |   17   |
 |               Trees               |   18   |
-| Unique Units (except Turtle Ship) |   19   |
+|            Unique Units           |   19   |
 |           Siege Weapons           |   20   |
 |        Standard Buildings         |   21   |
 |           Walls & Gates           |   22   |
-|        FE Gunpowder Units         |   23   |
+|        Gunpowder Units            |   23   |
 |               Boars               |   24   |
 |               Monks               |   25   |
 |              Castle               |   26   |
@@ -55,7 +56,7 @@ The following are all the damage classes along with their IDs that exist in the 
 |         Camels (post AK)          |   30   |
 |    Leitis (ignores all armour)    |   31   |
 |            Condottiero            |   32   |
-|          Anti Gunpowder           |   33   |
+|              Unused               |   33   |
 |           Fishing Ship            |   34   |
 |             Mamelukes             |   35   |
 |          Heroes and King          |   36   |
@@ -253,4 +254,4 @@ A3. One of the unused damage classes can be used for this purpose. Giving the de
 
 ### 3.6. The Sicilian 50% Bonus Damage Reduction
 
-The damage from all classes except the `Base Melee (4)` and `Base Pierce (3)` is multiplied by 0.5 before it is added to the total damage for Sicilian units.
+The damage from all classes except the `Base Pierce (3)`, `Base Melee (4)` and `Leitis (31)` is multiplied by 0.5 before it is added to the total damage for Sicilian units.
