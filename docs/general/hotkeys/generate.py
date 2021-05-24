@@ -3,6 +3,10 @@ from sys import winver
 
 md = """# Hotkeys
 
+*Written by: Alian713*
+
+---
+
 ## 1. What is a hotkey?
 A hotkey is a key or combination of keys that can be pressed to allow for quick execution of certain tasks. For example, pressing `Ctrl+1` allows you to set a control group of units that you can then quickly select by pressing `1`.
 
@@ -42,6 +46,8 @@ for key in keys:
         md += f"""|{f"{keys[key]['string_id']}":15s}|"""
         md += f"{key:24s}"
         md += f"|{keys[key]['char'].upper().replace('_', ' '):16s}|\n"
+
+md+="\n## 4. Credits\n\nThanks to MrKirby and happy leaves happy life for helping in figuring out how these IDs work exactly!"
 
 with open("./test.md", "w") as file:
     file.write(md)

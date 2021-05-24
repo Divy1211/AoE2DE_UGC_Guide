@@ -10,19 +10,19 @@
         "desc": "The amount to modify by"
     },
     "ai_script_goal": {
-        "display_name": "Ai Script Goal",
+        "display_name": "AI Script Goal",
         "show": true,
-        "desc": "TODO"
+        "desc": "AI Trigger ID to set"
     },
     "ai_signal_value": {
-        "display_name": "Ai Signal Value",
+        "display_name": "AI Signal Value",
         "show": true,
-        "desc": "TODO"
+        "desc": "The AI Signal ID to acknowledge"
     },
     "area_1_x": {
         "display_name": "Area",
         "show": true,
-        "desc": "Only units on this selected area will be affected by the effect."
+        "desc": "Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected."
     },
     "area_1_y": {
         "display_name": "Area 1 Y",
@@ -52,25 +52,24 @@
     "diplomacy": {
         "display_name": "Diplomacy Stance",
         "show": true,
-        "desc": "The new diplomacy state of the players TODO"
+        "desc": "The new diplomacy state"
     },
     "display_time": {
         "display_name": "Display Time",
         "show": true,
         "desc": "The amount of time to display the instruction for"
     },
-    "enabled_or_victory": [
-        {
+    "comment": "enabled and victory are the same attribute",
+    "enabled": {
             "display_name": "Enabled",
             "show": true,
             "desc": "If this is selected, the units/technology is enabled if it is not already enabled"
-        },
-        {
+    },
+    "victory": {
             "display_name": "Victory",
             "show": true,
             "desc": "If this is selected, the chosen player will win the game. If it is not selected, then the chosen player is defeated"
-        }
-    ],
+    },
     "facet": {
         "display_name": "Facet",
         "show": true,
@@ -79,7 +78,7 @@
     "flash_object": {
         "display_name": "Flash Object",
         "show": true,
-        "desc": "This will flare the converted units TODO"
+        "desc": "When this is enabled if the source and target players are the same, the selected object(s) will be flashed"
     },
     "food": {
         "display_name": "Food",
@@ -107,14 +106,14 @@
         "desc": "Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen"
     },
     "item_id": {
-        "display_name": "Unit List",
-        "show": true,
-        "desc": "The kind of unit to apply the effect to"
+        "display_name": "Item ID",
+        "show": false,
+        "desc": ""
     },
     "location_object_reference": {
         "display_name": "Location Object Reference",
         "show": false,
-        "desc": ""
+        "desc": "In some effects like Task Object, when tasking a unit to do an action on another unit, location x, y is replaced by an object reference"
     },
     "location_x": {
         "display_name": "Location",
@@ -129,7 +128,7 @@
     "message": {
         "display_name": "Message",
         "show": true,
-        "desc": "The message/instruction to show on screen or the script call to execute"
+        "desc": "The name/message/instruction to show on screen or the script call to execute"
     },
     "object_attributes": {
         "display_name": "Attribute List",
@@ -139,22 +138,22 @@
     "object_group": {
         "display_name": "Object Group",
         "show": true,
-        "desc": "This is the group/category of units to effect TODO"
+        "desc": "This is the class of units to effect"
     },
     "object_list_unit_id": {
-        "display_name": "Object List Unit Id",
-        "show": false,
-        "desc": ""
+        "display_name": "Unit List 1",
+        "show": true,
+        "desc": "This is the unit to affect"
     },
     "object_list_unit_id_2": {
-        "display_name": "Object List Unit Id 2",
-        "show": false,
-        "desc": ""
+        "display_name": "Unit List 2",
+        "show": true,
+        "desc": "This is the second unit to affect"
     },
     "object_type": {
         "display_name": "Object Type",
         "show": true,
-        "desc": "This is the class of the units to effect"
+        "desc": "This is the type of the unit to effect"
     },
     "operation": {
         "display_name": "Operation",
@@ -209,12 +208,12 @@
     "string_id": {
         "display_name": "String Id",
         "show": true,
-        "desc": "This is the same as the `Name String ID`. Refer to topic 5.8 of the `Scenario Basics` section of the guide"
+        "desc": "This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id \"Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID\") section of the guide"
     },
     "target_player": {
         "display_name": "Target Player",
         "show": true,
-        "desc": "This is the second player that is affected by an effect"
+        "desc": "This is the second player that is affected by the effect"
     },
     "technology": {
         "display_name": "Technology",
@@ -224,7 +223,7 @@
     "time_unit": {
         "display_name": "Time Unit",
         "show": true,
-        "desc": "Which unit is the time specified in? This can be seconds, minutes or years TODO"
+        "desc": "This specifies the unit of time used in the timer trigger. This can be seconds, minutes or years"
     },
     "tribute_list": {
         "display_name": "Tribute List",
@@ -236,22 +235,15 @@
         "show": true,
         "desc": "The trigger to activate/deactivate"
     },
-    "variable_or_timer": [
-        {
-            "display_name": "Variable",
-            "show": true,
-            "desc": "The variable to modify"
-        },
-        {
+    "timer": {
             "display_name": "Timer",
             "show": true,
             "desc": "The time to display the message for"
-        }
-    ],
+    },
     "visibility_state": {
         "display_name": "Visibility State",
         "show": true,
-        "desc": "TODO"
+        "desc": "The new visibility state"
     },
     "wood": {
         "display_name": "Wood",

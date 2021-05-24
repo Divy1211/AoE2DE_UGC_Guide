@@ -1,5 +1,9 @@
 # Hotkeys
 
+*Written by: Alian713*
+
+---
+
 ## 1. What is a hotkey?
 A hotkey is a key or combination of keys that can be pressed to allow for quick execution of certain tasks. For example, pressing `Ctrl+1` allows you to set a control group of units that you can then quickly select by pressing `1`.
 

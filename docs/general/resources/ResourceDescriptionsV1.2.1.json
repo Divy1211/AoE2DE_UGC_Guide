@@ -1726,9 +1726,9 @@
     },
     "236": {
         "name": "Farming Gold Trickle",
-        "keyword": "Farming gold generation rate*0.01",
+        "keyword": "Farming gold generation rate*100",
         "grammer": "of the source player",
         "default_values": {},
-        "comment": "used by the Burgundian Vineyards technology. Set to 0.15 when researched"
+        "comment": "used by the Burgundian Vineyards technology. Set to 2 when researched"
     }
 }

@@ -1,7 +1,3 @@
-*Written by: Alian713*
-
----
-
 This page is a list of all the player resources in the scenario editor and their purposes. If you know of any resources that are not written on this page, or if the descriptions of the resources are wrong, please let the authors of this guide know!
 
 ## 1. Food
@@ -1660,7 +1656,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 236
 
-- Purpose: Farming gold generation rate*0.01 of the source player
+- Purpose: Farming gold generation rate*100 of the source player
 
-- Additional Information: used by the Burgundian Vineyards technology. Set to 0.15 when researched
+- Additional Information: used by the Burgundian Vineyards technology. Set to 2 when researched
 
