@@ -44,6 +44,17 @@ To use an XS:
 ```java
 // Anything that is written after a double front slash is a comment.
 // A comment is a line that is ignored when running the script.
+// comments are useful for explaining your code to others and
+// more importantly, your future self.
+
+// writing comments is a good habit because it helps you understand your
+// own code better.
+// you will see comments widely used in this guide, to explain almost
+// every bit of code that you see
+
+// do note though, that even though commenting is a good practise,
+// over commenting code is a worse thing to do. Only comment stuff
+// that really needs commenting!
 
 /* Anything enclosed by a front slash
 and asterisk pair is a
@@ -250,11 +261,29 @@ Now that we know how to store and change the values of a variable, what can we a
 The most obvious thing that we can do with numbers, is do arithmetic with them. XS Scripts support the following five arithmetic operations:
 
 1. Addition: `a+b` this gives you the sum of two variables, `a` and `b`. for example,
-2. Subtraction: `a-b` this gives you the difference of two variables, `b` from `b`.
+2. Subtraction: `a-b` this gives you the difference of two variables, `a` from `b`.
 3. Multiplication: `a*b` this gives you the product of two variables, `a` and `b`.
+
+    For example:
+    ```java
+    void main() {
+        int a = 69;
+        int b = 420;
+        
+        // this will chat 489 in game (69+420 = 489)
+        xsChatData("result of 420+69 = "+(a+b));
+        
+        // this will chat 351 in game (420-69 = 351)
+        xsChatData("result of 420-69 = "+(b-a));
+
+        // this will chat 28980 in game (420*69 = 28980)
+        xsChatData("result of 420*69 = "+(a*b));
+    }
+    ```
+
 4. Division: `a/b` this gives you the division of `a` by `b`.
 
-    Note that division behaves differently for integers and floats:
+    Note that in programming, division is weird with how it works for integers and floats:
     
     For `#!java int`, it performs what we call "integer division":
 
@@ -276,57 +305,51 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 
 5. Modulo: `a%b` this gives you the remainder when dividing `a` by `b`.
 
-Note: due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!java 9*5.5` evaluates to `#!java 49` instead of `#!java 49.5`. However, `#!java 5.5*9` will correctly evaluate to `#!java 49.5`.
+    Note: due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!java 9*5.5` evaluates to `#!java 49` instead of `#!java 49.5`. However, `#!java 5.5*9` will correctly evaluate to `#!java 49.5`.
 
-For Example:
-```java
-void main() {
-    int a = 69;
-    int b = 420;
-    
-    // this will chat 489 in game (69+420 = 489)
-    xsChatData("result of 420+69 = "+(a+b));
-    
-    // this will chat 351 in game (420-69 = 351)
-    xsChatData("result of 420-69 = "+(b-a));
+    For Example:
+    ```java
+    void main() {
+        // this will chat 2 in game (5/2 = 2.5 but remember, this is integer division! so round down to 2)
+        xsChatData("result of 5/2 = "+(5/2));
 
-    // this will chat 28980 in game (420*69 = 28980)
-    xsChatData("result of 420*69 = "+(a*b));
+        // this will chat 2 in game (17/6 = 2.833 but remember, this is integer division! so round down to 2)
+        xsChatData("result of 17/6 = "+(17/6));
 
-    // this will chat 2 in game (5/2 = 2.5 but remember, this is integer division! so round down to 2)
-    xsChatData("result of 5/2 = "+(5/2));
+        // this will chat 2.5 in game (since the numerator is a float, float division will give the exact value)
+        xsChatData("result of 5.0/2 = "+(5.0/2));
 
-    // this will chat 2 in game (17/6 = 2.833 but remember, this is integer division! so round down to 2)
-    xsChatData("result of 17/6 = "+(17/6));
+        // this will chat 2 in game (since the numerator is an int, integer division will give the exact value)
+        xsChatData("result of 5/2.0 = "+(5/2.0));
 
-    // this will chat 2.5 in game (since the numerator is a float, float division will give the exact value)
-    xsChatData("result of 5.0/2 = "+(5.0/2));
+        // this will chat 5 in game (17%6 = 5)
+        xsChatData("result of 17%6 = "+(17%6));
 
-    // this will chat 2 in game (since the numerator is an int, integer division will give the exact value)
-    xsChatData("result of 5/2.0 = "+(5/2.0));
+        // this should chat 0.5 in game (2.5%1 = 0.5)
+        xsChatData("result of 17%6 = "+(2.5%1));
+        // Due to a bug at the moment, this will actually show 0.0
+        // Modulo on fractions does not work properly at this time.
+    }
+    ```
 
-    // this will chat 5 in game (17%6 = 5)
-    xsChatData("result of 17%6 = "+(17%6));
+    Also Additionally, when testing stuff using `xsChatData`, be vary of some quirks that this has:
+    ```java
 
-    // this should chat 0.5 in game (2.5%1 = 0.5)
-    xsChatData("result of 17%6 = "+(2.5%1));
-    // Due to a bug at the moment, this will actually show 0.0
-    // Modulo on fractions does not work properly at this time.
+        // Note that chat data does not send the same thing multiple consecutively
+        // which means if two calculations have the same result, only the first
+        // one is shown
+        xsChatData("this is shown only once");
+        xsChatData("this is shown only once");
+        xsChatData("this is shown only once");
+        xsChatData("this is shown only once");
 
+        xsChatData("this is shown twice");
+        xsChatData("this will make them non consecutive");
+        xsChatData("this is shown twice");
+    }
+    ```
 
-    // Note that chat data does not send the same thing multiple consecutively
-    // which means if two calculations have the same result, only the first
-    // one is shown
-    xsChatData("this is shown only once");
-    xsChatData("this is shown only once");
-    xsChatData("this is shown only once");
-    xsChatData("this is shown only once");
-
-    xsChatData("this is shown twice");
-    xsChatData("this will make them non consecutive");
-    xsChatData("this is shown twice");
-}
-```
+    The way around this is to use a unique number or letter at the start of every message so that even if the content of the message is the same, the number is different so that it gets shown the right amount of times
 
 #### 2. The Assignment Operation
 
@@ -363,16 +386,65 @@ then this question also has only two answers, yes or no.
 Whenever you use a relational operator, it is like asking one of these questions above. Then how does a computer answer a question like this? Remember, a `boolean` data type can either be `true` or `false`, it does exactly this! Thus, the answers to all relational operations give you boolean values.
 
 1. `a < b` This checks if the number `a` is lesser than `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
+For example:
+```java
+// this will print "5 < 10 : 1"
+xsChatData("5 < 10 : "+(5 <> 10));
+// remember, in programming, 1 is the same as true
+```
+
+
 2. `a > b` This checks if the number `a` is greater than `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
+For example:
+```java
+// this will print "5 > 10 : 0"
+xsChatData("5 > 10 : "+(5 > 10));
+// remember, in programming, 0 is the same as false
+```
+
 3. `a <= b` This checks if the number `a` is lesser than or equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
+For example:
+```java
+// this will print "5 <= 10 : 1"
+xsChatData("5 <= 10 : "+(5 <= 10));
+
+// this will print "10 <= 10 : 1"
+xsChatData("10 <= 10 : "+(10 <= 10));
+```
+
 4. `a >= b` This checks if the number `a` is greater than or equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
+For example:
+```java
+// this will print "5 >= 10 : 0"
+xsChatData("5 >= 10 : "+(5 >= 10));
+
+// this will print "10 >= 10 : 1"
+xsChatData("10 >= 10 : "+(10 >= 10));
+```
+
 5. `a == b` This checks if the number `a` is equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
+For example:
+```java
+// this will print "5 == 10 : 0"
+xsChatData("5 == 10 : "+(5 == 10));
+
+// this will print "10 == 10 : 1"
+xsChatData("10 == 10 : "+(10 == 10));
+```
+
 6. `a != b` This checks if the number `a` is not equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
+For example:
+```java
+// this will print "5 != 10 : 1"
+xsChatData("5 != 10 : "+(5 != 10));
+
+// this will print "10 != 10 : 0"
+xsChatData("10 != 10 : "+(10 != 10));
+```
 
 Note: These relational operators also work on `String` values, for example `a < b` checks if `a` would alphabetically preceed `b`.
 
 For Example:
-
 ```java
 void main() {
 

@@ -23,7 +23,7 @@ The following are all the damage classes along with their IDs that exist in the 
 
 |          **Class Name**           | **ID** |
 | :-------------------------------: | :----: |
-|              Unused               |   0    |
+|              Wonder               |   0    |
 |             Infantry              |   1    |
 |           Turtle Ships            |   2    |
 |            Base Pierce            |   3    |
@@ -37,7 +37,7 @@ The following are all the damage classes along with their IDs that exist in the 
 |    All Buildings (except Port)    |   11   |
 |              Unused               |   12   |
 |           Stone Defense           |   13   |
-|        Predator Animals FE        |   14   |
+|        Predator Animals           |   14   |
 |              Archers              |   15   |
 |  Ships Saboteers (camels pre AK)  |   16   |
 |               Rams                |   17   |
