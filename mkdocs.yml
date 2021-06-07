@@ -15,8 +15,8 @@ nav:
     - Triggers:
       - Trigger Basics: "scenarios/triggers/basics.md"
       - Effects: "scenarios/triggers/effects/effects.md"
-    #   - Variables: "scenarios/triggers/variables.md"
     #   - Conditions: "scenarios/triggers/conditions/conditions.md"
+    #   - Variables: "scenarios/triggers/variables.md"
     # - Tricks and Tips: "scenarios/tricks.md"
     # - Advanced:
     #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
@@ -30,6 +30,7 @@ nav:
     - For Beginners: "general/xs/beginner.md"
     - For Programmers: "general/xs/programmer.md"
     - Functions Reference: "general/xs/functions.md"
+    - Constant Reference: "general/xs/constants.md"
     - Known Bugs: "general/xs/bugs.md"
 #   - Data Mods:
 #     - Data Mod Basics: "data_mods/basics.md"

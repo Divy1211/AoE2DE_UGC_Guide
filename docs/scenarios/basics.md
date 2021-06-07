@@ -17,6 +17,12 @@ To open a saved scenario in the editor,
 
 1. Double-click the scenario from the list in the editors menu in step 3 above
 
+To open an externally downloaded scenario in the editor,
+
+1. Click `Open Scenario Folder` in the editors menu in step 3 above
+2. Put the downloaded scenario in this folder
+3. To see the newly added scenario in the editors menu, go back to the main menu and open the editors menu again.
+
 When you load into a new scenario, it is a blank canvas for you to play with!
 
 In the editor, there are quite a few tabs that you can see at the top, their functionalities are discussed below:

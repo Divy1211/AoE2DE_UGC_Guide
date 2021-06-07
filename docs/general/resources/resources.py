@@ -1,16 +1,7 @@
 import json
 
-# with open("./ResourceDescriptionsV1.2.0.json") as file:
-#     data = json.load(file)
-
-# for resource in data:
-#     data[resource]["keyword"] = data[resource]["keyword"][0:1].upper() + data[resource]["keyword"][1:]
-
-# with open("./ResourceDescriptionsV1.2.1.json", "w") as file:
-#     json.dump(data, file, indent=4)
-
 md = "This page is a list of all the player resources in the scenario editor and their purposes. If you know of any resources that are not written on this page, or if the descriptions of the resources are wrong, please let the authors of this guide know!\n\n"
-with open("./ResourceDescriptionsV1.2.1.json") as file:
+with open("./res_desc.json") as file:
     data = json.load(file)
     for resource in data:
         md+=f"## {int(resource)+1}. {data[resource]['name']}\n\n- ID: {resource}\n\n" + \
