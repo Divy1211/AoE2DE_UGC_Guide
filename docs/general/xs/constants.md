@@ -6,25 +6,25 @@
 
 ### 1.1. cDarkAge
 
-Value: `#!java int 0`
+Value: `#!cpp int 0`
 
 Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Dark Age
 
 ### 1.2. cFeudalAge
 
-Value: `#!java int 1`
+Value: `#!cpp int 1`
 
 Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Feudal Age
 
 ### 1.3. cCastleAge
 
-Value: `#!java int 2`
+Value: `#!cpp int 2`
 
 Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Castle Age
 
 ### 1.4. cImperialAge
 
-Value: `#!java int 3`
+Value: `#!cpp int 3`
 
 Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Imperial Age
 
@@ -32,1707 +32,2649 @@ Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Ga
 
 ### 2.1. cActivationTime
 
-Value: `#!java int None`
+Value: `#!cpp int None`
 
 This value is only defined inside the body of a rule. It holds the time of initial activation of that rule
 
 ### 2.2. cOriginVector
 
-Value: `#!java Vector (0, 0, 0)`
+Value: `#!cpp vector (0, 0, 0)`
 
 The Origin Vector
 
 ### 2.3. cInvalidVector
 
-Value: `#!java Vector (-1, -1, -1)`
+Value: `#!cpp vector (-1, -1, -1)`
 
 The Invalid Vector
 
-## 3. EffectAmount Effect Type
+## 3. Civs
 
-### 3.1. cSetAttribute
+### 3.1. cGaia
 
-Value: `#!java int 0`
+Value: `#!cpp int 0`
+
+This is the civilization ID of Gaia
+
+### 3.2. cBritons
+
+Value: `#!cpp int 1`
+
+This is the civilization ID of Britons
+
+### 3.3. cFranks
+
+Value: `#!cpp int 2`
+
+This is the civilization ID of Franks
+
+### 3.4. cGoths
+
+Value: `#!cpp int 3`
+
+This is the civilization ID of Goths
+
+### 3.5. cTeutons
+
+Value: `#!cpp int 4`
+
+This is the civilization ID of Teutons
+
+### 3.6. cJapanese
+
+Value: `#!cpp int 5`
+
+This is the civilization ID of Japanese
+
+### 3.7. cChinese
+
+Value: `#!cpp int 6`
+
+This is the civilization ID of Chinese
+
+### 3.8. cByzantines
+
+Value: `#!cpp int 7`
+
+This is the civilization ID of Byzantines
+
+### 3.9. cPersians
+
+Value: `#!cpp int 8`
+
+This is the civilization ID of Persians
+
+### 3.10. cSaracens
+
+Value: `#!cpp int 9`
+
+This is the civilization ID of Saracens
+
+### 3.11. cTurks
+
+Value: `#!cpp int 10`
+
+This is the civilization ID of Turks
+
+### 3.12. cVikings
+
+Value: `#!cpp int 11`
+
+This is the civilization ID of Vikings
+
+### 3.13. cMongols
+
+Value: `#!cpp int 12`
+
+This is the civilization ID of Mongols
+
+### 3.14. cCelts
+
+Value: `#!cpp int 13`
+
+This is the civilization ID of Celts
+
+### 3.15. cSpanish
+
+Value: `#!cpp int 14`
+
+This is the civilization ID of Spanish
+
+### 3.16. cAztecs
+
+Value: `#!cpp int 15`
+
+This is the civilization ID of Aztecs
+
+### 3.17. cMayans
+
+Value: `#!cpp int 16`
+
+This is the civilization ID of Mayans
+
+### 3.18. cHuns
+
+Value: `#!cpp int 17`
+
+This is the civilization ID of Huns
+
+### 3.19. cKoreans
+
+Value: `#!cpp int 18`
+
+This is the civilization ID of Koreans
+
+### 3.20. cItalians
+
+Value: `#!cpp int 19`
+
+This is the civilization ID of Italians
+
+### 3.21. cIndians
+
+Value: `#!cpp int 20`
+
+This is the civilization ID of Indians
+
+### 3.22. cIncas
+
+Value: `#!cpp int 21`
+
+This is the civilization ID of Incas
+
+### 3.23. cMagyars
+
+Value: `#!cpp int 22`
+
+This is the civilization ID of Magyars
+
+### 3.24. cSlavs
+
+Value: `#!cpp int 23`
+
+This is the civilization ID of Slavs
+
+### 3.25. cPortuguese
+
+Value: `#!cpp int 24`
+
+This is the civilization ID of Portuguese
+
+### 3.26. cEthiopians
+
+Value: `#!cpp int 25`
+
+This is the civilization ID of Ethiopians
+
+### 3.27. cMalians
+
+Value: `#!cpp int 26`
+
+This is the civilization ID of Malians
+
+### 3.28. cBerbers
+
+Value: `#!cpp int 27`
+
+This is the civilization ID of Berbers
+
+### 3.29. cKhmer
+
+Value: `#!cpp int 28`
+
+This is the civilization ID of Khmer
+
+### 3.30. cMalay
+
+Value: `#!cpp int 29`
+
+This is the civilization ID of Malay
+
+### 3.31. cBurmese
+
+Value: `#!cpp int 30`
+
+This is the civilization ID of Burmese
+
+### 3.32. cVietnamese
+
+Value: `#!cpp int 31`
+
+This is the civilization ID of Vietnamese
+
+### 3.33. cBulgarians
+
+Value: `#!cpp int 32`
+
+This is the civilization ID of Bulgarians
+
+### 3.34. cTatars
+
+Value: `#!cpp int 33`
+
+This is the civilization ID of Tatars
+
+### 3.35. cCumans
+
+Value: `#!cpp int 34`
+
+This is the civilization ID of Cumans
+
+### 3.36. cLithuanians
+
+Value: `#!cpp int 35`
+
+This is the civilization ID of Lithuanians
+
+### 3.37. cBurgundians
+
+Value: `#!cpp int 36`
+
+This is the civilization ID of Burgundians
+
+### 3.38. cSicilians
+
+Value: `#!cpp int 37`
+
+This is the civilization ID of Sicilians
+
+## 4. EffectAmount Effect Type
+
+### 4.1. cSetAttribute
+
+Value: `#!cpp int 0`
 
 This is the ID of the `Set Attribute` effect of the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cSetAttribute, unitID, attributeID, value)`
+Syntax: `#!cpp xsEffectAmount(cSetAttribute, unitID, attributeID, value)`
 
-Example: `#!java xsEffectAmount(cSetAttribute, 74, 0, 100)`
+Example: `#!cpp xsEffectAmount(cSetAttribute, 74, cHitpoints, 100)`
 
-This sets the attribute 0 (HP) of unit 74 (militia) to 100 (the value)
+This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of the [Unit Attribute Constants](./#7-effectamount-unit-attribute "Jump to: Unit Attribute Constants") may be used to modify the corresponding unit property
 
-### 3.2. cModResource
+### 4.2. cModResource
 
-Value: `#!java int 1`
+Value: `#!cpp int 1`
 
 This is the ID of the `Modify Resource` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cModResource, resourceID, operation, value)`
+Syntax: `#!cpp xsEffectAmount(cModResource, resourceID, operation, value)`
 
-Example: `#!java xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)`
+Example: `#!cpp xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)`
 
 This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100
 
-### 3.3. cEnableObject
+### 4.3. cEnableObject
 
-Value: `#!java int 2`
+Value: `#!cpp int 2`
 
 This is the ID of the `Enable (or disable) Object` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cEnableObject, unitID, enableOrDisable, 0)`
+Syntax: `#!cpp xsEffectAmount(cEnableObject, unitID, enableOrDisable, 0)`
 
-Example: `#!java xsEffectAmount(cEnableObject, 74, cAttributeDisable, 0)`
+Example: `#!cpp xsEffectAmount(cEnableObject, 74, cAttributeDisable, 0)`
 
 This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be used to enable an object instead
 
-### 3.4. cUpgradeUnit
+### 4.4. cUpgradeUnit
 
-Value: `#!java int 3`
+Value: `#!cpp int 3`
 
 This is the ID of the `Upgrade Unit` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cUpgradeUnit, oldUnitID, newUnitID, 0)`
+Syntax: `#!cpp xsEffectAmount(cUpgradeUnit, oldUnitID, newUnitID, 0)`
 
-Example: `#!java xsEffectAmount(cUpgradeUnit, 74, 75, 0)`
+Example: `#!cpp xsEffectAmount(cUpgradeUnit, 74, 75, 0)`
 
 This replaces all units 74 (militia) with 75 (man at arms) on the map and also disables unit 74 and enables unit 75
 
-### 3.5. cAddAttribute
+### 4.5. cAddAttribute
 
-Value: `#!java int 4`
+Value: `#!cpp int 4`
 
 This is the ID of the `Add Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cAddAttribute, unitID, attributeID, value)`
+Syntax: `#!cpp xsEffectAmount(cAddAttribute, unitID, attributeID, value)`
 
-Example: `#!java xsEffectAmount(cAddAttribute, 74, 0, 100)`
+Example: `#!cpp xsEffectAmount(cAddAttribute, 74, 0, 100)`
 
 This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
-### 3.6. cMulAttribute
+### 4.6. cMulAttribute
 
-Value: `#!java int 5`
+Value: `#!cpp int 5`
 
 This is the ID of the `Multiply Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cMulAttribute, unitID, attributeID, value)`
+Syntax: `#!cpp xsEffectAmount(cMulAttribute, unitID, attributeID, value)`
 
-Example: `#!java xsEffectAmount(cMulAttribute, 74, 0, 100)`
+Example: `#!cpp xsEffectAmount(cMulAttribute, 74, 0, 100)`
 
 This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
-### 3.7. cMulResource
+### 4.7. cMulResource
 
-Value: `#!java int 6`
+Value: `#!cpp int 6`
 
 This is the ID of the `Multiply Resource` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cMulResource, resourceID, 0, value)`
+Syntax: `#!cpp xsEffectAmount(cMulResource, resourceID, 0, value)`
 
-Example: `#!java xsEffectAmount(cMulResource, cAttributeFood, 0, 10)`
+Example: `#!cpp xsEffectAmount(cMulResource, cAttributeFood, 0, 10)`
 
 This multiplies the food amount by 10 (the value)
 
-### 3.8. cEnableTech
+### 4.8. cEnableTech
 
-Value: `#!java int 7`
+Value: `#!cpp int 7`
 
 This is the ID of the `Enable (or disable) Technology` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cEnableTech, techID, enableOrDisable, 0)`
+Syntax: `#!cpp xsEffectAmount(cEnableTech, techID, enableOrDisable, 0)`
 
-Example: `#!java xsEffectAmount(cEnableTech, 6, cAttributeEnable, 0)`
+Example: `#!cpp xsEffectAmount(cEnableTech, 6, cAttributeEnable, 0)`
 
 This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead
 
-### 3.9. cModifyTech
+### 4.9. cModifyTech
 
-Value: `#!java int 8`
+Value: `#!cpp int 8`
 
 This is the ID of the `Modify Technology` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cModifyTech, techID, techAttribute, value)`
+Syntax: `#!cpp xsEffectAmount(cModifyTech, techID, techAttribute, value)`
 
-Example: `#!java xsEffectAmount(cModifyTech, 22, cAttrSetTime, 10)`
+Example: `#!cpp xsEffectAmount(cModifyTech, 22, cAttrSetTime, 10)`
 
-This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./#5-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
+This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./#6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
 
-### 3.10. cSetPlayerData
+### 4.10. cSetPlayerData
 
-Value: `#!java int 9`
+Value: `#!cpp int 9`
 
 This is the ID of the `Set Player Data` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cSetPlayerData, 0, cAttributeSet, value)`
+Syntax: `#!cpp xsEffectAmount(cSetPlayerData, 0, cAttributeSet, value)`
 
-Example: `#!java xsEffectAmount(cSetPlayerData, 0, cAttributeSet, 10230)`
+Example: `#!cpp xsEffectAmount(cSetPlayerData, 0, cAttributeSet, 10230)`
 
 This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
-### 3.11. cSetTechCost
+### 4.11. cSetTechCost
 
-Value: `#!java int 100`
+Value: `#!cpp int 100`
 
 This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cSetTechCost, techID, resourceID, value)`
+Syntax: `#!cpp xsEffectAmount(cSetTechCost, techID, resourceID, value)`
 
-Example: `#!java xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10)`
+Example: `#!cpp xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10)`
 
 This sets the food cost of tech 22 (loom) to 10 (the value)
 
-### 3.12. cAddTechCost
+### 4.12. cAddTechCost
 
-Value: `#!java int 101`
+Value: `#!cpp int 101`
 
 This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cAddTechCost, techID, resourceID, value)`
+Syntax: `#!cpp xsEffectAmount(cAddTechCost, techID, resourceID, value)`
 
-Example: `#!java xsEffectAmount(cAddTechCost, 22, cAttributeFood, 10)`
+Example: `#!cpp xsEffectAmount(cAddTechCost, 22, cAttributeFood, 10)`
 
 This adds 10 (the) to the current food cost of tech 22 (loom)
 
-### 3.13. cDisableTech
+### 4.13. cDisableTech
 
-Value: `#!java int 102`
+Value: `#!cpp int 102`
 
 This is the ID of the `Disable Tech` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cDisableTech, techID, 0, 0)`
+Syntax: `#!cpp xsEffectAmount(cDisableTech, techID, 0, 0)`
 
-Example: `#!java xsEffectAmount(cDisableTech, 22, 0, 0)`
+Example: `#!cpp xsEffectAmount(cDisableTech, 22, 0, 0)`
 
 This disables the tech 22 (loom)
 
-### 3.14. cModTechTime
+### 4.14. cModTechTime
 
-Value: `#!java int 103`
+Value: `#!cpp int 103`
 
 This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cModTechTime, techID, operation, value)`
+Syntax: `#!cpp xsEffectAmount(cModTechTime, techID, operation, value)`
 
-Example: `#!java xsEffectAmount(cModTechTime, 22, cAttributeSet, 10)`
+Example: `#!cpp xsEffectAmount(cModTechTime, 22, cAttributeSet, 10)`
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, `cAttributeAdd` may be used to add to the current research time of the technology
 
-### 3.15. cGaiaSetAttribute
+### 4.15. cGaiaSetAttribute
 
-Value: `#!java int -1`
+Value: `#!cpp int -1`
 
 This is the ID of the `Gaia Set Attribute` effect of the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaSetAttribute, unitID, attributeID, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaSetAttribute, unitID, attributeID, value)`
 
-Example: `#!java xsEffectAmount(cGaiaSetAttribute, 74, 0, 100)`
+Example: `#!cpp xsEffectAmount(cGaiaSetAttribute, 74, 0, 100)`
 
 This sets the attribute 0 (HP) of unit 74 (militia) to 100 (the value)
 
-### 3.16. cGaiaModResource
+### 4.16. cGaiaModResource
 
-Value: `#!java int -2`
+Value: `#!cpp int -2`
 
 This is the ID of the `Gaia Modify Resource` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaModResource, resourceID, operation, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaModResource, resourceID, operation, value)`
 
-Example: `#!java xsEffectAmount(cGaiaModResource, cAttributeFood, cAttributeAdd, 100)`
+Example: `#!cpp xsEffectAmount(cGaiaModResource, cAttributeFood, cAttributeAdd, 100)`
 
 This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100
 
-### 3.17. cGaiaEnableObject
+### 4.17. cGaiaEnableObject
 
-Value: `#!java int -3`
+Value: `#!cpp int -3`
 
 This is the ID of the `Gaia Enable (or disable) Object` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaEnableObject, unitID, enableOrDisable, 0)`
+Syntax: `#!cpp xsEffectAmount(cGaiaEnableObject, unitID, enableOrDisable, 0)`
 
-Example: `#!java xsEffectAmount(cGaiaEnableObject, 74, cAttributeDisable, 0)`
+Example: `#!cpp xsEffectAmount(cGaiaEnableObject, 74, cAttributeDisable, 0)`
 
 This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be used to enable an object instead
 
-### 3.18. cGaiaUpgradeUnit
+### 4.18. cGaiaUpgradeUnit
 
-Value: `#!java int -4`
+Value: `#!cpp int -4`
 
 This is the ID of the `Gaia Upgrade Unit` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaUpgradeUnit, oldUnitID, newUnitID, 0)`
+Syntax: `#!cpp xsEffectAmount(cGaiaUpgradeUnit, oldUnitID, newUnitID, 0)`
 
-Example: `#!java xsEffectAmount(cGaiaUpgradeUnit, 74, 75, 0)`
+Example: `#!cpp xsEffectAmount(cGaiaUpgradeUnit, 74, 75, 0)`
 
 This replaces all units 74 (militia) with 75 (man at arms) on the map and also disables unit 74 and enables unit 75
 
-### 3.19. cGaiaAddAttribute
+### 4.19. cGaiaAddAttribute
 
-Value: `#!java int -5`
+Value: `#!cpp int -5`
 
 This is the ID of the `Gaia Add Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaAddAttribute, unitID, attributeID, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaAddAttribute, unitID, attributeID, value)`
 
-Example: `#!java xsEffectAmount(cGaiaAddAttribute, 74, 0, 100)`
+Example: `#!cpp xsEffectAmount(cGaiaAddAttribute, 74, 0, 100)`
 
 This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
-### 3.20. cGaiaMulAttribute
+### 4.20. cGaiaMulAttribute
 
-Value: `#!java int -6`
+Value: `#!cpp int -6`
 
 This is the ID of the `Gaia Multiply Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaMulAttribute, unitID, attributeID, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaMulAttribute, unitID, attributeID, value)`
 
-Example: `#!java xsEffectAmount(cGaiaMulAttribute, 74, 0, 100)`
+Example: `#!cpp xsEffectAmount(cGaiaMulAttribute, 74, 0, 100)`
 
 This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
-### 3.21. cGaiaMulResource
+### 4.21. cGaiaMulResource
 
-Value: `#!java int -7`
+Value: `#!cpp int -7`
 
 This is the ID of the `Gaia Multiply Resource` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaMulResource, resourceID, 0, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaMulResource, resourceID, 0, value)`
 
-Example: `#!java xsEffectAmount(cGaiaMulResource, cAttributeFood, 0, 10)`
+Example: `#!cpp xsEffectAmount(cGaiaMulResource, cAttributeFood, 0, 10)`
 
 This multiplies the food amount by 10 (the value)
 
-### 3.22. cGaiaEnableTech
+### 4.22. cGaiaEnableTech
 
-Value: `#!java int -8`
+Value: `#!cpp int -8`
 
 This is the ID of the `Gaia Enable (or disable) Technology` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaEnableTech, techID, enableOrDisable, 0)`
+Syntax: `#!cpp xsEffectAmount(cGaiaEnableTech, techID, enableOrDisable, 0)`
 
-Example: `#!java xsEffectAmount(cGaiaEnableTech, 6, cAttributeEnable, 0)`
+Example: `#!cpp xsEffectAmount(cGaiaEnableTech, 6, cAttributeEnable, 0)`
 
 This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead
 
-### 3.23. cGaiaModifyTech
+### 4.23. cGaiaModifyTech
 
-Value: `#!java int -9`
+Value: `#!cpp int -9`
 
 This is the ID of the `Gaia Modify Technology` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaModifyTech, techID, techAttribute, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaModifyTech, techID, techAttribute, value)`
 
-Example: `#!java xsEffectAmount(cGaiaModifyTech, 22, cAttrSetTime, 10)`
+Example: `#!cpp xsEffectAmount(cGaiaModifyTech, 22, cAttrSetTime, 10)`
 
-This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./<effectAmount.techAttribute name_ref> "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
+This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
 
-### 3.24. cGaiaSetPlayerData
+### 4.24. cGaiaSetPlayerData
 
-Value: `#!java int -10`
+Value: `#!cpp int -10`
 
 This is the ID of the `Gaia Set Player Data` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, value)`
 
-Example: `#!java xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, 10230)`
+Example: `#!cpp xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, 10230)`
 
 This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
-### 3.25. cGaiaSetTechCost
+### 4.25. cGaiaSetTechCost
 
-Value: `#!java int -101`
+Value: `#!cpp int -101`
 
 This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaSetTechCost, techID, resourceID, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaSetTechCost, techID, resourceID, value)`
 
-Example: `#!java xsEffectAmount(cGaiaSetTechCost, 22, cAttributeFood, 10)`
+Example: `#!cpp xsEffectAmount(cGaiaSetTechCost, 22, cAttributeFood, 10)`
 
 This sets the food cost of tech 22 (loom) to 10 (the value)
 
-### 3.26. cGaiaAddTechCost
+### 4.26. cGaiaAddTechCost
 
-Value: `#!java int -102`
+Value: `#!cpp int -102`
 
 This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaAddTechCost, techID, resourceID, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaAddTechCost, techID, resourceID, value)`
 
-Example: `#!java xsEffectAmount(cGaiaAddTechCost, 22, cAttributeFood, 10)`
+Example: `#!cpp xsEffectAmount(cGaiaAddTechCost, 22, cAttributeFood, 10)`
 
 This adds 10 (the) to the current food cost of tech 22 (loom)
 
-### 3.27. cGaiaDisableTech
+### 4.27. cGaiaDisableTech
 
-Value: `#!java int -103`
+Value: `#!cpp int -103`
 
 This is the ID of the `Gaia Disable Tech` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaDisableTech, techID, 0, 0)`
+Syntax: `#!cpp xsEffectAmount(cGaiaDisableTech, techID, 0, 0)`
 
-Example: `#!java xsEffectAmount(cGaiaDisableTech, 22, 0, 0)`
+Example: `#!cpp xsEffectAmount(cGaiaDisableTech, 22, 0, 0)`
 
 This disables the tech 22 (loom)
 
-### 3.28. cGaiaModTechTime
+### 4.28. cGaiaModTechTime
 
-Value: `#!java int -104`
+Value: `#!cpp int -104`
 
 This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function
 
-Syntax: `#!java xsEffectAmount(cGaiaModTechTime, techID, operation, value)`
+Syntax: `#!cpp xsEffectAmount(cGaiaModTechTime, techID, operation, value)`
 
-Example: `#!java xsEffectAmount(cGaiaModTechTime, 22, cAttributeSet, 10)`
+Example: `#!cpp xsEffectAmount(cGaiaModTechTime, 22, cAttributeSet, 10)`
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, `cAttributeAdd` may be used to add to the current research time of the technology
 
-## 4. EffectAmount Effect Operations
+## 5. EffectAmount Effect Operations
 
-### 4.1. cAttributeDisable
+### 5.1. cAttributeDisable
 
-Value: `#!java int 0`
+Value: `#!cpp int 0`
 
 This is the ID of the `Attribute Disbale` modifier for the xsEffectAmount function
 
-### 4.2. cAttributeEnable
+### 5.2. cAttributeEnable
 
-Value: `#!java int 1`
+Value: `#!cpp int 1`
 
 This is the ID of the `Attribute Enable` modifier for the xsEffectAmount function
 
-### 4.3. cAttributeForce
+### 5.3. cAttributeForce
 
-Value: `#!java int 2`
+Value: `#!cpp int 2`
 
 This is the ID of the `Attribute Force` modifier for the xsEffectAmount function
 
-### 4.4. cAttributeSet
+### 5.4. cAttributeSet
 
-Value: `#!java int 0`
+Value: `#!cpp int 0`
 
 This is the ID of the `Attribute Set` modifier for the xsEffectAmount function
 
-### 4.5. cAttriubteAdd
+### 5.5. cAttriubteAdd
 
-Value: `#!java int 1`
+Value: `#!cpp int 1`
 
 This is the ID of the `Attribute Add` modifier for the xsEffectAmount function
 
-## 5. EffectAmount Technology Attribute
+## 6. EffectAmount Technology Attribute
 
-### 5.1. cAttrSetTime
+### 6.1. cAttrSetTime
 
-Value: `#!java int -1`
+Value: `#!cpp int -1`
 
 This is the ID of the `Attribute Set Time` modifier for the xsEffectAmount function
 
-### 5.2. cAttrAddTime
+### 6.2. cAttrAddTime
 
-Value: `#!java int -2`
+Value: `#!cpp int -2`
 
 This is the ID of the `Attribute Add Time` modifier for the xsEffectAmount function
 
-### 5.3. cAttrSetFoodCost
+### 6.3. cAttrSetFoodCost
 
-Value: `#!java int 0`
+Value: `#!cpp int 0`
 
 This is the ID of the `Attribute Set Food Cost` modifier for the xsEffectAmount function
 
-### 5.4. cAttrSetWoodCost
+### 6.4. cAttrSetWoodCost
 
-Value: `#!java int 1`
+Value: `#!cpp int 1`
 
 This is the ID of the `Attribute Set Wood Cost` modifier for the xsEffectAmount function
 
-### 5.5. cAttrSetStoneCost
+### 6.5. cAttrSetStoneCost
 
-Value: `#!java int 2`
+Value: `#!cpp int 2`
 
 This is the ID of the `Attribute Set Stone Cost` modifier for the xsEffectAmount function
 
-### 5.6. cAttrSetGoldCost
+### 6.6. cAttrSetGoldCost
 
-Value: `#!java int 3`
+Value: `#!cpp int 3`
 
 This is the ID of the `Attribute Set Gold Cost` modifier for the xsEffectAmount function
 
-### 5.7. cAttrAddFoodCost
+### 6.7. cAttrAddFoodCost
 
-Value: `#!java int 16384`
+Value: `#!cpp int 16384`
 
 This is the ID of the `Attribute Add Food Cost` modifier for the xsEffectAmount function
 
-### 5.8. cAttrAddWoodCost
+### 6.8. cAttrAddWoodCost
 
-Value: `#!java int 16385`
+Value: `#!cpp int 16385`
 
 This is the ID of the `Attribute Add Wood Cost` modifier for the xsEffectAmount function
 
-### 5.9. cAttrAddStoneCost
+### 6.9. cAttrAddStoneCost
 
-Value: `#!java int 16386`
+Value: `#!cpp int 16386`
 
 This is the ID of the `Attribute Add Stone Cost` modifier for the xsEffectAmount function
 
-### 5.10. cAttrAddGoldCost
+### 6.10. cAttrAddGoldCost
 
-Value: `#!java int 16387`
+Value: `#!cpp int 16387`
 
 This is the ID of the `Attribute Add Gold Cost` modifier for the xsEffectAmount function
 
-## 6. Resource
+### 6.11. cAttrSetLocation
 
-### 6.1. cAttributeFood
+Value: `#!cpp int 4`
 
-Value: `#!java int 0`
+This is the ID of the `Attribute Set Tech Location` modifier for the xsEffectAmount function
+
+### 6.12. cAttrSetButton
+
+Value: `#!cpp int 5`
+
+This is the ID of the `Attribute Set Tech Button` modifier for the xsEffectAmount function
+
+### 6.13. cAttrSetIcon
+
+Value: `#!cpp int 6`
+
+This is the ID of the `Attribute Set Tech Icon` modifier for the xsEffectAmount function
+
+### 6.14. cAttrSetName
+
+Value: `#!cpp int 7`
+
+This is the ID of the `Attribute Set Tech Name` modifier for the xsEffectAmount function
+
+### 6.15. cAttrSetDescription
+
+Value: `#!cpp int 8`
+
+This is the ID of the `Attribute Set Tech Description` modifier for the xsEffectAmount function
+
+### 6.16. cAttrSetStacking
+
+Value: `#!cpp int 9`
+
+This is the ID of the `Attribute Set Tech Stacking` modifier for the xsEffectAmount function
+
+## 7. EffectAmount Unit Attribute
+
+### 7.1. cHitpoints
+
+Value: `#!cpp int 0`
+
+This is the ID of the Hitpoints attribute of the unit
+
+### 7.2. cLineOfSight
+
+Value: `#!cpp int 1`
+
+This is the ID of the Line Of Sight attribute of the unit
+
+### 7.3. cGarrisonCapacity
+
+Value: `#!cpp int 2`
+
+This is the ID of the Garrison Capacity attribute of the unit
+
+### 7.4. cUnitSizeX
+
+Value: `#!cpp int 3`
+
+This is the ID of the Unit Size X attribute of the unit
+
+### 7.5. cUnitSizeY
+
+Value: `#!cpp int 4`
+
+This is the ID of the Unit Size Y attribute of the unit
+
+### 7.6. cMovementSpeed
+
+Value: `#!cpp int 5`
+
+This is the ID of the Movement Speed attribute of the unit
+
+### 7.7. cRotationSpeed
+
+Value: `#!cpp int 6`
+
+This is the ID of the Rotation Speed attribute of the unit
+
+### 7.8. cArmor
+
+Value: `#!cpp int 8`
+
+This is the ID of the Armor attribute of the unit
+
+### 7.9. cAttack
+
+Value: `#!cpp int 9`
+
+This is the ID of the Attack attribute of the unit
+
+### 7.10. cAttackReloadTime
+
+Value: `#!cpp int 10`
+
+This is the ID of the Attack Reload Time attribute of the unit
+
+### 7.11. cAccuracyPercent
+
+Value: `#!cpp int 11`
+
+This is the ID of the Accuracy Percent attribute of the unit
+
+### 7.12. cMaxRange
+
+Value: `#!cpp int 12`
+
+This is the ID of the Max Range attribute of the unit
+
+### 7.13. cWorkRate
+
+Value: `#!cpp int 13`
+
+This is the ID of the Work Rate attribute of the unit
+
+### 7.14. cCarryCapacity
+
+Value: `#!cpp int 14`
+
+This is the ID of the Carry Capacity attribute of the unit
+
+### 7.15. cBaseArmor
+
+Value: `#!cpp int 15`
+
+This is the ID of the Base Armor attribute of the unit
+
+### 7.16. cProjectileUnit
+
+Value: `#!cpp int 16`
+
+This is the ID of the Projectile Unit attribute of the unit
+
+### 7.17. cIconGraphicsAngle
+
+Value: `#!cpp int 17`
+
+This is the ID of the Icon Graphics Angle attribute of the unit
+
+### 7.18. cTerrainDefenseBonus
+
+Value: `#!cpp int 18`
+
+This is the ID of the Terrain Defense Bonus attribute of the unit
+
+### 7.19. cEnableSmartProjectile
+
+Value: `#!cpp int 19`
+
+This is the ID of the Enable Smart Projectile attribute of the unit
+
+### 7.20. cMinimumRange
+
+Value: `#!cpp int 20`
+
+This is the ID of the Minimum Range attribute of the unit
+
+### 7.21. cAmountFirstStorage
+
+Value: `#!cpp int 21`
+
+This is the ID of the Amount First Storage attribute of the unit
+
+### 7.22. cBlastWidth
+
+Value: `#!cpp int 22`
+
+This is the ID of the Blast Width attribute of the unit
+
+### 7.23. cSearchRadius
+
+Value: `#!cpp int 23`
+
+This is the ID of the Search Radius attribute of the unit
+
+### 7.24. cBonusResistance
+
+Value: `#!cpp int 24`
+
+This is the ID of the Bonus Resistance attribute of the unit
+
+### 7.25. cIconId
+
+Value: `#!cpp int 25`
+
+This is the ID of the Icon Id attribute of the unit
+
+### 7.26. cHeroStatus
+
+Value: `#!cpp int 40`
+
+This is the ID of the Hero Status attribute of the unit
+
+### 7.27. cAttackDelay
+
+Value: `#!cpp int 41`
+
+This is the ID of the Attack Delay attribute of the unit
+
+### 7.28. cTrainLocation
+
+Value: `#!cpp int 42`
+
+This is the ID of the Train Location attribute of the unit
+
+### 7.29. cTrainButton
+
+Value: `#!cpp int 43`
+
+This is the ID of the Train Button attribute of the unit
+
+### 7.30. cBlastAttackLevel
+
+Value: `#!cpp int 44`
+
+This is the ID of the Blast Attack Level attribute of the unit
+
+### 7.31. cBlastDefenseLevel
+
+Value: `#!cpp int 45`
+
+This is the ID of the Blast Defense Level attribute of the unit
+
+### 7.32. cShownAttack
+
+Value: `#!cpp int 46`
+
+This is the ID of the Shown Attack attribute of the unit
+
+### 7.33. cShownRange
+
+Value: `#!cpp int 47`
+
+This is the ID of the Shown Range attribute of the unit
+
+### 7.34. cShownMeleeArmor
+
+Value: `#!cpp int 48`
+
+This is the ID of the Shown Melee Armor attribute of the unit
+
+### 7.35. cShownPierceArmor
+
+Value: `#!cpp int 49`
+
+This is the ID of the Shown Pierce Armor attribute of the unit
+
+### 7.36. cNameId
+
+Value: `#!cpp int 50`
+
+This is the ID of the Name Id attribute of the unit
+
+### 7.37. cDescriptionId
+
+Value: `#!cpp int 51`
+
+This is the ID of the Description Id attribute of the unit
+
+### 7.38. cTerrainTable
+
+Value: `#!cpp int 53`
+
+This is the ID of the Terrain Table attribute of the unit
+
+### 7.39. cDeadUnitId
+
+Value: `#!cpp int 57`
+
+This is the ID of the Dead Unit Id attribute of the unit
+
+### 7.40. cHotkeyId
+
+Value: `#!cpp int 58`
+
+This is the ID of the Hotkey Id attribute of the unit
+
+### 7.41. cResourceCost
+
+Value: `#!cpp int 100`
+
+This is the ID of the Resource Cost attribute of the unit
+
+### 7.42. cTrainTime
+
+Value: `#!cpp int 101`
+
+This is the ID of the Train Time attribute of the unit
+
+### 7.43. cTotalProjectiles
+
+Value: `#!cpp int 102`
+
+This is the ID of the Total Projectiles attribute of the unit
+
+### 7.44. cFoodCost
+
+Value: `#!cpp int 103`
+
+This is the ID of the Food Cost attribute of the unit
+
+### 7.45. cWoodCost
+
+Value: `#!cpp int 104`
+
+This is the ID of the Wood Cost attribute of the unit
+
+### 7.46. cGoldCost
+
+Value: `#!cpp int 105`
+
+This is the ID of the Gold Cost attribute of the unit
+
+### 7.47. cStoneCost
+
+Value: `#!cpp int 106`
+
+This is the ID of the Stone Cost attribute of the unit
+
+### 7.48. cMaxTotalProjectiles
+
+Value: `#!cpp int 107`
+
+This is the ID of the Max Total Projectiles attribute of the unit
+
+### 7.49. cGarrisonHealRate
+
+Value: `#!cpp int 108`
+
+This is the ID of the Garrison Heal Rate attribute of the unit
+
+### 7.50. cRegenerationRate
+
+Value: `#!cpp int 109`
+
+This is the ID of the Regeneration Rate attribute of the unit
+
+## 8. EffectAmount Object Class
+
+### 8.1. cArcherClass
+
+Value: `#!cpp int 900`
+
+This is the ID used to target the Archer Class
+
+### 8.2. cArtifactClass
+
+Value: `#!cpp int 901`
+
+This is the ID used to target the Artifact Class
+
+### 8.3. cTradeBoatClass
+
+Value: `#!cpp int 902`
+
+This is the ID used to target the Trade Boat Class
+
+### 8.4. cBuildingClass
+
+Value: `#!cpp int 903`
+
+This is the ID used to target the Building Class
+
+### 8.5. cVillagerClass
+
+Value: `#!cpp int 904`
+
+This is the ID used to target the Villager Class
+
+### 8.6. cSeaFishClass
+
+Value: `#!cpp int 905`
+
+This is the ID used to target the Sea Fish Class
+
+### 8.7. cInfantryClass
+
+Value: `#!cpp int 906`
+
+This is the ID used to target the Infantry Class
+
+### 8.8. cForageBushClass
+
+Value: `#!cpp int 907`
+
+This is the ID used to target the Forage Bush Class
+
+### 8.9. cStoneMineClass
+
+Value: `#!cpp int 908`
+
+This is the ID used to target the Stone Mine Class
+
+### 8.10. cPreyAnimalClass
+
+Value: `#!cpp int 909`
+
+This is the ID used to target the Prey Animal Class
+
+### 8.11. cPredatorAnimalClass
+
+Value: `#!cpp int 910`
+
+This is the ID used to target the Predator Animal Class
+
+### 8.12. cMiscellaneousClass
+
+Value: `#!cpp int 911`
+
+This is the ID used to target the Miscellaneous Class
+
+### 8.13. cCavalryClass
+
+Value: `#!cpp int 912`
+
+This is the ID used to target the Cavalry Class
+
+### 8.14. cSiegeWeaponClass
+
+Value: `#!cpp int 913`
+
+This is the ID used to target the Siege Weapon Class
+
+### 8.15. cTerrainClass
+
+Value: `#!cpp int 914`
+
+This is the ID used to target the Terrain Class
+
+### 8.16. cTreeClass
+
+Value: `#!cpp int 915`
+
+This is the ID used to target the Tree Class
+
+### 8.17. cTreeStumpClass
+
+Value: `#!cpp int 916`
+
+This is the ID used to target the Tree Stump Class
+
+### 8.18. cHealerClass
+
+Value: `#!cpp int 917`
+
+This is the ID used to target the Healer Class
+
+### 8.19. cMonkClass
+
+Value: `#!cpp int 918`
+
+This is the ID used to target the Monk Class
+
+### 8.20. cTradeCartClass
+
+Value: `#!cpp int 919`
+
+This is the ID used to target the Trade Cart Class
+
+### 8.21. cTransportShipClass
+
+Value: `#!cpp int 920`
+
+This is the ID used to target the Transport Ship Class
+
+### 8.22. cFishingBoatClass
+
+Value: `#!cpp int 921`
+
+This is the ID used to target the Fishing Boat Class
+
+### 8.23. cWarshipClass
+
+Value: `#!cpp int 922`
+
+This is the ID used to target the Warship Class
+
+### 8.24. cConquistadorClass
+
+Value: `#!cpp int 923`
+
+This is the ID used to target the Conquistador Class
+
+### 8.25. cWarElephantClass
+
+Value: `#!cpp int 924`
+
+This is the ID used to target the War Elephant Class
+
+### 8.26. cHeroClass
+
+Value: `#!cpp int 925`
+
+This is the ID used to target the Hero Class
+
+### 8.27. cElephantArcherClass
+
+Value: `#!cpp int 926`
+
+This is the ID used to target the Elephant Archer Class
+
+### 8.28. cWallClass
+
+Value: `#!cpp int 927`
+
+This is the ID used to target the Wall Class
+
+### 8.29. cPhalanxClass
+
+Value: `#!cpp int 928`
+
+This is the ID used to target the Phalanx Class
+
+### 8.30. cDomesticAnimalClass
+
+Value: `#!cpp int 929`
+
+This is the ID used to target the Domestic Animal Class
+
+### 8.31. cFlagClass
+
+Value: `#!cpp int 930`
+
+This is the ID used to target the Flag Class
+
+### 8.32. cDeepSeaFishClass
+
+Value: `#!cpp int 931`
+
+This is the ID used to target the Deep Sea Fish Class
+
+### 8.33. cGoldMine
+
+Value: `#!cpp int 932`
+
+This is the ID used to target the Gold Mine
+
+### 8.34. cShoreFish
+
+Value: `#!cpp int 933`
+
+This is the ID used to target the Shore Fish
+
+### 8.35. cCliffClass
+
+Value: `#!cpp int 934`
+
+This is the ID used to target the Cliff Class
+
+### 8.36. cPetardClass
+
+Value: `#!cpp int 935`
+
+This is the ID used to target the Petard Class
+
+### 8.37. cCavalryArcherClass
+
+Value: `#!cpp int 936`
+
+This is the ID used to target the Cavalry Archer Class
+
+### 8.38. cDoppelgangerClass
+
+Value: `#!cpp int 937`
+
+This is the ID used to target the Doppelganger Class
+
+### 8.39. cBirdClass
+
+Value: `#!cpp int 938`
+
+This is the ID used to target the Bird Class
+
+### 8.40. cGateClass
+
+Value: `#!cpp int 939`
+
+This is the ID used to target the Gate Class
+
+### 8.41. cSalvagePileClass
+
+Value: `#!cpp int 940`
+
+This is the ID used to target the Salvage Pile Class
+
+### 8.42. cResourcePileClass
+
+Value: `#!cpp int 941`
+
+This is the ID used to target the Resource Pile Class
+
+### 8.43. cRelicClass
+
+Value: `#!cpp int 942`
+
+This is the ID used to target the Relic Class
+
+### 8.44. cMonKWithRelicClass
+
+Value: `#!cpp int 943`
+
+This is the ID used to target the Mon K With Relic Class
+
+### 8.45. cHandCannoneerClass
+
+Value: `#!cpp int 944`
+
+This is the ID used to target the Hand Cannoneer Class
+
+### 8.46. cTwoHandedSwordsmanClass
+
+Value: `#!cpp int 945`
+
+This is the ID used to target the Two Handed Swordsman Class
+
+### 8.47. cPikemanClass
+
+Value: `#!cpp int 946`
+
+This is the ID used to target the Pikeman Class
+
+### 8.48. cScoutCavalryClass
+
+Value: `#!cpp int 947`
+
+This is the ID used to target the Scout Cavalry Class
+
+### 8.49. cOreMineClass
+
+Value: `#!cpp int 948`
+
+This is the ID used to target the Ore Mine Class
+
+### 8.50. cFarmClass
+
+Value: `#!cpp int 949`
+
+This is the ID used to target the Farm Class
+
+### 8.51. cSpearmanClass
+
+Value: `#!cpp int 950`
+
+This is the ID used to target the Spearman Class
+
+### 8.52. cPackedUnitClass
+
+Value: `#!cpp int 951`
+
+This is the ID used to target the Packed Unit Class
+
+### 8.53. cTowerClass
+
+Value: `#!cpp int 952`
+
+This is the ID used to target the Tower Class
+
+### 8.54. cBoardingShipClass
+
+Value: `#!cpp int 953`
+
+This is the ID used to target the Boarding Ship Class
+
+### 8.55. cUnpackedSiegeUnitClass
+
+Value: `#!cpp int 954`
+
+This is the ID used to target the Unpacked Siege Unit Class
+
+### 8.56. cScorpionClass
+
+Value: `#!cpp int 955`
+
+This is the ID used to target the Scorpion Class
+
+### 8.57. cRaiderClass
+
+Value: `#!cpp int 956`
+
+This is the ID used to target the Raider Class
+
+### 8.58. cCavalryRaiderClass
+
+Value: `#!cpp int 957`
+
+This is the ID used to target the Cavalry Raider Class
+
+### 8.59. cLivestockClass
+
+Value: `#!cpp int 958`
+
+This is the ID used to target the Livestock Class
+
+### 8.60. cKingClass
+
+Value: `#!cpp int 959`
+
+This is the ID used to target the King Class
+
+### 8.61. cMiscBuildingClass
+
+Value: `#!cpp int 960`
+
+This is the ID used to target the Misc Building Class
+
+### 8.62. cControlledAnimalClass
+
+Value: `#!cpp int 961`
+
+This is the ID used to target the Controlled Animal Class
+
+## 9. Resource
+
+### 9.1. cAttributeFood
+
+Value: `#!cpp int 0`
 
 ID of the player resource Food
 
-### 6.2. cAttributeWood
+### 9.2. cAttributeWood
 
-Value: `#!java int 1`
+Value: `#!cpp int 1`
 
 ID of the player resource Wood
 
-### 6.3. cAttributeStone
+### 9.3. cAttributeStone
 
-Value: `#!java int 2`
+Value: `#!cpp int 2`
 
 ID of the player resource Stone
 
-### 6.4. cAttributeGold
+### 9.4. cAttributeGold
 
-Value: `#!java int 3`
+Value: `#!cpp int 3`
 
 ID of the player resource Gold
 
-### 6.5. cAttributePopulationCap
+### 9.5. cAttributePopulationCap
 
-Value: `#!java int 4`
+Value: `#!cpp int 4`
 
 ID of the player resource Population Cap
 
-### 6.6. cAttributeReligion
+### 9.6. cAttributeReligion
 
-Value: `#!java int 5`
+Value: `#!cpp int 5`
 
 ID of the player resource Religion
 
-### 6.7. cAttributeCurrentAge
+### 9.7. cAttributeCurrentAge
 
-Value: `#!java int 6`
+Value: `#!cpp int 6`
 
 ID of the player resource Current Age
 
-### 6.8. cAttributeRelics
+### 9.8. cAttributeRelics
 
-Value: `#!java int 7`
+Value: `#!cpp int 7`
 
 ID of the player resource Relics
 
-### 6.9. cAttributeTrageBonus
+### 9.9. cAttributeTrageBonus
 
-Value: `#!java int 8`
+Value: `#!cpp int 8`
 
 ID of the player resource Trage Bonus
 
-### 6.10. cAttributeTradeGoods
+### 9.10. cAttributeTradeGoods
 
-Value: `#!java int 9`
+Value: `#!cpp int 9`
 
 ID of the player resource Trade Goods
 
-### 6.11. cAttributeTradeProducation
+### 9.11. cAttributeTradeProducation
 
-Value: `#!java int 10`
+Value: `#!cpp int 10`
 
 ID of the player resource Trade Producation
 
-### 6.12. cAttributePopulation
+### 9.12. cAttributePopulation
 
-Value: `#!java int 11`
+Value: `#!cpp int 11`
 
 ID of the player resource Population
 
-### 6.13. cAttributeDecay
+### 9.13. cAttributeDecay
 
-Value: `#!java int 12`
+Value: `#!cpp int 12`
 
 ID of the player resource Decay
 
-### 6.14. cAttributeDiscovery
+### 9.14. cAttributeDiscovery
 
-Value: `#!java int 13`
+Value: `#!cpp int 13`
 
 ID of the player resource Discovery
 
-### 6.15. cAttributeRuins
+### 9.15. cAttributeRuins
 
-Value: `#!java int 14`
+Value: `#!cpp int 14`
 
 ID of the player resource Ruins
 
-### 6.16. cAttributeMeat
+### 9.16. cAttributeMeat
 
-Value: `#!java int 15`
+Value: `#!cpp int 15`
 
 ID of the player resource Meat
 
-### 6.17. cAttributeBerries
+### 9.17. cAttributeBerries
 
-Value: `#!java int 16`
+Value: `#!cpp int 16`
 
 ID of the player resource Berries
 
-### 6.18. cAttributeFish
+### 9.18. cAttributeFish
 
-Value: `#!java int 17`
+Value: `#!cpp int 17`
 
 ID of the player resource Fish
 
-### 6.19. cAttributeKills
+### 9.19. cAttributeKills
 
-Value: `#!java int 20`
+Value: `#!cpp int 20`
 
 ID of the player resource Kills
 
-### 6.20. cAttributeResearchCount
+### 9.20. cAttributeResearchCount
 
-Value: `#!java int 21`
+Value: `#!cpp int 21`
 
 ID of the player resource Research Count
 
-### 6.21. cAttributeExploration
+### 9.21. cAttributeExploration
 
-Value: `#!java int 22`
+Value: `#!cpp int 22`
 
 ID of the player resource Exploration
 
-### 6.22. cAttributeConvertPriest
+### 9.22. cAttributeConvertPriest
 
-Value: `#!java int 27`
+Value: `#!cpp int 27`
 
 ID of the player resource Convert Priest
 
-### 6.23. cAttributeConvertBuilding
+### 9.23. cAttributeConvertBuilding
 
-Value: `#!java int 28`
+Value: `#!cpp int 28`
 
 ID of the player resource Convert Building
 
-### 6.24. cAttributeBuildingLimit
+### 9.24. cAttributeBuildingLimit
 
-Value: `#!java int 30`
+Value: `#!cpp int 30`
 
 ID of the player resource Building Limit
 
-### 6.25. cAttributeFoodLimit
+### 9.25. cAttributeFoodLimit
 
-Value: `#!java int 31`
+Value: `#!cpp int 31`
 
 ID of the player resource Food Limit
 
-### 6.26. cAttributeUnitLimit
+### 9.26. cAttributeUnitLimit
 
-Value: `#!java int 32`
+Value: `#!cpp int 32`
 
 ID of the player resource Unit Limit
 
-### 6.27. cAttributeMaintence
+### 9.27. cAttributeMaintence
 
-Value: `#!java int 33`
+Value: `#!cpp int 33`
 
 ID of the player resource Maintence
 
-### 6.28. cAttributeFaith
+### 9.28. cAttributeFaith
 
-Value: `#!java int 34`
+Value: `#!cpp int 34`
 
 ID of the player resource Faith
 
-### 6.29. cAttributeFaithRechargeRate
+### 9.29. cAttributeFaithRechargeRate
 
-Value: `#!java int 35`
+Value: `#!cpp int 35`
 
 ID of the player resource Faith Recharge Rate
 
-### 6.30. cAttributeFarmFood
+### 9.30. cAttributeFarmFood
 
-Value: `#!java int 36`
+Value: `#!cpp int 36`
 
 ID of the player resource Farm Food
 
-### 6.31. cAttributeCivilianPopulation
+### 9.31. cAttributeCivilianPopulation
 
-Value: `#!java int 37`
+Value: `#!cpp int 37`
 
 ID of the player resource Civilian Population
 
-### 6.32. cAttributeAllTechsAchieved
+### 9.32. cAttributeAllTechsAchieved
 
-Value: `#!java int 39`
+Value: `#!cpp int 39`
 
 ID of the player resource All Techs Achieved
 
-### 6.33. cAttributeMilitaryPopulation
+### 9.33. cAttributeMilitaryPopulation
 
-Value: `#!java int 40`
+Value: `#!cpp int 40`
 
 ID of the player resource Military Population
 
-### 6.34. cAttributeConversions
+### 9.34. cAttributeConversions
 
-Value: `#!java int 41`
+Value: `#!cpp int 41`
 
 ID of the player resource Conversions
 
-### 6.35. cAttributeWonder
+### 9.35. cAttributeWonder
 
-Value: `#!java int 42`
+Value: `#!cpp int 42`
 
 ID of the player resource Wonder
 
-### 6.36. cAttributeRazings
+### 9.36. cAttributeRazings
 
-Value: `#!java int 43`
+Value: `#!cpp int 43`
 
 ID of the player resource Razings
 
-### 6.37. cAttributeKillRatio
+### 9.37. cAttributeKillRatio
 
-Value: `#!java int 44`
+Value: `#!cpp int 44`
 
 ID of the player resource Kill Ratio
 
-### 6.38. cAttributePlayerKilled
+### 9.38. cAttributePlayerKilled
 
-Value: `#!java int 45`
+Value: `#!cpp int 45`
 
 ID of the player resource Player Killed
 
-### 6.39. cAttributeTributeInefficency
+### 9.39. cAttributeTributeInefficency
 
-Value: `#!java int 46`
+Value: `#!cpp int 46`
 
 ID of the player resource Tribute Inefficency
 
-### 6.40. cAttributeGoldBonus
+### 9.40. cAttributeGoldBonus
 
-Value: `#!java int 47`
+Value: `#!cpp int 47`
 
 ID of the player resource Gold Bonus
 
-### 6.41. cAttributeTownCenterUnavailable
+### 9.41. cAttributeTownCenterUnavailable
 
-Value: `#!java int 48`
+Value: `#!cpp int 48`
 
 ID of the player resource Town Center Unavailable
 
-### 6.42. cAttributeGoldCounter
+### 9.42. cAttributeGoldCounter
 
-Value: `#!java int 49`
+Value: `#!cpp int 49`
 
 ID of the player resource Gold Counter
 
-### 6.43. cAttributeWriting
+### 9.43. cAttributeWriting
 
-Value: `#!java int 50`
+Value: `#!cpp int 50`
 
 ID of the player resource Writing
 
-### 6.44. cAttributeMonasteries
+### 9.44. cAttributeMonasteries
 
-Value: `#!java int 52`
+Value: `#!cpp int 52`
 
 ID of the player resource Monasteries
 
-### 6.45. cAttributeTribute
+### 9.45. cAttributeTribute
 
-Value: `#!java int 53`
+Value: `#!cpp int 53`
 
 ID of the player resource Tribute
 
-### 6.46. cAttributeHoldRuins
+### 9.46. cAttributeHoldRuins
 
-Value: `#!java int 54`
+Value: `#!cpp int 54`
 
 ID of the player resource Hold Ruins
 
-### 6.47. cAttributeHoldRelics
+### 9.47. cAttributeHoldRelics
 
-Value: `#!java int 55`
+Value: `#!cpp int 55`
 
 ID of the player resource Hold Relics
 
-### 6.48. cAttributeOre
+### 9.48. cAttributeOre
 
-Value: `#!java int 56`
+Value: `#!cpp int 56`
 
 ID of the player resource Ore
 
-### 6.49. cAttributeCapturedUnit
+### 9.49. cAttributeCapturedUnit
 
-Value: `#!java int 57`
+Value: `#!cpp int 57`
 
 ID of the player resource Captured Unit
 
-### 6.50. cAttributeTradeGoodQuality
+### 9.50. cAttributeTradeGoodQuality
 
-Value: `#!java int 59`
+Value: `#!cpp int 59`
 
 ID of the player resource Trade Good Quality
 
-### 6.51. cAttributeTradeMarketLevel
+### 9.51. cAttributeTradeMarketLevel
 
-Value: `#!java int 60`
+Value: `#!cpp int 60`
 
 ID of the player resource Trade Market Level
 
-### 6.52. cAttributeFormations
+### 9.52. cAttributeFormations
 
-Value: `#!java int 61`
+Value: `#!cpp int 61`
 
 ID of the player resource Formations
 
-### 6.53. cAttributeBuildingHouseRate
+### 9.53. cAttributeBuildingHouseRate
 
-Value: `#!java int 62`
+Value: `#!cpp int 62`
 
 ID of the player resource Building House Rate
 
-### 6.54. cAttributeGatherTaxRate
+### 9.54. cAttributeGatherTaxRate
 
-Value: `#!java int 63`
+Value: `#!cpp int 63`
 
 ID of the player resource Gather Tax Rate
 
-### 6.55. cAttributeGatherAccumalation
+### 9.55. cAttributeGatherAccumalation
 
-Value: `#!java int 64`
+Value: `#!cpp int 64`
 
 ID of the player resource Gather Accumalation
 
-### 6.56. cAttributeSalvageDecayRate
+### 9.56. cAttributeSalvageDecayRate
 
-Value: `#!java int 65`
+Value: `#!cpp int 65`
 
 ID of the player resource Salvage Decay Rate
 
-### 6.57. cAttributeAllowFormations
+### 9.57. cAttributeAllowFormations
 
-Value: `#!java int 66`
+Value: `#!cpp int 66`
 
 ID of the player resource Allow Formations
 
-### 6.58. cAttributeCanConvert
+### 9.58. cAttributeCanConvert
 
-Value: `#!java int 67`
+Value: `#!cpp int 67`
 
 ID of the player resource Can Convert
 
-### 6.59. cAttributePlayer1Kills
+### 9.59. cAttributePlayer1Kills
 
-Value: `#!java int 69`
+Value: `#!cpp int 69`
 
 ID of the player resource Player1 Kills
 
-### 6.60. cAttributePlayer2Kills
+### 9.60. cAttributePlayer2Kills
 
-Value: `#!java int 70`
+Value: `#!cpp int 70`
 
 ID of the player resource Player2 Kills
 
-### 6.61. cAttributePlayer3Kills
+### 9.61. cAttributePlayer3Kills
 
-Value: `#!java int 71`
+Value: `#!cpp int 71`
 
 ID of the player resource Player3 Kills
 
-### 6.62. cAttributePlayer4Kills
+### 9.62. cAttributePlayer4Kills
 
-Value: `#!java int 72`
+Value: `#!cpp int 72`
 
 ID of the player resource Player4 Kills
 
-### 6.63. cAttributePlayer5Kills
+### 9.63. cAttributePlayer5Kills
 
-Value: `#!java int 73`
+Value: `#!cpp int 73`
 
 ID of the player resource Player5 Kills
 
-### 6.64. cAttributePlayer6Kills
+### 9.64. cAttributePlayer6Kills
 
-Value: `#!java int 74`
+Value: `#!cpp int 74`
 
 ID of the player resource Player6 Kills
 
-### 6.65. cAttributePlayer7Kills
+### 9.65. cAttributePlayer7Kills
 
-Value: `#!java int 75`
+Value: `#!cpp int 75`
 
 ID of the player resource Player7 Kills
 
-### 6.66. cAttributePlayer8Kills
+### 9.66. cAttributePlayer8Kills
 
-Value: `#!java int 76`
+Value: `#!cpp int 76`
 
 ID of the player resource Player8 Kills
 
-### 6.67. cAttributeConvertResistance
+### 9.67. cAttributeConvertResistance
 
-Value: `#!java int 77`
+Value: `#!cpp int 77`
 
 ID of the player resource Convert Resistance
 
-### 6.68. cAttributeTradeVigRate
+### 9.68. cAttributeTradeVigRate
 
-Value: `#!java int 78`
+Value: `#!cpp int 78`
 
 ID of the player resource Trade Vig Rate
 
-### 6.69. cAttributeStoneBonus
+### 9.69. cAttributeStoneBonus
 
-Value: `#!java int 79`
+Value: `#!cpp int 79`
 
 ID of the player resource Stone Bonus
 
-### 6.70. cAttributeQueuedCount
+### 9.70. cAttributeQueuedCount
 
-Value: `#!java int 80`
+Value: `#!cpp int 80`
 
 ID of the player resource Queued Count
 
-### 6.71. cAttributeTrainingCount
+### 9.71. cAttributeTrainingCount
 
-Value: `#!java int 81`
+Value: `#!cpp int 81`
 
 ID of the player resource Training Count
 
-### 6.72. cAttributeRaider
+### 9.72. cAttributeRaider
 
-Value: `#!java int 82`
+Value: `#!cpp int 82`
 
 ID of the player resource Raider
 
-### 6.73. cAttributeBoardingRechargeRate
+### 9.73. cAttributeBoardingRechargeRate
 
-Value: `#!java int 83`
+Value: `#!cpp int 83`
 
 ID of the player resource Boarding Recharge Rate
 
-### 6.74. cAttributeStartingVillagers
+### 9.74. cAttributeStartingVillagers
 
-Value: `#!java int 84`
+Value: `#!cpp int 84`
 
 ID of the player resource Starting Villagers
 
-### 6.75. cAttributeResearchCostMod
+### 9.75. cAttributeResearchCostMod
 
-Value: `#!java int 85`
+Value: `#!cpp int 85`
 
 ID of the player resource Research Cost Mod
 
-### 6.76. cAttributeResearchTimeMod
+### 9.76. cAttributeResearchTimeMod
 
-Value: `#!java int 86`
+Value: `#!cpp int 86`
 
 ID of the player resource Research Time Mod
 
-### 6.77. cAttributeConvertBoats
+### 9.77. cAttributeConvertBoats
 
-Value: `#!java int 87`
+Value: `#!cpp int 87`
 
 ID of the player resource Convert Boats
 
-### 6.78. cAttributeFishTrapFood
+### 9.78. cAttributeFishTrapFood
 
-Value: `#!java int 88`
+Value: `#!cpp int 88`
 
 ID of the player resource Fish Trap Food
 
-### 6.79. cAttributeHealRateModifer
+### 9.79. cAttributeHealRateModifer
 
-Value: `#!java int 89`
+Value: `#!cpp int 89`
 
 ID of the player resource Heal Rate Modifer
 
-### 6.80. cAttributeHealRange
+### 9.80. cAttributeHealRange
 
-Value: `#!java int 90`
+Value: `#!cpp int 90`
 
 ID of the player resource Heal Range
 
-### 6.81. cAttributeStartingFood
+### 9.81. cAttributeStartingFood
 
-Value: `#!java int 91`
+Value: `#!cpp int 91`
 
 ID of the player resource Starting Food
 
-### 6.82. cAttributeStartingWood
+### 9.82. cAttributeStartingWood
 
-Value: `#!java int 92`
+Value: `#!cpp int 92`
 
 ID of the player resource Starting Wood
 
-### 6.83. cAttributeStartingStone
+### 9.83. cAttributeStartingStone
 
-Value: `#!java int 93`
+Value: `#!cpp int 93`
 
 ID of the player resource Starting Stone
 
-### 6.84. cAttributeStartingGold
+### 9.84. cAttributeStartingGold
 
-Value: `#!java int 94`
+Value: `#!cpp int 94`
 
 ID of the player resource Starting Gold
 
-### 6.85. cAttributeRaiderAbility
+### 9.85. cAttributeRaiderAbility
 
-Value: `#!java int 95`
+Value: `#!cpp int 95`
 
 ID of the player resource Raider Ability
 
-### 6.86. cAttributeBerserkerHealTimer
+### 9.86. cAttributeBerserkerHealTimer
 
-Value: `#!java int 96`
+Value: `#!cpp int 96`
 
 ID of the player resource Berserker Heal Timer
 
-### 6.87. cAttributeDominantSheepControl
+### 9.87. cAttributeDominantSheepControl
 
-Value: `#!java int 97`
+Value: `#!cpp int 97`
 
 ID of the player resource Dominant Sheep Control
 
-### 6.88. cAttributeObjectCostSummation
+### 9.88. cAttributeObjectCostSummation
 
-Value: `#!java int 98`
+Value: `#!cpp int 98`
 
 ID of the player resource Object Cost Summation
 
-### 6.89. cAttributeResearchCostSummation
+### 9.89. cAttributeResearchCostSummation
 
-Value: `#!java int 99`
+Value: `#!cpp int 99`
 
 ID of the player resource Research Cost Summation
 
-### 6.90. cAttributeRelicIncomeSummation
+### 9.90. cAttributeRelicIncomeSummation
 
-Value: `#!java int 100`
+Value: `#!cpp int 100`
 
 ID of the player resource Relic Income Summation
 
-### 6.91. cAttributeTradeIncomeSummation
+### 9.91. cAttributeTradeIncomeSummation
 
-Value: `#!java int 101`
+Value: `#!cpp int 101`
 
 ID of the player resource Trade Income Summation
 
-### 6.92. cAttributePlayer1Tribute
+### 9.92. cAttributePlayer1Tribute
 
-Value: `#!java int 102`
+Value: `#!cpp int 102`
 
 ID of the player resource Player1 Tribute
 
-### 6.93. cAttributePlayer2Tribute
+### 9.93. cAttributePlayer2Tribute
 
-Value: `#!java int 103`
+Value: `#!cpp int 103`
 
 ID of the player resource Player2 Tribute
 
-### 6.94. cAttributePlayer3Tribute
+### 9.94. cAttributePlayer3Tribute
 
-Value: `#!java int 104`
+Value: `#!cpp int 104`
 
 ID of the player resource Player3 Tribute
 
-### 6.95. cAttributePlayer4Tribute
+### 9.95. cAttributePlayer4Tribute
 
-Value: `#!java int 105`
+Value: `#!cpp int 105`
 
 ID of the player resource Player4 Tribute
 
-### 6.96. cAttributePlayer5Tribute
+### 9.96. cAttributePlayer5Tribute
 
-Value: `#!java int 106`
+Value: `#!cpp int 106`
 
 ID of the player resource Player5 Tribute
 
-### 6.97. cAttributePlayer6Tribute
+### 9.97. cAttributePlayer6Tribute
 
-Value: `#!java int 107`
+Value: `#!cpp int 107`
 
 ID of the player resource Player6 Tribute
 
-### 6.98. cAttributePlayer7Tribute
+### 9.98. cAttributePlayer7Tribute
 
-Value: `#!java int 108`
+Value: `#!cpp int 108`
 
 ID of the player resource Player7 Tribute
 
-### 6.99. cAttributePlayer8Tribute
+### 9.99. cAttributePlayer8Tribute
 
-Value: `#!java int 109`
+Value: `#!cpp int 109`
 
 ID of the player resource Player8 Tribute
 
-### 6.100. cAttributePlayer1KillValue
+### 9.100. cAttributePlayer1KillValue
 
-Value: `#!java int 110`
+Value: `#!cpp int 110`
 
 ID of the player resource Player1 Kill Value
 
-### 6.101. cAttributePlayer2KillValue
+### 9.101. cAttributePlayer2KillValue
 
-Value: `#!java int 111`
+Value: `#!cpp int 111`
 
 ID of the player resource Player2 Kill Value
 
-### 6.102. cAttributePlayer3KillValue
+### 9.102. cAttributePlayer3KillValue
 
-Value: `#!java int 112`
+Value: `#!cpp int 112`
 
 ID of the player resource Player3 Kill Value
 
-### 6.103. cAttributePlayer4KillValue
+### 9.103. cAttributePlayer4KillValue
 
-Value: `#!java int 113`
+Value: `#!cpp int 113`
 
 ID of the player resource Player4 Kill Value
 
-### 6.104. cAttributePlayer5KillValue
+### 9.104. cAttributePlayer5KillValue
 
-Value: `#!java int 114`
+Value: `#!cpp int 114`
 
 ID of the player resource Player5 Kill Value
 
-### 6.105. cAttributePlayer6KillValue
+### 9.105. cAttributePlayer6KillValue
 
-Value: `#!java int 115`
+Value: `#!cpp int 115`
 
 ID of the player resource Player6 Kill Value
 
-### 6.106. cAttributePlayer7KillValue
+### 9.106. cAttributePlayer7KillValue
 
-Value: `#!java int 116`
+Value: `#!cpp int 116`
 
 ID of the player resource Player7 Kill Value
 
-### 6.107. cAttributePlayer8KillValue
+### 9.107. cAttributePlayer8KillValue
 
-Value: `#!java int 117`
+Value: `#!cpp int 117`
 
 ID of the player resource Player8 Kill Value
 
-### 6.108. cAttributePlayer1Razings
+### 9.108. cAttributePlayer1Razings
 
-Value: `#!java int 118`
+Value: `#!cpp int 118`
 
 ID of the player resource Player1 Razings
 
-### 6.109. cAttributePlayer2Razings
+### 9.109. cAttributePlayer2Razings
 
-Value: `#!java int 119`
+Value: `#!cpp int 119`
 
 ID of the player resource Player2 Razings
 
-### 6.110. cAttributePlayer3Razings
+### 9.110. cAttributePlayer3Razings
 
-Value: `#!java int 120`
+Value: `#!cpp int 120`
 
 ID of the player resource Player3 Razings
 
-### 6.111. cAttributePlayer4Razings
+### 9.111. cAttributePlayer4Razings
 
-Value: `#!java int 121`
+Value: `#!cpp int 121`
 
 ID of the player resource Player4 Razings
 
-### 6.112. cAttributePlayer5Razings
+### 9.112. cAttributePlayer5Razings
 
-Value: `#!java int 122`
+Value: `#!cpp int 122`
 
 ID of the player resource Player5 Razings
 
-### 6.113. cAttributePlayer6Razings
+### 9.113. cAttributePlayer6Razings
 
-Value: `#!java int 123`
+Value: `#!cpp int 123`
 
 ID of the player resource Player6 Razings
 
-### 6.114. cAttributePlayer7Razings
+### 9.114. cAttributePlayer7Razings
 
-Value: `#!java int 124`
+Value: `#!cpp int 124`
 
 ID of the player resource Player7 Razings
 
-### 6.115. cAttributePlayer8Razings
+### 9.115. cAttributePlayer8Razings
 
-Value: `#!java int 125`
+Value: `#!cpp int 125`
 
 ID of the player resource Player8 Razings
 
-### 6.116. cAttributePlayer1RazingValue
+### 9.116. cAttributePlayer1RazingValue
 
-Value: `#!java int 126`
+Value: `#!cpp int 126`
 
 ID of the player resource Player1 Razing Value
 
-### 6.117. cAttributePlayer2RazingValue
+### 9.117. cAttributePlayer2RazingValue
 
-Value: `#!java int 127`
+Value: `#!cpp int 127`
 
 ID of the player resource Player2 Razing Value
 
-### 6.118. cAttributePlayer3RazingValue
+### 9.118. cAttributePlayer3RazingValue
 
-Value: `#!java int 128`
+Value: `#!cpp int 128`
 
 ID of the player resource Player3 Razing Value
 
-### 6.119. cAttributePlayer4RazingValue
+### 9.119. cAttributePlayer4RazingValue
 
-Value: `#!java int 129`
+Value: `#!cpp int 129`
 
 ID of the player resource Player4 Razing Value
 
-### 6.120. cAttributePlayer5RazingValue
+### 9.120. cAttributePlayer5RazingValue
 
-Value: `#!java int 130`
+Value: `#!cpp int 130`
 
 ID of the player resource Player5 Razing Value
 
-### 6.121. cAttributePlayer6RazingValue
+### 9.121. cAttributePlayer6RazingValue
 
-Value: `#!java int 131`
+Value: `#!cpp int 131`
 
 ID of the player resource Player6 Razing Value
 
-### 6.122. cAttributePlayer7RazingValue
+### 9.122. cAttributePlayer7RazingValue
 
-Value: `#!java int 132`
+Value: `#!cpp int 132`
 
 ID of the player resource Player7 Razing Value
 
-### 6.123. cAttributePlayer8RazingValue
+### 9.123. cAttributePlayer8RazingValue
 
-Value: `#!java int 133`
+Value: `#!cpp int 133`
 
 ID of the player resource Player8 Razing Value
 
-### 6.124. cAttributeCastle
+### 9.124. cAttributeCastle
 
-Value: `#!java int 134`
+Value: `#!cpp int 134`
 
 ID of the player resource Castle
 
-### 6.125. cAttributeHitPointRazings
+### 9.125. cAttributeHitPointRazings
 
-Value: `#!java int 135`
+Value: `#!cpp int 135`
 
 ID of the player resource Hit Point Razings
 
-### 6.126. cAttributeKillsByPlayer1
+### 9.126. cAttributeKillsByPlayer1
 
-Value: `#!java int 136`
+Value: `#!cpp int 136`
 
 ID of the player resource Kills By Player1
 
-### 6.127. cAttributeKillsByPlayer2
+### 9.127. cAttributeKillsByPlayer2
 
-Value: `#!java int 137`
+Value: `#!cpp int 137`
 
 ID of the player resource Kills By Player2
 
-### 6.128. cAttributeKillsByPlayer3
+### 9.128. cAttributeKillsByPlayer3
 
-Value: `#!java int 138`
+Value: `#!cpp int 138`
 
 ID of the player resource Kills By Player3
 
-### 6.129. cAttributeKillsByPlayer4
+### 9.129. cAttributeKillsByPlayer4
 
-Value: `#!java int 139`
+Value: `#!cpp int 139`
 
 ID of the player resource Kills By Player4
 
-### 6.130. cAttributeKillsByPlayer5
+### 9.130. cAttributeKillsByPlayer5
 
-Value: `#!java int 140`
+Value: `#!cpp int 140`
 
 ID of the player resource Kills By Player5
 
-### 6.131. cAttributeKillsByPlayer6
+### 9.131. cAttributeKillsByPlayer6
 
-Value: `#!java int 141`
+Value: `#!cpp int 141`
 
 ID of the player resource Kills By Player6
 
-### 6.132. cAttributeKillsByPlayer7
+### 9.132. cAttributeKillsByPlayer7
 
-Value: `#!java int 142`
+Value: `#!cpp int 142`
 
 ID of the player resource Kills By Player7
 
-### 6.133. cAttributeKillsByPlayer8
+### 9.133. cAttributeKillsByPlayer8
 
-Value: `#!java int 143`
+Value: `#!cpp int 143`
 
 ID of the player resource Kills By Player8
 
-### 6.134. cAttributeRazingsByPlayer1
+### 9.134. cAttributeRazingsByPlayer1
 
-Value: `#!java int 144`
+Value: `#!cpp int 144`
 
 ID of the player resource Razings By Player1
 
-### 6.135. cAttributeRazingsByPlayer2
+### 9.135. cAttributeRazingsByPlayer2
 
-Value: `#!java int 145`
+Value: `#!cpp int 145`
 
 ID of the player resource Razings By Player2
 
-### 6.136. cAttributeRazingsByPlayer3
+### 9.136. cAttributeRazingsByPlayer3
 
-Value: `#!java int 146`
+Value: `#!cpp int 146`
 
 ID of the player resource Razings By Player3
 
-### 6.137. cAttributeRazingsByPlayer4
+### 9.137. cAttributeRazingsByPlayer4
 
-Value: `#!java int 147`
+Value: `#!cpp int 147`
 
 ID of the player resource Razings By Player4
 
-### 6.138. cAttributeRazingsByPlayer5
+### 9.138. cAttributeRazingsByPlayer5
 
-Value: `#!java int 148`
+Value: `#!cpp int 148`
 
 ID of the player resource Razings By Player5
 
-### 6.139. cAttributeRazingsByPlayer6
+### 9.139. cAttributeRazingsByPlayer6
 
-Value: `#!java int 149`
+Value: `#!cpp int 149`
 
 ID of the player resource Razings By Player6
 
-### 6.140. cAttributeRazingsByPlayer7
+### 9.140. cAttributeRazingsByPlayer7
 
-Value: `#!java int 150`
+Value: `#!cpp int 150`
 
 ID of the player resource Razings By Player7
 
-### 6.141. cAttributeRazingsByPlayer8
+### 9.141. cAttributeRazingsByPlayer8
 
-Value: `#!java int 151`
+Value: `#!cpp int 151`
 
 ID of the player resource Razings By Player8
 
-### 6.142. cAttributeValueKilledByOthers
+### 9.142. cAttributeValueKilledByOthers
 
-Value: `#!java int 152`
+Value: `#!cpp int 152`
 
 ID of the player resource Value Killed By Others
 
-### 6.143. cAttributeValueRazedByOthers
+### 9.143. cAttributeValueRazedByOthers
 
-Value: `#!java int 153`
+Value: `#!cpp int 153`
 
 ID of the player resource Value Razed By Others
 
-### 6.144. cAttributeKilledByOthers
+### 9.144. cAttributeKilledByOthers
 
-Value: `#!java int 154`
+Value: `#!cpp int 154`
 
 ID of the player resource Killed By Others
 
-### 6.145. cAttributeRazedByOthers
+### 9.145. cAttributeRazedByOthers
 
-Value: `#!java int 155`
+Value: `#!cpp int 155`
 
 ID of the player resource Razed By Others
 
-### 6.146. cAttributeTributeFromPlayer1
+### 9.146. cAttributeTributeFromPlayer1
 
-Value: `#!java int 156`
+Value: `#!cpp int 156`
 
 ID of the player resource Tribute From Player1
 
-### 6.147. cAttributeTributeFromPlayer2
+### 9.147. cAttributeTributeFromPlayer2
 
-Value: `#!java int 157`
+Value: `#!cpp int 157`
 
 ID of the player resource Tribute From Player2
 
-### 6.148. cAttributeTributeFromPlayer3
+### 9.148. cAttributeTributeFromPlayer3
 
-Value: `#!java int 158`
+Value: `#!cpp int 158`
 
 ID of the player resource Tribute From Player3
 
-### 6.149. cAttributeTributeFromPlayer4
+### 9.149. cAttributeTributeFromPlayer4
 
-Value: `#!java int 159`
+Value: `#!cpp int 159`
 
 ID of the player resource Tribute From Player4
 
-### 6.150. cAttributeTributeFromPlayer5
+### 9.150. cAttributeTributeFromPlayer5
 
-Value: `#!java int 160`
+Value: `#!cpp int 160`
 
 ID of the player resource Tribute From Player5
 
-### 6.151. cAttributeTributeFromPlayer6
+### 9.151. cAttributeTributeFromPlayer6
 
-Value: `#!java int 161`
+Value: `#!cpp int 161`
 
 ID of the player resource Tribute From Player6
 
-### 6.152. cAttributeTributeFromPlayer7
+### 9.152. cAttributeTributeFromPlayer7
 
-Value: `#!java int 162`
+Value: `#!cpp int 162`
 
 ID of the player resource Tribute From Player7
 
-### 6.153. cAttributeTributeFromPlayer8
+### 9.153. cAttributeTributeFromPlayer8
 
-Value: `#!java int 163`
+Value: `#!cpp int 163`
 
 ID of the player resource Tribute From Player8
 
-### 6.154. cAttributeValueCurrentUnits
+### 9.154. cAttributeValueCurrentUnits
 
-Value: `#!java int 164`
+Value: `#!cpp int 164`
 
 ID of the player resource Value Current Units
 
-### 6.155. cAttributeValueCurrentBuildings
+### 9.155. cAttributeValueCurrentBuildings
 
-Value: `#!java int 165`
+Value: `#!cpp int 165`
 
 ID of the player resource Value Current Buildings
 
-### 6.156. cAttributeFoodTotal
+### 9.156. cAttributeFoodTotal
 
-Value: `#!java int 166`
+Value: `#!cpp int 166`
 
 ID of the player resource Food Total
 
-### 6.157. cAttributeWoodTotal
+### 9.157. cAttributeWoodTotal
 
-Value: `#!java int 167`
+Value: `#!cpp int 167`
 
 ID of the player resource Wood Total
 
-### 6.158. cAttributeStoneTotal
+### 9.158. cAttributeStoneTotal
 
-Value: `#!java int 168`
+Value: `#!cpp int 168`
 
 ID of the player resource Stone Total
 
-### 6.159. cAttributeGoldTotal
+### 9.159. cAttributeGoldTotal
 
-Value: `#!java int 169`
+Value: `#!cpp int 169`
 
 ID of the player resource Gold Total
 
-### 6.160. cAttributeTotalValueOfKills
+### 9.160. cAttributeTotalValueOfKills
 
-Value: `#!java int 170`
+Value: `#!cpp int 170`
 
 ID of the player resource Total Value Of Kills
 
-### 6.161. cAttributeTotalTributeReceived
+### 9.161. cAttributeTotalTributeReceived
 
-Value: `#!java int 171`
+Value: `#!cpp int 171`
 
 ID of the player resource Total Tribute Received
 
-### 6.162. cAttributeTotalValueOfRazings
+### 9.162. cAttributeTotalValueOfRazings
 
-Value: `#!java int 172`
+Value: `#!cpp int 172`
 
 ID of the player resource Total Value Of Razings
 
-### 6.163. cAttributeTotalCastlesBuilt
+### 9.163. cAttributeTotalCastlesBuilt
 
-Value: `#!java int 173`
+Value: `#!cpp int 173`
 
 ID of the player resource Total Castles Built
 
-### 6.164. cAttributeTotalWondersBuilt
+### 9.164. cAttributeTotalWondersBuilt
 
-Value: `#!java int 174`
+Value: `#!cpp int 174`
 
 ID of the player resource Total Wonders Built
 
-### 6.165. cAttributeTributeScore
+### 9.165. cAttributeTributeScore
 
-Value: `#!java int 175`
+Value: `#!cpp int 175`
 
 ID of the player resource Tribute Score
 
-### 6.166. cAttributeConvertMinAdj
+### 9.166. cAttributeConvertMinAdj
 
-Value: `#!java int 176`
+Value: `#!cpp int 176`
 
 ID of the player resource Convert Min Adj
 
-### 6.167. cAttributeConvertMaxAdj
+### 9.167. cAttributeConvertMaxAdj
 
-Value: `#!java int 177`
+Value: `#!cpp int 177`
 
 ID of the player resource Convert Max Adj
 
-### 6.168. cAttributeConvertResistMinAdj
+### 9.168. cAttributeConvertResistMinAdj
 
-Value: `#!java int 178`
+Value: `#!cpp int 178`
 
 ID of the player resource Convert Resist Min Adj
 
-### 6.169. cAttributeConvertResistMaxAdj
+### 9.169. cAttributeConvertResistMaxAdj
 
-Value: `#!java int 179`
+Value: `#!cpp int 179`
 
 ID of the player resource Convert Resist Max Adj
 
-### 6.170. cAttributeConvertBuildingMin
+### 9.170. cAttributeConvertBuildingMin
 
-Value: `#!java int 180`
+Value: `#!cpp int 180`
 
 ID of the player resource Convert Building Min
 
-### 6.171. cAttributeConvertBuildingMax
+### 9.171. cAttributeConvertBuildingMax
 
-Value: `#!java int 181`
+Value: `#!cpp int 181`
 
 ID of the player resource Convert Building Max
 
-### 6.172. cAttributeConvertBuildingChance
+### 9.172. cAttributeConvertBuildingChance
 
-Value: `#!java int 182`
+Value: `#!cpp int 182`
 
 ID of the player resource Convert Building Chance
 
-### 6.173. cAttributeSpies
+### 9.173. cAttributeSpies
 
-Value: `#!java int 183`
+Value: `#!cpp int 183`
 
 ID of the player resource Spies
 
-### 6.174. cAttributeValueWondersCastles
+### 9.174. cAttributeValueWondersCastles
 
-Value: `#!java int 184`
+Value: `#!cpp int 184`
 
 ID of the player resource Value Wonders Castles
 
-### 6.175. cAttributeFoodScore
+### 9.175. cAttributeFoodScore
 
-Value: `#!java int 185`
+Value: `#!cpp int 185`
 
 ID of the player resource Food Score
 
-### 6.176. cAttributeWoodScore
+### 9.176. cAttributeWoodScore
 
-Value: `#!java int 186`
+Value: `#!cpp int 186`
 
 ID of the player resource Wood Score
 
-### 6.177. cAttributeStoneScore
+### 9.177. cAttributeStoneScore
 
-Value: `#!java int 187`
+Value: `#!cpp int 187`
 
 ID of the player resource Stone Score
 
-### 6.178. cAttributeGoldScore
+### 9.178. cAttributeGoldScore
 
-Value: `#!java int 188`
+Value: `#!cpp int 188`
 
 ID of the player resource Gold Score
 
-### 6.179. cAttributeWoodBonus
+### 9.179. cAttributeWoodBonus
 
-Value: `#!java int 189`
+Value: `#!cpp int 189`
 
 ID of the player resource Wood Bonus
 
-### 6.180. cAttributeFoodBonus
+### 9.180. cAttributeFoodBonus
 
-Value: `#!java int 190`
+Value: `#!cpp int 190`
 
 ID of the player resource Food Bonus
 
-### 6.181. cAttributeRelicRate
+### 9.181. cAttributeRelicRate
 
-Value: `#!java int 191`
+Value: `#!cpp int 191`
 
 ID of the player resource Relic Rate
 
-### 6.182. cAttributeHeresy
+### 9.182. cAttributeHeresy
 
-Value: `#!java int 192`
+Value: `#!cpp int 192`
 
 ID of the player resource Heresy
 
-### 6.183. cAttributeTheocracy
+### 9.183. cAttributeTheocracy
 
-Value: `#!java int 193`
+Value: `#!cpp int 193`
 
 ID of the player resource Theocracy
 
-### 6.184. cAttributeCrenellations
+### 9.184. cAttributeCrenellations
 
-Value: `#!java int 194`
+Value: `#!cpp int 194`
 
 ID of the player resource Crenellations
 
-### 6.185. cAttributeConstructionRateMod
+### 9.185. cAttributeConstructionRateMod
 
-Value: `#!java int 195`
+Value: `#!cpp int 195`
 
 ID of the player resource Construction Rate Mod
 
-### 6.186. cAttributeHunWonderBonus
+### 9.186. cAttributeHunWonderBonus
 
-Value: `#!java int 196`
+Value: `#!cpp int 196`
 
 ID of the player resource Hun Wonder Bonus
 
-### 6.187. cAttributeSpiesDiscount
+### 9.187. cAttributeSpiesDiscount
 
-Value: `#!java int 197`
+Value: `#!cpp int 197`
 
 ID of the player resource Spies Discount
 
-### 6.188. cAttributeTemporaryMapReveal
+### 9.188. cAttributeTemporaryMapReveal
 
-Value: `#!java int 209`
+Value: `#!cpp int 209`
 
 ID of the player resource Temporary Map Reveal
 
-### 6.189. cAttributeRvealInitialType
+### 9.189. cAttributeRvealInitialType
 
-Value: `#!java int 210`
+Value: `#!cpp int 210`
 
 ID of the player resource Rveal Initial Type
 
-### 6.190. cAttributeElevationBonusHigher
+### 9.190. cAttributeElevationBonusHigher
 
-Value: `#!java int 211`
+Value: `#!cpp int 211`
 
 ID of the player resource Elevation Bonus Higher
 
-### 6.191. cAttributeElevationBonusLoweer
+### 9.191. cAttributeElevationBonusLoweer
 
-Value: `#!java int 212`
+Value: `#!cpp int 212`
 
 ID of the player resource Elevation Bonus Loweer
 
-### 6.192. cAttributeTriggerSharedLOS
+### 9.192. cAttributeTriggerSharedLOS
 
-Value: `#!java int 217`
+Value: `#!cpp int 217`
 
 ID of the player resource Trigger Shared L O S
 
-### 6.193. cAttributeUnused0
+### 9.193. cAttributeUnused0
 
-Value: `#!java int 218`
+Value: `#!cpp int 218`
 
 ID of the player resource Unused0
 
-### 6.194. cAttributeUnused1
+### 9.194. cAttributeUnused1
 
-Value: `#!java int 219`
+Value: `#!cpp int 219`
 
 ID of the player resource Unused1
 
-### 6.195. cAttributeUnused2
+### 9.195. cAttributeUnused2
 
-Value: `#!java int 220`
+Value: `#!cpp int 220`
 
 ID of the player resource Unused2
 
-### 6.196. cAttributeUnused3
+### 9.196. cAttributeUnused3
 
-Value: `#!java int 221`
+Value: `#!cpp int 221`
 
 ID of the player resource Unused3
 
-### 6.197. cAttributeUnused4
+### 9.197. cAttributeUnused4
 
-Value: `#!java int 222`
+Value: `#!cpp int 222`
 
 ID of the player resource Unused4
 
-### 6.198. cAttributeUnused5
+### 9.198. cAttributeUnused5
 
-Value: `#!java int 223`
+Value: `#!cpp int 223`
 
 ID of the player resource Unused5
 
-### 6.199. cAttributeUnused6
+### 9.199. cAttributeUnused6
 
-Value: `#!java int 224`
+Value: `#!cpp int 224`
 
 ID of the player resource Unused6
 
-### 6.200. cAttributeUnused7
+### 9.200. cAttributeUnused7
 
-Value: `#!java int 225`
+Value: `#!cpp int 225`
 
 ID of the player resource Unused7
 
-### 6.201. cAttributeVillagersKilledByGaia
+### 9.201. cAttributeVillagersKilledByGaia
 
-Value: `#!java int 226`
+Value: `#!cpp int 226`
 
 ID of the player resource Villagers Killed By Gaia
 
-### 6.202. cAttributeVillgaersKilledByAnimal
+### 9.202. cAttributeVillgaersKilledByAnimal
 
-Value: `#!java int 227`
+Value: `#!cpp int 227`
 
 ID of the player resource Villgaers Killed By Animal
 
-### 6.203. cAttributeVillagersKilledByAIPlayer
+### 9.203. cAttributeVillagersKilledByAIPlayer
 
-Value: `#!java int 228`
+Value: `#!cpp int 228`
 
 ID of the player resource Villagers Killed By A I Player
 
-### 6.204. cAttributeVillagersKilledByHumanPlayer
+### 9.204. cAttributeVillagersKilledByHumanPlayer
 
-Value: `#!java int 229`
+Value: `#!cpp int 229`
 
 ID of the player resource Villagers Killed By Human Player
 
-### 6.205. cAttributeFoodGeneration
+### 9.205. cAttributeFoodGeneration
 
-Value: `#!java int 230`
+Value: `#!cpp int 230`
 
 ID of the player resource Food Generation
 
-### 6.206. cAttributeWoodGeneration
+### 9.206. cAttributeWoodGeneration
 
-Value: `#!java int 231`
+Value: `#!cpp int 231`
 
 ID of the player resource Wood Generation
 
-### 6.207. cAttributeStoneGeneration
+### 9.207. cAttributeStoneGeneration
 
-Value: `#!java int 232`
+Value: `#!cpp int 232`
 
 ID of the player resource Stone Generation
 
-### 6.208. cAttributeGoldGeneration
+### 9.208. cAttributeGoldGeneration
 
-Value: `#!java int 233`
+Value: `#!cpp int 233`
 
 ID of the player resource Gold Generation
 
-### 6.209. cAttributeSpawnCap
+### 9.209. cAttributeSpawnCap
 
-Value: `#!java int 234`
+Value: `#!cpp int 234`
 
 ID of the player resource Spawn Cap
 

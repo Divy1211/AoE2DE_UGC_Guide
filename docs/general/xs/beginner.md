@@ -41,7 +41,7 @@ To use an XS:
 
 4. To begin with using XS, write this basic code in the file:
 
-```java
+```cpp
 // Anything that is written after a double front slash is a comment.
 // A comment is a line that is ignored when running the script.
 // comments are useful for explaining your code to others and
@@ -89,7 +89,7 @@ void main() {
 ### 2.2. In an RMS
 
 1. Open the RMS file in a text editor
-2. At the very top, type `#includeXS "filename.xs"`. Here, `filename.xs` is the name of the file that you created above.
+2. At the very top, type `#includeXS filename.xs`. Here, `filename.xs` is the name of the file that you created above.
 3. The `main();` function that we made above is automatically run when a map is generated using the RMS.
 4. To test, load the RMS in a single player (or multi player) lobby and start the game. When the map is generated, the `main()` function in the XS Script will run and `30` will be shown in the chat.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
@@ -100,12 +100,12 @@ Now that you have set up an XS file with a `main()` function inside, you can typ
 
 ### 3.1. Constants
 
-To do anything in an XS Script, we need constants. Any value that remains the same throughout the execution of the script is known as a constant. Quite literally, it remains constant throughout the execution of then script. For example, `#!java 10` is a constant. Every number is a constant.
+To do anything in an XS Script, we need constants. Any value that remains the same throughout the execution of the script is known as a constant. Quite literally, it remains constant throughout the execution of then script. For example, `#!cpp 10` is a constant. Every number is a constant.
 
 ### 3.2. Variables
 Variables are like boxes that are used to store constants. Variables are values that can change during the execution of the script! Think about it this way, if a variable is a box that stores a constant, that constant can be taken out and another one can be put in.  Quite literally, it is a variable (it may change!). For example, the script that we saw earlier uses 3 variables, called `a` `b` and `c`.
 
-```java
+```cpp
 void main() {
     int a = 10;
     int b = 20;
@@ -116,52 +116,52 @@ void main() {
 
 Some questions that you might have now are:
 
-1. What is this `#!java int` that preceeds the variable's name? That is the "data type" of the variable!
+1. What is this `#!cpp int` that preceeds the variable's name? That is the "data type" of the variable!
 
 2. What is a data type you ask? Every variable in a script has a data type, that is, it tells you what kind of value is stored in the variable. Think about it this way, if you want to store water, you need to specify that it must be stored in a bottle. Isn't that kind of obvious you might say? While to a human it might be obvious, a computer is a dumb machine. It does not know what to do unless you tell it, it is like a baby who must be spoonfed every tiny detail and instruction for it to work properly.
 
 3. What other types of data types are there?
     There are a total of 5 data types supported by XS, they are:
 
-    1. Integer (`#!java int` )
+    1. Integer (`#!cpp int` )
 
-        You have seen an `#!java int` before, an integer is a data type that stores an integer quantity. An integer quantity may be negative, positive, or zero. It never has any fractional or decimal parts (for example, an integer never has `#!java 0.5`).
+        You have seen an `#!cpp int` before, an integer is a data type that stores an integer quantity. An integer quantity may be negative, positive, or zero. It never has any fractional or decimal parts (for example, an integer never has `#!cpp 0.5`).
 
-        Usage: `#!java int a = 10;` This declares a variable of type `#!java int` called `a` with a value of `#!java 10`
+        Usage: `#!cpp int a = 10;` This declares a variable of type `#!cpp int` called `a` with a value of `#!cpp 10`
 
-    2. Floating Point (`#!java float`)
+    2. Floating Point (`#!cpp float`)
 
-        A `#!java float` is a data type that can store values with fractional parts or decimals. For example `#!java 1.5` is a floating point value.
+        A `#!cpp float` is a data type that can store values with fractional parts or decimals. For example `#!cpp 1.5` is a floating point value.
 
-        Usage: `#!java float a = 3.14159;` This declares a variable of type `#!java float` called `a` with a value of `#!java 3.14159`
+        Usage: `#!cpp float a = 3.14159;` This declares a variable of type `#!cpp float` called `a` with a value of `#!cpp 3.14159`
         
-        Why would you ever use an `#!java int` then? The reason is because computers take longer to perform calculations with floats! If you know that your calculation will not involve fractional values and decimals, you should always use an integer instead of a floating point value
+        Why would you ever use an `#!cpp int` then? The reason is because computers take longer to perform calculations with floats! If you know that your calculation will not involve fractional values and decimals, you should always use an integer instead of a floating point value
 
     3. Boolean (`bool`)
 
-        A `bool` is a data type, that can only store one of two different values, `#!java true` or `#!java false`. Any yes or no question is a boolean question in some sense, because there are only two answers, yes or no. Boolean variables are super important for conditions, which we will be looking at later.
+        A `bool` is a data type, that can only store one of two different values, `#!cpp true` or `#!cpp false`. Any yes or no question is a boolean question in some sense, because there are only two answers, yes or no. Boolean variables are super important for conditions, which we will be looking at later.
 
-        Usage: `#!java bool a = true;` This declares a variable of type `bool` called `a` with a value of `#!java true`
+        Usage: `#!cpp bool a = true;` This declares a variable of type `bool` called `a` with a value of `#!cpp true`
         
-        Note: A value of `true` is also indicated by `#!java 1` and a value of `false` is also indicated by `#!java 0`.
+        Note: A value of `true` is also indicated by `#!cpp 1` and a value of `false` is also indicated by `#!cpp 0`.
 
-    4. String (`String`)
+    4. String (`string`)
 
-        A `String` is a word, a phrase or a sentence. A string is always enclosed by double quotes.
+        A `string` is a word, a phrase or a sentence. A string is always enclosed by double quotes.
 
-        Usage: `#!java String a = "this is a string! yay";` This declares a variable of type `String` called `a` with a value of `#!java "this is a string! yay"`
+        Usage: `#!cpp string a = "this is a string! yay";` This declares a variable of type `string` called `a` with a value of `#!cpp "this is a string! yay"`
 
-    5. Vector (`#!java Vector`)
+    5. Vector (`#!cpp vector`)
 
-        A `#!java Vector` is a variable that can store the coordinates of a point `#!java (x, y, z)`. If you don't know what that means, just take it as a variable that stores three different `#!java float` values. The first value is called the "X component", the second value is called the "Y component" and the last value is called the "Z component".
+        A `#!cpp vector` is a variable that can store the coordinates of a point `#!cpp (x, y, z)`. If you don't know what that means, just take it as a variable that stores three different `#!cpp float` values. The first value is called the "X component", the second value is called the "Y component" and the last value is called the "Z component".
 
-        Usage `#!java Vector v = Vector(1.2, 2.3., 3.2);` This declares a variable of type `#!java Vector` called `v` that represents a point with coordinates `#!java (1.2, 2.3, 3.2)`.
+        Usage `#!cpp vector v = vector(1.2, 2.3., 3.2);` This declares a variable of type `#!cpp vector` called `v` that represents a point with coordinates `#!cpp (1.2, 2.3, 3.2)`.
 
     Remember that your variable names can be almost anything! However, this does not mean that you should just use single letters or alphabets for variable names. Variable names should be chosen such that they represent, or hint to what the purpose of the variable is. Naming your variables such that they make intuitive sense is a good programming practise.
 
 5. How do I actually change a variable?
 
-    ```java
+    ```cpp
     void main() {
         int my_var = 20;
 
@@ -192,13 +192,13 @@ Some questions that you might have now are:
 
     This process of changing the value that a variable stores is called "assignment". So in the above example,
 
-    1. We first initalise `my_var` to `#!java 20`.
-    2. Then we assign a value of `#!java 30` to `my var`.
+    1. We first initalise `my_var` to `#!cpp 20`.
+    2. Then we assign a value of `#!cpp 30` to `my var`.
     3. Then we initialise another variable called `my_var2` whoes value is equal to the value of `my_var`.
-    4. Then we try to assign the string `#!java "this is a string"` to `my_var` but remember that `my_var` is an integer, and it is not capable of storing a string, so this will actually give you an error. Think about it this way, you cannot put water in a paper bag, paper bags are not meant to store water!
+    4. Then we try to assign the string `#!cpp "this is a string"` to `my_var` but remember that `my_var` is an integer, and it is not capable of storing a string, so this will actually give you an error. Think about it this way, you cannot put water in a paper bag, paper bags are not meant to store water!
     There is an exception to this rule:
 
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         float b = 20.5;
@@ -224,9 +224,9 @@ Some questions that you might have now are:
 
 6. Can I make a variable whoes value cannot be changed?
 
-    Yes! initialising a variable with the word `#!java const` will make it a constant, and you won't be able to change its values.
+    Yes! initialising a variable with the word `#!cpp const` will make it a constant, and you won't be able to change its values.
 
-    Usage: `#!java const int a = 10;`
+    Usage: `#!cpp const int a = 10;`
 
     If you now try to change the value of `a`, you will get an error.
 
@@ -240,15 +240,15 @@ There are some rules that must be followed when naming a variable. They are:
 
 3. Variable names are `CaSe SeNsItIvE`. This means that `a` and `A` are two different variable names!
 
-4. Variable names must not be keywords. A keyword is a reserved word in any programming language that has a special meaning! For example, `#!java int` is a keyword in XS because it is used to declare a variable of the `#!java int` data type.
+4. Variable names must not be keywords. A keyword is a reserved word in any programming language that has a special meaning! For example, `#!cpp int` is a keyword in XS because it is used to declare a variable of the `#!cpp int` data type.
 
 While these are the only *laws* that you absolutely must follow, there are some conventions or *unwritten rules* that all programmers agree to follow to make their code more readable, and more clear.
 
-1. When you are writing a variable name that is just one word, it is conventional to write it in all small letters. For example `#!java int radius = 10;` or `#!java String name = "Alian713";`.
+1. When you are writing a variable name that is just one word, it is conventional to write it in all small letters. For example `#!cpp int radius = 10;` or `#!cpp string name = "Alian713";`.
 
-2. When you are writing a variable name that consists of more than one word, then it is conventional to write it in a special case known as "camel case". Camel case is where the first letter of every word is capitalised except the first word. For Example: `#!java float gearRatio = 2.2;` or `#!java String firstName = "Bruce";` or `#!java String lastName = "Wayne";`.
+2. When you are writing a variable name that consists of more than one word, then it is conventional to write it in a special case known as "camel case". Camel case is where the first letter of every word is capitalised except the first word. For Example: `#!cpp float gearRatio = 2.2;` or `#!cpp string firstName = "Bruce";` or `#!cpp string lastName = "Wayne";`.
 
-3. When you are writing a variable that is supposed to just store the value of a constant, one which you never intend to change, it is conventional to use capital letters and words are separated by underscores. For example: `#!java float PI = 3.14159;` or `#!java float GOLDEN_RATIO = 1.61803;`.
+3. When you are writing a variable that is supposed to just store the value of a constant, one which you never intend to change, it is conventional to use capital letters and words are separated by underscores. For example: `#!cpp float PI = 3.14159;` or `#!cpp float GOLDEN_RATIO = 1.61803;`.
 
 4. Variable names should be precise and mnemonic. That is, they should indicate to a casual programmer their purpose. Usage of single letter variable names is discouraged unless it is a throwaway or temporary variable.wdww
 
@@ -265,7 +265,7 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 3. Multiplication: `a*b` this gives you the product of two variables, `a` and `b`.
 
     For example:
-    ```java
+    ```cpp
     void main() {
         int a = 69;
         int b = 420;
@@ -285,30 +285,30 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 
     Note that in programming, division is weird with how it works for integers and floats:
     
-    For `#!java int`, it performs what we call "integer division":
+    For `#!cpp int`, it performs what we call "integer division":
 
-    `#!java 5/2 = 2`
+    `#!cpp 5/2 = 2`
     
-    `#!java 17/6 = 3`
+    `#!cpp 17/6 = 3`
     
     Basically, you round down any fractional part to your answer when you do normal division for integers.
     
-    For `#!java float`, it performs regular division as you would expect:
+    For `#!cpp float`, it performs regular division as you would expect:
 
-    `#!java 5.0/2.0 = 2.5`
+    `#!cpp 5.0/2.0 = 2.5`
     
-    `#!java 17.0/6.0 = 2.83333`
+    `#!cpp 17.0/6.0 = 2.83333`
     
     This gives you the exact result of division.
     
-    What if you mix a `#!java float` and an `#!java int`? In that case, regular division is used.
+    What if you mix a `#!cpp float` and an `#!cpp int`? In that case, regular division is used.
 
 5. Modulo: `a%b` this gives you the remainder when dividing `a` by `b`.
 
-    Note: due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!java 9*5.5` evaluates to `#!java 49` instead of `#!java 49.5`. However, `#!java 5.5*9` will correctly evaluate to `#!java 49.5`.
+    Note: due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
 
     For Example:
-    ```java
+    ```cpp
     void main() {
         // this will chat 2 in game (5/2 = 2.5 but remember, this is integer division! so round down to 2)
         xsChatData("result of 5/2 = "+(5/2));
@@ -333,7 +333,7 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
     ```
 
     Also Additionally, when testing stuff using `xsChatData`, be vary of some quirks that this has:
-    ```java
+    ```cpp
 
         // Note that chat data does not send the same thing multiple consecutively
         // which means if two calculations have the same result, only the first
@@ -353,13 +353,13 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 
 #### 2. The Assignment Operation
 
-Remember that when we use the `=` sign in programming, it is not a mathematical equality statement. It actually tells us that we are assigning a value to a variable. So when you see something like `a = a+1;`, this means that you are simply adding `#!java 1` to the value of `a`. you are assigning the value `a+1` to `a`. Once again, it is not a mathematical equality statement, it is an assignment.
+Remember that when we use the `=` sign in programming, it is not a mathematical equality statement. It actually tells us that we are assigning a value to a variable. So when you see something like `a = a+1;`, this means that you are simply adding `#!cpp 1` to the value of `a`. you are assigning the value `a+1` to `a`. Once again, it is not a mathematical equality statement, it is an assignment.
 
 #### 3. Postfix Operations
 
 If you want to increase or decrease the value of a variable by one, then writing `a = a + 1;` or `a = a - 1;` is one way to do it. Writing `a++;` or `a--;` is another way to do it.
 
-```java
+```cpp
 void main() {
     int a = 10;
     
@@ -387,7 +387,7 @@ Whenever you use a relational operator, it is like asking one of these questions
 
 1. `a < b` This checks if the number `a` is lesser than `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
 For example:
-```java
+```cpp
 // this will print "5 < 10 : 1"
 xsChatData("5 < 10 : "+(5 <> 10));
 // remember, in programming, 1 is the same as true
@@ -396,7 +396,7 @@ xsChatData("5 < 10 : "+(5 <> 10));
 
 2. `a > b` This checks if the number `a` is greater than `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
 For example:
-```java
+```cpp
 // this will print "5 > 10 : 0"
 xsChatData("5 > 10 : "+(5 > 10));
 // remember, in programming, 0 is the same as false
@@ -404,7 +404,7 @@ xsChatData("5 > 10 : "+(5 > 10));
 
 3. `a <= b` This checks if the number `a` is lesser than or equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
 For example:
-```java
+```cpp
 // this will print "5 <= 10 : 1"
 xsChatData("5 <= 10 : "+(5 <= 10));
 
@@ -414,7 +414,7 @@ xsChatData("10 <= 10 : "+(10 <= 10));
 
 4. `a >= b` This checks if the number `a` is greater than or equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
 For example:
-```java
+```cpp
 // this will print "5 >= 10 : 0"
 xsChatData("5 >= 10 : "+(5 >= 10));
 
@@ -424,7 +424,7 @@ xsChatData("10 >= 10 : "+(10 >= 10));
 
 5. `a == b` This checks if the number `a` is equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
 For example:
-```java
+```cpp
 // this will print "5 == 10 : 0"
 xsChatData("5 == 10 : "+(5 == 10));
 
@@ -434,7 +434,7 @@ xsChatData("10 == 10 : "+(10 == 10));
 
 6. `a != b` This checks if the number `a` is not equal to `b`. If it is, then the expression evaluates to `true`, else it evaluates to `false`.
 For example:
-```java
+```cpp
 // this will print "5 != 10 : 1"
 xsChatData("5 != 10 : "+(5 != 10));
 
@@ -442,10 +442,10 @@ xsChatData("5 != 10 : "+(5 != 10));
 xsChatData("10 != 10 : "+(10 != 10));
 ```
 
-Note: These relational operators also work on `String` values, for example `a < b` checks if `a` would alphabetically preceed `b`.
+Note: These relational operators also work on `string` values, for example `a < b` checks if `a` would alphabetically preceed `b`.
 
 For Example:
-```java
+```cpp
 void main() {
 
     // With numbers:
@@ -469,11 +469,11 @@ void main() {
     xsChatData("b <= c is "+(b <= c));
 
     
-    // With Strings:
-    String str1 = "ball";
-    String str2 = "apple";
-    String str3 = "cat";
-    String str4 = "cat";
+    // With strings:
+    string str1 = "ball";
+    string str2 = "apple";
+    string str3 = "cat";
+    string str4 = "cat";
     
     // this would chat 0 in game
     // this is because alphabetically, str1 does not come before str2
@@ -513,7 +513,7 @@ Boolean operations allow us to ask these sorts of questions but with boolean val
 
 1. Boolean AND: This is used to check if two or more boolean values are simultaneously `true`.
 
-    Usage: `#!java a && b` (Here, `a` and `b` are boolean variables)
+    Usage: `#!cpp a && b` (Here, `a` and `b` are boolean variables)
     
     This checks if both `a` **AND** `b` are `true`. If they are, the expression evaluates to `true`, otherwise it evaluates to `false`.
 
@@ -527,12 +527,12 @@ Boolean operations allow us to ask these sorts of questions but with boolean val
     | true  | true  | true       |
 
     Note that an AND is not limited to just two variables. Any number of variables may be AND-ed together.
-    For Example: `#!java a && b && c && d`. For this expression to evaluate to true, ALL of `a`, `b`, `c` and `d` must be true.
+    For Example: `#!cpp a && b && c && d`. For this expression to evaluate to true, ALL of `a`, `b`, `c` and `d` must be true.
     Writing a table that lists every combination of inputs and outputs for this expression is left as an excersise for the reader.
 
 2. Boolean OR: This is used to check if one or more booleans are `true`.
 
-    Usage: `#!java a || b` (Here, `a` and `b` are boolean variables)
+    Usage: `#!cpp a || b` (Here, `a` and `b` are boolean variables)
     
     This checks if either `a` **or** `b` is `true`. If one of them is, then the expression evaluates to `true`, else it evaluates to `false`.
 
@@ -546,7 +546,7 @@ Boolean operations allow us to ask these sorts of questions but with boolean val
     | true  | true  | true         |
 
     Note that an OR is not limited to just two variables. Any number of variables may be OR-ed together.
-    For Example: `#!java a || b || c || d`. For this expression to evaluate to true, only one of `a`, `b`, `c` and `d` needs to be true.
+    For Example: `#!cpp a || b || c || d`. For this expression to evaluate to true, only one of `a`, `b`, `c` and `d` needs to be true.
     Writing a table that lists every combination of inputs and outputs for this expression is left as an excersise for the reader.
 
 
@@ -559,7 +559,7 @@ ANDs and ORs can be used together in the same expression. For example:
 Note that if no brackets are used when writing these expressions the expression is evaluated left to right. This means that `a || b && c || d` is the same as `((a || b) && c) || d`. Thus, to make it absolutely clear as to what you mean when writing a boolean expression, you should ALWAYS use brackets appropriately for clarity, even though it is not necessary to do so.
 
 For example:
-```java
+```cpp
 void main() {
     int a = 10;
     int b = 20;
@@ -588,14 +588,14 @@ void main() {
 When two strings are joined to form a new string, it is known as concatenation. Other data types may also be concatenated with strings.
 
 For Example:
-```java 
+```cpp 
 void main() {
-    String a = "this is ";
-    String b = "string concatenation!";
+    string a = "this is ";
+    string b = "string concatenation!";
     int c = 11;
     float d = 5.5;
     bool e = true;
-    Vector v = Vector(1, 2, 3);
+    vector v = vector(1, 2, 3);
 
     // chats "this is string concatenation! 11 5.5 1 (1.0, 2.0, 3.0)"
     xsChatData(a+b+" "+c+" "+d+" "+e+" "+v);
@@ -605,27 +605,27 @@ void main() {
 
 #### 7. Vector Operations
 
-Manipulating Vectors in XS is done in a bit of a special way:
+Manipulating vectors in XS is done in a bit of a special way:
 
-1. Initialising a Vector:
+1. Initialising a vector:
 
-    We have already seen how this is done: `#!java Vector v = Vector(1, 2, 3);`
+    We have already seen how this is done: `#!cpp vector v = vector(1, 2, 3);`
 
-    Note that for some reason, currently we cannot use variables to initialise vectors inside `#!java Vector()`;
+    Note that for some reason, currently we cannot use variables to initialise vectors inside `#!cpp vector()`;
     This is probably a bug and will be fixed in future versions of XS.
 
     For example:
 
-    ```java
+    ```cpp
     void main() {
         float x = 1.0;
         float y = 2.0;
         float z = 3.0;
 
-        Vector myVector = Vector(x, y, z); // does not work, thxDE
+        vector myVector = vector(x, y, z); // does not work, thxDE
 
         // alternatively, this would work:
-        Vector myVector = cInvalidVector;
+        vector myVector = cInvalidVector;
         myVector = xsVectorSetX(myVector, x); // sets the X component of the vector
         myVector = xsVectorSetY(myVector, y); // sets the y component of the vector
         myVector = xsVectorSetZ(myVector, z); // sets the z component of the vector
@@ -638,13 +638,13 @@ Manipulating Vectors in XS is done in a bit of a special way:
     }
     ```
 
-2. Obtaining the X, Y, and Z components of a Vector:
+2. Obtaining the X, Y, and Z components of a vector:
 
     The X, Y and Z components of a vector can be accessed as follows:
 
-    ```java
+    ```cpp
     void main() {
-        Vector myVector = Vector(1, 2, 3);
+        vector myVector = vector(1, 2, 3);
 
         float x = xsVectorGetX(myVector); // gives you the X component of the vector
         float y = xsVectorGetY(myVector); // gives you the y component of the vector
@@ -652,13 +652,13 @@ Manipulating Vectors in XS is done in a bit of a special way:
     }
     ```
 
-3. Setting the X, Y, and Z components of a Vector individually:
+3. Setting the X, Y, and Z components of a vector individually:
 
     The X, Y and Z components of a vector can be set as follows:
 
-    ```java
+    ```cpp
     void main() {
-        Vector myVector = Vector(1, 2, 3);
+        vector myVector = vector(1, 2, 3);
         myVector = xsVectorSetX(myVector, 10); // sets the X component of the vector
         myVector = xsVectorSetY(myVector, 20); // sets the y component of the vector
         myVector = xsVectorSetZ(myVector, 30); // sets the z component of the vector
@@ -667,38 +667,38 @@ Manipulating Vectors in XS is done in a bit of a special way:
     
     Note that it is not necessary to change all 3 components at the same time, you can chose to only change one if you want to.
 
-4. Setting the entire Vector:
+4. Setting the entire vector:
 
     If you know that you want to change all 3 components of a vector, it can be done in one go instead of in 3 separate lines like above:
 
-    ```java
+    ```cpp
     void main() {
-        Vector myVector = Vector(1, 2, 3);
+        vector myVector = vector(1, 2, 3);
         myVector = xsVectorSet(10, 20, 30);
     }
     ```
 
-5. Obtaining the length of a Vector:
+5. Obtaining the length of a vector:
 
     The length of a vector can be obtained as follows:
     Note: The length of a vector is given by $\sqrt{x^2+y^2+z^2}$
 
-    ```java
+    ```cpp
     void main() {
-        Vector myVector = Vector(1, 2, 3);
+        vector myVector = vector(1, 2, 3);
         float length = xsVectorLength(myVector);
     }
     ```
 
-6. Normalizing a Vector:
+6. Normalizing a vector:
 
     The unit vector along the direction of the given vector is obtained by normalising it:
     Note: This new vector is given by $\left(\cfrac{x}{\sqrt{x^2+y^2+z^2}}, \cfrac{y}{\sqrt{x^2+y^2+z^2}}, \cfrac{z}{\sqrt{x^2+y^2+z^2}}\right)$
 
-    ```java
+    ```cpp
     void main() {
-        Vector myVector = Vector(1, 2, 3);
-        Vector unitVectorAlongMyVector = xsVectorNormalize(myVector);
+        vector myVector = vector(1, 2, 3);
+        vector unitVectorAlongMyVector = xsVectorNormalize(myVector);
     }
     ```
 
@@ -714,12 +714,12 @@ $\color{red} \text{if} \; \color{yellow} \text{you have a pen,} \; \color{red} \
 
 Similarly, when writing a script, it might be needed to make decisions at some points in your code. Conditionals are decision making statements that can be used to chose which set of instructions to execute depending on given conditions. There are two types of conditionals suported by XS:
 
-1. The `#!java if else if` statement
+1. The `#!cpp if else if` statement
 
-    An `#!java if else` statement is used whenever you need your script to make decisions. It executes one set of instructions `#!java if` a conditon is true or `#!java else` it executes another set of instructions.
+    An `#!cpp if else` statement is used whenever you need your script to make decisions. It executes one set of instructions `#!cpp if` a conditon is true or `#!cpp else` it executes another set of instructions.
 
     Usage:
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         int b = 20;
@@ -737,11 +737,11 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-    Anything that is written inside curly braces `{}` is known as a "block" of code. A block of code written under an `#!java if` is called the "body" of that `#!java if`.
+    Anything that is written inside curly braces `{}` is known as a "block" of code. A block of code written under an `#!cpp if` is called the "body" of that `#!cpp if`.
 
-    If there is only one instruction that needs to be run inside an `#!java if` or `#!java else` then the curly braces `{}` can be omitted:
+    If there is only one instruction that needs to be run inside an `#!cpp if` or `#!cpp else` then the curly braces `{}` can be omitted:
 
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         int b = 20;
@@ -752,9 +752,9 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-    An `#!java if` statement does not need to be followed by an `#!java else` statement everytime
+    An `#!cpp if` statement does not need to be followed by an `#!cpp else` statement everytime
 
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         int b = 20;
@@ -763,9 +763,9 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-    What if you need to check multiple conditions and do separate things for each case? this is when you use an `#!java if else if` statement!
+    What if you need to check multiple conditions and do separate things for each case? this is when you use an `#!cpp if else if` statement!
 
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         int b = 20;
@@ -778,24 +778,24 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-    Note that in the above example, both the `#!java (b > a)` and `#!java (b == 20)` conditions are true. However, in an `#!java if else if` statement, only one branch of instructions is ever executed. Which condition takes proiority is decided by what order you write them in. So in this case, `#!java "b > 20"` will be chatted to the screen because that is the first condition which is true.
+    Note that in the above example, both the `#!cpp (b > a)` and `#!cpp (b == 20)` conditions are true. However, in an `#!cpp if else if` statement, only one branch of instructions is ever executed. Which condition takes proiority is decided by what order you write them in. So in this case, `#!cpp "b > 20"` will be chatted to the screen because that is the first condition which is true.
 
     Technically, whenever a condition becomes true and its branch of instructions are executed, all of the remaining conditions are skipped, and not even evaluated.
 
     === "Practise"
-        Now that you are armed with the power of `#!java if else if`, can you:
+        Now that you are armed with the power of `#!cpp if else if`, can you:
         
         Write a script that would chat to the screen the maximum of 3 given variables.
         
         When you're ready, click the "Answer" to view the solution.
 
     === "Answer"
-        Now that you are armed with the power of `#!java if else if`, can you:
+        Now that you are armed with the power of `#!cpp if else if`, can you:
         
         Write a script that would chat to the screen the maximum of 3 given variables.
         
         When you're ready, click the "Answer" to view the solution.
-        ```java
+        ```cpp
         void main() {
             int a = 10;
             int b = 20;
@@ -809,12 +809,12 @@ Similarly, when writing a script, it might be needed to make decisions at some p
         }
         ```
 
-2. The `#!java switch-case` statements:
+2. The `#!cpp switch-case` statements:
 
-    A `#!java switch-case` is a branching structure used when you want to do several differnt things depending on the value of a variable:
+    A `#!cpp switch-case` is a branching structure used when you want to do several differnt things depending on the value of a variable:
     For example:
 
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         switch(a) {
@@ -835,7 +835,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     ```
 
     This is the same as doing:
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         if (a == 10) {
@@ -853,9 +853,9 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-    Similar to `#!java if else`, if there is only one instruction to execute, the curly braces `{}` can be omitted:
+    Similar to `#!cpp if else`, if there is only one instruction to execute, the curly braces `{}` can be omitted:
     
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         switch(a) {
@@ -884,11 +884,11 @@ Similarly, when writing a script, it might be needed to repeat certain parts of 
 Sometimes the need arises to repeatedly execute the same statement or a statement where only a few things are changing.
 Loops are statements that allow us to do exactly that! There are two types of loops suported by XS:
 
-1. The `#!java while` loop:
+1. The `#!cpp while` loop:
 
-    A `#!java while` statement repeatedly executes a block of code as long as (while) something is `true`. This process of repeatedly executing the same block of code is known as iteration!
+    A `#!cpp while` statement repeatedly executes a block of code as long as (while) something is `true`. This process of repeatedly executing the same block of code is known as iteration!
     For example:
-    ```java
+    ```cpp
     void main() {
         int a = 0;
         while(a < 10) {
@@ -904,7 +904,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
     ```
 
     === "Practise"
-        Now that you are armed with the power of `#!java while`, can you:
+        Now that you are armed with the power of `#!cpp while`, can you:
         
         Write a script that would chat to the screen the following pattern:
 
@@ -915,7 +915,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
         When you're ready, click "Answer" to view the solution.
 
     === "Hint"
-        Now that you are armed with the power of `#!java while`, can you:
+        Now that you are armed with the power of `#!cpp while`, can you:
         
         Write a script that would chat to the screen the following pattern:
 
@@ -928,7 +928,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
         Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
 
     === "Answer"
-        Now that you are armed with the power of `#!java while`, can you:
+        Now that you are armed with the power of `#!cpp while`, can you:
         
         Write a script that would chat to the screen the following pattern:
 
@@ -940,7 +940,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
 
         Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
 
-        ```java
+        ```cpp
         void main() {
             int number = 1;
             int increase = 1;
@@ -952,12 +952,12 @@ Loops are statements that allow us to do exactly that! There are two types of lo
         }
         ```
 
-2. The `#!java for` loop:
+2. The `#!cpp for` loop:
 
-    A `#!java for` statement is specifically used to loop over a range of values, say `#!java 5` to `#!java 23`
+    A `#!cpp for` statement is specifically used to loop over a range of values, say `#!cpp 5` to `#!cpp 23`
     
     For example:
-    ```java
+    ```cpp
     void main() {
         for(a = 5; < 23) {
             xsChatData("a = "+a);
@@ -977,7 +977,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
     }
     ```
 
-How do we pick which loop to use? Firstly, a `#!java while` loop can do all that a `#!java for` loop can. However, a `#!java while` loop is much slower than a `#!java for` loop in performance! If it is possible, you should **always** stick to using for loops! A `#!java for` loop also takes care of increasing or decreasing the variables of iteration, which means that you cannot accidently cause an "infinite" loop unlike a while loop.
+How do we pick which loop to use? Firstly, a `#!cpp while` loop can do all that a `#!cpp for` loop can. However, a `#!cpp while` loop is much slower than a `#!cpp for` loop in performance! If it is possible, you should **always** stick to using for loops! A `#!cpp for` loop also takes care of increasing or decreasing the variables of iteration, which means that you cannot accidently cause an "infinite" loop unlike a while loop.
 
 ### 3.6. Modular Programming
 
@@ -985,17 +985,17 @@ How do we pick which loop to use? Firstly, a `#!java while` loop can do all that
 
 Lets say that you are watching TV. Every time you want to change the channel, you will use the same remote. It would be quite inconvenient if you had to make a new remote each time you wanted to change the channel. Similarly, when writing a script, you might want to write a piece of code that you need to re-use multiple times in different parts of your script. Functions allow us to do exactly this!
 
-A function is a piece of code that can input some values and use them to perform a given task. You have already seen a function before! `xsChatData(String str);` is actually a function which inputs a `String` and chats it in game.
+A function is a piece of code that can input some values and use them to perform a given task. You have already seen a function before! `xsChatData(string str);` is actually a function which inputs a `string` and chats it in game.
 
 Another useful function is `sqrt(float number);` which calculates the square root of a value.
 
-Usage: `#!java float a = sqrt(4);`
+Usage: `#!cpp float a = sqrt(4);`
 
-This assigns the value `#!java 2.0` to `a`.
+This assigns the value `#!cpp 2.0` to `a`.
 
-An interesting thing to note here is that some functions "give you back" a value, like `#!java sqrt(5);` will "give you back" $\approx$ `#!java 2.24`.
+An interesting thing to note here is that some functions "give you back" a value, like `#!cpp sqrt(5);` will "give you back" $\approx$ `#!cpp 2.24`.
 
-This property that a function "gives you back" a value is formally known as the fact that the function "returns" a value. Not all functions do this, for example `#!java xsChatData("my message");` simply displays that message on screen and does not return any value. A function can return a value of any data type.
+This property that a function "gives you back" a value is formally known as the fact that the function "returns" a value. Not all functions do this, for example `#!cpp xsChatData("my message");` simply displays that message on screen and does not return any value. A function can return a value of any data type.
 
 Each function also takes a set of inputs. `xsChatData` takes in a string, `sqrt` takes in a float. The set of inputs that a function can take are formally known as its "parameters".
 
@@ -1003,7 +1003,7 @@ While these are inbuilt functions in XS that are provided to us to use to use di
 
 Usage:
 
-```java
+```cpp
 returnType functionName(dataType parameter1 = defaultValue, dataType parameter2 = defaultValue) {
     return (value);
     // value must be a data type that is the same as returnType
@@ -1011,7 +1011,7 @@ returnType functionName(dataType parameter1 = defaultValue, dataType parameter2 
 ```
 If it is not clear what this means, bare with this usage for a minute and see this example below:
 
-```java
+```cpp
 // this is a custom function that returns the maximum of two integers.
 
 int max(int a = 0, int b = 0) {
@@ -1068,7 +1068,7 @@ For Example:
 If I have two files, `test.xs` and `VectorOperations.xs` in the same folder, then:
 
 === "test.xs"
-    ```java
+    ```cpp
     include "./VectorOperations.xs";
     // "./VectorOperations.xs" is the relative path of the
     // VectorOperations.xs file from the text.xs file.
@@ -1077,8 +1077,8 @@ If I have two files, `test.xs` and `VectorOperations.xs` in the same folder, the
     // a quick google search will tell you more about them.
 
     void main() {
-        Vector a = Vector(1, 2, 3);
-        Vector b = Vector(3, 2, 1);
+        vector a = vector(1, 2, 3);
+        vector b = vector(3, 2, 1);
         xsChatData("dot: "+dotProduct(a, b));
         xsChatData("cross: "+crossProduct(a, b));
         xsChatData("add: "+add(a, b));
@@ -1087,23 +1087,23 @@ If I have two files, `test.xs` and `VectorOperations.xs` in the same folder, the
     ```
 
 === "VectorOperations.xs"
-    ```java
-    int dotProduct(Vector a = cInvalidVector, Vector b = cInvalidVector) {
+    ```cpp
+    int dotProduct(vector a = cInvalidVector, vector b = cInvalidVector) {
         return (xsVectorGetX(a)*xsVectorGetX(b)+
                 xsVectorGetY(a)*xsVectorGetY(b)+
                 xsVectorGetZ(a)*xsVectorGetZ(b));
     }
 
-    Vector crossProduct(Vector a = cInvalidVector, Vector b = cInvalidVector) {
-        Vector product = cInvalidVector;
+    vector crossProduct(vector a = cInvalidVector, vector b = cInvalidVector) {
+        vector product = cInvalidVector;
         product = xsVectorSetX(product, xsVectorGetY(a)*xsVectorGetZ(b) - xsVectorGetZ(a)*xsVectorGetY(b));
         product = xsVectorSetY(product, 0 - xsVectorGetX(a)*xsVectorGetZ(b) + xsVectorGetZ(a)*xsVectorGetX(b));
         product = xsVectorSetZ(product, xsVectorGetX(a)*xsVectorGetY(b) - xsVectorGetY(a)*xsVectorGetX(b));
         return (product);
     }
 
-    Vector add(Vector a = cInvalidVector, Vector b = cInvalidVector) {
-        Vector addition = cInvalidVector;
+    vector add(vector a = cInvalidVector, vector b = cInvalidVector) {
+        vector addition = cInvalidVector;
         addition = xsVectorSetX(addition, xsVectorGetX(a)+xsVectorGetX(b));
         addition = xsVectorSetY(addition, xsVectorGetY(a)+xsVectorGetY(b));
         addition = xsVectorSetZ(addition, xsVectorGetZ(a)+xsVectorGetZ(b));
@@ -1111,7 +1111,7 @@ If I have two files, `test.xs` and `VectorOperations.xs` in the same folder, the
     }
     ```
 
-This way, for every file that you need to use "VectorOperations.xs" in, you just need to write `#!java include "/relative/or/absolute/path/to/file";` and you can use all the functions that you wrote in it in that file as well!
+This way, for every file that you need to use "VectorOperations.xs" in, you just need to write `#!cpp include "/relative/or/absolute/path/to/file";` and you can use all the functions that you wrote in it in that file as well!
 
 Code that is written like this, where:
 
@@ -1126,7 +1126,7 @@ However... Currently there is a bug (thxDE 11) due to which XS Scripts are not p
 
 Every variable has a scope, i.e. an "area" of the code where it can be used. For example, you cannot use a variable before it has been initialised, that doesn't make sense!
 
-```java
+```cpp
 void main() {
     a++; // wait, a doesn't exist yet! you cannot do this.
     int a = 10;
@@ -1136,7 +1136,7 @@ void main() {
 
 Similarly, Variables initialised inside one function can only be used in that particular function, and do not exist outside of them. These kinds of variables are known as local variables. For example:
 
-```java
+```cpp
 void main() {
     int a = 10;
 }
@@ -1150,7 +1150,7 @@ void anotherFunction() {
 
 What if you want a variable that is shared between functions? A variable like this must be declared outside of all functions. Such a variable is known as a global variable. For example:
 
-```java
+```cpp
 int a = 10;
 void main() {
     a++;
@@ -1172,30 +1172,30 @@ An array is a data structure that allows you to make ordered, numbered lists of 
 | 3     | 32    |
 | 4     | 92    |
  
-The index is what identifies elements in an array and indices for each array always starts from 0. For example: `#!java a[2]` is `#!java 42`.
-While in most programming languages `#!java a[2]` is the way to access elements in an array, that is not how it is done in XS. Lets look at how arrays are used in XS:
+The index is what identifies elements in an array and indices for each array always starts from 0. For example: `#!cpp a[2]` is `#!cpp 42`.
+While in most programming languages `#!cpp a[2]` is the way to access elements in an array, that is not how it is done in XS. Lets look at how arrays are used in XS:
 
 For creating arrays, the following functions are used for the relevant data type:
-```java
+```cpp
 // creates a sized and named integer array, with every value
 // initialised to defaultValue. returns an integer arrayID.
-int xsArrayCreateInt(int size, int defaultValue, String name)
+int xsArrayCreateInt(int size, int defaultValue, string name)
 
 // creates a sized and named float array, with every value
 // initialised to defaultValue. returns an integer arrayID.
-int xsArrayCreateFloat(int size, float defaultValue, String name)
+int xsArrayCreateFloat(int size, float defaultValue, string name)
 
 // creates a sized and named boolean array, with every value
 // initialised to defaultValue. returns an integer arrayID.
-int xsArrayCreateBool(int size, bool defaultValue, String name)
+int xsArrayCreateBool(int size, bool defaultValue, string name)
 
 // creates a sized and named string array, with every value
 // initialised to defaultValue. returns an integer arrayID.
-int xsArrayCreateString(int size, String defaultValue, String name)
+int xsArrayCreateString(int size, string defaultValue, string name)
 
 // creates a sized and named vector array, with every value
 // initialised to defaultValue. returns an integer arrayID.
-int xsArrayCreateVector(int size, vector defaultValue, String name)
+int xsArrayCreateVector(int size, vector defaultValue, string name)
 ```
 
 For the name of the array, any string may be used but all names must be unique
@@ -1204,7 +1204,7 @@ All of these functions return an integer which is the ID of the array that you j
 
 To get a value at a specific index from an array, we use the following functions for the relevant data types:
 
-```java
+```cpp
 // returns an integer from the specified index of the specified array
 int xsArrayGetInt(int arrayID, int index)
 
@@ -1215,25 +1215,25 @@ float xsArrayGetFloat(int arrayID, int index)
 bool xsArrayGetBool(int arrayID, int index)
 
 // returns a string from the specified index of the specified array
-String xsArrayGetString(int arrayID, int index)
+string xsArrayGetString(int arrayID, int index)
 
 // returns a vector from the specified index of the specified array
-Vector xsArrayGetVector(int arrayID, int index)
+vector xsArrayGetVector(int arrayID, int index)
 ```
 
 If you ever try to access values in arrays that dont exist (invalid arrayID) or values at indices that dont exist (negative indices or indices more than the length of the array) then the default values for the data types are returned. These are:
 
-```java
+```cpp
 int defaultValue = -1
 float defaultValue = -1.0
 bool defaultValue = false
-String defaultValue = ""
-Vector defaultValue = Vector(0, 0, 0)
+string defaultValue = ""
+vector defaultValue = vector(0, 0, 0)
 ```
 
 To set a value at a specific index in an array, we use the following functions for the relevant data types:
 
-```java
+```cpp
 // Sets the value at the specified index in the specified array.
 int xsArraySetInt(int arrayID, int index, int value)
 
@@ -1244,18 +1244,18 @@ int xsArraySetFloat(int arrayID, int index, float value)
 int xsArraySetBool(int arrayID, int index, bool value)
 
 // Sets the value at the specified index in the specified array.
-int xsArraySetString(int arrayID, int index, String value)
+int xsArraySetString(int arrayID, int index, string value)
 
 // Sets the value at the specified index in the specified array.
-int xsArraySetVector(int arrayID, int index, Vector value)
+int xsArraySetVector(int arrayID, int index, vector value)
 ```
 
-Note that these Set functions return a value of `#!java 1` every time, however this does not need to be stored in a variable.
+Note that these Set functions return a value of `#!cpp 1` every time, however this does not need to be stored in a variable.
 
 
 To change the size of an array
 
-```java
+```cpp
 // Resize the specified array.
 int xsArrayResizeInt(int arrayID, int newSize)
 // Resize the specified array.
@@ -1268,22 +1268,22 @@ int xsArrayResizeString(int arrayID, int newSize)
 int xsArrayResizeVector(int arrayID, int newSize)
 ```
 
-Note that these Resize functions return a value of `#!java 1` every time, however this does not need to be stored in a variable.
+Note that these Resize functions return a value of `#!cpp 1` every time, however this does not need to be stored in a variable.
 
-`#!java int xsArrayGetSize(int arrayID)` is also a useful array function that returns the size of the specified array.
+`#!cpp int xsArrayGetSize(int arrayID)` is also a useful array function that returns the size of the specified array.
 
 ### 3.9. Type Casting
 
 Type casting is when a value of one data type is "transformed" into a value of another, similar data type. This is like taking an object stored in one type of container and putting it into another.
 
-For example, When you try to store an `#!java int` in a `#!java float`, it would work without any issues. It is similar to storing water in a bottle and then putting the water from that bottle into a flask. When you try to store a `#!java float` in an `#!java int` however, the fractional part of the `#!java float` is lost! This is like trying to put water from a water bottle into a paper bag. Some of the water will leak out!
+For example, When you try to store an `#!cpp int` in a `#!cpp float`, it would work without any issues. It is similar to storing water in a bottle and then putting the water from that bottle into a flask. When you try to store a `#!cpp float` in an `#!cpp int` however, the fractional part of the `#!cpp float` is lost! This is like trying to put water from a water bottle into a paper bag. Some of the water will leak out!
 
 There are two kinds of type casting:
 
 1. Implicit Type Casting
 
     Implicit type casting is done automatically by the script (hence implicit) when you assign one type of value to another, similar data type. For example:
-    ```java
+    ```cpp
     void main() {
         int a = 5;
         float b = 3.9;
@@ -1292,26 +1292,26 @@ There are two kinds of type casting:
         // implicit type casting:
         int d = c; // remember, true is 1 and false is 0
         float e = c;
-        String f = ""+c; // just String f = c; will not work
+        string f = ""+c; // just string f = c; will not work
 
         // when type casting a float to an int, the fractional part of the number is lost!
         // note that it is not rounded off, 3.9 would become 3 after type casting
         int = b;
         // anything other than a 0 gives true for a bool
         bool = b;
-        String = ""+b;
+        string = ""+b;
 
         float g = a;
         // anything other than a 0 gives true for bool
         bool h = a;
-        String i = ""+a; 
+        string i = ""+a; 
     }
     ```
 
 2. Explicit Type Casting
 
     Explicit type casting is done manually by the programmer (hence explicit). For example:
-    ```java
+    ```cpp
     void main() {
         float a = 5.5;
 
@@ -1324,7 +1324,7 @@ There are two kinds of type casting:
 
 A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a function. Its usage looks like:
 
-```java
+```cpp
 rule ruleName // This is the name of the rule. Follows same naming laws as variables.
 
     active/inactive // this is the initial state of the rule, active means that runs by default
@@ -1347,7 +1347,7 @@ rule ruleName // This is the name of the rule. Follows same naming laws as varia
 
 Example Usages:
 
-```java
+```cpp
 int a = 0;
 // This rule prints the value of a every 2 seconds.
 rule chatTheValueOfA

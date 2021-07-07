@@ -22,6 +22,8 @@ Yes, most of the topics covered in this file will apply to all older versions of
 
 ## About the Authors
 
+If you have questions, join our discord [here](https://discord.gg/5e7sycMb "Join the All About UGC discord!")!
+
 This guide has been written by
 
 | **Author**           | **Discord**   | **GitHub**                                               | **YouTube** | **Twitch** |

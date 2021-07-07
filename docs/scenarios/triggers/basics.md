@@ -30,7 +30,7 @@ What do the buttons under the boxes do?
     3. `Delete`: delete the selected condition or effect. This cannot be undone!
     4. `Copy`: copy the selected condition or effect.
 
-But wait, what are effects and conditions? Effects and Conditions are the basic elements of triggers that allow us to take certain actions, make decisions and do a lot more cool stuff. They are covered in more detail in their own sections of this guide.
+But wait, what are effects and conditions? Effects and Conditions are the basic elements of triggers that allow us to take certain actions, make decisions and do a lot more cool stuff. They are covered in more detail in the [Effects](../effects/effects "Jump to: Triggers > Effects") and [Conditions]("Jump to: Triggers > Conditions NONEXISTENT") sections of the guide
 
 For now, simply put, an effect is the action that the trigger has to take and a condition is literally the thing which must be fulfilled before the action is allowed to be taken.
 
@@ -58,4 +58,6 @@ When a trigger is selected, the settings related to it are displayed. The follow
 
 3. There is a theoretical limit of `4294967295` triggers in a scenario. Roll The Dice in older versions of the game is known to use about `16000` triggers. There is a theoretical limit of `2147483647` effects and `2147483647` conditions inside one trigger. Perk Pandemonium is known to use up to `250` effects inside one trigger.
 
-4. Triggers are executed in top to bottom order, as they appear in the editor. The effects inside one trigger are executed in top to bottom order as well.
+4. Triggers are executed in the order that they were created in, and not the order of their appearence from top to bottom. The effects inside one trigger are also executed in the order that they were created in, and not the order of their appearence from top to bottom. The conditions inside a trigger are checked according to the order that they were created in as well.
+
+5. For the effects of a trigger to execute, all the conditions of the trigger must be fulfilled except in one case (when an OR condition is used). A trigger will give up on checking the rest of its conditions as soon as a condition that is false is encountered except in one case (when an OR condition is used). These rules are discussed in greater detail in the [Conditions]("Jump to: Triggers > Conditions NONEXISTENT") section of the guide.

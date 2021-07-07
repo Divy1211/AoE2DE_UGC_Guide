@@ -191,6 +191,8 @@ This page is a list of all the unit attributes that can be modified in the scena
 | Defensive Stance by Default                 | 8               |
 | Protected Formation by Default              | 16              |
 | Safe Delete Confirmation                    | 32              |
+| Hero Glow                                   | 64              |
+| Invert All Flags (except flag 1)            | 128             |
 
 For example, if we set the hero status of a knight to 2, a monk will not be able to convert it. If we set the hero status of a militia to 4, it will regenerate HP automatically.
 

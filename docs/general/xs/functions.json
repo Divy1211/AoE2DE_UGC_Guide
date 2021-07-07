@@ -6,7 +6,7 @@
             "params": [
                 {
                     "name": "ruleName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule to disable"
                 }
@@ -25,7 +25,7 @@
             "params": [
                 {
                     "name": "ruleName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule to enable"
                 }
@@ -38,7 +38,7 @@
             "params": [
                 {
                     "name": "ruleName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule to check"
                 }
@@ -51,7 +51,7 @@
             "params": [
                 {
                     "name": "ruleName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule to set the priority of"
                 },
@@ -83,7 +83,7 @@
             "params": [
                 {
                     "name": "ruleName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule to set the min interval of"
                 },
@@ -115,7 +115,7 @@
             "params": [
                 {
                     "name": "ruleName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule to set the max interval of"
                 },
@@ -147,7 +147,7 @@
             "params": [
                 {
                     "name": "ruleGroupName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule group to enable"
                 }
@@ -160,7 +160,7 @@
             "params": [
                 {
                     "name": "ruleGroupName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule group to disable"
                 }
@@ -173,7 +173,7 @@
             "params": [
                 {
                     "name": "ruleGroupName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the rule group to check"
                 }
@@ -188,7 +188,7 @@
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to get the X coordinate of"
                 }
@@ -201,7 +201,7 @@
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to get the Y coordinate of"
                 }
@@ -214,7 +214,7 @@
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to get the Z coordinate of"
                 }
@@ -223,11 +223,11 @@
         },
         {
             "name": "xsVectorSetX",
-            "return_type": "Vector",
+            "return_type": "vector",
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to modify the X coordinate of"
                 },
@@ -242,11 +242,11 @@
         },
         {
             "name": "xsVectorSetY",
-            "return_type": "Vector",
+            "return_type": "vector",
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to modify the Y coordinate of"
                 },
@@ -261,11 +261,11 @@
         },
         {
             "name": "xsVectorSetZ",
-            "return_type": "Vector",
+            "return_type": "vector",
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to modify the Z coordinate of"
                 },
@@ -280,7 +280,7 @@
         },
         {
             "name": "xsVectorSet",
-            "return_type": "Vector",
+            "return_type": "vector",
             "params": [
                 {
                     "name": "x",
@@ -309,7 +309,7 @@
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to calculate the length of"
                 }
@@ -318,11 +318,11 @@
         },
         {
             "name": "xsVectorNormalize",
-            "return_type": "Vector",
+            "return_type": "vector",
             "params": [
                 {
                     "name": "v",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The vector to normalise"
                 }
@@ -349,7 +349,7 @@
                 },
                 {
                     "name": "uniqueName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "A unique name of the created array"
                 }
@@ -374,7 +374,7 @@
                 },
                 {
                     "name": "uniqueName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "A unique name of the created array"
                 }
@@ -399,7 +399,7 @@
                 },
                 {
                     "name": "uniqueName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "A unique name of the created array"
                 }
@@ -418,13 +418,13 @@
                 },
                 {
                     "name": "defaultValue",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The default value to initialise all the values in the array to"
                 },
                 {
                     "name": "uniqueName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "A unique name of the created array"
                 }
@@ -443,13 +443,13 @@
                 },
                 {
                     "name": "defaultValue",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The default value to initialise all the values in the array to"
                 },
                 {
                     "name": "uniqueName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "A unique name of the created array"
                 }
@@ -549,7 +549,7 @@
                 },
                 {
                     "name": "value",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The new value to set"
                 }
@@ -574,7 +574,7 @@
                 },
                 {
                     "name": "value",
-                    "type": "Vector",
+                    "type": "vector",
                     "required": true,
                     "desc": "The new value to set"
                 }
@@ -1012,7 +1012,7 @@
             "params": [
                 {
                     "name": "message",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The message to display in chat"
                 },
@@ -1101,7 +1101,7 @@
             "params": [
                 {
                     "name": "functionName",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "The name of the function to get the internal ID of"
                 }
@@ -1120,13 +1120,13 @@
             "params": [
                 {
                     "name": "foo",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "unknown"
                 },
                 {
                     "name": "bar",
-                    "type": "String",
+                    "type": "string",
                     "required": true,
                     "desc": "unknown"
                 },

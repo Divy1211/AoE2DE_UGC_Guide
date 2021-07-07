@@ -26,7 +26,7 @@ To use an XS:
 
 2. To begin with using XS, write this basic code in the file:
 
-```java
+```cpp
 // this is a comment
 /* this
 is a multiline
@@ -57,7 +57,7 @@ void main() {
 ### 2.2. In an RMS
 
 1. Open the RM Script in a text editor
-2. At the very top, type `#includeXS "filename.xs"`. Here, `filename.xs` is the name of the file that you created above.
+2. At the very top, type `#includeXS filename.xs`. Here, `filename.xs` is the name of the file that you created above.
 3. The `main();` function is automatically called when a map is generated using the RMS.
 4. To test, load the RMS in a single player (or multi player) lobby and start the game.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
@@ -69,17 +69,17 @@ There are a total of 5 data types supported by XS, they are:
 
 |**Data Type** | **Syntax** |
 | :-:          | :-:        |
-|`#!java int`    | `#!java int a = 10;`                     |
-|`#!java float`  | `#!java float a = 3.1;`                  |
-|`#!java String` | `#!java String a = "string";`            |
-|`#!java bool`   | `#!java bool a = true;`                  |
-|`#!java Vector` | `#!java Vector v = Vector(1.2, 2.3, 3);` |
+|`#!cpp int`    | `#!cpp int a = 10;`                     |
+|`#!cpp float`  | `#!cpp float a = 3.1;`                  |
+|`#!cpp string` | `#!cpp string a = "string";`            |
+|`#!cpp bool`   | `#!cpp bool a = true;`                  |
+|`#!cpp vector` | `#!cpp vector v = vector(1.2, 2.3, 3);` |
 
 A few things to note:
 1. Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to: XS Scripting > Function Reference > Vector Manipulation") section of this guide for all the different functions that can be used on vectors.
-2. Variables cannot be used in vector initialisation. For example: `#!java Vector v = Vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!java Vector v = xsVectorSet(x, y, z);` instead.
+2. Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
 3. Constant Variables
-    Syntax `#!java const int a = 10;` or `#!java const float PI = 3.1415;` will declare an immutable variable.
+    Syntax `#!cpp const int a = 10;` or `#!cpp const float PI = 3.1415;` will declare an immutable variable.
 4. Scope of a Variable
     The concept of local and global variables applies to XS.
 
@@ -98,7 +98,7 @@ Refer to the [Mathematical Operations](../functions/#4-mathematical-operations "
 
 Note:
 
-```java
+```cpp
 void main() {
     int a = 10;
 
@@ -146,16 +146,16 @@ Note: These relational operators also work on strings, for example `a < b` tells
 
 Negation is not supported by XS.
 
-Note: due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!java 9*5.5` evaluates to `#!java 49` instead of `#!java 49.5`. However, `#!java 5.5*9` will correctly evaluate to `#!java 49.5`.
+Note: due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
 
 ## 5. Flow Control Statements
 The following flow control statements are supported by XS:
 
-1. `#!java if else if` construct:
+1. `#!cpp if else if` construct:
 
     Example Syntax:
 
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         float b = 20;
@@ -170,11 +170,11 @@ The following flow control statements are supported by XS:
     }
     ```
 
-2. `#!java switch-case` construct:
+2. `#!cpp switch-case` construct:
 
     Example Syntax:
     
-    ```java
+    ```cpp
     void main() {
         int a = 10;
         switch(a) {
@@ -194,11 +194,11 @@ The following flow control statements are supported by XS:
     }
     ```
 
-3. `#!java while` loop:
+3. `#!cpp while` loop:
 
     Example Syntax:
     
-    ```java
+    ```cpp
     void main() {
         int a = 0;
         while(a < 10) {
@@ -208,11 +208,11 @@ The following flow control statements are supported by XS:
     }
     ```
 
-3. `#!java for` loop:
+3. `#!cpp for` loop:
 
     Syntax:
     
-    ```java
+    ```cpp
     void main() {
         // this loops a from 0 to 10
         for(a = 0; < 10)
@@ -233,7 +233,7 @@ The following flow control statements are supported by XS:
 
 Syntax:
 
-```java
+```cpp
 returnType functionName(dataType parameter1 = defaultValue, dataType parameter2 = defaultValue) {
     return (value);
     // value must be enclosed by parantheses
@@ -242,7 +242,7 @@ returnType functionName(dataType parameter1 = defaultValue, dataType parameter2 
 
 Example Syntax:
 
-```java
+```cpp
 int max(int a = 0, int b = 0) {
     if(a > b)
         return (a);
@@ -259,7 +259,7 @@ void main() {
 
 An XS Script can import other XS Scripts using the following syntax:
 
-```java
+```cpp
 include "absolute/or/relative/path/to/file.xs";
 ```
 
@@ -269,11 +269,11 @@ However... Currently there is a bug (thxDE 11) due to which XS Scripts are not p
 
 Refer to the [Array Manipulation](../functions/#3-array-manipulation "Jump to: XS Scriptig > Function Reference > Array Manipulation") section of this guide on how to use arrays.
 
-Standard syntax like `#!java int a[] = new int[10];` or `#!java a[2];` is not supported by XS.
+Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supported by XS.
 
 ## 8. Type Casting
 
-`#java int`, `#java float` and `bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!java String a = "this would work "+5.6;`. However, `#!java String a = 5.5;` will not work, instead use: `#!java String a = ""+5.5;`. Explicit type casting is done using: `#!java (<data type>)<variable or constant>`. Note that due to a current bug, explicit type casting does not work on variables.
+`#java int`, `#java float` and `bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!cpp string a = "this would work "+5.6;`. However, `#!cpp string a = 5.5;` will not work, instead use: `#!cpp string a = ""+5.5;`. Explicit type casting is done using: `#!cpp (<data type>)<variable or constant>`. Note that due to a current bug, explicit type casting does not work on variables.
 
 ## 9. Rules
 
@@ -281,7 +281,7 @@ A rule is a block of code that can be set to repeatedly execute at set intervals
 
 Syntax:
 
-```java
+```cpp
 rule ruleName // This is the name of the rule. Follows same naming laws as variables.
 
     active/inactive // this is the initial state of the rule, active means that runs by default
@@ -304,7 +304,7 @@ rule ruleName // This is the name of the rule. Follows same naming laws as varia
 
 Example:
 
-```java
+```cpp
 int a = 0;
 // This rule prints the value of a every 2 seconds.
 rule chatTheValueOfA

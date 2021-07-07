@@ -9,9 +9,9 @@ Any new bugs discovered will be added to the list. This list will also be update
 
 If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the `About` page for relevant information about the authors.
 
-Game Version: `101.101.47820.0 6624001`
+Game Version: `101.101.45340.0 6228353`
 
-Last Updated: `14.05.2021`
+Last Updated: `07.07.2021`
 
 Game Platform: Steam
 
@@ -57,20 +57,20 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     float x = 2;
     float y = 4;
     float z = 6;
 
     // none of these declarations work:
-    Vector v1 = Vector(5+5, 10, 4);
-    Vector v2 = Vector(5, 10-1, 4);
-    Vector v3 = Vector(5, 10, 4+5);
+    vector v1 = vector(5+5, 10, 4);
+    vector v2 = vector(5, 10-1, 4);
+    vector v3 = vector(5, 10, 4+5);
 
-    Vector v4 = Vector(x, 5, 3);
-    Vector v5 = Vector(3, y, 2);
-    Vector v6 = Vector(4, 4, z);
+    vector v4 = vector(x, 5, 3);
+    vector v5 = vector(3, y, 2);
+    vector v6 = vector(4, 4, z);
 }
 ```
 3. Include the script in the scenario or RMS
@@ -87,7 +87,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     int a = 5;
     float b = 3.4;
@@ -117,7 +117,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     float a = 5.5;
     float b = (int)a; // will outwright assign 0 to b
@@ -150,7 +150,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     // expected `5.5 mod 1 = 0.500000` but actually
     // prints `5.5 mod 1 = 0.000000`
@@ -159,7 +159,7 @@ void main() {
 ```
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
-5. When a game is played using the scenario or RMS, `#!java 0.500000` should be chatted to the screen, but instaed 0.000000 is shown.
+5. When a game is played using the scenario or RMS, `#!cpp 0.500000` should be chatted to the screen, but instaed 0.000000 is shown.
 
 ### 7. Return Statements Do Not Work As Officially Documented
 
@@ -171,7 +171,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 int test() {
     return 5+5;
     // instead, `return (5+5);` would work.
@@ -187,7 +187,7 @@ void main() {
 
 ### 8. Outputs Of Operations Are Of The Wrong Data Type
 
-Description: The output type of an operation is determined by the first operand `a*b`. For example: `#!java 9*5.5` evaluates to `#!java 49` and not `#!java 49.5`. However, the expression `#!java 5.5*9` gives the correct result.
+Description: The output type of an operation is determined by the first operand `a*b`. For example: `#!cpp 9*5.5` evaluates to `#!cpp 49` and not `#!cpp 49.5`. However, the expression `#!cpp 5.5*9` gives the correct result.
 
 Expected Behaviour: Both the expressions in the above example should yield the same result.
 
@@ -195,7 +195,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     int a = 7;
     float b = 1.1;
@@ -207,11 +207,11 @@ void main() {
 ```
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
-5. When a game is played using the scenario or RMS, `#!java 6.363636` should have been chatted to the screen, but instead `#!java 6` is shown on the screen.
+5. When a game is played using the scenario or RMS, `#!cpp 6.363636` should have been chatted to the screen, but instead `#!cpp 6` is shown on the screen.
 
 ### 9. Function Parameters And Return Statements Do Not Implicitly Type Cast
 
-Description: Passing an `#!java int` to a function parameter that is supposed to take in a `#!java float` value gets used as an `#!java int` and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an `#!java int` is returned in a function that is supposed to return a `#!java float`, it will just return the `#!java int` as is without type casting into `#!java float`
+Description: Passing an `#!cpp int` to a function parameter that is supposed to take in a `#!cpp float` value gets used as an `#!cpp int` and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an `#!cpp int` is returned in a function that is supposed to return a `#!cpp float`, it will just return the `#!cpp int` as is without type casting into `#!cpp float`
 
 Expected Behaviour: Values that are passed to/returned from a function should be correctly type casted.
 
@@ -219,7 +219,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 float test(float a = -1) {
     // keeping in mind the previous bug,
     // 5*5.5 evaluates to 27 (an int)
@@ -242,11 +242,11 @@ void main() {
 ```
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
-5. When a game is played using the scenario or RMS, `#!java 13.750000` should be chatted to the screen, but `#!java 13` is shown instead
+5. When a game is played using the scenario or RMS, `#!cpp 13.750000` should be chatted to the screen, but `#!cpp 13` is shown instead
 
 ### 10. Cannot Declare Variables As A `#!cpp const` In Function Parameters
 
-Description: It is not possible to declare a function parameter as a `#!cpp const` even though it is used in the `#!java xsChatData` function in the official documentation.
+Description: It is not possible to declare a function parameter as a `#!cpp const` even though it is used in the `#!cpp xsChatData` function in the official documentation.
 
 Expected Behaviour: It should bee possible to declare function parameters as a `#!cpp const`
 
@@ -254,7 +254,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 float test(const float a = -1) {
     return (a*5);
 }
@@ -276,7 +276,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     // prints `this  will not appear in game`
     xsChatData("this % will not appear in game");
@@ -289,17 +289,17 @@ void main() {
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
 5. When a game is played using the scenario or RMS, the game will crash
 
-### 12. Cannot Print `#!java 0` Or `#!java 1` At The Start Of The Line In `xsChatData()`
+### 12. Cannot Print `#!cpp 0` Or `#!cpp 1` At The Start Of The Line In `xsChatData()`
 
-Description: If a `#!java 0` or `#!java 1` character occurs at the beginning of a string that is being chatted to the screen using `xsChatData`, then the `#!java 0` or `#!java 1` characters do not appear in the message.
+Description: If a `#!cpp 0` or `#!cpp 1` character occurs at the beginning of a string that is being chatted to the screen using `xsChatData`, then the `#!cpp 0` or `#!cpp 1` characters do not appear in the message.
 
-Expected Behaviour: `#!java 0` or `#!java 1` should be shown correctly at the beginning of the line if used in an `xsChatData` function
+Expected Behaviour: `#!cpp 0` or `#!cpp 1` should be shown correctly at the beginning of the line if used in an `xsChatData` function
 
 Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 void main() {
     // expected `1 the one at the start isn't visible` but
     // prints ` the one at the start isn't visible`
@@ -312,7 +312,7 @@ void main() {
 ```
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario (it will run automatically in an RMS)
-5. When a game is played using the scenario or RMS, any `#!java 1` or `#!java 0` at the beginning of the lines are omitted in the resulting message on screen.
+5. When a game is played using the scenario or RMS, any `#!cpp 1` or `#!cpp 0` at the beginning of the lines are omitted in the resulting message on screen.
 
 ## Quirks
 
@@ -326,7 +326,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code: 
-```java
+```cpp
 float test(float a = -1) {
     // thisDoesNot... is not a function
     return thisDoesNotMatterWhatIsGoingOn(a)/55 + 2*2;

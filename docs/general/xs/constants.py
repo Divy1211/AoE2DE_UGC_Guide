@@ -19,16 +19,24 @@ def toTitle(str):
         i+=1
     return str.strip()
 
+def replace_placeholders(str):
+    str = str.replace('RES_NAME', toTitle(constant['name']))
+    str = str.replace('ATTR_NAME', toTitle(constant['name']))
+    str = str.replace('CIV_NAME', toTitle(constant['name']))
+    str = str.replace('CLASS_NAME', toTitle(constant['name']))
+    return str
+    
+
 for index, (category, constants) in enumerate(const_docs.items(), 1):
     outmd += f"## {index}. {category.title().replace('Effectamount', 'EffectAmount')}\n\n"
 
     for c_index, constant in enumerate(constants, 1):
         outmd += f"### {index}.{c_index}. {constant['name']}\n\n"
-        outmd += f"Value: `#!java {constant['type']} {constant['value']}`\n\n"
-        outmd += f"{constant['desc'].replace('RES_NAME', toTitle(constant['name']))}\n\n"
+        outmd += f"Value: `#!cpp {constant['type']} {constant['value']}`\n\n"
+        outmd += f"{replace_placeholders(constant['desc'])}\n\n"
         if constant['usage']:
-            outmd += f"Syntax: `#!java {constant['usage']['syntax']}`\n\n"
-            outmd += f"Example: `#!java {constant['usage']['example']}`\n\n"
+            outmd += f"Syntax: `#!cpp {constant['usage']['syntax']}`\n\n"
+            outmd += f"Example: `#!cpp {constant['usage']['example']}`\n\n"
             outmd += f"{constant['usage']['explanation']}\n\n"
     
 with open("./constants.md", "w") as file:
