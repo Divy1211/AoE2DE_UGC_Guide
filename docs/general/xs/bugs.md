@@ -120,7 +120,7 @@ Reproduction Steps:
 ```cpp
 void main() {
     float a = 5.5;
-    float b = (int)a; // will outwright assign 0 to b
+    float b = (int)a; // will outright assign 0 to b
 
     // expected `b = 5.000000` but
     // prints `b = 0.000000`

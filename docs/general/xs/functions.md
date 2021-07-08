@@ -12,7 +12,7 @@ Prototype: `#!cpp void xsDisableRule(string ruleName)`
 
 Parameters:
 
-1. `#!cpp string ruleName`: The name of the rule to disable
+1.  `#!cpp string ruleName`: The name of the rule to disable
 
 Disables the given rule.
 
@@ -33,7 +33,7 @@ Prototype: `#!cpp void xsEnableRule(string ruleName)`
 
 Parameters:
 
-1. `#!cpp string ruleName`: The name of the rule to enable
+1.  `#!cpp string ruleName`: The name of the rule to enable
 
 Enables the given rule.
 
@@ -45,7 +45,7 @@ Prototype: `#!cpp bool xsIsRuleEnabled(string ruleName)`
 
 Parameters:
 
-1. `#!cpp string ruleName`: The name of the rule to check
+1.  `#!cpp string ruleName`: The name of the rule to check
 
 Returns true if the rule is enabled, else returns false.
 
@@ -57,8 +57,8 @@ Prototype: `#!cpp void xsSetRulePriority(string ruleName, int priority)`
 
 Parameters:
 
-1. `#!cpp string ruleName`: The name of the rule to set the priority of
-2. `#!cpp int priority`: The new priority of the rule
+1.  `#!cpp string ruleName`: The name of the rule to set the priority of
+2.  `#!cpp int priority`: The new priority of the rule
 
 Sets the priority of the given rule.
 
@@ -70,7 +70,7 @@ Prototype: `#!cpp void xsSetRulePrioritySelf(int priority)`
 
 Parameters:
 
-1. `#!cpp int priority`: The new priority of the rule
+1.  `#!cpp int priority`: The new priority of the rule
 
 Sets the priority of the rule this function is called inside. Cannot be used outside of a rule's body!
 
@@ -82,8 +82,8 @@ Prototype: `#!cpp void xsSetRuleMinInterval(string ruleName, int interval)`
 
 Parameters:
 
-1. `#!cpp string ruleName`: The name of the rule to set the min interval of
-2. `#!cpp int interval`: The new min interval of the rule
+1.  `#!cpp string ruleName`: The name of the rule to set the min interval of
+2.  `#!cpp int interval`: The new min interval of the rule
 
 Sets the min interval of the given rule.
 
@@ -95,7 +95,7 @@ Prototype: `#!cpp void xsSetRuleMinIntervalSelf(int interval)`
 
 Parameters:
 
-1. `#!cpp int interval`: The new min interval of the rule
+1.  `#!cpp int interval`: The new min interval of the rule
 
 Sets the min interval of the rule this function is called inside. Cannot be used outside of a rule's body!
 
@@ -107,8 +107,8 @@ Prototype: `#!cpp void xsSetRuleMaxInterval(string ruleName, int interval)`
 
 Parameters:
 
-1. `#!cpp string ruleName`: The name of the rule to set the max interval of
-2. `#!cpp int interval`: The new max interval of the rule
+1.  `#!cpp string ruleName`: The name of the rule to set the max interval of
+2.  `#!cpp int interval`: The new max interval of the rule
 
 Sets the max interval of the given rule.
 
@@ -120,7 +120,7 @@ Prototype: `#!cpp void xsSetRuleMaxIntervalSelf(int interval)`
 
 Parameters:
 
-1. `#!cpp int interval`: The new max interval of the rule
+1.  `#!cpp int interval`: The new max interval of the rule
 
 Sets the max interval of the rule this function is called inside. Cannot be used outside of a rule's body!
 
@@ -132,7 +132,7 @@ Prototype: `#!cpp void xsEnableRuleGroup(string ruleGroupName)`
 
 Parameters:
 
-1. `#!cpp string ruleGroupName`: The name of the rule group to enable
+1.  `#!cpp string ruleGroupName`: The name of the rule group to enable
 
 Enables all the rules in the given rule group
 
@@ -144,7 +144,7 @@ Prototype: `#!cpp void xsDisableRuleGroup(string ruleGroupName)`
 
 Parameters:
 
-1. `#!cpp string ruleGroupName`: The name of the rule group to disable
+1.  `#!cpp string ruleGroupName`: The name of the rule group to disable
 
 Disables all the rules in the given rule group
 
@@ -156,7 +156,7 @@ Prototype: `#!cpp bool xsIsRuleGroupEnabled(string ruleGroupName)`
 
 Parameters:
 
-1. `#!cpp string ruleGroupName`: The name of the rule group to check
+1.  `#!cpp string ruleGroupName`: The name of the rule group to check
 
 Returns true, if all the rules in the given rule group are enabled
 
@@ -170,7 +170,7 @@ Prototype: `#!cpp float xsVectorGetX(vector v)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to get the X coordinate of
+1.  `#!cpp vector v`: The vector to get the X coordinate of
 
 The X coordinate of the vector given.
 
@@ -182,7 +182,7 @@ Prototype: `#!cpp float xsVectorGetY(vector v)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to get the Y coordinate of
+1.  `#!cpp vector v`: The vector to get the Y coordinate of
 
 The Y coordinate of the vector given.
 
@@ -194,7 +194,7 @@ Prototype: `#!cpp float xsVectorGetZ(vector v)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to get the Z coordinate of
+1.  `#!cpp vector v`: The vector to get the Z coordinate of
 
 The Z coordinate of the vector given.
 
@@ -206,8 +206,8 @@ Prototype: `#!cpp vector xsVectorSetX(vector v, float x)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to modify the X coordinate of
-2. `#!cpp float x`: The value to set the X coordinate to
+1.  `#!cpp vector v`: The vector to modify the X coordinate of
+2.  `#!cpp float x`: The value to set the X coordinate to
 
 Returns a new vector with the X component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!
 
@@ -219,8 +219,8 @@ Prototype: `#!cpp vector xsVectorSetY(vector v, float y)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to modify the Y coordinate of
-2. `#!cpp float y`: The value to set the Y coordinate to
+1.  `#!cpp vector v`: The vector to modify the Y coordinate of
+2.  `#!cpp float y`: The value to set the Y coordinate to
 
 Returns a new vector with the Y component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!
 
@@ -232,8 +232,8 @@ Prototype: `#!cpp vector xsVectorSetZ(vector v, float z)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to modify the Z coordinate of
-2. `#!cpp float z`: The value to set the Z coordinate to
+1.  `#!cpp vector v`: The vector to modify the Z coordinate of
+2.  `#!cpp float z`: The value to set the Z coordinate to
 
 Returns a new vector with the Z component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!
 
@@ -245,9 +245,9 @@ Prototype: `#!cpp vector xsVectorSet(float x, float y, float z)`
 
 Parameters:
 
-1. `#!cpp float x`: The value to set the X coordinate to
-2. `#!cpp float y`: The value to set the Y coordinate to
-3. `#!cpp float z`: The value to set the Z coordinate to
+1.  `#!cpp float x`: The value to set the X coordinate to
+2.  `#!cpp float y`: The value to set the Y coordinate to
+3.  `#!cpp float z`: The value to set the Z coordinate to
 
 Returns a vector with the given X, Y and Z components.
 
@@ -259,7 +259,7 @@ Prototype: `#!cpp float xsVectorLength(vector v)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to calculate the length of
+1.  `#!cpp vector v`: The vector to calculate the length of
 
 Returns the length of the given vector.
 
@@ -271,7 +271,7 @@ Prototype: `#!cpp vector xsVectorNormalize(vector v)`
 
 Parameters:
 
-1. `#!cpp vector v`: The vector to normalise
+1.  `#!cpp vector v`: The vector to normalise
 
 Returns the normalised vector in the direction of the given vector.
 
@@ -285,9 +285,9 @@ Prototype: `#!cpp int xsArrayCreateInt(int size, int defaultValue, string unique
 
 Parameters:
 
-1. `#!cpp int size`: The length of the array to create
-2. `#!cpp int defaultValue`: The default value to initialise all the values in the array to
-3. `#!cpp string uniqueName`: A unique name of the created array
+1.  `#!cpp int size`: The length of the array to create
+2.  `#!cpp int defaultValue`: The default value to initialise all the values in the array to
+3.  `#!cpp string uniqueName`: A unique name of the created array
 
 Creates an array of type int and returns its ID.
 
@@ -299,9 +299,9 @@ Prototype: `#!cpp int xsArrayCreateFloat(int size, float defaultValue, string un
 
 Parameters:
 
-1. `#!cpp int size`: The length of the array to create
-2. `#!cpp float defaultValue`: The default value to initialise all the values in the array to
-3. `#!cpp string uniqueName`: A unique name of the created array
+1.  `#!cpp int size`: The length of the array to create
+2.  `#!cpp float defaultValue`: The default value to initialise all the values in the array to
+3.  `#!cpp string uniqueName`: A unique name of the created array
 
 Creates an array of type float and returns its ID.
 
@@ -313,9 +313,9 @@ Prototype: `#!cpp int xsArrayCreateBool(int size, bool defaultValue, string uniq
 
 Parameters:
 
-1. `#!cpp int size`: The length of the array to create
-2. `#!cpp bool defaultValue`: The default value to initialise all the values in the array to
-3. `#!cpp string uniqueName`: A unique name of the created array
+1.  `#!cpp int size`: The length of the array to create
+2.  `#!cpp bool defaultValue`: The default value to initialise all the values in the array to
+3.  `#!cpp string uniqueName`: A unique name of the created array
 
 Creates an array of type bool and returns its ID.
 
@@ -327,9 +327,9 @@ Prototype: `#!cpp int xsArrayCreateString(int size, string defaultValue, string 
 
 Parameters:
 
-1. `#!cpp int size`: The length of the array to create
-2. `#!cpp string defaultValue`: The default value to initialise all the values in the array to
-3. `#!cpp string uniqueName`: A unique name of the created array
+1.  `#!cpp int size`: The length of the array to create
+2.  `#!cpp string defaultValue`: The default value to initialise all the values in the array to
+3.  `#!cpp string uniqueName`: A unique name of the created array
 
 Creates an array of type String and returns its ID.
 
@@ -341,9 +341,9 @@ Prototype: `#!cpp int xsArrayCreateVector(int size, vector defaultValue, string 
 
 Parameters:
 
-1. `#!cpp int size`: The length of the array to create
-2. `#!cpp vector defaultValue`: The default value to initialise all the values in the array to
-3. `#!cpp string uniqueName`: A unique name of the created array
+1.  `#!cpp int size`: The length of the array to create
+2.  `#!cpp vector defaultValue`: The default value to initialise all the values in the array to
+3.  `#!cpp string uniqueName`: A unique name of the created array
 
 Creates an array of type Vector and returns its ID.
 
@@ -355,9 +355,9 @@ Prototype: `#!cpp int xsArraySetInt(int arrayID, int index, int value)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to set the value in
-2. `#!cpp int index`: The index to set the value of
-3. `#!cpp int value`: The new value to set
+1.  `#!cpp int arrayID`: The ID of the array to set the value in
+2.  `#!cpp int index`: The index to set the value of
+3.  `#!cpp int value`: The new value to set
 
 Sets the valat the specified indedx ue of the given int arrindex to the provided value and returns 1.
 
@@ -369,9 +369,9 @@ Prototype: `#!cpp int xsArraySetFloat(int arrayID, int index, float value)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to set the value in
-2. `#!cpp int index`: The index to set the value of
-3. `#!cpp float value`: The new value to set
+1.  `#!cpp int arrayID`: The ID of the array to set the value in
+2.  `#!cpp int index`: The index to set the value of
+3.  `#!cpp float value`: The new value to set
 
 Sets the valueat the specified indedx  of the given float array to the provided value and returns 1.
 
@@ -383,9 +383,9 @@ Prototype: `#!cpp int xsArraySetBool(int arrayID, int index, bool value)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to set the value in
-2. `#!cpp int index`: The index to set the value of
-3. `#!cpp bool value`: The new value to set
+1.  `#!cpp int arrayID`: The ID of the array to set the value in
+2.  `#!cpp int index`: The index to set the value of
+3.  `#!cpp bool value`: The new value to set
 
 Sets the valuat the specified indedx e of the given bool arrindex to the provided value and returns 1.
 
@@ -397,9 +397,9 @@ Prototype: `#!cpp int xsArraySetString(int arrayID, int index, string value)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to set the value in
-2. `#!cpp int index`: The index to set the value of
-3. `#!cpp string value`: The new value to set
+1.  `#!cpp int arrayID`: The ID of the array to set the value in
+2.  `#!cpp int index`: The index to set the value of
+3.  `#!cpp string value`: The new value to set
 
 Sets the value at the specified indedx of the given String array to the provided value and returns 1.
 
@@ -411,9 +411,9 @@ Prototype: `#!cpp int xsArraySetVector(int arrayID, int index, vector value)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to set the value in
-2. `#!cpp int index`: The index to set the value of
-3. `#!cpp vector value`: The new value to set
+1.  `#!cpp int arrayID`: The ID of the array to set the value in
+2.  `#!cpp int index`: The index to set the value of
+3.  `#!cpp vector value`: The new value to set
 
 Sets the value at the specified indedx of the given Vector array to the provided value and returns 1.
 
@@ -425,8 +425,8 @@ Prototype: `#!cpp int xsArrayGetInt(int arrayID, int index)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to get the value from
-2. `#!cpp int index`: The index to get the value of
+1.  `#!cpp int arrayID`: The ID of the array to get the value from
+2.  `#!cpp int index`: The index to get the value of
 
 Gets and returns the value of the given int array at the specifed index.
 
@@ -438,8 +438,8 @@ Prototype: `#!cpp int xsArrayGetFloat(int arrayID, int index)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to get the value from
-2. `#!cpp int index`: The index to get the value of
+1.  `#!cpp int arrayID`: The ID of the array to get the value from
+2.  `#!cpp int index`: The index to get the value of
 
 Gets and returns the value of the given float array at the specifed index.
 
@@ -451,8 +451,8 @@ Prototype: `#!cpp int xsArrayGetBool(int arrayID, int index)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to get the value from
-2. `#!cpp int index`: The index to get the value of
+1.  `#!cpp int arrayID`: The ID of the array to get the value from
+2.  `#!cpp int index`: The index to get the value of
 
 Gets and returns the value of the given bool array at the specifed index.
 
@@ -464,8 +464,8 @@ Prototype: `#!cpp int xsArrayGetString(int arrayID, int index)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to get the value from
-2. `#!cpp int index`: The index to get the value of
+1.  `#!cpp int arrayID`: The ID of the array to get the value from
+2.  `#!cpp int index`: The index to get the value of
 
 Gets and returns the value of the given String array at the specifed index.
 
@@ -477,8 +477,8 @@ Prototype: `#!cpp int xsArrayGetVector(int arrayID, int index)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to get the value from
-2. `#!cpp int index`: The index to get the value of
+1.  `#!cpp int arrayID`: The ID of the array to get the value from
+2.  `#!cpp int index`: The index to get the value of
 
 Gets and returns the value of the given Vector array at the specifed index.
 
@@ -490,8 +490,8 @@ Prototype: `#!cpp int xsArrayResizeInt(int arrayID, int newSize)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to resize
-2. `#!cpp int newSize`: The new size of the array
+1.  `#!cpp int arrayID`: The ID of the array to resize
+2.  `#!cpp int newSize`: The new size of the array
 
 Resizes the the given int array to the specifed size and returns 1.
 
@@ -503,8 +503,8 @@ Prototype: `#!cpp int xsArrayResizeFloat(int arrayID, int newSize)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to resize
-2. `#!cpp int newSize`: The new size of the array
+1.  `#!cpp int arrayID`: The ID of the array to resize
+2.  `#!cpp int newSize`: The new size of the array
 
 Resizes the the given float array to the specifed size and returns 1.
 
@@ -516,8 +516,8 @@ Prototype: `#!cpp int xsArrayResizeBool(int arrayID, int newSize)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to resize
-2. `#!cpp int newSize`: The new size of the array
+1.  `#!cpp int arrayID`: The ID of the array to resize
+2.  `#!cpp int newSize`: The new size of the array
 
 Resizes the the given bool array to the specifed size and returns 1.
 
@@ -529,8 +529,8 @@ Prototype: `#!cpp int xsArrayResizeString(int arrayID, int newSize)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to resize
-2. `#!cpp int newSize`: The new size of the array
+1.  `#!cpp int arrayID`: The ID of the array to resize
+2.  `#!cpp int newSize`: The new size of the array
 
 Resizes the the given String array to the specifed size and returns 1.
 
@@ -542,8 +542,8 @@ Prototype: `#!cpp int xsArrayResizeVector(int arrayID, int newSize)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to resize
-2. `#!cpp int newSize`: The new size of the array
+1.  `#!cpp int arrayID`: The ID of the array to resize
+2.  `#!cpp int newSize`: The new size of the array
 
 Resizes the the given Vector array to the specifed size and returns 1.
 
@@ -555,7 +555,7 @@ Prototype: `#!cpp int xsArrayGetSize(int arrayID)`
 
 Parameters:
 
-1. `#!cpp int arrayID`: The ID of the array to get the length of
+1.  `#!cpp int arrayID`: The ID of the array to get the length of
 
 Returns the length of the given array.
 
@@ -569,7 +569,7 @@ Prototype: `#!cpp float abs(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The number to find the absolute value of
+1.  `#!cpp float x`: The number to find the absolute value of
 
 Returns the absolute value (magnitude) of the given number.
 
@@ -581,7 +581,7 @@ Prototype: `#!cpp float sqrt(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The number to find the square root of
+1.  `#!cpp float x`: The number to find the square root of
 
 Returns the square root of the given number.
 
@@ -593,8 +593,8 @@ Prototype: `#!cpp float pow(float x, float y)`
 
 Parameters:
 
-1. `#!cpp float x`: The base value
-2. `#!cpp float y`: The exponenet to raise the base value to
+1.  `#!cpp float x`: The base value
+2.  `#!cpp float y`: The exponenet to raise the base value to
 
 Returns x raised to the power y (x**y).
 
@@ -606,7 +606,7 @@ Prototype: `#!cpp float sin(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The angle (in radians) to find the sine of
+1.  `#!cpp float x`: The angle (in radians) to find the sine of
 
 Returns the sine of the angle in radians.
 
@@ -618,7 +618,7 @@ Prototype: `#!cpp float cos(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The angle (in radians) to find the cosine of
+1.  `#!cpp float x`: The angle (in radians) to find the cosine of
 
 Returns the cosine of the angle in radians
 
@@ -630,7 +630,7 @@ Prototype: `#!cpp float tan(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The angle (in radians) to find the tangent of
+1.  `#!cpp float x`: The angle (in radians) to find the tangent of
 
 Returns the tangent of the angle in radians
 
@@ -642,7 +642,7 @@ Prototype: `#!cpp float asin(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The value to find the inverse sine of
+1.  `#!cpp float x`: The value to find the inverse sine of
 
 Returns the inverse sine (arcsin) of the given value
 
@@ -654,7 +654,7 @@ Prototype: `#!cpp float acos(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The value to find the inverse cosine of
+1.  `#!cpp float x`: The value to find the inverse cosine of
 
 Returns the inverse cosine (arccos) of the given value
 
@@ -666,7 +666,7 @@ Prototype: `#!cpp float atan(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The value to find the inverse tangent of
+1.  `#!cpp float x`: The value to find the inverse tangent of
 
 Returns the inverse tangent (arctan) of the given value
 
@@ -678,26 +678,118 @@ Prototype: `#!cpp float atan2(float x)`
 
 Parameters:
 
-1. `#!cpp float x`: The X coordinate of the point to find the amplitude of
+1.  `#!cpp float x`: The X coordinate of the point to find the amplitude of
 
 This is supposed to be the atan2(y, x) function but apparently it only takes one input. ThxDE
 
 ## 5. General
 
-### 5.1. xsPlayerAttribute
+### 5.1. xsGetPlayerCivilization
 
-Returning Type: `#!cpp float`
+Returning Type: `#!cpp int`
 
-Prototype: `#!cpp float xsPlayerAttribute(int playerNumber, int resourceID)`
+Prototype: `#!cpp int xsGetPlayerCivilization(int playerNumber)`
 
 Parameters:
 
-1. `#!cpp int playerNumber`: The player to get the resource of (0 for Gaia)
-2. `#!cpp int resourceID`: The ID of the resource to get the amount of
+1.  `#!cpp int playerNumber`: The player to get the civilization of
 
-Returns the amount the specified resource of the given player.
+Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs.
 
-### 5.2. xsSetPlayerAttribute
+### 5.2. xsGetPlayerInGame
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetPlayerInGame(int playerNumber)`
+
+Parameters:
+
+1.  `#!cpp int playerNumber`: Check if this player is still alive
+
+Returns a 1 if the player given is still alive. Returns a 0 if the player given has been eliminated.
+
+### 5.3. xsGetMapName
+
+Returning Type: `#!cpp string`
+
+Prototype: `#!cpp string xsGetMapName(bool showFileExtension)`
+
+Parameters:
+
+1.  `#!cpp bool showFileExtension`: If this is set to true, then the returned name also contains the file extension
+
+Returns the name of the map currently being played.
+
+### 5.4. xsGetMapID
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetMapID()`
+
+
+Returns the AI map type.
+
+### 5.5. xsGetMapHeight
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetMapHeight()`
+
+
+Returns the Height of the map.
+
+### 5.6. xsGetMapWidth
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetMapWidth()`
+
+
+Returns the Width of the map.
+
+### 5.7. xsGetVictoryType
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryType()`
+
+
+Returns an integer corresponding to different victory settings ingame. These are:
+
+ 0: Standard
+
+1: Consquest
+
+2: Time Limit
+
+3: Score
+
+4: Custom (scenarios only).
+
+Last Man Standing returns 0 as well.
+
+### 5.8. xsGetVictoryPlayer
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryPlayer()`
+
+
+Returns the number of the player who won the game. Returns 2 otherwise.
+
+### 5.9. xsGetPlayerNumberOfTechs
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetPlayerNumberOfTechs(int playerNumber)`
+
+Parameters:
+
+1.  `#!cpp int playerNumber`: The player whoes technology count is being requested.
+
+Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games.
+
+### 5.10. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -705,13 +797,13 @@ Prototype: `#!cpp void xsSetPlayerAttribute(int playerNumber, int resourceID, fl
 
 Parameters:
 
-1. `#!cpp int playerNumber`: The player to set the resource of (0 for Gaia)
-2. `#!cpp int resourceID`: The ID of the resource to set the amount of
-3. `#!cpp float value`: The amount to set the resource to
+1.  `#!cpp int playerNumber`: The player to set the resource of (0 for Gaia)
+2.  `#!cpp int resourceID`: The ID of the resource to set the amount of
+3.  `#!cpp float value`: The amount to set the resource to
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.3. xsTriggerVariable
+### 5.11. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 
@@ -719,11 +811,11 @@ Prototype: `#!cpp int xsTriggerVariable(int variableID)`
 
 Parameters:
 
-1. `#!cpp int variableID`: The ID of the variable to get the value of
+1.  `#!cpp int variableID`: The ID of the variable to get the value of
 
 Returns the value of the variable of the given variable ID.
 
-### 5.4. xsSetTriggerVariable
+### 5.12. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -731,12 +823,12 @@ Prototype: `#!cpp void xsSetTriggerVariable(int variableID, int value)`
 
 Parameters:
 
-1. `#!cpp int variableID`: The ID of the variable to set the value of
-2. `#!cpp int value`: The value to set the variable to
+1.  `#!cpp int variableID`: The ID of the variable to set the value of
+2.  `#!cpp int value`: The value to set the variable to
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.5. xsGetNumPlayers
+### 5.13. xsGetNumPlayers
 
 Returning Type: `#!cpp int`
 
@@ -745,7 +837,7 @@ Prototype: `#!cpp int xsGetNumPlayers()`
 
 Returns the number of players in the game
 
-### 5.6. xsChatData
+### 5.14. xsChatData
 
 Returning Type: `#!cpp void`
 
@@ -753,21 +845,30 @@ Prototype: `#!cpp void xsChatData(string message, int value)`
 
 Parameters:
 
-1. `#!cpp string message`: The message to display in chat
-2. `#!cpp int value`: This value is inserted in place of any `%d` used in the message of the function
+1.  `#!cpp string message`: The message to display in chat
+2. (Optional) `#!cpp int value`: This value is inserted in place of any `%d` used in the message of the function
 
 Shows the given message in the game chat
 
-### 5.7. xsGetTime
+### 5.15. xsGetTime
 
 Returning Type: `#!cpp int`
 
 Prototype: `#!cpp int xsGetTime()`
 
 
+Returns the current game time-1 in seconds
+
+### 5.16. xsGetGameTime
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetGameTime()`
+
+
 Returns the current game time in seconds
 
-### 5.8. xsEffectAmount
+### 5.17. xsEffectAmount
 
 Returning Type: `#!cpp void`
 
@@ -775,11 +876,11 @@ Prototype: `#!cpp void xsEffectAmount(int effectID, int unitOrTechnologyID, int 
 
 Parameters:
 
-1. `#!cpp int effectID`: The ID of the effect to use
-2. `#!cpp int unitOrTechnologyID`: The ID of the unit or technology to effect
-3. `#!cpp int attribtueOrOperation`: The attribute to modify or the operation to perform
-4. `#!cpp int value`: The value of the effect
-5. `#!cpp int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
+1.  `#!cpp int effectID`: The ID of the effect to use
+2.  `#!cpp int unitOrTechnologyID`: The ID of the unit or technology to effect
+3.  `#!cpp int attribtueOrOperation`: The attribute to modify or the operation to perform
+4.  `#!cpp int value`: The value of the effect
+5. (Optional) `#!cpp int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
 
 Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NONE EXISTENT") section of the guide
 
@@ -811,7 +912,7 @@ Prototype: `#!cpp void xsSetContextPlayer(int playerID)`
 
 Parameters:
 
-1. `#!cpp int playerID`: The player ID for the new context player
+1.  `#!cpp int playerID`: The player ID for the new context player
 
 Sets the current context player ID. Used to retrieve more detailed information about the new player. Unknown: Unused Feature?
 
@@ -823,7 +924,7 @@ Prototype: `#!cpp int xsGetFuntionID(string functionName)`
 
 Parameters:
 
-1. `#!cpp string functionName`: The name of the function to get the internal ID of
+1.  `#!cpp string functionName`: The name of the function to get the internal ID of
 
 Returns the ID of the given function name. If the function does not exist, returns -1. Unknown: What can this be used for?
 
@@ -844,9 +945,41 @@ Prototype: `#!cpp bool xsAddRuntimeEvent(string foo, string bar, int something)`
 
 Parameters:
 
-1. `#!cpp string foo`: unknown
-2. `#!cpp string bar`: unknown
-3. `#!cpp int something`: unknown
+1.  `#!cpp string foo`: unknown
+2.  `#!cpp string bar`: unknown
+3.  `#!cpp int something`: unknown
 
 Setups a runtime event. Unknown: Doesn't seem to do anything
+
+### 6.7. xsGetVictoryTime
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryTime()`
+
+
+It does not do what its name says... always returns -1. Why?
+
+### 6.8. xsGetMapType
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsGetMapType()`
+
+
+Supposedly does not return any value and is not even recognised by the game. Possibly unimplemented version of the xsGetMapID()?
+
+### 6.9. xsResearchTechnology
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsResearchTechnology(int techID, bool force, int playerNumber)`
+
+Parameters:
+
+1.  `#!cpp int techID`: The technology to research.
+2. (Optional) `#!cpp bool force`: Force researching the tech even if it is not enabled. Is this field required?
+3. (Optional) `#!cpp int playerNumber`: The player to research the technology for. Apparently this is not required?
+
+Why does it have a return type? Unable to research any technologies so far in testing, also gives strange errors
 

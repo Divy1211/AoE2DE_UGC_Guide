@@ -27,7 +27,8 @@ for index, (category, functions) in enumerate(function_docs.items(), 1):
             outmd+="Parameters:\n\n"
 
         for p_index, param in enumerate(func['params'], 1):
-            outmd += f"{p_index}. `#!cpp {param['type']} {param['name']}`: {param['desc']}\n"
+            optional = "" if param['required'] else "(Optional)"
+            outmd += f"{p_index}. {optional} `#!cpp {param['type']} {param['name']}`: {param['desc']}\n"
         
         outmd+="\n"
         

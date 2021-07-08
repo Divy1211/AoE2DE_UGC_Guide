@@ -925,23 +925,86 @@
     ],
     "general": [
         {
-            "name": "xsPlayerAttribute",
-            "return_type": "float",
+            "name": "xsGetPlayerCivilization",
+            "return_type": "int",
             "params": [
                 {
                     "name": "playerNumber",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to get the resource of (0 for Gaia)"
-                },
-                {
-                    "name": "resourceID",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the resource to get the amount of"
+                    "desc": "The player to get the civilization of"
                 }
             ],
-            "desc": "Returns the amount the specified resource of the given player."
+            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scriptin > Constant Reference > #3. Civs\") for all the different civ IDs."
+        },
+        {
+            "name": "xsGetPlayerInGame",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Check if this player is still alive"
+                }
+            ],
+            "desc": "Returns a 1 if the player given is still alive. Returns a 0 if the player given has been eliminated."
+        },
+        {
+            "name": "xsGetMapName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "showFileExtension",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "If this is set to true, then the returned name also contains the file extension"
+                }
+            ],
+            "desc": "Returns the name of the map currently being played."
+        },
+        {
+            "name": "xsGetMapID",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the AI map type."
+        },
+        {
+            "name": "xsGetMapHeight",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the Height of the map."
+        },
+        {
+            "name": "xsGetMapWidth",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the Width of the map."
+        },
+        {
+            "name": "xsGetVictoryType",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns an integer corresponding to different victory settings ingame. These are:\n\n 0: Standard\n\n1: Consquest\n\n2: Time Limit\n\n3: Score\n\n4: Custom (scenarios only).\n\nLast Man Standing returns 0 as well."
+        },
+        {
+            "name": "xsGetVictoryPlayer",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the number of the player who won the game. Returns 2 otherwise."
+        },
+        {
+            "name": "xsGetPlayerNumberOfTechs",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whoes technology count is being requested."
+                }
+            ],
+            "desc": "Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games."
         },
         {
             "name": "xsSetPlayerAttribute",
@@ -1027,6 +1090,12 @@
         },
         {
             "name": "xsGetTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game time-1 in seconds"
+        },
+        {
+            "name": "xsGetGameTime",
             "return_type": "int",
             "params": [],
             "desc": "Returns the current game time in seconds"
@@ -1138,6 +1207,43 @@
                 }
             ],
             "desc": "Setups a runtime event. Unknown: Doesn't seem to do anything"
+        },
+        {
+            "name": "xsGetVictoryTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "It does not do what its name says... always returns -1. Why?"
+        },
+        {
+            "name": "xsGetMapType",
+            "return_type": "void",
+            "params": [],
+            "desc": "Supposedly does not return any value and is not even recognised by the game. Possibly unimplemented version of the xsGetMapID()?"
+        },
+        {
+            "name": "xsResearchTechnology",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "techID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The technology to research."
+                },
+                {
+                    "name": "force",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Force researching the tech even if it is not enabled. Is this field required?"
+                },
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The player to research the technology for. Apparently this is not required?"
+                }
+            ],
+            "desc": "Why does it have a return type? Unable to research any technologies so far in testing, also gives strange errors"
         }
     ]
 }
