@@ -9,6 +9,7 @@ outmd = """*Written by: Alian713*
 """
 
 for index, (category, functions) in enumerate(function_docs.items(), 1):
+    functions = sorted(functions, key=lambda x: x["name"]) 
     outmd+= f"## {index}. {category.title()}\n\n"
 
     for f_index, func in enumerate(functions, 1):

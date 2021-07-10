@@ -991,7 +991,13 @@
             "name": "xsGetVictoryPlayer",
             "return_type": "int",
             "params": [],
-            "desc": "Returns the number of the player who won the game. Returns 2 otherwise."
+            "desc": "Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument."
+        },
+        {
+            "name": "xsGetVictoryTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining"
         },
         {
             "name": "xsGetPlayerNumberOfTechs",
@@ -1092,7 +1098,7 @@
             "name": "xsGetTime",
             "return_type": "int",
             "params": [],
-            "desc": "Returns the current game time-1 in seconds"
+            "desc": "Returns the current game time - 1 in seconds"
         },
         {
             "name": "xsGetGameTime",
@@ -1136,89 +1142,6 @@
                 }
             ],
             "desc": "Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch](\"Jump to: UserPatch NONE EXISTENT\") section of the guide"
-        }
-    ],
-    "unknown": [
-        {
-            "name": "xsDumpArrays",
-            "return_type": "void",
-            "params": [],
-            "desc": "Blogs out all XS arrays. Unknown: where does it dump this information?"
-        },
-        {
-            "name": "xsGetContextPlayer",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the current context player ID. Unknown: Unused feature?"
-        },
-        {
-            "name": "xsSetContextPlayer",
-            "return_type": "void",
-            "params": [
-                {
-                    "name": "playerID",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player ID for the new context player"
-                }
-            ],
-            "desc": "Sets the current context player ID. Used to retrieve more detailed information about the new player. Unknown: Unused Feature?"
-        },
-        {
-            "name": "xsGetFuntionID",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "functionName",
-                    "type": "string",
-                    "required": true,
-                    "desc": "The name of the function to get the internal ID of"
-                }
-            ],
-            "desc": "Returns the ID of the given function name. If the function does not exist, returns -1. Unknown: What can this be used for?"
-        },
-        {
-            "name": "xsBreakPoint",
-            "return_type": "void",
-            "params": [],
-            "desc": "Crashes the game... ThxDE. Unknown: Why can an XS function crash your game? Just why"
-        },
-        {
-            "name": "xsAddRuntimeEvent",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "foo",
-                    "type": "string",
-                    "required": true,
-                    "desc": "unknown"
-                },
-                {
-                    "name": "bar",
-                    "type": "string",
-                    "required": true,
-                    "desc": "unknown"
-                },
-                {
-                    "name": "something",
-                    "type": "int",
-                    "required": true,
-                    "desc": "unknown"
-                }
-            ],
-            "desc": "Setups a runtime event. Unknown: Doesn't seem to do anything"
-        },
-        {
-            "name": "xsGetVictoryTime",
-            "return_type": "int",
-            "params": [],
-            "desc": "It does not do what its name says... always returns -1. Why?"
-        },
-        {
-            "name": "xsGetMapType",
-            "return_type": "void",
-            "params": [],
-            "desc": "Supposedly does not return any value and is not even recognised by the game. Possibly unimplemented version of the xsGetMapID()?"
         },
         {
             "name": "xsResearchTechnology",
@@ -1228,22 +1151,99 @@
                     "name": "techID",
                     "type": "int",
                     "required": true,
-                    "desc": "The technology to research."
+                    "desc": "The technology ID to research."
                 },
                 {
                     "name": "force",
                     "type": "bool",
-                    "required": false,
-                    "desc": "Force researching the tech even if it is not enabled. Is this field required?"
+                    "required": true,
+                    "desc": "Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false"
+                },
+                {
+                    "name": "techAvailable",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "This flag determines if it is required to check if a tech is available before researching it"
                 },
                 {
                     "name": "playerNumber",
                     "type": "int",
-                    "required": false,
-                    "desc": "The player to research the technology for. Apparently this is not required?"
+                    "required": true,
+                    "desc": "The player to research the technology for"
                 }
             ],
-            "desc": "Why does it have a return type? Unable to research any technologies so far in testing, also gives strange errors"
+            "desc": "Returns a boolean based on whether the technology was researched or not."
+        }
+    ],
+    "Functions With Seemingly No Practical Use": [
+        {
+            "name": "xsDumpArrays",
+            "return_type": "void",
+            "params": [],
+            "desc": "This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing."
+        },
+        {
+            "name": "xsGetContextPlayer",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current context player ID."
+        },
+        {
+            "name": "xsSetContextPlayer",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the context player to"
+                }
+            ],
+            "desc": "In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if -2 is passed to it as the player argument."
+        },
+        {
+            "name": "xsGetFuntionID",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "functionName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the function to get the hash of"
+                }
+            ],
+            "desc": "Returns the hash of a given function. This function has no practical application and is probably for internal usage only."
+        },
+        {
+            "name": "xsBreakPoint",
+            "return_type": "void",
+            "params": [],
+            "desc": "This function adds a break point to the execution of code. Do not use this function and beware, if you do, it will likely cause a crash!"
+        },
+        {
+            "name": "xsAddRuntimeEvent",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "runtimeName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` function and checking the extension."
+                },
+                {
+                    "name": "functionName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "This is the name of a function that takes a single integer argument."
+                },
+                {
+                    "name": "functionArgument",
+                    "type": "int",
+                    "required": true,
+                    "desc": "This is an integer argument that is passed to the function given to the argument `functionName` when this event runs."
+                }
+            ],
+            "desc": "A runtime event is called after all the XS code has finished executing but before rules start executing. It returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins"
         }
     ]
 }
