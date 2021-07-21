@@ -1,0 +1,1515 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://divy1211.github.io/AoE2DE_UGC_Guide/general/xs/programmer/">
+      
+      <link rel="icon" href="../../../imgs/code.svg">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>For Programmers - The Ultimate Guide To AoE2DE UGC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,400i,700%7CSource+Code+Pro&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Slab";--md-code-font-family:"Source Code Pro"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#xs-scripting-a-programmers-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-header__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Ultimate Guide To AoE2DE UGC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              For Programmers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../damage_calculation/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../scenarios/basics/" class="md-tabs__link">
+        Custom Scenarios
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../beginner/" class="md-tabs__link md-tabs__link--active">
+        XS Scripting
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-nav__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    The Ultimate Guide To AoE2DE UGC
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Game Mechanics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../damage_calculation/" class="md-nav__link">
+        Damage Calculation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../attributes/" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hotkeys/hotkeys/" class="md-nav__link">
+        Hotkeys
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Custom Scenarios
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Custom Scenarios" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Custom Scenarios
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/basics/" class="md-nav__link">
+        Scenario Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Triggers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Triggers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Triggers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/basics/" class="md-nav__link">
+        Trigger Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/effects/effects/" class="md-nav__link">
+        Effects
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Useful Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Useful Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_1">
+        AoE2ScenarioParser
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AoE2ScenarioParser" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AoE2ScenarioParser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/useful_tools/parser/basics/" class="md-nav__link">
+        Parser Basics
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        XS Scripting
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="XS Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          XS Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beginner/" class="md-nav__link">
+        For Beginners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          For Programmers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        For Programmers
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-xs" class="md-nav__link">
+    1. What is XS?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-using-an-xs" class="md-nav__link">
+    2. Using an XS
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Using an XS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-in-a-custom-scenario" class="md-nav__link">
+    2.1. In a Custom Scenario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-in-an-rms" class="md-nav__link">
+    2.2. In an RMS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-variables-data-types" class="md-nav__link">
+    3. Variables Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-operations" class="md-nav__link">
+    4. Operations
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-arithmetic-operations" class="md-nav__link">
+    4.1. Arithmetic Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-prefix-and-postfix-operations" class="md-nav__link">
+    4.2. Prefix and Postfix Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-shorthand-assignment-operations" class="md-nav__link">
+    4.3 Shorthand Assignment Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-bitwise-operations" class="md-nav__link">
+    4.4 Bitwise Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-relational-operations" class="md-nav__link">
+    4.5. Relational Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-boolean-operations" class="md-nav__link">
+    4.6. Boolean Operations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-flow-control-statements" class="md-nav__link">
+    5. Flow Control Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-functions" class="md-nav__link">
+    6. Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-arrays" class="md-nav__link">
+    7. Arrays
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-type-casting" class="md-nav__link">
+    8. Type Casting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-rules" class="md-nav__link">
+    9. Rules
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        Functions Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants/" class="md-nav__link">
+        Constant Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bugs/" class="md-nav__link">
+        Known Bugs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-xs" class="md-nav__link">
+    1. What is XS?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-using-an-xs" class="md-nav__link">
+    2. Using an XS
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Using an XS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-in-a-custom-scenario" class="md-nav__link">
+    2.1. In a Custom Scenario
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-in-an-rms" class="md-nav__link">
+    2.2. In an RMS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-variables-data-types" class="md-nav__link">
+    3. Variables Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-operations" class="md-nav__link">
+    4. Operations
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-arithmetic-operations" class="md-nav__link">
+    4.1. Arithmetic Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-prefix-and-postfix-operations" class="md-nav__link">
+    4.2. Prefix and Postfix Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-shorthand-assignment-operations" class="md-nav__link">
+    4.3 Shorthand Assignment Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-bitwise-operations" class="md-nav__link">
+    4.4 Bitwise Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-relational-operations" class="md-nav__link">
+    4.5. Relational Operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-boolean-operations" class="md-nav__link">
+    4.6. Boolean Operations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-flow-control-statements" class="md-nav__link">
+    5. Flow Control Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-functions" class="md-nav__link">
+    6. Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-arrays" class="md-nav__link">
+    7. Arrays
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-type-casting" class="md-nav__link">
+    8. Type Casting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-rules" class="md-nav__link">
+    9. Rules
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/edit/master/docs/general/xs/programmer.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="xs-scripting-a-programmers-reference">XS Scripting: A Programmer's Reference<a class="headerlink" href="#xs-scripting-a-programmers-reference" title="Permanent link">&para;</a></h1>
+<p><em>Written by: Alian713</em></p>
+<hr />
+<p>This is the most short and precise guide for XS Scripting that you will find, it does not give any introductions to programming topics and cuts right to the chase, if you are a programmer then this is perfect for you. If you are not a programmer fear not! Refer to the <a href="../beginner/" title="Jump to: XS Scripting &gt; For Beginners">For Beginners</a> section of this guide instead.</p>
+<h2 id="1-what-is-xs">1. What is XS?<a class="headerlink" href="#1-what-is-xs" title="Permanent link">&para;</a></h2>
+<p>XS stands for External Subroutines and it is a custom programming language that was made by Ensamble Studios. An XS Script can be used in an RMS and Custom Scenarios, and it is a program that can perform calculations and execute different functions and effects.</p>
+<h2 id="2-using-an-xs">2. Using an XS<a class="headerlink" href="#2-using-an-xs" title="Permanent link">&para;</a></h2>
+<p>To use an XS:</p>
+<ol>
+<li>
+<p>Navigate to the folder:</p>
+<p><code>C:\Program Files (x86)\Steam\steamapps\common\AoE2DE\resources\_common\xs</code></p>
+<p>There should be 2 files in this folder already, called <code>Constants.xs</code> and <code>xs.txt</code>. In here, create a new file with any name ending with <code>.xs</code>. For example, the file can be called <code>filename.xs</code></p>
+<p>Note 1: There may be an additional file called <code>default0.xs</code>. Never write code in this file as this is a temporary file and can be overwritten by the game.</p>
+<p>Note 2: Additionally, the file <code>Constants.xs</code> contains a list of constants that can be used in any XS Script.</p>
+<p>Note 3: A VSC Extension for syntax highlighting and code auto completion for AoE XS Scripting can be found <a href="https://marketplace.visualstudio.com/items?itemName=Divy.vscode-xs">here</a></p>
+</li>
+<li>
+<p>To begin with using XS, write this basic code in the file:</p>
+</li>
+</ol>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// this is a comment</span>
+<span class="cm">/* this</span>
+<span class="cm">is a multiline</span>
+<span class="cm">comment</span>
+<span class="cm">*/</span>
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+
+    <span class="c1">// the variables cannot be declared by separating them with commas</span>
+    <span class="c1">// unlike java or python.</span>
+
+    <span class="c1">// chats to the screen</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;a+b = &quot;</span><span class="o">+</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="21-in-a-custom-scenario">2.1. In a Custom Scenario<a class="headerlink" href="#21-in-a-custom-scenario" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the scenario in the editor</li>
+<li>Under the <code>Map</code> tab, type the name of the XS Script that you created in the <code>Script Filename</code> field without the <code>.xs</code> at the end. For example, if your file is called <code>filename.xs</code> then you will write <code>filename</code> in this field.</li>
+<li>Now, under the <code>Triggers</code> tab in the editor, add a new trigger, then add a new effect. (If you do not know what a trigger/effect is, please go through the <code>Custom Scenarios: Triggers: Trigger Basics</code> section of this guide)</li>
+<li>From the <code>Effects List</code> select <code>Script Call</code>.</li>
+<li>You can now call the <code>main();</code> function from the XS Script in the message box.</li>
+<li>If there are no errors in the code, clicking the <code>E#0: Script Call</code> effect will turn it green. If there is an error in the script, an error message will be shown.</li>
+<li>Testing the scenario will execute any active script calls which will in turn call your function.</li>
+</ol>
+<h3 id="22-in-an-rms">2.2. In an RMS<a class="headerlink" href="#22-in-an-rms" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the RM Script in a text editor</li>
+<li>At the very top, type <code>#includeXS filename.xs</code>. Here, <code>filename.xs</code> is the name of the file that you created above.</li>
+<li>The <code>main();</code> function is automatically called when a map is generated using the RMS.</li>
+<li>To test, load the RMS in a single player (or multi player) lobby and start the game.</li>
+<li>It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.</li>
+</ol>
+<p>Now that you have set up an XS file with a <code>main()</code> function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one:</p>
+<h2 id="3-variables-data-types">3. Variables Data Types<a class="headerlink" href="#3-variables-data-types" title="Permanent link">&para;</a></h2>
+<p>There are a total of 5 data types supported by XS, they are:</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Data Type</strong></th>
+<th align="center"><strong>Syntax</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="highlight"><span class="kt">int</span></code></td>
+<td align="center"><code class="highlight"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span></code></td>
+</tr>
+<tr>
+<td align="center"><code class="highlight"><span class="kt">float</span></code></td>
+<td align="center"><code class="highlight"><span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">3.1</span><span class="p">;</span></code></td>
+</tr>
+<tr>
+<td align="center"><code class="highlight"><span class="n">string</span></code></td>
+<td align="center"><code class="highlight"><span class="n">string</span> <span class="n">a</span> <span class="o">=</span> <span class="s">&quot;string&quot;</span><span class="p">;</span></code></td>
+</tr>
+<tr>
+<td align="center"><code class="highlight"><span class="kt">bool</span></code></td>
+<td align="center"><code class="highlight"><span class="kt">bool</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span></code></td>
+</tr>
+<tr>
+<td align="center"><code class="highlight"><span class="n">vector</span></code></td>
+<td align="center"><code class="highlight"><span class="n">vector</span> <span class="n">v</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>A few things to note:
+1. Refer to the <a href="../functions/#2-vector-manipulation" title="Jump to: XS Scripting &gt; Function Reference &gt; Vector Manipulation">Vector Manipulation</a> section of this guide for all the different functions that can be used on vectors.
+2. Variables cannot be used in vector initialisation. For example: <code class="highlight"><span class="n">vector</span> <span class="n">v</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">);</span></code> does not work. Here <code>x</code>, <code>y</code>, <code>z</code> are floating point values. Use <code class="highlight"><span class="n">vector</span> <span class="n">v</span> <span class="o">=</span> <span class="n">xsVectorSet</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">);</span></code> instead.
+3. Constant Variables
+    Syntax <code class="highlight"><span class="k">const</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span></code> or <code class="highlight"><span class="k">const</span> <span class="kt">float</span> <span class="n">PI</span> <span class="o">=</span> <span class="mf">3.1415</span><span class="p">;</span></code> will declare an immutable variable.
+4. Scope of a Variable
+    The concept of local and global variables applies to XS.</p>
+<h2 id="4-operations">4. Operations<a class="headerlink" href="#4-operations" title="Permanent link">&para;</a></h2>
+<h3 id="41-arithmetic-operations">4.1. Arithmetic Operations<a class="headerlink" href="#41-arithmetic-operations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Operation</strong></th>
+<th align="center"><strong>Syntax</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Addition</td>
+<td align="center"><code>a+b</code></td>
+</tr>
+<tr>
+<td align="center">Subtraction</td>
+<td align="center"><code>a-b</code></td>
+</tr>
+<tr>
+<td align="center">Multiplication</td>
+<td align="center"><code>a*b</code></td>
+</tr>
+<tr>
+<td align="center">Division</td>
+<td align="center"><code>a/b</code></td>
+</tr>
+<tr>
+<td align="center">Modulo</td>
+<td align="center"><code>a%b</code></td>
+</tr>
+</tbody>
+</table>
+<p>Refer to the <a href="../functions/#4-mathematical-operations" title="Jump to: XS Scripting &gt; Function Reference &gt; Mathematical Operations">Mathematical Operations</a> section of this guide for useful mathematical functions.</p>
+<p>Note:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+    <span class="c1">// this does not work:</span>
+    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">+</span><span class="mi">20</span><span class="p">;</span>
+
+    <span class="c1">// instead use:</span>
+    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="o">-</span><span class="n">a</span><span class="o">+</span><span class="mi">20</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="42-prefix-and-postfix-operations">4.2. Prefix and Postfix Operations<a class="headerlink" href="#42-prefix-and-postfix-operations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Operation</strong></th>
+<th align="center"><strong>Syntax</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Posfix increment</td>
+<td align="center"><code>a++</code></td>
+</tr>
+<tr>
+<td align="center">Postfix decrement</td>
+<td align="center"><code>a--</code></td>
+</tr>
+</tbody>
+</table>
+<p>Prefix operations are not supported by XS.</p>
+<h3 id="43-shorthand-assignment-operations">4.3 Shorthand Assignment Operations<a class="headerlink" href="#43-shorthand-assignment-operations" title="Permanent link">&para;</a></h3>
+<p>Shorthand Assignment operations are not suppoerted by XS.</p>
+<h3 id="44-bitwise-operations">4.4 Bitwise Operations<a class="headerlink" href="#44-bitwise-operations" title="Permanent link">&para;</a></h3>
+<p>Bitwise operations are not suppoerted by XS.</p>
+<h3 id="45-relational-operations">4.5. Relational Operations<a class="headerlink" href="#45-relational-operations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Operation</strong></th>
+<th align="center"><strong>Syntax</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Less Than</td>
+<td align="center"><code>a &lt; b</code></td>
+</tr>
+<tr>
+<td align="center">Greater Than</td>
+<td align="center"><code>a &gt; b</code></td>
+</tr>
+<tr>
+<td align="center">Less Than or Equal To</td>
+<td align="center"><code>a &lt;= b</code></td>
+</tr>
+<tr>
+<td align="center">Greater Than or Equal To</td>
+<td align="center"><code>a &gt;= b</code></td>
+</tr>
+<tr>
+<td align="center">Equal To</td>
+<td align="center"><code>a == b</code></td>
+</tr>
+<tr>
+<td align="center">Not Equal To</td>
+<td align="center"><code>a != b</code></td>
+</tr>
+</tbody>
+</table>
+<p>Note: These relational operators also work on strings, for example <code>a &lt; b</code> tells you if <code>a</code> lexicographically preceeds <code>b</code>.</p>
+<h3 id="46-boolean-operations">4.6. Boolean Operations<a class="headerlink" href="#46-boolean-operations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Operation</strong></th>
+<th align="center"><strong>Syntax</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">AND</td>
+<td align="center"><code>a &amp;&amp; b</code></td>
+</tr>
+<tr>
+<td align="center">OR</td>
+<td align="center"><code>a || b</code></td>
+</tr>
+</tbody>
+</table>
+<p>Negation is not supported by XS.</p>
+<p>Note: due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that <code class="highlight"><span class="mi">9</span><span class="o">*</span><span class="mf">5.5</span></code> evaluates to <code class="highlight"><span class="mi">49</span></code> instead of <code class="highlight"><span class="mf">49.5</span></code>. However, <code class="highlight"><span class="mf">5.5</span><span class="o">*</span><span class="mi">9</span></code> will correctly evaluate to <code class="highlight"><span class="mf">49.5</span></code>.</p>
+<h2 id="5-flow-control-statements">5. Flow Control Statements<a class="headerlink" href="#5-flow-control-statements" title="Permanent link">&para;</a></h2>
+<p>The following flow control statements are supported by XS:</p>
+<ol>
+<li>
+<p><code class="highlight"><span class="k">if</span> <span class="k">else</span> <span class="k">if</span></code> construct:</p>
+<p>Example Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">max</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">)</span>
+        <span class="n">max</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">b</span> <span class="o">&gt;</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">)</span>
+        <span class="n">max</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="n">max</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</li>
+<li>
+<p><code class="highlight"><span class="k">switch</span><span class="o">-</span><span class="k">case</span></code> construct:</p>
+<p>Example Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="k">switch</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="mi">1</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="c1">// do stuff</span>
+        <span class="p">}</span>
+        <span class="k">case</span> <span class="mi">2</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="c1">// do stuff</span>
+        <span class="p">}</span>
+        <span class="k">case</span> <span class="mi">3</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="c1">// do stuff</span>
+        <span class="p">}</span>
+        <span class="k">default</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="c1">// do stuff</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</li>
+<li>
+<p><code class="highlight"><span class="k">while</span></code> loop:</p>
+<p>Example Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;a = &quot;</span><span class="o">+</span><span class="n">a</span><span class="p">);</span>
+        <span class="n">a</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</li>
+<li>
+<p><code class="highlight"><span class="k">for</span></code> loop:</p>
+<p>Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// this loops a from 0 to 10</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;a = &quot;</span><span class="o">+</span><span class="n">a</span><span class="p">);</span>
+
+    <span class="c1">// this loops a from 10 to 0</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;a = &quot;</span><span class="o">+</span><span class="n">a</span><span class="p">);</span>
+
+    <span class="c1">// unlike java, you do not need to specify an increment or decrement</span>
+    <span class="c1">// the for loop takes care of that</span>
+
+    <span class="c1">// step sizes unfortunately cannot be changed.</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</li>
+</ol>
+<h2 id="6-functions">6. Functions<a class="headerlink" href="#6-functions" title="Permanent link">&para;</a></h2>
+<p>Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">returnType</span> <span class="nf">functionName</span><span class="p">(</span><span class="n">dataType</span> <span class="n">parameter1</span> <span class="o">=</span> <span class="n">defaultValue</span><span class="p">,</span> <span class="n">dataType</span> <span class="n">parameter2</span> <span class="o">=</span> <span class="n">defaultValue</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">value</span><span class="p">);</span>
+    <span class="c1">// value must be enclosed by parantheses</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>Example Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">b</span><span class="p">);</span>
+
+    <span class="c1">// the return value must always be inside parantheses.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;max &quot;</span><span class="o">+</span><span class="n">max</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>An XS Script can import other XS Scripts using the following syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">include</span> <span class="s">&quot;absolute/or/relative/path/to/file.xs&quot;</span><span class="p">;</span>
+</code></pre></div>
+</td></tr></table>
+<p>However... Currently there is a bug (thxDE 11) due to which XS Scripts are not properly transfered to other players in the lobby. For now, a workaround is to manually give everyone the XS Scripts needed.</p>
+<h2 id="7-arrays">7. Arrays<a class="headerlink" href="#7-arrays" title="Permanent link">&para;</a></h2>
+<p>Refer to the <a href="../functions/#3-array-manipulation" title="Jump to: XS Scriptig &gt; Function Reference &gt; Array Manipulation">Array Manipulation</a> section of this guide on how to use arrays.</p>
+<p>Standard syntax like <code class="highlight"><span class="kt">int</span> <span class="n">a</span><span class="p">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span></code> or <code class="highlight"><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span></code> is not supported by XS.</p>
+<h2 id="8-type-casting">8. Type Casting<a class="headerlink" href="#8-type-casting" title="Permanent link">&para;</a></h2>
+<p><code>#java int</code>, <code>#java float</code> and <code>bool</code> data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing <code class="highlight"><span class="n">string</span> <span class="n">a</span> <span class="o">=</span> <span class="s">&quot;this would work &quot;</span><span class="o">+</span><span class="mf">5.6</span><span class="p">;</span></code>. However, <code class="highlight"><span class="n">string</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">5.5</span><span class="p">;</span></code> will not work, instead use: <code class="highlight"><span class="n">string</span> <span class="n">a</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">+</span><span class="mf">5.5</span><span class="p">;</span></code>. Explicit type casting is done using: <code class="highlight"><span class="p">(</span><span class="o">&lt;</span><span class="n">data</span> <span class="n">type</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&lt;</span><span class="n">variable</span> <span class="n">or</span> <span class="n">constant</span><span class="o">&gt;</span></code>. Note that due to a current bug, explicit type casting does not work on variables.</p>
+<h2 id="9-rules">9. Rules<a class="headerlink" href="#9-rules" title="Permanent link">&para;</a></h2>
+<p>A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a method. Its usage looks like:</p>
+<p>Syntax:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">rule</span> <span class="n">ruleName</span> <span class="c1">// This is the name of the rule. Follows same naming laws as variables.</span>
+
+    <span class="n">active</span><span class="o">/</span><span class="n">inactive</span> <span class="c1">// this is the initial state of the rule, active means that runs by default</span>
+                    <span class="c1">// and inactive means that it wont run by default.</span>
+                    <span class="c1">// this is similar to how triggers work when you enable/disable them.</span>
+
+    <span class="n">group</span> <span class="n">groupName</span> <span class="c1">// the group that this rule belongs to. Follows same naming laws as variables.</span>
+
+    <span class="n">minInterval</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="c1">// the minimum time interval that must pass before the block is executed again</span>
+    <span class="n">maxInterval</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="c1">// the maximum time interval that may pass before the block has to be executed again</span>
+    <span class="n">highFrequency</span>   <span class="c1">// Loop the rule 60 times every physical second (this is independant of inagme speed)</span>
+                    <span class="c1">// Only one of &quot;highFrequency&quot; or &quot;minInterval&quot; and &quot;maxInterval&quot; are used. Both cannot be used together</span>
+
+    <span class="n">runImmediately</span>  <span class="c1">// It is currently unknown as to what this option does</span>
+    <span class="n">priority</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span>    <span class="c1">// rules are executed in order of their descending priority</span>
+<span class="p">{</span>
+    <span class="c1">// code to execute</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>Example:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="c1">// This rule prints the value of a every 2 seconds.</span>
+<span class="n">rule</span> <span class="n">chatTheValueOfA</span>
+    <span class="n">active</span>
+    <span class="n">minInterval</span> <span class="mi">2</span>
+    <span class="n">maxInterval</span> <span class="mi">2</span>
+    <span class="n">group</span> <span class="n">chatGroup</span>
+<span class="p">{</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;a = &quot;</span><span class="o">+</span><span class="n">a</span><span class="p">);</span>
+    <span class="n">a</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>There are a lot of built in XS functions that can interact with rules. Check the <a href="../functions/#1-rules" title="Jump to: XS Scripting &gt; Function Reference &gt; Rules">Rules</a> Section of this guide.</p>
+<p>The variable <code>cActivationTime</code>, when used inside the block of a rule, gives the time of activation of the rule in seconds.</p>
+<p>With that, you now know everything that is currently known to work with XS Scripts. Good luck and have fun creating awesome maps!</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../beginner/" class="md-footer__link md-footer__link--prev" aria-label="Previous: For Beginners" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              For Beginners
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../functions/" class="md-footer__link md-footer__link--next" aria-label="Next: Functions Reference" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Functions Reference
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

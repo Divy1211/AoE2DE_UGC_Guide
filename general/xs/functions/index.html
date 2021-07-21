@@ -1,0 +1,2655 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://divy1211.github.io/AoE2DE_UGC_Guide/general/xs/functions/">
+      
+      <link rel="icon" href="../../../imgs/code.svg">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>Functions Reference - The Ultimate Guide To AoE2DE UGC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,400i,700%7CSource+Code+Pro&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Slab";--md-code-font-family:"Source Code Pro"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-rules" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-header__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Ultimate Guide To AoE2DE UGC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Functions Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../damage_calculation/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../scenarios/basics/" class="md-tabs__link">
+        Custom Scenarios
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../beginner/" class="md-tabs__link md-tabs__link--active">
+        XS Scripting
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-nav__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    The Ultimate Guide To AoE2DE UGC
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Game Mechanics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../damage_calculation/" class="md-nav__link">
+        Damage Calculation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../attributes/" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hotkeys/hotkeys/" class="md-nav__link">
+        Hotkeys
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Custom Scenarios
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Custom Scenarios" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Custom Scenarios
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/basics/" class="md-nav__link">
+        Scenario Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Triggers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Triggers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Triggers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/basics/" class="md-nav__link">
+        Trigger Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/effects/effects/" class="md-nav__link">
+        Effects
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Useful Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Useful Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_1">
+        AoE2ScenarioParser
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AoE2ScenarioParser" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AoE2ScenarioParser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/useful_tools/parser/basics/" class="md-nav__link">
+        Parser Basics
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        XS Scripting
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="XS Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          XS Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beginner/" class="md-nav__link">
+        For Beginners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programmer/" class="md-nav__link">
+        For Programmers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Functions Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Functions Reference
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rules" class="md-nav__link">
+    1. Rules
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-xsdisablerule" class="md-nav__link">
+    1.1. xsDisableRule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-xsdisablerulegroup" class="md-nav__link">
+    1.2. xsDisableRuleGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-xsdisableself" class="md-nav__link">
+    1.3. xsDisableSelf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-xsenablerule" class="md-nav__link">
+    1.4. xsEnableRule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-xsenablerulegroup" class="md-nav__link">
+    1.5. xsEnableRuleGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-xsisruleenabled" class="md-nav__link">
+    1.6. xsIsRuleEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-xsisrulegroupenabled" class="md-nav__link">
+    1.7. xsIsRuleGroupEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-xssetrulemaxinterval" class="md-nav__link">
+    1.8. xsSetRuleMaxInterval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-xssetrulemaxintervalself" class="md-nav__link">
+    1.9. xsSetRuleMaxIntervalSelf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-xssetrulemininterval" class="md-nav__link">
+    1.10. xsSetRuleMinInterval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-xssetruleminintervalself" class="md-nav__link">
+    1.11. xsSetRuleMinIntervalSelf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-xssetrulepriority" class="md-nav__link">
+    1.12. xsSetRulePriority
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-xssetrulepriorityself" class="md-nav__link">
+    1.13. xsSetRulePrioritySelf
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-vectors" class="md-nav__link">
+    2. Vectors
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Vectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-xsvectorgetx" class="md-nav__link">
+    2.1. xsVectorGetX
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-xsvectorgety" class="md-nav__link">
+    2.2. xsVectorGetY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-xsvectorgetz" class="md-nav__link">
+    2.3. xsVectorGetZ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-xsvectorlength" class="md-nav__link">
+    2.4. xsVectorLength
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-xsvectornormalize" class="md-nav__link">
+    2.5. xsVectorNormalize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-xsvectorset" class="md-nav__link">
+    2.6. xsVectorSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-xsvectorsetx" class="md-nav__link">
+    2.7. xsVectorSetX
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-xsvectorsety" class="md-nav__link">
+    2.8. xsVectorSetY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-xsvectorsetz" class="md-nav__link">
+    2.9. xsVectorSetZ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-arrays" class="md-nav__link">
+    3. Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-xsarraycreatebool" class="md-nav__link">
+    3.1. xsArrayCreateBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-xsarraycreatefloat" class="md-nav__link">
+    3.2. xsArrayCreateFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-xsarraycreateint" class="md-nav__link">
+    3.3. xsArrayCreateInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-xsarraycreatestring" class="md-nav__link">
+    3.4. xsArrayCreateString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-xsarraycreatevector" class="md-nav__link">
+    3.5. xsArrayCreateVector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-xsarraygetbool" class="md-nav__link">
+    3.6. xsArrayGetBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-xsarraygetfloat" class="md-nav__link">
+    3.7. xsArrayGetFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-xsarraygetint" class="md-nav__link">
+    3.8. xsArrayGetInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-xsarraygetsize" class="md-nav__link">
+    3.9. xsArrayGetSize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-xsarraygetstring" class="md-nav__link">
+    3.10. xsArrayGetString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-xsarraygetvector" class="md-nav__link">
+    3.11. xsArrayGetVector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-xsarrayresizebool" class="md-nav__link">
+    3.12. xsArrayResizeBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-xsarrayresizefloat" class="md-nav__link">
+    3.13. xsArrayResizeFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-xsarrayresizeint" class="md-nav__link">
+    3.14. xsArrayResizeInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-xsarrayresizestring" class="md-nav__link">
+    3.15. xsArrayResizeString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-xsarrayresizevector" class="md-nav__link">
+    3.16. xsArrayResizeVector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#317-xsarraysetbool" class="md-nav__link">
+    3.17. xsArraySetBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#318-xsarraysetfloat" class="md-nav__link">
+    3.18. xsArraySetFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#319-xsarraysetint" class="md-nav__link">
+    3.19. xsArraySetInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#320-xsarraysetstring" class="md-nav__link">
+    3.20. xsArraySetString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#321-xsarraysetvector" class="md-nav__link">
+    3.21. xsArraySetVector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-maths" class="md-nav__link">
+    4. Maths
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Maths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-abs" class="md-nav__link">
+    4.1. abs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-acos" class="md-nav__link">
+    4.2. acos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-asin" class="md-nav__link">
+    4.3. asin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-atan" class="md-nav__link">
+    4.4. atan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-atan2" class="md-nav__link">
+    4.5. atan2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-cos" class="md-nav__link">
+    4.6. cos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-pow" class="md-nav__link">
+    4.7. pow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-sin" class="md-nav__link">
+    4.8. sin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-sqrt" class="md-nav__link">
+    4.9. sqrt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#410-tan" class="md-nav__link">
+    4.10. tan
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-general" class="md-nav__link">
+    5. General
+  </a>
+  
+    <nav class="md-nav" aria-label="5. General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-xschatdata" class="md-nav__link">
+    5.1. xsChatData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-xseffectamount" class="md-nav__link">
+    5.2. xsEffectAmount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-xsgetgametime" class="md-nav__link">
+    5.3. xsGetGameTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-xsgetmapheight" class="md-nav__link">
+    5.4. xsGetMapHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-xsgetmapid" class="md-nav__link">
+    5.5. xsGetMapID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-xsgetmapname" class="md-nav__link">
+    5.6. xsGetMapName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-xsgetmapwidth" class="md-nav__link">
+    5.7. xsGetMapWidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-xsgetnumplayers" class="md-nav__link">
+    5.8. xsGetNumPlayers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-xsgetplayercivilization" class="md-nav__link">
+    5.9. xsGetPlayerCivilization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-xsgetplayeringame" class="md-nav__link">
+    5.10. xsGetPlayerInGame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-xsgetplayernumberoftechs" class="md-nav__link">
+    5.11. xsGetPlayerNumberOfTechs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-xsgettime" class="md-nav__link">
+    5.12. xsGetTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-xsgetvictoryplayer" class="md-nav__link">
+    5.13. xsGetVictoryPlayer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-xsgetvictorytime" class="md-nav__link">
+    5.14. xsGetVictoryTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#515-xsgetvictorytype" class="md-nav__link">
+    5.15. xsGetVictoryType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#516-xsresearchtechnology" class="md-nav__link">
+    5.16. xsResearchTechnology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#517-xssetplayerattribute" class="md-nav__link">
+    5.17. xsSetPlayerAttribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#518-xssettriggervariable" class="md-nav__link">
+    5.18. xsSetTriggerVariable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#519-xstriggervariable" class="md-nav__link">
+    5.19. xsTriggerVariable
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-functions-with-seemingly-no-practical-use" class="md-nav__link">
+    6. Functions With Seemingly No Practical Use
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Functions With Seemingly No Practical Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-xsaddruntimeevent" class="md-nav__link">
+    6.1. xsAddRuntimeEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-xsbreakpoint" class="md-nav__link">
+    6.2. xsBreakPoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-xsdumparrays" class="md-nav__link">
+    6.3. xsDumpArrays
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-xsgetcontextplayer" class="md-nav__link">
+    6.4. xsGetContextPlayer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-xsgetfuntionid" class="md-nav__link">
+    6.5. xsGetFuntionID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-xssetcontextplayer" class="md-nav__link">
+    6.6. xsSetContextPlayer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants/" class="md-nav__link">
+        Constant Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bugs/" class="md-nav__link">
+        Known Bugs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rules" class="md-nav__link">
+    1. Rules
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-xsdisablerule" class="md-nav__link">
+    1.1. xsDisableRule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-xsdisablerulegroup" class="md-nav__link">
+    1.2. xsDisableRuleGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-xsdisableself" class="md-nav__link">
+    1.3. xsDisableSelf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-xsenablerule" class="md-nav__link">
+    1.4. xsEnableRule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-xsenablerulegroup" class="md-nav__link">
+    1.5. xsEnableRuleGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-xsisruleenabled" class="md-nav__link">
+    1.6. xsIsRuleEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-xsisrulegroupenabled" class="md-nav__link">
+    1.7. xsIsRuleGroupEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-xssetrulemaxinterval" class="md-nav__link">
+    1.8. xsSetRuleMaxInterval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-xssetrulemaxintervalself" class="md-nav__link">
+    1.9. xsSetRuleMaxIntervalSelf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-xssetrulemininterval" class="md-nav__link">
+    1.10. xsSetRuleMinInterval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-xssetruleminintervalself" class="md-nav__link">
+    1.11. xsSetRuleMinIntervalSelf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-xssetrulepriority" class="md-nav__link">
+    1.12. xsSetRulePriority
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-xssetrulepriorityself" class="md-nav__link">
+    1.13. xsSetRulePrioritySelf
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-vectors" class="md-nav__link">
+    2. Vectors
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Vectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-xsvectorgetx" class="md-nav__link">
+    2.1. xsVectorGetX
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-xsvectorgety" class="md-nav__link">
+    2.2. xsVectorGetY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-xsvectorgetz" class="md-nav__link">
+    2.3. xsVectorGetZ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-xsvectorlength" class="md-nav__link">
+    2.4. xsVectorLength
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-xsvectornormalize" class="md-nav__link">
+    2.5. xsVectorNormalize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-xsvectorset" class="md-nav__link">
+    2.6. xsVectorSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-xsvectorsetx" class="md-nav__link">
+    2.7. xsVectorSetX
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-xsvectorsety" class="md-nav__link">
+    2.8. xsVectorSetY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-xsvectorsetz" class="md-nav__link">
+    2.9. xsVectorSetZ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-arrays" class="md-nav__link">
+    3. Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-xsarraycreatebool" class="md-nav__link">
+    3.1. xsArrayCreateBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-xsarraycreatefloat" class="md-nav__link">
+    3.2. xsArrayCreateFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-xsarraycreateint" class="md-nav__link">
+    3.3. xsArrayCreateInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-xsarraycreatestring" class="md-nav__link">
+    3.4. xsArrayCreateString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-xsarraycreatevector" class="md-nav__link">
+    3.5. xsArrayCreateVector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-xsarraygetbool" class="md-nav__link">
+    3.6. xsArrayGetBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-xsarraygetfloat" class="md-nav__link">
+    3.7. xsArrayGetFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-xsarraygetint" class="md-nav__link">
+    3.8. xsArrayGetInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-xsarraygetsize" class="md-nav__link">
+    3.9. xsArrayGetSize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-xsarraygetstring" class="md-nav__link">
+    3.10. xsArrayGetString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-xsarraygetvector" class="md-nav__link">
+    3.11. xsArrayGetVector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-xsarrayresizebool" class="md-nav__link">
+    3.12. xsArrayResizeBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-xsarrayresizefloat" class="md-nav__link">
+    3.13. xsArrayResizeFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-xsarrayresizeint" class="md-nav__link">
+    3.14. xsArrayResizeInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-xsarrayresizestring" class="md-nav__link">
+    3.15. xsArrayResizeString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-xsarrayresizevector" class="md-nav__link">
+    3.16. xsArrayResizeVector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#317-xsarraysetbool" class="md-nav__link">
+    3.17. xsArraySetBool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#318-xsarraysetfloat" class="md-nav__link">
+    3.18. xsArraySetFloat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#319-xsarraysetint" class="md-nav__link">
+    3.19. xsArraySetInt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#320-xsarraysetstring" class="md-nav__link">
+    3.20. xsArraySetString
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#321-xsarraysetvector" class="md-nav__link">
+    3.21. xsArraySetVector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-maths" class="md-nav__link">
+    4. Maths
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Maths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-abs" class="md-nav__link">
+    4.1. abs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-acos" class="md-nav__link">
+    4.2. acos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-asin" class="md-nav__link">
+    4.3. asin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-atan" class="md-nav__link">
+    4.4. atan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-atan2" class="md-nav__link">
+    4.5. atan2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-cos" class="md-nav__link">
+    4.6. cos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-pow" class="md-nav__link">
+    4.7. pow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-sin" class="md-nav__link">
+    4.8. sin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-sqrt" class="md-nav__link">
+    4.9. sqrt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#410-tan" class="md-nav__link">
+    4.10. tan
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-general" class="md-nav__link">
+    5. General
+  </a>
+  
+    <nav class="md-nav" aria-label="5. General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-xschatdata" class="md-nav__link">
+    5.1. xsChatData
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-xseffectamount" class="md-nav__link">
+    5.2. xsEffectAmount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-xsgetgametime" class="md-nav__link">
+    5.3. xsGetGameTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-xsgetmapheight" class="md-nav__link">
+    5.4. xsGetMapHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-xsgetmapid" class="md-nav__link">
+    5.5. xsGetMapID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-xsgetmapname" class="md-nav__link">
+    5.6. xsGetMapName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-xsgetmapwidth" class="md-nav__link">
+    5.7. xsGetMapWidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-xsgetnumplayers" class="md-nav__link">
+    5.8. xsGetNumPlayers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-xsgetplayercivilization" class="md-nav__link">
+    5.9. xsGetPlayerCivilization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-xsgetplayeringame" class="md-nav__link">
+    5.10. xsGetPlayerInGame
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-xsgetplayernumberoftechs" class="md-nav__link">
+    5.11. xsGetPlayerNumberOfTechs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-xsgettime" class="md-nav__link">
+    5.12. xsGetTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-xsgetvictoryplayer" class="md-nav__link">
+    5.13. xsGetVictoryPlayer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-xsgetvictorytime" class="md-nav__link">
+    5.14. xsGetVictoryTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#515-xsgetvictorytype" class="md-nav__link">
+    5.15. xsGetVictoryType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#516-xsresearchtechnology" class="md-nav__link">
+    5.16. xsResearchTechnology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#517-xssetplayerattribute" class="md-nav__link">
+    5.17. xsSetPlayerAttribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#518-xssettriggervariable" class="md-nav__link">
+    5.18. xsSetTriggerVariable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#519-xstriggervariable" class="md-nav__link">
+    5.19. xsTriggerVariable
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-functions-with-seemingly-no-practical-use" class="md-nav__link">
+    6. Functions With Seemingly No Practical Use
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Functions With Seemingly No Practical Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-xsaddruntimeevent" class="md-nav__link">
+    6.1. xsAddRuntimeEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-xsbreakpoint" class="md-nav__link">
+    6.2. xsBreakPoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-xsdumparrays" class="md-nav__link">
+    6.3. xsDumpArrays
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-xsgetcontextplayer" class="md-nav__link">
+    6.4. xsGetContextPlayer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-xsgetfuntionid" class="md-nav__link">
+    6.5. xsGetFuntionID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-xssetcontextplayer" class="md-nav__link">
+    6.6. xsSetContextPlayer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/edit/master/docs/general/xs/functions.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Functions Reference</h1>
+                
+                <p><em>Written by: Alian713</em></p>
+<hr />
+<h2 id="1-rules">1. Rules<a class="headerlink" href="#1-rules" title="Permanent link">&para;</a></h2>
+<h3 id="11-xsdisablerule">1.1. xsDisableRule<a class="headerlink" href="#11-xsdisablerule" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsDisableRule</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleName</span></code>: The name of the rule to disable</li>
+</ol>
+<p>Disables the given rule.</p>
+<h3 id="12-xsdisablerulegroup">1.2. xsDisableRuleGroup<a class="headerlink" href="#12-xsdisablerulegroup" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsDisableRuleGroup</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleGroupName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleGroupName</span></code>: The name of the rule group to disable</li>
+</ol>
+<p>Disables all the rules in the given rule group</p>
+<h3 id="13-xsdisableself">1.3. xsDisableSelf<a class="headerlink" href="#13-xsdisableself" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsDisableSelf</span><span class="p">()</span></code></p>
+<p>Disables the rule this function is called inside. Cannot be used outside of a rule's body!</p>
+<h3 id="14-xsenablerule">1.4. xsEnableRule<a class="headerlink" href="#14-xsenablerule" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsEnableRule</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleName</span></code>: The name of the rule to enable</li>
+</ol>
+<p>Enables the given rule.</p>
+<h3 id="15-xsenablerulegroup">1.5. xsEnableRuleGroup<a class="headerlink" href="#15-xsenablerulegroup" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsEnableRuleGroup</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleGroupName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleGroupName</span></code>: The name of the rule group to enable</li>
+</ol>
+<p>Enables all the rules in the given rule group</p>
+<h3 id="16-xsisruleenabled">1.6. xsIsRuleEnabled<a class="headerlink" href="#16-xsisruleenabled" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">bool</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">bool</span> <span class="n">xsIsRuleEnabled</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleName</span></code>: The name of the rule to check</li>
+</ol>
+<p>Returns true if the rule is enabled, else returns false.</p>
+<h3 id="17-xsisrulegroupenabled">1.7. xsIsRuleGroupEnabled<a class="headerlink" href="#17-xsisrulegroupenabled" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">bool</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">bool</span> <span class="n">xsIsRuleGroupEnabled</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleGroupName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleGroupName</span></code>: The name of the rule group to check</li>
+</ol>
+<p>Returns true, if all the rules in the given rule group are enabled</p>
+<h3 id="18-xssetrulemaxinterval">1.8. xsSetRuleMaxInterval<a class="headerlink" href="#18-xssetrulemaxinterval" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetRuleMaxInterval</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleName</span><span class="p">,</span> <span class="kt">int</span> <span class="n">interval</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleName</span></code>: The name of the rule to set the max interval of</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">interval</span></code>: The new max interval of the rule</li>
+</ol>
+<p>Sets the max interval of the given rule.</p>
+<h3 id="19-xssetrulemaxintervalself">1.9. xsSetRuleMaxIntervalSelf<a class="headerlink" href="#19-xssetrulemaxintervalself" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetRuleMaxIntervalSelf</span><span class="p">(</span><span class="kt">int</span> <span class="n">interval</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">interval</span></code>: The new max interval of the rule</li>
+</ol>
+<p>Sets the max interval of the rule this function is called inside. Cannot be used outside of a rule's body!</p>
+<h3 id="110-xssetrulemininterval">1.10. xsSetRuleMinInterval<a class="headerlink" href="#110-xssetrulemininterval" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetRuleMinInterval</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleName</span><span class="p">,</span> <span class="kt">int</span> <span class="n">interval</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleName</span></code>: The name of the rule to set the min interval of</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">interval</span></code>: The new min interval of the rule</li>
+</ol>
+<p>Sets the min interval of the given rule.</p>
+<h3 id="111-xssetruleminintervalself">1.11. xsSetRuleMinIntervalSelf<a class="headerlink" href="#111-xssetruleminintervalself" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetRuleMinIntervalSelf</span><span class="p">(</span><span class="kt">int</span> <span class="n">interval</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">interval</span></code>: The new min interval of the rule</li>
+</ol>
+<p>Sets the min interval of the rule this function is called inside. Cannot be used outside of a rule's body!</p>
+<h3 id="112-xssetrulepriority">1.12. xsSetRulePriority<a class="headerlink" href="#112-xssetrulepriority" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetRulePriority</span><span class="p">(</span><span class="n">string</span> <span class="n">ruleName</span><span class="p">,</span> <span class="kt">int</span> <span class="n">priority</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">ruleName</span></code>: The name of the rule to set the priority of</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">priority</span></code>: The new priority of the rule</li>
+</ol>
+<p>Sets the priority of the given rule.</p>
+<h3 id="113-xssetrulepriorityself">1.13. xsSetRulePrioritySelf<a class="headerlink" href="#113-xssetrulepriorityself" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetRulePrioritySelf</span><span class="p">(</span><span class="kt">int</span> <span class="n">priority</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">priority</span></code>: The new priority of the rule</li>
+</ol>
+<p>Sets the priority of the rule this function is called inside. Cannot be used outside of a rule's body!</p>
+<h2 id="2-vectors">2. Vectors<a class="headerlink" href="#2-vectors" title="Permanent link">&para;</a></h2>
+<h3 id="21-xsvectorgetx">2.1. xsVectorGetX<a class="headerlink" href="#21-xsvectorgetx" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">xsVectorGetX</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to get the X coordinate of</li>
+</ol>
+<p>The X coordinate of the vector given.</p>
+<h3 id="22-xsvectorgety">2.2. xsVectorGetY<a class="headerlink" href="#22-xsvectorgety" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">xsVectorGetY</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to get the Y coordinate of</li>
+</ol>
+<p>The Y coordinate of the vector given.</p>
+<h3 id="23-xsvectorgetz">2.3. xsVectorGetZ<a class="headerlink" href="#23-xsvectorgetz" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">xsVectorGetZ</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to get the Z coordinate of</li>
+</ol>
+<p>The Z coordinate of the vector given.</p>
+<h3 id="24-xsvectorlength">2.4. xsVectorLength<a class="headerlink" href="#24-xsvectorlength" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">xsVectorLength</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to calculate the length of</li>
+</ol>
+<p>Returns the length of the given vector.</p>
+<h3 id="25-xsvectornormalize">2.5. xsVectorNormalize<a class="headerlink" href="#25-xsvectornormalize" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="n">vector</span></code></p>
+<p>Prototype: <code class="highlight"><span class="n">vector</span> <span class="n">xsVectorNormalize</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to normalise</li>
+</ol>
+<p>Returns the normalised vector in the direction of the given vector.</p>
+<h3 id="26-xsvectorset">2.6. xsVectorSet<a class="headerlink" href="#26-xsvectorset" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="n">vector</span></code></p>
+<p>Prototype: <code class="highlight"><span class="n">vector</span> <span class="n">xsVectorSet</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The value to set the X coordinate to</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">y</span></code>: The value to set the Y coordinate to</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">z</span></code>: The value to set the Z coordinate to</li>
+</ol>
+<p>Returns a vector with the given X, Y and Z components.</p>
+<h3 id="27-xsvectorsetx">2.7. xsVectorSetX<a class="headerlink" href="#27-xsvectorsetx" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="n">vector</span></code></p>
+<p>Prototype: <code class="highlight"><span class="n">vector</span> <span class="n">xsVectorSetX</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to modify the X coordinate of</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The value to set the X coordinate to</li>
+</ol>
+<p>Returns a new vector with the X component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!</p>
+<h3 id="28-xsvectorsety">2.8. xsVectorSetY<a class="headerlink" href="#28-xsvectorsety" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="n">vector</span></code></p>
+<p>Prototype: <code class="highlight"><span class="n">vector</span> <span class="n">xsVectorSetY</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to modify the Y coordinate of</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">y</span></code>: The value to set the Y coordinate to</li>
+</ol>
+<p>Returns a new vector with the Y component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!</p>
+<h3 id="29-xsvectorsetz">2.9. xsVectorSetZ<a class="headerlink" href="#29-xsvectorsetz" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="n">vector</span></code></p>
+<p>Prototype: <code class="highlight"><span class="n">vector</span> <span class="n">xsVectorSetZ</span><span class="p">(</span><span class="n">vector</span> <span class="n">v</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">v</span></code>: The vector to modify the Z coordinate of</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">z</span></code>: The value to set the Z coordinate to</li>
+</ol>
+<p>Returns a new vector with the Z component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!</p>
+<h2 id="3-arrays">3. Arrays<a class="headerlink" href="#3-arrays" title="Permanent link">&para;</a></h2>
+<h3 id="31-xsarraycreatebool">3.1. xsArrayCreateBool<a class="headerlink" href="#31-xsarraycreatebool" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayCreateBool</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">defaultValue</span><span class="p">,</span> <span class="n">string</span> <span class="n">uniqueName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">size</span></code>: The length of the array to create</li>
+<li><code class="highlight"><span class="kt">bool</span> <span class="n">defaultValue</span></code>: The default value to initialise all the values in the array to</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">uniqueName</span></code>: A unique name of the created array</li>
+</ol>
+<p>Creates an array of type bool and returns its ID.</p>
+<h3 id="32-xsarraycreatefloat">3.2. xsArrayCreateFloat<a class="headerlink" href="#32-xsarraycreatefloat" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayCreateFloat</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">float</span> <span class="n">defaultValue</span><span class="p">,</span> <span class="n">string</span> <span class="n">uniqueName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">size</span></code>: The length of the array to create</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">defaultValue</span></code>: The default value to initialise all the values in the array to</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">uniqueName</span></code>: A unique name of the created array</li>
+</ol>
+<p>Creates an array of type float and returns its ID.</p>
+<h3 id="33-xsarraycreateint">3.3. xsArrayCreateInt<a class="headerlink" href="#33-xsarraycreateint" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayCreateInt</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">int</span> <span class="n">defaultValue</span><span class="p">,</span> <span class="n">string</span> <span class="n">uniqueName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">size</span></code>: The length of the array to create</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">defaultValue</span></code>: The default value to initialise all the values in the array to</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">uniqueName</span></code>: A unique name of the created array</li>
+</ol>
+<p>Creates an array of type int and returns its ID.</p>
+<h3 id="34-xsarraycreatestring">3.4. xsArrayCreateString<a class="headerlink" href="#34-xsarraycreatestring" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayCreateString</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="n">string</span> <span class="n">defaultValue</span><span class="p">,</span> <span class="n">string</span> <span class="n">uniqueName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">size</span></code>: The length of the array to create</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">defaultValue</span></code>: The default value to initialise all the values in the array to</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">uniqueName</span></code>: A unique name of the created array</li>
+</ol>
+<p>Creates an array of type String and returns its ID.</p>
+<h3 id="35-xsarraycreatevector">3.5. xsArrayCreateVector<a class="headerlink" href="#35-xsarraycreatevector" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayCreateVector</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="n">vector</span> <span class="n">defaultValue</span><span class="p">,</span> <span class="n">string</span> <span class="n">uniqueName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">size</span></code>: The length of the array to create</li>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">defaultValue</span></code>: The default value to initialise all the values in the array to</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">uniqueName</span></code>: A unique name of the created array</li>
+</ol>
+<p>Creates an array of type Vector and returns its ID.</p>
+<h3 id="36-xsarraygetbool">3.6. xsArrayGetBool<a class="headerlink" href="#36-xsarraygetbool" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayGetBool</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to get the value from</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to get the value of</li>
+</ol>
+<p>Gets and returns the value of the given bool array at the specifed index.</p>
+<h3 id="37-xsarraygetfloat">3.7. xsArrayGetFloat<a class="headerlink" href="#37-xsarraygetfloat" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayGetFloat</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to get the value from</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to get the value of</li>
+</ol>
+<p>Gets and returns the value of the given float array at the specifed index.</p>
+<h3 id="38-xsarraygetint">3.8. xsArrayGetInt<a class="headerlink" href="#38-xsarraygetint" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayGetInt</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to get the value from</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to get the value of</li>
+</ol>
+<p>Gets and returns the value of the given int array at the specifed index.</p>
+<h3 id="39-xsarraygetsize">3.9. xsArrayGetSize<a class="headerlink" href="#39-xsarraygetsize" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayGetSize</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to get the length of</li>
+</ol>
+<p>Returns the length of the given array.</p>
+<h3 id="310-xsarraygetstring">3.10. xsArrayGetString<a class="headerlink" href="#310-xsarraygetstring" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayGetString</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to get the value from</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to get the value of</li>
+</ol>
+<p>Gets and returns the value of the given String array at the specifed index.</p>
+<h3 id="311-xsarraygetvector">3.11. xsArrayGetVector<a class="headerlink" href="#311-xsarraygetvector" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayGetVector</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to get the value from</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to get the value of</li>
+</ol>
+<p>Gets and returns the value of the given Vector array at the specifed index.</p>
+<h3 id="312-xsarrayresizebool">3.12. xsArrayResizeBool<a class="headerlink" href="#312-xsarrayresizebool" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayResizeBool</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newSize</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to resize</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">newSize</span></code>: The new size of the array</li>
+</ol>
+<p>Resizes the the given bool array to the specifed size and returns 1.</p>
+<h3 id="313-xsarrayresizefloat">3.13. xsArrayResizeFloat<a class="headerlink" href="#313-xsarrayresizefloat" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayResizeFloat</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newSize</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to resize</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">newSize</span></code>: The new size of the array</li>
+</ol>
+<p>Resizes the the given float array to the specifed size and returns 1.</p>
+<h3 id="314-xsarrayresizeint">3.14. xsArrayResizeInt<a class="headerlink" href="#314-xsarrayresizeint" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayResizeInt</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newSize</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to resize</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">newSize</span></code>: The new size of the array</li>
+</ol>
+<p>Resizes the the given int array to the specifed size and returns 1.</p>
+<h3 id="315-xsarrayresizestring">3.15. xsArrayResizeString<a class="headerlink" href="#315-xsarrayresizestring" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayResizeString</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newSize</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to resize</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">newSize</span></code>: The new size of the array</li>
+</ol>
+<p>Resizes the the given String array to the specifed size and returns 1.</p>
+<h3 id="316-xsarrayresizevector">3.16. xsArrayResizeVector<a class="headerlink" href="#316-xsarrayresizevector" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArrayResizeVector</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newSize</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to resize</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">newSize</span></code>: The new size of the array</li>
+</ol>
+<p>Resizes the the given Vector array to the specifed size and returns 1.</p>
+<h3 id="317-xsarraysetbool">3.17. xsArraySetBool<a class="headerlink" href="#317-xsarraysetbool" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArraySetBool</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to set the value in</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to set the value of</li>
+<li><code class="highlight"><span class="kt">bool</span> <span class="n">value</span></code>: The new value to set</li>
+</ol>
+<p>Sets the valuat the specified indedx e of the given bool arrindex to the provided value and returns 1.</p>
+<h3 id="318-xsarraysetfloat">3.18. xsArraySetFloat<a class="headerlink" href="#318-xsarraysetfloat" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArraySetFloat</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">,</span> <span class="kt">float</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to set the value in</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to set the value of</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">value</span></code>: The new value to set</li>
+</ol>
+<p>Sets the valueat the specified indedx  of the given float array to the provided value and returns 1.</p>
+<h3 id="319-xsarraysetint">3.19. xsArraySetInt<a class="headerlink" href="#319-xsarraysetint" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArraySetInt</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">,</span> <span class="kt">int</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to set the value in</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to set the value of</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">value</span></code>: The new value to set</li>
+</ol>
+<p>Sets the valat the specified indedx ue of the given int arrindex to the provided value and returns 1.</p>
+<h3 id="320-xsarraysetstring">3.20. xsArraySetString<a class="headerlink" href="#320-xsarraysetstring" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArraySetString</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">,</span> <span class="n">string</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to set the value in</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to set the value of</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">value</span></code>: The new value to set</li>
+</ol>
+<p>Sets the value at the specified indedx of the given String array to the provided value and returns 1.</p>
+<h3 id="321-xsarraysetvector">3.21. xsArraySetVector<a class="headerlink" href="#321-xsarraysetvector" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsArraySetVector</span><span class="p">(</span><span class="kt">int</span> <span class="n">arrayID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">,</span> <span class="n">vector</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">arrayID</span></code>: The ID of the array to set the value in</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">index</span></code>: The index to set the value of</li>
+<li><code class="highlight"><span class="n">vector</span> <span class="n">value</span></code>: The new value to set</li>
+</ol>
+<p>Sets the value at the specified indedx of the given Vector array to the provided value and returns 1.</p>
+<h2 id="4-maths">4. Maths<a class="headerlink" href="#4-maths" title="Permanent link">&para;</a></h2>
+<h3 id="41-abs">4.1. abs<a class="headerlink" href="#41-abs" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">abs</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The number to find the absolute value of</li>
+</ol>
+<p>Returns the absolute value (magnitude) of the given number.</p>
+<h3 id="42-acos">4.2. acos<a class="headerlink" href="#42-acos" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">acos</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The value to find the inverse cosine of</li>
+</ol>
+<p>Returns the inverse cosine (arccos) of the given value</p>
+<h3 id="43-asin">4.3. asin<a class="headerlink" href="#43-asin" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">asin</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The value to find the inverse sine of</li>
+</ol>
+<p>Returns the inverse sine (arcsin) of the given value</p>
+<h3 id="44-atan">4.4. atan<a class="headerlink" href="#44-atan" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">atan</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The value to find the inverse tangent of</li>
+</ol>
+<p>Returns the inverse tangent (arctan) of the given value</p>
+<h3 id="45-atan2">4.5. atan2<a class="headerlink" href="#45-atan2" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">atan2</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The X coordinate of the point to find the amplitude of</li>
+</ol>
+<p>This is supposed to be the atan2(y, x) function but apparently it only takes one input. ThxDE</p>
+<h3 id="46-cos">4.6. cos<a class="headerlink" href="#46-cos" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">cos</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The angle (in radians) to find the cosine of</li>
+</ol>
+<p>Returns the cosine of the angle in radians</p>
+<h3 id="47-pow">4.7. pow<a class="headerlink" href="#47-pow" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">pow</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The base value</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">y</span></code>: The exponenet to raise the base value to</li>
+</ol>
+<p>Returns x raised to the power y (x**y).</p>
+<h3 id="48-sin">4.8. sin<a class="headerlink" href="#48-sin" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">sin</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The angle (in radians) to find the sine of</li>
+</ol>
+<p>Returns the sine of the angle in radians.</p>
+<h3 id="49-sqrt">4.9. sqrt<a class="headerlink" href="#49-sqrt" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">sqrt</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The number to find the square root of</li>
+</ol>
+<p>Returns the square root of the given number.</p>
+<h3 id="410-tan">4.10. tan<a class="headerlink" href="#410-tan" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">float</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">float</span> <span class="n">tan</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">x</span></code>: The angle (in radians) to find the tangent of</li>
+</ol>
+<p>Returns the tangent of the angle in radians</p>
+<h2 id="5-general">5. General<a class="headerlink" href="#5-general" title="Permanent link">&para;</a></h2>
+<h3 id="51-xschatdata">5.1. xsChatData<a class="headerlink" href="#51-xschatdata" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsChatData</span><span class="p">(</span><span class="n">string</span> <span class="n">message</span><span class="p">,</span> <span class="kt">int</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">message</span></code>: The message to display in chat</li>
+<li>(Optional) <code class="highlight"><span class="kt">int</span> <span class="n">value</span></code>: This value is inserted in place of any <code>%d</code> used in the message of the function</li>
+</ol>
+<p>Shows the given message in the game chat</p>
+<h3 id="52-xseffectamount">5.2. xsEffectAmount<a class="headerlink" href="#52-xseffectamount" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsEffectAmount</span><span class="p">(</span><span class="kt">int</span> <span class="n">effectID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">unitOrTechnologyID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">attribtueOrOperation</span><span class="p">,</span> <span class="kt">int</span> <span class="n">value</span><span class="p">,</span> <span class="kt">int</span> <span class="n">playerNumber</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">effectID</span></code>: The ID of the effect to use</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">unitOrTechnologyID</span></code>: The ID of the unit or technology to effect</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">attribtueOrOperation</span></code>: The attribute to modify or the operation to perform</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">value</span></code>: The value of the effect</li>
+<li>(Optional) <code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: The player to apply the effect to. If unspecified, applies to all players except Gaia.</li>
+</ol>
+<p>Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the <a href="" title="Jump to: UserPatch NONE EXISTENT">UserPatch</a> section of the guide</p>
+<h3 id="53-xsgetgametime">5.3. xsGetGameTime<a class="headerlink" href="#53-xsgetgametime" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetGameTime</span><span class="p">()</span></code></p>
+<p>Returns the current game time in seconds</p>
+<h3 id="54-xsgetmapheight">5.4. xsGetMapHeight<a class="headerlink" href="#54-xsgetmapheight" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetMapHeight</span><span class="p">()</span></code></p>
+<p>Returns the Height of the map.</p>
+<h3 id="55-xsgetmapid">5.5. xsGetMapID<a class="headerlink" href="#55-xsgetmapid" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetMapID</span><span class="p">()</span></code></p>
+<p>Returns the AI map type.</p>
+<h3 id="56-xsgetmapname">5.6. xsGetMapName<a class="headerlink" href="#56-xsgetmapname" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="n">string</span></code></p>
+<p>Prototype: <code class="highlight"><span class="n">string</span> <span class="n">xsGetMapName</span><span class="p">(</span><span class="kt">bool</span> <span class="n">showFileExtension</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">bool</span> <span class="n">showFileExtension</span></code>: If this is set to true, then the returned name also contains the file extension</li>
+</ol>
+<p>Returns the name of the map currently being played.</p>
+<h3 id="57-xsgetmapwidth">5.7. xsGetMapWidth<a class="headerlink" href="#57-xsgetmapwidth" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetMapWidth</span><span class="p">()</span></code></p>
+<p>Returns the Width of the map.</p>
+<h3 id="58-xsgetnumplayers">5.8. xsGetNumPlayers<a class="headerlink" href="#58-xsgetnumplayers" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetNumPlayers</span><span class="p">()</span></code></p>
+<p>Returns the number of players in the game</p>
+<h3 id="59-xsgetplayercivilization">5.9. xsGetPlayerCivilization<a class="headerlink" href="#59-xsgetplayercivilization" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetPlayerCivilization</span><span class="p">(</span><span class="kt">int</span> <span class="n">playerNumber</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: The player to get the civilization of</li>
+</ol>
+<p>Returns the civilization ID of the given player. Refer to the <a href="../constants/#3-civs" title="Jump to: XS Scriptin &gt; Constant Reference &gt; #3. Civs">Constant Reference</a> for all the different civ IDs.</p>
+<h3 id="510-xsgetplayeringame">5.10. xsGetPlayerInGame<a class="headerlink" href="#510-xsgetplayeringame" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetPlayerInGame</span><span class="p">(</span><span class="kt">int</span> <span class="n">playerNumber</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: Check if this player is still alive</li>
+</ol>
+<p>Returns a 1 if the player given is still alive. Returns a 0 if the player given has been eliminated.</p>
+<h3 id="511-xsgetplayernumberoftechs">5.11. xsGetPlayerNumberOfTechs<a class="headerlink" href="#511-xsgetplayernumberoftechs" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetPlayerNumberOfTechs</span><span class="p">(</span><span class="kt">int</span> <span class="n">playerNumber</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: The player whoes technology count is being requested.</li>
+</ol>
+<p>Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games.</p>
+<h3 id="512-xsgettime">5.12. xsGetTime<a class="headerlink" href="#512-xsgettime" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetTime</span><span class="p">()</span></code></p>
+<p>Returns the current game time - 1 in seconds</p>
+<h3 id="513-xsgetvictoryplayer">5.13. xsGetVictoryPlayer<a class="headerlink" href="#513-xsgetvictoryplayer" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetVictoryPlayer</span><span class="p">()</span></code></p>
+<p>Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument.</p>
+<h3 id="514-xsgetvictorytime">5.14. xsGetVictoryTime<a class="headerlink" href="#514-xsgetvictorytime" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetVictoryTime</span><span class="p">()</span></code></p>
+<p>For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining</p>
+<h3 id="515-xsgetvictorytype">5.15. xsGetVictoryType<a class="headerlink" href="#515-xsgetvictorytype" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetVictoryType</span><span class="p">()</span></code></p>
+<p>Returns an integer corresponding to different victory settings ingame. These are:</p>
+<p>0: Standard</p>
+<p>1: Consquest</p>
+<p>2: Time Limit</p>
+<p>3: Score</p>
+<p>4: Custom (scenarios only).</p>
+<p>Last Man Standing returns 0 as well.</p>
+<h3 id="516-xsresearchtechnology">5.16. xsResearchTechnology<a class="headerlink" href="#516-xsresearchtechnology" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">bool</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">bool</span> <span class="n">xsResearchTechnology</span><span class="p">(</span><span class="kt">int</span> <span class="n">techID</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">force</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">techAvailable</span><span class="p">,</span> <span class="kt">int</span> <span class="n">playerNumber</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">techID</span></code>: The technology ID to research.</li>
+<li><code class="highlight"><span class="kt">bool</span> <span class="n">force</span></code>: Force researching the tech even if it is not enabled. To force an unavailable tech, the argument <code>techAvailable</code> must be set to false</li>
+<li><code class="highlight"><span class="kt">bool</span> <span class="n">techAvailable</span></code>: This flag determines if it is required to check if a tech is available before researching it</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: The player to research the technology for</li>
+</ol>
+<p>Returns a boolean based on whether the technology was researched or not.</p>
+<h3 id="517-xssetplayerattribute">5.17. xsSetPlayerAttribute<a class="headerlink" href="#517-xssetplayerattribute" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetPlayerAttribute</span><span class="p">(</span><span class="kt">int</span> <span class="n">playerNumber</span><span class="p">,</span> <span class="kt">int</span> <span class="n">resourceID</span><span class="p">,</span> <span class="kt">float</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: The player to set the resource of (0 for Gaia)</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">resourceID</span></code>: The ID of the resource to set the amount of</li>
+<li><code class="highlight"><span class="kt">float</span> <span class="n">value</span></code>: The amount to set the resource to</li>
+</ol>
+<p>Sets the amount of the specified resource of the given player to the provided value.</p>
+<h3 id="518-xssettriggervariable">5.18. xsSetTriggerVariable<a class="headerlink" href="#518-xssettriggervariable" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetTriggerVariable</span><span class="p">(</span><span class="kt">int</span> <span class="n">variableID</span><span class="p">,</span> <span class="kt">int</span> <span class="n">value</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">variableID</span></code>: The ID of the variable to set the value of</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">value</span></code>: The value to set the variable to</li>
+</ol>
+<p>Sets the value of the variable of the given variable ID to the provided value.</p>
+<h3 id="519-xstriggervariable">5.19. xsTriggerVariable<a class="headerlink" href="#519-xstriggervariable" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsTriggerVariable</span><span class="p">(</span><span class="kt">int</span> <span class="n">variableID</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">variableID</span></code>: The ID of the variable to get the value of</li>
+</ol>
+<p>Returns the value of the variable of the given variable ID.</p>
+<h2 id="6-functions-with-seemingly-no-practical-use">6. Functions With Seemingly No Practical Use<a class="headerlink" href="#6-functions-with-seemingly-no-practical-use" title="Permanent link">&para;</a></h2>
+<h3 id="61-xsaddruntimeevent">6.1. xsAddRuntimeEvent<a class="headerlink" href="#61-xsaddruntimeevent" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">bool</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">bool</span> <span class="n">xsAddRuntimeEvent</span><span class="p">(</span><span class="n">string</span> <span class="n">runtimeName</span><span class="p">,</span> <span class="n">string</span> <span class="n">functionName</span><span class="p">,</span> <span class="kt">int</span> <span class="n">functionArgument</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">runtimeName</span></code>: This is the name of the runtime to create the event in. This should be <code>"Random Map"</code> for RMS and <code>"Scenario Triggers"</code> for scenarios. Find which one to use in a general script by using the <code class="highlight"><span class="n">xsGetMapName</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span></code> function and checking the extension.</li>
+<li><code class="highlight"><span class="n">string</span> <span class="n">functionName</span></code>: This is the name of a function that takes a single integer argument.</li>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">functionArgument</span></code>: This is an integer argument that is passed to the function given to the argument <code>functionName</code> when this event runs.</li>
+</ol>
+<p>A runtime event is called after all the XS code has finished executing but before rules start executing. It returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins</p>
+<h3 id="62-xsbreakpoint">6.2. xsBreakPoint<a class="headerlink" href="#62-xsbreakpoint" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsBreakPoint</span><span class="p">()</span></code></p>
+<p>This function adds a break point to the execution of code. Do not use this function and beware, if you do, it will likely cause a crash!</p>
+<h3 id="63-xsdumparrays">6.3. xsDumpArrays<a class="headerlink" href="#63-xsdumparrays" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsDumpArrays</span><span class="p">()</span></code></p>
+<p>This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing.</p>
+<h3 id="64-xsgetcontextplayer">6.4. xsGetContextPlayer<a class="headerlink" href="#64-xsgetcontextplayer" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetContextPlayer</span><span class="p">()</span></code></p>
+<p>Returns the current context player ID.</p>
+<h3 id="65-xsgetfuntionid">6.5. xsGetFuntionID<a class="headerlink" href="#65-xsgetfuntionid" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">int</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">int</span> <span class="n">xsGetFuntionID</span><span class="p">(</span><span class="n">string</span> <span class="n">functionName</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="n">string</span> <span class="n">functionName</span></code>: The name of the function to get the hash of</li>
+</ol>
+<p>Returns the hash of a given function. This function has no practical application and is probably for internal usage only.</p>
+<h3 id="66-xssetcontextplayer">6.6. xsSetContextPlayer<a class="headerlink" href="#66-xssetcontextplayer" title="Permanent link">&para;</a></h3>
+<p>Returning Type: <code class="highlight"><span class="kt">void</span></code></p>
+<p>Prototype: <code class="highlight"><span class="kt">void</span> <span class="n">xsSetContextPlayer</span><span class="p">(</span><span class="kt">int</span> <span class="n">playerNumber</span><span class="p">)</span></code></p>
+<p>Parameters:</p>
+<ol>
+<li><code class="highlight"><span class="kt">int</span> <span class="n">playerNumber</span></code>: The player to set the context player to</li>
+</ol>
+<p>In other functions involving a <code>playerNumber</code> argument, the value of the context player is used if <code>-1</code> is passed as <code>playerNumber</code> to them. <code>xsEffectAmount</code> will use the value of the context player as its player if -2 is passed to it as the player argument.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../programmer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: For Programmers" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              For Programmers
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../constants/" class="md-footer__link md-footer__link--next" aria-label="Next: Constant Reference" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Constant Reference
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1393 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://divy1211.github.io/AoE2DE_UGC_Guide/general/xs/bugs/">
+      
+      <link rel="icon" href="../../../imgs/code.svg">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>Known Bugs - The Ultimate Guide To AoE2DE UGC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,400i,700%7CSource+Code+Pro&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Slab";--md-code-font-family:"Source Code Pro"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#known-bugs-and-quirks-in-xs-scripting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-header__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Ultimate Guide To AoE2DE UGC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Known Bugs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../damage_calculation/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../scenarios/basics/" class="md-tabs__link">
+        Custom Scenarios
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../beginner/" class="md-tabs__link md-tabs__link--active">
+        XS Scripting
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-nav__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    The Ultimate Guide To AoE2DE UGC
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Game Mechanics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../damage_calculation/" class="md-nav__link">
+        Damage Calculation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../attributes/" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hotkeys/hotkeys/" class="md-nav__link">
+        Hotkeys
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Custom Scenarios
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Custom Scenarios" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Custom Scenarios
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/basics/" class="md-nav__link">
+        Scenario Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Triggers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Triggers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Triggers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/basics/" class="md-nav__link">
+        Trigger Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/effects/effects/" class="md-nav__link">
+        Effects
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Useful Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Useful Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_1">
+        AoE2ScenarioParser
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AoE2ScenarioParser" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AoE2ScenarioParser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/useful_tools/parser/basics/" class="md-nav__link">
+        Parser Basics
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        XS Scripting
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="XS Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          XS Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beginner/" class="md-nav__link">
+        For Beginners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programmer/" class="md-nav__link">
+        For Programmers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        Functions Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constants/" class="md-nav__link">
+        Constant Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Known Bugs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Known Bugs
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bugs" class="md-nav__link">
+    Bugs
+  </a>
+  
+    <nav class="md-nav" aria-label="Bugs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-xs-files-do-not-transfer-in-a-lobby" class="md-nav__link">
+    1. XS Files Do Not Transfer In A Lobby
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-xs-files-in-mods-are-not-detected" class="md-nav__link">
+    2. XS Files In Mods Are Not Detected
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cannot-use-variables-or-expressions-in-vector-initialisation" class="md-nav__link">
+    3. Cannot Use Variables Or Expressions In Vector Initialisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-unary-negative-does-not-work" class="md-nav__link">
+    4. Unary Negative Does Not Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-explicit-type-casting-does-not-work" class="md-nav__link">
+    5. Explicit Type Casting Does Not Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-modulo-operator-does-not-work-properly-with-floating-point-values" class="md-nav__link">
+    6. Modulo Operator Does Not Work Properly With Floating Point Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-return-statements-do-not-work-as-officially-documented" class="md-nav__link">
+    7. Return Statements Do Not Work As Officially Documented
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-outputs-of-operations-are-of-the-wrong-data-type" class="md-nav__link">
+    8. Outputs Of Operations Are Of The Wrong Data Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-function-parameters-and-return-statements-do-not-implicitly-type-cast" class="md-nav__link">
+    9. Function Parameters And Return Statements Do Not Implicitly Type Cast
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-cannot-declare-variables-as-a-const-in-function-parameters" class="md-nav__link">
+    10. Cannot Declare Variables As A const In Function Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-crash-on-using-symbols-in-xschatdata" class="md-nav__link">
+    11. Crash On Using % Symbols In xsChatData()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-cannot-print-0-or-1-at-the-start-of-the-line-in-xschatdata" class="md-nav__link">
+    12. Cannot Print 0 Or 1 At The Start Of The Line In xsChatData()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quirks" class="md-nav__link">
+    Quirks
+  </a>
+  
+    <nav class="md-nav" aria-label="Quirks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-weird-behaviour-with-return-statements" class="md-nav__link">
+    1. Weird Behaviour With Return Statements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bugs" class="md-nav__link">
+    Bugs
+  </a>
+  
+    <nav class="md-nav" aria-label="Bugs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-xs-files-do-not-transfer-in-a-lobby" class="md-nav__link">
+    1. XS Files Do Not Transfer In A Lobby
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-xs-files-in-mods-are-not-detected" class="md-nav__link">
+    2. XS Files In Mods Are Not Detected
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cannot-use-variables-or-expressions-in-vector-initialisation" class="md-nav__link">
+    3. Cannot Use Variables Or Expressions In Vector Initialisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-unary-negative-does-not-work" class="md-nav__link">
+    4. Unary Negative Does Not Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-explicit-type-casting-does-not-work" class="md-nav__link">
+    5. Explicit Type Casting Does Not Work
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-modulo-operator-does-not-work-properly-with-floating-point-values" class="md-nav__link">
+    6. Modulo Operator Does Not Work Properly With Floating Point Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-return-statements-do-not-work-as-officially-documented" class="md-nav__link">
+    7. Return Statements Do Not Work As Officially Documented
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-outputs-of-operations-are-of-the-wrong-data-type" class="md-nav__link">
+    8. Outputs Of Operations Are Of The Wrong Data Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-function-parameters-and-return-statements-do-not-implicitly-type-cast" class="md-nav__link">
+    9. Function Parameters And Return Statements Do Not Implicitly Type Cast
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-cannot-declare-variables-as-a-const-in-function-parameters" class="md-nav__link">
+    10. Cannot Declare Variables As A const In Function Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-crash-on-using-symbols-in-xschatdata" class="md-nav__link">
+    11. Crash On Using % Symbols In xsChatData()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-cannot-print-0-or-1-at-the-start-of-the-line-in-xschatdata" class="md-nav__link">
+    12. Cannot Print 0 Or 1 At The Start Of The Line In xsChatData()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quirks" class="md-nav__link">
+    Quirks
+  </a>
+  
+    <nav class="md-nav" aria-label="Quirks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-weird-behaviour-with-return-statements" class="md-nav__link">
+    1. Weird Behaviour With Return Statements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/edit/master/docs/general/xs/bugs.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="known-bugs-and-quirks-in-xs-scripting">Known Bugs And Quirks In XS Scripting<a class="headerlink" href="#known-bugs-and-quirks-in-xs-scripting" title="Permanent link">&para;</a></h1>
+<p><em>Written by: Alian713</em></p>
+<hr />
+<p>This page is a list of known bugs, quirks and weird behaviour in XS Scripting. All the shown code can be directly copy pasted into any XS file to reproduce the bugs/effects documented.</p>
+<p>Any new bugs discovered will be added to the list. This list will also be updated with each AoEII:DE update, removing any bugs that get fixed.</p>
+<p>If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the <em>indicated</em> game version, reach out to the authors of this guide! Check the <code>About</code> page for relevant information about the authors.</p>
+<p>Game Version: <code>101.101.50292.0 6958215</code></p>
+<p>Last Updated: <code>07.07.2021</code></p>
+<p>Game Platform: Steam</p>
+<p>OS: Windows 10</p>
+<h2 id="bugs">Bugs<a class="headerlink" href="#bugs" title="Permanent link">&para;</a></h2>
+<h3 id="1-xs-files-do-not-transfer-in-a-lobby">1. XS Files Do Not Transfer In A Lobby<a class="headerlink" href="#1-xs-files-do-not-transfer-in-a-lobby" title="Permanent link">&para;</a></h3>
+<p>Description: When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host.</p>
+<p>Expected Behaviour: The main XS script and all XS scripts imported in the main script using <code class="highlight"><span class="n">include</span> <span class="s">&quot;fileName.xs&quot;</span><span class="p">;</span></code> (and potentially more imported scripts inside those scripts too) should be transfered to everyone.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script that chats something to the screen</li>
+<li>Include the script in the scenario or RMS</li>
+<li>Host a lobby with at least two human players</li>
+<li>Set the map as the above scenario or RMS</li>
+<li>When the game is started, the host sees the message chatted but the others get a <code>failed to open file</code> error</li>
+</ol>
+<h3 id="2-xs-files-in-mods-are-not-detected">2. XS Files In Mods Are Not Detected<a class="headerlink" href="#2-xs-files-in-mods-are-not-detected" title="Permanent link">&para;</a></h3>
+<p>Description: XS scripts in a mod are not detected by the game.</p>
+<p>Expected Behaviour: Any XS scripts included in a mod should be detected by ANY scenario or RMS trying to use them, even if they are not a part of the mod itself.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a local mod with an XS script in the following folder: <code>PathToModFolder\resources\_common\xs\fileName.xs</code></li>
+<li>Include the script in the scenario or RMS</li>
+<li>When a game is played using the scenario or RMS, the <code>failed to open file</code> error is shown</li>
+</ol>
+<h3 id="3-cannot-use-variables-or-expressions-in-vector-initialisation">3. Cannot Use Variables Or Expressions In Vector Initialisation<a class="headerlink" href="#3-cannot-use-variables-or-expressions-in-vector-initialisation" title="Permanent link">&para;</a></h3>
+<p>Description: When initialising a vector, expressions or variables cannot be used in the initialisation. The code in question is shown below.</p>
+<p>Expected Behaviour: Expressions and variables should be able to be used when initialising Vectors.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+    <span class="c1">// none of these declarations work:</span>
+    <span class="n">vector</span> <span class="n">v1</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">vector</span> <span class="n">v2</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10-1</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">vector</span> <span class="n">v3</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="o">+</span><span class="mi">5</span><span class="p">);</span>
+
+    <span class="n">vector</span> <span class="n">v4</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+    <span class="n">vector</span> <span class="n">v5</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="n">vector</span> <span class="n">v6</span> <span class="o">=</span> <span class="n">vector</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">z</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, the <code>Could not parse the code for 'main' function</code> error is shown</li>
+</ol>
+<h3 id="4-unary-negative-does-not-work">4. Unary Negative Does Not Work<a class="headerlink" href="#4-unary-negative-does-not-work" title="Permanent link">&para;</a></h3>
+<p>Description: The unary negative operator does not work.</p>
+<p>Expected Behaviour: Unary negative operator should return the negative of the number.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">3.4</span><span class="p">;</span>
+
+    <span class="c1">// these do not work:</span>
+
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">d</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">e</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span><span class="p">;</span>
+
+    <span class="kt">int</span> <span class="n">g</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">h</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, the <code>Could not parse the code for 'main' function</code> error is shown</li>
+</ol>
+<h3 id="5-explicit-type-casting-does-not-work">5. Explicit Type Casting Does Not Work<a class="headerlink" href="#5-explicit-type-casting-does-not-work" title="Permanent link">&para;</a></h3>
+<p>Description: Explicit type casting does not work on variables or at initialisation.</p>
+<p>Expected Behaviour: Explicit type casting should be able to be used to convert one data type to another.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">5.5</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">a</span><span class="p">;</span> <span class="c1">// will outright assign 0 to b</span>
+
+    <span class="c1">// expected `b = 5.000000` but</span>
+    <span class="c1">// prints `b = 0.000000`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;b = &quot;</span><span class="o">+</span><span class="n">b</span><span class="p">);</span>
+
+    <span class="n">b</span> <span class="o">=</span> <span class="mf">6.7</span><span class="p">;</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;b (two) = &quot;</span><span class="o">+</span><span class="n">b</span><span class="p">);</span>
+
+    <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="mf">5.7</span><span class="p">;</span> <span class="c1">// this expression will do nothing</span>
+
+    <span class="c1">// expected `b = 5.000000` but</span>
+    <span class="c1">// prints `b = 6.700000`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;b (three) = &quot;</span><span class="o">+</span><span class="n">b</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, the effects described in the code using comments for each case are observed</li>
+</ol>
+<h3 id="6-modulo-operator-does-not-work-properly-with-floating-point-values">6. Modulo Operator Does Not Work Properly With Floating Point Values<a class="headerlink" href="#6-modulo-operator-does-not-work-properly-with-floating-point-values" title="Permanent link">&para;</a></h3>
+<p>Description: Using the modulo operator on floats does not return the fractional part of the answer.</p>
+<p>Expected Behaviour: Using the modulo operator on a float value should correctly return the fractional part of the remainder.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// expected `5.5 mod 1 = 0.500000` but actually</span>
+    <span class="c1">// prints `5.5 mod 1 = 0.000000`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;5.5 mod 1 = &quot;</span><span class="o">+</span><span class="p">(</span><span class="mf">5.5</span><span class="o">%</span><span class="mi">1</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, <code class="highlight"><span class="mf">0.500000</span></code> should be chatted to the screen, but instaed 0.000000 is shown.</li>
+</ol>
+<h3 id="7-return-statements-do-not-work-as-officially-documented">7. Return Statements Do Not Work As Officially Documented<a class="headerlink" href="#7-return-statements-do-not-work-as-officially-documented" title="Permanent link">&para;</a></h3>
+<p>Description: Paranthesis are needed around return expressions for them to work.</p>
+<p>Expected Behaviour: Return expressions should work with or without paranthesis.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="nf">test</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">5</span><span class="o">+</span><span class="mi">5</span><span class="p">;</span>
+    <span class="c1">// instead, `return (5+5);` would work.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">test</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, the <code>Could not parse the code for 'test' function</code> error is shown</li>
+</ol>
+<h3 id="8-outputs-of-operations-are-of-the-wrong-data-type">8. Outputs Of Operations Are Of The Wrong Data Type<a class="headerlink" href="#8-outputs-of-operations-are-of-the-wrong-data-type" title="Permanent link">&para;</a></h3>
+<p>Description: The output type of an operation is determined by the first operand <code>a*b</code>. For example: <code class="highlight"><span class="mi">9</span><span class="o">*</span><span class="mf">5.5</span></code> evaluates to <code class="highlight"><span class="mi">49</span></code> and not <code class="highlight"><span class="mf">49.5</span></code>. However, the expression <code class="highlight"><span class="mf">5.5</span><span class="o">*</span><span class="mi">9</span></code> gives the correct result.</p>
+<p>Expected Behaviour: Both the expressions in the above example should yield the same result.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">1.1</span><span class="p">;</span>
+
+    <span class="c1">// expected `7/1.1 = 6.363636` but actually</span>
+    <span class="c1">// prints `7/1.1 = 6`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;7/1.1 = &quot;</span><span class="o">+</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, <code class="highlight"><span class="mf">6.363636</span></code> should have been chatted to the screen, but instead <code class="highlight"><span class="mi">6</span></code> is shown on the screen.</li>
+</ol>
+<h3 id="9-function-parameters-and-return-statements-do-not-implicitly-type-cast">9. Function Parameters And Return Statements Do Not Implicitly Type Cast<a class="headerlink" href="#9-function-parameters-and-return-statements-do-not-implicitly-type-cast" title="Permanent link">&para;</a></h3>
+<p>Description: Passing an <code class="highlight"><span class="kt">int</span></code> to a function parameter that is supposed to take in a <code class="highlight"><span class="kt">float</span></code> value gets used as an <code class="highlight"><span class="kt">int</span></code> and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an <code class="highlight"><span class="kt">int</span></code> is returned in a function that is supposed to return a <code class="highlight"><span class="kt">float</span></code>, it will just return the <code class="highlight"><span class="kt">int</span></code> as is without type casting into <code class="highlight"><span class="kt">float</span></code></p>
+<p>Expected Behaviour: Values that are passed to/returned from a function should be correctly type casted.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="nf">test</span><span class="p">(</span><span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// keeping in mind the previous bug,</span>
+    <span class="c1">// 5*5.5 evaluates to 27 (an int)</span>
+    <span class="c1">// 27/2 then evaluates to 13 (an int)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="mf">5.5</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span>
+    <span class="c1">// expected to return `13.750000`</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// expected `test = 13.7500000`</span>
+    <span class="c1">// prints `test = 13`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;test = &quot;</span><span class="o">+</span><span class="n">test</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+
+    <span class="c1">// passed 5 for the argument which should</span>
+    <span class="c1">// get type casted into a float but it</span>
+    <span class="c1">// actually does not.</span>
+
+    <span class="c1">// note that this function is supposed to return a float</span>
+    <span class="c1">// but it actually returns an integer!</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, <code class="highlight"><span class="mf">13.750000</span></code> should be chatted to the screen, but <code class="highlight"><span class="mi">13</span></code> is shown instead</li>
+</ol>
+<h3 id="10-cannot-declare-variables-as-a-const-in-function-parameters">10. Cannot Declare Variables As A <code class="highlight"><span class="k">const</span></code> In Function Parameters<a class="headerlink" href="#10-cannot-declare-variables-as-a-const-in-function-parameters" title="Permanent link">&para;</a></h3>
+<p>Description: It is not possible to declare a function parameter as a <code class="highlight"><span class="k">const</span></code> even though it is used in the <code class="highlight"><span class="n">xsChatData</span></code> function in the official documentation.</p>
+<p>Expected Behaviour: It should bee possible to declare function parameters as a <code class="highlight"><span class="k">const</span></code></p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="nf">test</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;test = &quot;</span><span class="o">+</span><span class="n">test</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, the <code>'const' is not a valid parameter type</code> error is shown</li>
+</ol>
+<h3 id="11-crash-on-using-symbols-in-xschatdata">11. Crash On Using <code>%</code> Symbols In <code>xsChatData()</code><a class="headerlink" href="#11-crash-on-using-symbols-in-xschatdata" title="Permanent link">&para;</a></h3>
+<p>Description: Cannot escape <code>%</code> symbols in the message, since they are considered special characters because of the <code>%d</code> and <code>%f</code> usage.</p>
+<p>Expected Behaviour: It should be possible to escape the <code>%</code> character by using a backslash <code>\</code>.</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// prints `this  will not appear in game`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;this % will not appear in game&quot;</span><span class="p">);</span>
+
+    <span class="c1">// prints `neither will this \ appear in game`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;neither will this \% appear in game&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, the game will crash</li>
+</ol>
+<h3 id="12-cannot-print-0-or-1-at-the-start-of-the-line-in-xschatdata">12. Cannot Print <code class="highlight"><span class="mi">0</span></code> Or <code class="highlight"><span class="mi">1</span></code> At The Start Of The Line In <code>xsChatData()</code><a class="headerlink" href="#12-cannot-print-0-or-1-at-the-start-of-the-line-in-xschatdata" title="Permanent link">&para;</a></h3>
+<p>Description: If a <code class="highlight"><span class="mi">0</span></code> or <code class="highlight"><span class="mi">1</span></code> character occurs at the beginning of a string that is being chatted to the screen using <code>xsChatData</code>, then the <code class="highlight"><span class="mi">0</span></code> or <code class="highlight"><span class="mi">1</span></code> characters do not appear in the message.</p>
+<p>Expected Behaviour: <code class="highlight"><span class="mi">0</span></code> or <code class="highlight"><span class="mi">1</span></code> should be shown correctly at the beginning of the line if used in an <code>xsChatData</code> function</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// expected `1 the one at the start isn&#39;t visible` but</span>
+    <span class="c1">// prints ` the one at the start isn&#39;t visible`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;1 the one at the start isn&#39;t visible&quot;</span><span class="p">);</span>
+
+    <span class="c1">// expected `0 the zero at the start isn&#39;t visible` but</span>
+    <span class="c1">// prints ` the zero at the start isn&#39;t visible`</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;0 the zero at the start isn&#39;t visible&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+<li>When a game is played using the scenario or RMS, any <code class="highlight"><span class="mi">1</span></code> or <code class="highlight"><span class="mi">0</span></code> at the beginning of the lines are omitted in the resulting message on screen.</li>
+</ol>
+<h2 id="quirks">Quirks<a class="headerlink" href="#quirks" title="Permanent link">&para;</a></h2>
+<h3 id="1-weird-behaviour-with-return-statements">1. Weird Behaviour With Return Statements<a class="headerlink" href="#1-weird-behaviour-with-return-statements" title="Permanent link">&para;</a></h3>
+<p>Description: This behaviour is not understood well</p>
+<p>Expected Behaviour: An Error?</p>
+<p>Reproduction Steps:</p>
+<ol>
+<li>Create a new scenario or RMS</li>
+<li>Create a new XS script with the following code: 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">float</span> <span class="nf">test</span><span class="p">(</span><span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// thisDoesNot... is not a function</span>
+    <span class="k">return</span> <span class="n">thisDoesNotMatterWhatIsGoingOn</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="mi">55</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">;</span>
+    <span class="c1">// seems like this is completely ignoring the first term in the expression.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// prints `test = 4`</span>
+    <span class="c1">// once again, note that a float returning function is returning an int</span>
+    <span class="n">xsChatData</span><span class="p">(</span><span class="s">&quot;test = &quot;</span><span class="o">+</span><span class="n">test</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span> <span class="c1">//returns 4</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table></li>
+<li>Include the script in the scenario or RMS</li>
+<li>Run the <code>main</code> function of the script in the scenario (it will run automatically in an RMS)</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../constants/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Constant Reference" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Constant Reference
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

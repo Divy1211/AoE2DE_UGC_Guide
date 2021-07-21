@@ -1,0 +1,2053 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://divy1211.github.io/AoE2DE_UGC_Guide/scenarios/basics/">
+      
+      <link rel="icon" href="../../imgs/code.svg">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>Scenario Basics - The Ultimate Guide To AoE2DE UGC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,400i,700%7CSource+Code+Pro&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Slab";--md-code-font-family:"Source Code Pro"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-scenario-editor" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="The Ultimate Guide To AoE2DE UGC" class="md-header__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Ultimate Guide To AoE2DE UGC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scenario Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../general/damage_calculation/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Custom Scenarios
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../general/xs/beginner/" class="md-tabs__link">
+        XS Scripting
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="The Ultimate Guide To AoE2DE UGC" class="md-nav__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    The Ultimate Guide To AoE2DE UGC
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Game Mechanics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/damage_calculation/" class="md-nav__link">
+        Damage Calculation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/attributes/" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/resources/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/hotkeys/hotkeys/" class="md-nav__link">
+        Hotkeys
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Custom Scenarios
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Custom Scenarios" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Custom Scenarios
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Scenario Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Scenario Basics
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-scenario-editor" class="md-nav__link">
+    The Scenario Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-map" class="md-nav__link">
+    1. Map
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-map-style" class="md-nav__link">
+    1.1. Map Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-ai-map-type" class="md-nav__link">
+    1.2. AI Map Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-colour-mood" class="md-nav__link">
+    1.3. Colour Mood
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-team-positions" class="md-nav__link">
+    1.4. Team Positions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-extend-map" class="md-nav__link">
+    1.5. Extend Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-script-filename" class="md-nav__link">
+    1.6. Script Filename
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-global-victory" class="md-nav__link">
+    2. Global Victory
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Global Victory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-standard" class="md-nav__link">
+    2.1. Standard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-conquest" class="md-nav__link">
+    2.2. Conquest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-score" class="md-nav__link">
+    2.3. Score
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-time-limit" class="md-nav__link">
+    2.4. Time Limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-custom" class="md-nav__link">
+    2.5. Custom
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-terrain" class="md-nav__link">
+    3. Terrain
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Terrain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-map" class="md-nav__link">
+    3.1. Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-elevation" class="md-nav__link">
+    3.2. Elevation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-cliffs" class="md-nav__link">
+    3.3. Cliffs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-map-copy" class="md-nav__link">
+    3.4. Map Copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-erase" class="md-nav__link">
+    3.5. Erase
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-options" class="md-nav__link">
+    4. Options
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-point-of-view" class="md-nav__link">
+    4.1. Point of View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-testing-difficulty" class="md-nav__link">
+    4.2. Testing Difficulty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-full-tech-tree" class="md-nav__link">
+    4.3. Full Tech Tree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-disable-objects" class="md-nav__link">
+    4.4. Disable Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-collide-correcting" class="md-nav__link">
+    4.5. Collide &amp; Correcting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-villager-force-drop" class="md-nav__link">
+    4.6. Villager Force Drop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-block-humanity-team-change" class="md-nav__link">
+    4.7. Block Humanity Team Change
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-players" class="md-nav__link">
+    5. Players
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Players">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-number-of-players" class="md-nav__link">
+    5.1. Number of Players
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-starting-age" class="md-nav__link">
+    5.2. Starting Age
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-colour" class="md-nav__link">
+    5.3. Colour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-starting-resources" class="md-nav__link">
+    5.4. Starting Resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-pop-limit" class="md-nav__link">
+    5.5. Pop Limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-base-priority" class="md-nav__link">
+    5.6. Base Priority
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-tribe-name" class="md-nav__link">
+    5.7. Tribe Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-name-string-id" class="md-nav__link">
+    5.8. Name String ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-personality" class="md-nav__link">
+    5.9. Personality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-player-type" class="md-nav__link">
+    5.10. Player Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-civilization" class="md-nav__link">
+    5.11. Civilization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-lock-civ" class="md-nav__link">
+    5.12. Lock Civ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-architecture" class="md-nav__link">
+    5.13. Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-swap-players" class="md-nav__link">
+    5.14. Swap Players
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-messages" class="md-nav__link">
+    6. Messages
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-scenario-instructions" class="md-nav__link">
+    6.1. Scenario Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-objectives" class="md-nav__link">
+    6.2. Objectives
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-hints" class="md-nav__link">
+    6.3. Hints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-scout" class="md-nav__link">
+    6.4. Scout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-victory" class="md-nav__link">
+    6.5. Victory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-defeat" class="md-nav__link">
+    6.6. Defeat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-units" class="md-nav__link">
+    7. Units
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Units">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-placing-units" class="md-nav__link">
+    7.1. Placing Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-deleting-units" class="md-nav__link">
+    7.2. Deleting Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-moving-units" class="md-nav__link">
+    7.3. Moving Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-rotating-units" class="md-nav__link">
+    7.4. Rotating Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-selecting-units" class="md-nav__link">
+    7.5. Selecting Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-converting-units" class="md-nav__link">
+    7.6. Converting Units
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cinematics" class="md-nav__link">
+    8. Cinematics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-diplomacy" class="md-nav__link">
+    9. Diplomacy
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Diplomacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-diplomacy-stance" class="md-nav__link">
+    9.1. Diplomacy Stance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-lock-teams" class="md-nav__link">
+    9.2. Lock Teams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-players-choose-teams" class="md-nav__link">
+    9.3. Players Choose Teams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-random-start-points" class="md-nav__link">
+    9.4. Random Start Points
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-triggers" class="md-nav__link">
+    10. Triggers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-useful-hotkeys" class="md-nav__link">
+    11. Useful Hotkeys
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Triggers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Triggers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Triggers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../triggers/basics/" class="md-nav__link">
+        Trigger Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../triggers/effects/effects/" class="md-nav__link">
+        Effects
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Useful Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Useful Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_1">
+        AoE2ScenarioParser
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AoE2ScenarioParser" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AoE2ScenarioParser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../useful_tools/parser/basics/" class="md-nav__link">
+        Parser Basics
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        XS Scripting
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="XS Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          XS Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/xs/beginner/" class="md-nav__link">
+        For Beginners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/xs/programmer/" class="md-nav__link">
+        For Programmers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/xs/functions/" class="md-nav__link">
+        Functions Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/xs/constants/" class="md-nav__link">
+        Constant Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/xs/bugs/" class="md-nav__link">
+        Known Bugs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-scenario-editor" class="md-nav__link">
+    The Scenario Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-map" class="md-nav__link">
+    1. Map
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-map-style" class="md-nav__link">
+    1.1. Map Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-ai-map-type" class="md-nav__link">
+    1.2. AI Map Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-colour-mood" class="md-nav__link">
+    1.3. Colour Mood
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-team-positions" class="md-nav__link">
+    1.4. Team Positions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-extend-map" class="md-nav__link">
+    1.5. Extend Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-script-filename" class="md-nav__link">
+    1.6. Script Filename
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-global-victory" class="md-nav__link">
+    2. Global Victory
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Global Victory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-standard" class="md-nav__link">
+    2.1. Standard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-conquest" class="md-nav__link">
+    2.2. Conquest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-score" class="md-nav__link">
+    2.3. Score
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-time-limit" class="md-nav__link">
+    2.4. Time Limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-custom" class="md-nav__link">
+    2.5. Custom
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-terrain" class="md-nav__link">
+    3. Terrain
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Terrain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-map" class="md-nav__link">
+    3.1. Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-elevation" class="md-nav__link">
+    3.2. Elevation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-cliffs" class="md-nav__link">
+    3.3. Cliffs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-map-copy" class="md-nav__link">
+    3.4. Map Copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-erase" class="md-nav__link">
+    3.5. Erase
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-options" class="md-nav__link">
+    4. Options
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-point-of-view" class="md-nav__link">
+    4.1. Point of View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-testing-difficulty" class="md-nav__link">
+    4.2. Testing Difficulty
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-full-tech-tree" class="md-nav__link">
+    4.3. Full Tech Tree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-disable-objects" class="md-nav__link">
+    4.4. Disable Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-collide-correcting" class="md-nav__link">
+    4.5. Collide &amp; Correcting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-villager-force-drop" class="md-nav__link">
+    4.6. Villager Force Drop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-block-humanity-team-change" class="md-nav__link">
+    4.7. Block Humanity Team Change
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-players" class="md-nav__link">
+    5. Players
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Players">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-number-of-players" class="md-nav__link">
+    5.1. Number of Players
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-starting-age" class="md-nav__link">
+    5.2. Starting Age
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-colour" class="md-nav__link">
+    5.3. Colour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-starting-resources" class="md-nav__link">
+    5.4. Starting Resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-pop-limit" class="md-nav__link">
+    5.5. Pop Limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-base-priority" class="md-nav__link">
+    5.6. Base Priority
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-tribe-name" class="md-nav__link">
+    5.7. Tribe Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-name-string-id" class="md-nav__link">
+    5.8. Name String ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-personality" class="md-nav__link">
+    5.9. Personality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-player-type" class="md-nav__link">
+    5.10. Player Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#511-civilization" class="md-nav__link">
+    5.11. Civilization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-lock-civ" class="md-nav__link">
+    5.12. Lock Civ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#513-architecture" class="md-nav__link">
+    5.13. Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#514-swap-players" class="md-nav__link">
+    5.14. Swap Players
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-messages" class="md-nav__link">
+    6. Messages
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-scenario-instructions" class="md-nav__link">
+    6.1. Scenario Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-objectives" class="md-nav__link">
+    6.2. Objectives
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-hints" class="md-nav__link">
+    6.3. Hints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-scout" class="md-nav__link">
+    6.4. Scout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-victory" class="md-nav__link">
+    6.5. Victory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-defeat" class="md-nav__link">
+    6.6. Defeat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-units" class="md-nav__link">
+    7. Units
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Units">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-placing-units" class="md-nav__link">
+    7.1. Placing Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-deleting-units" class="md-nav__link">
+    7.2. Deleting Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-moving-units" class="md-nav__link">
+    7.3. Moving Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-rotating-units" class="md-nav__link">
+    7.4. Rotating Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-selecting-units" class="md-nav__link">
+    7.5. Selecting Units
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-converting-units" class="md-nav__link">
+    7.6. Converting Units
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-cinematics" class="md-nav__link">
+    8. Cinematics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-diplomacy" class="md-nav__link">
+    9. Diplomacy
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Diplomacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-diplomacy-stance" class="md-nav__link">
+    9.1. Diplomacy Stance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-lock-teams" class="md-nav__link">
+    9.2. Lock Teams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-players-choose-teams" class="md-nav__link">
+    9.3. Players Choose Teams
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-random-start-points" class="md-nav__link">
+    9.4. Random Start Points
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-triggers" class="md-nav__link">
+    10. Triggers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-useful-hotkeys" class="md-nav__link">
+    11. Useful Hotkeys
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/edit/master/docs/scenarios/basics.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Scenario Basics</h1>
+                
+                <p><em>Written by: Alian713</em></p>
+<hr />
+<p>Custom Scenarios allow you to define your own, custom game modes. Literally, they are different "scenarios" the game can be played in.</p>
+<h2 id="the-scenario-editor">The Scenario Editor<a class="headerlink" href="#the-scenario-editor" title="Permanent link">&para;</a></h2>
+<p>The Scenario Editor is the tool that every map maker uses to make and test scenarios.
+To open a new scenario in the editor,</p>
+<ol>
+<li>Click <code>Single Player</code> in the main menu</li>
+<li>Click <code>Editors</code></li>
+<li>Click <code>Create Scenario</code></li>
+</ol>
+<p>To open a saved scenario in the editor,</p>
+<ol>
+<li>Double-click the scenario from the list in the editors menu in step 3 above</li>
+</ol>
+<p>To open an externally downloaded scenario in the editor,</p>
+<ol>
+<li>Click <code>Open Scenario Folder</code> in the editors menu in step 3 above</li>
+<li>Put the downloaded scenario in this folder</li>
+<li>To see the newly added scenario in the editors menu, go back to the main menu and open the editors menu again.</li>
+</ol>
+<p>When you load into a new scenario, it is a blank canvas for you to play with!</p>
+<p>In the editor, there are quite a few tabs that you can see at the top, their functionalities are discussed below:</p>
+<h2 id="1-map">1. Map<a class="headerlink" href="#1-map" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Map</code> tab in the editor, there are several options to change the map, they are discussed below:</p>
+<h3 id="11-map-style">1.1. Map Style<a class="headerlink" href="#11-map-style" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><code>Blank Map</code>: This option generates a map of the same terrain throughout the map. The default map that is generated when a new scenario is loaded is a blank map with grass terrain.</p>
+</li>
+<li>
+<p><code>Random Map</code>: This option generates a map from an RMS. (RMS stands for Random Map Script, they are scripts that generate regular maps like Arabia)</p>
+</li>
+<li>
+<p><code>Seed Map</code>: This option generates a map from an RMS using a specified seed. </p>
+</li>
+</ol>
+<p>What is a seed you ask?</p>
+<p>Each generation of a particular RMS in the game has a number attached to it called its "seed" that uniquely identifies that particular generation of the RMS. Generating a map with the same RMS and seed twice will give you the exact same map!</p>
+<h3 id="12-ai-map-type">1.2. AI Map Type<a class="headerlink" href="#12-ai-map-type" title="Permanent link">&para;</a></h3>
+<p>This option is used by AIs to figure out what kind of a map they are playing on. This is important if you have AIs in your map because you want them to go for water builds when you have water on your map. Lets say that the map is nomad themed, then setting the <code>AI Map Type</code> to <code>Nomad</code> would allow AI players to properly play in a nomad style.</p>
+<h3 id="13-colour-mood">1.3. Colour Mood<a class="headerlink" href="#13-colour-mood" title="Permanent link">&para;</a></h3>
+<p>This setting changes the colour theme (lighting) of the map. By default it is set to <code>Empty</code> which means no colour theme. Colour themes are used for aesthetic reasons only and do not effect gameplay. For exmaple, if you are making a map set in the winter season, then using the winter colour theme could be an option.</p>
+<h3 id="14-team-positions">1.4. Team Positions<a class="headerlink" href="#14-team-positions" title="Permanent link">&para;</a></h3>
+<p>This setting is for when you generate maps from an RMS. It determines if players <strong>in the same team</strong> are placed in order of their colour or if they are randomly distributed throughout the map</p>
+<p>For example, The teams are currently set to Players 1,3,5,7 vs Players 2,4,6,8 and generating the map with team positions on gives this result:</p>
+<p><img alt="Team Positions On" src="../imgs/team_pos_on.png" title="Team Positions On" /></p>
+<p>Notice that players 1,3,5,7 who are on the same team have, generated in that particular order (going counter clockwise in the image) and that players 2,4,6,8 have also generated in that order.</p>
+<p>Generating the map with team positions off on the other hand, gives this result:</p>
+<p><img alt="Team Positions Off" src="../imgs/team_pos_off.png" title="Team Positions Off" /></p>
+<p>Notice that now, players 1,3,5,7 who are on the same team, have generated in random positions. Similarly players 2,4,6,8 have generated in no particular order. Also note that even though the positions within the team are random, the players are still grouped on each side of the map by team.</p>
+<p>To be more precise, this option generates players in each team in order of their player numbers. Players do not have to be in the specific teams used in the above exmaple for this to work.</p>
+<h3 id="15-extend-map">1.5. Extend Map<a class="headerlink" href="#15-extend-map" title="Permanent link">&para;</a></h3>
+<p>This features is useful for expanding an already existing map if you need to use more space. To use it,</p>
+<ol>
+<li>Click the checkbox called <code>Extend Map</code>.</li>
+<li>This brings up two new options, <code>New Map Size</code> and a <code>Map Offset</code>.</li>
+<li><code>New Map Size</code>: the size of the new map that will be generated.</li>
+<li><code>Map Offset</code>: determines where to place the existing map on the new map.</li>
+</ol>
+<p>For exmaple, Extending this 4 player map with a <code>New Map Size</code> of <code>8 players</code> and a <code>Map Offset</code> of <code>North</code></p>
+<p><img alt="Before Extending" src="../imgs/extend_before.png" title="Before Extending" /></p>
+<p>gives the following result:</p>
+<p><img alt="After Extending" src="../imgs/extend_after.png" title="After Extending" /></p>
+<p>Remember, the top corner of the map is North!</p>
+<p><img alt="Map Directions" src="../imgs/directions.png" title="Map Directions" /></p>
+<h3 id="16-script-filename">1.6. Script Filename<a class="headerlink" href="#16-script-filename" title="Permanent link">&para;</a></h3>
+<p>This is the place where you need to enter the name of any XS scripts that you are using in your map. XS scripts are covered in the <code>XS Scripts</code> section of this guide</p>
+<h2 id="2-global-victory">2. Global Victory<a class="headerlink" href="#2-global-victory" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Global Victory</code> tab in the editor, there are options that allow you to define custom victory conditions for all players. They are all discussed below:</p>
+<h3 id="21-standard">2.1. Standard<a class="headerlink" href="#21-standard" title="Permanent link">&para;</a></h3>
+<p>A player wins by either defeating all enemies, or capturing 5 relics and holding them for 200 years, or constructing and holding a wonder for 200 years</p>
+<h3 id="22-conquest">2.2. Conquest<a class="headerlink" href="#22-conquest" title="Permanent link">&para;</a></h3>
+<p>A player can only win by defeating all enemy players</p>
+<h3 id="23-score">2.3. Score<a class="headerlink" href="#23-score" title="Permanent link">&para;</a></h3>
+<p>The first player to reach the specified score wins</p>
+<h3 id="24-time-limit">2.4. Time Limit<a class="headerlink" href="#24-time-limit" title="Permanent link">&para;</a></h3>
+<p>The game is played until the specified time limit. When the time limit is reached, the player with the highest score wins</p>
+<h3 id="25-custom">2.5. Custom<a class="headerlink" href="#25-custom" title="Permanent link">&para;</a></h3>
+<p>This victory condition can be customised using the following options:</p>
+<ol>
+<li><code>Conquest</code> this is the same as the victory condition in point 2. above</li>
+<li><code>Exploration</code> the first player to reach the specified percentage of the map explored wins the game. (There is a text box infront of this option to specify percentage)</li>
+<li><code>Relics</code> the first player to capture the specified quantity of relics wins the game. Unlike Standard Victory, a playar wins as soon as they have gathered the relics and do not need to hold them for 200 years. (There is a text box infront of this option to specify quantity)</li>
+<li><code>Any One</code> a player can complete any one of the victory condition enabled above to win</li>
+<li><code>All</code> a player has to complete all of the victory conditions enabled above to win</li>
+</ol>
+<h2 id="3-terrain">3. Terrain<a class="headerlink" href="#3-terrain" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Terrain</code> tab in the editor, there are a lot of options to modify the terrain of the map. Each of them are discussed below:</p>
+<h3 id="31-map">3.1. Map<a class="headerlink" href="#31-map" title="Permanent link">&para;</a></h3>
+<p>This option allows you to manually place down terrain on the map.</p>
+<ol>
+<li><code>Brush Size</code>: allows you to pick how large of an area you want to affect on the map at once</li>
+<li><code>Layering Mode</code>: allows you to blend and layer another type of terrain on top of the base terrain. Note that the terrain properties like buildings that can be placed on terrain are still determined by the base terrain. This means that you won't be able to build buildings on ice layered with grass but you will be able to build buildings on grass layered with ice</li>
+<li><code>Eye Candy</code>: determines if the terrain you place automatically spawns eye candy on top of it. Eye candy are plants and other units that are generated for aesthetic reasons only, hence the name "eye candy"</li>
+<li><code>No Waves on Shore</code>: disables waves on water throughout the map</li>
+<li><code>Water Definitions</code>: this option changes what water looks like throughout the map</li>
+</ol>
+<p>Different water definitions are shown below:</p>
+<p><code>Preset_Main</code>:
+<img alt="Preset_Main" src="../imgs/preset_main.png" title="Preset_Main" /></p>
+<p><code>Preset_FE1</code>:
+<img alt="Preset_FE1" src="../imgs/preset_fe1.png" title="Preset_FE1" /></p>
+<p><code>Preset_FE2</code>:
+<img alt="Preset_FE2" src="../imgs/preset_fe2.png" title="Preset_FE2" /></p>
+<p><code>Preset_WickedWitch</code>:
+<img alt="Preset_WickedWitch" src="../imgs/preset_wicked_witch.png" title="Preset_WickedWitch" /></p>
+<ol>
+<li><code>Beach Type</code>: this option changes the type of beach terrain that is placed down when water terrain is placed. Exploring the different beach types has been left as an excersise for the reader.</li>
+</ol>
+<h3 id="32-elevation">3.2. Elevation<a class="headerlink" href="#32-elevation" title="Permanent link">&para;</a></h3>
+<p>This option allows you to change the elevation of existing tiles on the map.</p>
+<ol>
+<li><code>Brush Size</code>: allows you to pick how large of an area you want to affect on the map at once</li>
+</ol>
+<p><em>Trick</em>: In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the <code>Useful Tools</code> =&gt; <code>AoE2ScenarioParser</code> section of this guide.</p>
+<h3 id="33-cliffs">3.3. Cliffs<a class="headerlink" href="#33-cliffs" title="Permanent link">&para;</a></h3>
+<p>This option allows you to place cliffs on your map. There are two types of cliffs to chose from, Granite and Sandstone. They function exactly the same, and differ only in their appearence.</p>
+<p><em>Trick</em>: a cliff is actually a gaia object that can be rotated, if you go to the <code>Units</code> tab, and enable the <code>Rotate</code> option, you will be able to click the cliff and rotate it (right click rotates it in the opposite direction). There are a few rotations of the cliff objects that actually do not have graphics for them and hence appear invisible. but since they are still present on the map, just not visible, they block units from going through them. This mechanic can be used to make invisible walls on the map!</p>
+<h3 id="34-map-copy">3.4. Map Copy<a class="headerlink" href="#34-map-copy" title="Permanent link">&para;</a></h3>
+<p>This option allows you to copy a part of the map and paste it using a brush. There are options to rotate and flip the selected area as well.</p>
+<p><strong>Current Bug</strong>: When a selection that is rectangular is rotated, the highlighted area that shows the brush DOES NOT rotate accordingly to show this rotation, but the game still pastes a rotated as you would expect.</p>
+<p>There is also another option called <code>Change Player</code>. This option allows you to change the player of the units in the selection to another player when pasting the selection.</p>
+<h3 id="35-erase">3.5. Erase<a class="headerlink" href="#35-erase" title="Permanent link">&para;</a></h3>
+<p>This option allows you to selectively remove parts of the map in an area using a brush. The objects that can be selectively removed when using this feature are:</p>
+<ol>
+<li>Buildings</li>
+<li>Gaia Objects</li>
+<li>Invisible Units</li>
+<li>Layered Terrain</li>
+<li>Trees</li>
+<li>Units<br />
+Note: The layering mode option in this tab seems to have no effect on the way that elements are erased.</li>
+</ol>
+<h2 id="4-options">4. Options<a class="headerlink" href="#4-options" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Options</code> tab in the editor, there are options to:</p>
+<h3 id="41-point-of-view">4.1. Point of View<a class="headerlink" href="#41-point-of-view" title="Permanent link">&para;</a></h3>
+<p>Set the specified player's starting PoV to your current view in the editor using the <code>set view</code> button. Once the view is set, check that it works by clicking <code>go to view</code></p>
+<h3 id="42-testing-difficulty">4.2. Testing Difficulty<a class="headerlink" href="#42-testing-difficulty" title="Permanent link">&para;</a></h3>
+<p>Set the <code>Testing Difficulty</code></p>
+<h3 id="43-full-tech-tree">4.3. Full Tech Tree<a class="headerlink" href="#43-full-tech-tree" title="Permanent link">&para;</a></h3>
+<p>Enable <code>Full Tech Tree</code>. Note that this is a global option, and not specific to the player. Also note that this option does not disable civ bonuses unlike the full tech tree option in normal games!</p>
+<h3 id="44-disable-objects">4.4. Disable Objects<a class="headerlink" href="#44-disable-objects" title="Permanent link">&para;</a></h3>
+<p>Disable Buildings, Units or Techs by moving them from the <code>Full List</code> to the <code>Disabled List</code> by clicking the <code>&lt;</code> arrow. remove an object from the disabled list by clicking <code>&gt;</code>. The <code>&lt;&lt;</code> and <code>&gt;&gt;</code> move all items at once<br />
+Note: Using this option to disable objects is not recommended as there is a better way to do it via triggers which are covered in the <code>Triggers</code> section of this guide.</p>
+<h3 id="45-collide-correcting">4.5. Collide &amp; Correcting<a class="headerlink" href="#45-collide-correcting" title="Permanent link">&para;</a></h3>
+<p>Enabling this option makes stationary units move out the way to let moving units pass through. </p>
+<h3 id="46-villager-force-drop">4.6. Villager Force Drop<a class="headerlink" href="#46-villager-force-drop" title="Permanent link">&para;</a></h3>
+<p>Makes villagers instantly lose their resources when their tasks are switched instead of losing when they actually start working on the other task. This mimics FE behaviour, i.e. if villagers are switched from hunters to sheep, they don't lose any food.</p>
+<h3 id="47-block-humanity-team-change">4.7. Block Humanity Team Change<a class="headerlink" href="#47-block-humanity-team-change" title="Permanent link">&para;</a></h3>
+<p>Lock Teams ONLY for human players.</p>
+<h2 id="5-players">5. Players<a class="headerlink" href="#5-players" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Players</code> tab in the editor, there are several properties that can be changed about the players</p>
+<h3 id="51-number-of-players">5.1. Number of Players<a class="headerlink" href="#51-number-of-players" title="Permanent link">&para;</a></h3>
+<p>The total number of players you have in your scenario</p>
+<h3 id="52-starting-age">5.2. Starting Age<a class="headerlink" href="#52-starting-age" title="Permanent link">&para;</a></h3>
+<p>Specify the starting age for the currently selected player</p>
+<h3 id="53-colour">5.3. Colour<a class="headerlink" href="#53-colour" title="Permanent link">&para;</a></h3>
+<p>Specify the colour of the currently selected player</p>
+<h3 id="54-starting-resources">5.4. Starting Resources<a class="headerlink" href="#54-starting-resources" title="Permanent link">&para;</a></h3>
+<p><code>Food</code>, <code>Wood</code>, <code>Stone</code>, <code>Gold</code> determine the starting amount of the currently selected player's resources</p>
+<h3 id="55-pop-limit">5.5. Pop Limit<a class="headerlink" href="#55-pop-limit" title="Permanent link">&para;</a></h3>
+<p>Determine the maximum population limit allowed for the currently selected player. This value is capped at 500</p>
+<h3 id="56-base-priority">5.6. Base Priority<a class="headerlink" href="#56-base-priority" title="Permanent link">&para;</a></h3>
+<p>This option seems to have no effect on the game.<br />
+(Note: If you are aware of what this does, please reach out to one of the authors of this guide and let them know!)</p>
+<h3 id="57-tribe-name">5.7. Tribe Name<a class="headerlink" href="#57-tribe-name" title="Permanent link">&para;</a></h3>
+<p>Sets the name for the currently selected player <strong>if</strong> they are an AI. Does not effect human players</p>
+<h3 id="58-name-string-id">5.8. Name String ID<a class="headerlink" href="#58-name-string-id" title="Permanent link">&para;</a></h3>
+<p>This field is used for refering to names that the game recognises by default. It can be used to automatically set a <code>Tribe name</code> by using a value that the game recognises. Trying out the value <code>1</code> in this field on an AI and seeing what happens is left as an excersise for the reader.</p>
+<h3 id="59-personality">5.9. Personality<a class="headerlink" href="#59-personality" title="Permanent link">&para;</a></h3>
+<p>The AI to use for this player if they are not a human player. Pick <code>E3-p2.ai</code> to simulate an afk player</p>
+<h3 id="510-player-type">5.10. Player Type<a class="headerlink" href="#510-player-type" title="Permanent link">&para;</a></h3>
+<p>This setting doesn't make a difference to gameplay. The only difference between the two options is that setting this to <code>Either</code> wont auto fill lobby slots with AIs. Setting it to <code>AI</code> will automatically set that player up for you in a lobby game</p>
+<h3 id="511-civilization">5.11. Civilization<a class="headerlink" href="#511-civilization" title="Permanent link">&para;</a></h3>
+<p>Set the currently selected player's civilization</p>
+<h3 id="512-lock-civ">5.12. Lock Civ<a class="headerlink" href="#512-lock-civ" title="Permanent link">&para;</a></h3>
+<p>Prevent the currently selected player from changing their civilization in a lobby</p>
+<h3 id="513-architecture">5.13. Architecture<a class="headerlink" href="#513-architecture" title="Permanent link">&para;</a></h3>
+<p>Change the currently selected player's architecture set to another civilization's.</p>
+<h3 id="514-swap-players">5.14. Swap Players<a class="headerlink" href="#514-swap-players" title="Permanent link">&para;</a></h3>
+<p>Swap the settings for the currently selected player with the specified player.</p>
+<h2 id="6-messages">6. Messages<a class="headerlink" href="#6-messages" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Messages</code> tab, there are different options for displaying text in the scenario.</p>
+<h3 id="61-scenario-instructions">6.1. Scenario Instructions<a class="headerlink" href="#61-scenario-instructions" title="Permanent link">&para;</a></h3>
+<p>This option lets you set the text that is shown in the <code>Instructions</code> tab of the <code>Objectives Panel</code>.</p>
+<p>Note: The <code>Objective Panel</code> can be opened by clicking the button to the right of the Tech Tree button at the top of the screen.</p>
+<h3 id="62-objectives">6.2. Objectives<a class="headerlink" href="#62-objectives" title="Permanent link">&para;</a></h3>
+<p>This option lets you set the text that is shown in the <code>Objectives</code> tab of the <code>Objectives Panel</code>.</p>
+<h3 id="63-hints">6.3. Hints<a class="headerlink" href="#63-hints" title="Permanent link">&para;</a></h3>
+<p>This option lets you set the text that is shown in the <code>Hints</code> tab of the <code>Objectives Panel</code>.</p>
+<h3 id="64-scout">6.4. Scout<a class="headerlink" href="#64-scout" title="Permanent link">&para;</a></h3>
+<p>This option lets you set the text that is shown in the <code>Scout</code> tab of the <code>Objectives Panel</code>.</p>
+<h3 id="65-victory">6.5. Victory<a class="headerlink" href="#65-victory" title="Permanent link">&para;</a></h3>
+<p>This option lets you set the text that is shown to players who win the game before the statistics screen.</p>
+<h3 id="66-defeat">6.6. Defeat<a class="headerlink" href="#66-defeat" title="Permanent link">&para;</a></h3>
+<p>This option lets you set the text that is shown to players who lose the game before the statistics screen.</p>
+<h2 id="7-units">7. Units<a class="headerlink" href="#7-units" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Units</code> tab, there are several options to place and manipulate units.</p>
+<h3 id="71-placing-units">7.1. Placing Units<a class="headerlink" href="#71-placing-units" title="Permanent link">&para;</a></h3>
+<p>Units can be placed on the map from the 4 menus in this tab:</p>
+<p>The game categorises all unit objects in the game into 4 categories, <code>Units</code>, <code>Buildings</code>, <code>Heroes</code>, <code>Others</code>.</p>
+<ol>
+<li><code>Units</code> allows you to place down units that are most commonly seen in regular games.</li>
+<li><code>Buildings</code> allows you to place down most of the different buildings in the game.</li>
+<li><code>Heroes</code> allows you to place down the hero units used in campaigns and scenarios.</li>
+<li><code>Others</code> these are miscellanious units that do not directly come under any of the above categories.</li>
+</ol>
+<p>By default, units are placed in a random rotation, however scrolling up/down before placing a unit allows you to fix its rotation to whichever rotation you want. To go back to placing in a random rotation, select another unit in the menu and then re select the unit for placement.</p>
+<p>Note: While placing these units, changing the player to Gaia will reveal additional hidden units like trees, mines, wolves and other units that only Gaia can own in normal games. There are additional units in the game that cannot be seen in the editor's lists even when using Gaia to place them.</p>
+<p>There are two ways to use these hidden units:</p>
+<ol>
+<li>Use a create object trigger with the hidden unit's object ID</li>
+<li>Use the Advanced Genie Editor (A.G.E.) to unhide hidden units in the editor to allow for manual placement.</li>
+</ol>
+<p>If you do not know how to do either of those, you can refer to the <a href="" title="Jump to: Custom Scenarios &gt; Triggers &gt; Effects NON EXISTENT">Effects</a> section of this guide for the first option, and/or refer to the <a href="" title="Jump to: Unhide Editor Units NON EXISTENT">Unhide Editor Units</a> section of this guide</p>
+<h3 id="72-deleting-units">7.2. Deleting Units<a class="headerlink" href="#72-deleting-units" title="Permanent link">&para;</a></h3>
+<p>Units that are already placed on the map can be deleted from the map by the following ways:</p>
+<ol>
+<li>The first and the most obvious option is to use the <code>Delete</code> option in this tab. This allows us to delete units one by one from the map.</li>
+<li>The first option can be tedious if you need to delete a large amount of units, thus the second option is to use the <code>Erase Units</code> option in the <code>Erase</code> menu under the <code>Terrain</code> tab. Refer to <a href="./#35-erase" title="Jump to: 3.5. Erase">3.5. Erase</a> about how to use the <code>Erase</code> option.</li>
+</ol>
+<h3 id="73-moving-units">7.3. Moving Units<a class="headerlink" href="#73-moving-units" title="Permanent link">&para;</a></h3>
+<p>Units already placed on the map can be moved around on the map by using the <code>Move</code> option in this tab.</p>
+<h3 id="74-rotating-units">7.4. Rotating Units<a class="headerlink" href="#74-rotating-units" title="Permanent link">&para;</a></h3>
+<p>Units already placed on the map can be rotated by using the <code>Rotate</code> option in this tab. After the <code>Rotate</code> option is selected, clicking a unit will rotate it clockwise, and right clicking it will rotate it counter clockwise.</p>
+<h3 id="75-selecting-units">7.5. Selecting Units<a class="headerlink" href="#75-selecting-units" title="Permanent link">&para;</a></h3>
+<p>When selecting a unit, its statistics like HP, Attack, Armour and units garrisoned inside it are shown. Units inside other units can be deleted using the garrison delete.</p>
+<h3 id="76-converting-units">7.6. Converting Units<a class="headerlink" href="#76-converting-units" title="Permanent link">&para;</a></h3>
+<p>This option allows you to convert existing units <strong>from</strong> one or more players <strong>to</strong> another player.</p>
+<p>When enabled, 9 new options (to the right) appear in the menu for selecting which players' units you want to convert <strong>from</strong>. The currently selected player (on the left) is the player the units will be converted <strong>to</strong>. After picking a <code>Brush Size</code> when you click on an area, all of the units belonging to the players being converted <strong>from</strong> will be converted <strong>to</strong> the selected player.</p>
+<p>Remember the players being converted <strong>from</strong> are selected on the right side using the checkboxes, and the player being converted <strong>to</strong> is the one selected in the dropdown to the left!</p>
+<h2 id="8-cinematics">8. Cinematics<a class="headerlink" href="#8-cinematics" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Cinematics</code> tab, there are options to change the movie clips displayed before or after a scenario. These are mainly used in the campaigns, and functionality for changing them in scenarios is bugged as of the time of the writing of this guide.</p>
+<h2 id="9-diplomacy">9. Diplomacy<a class="headerlink" href="#9-diplomacy" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Diplomacy</code> tab, there are options to change the diplomacy settings of the game:</p>
+<h3 id="91-diplomacy-stance">9.1. Diplomacy Stance<a class="headerlink" href="#91-diplomacy-stance" title="Permanent link">&para;</a></h3>
+<p>The grid of checkboxes to the right allows you to change each player's stance with all of the other players.</p>
+<h3 id="92-lock-teams">9.2. Lock Teams<a class="headerlink" href="#92-lock-teams" title="Permanent link">&para;</a></h3>
+<p>This option makes it so that teams cannot be changed by players in the game. They can still be changed by triggers.</p>
+<h3 id="93-players-choose-teams">9.3. Players Choose Teams<a class="headerlink" href="#93-players-choose-teams" title="Permanent link">&para;</a></h3>
+<p>Disabling this option will not allow players to pick teams in the lobby before the start of the game. The teams will not be locked however, and may still be changed in game <strong>unless</strong> the <code>Lock Teams</code> option is also enabled.</p>
+<h3 id="94-random-start-points">9.4. Random Start Points<a class="headerlink" href="#94-random-start-points" title="Permanent link">&para;</a></h3>
+<p>This option seems to have no effect on the game.<br />
+(Note: If you are aware of what this does, please reach out to one of the authors of this guide and let them know!)</p>
+<h2 id="10-triggers">10. Triggers<a class="headerlink" href="#10-triggers" title="Permanent link">&para;</a></h2>
+<p>Under the <code>Triggers</code> tab, triggers can be manipulated in a scenario. Triggers are the most powerful component of a scenario as they allow us to do a plethora of different things in a game. They can be used to add more dynamics and game mechanics to a scenario, almost anything that you could think of (within the context of AoE2 and its own limits) is possible to do in some way using triggers.</p>
+<p>Details about how to use triggers are covered in the triggers section of this guide.</p>
+<h2 id="11-useful-hotkeys">11. Useful Hotkeys<a class="headerlink" href="#11-useful-hotkeys" title="Permanent link">&para;</a></h2>
+<p>Some hotkeys that are useful to know and make the workflow of making and testing a scenario faster</p>
+<ol>
+<li>Scrolling up and down on a dropdown list makes the values go up and down the lists as well</li>
+<li>Pressing or holding a letter in any object selection menu will cycle through the list of objects</li>
+<li>If you are on a tab where a player can be selected (except triggers) then pressing numbers 1-8 will switch to that player</li>
+<li>When testing a scenario (this also works in SP games, and is counted as a cheat) pressing <code>Ctrl+Shift+F#</code> where <code>#</code> is the number of a player, will let you control that player. For example, pressing <code>Ctrl+Shift+F4</code> will shift your control to player 4</li>
+<li>Scrolling when placing objects will rotate them. Some gaia buildings and units have entirely different graphics for different rotations!</li>
+<li>Pressing <code>Ctrl+G</code> once allows for off grid placement of units. Pressing it again allows for stacking units and off grid placement together. Pressing a 3<sup>rd</sup> time allows for on grid unit placement with stacking enabled. Pressing a 4<sup>th</sup> time makes it go back to default! Even Buildings can be stacked using this option!</li>
+<li><code>Ctrl+Q</code> Quit the scenario editor</li>
+<li><code>Ctrl+A</code> Toggle hitboxes on every unit on the map</li>
+<li><code>Ctrl+S</code> Save the scenario</li>
+<li><code>Ctrl+L</code> Load a scenario</li>
+<li><code>Ctrl+N</code> Create a new scenario</li>
+<li>Tabs<ol>
+<li><code>F1</code>-<code>F10</code> selects a tab in the scenario editor. <code>F1</code> - Map, <code>F2</code> - Terrain, and so on</li>
+<li><code>Ctrl+W</code> Switch to the <code>Messages</code> tab</li>
+<li><code>Ctrl+R</code> Switch to the <code>Triggers</code> tab</li>
+<li><code>Ctrl+T</code> Switch to the <code>Terrain</code> tab</li>
+<li><code>Ctrl+U</code> Switch to the <code>Units</code> tab</li>
+<li><code>Ctrl+O</code> Switch to the <code>Options</code> tab</li>
+<li><code>Ctrl+P</code> Switch to the <code>Players</code> tab</li>
+<li><code>Ctrl+D</code> Switch to the <code>Diplomacy</code> tab</li>
+<li><code>Ctrl+C</code> Switch to the <code>Cinematics</code> tab</li>
+<li><code>Ctrl+V</code> Switch to the <code>Global Victory</code> tab</li>
+<li><code>Ctrl+M</code> Switch to the <code>Map</code> tab</li>
+<li><code>Ctrl+Space</code> Test Scenario (Currently bugged, causes a crash in the game D:)</li>
+</ol>
+</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../general/hotkeys/hotkeys/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hotkeys" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Hotkeys
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../triggers/basics/" class="md-footer__link md-footer__link--next" aria-label="Next: Trigger Basics" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Trigger Basics
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

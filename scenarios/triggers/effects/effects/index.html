@@ -1,0 +1,2599 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://divy1211.github.io/AoE2DE_UGC_Guide/scenarios/triggers/effects/effects/">
+      
+      <link rel="icon" href="../../../../imgs/code.svg">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.11">
+    
+    
+      
+        <title>Effects - The Ultimate Guide To AoE2DE UGC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.3754935a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,400i,700%7CSource+Code+Pro&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto Slab";--md-code-font-family:"Source Code Pro"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-what-are-effects" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-header__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Ultimate Guide To AoE2DE UGC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Effects
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../.." class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../general/damage_calculation/" class="md-tabs__link">
+        Game Mechanics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../basics/" class="md-tabs__link md-tabs__link--active">
+        Custom Scenarios
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../general/xs/beginner/" class="md-tabs__link">
+        XS Scripting
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="The Ultimate Guide To AoE2DE UGC" class="md-nav__button md-logo" aria-label="The Ultimate Guide To AoE2DE UGC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg>
+
+    </a>
+    The Ultimate Guide To AoE2DE UGC
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Game Mechanics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Game Mechanics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Game Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/damage_calculation/" class="md-nav__link">
+        Damage Calculation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/attributes/" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/resources/resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/hotkeys/hotkeys/" class="md-nav__link">
+        Hotkeys
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Custom Scenarios
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Custom Scenarios" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Custom Scenarios
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basics/" class="md-nav__link">
+        Scenario Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Triggers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Triggers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Triggers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basics/" class="md-nav__link">
+        Trigger Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Effects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Effects
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-are-effects" class="md-nav__link">
+    1. What are effects?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-common-terminology" class="md-nav__link">
+    2. Common Terminology
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Common Terminology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bug" class="md-nav__link">
+    2.1. Bug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-debugging" class="md-nav__link">
+    2.2. Debugging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-execution" class="md-nav__link">
+    2.3. Execution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-effects-and-how-to-use-them" class="md-nav__link">
+    3. Effects and How to Use Them
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Effects and How to Use Them">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ai-script-goal" class="md-nav__link">
+    3.1. AI Script Goal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-acknowledge-ai-signal" class="md-nav__link">
+    3.2. Acknowledge AI Signal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-acknowledge-multiplayer-ai-signal" class="md-nav__link">
+    3.3. Acknowledge Multiplayer AI Signal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-activate-trigger" class="md-nav__link">
+    3.4. Activate Trigger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-attack-move" class="md-nav__link">
+    3.5. Attack Move
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-change-civilization-name" class="md-nav__link">
+    3.6. Change Civilization Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-change-diplomacy" class="md-nav__link">
+    3.7. Change Diplomacy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-change-object-armor" class="md-nav__link">
+    3.8. Change Object Armor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-change-object-attack" class="md-nav__link">
+    3.9. Change Object Attack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-change-object-civilization-name" class="md-nav__link">
+    3.10. Change Object Civilization Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-change-object-cost" class="md-nav__link">
+    3.11. Change Object Cost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-change-object-description" class="md-nav__link">
+    3.12. Change Object Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-change-object-hp" class="md-nav__link">
+    3.13. Change Object HP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-change-object-icon" class="md-nav__link">
+    3.14. Change Object Icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-change-object-name" class="md-nav__link">
+    3.15. Change Object Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-change-object-player-color" class="md-nav__link">
+    3.16. Change Object Player Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#317-change-object-player-name" class="md-nav__link">
+    3.17. Change Object Player Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#318-change-object-range" class="md-nav__link">
+    3.18. Change Object Range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#319-change-object-speed" class="md-nav__link">
+    3.19. Change Object Speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#320-change-object-stance" class="md-nav__link">
+    3.20. Change Object Stance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#321-change-ownership" class="md-nav__link">
+    3.21. Change Ownership
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-change-player-name" class="md-nav__link">
+    3.22. Change Player Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-change-research-location" class="md-nav__link">
+    3.23. Change Research Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-change-technology-cost" class="md-nav__link">
+    3.24. Change Technology Cost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325-change-technology-description" class="md-nav__link">
+    3.25. Change Technology Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#326-change-technology-name" class="md-nav__link">
+    3.26. Change Technology Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#327-change-technology-research-time" class="md-nav__link">
+    3.27. Change Technology Research Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#328-change-train-location" class="md-nav__link">
+    3.28. Change Train Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#329-change-variable" class="md-nav__link">
+    3.29. Change Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#330-change-view" class="md-nav__link">
+    3.30. Change View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#331-clear-instructions" class="md-nav__link">
+    3.31. Clear Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-clear-timer" class="md-nav__link">
+    3.32. Clear Timer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-create-garrisoned-object" class="md-nav__link">
+    3.33. Create Garrisoned Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-create-object" class="md-nav__link">
+    3.34. Create Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#335-damage-object" class="md-nav__link">
+    3.35. Damage Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#336-deactivate-trigger" class="md-nav__link">
+    3.36. Deactivate Trigger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#337-declare-victory" class="md-nav__link">
+    3.37. Declare Victory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#338-disable-object-selection" class="md-nav__link">
+    3.38. Disable Object Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#339-disable-technology-stacking" class="md-nav__link">
+    3.39. Disable Technology Stacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#340-disable-unit-targeting" class="md-nav__link">
+    3.40. Disable Unit Targeting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#341-display-instructions" class="md-nav__link">
+    3.41. Display Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-display-timer" class="md-nav__link">
+    3.42. Display Timer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343-enable-disable-object" class="md-nav__link">
+    3.43. Enable Disable Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344-enable-disable-technology" class="md-nav__link">
+    3.44. Enable Disable Technology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#345-enable-object-selection" class="md-nav__link">
+    3.45. Enable Object Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#346-enable-technology-stacking" class="md-nav__link">
+    3.46. Enable Technology Stacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#347-enable-unit-targeting" class="md-nav__link">
+    3.47. Enable Unit Targeting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#348-freeze-object" class="md-nav__link">
+    3.48. Freeze Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#349-heal-object" class="md-nav__link">
+    3.49. Heal Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#350-kill-object" class="md-nav__link">
+    3.50. Kill Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#351-lock-gate" class="md-nav__link">
+    3.51. Lock Gate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-modify-attribute" class="md-nav__link">
+    3.52. Modify Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#353-modify-resource" class="md-nav__link">
+    3.53. Modify Resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#354-modify-resource-by-variable" class="md-nav__link">
+    3.54. Modify Resource By Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#355-patrol" class="md-nav__link">
+    3.55. Patrol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#356-place-foundation" class="md-nav__link">
+    3.56. Place Foundation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#357-play-sound" class="md-nav__link">
+    3.57. Play Sound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#358-remove-object" class="md-nav__link">
+    3.58. Remove Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#359-replace-object" class="md-nav__link">
+    3.59. Replace Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#360-research-technology" class="md-nav__link">
+    3.60. Research Technology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#361-script-call" class="md-nav__link">
+    3.61. Script Call
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-send-chat" class="md-nav__link">
+    3.62. Send Chat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#363-set-building-gather-point" class="md-nav__link">
+    3.63. Set Building Gather Point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#364-set-player-visibility" class="md-nav__link">
+    3.64. Set Player Visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#365-stop-object" class="md-nav__link">
+    3.65. Stop Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#366-task-object" class="md-nav__link">
+    3.66. Task Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#367-teleport-object" class="md-nav__link">
+    3.67. Teleport Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#368-tribute" class="md-nav__link">
+    3.68. Tribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#369-unload" class="md-nav__link">
+    3.69. Unload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#370-unlock-gate" class="md-nav__link">
+    3.70. Unlock Gate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#371-use-advanced-buttons" class="md-nav__link">
+    3.71. Use Advanced Buttons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" data-md-state="indeterminate" type="checkbox" id="__nav_3_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Useful Tools
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Useful Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Useful Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_3_1">
+        AoE2ScenarioParser
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AoE2ScenarioParser" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          AoE2ScenarioParser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../useful_tools/parser/basics/" class="md-nav__link">
+        Parser Basics
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        XS Scripting
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="XS Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          XS Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/xs/beginner/" class="md-nav__link">
+        For Beginners
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/xs/programmer/" class="md-nav__link">
+        For Programmers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/xs/functions/" class="md-nav__link">
+        Functions Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/xs/constants/" class="md-nav__link">
+        Constant Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../general/xs/bugs/" class="md-nav__link">
+        Known Bugs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-are-effects" class="md-nav__link">
+    1. What are effects?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-common-terminology" class="md-nav__link">
+    2. Common Terminology
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Common Terminology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bug" class="md-nav__link">
+    2.1. Bug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-debugging" class="md-nav__link">
+    2.2. Debugging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-execution" class="md-nav__link">
+    2.3. Execution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-effects-and-how-to-use-them" class="md-nav__link">
+    3. Effects and How to Use Them
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Effects and How to Use Them">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ai-script-goal" class="md-nav__link">
+    3.1. AI Script Goal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-acknowledge-ai-signal" class="md-nav__link">
+    3.2. Acknowledge AI Signal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-acknowledge-multiplayer-ai-signal" class="md-nav__link">
+    3.3. Acknowledge Multiplayer AI Signal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-activate-trigger" class="md-nav__link">
+    3.4. Activate Trigger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-attack-move" class="md-nav__link">
+    3.5. Attack Move
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-change-civilization-name" class="md-nav__link">
+    3.6. Change Civilization Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-change-diplomacy" class="md-nav__link">
+    3.7. Change Diplomacy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-change-object-armor" class="md-nav__link">
+    3.8. Change Object Armor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-change-object-attack" class="md-nav__link">
+    3.9. Change Object Attack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-change-object-civilization-name" class="md-nav__link">
+    3.10. Change Object Civilization Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-change-object-cost" class="md-nav__link">
+    3.11. Change Object Cost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-change-object-description" class="md-nav__link">
+    3.12. Change Object Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-change-object-hp" class="md-nav__link">
+    3.13. Change Object HP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-change-object-icon" class="md-nav__link">
+    3.14. Change Object Icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-change-object-name" class="md-nav__link">
+    3.15. Change Object Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-change-object-player-color" class="md-nav__link">
+    3.16. Change Object Player Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#317-change-object-player-name" class="md-nav__link">
+    3.17. Change Object Player Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#318-change-object-range" class="md-nav__link">
+    3.18. Change Object Range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#319-change-object-speed" class="md-nav__link">
+    3.19. Change Object Speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#320-change-object-stance" class="md-nav__link">
+    3.20. Change Object Stance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#321-change-ownership" class="md-nav__link">
+    3.21. Change Ownership
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-change-player-name" class="md-nav__link">
+    3.22. Change Player Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-change-research-location" class="md-nav__link">
+    3.23. Change Research Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-change-technology-cost" class="md-nav__link">
+    3.24. Change Technology Cost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325-change-technology-description" class="md-nav__link">
+    3.25. Change Technology Description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#326-change-technology-name" class="md-nav__link">
+    3.26. Change Technology Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#327-change-technology-research-time" class="md-nav__link">
+    3.27. Change Technology Research Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#328-change-train-location" class="md-nav__link">
+    3.28. Change Train Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#329-change-variable" class="md-nav__link">
+    3.29. Change Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#330-change-view" class="md-nav__link">
+    3.30. Change View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#331-clear-instructions" class="md-nav__link">
+    3.31. Clear Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-clear-timer" class="md-nav__link">
+    3.32. Clear Timer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-create-garrisoned-object" class="md-nav__link">
+    3.33. Create Garrisoned Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-create-object" class="md-nav__link">
+    3.34. Create Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#335-damage-object" class="md-nav__link">
+    3.35. Damage Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#336-deactivate-trigger" class="md-nav__link">
+    3.36. Deactivate Trigger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#337-declare-victory" class="md-nav__link">
+    3.37. Declare Victory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#338-disable-object-selection" class="md-nav__link">
+    3.38. Disable Object Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#339-disable-technology-stacking" class="md-nav__link">
+    3.39. Disable Technology Stacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#340-disable-unit-targeting" class="md-nav__link">
+    3.40. Disable Unit Targeting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#341-display-instructions" class="md-nav__link">
+    3.41. Display Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-display-timer" class="md-nav__link">
+    3.42. Display Timer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343-enable-disable-object" class="md-nav__link">
+    3.43. Enable Disable Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344-enable-disable-technology" class="md-nav__link">
+    3.44. Enable Disable Technology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#345-enable-object-selection" class="md-nav__link">
+    3.45. Enable Object Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#346-enable-technology-stacking" class="md-nav__link">
+    3.46. Enable Technology Stacking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#347-enable-unit-targeting" class="md-nav__link">
+    3.47. Enable Unit Targeting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#348-freeze-object" class="md-nav__link">
+    3.48. Freeze Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#349-heal-object" class="md-nav__link">
+    3.49. Heal Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#350-kill-object" class="md-nav__link">
+    3.50. Kill Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#351-lock-gate" class="md-nav__link">
+    3.51. Lock Gate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-modify-attribute" class="md-nav__link">
+    3.52. Modify Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#353-modify-resource" class="md-nav__link">
+    3.53. Modify Resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#354-modify-resource-by-variable" class="md-nav__link">
+    3.54. Modify Resource By Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#355-patrol" class="md-nav__link">
+    3.55. Patrol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#356-place-foundation" class="md-nav__link">
+    3.56. Place Foundation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#357-play-sound" class="md-nav__link">
+    3.57. Play Sound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#358-remove-object" class="md-nav__link">
+    3.58. Remove Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#359-replace-object" class="md-nav__link">
+    3.59. Replace Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#360-research-technology" class="md-nav__link">
+    3.60. Research Technology
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#361-script-call" class="md-nav__link">
+    3.61. Script Call
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-send-chat" class="md-nav__link">
+    3.62. Send Chat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#363-set-building-gather-point" class="md-nav__link">
+    3.63. Set Building Gather Point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#364-set-player-visibility" class="md-nav__link">
+    3.64. Set Player Visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#365-stop-object" class="md-nav__link">
+    3.65. Stop Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#366-task-object" class="md-nav__link">
+    3.66. Task Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#367-teleport-object" class="md-nav__link">
+    3.67. Teleport Object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#368-tribute" class="md-nav__link">
+    3.68. Tribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#369-unload" class="md-nav__link">
+    3.69. Unload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#370-unlock-gate" class="md-nav__link">
+    3.70. Unlock Gate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#371-use-advanced-buttons" class="md-nav__link">
+    3.71. Use Advanced Buttons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide/edit/master/docs/scenarios/triggers/effects/effects.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Effects</h1>
+                
+                <p><em>Written by: Alian713</em></p>
+<hr />
+<h2 id="1-what-are-effects">1. What are effects?<a class="headerlink" href="#1-what-are-effects" title="Permanent link">&para;</a></h2>
+<p>Effects are one of the two basic elements of triggers (the other one being Conditions). They are essentially "cheats" in some sense, that allow you to change information about the game as the game is being played. All technologies in the game utilise effects to do what they are meant to do. Usually, a technology almost always uses multiple effects in combination to achieve its purposes. Examples of technologies and the effects they use will be given when the appropriate effects for them are encountered. Some examples of basic effects that can be used in the scenario editor are: <code>Create Unit</code>, <code>Send Chat</code>, <code>Display Instructions</code> etc.. To use effects,</p>
+<ol>
+<li>Create a trigger</li>
+<li>Add an effect to it.</li>
+<li>Pick the effect you wish to use from the effects list.</li>
+<li>Configure the settings of the effect as desired</li>
+</ol>
+<p>Lets look at all the effects and their configurations one by one:</p>
+<h2 id="2-common-terminology">2. Common Terminology<a class="headerlink" href="#2-common-terminology" title="Permanent link">&para;</a></h2>
+<p>Feel free to skip these if you are already familiar with them</p>
+<h3 id="21-bug">2.1. Bug<a class="headerlink" href="#21-bug" title="Permanent link">&para;</a></h3>
+<p>Anything in the map that is not working as intended is a bug.</p>
+<p>Historically, the term "bug" comes from physical bugs getting stuck in computers and causing them to malfunction back in the day when computers used to be the size of entire rooms.</p>
+<p>In today's context, a bug in anything just means that its malfunctioning and not working as intended.</p>
+<h3 id="22-debugging">2.2. Debugging<a class="headerlink" href="#22-debugging" title="Permanent link">&para;</a></h3>
+<p>Attempting to find out the cause of the malfunction, and removing/fixing that cause is known as debugging.</p>
+<h3 id="23-execution">2.3. Execution<a class="headerlink" href="#23-execution" title="Permanent link">&para;</a></h3>
+<p>Executing a trigger means that we carry out its effects.</p>
+<h2 id="3-effects-and-how-to-use-them">3. Effects and How to Use Them<a class="headerlink" href="#3-effects-and-how-to-use-them" title="Permanent link">&para;</a></h2>
+<h3 id="31-ai-script-goal">3.1. AI Script Goal<a class="headerlink" href="#31-ai-script-goal" title="Permanent link">&para;</a></h3>
+<p>This effect is used to communicate with the AI. An AI Trigger NUMBER set with this effect can be detected in an AI script using <code>event-detected trigger NUMBER</code>. The configurations for this effect are as follows:</p>
+<ol>
+<li>AI Script Goal: AI Trigger ID to set</li>
+</ol>
+<h3 id="32-acknowledge-ai-signal">3.2. Acknowledge AI Signal<a class="headerlink" href="#32-acknowledge-ai-signal" title="Permanent link">&para;</a></h3>
+<p>When <code>set-signal</code> is used in an AI file, this effect is used to unset it so it can be reused. This only works in Single Player games. Refer to the <a href="./#33-acknowledge-multiplayer-ai-signal" title="Jump to: Acknowledge Multiplayer AI Signal">Acknowledge Multiplayer AI Signal</a> effect for the multiplayer version of this effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>AI Signal Value: The AI Signal ID to acknowledge</li>
+</ol>
+<h3 id="33-acknowledge-multiplayer-ai-signal">3.3. Acknowledge Multiplayer AI Signal<a class="headerlink" href="#33-acknowledge-multiplayer-ai-signal" title="Permanent link">&para;</a></h3>
+<p>When <code>set-signal</code> is used in an AI file, this effect is used to unset it so it can be reused. This only works in Multiplayer games. Refer to the <a href="./#32-acknowledge-ai-signal" title="Jump to: Acknowledge AI Signal">Acknowledge AI Signal</a> effect for the single player version of this effect.. The configurations for this effect are as follows:</p>
+<ol>
+<li>AI Signal Value: The AI Signal ID to acknowledge</li>
+</ol>
+<h3 id="34-activate-trigger">3.4. Activate Trigger<a class="headerlink" href="#34-activate-trigger" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to activate a trigger. The configurations for this effect are as follows:</p>
+<ol>
+<li>Trigger List: The trigger to activate/deactivate</li>
+</ol>
+<h3 id="35-attack-move">3.5. Attack Move<a class="headerlink" href="#35-attack-move" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to command units of a given player to attack move to a location. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="36-change-civilization-name">3.6. Change Civilization Name<a class="headerlink" href="#36-change-civilization-name" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the name of the civilization of a player to any desired name. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<h3 id="37-change-diplomacy">3.7. Change Diplomacy<a class="headerlink" href="#37-change-diplomacy" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the diplomacy stance of the soruce players with the target player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Diplomacy Stance: The new diplomacy state</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Target Player: This is the second player that is affected by the effect</li>
+</ol>
+<h3 id="38-change-object-armor">3.8. Change Object Armor<a class="headerlink" href="#38-change-object-armor" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the armour of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Armour or Attack Class: The Armour/Attack Class to Modify</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value</li>
+</ol>
+<h3 id="39-change-object-attack">3.9. Change Object Attack<a class="headerlink" href="#39-change-object-attack" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the attack of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Armour or Attack Class: The Armour/Attack Class to Modify</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value</li>
+</ol>
+<h3 id="310-change-object-civilization-name">3.10. Change Object Civilization Name<a class="headerlink" href="#310-change-object-civilization-name" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the civilization name of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="311-change-object-cost">3.11. Change Object Cost<a class="headerlink" href="#311-change-object-cost" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the cost of a specifed unit for a particular player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Food: The new food cost of the unit/technology</li>
+<li>Wood: The new wood cost of the unit/technology</li>
+<li>Stone: The new stone cost of the unit/technology</li>
+<li>Gold: The new Gold cost of the unit/technology</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2<sup>nd</sup> effect you can set them to anything you like.</li>
+<li>Units in the game can only have a maximum of 2 different resource of costs.</li>
+</ol>
+<h3 id="312-change-object-description">3.12. Change Object Description<a class="headerlink" href="#312-change-object-description" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the description of a specifed unit for a particular player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>There are special keywords that are used to display certain information about an object in its description</li>
+<li>This is illustrated with the following example:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Build Trade Workshop (&lt;Cost&gt;)
+Allows you to buy special perks
+
+&lt;hp&gt; &lt;attack&gt; &lt;armor&gt; &lt;piercearmor&gt; &lt;garrison&gt; LoS: 4
+</code></pre></div>
+</td></tr></table></li>
+<li>Here, all the words in the angle brackets are replaced by those relevant statistics for the unit.</li>
+</ol>
+<h3 id="313-change-object-hp">3.13. Change Object HP<a class="headerlink" href="#313-change-object-hp" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the max HP of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.</li>
+</ol>
+<h3 id="314-change-object-icon">3.14. Change Object Icon<a class="headerlink" href="#314-change-object-icon" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the icon of existing units of a given player to the 2<sup>nd</sup> unit's icon. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Unit List 2: This is the second unit to affect</li>
+</ol>
+<h3 id="315-change-object-name">3.15. Change Object Name<a class="headerlink" href="#315-change-object-name" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the names of existing units of a given player to the specified name. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map</li>
+</ol>
+<h3 id="316-change-object-player-color">3.16. Change Object Player Color<a class="headerlink" href="#316-change-object-player-color" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the colour of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Player Color: The new colour of the unit</li>
+</ol>
+<h3 id="317-change-object-player-name">3.17. Change Object Player Name<a class="headerlink" href="#317-change-object-player-name" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the player name of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="318-change-object-range">3.18. Change Object Range<a class="headerlink" href="#318-change-object-range" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the range of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+</ol>
+<h3 id="319-change-object-speed">3.19. Change Object Speed<a class="headerlink" href="#319-change-object-speed" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the speed of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="320-change-object-stance">3.20. Change Object Stance<a class="headerlink" href="#320-change-object-stance" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the stance of units of a given player to the given stance. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Attack Stance: Set the new stance of the unit, aggressive, defensive, stand ground or no attack</li>
+</ol>
+<h3 id="321-change-ownership">3.21. Change Ownership<a class="headerlink" href="#321-change-ownership" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to convert units of the source player to the target player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Target Player: This is the second player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Flash Object: When this is enabled if the source and target players are the same, the selected object(s) will be flashed</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players</li>
+</ol>
+<h3 id="322-change-player-name">3.22. Change Player Name<a class="headerlink" href="#322-change-player-name" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the name of a player to any desired name. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<h3 id="323-change-research-location">3.23. Change Research Location<a class="headerlink" href="#323-change-research-location" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the research location of a specifed technology for a particular player to another unit. The research location of Loom is the Town Centre. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+<li>Unit List 2: This is the second unit to affect</li>
+<li>Button Location: The location of the button for a unit or technology. This number is given by <span class="arithmatex">\((row-1)\times5+column\)</span>. For example, the button location for the man at arms <strong>research</strong> in the barracks, which is in the 2<sup>nd</sup> row and 1<sup>st</sup> column, is given by <span class="arithmatex">\((2-1)\times5+1 = 6\)</span></li>
+</ol>
+<h3 id="324-change-technology-cost">3.24. Change Technology Cost<a class="headerlink" href="#324-change-technology-cost" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change a technology's cost for a particular player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+<li>Food: The new food cost of the unit/technology</li>
+<li>Wood: The new wood cost of the unit/technology</li>
+<li>Stone: The new stone cost of the unit/technology</li>
+<li>Gold: The new Gold cost of the unit/technology</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Due to a current bug in the game, this effect changes the cost of the tech for all players</li>
+<li>Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2<sup>nd</sup> effect you can set them to anything you like.</li>
+<li>Techs in the game can only have a maximum of 3 different resource of costs.</li>
+</ol>
+<h3 id="325-change-technology-description">3.25. Change Technology Description<a class="headerlink" href="#325-change-technology-description" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change a technology's Description for a particular player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<h3 id="326-change-technology-name">3.26. Change Technology Name<a class="headerlink" href="#326-change-technology-name" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change a technology's name for a particular player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<h3 id="327-change-technology-research-time">3.27. Change Technology Research Time<a class="headerlink" href="#327-change-technology-research-time" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change a technology's research time for a particular player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+</ol>
+<h3 id="328-change-train-location">3.28. Change Train Location<a class="headerlink" href="#328-change-train-location" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the train location of a specifed unit for a particular player to another unit. The train location of Archers is Archery Range. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Unit List 2: This is the second unit to affect</li>
+<li>Button Location: The location of the button for a unit or technology. This number is given by <span class="arithmatex">\((row-1)\times5+column\)</span>. For example, the button location for the man at arms <strong>research</strong> in the barracks, which is in the 2<sup>nd</sup> row and 1<sup>st</sup> column, is given by <span class="arithmatex">\((2-1)\times5+1 = 6\)</span></li>
+</ol>
+<h3 id="329-change-variable">3.29. Change Variable<a class="headerlink" href="#329-change-variable" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to change the value of a variable.. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+<li>Variable: The variable to modify</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<h3 id="330-change-view">3.30. Change View<a class="headerlink" href="#330-change-view" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to move the camera of the player to a specified location. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Scroll: If this is enabled, changing the camera to a new position shows a scrolling animation from the position the player was previously on. If not enabled, the camera cuts to the new position wihout any animations.</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect can be used to bring attention of the player to a certain part of the map</li>
+</ol>
+<h3 id="331-clear-instructions">3.31. Clear Instructions<a class="headerlink" href="#331-clear-instructions" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to clear instructions on the screen before the timer for that instruction is up.. The configurations for this effect are as follows:</p>
+<ol>
+<li>Panel Position: Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect is not used very often, since mostly you want your display instruction effects to display an instruction for the full length of time you specify</li>
+</ol>
+<h3 id="332-clear-timer">3.32. Clear Timer<a class="headerlink" href="#332-clear-timer" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to remove a displayed timer from the screen. The configurations for this effect are as follows:</p>
+<ol>
+<li>Timer: The time to display the message for</li>
+</ol>
+<h3 id="333-create-garrisoned-object">3.33. Create Garrisoned Object<a class="headerlink" href="#333-create-garrisoned-object" title="Permanent link">&para;</a></h3>
+<p>This effect creates the unit chosen in the 2<sup>nd</sup> list inside the selected object or the unit chosen in the 1<sup>st</sup> list. The unit that the created unit is garrisoned inside does not need to be of the same player.. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Unit List 2: This is the second unit to affect</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability</li>
+</ol>
+<h3 id="334-create-object">3.34. Create Object<a class="headerlink" href="#334-create-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to create a unit or building for the specified player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Facet: The rotation of the created unit</li>
+</ol>
+<h3 id="335-damage-object">3.35. Damage Object<a class="headerlink" href="#335-damage-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to deal damage to units of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.</li>
+<li>This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.</li>
+</ol>
+<h3 id="336-deactivate-trigger">3.36. Deactivate Trigger<a class="headerlink" href="#336-deactivate-trigger" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to activate a trigger. The configurations for this effect are as follows:</p>
+<ol>
+<li>Trigger List: The trigger to activate/deactivate</li>
+</ol>
+<h3 id="337-declare-victory">3.37. Declare Victory<a class="headerlink" href="#337-declare-victory" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to grant victory or defeat to a specifed player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Victory: If this is selected, the chosen player will win the game. If it is not selected, then the chosen player is defeated</li>
+</ol>
+<h3 id="338-disable-object-selection">3.38. Disable Object Selection<a class="headerlink" href="#338-disable-object-selection" title="Permanent link">&para;</a></h3>
+<p>This effect makes specified units of the given player unselectable. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="339-disable-technology-stacking">3.39. Disable Technology Stacking<a class="headerlink" href="#339-disable-technology-stacking" title="Permanent link">&para;</a></h3>
+<p>This effect disables 256x tech mode for the specified technology and player. Refer to the <a href="./#346-enable-technology-stacking" title="Jump to: Enable Technology Stacking">Enable Technology Stacking</a> effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+</ol>
+<h3 id="340-disable-unit-targeting">3.40. Disable Unit Targeting<a class="headerlink" href="#340-disable-unit-targeting" title="Permanent link">&para;</a></h3>
+<p>This effect makes it so that the specified units of the given player cannot be targeted (basically, you can't perform any right click actions from another unit on these units anymore) by other units. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="341-display-instructions">3.41. Display Instructions<a class="headerlink" href="#341-display-instructions" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to display instructions on the screen. An icon of a unit may also be displayed along with the instructions. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Display Time: The amount of time to display the instruction for</li>
+<li>Panel Position: Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen</li>
+<li>Play Sound: The sound to play</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+<li>Sound Name: The name of the sound to play</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect is useful for making dialogue sequences</li>
+<li>When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time</li>
+<li>Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:<ol>
+<li>&lt;BLUE></li>
+<li>&lt;RED></li>
+<li>&lt;GREEN></li>
+<li>&lt;YELLOW></li>
+<li>&lt;AQUA></li>
+<li>&lt;PURPLE></li>
+<li>&lt;GREY></li>
+<li>&lt;ORANGE></li>
+</ol>
+</li>
+</ol>
+<h3 id="342-display-timer">3.42. Display Timer<a class="headerlink" href="#342-display-timer" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to display a timer on screen. The configurations for this effect are as follows:</p>
+<ol>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Display Time: The amount of time to display the instruction for</li>
+<li>Time Unit: This specifies the unit of time used in the timer trigger. This can be seconds, minutes or years</li>
+<li>Timer: The time to display the message for</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:<ol>
+<li>&lt;BLUE></li>
+<li>&lt;RED></li>
+<li>&lt;GREEN></li>
+<li>&lt;YELLOW></li>
+<li>&lt;AQUA></li>
+<li>&lt;PURPLE></li>
+<li>&lt;GREY></li>
+<li>&lt;ORANGE></li>
+</ol>
+</li>
+</ol>
+<h3 id="343-enable-disable-object">3.43. Enable Disable Object<a class="headerlink" href="#343-enable-disable-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to enable/disable any unit for a specific player. Note that sometimes, simply enabling a unit wont allow you to train them, because if it is not a default unit, the game doesn't know which building to train the unit in. Thus, A train location and a train button (<a href="./#328-change-train-location" title="Jump to: Change Train Location">Change Train Location</a>), a cost (<a href="./#311-change-object-cost" title="Jump to: Change Object Cost">Change Object Cost</a>), and optionally a discription (<a href="./#312-change-object-description" title="Jump to: Change Object Description">Change Object Description</a>), of the unit are needed to also be set using additional effects to allow training the enabled unit.. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Enabled: If this is selected, the units/technology is enabled if it is not already enabled</li>
+</ol>
+<h3 id="344-enable-disable-technology">3.44. Enable Disable Technology<a class="headerlink" href="#344-enable-disable-technology" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to enable/disable any technology for a specific player. Similar to units, when a non default technology is enabled, its train location and button (<a href="./#323-change-research-location" title="Jump to: Change Research Location">Change Research Location</a>), costs (<a href="./#324-change-technology-cost" title="Jump to: Change Technology Cost">Change Technology Cost</a>), and optionally a description (<a href="./#325-change-technology-description" title="Jump to: Change Technology Description">Change Technology Description</a>), must be set using additional effects for someone to research it.. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+<li>Enabled: If this is selected, the units/technology is enabled if it is not already enabled</li>
+</ol>
+<h3 id="345-enable-object-selection">3.45. Enable Object Selection<a class="headerlink" href="#345-enable-object-selection" title="Permanent link">&para;</a></h3>
+<p>This effect makes specified units of the given player selectable. Refer to the <a href="./#338-disable-object-selection" title="Jump to: Disable Object Selection">Disable Object Selection</a> effect. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="346-enable-technology-stacking">3.46. Enable Technology Stacking<a class="headerlink" href="#346-enable-technology-stacking" title="Permanent link">&para;</a></h3>
+<p>This effect enables 256x tech mode for the specified technology and player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+</ol>
+<h3 id="347-enable-unit-targeting">3.47. Enable Unit Targeting<a class="headerlink" href="#347-enable-unit-targeting" title="Permanent link">&para;</a></h3>
+<p>This effect makes it so that the specified units of the given player can be targeted by other units. Refer to the <a href="./#340-disable-unit-targeting" title="Jump to: Disable Unit Targeting">Disable Unit Targeting</a> effect. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="348-freeze-object">3.48. Freeze Object<a class="headerlink" href="#348-freeze-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to stop units of a specific player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="349-heal-object">3.49. Heal Object<a class="headerlink" href="#349-heal-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to heal existing units of a given player by the specifed HP amount. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect (<a href="./#352-modify-attribute" title="Jump to: Modify Attribute">Modify Attribute</a>, change attribute <a href="../../../../general/attributes/#50-regeneration-rate" title="Jump to: Game Mechanics &gt; Attributes &gt; Regeneration Rate">regeneration rate</a> to the desired quantity), that does exactly this</li>
+</ol>
+<h3 id="350-kill-object">3.50. Kill Object<a class="headerlink" href="#350-kill-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to kill certain units of the specified player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="351-lock-gate">3.51. Lock Gate<a class="headerlink" href="#351-lock-gate" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to lock an unlocked gate. The configurations for this effect are as follows:</p>
+<ol>
+<li>Selected Objects: The units to apply the effect to</li>
+</ol>
+<h3 id="352-modify-attribute">3.52. Modify Attribute<a class="headerlink" href="#352-modify-attribute" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to modify any attribute of a specified unit. Note that this effects the unit itself, not just existing units. This means that even new units created will have the modified attribute. Refer to the <a href="../../../../general/attributes" title="Jump to: Game Mechanics &gt; Attributes">Attributes</a> section of the guide to see a list of modifiable attributes and what each of them does. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+<li>Attribute List: The attribute of a unit to modify</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Changing the Amount of 1<sup>st</sup> Resource of a unit changes its population requirement</li>
+<li>Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to <code>0.1</code> is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.</li>
+</ol>
+<h3 id="353-modify-resource">3.53. Modify Resource<a class="headerlink" href="#353-modify-resource" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to modify the resource amounts of a particular player by specified amounts. Refer to the <a href="../../../../general/resources/resources" title="Jump to: Game Mechanics &gt; Resources">Resources</a> section of the guide to see all the resources that can be modified and their purposes. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Tribute List: The resource to tribute</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+</ol>
+<h3 id="354-modify-resource-by-variable">3.54. Modify Resource By Variable<a class="headerlink" href="#354-modify-resource-by-variable" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to modify the resource amounts of a particular player by the value of another variable. Refer to the <a href="../../../../general/resources/resources" title="Jump to: Game Mechanics &gt; Resources">Resources</a> section of the guide to see all the resources that can be modified and their purposes. The configurations for this effect are as follows:</p>
+<ol>
+<li>Tribute List: The resource to tribute</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Operation: Add, Subtract, Multiply or Divide the given quantity</li>
+<li>Variable: The variable to modify</li>
+</ol>
+<h3 id="355-patrol">3.55. Patrol<a class="headerlink" href="#355-patrol" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to make units of a specified player patrol from one location to another. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="356-place-foundation">3.56. Place Foundation<a class="headerlink" href="#356-place-foundation" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to automatically place down a building foundation for a specific player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+</ol>
+<h3 id="357-play-sound">3.57. Play Sound<a class="headerlink" href="#357-play-sound" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to play a specified sound. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Sound Name: The name of the sound to play</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect is useful for playing a notification sound</li>
+</ol>
+<h3 id="358-remove-object">3.58. Remove Object<a class="headerlink" href="#358-remove-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to remove certain units of the specified player from the map. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="359-replace-object">3.59. Replace Object<a class="headerlink" href="#359-replace-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to replace existing units of a given player with another unit. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Target Player: This is the second player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+<li>Unit List 2: This is the second unit to affect</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect is widely used by unit upgrade technologies.</li>
+<li>Researching Man at Arms replaces all Militia with Man at Arms on the map</li>
+<li>Researching Crossbowman replaces all Archers with Crossbowmen on the map</li>
+</ol>
+<h3 id="360-research-technology">3.60. Research Technology<a class="headerlink" href="#360-research-technology" title="Permanent link">&para;</a></h3>
+<p>This effect can automatically research a technology for the specified player.. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Technology: The technology to affect</li>
+<li>Force: If this is enabled, then the technology is researched even if the player's civilization does not have access to it</li>
+</ol>
+<h3 id="361-script-call">3.61. Script Call<a class="headerlink" href="#361-script-call" title="Permanent link">&para;</a></h3>
+<p>This effect allows us to write or call functions from an XS Script. While the script call effect can be used to both call functions and write small scripts, it is advised to always use a function call and never use this effect for writing scripts. Refer to the <a href="../../../../general/xs/beginner/" title="Jump to: XS Scripting: A Beginner's Guide">XS Scripting</a>. The configurations for this effect are as follows:</p>
+<ol>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+</ol>
+<h3 id="362-send-chat">3.62. Send Chat<a class="headerlink" href="#362-send-chat" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to display messages in chat. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>String Id: This is the same as the <code>Name String ID</code>. Refer to <a href="../../../basics/#58-name-string-id" title="Jump to: Custom Scenarios &gt; Scenario Basics &gt; #5.8 Name String ID">Name String ID</a> section of the guide</li>
+<li>Message: The name/message/instruction to show on screen or the script call to execute</li>
+<li>Sound Name: The name of the sound to play</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>This effect is super useful for debugging. When you're unsure of which triggers in your map are executed at which point, adding one of these to that trigger will display a message on screen when it gets executed</li>
+<li>This effect can also be used to simulate chat between two players</li>
+<li>This effect should NOT be used to display instructions to players, because there is an effect that can be used specifically for that</li>
+<li>Duplicate messages are not shown</li>
+<li>Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:<ol>
+<li>&lt;BLUE></li>
+<li>&lt;RED></li>
+<li>&lt;GREEN></li>
+<li>&lt;YELLOW></li>
+<li>&lt;AQUA></li>
+<li>&lt;PURPLE></li>
+<li>&lt;GREY></li>
+<li>&lt;ORANGE></li>
+</ol>
+</li>
+</ol>
+<h3 id="363-set-building-gather-point">3.63. Set Building Gather Point<a class="headerlink" href="#363-set-building-gather-point" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to set a gather point for specified buildings of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+</ol>
+<h3 id="364-set-player-visibility">3.64. Set Player Visibility<a class="headerlink" href="#364-set-player-visibility" title="Permanent link">&para;</a></h3>
+<p>This trigger sets the visibility of the target player for the source player. The configurations for this effect are as follows:</p>
+<ol>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Target Player: This is the second player that is affected by the effect</li>
+<li>Visibility State: The new visibility state</li>
+</ol>
+<h3 id="365-stop-object">3.65. Stop Object<a class="headerlink" href="#365-stop-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to stop units of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="366-task-object">3.66. Task Object<a class="headerlink" href="#366-task-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to task certain units of the specified player to (it basically simulates a right click at the specified location or unit) move to a specified locaiton, or perform an action on another unit. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="367-teleport-object">3.67. Teleport Object<a class="headerlink" href="#367-teleport-object" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to teleport units of a player from one area of the map to another location on the map. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="368-tribute">3.68. Tribute<a class="headerlink" href="#368-tribute" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to tribute resources from one player to another. The configurations for this effect are as follows:</p>
+<ol>
+<li>Quantity: The amount to modify by</li>
+<li>Tribute List: The resource to tribute</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Target Player: This is the second player that is affected by the effect</li>
+</ol>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>Tributing negative resources actually gives the source player the resource and deducts that amount from the target player</li>
+<li>Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound.</li>
+</ol>
+<h3 id="369-unload">3.69. Unload<a class="headerlink" href="#369-unload" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to ungarisson objects from a unit or building. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:</p>
+<ol>
+<li>Unit List 1: This is the unit to affect</li>
+<li>Source Player: The player that is affected by the effect</li>
+<li>Location: The location to create the unit on, or task a unit to</li>
+<li>Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.</li>
+<li>Object Group: This is the class of units to effect</li>
+<li>Object Type: This is the type of the unit to effect</li>
+</ol>
+<h3 id="370-unlock-gate">3.70. Unlock Gate<a class="headerlink" href="#370-unlock-gate" title="Permanent link">&para;</a></h3>
+<p>This effect can be used to unlock a locked gate. The configurations for this effect are as follows:</p>
+<ol>
+<li>Selected Objects: The units to apply the effect to</li>
+</ol>
+<h3 id="371-use-advanced-buttons">3.71. Use Advanced Buttons<a class="headerlink" href="#371-use-advanced-buttons" title="Permanent link">&para;</a></h3>
+<p>Enables Advanced Buttons.. The configurations for this effect are as follows:</p>
+<p>Some useful tricks with this effect:</p>
+<ol>
+<li>If you can't see the buttons for aggressive stance, and unit groups use this effect to enable them for yourself. That is all that this effect does, its useless otherwise</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../basics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trigger Basics" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Trigger Basics
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../useful_tools/parser/basics/" class="md-footer__link md-footer__link--next" aria-label="Next: Parser Basics" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Parser Basics
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "search.share", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
