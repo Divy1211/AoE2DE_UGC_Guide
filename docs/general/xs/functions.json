@@ -1013,6 +1013,25 @@
             "desc": "Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games."
         },
         {
+            "name": "xsPlayerAttribute",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the resource of (0 for Gaia)"
+                },
+                {
+                    "name": "resourceID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the resource to get the amount of"
+                }
+            ],
+            "desc": "Returns the amount the specified resource of the given player."
+        },
+        {
             "name": "xsSetPlayerAttribute",
             "return_type": "void",
             "params": [
@@ -1199,7 +1218,7 @@
                     "desc": "The player to set the context player to"
                 }
             ],
-            "desc": "In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if -2 is passed to it as the player argument."
+            "desc": "In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if `-2` is passed to it as the player argument."
         },
         {
             "name": "xsGetFuntionID",

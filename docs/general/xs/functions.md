@@ -854,7 +854,20 @@ Returns an integer corresponding to different victory settings ingame. These are
 
 Last Man Standing returns 0 as well.
 
-### 5.16. xsResearchTechnology
+### 5.16. xsPlayerAttribute
+
+Returning Type: `#!cpp float`
+
+Prototype: `#!cpp float xsPlayerAttribute(int playerNumber, int resourceID)`
+
+Parameters:
+
+1.  `#!cpp int playerNumber`: The player to get the resource of (0 for Gaia)
+2.  `#!cpp int resourceID`: The ID of the resource to get the amount of
+
+Returns the amount the specified resource of the given player.
+
+### 5.17. xsResearchTechnology
 
 Returning Type: `#!cpp bool`
 
@@ -869,7 +882,7 @@ Parameters:
 
 Returns a boolean based on whether the technology was researched or not.
 
-### 5.17. xsSetPlayerAttribute
+### 5.18. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -883,7 +896,7 @@ Parameters:
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.18. xsSetTriggerVariable
+### 5.19. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -896,7 +909,7 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.19. xsTriggerVariable
+### 5.20. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 
@@ -973,5 +986,5 @@ Parameters:
 
 1.  `#!cpp int playerNumber`: The player to set the context player to
 
-In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if -2 is passed to it as the player argument.
+In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if `-2` is passed to it as the player argument.
 

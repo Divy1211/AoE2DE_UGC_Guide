@@ -1,0 +1,68 @@
+- [x] 2756x Nether Bricks
+- [x] 1793x Acacia Leaves
+- [x] 1153x Birch Leaves
+- [x]  915x Red Carpet
+- [x]  822x Packed Ice
+- [x]  816x Green Stained Glass
+- [ ]  794x Black Carpet
+- [x]  312x Lime Glazed Terracotta
+- [ ]  308x Slime Block
+- [x]  278x Quartz Slab
+- [x]  142x White Stained Glass
+- [x]  128x Mossy Cobblestone Wall
+- [ ]  109x Observer
+- [ ]  103x Redstone Dust
+- [ ]  100x Light Blue Stained Glass
+- [ ]   77x Stone Button
+- [ ]   73x Hopper
+- [ ]   63x Redstone Repeater
+- [ ]   63x Sticky Piston
+- [ ]   56x Red Concrete Powder
+- [ ]   53x Redstone Torch
+- [ ]   52x Obsidian
+- [ ]   43x White Glazed Terracotta
+- [ ]   38x Ice
+- [ ]   36x Lime Concrete
+- [ ]   33x String
+- [ ]   32x Purpur Slab
+- [ ]   31x End Rod
+- [ ]   31x Spruce Leaves
+- [ ]   30x Chest
+- [ ]   27x Nether Brick Stairs
+- [ ]   27x Piston
+- [ ]   27x Redstone Comparator
+- [ ]   24x Dropper
+- [ ]   24x Purple Stained Glass
+- [ ]   23x Glass
+- [ ]   20x Acacia Fence Gate
+- [ ]   20x White Stained Glass Pane
+- [ ]   18x Block of Iron
+- [ ]   18x Granite
+- [ ]   17x Powered Rail
+- [ ]   16x Red Bed
+- [ ]   14x Block of Quartz
+- [ ]   10x Tripwire Hook
+- [ ]   10x Yellow Wool
+- [ ]    9x Ladder
+- [ ]    8x Bedrock
+- [ ]    8x Trapped Chest
+- [ ]    8x White Bed
+- [ ]    5x Melon
+- [ ]    4x Lever
+- [ ]    4x Oak Trapdoor
+- [ ]    4x Yellow Shulker Box
+- [ ]    3x Hay Bale
+- [ ]    2x Command Block
+- [ ]    2x Quartz Stairs
+- [ ]    2x White Shulker Box
+- [ ]    1x Black Shulker Box
+- [ ]    1x Brown Shulker Box
+- [ ]    1x Cobweb
+- [ ]    1x Ender Chest
+- [ ]    1x Gray Shulker Box
+- [ ]    1x Lime Stained Glass
+- [ ]    1x Oak Sign
+- [ ]    1x Orange Shulker Box
+- [ ]    1x Redstone Lamp
+- [ ]    1x White Carpet
+- [ ]    1x White Wool
