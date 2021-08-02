@@ -1,6 +1,12 @@
 import json
 
-md = "This page is a list of all the player resources in the scenario editor and their purposes. If you know of any resources that are not written on this page, or if the descriptions of the resources are wrong, please let the authors of this guide know!\n\n"
+md = """# Player Resources
+
+*Written by Alian713*
+
+---
+
+This page is a list of all the player resources in the scenario editor and their purposes. If you know of any resources that are not written on this page, or if the descriptions of the resources are wrong, please let the authors of this guide know!\n\n"""
 with open("./res_desc.json") as file:
     data = json.load(file)
     for resource in data:
