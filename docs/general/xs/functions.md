@@ -931,11 +931,11 @@ Prototype: `#!cpp bool xsAddRuntimeEvent(string runtimeName, string functionName
 
 Parameters:
 
-1.  `#!cpp string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` function and checking the extension.
-2.  `#!cpp string functionName`: This is the name of a function that takes a single integer argument.
+1.  `#!cpp string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension.
+2.  `#!cpp string functionName`: This is the name of a user defined function that takes a single integer argument
 3.  `#!cpp int functionArgument`: This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 
-A runtime event is called after all the XS code has finished executing but before rules start executing. It returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
+A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 
 ### 6.2. xsBreakPoint
 
