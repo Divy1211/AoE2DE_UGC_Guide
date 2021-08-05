@@ -1476,7 +1476,7 @@ ID of the player resource Relics
 
 Value: `#!cpp int 8`
 
-ID of the player resource Trage Bonus
+ID of the player resource Trage Bonus. The name is mispelled in the `Constants.xs` file, so thats how it needs to be used
 
 ### 9.10. cAttributeTradeGoods
 
@@ -2552,11 +2552,11 @@ Value: `#!cpp int 209`
 
 ID of the player resource Temporary Map Reveal
 
-### 9.189. cAttributeRvealInitialType
+### 9.189. cAttributeRevealInitialType
 
 Value: `#!cpp int 210`
 
-ID of the player resource Rveal Initial Type
+ID of the player resource Reveal Initial Type
 
 ### 9.190. cAttributeElevationBonusHigher
 
