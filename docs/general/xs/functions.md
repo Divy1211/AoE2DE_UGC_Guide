@@ -780,7 +780,7 @@ Parameters:
 
 1.  `#!cpp int playerNumber`: The player to get the civilization of
 
-Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs.
+Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs. Note that even though currently constants for Poles and Bohemians are missing from the Constants file, they are still present in the game. Poles = 38 and Bohemians = 39
 
 ### 5.10. xsGetPlayerInGame
 
@@ -806,7 +806,41 @@ Parameters:
 
 Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games.
 
-### 5.12. xsGetTime
+### 5.12. xsGetRandomNumber
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetRandomNumber()`
+
+
+Returns a random number between 0 and 32766.
+
+### 5.13. xsGetRandomNumberHL
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetRandomNumberHL(int low, int high)`
+
+Parameters:
+
+1.  `#!cpp int low`: The lower bound for the range for the random number returned (included)
+2.  `#!cpp int high`: The upper bound for the range for the random number returned (excluded)
+
+Returns a random number between `low` and `high`
+
+### 5.14. xsGetRandomNumberMax
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetRandomNumberMax(int max)`
+
+Parameters:
+
+1.  `#!cpp int max`: The upper bound for the range for the random number returned (excluded)
+
+Returns a random number between 0 and `max`.
+
+### 5.15. xsGetTime
 
 Returning Type: `#!cpp int`
 
@@ -815,7 +849,7 @@ Prototype: `#!cpp int xsGetTime()`
 
 Returns the current game time - 1 in seconds
 
-### 5.13. xsGetVictoryPlayer
+### 5.16. xsGetVictoryPlayer
 
 Returning Type: `#!cpp int`
 
@@ -824,7 +858,7 @@ Prototype: `#!cpp int xsGetVictoryPlayer()`
 
 Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument.
 
-### 5.14. xsGetVictoryTime
+### 5.17. xsGetVictoryTime
 
 Returning Type: `#!cpp int`
 
@@ -833,7 +867,7 @@ Prototype: `#!cpp int xsGetVictoryTime()`
 
 For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining
 
-### 5.15. xsGetVictoryType
+### 5.18. xsGetVictoryType
 
 Returning Type: `#!cpp int`
 
@@ -854,7 +888,7 @@ Returns an integer corresponding to different victory settings ingame. These are
 
 Last Man Standing returns 0 as well.
 
-### 5.16. xsPlayerAttribute
+### 5.19. xsPlayerAttribute
 
 Returning Type: `#!cpp float`
 
@@ -867,7 +901,7 @@ Parameters:
 
 Returns the amount the specified resource of the given player.
 
-### 5.17. xsResearchTechnology
+### 5.20. xsResearchTechnology
 
 Returning Type: `#!cpp bool`
 
@@ -882,7 +916,7 @@ Parameters:
 
 Returns a boolean based on whether the technology was researched or not.
 
-### 5.18. xsSetPlayerAttribute
+### 5.21. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -896,7 +930,7 @@ Parameters:
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.19. xsSetTriggerVariable
+### 5.22. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -909,7 +943,7 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.20. xsTriggerVariable
+### 5.23. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 

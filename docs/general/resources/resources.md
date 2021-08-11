@@ -1,6 +1,6 @@
 # Player Resources
 
-*Written by Alian713*
+*Written by: Alian713*
 
 ---
 
@@ -1665,4 +1665,42 @@ This page is a list of all the player resources in the scenario editor and their
 - Purpose: Farming gold generation rate*100 of the source player
 
 - Additional Information: used by the Burgundian Vineyards technology. Set to 2 when researched
+
+## 238. Folwark Collection Amount
+
+- ID: 237
+
+- Purpose: This is the amount of food collected from farms built around a Folwark by the source player
+
+- Additional Information: Poles set this to 17.5. Horse Collar adds 7.5 to it, Heavy Plow adds 12.5 to it and Crop Rotation adds 17.5 to it
+
+## 239. Folwark Attribute Type
+
+- ID: 238
+
+- Purpose: This is the ID of the resource that is given to the player from a farm constructed around a Folwark of the source player
+
+- Additional Information: Poles set this to 0. -1 for other civs by default
+
+## 240. Folwark Building Type
+
+- ID: 239
+
+- Purpose: This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work of the source player
+
+- Additional Information: Poles set this to 68 (Mill). -1 for other civs by default
+
+## 241. Units Converted
+
+- ID: 240
+
+- Purpose: Unknown amount of the source player
+
+## 242. Farming Gold Trickle
+
+- ID: 241
+
+- Purpose: Stone mining gold generation rate*100 of the source player
+
+- Additional Information: Poles set this to 18 (0.18 g/s of stone mined, half of stone mining rate). 0 for other civs by default
 
