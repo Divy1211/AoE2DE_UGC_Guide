@@ -925,6 +925,44 @@
     ],
     "general": [
         {
+            "name": "xsGetRandomNumber",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns a random number between 0 and 32766."
+        },
+        {
+            "name": "xsGetRandomNumberHL",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "low",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The lower bound for the range for the random number returned (included)"
+                },
+                {
+                    "name": "high",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The upper bound for the range for the random number returned (excluded)"
+                }
+            ],
+            "desc": "Returns a random number between `low` and `high`"
+        },
+        {
+            "name": "xsGetRandomNumberMax",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "max",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The upper bound for the range for the random number returned (excluded)"
+                }
+            ],
+            "desc": "Returns a random number between 0 and `max`."
+        },
+        {
             "name": "xsGetPlayerCivilization",
             "return_type": "int",
             "params": [
@@ -935,7 +973,7 @@
                     "desc": "The player to get the civilization of"
                 }
             ],
-            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scriptin > Constant Reference > #3. Civs\") for all the different civ IDs."
+            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scriptin > Constant Reference > #3. Civs\") for all the different civ IDs. Note that even though currently constants for Poles and Bohemians are missing from the Constants file, they are still present in the game. Poles = 38 and Bohemians = 39"
         },
         {
             "name": "xsGetPlayerInGame",

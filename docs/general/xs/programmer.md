@@ -234,7 +234,7 @@ The following flow control statements are supported by XS:
 Syntax:
 
 ```cpp
-returnType functionName(dataType parameter1 = defaultValue, dataType parameter2 = defaultValue) {
+returnType functionName(dataType parameter1 = defaultValue1, dataType parameter2 = defaultValue2) {
     return (value);
     // value must be enclosed by parantheses
 }
@@ -243,7 +243,7 @@ returnType functionName(dataType parameter1 = defaultValue, dataType parameter2 
 Example Syntax:
 
 ```cpp
-int max(int a = 0, int b = 0) {
+int max(int a = 0, int b = 2) {
     if(a > b)
         return (a);
     return (b);

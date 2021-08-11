@@ -1053,7 +1053,7 @@ void main() {
 
 Function names follow the same laws and conventions that variable names do.
 
-A list of all known inbuilt XS functions and their descriptions are provided in the [Fucntion Reference](../functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
+A list of all inbuilt XS functions and their descriptions are provided in the [Fucntion Reference](../functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
 
 #### 2. File Structure
 

@@ -11,7 +11,7 @@ with open("./res_desc.json") as file:
     data = json.load(file)
     for resource in data:
         md+=f"## {int(resource)+1}. {data[resource]['name']}\n\n- ID: {resource}\n\n" + \
-            f"- Purpose: {data[resource]['keyword']} {data[resource]['grammer']}\n\n"
+            f"- Purpose: {data[resource]['keyword']} {data[resource]['grammar']}\n\n"
         if data[resource]['default_values']:
             md+="- Default Values:\n\n"
         for value in data[resource]['default_values']:
