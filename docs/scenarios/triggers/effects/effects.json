@@ -976,5 +976,14 @@
             "selected_object_ids"
         ],
         "tricks": []
+    },
+    "72": {
+        "name": "Change Color Mood",
+        "desc": "This effect can change the colour mood of the map",
+        "attrs": [
+            "color_mood",
+            "quantity"
+        ],
+        "tricks": []
     }
 }
