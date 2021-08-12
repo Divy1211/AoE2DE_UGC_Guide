@@ -123,7 +123,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - Purpose: This is the ID of the projectile that a unit fires.
 
-## 17. Icon Graphics Angle
+## 17. Building Icon Override
 
 - ID: 17
 
@@ -139,7 +139,16 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 19
 
-- Purpose: Setting this to 1 mimics researching ballistics for any unit.
+- Purpose: This property controls the following two properties:
+
+| **Property**                   | **Flag Value** |
+|:------------------------------:|:--------------:|
+| Has Ballistics                 | 1              |
+| Deal full damage on missed hit | 2              |
+
+For example, if we set this property of the projectile used by an archer to `1`, it will have ballistics. (This is exactly what researching ballistics does in the first place). If we set this property to `2`, a missed projectile that hits another unit will deal its full damage instead of the 50% that it would normally do.
+
+What if we want to enable both properties at once? This is achieved by adding the flag values for both of them together. Setting this property to `3` enables both effects.
 
 ## 20. Minimum Range
 
@@ -224,27 +233,37 @@ This is a consequence of the fact that every number can be represented as a uniq
 
 - ID: 44
 
-- Purpose: A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#31-blast-defense-level "Jump to: Blast Defense Level"). For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same.
+- Purpose: A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#31-blast-defense-level "Jump to: Blast Defense Level") that are in its blast radius. For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same.
 
-    | **Effect**                                     |**Blast Level** |
-    | :--------------------------------------------: | :----------:   |
-    |damage resources, nearby allied units and tress | 0              |
-    |damage trees, nearby allied units               | 1              |
-    |damage nearby allied units                      | 2              |
-    |damage targeted unit only                       | 3              |
+    | **Effect**                                      | **Blast Level** |
+    | :---------------------------------------------: | :-------------: |
+    | damage resources, nearby allied units and tress | 0               |
+    | damage trees, nearby allied units               | 1               |
+    | damage nearby allied units                      | 2               |
+    | damage targeted unit only                       | 3               |
+
+    Blast attack can be modified to behave differently by adding to it the flag value of ONE of the following modifiers:
+
+    | **Modifier**                                                                     | **Flag Value** |
+    | :------------------------------------------------------------------------------: | :------------: |
+    | Deal a fixed 5 HP of damage to nearby units                                      | 4              |
+    | Deal 50% of unit's own damage to nearby units                                    | 8              |
+    | Deal 25% of unit's own damage to nearby units                                    | 16             |
+    | Deal 33% of unit's own damage to nearby units                                    | 32             |
+    | Attenuate damage as distance from the centre of attack increases (infantry only) | 64             |
 
 ## 31. Blast Defense Level
 
 - ID: 45
 
-- Purpose: A unit feels the blast damage from ***other*** units with ***equal or lower*** [Blast Attack Level](./#30-blast-attack-level "Jump to: Blast Attack Level"). For example, while onagers (blast attack: 1) can cut trees (blast defense 1), mangonels (blast attack: 2) cannot do the same.
+- Purpose: A unit feels the blast damage from ***other*** units with ***equal or lower*** [Blast Attack Level](./#30-blast-attack-level "Jump to: Blast Attack Level") and if it is inside the attacker's blast radius. For example, while onagers (blast attack: 1) can cut trees (blast defense 1), mangonels (blast attack: 2) cannot do the same.
 
-    | **Effect**                                     |**Blast Level** |
-    | :--------------------------------------------: | :----------:   |
-    |damage resources, nearby allied units and tress | 0              |
-    |damage trees, nearby allied units               | 1              |
-    |damage nearby allied units                      | 2              |
-    |damage targeted unit only                       | 3              |
+    | **Effect**                                      | **Blast Level** |
+    | :---------------------------------------------: | :-------------: |
+    | damage resources, nearby allied units and tress | 0               |
+    | damage trees, nearby allied units               | 1               |
+    | damage nearby allied units                      | 2               |
+    | damage targeted unit only                       | 3               |
 
 ## 32. Shown Attack
 
