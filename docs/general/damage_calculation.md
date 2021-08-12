@@ -88,11 +88,11 @@ Here you can see all the attack classes listed out for the Halberdier and the ar
 
 For calculating the total amount of damage that this unupgraded Halberdier deals to the unupgraded War Elephant, we go through these steps given below:
 
-1. Identify the common damage classes for the attacking unit's attack class list and the defending unit's armour class list.
+1. Identify the damage classes that are in common for the attacking unit's attack class list and the defending unit's armour class list.
 
-    The common damage classes are `Base Melee (4)`, `War Elephants (5)` and `Cavalry (8)` (they are also highlighted in the table above) for which the War Elephant has armour classes and the Halberdier has attack classes.
+    The damage classes which are in common are: `Base Melee (4)`, `War Elephants (5)` and `Cavalry (8)` (they are also highlighted in the table above) for which the War Elephant has armour classes and the Halberdier has attack classes.
 
-2. For each common damage class, subtract the armour of the defending unit from the attack of the attacking unit. Round up to 0 if you get a negative value.
+2. For each damage class that is in common, subtract the armour of the defending unit from the attack of the attacking unit. Round up to 0 if you get a negative value.
 
     Here, $\color{yellow} Ar_i$ is the quantity of the armour class with id $i$ for the War Elephant. For example, $\color{yellow} Ar_{19}$ refers to the `Unique Units` armour class of the War Elephant.  
     $\color{#bfe3b4} At_i$ is the quantity of the attack class with id $i$ for the Halberdier. For example, $\color{#bfe3b4} At_{16}$ refers to the `Ships and saboteer` attack class of the Halberdier. $\color{yellow} Ba$ is the Base Armour value for the defending unit, the war elephant.
@@ -248,8 +248,8 @@ Here you can see all the attack classes listed out for the War Elephant and the 
 
 For calculating the total amount of damage that this unupgraded War Elephant deals to the unupgraded Halberdier, we go through these steps given below:
 
-1. Identify the common damage classes for the attacking unit's attack class list and the defending unit's armour class list.
-2. For each common damage class, subtract the armour of the defending unit from the attack of the attacking unit. Round up to 0 if you get a negative value.
+1. Identify the damage classes that are in common for the attacking unit's attack class list and the defending unit's armour class list.
+2. For each damage class that is in common, subtract the armour of the defending unit from the attack of the attacking unit. Round up to 0 if you get a negative value.
 3. For each attack class of the attacking unit for which there is no armour class for the defending unit, we use the base armour value to calculate how much attack needs to be dealt.
 4. Now add all of the differences found above. Round up to 1 if you get 0.
 5. The value thus obtained is the damage that the War Elephant deals to the Halberdier.
