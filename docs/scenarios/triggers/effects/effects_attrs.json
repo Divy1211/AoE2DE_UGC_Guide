@@ -173,7 +173,7 @@
     "quantity": {
         "display_name": "Quantity",
         "show": true,
-        "desc": "The amount to modify by"
+        "desc": "The amount to modify by or a timer"
     },
     "scroll": {
         "display_name": "Scroll",
@@ -249,5 +249,10 @@
         "display_name": "Wood",
         "show": true,
         "desc": "The new wood cost of the unit/technology"
+    },
+    "color_mood": {
+        "display_name": "Color Mood",
+        "show": true,
+        "desc": "This is the new colour mood to set"
     }
 }

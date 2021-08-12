@@ -115,5 +115,10 @@
         "display_name": "Message",
         "show": true,
         "desc": "Write an XS Script here"
+    },
+    "object_state": {
+        "display_name": "Object State",
+        "show": true,
+        "desc": "The state that the object must be in"
     }
 }
