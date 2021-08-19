@@ -1754,8 +1754,8 @@
     },
     "240": {
         "name": "Units Converted",
-        "keyword": "Unknown",
-        "grammar": "amount of the source player",
+        "keyword": "The amount of units that the source player has lost to enemy conversions",
+        "grammar": "",
         "default_values": {},
         "comment": ""
     },
@@ -1765,5 +1765,12 @@
         "grammar": "of the source player",
         "default_values": {},
         "comment": "Poles set this to 18 (0.18 g/s of stone mined, half of stone mining rate). 0 for other civs by default"
+    },
+    "242": {
+        "name": "Free Transport Ship Cost",
+        "keyword": "1 unit of this resource is used as cost for unit 1735 (Free Transport Ship)",
+        "grammar": "",
+        "default_values": {},
+        "comment": "Each Civ has 1 of this resource, which allows them to build the unit 1735 (Free Transport Ship) only once, if they have a Sicilian Ally."
     }
 }

@@ -1694,7 +1694,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 240
 
-- Purpose: Unknown amount of the source player
+- Purpose: The amount of units that the source player has lost to enemy conversions 
 
 ## 242. Farming Gold Trickle
 
@@ -1703,4 +1703,12 @@ This page is a list of all the player resources in the scenario editor and their
 - Purpose: Stone mining gold generation rate*100 of the source player
 
 - Additional Information: Poles set this to 18 (0.18 g/s of stone mined, half of stone mining rate). 0 for other civs by default
+
+## 243. Free Transport Ship Cost
+
+- ID: 242
+
+- Purpose: 1 unit of this resource is used as cost for unit 1735 (Free Transport Ship) 
+
+- Additional Information: Each Civ has 1 of this resource, which allows them to build the unit 1735 (Free Transport Ship) only once, if they have a Sicilian Ally.
 
