@@ -1366,13 +1366,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 195
 
-- Purpose: Construction rate multiplier for the source player
+- Purpose: Builder work rate multiplier of the source player
 
 - Default Values:
 
-	- 1.0:  Generic
+	- 0:  Generic
 
 	- 1.3:  Spanish
+
+- Additional Information: The work rate for builders is `construction_rate_mod * builder.work_rate`
 
 ## 197. Hun Wonder Bonus
 
@@ -1436,25 +1438,49 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 205
 
-- Purpose: Feitoria food production multiplier for the source player
+- Purpose: Feitoria/BR Trade Workshop food production multiplier of the source player
+
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: The amount of food obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_food_productivity * 1.6 (2.25)`.
 
 ## 207. Feitoria Wood Productivity
 
 - ID: 206
 
-- Purpose: Feitoria wood production multiplier for the source player
+- Purpose: Feitoria/BR Trade Workshop wood production multiplier of the source player
+
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: The amount of wood obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_wood_productivity * 1 (2.25)`.
 
 ## 208. Feitoria Stone Productivity
 
 - ID: 207
 
-- Purpose: Feitoria stone production multiplier for the source player
+- Purpose: Feitoria/BR Trade Workshop stone production multiplier of the source player
+
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: The amount of stone obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_stone_productivity * 0.3 (0)`.
 
 ## 209. Feitoria Gold Productivity
 
 - ID: 208
 
-- Purpose: Feitoria gold production multiplier for the source player
+- Purpose: Feitoria/BR Trade Workshop gold production multiplier of the source player
+
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: The amount of gold obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_gold_productivity * 0.7 (2.25)`.
 
 ## 210. Reveal Enemy Town Centre
 
@@ -1488,29 +1514,39 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 211
 
-- Purpose: High elevation damage bonus fraction amount of the source player
+- Purpose: The fraction for additional bonus damage dealt from higher elevation for the source player
 
 - Default Values:
 
-	- 0.25:  generic
+	- 0:  Generic
 
-	- 0.5:  tatars
+	- 0.25:  Tatars
+
+- Additional Information: Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`
 
 ## 213. Elevation Bonus Lower
 
 - ID: 212
 
-- Purpose: Low elevation damage bonus fraction amount of the source player
+- Purpose: The fraction for additional bonus damage dealt from lower elevation for the source player
 
 - Default Values:
 
-	- -0.25:  generic
+	- 0:  Generic
+
+- Additional Information: Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`
 
 ## 214. Raiding Productivity
 
 - ID: 213
 
-- Purpose: Keshik gold generation multiplier percent for the source player
+- Purpose: Keshik gold generation rate per second*100 of the source player
+
+- Default Values:
+
+	- 50:  Tatars
+
+- Additional Information: Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 gold per second, but a lower value
 
 ## 215. Mercenary Kipchak Count
 
@@ -1556,6 +1592,10 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unknown amount of the source player
 
+- Default Values:
+
+	- 10002.1:  Unknown
+
 ## 220. Unknown Resource 219
 
 - ID: 219
@@ -1572,31 +1612,61 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 221
 
-- Purpose: Give 0.7925*value food per second if a monument is owned by the source player
+- Purpose: Monument food trickle rate multiplier of source player
+
+- Default Values:
+
+	- 1:  In KoTH games
+
+- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * food_trickle_from_monument`
 
 ## 223. Wood Trickle From Monument
 
 - ID: 222
 
-- Purpose: Give 0.7925*value wood per second if a monument is owned by the source player
+- Purpose: Monument wood trickle rate multiplier of source player
+
+- Default Values:
+
+	- 1:  In KoTH games
+
+- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * wood_trickle_from_monument`
 
 ## 224. Stone Trickle From Monument
 
 - ID: 223
 
-- Purpose: Give 0.7925*value stone per second if a monument is owned by the source player
+- Purpose: Monument stone trickle rate multiplier of source player
+
+- Default Values:
+
+	- 1:  In KoTH games
+
+- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * stone_trickle_from_monument`
 
 ## 225. Gold Trickle From Monument
 
 - ID: 224
 
-- Purpose: Give 0.7925*value gold per second if a monument is owned by the source player
+- Purpose: Monument gold trickle rate multiplier of source player
+
+- Default Values:
+
+	- 1:  In KoTH games
+
+- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * gold_trickle_from_monument`
 
 ## 226. Relic Food Production Rate
 
 - ID: 225
 
-- Purpose: Relic food production rate of the source player
+- Purpose: Relic food production per minute of the source player
+
+- Default Values:
+
+	- 30:  Burgundians
+
+	- 0: Generic
 
 ## 227. Villagers Killed By Gaia
 
@@ -1662,7 +1732,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 236
 
-- Purpose: Farming gold generation rate*100 of the source player
+- Purpose: Farming gold generation rate per second*100 of the source player
 
 - Additional Information: used by the Burgundian Vineyards technology. Set to 2 when researched
 
@@ -1672,43 +1742,75 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: This is the amount of food collected from farms built around a Folwark by the source player
 
+- Default Values:
+
+	- 0:  Generic
+
+	- 17.5:  Poles
+
+	- 25:  Poles with Horse Collar
+
+	- 37.5:  Poles with Heavy Plow
+
+	- 55:  Poles with Crop Rotation
+
 - Additional Information: Poles set this to 17.5. Horse Collar adds 7.5 to it, Heavy Plow adds 12.5 to it and Crop Rotation adds 17.5 to it
 
 ## 239. Folwark Attribute Type
 
 - ID: 238
 
-- Purpose: This is the ID of the resource that is given to the player from a farm constructed around a Folwark of the source player
+- Purpose: This is the ID of the resource that is given to the player from a farm constructed around a Folwark to the source player
 
-- Additional Information: Poles set this to 0. -1 for other civs by default
+- Default Values:
+
+	- 0:  Poles
+
+	- -1:  Generic
 
 ## 240. Folwark Building Type
 
 - ID: 239
 
-- Purpose: This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work of the source player
+- Purpose: This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work for the source player
 
-- Additional Information: Poles set this to 68 (Mill). -1 for other civs by default
+- Default Values:
+
+	- 68 (Mill):  Poles
+
+	- -1:  Generic
 
 ## 241. Units Converted
 
 - ID: 240
 
-- Purpose: The amount of units that the source player has lost to enemy conversions 
+- Purpose: The amount of units lost to enemy conversions by the source player
 
 ## 242. Farming Gold Trickle
 
 - ID: 241
 
-- Purpose: Stone mining gold generation rate*100 of the source player
+- Purpose: Stone mining gold generation rate per second*100 of the source player
 
-- Additional Information: Poles set this to 18 (0.18 g/s of stone mined, half of stone mining rate). 0 for other civs by default
+- Default Values:
 
-## 243. Free Transport Ship Cost
+	- 0:  Generic
+
+	- 18:  Poles
+
+	- 20.7:  Poles with Stone Mining
+
+	- 23.805:  Poles with Stone Shaft Mining
+
+## 243. Number Of Free Transports
 
 - ID: 242
 
-- Purpose: 1 unit of this resource is used as cost for unit 1735 (Free Transport Ship) 
+- Purpose: This is the number of free transport ships trainable by having a Sicilian ally to the source player
 
-- Additional Information: Each Civ has 1 of this resource, which allows them to build the unit 1735 (Free Transport Ship) only once, if they have a Sicilian Ally.
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: One unit of this resource is required to be able to train the free transport ship granted by having a Sicilian ally. This seemingly useless cost is necessary to prevent shift queuing multiple of the free transport ship unit. Note that as soon as at least one free transport ship is created, the unit disables itself, no matter how much of this resource is left. It is possible to change this by disabling technology 229, but then keep in mind that regular transport ships won't be trainable once this resource runs out
 
