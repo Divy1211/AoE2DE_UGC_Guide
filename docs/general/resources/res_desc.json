@@ -1422,13 +1422,13 @@
     },
     "195": {
         "name": "Construction Rate Mod",
-        "keyword": "Construction rate multiplier",
-        "grammar": "for the source player",
+        "keyword": "Builder work rate multiplier",
+        "grammar": "of the source player",
         "default_values": {
-            "1.0": " Generic",
+            "0": " Generic",
             "1.3": " Spanish"
         },
-        "comment": ""
+        "comment": "The work rate for builders is `construction_rate_mod * builder.work_rate`"
     },
     "196": {
         "name": "Hun Wonder Bonus",
@@ -1495,31 +1495,39 @@
     },
     "205": {
         "name": "Feitoria Food Productivity",
-        "keyword": "Feitoria food production multiplier",
-        "grammar": "for the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Feitoria/BR Trade Workshop food production multiplier",
+        "grammar": "of the source player",
+        "default_values": {
+            "1": " Generic"
+        },
+        "comment": "The amount of food obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_food_productivity * 1.6 (2.25)`."
     },
     "206": {
         "name": "Feitoria Wood Productivity",
-        "keyword": "Feitoria wood production multiplier",
-        "grammar": "for the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Feitoria/BR Trade Workshop wood production multiplier",
+        "grammar": "of the source player",
+        "default_values": {
+            "1": " Generic"
+        },
+        "comment": "The amount of wood obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_wood_productivity * 1 (2.25)`."
     },
     "207": {
         "name": "Feitoria Stone Productivity",
-        "keyword": "Feitoria stone production multiplier",
-        "grammar": "for the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Feitoria/BR Trade Workshop stone production multiplier",
+        "grammar": "of the source player",
+        "default_values": {
+            "1": " Generic"
+        },
+        "comment": "The amount of stone obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_stone_productivity * 0.3 (0)`."
     },
     "208": {
         "name": "Feitoria Gold Productivity",
-        "keyword": "Feitoria gold production multiplier",
-        "grammar": "for the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Feitoria/BR Trade Workshop gold production multiplier",
+        "grammar": "of the source player",
+        "default_values": {
+            "1": " Generic"
+        },
+        "comment": "The amount of gold obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_gold_productivity * 0.7 (2.25)`."
     },
     "209": {
         "name": "Reveal Enemy Town Centre",
@@ -1543,29 +1551,31 @@
     },
     "211": {
         "name": "Elevation Bonus Higher",
-        "keyword": "High elevation damage bonus fraction",
-        "grammar": "amount of the source player",
+        "keyword": "The fraction for additional bonus damage dealt from higher elevation",
+        "grammar": "for the source player",
         "default_values": {
-            "0.25": " generic",
-            "0.5": " tatars"
+            "0": " Generic",
+            "0.25": " Tatars"
         },
-        "comment": ""
+        "comment": "Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`"
     },
     "212": {
         "name": "Elevation Bonus Lower",
-        "keyword": "Low elevation damage bonus fraction",
-        "grammar": "amount of the source player",
+        "keyword": "The fraction for additional bonus damage dealt from lower elevation",
+        "grammar": "for the source player",
         "default_values": {
-            "-0.25": " generic"
+            "0": " Generic"
         },
-        "comment": ""
+        "comment": "Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`"
     },
     "213": {
         "name": "Raiding Productivity",
-        "keyword": "Keshik gold generation multiplier percent",
-        "grammar": "for the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Keshik gold generation rate per second*100",
+        "grammar": "of the source player",
+        "default_values": {
+            "50": " Tatars"
+        },
+        "comment": "Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 gold per second, but a lower value"
     },
     "214": {
         "name": "Mercenary Kipchak Count",
@@ -1602,7 +1612,9 @@
         "name": "Unknown Resource 218",
         "keyword": "Unknown",
         "grammar": "amount of the source player",
-        "default_values": {},
+        "default_values": {
+            "10002.1": " Unknown"
+        },
         "comment": ""
     },
     "219": {
@@ -1621,37 +1633,48 @@
     },
     "221": {
         "name": "Food Trickle From Monument",
-        "keyword": "Give 0.7925*value food per second if a monument is owned",
-        "grammar": "by the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Monument food trickle rate multiplier",
+        "grammar": "of source player",
+        "default_values": {
+            "1": " In KoTH games"
+        },
+        "comment": "The amount of resources obtained by owning a monument is `0.7925 * food_trickle_from_monument`"
     },
     "222": {
         "name": "Wood Trickle From Monument",
-        "keyword": "Give 0.7925*value wood per second if a monument is owned",
-        "grammar": "by the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Monument wood trickle rate multiplier",
+        "grammar": "of source player",
+        "default_values": {
+            "1": " In KoTH games"
+        },
+        "comment": "The amount of resources obtained by owning a monument is `0.7925 * wood_trickle_from_monument`"
     },
     "223": {
         "name": "Stone Trickle From Monument",
-        "keyword": "Give 0.7925*value stone per second if a monument is owned",
-        "grammar": "by the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Monument stone trickle rate multiplier",
+        "grammar": "of source player",
+        "default_values": {
+            "1": " In KoTH games"
+        },
+        "comment": "The amount of resources obtained by owning a monument is `0.7925 * stone_trickle_from_monument`"
     },
     "224": {
         "name": "Gold Trickle From Monument",
-        "keyword": "Give 0.7925*value gold per second if a monument is owned",
-        "grammar": "by the source player",
-        "default_values": {},
-        "comment": ""
+        "keyword": "Monument gold trickle rate multiplier",
+        "grammar": "of source player",
+        "default_values": {
+            "1": " In KoTH games"
+        },
+        "comment": "The amount of resources obtained by owning a monument is `0.7925 * gold_trickle_from_monument`"
     },
     "225": {
         "name": "Relic Food Production Rate",
-        "keyword": "Relic food production rate",
+        "keyword": "Relic food production per minute",
         "grammar": "of the source player",
-        "default_values": {},
+        "default_values": {
+            "30": " Burgundians",
+            "0": "Generic"
+        },
         "comment": ""
     },
     "226": {
@@ -1726,7 +1749,7 @@
     },
     "236": {
         "name": "Farming Gold Trickle",
-        "keyword": "Farming gold generation rate*100",
+        "keyword": "Farming gold generation rate per second*100",
         "grammar": "of the source player",
         "default_values": {},
         "comment": "used by the Burgundian Vineyards technology. Set to 2 when researched"
@@ -1735,42 +1758,61 @@
         "name": "Folwark Collection Amount",
         "keyword": "This is the amount of food collected from farms built around a Folwark",
         "grammar": "by the source player",
-        "default_values": {},
+        "default_values": {
+            "0": " Generic",
+            "17.5": " Poles",
+            "25": " Poles with Horse Collar",
+            "37.5": " Poles with Heavy Plow",
+            "55": " Poles with Crop Rotation"
+        },
         "comment": "Poles set this to 17.5. Horse Collar adds 7.5 to it, Heavy Plow adds 12.5 to it and Crop Rotation adds 17.5 to it"
     },
     "238": {
         "name": "Folwark Attribute Type",
         "keyword": "This is the ID of the resource that is given to the player from a farm constructed around a Folwark",
-        "grammar": "of the source player",
-        "default_values": {},
-        "comment": "Poles set this to 0. -1 for other civs by default"
+        "grammar": "to the source player",
+        "default_values": {
+            "0": " Poles",
+            "-1": " Generic"
+        },
+        "comment": ""
     },
     "239": {
         "name": "Folwark Building Type",
         "keyword": "This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work",
-        "grammar": "of the source player",
-        "default_values": {},
-        "comment": "Poles set this to 68 (Mill). -1 for other civs by default"
+        "grammar": "for the source player",
+        "default_values": {
+            "68 (Mill)": " Poles",
+            "-1": " Generic"
+        },
+        "comment": ""
     },
     "240": {
         "name": "Units Converted",
-        "keyword": "The amount of units that the source player has lost to enemy conversions",
-        "grammar": "",
+        "keyword": "The amount of units lost to enemy conversions",
+        "grammar": "by the source player",
         "default_values": {},
         "comment": ""
     },
     "241": {
         "name": "Farming Gold Trickle",
-        "keyword": "Stone mining gold generation rate*100",
+        "keyword": "Stone mining gold generation rate per second*100",
         "grammar": "of the source player",
-        "default_values": {},
-        "comment": "Poles set this to 18 (0.18 g/s of stone mined, half of stone mining rate). 0 for other civs by default"
+        "default_values": {
+            "0": " Generic",
+            "18": " Poles",
+            "20.7": " Poles with Stone Mining",
+            "23.805": " Poles with Stone Shaft Mining"
+        },
+        "comment": ""
     },
     "242": {
-        "name": "Free Transport Ship Cost",
-        "keyword": "1 unit of this resource is used as cost for unit 1735 (Free Transport Ship)",
-        "grammar": "",
-        "default_values": {},
-        "comment": "Each Civ has 1 of this resource, which allows them to build the unit 1735 (Free Transport Ship) only once, if they have a Sicilian Ally."
+        "name": "Number Of Free Transports",
+        "keyword": "This is the number of free transport ships trainable by having a Sicilian ally",
+        "grammar": "to the source player",
+        "default_values": {
+            "1": " Generic"
+        },
+        "comment": "One unit of this resource is required to be able to train the free transport ship granted by having a Sicilian ally. This seemingly useless cost is necessary to prevent shift queuing multiple of the free transport ship unit. Note that as soon as at least one free transport ship is created, the unit disables itself, no matter how much of this resource is left. It is possible to change this by disabling technology 229, but then keep in mind that regular transport ships won't be trainable once this resource runs out"
     }
 }
