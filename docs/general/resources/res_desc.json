@@ -348,13 +348,13 @@
     },
     "47": {
         "name": "Gold Mining Productivity",
-        "keyword": "Longer lasting gold percent",
+        "keyword": "Amount of gold mined multiplier",
         "grammar": "of the source player",
         "default_values": {
-            "0": " Generic",
-            "10": " Mayans"
+            "1": " Generic",
+            "1.15": " Mayans"
         },
-        "comment": "Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
     },
     "48": {
         "name": "Town Center Unavailable",
@@ -588,13 +588,13 @@
     },
     "79": {
         "name": "Stone Mining Productivity",
-        "keyword": "Longer lasting stone percent",
+        "keyword": "Amount of stone mined multiplier",
         "grammar": "of the source player",
         "default_values": {
-            "0": " Generic",
-            "10": " Mayans"
+            "1": " Generic",
+            "1.15": " Mayans"
         },
-        "comment": "Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
     },
     "80": {
         "name": "Queued Count",
@@ -1372,23 +1372,23 @@
     },
     "189": {
         "name": "Wood Bonus",
-        "keyword": "Longer lasting wood percent",
+        "keyword": "Amount of wood chopped multiplier",
         "grammar": "of the source player",
         "default_values": {
-            "0": " Generic",
-            "10": " Mayans"
+            "1": " Generic",
+            "1.15": " Mayans"
         },
-        "comment": "Side effect - also increases gathering speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
     },
     "190": {
         "name": "Food Bonus",
-        "keyword": "Longer lasting food percent",
+        "keyword": "Amount of food gathered multiplier",
         "grammar": "of the source player",
         "default_values": {
-            "0": " Generic",
-            "10": " Mayans"
+            "1": " Generic",
+            "1.15": " Mayans"
         },
-        "comment": "Side effect - also increases gathering speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%"
     },
     "191": {
         "name": "Relic Rate",
@@ -1428,7 +1428,7 @@
             "0": " Generic",
             "1.3": " Spanish"
         },
-        "comment": "The work rate for builders is `construction_rate_mod * builder.work_rate`"
+        "comment": "The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`"
     },
     "196": {
         "name": "Hun Wonder Bonus",
@@ -1593,10 +1593,13 @@
     },
     "216": {
         "name": "Shepherd Productivity",
-        "keyword": "Longer lasting sheep percent",
+        "keyword": "Amount of food collected from sheep multiplier",
         "grammar": "of the source player",
-        "default_values": {},
-        "comment": "Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)"
+        "default_values": {
+            "1": " Generic",
+            "1.57": " Tatars"
+        },
+        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Tatars, This is compensated for by reducing villager work rate by 57%"
     },
     "217": {
         "name": "Trigger Shared LOS",
