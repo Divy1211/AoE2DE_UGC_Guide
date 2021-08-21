@@ -348,15 +348,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 47
 
-- Purpose: Longer lasting gold percent of the source player
+- Purpose: Amount of gold mined multiplier of the source player
 
 - Default Values:
 
-	- 0:  Generic
+	- 1:  Generic
 
-	- 10:  Mayans
+	- 1.15:  Mayans
 
-- Additional Information: Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)
+- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
 ## 49. Town Center Unavailable
 
@@ -582,15 +582,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 79
 
-- Purpose: Longer lasting stone percent of the source player
+- Purpose: Amount of stone mined multiplier of the source player
 
 - Default Values:
 
-	- 0:  Generic
+	- 1:  Generic
 
-	- 10:  Mayans
+	- 1.15:  Mayans
 
-- Additional Information: Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)
+- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
 ## 81. Queued Count
 
@@ -1308,29 +1308,29 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 189
 
-- Purpose: Longer lasting wood percent of the source player
+- Purpose: Amount of wood chopped multiplier of the source player
 
 - Default Values:
 
-	- 0:  Generic
+	- 1:  Generic
 
-	- 10:  Mayans
+	- 1.15:  Mayans
 
-- Additional Information: Side effect - also increases gathering speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)
+- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
 ## 191. Food Bonus
 
 - ID: 190
 
-- Purpose: Longer lasting food percent of the source player
+- Purpose: Amount of food gathered multiplier of the source player
 
 - Default Values:
 
-	- 0:  Generic
+	- 1:  Generic
 
-	- 10:  Mayans
+	- 1.15:  Mayans
 
-- Additional Information: Side effect - also increases gathering speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)
+- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%
 
 ## 192. Relic Rate
 
@@ -1374,7 +1374,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1.3:  Spanish
 
-- Additional Information: The work rate for builders is `construction_rate_mod * builder.work_rate`
+- Additional Information: The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`
 
 ## 197. Hun Wonder Bonus
 
@@ -1568,9 +1568,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 216
 
-- Purpose: Longer lasting sheep percent of the source player
+- Purpose: Amount of food collected from sheep multiplier of the source player
 
-- Additional Information: Side effect - also increases mining speed times this quantity (works by multiplying the quantity of resource extracted by the vil  this %)
+- Default Values:
+
+	- 1:  Generic
+
+	- 1.57:  Tatars
+
+- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Tatars, This is compensated for by reducing villager work rate by 57%
 
 ## 218. Trigger Shared LOS
 
