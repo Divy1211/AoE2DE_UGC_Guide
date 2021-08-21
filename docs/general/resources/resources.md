@@ -1322,7 +1322,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 190
 
-- Purpose: Amount of food gathered multiplier of the source player
+- Purpose: Amount of food gathered from all sources (except from sheep) multiplier of the source player
 
 - Default Values:
 
@@ -1574,9 +1574,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1:  Generic
 
+	- 1.15:  Mayans
+
 	- 1.57:  Tatars
 
-- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Tatars, This is compensated for by reducing villager work rate by 57%
+- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans/Tatars, This is compensated for by reducing villager work rate by 15%/57%
 
 ## 218. Trigger Shared LOS
 
