@@ -1579,17 +1579,17 @@
     },
     "214": {
         "name": "Mercenary Kipchak Count",
-        "keyword": "Total number of merc kipchak creatable",
+        "keyword": "Total number of mercenary kipchak creatable",
         "grammar": "by the source player",
         "default_values": {},
-        "comment": "Yes, the name of this resource is wrong in the editor"
+        "comment": "Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource"
     },
     "215": {
         "name": "Mercenary Kipchak Limit",
-        "keyword": "Number of merc kipchak created",
+        "keyword": "Number of mercenary kipchaks created/queued",
         "grammar": "by the source player",
         "default_values": {},
-        "comment": "Yes, the name of this resource is wrong in the editor"
+        "comment": "Making mercenary Kipchaks gives one unit of this resource"
     },
     "216": {
         "name": "Shepherd Productivity",

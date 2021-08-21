@@ -1552,17 +1552,17 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 214
 
-- Purpose: Total number of merc kipchak creatable by the source player
+- Purpose: Total number of mercenary kipchak creatable by the source player
 
-- Additional Information: Yes, the name of this resource is wrong in the editor
+- Additional Information: Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource
 
 ## 216. Mercenary Kipchak Limit
 
 - ID: 215
 
-- Purpose: Number of merc kipchak created by the source player
+- Purpose: Number of mercenary kipchaks created/queued by the source player
 
-- Additional Information: Yes, the name of this resource is wrong in the editor
+- Additional Information: Making mercenary Kipchaks gives one unit of this resource
 
 ## 217. Shepherd Productivity
 
