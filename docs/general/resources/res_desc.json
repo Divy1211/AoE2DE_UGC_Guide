@@ -1382,7 +1382,7 @@
     },
     "190": {
         "name": "Food Bonus",
-        "keyword": "Amount of food gathered multiplier",
+        "keyword": "Amount of food gathered from all sources (except from sheep) multiplier",
         "grammar": "of the source player",
         "default_values": {
             "1": " Generic",
@@ -1597,9 +1597,10 @@
         "grammar": "of the source player",
         "default_values": {
             "1": " Generic",
+            "1.15": " Mayans",
             "1.57": " Tatars"
         },
-        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Tatars, This is compensated for by reducing villager work rate by 57%"
+        "comment": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans/Tatars, This is compensated for by reducing villager work rate by 15%/57%"
     },
     "217": {
         "name": "Trigger Shared LOS",
