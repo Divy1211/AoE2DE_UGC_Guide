@@ -156,7 +156,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 22
 
-- Purpose: Percent map explored of the source player
+- Purpose: Percent map explored by the source player
 
 ## 24. Castle Age Tech ID
 
@@ -1794,7 +1794,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: The amount of units lost to enemy conversions by the source player
 
-## 242. Farming Gold Trickle
+## 242. Stone Mining Gold Productivity
 
 - ID: 241
 
