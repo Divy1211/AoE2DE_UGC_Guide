@@ -161,7 +161,7 @@
     "22": {
         "name": "Exploration",
         "keyword": "Percent map explored",
-        "grammar": "of the source player",
+        "grammar": "by the source player",
         "default_values": {},
         "comment": ""
     },
@@ -1799,7 +1799,7 @@
         "comment": ""
     },
     "241": {
-        "name": "Farming Gold Trickle",
+        "name": "Stone Mining Gold Productivity",
         "keyword": "Stone mining gold generation rate per second*100",
         "grammar": "of the source player",
         "default_values": {
