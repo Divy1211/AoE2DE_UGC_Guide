@@ -76,6 +76,7 @@ There are a total of 5 data types supported by XS, they are:
 |`#!cpp vector` | `#!cpp vector v = vector(1.2, 2.3, 3);` |
 
 A few things to note:
+
 1. Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to: XS Scripting > Function Reference > Vector Manipulation") section of this guide for all the different functions that can be used on vectors.
 2. Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
 3. Constant Variables
@@ -120,11 +121,11 @@ Prefix operations are not supported by XS.
 
 ### 4.3 Shorthand Assignment Operations
 
-Shorthand Assignment operations are not suppoerted by XS.
+Shorthand Assignment operations are not supported by XS.
 
 ### 4.4 Bitwise Operations
 
-Bitwise operations are not suppoerted by XS.
+Bitwise operations are not supported by XS.
 
 ### 4.5. Relational Operations
 | **Operation**            | **Syntax** |
