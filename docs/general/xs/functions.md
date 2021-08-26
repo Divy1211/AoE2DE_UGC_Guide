@@ -815,11 +815,11 @@ Prototype: `#!cpp int xsGetRandomNumber()`
 
 Returns a random number between 0 and 32766.
 
-### 5.13. xsGetRandomNumberHL
+### 5.13. xsGetRandomNumberLH
 
 Returning Type: `#!cpp int`
 
-Prototype: `#!cpp int xsGetRandomNumberHL(int low, int high)`
+Prototype: `#!cpp int xsGetRandomNumberLH(int low, int high)`
 
 Parameters:
 
