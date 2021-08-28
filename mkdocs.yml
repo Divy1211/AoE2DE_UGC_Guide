@@ -1,66 +1,66 @@
-site_name: The Ultimate Guide To AoE2DE UGC
-site_url: https://divy1211.github.io/AoE2DE_UGC_Guide/
-docs_dir: docs/
-repo_name: "AoE2DE_UGC_Guide"
-repo_url: "https://github.com/Divy1211/AoE2DE_UGC_Guide"
+site_name:          The Ultimate Guide To AoE2DE UGC
+site_url:           https://divy1211.github.io/AoE2DE_UGC_Guide/
+docs_dir:           docs/
+repo_name:          "AoE2DE_UGC_Guide"
+repo_url:           "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 use_directory_urls: true
 
 nav:
-  - About: "index.md"
+  - About:                          "index.md"
   - Game Mechanics:
-    - Damage Calculation: "general/damage_calculation.md"
-    - Attributes: "general/attributes.md"
-    - Resources: "general/resources/resources.md"
-    - Hotkeys: "general/hotkeys/hotkeys.md"
+    - Damage Calculation:           "general/damage_calculation.md"
+    - Attributes:                   "general/attributes.md"
+    - Resources:                    "general/resources/resources.md"
+    - Hotkeys:                      "general/hotkeys/hotkeys.md"
   - Custom Scenarios:
-    - Scenario Basics: "scenarios/basics.md"
+    - Scenario Basics:              "scenarios/basics.md"
     - Triggers:
-      - Trigger Basics: "scenarios/triggers/basics.md"
-      - Effects: "scenarios/triggers/effects/effects.md"
-    #   - Conditions: "scenarios/triggers/conditions/conditions.md"
-    #   - Variables: "scenarios/triggers/variables.md"
-    # - Tricks and Tips: "scenarios/tricks.md"
+      - Trigger Basics:             "scenarios/triggers/basics.md"
+      - Effects:                    "scenarios/triggers/effects/effects.md"
+    #   - Conditions:               "scenarios/triggers/conditions/conditions.md"
+    #   - Variables:                "scenarios/triggers/variables.md"
+    # - Tricks and Tips:            "scenarios/tricks.md"
     # - Advanced:
-    #   - File Byte Structure: "scenarios/advanced/byte_structure.md"
+    #   - File Byte Structure:      "scenarios/advanced/byte_structure.md"
     - Useful Tools:
       # - Advanced Genie Editor:
-      #   - A.G.E. Uses: "scenarios/useful_tools/age/uses.md"
-      #   - Unhiding Editor Units: "scenarios/useful_tools/age/unhide.md"
+      #   - A.G.E. Uses:            "scenarios/useful_tools/age/uses.md"
+      #   - Unhiding Editor Units:  "scenarios/useful_tools/age/unhide.md"
       - AoE2ScenarioParser:
-        - Parser Basics: "scenarios/useful_tools/parser/basics.md"
+        - Parser Basics:            "scenarios/useful_tools/parser/basics.md"
   - XS Scripting: 
-    - For Beginners: "general/xs/beginner.md"
-    - For Programmers: "general/xs/programmer.md"
-    - Functions Reference: "general/xs/functions.md"
-    - Constant Reference: "general/xs/constants.md"
-    - Known Bugs: "general/xs/bugs.md"
+    - For Beginners:                "general/xs/beginner.md"
+    - For Programmers:              "general/xs/programmer.md"
+    - Functions Reference:          "general/xs/functions.md"
+    - Constant Reference:           "general/xs/constants.md"
+    - Known Bugs:                   "general/xs/bugs.md"
 #   - Data Mods:
-#     - Data Mod Basics: "data_mods/basics.md"
+#     - Data Mod Basics:            "data_mods/basics.md"
 #     - Advanced Genie Editor:
-#       - A.G.E. Basics: "data_mods/age/basics.md"
+#       - A.G.E. Basics:            "data_mods/age/basics.md"
 #   - RMS:
-#     - RMS Basics: "rms/basics.md"
-# - Publishing UGC: "publishing_ugc/publish.md"
+#     - RMS Basics:                 "rms/basics.md"
+# - Publishing UGC:                 "publishing_ugc/publish.md"
 
 markdown_extensions:
-  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
-  - pymdownx.caret # handling sub- and superscripts
-  - pymdownx.mark # highlighting of text
-  - pymdownx.tilde # strikethrough of text
-  - pymdownx.keys # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#keys
-  - pymdownx.tabbed # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/#tabbed
-  - pymdownx.details # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#details
-  - pymdownx.highlight: # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  - admonition                # Create not and warning boxes        https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
+  - pymdownx.caret            # Handling sub- and superscripts      https://facelessuser.github.io/pymdown-extensions/extensions/caret/
+  - pymdownx.mark             # Highlighting of text                https://facelessuser.github.io/pymdown-extensions/extensions/mark/
+  - pymdownx.tilde            # Strikethrough of text               https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+  - pymdownx.keys             # Add styling keyboard keys           https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+  - pymdownx.tabbed           # Tabs                                https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
+  - pymdownx.details          # Collapsable elements                https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.highlight:       # Highlighting code blocks            https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
       linenums: true
-  - pymdownx.emoji:
+  - pymdownx.emoji:           # Emojis                              https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.superfences # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#superfences
-  - pymdownx.smartsymbols # supporting special characters like copyright symbol (c)
-  - pymdownx.arithmatex: # https://squidfunk.github.io/mkdocs-material/reference/mathjax/#arithmatex
+  - pymdownx.inlinehilite     # Inline code highlighting            https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
+  - pymdownx.superfences      # Complicated code fences             https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+  - pymdownx.smartsymbols     # Creating special characters         https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
+  - pymdownx.arithmatex:      # Preserve LaTeX math equations       https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
       generic: true
-  - pymdownx.tasklist: # https://squidfunk.github.io/mkdocs-material/reference/lists/#tasklist
+  - pymdownx.tasklist:        # Creating Check-able tasklist        https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
       custom_checkbox: true
       clickable_checkbox: true
   - toc:
@@ -81,7 +81,20 @@ theme:
   language: en
   favicon: imgs/code.svg
   icon:
-    logo: fontawesome/solid/code
+    logo: octicons/file-code-24
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
   features:
     - navigation.tabs
     # - toc.integrate

@@ -18,11 +18,12 @@ To use an XS:
     
     There should be 2 files in this folder already, called `Constants.xs` and `xs.txt`. In here, create a new file with any name ending with `.xs`. For example, the file can be called `filename.xs`
 
-    Note 1: There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
+    !!! warning "default0.xs"
+        There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
 
-    Note 2: Additionally, the file `Constants.xs` contains a list of constants that can be used in any XS Script.
+    The file `Constants.xs` contains a list of constants that can be used in any XS Script directly, by their name.
 
-    Note 3: A VSC Extension for syntax highlighting and code auto completion for AoE XS Scripting can be found [here](https://marketplace.visualstudio.com/items?itemName=Divy.vscode-xs)
+    A VSC Extension for syntax highlighting and code auto completion for AoE XS Scripting can be found [here](https://marketplace.visualstudio.com/items?itemName=Divy.vscode-xs)
 
 2. To begin with using XS, write this basic code in the file:
 
@@ -75,14 +76,19 @@ There are a total of 5 data types supported by XS, they are:
 |`#!cpp bool`   | `#!cpp bool a = true;`                  |
 |`#!cpp vector` | `#!cpp vector v = vector(1.2, 2.3, 3);` |
 
-A few things to note:
+Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to: XS Scripting > Function Reference > Vector Manipulation") section of this guide for all the different functions that can be used on vectors.
 
-1. Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to: XS Scripting > Function Reference > Vector Manipulation") section of this guide for all the different functions that can be used on vectors.
-2. Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
-3. Constant Variables
-    Syntax `#!cpp const int a = 10;` or `#!cpp const float PI = 3.1415;` will declare an immutable variable.
-4. Scope of a Variable
-    The concept of local and global variables applies to XS.
+!!! note "No Vars in Vector Initialisation"
+    Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
+
+!!! info "Constants and Scope"
+    1. Constant Variables
+
+        Syntax `#!cpp const int a = 10;` or `#!cpp const float PI = 3.1415;` will declare an immutable variable.
+
+    2. Scope of a Variable
+
+        The concept of local and global variables applies to XS.
 
 ## 4. Operations
 
@@ -97,19 +103,20 @@ A few things to note:
 
 Refer to the [Mathematical Operations](../functions/#4-mathematical-operations "Jump to: XS Scripting > Function Reference > Mathematical Operations") section of this guide for useful mathematical functions.
 
-Note:
+!!! warning "Unary Negative"
+    There is no unary negative operator in XS
 
-```cpp
-void main() {
-    int a = 10;
+    ```cpp
+    void main() {
+        int a = 10;
 
-    // this does not work:
-    int b = -a+20;
+        // this does not work:
+        int b = -a+20;
 
-    // instead use:
-    int b = 0-a+20;
-}
-```
+        // instead use:
+        int b = 0-a+20;
+    }
+    ```
 
 ### 4.2. Prefix and Postfix Operations
 | **Operation**     | **Syntax** |
@@ -137,7 +144,8 @@ Bitwise operations are not supported by XS.
 | Equal To                 | `a == b`   |
 | Not Equal To             | `a != b`   |
 
-Note: These relational operators also work on strings, for example `a < b` tells you if `a` lexicographically preceeds `b`.
+!!! info "Relational Operators on Strings"
+    These relational operators also work on strings, for example `a < b` tells you if `a` lexicographically preceeds `b`.
 
 ### 4.6. Boolean Operations
 | **Operation**| **Syntax** |
@@ -147,7 +155,8 @@ Note: These relational operators also work on strings, for example `a < b` tells
 
 Negation is not supported by XS.
 
-Note: due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
+!!! bug "DataType of Result of Operation"
+    Due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
 
 ## 5. Flow Control Statements
 The following flow control statements are supported by XS:
@@ -264,8 +273,6 @@ An XS Script can import other XS Scripts using the following syntax:
 include "absolute/or/relative/path/to/file.xs";
 ```
 
-However... Currently there is a bug (thxDE 11) due to which XS Scripts are not properly transfered to other players in the lobby. For now, a workaround is to manually give everyone the XS Scripts needed.
-
 ## 7. Arrays
 
 Refer to the [Array Manipulation](../functions/#3-array-manipulation "Jump to: XS Scriptig > Function Reference > Array Manipulation") section of this guide on how to use arrays.
@@ -274,7 +281,9 @@ Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supp
 
 ## 8. Type Casting
 
-`#java int`, `#java float` and `bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!cpp string a = "this would work "+5.6;`. However, `#!cpp string a = 5.5;` will not work, instead use: `#!cpp string a = ""+5.5;`. Explicit type casting is done using: `#!cpp (<data type>)<variable or constant>`. Note that due to a current bug, explicit type casting does not work on variables.
+`#!cpp int`, `#!cpp float` and `#!cpp bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!cpp string a = "this would work "+5.6;`. However, `#!cpp string a = 5.5;` will not work, instead use: `#!cpp string a = ""+5.5;`.
+
+It is unknown if XS supports proper explicit type casting
 
 ## 9. Rules
 

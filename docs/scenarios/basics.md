@@ -39,9 +39,11 @@ Under the `Map` tab in the editor, there are several options to change the map, 
 
 3. `Seed Map`: This option generates a map from an RMS using a specified seed. 
 
-What is a seed you ask?
 
-Each generation of a particular RMS in the game has a number attached to it called its "seed" that uniquely identifies that particular generation of the RMS. Generating a map with the same RMS and seed twice will give you the exact same map!
+!!! question
+    What is a seed you ask?
+
+    Each generation of a particular RMS in the game has a number attached to it called its "seed" that uniquely identifies that particular generation of the RMS. Generating a map with the same RMS and seed twice will give you the exact same map!
 
 ### 1.2. AI Map Type
 
@@ -78,7 +80,7 @@ This features is useful for expanding an already existing map if you need to use
 3. `New Map Size`: the size of the new map that will be generated.
 4. `Map Offset`: determines where to place the existing map on the new map.
 
-For exmaple, Extending this 4 player map with a `New Map Size` of `8 players` and a `Map Offset` of `North`
+For example, Extending this 4 player map with a `New Map Size` of `8 players` and a `Map Offset` of `North`
 
 ![Before Extending](imgs/extend_before.png "Before Extending")
 
@@ -161,19 +163,22 @@ This option allows you to change the elevation of existing tiles on the map.
 
 1. `Brush Size`: allows you to pick how large of an area you want to affect on the map at once
 
-*Trick*: In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the `Useful Tools` => `AoE2ScenarioParser` section of this guide.
+!!! tip
+    In the editor, there are 7 different levels of elevation to chose from, but the elevation can actually have higher or lower values. In the editor, there is no way to make water have elevation either, but it is actually possible to give water elevation as well. Both of these things requires use of external map editing tools and are covered under the [AoE2ScenarioParser](../useful_tools/parser/basics/ "Jump To: Custom Scenarios > Useful Tools > AoE2ScenarioParser > Parser Basics") section of this guide.
 
 ### 3.3. Cliffs
 
 This option allows you to place cliffs on your map. There are two types of cliffs to chose from, Granite and Sandstone. They function exactly the same, and differ only in their appearence.
 
-*Trick*: a cliff is actually a gaia object that can be rotated, if you go to the `Units` tab, and enable the `Rotate` option, you will be able to click the cliff and rotate it (right click rotates it in the opposite direction). There are a few rotations of the cliff objects that actually do not have graphics for them and hence appear invisible. but since they are still present on the map, just not visible, they block units from going through them. This mechanic can be used to make invisible walls on the map!
+!!! tip
+    A cliff is actually a gaia object that can be rotated, if you go to the `Units` tab, and enable the `Rotate` option, you will be able to click the cliff and rotate it (right click rotates it in the opposite direction). There are a few rotations of the cliff objects that actually do not have graphics for them and hence appear invisible. but since they are still present on the map, just not visible, they block units from going through them. This mechanic can be used to make invisible walls on the map!
 
 ### 3.4. Map Copy
 
 This option allows you to copy a part of the map and paste it using a brush. There are options to rotate and flip the selected area as well.
 
-**Current Bug**: When a selection that is rectangular is rotated, the highlighted area that shows the brush DOES NOT rotate accordingly to show this rotation, but the game still pastes a rotated as you would expect.
+!!! bug
+    When a selection that is rectangular is rotated, the highlighted area that shows the brush DOES NOT rotate accordingly to show this rotation, but the game still pastes a rotated as you would expect.
 
 There is also another option called `Change Player`. This option allows you to change the player of the units in the selection to another player when pasting the selection.
 
@@ -187,7 +192,9 @@ This option allows you to selectively remove parts of the map in an area using a
 4. Layered Terrain
 5. Trees
 6. Units  
-Note: The layering mode option in this tab seems to have no effect on the way that elements are erased.
+
+!!! abstract
+    The layering mode option in this tab seems to have no effect on the way that elements are erased.
 
 ## 4. Options
 
@@ -200,7 +207,10 @@ Set the specified player's starting PoV to your current view in the editor using
 Set the `Testing Difficulty`
 
 ### 4.3. Full Tech Tree
-Enable `Full Tech Tree`. Note that this is a global option, and not specific to the player. Also note that this option does not disable civ bonuses unlike the full tech tree option in normal games!
+Enable `Full Tech Tree` for all players.
+    
+!!! warning
+    This option does not disable civ bonuses unlike the full tech tree option in normal games!
 
 ### 4.4. Disable Objects
 Disable Buildings, Units or Techs by moving them from the `Full List` to the `Disabled List` by clicking the `<` arrow. remove an object from the disabled list by clicking `>`. The `<<` and `>>` move all items at once  
@@ -231,7 +241,9 @@ Specify the colour of the currently selected player
 Determine the maximum population limit allowed for the currently selected player. This value is capped at 500
 ### 5.6. Base Priority
 This option seems to have no effect on the game.  
-(Note: If you are aware of what this does, please reach out to one of the authors of this guide and let them know!)
+
+!!! question
+    If you are aware of what this does, please reach out to one of the authors of this guide and let them know!
 ### 5.7. Tribe Name
 Sets the name for the currently selected player **if** they are an AI. Does not effect human players
 ### 5.8. Name String ID
@@ -256,7 +268,8 @@ Under the `Messages` tab, there are different options for displaying text in the
 ### 6.1. Scenario Instructions
 This option lets you set the text that is shown in the `Instructions` tab of the `Objectives Panel`.
 
-Note: The `Objective Panel` can be opened by clicking the button to the right of the Tech Tree button at the top of the screen.
+!!! Note
+    The `Objective Panel` can be opened by clicking the button to the right of the Tech Tree button at the top of the screen.
 
 ### 6.2. Objectives
 This option lets you set the text that is shown in the `Objectives` tab of the `Objectives Panel`.
@@ -288,14 +301,14 @@ The game categorises all unit objects in the game into 4 categories, `Units`, `B
 
 By default, units are placed in a random rotation, however scrolling up/down before placing a unit allows you to fix its rotation to whichever rotation you want. To go back to placing in a random rotation, select another unit in the menu and then re select the unit for placement.
 
-Note: While placing these units, changing the player to Gaia will reveal additional hidden units like trees, mines, wolves and other units that only Gaia can own in normal games. There are additional units in the game that cannot be seen in the editor's lists even when using Gaia to place them.
+While placing these units, changing the player to Gaia will reveal additional hidden units like trees, mines, wolves and other units that only Gaia can own in normal games. There are additional units in the game that cannot be seen in the editor's lists even when using Gaia to place them.
 
 There are two ways to use these hidden units:
 
 1. Use a create object trigger with the hidden unit's object ID
 2. Use the Advanced Genie Editor (A.G.E.) to unhide hidden units in the editor to allow for manual placement.
 
-If you do not know how to do either of those, you can refer to the [Effects]("Jump to: Custom Scenarios > Triggers > Effects NON EXISTENT") section of this guide for the first option, and/or refer to the [Unhide Editor Units]("Jump to: Unhide Editor Units NON EXISTENT") section of this guide
+If you do not know how to do either of those, you can refer to the [Effects](../triggers/effects/effects/ "Jump to: Custom Scenarios > Triggers > Effects") section of this guide for the first option, and/or refer to the [Unhide Editor Units]("Jump to: Unhide Editor Units NON EXISTENT") section of this guide
 
 ### 7.2. Deleting Units
 Units that are already placed on the map can be deleted from the map by the following ways:
@@ -320,7 +333,10 @@ When enabled, 9 new options (to the right) appear in the menu for selecting whic
 Remember the players being converted **from** are selected on the right side using the checkboxes, and the player being converted **to** is the one selected in the dropdown to the left!
 
 ## 8. Cinematics
-Under the `Cinematics` tab, there are options to change the movie clips displayed before or after a scenario. These are mainly used in the campaigns, and functionality for changing them in scenarios is bugged as of the time of the writing of this guide.
+Under the `Cinematics` tab, there are options to change the movie clips displayed before or after a scenario. 
+
+!!! bug
+    These are mainly used in the campaigns, and functionality for changing them in scenarios is bugged as of the time of the writing of this guide.
 
 ## 9. Diplomacy
 Under the `Diplomacy` tab, there are options to change the diplomacy settings of the game:
@@ -335,14 +351,16 @@ This option makes it so that teams cannot be changed by players in the game. The
 Disabling this option will not allow players to pick teams in the lobby before the start of the game. The teams will not be locked however, and may still be changed in game **unless** the `Lock Teams` option is also enabled.
 
 ### 9.4. Random Start Points
-This option seems to have no effect on the game.  
-(Note: If you are aware of what this does, please reach out to one of the authors of this guide and let them know!)
+This option seems to have no effect on the game.
+
+!!! question
+    If you are aware of what this does, please reach out to one of the authors of this guide and let them know!
 
 
 ## 10. Triggers
 Under the `Triggers` tab, triggers can be manipulated in a scenario. Triggers are the most powerful component of a scenario as they allow us to do a plethora of different things in a game. They can be used to add more dynamics and game mechanics to a scenario, almost anything that you could think of (within the context of AoE2 and its own limits) is possible to do in some way using triggers.
 
-Details about how to use triggers are covered in the triggers section of this guide.
+Details about how to use triggers are covered in the [Triggers](../triggers/basics/ "Jump To: Custom Scenarios > Triggers > Trigger Basics") section of this guide.
 
 
 ## 11. Useful Hotkeys
@@ -351,24 +369,24 @@ Some hotkeys that are useful to know and make the workflow of making and testing
 1. Scrolling up and down on a dropdown list makes the values go up and down the lists as well
 2. Pressing or holding a letter in any object selection menu will cycle through the list of objects
 3. If you are on a tab where a player can be selected (except triggers) then pressing numbers 1-8 will switch to that player
-4. When testing a scenario (this also works in SP games, and is counted as a cheat) pressing `Ctrl+Shift+F#` where `#` is the number of a player, will let you control that player. For example, pressing `Ctrl+Shift+F4` will shift your control to player 4
+4. When testing a scenario, pressing ++ctrl+shift++ and `F#` where # is the number of a player, will let you control that player. For example, pressing ++ctrl+shift+f4++ will shift your control to player 4
 5. Scrolling when placing objects will rotate them. Some gaia buildings and units have entirely different graphics for different rotations!
-6. Pressing `Ctrl+G` once allows for off grid placement of units. Pressing it again allows for stacking units and off grid placement together. Pressing a 3rd time allows for on grid unit placement with stacking enabled. Pressing a 4th time makes it go back to default! Even Buildings can be stacked using this option!
-7. `Ctrl+Q` Quit the scenario editor
-8. `Ctrl+A` Toggle hitboxes on every unit on the map
-9. `Ctrl+S` Save the scenario
-10. `Ctrl+L` Load a scenario
-11. `Ctrl+N` Create a new scenario
+6. Pressing ++ctrl+g++ once allows for off grid placement of units. Pressing it again allows for stacking units and off grid placement together. Pressing a 3rd time allows for on grid unit placement with stacking enabled. Pressing a 4th time makes it go back to default! Even Buildings can be stacked using this option!
+7. ++ctrl+q++ Quit the scenario editor
+8. ++ctrl+a++ Toggle hitboxes on every unit on the map
+9. ++ctrl+s++ Save the scenario
+10. ++ctrl+l++ Load a scenario
+11. ++ctrl+n++ Create a new scenario
 12. Tabs
-    1. `F1`-`F10` selects a tab in the scenario editor. `F1` - Map, `F2` - Terrain, and so on
-    2. `Ctrl+W` Switch to the `Messages` tab
-    3. `Ctrl+R` Switch to the `Triggers` tab
-    4. `Ctrl+T` Switch to the `Terrain` tab
-    5. `Ctrl+U` Switch to the `Units` tab
-    6. `Ctrl+O` Switch to the `Options` tab
-    7. `Ctrl+P` Switch to the `Players` tab
-    8. `Ctrl+D` Switch to the `Diplomacy` tab
-    9. `Ctrl+C` Switch to the `Cinematics` tab
-    10. `Ctrl+V` Switch to the `Global Victory` tab
-    11. `Ctrl+M` Switch to the `Map` tab
-    12. `Ctrl+Space` Test Scenario (Currently bugged, causes a crash in the game D:)
+    1. ++f1++-++f10++ selects a tab in the scenario editor. ++f1++ - Map, ++f2++ - Terrain, and so on
+    2. ++ctrl+w++ Switch to the Messages tab
+    3. ++ctrl+r++ Switch to the Triggers tab
+    4. ++ctrl+t++ Switch to the Terrain tab
+    5. ++ctrl+u++ Switch to the Units tab
+    6. ++ctrl+o++ Switch to the Options tab
+    7. ++ctrl+p++ Switch to the Players tab
+    8. ++ctrl+d++ Switch to the Diplomacy tab
+    9. ++ctrl+c++ Switch to the Cinematics tab
+    10. ++ctrl+v++ Switch to the Global Victory tab
+    11. ++ctrl+m++ Switch to the Map tab
+13. ++ctrl+space++ Test Scenario (Currently bugged, causes a crash in the game D:)

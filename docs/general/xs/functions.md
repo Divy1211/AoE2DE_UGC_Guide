@@ -711,7 +711,7 @@ Parameters:
 4.  `#!cpp int value`: The value of the effect
 5. (Optional) `#!cpp int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
 
-Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NONE EXISTENT") section of the guide
+Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
 
 ### 5.3. xsGetGameTime
 

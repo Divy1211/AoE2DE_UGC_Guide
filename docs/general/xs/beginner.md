@@ -30,9 +30,10 @@ To use an XS:
     
     There should be 2 files in this folder already, called `Constants.xs` and `xs.txt`. In here, create a new file with any name ending with `.xs`. For example, the file can be called `filename.xs`
 
-    Note 1: There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
+    !!! Warning "default0.xs"
+        There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
 
-    Note 2: Additionally, the file `Constants.xs` contains a list of constants that can be used in any XS Script.
+    The file `Constants.xs` contains a list of constants that can be used in any XS Script, using their name. They are essentially constants that the XS language pre-defines for you.
     
 
 3. Now open this file that you just created in your favourite text/code editor! If you don't have one already, using [Visual Studio Code (VSC)](https://code.visualstudio.com/download) is recommended.
@@ -143,7 +144,8 @@ Some questions that you might have now are:
 
         Usage: `#!cpp bool a = true;` This declares a variable of type `bool` called `a` with a value of `#!cpp true`
         
-        Note: A value of `true` is also indicated by `#!cpp 1` and a value of `false` is also indicated by `#!cpp 0`.
+        !!! note
+            A value of `true` is also indicated by `#!cpp 1` and a value of `false` is also indicated by `#!cpp 0`.
 
     4. String (`string`)
 
@@ -305,7 +307,8 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 
 5. Modulo: `a%b` this gives you the remainder when dividing `a` by `b`.
 
-    Note: due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
+    !!! bug "DataType of Result of Operation"
+        Due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
 
     For Example:
     ```cpp
@@ -442,7 +445,8 @@ xsChatData("5 != 10 : "+(5 != 10));
 xsChatData("10 != 10 : "+(10 != 10));
 ```
 
-Note: These relational operators also work on `string` values, for example `a < b` checks if `a` would alphabetically preceed `b`.
+!!! Note "Relational Operators on Strings"
+    These relational operators also work on `string` values, for example `a < b` checks if `a` would alphabetically preceed `b`.
 
 For Example:
 ```cpp
@@ -526,9 +530,10 @@ Boolean operations allow us to ask these sorts of questions but with boolean val
     | true  | false | false      |
     | true  | true  | true       |
 
-    Note that an AND is not limited to just two variables. Any number of variables may be AND-ed together.
-    For Example: `#!cpp a && b && c && d`. For this expression to evaluate to true, ALL of `a`, `b`, `c` and `d` must be true.
-    Writing a table that lists every combination of inputs and outputs for this expression is left as an excersise for the reader.
+    !!! Tip
+        The AND operation is not limited to just two variables. Any number of variables may be AND-ed together.
+        For Example: `#!cpp a && b && c && d`. For this expression to evaluate to true, ALL of `a`, `b`, `c` and `d` must be true.
+        Writing a table that lists every combination of inputs and outputs for this expression is left as an excersise for the reader.
 
 2. Boolean OR: This is used to check if one or more booleans are `true`.
 
@@ -545,9 +550,10 @@ Boolean operations allow us to ask these sorts of questions but with boolean val
     | true  | false | true         |
     | true  | true  | true         |
 
-    Note that an OR is not limited to just two variables. Any number of variables may be OR-ed together.
-    For Example: `#!cpp a || b || c || d`. For this expression to evaluate to true, only one of `a`, `b`, `c` and `d` needs to be true.
-    Writing a table that lists every combination of inputs and outputs for this expression is left as an excersise for the reader.
+    !!! Tip
+        The OR operation is not limited to just two variables. Any number of variables may be OR-ed together.
+        For Example: `#!cpp a || b || c || d`. For this expression to evaluate to true, only one of `a`, `b`, `c` and `d` needs to be true.
+        Writing a table that lists every combination of inputs and outputs for this expression is left as an excersise for the reader.
 
 
 ANDs and ORs can be used together in the same expression. For example:
@@ -556,7 +562,8 @@ ANDs and ORs can be used together in the same expression. For example:
 
 `a || (b && c)`: for this expression to be `true`, either `a` must be `true`or `b` and `c` must be `true` simultaneously.
 
-Note that if no brackets are used when writing these expressions the expression is evaluated left to right. This means that `a || b && c || d` is the same as `((a || b) && c) || d`. Thus, to make it absolutely clear as to what you mean when writing a boolean expression, you should ALWAYS use brackets appropriately for clarity, even though it is not necessary to do so.
+!!! Note
+    If no brackets are used when writing these expressions the expression is evaluated left to right. This means that `a || b && c || d` is the same as `((a || b) && c) || d`. Thus, to make it absolutely clear as to what you mean when writing a boolean expression, you should ALWAYS use brackets appropriately for clarity, even though it is not necessary to do so.
 
 For example:
 ```cpp
@@ -611,8 +618,9 @@ Manipulating vectors in XS is done in a bit of a special way:
 
     We have already seen how this is done: `#!cpp vector v = vector(1, 2, 3);`
 
-    Note that for some reason, currently we cannot use variables to initialise vectors inside `#!cpp vector()`;
-    This is probably a bug and will be fixed in future versions of XS.
+    !!! warning "No Vars in Vector Initialisation"
+        For some reason, currently we cannot use variables to initialise vectors inside `#!cpp vector()`;
+        This is probably a bug and will be fixed in future versions of XS.
 
     For example:
 
@@ -681,8 +689,6 @@ Manipulating vectors in XS is done in a bit of a special way:
 5. Obtaining the length of a vector:
 
     The length of a vector can be obtained as follows:
-    Note: The length of a vector is given by $\sqrt{x^2+y^2+z^2}$
-
     ```cpp
     void main() {
         vector myVector = vector(1, 2, 3);
@@ -690,10 +696,13 @@ Manipulating vectors in XS is done in a bit of a special way:
     }
     ```
 
+    !!! Note
+        Mathematically, the length of a vector is given by $\sqrt{x^2+y^2+z^2}$
+
+
 6. Normalizing a vector:
 
     The unit vector along the direction of the given vector is obtained by normalising it:
-    Note: This new vector is given by $\left(\cfrac{x}{\sqrt{x^2+y^2+z^2}}, \cfrac{y}{\sqrt{x^2+y^2+z^2}}, \cfrac{z}{\sqrt{x^2+y^2+z^2}}\right)$
 
     ```cpp
     void main() {
@@ -701,6 +710,9 @@ Manipulating vectors in XS is done in a bit of a special way:
         vector unitVectorAlongMyVector = xsVectorNormalize(myVector);
     }
     ```
+
+    !!! note
+        Mathematically, the normalised vector is given by $\left(\cfrac{x}{\sqrt{x^2+y^2+z^2}}, \cfrac{y}{\sqrt{x^2+y^2+z^2}}, \cfrac{z}{\sqrt{x^2+y^2+z^2}}\right)$
 
 ### 3.5. Flow Control Statements
 
@@ -778,7 +790,8 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-    Note that in the above example, both the `#!cpp (b > a)` and `#!cpp (b == 20)` conditions are true. However, in an `#!cpp if else if` statement, only one branch of instructions is ever executed. Which condition takes proiority is decided by what order you write them in. So in this case, `#!cpp "b > 20"` will be chatted to the screen because that is the first condition which is true.
+    !!! Note
+        In the above example, both the `#!cpp (b > a)` and `#!cpp (b == 20)` conditions are true. However, in an `#!cpp if else if` statement, only one branch of instructions is ever executed. Which condition takes proiority is decided by what order you write them in. So in this case, `#!cpp "b > 20"` will be chatted to the screen because that is the first condition which is true.
 
     Technically, whenever a condition becomes true and its branch of instructions are executed, all of the remaining conditions are skipped, and not even evaluated.
 

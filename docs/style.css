@@ -42,6 +42,41 @@ tr:hover {
      background-color: #45495f !important;
 }
 
+.admonition.note {
+     border-color: #e73dd0 !important;
+}
+
+.admonition.note .admonition-title {
+     background-color: #e73dd023 !important;
+}
+
+.admonition.note .admonition-title::before {
+     background-color: #e73dd0 !important;
+}
+
+.admonition.tip {
+     border-color: #e7ce3d !important;
+}
+
+.admonition.tip .admonition-title {
+     background-color: #e7ce3d23 !important;
+}
+
+.admonition.tip .admonition-title::before {
+     background-color: #e7ce3d !important;
+}
+
+.admonition.question {
+     border-color: #e73d8c !important;
+}
+
+.admonition.question .admonition-title {
+     background-color: #e73d8c23 !important;
+}
+
+.admonition.question .admonition-title::before {
+     background-color: #e73d8c !important;
+}
 
 /* this code is used for different table styles in different tabs*/
 
