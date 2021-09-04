@@ -108,5 +108,5 @@ theme:
     primary: red
     accent: red
   font:
-    text: Roboto Slab
+    # text: Roboto Slab
     code: Source Code Pro

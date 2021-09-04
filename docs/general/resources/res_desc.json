@@ -28,8 +28,8 @@
         "comment": ""
     },
     "4": {
-        "name": "Population Cap",
-        "keyword": "Current max pop",
+        "name": "Population Headroom",
+        "keyword": "This resource is the available population space to create units. It is NOT the population cap",
         "grammar": "of the source player",
         "default_values": {},
         "comment": ""

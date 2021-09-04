@@ -30,11 +30,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Gold amount of the source player
 
-## 5. Population Cap
+## 5. Population Headroom
 
 - ID: 4
 
-- Purpose: Current max pop of the source player
+- Purpose: This resource is the available population space to create units. It is NOT the population cap of the source player
 
 ## 6. Conversion Range
 
