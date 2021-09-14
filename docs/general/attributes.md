@@ -196,7 +196,7 @@ What if we want to enable both properties at once? This is achieved by adding th
 |:-------------------------------------------:|:---------------:|
 | Full Hero Status (enables everything below) | 1               |
 | Cannot be converted                         | 2               |
-| Self Regeneration (0.5 HP/s)                | 4               |
+| Self Regeneration (30 HP/minute)            | 4               |
 | Defensive Stance by Default                 | 8               |
 | Protected Formation by Default              | 16              |
 | Safe Delete Confirmation                    | 32              |
@@ -411,4 +411,4 @@ This is a consequence of the fact that every number can be represented as a uniq
 
 - ID: 109
 
-- Purpose: The rate measured in HP/s at which units heal themselves. This value is overridden to 0.5 HP/s if the flag for Self Regeneration is set in the [Hero Status](./#26-hero-status "Jump to: 26. Hero Status") of a unit.
+- Purpose: The rate measured in HP/minute at which units heal themselves. This value is overridden to 30 HP/minute if the flag for Self Regeneration is set in the [Hero Status](./#26-hero-status "Jump to: 26. Hero Status") of a unit.

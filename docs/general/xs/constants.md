@@ -302,7 +302,7 @@ Syntax: `#!cpp xsEffectAmount(cModResource, resourceID, operation, value)`
 
 Example: `#!cpp xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)`
 
-This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100
+This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](./#9-resource "Jump to: Constant Reference > Resource")
 
 ### 4.3. cEnableObject
 
