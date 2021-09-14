@@ -340,7 +340,7 @@
             "usage":{
                 "syntax": "xsEffectAmount(cModResource, resourceID, operation, value)",
                 "example": "xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)",
-                "explanation": "This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100"
+                "explanation": "This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](./#9-resource \"Jump to: Constant Reference > Resource\")"
             }
         },
         {

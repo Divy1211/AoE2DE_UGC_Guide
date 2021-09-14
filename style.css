@@ -1,0 +1,122 @@
+h1 { 
+     color: #f54242 !important;
+     font-family: Centaur !important;
+}
+h2 { 
+     color: #ed324e !important;
+}
+h3, h4 { 
+     color: #ec455e !important;
+}
+
+/* header { 
+     background: url("imgs/test.png") center no-repeat fixed;
+     background-size: cover;
+     background-color: burlywood;
+     color: #000000;
+}
+nav { 
+     background: url("imgs/test.png") center no-repeat fixed;
+     background-size: cover;
+     background-color: burlywood;
+     color: #000000 !important;
+} */
+
+body { 
+     font-weight: 200;
+     /* background: url("imgs/test.jpg");
+     background-size: cover;
+     background-color: burlywood;
+     color: #000000; */
+}
+
+tr:nth-child(even) {
+     background-color: #3a3c4e !important;
+}
+
+tr th {
+     background-color:#ef5552 !important;
+     color: #000000
+}
+tr:hover {
+     background-color: #45495f !important;
+}
+
+.admonition.note {
+     border-color: #e73dd0 !important;
+}
+
+.admonition.note .admonition-title {
+     background-color: #e73dd023 !important;
+}
+
+.admonition.note .admonition-title::before {
+     background-color: #e73dd0 !important;
+}
+
+.admonition.tip {
+     border-color: #e7ce3d !important;
+}
+
+.admonition.tip .admonition-title {
+     background-color: #e7ce3d23 !important;
+}
+
+.admonition.tip .admonition-title::before {
+     background-color: #e7ce3d !important;
+}
+
+.admonition.question {
+     border-color: #e73d8c !important;
+}
+
+.admonition.question .admonition-title {
+     background-color: #e73d8c23 !important;
+}
+
+.admonition.question .admonition-title::before {
+     background-color: #e73d8c !important;
+}
+
+/* this code is used for different table styles in different tabs*/
+
+/* #cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(2),
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(4) {
+     background-color: #535571 !important;
+}
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(3):not(:first-child) {
+     background-color: #4a4c64 !important;
+}
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(2),
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(3),
+#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(4) {
+     background-color: #646986 !important;
+} */
+
+
+/* formatting for damage calculation table under topic 3.3. */
+
+#cs1 + div table tr:nth-child(2),
+#cs1 + div table tr:nth-child(4) {
+     background-color: #535571 !important;
+}
+#cs1 + div table tr:nth-child(3) {
+     background-color: #4a4c64 !important;
+}
+#cs1 + div table tr:hover:nth-child(2),
+#cs1 + div table tr:hover:nth-child(3),
+#cs1 + div table tr:hover:nth-child(4) {
+     background-color: #646986 !important;
+}
+
+/* formatting for damage calculation table under topic 3.4. */
+#cs2 + div table tr:nth-child(3) {
+     background-color: #535571 !important;
+}
+#cs2 + div table tr:hover:nth-child(3) {
+     background-color: #646986 !important;
+}
+
+.arithmatex {
+     font-size: 1em;
+}
