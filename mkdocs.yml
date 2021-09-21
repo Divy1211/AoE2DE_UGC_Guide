@@ -1,5 +1,5 @@
 site_name:          The Ultimate Guide To AoE2DE UGC
-site_url:           ugc.aoe2.rocks
+site_url:           https://ugc.aoe2.rocks
 docs_dir:           docs/
 repo_name:          "AoE2DE_UGC_Guide"
 repo_url:           "https://github.com/Divy1211/AoE2DE_UGC_Guide"
@@ -31,6 +31,7 @@ nav:
   - XS Scripting: 
     - For Beginners:                "general/xs/beginner.md"
     - For Programmers:              "general/xs/programmer.md"
+    - Tricks:                       "general/xs/tricks.md"
     - Functions Reference:          "general/xs/functions.md"
     - Constant Reference:           "general/xs/constants.md"
     - Known Bugs:                   "general/xs/bugs.md"
