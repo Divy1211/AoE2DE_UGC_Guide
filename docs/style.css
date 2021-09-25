@@ -1,3 +1,7 @@
+.hideTOC .md-nav {
+     display: none;
+ }
+
 h1 { 
      color: #f54242 !important;
      font-family: Centaur !important;
