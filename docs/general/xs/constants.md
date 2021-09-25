@@ -1,7 +1,7 @@
 *Written by: Alian713*
 
 ---
-
+<div id="hide-toc-elements"></div>
 ## 1. Age
 
 ### 1.1. cDarkAge

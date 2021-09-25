@@ -6,7 +6,7 @@ with open("./constants.json") as file:
 outmd = """*Written by: Alian713*
 
 ---
-
+<div id="hide-toc-elements"></div>
 """
 
 def toTitle(str):
