@@ -83,15 +83,16 @@ void main() {
 2. Under the `Map` tab, type the name of the XS Script that you created in the `Script Filename` field without the `.xs` at the end. For example, if your file is called `filename.xs` then you will write `filename` in this field.
 3. Now, under the `Triggers` tab in the editor, add a new trigger, then add a new effect. (If you do not know what a trigger/effect is, please go through the `Custom Scenarios: Triggers: Trigger Basics` section of this guide)
 4. From the `Effects List` select `Script Call`.
-5. You can now use the functions in the XS Script in the message box. For example, if your XS file has a function that is called `main()` then to use it, you write `main();`
-6. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
-7. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `main()` function in the XS Script and `30` will be shown in the chat.
+5. You can now use the functions in the XS Script in the message box, by typing "function_name_here();"
+6. The `main()` function that we made above is automatically run when the scenario is played.
+7. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
+8. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `main()` function in the XS Script and `30` will be shown in the chat.
 
 ### 2.2. In an RMS
 
 1. Open the RMS file in a text editor
 2. At the very top, type `#includeXS filename.xs`. Here, `filename.xs` is the name of the file that you created above.
-3. The `main();` function that we made above is automatically run when a map is generated using the RMS.
+3. The `main()` function that we made above is automatically run when a map is generated using the RMS.
 4. To test, load the RMS in a single player (or multi player) lobby and start the game. When the map is generated, the `main()` function in the XS Script will run and `30` will be shown in the chat.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
 

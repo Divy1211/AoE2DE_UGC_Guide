@@ -1438,49 +1438,49 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 205
 
-- Purpose: Feitoria/BR Trade Workshop food production multiplier of the source player
+- Purpose: Feitoria food production multiplier of the source player
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of food obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_food_productivity * 1.6 (2.25)`.
+- Additional Information: The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`
 
 ## 207. Feitoria Wood Productivity
 
 - ID: 206
 
-- Purpose: Feitoria/BR Trade Workshop wood production multiplier of the source player
+- Purpose: Feitoria wood production multiplier of the source player
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of wood obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_wood_productivity * 1 (2.25)`.
+- Additional Information: The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 1`
 
 ## 208. Feitoria Stone Productivity
 
 - ID: 207
 
-- Purpose: Feitoria/BR Trade Workshop stone production multiplier of the source player
+- Purpose: Feitoria stone production multiplier of the source player
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of stone obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_stone_productivity * 0.3 (0)`.
+- Additional Information: The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`
 
 ## 209. Feitoria Gold Productivity
 
 - ID: 208
 
-- Purpose: Feitoria/BR Trade Workshop gold production multiplier of the source player
+- Purpose: Feitoria gold production multiplier of the source player
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of gold obtained from owning `n` number of Feitorias (BR Trade Workshops) is given by `n * feitoria_gold_productivity * 0.7 (2.25)`.
+- Additional Information: The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 0.7`
 
 ## 210. Reveal Enemy Town Centre
 
@@ -1810,15 +1810,51 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 23.805:  Poles with Stone Shaft Mining
 
-## 243. Number Of Free Transports
+## 243. Trade Workshop Food Trickle
 
 - ID: 242
 
-- Purpose: This is the number of free transport ships trainable by having a Sicilian ally to the source player
+- Purpose: Trade Workshop food production multiplier of the source player
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: One unit of this resource is required to be able to train the free transport ship granted by having a Sicilian ally. This seemingly useless cost is necessary to prevent shift queuing multiple of the free transport ship unit. Note that as soon as at least one free transport ship is created, the unit disables itself, no matter how much of this resource is left. It is possible to change this by disabling technology 229, but then keep in mind that regular transport ships won't be trainable once this resource runs out
+- Additional Information: The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`.
+
+## 244. Trade Workshop Wood Trickle
+
+- ID: 243
+
+- Purpose: Trade Workshop wood production multiplier of the source player
+
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`.
+
+## 245. Trade Workshop Stone Trickle
+
+- ID: 244
+
+- Purpose: Trade Workshop stone production multiplier of the source player
+
+- Default Values:
+
+	- 0:  Generic
+
+- Additional Information: The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`.
+
+## 246. Trade Workshop Gold Trickle
+
+- ID: 245
+
+- Purpose: Trade Workshop gold production multiplier of the source player
+
+- Default Values:
+
+	- 1:  Generic
+
+- Additional Information: The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`.
 
