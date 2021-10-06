@@ -15,9 +15,9 @@ This page is a list of known bugs, quirks and weird behaviour in XS Scripting. A
 
 Any new bugs discovered will be added to the list. This list will also be updated with each AoEII:DE update, removing any bugs that get fixed.
 
-If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the `About` page for relevant information about the authors.
+If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the [About](../../../../) page for relevant information about the authors.
 
-Game Version: `101.101.50292.0 6958215`
+Game Version: `101.101.54480.0 7463742`
 
 Last Updated: `{date}`
 
@@ -27,7 +27,7 @@ OS: Windows 10
 
 """
 
-new_line = "\n"
+nl = "\n"
 
 for cat in data:
     bug_no = 1
@@ -41,7 +41,12 @@ for cat in data:
 
             step_no = 1
             for step in bug["Reproduction Steps"]:
-                out+=f"{step_no}. {step.replace('INSERT_CODE_BLOCK_HERE', new_line+new_line.join(bug['Code Block']))}\n"
+                code = ""
+                if bug['Code File']:
+                    with open(f"./bugged/{bug['Code File']}") as file:
+                        code = file.read()
+                        code = f'{nl}```cpp{nl}{code}{nl}```'
+                out+=f"{step_no}. {step.replace(' INSERT_CODE_BLOCK_HERE', code)}{nl}"
                 step_no+=1
             out+="\n"
 
