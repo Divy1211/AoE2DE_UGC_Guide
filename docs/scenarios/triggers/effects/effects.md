@@ -94,57 +94,13 @@ This effect can be used to change the diplomacy stance of the soruce players wit
 This effect can be used to change the armour of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 2. Armour or Attack Class: The Armour/Attack Class to Modify
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 3. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 4. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 5. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 6. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 7. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 8. Operation: Add, Subtract, Multiply or Divide the given quantity
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 
 Some useful tricks with this effect:
 
@@ -155,57 +111,13 @@ Some useful tricks with this effect:
 This effect can be used to change the attack of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 2. Armour or Attack Class: The Armour/Attack Class to Modify
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 3. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 4. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 5. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 6. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 7. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 8. Operation: Add, Subtract, Multiply or Divide the given quantity
-
-Some useful tricks with this effect:
-
-1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 
 Some useful tricks with this effect:
 
@@ -223,35 +135,10 @@ This effect can be used to change the civilization name of specified objects of 
 This effect can be used to change the cost of a specifed unit for a particular player. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-2. Units in the game can only have a maximum of 2 different resource of costs.
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-2. Units in the game can only have a maximum of 2 different resource of costs.
 3. Food: The new food cost of the unit/technology
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-2. Units in the game can only have a maximum of 2 different resource of costs.
 4. Wood: The new wood cost of the unit/technology
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-2. Units in the game can only have a maximum of 2 different resource of costs.
 5. Stone: The new stone cost of the unit/technology
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-2. Units in the game can only have a maximum of 2 different resource of costs.
 6. Gold: The new Gold cost of the unit/technology
 
 Some useful tricks with this effect:
@@ -264,44 +151,8 @@ Some useful tricks with this effect:
 This effect can be used to change the description of a specifed unit for a particular player. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. There are special keywords that are used to display certain information about an object in its description
-2. This is illustrated with the following example:
-```
-Build Trade Workshop (<Cost>)
-Allows you to buy special perks
-
-<hp> <attack> <armor> <piercearmor> <garrison> LoS: 4
-```
-3. Here, all the words in the angle brackets are replaced by those relevant statistics for the unit.
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. There are special keywords that are used to display certain information about an object in its description
-2. This is illustrated with the following example:
-```
-Build Trade Workshop (<Cost>)
-Allows you to buy special perks
-
-<hp> <attack> <armor> <piercearmor> <garrison> LoS: 4
-```
-3. Here, all the words in the angle brackets are replaced by those relevant statistics for the unit.
 3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-
-Some useful tricks with this effect:
-
-1. There are special keywords that are used to display certain information about an object in its description
-2. This is illustrated with the following example:
-```
-Build Trade Workshop (<Cost>)
-Allows you to buy special perks
-
-<hp> <attack> <armor> <piercearmor> <garrison> LoS: 4
-```
-3. Here, all the words in the angle brackets are replaced by those relevant statistics for the unit.
 4. Message: The name/message/instruction to show on screen or the script call to execute
 
 Some useful tricks with this effect:
@@ -321,52 +172,12 @@ Allows you to buy special perks
 This effect can be used to change the max HP of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by or a timer
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 2. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 3. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 5. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 6. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 7. Operation: Add, Subtract, Multiply or Divide the given quantity
-
-Some useful tricks with this effect:
-
-1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 
 Some useful tricks with this effect:
 
@@ -388,42 +199,10 @@ This effect can be used to change the icon of existing units of a given player t
 This effect can be used to change the names of existing units of a given player to the specified name. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
 3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
 4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
 5. Message: The name/message/instruction to show on screen or the script call to execute
-
-Some useful tricks with this effect:
-
-1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
 
 Some useful tricks with this effect:
 
@@ -486,52 +265,12 @@ This effect can be used to change the stance of units of a given player to the g
 This effect can be used to convert units of the source player to the target player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 3. Target Player: This is the second player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 5. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 6. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 7. Flash Object: When this is enabled if the source and target players are the same, the selected object(s) will be flashed
-
-Some useful tricks with this effect:
-
-1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 
 Some useful tricks with this effect:
 
@@ -559,40 +298,10 @@ This effect can be used to change the research location of a specifed technology
 This effect can be used to change a technology's cost for a particular player. The configurations for this effect are as follows:
 
 1. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, this effect changes the cost of the tech for all players
-2. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-3. Techs in the game can only have a maximum of 3 different resource of costs.
 2. Technology: The technology to affect
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, this effect changes the cost of the tech for all players
-2. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-3. Techs in the game can only have a maximum of 3 different resource of costs.
 3. Food: The new food cost of the unit/technology
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, this effect changes the cost of the tech for all players
-2. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-3. Techs in the game can only have a maximum of 3 different resource of costs.
 4. Wood: The new wood cost of the unit/technology
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, this effect changes the cost of the tech for all players
-2. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-3. Techs in the game can only have a maximum of 3 different resource of costs.
 5. Stone: The new stone cost of the unit/technology
-
-Some useful tricks with this effect:
-
-1. Due to a current bug in the game, this effect changes the cost of the tech for all players
-2. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
-3. Techs in the game can only have a maximum of 3 different resource of costs.
 6. Gold: The new Gold cost of the unit/technology
 
 Some useful tricks with this effect:
@@ -650,19 +359,7 @@ This effect can be used to change the value of a variable.. The configurations f
 This effect can be used to move the camera of the player to a specified location. The configurations for this effect are as follows:
 
 1. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect can be used to bring attention of the player to a certain part of the map
 2. Location: The location to create the unit on, or task a unit to
-
-Some useful tricks with this effect:
-
-1. This effect can be used to bring attention of the player to a certain part of the map
-
-Some useful tricks with this effect:
-
-1. This effect can be used to bring attention of the player to a certain part of the map
 3. Scroll: If this is enabled, changing the camera to a new position shows a scrolling animation from the position the player was previously on. If not enabled, the camera cuts to the new position wihout any animations.
 
 Some useful tricks with this effect:
@@ -690,37 +387,9 @@ This effect can be used to remove a displayed timer from the screen. The configu
 This effect creates the unit chosen in the 2nd list inside the selected object or the unit chosen in the 1st list. The unit that the created unit is garrisoned inside does not need to be of the same player.. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
 3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
 4. Unit List 2: This is the second unit to affect
-
-Some useful tricks with this effect:
-
-1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
 
 Some useful tricks with this effect:
 
@@ -740,56 +409,11 @@ This effect can be used to create a unit or building for the specified player. T
 This effect can be used to deal damage to units of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by or a timer
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 2. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 3. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 5. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 6. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
-2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 
 Some useful tricks with this effect:
 
@@ -837,110 +461,12 @@ This effect makes it so that the specified units of the given player cannot be t
 This effect can be used to display instructions on the screen. An icon of a unit may also be displayed along with the instructions. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 4. Display Time: The amount of time to display the instruction for
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 5. Panel Position: Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 6. Play Sound: The sound to play
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 7. Message: The name/message/instruction to show on screen or the script call to execute
-
-Some useful tricks with this effect:
-
-1. This effect is useful for making dialogue sequences
-2. When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time
-3. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 8. Sound Name: The name of the sound to play
 
 Some useful tricks with this effect:
@@ -962,57 +488,9 @@ Some useful tricks with this effect:
 This effect can be used to display a timer on screen. The configurations for this effect are as follows:
 
 1. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-
-Some useful tricks with this effect:
-
-1. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 2. Display Time: The amount of time to display the instruction for
-
-Some useful tricks with this effect:
-
-1. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 3. Time Unit: This specifies the unit of time used in the timer trigger. This can be seconds, minutes or years
-
-Some useful tricks with this effect:
-
-1. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 4. Timer: The time to display the message for
-
-Some useful tricks with this effect:
-
-1. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 5. Message: The name/message/instruction to show on screen or the script call to execute
 
 Some useful tricks with this effect:
@@ -1081,47 +559,11 @@ This effect can be used to stop units of a specific player. The units affected b
 This effect can be used to heal existing units of a given player by the specifed HP amount. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by or a timer
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 2. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 3. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 5. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 6. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 
 Some useful tricks with this effect:
 
@@ -1148,34 +590,9 @@ This effect can be used to lock an unlocked gate. The configurations for this ef
 This effect can be used to modify any attribute of a specified unit. Note that this effects the unit itself, not just existing units. This means that even new units created will have the modified attribute. Refer to the [Attributes](../../../../general/attributes "Jump to: Game Mechanics > Attributes") section of the guide to see a list of modifiable attributes and what each of them does. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by or a timer
-
-Some useful tricks with this effect:
-
-1. Changing the Amount of 1st Resource of a unit changes its population requirement
-2. Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.
 2. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. Changing the Amount of 1st Resource of a unit changes its population requirement
-2. Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.
 3. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. Changing the Amount of 1st Resource of a unit changes its population requirement
-2. Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.
-
-Some useful tricks with this effect:
-
-1. Changing the Amount of 1st Resource of a unit changes its population requirement
-2. Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.
 4. Operation: Add, Subtract, Multiply or Divide the given quantity
-
-Some useful tricks with this effect:
-
-1. Changing the Amount of 1st Resource of a unit changes its population requirement
-2. Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.
 5. Attribute List: The attribute of a unit to modify
 
 Some useful tricks with this effect:
@@ -1225,23 +642,7 @@ This effect can be used to automatically place down a building foundation for a 
 This effect can be used to play a specified sound. The configurations for this effect are as follows:
 
 1. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect is useful for playing a notification sound
 2. Location: The location to create the unit on, or task a unit to
-
-Some useful tricks with this effect:
-
-1. This effect is useful for playing a notification sound
-
-Some useful tricks with this effect:
-
-1. This effect is useful for playing a notification sound
-
-Some useful tricks with this effect:
-
-1. This effect is useful for playing a notification sound
 3. Sound Name: The name of the sound to play
 
 Some useful tricks with this effect:
@@ -1263,72 +664,12 @@ This effect can be used to remove certain units of the specified player from the
 This effect can be used to replace existing units of a given player with another unit. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 2. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 3. Target Player: This is the second player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 5. Object Group: This is the class of units to effect
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 6. Object Type: This is the type of the unit to effect
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 7. Unit List 2: This is the second unit to affect
-
-Some useful tricks with this effect:
-
-1. This effect is widely used by unit upgrade technologies.
-2. Researching Man at Arms replaces all Militia with Man at Arms on the map
-3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 
 Some useful tricks with this effect:
 
@@ -1356,56 +697,8 @@ This effect allows us to write or call functions from an XS Script. While the sc
 This effect can be used to display messages in chat. The configurations for this effect are as follows:
 
 1. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. This effect is super useful for debugging. When you're unsure of which triggers in your map are executed at which point, adding one of these to that trigger will display a message on screen when it gets executed
-2. This effect can also be used to simulate chat between two players
-3. This effect should NOT be used to display instructions to players, because there is an effect that can be used specifically for that
-4. Duplicate messages are not shown
-5. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 2. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-
-Some useful tricks with this effect:
-
-1. This effect is super useful for debugging. When you're unsure of which triggers in your map are executed at which point, adding one of these to that trigger will display a message on screen when it gets executed
-2. This effect can also be used to simulate chat between two players
-3. This effect should NOT be used to display instructions to players, because there is an effect that can be used specifically for that
-4. Duplicate messages are not shown
-5. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 3. Message: The name/message/instruction to show on screen or the script call to execute
-
-Some useful tricks with this effect:
-
-1. This effect is super useful for debugging. When you're unsure of which triggers in your map are executed at which point, adding one of these to that trigger will display a message on screen when it gets executed
-2. This effect can also be used to simulate chat between two players
-3. This effect should NOT be used to display instructions to players, because there is an effect that can be used specifically for that
-4. Duplicate messages are not shown
-5. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
-    1. <BLUE\>
-    2. <RED\>
-    3. <GREEN\>
-    4. <YELLOW\>
-    5. <AQUA\>
-    6. <PURPLE\>
-    7. <GREY\>
-    8. <ORANGE\>
 4. Sound Name: The name of the sound to play
 
 Some useful tricks with this effect:
@@ -1478,23 +771,8 @@ This effect can be used to teleport units of a player from one area of the map t
 This effect can be used to tribute resources from one player to another. The configurations for this effect are as follows:
 
 1. Quantity: The amount to modify by or a timer
-
-Some useful tricks with this effect:
-
-1. Tributing negative resources actually gives the source player the resource and deducts that amount from the target player
-2. Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound.
 2. Tribute List: The resource to tribute
-
-Some useful tricks with this effect:
-
-1. Tributing negative resources actually gives the source player the resource and deducts that amount from the target player
-2. Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound.
 3. Source Player: The player that is affected by the effect
-
-Some useful tricks with this effect:
-
-1. Tributing negative resources actually gives the source player the resource and deducts that amount from the target player
-2. Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound.
 4. Target Player: This is the second player that is affected by the effect
 
 Some useful tricks with this effect:
