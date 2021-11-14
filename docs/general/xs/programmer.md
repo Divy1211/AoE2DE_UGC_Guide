@@ -77,7 +77,7 @@ There are a total of 5 data types supported by XS, they are:
 |`#!cpp bool`   | `#!cpp bool a = true;`                  |
 |`#!cpp vector` | `#!cpp vector v = vector(1.2, 2.3, 3);` |
 
-Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to: XS Scripting > Function Reference > Vector Manipulation") section of this guide for all the different functions that can be used on vectors.
+Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scripting > Function Reference > Vectors") section of this guide for all the different functions that can be used on vectors.
 
 !!! note "No Vars in Vector Initialisation"
     Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
@@ -102,7 +102,7 @@ Refer to the [Vector Manipulation](../functions/#2-vector-manipulation "Jump to:
 | Division       | `a/b`      |
 | Modulo         | `a%b`      |
 
-Refer to the [Mathematical Operations](../functions/#4-mathematical-operations "Jump to: XS Scripting > Function Reference > Mathematical Operations") section of this guide for useful mathematical functions.
+Refer to the [Mathematical Operations](../functions/#4-maths "Jump to: XS Scripting > Function Reference > Maths") section of this guide for useful mathematical functions.
 
 !!! warning "Unary Negative"
     There is no unary negative operator in XS
@@ -276,7 +276,7 @@ include "absolute/or/relative/path/to/file.xs";
 
 ## 7. Arrays
 
-Refer to the [Array Manipulation](../functions/#3-array-manipulation "Jump to: XS Scriptig > Function Reference > Array Manipulation") section of this guide on how to use arrays.
+Refer to the [Array Manipulation](../functions/#3-arrays "Jump to: XS Scriptig > Function Reference > Arrays") section of this guide on how to use arrays.
 
 Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supported by XS.
 
