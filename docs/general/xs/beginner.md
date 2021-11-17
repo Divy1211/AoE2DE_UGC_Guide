@@ -197,7 +197,7 @@ Some questions that you might have now are:
 
     1. We first initalise `my_var` to `#!cpp 20`.
     2. Then we assign a value of `#!cpp 30` to `my var`.
-    3. Then we initialise another variable called `my_var2` whoes value is equal to the value of `my_var`.
+    3. Then we initialise another variable called `my_var2` whose value is equal to the value of `my_var`.
     4. Then we try to assign the string `#!cpp "this is a string"` to `my_var` but remember that `my_var` is an integer, and it is not capable of storing a string, so this will actually give you an error. Think about it this way, you cannot put water in a paper bag, paper bags are not meant to store water!
     There is an exception to this rule:
 
@@ -253,7 +253,7 @@ While these are the only *laws* that you absolutely must follow, there are some 
 
 3. When you are writing a variable that is supposed to just store the value of a constant, one which you never intend to change, it is conventional to use capital letters and words are separated by underscores. For example: `#!cpp float PI = 3.14159;` or `#!cpp float GOLDEN_RATIO = 1.61803;`.
 
-4. Variable names should be precise and mnemonic. That is, they should indicate to a casual programmer their purpose. Usage of single letter variable names is discouraged unless it is a throwaway or temporary variable.wdww
+4. Variable names should be precise and mnemonic. That is, they should indicate to a casual programmer their purpose. Usage of single letter variable names is discouraged unless it is a throwaway or temporary variable.
 
 ### 3.4. Operations
 
@@ -292,7 +292,7 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 
     `#!cpp 5/2 = 2`
     
-    `#!cpp 17/6 = 3`
+    `#!cpp 17/6 = 2`
     
     Basically, you round down any fractional part to your answer when you do normal division for integers.
     
@@ -309,7 +309,7 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 5. Modulo: `a%b` this gives you the remainder when dividing `a` by `b`.
 
     !!! bug "DataType of Result of Operation"
-        Due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
+        Due to a bug at the moment, the data type of the answer of any operation is decided by the first number used in the operation. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`. Note that this is a bug in XS itself and will probably be fixed in a future update
 
     For Example:
     ```cpp

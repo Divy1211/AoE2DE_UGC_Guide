@@ -780,7 +780,7 @@ Parameters:
 
 1.  `#!cpp int playerNumber`: The player to get the civilization of
 
-Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs. Note that even though currently constants for Poles and Bohemians are missing from the Constants file, they are still present in the game. Poles = 38 and Bohemians = 39
+Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs
 
 ### 5.10. xsGetPlayerInGame
 
@@ -804,7 +804,7 @@ Parameters:
 
 1.  `#!cpp int playerNumber`: The player whoes technology count is being requested.
 
-Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games.
+Returns the number of technologies available to the player in the entire game.
 
 ### 5.12. xsGetRandomNumber
 

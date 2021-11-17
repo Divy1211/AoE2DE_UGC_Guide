@@ -19,7 +19,7 @@ OS: Windows 10
 
 ## Bugs
 
-### 1. xsEffectAmount Related Crashes
+### 1. `xsEffectAmount` Related Crashes
 
 Description: When an attribute for a player that is not present in the game is modified, a crash occurs
 
