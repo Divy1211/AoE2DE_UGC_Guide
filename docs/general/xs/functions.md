@@ -784,15 +784,15 @@ Returns the civilization ID of the given player. Refer to the [Constant Referenc
 
 ### 5.10. xsGetPlayerInGame
 
-Returning Type: `#!cpp int`
+Returning Type: `#!cpp bool`
 
-Prototype: `#!cpp int xsGetPlayerInGame(int playerNumber)`
+Prototype: `#!cpp bool xsGetPlayerInGame(int playerNumber)`
 
 Parameters:
 
 1.  `#!cpp int playerNumber`: Check if this player is still alive
 
-Returns a 1 if the player given is still alive. Returns a 0 if the player given has been eliminated.
+Returns true if the player given is still alive, and false otherwise.
 
 ### 5.11. xsGetPlayerNumberOfTechs
 

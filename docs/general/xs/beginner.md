@@ -336,9 +336,9 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
     }
     ```
 
-    Also Additionally, when testing stuff using `xsChatData`, be vary of some quirks that this has:
+    Also Additionally, when testing stuff using `xsChatData`, be wary of some quirks that this has:
     ```cpp
-
+    void main() {
         // Note that chat data does not send the same thing multiple consecutively
         // which means if two calculations have the same result, only the first
         // one is shown

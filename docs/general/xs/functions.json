@@ -977,7 +977,7 @@
         },
         {
             "name": "xsGetPlayerInGame",
-            "return_type": "int",
+            "return_type": "bool",
             "params": [
                 {
                     "name": "playerNumber",
@@ -986,7 +986,7 @@
                     "desc": "Check if this player is still alive"
                 }
             ],
-            "desc": "Returns a 1 if the player given is still alive. Returns a 0 if the player given has been eliminated."
+            "desc": "Returns true if the player given is still alive, and false otherwise."
         },
         {
             "name": "xsGetMapName",
