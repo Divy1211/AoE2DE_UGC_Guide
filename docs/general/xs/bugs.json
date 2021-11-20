@@ -1,7 +1,7 @@
 { 
     "Bugs": [
         {
-            "Name": "xsEffectAmount Related Crashes",
+            "Name": "`xsEffectAmount` Related Crashes",
             "Description" : "When an attribute for a player that is not present in the game is modified, a crash occurs",
             "Expected Behaviour": "Expressions and variables should be able to be used when initialising Vectors.",
             "Reproduction Steps": [

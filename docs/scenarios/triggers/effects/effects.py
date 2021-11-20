@@ -39,27 +39,27 @@ Executing a trigger means that we carry out its effects.
 
 """
 
-effects = dict(sorted(effects.items(), key = lambda x: x[1]["name"]))
+effects = dict(sorted(effects.items(), key=lambda x: x[1]["name"]))
 
 for count, (effect_id, effect) in enumerate(effects.items(), 1):
-    out+=f"### 3.{count}. {effect['name']}\n\n"
+    out += f"### 3.{count}. {effect['name']}\n\n"
     if len(effect["attrs"]) > 0:
-        out += effect['desc']+". The configurations for this effect are as follows:\n\n"
+        out += effect['desc'] + ". The configurations for this effect are as follows:\n\n"
         effect_count = 1
         for attr in effect["attrs"]:
             if type(effect_attrs[attr]) == list:
                 for attrib in effect_attrs[attr]:
                     if attrib["show"]:
-                        out+=f"{effect_count}. "+attrib["display_name"]+f": {attrib['desc']}\n"
-                        effect_count+=1
+                        out += f"{effect_count}. " + attrib["display_name"] + f": {attrib['desc']}\n"
+                        effect_count += 1
             elif effect_attrs[attr]["show"]:
-                out+=f"{effect_count}. "+effect_attrs[attr]["display_name"]+f": {effect_attrs[attr]['desc']}\n"
-                effect_count+=1
-            if len(effect["tricks"]) > 0:
-                out+="\nSome useful tricks with this effect:\n\n"
-                for trick_count, trick in enumerate(effect["tricks"], 1):
-                    out+=f"{trick_count}. "+trick+"\n"
-        out+="\n"
+                out += f"{effect_count}. " + effect_attrs[attr]["display_name"] + f": {effect_attrs[attr]['desc']}\n"
+                effect_count += 1
+        if len(effect["tricks"]) > 0:
+            out += "\nSome useful tricks with this effect:\n\n"
+            for trick_count, trick in enumerate(effect["tricks"], 1):
+                out += f"{trick_count}. " + trick + "\n"
+        out += "\n"
 
 for count, (effect_id, effect) in enumerate(effects.items(), 1):
     out = out.replace(f"<effect_id_ref {effect_id}>", f"#3{count}-{effect['name'].lower().replace(' ', '-')}")

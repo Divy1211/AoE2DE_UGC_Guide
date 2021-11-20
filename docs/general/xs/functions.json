@@ -973,11 +973,11 @@
                     "desc": "The player to get the civilization of"
                 }
             ],
-            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scriptin > Constant Reference > #3. Civs\") for all the different civ IDs. Note that even though currently constants for Poles and Bohemians are missing from the Constants file, they are still present in the game. Poles = 38 and Bohemians = 39"
+            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scriptin > Constant Reference > #3. Civs\") for all the different civ IDs"
         },
         {
             "name": "xsGetPlayerInGame",
-            "return_type": "int",
+            "return_type": "bool",
             "params": [
                 {
                     "name": "playerNumber",
@@ -986,7 +986,7 @@
                     "desc": "Check if this player is still alive"
                 }
             ],
-            "desc": "Returns a 1 if the player given is still alive. Returns a 0 if the player given has been eliminated."
+            "desc": "Returns true if the player given is still alive, and false otherwise."
         },
         {
             "name": "xsGetMapName",
@@ -1048,7 +1048,7 @@
                     "desc": "The player whoes technology count is being requested."
                 }
             ],
-            "desc": "Returns the number of technologies available to the player in the entire game. Always returns 801 for unmodded games."
+            "desc": "Returns the number of technologies available to the player in the entire game."
         },
         {
             "name": "xsPlayerAttribute",

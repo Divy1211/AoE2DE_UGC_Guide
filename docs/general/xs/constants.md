@@ -338,7 +338,7 @@ Syntax: `#!cpp xsEffectAmount(cUpgradeUnit, oldUnitID, newUnitID, 0)`
 
 Example: `#!cpp xsEffectAmount(cUpgradeUnit, 74, 75, 0)`
 
-This replaces all units 74 (militia) with 75 (man at arms) on the map and also disables unit 74 and enables unit 75
+This copies all units attributes except ID and available from unit 75 (man at arms) to 74 (militia)
 
 ### 4.5. cAddAttribute
 
