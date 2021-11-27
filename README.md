@@ -23,6 +23,18 @@ This guide will cover Making Custom Scenarios, Data Modding and RM Scripting. No
 
 Yes, most of the topics covered in this file will apply to all older versions of the game.
 
+## How do I build this locally so I can add more amazing content?
+
+Checkout the repository, then set up a virtual python environment and install the necessary packages:
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Now you can build and view the site by running `mkdocs serve`.
+
 ## About the Authors
 
 If you have questions, join our discord [here](https://discord.gg/rNa6cUC76W "Join the All About UGC discord!")!
