@@ -7,6 +7,7 @@ use_directory_urls: true
 
 nav:
   - About:                          "index.md"
+  - Game Mods:                      "mods.md"
   - Game Mechanics:
     - Damage Calculation:           "general/damage_calculation.md"
     - Attributes:                   "general/attributes.md"
