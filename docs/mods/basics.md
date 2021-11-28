@@ -122,13 +122,13 @@ To update a mod via the ageofempires.com website, you:
 
 ## Troubleshooting
 
-_Do you have trouble updating / downloading mods or logging in?_
+### 1. Do you have trouble updating / downloading mods or logging in?
 
 Maybe the mod centre simply is going through a phase of having technical issues.
 That happens frequently.
 Ask fellow modders if they are experiencing the same issues.
 
-_Does the content you added in your mod not show up in game?_
+### 2. Does the content you added in your mod not show up in game?
 
 Maybe your mod is just disabled.
 That happens automatically after a game update.
