@@ -1,12 +1,16 @@
-# Game Mods
+*Written By: Hszemi*
+
+---
 
 Game mods (short for "modifications") allow you to customise your game.
-The most common types of mods are additional content (like Random Map Scripts, Scenarios, or Campaigns),
-User Interface mods (like moving the resource bar to the bottom),
-Graphic mods (like small trees or idle villager pointer),
-and Data mods (like the Exploding Villagers mod or the No Wall mod).
+The most common types of mods are:
 
-**Mods work by modifying or adding files in your game directory. That's it.**  
+1. Additional content (like Random Map Scripts, Scenarios, or Campaigns),
+2. User Interface mods (like moving the resource bar to the bottom),
+3. Graphic mods (like small trees or idle villager pointer),
+4. Data mods (like the Exploding Villagers mod or the No Wall mod).
+
+**Mods work by modifying or adding files in your game directory. That's it.**
 The hard part is figuring out which files you need to modify, and how.
 
 Of course you can edit files in your game folder directly, but that has the following disadvantages:
@@ -94,15 +98,26 @@ And then, you of course want to update your published mod, so everyone else can 
 
 ### Updating from withing the game
 
-_Todo – I don't actually know. Maybe you just push "Publish" again?_
+To update a mod via the game:
+
+1. go to the in-game mod menu,
+2. go to the "My Mods" tab
+3. click the mod that you want to update
+4. click "Update Mod"
+5. type in the relevant information in the fields provided
+6. select the folder that contains your mod using the "Select Folder" option at the top left of the UI
+7. click "Publish" and wait for a few seconds. Once the mod is up, you will be redirected to the ageofempires.com page for your mod
 
 
 ### Updating via ageofempires.com
 
-To update a mod via the ageofempires.com website, you create a new zip file with all the contents of the mod, then open the mod you want to update on the website, edit it, and then select your new zip file under "Zip File Upload".
-You also have the ability to describe what changed in this update in the "Change List" field.
+To update a mod via the ageofempires.com website, you:
 
-Click "Submit", wait for a few seconds/minutes, and your mod should be updated.
+1. create a new zip file with all the contents of the mod
+2. open the mod you want to update on the website and click edit it
+3. select your new zip file under "Zip File Upload".
+4. you also have the ability to describe what changed in this update in the "Change List" field.
+5. click "Submit", wait for a few seconds/minutes, and your mod should be updated.
 
 
 ## Troubleshooting
