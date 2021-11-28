@@ -35,13 +35,13 @@ nav:
     - Functions Reference:          "general/xs/functions.md"
     - Constant Reference:           "general/xs/constants.md"
     - Known Bugs:                   "general/xs/bugs.md"
-#   - Data Mods:
-#     - Data Mod Basics:            "data_mods/basics.md"
+  - Mods:
+    - Mod Basics:                   "mods/basics.md"
+#   - Data Mods
 #     - Advanced Genie Editor:
-#       - A.G.E. Basics:            "data_mods/age/basics.md"
+#       - A.G.E. Basics:            "mods/age/basics.md"
 #   - RMS:
 #     - RMS Basics:                 "rms/basics.md"
-# - Publishing UGC:                 "publishing_ugc/publish.md"
 
 markdown_extensions:
   - admonition                # Create not and warning boxes        https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
@@ -110,5 +110,5 @@ theme:
     primary: red
     accent: red
   font:
-    # text: Roboto Slab
+    # text: Times New Roman
     code: Source Code Pro

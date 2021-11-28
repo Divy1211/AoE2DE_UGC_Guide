@@ -26,14 +26,6 @@ nav {
      color: #000000 !important;
 } */
 
-body { 
-     font-weight: 200;
-     /* background: url("imgs/test.jpg");
-     background-size: cover;
-     background-color: burlywood;
-     color: #000000; */
-}
-
 tr:nth-child(even) {
      background-color: #3a3c4e !important;
 }

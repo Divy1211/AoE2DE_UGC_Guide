@@ -26,4 +26,4 @@ xsEffectAmount(cSetAttribute, HOUSE, cStoneCost, 10, 1);
 xsEffectAmount(cMulAttribute, HOUSE, cWoodCost, -2, 1);
 ```
 
-This same trick also works for changing technology costs.
+This same trick does **not** work for changing technology costs.
