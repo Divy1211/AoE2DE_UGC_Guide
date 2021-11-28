@@ -35,8 +35,8 @@ nav:
     - Functions Reference:          "general/xs/functions.md"
     - Constant Reference:           "general/xs/constants.md"
     - Known Bugs:                   "general/xs/bugs.md"
-#   - Data Mods:
-#     - Data Mod Basics:            "data_mods/basics.md"
+#   - Mods:
+#     - Publishing A Mod:            "mods.md"
 #     - Advanced Genie Editor:
 #       - A.G.E. Basics:            "data_mods/age/basics.md"
 #   - RMS:
