@@ -79,6 +79,8 @@ extra_css:
   - style.css
 
 theme:
+  analytics:
+    gtag: G-X6E7LFHRLR
   name: material
   language: en
   favicon: imgs/code.svg
