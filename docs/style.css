@@ -1,11 +1,13 @@
+h2 { 
+     color: #BABABA !important;
+}
+h3, h4 { 
+     color: #c0c0c0 !important;
+}
+
 .hideTOC .md-nav {
      display: none;
  }
-
-hsd1 { 
-     color: #f54242 !important;
-     /* font-family: Centaur !important; */
-}
 
 .md-tabs {
      background-color: #FC5956 !important;
@@ -27,43 +29,34 @@ body {
      background-color: #111111 !important;
 }
 
-/* h2 { 
-     color: #ed324e !important;
-}
-h3, h4 { 
-     color: #ec455e !important;
-} */
-
-h2 { 
-     color: #BABABA !important;
-}
-h3, h4 { 
-     color: #c0c0c0 !important;
+.md-footer {
+     background-color: #111111;
+     
 }
 
-/* header { 
-     background: url("imgs/test.png") center no-repeat fixed;
-     background-size: cover;
-     background-color: burlywood;
-     color: #000000;
-}
-nav { 
-     background: url("imgs/test.png") center no-repeat fixed;
-     background-size: cover;
-     background-color: burlywood;
-     color: #000000 !important;
-} */
-
-tr:nth-child(even) {
-     background-color: #3a3c4e !important;
+.md-footer-meta {
+     background-color: #000000;
 }
 
-tr th {
-     background-color:#ef5552 !important;
-     color: #000000
+/* width */
+::-webkit-scrollbar {
+     width: 5px;
+     background-color: transparent;
 }
-tr:hover {
-     background-color: #45495f !important;
+   
+/*Track */
+::-webkit-scrollbar-track {
+     background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #5b5c67;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+     background: #ff1947;
 }
 
 .admonition.note {
@@ -105,43 +98,54 @@ tr:hover {
      background-color: #e73d8c !important;
 }
 
-/* this code is used for different table styles in different tabs*/
-
-/* #cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(2),
-#cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(4) {
-     background-color: #535571 !important;
+tr td, table {
+     border-width: 0 !important;
 }
-#cs1 + div .tabbed-content:nth-of-type(1) table tr:nth-child(3):not(:first-child) {
-     background-color: #4a4c64 !important;
-}
-#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(2),
-#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(3),
-#cs1 + div .tabbed-content:nth-of-type(1) table tr:hover:nth-child(4) {
-     background-color: #646986 !important;
-} */
 
+tr th {
+     background-color:#ef5552 !important;
+     color: #000000;
+}
+
+tr:nth-child(even) {
+     background-color: #2b2b2b !important;
+}
+
+tr:nth-child(odd) {
+     background-color: #1E2021 !important;
+}
+
+tr:hover {
+     background-color: #63696E !important;
+}
+
+
+table {
+     box-shadow: 3px 3px 5px 0px #111111;
+}
 
 /* formatting for damage calculation table under topic 3.3. */
-
-#cs1 + div table tr:nth-child(2),
-#cs1 + div table tr:nth-child(4) {
-     background-color: #535571 !important;
-}
-#cs1 + div table tr:nth-child(3) {
-     background-color: #4a4c64 !important;
-}
-#cs1 + div table tr:hover:nth-child(2),
-#cs1 + div table tr:hover:nth-child(3),
-#cs1 + div table tr:hover:nth-child(4) {
-     background-color: #646986 !important;
-}
+#cs1 + div table { 
+     border-collapse: collapse !important;
+     overflow-x: hidden !important;
+     border-spacing: 0 !important;
+ }
+ #cs1 + div table tr:nth-child(2),
+ #cs1 + div table tr:nth-child(3),
+ #cs1 + div table tr:nth-child(4) {
+     border: 2px #ef5552 solid !important;
+     background-clip: padding-box !important;
+ }
 
 /* formatting for damage calculation table under topic 3.4. */
+#cs2 + div table { 
+     border-collapse: collapse !important;
+     overflow-x: hidden !important;
+     border-spacing: 0 !important;
+ }
 #cs2 + div table tr:nth-child(3) {
-     background-color: #535571 !important;
-}
-#cs2 + div table tr:hover:nth-child(3) {
-     background-color: #646986 !important;
+     border: 2px #ef5552 solid !important;
+     background-clip: padding-box !important;
 }
 
 .arithmatex {
