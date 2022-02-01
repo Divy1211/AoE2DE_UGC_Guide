@@ -2,15 +2,43 @@
      display: none;
  }
 
-h1 { 
+hsd1 { 
      color: #f54242 !important;
-     font-family: Centaur !important;
+     /* font-family: Centaur !important; */
 }
-h2 { 
+
+.md-tabs {
+     background-color: #FC5956 !important;
+}
+
+.md-header {
+     box-shadow: 0px 0px 15px -8px #000000;
+}
+
+body {
+     background-color: #222222 !important;
+}
+
+.highlighttable .linenos {
+     background-color: #111111 !important;
+}
+
+.md-typeset code {
+     background-color: #111111 !important;
+}
+
+/* h2 { 
      color: #ed324e !important;
 }
 h3, h4 { 
      color: #ec455e !important;
+} */
+
+h2 { 
+     color: #BABABA !important;
+}
+h3, h4 { 
+     color: #c0c0c0 !important;
 }
 
 /* header { 
