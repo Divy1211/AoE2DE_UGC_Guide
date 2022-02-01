@@ -40,6 +40,7 @@ tr:hover {
 
 .admonition.note {
      border-color: #e73dd0 !important;
+     font-size: 16px;
 }
 
 .admonition.note .admonition-title {
@@ -52,6 +53,7 @@ tr:hover {
 
 .admonition.tip {
      border-color: #e7ce3d !important;
+     font-size: 16px;
 }
 
 .admonition.tip .admonition-title {
@@ -64,6 +66,7 @@ tr:hover {
 
 .admonition.question {
      border-color: #e73d8c !important;
+     font-size: 16px;
 }
 
 .admonition.question .admonition-title {
