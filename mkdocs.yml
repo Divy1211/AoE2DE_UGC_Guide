@@ -83,7 +83,7 @@ theme:
     gtag: G-X6E7LFHRLR
   name: material
   language: en
-  favicon: imgs/code.svg
+  # favicon:
   icon:
     logo: octicons/file-code-24
     admonition:
@@ -112,5 +112,5 @@ theme:
     primary: red
     accent: red
   font:
-    # text: Times New Roman
-    code: Source Code Pro
+    text: Roboto
+    code: Consolas
