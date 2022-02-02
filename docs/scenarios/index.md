@@ -1,3 +1,5 @@
+# Basics of the Scenario Editor
+
 *Written by: Alian713*
 
 ---

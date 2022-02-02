@@ -1,20 +1,21 @@
+.md-header {
+     box-shadow: 0px 0px 15px -5px #000000 !important;
+}
+
+.md-tabs {
+     background-color: #bc4240 !important;
+     box-shadow: 0px 0px 15px -5px #000000 !important;
+}
+
+.hideTOC .md-nav {
+     display: none !important;
+}
+
 h2 { 
      color: #BABABA !important;
 }
 h3, h4 { 
      color: #c0c0c0 !important;
-}
-
-.hideTOC .md-nav {
-     display: none;
- }
-
-.md-tabs {
-     background-color: #FC5956 !important;
-}
-
-.md-header {
-     box-shadow: 0px 0px 15px -8px #000000;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 
 .md-footer {
      background-color: #111111;
-     
+     z-index: 100;
 }
 
 .md-footer-meta {
@@ -40,36 +41,47 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-     width: 5px;
-     background-color: transparent;
+     width: 5px !important;
 }
    
 /*Track */
 ::-webkit-scrollbar-track {
-     background-color: transparent;
+     background-color: transparent !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-     background: #5b5c67;
+     background: #5b5c67 !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-     background: #ff1947;
+     background: #ff1947 !important;
 }
 
-.admonition.note {
+/* .md-typeset :is(.note)>:is(.admonition-title,summary) {
      border-color: #e73dd0 !important;
-     font-size: 16px;
+}
+
+.admonition.note .admonition-title::before {
+     background-color: #e73dd0 !important;
 }
 
 .admonition.note .admonition-title {
      background-color: #e73dd023 !important;
 }
 
-.admonition.note .admonition-title::before {
-     background-color: #e73dd0 !important;
+.admonition.note {
+     border-color: #e73dd0 !important;
+     font-size: 14px;
+}
+
+.admonition.warning {
+     font-size: 14px;
+}
+
+.admonition.tip, .admonition-title {
+     font-size: 16px !important;
 }
 
 .admonition.tip {
@@ -96,7 +108,7 @@ body {
 
 .admonition.question .admonition-title::before {
      background-color: #e73d8c !important;
-}
+} */
 
 tr td, table {
      border-width: 0 !important;

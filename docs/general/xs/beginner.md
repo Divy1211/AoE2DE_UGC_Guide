@@ -9,13 +9,9 @@ If you know how to program in any language then you're wasting your time on this
 
 If you're not a programmer, fear not! You are at the right place to learn all about XS!
 
-## 1. What is XS?
+## 1. Using an XS Script
 
-XS stands for External Subroutines and it is a custom programming language that was made by Ensamble Studios. An XS Script can be used in an RMS and Custom Scenarios, and it is a program that can perform calculations and execute different functions and effects.
-
-## 2. Using an XS
-
-To use an XS:
+To use an XS script:
 
 1. Make sure you can see file extensions. That means that every file on your computer should have a name that looks something like `filename.ext`. If you can see file extensions, then proceed to step 2. If not, then follow these steps:
 
@@ -77,7 +73,7 @@ void main() {
 }
 ```
 
-### 2.1. In a Custom Scenario
+### 1.1. In a Custom Scenario
 
 1. Open the scenario in the editor
 2. Under the `Map` tab, type the name of the XS Script that you created in the `Script Filename` field without the `.xs` at the end. For example, if your file is called `filename.xs` then you will write `filename` in this field.
@@ -88,7 +84,7 @@ void main() {
 7. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
 8. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `main()` function in the XS Script and `30` will be shown in the chat.
 
-### 2.2. In an RMS
+### 1.2. In an RMS
 
 1. Open the RMS file in a text editor
 2. At the very top, type `#includeXS filename.xs`. Here, `filename.xs` is the name of the file that you created above.
@@ -98,13 +94,13 @@ void main() {
 
 Now that you have set up an XS file with a `main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one, and things will become clearer.
 
-## 3. Programming Concepts:
+## 2. Programming Concepts:
 
-### 3.1. Constants
+### 2.1. Constants
 
 To do anything in an XS Script, we need constants. Any value that remains the same throughout the execution of the script is known as a constant. Quite literally, it remains constant throughout the execution of then script. For example, `#!cpp 10` is a constant. Every number is a constant.
 
-### 3.2. Variables
+### 2.2. Variables
 Variables are like boxes that are used to store constants. Variables are values that can change during the execution of the script! Think about it this way, if a variable is a box that stores a constant, that constant can be taken out and another one can be put in.  Quite literally, it is a variable (it may change!). For example, the script that we saw earlier uses 3 variables, called `a` `b` and `c`.
 
 ```cpp
@@ -233,7 +229,7 @@ Some questions that you might have now are:
 
     If you now try to change the value of `a`, you will get an error.
 
-### 3.3. Variable Naming Rules and Conventions:
+### 2.3. Variable Naming Rules and Conventions:
 
 There are some rules that must be followed when naming a variable. They are:
 
@@ -255,11 +251,11 @@ While these are the only *laws* that you absolutely must follow, there are some 
 
 4. Variable names should be precise and mnemonic. That is, they should indicate to a casual programmer their purpose. Usage of single letter variable names is discouraged unless it is a throwaway or temporary variable.
 
-### 3.4. Operations
+### 2.4. Operations
 
 Now that we know how to store and change the values of a variable, what can we actually do with them?
 
-#### 1. Arithmetic Operations
+#### 2.4.1. Arithmetic Operations
 
 The most obvious thing that we can do with numbers, is do arithmetic with them. XS Scripts support the following five arithmetic operations:
 
@@ -355,11 +351,11 @@ The most obvious thing that we can do with numbers, is do arithmetic with them. 
 
     The way around this is to use a unique number or letter at the start of every message so that even if the content of the message is the same, the number is different so that it gets shown the right amount of times
 
-#### 2. The Assignment Operation
+#### 2.4.2. The Assignment Operation
 
 Remember that when we use the `=` sign in programming, it is not a mathematical equality statement. It actually tells us that we are assigning a value to a variable. So when you see something like `a = a+1;`, this means that you are simply adding `#!cpp 1` to the value of `a`. you are assigning the value `a+1` to `a`. Once again, it is not a mathematical equality statement, it is an assignment.
 
-#### 3. Postfix Operations
+#### 2.4.3. Postfix Operations
 
 If you want to increase or decrease the value of a variable by one, then writing `a = a + 1;` or `a = a - 1;` is one way to do it. Writing `a++;` or `a--;` is another way to do it.
 
@@ -375,7 +371,7 @@ void main() {
 }
 ```
 
-#### 4. Relational Operations
+#### 2.4.4. Relational Operations
 
 Relational operations allow us to compare one number with another. With these, you can find out if one variable is greater than another or not, if two variables are equal or not, and much more.
 
@@ -496,7 +492,7 @@ void main() {
 }
 ```
 
-#### 5. Boolean Operations
+#### 2.4.5. Boolean Operations
 
 If two or more things are required to do a task, we can say that "this AND that are required to do the task". For example:
 
@@ -591,7 +587,7 @@ void main() {
 }
 ```
 
-#### 6. Concatenation
+#### 2.4.6. Concatenation
 
 When two strings are joined to form a new string, it is known as concatenation. Other data types may also be concatenated with strings.
 
@@ -611,7 +607,7 @@ void main() {
 }
 ```
 
-#### 7. Vector Operations
+#### 2.4.7. Vector Operations
 
 Manipulating vectors in XS is done in a bit of a special way:
 
@@ -715,11 +711,11 @@ Manipulating vectors in XS is done in a bit of a special way:
     !!! note
         Mathematically, the normalised vector is given by $\left(\cfrac{x}{\sqrt{x^2+y^2+z^2}}, \cfrac{y}{\sqrt{x^2+y^2+z^2}}, \cfrac{z}{\sqrt{x^2+y^2+z^2}}\right)$
 
-### 3.5. Flow Control Statements
+### 2.5. Flow Control Statements
 
 There are two types of flow control statements:
 
-#### 1. Conditionals
+#### 2.5.1. Conditionals
 
 There are times in life when you need to make decisions, and these decisions depend on certain conditions. For example, suppose that you are in a class, then a decision that you might have to make would be:
 
@@ -883,7 +879,7 @@ Similarly, when writing a script, it might be needed to make decisions at some p
     }
     ```
 
-#### 2. Loops
+#### 2.5.2. Loops
 
 There are times in life when you need to repeatedly keep doing something under certain conditions. For example, suppose that you are playing a game and you are stuck on a boss fight where you keep dying, something that you are doing might be:
 
@@ -993,9 +989,9 @@ Loops are statements that allow us to do exactly that! There are two types of lo
 
 How do we pick which loop to use? Firstly, a `#!cpp while` loop can do all that a `#!cpp for` loop can. However, a `#!cpp while` loop is much slower than a `#!cpp for` loop in performance! If it is possible, you should **always** stick to using for loops! A `#!cpp for` loop also takes care of increasing or decreasing the variables of iteration, which means that you cannot accidently cause an "infinite" loop unlike a while loop.
 
-### 3.6. Modular Programming
+### 2.6. Modular Programming
 
-#### 1. Functions
+#### 2.6.1. Functions
 
 Lets say that you are watching TV. Every time you want to change the channel, you will use the same remote. It would be quite inconvenient if you had to make a new remote each time you wanted to change the channel. Similarly, when writing a script, you might want to write a piece of code that you need to re-use multiple times in different parts of your script. Functions allow us to do exactly this!
 
@@ -1069,7 +1065,7 @@ Function names follow the same laws and conventions that variable names do.
 
 A list of all inbuilt XS functions and their descriptions are provided in the [Fucntion Reference](../functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
 
-#### 2. File Structure
+#### 2.6.2. File Structure
 
 When you write an XS Script, it is a good idea to group your functions and put them into an appropriately named file.
 
@@ -1136,7 +1132,7 @@ Is known as modular code! Writing code like this is considered a very very good 
 
 However... Currently there is a bug (thxDE 11) due to which XS Scripts are not properly transfered to other players in the lobby. For now, a workaround is to manually give everyone the XS Scripts needed.
 
-### 3.7. Scope of a Variable
+### 2.7. Scope of a Variable
 
 Every variable has a scope, i.e. an "area" of the code where it can be used. For example, you cannot use a variable before it has been initialised, that doesn't make sense!
 
@@ -1174,7 +1170,7 @@ void anotherFunction() {
 }
 ```
 
-### 3.8. Arrays
+### 2.8. Arrays
 
 An array is a data structure that allows you to make ordered, numbered lists of one kind of data type. In every numbered list, each element is identified using its number. This number is known as an index. If `a` is an array of integers, then it might looks something like this:
 
@@ -1286,7 +1282,7 @@ Note that these Resize functions return a value of `#!cpp 1` every time, however
 
 `#!cpp int xsArrayGetSize(int arrayID)` is also a useful array function that returns the size of the specified array.
 
-### 3.9. Type Casting
+### 2.9. Type Casting
 
 Type casting is when a value of one data type is "transformed" into a value of another, similar data type. This is like taking an object stored in one type of container and putting it into another.
 
@@ -1334,7 +1330,7 @@ There are two kinds of type casting:
     }
     ```
 
-## 4. Rules
+## 3. Rules
 
 A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a function. Its usage looks like:
 
