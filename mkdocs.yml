@@ -1,21 +1,24 @@
-site_name:          The Ultimate Guide To AoE2DE UGC
-site_url:           https://ugc.aoe2.rocks
-docs_dir:           docs/
+site_name:          "The Ultimate Guide To AoE2DE UGC"
+site_url:           "https://ugc.aoe2.rocks"
+site_description:   "The Ultimate Guide To AoE2DE UGC"
+site_author:        "Alian713, MrKirby, hszemi"
+docs_dir:           "docs/"
 repo_name:          "AoE2DE_UGC_Guide"
 repo_url:           "https://github.com/Divy1211/AoE2DE_UGC_Guide"
 use_directory_urls: true
 
 nav:
-  - About:                          "index.md"
+  # - About:                          "index.md"
   - Game Mechanics:
+    - "general/index.md"
     - Damage Calculation:           "general/damage_calculation.md"
     - Attributes:                   "general/attributes.md"
     - Resources:                    "general/resources/resources.md"
     - Hotkeys:                      "general/hotkeys/hotkeys.md"
   - Custom Scenarios:
-    - Scenario Basics:              "scenarios/basics.md"
+    - "scenarios/index.md"
     - Triggers:
-      - Trigger Basics:             "scenarios/triggers/basics.md"
+      - "scenarios/triggers/index.md"
       - Effects:                    "scenarios/triggers/effects/effects.md"
     #   - Conditions:               "scenarios/triggers/conditions/conditions.md"
     #   - Variables:                "scenarios/triggers/variables.md"
@@ -27,8 +30,9 @@ nav:
       #   - A.G.E. Uses:            "scenarios/useful_tools/age/uses.md"
       #   - Unhiding Editor Units:  "scenarios/useful_tools/age/unhide.md"
       - AoE2ScenarioParser:
-        - Parser Basics:            "scenarios/useful_tools/parser/basics.md"
-  - XS Scripting: 
+        - "scenarios/useful_tools/parser/index.md"
+  - XS Scripting:
+    - "general/xs/index.md"
     - For Beginners:                "general/xs/beginner.md"
     - For Programmers:              "general/xs/programmer.md"
     - Tricks:                       "general/xs/tricks.md"
@@ -36,7 +40,7 @@ nav:
     - Constant Reference:           "general/xs/constants.md"
     - Known Bugs:                   "general/xs/bugs.md"
   - Mods:
-    - Mod Basics:                   "mods/basics.md"
+    - "mods/index.md"
 #   - Data Mods
 #     - Advanced Genie Editor:
 #       - A.G.E. Basics:            "mods/age/basics.md"
@@ -44,19 +48,24 @@ nav:
 #     - RMS Basics:                 "rms/basics.md"
 
 markdown_extensions:
+  - attr_list
   - admonition                # Create not and warning boxes        https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
   - pymdownx.caret            # Handling sub- and superscripts      https://facelessuser.github.io/pymdown-extensions/extensions/caret/
+  - pymdownx.critic           #                                     https://facelessuser.github.io/pymdown-extensions/extensions/critic/
   - pymdownx.mark             # Highlighting of text                https://facelessuser.github.io/pymdown-extensions/extensions/mark/
   - pymdownx.tilde            # Strikethrough of text               https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+  - pymdownx.tasklist         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
   - pymdownx.keys             # Add styling keyboard keys           https://facelessuser.github.io/pymdown-extensions/extensions/keys/
   - pymdownx.tabbed           # Tabs                                https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
   - pymdownx.details          # Collapsable elements                https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.superfences
   - pymdownx.highlight:       # Highlighting code blocks            https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
       linenums: true
   - pymdownx.emoji:           # Emojis                              https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite     # Inline code highlighting            https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
+  - pymdownx.snippets         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.superfences      # Complicated code fences             https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
   - pymdownx.smartsymbols     # Creating special characters         https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
   - pymdownx.arithmatex:      # Preserve LaTeX math equations       https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
@@ -100,13 +109,17 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   features:
+    - content.code.annotate
+    - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.sections
     - navigation.tabs
-    # - toc.integrate
+    - navigation.tracking
     - search.suggest
     - search.highlight
     - search.share
-    - navigation.expand
-    # - navigation.sections
+    # - toc.integrate
   palette:
     scheme: slate
     primary: red

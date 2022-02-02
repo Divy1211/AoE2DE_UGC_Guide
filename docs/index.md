@@ -1,8 +1,6 @@
 # AoE2DE UGC Guide
 The Ultimate Guide to AoE2DE User Generated Content (UGC)
 
-# About this guide
-
 ## What is this guide?
 
 This guide aims to be the most intuitive, technical and comprehensive guide to all UGC for the game Age of Empires II.
@@ -17,7 +15,7 @@ Its fun! You can make your wildest ideas come to life by making custom content. 
 
 ## Topics this guide covers
 
-This guide will cover Making Custom Scenarios, Data Modding and RM Scripting. Note that this is still a work in progress, so not all of the topics are available yet!
+This guide will cover Making Custom Scenarios, Data Modding, RM Scripting and AI Scripting. Note that this is still a work in progress, so not all of the topics are available yet! Some topics already have very comprehensive and good guides out there. Such guides will be linked where relevant!
 
 ## Is this guide relevant for older versions of the game?
 

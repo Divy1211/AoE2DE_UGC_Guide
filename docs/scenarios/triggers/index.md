@@ -1,3 +1,5 @@
+# Basics of Triggers
+
 *Written by: Alian713*
 
 ---

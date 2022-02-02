@@ -5,12 +5,9 @@
 
 This is the most short and precise guide for XS Scripting that you will find, it does not give any introductions to programming topics and cuts right to the chase, if you are a programmer then this is perfect for you. If you are not a programmer fear not! Refer to the [For Beginners](../beginner/ "Jump to: XS Scripting > For Beginners") section of this guide instead.
 
-## 1. What is XS?
-XS stands for External Subroutines and it is a custom programming language that was made by Ensamble Studios. An XS Script can be used in an RMS and Custom Scenarios, and it is a program that can perform calculations and execute different functions and effects.
+## 1. Using an XS Script
 
-## 2. Using an XS
-
-To use an XS:
+To use an XS script:
 
 1. Navigate to the folder:
 
@@ -45,7 +42,7 @@ void main() {
 }
 ```
 
-### 2.1. In a Custom Scenario
+### 1.1. In a Custom Scenario
 
 1. Open the scenario in the editor
 2. Under the `Map` tab, type the name of the XS Script that you created in the `Script Filename` field without the `.xs` at the end. For example, if your file is called `filename.xs` then you will write `filename` in this field.
@@ -56,7 +53,7 @@ void main() {
 7. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
 8. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `main()` function in the XS Script and `30` will be shown in the chat.
 
-### 2.2. In an RMS
+### 1.2. In an RMS
 
 1. Open the RM Script in a text editor
 2. At the very top, type `#includeXS filename.xs`. Here, `filename.xs` is the name of the file that you created above.
@@ -66,7 +63,7 @@ void main() {
 
 Now that you have set up an XS file with a `main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one:
 
-## 3. Variables Data Types
+## 2. Variables Data Types
 There are a total of 5 data types supported by XS, they are:
 
 |**Data Type** | **Syntax** |
@@ -91,9 +88,9 @@ Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scriptin
 
         The concept of local and global variables applies to XS.
 
-## 4. Operations
+## 3. Operations
 
-### 4.1. Arithmetic Operations
+### 3.1. Arithmetic Operations
 | **Operation**  | **Syntax** |
 | :-:            | :-:        |
 | Addition       | `a+b`      |
@@ -119,7 +116,7 @@ Refer to the [Mathematical Operations](../functions/#4-maths "Jump to: XS Script
     }
     ```
 
-### 4.2. Prefix and Postfix Operations
+### 3.2. Prefix and Postfix Operations
 | **Operation**     | **Syntax** |
 | :-:               | :-:        |
 | Posfix increment  | `a++`      |
@@ -127,15 +124,15 @@ Refer to the [Mathematical Operations](../functions/#4-maths "Jump to: XS Script
 
 Prefix operations are not supported by XS.
 
-### 4.3 Shorthand Assignment Operations
+### 3.3 Shorthand Assignment Operations
 
 Shorthand Assignment operations are not supported by XS.
 
-### 4.4 Bitwise Operations
+### 3.4 Bitwise Operations
 
 Bitwise operations are not supported by XS.
 
-### 4.5. Relational Operations
+### 3.5. Relational Operations
 | **Operation**            | **Syntax** |
 | :-:                      | :-:        |
 | Less Than                | `a < b`    |
@@ -148,7 +145,7 @@ Bitwise operations are not supported by XS.
 !!! info "Relational Operators on Strings"
     These relational operators also work on strings, for example `a < b` tells you if `a` lexicographically preceeds `b`.
 
-### 4.6. Boolean Operations
+### 3.6. Boolean Operations
 | **Operation**| **Syntax** |
 | :-:          | :-:        |
 | AND          | `a && b`   |
@@ -159,7 +156,7 @@ Negation is not supported by XS.
 !!! bug "DataType of Result of Operation"
     Due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
 
-## 5. Flow Control Statements
+## 4. Flow Control Statements
 The following flow control statements are supported by XS:
 
 1. `#!cpp if else if` construct:
@@ -240,7 +237,7 @@ The following flow control statements are supported by XS:
     }
     ```
 
-## 6. Functions
+## 5. Functions
 
 Syntax:
 
@@ -274,19 +271,19 @@ An XS Script can import other XS Scripts using the following syntax:
 include "absolute/or/relative/path/to/file.xs";
 ```
 
-## 7. Arrays
+## 6. Arrays
 
 Refer to the [Array Manipulation](../functions/#3-arrays "Jump to: XS Scriptig > Function Reference > Arrays") section of this guide on how to use arrays.
 
 Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supported by XS.
 
-## 8. Type Casting
+## 7. Type Casting
 
 `#!cpp int`, `#!cpp float` and `#!cpp bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!cpp string a = "this would work "+5.6;`. However, `#!cpp string a = 5.5;` will not work, instead use: `#!cpp string a = ""+5.5;`.
 
 It is unknown if XS supports proper explicit type casting
 
-## 9. Rules
+## 8. Rules
 
 A rule is a block of code that can be set to repeatedly execute at set intervals throughout the duration of the game. A rule is always initialised outside of a method. Its usage looks like:
 
