@@ -792,32 +792,27 @@ Similarly, when writing a script, it might be needed to make decisions at some p
 
     Technically, whenever a condition becomes true and its branch of instructions are executed, all of the remaining conditions are skipped, and not even evaluated.
 
-    === "Practise"
+    ???+ Question "Practise"
         Now that you are armed with the power of `#!cpp if else if`, can you:
         
         Write a script that would chat to the screen the maximum of 3 given variables.
         
         When you're ready, click the "Answer" to view the solution.
 
-    === "Answer"
-        Now that you are armed with the power of `#!cpp if else if`, can you:
-        
-        Write a script that would chat to the screen the maximum of 3 given variables.
-        
-        When you're ready, click the "Answer" to view the solution.
-        ```cpp
-        void main() {
-            int a = 10;
-            int b = 20;
-            int c = 30;
-            if (a > b && a > c)
-                xsChatData("the maximum is a: "+a);
-            else if (b > c && b > a)
-                xsChatData("the maximum is b: "+b);
-            else
-                xsChatData("the maximum is c: "+c)
-        }
-        ```
+        ??? Success "Answer"
+            ```cpp
+            void main() {
+                int a = 10;
+                int b = 20;
+                int c = 30;
+                if (a > b && a > c)
+                    xsChatData("the maximum is a: "+a);
+                else if (b > c && b > a)
+                    xsChatData("the maximum is b: "+b);
+                else
+                    xsChatData("the maximum is c: "+c)
+            }
+            ```
 
 2. The `#!cpp switch-case` statements:
 
@@ -913,7 +908,7 @@ Loops are statements that allow us to do exactly that! There are two types of lo
     }
     ```
 
-    === "Practise"
+    ???+ Question "Practise"
         Now that you are armed with the power of `#!cpp while`, can you:
         
         Write a script that would chat to the screen the following pattern:
@@ -924,43 +919,23 @@ Loops are statements that allow us to do exactly that! There are two types of lo
 
         When you're ready, click "Answer" to view the solution.
 
-    === "Hint"
-        Now that you are armed with the power of `#!cpp while`, can you:
-        
-        Write a script that would chat to the screen the following pattern:
+        ??? Info "Hint"
+            Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
 
-        `1, 2, 4, 7, 11, 16... up to 15 terms?`
-        
-        If you need help, but don't want to see the full solution immediately, click "Hint"
+        ??? Success "Answer"
+            Now that you are armed with the power of `#!cpp while`, can you:
 
-        When you're ready, click "Answer" to view the solution.
-
-        Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
-
-    === "Answer"
-        Now that you are armed with the power of `#!cpp while`, can you:
-        
-        Write a script that would chat to the screen the following pattern:
-
-        `1, 2, 4, 7, 11, 16... up to 15 terms?`
-        
-        If you need help, but don't want to see the full solution immediately, click "Hint"
-
-        When you're ready, click "Answer" to view the solution.
-
-        Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
-
-        ```cpp
-        void main() {
-            int number = 1;
-            int increase = 1;
-            while(increase <= 15) {
-                xsChatData("number = "+number);
-                number = number + increase;
-                increase++;
+            ```cpp
+            void main() {
+                int number = 1;
+                int increase = 1;
+                while(increase <= 15) {
+                    xsChatData("number = "+number);
+                    number = number + increase;
+                    increase++;
+                }
             }
-        }
-        ```
+            ```
 
 2. The `#!cpp for` loop:
 
@@ -1077,49 +1052,51 @@ For Example:
 
 If I have two files, `test.xs` and `VectorOperations.xs` in the same folder, then:
 
-=== "test.xs"
-    ```cpp
-    include "./VectorOperations.xs";
-    // "./VectorOperations.xs" is the relative path of the
-    // VectorOperations.xs file from the text.xs file.
-    // This can also be the absolute path of a file.
-    // If you do not know what absolute/relative paths are,
-    // a quick google search will tell you more about them.
+```cpp
+// test.xs
 
-    void main() {
-        vector a = vector(1, 2, 3);
-        vector b = vector(3, 2, 1);
-        xsChatData("dot: "+dotProduct(a, b));
-        xsChatData("cross: "+crossProduct(a, b));
-        xsChatData("add: "+add(a, b));
-    }
-    
-    ```
+include "./VectorOperations.xs";
+// "./VectorOperations.xs" is the relative path of the
+// VectorOperations.xs file from the text.xs file.
+// This can also be the absolute path of a file.
+// If you do not know what absolute/relative paths are,
+// a quick google search will tell you more about them.
 
-=== "VectorOperations.xs"
-    ```cpp
-    int dotProduct(vector a = cInvalidVector, vector b = cInvalidVector) {
-        return (xsVectorGetX(a)*xsVectorGetX(b)+
-                xsVectorGetY(a)*xsVectorGetY(b)+
-                xsVectorGetZ(a)*xsVectorGetZ(b));
-    }
+void main() {
+    vector a = vector(1, 2, 3);
+    vector b = vector(3, 2, 1);
+    xsChatData("dot: "+dotProduct(a, b));
+    xsChatData("cross: "+crossProduct(a, b));
+    xsChatData("add: "+add(a, b));
+}
 
-    vector crossProduct(vector a = cInvalidVector, vector b = cInvalidVector) {
-        vector product = cInvalidVector;
-        product = xsVectorSetX(product, xsVectorGetY(a)*xsVectorGetZ(b) - xsVectorGetZ(a)*xsVectorGetY(b));
-        product = xsVectorSetY(product, 0 - xsVectorGetX(a)*xsVectorGetZ(b) + xsVectorGetZ(a)*xsVectorGetX(b));
-        product = xsVectorSetZ(product, xsVectorGetX(a)*xsVectorGetY(b) - xsVectorGetY(a)*xsVectorGetX(b));
-        return (product);
-    }
+```
 
-    vector add(vector a = cInvalidVector, vector b = cInvalidVector) {
-        vector addition = cInvalidVector;
-        addition = xsVectorSetX(addition, xsVectorGetX(a)+xsVectorGetX(b));
-        addition = xsVectorSetY(addition, xsVectorGetY(a)+xsVectorGetY(b));
-        addition = xsVectorSetZ(addition, xsVectorGetZ(a)+xsVectorGetZ(b));
-        return (addition);
-    }
-    ```
+```cpp
+// VectorOperations.xs
+
+int dotProduct(vector a = cInvalidVector, vector b = cInvalidVector) {
+    return (xsVectorGetX(a)*xsVectorGetX(b)+
+            xsVectorGetY(a)*xsVectorGetY(b)+
+            xsVectorGetZ(a)*xsVectorGetZ(b));
+}
+
+vector crossProduct(vector a = cInvalidVector, vector b = cInvalidVector) {
+    vector product = cInvalidVector;
+    product = xsVectorSetX(product, xsVectorGetY(a)*xsVectorGetZ(b) - xsVectorGetZ(a)*xsVectorGetY(b));
+    product = xsVectorSetY(product, 0 - xsVectorGetX(a)*xsVectorGetZ(b) + xsVectorGetZ(a)*xsVectorGetX(b));
+    product = xsVectorSetZ(product, xsVectorGetX(a)*xsVectorGetY(b) - xsVectorGetY(a)*xsVectorGetX(b));
+    return (product);
+}
+
+vector add(vector a = cInvalidVector, vector b = cInvalidVector) {
+    vector addition = cInvalidVector;
+    addition = xsVectorSetX(addition, xsVectorGetX(a)+xsVectorGetX(b));
+    addition = xsVectorSetY(addition, xsVectorGetY(a)+xsVectorGetY(b));
+    addition = xsVectorSetZ(addition, xsVectorGetZ(a)+xsVectorGetZ(b));
+    return (addition);
+}
+```
 
 This way, for every file that you need to use "VectorOperations.xs" in, you just need to write `#!cpp include "/relative/or/absolute/path/to/file";` and you can use all the functions that you wrote in it in that file as well!
 

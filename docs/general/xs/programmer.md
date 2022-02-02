@@ -9,38 +9,40 @@ This is the most short and precise guide for XS Scripting that you will find, it
 
 To use an XS script:
 
-1. Navigate to the folder:
-
-    `C:\Program Files (x86)\Steam\steamapps\common\AoE2DE\resources\_common\xs`
+1. Navigate to the folder
     
-    There should be 2 files in this folder already, called `Constants.xs` and `xs.txt`. In here, create a new file with any name ending with `.xs`. For example, the file can be called `filename.xs`
+    `C:\Program Files (x86)\Steam\steamapps\common\AoE2DE\resources\_common\xs`
 
-    !!! warning "default0.xs"
+2. There should be 2 files in this folder already, called `Constants.xs` and `xs.txt`. In here, create a new file with any name ending with `.xs`. For example, the file can be called `filename.xs`
+
+    !!! Warning "default0.xs"
         There may be an additional file called `default0.xs`. Never write code in this file as this is a temporary file and can be overwritten by the game.
 
-    The file `Constants.xs` contains a list of constants that can be used in any XS Script directly, by their name.
+    !!! Note "Constants.xs"
+        The file `Constants.xs` contains a list of constants that can be used in any XS Script directly, without needing to use an include statement.
 
-    A VSC Extension for syntax highlighting and code auto completion for AoE XS Scripting can be found [here](https://marketplace.visualstudio.com/items?itemName=Divy.vscode-xs)
+    !!! Tip "VSC Plugin for XS"
+        A VSC Extension for syntax highlighting and code auto completion for AoE XS Scripting can be found [here](https://marketplace.visualstudio.com/items?itemName=Divy.vscode-xs)
 
-2. To begin with using XS, write this basic code in the file:
+3. To begin with using XS, write this basic code in the file:
 
-```cpp
-// this is a comment
-/* this
-is a multiline
-comment
-*/
-void main() {
-    int a = 10;
-    int b = 20;
+    ```cpp
+    // this is a comment
+    /* this
+    is a multiline
+    comment
+    */
+    void main() {
+        int a = 10;
+        int b = 20;
 
-    // the variables cannot be declared by separating them with commas
-    // unlike java or python.
+        // the variables cannot be declared by separating them with commas
+        // unlike java or python.
 
-    // chats to the screen
-    xsChatData("a+b = "+(a+b));
-}
-```
+        // chats to the screen
+        xsChatData("a+b = "+(a+b));
+    }
+    ```
 
 ### 1.1. In a Custom Scenario
 
@@ -76,7 +78,7 @@ There are a total of 5 data types supported by XS, they are:
 
 Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scripting > Function Reference > Vectors") section of this guide for all the different functions that can be used on vectors.
 
-!!! note "No Vars in Vector Initialisation"
+!!! Bug "No Vars in Vector Initialisation"
     Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
 
 !!! info "Constants and Scope"

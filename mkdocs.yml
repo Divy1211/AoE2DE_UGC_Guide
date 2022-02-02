@@ -1,24 +1,27 @@
-site_name:          "The Ultimate Guide To AoE2DE UGC"
-site_url:           "https://ugc.aoe2.rocks"
-site_description:   "The Ultimate Guide To AoE2DE UGC"
-site_author:        "Alian713, MrKirby, hszemi"
 docs_dir:           "docs/"
+
 repo_name:          "AoE2DE_UGC_Guide"
 repo_url:           "https://github.com/Divy1211/AoE2DE_UGC_Guide"
+
+site_author:        "Alian713, MrKirby, hszemi"
+site_description:   "The Ultimate Guide To AoE2DE UGC"
+site_name:          "AoE2DE UGC Guide"
+site_url:           "https://ugc.aoe2.rocks"
+
 use_directory_urls: true
 
 nav:
-  # - About:                          "index.md"
+  -                                 "index.md"
   - Game Mechanics:
-    - "general/index.md"
+    -                               "general/index.md"
     - Damage Calculation:           "general/damage_calculation.md"
     - Attributes:                   "general/attributes.md"
     - Resources:                    "general/resources/resources.md"
     - Hotkeys:                      "general/hotkeys/hotkeys.md"
   - Custom Scenarios:
-    - "scenarios/index.md"
+    -                               "scenarios/index.md"
     - Triggers:
-      - "scenarios/triggers/index.md"
+      -                             "scenarios/triggers/index.md"
       - Effects:                    "scenarios/triggers/effects/effects.md"
     #   - Conditions:               "scenarios/triggers/conditions/conditions.md"
     #   - Variables:                "scenarios/triggers/variables.md"
@@ -30,9 +33,9 @@ nav:
       #   - A.G.E. Uses:            "scenarios/useful_tools/age/uses.md"
       #   - Unhiding Editor Units:  "scenarios/useful_tools/age/unhide.md"
       - AoE2ScenarioParser:
-        - "scenarios/useful_tools/parser/index.md"
+        -                           "scenarios/useful_tools/parser/index.md"
   - XS Scripting:
-    - "general/xs/index.md"
+    -                               "general/xs/index.md"
     - For Beginners:                "general/xs/beginner.md"
     - For Programmers:              "general/xs/programmer.md"
     - Tricks:                       "general/xs/tricks.md"
@@ -40,7 +43,7 @@ nav:
     - Constant Reference:           "general/xs/constants.md"
     - Known Bugs:                   "general/xs/bugs.md"
   - Mods:
-    - "mods/index.md"
+    -                               "mods/index.md"
 #   - Data Mods
 #     - Advanced Genie Editor:
 #       - A.G.E. Basics:            "mods/age/basics.md"
@@ -50,64 +53,46 @@ nav:
 markdown_extensions:
   - attr_list
   - admonition                # Create not and warning boxes        https://squidfunk.github.io/mkdocs-material/reference/admonitions/#admonition
+  - md_in_html
   - pymdownx.caret            # Handling sub- and superscripts      https://facelessuser.github.io/pymdown-extensions/extensions/caret/
   - pymdownx.critic           #                                     https://facelessuser.github.io/pymdown-extensions/extensions/critic/
-  - pymdownx.mark             # Highlighting of text                https://facelessuser.github.io/pymdown-extensions/extensions/mark/
-  - pymdownx.tilde            # Strikethrough of text               https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
-  - pymdownx.tasklist         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
-  - pymdownx.keys             # Add styling keyboard keys           https://facelessuser.github.io/pymdown-extensions/extensions/keys/
-  - pymdownx.tabbed           # Tabs                                https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
   - pymdownx.details          # Collapsable elements                https://facelessuser.github.io/pymdown-extensions/extensions/details/
-  - pymdownx.superfences
-  - pymdownx.highlight:       # Highlighting code blocks            https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
-      linenums: true
-  - pymdownx.emoji:           # Emojis                              https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite     # Inline code highlighting            https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
-  - pymdownx.snippets         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
-  - pymdownx.superfences      # Complicated code fences             https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+  - pymdownx.keys             # Add styling keyboard keys           https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+  - pymdownx.mark             # Highlighting of text                https://facelessuser.github.io/pymdown-extensions/extensions/mark/
   - pymdownx.smartsymbols     # Creating special characters         https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
+  - pymdownx.snippets         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.superfences
+  - pymdownx.tabbed           # Tabs                                https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
+  - pymdownx.tasklist         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+  - pymdownx.tilde            # Strikethrough of text               https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
   - pymdownx.arithmatex:      # Preserve LaTeX math equations       https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
       generic: true
+  - pymdownx.emoji:           # Emojis                              https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
+      emoji_index:     !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:       # Highlighting code blocks            https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
+      linenums:     true
+      use_pygments: true
+  - pymdownx.superfences:     # Complicated code fences             https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+      custom_fences:
+        - name:   mermaid
+          class:  mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:        # Creating Check-able tasklist        https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
-      custom_checkbox: true
+      custom_checkbox:    true
       clickable_checkbox: true
   - toc:
       permalink: true
-extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - ../hide_toc.js
-
 plugins:
   - search:
+      lang: en
       separator: '[\s\-\.\_]+'
 
-extra_css:
-  - style.css
-
 theme:
-  analytics:
-    gtag: G-X6E7LFHRLR
-  name: material
-  language: en
   # favicon:
-  icon:
-    logo: octicons/file-code-24
-    admonition:
-      note: octicons/tag-16
-      abstract: octicons/checklist-16
-      info: octicons/info-16
-      tip: octicons/squirrel-16
-      success: octicons/check-16
-      question: octicons/question-16
-      warning: octicons/alert-16
-      failure: octicons/x-circle-16
-      danger: octicons/zap-16
-      bug: octicons/bug-16
-      example: octicons/beaker-16
-      quote: octicons/quote-16
+  language: en
+  name: material
   features:
     - content.code.annotate
     - navigation.expand
@@ -115,15 +100,54 @@ theme:
     # - navigation.instant
     # - navigation.sections
     - navigation.tabs
+    - navigation.top
     - navigation.tracking
-    - search.suggest
     - search.highlight
     - search.share
+    - search.suggest
     # - toc.integrate
-  palette:
-    scheme: slate
-    primary: red
-    accent: red
   font:
     text: Roboto
     code: Consolas
+  icon:
+    logo: octicons/file-code-24
+    admonition:
+      abstract: octicons/checklist-16
+      bug:      octicons/bug-16
+      danger:   octicons/zap-16
+      example:  octicons/beaker-16
+      failure:  octicons/x-circle-16
+      info:     octicons/info-16
+      note:     octicons/tag-16
+      success:  octicons/check-16
+      tip:      octicons/squirrel-16
+      question: octicons/question-16
+      quote:    octicons/quote-16
+      warning:  octicons/alert-16
+  palette:
+    scheme:  slate
+    primary: red
+    accent:  red
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - ./css/style.css
+extra:
+  analytics:
+    provider: google
+    property: G-X6E7LFHRLR
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
