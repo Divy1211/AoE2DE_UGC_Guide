@@ -41,7 +41,15 @@ nav:
     - Tricks:                       "general/xs/tricks.md"
     - Functions Reference:          "general/xs/functions.md"
     - Constant Reference:           "general/xs/constants.md"
-    - Known Bugs:                   "general/xs/bugs.md"
+    - Known Bugs:
+      -                             "general/xs/bugs/index.md"
+      - Chat Data:                  "general/xs/bugs/Chat Data.md"
+      - Crashes:                    "general/xs/bugs/Crashes.md"
+      - Editor:                     "general/xs/bugs/Editor.md"
+      - Effect Amount:              "general/xs/bugs/Effect Amount.md"
+      # - Fixed:                      "general/xs/bugs/Fixed.md"
+      - Important:                  "general/xs/bugs/Important.md"
+      - Language Syntax:            "general/xs/bugs/Language Syntax.md"
   - Mods:
     -                               "mods/index.md"
 #   - Data Mods

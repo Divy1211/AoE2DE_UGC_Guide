@@ -121,7 +121,7 @@ Refer to the [Mathematical Operations](../functions/#4-maths "Jump to: XS Script
 ### 3.2. Prefix and Postfix Operations
 | **Operation**     | **Syntax** |
 | :-:               | :-:        |
-| Posfix increment  | `a++`      |
+| Postfix increment  | `a++`      |
 | Postfix decrement | `a--`      |
 
 Prefix operations are not supported by XS.

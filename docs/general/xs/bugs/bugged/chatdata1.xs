@@ -1,4 +1,6 @@
 void main() {
+    // This crashes the game altogether
+
     // prints `this  will not appear in game`
     xsChatData("this % will not appear in game");
 

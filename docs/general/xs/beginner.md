@@ -923,8 +923,6 @@ Loops are statements that allow us to do exactly that! There are two types of lo
             Hint: Notice that the pattern here is that each time, the increase of the terms is also going up by one. The 2nd term is the first term + 1, the 3rd term is the 2nd term + 2, and so on.
 
         ??? Success "Answer"
-            Now that you are armed with the power of `#!cpp while`, can you:
-
             ```cpp
             void main() {
                 int number = 1;
