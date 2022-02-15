@@ -1232,6 +1232,148 @@
             "desc": "Returns a boolean based on whether the technology was researched or not."
         }
     ],
+    "Read/Write": [
+        {
+            "name": "xsCreateFile",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "append",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name."
+                }
+            ],
+            "desc": "Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created"
+        },
+        {
+            "name": "xsOpenFile",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "filename",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the file to open, without the `.xsdat` extension"
+                }
+            ],
+            "desc": "Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened"
+        },
+        {
+            "name": "xsWriteString",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to write"
+                }
+            ],
+            "desc": "Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is made up of two parts, an unsigned 32 bit integer (the length of the string) followed by that many bytes making up the actual characters of the string"
+        },
+        {
+            "name": "xsWriteInt",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The integer to write"
+                }
+            ],
+            "desc": "Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the integer was successfully written. Integers are written as signed 32 bit numbers"
+        },
+        {
+            "name": "xsWriteFloat",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The float value to write"
+                }
+            ],
+            "desc": "Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format"
+        },
+        {
+            "name": "xsWriteVector",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to write"
+                }
+            ],
+            "desc": "Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate."
+        },
+        {
+            "name": "xsReadString",
+            "return_type": "string",
+            "params": [],
+            "desc": "Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string"
+        },
+        {
+            "name": "xsReadInt",
+            "return_type": "int",
+            "params": [],
+            "desc": "Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes"
+        },
+        {
+            "name": "xsReadFloat",
+            "return_type": "float",
+            "params": [],
+            "desc": "Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes"
+        },
+        {
+            "name": "xsReadVector",
+            "return_type": "vector",
+            "params": [],
+            "desc": "Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes"
+        },
+        {
+            "name": "xsSetFilePosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to research the technology for"
+                }
+            ],
+            "desc": "This is the byte (0-indexed) of the file that the next read function will start reading from."
+        },
+        {
+            "name": "xsOffsetFilePosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "dataType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The [cOffset constants](../constants/#1-readwrite \"Jump To: XS > Constant Reference > Read/Write Constants\") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceeding the chars of the string)"
+                },
+                {
+                    "name": "forward",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Default: `#!cpp true`. Setting this to `#!cpp false` will make the file position move back"
+                }
+            ],
+            "desc": "Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type"
+        },
+        {
+            "name": "xsCloseFile",
+            "return_type": "bool",
+            "params": [],
+            "desc": "Close the currently opened or created file. Returns `#!cpp true` if the file was successfully closed"
+        }
+    ],
     "Functions With Seemingly No Practical Use": [
         {
             "name": "xsDumpArrays",

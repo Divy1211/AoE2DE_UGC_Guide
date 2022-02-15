@@ -955,9 +955,153 @@ Parameters:
 
 Returns the value of the variable of the given variable ID.
 
-## 6. Functions With Seemingly No Practical Use
+## 6. Read/Write
 
-### 6.1. xsAddRuntimeEvent
+### 6.1. xsCloseFile
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsCloseFile()`
+
+
+Close the currently opened or created file. Returns `#!cpp true` if the file was successfully closed
+
+### 6.2. xsCreateFile
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsCreateFile(bool append)`
+
+Parameters:
+
+1. (Optional) `#!cpp bool append`: Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name.
+
+Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created
+
+### 6.3. xsOffsetFilePosition
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsOffsetFilePosition(int dataType, bool forward)`
+
+Parameters:
+
+1.  `#!cpp int dataType`: The [cOffset constants](../constants/#1-readwrite "Jump To: XS > Constant Reference > Read/Write Constants") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceeding the chars of the string)
+2. (Optional) `#!cpp bool forward`: Default: `#!cpp true`. Setting this to `#!cpp false` will make the file position move back
+
+Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
+
+### 6.4. xsOpenFile
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsOpenFile(string filename)`
+
+Parameters:
+
+1.  `#!cpp string filename`: The name of the file to open, without the `.xsdat` extension
+
+Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened
+
+### 6.5. xsReadFloat
+
+Returning Type: `#!cpp float`
+
+Prototype: `#!cpp float xsReadFloat()`
+
+
+Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes
+
+### 6.6. xsReadInt
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsReadInt()`
+
+
+Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes
+
+### 6.7. xsReadString
+
+Returning Type: `#!cpp string`
+
+Prototype: `#!cpp string xsReadString()`
+
+
+Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string
+
+### 6.8. xsReadVector
+
+Returning Type: `#!cpp vector`
+
+Prototype: `#!cpp vector xsReadVector()`
+
+
+Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes
+
+### 6.9. xsSetFilePosition
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsSetFilePosition(int playerNumber)`
+
+Parameters:
+
+1.  `#!cpp int playerNumber`: The player to research the technology for
+
+This is the byte (0-indexed) of the file that the next read function will start reading from.
+
+### 6.10. xsWriteFloat
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsWriteFloat(float data)`
+
+Parameters:
+
+1.  `#!cpp float data`: The float value to write
+
+Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
+
+### 6.11. xsWriteInt
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsWriteInt(int data)`
+
+Parameters:
+
+1.  `#!cpp int data`: The integer to write
+
+Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the integer was successfully written. Integers are written as signed 32 bit numbers
+
+### 6.12. xsWriteString
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsWriteString(string data)`
+
+Parameters:
+
+1.  `#!cpp string data`: The string to write
+
+Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is made up of two parts, an unsigned 32 bit integer (the length of the string) followed by that many bytes making up the actual characters of the string
+
+### 6.13. xsWriteVector
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsWriteVector(vector data)`
+
+Parameters:
+
+1.  `#!cpp vector data`: The vector to write
+
+Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
+
+## 7. Functions With Seemingly No Practical Use
+
+### 7.1. xsAddRuntimeEvent
 
 Returning Type: `#!cpp bool`
 
@@ -971,7 +1115,7 @@ Parameters:
 
 A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 
-### 6.2. xsBreakPoint
+### 7.2. xsBreakPoint
 
 Returning Type: `#!cpp void`
 
@@ -980,7 +1124,7 @@ Prototype: `#!cpp void xsBreakPoint()`
 
 This function adds a break point to the execution of code. Do not use this function and beware, if you do, it will likely cause a crash!
 
-### 6.3. xsDumpArrays
+### 7.3. xsDumpArrays
 
 Returning Type: `#!cpp void`
 
@@ -989,7 +1133,7 @@ Prototype: `#!cpp void xsDumpArrays()`
 
 This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing.
 
-### 6.4. xsGetContextPlayer
+### 7.4. xsGetContextPlayer
 
 Returning Type: `#!cpp int`
 
@@ -998,7 +1142,7 @@ Prototype: `#!cpp int xsGetContextPlayer()`
 
 Returns the current context player ID.
 
-### 6.5. xsGetFuntionID
+### 7.5. xsGetFuntionID
 
 Returning Type: `#!cpp int`
 
@@ -1010,7 +1154,7 @@ Parameters:
 
 Returns the hash of a given function. This function has no practical application and is probably for internal usage only.
 
-### 6.6. xsSetContextPlayer
+### 7.6. xsSetContextPlayer
 
 Returning Type: `#!cpp void`
 

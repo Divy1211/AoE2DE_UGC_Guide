@@ -1,7 +1,7 @@
 { 
-    "Bugs": [
+    "Fixed": [
         {
-            "Name": "`xsEffectAmount` Related Crashes",
+            "Name": "`xsEffectAmount` Crashes When Source Player Does Not Exist",
             "Description" : "When an attribute for a player that is not present in the game is modified, a crash occurs",
             "Expected Behaviour": "Expressions and variables should be able to be used when initialising Vectors.",
             "Reproduction Steps": [
@@ -11,23 +11,41 @@
                 "When a game is played with less than 8 players, a crash will occur"
             ],
             "Code File": "effect_amount1.xs",
-            "Version Fixed": "",
+            "Version Fixed": "56005",
             "show": true
         },
         {
+            "Name": "`xsEffectAmount` Crashes When Negative ID Is Provided For Tech/Object",
+            "Description" : "When a negative object/tech ID is provided when using `cSetAttribute` (or similar operations), a crash occurs",
+            "Expected Behaviour": "Expressions and variables should be able to be used when initialising Vectors.",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played, a crash will occur"
+            ],
+            "Code File": "effect_amount3.xs",
+            "Version Fixed": "56005",
+            "show": true
+        }
+    ],
+    "Effect Amount": [
+        {
             "Name": "`xsEffectAmount` effect `cMulAttribute` with attribute `cAttack/cArmor`",
-            "Description" : "When using `xsEffectAmount` and `cMulAttribute` to modify `cAttack/cArmor`, the change is not calculated correctly",
+            "Description" : "When using `xsEffectAmount` and `cMulAttribute` to modify `cAttack/cArmor`, the effect does not change the attack/armour at all",
             "Expected Behaviour": "Expected behaviour is demonstrated using the following example:",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, The attack of the Genghis Khan unit is shown as 25-24. It should be 25+25 instead!"
+                "When a game is played using the scenario or RMS, The attack and armour of the Genghis Khan unit is unchanged"
             ],
             "Code File": "effect_amount2.xs",
             "Version Fixed": "",
             "show": true
-        },
+        }
+    ],
+    "Editor": [
         {
             "Name": "Script Call A Function With Parameters",
             "Description" : "When a function that takes arguments is defined in an XS file is called using script call, all XS execution stops. No syntax errors are shown, this happens completely silently",
@@ -42,7 +60,9 @@
             "Code File": "param.xs",
             "Version Fixed": "",
             "show": true
-        },
+        }
+    ],
+    "Language Syntax": [
         {
             "Name": "Outputs Of Operations Are Of The Wrong Data Type",
             "Description" : "The output type of an operation is determined by the first operand `a*b`. For example: `#!cpp 9*5.5` evaluates to `#!cpp 49` and not `#!cpp 49.5`. However, the expression `#!cpp 5.5*9` gives the correct result.",
@@ -86,20 +106,6 @@
             "show": true
         },
         {
-            "Name": "Static Variables In Recursive Functions",
-            "Description" : "If a static variable is declared inside a recursive function, its value cannot be changed",
-            "Expected Behaviour": "static variables inside recursive functions should behave normally like they do in C++",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp \"a is 1 pri is 9\"`. The last `xsChatData` in `main` isn't run at all."
-            ],
-            "Code File": "staticrec.xs",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
             "Name": "Limit On Number Of Params In A Function Call",
             "Description" : "The number of parameters that can be used IN a function call are limited to 12. Attempting to call a function with more parameters results in an error from the game. Note that the error in the example shown below happens at the line the call is made, and not at the function definition itself. This suggests that defining a function with more than 12 parameters can be defined but they can't be called",
             "Expected Behaviour": "There should ideally be no limit on the amount of parameters for a function",
@@ -115,74 +121,72 @@
             "show": true
         },
         {
-            "Name": "XS Files Do Not Transfer In A Lobby",
-            "Description" : "When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host. (Currently, `#includeXS` works for scripts that the host has in their profile folder, but recursive includes and scripts from other sources are still not transferred)",
-            "Expected Behaviour": "The main XS script and all XS scripts imported in the main script using `#!cpp include \"fileName.xs\";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script that chats something to the screen",
-                "Include the script in the scenario or RMS",
-                "Host a lobby with at least two human players",
-                "Set the map as the above scenario or RMS",
-                "When the game is started, the host sees the message chatted but the others get a `failed to open file` error"
-            ],
-            "Code File": "",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
-            "Name": "XS Files In Mods Are Not Detected",
-            "Description" : "XS scripts in a mod are not detected by the game.",
-            "Expected Behaviour": "Any XS scripts included in a mod should be detected by ANY scenario or RMS trying to use them, even if they are not a part of the mod itself.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a local mod with an XS script in the following folder: `PathToModFolder\\resources\\_common\\xs\\fileName.xs`",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the `failed to open file` error is shown"
-            ],
-            "Code File": "",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
-            "Name": "Crash On Using `%` Symbols In `xsChatData()`",
-            "Description" : "Cannot escape `%` symbols in the message, since they are considered special characters because of the `%d` and `%f` usage.",
-            "Expected Behaviour": "It should be possible to escape the `%` character by using a backslash `\\`.",
+            "Name": "Cannot Use Variables Or Expressions In Vector Initialisation",
+            "Description" : "When initialising a vector, expressions or variables cannot be used in the initialisation. The code in question is shown below.",
+            "Expected Behaviour": "Expressions and variables should be able to be used when initialising Vectors.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the game will crash"
+                "When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown"
             ],
-            "Code File": "chatdata1.xs",
+            "Code File": "vector_init1.xs",
             "Version Fixed": "",
             "show": true
         },
         {
-            "Name": "Cannot Print `#!cpp 0` Or `#!cpp 1` At The Start Of The Line In `xsChatData()`",
-            "Description" : "If a `#!cpp 0` or `#!cpp 1` character occurs at the beginning of a string that is being chatted to the screen using `xsChatData`, then the `#!cpp 0` or `#!cpp 1` characters do not appear in the message.",
-            "Expected Behaviour": "`#!cpp 0` or `#!cpp 1` should be shown correctly at the beginning of the line if used in an `xsChatData` function",
+            "Name": "Unary Negative Does Not Work",
+            "Description" : "The unary negative operator does not work.",
+            "Expected Behaviour": "Unary negative operator should return the negative of the number.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, any `#!cpp 1` or `#!cpp 0` at the beginning of the lines are omitted in the resulting message on screen."
+                "When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown"
             ],
-            "Code File": "chatdata2.xs",
+            "Code File": "unary.xs",
             "Version Fixed": "",
             "show": true
         },
         {
-            "Name": "Using `goto` With A Non Existent Label Crashes The Game",
-            "Description" : "If a goto statement is used as shown below, it crashes the game. How to define a working label in XS is currently unknown",
-            "Expected Behaviour": "The game should warn about wrong usage of `goto` to a non existent label. How is a label defined in the first place in XS?",
+            "Name": "Explicit Type Casting Does Not Work",
+            "Description" : "Explicit type casting does not work on variables or at initialisation.",
+            "Expected Behaviour": "Explicit type casting should be able to be used to convert one data type to another.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, A crash will occur"
+                "When a game is played using the scenario or RMS, the effects described in the code using comments for each case are observed"
             ],
-            "Code File": "goto.xs",
+            "Code File": "types2.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Loop Variable Not Bounded To The Scope Of The Loop",
+            "Description" : "The loop variable from a `#!cpp for` loop can be used anywhere outside the body of the loop",
+            "Expected Behaviour": "The scope of the looping variable in `#!cpp for` loop should be limited only to the body of the loop",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, 'j = 10' will be printed last because of the chat data at the end."
+            ],
+            "Code File": "scope1.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Static Variables In Recursive Functions",
+            "Description" : "If a static variable is declared inside a recursive function, its value cannot be changed",
+            "Expected Behaviour": "static variables inside recursive functions should behave normally like they do in C++",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp \"a is 1 pri is 9\"`. The last `xsChatData` in `main` isn't run at all."
+            ],
+            "Code File": "staticrec.xs",
             "Version Fixed": "",
             "show": true
         },
@@ -215,63 +219,7 @@
             "show": true
         },
         {
-            "Name": "Cannot Use Variables Or Expressions In Vector Initialisation",
-            "Description" : "When initialising a vector, expressions or variables cannot be used in the initialisation. The code in question is shown below.",
-            "Expected Behaviour": "Expressions and variables should be able to be used when initialising Vectors.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown"
-            ],
-            "Code File": "vector_init1.xs",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
-            "Name": "Missing Data Types Which Are Officially Documented",
-            "Description" : "The `#!cpp long`, `#!cpp char` and `#!cpp double` data types do not exist, even though the official XS documentation references them.",
-            "Expected Behaviour": "Variables of the `#!cpp long`, `#!cpp char` and `#!cpp double` data types shoulld be able to be initialised.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown"
-            ],
-            "Code File": "types1.xs",
-            "Version Fixed": "",
-            "show": false
-        },
-        {
-            "Name": "Unary Negative Does Not Work",
-            "Description" : "The unary negative operator does not work.",
-            "Expected Behaviour": "Unary negative operator should return the negative of the number.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown"
-            ],
-            "Code File": "unary.xs",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
-            "Name": "Explicit Type Casting Does Not Work",
-            "Description" : "Explicit type casting does not work on variables or at initialisation.",
-            "Expected Behaviour": "Explicit type casting should be able to be used to convert one data type to another.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the effects described in the code using comments for each case are observed"
-            ],
-            "Code File": "types2.xs",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
-            "Name": "Return Statements Do Not Work As Officially Documented",
+            "Name": "Return Statements Do Not Work As Documented",
             "Description" : "Paranthesis are needed around return expressions for them to work.",
             "Expected Behaviour": "Return expressions should work with or without paranthesis.",
             "Reproduction Steps": [
@@ -297,9 +245,21 @@
             "Code File": "const.xs",
             "Version Fixed": "",
             "show": true
-        }
-    ],
-    "Quirks": [
+        },
+        {
+            "Name": "Missing Data Types Which Are Documented",
+            "Description" : "The `#!cpp long`, `#!cpp char` and `#!cpp double` data types do not exist, even though the official XS documentation references them.",
+            "Expected Behaviour": "Variables of the `#!cpp long`, `#!cpp char` and `#!cpp double` data types shoulld be able to be initialised.",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown"
+            ],
+            "Code File": "types1.xs",
+            "Version Fixed": "",
+            "show": true
+        },
         {
             "Name": "Weird Behaviour With Return Statements",
             "Description" : "This behaviour is not understood well",
@@ -308,10 +268,88 @@
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "Run the `main` function of the script in the scenario (it will run automatically in an RMS)"
+                "Run the `main` function of the script in the scenario"
             ],
             "Code File": "return3.xs",
             "Version Removed": "",
+            "show": true
+        }
+    ],
+    "Important": [
+        {
+            "Name": "XS Files Do Not Transfer In A Lobby",
+            "Description" : "When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host. (Currently, `#includeXS` works for scripts that the host has in their profile folder, but recursive includes and scripts from other sources are still not transferred)",
+            "Expected Behaviour": "The main XS script and all XS scripts imported in the main script using `#!cpp include \"fileName.xs\";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script that chats something to the screen",
+                "Include the script in the scenario or RMS",
+                "Host a lobby with at least two human players",
+                "Set the map as the above scenario or RMS",
+                "When the game is started, the host sees the message chatted but the others get a `failed to open file` error"
+            ],
+            "Code File": "",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "XS Files In Mods Are Not Detected",
+            "Description" : "XS scripts in a mod are not detected by the game.",
+            "Expected Behaviour": "Any XS scripts included in a mod should be detected by ANY scenario or RMS trying to use them, even if they are not a part of the mod itself.",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a local mod with an XS script in the following folder: `PathToModFolder\\resources\\_common\\xs\\fileName.xs`",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, the `failed to open file` error is shown"
+            ],
+            "Code File": "",
+            "Version Fixed": "",
+            "show": true
+        }
+    ],
+    "Crashes": [
+        {
+            "Name": "Crash On Using `%` Symbols In `xsChatData()`",
+            "Description" : "Cannot escape `%` symbols in the message, since they are considered special characters because of the `%d` and `%f` usage.",
+            "Expected Behaviour": "It should be possible to escape the `%` character by using a backslash `\\`.",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, the game will crash"
+            ],
+            "Code File": "chatdata1.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Using `goto` With A Non Existent Label Crashes The Game",
+            "Description" : "If a goto statement is used as shown below, it crashes the game. How to define a working label in XS is currently unknown",
+            "Expected Behaviour": "The game should warn about wrong usage of `goto` to a non existent label. How is a label defined in the first place in XS?",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, A crash will occur"
+            ],
+            "Code File": "goto.xs",
+            "Version Fixed": "",
+            "show": true
+        }
+    ],
+    "Chat Data": [
+        {
+            "Name": "Cannot Print `#!cpp 0` Or `#!cpp 1` At The Start Of The Line In `xsChatData()`",
+            "Description" : "If a `#!cpp 0` or `#!cpp 1` character occurs at the beginning of a string that is being chatted to the screen using `xsChatData`, then the `#!cpp 0` or `#!cpp 1` characters do not appear in the message.",
+            "Expected Behaviour": "`#!cpp 0` or `#!cpp 1` should be shown correctly at the beginning of the line if used in an `xsChatData` function",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, any `#!cpp 1` or `#!cpp 0` at the beginning of the lines are omitted in the resulting message on screen."
+            ],
+            "Code File": "chatdata2.xs",
+            "Version Fixed": "",
             "show": true
         }
     ]

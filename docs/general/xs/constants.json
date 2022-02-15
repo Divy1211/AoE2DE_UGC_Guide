@@ -1,4 +1,34 @@
 {
+    "read/write": [
+        {
+            "name": "cOffsetString",
+            "value": 0,
+            "type": "int",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)",
+            "usage": null
+        },
+        {
+            "name": "cOffsetInterger",
+            "value": 1,
+            "type": "int",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)",
+            "usage": null
+        },
+        {
+            "name": "cOffsetFloat",
+            "value": 2,
+            "type": "int",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)",
+            "usage": null
+        },
+        {
+            "name": "cOffsetVector",
+            "value": 3,
+            "type": "int",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)",
+            "usage": null
+        }
+    ],
     "age": [
         {
             "name": "cDarkAge",
