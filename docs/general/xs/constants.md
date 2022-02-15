@@ -8,25 +8,25 @@
 
 Value: `#!cpp int 0`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position a variable number of bytes
+Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)
 
 ### 1.2. cOffsetInterger
 
 Value: `#!cpp int 1`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by 4 bytes
+Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)
 
 ### 1.3. cOffsetFloat
 
 Value: `#!cpp int 2`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by 4 bytes.
+Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)
 
 ### 1.4. cOffsetVector
 
 Value: `#!cpp int 3`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by 12 bytes.
+Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)
 
 ## 2. Age
 
