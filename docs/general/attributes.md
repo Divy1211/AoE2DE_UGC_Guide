@@ -133,7 +133,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
 - ID: 18
 
-- Purpose: This determines the percentage reduction in damage when fighting downhill. **Note: Changing this attribute tends to crash the game, you have been warned!**
+- Purpose: Unknown... What does this attribute do?
 
 ## 19. Enable Smart Projectiles
 

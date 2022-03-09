@@ -6,47 +6,47 @@
 
 This page is a list of all the player resources in the scenario editor and their purposes. If you know of any resources that are not written on this page, or if the descriptions of the resources are wrong, please let the authors of this guide know!
 
-## 1. Food
+## 0. !Food Storage
 
 - ID: 0
 
-- Purpose: Food amount of the source player
+- Purpose: Current food amount
 
-## 2. Wood
+## 1. !Wood Storage
 
 - ID: 1
 
-- Purpose: Wood amount of the source player
+- Purpose: Current wood amount
 
-## 3. Stone
+## 2. !Stone Storage
 
 - ID: 2
 
-- Purpose: Stone amount of the source player
+- Purpose: Current stone amount
 
-## 4. Gold
+## 3. !Gold Storage
 
 - ID: 3
 
-- Purpose: Gold amount of the source player
+- Purpose: Current gold amount
 
-## 5. Population Headroom
+## 4. Population Headroom
 
 - ID: 4
 
-- Purpose: This resource is the available population space to create units. It is NOT the population cap of the source player
+- Purpose: Amount of free population space. Note that this is NOT the population cap
 
-## 6. Conversion Range
+## 5. Conversion Range
 
 - ID: 5
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 7. Current Age
+## 6. Current Age
 
 - ID: 6
 
-- Purpose: Age name and icon at the top of the screen of the source player
+- Purpose: Controls the age name and icon at the top of the screen
 
 - Default Values:
 
@@ -58,143 +58,141 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 3:  Imperial Age
 
-- Additional Information: Setting this to an amount higher than 3 cycles the icon but keeps the age at imperial
+- Note: Setting this to an amount higher than 3 cycles the icon but keeps the age at imperial
 
-## 8. Relics
+## 7. Relics Captured
 
 - ID: 7
 
-- Purpose: Number of relics held by the source player
+- Purpose: Number of relics held
 
-## 9. Trade Bonus
+## 8. Unused Resource 008
 
 - ID: 8
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 10. Trade Goods
+## 9. Trade Goods
 
 - ID: 9
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 11. Trade Production
+## 10. Unused Resource 010
 
 - ID: 10
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 12. Current Population
+## 11. Current Population
 
 - ID: 11
 
-- Purpose: Current pop of the source player
+- Purpose: The current population
 
-## 13. Corpse Decay Time
+## 12. Corpse Decay Time
 
 - ID: 12
 
-- Purpose: Time taken by corpses to decay for the source player
+- Purpose: Unknown... What does this resource do?
 
-- Additional Information: Doesn't seem to do anything when changed
-
-## 14. Remarkable Discovery
+## 13. Remarkable Discovery
 
 - ID: 13
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 15. Monuments Captured
+## 14. Monuments Captured
 
 - ID: 14
 
-- Purpose: Number of monuments owned by the source player
+- Purpose: Number of monuments owned
 
-## 16. Meat Storage
+## 15. Meat Storage
 
 - ID: 15
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 17. Berry Storage
+## 16. Berry Storage
 
 - ID: 16
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 18. Fish Storage
+## 17. Fish Storage
 
 - ID: 17
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 19. Unused Resource
+## 18. Unused Resource 018
 
 - ID: 18
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 20. Total Units Owned
+## 19. Total Units Owned
 
 - ID: 19
 
-- Purpose: Total units owned by the source player
+- Purpose: Total units owned, excluding buildings
 
-## 21. Kills
+## 20. Units Killed
 
 - ID: 20
 
-- Purpose: Total units killed of the source player
+- Purpose: Total units killed, excluding buildings
 
-## 22. Research Count
+## 21. Technology Count
 
 - ID: 21
 
-- Purpose: Research count of the source player
+- Purpose: Number of technologies researched till now
 
-## 23. Exploration
+## 22. % Map Explored
 
 - ID: 22
 
-- Purpose: Percent map explored by the source player
+- Purpose: Percentage of the map explored
 
-## 24. Castle Age Tech ID
+## 23. Castle Age Tech ID
 
 - ID: 23
 
-- Purpose: Always 102 
+- Purpose: Always 102
 
-- Additional Information: Nothing happens when you change this
+- Note: Nothing happens when you change this, probably for mods only
 
-## 25. Imperial Age Tech ID
+## 24. Imperial Age Tech ID
 
 - ID: 24
 
-- Purpose: Always 103 
+- Purpose: Always 103
 
-- Additional Information: Nothing happens when you change this
+- Note: Nothing happens when you change this, probably for mods only
 
-## 26. Feudal Age Tech ID
+## 25. Feudal Age Tech ID
 
 - ID: 25
 
-- Purpose: Always 101 
+- Purpose: Always 101
 
-- Additional Information: Nothing happens when you change this
+- Note: Nothing happens when you change this, probably for mods only
 
-## 27. Attack Sound Effect ID
+## 26. Attack Warning Sound ID
 
 - ID: 26
 
-- Purpose: Always 0 
+- Purpose: Always 0
 
-- Additional Information: Nothing happens when you change this
+- Note: Nothing happens when you change this, probably for mods only
 
-## 28. Enable Monk Conversion
+## 27. Enable Monk Conversion
 
 - ID: 27
 
-- Purpose: Boolean: allow enemy monk conversions by the source player
+- Purpose: Boolean: allow enemy monk conversions
 
 - Default Values:
 
@@ -202,13 +200,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- $\geq$ 1:  Allow
 
-- Additional Information: Set to 1 when atonement is researched
+- Note: Set to 1 when atonement is researched
 
-## 29. Enable Building Conversions
+## 28. Enable Building Conversion
 
 - ID: 28
 
-- Purpose: Boolean: allow enemy building conversions by the source player.
+- Purpose: Boolean: allow enemy building conversions.
 
 - Default Values:
 
@@ -218,77 +216,87 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- $\geq$2:  Monks can convert buildings from range
 
-- Additional Information: Set to 1 when redemption is researched
+- Note: Set to 1 when redemption is researched
 
-## 30. Unused Resource 29
+## 29. Unused Resource 029
 
 - ID: 29
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 31. Building Limit
+## 30. Unused Resource 030
 
 - ID: 30
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 32. Food Limit
+## 31. Unused Resource 031
 
 - ID: 31
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 33. Bonus Population Cap
+## 32. Bonus Population Cap
 
 - ID: 32
 
-- Purpose: Additional max pop space of the source player
+- Purpose: Additional pop space to grant on top of maximum pop cap
 
-- Additional Information: 10 for goths
+- Note: 10 for goths
 
-## 34. Food Maintenance
+## 33. Food Maintenance
 
 - ID: 33
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 35. Faith
+## 34. Faith
 
 - ID: 34
 
-- Purpose: Boolean: faith researched by the source player
+- Purpose: Unknown... What does this resource do?
 
-- Additional Information: Set to 1 when faith is researched, ONLY  a boolean value, does not force faith's effects if manually set to 1
-
-## 36. Faith Recharge Rate
+## 35. Faith Recharging Rate
 
 - ID: 35
 
-- Purpose: Monk faith recovery rate of the source player
+- Purpose: Monk faith recovery rate
 
-## 37. Farm Food
+- Default Values:
+
+	- 1:  The unit of measurement for this rate is unknown
+
+## 36. Farm Food Amount
 
 - ID: 36
 
-- Purpose: Max farm food of the source player
+- Purpose: Maximum farm food amount
 
-## 38. Civilian Population
+- Default Values:
+
+	- 175:  Generic
+
+	- 220:  Chinese
+
+- Note: This is what horse collar etc. technologies modify
+
+## 37. Civilian Population
 
 - ID: 37
 
-- Purpose: Civilian pop of the source player
+- Purpose: Current civilian population
 
-## 39. Unused Resource 38
+## 38. Unused Resource 038
 
 - ID: 38
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 40. All Techs Achieved
+## 39. All Techs Achieved
 
 - ID: 39
 
-- Purpose: Boolean: researched all enabled techs by the source player
+- Purpose: Boolean: If all available technologies have been researched
 
 - Default Values:
 
@@ -296,41 +304,41 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1:  when all techs are researched
 
-## 41. Military Population
+## 40. Military Population
 
 - ID: 40
 
-- Purpose: Military pop of the source player
+- Purpose: Current military popupation
 
-## 42. Conversions
+## 41. Conversions
 
 - ID: 41
 
-- Purpose: Number of units converted by the source player
+- Purpose: Number of units converted
 
-## 43. Wonder
+## 42. Standing Wonders
 
 - ID: 42
 
-- Purpose: Number of standing wonders of the source player
+- Purpose: Number of standing wonders
 
-## 44. Razings
+## 43. Razings
 
 - ID: 43
 
-- Purpose: Number of buildings destroyed by the source player
+- Purpose: Number of buildings razed
 
-## 45. Kill Ratio
+## 44. Kill Ratio
 
 - ID: 44
 
-- Purpose: Ceil of kills/deaths of the source player
+- Purpose: This is the number of units lost subtracted from the number of units killed in total
 
-## 46. Player Killed
+## 45. Survival to Finish
 
 - ID: 45
 
-- Purpose: Boolean: survival to finish of the source player
+- Purpose: Boolean: This is set to `0` under the same conditions which are required to defeat a player
 
 - Default Values:
 
@@ -338,17 +346,25 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1:  Yes
 
-## 47. Tribute Inefficiency
+## 46. Tribute Inefficiency
 
 - ID: 46
 
-- Purpose: Tribute tax fraction imposed on the source player
+- Purpose: This is the fraction of tributes sent that are collected as tax
 
-## 48. Gold Mining Productivity
+- Default Values:
+
+	- 0.3:  Generic
+
+	- 0.2:  After Coinage
+
+	- 0:  After Banking
+
+## 47. Gold Mining Productivity
 
 - ID: 47
 
-- Purpose: Amount of gold mined multiplier of the source player
+- Purpose: Multiplier for gold mined by gold miners
 
 - Default Values:
 
@@ -356,13 +372,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1.15:  Mayans
 
-- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
+- Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
-## 49. Town Center Unavailable
+## 48. Town Center Unavailable
 
 - ID: 48
 
-- Purpose: Boolean: allow building tcs for the source player
+- Purpose: Boolean: allow building extra tcs
 
 - Default Values:
 
@@ -370,13 +386,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1:  Yes
 
-## 50. Gold Counter
+## 49. Gold Counter
 
 - ID: 49
 
-- Purpose: Total gold collected by the source player
+- Purpose: Total gold collected
 
-## 51. Reveal Ally
+## 50. Reveal Ally
 
 - ID: 50
 
@@ -388,113 +404,125 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1:  Allied Vision
 
-- Additional Information: Note - Once enabled, Allied vison cannot be undone
+- Note: Note - Once enabled, Allied vison cannot be undone
 
-## 52. Houses
+## 51. Unused Resource 051
 
 - ID: 51
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 53. Monasteries
+## 52. Monasteries
 
 - ID: 52
 
-- Purpose: Number of monasteries of the source player
+- Purpose: Number of monasteries
 
-## 54. Tribute Sent
+## 53. Tribute Sent
 
 - ID: 53
 
-- Purpose: Amount tributed by the source player
+- Purpose: Total of all resources tributed to others. This does not count taxes paid on tributing
 
-## 55. All Monuments Captured
+## 54. All Monuments Captured
 
 - ID: 54
 
-- Purpose: Boolean: all monuments captured by the source player
+- Purpose: Boolean: all monuments on the map captured
 
-## 56. All Relics Captured
+- Default Values:
+
+	- 0:  No
+
+	- 1:  Yes
+
+## 55. All Relics Captured
 
 - ID: 55
 
-- Purpose: Boolean: all relics captured by the source player
+- Purpose: Boolean: all relics on the map captured
 
-## 57. Ore
+- Default Values:
+
+	- 0:  No
+
+	- 1:  Yes
+
+## 56. Ore Storage
 
 - ID: 56
 
-- Purpose: SWGB ore amount of the source player
+- Purpose: Unused
 
-## 58. Captured Unit
+## 57. Kidnap Storage
 
 - ID: 57
 
-- Purpose: Number of units kidnapped by the source player
+- Purpose: Number of units kidnapped
 
-## 59. Dark Age Tech ID
+- Note: This is probably only used by mods, this usage may be incorrect
+
+## 58. Dark Age Tech ID
 
 - ID: 58
 
 - Purpose: Always 104 
 
-- Additional Information: Nothing happens when you change this
+- Note: Nothing happens when you change this
 
-## 60. Trade Good Quality
+## 59. Unused Resource 059
 
 - ID: 59
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 61. Trade Market Level
+## 60. Unused Resource 060
 
 - ID: 60
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 62. Formations
+## 61. Unused Resource 061
 
 - ID: 61
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 63. Building House Rate
+## 62. Building Housing Rate
 
 - ID: 62
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 64. Gather Tax Rate
+## 63. Tax Gather Rate
 
 - ID: 63
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 65. Gather Accumulation
+## 64. Gather Accumulator
 
 - ID: 64
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... What does this resource do?
 
-## 66. Salvage Decay Rate
+## 65. Salvage Decay Rate
 
 - ID: 65
 
-- Purpose: Boat corpse decay rate of the source player
+- Purpose: Unknown... What does this resource do?
 
-- Additional Information: Changing this doesn't seem to do anything
-
-## 67. Allow Formations
+## 66. Unused Resource 066
 
 - ID: 66
 
-- Purpose: Unused amount of the source player
+- Purpose: Unused
 
-## 68. Can Convert
+## 67. Can Convert
 
 - ID: 67
 
-- Purpose: Boolean: allow enemy object conversions amount of the source player
+- Purpose: Boolean: allow enemy object conversions amount
 
 - Default Values:
 
@@ -502,69 +530,77 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1:  Allows regular unit conversion
 
-## 69. Hitpoints Killed
+## 68. Hit Points Killed
 
 - ID: 68
 
-- Purpose: Cumulative hp of all units killed by the source player
+- Purpose: Cumulative hp of all units killed
 
-## 70. Player1 Kills
+## 69. Killed P1
 
 - ID: 69
 
-- Purpose: Number of player 1 units killed by the source player
+- Purpose: Number of player 1 units killed
 
-## 71. Player2 Kills
+## 70. Killed P2
 
 - ID: 70
 
-- Purpose: Number of player 2 units killed by the source player
+- Purpose: Number of player 2 units killed
 
-## 72. Player3 Kills
+## 71. Killed P3
 
 - ID: 71
 
-- Purpose: Number of player 3 units killed by the source player
+- Purpose: Number of player 3 units killed
 
-## 73. Player4 Kills
+## 72. Killed P4
 
 - ID: 72
 
-- Purpose: Number of player 4 units killed by the source player
+- Purpose: Number of player 4 units killed
 
-## 74. Player5 Kills
+## 73. Killed P5
 
 - ID: 73
 
-- Purpose: Number of player 5 units killed by the source player
+- Purpose: Number of player 5 units killed
 
-## 75. Player6 Kills
+## 74. Killed P6
 
 - ID: 74
 
-- Purpose: Number of player 6 units killed by the source player
+- Purpose: Number of player 6 units killed
 
-## 76. Player7 Kills
+## 75. Killed P7
 
 - ID: 75
 
-- Purpose: Number of player 7 units killed by the source player
+- Purpose: Number of player 7 units killed
 
-## 77. Player8 Kills
+## 76. Killed P8
 
 - ID: 76
 
-- Purpose: Number of player 8 units killed by the source player
+- Purpose: Number of player 8 units killed
 
-## 78. Conversion Resistance
+## 77. Conversion Resistance
 
 - ID: 77
 
-- Purpose: Coefficient of conversion resistance of the source player
+- Purpose: Coefficient of conversion resistance
 
-- Additional Information: Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this.
+- Default Values:
 
-## 79. Trade Vig Rate
+	- 0:  Generic
+
+	- +2:  Teutons
+
+	- +3:  from Faith
+
+- Note: Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this.
+
+## 78. Trade Vig Rate
 
 - ID: 78
 
@@ -578,11 +614,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 0.05:  for saracens
 
-## 80. Stone Mining Productivity
+## 79. Stone Mining Productivity
 
 - ID: 79
 
-- Purpose: Amount of stone mined multiplier of the source player
+- Purpose: Multiplier for stone mined by stone miners
 
 - Default Values:
 
@@ -590,45 +626,45 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1.15:  Mayans
 
-- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
+- Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
-## 81. Queued Count
+## 80. Queued Units
 
 - ID: 80
 
-- Purpose: Amount of units in queue of the source player
+- Purpose: Amount of units in queue
 
-- Additional Information: Note that only the units waiting to be trained are considered in the queue so if an archery range has 3 archers being made, there is 1 archer that is being trained and 2 archers that are in queue
+- Note: Note that only the units waiting to be trained are considered in the queue so if an archery range has 3 archers being made, there is 1 archer that is being trained and 2 archers that are in queue
 
-## 82. Training Count
+## 81. Training Count
 
 - ID: 81
 
-- Purpose: Amount of units being trained of the source player
+- Purpose: Amount of units being trained
 
-- Additional Information: Note that only the FIRST unit in each building is considered as being trained so if a town centre has 4 villagers being made, there is 1 archer that is being trained and 3 villagers that are in queue
+- Note: Note that only the FIRST unit in each building is considered as being trained so if a town centre has 4 villagers being made, there is 1 archer that is being trained and 3 villagers that are in queue
 
-## 83. Start with Packed Town Centre
+## 82. Start with Unit 444 (PTWC)
 
 - ID: 82
 
-- Purpose: Boolean: started with PTWC of the source player
+- Purpose: Boolean: started with PTWC
 
-- Additional Information: Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing
+- Note: Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing
 
-## 84. Boarding Recharge Rate
+## 83. Boarding Recharge Rate
 
 - ID: 83
 
-- Purpose: ABGAL faith recharge rate amount of the source player
+- Purpose: ABGAL faith recharge rate amount
 
-- Additional Information: This is similar to monk's faith except for a special ship unit 536 called the ABGAL in the editor that can convert ships form 1 range away
+- Note: This is similar to monk's faith except for a special ship unit 536 called the ABGAL in the editor that can convert ships form 1 range away
 
-## 85. Starting Villagers
+## 84. Starting Villagers
 
 - ID: 84
 
-- Purpose: Number of starting villagers of the source player
+- Purpose: Number of starting villagers
 
 - Default Values:
 
@@ -638,77 +674,107 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 6:  For Chinese
 
-- Additional Information: Only works for RMS, Changing this manually in the editor does nothing x2 on budapest, x3 on metropolis
+- Note: Only works for RMS, changing this manually in the editor does nothing.
 
-## 86. Research Cost Modifier
+## 85. Research Cost Modifier
 
 - ID: 85
 
-- Purpose: Reduce tech cost to fraction for the source player
+- Purpose: Multiply technology costs by this value
 
-## 87. Research Time Modifier
+- Default Values:
+
+	- 1:  Generic
+
+	- 0.9:  Chinese in feudal age
+
+	- 0.85:  Chinese in castle age
+
+	- 0.80:  Chinese in imperial age
+
+## 86. Research Time Modifier
 
 - ID: 86
 
-- Purpose: Reduce tech research time to fraction for the source player
+- Purpose: Multiply technology research times by this value
 
-## 88. Convert Boats
+## 87. Convert Boats
 
 - ID: 87
 
-- Purpose: Boolean: allow monks to convert boats amount of the source player
+- Purpose: Boolean: allow monks to convert boats
 
-## 89. Fish Trap Food
+- Default Values:
+
+	- 0:  No
+
+	- 1:  Yes
+
+## 88. Fish Trap Food Amount
 
 - ID: 88
 
-- Purpose: Max fishtrap food of the source player
+- Purpose: Maximum fishtrap food amount
 
-## 90. Heal Rate Modifier
+- Default Values:
+
+	- 710:  Generic
+
+	- 2130:  Malay
+
+## 89. Heal Rate Modifier
 
 - ID: 89
 
-- Purpose: Monk healing rate of the source player
+- Purpose: Monk healing rate
 
-## 91. Heal Range
+- Default Values:
+
+	- 0:  The unit of measuremeant for this is unknown
+
+## 90. Healing Range
 
 - ID: 90
 
-- Purpose: Monk heal range of the source player
+- Purpose: Monk heal range
 
-## 92. Starting Food
+- Default Values:
+
+	- 4:  Tiles
+
+## 91. Starting Food
 
 - ID: 91
 
-- Purpose: Starting food amount of the source player
+- Purpose: Starting food amount
 
-- Additional Information: Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting food amount
+- Note: Only works for RMS, changing this manually in the editor does nothing but its a way to check starting food amount
 
-## 93. Starting Wood
+## 92. Starting Wood
 
 - ID: 92
 
-- Purpose: Starting wood amount of the source player
+- Purpose: Starting wood amount
 
-- Additional Information: Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting wood amount
+- Note: Only works for RMS, changing this manually in the editor does nothing but its a way to check starting wood amount
 
-## 94. Starting Stone
+## 93. Starting Stone
 
 - ID: 93
 
-- Purpose: Starting stone amount of the source player
+- Purpose: Starting stone amount
 
-- Additional Information: Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting stone amount
+- Note: Only works for RMS, changing this manually in the editor does nothing but its a way to check starting stone amount
 
-## 95. Starting Gold
+## 94. Starting Gold
 
 - ID: 94
 
-- Purpose: Starting gold amount of the source player
+- Purpose: Starting gold amount
 
-- Additional Information: Only works for RMS. Changing this manually in the editor does nothing but its a way to check starting gold amount
+- Note: Only works for RMS, changing this manually in the editor does nothing but its a way to check starting gold amount
 
-## 96. Loot
+## 95. Enable PTWC / Kidnap / Loot
 
 - ID: 95
 
@@ -718,597 +784,603 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 0:  Normal
 
-	- 1:  Enables Pack Button on TC but it is bugged, if you click it then TC goes berserk
+	- 1:  Allows the TC to be packed and moved
 
 	- $\geq$2:  No noticeable effect
 
-## 97. Berserker Heal Timer
+## 96. Unused Resource 096
 
 - ID: 96
 
-- Purpose: Time difference between berserker heal rate for source player
+- Purpose: Unused
 
-- Additional Information: This is divided by two every time berserkergang is researched
-
-## 98. Dominant Sheep Control
+## 97. Dominant Sheep Control
 
 - ID: 97
 
-- Purpose: Boolean: force sheep conversion of the source player
+- Purpose: Boolean: force sheep conversion
 
 - Default Values:
 
 	- 0:  Normal Sheep conversion behaviour
 
-	- $\geq$1:  If another player does not also have this set to a non zero value, their sheep will force convert to source player
+	- $\geq$1:  If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them.
 
-- Additional Information: This is how the celt bonus of sheep not converting works
+- Note: This is how the celt bonus of sheep not converting works
 
-## 99. Object Cost Summation
+## 98. Building Cost Sum
 
 - ID: 98
 
-- Purpose: Total cost of all units and buildings owned by the source player
+- Purpose: Total cost of all units and buildings owned
 
-## 100. Research Cost Summation
+## 99. Tech Cost Sum
 
 - ID: 99
 
-- Purpose: Total cost of all researches researched by the source player
+- Purpose: Total cost of all researches researched
 
-## 101. Relic Income Summation
+## 100. Relic Income Sum
 
 - ID: 100
 
-- Purpose: Total relic gold generated by the source player
+- Purpose: Total relic gold generated
 
-## 102. Trade Income Summation
+## 101. Trade Income Sum
 
 - ID: 101
 
-- Purpose: Total trade gold generated by the source player
+- Purpose: Total trade gold generated
 
-## 103. Player1 Tribute
+## 102. P1 Tribute
 
 - ID: 102
 
-- Purpose: Amount of resources tributed to player 1 by the source player
+- Purpose: Amount of resources tributed to player 1
 
-## 104. Player2 Tribute
+## 103. P2 Tribute
 
 - ID: 103
 
-- Purpose: Amount of resources tributed to player 2 by the source player
+- Purpose: Amount of resources tributed to player 2
 
-## 105. Player3 Tribute
+## 104. P3 Tribute
 
 - ID: 104
 
-- Purpose: Amount of resources tributed to player 3 by the source player
+- Purpose: Amount of resources tributed to player 3
 
-## 106. Player4 Tribute
+## 105. P4 Tribute
 
 - ID: 105
 
-- Purpose: Amount of resources tributed to player 4 by the source player
+- Purpose: Amount of resources tributed to player 4
 
-## 107. Player5 Tribute
+## 106. P5 Tribute
 
 - ID: 106
 
-- Purpose: Amount of resources tributed to player 5 by the source player
+- Purpose: Amount of resources tributed to player 5
 
-## 108. Player6 Tribute
+## 107. P6 Tribute
 
 - ID: 107
 
-- Purpose: Amount of resources tributed to player 6 by the source player
+- Purpose: Amount of resources tributed to player 6
 
-## 109. Player7 Tribute
+## 108. P7 Tribute
 
 - ID: 108
 
-- Purpose: Amount of resources tributed to player 7 by the source player
+- Purpose: Amount of resources tributed to player 7
 
-## 110. Player8 Tribute
+## 109. P8 Tribute
 
 - ID: 109
 
-- Purpose: Amount of resources tributed to player 8 by the source player
+- Purpose: Amount of resources tributed to player 8
 
-## 111. Player1 Kill Value
+## 110. P1 Kill Value
 
 - ID: 110
 
-- Purpose: Cost of units of player 1 killed by the source player
+- Purpose: Total cost of all units killed of player 1
 
-## 112. Player2 Kill Value
+## 111. P2 Kill Value
 
 - ID: 111
 
-- Purpose: Cost of units of player 2 killed by the source player
+- Purpose: Total cost of all units killed of player 2
 
-## 113. Player3 Kill Value
+## 112. P3 Kill Value
 
 - ID: 112
 
-- Purpose: Cost of units of player 3 killed by the source player
+- Purpose: Total cost of all units killed of player 3
 
-## 114. Player4 Kill Value
+## 113. P4 Kill Value
 
 - ID: 113
 
-- Purpose: Cost of units of player 4 killed by the source player
+- Purpose: Total cost of all units killed of player 4
 
-## 115. Player5 Kill Value
+## 114. P5 Kill Value
 
 - ID: 114
 
-- Purpose: Cost of units of player 5 killed by the source player
+- Purpose: Total cost of all units killed of player 5
 
-## 116. Player6 Kill Value
+## 115. P6 Kill Value
 
 - ID: 115
 
-- Purpose: Cost of units of player 6 killed by the source player
+- Purpose: Total cost of all units killed of player 6
 
-## 117. Player7 Kill Value
+## 116. P7 Kill Value
 
 - ID: 116
 
-- Purpose: Cost of units of player 7 killed by the source player
+- Purpose: Total cost of all units killed of player 7
 
-## 118. Player8 Kill Value
+## 117. P8 Kill Value
 
 - ID: 117
 
-- Purpose: Cost of units of player 8 killed by the source player
+- Purpose: Total cost of all units killed of player 8
 
-## 119. Player1 Razings
+## 118. P1 Razings
 
 - ID: 118
 
-- Purpose: Number of buildings destroyed of player 1 by the source player
+- Purpose: Number of buildings destroyed of player 1
 
-## 120. Player2 Razings
+## 119. P2 Razings
 
 - ID: 119
 
-- Purpose: Number of buildings destroyed of player 2 by the source player
+- Purpose: Number of buildings destroyed of player 2
 
-## 121. Player3 Razings
+## 120. P3 Razings
 
 - ID: 120
 
-- Purpose: Number of buildings destroyed of player 3 by the source player
+- Purpose: Number of buildings destroyed of player 3
 
-## 122. Player4 Razings
+## 121. P4 Razings
 
 - ID: 121
 
-- Purpose: Number of buildings destroyed of player 4 by the source player
+- Purpose: Number of buildings destroyed of player 4
 
-## 123. Player5 Razings
+## 122. P5 Razings
 
 - ID: 122
 
-- Purpose: Number of buildings destroyed of player 5 by the source player
+- Purpose: Number of buildings destroyed of player 5
 
-## 124. Player6 Razings
+## 123. P6 Razings
 
 - ID: 123
 
-- Purpose: Number of buildings destroyed of player 6 by the source player
+- Purpose: Number of buildings destroyed of player 6
 
-## 125. Player7 Razings
+## 124. P7 Razings
 
 - ID: 124
 
-- Purpose: Number of buildings destroyed of player 7 by the source player
+- Purpose: Number of buildings destroyed of player 7
 
-## 126. Player8 Razings
+## 125. P8 Razings
 
 - ID: 125
 
-- Purpose: Number of buildings destroyed of player 8 by the source player
+- Purpose: Number of buildings destroyed of player 8
 
-## 127. Player1 Razing Value
+## 126. P1 Razing Value
 
 - ID: 126
 
-- Purpose: Cost of buildings destroyed of player 1 by the source player
+- Purpose: Total cost of all buildings destroyed of player 1
 
-## 128. Player2 Razing Value
+## 127. P2 Razing Value
 
 - ID: 127
 
-- Purpose: Cost of buildings destroyed of player 2 by the source player
+- Purpose: Total cost of all buildings destroyed of player 2
 
-## 129. Player3 Razing Value
+## 128. P3 Razing Value
 
 - ID: 128
 
-- Purpose: Cost of buildings destroyed of player 3 by the source player
+- Purpose: Total cost of all buildings destroyed of player 3
 
-## 130. Player4 Razing Value
+## 129. P4 Razing Value
 
 - ID: 129
 
-- Purpose: Cost of buildings destroyed of player 4 by the source player
+- Purpose: Total cost of all buildings destroyed of player 4
 
-## 131. Player5 Razing Value
+## 130. P5 Razing Value
 
 - ID: 130
 
-- Purpose: Cost of buildings destroyed of player 5 by the source player
+- Purpose: Total cost of all buildings destroyed of player 5
 
-## 132. Player6 Razing Value
+## 131. P6 Razing Value
 
 - ID: 131
 
-- Purpose: Cost of buildings destroyed of player 6 by the source player
+- Purpose: Total cost of all buildings destroyed of player 6
 
-## 133. Player7 Razing Value
+## 132. P7 Razing Value
 
 - ID: 132
 
-- Purpose: Cost of buildings destroyed of player 7 by the source player
+- Purpose: Total cost of all buildings destroyed of player 7
 
-## 134. Player8 Razing Value
+## 133. P8 Razing Value
 
 - ID: 133
 
-- Purpose: Cost of buildings destroyed of player 8 by the source player
+- Purpose: Total cost of all buildings destroyed of player 8
 
-## 135. Castle
+## 134. Standing Castles
 
 - ID: 134
 
-- Purpose: Number of standing castles by the source player
+- Purpose: Number of standing castles
 
-## 136. Hit Point Razings
+## 135. Hit Points Razed
 
 - ID: 135
 
-- Purpose: Cumulative hp of all buildings destroyed by the source player
+- Purpose: Total HP of all buildings destroyed
 
-## 137. Kills By Player1
+## 136. Kills by P1
 
 - ID: 136
 
-- Purpose: Number of units killed by player 1 of the source player
+- Purpose: Number of own units killed by player 1
 
-## 138. Kills By Player2
+## 137. Kills by P2
 
 - ID: 137
 
-- Purpose: Number of units killed by player 2 of the source player
+- Purpose: Number of own units killed by player 2
 
-## 139. Kills By Player3
+## 138. Kills by P3
 
 - ID: 138
 
-- Purpose: Number of units killed by player 3 of the source player
+- Purpose: Number of own units killed by player 3
 
-## 140. Kills By Player4
+## 139. Kills by P4
 
 - ID: 139
 
-- Purpose: Number of units killed by player 4 of the source player
+- Purpose: Number of own units killed by player 4
 
-## 141. Kills By Player5
+## 140. Kills by P5
 
 - ID: 140
 
-- Purpose: Number of units killed by player 5 of the source player
+- Purpose: Number of own units killed by player 5
 
-## 142. Kills By Player6
+## 141. Kills by P6
 
 - ID: 141
 
-- Purpose: Number of units killed by player 6 of the source player
+- Purpose: Number of own units killed by player 6
 
-## 143. Kills By Player7
+## 142. Kills by P7
 
 - ID: 142
 
-- Purpose: Number of units killed by player 7 of the source player
+- Purpose: Number of own units killed by player 7
 
-## 144. Kills By Player8
+## 143. Kills by P8
 
 - ID: 143
 
-- Purpose: Number of units killed by player 8 of the source player
+- Purpose: Number of own units killed by player 8
 
-## 145. Razings By Player1
+## 144. Razings by P1
 
 - ID: 144
 
-- Purpose: Number of buildings destroyed by player 1 of the source player
+- Purpose: Number of own buildings destroyed by player 1
 
-## 146. Razings By Player2
+## 145. Razings by P2
 
 - ID: 145
 
-- Purpose: Number of buildings destroyed by player 2 of the source player
+- Purpose: Number of own buildings destroyed by player 2
 
-## 147. Razings By Player3
+## 146. Razings by P3
 
 - ID: 146
 
-- Purpose: Number of buildings destroyed by player 3 of the source player
+- Purpose: Number of own buildings destroyed by player 3
 
-## 148. Razings By Player4
+## 147. Razings by P4
 
 - ID: 147
 
-- Purpose: Number of buildings destroyed by player 4 of the source player
+- Purpose: Number of own buildings destroyed by player 4
 
-## 149. Razings By Player5
+## 148. Razings by P5
 
 - ID: 148
 
-- Purpose: Number of buildings destroyed by player 5 of the source player
+- Purpose: Number of own buildings destroyed by player 5
 
-## 150. Razings By Player6
+## 149. Razings by P6
 
 - ID: 149
 
-- Purpose: Number of buildings destroyed by player 6 of the source player
+- Purpose: Number of own buildings destroyed by player 6
 
-## 151. Razings By Player7
+## 150. Razings by P7
 
 - ID: 150
 
-- Purpose: Number of buildings destroyed by player 7 of the source player
+- Purpose: Number of own buildings destroyed by player 7
 
-## 152. Razings By Player8
+## 151. Razings by P8
 
 - ID: 151
 
-- Purpose: Number of buildings destroyed by player 8 of the source player
+- Purpose: Number of own buildings destroyed by player 8
 
-## 153. Value Killed By Others
+## 152. Value Killed by Others
 
 - ID: 152
 
-- Purpose: Cumulative cost of units lost by the source player
+- Purpose: Total cost of all own units lost
 
-## 154. Value Razed By Others
+## 153. Value Razed by Others
 
 - ID: 153
 
-- Purpose: Cumulative cost of buildings lost by the source player
+- Purpose: Total cost of all own buildings lost
 
-## 155. Killed By Others
+## 154. Killed by Others
 
 - ID: 154
 
-- Purpose: Number of units killed by other players of the source player
+- Purpose: Number of own units killed by other players
 
-## 156. Razed By Others
+## 155. Razed by Others
 
 - ID: 155
 
-- Purpose: Number of buildings destroyed by other players amount of the source player
+- Purpose: Number of own buildings destroyed by other players
 
-## 157. Tribute From Player1
+## 156. Tribute from P1
 
 - ID: 156
 
-- Purpose: Tribute received from player 1 of the source player
+- Purpose: Tribute received from player 1
 
-## 158. Tribute From Player2
+## 157. Tribute from P2
 
 - ID: 157
 
-- Purpose: Tribute received from player 2 of the source player
+- Purpose: Tribute received from player 2
 
-## 159. Tribute From Player3
+## 158. Tribute from P3
 
 - ID: 158
 
-- Purpose: Tribute received from player 3 of the source player
+- Purpose: Tribute received from player 3
 
-## 160. Tribute From Player4
+## 159. Tribute from P4
 
 - ID: 159
 
-- Purpose: Tribute received from player 4 of the source player
+- Purpose: Tribute received from player 4
 
-## 161. Tribute From Player5
+## 160. Tribute from P5
 
 - ID: 160
 
-- Purpose: Tribute received from player 5 of the source player
+- Purpose: Tribute received from player 5
 
-## 162. Tribute From Player6
+## 161. Tribute from P6
 
 - ID: 161
 
-- Purpose: Tribute received from player 6 of the source player
+- Purpose: Tribute received from player 6
 
-## 163. Tribute From Player7
+## 162. Tribute from P7
 
 - ID: 162
 
-- Purpose: Tribute received from player 7 of the source player
+- Purpose: Tribute received from player 7
 
-## 164. Tribute From Player8
+## 163. Tribute from P8
 
 - ID: 163
 
-- Purpose: Tribute received from player 8 of the source player
+- Purpose: Tribute received from player 8
 
-## 165. Value Current Units
+## 164. Value Current Units
 
 - ID: 164
 
-- Purpose: Cumulative cost of alive units of the source player
+- Purpose: Total cost of all own alive units
 
-## 166. Value Current Buildings
+## 165. Value Current Buildings
 
 - ID: 165
 
-- Purpose: Cumulative cost of standing buildings of the source player
+- Purpose: Total cost of all own standing buildings
 
-## 167. Food Total
+## 166. Food Total
 
 - ID: 166
 
-- Purpose: Total food collected by the source player
+- Purpose: Total food collected
 
-## 168. Wood Total
+## 167. Wood Total
 
 - ID: 167
 
-- Purpose: Total wood collected by the source player
+- Purpose: Total wood collected
 
-## 169. Stone Total
+## 168. Stone Total
 
 - ID: 168
 
-- Purpose: Total stone collected by the source player
+- Purpose: Total stone collected
 
-## 170. Gold Total
+## 169. Gold Total
 
 - ID: 169
 
-- Purpose: Total gold collected by the source player
+- Purpose: Total gold collected
 
-## 171. Total Value Of Kills
+## 170. Total Value of Kills
 
 - ID: 170
 
-- Purpose: Cumulative cost of all units killed by the source player
+- Purpose: Total cost of all units killed
 
-## 172. Total Tribute Received 
+## 171. Total Tribute Received
 
 - ID: 171
 
-- Purpose: Total amount of resources received in tribute by the source player
+- Purpose: Total of all resources received in tribute
 
-## 173. Total Value Of Razings
+## 172. Total Value of Razings
 
 - ID: 172
 
-- Purpose: Cumulative cost of all buildings destroyed by of the source player
+- Purpose: Total cost of all buildings destroyed
 
-## 174. Total Castles Built
+## 173. Total Castles Built
 
 - ID: 173
 
-- Purpose: Number of total castles built by the source player
+- Purpose: Number of total castles built
 
-## 175. Total Wonders Built
+## 174. Total Wonders Built
 
 - ID: 174
 
-- Purpose: Number of total wonders built by the source player
+- Purpose: Number of total wonders built
 
-## 176. Tribute Score
+## 175. Tribute score
 
 - ID: 175
 
-- Purpose: Tribute score of the source player
+- Purpose: Total amount of resources sent in tribute including taxes. 10% of this is counted towards the economy score
 
-## 177. Convert Min Adj
+## 176. Convert Min Adjustment
 
 - ID: 176
 
-- Purpose: Additional monk seconds needed before conversion starts for the source player
+- Purpose: Additional monk seconds needed before a conversion is even possible
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West") by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West") by T-West
 
-## 178. Convert Max Adj
+## 177. Convert Max Adjustment
 
 - ID: 177
 
-- Purpose: Additional monk seconds needed before forced conversion for the source player
+- Purpose: Additional monk seconds needed before a conversion is forced
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West") by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West") by T-West
 
-## 179. Convert Resist Min Adj
+## 178. Convert Resist Mio Adjustment
 
 - ID: 178
 
-- Purpose: Additional monk seconds needed before conversion starts against the source player
+- Purpose: Additional monk seconds needed before conversion by enemy monks is even possible
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West") by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West") by T-West
 
-## 180. Convert Resist Max Adj
+## 179. Convert Resist Max Adjustment
 
 - ID: 179
 
-- Purpose: Additional monk seconds needed before forced conversion for the source player
+- Purpose: Additional monk seconds needed before conversion by enemy monks is forced
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West") by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West") by T-West
 
-## 181. Convert Building Min
+## 180. Convert Building Min
 
 - ID: 180
 
-- Purpose: Building conversion min time of the source player
+- Purpose: Minimum time required to convert a building
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
 
-## 182. Convert Building Max
+## 181. Convert Building Max
 
 - ID: 181
 
-- Purpose: Building conversion max time of the source player
+- Purpose: Maximum time required to convert a building
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
+- Note: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
 
-## 183. Convert Building Chance
+## 182. Convert Building Chance
 
 - ID: 182
 
-- Purpose: Percent chance for monks to convert buildings by the source player
+- Purpose: Percent chance for monks to convert buildings
 
-- Additional Information: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
+- Note: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
 
-## 184. Spies
+## 183. Reveal Enemy
 
 - ID: 183
 
 - Purpose: Boolean: show enemy los for the source player
 
-## 185. Value Wonders Castles
+- Default Values:
+
+	- 0:  No
+
+	- 1:  Yes, after spies
+
+- Note: Once set to `1`, setting it back to `0` won't take away LoS of enemies!
+
+## 184. Value Wonders Castles
 
 - ID: 184
 
-- Purpose: Total cost of all wonders and castles of the source player
+- Purpose: Total cost of all wonders and castles constructed
 
-## 186. Food Score
+## 185. Food Score
 
 - ID: 185
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... what does this resource do?
 
-## 187. Wood Score
+## 186. Wood Score
 
 - ID: 186
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... what does this resource do?
 
-## 188. Stone Score
+## 187. Stone Score
 
 - ID: 187
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... what does this resource do?
 
-## 189. Gold Score
+## 188. Gold Score
 
 - ID: 188
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unknown... what does this resource do?
 
-## 190. Wood Bonus
+## 189. Chopping Productivity
 
 - ID: 189
 
-- Purpose: Amount of wood chopped multiplier of the source player
+- Purpose: Multiplier for wood chopped by lumberjacks
 
 - Default Values:
 
@@ -1316,13 +1388,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1.15:  Mayans
 
-- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
+- Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
-## 191. Food Bonus
+## 190. Food Gathering Productivity
 
 - ID: 190
 
-- Purpose: Amount of food gathered from all sources (except from sheep) multiplier of the source player
+- Purpose: Multiplier for food gathered from all sources
 
 - Default Values:
 
@@ -1330,43 +1402,61 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1.15:  Mayans
 
-- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%
+- Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%
 
-## 192. Relic Rate
+## 191. Relic Gold Production Rate
 
 - ID: 191
 
-- Purpose: Relic gold generation rate for the source player
+- Purpose: Relic gold generation rate in gold per second
 
 - Default Values:
 
 	- 0.5:  by default
 
-## 193. Heresy
+	- 0.25:  after getting hit with Atheism 
+
+## 192. Converted Units Die
 
 - ID: 192
 
-- Purpose: Boolean: converted units die for the source player
+- Purpose: Boolean: converted units die instead of switching over to the enemy
 
-## 194. Theocracy
+- Default Values:
+
+	- 0:  No, default
+
+	- 1:  Yes, after Heresey
+
+## 193. Theocracy
 
 - ID: 193
 
 - Purpose: Boolean: only one monk needs to regen faith after group conversion for the source player
 
-## 195. Crenellations
+- Default Values:
+
+	- 0:  No, default
+
+	- 1:  Yes, after researching Theocracy
+
+## 194. Crenellations
 
 - ID: 194
 
-- Purpose: Boolean: researched crenellations amount of the source player
+- Purpose: Boolean: Garrisoned infantry fire arrows
 
-- Additional Information: Set to 1 if crenellations is researched, does not give the effect of crenellations, just a boolean
+- Default Values:
 
-## 196. Construction Rate Mod
+	- 0:  No, default
+
+	- 1:  Yes, after crenellations
+
+## 195. Construction Rate Modifier
 
 - ID: 195
 
-- Purpose: Builder work rate multiplier of the source player
+- Purpose: Builder work rate multiplier
 
 - Default Values:
 
@@ -1374,115 +1464,123 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 1.3:  Spanish
 
-- Additional Information: The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`
+- Note: The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`
 
-## 197. Hun Wonder Bonus
+## 196. Hun Wonder Discount
 
 - ID: 196
 
-- Purpose: Additional time for relic/wonder victories in one tenth of an year by any player
+- Purpose: Additional time required for relic/wonder victories in one tenth of a year
 
-- Additional Information: Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame This is additive per player Set to 1000 if atheism is researched
+- Default Values:
 
-## 198. Spies Discount
+	- 0:  default
+
+	- 1000:  (100 years) for the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic/wonder victories, i.e. it adds up if multiple hun players get the tech
+
+- Note: Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame
+
+## 197. Spies Discount
 
 - ID: 197
 
-- Purpose: Boolean: give discount on spies for the source player
+- Purpose: Boolean: Halves the cost of spies per villager, and caps it at 15k gold max instead of the usual 30k.
 
-- Additional Information: Set to 1 if atheism is researched
+- Default Values:
 
-## 199. Unknown Resource 198
+	- 0:  Default
+
+## 198. Unused Resource 198
 
 - ID: 198
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 200. Unknown Resource 199
+## 199. Unused Resource 199
 
 - ID: 199
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 201. Unknown Resource 200
+## 200. Unused Resource 200
 
 - ID: 200
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 202. Unknown Resource 201
+## 201. Unused Resource 201
 
 - ID: 201
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 203. Unknown Resource 202
+## 202. Unused Resource 202
 
 - ID: 202
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 204. Unknown Resource 203
+## 203. Unused Resource 203
 
 - ID: 203
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 205. Unknown Resource 204
+## 204. Unused Resource 204
 
 - ID: 204
 
-- Purpose: Unknown amount of source player
+- Purpose: Unused
 
-## 206. Feitoria Food Productivity
+## 205. Feitoria Food Productivity
 
 - ID: 205
 
-- Purpose: Feitoria food production multiplier of the source player
+- Purpose: Feitoria food production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`
+- Note: The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`
 
-## 207. Feitoria Wood Productivity
+## 206. Feitoria Wood Productivity
 
 - ID: 206
 
-- Purpose: Feitoria wood production multiplier of the source player
+- Purpose: Feitoria wood production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 1`
+- Note: The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 1`
 
-## 208. Feitoria Stone Productivity
+## 207. Feitoria Stone Productivity
 
 - ID: 207
 
-- Purpose: Feitoria stone production multiplier of the source player
+- Purpose: Feitoria stone production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`
+- Note: The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`
 
-## 209. Feitoria Gold Productivity
+## 208. Feitoria Gold Productivity
 
 - ID: 208
 
-- Purpose: Feitoria gold production multiplier of the source player
+- Purpose: Feitoria gold production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 0.7`
+- Note: The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 0.7`
 
-## 210. Reveal Enemy Town Centre
+## 209. Reveal Enemy Town Centers
 
 - ID: 209
 
@@ -1494,13 +1592,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 5:  Vietnamese
 
-- Additional Information: The bonus works for all values $\geq$1, the choice of setting it to 5 for vietnamese seems arbitrary Vietnamese reveal enemy tc location bonus
+- Note: The bonus works for all values $\geq$1, the choice of setting it to 5 for vietnamese seems arbitrary
 
-## 211. Reveal Relics
+## 210. Relics Visible on Map
 
 - ID: 210
 
-- Purpose: Boolean: reveal relics on map amount of the source player
+- Purpose: Boolean: reveal relics on map amount
 
 - Default Values:
 
@@ -1508,13 +1606,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 42:  Burmese
 
-- Additional Information: Burmese reveal relics on map bonus (probably) Only works in RMS, Manually changing this in the editor does not seem to have any effects
+- Note: Burmese reveal relics on map bonus. Only works in RMS, manually changing this in the editor does not seem to have any effects
 
-## 212. Elevation Bonus Higher
+## 211. Elevation Higher Bonus
 
 - ID: 211
 
-- Purpose: The fraction for additional bonus damage dealt from higher elevation for the source player
+- Purpose: The fraction for additional bonus damage dealt from higher elevation
 
 - Default Values:
 
@@ -1522,233 +1620,257 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 0.25:  Tatars
 
-- Additional Information: Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`
+- Note: Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`
 
-## 213. Elevation Bonus Lower
+## 212. Elevation Lower Bonus
 
 - ID: 212
 
-- Purpose: The fraction for additional bonus damage dealt from lower elevation for the source player
+- Purpose: The fraction for additional bonus damage dealt from lower elevation
 
 - Default Values:
 
 	- 0:  Generic
 
-- Additional Information: Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`
+- Note: Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`
 
-## 214. Raiding Productivity
+## 213. Raiding Productivity
 
 - ID: 213
 
-- Purpose: Keshik gold generation rate per second*100 of the source player
+- Purpose: Keshik gold generation rate per 100 seconds
 
 - Default Values:
 
-	- 50:  Tatars
+	- 0:  Generic
 
-- Additional Information: Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 gold per second, but a lower value
+	- 50:  (0.5 g/s) Tatars
 
-## 215. Mercenary Kipchak Count
+- Note: Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 g/s, but a slightly lower value
+
+## 214. Mercenary Kipchak Count
 
 - ID: 214
 
-- Purpose: Total number of mercenary kipchak creatable by the source player
+- Purpose: Total number of mercenary kipchak creatable
 
-- Additional Information: Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource
+- Default Values:
 
-## 216. Mercenary Kipchak Limit
+	- 0:  Generic
+
+	- 10:  after a Cuman ally researches Cuman Mercenaries
+
+- Note: Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource
+
+## 215. Mercenary Kipchak Limit
 
 - ID: 215
 
-- Purpose: Number of mercenary kipchaks created/queued by the source player
+- Purpose: Number of mercenary kipchaks created/queued
 
-- Additional Information: Making mercenary Kipchaks gives one unit of this resource
+- Note: Making mercenary Kipchaks gives one unit of this resource
 
-## 217. Shepherd Productivity
+## 216. Shepherd Productivity
 
 - ID: 216
 
-- Purpose: Amount of food collected from sheep multiplier of the source player
+- Purpose: Amount of food collected from sheep multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-	- 1.15:  Mayans
-
 	- 1.57:  Tatars
 
-- Additional Information: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate as well. In the case of Mayans/Tatars, This is compensated for by reducing villager work rate by 15%/57%
+- Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Tatars, This is compensated for by reducing villager work rate by 57%
 
-## 218. Trigger Shared LOS
+## 217. Shared Line of Sight
 
 - ID: 217
 
-- Purpose: Boolean: reveal ally for the source player
+- Purpose: Boolean: reveal ally
 
 - Default Values:
 
-	- 0:  No Allied Vision
+	- 0:  No
 
-	- 1:  Allied Vision
+	- 1:  Yes, after Cartography
 
-- Additional Information: Note - Once enabled, Allied vison cannot be undone
+- Note: Once set to `1`, setting it back to `0` won't take away LoS of enemies!
 
-## 219. Unknown Resource 218
+## 218. Feudal Town Center Limit
 
 - ID: 218
 
-- Purpose: Unknown amount of the source player
+- Purpose: This is the number of extra TCs a player is allowed to build IF TCs are enabled in feudal age.
 
 - Default Values:
 
-	- 10002.1:  Unknown
+	- 10002.1:  Generic
 
-## 220. Unknown Resource 219
+	- 2.1:  Cumans
+
+- Note: Since generic civs don't get access to TCs in feudal, the 10k amount doesn't matter, but if you're trying to make a map where you want people to be able to make TCs in feudal, make sure to set this value to 10k for cumans!
+
+## 219. Fishing Productivity
 
 - ID: 219
 
-- Purpose: Unknown amount of the source player
+- Purpose: Multiplier for food gathered by fishing ships
 
-## 221. Unknown Resource 220
+- Default Values:
+
+	- 1:  Generic
+
+- Note: Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate
+
+## 220. Unused Resource 220
 
 - ID: 220
 
-- Purpose: Unknown amount of the source player
+- Purpose: Unused
 
-## 222. Food Trickle From Monument
+## 221. Monument Food Productivity
 
 - ID: 221
 
-- Purpose: Monument food trickle rate multiplier of source player
+- Purpose: Monument food trickle rate multiplier
 
 - Default Values:
 
 	- 1:  In KoTH games
 
-- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * food_trickle_from_monument`
+- Note: The amount of resources obtained by owning a monument is `0.7925 * food_trickle_from_monument`
 
-## 223. Wood Trickle From Monument
+## 222. Monument Wood Productivity
 
 - ID: 222
 
-- Purpose: Monument wood trickle rate multiplier of source player
+- Purpose: Monument wood trickle rate multiplier
 
 - Default Values:
 
 	- 1:  In KoTH games
 
-- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * wood_trickle_from_monument`
+- Note: The amount of resources obtained by owning a monument is `0.7925 * wood_trickle_from_monument`
 
-## 224. Stone Trickle From Monument
+## 223. Monument Stone Productivity
 
 - ID: 223
 
-- Purpose: Monument stone trickle rate multiplier of source player
+- Purpose: Monument stone trickle rate multiplier
 
 - Default Values:
 
 	- 1:  In KoTH games
 
-- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * stone_trickle_from_monument`
+- Note: The amount of resources obtained by owning a monument is `0.7925 * stone_trickle_from_monument`
 
-## 225. Gold Trickle From Monument
+## 224. Monument Gold Productivity
 
 - ID: 224
 
-- Purpose: Monument gold trickle rate multiplier of source player
+- Purpose: Monument gold trickle rate multiplier
 
 - Default Values:
 
 	- 1:  In KoTH games
 
-- Additional Information: The amount of resources obtained by owning a monument is `0.7925 * gold_trickle_from_monument`
+- Note: The amount of resources obtained by owning a monument is `0.7925 * gold_trickle_from_monument`
 
-## 226. Relic Food Production Rate
+## 225. Relic Food Production Rate
 
 - ID: 225
 
-- Purpose: Relic food production per minute of the source player
+- Purpose: Relic food production per minute
 
 - Default Values:
 
+	- 0:  Generic
+
 	- 30:  Burgundians
 
-	- 0: Generic
+	- 15:  Burgundians after getting hit with Atheism
 
-## 227. Villagers Killed By Gaia
+## 226. Villagers Killed by Gaia
 
 - ID: 226
 
-- Purpose: Villagers lost to gaia by the source player
+- Purpose: Total number of villagers lost to gaia
 
-## 228. Villagers Killed By Animals
+## 227. Villagers Killed by Animals
 
 - ID: 227
 
-- Purpose: Villagers lost to wild animals by the source player
+- Purpose: Total number of villagers lost to wild animals
 
-## 229. Villagers Killed By AI Player
+## 228. Villagers Killed by Al Player
 
 - ID: 228
 
-- Purpose: Villagers lost to ais by the source player
+- Purpose: Total number of villagers lost to AIs
 
-## 230. Villagers Killed By Human Player
+## 229. Villagers Killed by Human Player
 
 - ID: 229
 
-- Purpose: Villagers lost to humans by the source player
+- Purpose: Total number of villagers lost to human players
 
-## 231. Food Trickle
+## 230. Food Generation Rate
 
 - ID: 230
 
-- Purpose: Food given per minute to the source player
+- Purpose: Free food trickle rate (per minute)
 
-## 232. Wood Trickle
+## 231. Wood Generation Rate
 
 - ID: 231
 
-- Purpose: Wood given per minute to the source player
+- Purpose: Free wood trickle rate (per minute)
 
-## 233. Stone Trickle
+## 232. Stone Generation Rate
 
 - ID: 232
 
-- Purpose: Stone given per minute to the source player
+- Purpose: Free stone trickle rate (per minute)
 
-## 234. Gold Trickle
+## 233. Gold Generation Rate
 
 - ID: 233
 
-- Purpose: Gold given per minute to the source player
+- Purpose: Free gold trickle rate (per minute)
 
-## 235. Spawn Limit
+## 234. Spawn Limit
 
 - ID: 234
 
-- Purpose: Limit of the number of spawning buildings that spawn units from spawn command in a technology of the source player
+- Purpose: The limit to the number of spawning buildings that can spawn units from spawn command in a technology
 
-## 236. Flemish Militia Population
+- Note: This is usually overridden by techs
+
+## 235. Flemish Militia Population
 
 - ID: 235
 
-- Purpose: Number of flemish militia of the source player
+- Purpose: Number of alive flemish militia
 
-## 237. Farming Gold Trickle
+## 236. Farming Gold Productivity
 
 - ID: 236
 
-- Purpose: Farming gold generation rate per second*100 of the source player
+- Purpose: Farming gold generation rate per 100 seconds
 
-- Additional Information: used by the Burgundian Vineyards technology. Set to 2 when researched
+- Default Values:
 
-## 238. Folwark Collection Amount
+	- 0:  Generic
+
+	- 2:  (0.02 g/s per farmer) after Burgundian Vineyards
+
+## 237. Folwark Collection Amount
 
 - ID: 237
 
-- Purpose: This is the amount of food collected from farms built around a Folwark by the source player
+- Purpose: This is the amount of food collected from farms built around a folwark
 
 - Default Values:
 
@@ -1756,19 +1878,25 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 17.5:  Poles
 
+	- 19.25:  Poles with Chinese Ally
+
 	- 25:  Poles with Horse Collar
+
+	- 27.5:  Poles with Horse Collar & Chinese Ally
 
 	- 37.5:  Poles with Heavy Plow
 
+	- 41.25:  Poles with Heavy Plow & Chinese Ally
+
 	- 55:  Poles with Crop Rotation
 
-- Additional Information: Poles set this to 17.5. Horse Collar adds 7.5 to it, Heavy Plow adds 12.5 to it and Crop Rotation adds 17.5 to it
+	- 60.5:  Poles with Crop Rotation & Chinese Ally
 
-## 239. Folwark Attribute Type
+## 238. Folwark Attribute Type
 
 - ID: 238
 
-- Purpose: This is the ID of the resource that is given to the player from a farm constructed around a Folwark to the source player
+- Purpose: This is the ID of the resource that is given when a farm is constructed around a folwark
 
 - Default Values:
 
@@ -1776,29 +1904,29 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- -1:  Generic
 
-## 240. Folwark Building Type
+## 239. Folwark Building Type
 
 - ID: 239
 
-- Purpose: This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work for the source player
+- Purpose: This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work
 
 - Default Values:
 
-	- 68 (Mill):  Poles
+	- 68:  (Mill) Poles
 
 	- -1:  Generic
 
-## 241. Units Converted
+## 240. Units Converted
 
 - ID: 240
 
-- Purpose: The amount of units lost to enemy conversions by the source player
+- Purpose: The amount of units lost to enemy conversions
 
-## 242. Stone Mining Gold Productivity
+## 241. Stone Mining Gold Productivity
 
 - ID: 241
 
-- Purpose: Stone mining gold generation rate per second*100 of the source player
+- Purpose: Stone mining gold generation rate per 100 seconds
 
 - Default Values:
 
@@ -1810,51 +1938,51 @@ This page is a list of all the player resources in the scenario editor and their
 
 	- 23.805:  Poles with Stone Shaft Mining
 
-## 243. Trade Workshop Food Trickle
+## 242. Trade Workshop Food Productivity
 
 - ID: 242
 
-- Purpose: Trade Workshop food production multiplier of the source player
+- Purpose: Trade Workshop food production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`.
+- Note: The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`.
 
-## 244. Trade Workshop Wood Trickle
+## 243. Trade Workshop Wood Productivity
 
 - ID: 243
 
-- Purpose: Trade Workshop wood production multiplier of the source player
+- Purpose: Trade Workshop wood production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`.
+- Note: The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`.
 
-## 245. Trade Workshop Stone Trickle
+## 244. Trade Workshop Stone Productivity
 
 - ID: 244
 
-- Purpose: Trade Workshop stone production multiplier of the source player
+- Purpose: Trade Workshop stone production rate multiplier
 
 - Default Values:
 
 	- 0:  Generic
 
-- Additional Information: The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`.
+- Note: The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`.
 
-## 246. Trade Workshop Gold Trickle
+## 245. Trade Workshop Gold Productivity
 
 - ID: 245
 
-- Purpose: Trade Workshop gold production multiplier of the source player
+- Purpose: Trade Workshop gold production rate multiplier
 
 - Default Values:
 
 	- 1:  Generic
 
-- Additional Information: The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`.
+- Note: The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`.
 
