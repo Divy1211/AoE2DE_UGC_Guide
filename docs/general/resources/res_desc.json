@@ -170,20 +170,20 @@
         "name": "Enable Monk Conversion",
         "desc": "Boolean: allow enemy monk conversions",
         "defaults": {
-            "0": " Don't Allow",
-            ">= 1": " Allow"
+            "0": " No (default)",
+            ">= 1": " Yes, after Atonement"
         },
-        "note": "Set to 1 when atonement is researched"
+        "note": ""
     },
     "28": {
         "name": "Enable Building Conversion",
         "desc": "Boolean: allow enemy building conversions.",
         "defaults": {
-            "0": " Don't Allow",
-            "1": " Allow",
+            "0": " No (default)",
+            "1": " Yes, after Redemption",
             ">=2": " Monks can convert buildings from range"
         },
-        "note": "Set to 1 when redemption is researched"
+        "note": ""
     },
     "29": {
         "name": "Unused Resource 029",
@@ -254,8 +254,8 @@
         "name": "All Techs Achieved",
         "desc": "Boolean: If all available technologies have been researched",
         "defaults": {
-            "0": " when all techs not researched",
-            "1": " when all techs are researched"
+            "0": " No",
+            "1": " Yes"
         },
         "note": ""
     },
@@ -322,7 +322,7 @@
         "desc": "Boolean: allow building extra tcs",
         "defaults": {
             "0": " No (Sudden Death)",
-            "1": " Yes"
+            "1": " Yes (Normal)"
         },
         "note": ""
     },
@@ -336,10 +336,10 @@
         "name": "Reveal Ally",
         "desc": "Boolean: show ally los for the source player",
         "defaults": {
-            "0": " No Allied Vision",
-            "1": " Allied Vision"
+            "0": " No (default)",
+            "1": " Yes, after Cartography or with a Portuguese ally"
         },
-        "note": "Note - Once enabled, Allied vison cannot be undone"
+        "note": "Once set to `1`, setting it back to `0` won't take away the LoS of allies"
     },
     "51": {
         "name": "Unused Resource 051",
@@ -445,10 +445,10 @@
     },
     "67": {
         "name": "Can Convert",
-        "desc": "Boolean: allow enemy object conversions amount",
+        "desc": "Boolean: monks can convert enemy units",
         "defaults": {
-            "0": " Don't allow even regular unit conversion",
-            "1": " Allows regular unit conversion"
+            "0": " No",
+            "1": " Yes (default)"
         },
         "note": ""
     },
@@ -511,8 +511,8 @@
         "desc": "Coefficient of conversion resistance",
         "defaults": {
             "0": " Generic",
-            "+2": " Teutons",
-            "+3": " from Faith"
+            "+2": " with Teuton ally",
+            "+3": " after Faith"
         },
         "note": "Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this."
     },
@@ -520,9 +520,9 @@
         "name": "Trade Vig Rate",
         "desc": "Market exchange rate fraction for the source player",
         "defaults": {
-            "0.3": " Generic rate",
-            "0.15": " after guilds",
-            "0.05": " for saracens"
+            "0.3": " Generic Rate",
+            "0.15": " after Guilds",
+            "0.05": " Saracens"
         },
         "note": ""
     },
@@ -563,9 +563,9 @@
         "name": "Starting Villagers",
         "desc": "Number of starting villagers",
         "defaults": {
-            "3": " For generic civs",
-            "4": " For Mayans",
-            "6": " For Chinese"
+            "3": " Generic",
+            "4": " Mayans",
+            "6": " Chinese"
         },
         "note": "Only works for RMS, changing this manually in the editor does nothing."
     },
@@ -591,7 +591,7 @@
         "desc": "Boolean: allow monks to convert boats",
         "defaults": {
             "0": " No",
-            "1": " Yes"
+            "1": " Yes (default)"
         },
         "note": ""
     },
@@ -606,7 +606,7 @@
     },
     "89": {
         "name": "Heal Rate Modifier",
-        "desc": "Monk healing rate",
+        "desc": "Monk healing rate modifier",
         "defaults": {
             "0": " The unit of measuremeant for this is unknown"
         },
@@ -648,11 +648,11 @@
         "name": "Enable PTWC / Kidnap / Loot",
         "desc": "Enable town centre packing for the source player",
         "defaults": {
-            "0": " Normal",
-            "1": " Allows the TC to be packed and moved",
-            ">=2": " No noticeable effect"
+            "0": " default",
+            "1": " allows the TC to be packed and moved",
+            ">=2": " no noticeable effect"
         },
-        "note": ""
+        "note": "Enabling kidnap/loot requires modding the units to have the kidnap/pillage action"
     },
     "96": {
         "name": "Unused Resource 096",
@@ -664,10 +664,10 @@
         "name": "Dominant Sheep Control",
         "desc": "Boolean: force sheep conversion",
         "defaults": {
-            "0": " Normal Sheep conversion behaviour",
-            ">=1": " If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them."
+            "0": " Generic",
+            "1": " Celts"
         },
-        "note": "This is how the celt bonus of sheep not converting works"
+        "note": "If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them. Celt sheep bonus"
     },
     "98": {
         "name": "Building Cost Sum",
@@ -1183,8 +1183,8 @@
         "name": "Reveal Enemy",
         "desc": "Boolean: show enemy los for the source player",
         "defaults": {
-            "0": " No",
-            "1": " Yes, after spies"
+            "0": " No (default)",
+            "1": " Yes, after Spies"
         },
         "note": "Once set to `1`, setting it back to `0` won't take away LoS of enemies!"
     },
@@ -1240,7 +1240,7 @@
         "name": "Relic Gold Production Rate",
         "desc": "Relic gold generation rate in gold per second",
         "defaults": {
-            "0.5": " by default",
+            "0.5": " default",
             "0.25": " after getting hit with Atheism "
         },
         "note": ""
@@ -1249,7 +1249,7 @@
         "name": "Converted Units Die",
         "desc": "Boolean: converted units die instead of switching over to the enemy",
         "defaults": {
-            "0": " No, default",
+            "0": " No (default)",
             "1": " Yes, after Heresey"
         },
         "note": ""
@@ -1258,7 +1258,7 @@
         "name": "Theocracy",
         "desc": "Boolean: only one monk needs to regen faith after group conversion for the source player",
         "defaults": {
-            "0": " No, default",
+            "0": " No (default)",
             "1": " Yes, after researching Theocracy"
         },
         "note": ""
@@ -1267,7 +1267,7 @@
         "name": "Crenellations",
         "desc": "Boolean: Garrisoned infantry fire arrows",
         "defaults": {
-            "0": " No, default",
+            "0": " No (default)",
             "1": " Yes, after crenellations"
         },
         "note": ""
@@ -1442,12 +1442,9 @@
     },
     "217": {
         "name": "Shared Line of Sight",
-        "desc": "Boolean: reveal ally",
-        "defaults": {
-            "0": " No",
-            "1": " Yes, after Cartography"
-        },
-        "note": "Once set to `1`, setting it back to `0` won't take away LoS of enemies!"
+        "desc": "Unknown... what does this resource do?",
+        "defaults": {},
+        "note": ""
     },
     "218": {
         "name": "Feudal Town Center Limit",
