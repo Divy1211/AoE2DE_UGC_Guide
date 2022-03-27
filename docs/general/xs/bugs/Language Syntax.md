@@ -394,3 +394,24 @@ void main() {
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario
 
+### 16. Using Single Quotes Causes 'Could not emit quads' Error
+
+Description: Using single quotes (for example to construct strings) isn't allowed and causes 'could not emit quads' error.
+
+Expected Behaviour: A more useful error along the lines of: "Couldn't parse function x" or "Single quotes not allowed".
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+void unrelatedFunc() {
+    // ...
+}
+
+void main() {
+    string x = 'my string';
+}
+```
+3. Include the script in the scenario or RMS
+4. When a game is played using the scenario or RMS, you'll get the error: "Could not emit quads for 'unrelatedFunc' function."
