@@ -1,3 +1,5 @@
+# AoE2ScenarioParser
+
 *Written by: KSneijders (MrKirby)*
 
 ---
@@ -12,7 +14,7 @@ The parser works by reading a scenario file, and converting it to objects in the
 
 Check out the [official AoE2ScenarioParser documentation] for the most up-to-date installation guide and how to get started!
 
-[official AoE2ScenarioParser documentation]: https://aoe2scenarioparser.readthedocs.io/en/master/getting_started.html
+[official AoE2ScenarioParser documentation]: https://ksneijders.github.io/AoE2ScenarioParser/installation/
 
 ## Python Installation
 
@@ -20,7 +22,7 @@ For the most up-to-date installation guide, you should check out the official `A
 
 Which can be found [here].
 
-[here]: https://aoe2scenarioparser.readthedocs.io/en/master/install.html
+[here]: https://ksneijders.github.io/AoE2ScenarioParser/installation/
 
 ---
 
