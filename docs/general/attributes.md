@@ -186,6 +186,20 @@ What if we want to enable both properties at once? This is achieved by adding th
 
 - Purpose: The ID of the icon that you want a unit to show
 
+## 25. Fog Visibility
+
+- ID: 25
+
+- Purpose: Controls visibility of a unit through the fog of war.
+
+| **Property**        | **Flag Value** |
+|:-------------------:|:--------------:|
+| Not Visible         | 0              |
+| Always Visible      | 1              |
+| Visible If Alive    | 2              |
+| Inverted Visibility | 3              |
+| Check Doppleganger  | 4              |
+
 ## 26. Hero Status
 
 - ID: 40
