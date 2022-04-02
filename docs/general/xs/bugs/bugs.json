@@ -27,12 +27,28 @@
             "Code File": "effect_amount3.xs",
             "Version Fixed": "56005",
             "show": true
+        },
+        {
+            "Name": "XS Files Do Not Transfer In A Lobby",
+            "Description" : "When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host. (Currently, `#includeXS` works for scripts that the host has in their profile folder, but recursive includes and scripts from other sources are still not transferred)",
+            "Expected Behaviour": "The main XS script and all XS scripts imported in the main script using `#!cpp include \"fileName.xs\";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script that chats something to the screen",
+                "Include the script in the scenario or RMS",
+                "Host a lobby with at least two human players",
+                "Set the map as the above scenario or RMS",
+                "When the game is started, the host sees the message chatted but the others get a `failed to open file` error"
+            ],
+            "Code File": "",
+            "Version Fixed": "60670",
+            "show": true
         }
     ],
     "Effect Amount": [
         {
-            "Name": "`xsEffectAmount` effect `cMulAttribute` with attribute `cAttack/cArmor`",
-            "Description" : "When using `xsEffectAmount` and `cMulAttribute` to modify `cAttack/cArmor`, the effect does not change the attack/armour at all",
+            "Name": "`xsEffectAmount` effect `cMulAttribute` and `cAddAttribute` with attribute `cAttack/cArmor`",
+            "Description" : "When using `xsEffectAmount` and `cMulAttribute` or `cAddAttribute` to modify `cAttack/cArmor`, the effect does not change the attack/armour at all",
             "Expected Behaviour": "Expected behaviour is demonstrated using the following example:",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
@@ -177,6 +193,34 @@
             "show": true
         },
         {
+            "Name": "Assigning Loop Variable To Itself Does Not Throw An Error",
+            "Description" : "Assigning the loop variable from a `#!cpp for` loop to itself in the loop definition statement doesn't throw an error. The loop body is even run once",
+            "Expected Behaviour": "This should throw an error in the editor",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played all three chat data functions run and show on screen"
+            ],
+            "Code File": "scope2.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Integers Softly Limited To `999_999_999`",
+            "Description" : "An `#!cpp int` cannot be directly initialised a value greater than `999_999_999`. Attempting to do so causes a parsing error. They can still be given values higher than `999_999_999` by just adding/any other math operations",
+            "Expected Behaviour": "Any value between the 32 bit signed int limits (`-2147483648` and `2147483647` inclusive) should be a valid initial value for an integer",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, 'j = 10' will be printed last because of the chat data at the end."
+            ],
+            "Code File": "int_num_limit.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
             "Name": "Static Variables In Recursive Functions",
             "Description" : "If a static variable is declared inside a recursive function, its value cannot be changed",
             "Expected Behaviour": "static variables inside recursive functions should behave normally like they do in C++",
@@ -184,9 +228,37 @@
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp \"a is 1 pri is 9\"`. The last `xsChatData` in `main` isn't run at all."
+                "When a game is played using the scenario or RMS, the values of the variable `a` are always the same"
             ],
             "Code File": "staticrec.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Static Variables In Global Scope",
+            "Description" : "If a static variable is declared in the global scope, XS execution fails silently",
+            "Expected Behaviour": "This should be allowed (or throws an error) since static variables technically give variables internal linkage which they already have by default in XS. What should really not be allowed though is using `#!cpp extern static int a = 10;`",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, nothing is chatted to the screen"
+            ],
+            "Code File": "static.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Strings In Global Scope",
+            "Description" : "A string declared in the global scope doesn't retain its value",
+            "Expected Behaviour": "When a string is declared in the global scope, it should be usable like other data type variables",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, the actual value that was assigned to the string is not chatted to the screen, but something random"
+            ],
+            "Code File": "global_string.xs",
             "Version Fixed": "",
             "show": true
         },
@@ -233,6 +305,20 @@
             "show": true
         },
         {
+            "Name": "Scopes Cannot Be Explicitly Created",
+            "Description" : "`{}` cannot be used to explicitly create a scope",
+            "Expected Behaviour": "Code within `{}` should define a scope and variable lifetime should properly be managed like in C++",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, a parsing error is thrown"
+            ],
+            "Code File": "blocks.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
             "Name": "Cannot Declare Variables As A `#!cpp const` In Function Parameters",
             "Description" : "It is not possible to declare a function parameter as a `#!cpp const` even though it is used in the `#!cpp xsChatData` function in the official documentation.",
             "Expected Behaviour": "It should bee possible to declare function parameters as a `#!cpp const`",
@@ -273,27 +359,25 @@
             "Code File": "return3.xs",
             "Version Removed": "",
             "show": true
+        },
+        {
+            "Name": "Using Single Quotes Causes The `Could not emit quads` Error",
+            "Description" : "Using single quotes (to construct strings) is not allowed and causes the `could not emit quads` error",
+            "Expected Behaviour": "A more useful error along the lines of: \"Could not parse function x\" or \"Single quotes not allowed\"",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "Run the `main` function of the script in the scenario"
+            ],
+            "Code File": "quotes.xs",
+            "Version Removed": "",
+            "show": true
         }
     ],
     "Important": [
         {
-            "Name": "XS Files Do Not Transfer In A Lobby",
-            "Description" : "When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host. (Currently, `#includeXS` works for scripts that the host has in their profile folder, but recursive includes and scripts from other sources are still not transferred)",
-            "Expected Behaviour": "The main XS script and all XS scripts imported in the main script using `#!cpp include \"fileName.xs\";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script that chats something to the screen",
-                "Include the script in the scenario or RMS",
-                "Host a lobby with at least two human players",
-                "Set the map as the above scenario or RMS",
-                "When the game is started, the host sees the message chatted but the others get a `failed to open file` error"
-            ],
-            "Code File": "",
-            "Version Fixed": "",
-            "show": true
-        },
-        {
-            "Name": "XS Files In Mods Are Not Detected",
+            "Name": "(UNVERIFIED) XS Files In Mods Are Not Detected",
             "Description" : "XS scripts in a mod are not detected by the game.",
             "Expected Behaviour": "Any XS scripts included in a mod should be detected by ANY scenario or RMS trying to use them, even if they are not a part of the mod itself.",
             "Reproduction Steps": [
@@ -301,6 +385,19 @@
                 "Create a local mod with an XS script in the following folder: `PathToModFolder\\resources\\_common\\xs\\fileName.xs`",
                 "Include the script in the scenario or RMS",
                 "When a game is played using the scenario or RMS, the `failed to open file` error is shown"
+            ],
+            "Code File": "",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Technology Related XS function Do Not Work In RMS",
+            "Description" : "`xsResearchTechnology` and `xsGetPlayerNumberOfTechs` cannot be used in RMS",
+            "Expected Behaviour": "These functions should work in an RMS as they do in scenarios",
+            "Reproduction Steps": [
+                "Create a new RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "When a game is played using the XS script included in an RMS, a parsing error is shown"
             ],
             "Code File": "",
             "Version Fixed": "",
@@ -333,6 +430,20 @@
                 "When a game is played using the scenario or RMS, A crash will occur"
             ],
             "Code File": "goto.xs",
+            "Version Fixed": "",
+            "show": true
+        },
+        {
+            "Name": "Crash On Using An Integer Larger Than `999_999_999` In Chat Data",
+            "Description" : "Trying to chan an `#!cpp int` that is bigger than `999_999_999` with `%d` in `xsChatData` causes a crash",
+            "Expected Behaviour": "The int value should be printed properly as expected",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, A crash will occur"
+            ],
+            "Code File": "int_num_limit2.xs",
             "Version Fixed": "",
             "show": true
         }

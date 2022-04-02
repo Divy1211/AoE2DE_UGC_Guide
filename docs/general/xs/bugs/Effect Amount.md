@@ -1,6 +1,6 @@
-### 1. `xsEffectAmount` effect `cMulAttribute` with attribute `cAttack/cArmor`
+### 1. `xsEffectAmount` effect `cMulAttribute` and `cAddAttribute` with attribute `cAttack/cArmor`
 
-Description: When using `xsEffectAmount` and `cMulAttribute` to modify `cAttack/cArmor`, the effect does not change the attack/armour at all
+Description: When using `xsEffectAmount` and `cMulAttribute` or `cAddAttribute` to modify `cAttack/cArmor`, the effect does not change the attack/armour at all
 
 Expected Behaviour: Expected behaviour is demonstrated using the following example:
 
@@ -18,8 +18,12 @@ void main() {
     xsEffectAmount(cSetAttribute, cGenghisKhan, cArmor, cPierce*65536 + 5);
 
     // These however do not do anything.
-    xsEffectAmount(cMulAttribute, cGenghisKhan, cAttack, cPierce*65536 + 5);
+    xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, cPierce*65536 + 5);
     xsEffectAmount(cMulAttribute, cGenghisKhan, cArmor, cPierce*65536 + 5);
+
+    // To make cAddAttribute and cMulAttribute work, we need to currently use the old format:
+    // xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, cPierce*256 + 5);
+    // xsEffectAmount(cMulAttribute, cGenghisKhan, cArmor, cPierce*256 + 5);
 }
 ```
 3. Include the script in the scenario or RMS

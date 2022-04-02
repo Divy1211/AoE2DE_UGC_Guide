@@ -4,7 +4,7 @@ from datetime import date
 with open("./bugs.json") as file:
     data = json.load(file)
 
-date = date.today().strftime("%d.%m.%Y")
+date_t = date.today().strftime("%d.%m.%Y")
 
 out = f"""# Known Bugs And Quirks In XS Scripting
 *Written by: Alian713*
@@ -17,9 +17,9 @@ Any new bugs discovered will be added to the list. This list will also be update
 
 If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the [About](../../../../) page for relevant information about the authors.
 
-Game Version: `101.101.59053.0 8201263`
+Game Version: `101.101.60670.0 8472019`
 
-Last Updated: `{date}`
+Last Updated: `{date_t}`
 
 Game Platform: Steam
 

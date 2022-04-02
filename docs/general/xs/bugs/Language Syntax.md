@@ -214,14 +214,56 @@ void main() {
         xsChatData("j ="+j,);
     }
     // the scopr of the variable j is not limited to just the loop above
-    xsChatData("j = "+j);
-    // this will print "j = 10"
+    xsChatData("j (out of loop scope) = "+j);
+    // this will print "j (out of loop scope) = 10"
 }
 ```
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, 'j = 10' will be printed last because of the chat data at the end.
 
-### 9. Static Variables In Recursive Functions
+### 9. Assigning Loop Variable To Itself Does Not Throw An Error
+
+Description: Assigning the loop variable from a `#!cpp for` loop to itself in the loop definition statement doesn't throw an error. The loop body is even run once
+
+Expected Behaviour: This should throw an error in the editor
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+void main() {
+    xsChatData("test before for lop for loop");
+    for(j = j; < 10) {
+        xsChatData("test inside for loop");
+    }
+    xsChatData("test after for loop");
+}
+
+```
+3. Include the script in the scenario or RMS
+4. When a game is played all three chat data functions run and show on screen
+
+### 10. Integers Softly Limited To `999_999_999`
+
+Description: An `#!cpp int` cannot be directly initialised a value greater than `999_999_999`. Attempting to do so causes a parsing error. They can still be given values higher than `999_999_999` by just adding/any other math operations
+
+Expected Behaviour: Any value between the 32 bit signed int limits (`-2147483648` and `2147483647` inclusive) should be a valid initial value for an integer
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+void main() {
+    // this line will cause a parsing error:
+    int a = 1000000000;
+}
+```
+3. Include the script in the scenario or RMS
+4. When a game is played using the scenario or RMS, 'j = 10' will be printed last because of the chat data at the end.
+
+### 11. Static Variables In Recursive Functions
 
 Description: If a static variable is declared inside a recursive function, its value cannot be changed
 
@@ -247,9 +289,51 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp "a is 1 pri is 9"`. The last `xsChatData` in `main` isn't run at all.
+4. When a game is played using the scenario or RMS, the values of the variable `a` are always the same
 
-### 10. Off By One Error With `infiniteLoopLimit`
+### 12. Static Variables In Global Scope
+
+Description: If a static variable is declared in the global scope, XS execution fails silently
+
+Expected Behaviour: This should be allowed (or throws an error) since static variables technically give variables internal linkage which they already have by default in XS. What should really not be allowed though is using `#!cpp extern static int a = 10;`
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+static int a = 10;
+void main() {
+    xsChatData("test "+a);
+}
+
+```
+3. Include the script in the scenario or RMS
+4. When a game is played using the scenario or RMS, nothing is chatted to the screen
+
+### 13. Strings In Global Scope
+
+Description: A string declared in the global scope doesn't retain its value
+
+Expected Behaviour: When a string is declared in the global scope, it should be usable like other data type variables
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+string a = "test";
+
+void main() {
+    // prints random text to the screen or ??? or shows an
+    // Error invalid encoding
+    xsChatData("a = "+a);
+}
+```
+3. Include the script in the scenario or RMS
+4. When a game is played using the scenario or RMS, the actual value that was assigned to the string is not chatted to the screen, but something random
+
+### 14. Off By One Error With `infiniteLoopLimit`
 
 Description: If `infiniteLoopLimit = n;` is used inside a function, it makes it so that ALL loops in that function run a maximum of `n+1` times.
 
@@ -274,7 +358,7 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp "loop count 11"`.
 
-### 11. Silent XS Crash with `infiniteRecursionLimit`
+### 15. Silent XS Crash with `infiniteRecursionLimit`
 
 Description: If `infiniteRecursionLimit = n;` is used inside a function, the function may only be called `n-1` times in one call stack. Attempting to call it for the `n`-th time will result in a silent XS crash
 
@@ -303,7 +387,7 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp "recursion test 9"`. The last xsChatData in main() isn't run at all.
 
-### 12. Return Statements Do Not Work As Documented
+### 16. Return Statements Do Not Work As Documented
 
 Description: Paranthesis are needed around return expressions for them to work.
 
@@ -326,7 +410,29 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, the `Could not parse the code for 'test' function` error is shown
 
-### 13. Cannot Declare Variables As A `#!cpp const` In Function Parameters
+### 17. Scopes Cannot Be Explicitly Created
+
+Description: `{}` cannot be used to explicitly create a scope
+
+Expected Behaviour: Code within `{}` should define a scope and variable lifetime should properly be managed like in C++
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+void main() {
+    {
+        int a = 10;
+    }
+
+    xsChatData("test "+a);
+}
+```
+3. Include the script in the scenario or RMS
+4. When a game is played using the scenario or RMS, a parsing error is thrown
+
+### 18. Cannot Declare Variables As A `#!cpp const` In Function Parameters
 
 Description: It is not possible to declare a function parameter as a `#!cpp const` even though it is used in the `#!cpp xsChatData` function in the official documentation.
 
@@ -347,7 +453,7 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, the `'const' is not a valid parameter type` error is shown
 
-### 14. Missing Data Types Which Are Documented
+### 19. Missing Data Types Which Are Documented
 
 Description: The `#!cpp long`, `#!cpp char` and `#!cpp double` data types do not exist, even though the official XS documentation references them.
 
@@ -368,7 +474,7 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, the `Could not parse the code for 'main' function` error is shown
 
-### 15. Weird Behaviour With Return Statements
+### 20. Weird Behaviour With Return Statements
 
 Description: This behaviour is not understood well
 
@@ -394,11 +500,11 @@ void main() {
 3. Include the script in the scenario or RMS
 4. Run the `main` function of the script in the scenario
 
-### 16. Using Single Quotes Causes 'Could not emit quads' Error
+### 21. Using Single Quotes Causes The `Could not emit quads` Error
 
-Description: Using single quotes (for example to construct strings) isn't allowed and causes 'could not emit quads' error.
+Description: Using single quotes (to construct strings) is not allowed and causes the `could not emit quads` error
 
-Expected Behaviour: A more useful error along the lines of: "Couldn't parse function x" or "Single quotes not allowed".
+Expected Behaviour: A more useful error along the lines of: "Could not parse function x" or "Single quotes not allowed"
 
 Reproduction Steps:
 
@@ -414,4 +520,5 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, you'll get the error: "Could not emit quads for 'unrelatedFunc' function."
+4. Run the `main` function of the script in the scenario
+

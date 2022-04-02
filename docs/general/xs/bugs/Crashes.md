@@ -40,3 +40,25 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, A crash will occur
 
+### 3. Crash On Using An Integer Larger Than `999_999_999` In Chat Data
+
+Description: Trying to chan an `#!cpp int` that is bigger than `999_999_999` with `%d` in `xsChatData` causes a crash
+
+Expected Behaviour: The int value should be printed properly as expected
+
+Reproduction Steps:
+
+1. Create a new scenario or RMS
+2. Create a new XS script with the following code:
+```cpp
+void main() {
+    int a = 999999999+1;
+
+    xsChatData("t %d", a); // crashes the game   
+ 
+    // xsChatData("t "+a); // this works normally
+}
+```
+3. Include the script in the scenario or RMS
+4. When a game is played using the scenario or RMS, A crash will occur
+

@@ -7,6 +7,10 @@ void main() {
     xsEffectAmount(cSetAttribute, cGenghisKhan, cArmor, cPierce*65536 + 5);
 
     // These however do not do anything.
-    xsEffectAmount(cMulAttribute, cGenghisKhan, cAttack, cPierce*65536 + 5);
+    xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, cPierce*65536 + 5);
     xsEffectAmount(cMulAttribute, cGenghisKhan, cArmor, cPierce*65536 + 5);
+
+    // To make cAddAttribute and cMulAttribute work, we need to currently use the old format:
+    // xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, cPierce*256 + 5);
+    // xsEffectAmount(cMulAttribute, cGenghisKhan, cArmor, cPierce*256 + 5);
 }
