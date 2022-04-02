@@ -399,7 +399,7 @@
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "When a game is played using the XS script included in an RMS, a parsing error is shown"
             ],
-            "Code File": "",
+            "Code File": "res_tech.xs",
             "Version Fixed": "",
             "show": true
         }
