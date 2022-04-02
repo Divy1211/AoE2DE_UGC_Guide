@@ -7,6 +7,7 @@ site_author:        "Alian713, MrKirby, hszemi"
 site_description:   "The Ultimate Guide To AoE2DE UGC"
 site_name:          "AoE2DE UGC Guide"
 site_url:           "https://ugc.aoe2.rocks"
+edit_uri:           "edit/main/docs/"
 
 use_directory_urls: true
 
