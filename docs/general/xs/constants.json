@@ -823,6 +823,13 @@
             "type": "int",
             "desc": "This is the ID of the `Attribute Set Tech Stacking` modifier for the xsEffectAmount function",
             "usage": null
+        },
+        {
+            "name": "cAttrSetStackingResearchCap",
+            "value": 10,
+            "type": "int",
+            "desc": "This is the ID of the `Attribute Set Stacking Research Cap` modifier for the xsEffectAmount function",
+            "usage": null
         }
     ],
     "EffectAmount Unit Attribute": [
@@ -830,350 +837,357 @@
             "name": "cHitpoints",
             "value": "0",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#1-hit-points \" Jump To General > Attributes > 1. Hit Points \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cLineOfSight",
             "value": "1",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#2-line-of-sight \" Jump To General > Attributes > 2. Line Of Sight \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cGarrisonCapacity",
             "value": "2",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#3-garrison-capacity \" Jump To General > Attributes > 3. Garrison Capacity \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cUnitSizeX",
             "value": "3",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#4-unit-size-x \" Jump To General > Attributes > 4. Unit Size X \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cUnitSizeY",
             "value": "4",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#5-unit-size-y \" Jump To General > Attributes > 5. Unit Size Y \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cMovementSpeed",
             "value": "5",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#6-movement-speed \" Jump To General > Attributes > 6. Movement Speed \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cRotationSpeed",
             "value": "6",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#7-rotation-speed \" Jump To General > Attributes > 7. Rotation Speed \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cArmor",
             "value": "8",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#8-armor \" Jump To General > Attributes > 8. Armor \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cAttack",
             "value": "9",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#9-attack \" Jump To General > Attributes > 9. Attack \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cAttackReloadTime",
             "value": "10",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#10-attack-reload-time \" Jump To General > Attributes > 10. Attack Reload Time \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cAccuracyPercent",
             "value": "11",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#11-accuracy-percent \" Jump To General > Attributes > 11. Accuracy Percent \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cMaxRange",
             "value": "12",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#12-max-range \" Jump To General > Attributes > 12. Max Range \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cWorkRate",
             "value": "13",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#13-work-rate \" Jump To General > Attributes > 13. Work Rate \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cCarryCapacity",
             "value": "14",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#14-carry-capacity \" Jump To General > Attributes > 14. Carry Capacity \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cBaseArmor",
             "value": "15",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#15-base-armor \" Jump To General > Attributes > 15. Base Armor \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cProjectileUnit",
             "value": "16",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#16-projectile-unit \" Jump To General > Attributes > 16. Projectile Unit \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cIconGraphicsAngle",
             "value": "17",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#17-building-icon-override \" Jump To General > Attributes > 17. Building Icon Override \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cTerrainDefenseBonus",
             "value": "18",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#18-terrain-defense-bonus \" Jump To General > Attributes > 18. Terrain Defense Bonus \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cEnableSmartProjectile",
             "value": "19",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#19-enable-smart-projectiles \" Jump To General > Attributes > 19. Enable Smart Projectiles \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cMinimumRange",
             "value": "20",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#20-minimum-range \" Jump To General > Attributes > 20. Minimum Range \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cAmountFirstStorage",
             "value": "21",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#21-amount-of-1st-resources \" Jump To General > Attributes > 21. Amount Of 1st Resources \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cBlastWidth",
             "value": "22",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#22-blast-width \" Jump To General > Attributes > 22. Blast Width \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cSearchRadius",
             "value": "23",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#23-search-radius \" Jump To General > Attributes > 23. Search Radius \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cBonusResistance",
             "value": "24",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#24-bonus-damage-resist \" Jump To General > Attributes > 24. Bonus Damage Resist \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cIconId",
             "value": "25",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#25-icon-id \" Jump To General > Attributes > 25. Icon ID \") attribute of the unit ",
+            "usage": null
+        },
+        {
+            "name": "cFogFlag",
+            "value": "28",
+            "type": "int" ,
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#25-fog-visibility \" Jump To General > Attributes > 25. Fog Visibility \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cHeroStatus",
             "value": "40",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#26-hero-status \" Jump To General > Attributes > 26. Hero Status \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cAttackDelay",
             "value": "41",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#27-frame-delay \" Jump To General > Attributes > 27. Frame Delay \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cTrainLocation",
             "value": "42",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#28-train-location \" Jump To General > Attributes > 28. Train Location \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cTrainButton",
             "value": "43",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#29-train-button \" Jump To General > Attributes > 29. Train Button \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cBlastAttackLevel",
             "value": "44",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#30-blast-attack-level \" Jump To General > Attributes > 30. Blast Attack Level \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cBlastDefenseLevel",
             "value": "45",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#31-blast-defense-level \" Jump To General > Attributes > 31. Blast Defense Level \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cShownAttack",
             "value": "46",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#32-shown-attack \" Jump To General > Attributes > 32. Shown Attack \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cShownRange",
             "value": "47",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#33-shown-range \" Jump To General > Attributes > 33. Shown Range \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cShownMeleeArmor",
             "value": "48",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#34-shown-melee-armor \" Jump To General > Attributes > 34. Shown Melee Armor \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cShownPierceArmor",
             "value": "49",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#35-shown-pierce-armor \" Jump To General > Attributes > 35. Shown Pierce Armor \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cNameId",
             "value": "50",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#36-object-name-id \" Jump To General > Attributes > 36. Object Name ID \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cDescriptionId",
             "value": "51",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#37-short-description-id \" Jump To General > Attributes > 37. Short Description ID \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cTerrainTable",
             "value": "53",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#38-terrain-restriction-id \" Jump To General > Attributes > 38. Terrain Restriction ID \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cDeadUnitId",
             "value": "57",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#39-dead-unit-id \" Jump To General > Attributes > 39. Dead Unit ID \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cHotkeyId",
             "value": "58",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#40-hotkey-id \" Jump To General > Attributes > 40. HotKey ID \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cResourceCost",
             "value": "100",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#41-resource-costs \" Jump To General > Attributes > 41. Resource Costs \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cTrainTime",
             "value": "101",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#42-train-time \" Jump To General > Attributes > 42. Train Time \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cTotalProjectiles",
             "value": "102",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#43-total-missiles \" Jump To General > Attributes > 43. Total Missiles \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cFoodCost",
             "value": "103",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#44-food-costs \" Jump To General > Attributes > 44. Food Costs \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cWoodCost",
             "value": "104",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#45-wood-costs \" Jump To General > Attributes > 45. Wood Costs \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cGoldCost",
             "value": "105",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#46-gold-costs \" Jump To General > Attributes > 46. Gold Costs \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cStoneCost",
             "value": "106",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#47-stone-costs \" Jump To General > Attributes > 47. Stone Costs \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cMaxTotalProjectiles",
             "value": "107",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#48-max-total-missiles \" Jump To General > Attributes > 48. Max Total Missiles \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cGarrisonHealRate",
             "value": "108",
             "type": "int" ,
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#49-garrison-heal-rate \" Jump To General > Attributes > 49. Garrison Heal Rate \") attribute of the unit ",
             "usage": null
         },
         {
             "name": "cRegenerationRate",
             "value": "109",
             "type": "int",
-            "desc": "This is the ID of the ATTR_NAME attribute of the unit",
+            "desc": "This is the ID of the [ATTR_NAME](../../attributes/#50-regeneration-rate \" Jump To General > Attributes > 50. Regeneration Rate \") attribute of the unit ",
             "usage": null
         }
     ],
@@ -2735,7 +2749,7 @@
             "usage": null
         },
         {
-            "name": "cAttributeTotalTributeReceived" ,
+            "name": "cAttributeTotalTributeReceived",
             "value": 171,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
