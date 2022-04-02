@@ -21,5 +21,12 @@ Reproduction Steps:
 
 1. Create a new RMS
 2. Create a new XS script with the following code:
+```cpp
+void main() {
+    // these functionds do not work in an RMS
+    xsResearchTechnology(22, true, false, 2);
+    xsGetPlayerNumberOfTechs(1);
+}
+```
 3. When a game is played using the XS script included in an RMS, a parsing error is shown
 
