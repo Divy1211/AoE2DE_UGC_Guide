@@ -701,13 +701,13 @@ Shows the given message in the game chat
 
 Returning Type: `#!cpp void`
 
-Prototype: `#!cpp void xsEffectAmount(int effectID, int unitOrTechnologyID, int attribtueOrOperation, float value, int playerNumber)`
+Prototype: `#!cpp void xsEffectAmount(int effectID, int unitOrTechnologyID, int attributeOrOperation, float value, int playerNumber)`
 
 Parameters:
 
 1.  `#!cpp int effectID`: The ID of the effect to use
 2.  `#!cpp int unitOrTechnologyID`: The ID of the unit or technology to effect
-3.  `#!cpp int attribtueOrOperation`: The attribute to modify or the operation to perform
+3.  `#!cpp int attributeOrOperation`: The attribute to modify or the operation to perform
 4.  `#!cpp float value`: The value of the effect
 5. (Optional) `#!cpp int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
 
