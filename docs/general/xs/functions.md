@@ -1142,11 +1142,11 @@ Prototype: `#!cpp int xsGetContextPlayer()`
 
 Returns the current context player ID.
 
-### 7.5. xsGetFuntionID
+### 7.5. xsGetFunctionID
 
 Returning Type: `#!cpp int`
 
-Prototype: `#!cpp int xsGetFuntionID(string functionName)`
+Prototype: `#!cpp int xsGetFunctionID(string functionName)`
 
 Parameters:
 

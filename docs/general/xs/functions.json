@@ -1401,7 +1401,7 @@
             "desc": "In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if `-2` is passed to it as the player argument."
         },
         {
-            "name": "xsGetFuntionID",
+            "name": "xsGetFunctionID",
             "return_type": "int",
             "params": [
                 {
