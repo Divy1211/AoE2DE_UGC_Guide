@@ -1662,5 +1662,35 @@
             "1": " Generic"
         },
         "note": "The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`."
+    },
+    "246": {
+        "name": "Units Value Total",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "247": {
+        "name": "Buildings Value Total",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "248": {
+        "name": "Villagers Created Total",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "249": {
+        "name": "Villagers Idle Periods Total",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "250": {
+        "name": "Villagers Idle Seconds Total",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
     }
 }
