@@ -1180,7 +1180,7 @@
                     "desc": "The ID of the unit or technology to effect"
                 },
                 {
-                    "name": "attribtueOrOperation",
+                    "name": "attributeOrOperation",
                     "type": "int",
                     "required": true,
                     "desc": "The attribute to modify or the operation to perform"
