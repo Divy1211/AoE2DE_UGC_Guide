@@ -1043,11 +1043,11 @@ Reads and returns a vector from the previously opened `.xsdat` file. Note that t
 
 Returning Type: `#!cpp bool`
 
-Prototype: `#!cpp bool xsSetFilePosition(int playerNumber)`
+Prototype: `#!cpp bool xsSetFilePosition(int byteOffset)`
 
 Parameters:
 
-1.  `#!cpp int playerNumber`: The player to research the technology for
+1.  `#!cpp int byteOffset`: 0 indexed byte offset to determine which byte to read and return from the file
 
 This is the byte (0-indexed) of the file that the next read function will start reading from.
 
