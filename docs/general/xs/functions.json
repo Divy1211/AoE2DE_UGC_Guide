@@ -1340,10 +1340,10 @@
             "return_type": "bool",
             "params": [
                 {
-                    "name": "playerNumber",
+                    "name": "byteOffset",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to research the technology for"
+                    "desc": "0 indexed byte offset to determine which byte to read and return from the file"
                 }
             ],
             "desc": "This is the byte (0-indexed) of the file that the next read function will start reading from."
