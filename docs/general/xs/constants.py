@@ -1,4 +1,7 @@
 import json
+import regex
+
+
 with open("./constants.json") as file:
     const_docs = json.load(file)
 
@@ -21,11 +24,15 @@ def toTitle(string):
         i+=1
     return string.strip()
 
+def format_name(string):
+    return string.lower().replace(" ", "-").replace("%", "").replace("(", "").replace(")", "").replace("/", "").replace("!", "")
+
 def replace_placeholders(string, is_res):
     string = string.replace('RES_NAME', toTitle(constant['name']))
+
     if is_res:
-        string = string.replace('ID_HERE', str(constant['value']+1))
-        string = string.replace('RES_HEAD', res_decs[str(constant['value'])]['name'].lower().replace(" ", "-"))
+        string = string.replace('ID_HERE', str(constant['value']))
+        string = string.replace('RES_HEAD', format_name(res_decs[str(constant['value'])]['name']))
     string = string.replace('ATTR_NAME', toTitle(constant['name']))
     string = string.replace('CIV_NAME', toTitle(constant['name']))
     string = string.replace('CLASS_NAME', toTitle(constant['name']))
