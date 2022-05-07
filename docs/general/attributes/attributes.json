@@ -470,7 +470,7 @@
         "desc": "Controls how a projectile collides with units in the path of its target. Currently changing this through XS has no effect",
         "notes": [],
         "flags": {
-            "0": "Collide only with the targetted unit",
+            "0": "Collide only with the targeted unit",
             "1": "Collide with any damage-able units in the path to the targetted unit",
             "2": "Collide with any unit in the path to the targetted unit"
         }

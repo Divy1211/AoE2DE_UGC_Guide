@@ -521,7 +521,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     | Property | Flag Value |
     | :- | -: |
-    | Collide only with the targetted unit | 0 | 
+    | Collide only with the targeted unit | 0 | 
     | Collide with any damage-able units in the path to the targetted unit | 1 | 
     | Collide with any unit in the path to the targetted unit | 2 | 
 
