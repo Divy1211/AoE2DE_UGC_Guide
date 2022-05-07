@@ -16,7 +16,7 @@ nav:
   - Game Mechanics:
     -                               "general/index.md"
     - Damage Calculation:           "general/damage_calculation.md"
-    - Attributes:                   "general/attributes.md"
+    - Attributes:                   "general/attributes/attributes.md"
     - Resources:                    "general/resources/resources.md"
     - Hotkeys:                      "general/hotkeys/hotkeys.md"
   - Custom Scenarios:

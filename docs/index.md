@@ -54,3 +54,4 @@ This guide has been written by
 | Alian713             | Alian713#0069 | [here](https://github.com/Divy1211 "Alian's GitHub")     | -           | [here](https://www.twitch.tv/Alian713 "Alian's Twitch") |
 | KSneijders (MrKirby) | MrKirby#5063  | [here](https://github.com/KSneijders "MrKirby's GitHub") | -           | [here](https://www.twitch.tv/MrKirbyOfficial "MrKirby's Twitch") |
 | hszemi | hszemi#2325 | [here](https://github.com/HSZemi "HSZemi's GitHub") | -           | [here](https://www.twitch.tv/hszemi "HSZemi's Twitch") |
+| Bradical | Bradical#2561 | [here](https://github.com/bradsmithee "Bradical's GitHub") | -           | - |

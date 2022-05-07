@@ -5,7 +5,7 @@
 
 ## 1. The Purpose
 
-Have you ever wondered how bonus damage works in AoE2? How does a Halberdier get its +32 damage against cavalry? How does a Cataphract only take +16 damage from Halbderdiers instead of the full 32? How does a leitis do damage while ignoring all armour? And finally, how could **you** give bonus damage or armour against bonus damage to units for yourself? Lets find the answers to these questions by learning about the armour and attack class system of AoE2
+Have you ever wondered how bonus damage works in AoE2? How does a Halberdier get its +32 damage against cavalry? How does a Cataphract only take +16 damage from Halbderdiers instead of the full 32? And finally, how could **you** give bonus damage or armour against bonus damage to units for yourself? Lets find the answers to these questions by learning about the armour and attack class system of AoE2
 
 ## 2. Why do you, a map maker, need to know this?
 
@@ -21,45 +21,46 @@ Each unit in the game has two essential properties, a list of `Attack Classes` a
 
 The following are all the damage classes along with their IDs that exist in the game: (Note that the Armour Classes have the same names and ids as the Attack classes, the reason for this will become clear once you read through the explanation provided below)
 
-|          **Class Name**           | **ID** |
-| :-------------------------------: | :----: |
-|              Wonder               |   0    |
-|             Infantry              |   1    |
-|           Turtle Ships            |   2    |
-|            Base Pierce            |   3    |
-|            Base Melee             |   4    |
-|           War Elephants           |   5    |
-|              Unused               |   6    |
-|              Unused               |   7    |
-|              Cavalry              |   8    |
-|              Unused               |   9    |
-|              Unused               |   10   |
-|    All Buildings (except Port)    |   11   |
-|              Unused               |   12   |
-|           Stone Defense           |   13   |
-|        Predator Animals           |   14   |
-|              Archers              |   15   |
-|  Ships Saboteers (camels pre AK)  |   16   |
-|               Rams                |   17   |
-|               Trees               |   18   |
-|            Unique Units           |   19   |
-|           Siege Weapons           |   20   |
-|        Standard Buildings         |   21   |
-|           Walls & Gates           |   22   |
-|        Gunpowder Units            |   23   |
-|               Boars               |   24   |
-|               Monks               |   25   |
-|              Castle               |   26   |
-|             Spearmen              |   27   |
-|          Cavalry Archers          |   28   |
-|          Eagle Warriors           |   29   |
-|         Camels (post AK)          |   30   |
-|    Leitis (ignores all armour)    |   31   |
-|            Condottiero            |   32   |
-|              Unused               |   33   |
-|           Fishing Ship            |   34   |
-|             Mamelukes             |   35   |
-|          Heroes and King          |   36   |
+|          **Class Name**         | **ID** |
+| :-----------------------------: | :----: |
+| Wonder                          |   0    |
+| Infantry                        |   1    |
+| Turtle Ships                    |   2    |
+| Base Pierce                     |   3    |
+| Base Melee                      |   4    |
+| War Elephants                   |   5    |
+| Unused                          |   6    |
+| Unused                          |   7    |
+| Cavalry                         |   8    |
+| Unused                          |   9    |
+| Unused                          |   10   |
+| All Buildings (except Port)     |   11   |
+| Unused                          |   12   |
+| Stone Defense                   |   13   |
+| Predator Animals                |   14   |
+| Archers                         |   15   |
+| Ships Saboteers (camels pre AK) |   16   |
+| Rams Trebuchets Siege Towers    |   17   |
+| Trees                           |   18   |
+| Unique Units                    |   19   |
+| Siege Weapons                   |   20   |
+| Standard Buildings              |   21   |
+| Walls & Gates                   |   22   |
+| Gunpowder Units                 |   23   |
+| Hunted Predator Animals         |   24   |
+| Monks                           |   25   |
+| Castles                         |   26   |
+| Spearmen                        |   27   |
+| Cavalry Archers                 |   28   |
+| Eagle Warriors                  |   29   |
+| Camels (post AK)                |   30   |
+| Unused                          |   31   |
+| Condottieri                     |   32   |
+| Projectile Gunpowder Secondary  |   33   |
+| Fishing Ships                   |   34   |
+| Mamelukes                       |   35   |
+| Heroes and Kings                |   36   |
+| Hussite Wagons                  |   37   |
 
 The explanation of how this system works is given using the example of a Halberdier vs War Elephant, but this method is a general method applicable to any two units fighting each other
 (At first glance, all of this may seem daunting, but it will get clearer as we walk through the two examples given below!)
@@ -80,7 +81,7 @@ The case of the Halberdier attacking the War Elephant:
 | 21 (Standard Buildings)      |   1         |      | -                              |   -         |
 | 29 (Eagle Warriors)          |   1         |      | -                              |   -         |
 | 30 (Camels)                  |   26        |      | -                              |   -         |
-| -                            |   -         |      | 31 (Leitis)                    |   26        |
+| -                            |   -         |      | 31 (Unused)                    |   26        |
 | 34 (Fishing Ship)            |   17        |      | -                              |   -         |
 | 35 (Mamelukes)               |   11        |      | -                              |   -         |
 
@@ -242,7 +243,7 @@ The case of the War Elephant attacking the Halberdier:
 | 13  (Stone Defense)            |   7         |      | -                              |   -         |
 | 21 (Standard Buildings)        |   0         |      | -                              |   -         |
 | -                              |   -         |      | 27 (Unique Units)              |   0         |
-| -                              |   -         |      | 31 (Unique Units)              |   0         |
+| -                              |   -         |      | 31 (Unused)                    |   0         |
 
 Here you can see all the attack classes listed out for the War Elephant and the armour classes listed out for the Halberdier.
 
@@ -287,17 +288,13 @@ After having gone through this, can you now think of the answers to the question
 
 Q1. How does a Cataphract only take +16 damage from Halbderdiers instead of the full 32?
 
-Q2. How does a leitis do damage while ignoring all armour?
-
-Q3. How to give bonus damage or bonus damage resistance to a particular unit?
+Q2. How to give bonus damage or bonus damage resistance to a particular unit?
 
 Before you move on to read the answers, try and think about how these bonus damages might be being achieved.
 
 A1. Cataphracts have 16 armour on the `Cavalry (8)` armour class, which is the `attack class` used by Halberdiers for extra 32 damage vs regular cavalry.
 
-A2. The leitis uses the attack class `Leitis (31)` for all of its damage, and no unit has any armour on this armour class, which is why it seems like the damage from leitis "ignores" all armour.
-
-A3. One of the unused damage classes can be used for this purpose. Giving the desired unit attack on an unused class and giving the target unit 0 armour on the same unused class will produce the effect of the desired unit doing bonus damage to the target unit.
+A2. One of the unused damage classes can be used for this purpose. Giving the desired unit attack on an unused class and giving the target unit 0 armour on the same unused class will produce the effect of the desired unit doing bonus damage to the target unit.
 
 ### 3.6. The Sicilian 50% Bonus Damage Reduction
 

@@ -362,7 +362,7 @@ This option seems to have no effect on the game.
 ## 10. Triggers
 Under the `Triggers` tab, triggers can be manipulated in a scenario. Triggers are the most powerful component of a scenario as they allow us to do a plethora of different things in a game. They can be used to add more dynamics and game mechanics to a scenario, almost anything that you could think of (within the context of AoE2 and its own limits) is possible to do in some way using triggers.
 
-Details about how to use triggers are covered in the [Triggers](../triggers/basics/ "Jump To: Custom Scenarios > Triggers > Trigger Basics") section of this guide.
+Details about how to use triggers are covered in the [Triggers](./triggers/index.md "Jump To: Custom Scenarios > Triggers > Trigger Basics") section of this guide.
 
 
 ## 11. Useful Hotkeys

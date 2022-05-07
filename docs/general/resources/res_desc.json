@@ -177,7 +177,7 @@
     },
     "28": {
         "name": "Enable Building Conversion",
-        "desc": "Boolean: allow enemy building conversions.",
+        "desc": "Boolean: allow enemy building conversions",
         "defaults": {
             "0": " No (default)",
             "1": " Yes, after Redemption",
@@ -233,7 +233,7 @@
         "name": "Farm Food Amount",
         "desc": "Maximum farm food amount",
         "defaults": {
-            "175": " Generic",
+            "175": " Default",
             "220": " Chinese"
         },
         "note": "This is what horse collar etc. technologies modify"
@@ -302,7 +302,7 @@
         "name": "Tribute Inefficiency",
         "desc": "This is the fraction of tributes sent that are collected as tax",
         "defaults": {
-            "0.3": " Generic",
+            "0.3": " Default",
             "0.2": " After Coinage",
             "0": " After Banking"
         },
@@ -312,7 +312,7 @@
         "name": "Gold Mining Productivity",
         "desc": "Multiplier for gold mined by gold miners",
         "defaults": {
-            "1": " Generic",
+            "1": " Default",
             "1.15": " Mayans"
         },
         "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
@@ -510,17 +510,17 @@
         "name": "Conversion Resistance",
         "desc": "Coefficient of conversion resistance",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "+2": " with Teuton ally",
             "+3": " after Faith"
         },
-        "note": "Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this."
+        "note": "Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this"
     },
     "78": {
         "name": "Trade Vig Rate",
         "desc": "Market exchange rate fraction for the source player",
         "defaults": {
-            "0.3": " Generic Rate",
+            "0.3": " Default",
             "0.15": " after Guilds",
             "0.05": " Saracens"
         },
@@ -530,7 +530,7 @@
         "name": "Stone Mining Productivity",
         "desc": "Multiplier for stone mined by stone miners",
         "defaults": {
-            "1": " Generic",
+            "1": " Default",
             "1.15": " Mayans"
         },
         "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
@@ -563,17 +563,17 @@
         "name": "Starting Villagers",
         "desc": "Number of starting villagers",
         "defaults": {
-            "3": " Generic",
+            "3": " Default",
             "4": " Mayans",
             "6": " Chinese"
         },
-        "note": "Only works for RMS, changing this manually in the editor does nothing."
+        "note": "Only works for RMS, changing this manually in the editor does nothing"
     },
     "85": {
         "name": "Research Cost Modifier",
         "desc": "Multiply technology costs by this value",
         "defaults": {
-            "1": " Generic",
+            "1": " Default",
             "0.9": " Chinese in feudal age",
             "0.85": " Chinese in castle age",
             "0.80": " Chinese in imperial age"
@@ -599,7 +599,7 @@
         "name": "Fish Trap Food Amount",
         "desc": "Maximum fishtrap food amount",
         "defaults": {
-            "710": " Generic",
+            "710": " Default",
             "2130": " Malay"
         },
         "note": ""
@@ -648,24 +648,27 @@
         "name": "Enable PTWC / Kidnap / Loot",
         "desc": "Enable town centre packing for the source player",
         "defaults": {
-            "0": " default",
-            "1": " allows the TC to be packed and moved",
-            ">=2": " no noticeable effect"
+            "0": " Default",
+            "1": " Allows the TC to be packed and moved",
+            ">=2": " No noticeable effect"
         },
         "note": "Enabling kidnap/loot requires modding the units to have the kidnap/pillage action"
     },
     "96": {
-        "name": "Unused Resource 096",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "No Dropsite Farmers",
+        "desc": "Enable Khmer farmer bonus",
+        "defaults": {
+            "0": " Default",
+            "1": " Khmer. Farmers no longer need dropoff and steadily gain resources while farming"
+        },
         "note": ""
     },
     "97": {
         "name": "Dominant Sheep Control",
         "desc": "Boolean: force sheep conversion",
         "defaults": {
-            "0": " Generic",
-            "1": " Celts"
+            "0": " Default",
+            ">=1": " Celts"
         },
         "note": "If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them. Celt sheep bonus"
     },
@@ -1150,7 +1153,7 @@
         "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=870 by T-West"
     },
     "178": {
-        "name": "Convert Resist Mio Adjustment",
+        "name": "Convert Resist Min Adjustment",
         "desc": "Additional monk seconds needed before conversion by enemy monks is even possible",
         "defaults": {},
         "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West"
@@ -1222,7 +1225,7 @@
         "name": "Chopping Productivity",
         "desc": "Multiplier for wood chopped by lumberjacks",
         "defaults": {
-            "1": " Generic",
+            "1": " Default",
             "1.15": " Mayans"
         },
         "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
@@ -1231,17 +1234,17 @@
         "name": "Food Gathering Productivity",
         "desc": "Multiplier for food gathered from all sources",
         "defaults": {
-            "1": " Generic",
+            "1": " Default",
             "1.15": " Mayans"
         },
         "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%"
     },
     "191": {
         "name": "Relic Gold Production Rate",
-        "desc": "Relic gold generation rate in gold per second",
+        "desc": "Relic gold generation rate in gold per minute",
         "defaults": {
-            "0.5": " default",
-            "0.25": " after getting hit with Atheism "
+            "30": " Default. 30 gold per minute (0.5 gold per second)",
+            "15": " After getting hit with Atheism "
         },
         "note": ""
     },
@@ -1276,7 +1279,7 @@
         "name": "Construction Rate Modifier",
         "desc": "Builder work rate multiplier",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "1.3": " Spanish"
         },
         "note": "The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`"
@@ -1292,7 +1295,7 @@
     },
     "197": {
         "name": "Spies Discount",
-        "desc": "Boolean: Halves the cost of spies per villager, and caps it at 15k gold max instead of the usual 30k.",
+        "desc": "Boolean: Halves the cost of spies per villager, and caps it at 15k gold max instead of the usual 30k",
         "defaults": {
             "0": " Default"
         },
@@ -1344,7 +1347,7 @@
         "name": "Feitoria Food Productivity",
         "desc": "Feitoria food production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
         "note": "The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`"
     },
@@ -1352,15 +1355,15 @@
         "name": "Feitoria Wood Productivity",
         "desc": "Feitoria wood production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
-        "note": "The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 1`"
+        "note": "The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 0.7`"
     },
     "207": {
         "name": "Feitoria Stone Productivity",
         "desc": "Feitoria stone production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
         "note": "The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`"
     },
@@ -1368,15 +1371,15 @@
         "name": "Feitoria Gold Productivity",
         "desc": "Feitoria gold production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
-        "note": "The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 0.7`"
+        "note": "The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 1`"
     },
     "209": {
         "name": "Reveal Enemy Town Centers",
         "desc": "Boolean: reveal enemy town centre location for the source player",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "5": " Vietnamese"
         },
         "note": "The bonus works for all values >=1, the choice of setting it to 5 for vietnamese seems arbitrary"
@@ -1385,7 +1388,7 @@
         "name": "Relics Visible on Map",
         "desc": "Boolean: reveal relics on map amount",
         "defaults": {
-            "-1": " Generic",
+            "-1": " Default",
             "42": " Burmese"
         },
         "note": "Burmese reveal relics on map bonus. Only works in RMS, manually changing this in the editor does not seem to have any effects"
@@ -1394,7 +1397,7 @@
         "name": "Elevation Higher Bonus",
         "desc": "The fraction for additional bonus damage dealt from higher elevation",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "0.25": " Tatars"
         },
         "note": "Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`"
@@ -1403,7 +1406,7 @@
         "name": "Elevation Lower Bonus",
         "desc": "The fraction for additional bonus damage dealt from lower elevation",
         "defaults": {
-            "0": " Generic"
+            "0": " Default"
         },
         "note": "Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`"
     },
@@ -1411,7 +1414,7 @@
         "name": "Raiding Productivity",
         "desc": "Keshik gold generation rate per 100 seconds",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "50": " (0.5 g/s) Tatars"
         },
         "note": "Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 g/s, but a slightly lower value"
@@ -1420,7 +1423,7 @@
         "name": "Mercenary Kipchak Count",
         "desc": "Total number of mercenary kipchak creatable",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "10": " after a Cuman ally researches Cuman Mercenaries"
         },
         "note": "Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource"
@@ -1435,7 +1438,7 @@
         "name": "Shepherd Productivity",
         "desc": "Amount of food collected from sheep multiplier",
         "defaults": {
-            "1": " Generic",
+            "1": " Default",
             "1.57": " Tatars"
         },
         "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Tatars, This is compensated for by reducing villager work rate by 57%"
@@ -1447,11 +1450,11 @@
         "note": ""
     },
     "218": {
-        "name": "Feudal Town Center Limit",
-        "desc": "This is the number of extra TCs a player is allowed to build IF TCs are enabled in feudal age.",
+        "name": "Early Town Center Limit",
+        "desc": "This is the number of extra TCs a player is allowed to build IF TCs are enabled in feudal age",
         "defaults": {
-            "10002.1": " Generic",
-            "2.1": " Cumans"
+            "1": " Default",
+            "2": " Cumans"
         },
         "note": "Since generic civs don't get access to TCs in feudal, the 10k amount doesn't matter, but if you're trying to make a map where you want people to be able to make TCs in feudal, make sure to set this value to 10k for cumans!"
     },
@@ -1459,7 +1462,7 @@
         "name": "Fishing Productivity",
         "desc": "Multiplier for food gathered by fishing ships",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
         "note": "Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate"
     },
@@ -1505,7 +1508,7 @@
         "name": "Relic Food Production Rate",
         "desc": "Relic food production per minute",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "30": " Burgundians",
             "15": " Burgundians after getting hit with Atheism"
         },
@@ -1524,7 +1527,7 @@
         "note": ""
     },
     "228": {
-        "name": "Villagers Killed by Al Player",
+        "name": "Villagers Killed by AI Player",
         "desc": "Total number of villagers lost to AIs",
         "defaults": {},
         "note": ""
@@ -1575,16 +1578,16 @@
         "name": "Farming Gold Productivity",
         "desc": "Farming gold generation rate per 100 seconds",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "2": " (0.02 g/s per farmer) after Burgundian Vineyards"
         },
-        "note": ""
+        "note": "Only generates gold while collecting food from farms, and not when walking on them down"
     },
     "237": {
         "name": "Folwark Collection Amount",
         "desc": "This is the amount of food collected from farms built around a folwark",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "17.5": " Poles",
             "19.25": " Poles with Chinese Ally",
             "25": " Poles with Horse Collar",
@@ -1601,7 +1604,7 @@
         "desc": "This is the ID of the resource that is given when a farm is constructed around a folwark",
         "defaults": {
             "0": " Poles",
-            "-1": " Generic"
+            "-1": " Default"
         },
         "note": ""
     },
@@ -1610,7 +1613,7 @@
         "desc": "This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work",
         "defaults": {
             "68": " (Mill) Poles",
-            "-1": " Generic"
+            "-1": " Default"
         },
         "note": ""
     },
@@ -1624,7 +1627,7 @@
         "name": "Stone Mining Gold Productivity",
         "desc": "Stone mining gold generation rate per 100 seconds",
         "defaults": {
-            "0": " Generic",
+            "0": " Default",
             "18": " Poles",
             "20.7": " Poles with Stone Mining",
             "23.805": " Poles with Stone Shaft Mining"
@@ -1635,49 +1638,49 @@
         "name": "Trade Workshop Food Productivity",
         "desc": "Trade Workshop food production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
-        "note": "The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`."
+        "note": "The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`"
     },
     "243": {
         "name": "Trade Workshop Wood Productivity",
         "desc": "Trade Workshop wood production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
-        "note": "The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`."
+        "note": "The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`"
     },
     "244": {
         "name": "Trade Workshop Stone Productivity",
         "desc": "Trade Workshop stone production rate multiplier",
         "defaults": {
-            "0": " Generic"
+            "0": " Default"
         },
-        "note": "The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`."
+        "note": "The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`"
     },
     "245": {
         "name": "Trade Workshop Gold Productivity",
         "desc": "Trade Workshop gold production rate multiplier",
         "defaults": {
-            "1": " Generic"
+            "1": " Default"
         },
-        "note": "The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`."
+        "note": "The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`"
     },
     "246": {
         "name": "Units Value Total",
-        "desc": "Unknown",
+        "desc": "Total cost of all units created so far",
         "defaults": {},
-        "note": ""
+        "note": "This does **not** decrease when the units die"
     },
     "247": {
         "name": "Buildings Value Total",
-        "desc": "Unknown",
+        "desc": "Total cost of all buildings created so far",
         "defaults": {},
-        "note": ""
+        "note": "Increases when foundations are placed. This does **not** decrease if the foundation is deleted"
     },
     "248": {
         "name": "Villagers Created Total",
-        "desc": "Unknown",
+        "desc": "Total number of villagers created so far",
         "defaults": {},
         "note": ""
     },
@@ -1690,6 +1693,159 @@
     "250": {
         "name": "Villagers Idle Seconds Total",
         "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "251": {
+        "name": "Trade Food Percent",
+        "desc": "Percentage of gold generated from trade that is also given as food",
+        "defaults": {
+            "0": " Default",
+            "10": " Bengalis"
+        },
+        "note": ""
+    },
+    "252": {
+        "name": "Trade Wood Percent",
+        "desc": "Percentage of gold generated from trade that is also given as wood",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": ""
+    },
+    "253": {
+        "name": "Trade Stone Percent",
+        "desc": "Percentage of gold generated from trade that is also given as stone",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": ""
+    },
+    "254": {
+        "name": "Livestock Food Productivity",
+        "desc": "Garrisoned herdable food generation rate per 60 seconds",
+        "defaults": {
+            "0": " Default",
+            "3.5": " (0.0583 f/s per herdable) Gurjaras"
+        },
+        "note": ""
+    },
+    "255": {
+        "name": "Speed Up Building Type",
+        "desc": "This is the ID of the building to use for the speed up effect.",
+        "defaults": {
+            "1754": " (Caravanserai) Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "256": {
+        "name": "Speed Up Building Range",
+        "desc": "This specifies the range (in tiles) of the area created around the building ([Speed Up Building Type](./#255-speed-up-building-type)) (square, from the edges of the building) for the speed up effect",
+        "defaults": {
+            "8": " Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "257": {
+        "name": "Speed Up Percentage",
+        "desc": "This amount is added to the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect",
+        "defaults": {
+            "0.2": " Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "258": {
+        "name": "Speed Up Object Type",
+        "desc": "This is `900 + class_id` for the class of units that should be affected by the speed up effect",
+        "defaults": {
+            "919": " (Trade Cart class) Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "259": {
+        "name": "Speed Up Effect Type",
+        "desc": "The ID of the attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far",
+        "defaults": {
+            "5": " (Movement Speed) Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "260": {
+        "name": "Speed Up Secondary Effect Type",
+        "desc": "This is the ID of the secondary attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far",
+        "defaults": {
+            "109": " (Regeneration Rate) Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "261": {
+        "name": "Speed Up Secondary Percentage",
+        "desc": "This amount is added to the secondary attribute ([Speed Up Secondary Effect Type](#260-speed-up-secondary-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect",
+        "defaults": {
+            "60": " Default"
+        },
+        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+    },
+    "262": {
+        "name": "Extra Elephant Convert Resist",
+        "desc": "Provides additional conversion resistance to elephant units",
+        "defaults": {
+            "0": " Default",
+            "1": " Bengalis"
+        },
+        "note": ""
+    },
+    "263": {
+        "name": "Starting Scout ID",
+        "desc": "Unit ID for the starting scout. Can be set to any unit (even buildings)",
+        "defaults": {
+            "448": " (Scout Cavalry) Default",
+            "751": " (Eagle Scout) Aztecs, Incas and Mayans",
+            "1755": " (Camel Scout) Gurjaras"
+        },
+        "note": ""
+    },
+    "264": {
+        "name": "Relic Wood Production Rate",
+        "desc": "Relic wood production per minute",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": "This is not affected by Atheism"
+    },
+    "265": {
+        "name": "Relic Stone Production Rate",
+        "desc": "Relic stone production per minute",
+        "defaults": {},
+        "note": "This is not affected by Atheism"
+    },
+    "266": {
+        "name": "Chopping Gold Productivity",
+        "desc": "Lumberjack chopping gold generation rate per 100 seconds",
+        "defaults": {
+            "0":     " Default",
+            "1.5":   " (0.015 g/s per lumberjack) Vietnamese with paper money",
+            "1.8":   " (0.018 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe",
+            "2.16":  " (0.0216 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw",
+            "2.376": " (0.02376 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw & Two-Man Saw"
+        },
+        "note": "Only generates gold while collecting wood from trees, and not when cutting them down"
+    },
+    "267": {
+        "name": "Unused Resource 267",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "268": {
+        "name": "Unused Resource 268",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "269": {
+        "name": "Unused Resource 269",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     }
