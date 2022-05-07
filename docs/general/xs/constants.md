@@ -808,6 +808,12 @@ Value: `#!cpp int 10`
 
 This is the ID of the `Attribute Set Stacking Research Cap` modifier for the xsEffectAmount function
 
+### 7.18. cAttrSetHotkey
+
+Value: `#!cpp int 11`
+
+This is the ID of the `Attribute Set Hotkey` modifier for the xsEffectAmount function
+
 ## 8. EffectAmount Unit Attribute
 
 ### 8.1. cHitpoints
