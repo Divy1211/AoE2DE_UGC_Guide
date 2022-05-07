@@ -26,13 +26,13 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 3
 
- - This determines the x-size of the unit's collison hitbox (width of the unit)
+ - This determines the x-size of the unit's collision hitbox (width of the unit)
 
 ## 4. Unit Size Y
 
  - ID: 4
 
- - This determines the y-size of the unit's collison hitbox (length of the unit)
+ - This determines the y-size of the unit's collision hitbox (length of the unit)
 
 ## 5. Movement Speed
 
@@ -227,7 +227,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 30
 
- - This is a combinable bit field. Controls which units are able to garrison in a buidling. A unit needs to have the garrison in building task to be able to garrison in a building to begin with
+ - This is a combinable bit field. Controls which units are able to garrison in a building. A unit needs to have the garrison in building task to be able to garrison in a building to begin with
 
     | Property | Flag Value |
     | :- | -: |
@@ -243,7 +243,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 32
 
- - This determines the z-size of the unit's collison hitbox (height of the unit)
+ - This determines the z-size of the unit's collision hitbox (height of the unit)
 
 ## 40. Hero Status
 

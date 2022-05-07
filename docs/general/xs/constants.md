@@ -316,6 +316,24 @@ Value: `#!cpp int 39`
 
 This is the civilization ID of Bohemians
 
+### 4.41. cDravidians
+
+Value: `#!cpp int 40`
+
+This is the civilization ID of Dravidians
+
+### 4.42. cBengalis
+
+Value: `#!cpp int 41`
+
+This is the civilization ID of Bengalis
+
+### 4.43. cGurjaras
+
+Value: `#!cpp int 42`
+
+This is the civilization ID of Gurjaras
+
 ## 5. EffectAmount Effect Type
 
 ### 5.1. cSetAttribute
@@ -796,307 +814,421 @@ This is the ID of the `Attribute Set Stacking Research Cap` modifier for the xsE
 
 Value: `#!cpp int 0`
 
-This is the ID of the [Hitpoints](../../attributes/#1-hit-points " Jump To General > Attributes > 1. Hit Points ") attribute of the unit 
+This is the attribute [Hit Points](./../../attributes/attributes/#0-hit-points) 
 
 ### 8.2. cLineOfSight
 
 Value: `#!cpp int 1`
 
-This is the ID of the [Line Of Sight](../../attributes/#2-line-of-sight " Jump To General > Attributes > 2. Line Of Sight ") attribute of the unit 
+This is the attribute [Line of Sight](./../../attributes/attributes/#1-line-of-sight) 
 
 ### 8.3. cGarrisonCapacity
 
 Value: `#!cpp int 2`
 
-This is the ID of the [Garrison Capacity](../../attributes/#3-garrison-capacity " Jump To General > Attributes > 3. Garrison Capacity ") attribute of the unit 
+This is the attribute [Garrison Capacity](./../../attributes/attributes/#2-garrison-capacity) 
 
 ### 8.4. cUnitSizeX
 
 Value: `#!cpp int 3`
 
-This is the ID of the [Unit Size X](../../attributes/#4-unit-size-x " Jump To General > Attributes > 4. Unit Size X ") attribute of the unit 
+This is the attribute [Unit Size X](./../../attributes/attributes/#3-unit-size-x) 
 
 ### 8.5. cUnitSizeY
 
 Value: `#!cpp int 4`
 
-This is the ID of the [Unit Size Y](../../attributes/#5-unit-size-y " Jump To General > Attributes > 5. Unit Size Y ") attribute of the unit 
+This is the attribute [Unit Size Y](./../../attributes/attributes/#4-unit-size-y) 
 
 ### 8.6. cMovementSpeed
 
 Value: `#!cpp int 5`
 
-This is the ID of the [Movement Speed](../../attributes/#6-movement-speed " Jump To General > Attributes > 6. Movement Speed ") attribute of the unit 
+This is the attribute [Movement Speed](./../../attributes/attributes/#5-movement-speed) 
 
 ### 8.7. cRotationSpeed
 
 Value: `#!cpp int 6`
 
-This is the ID of the [Rotation Speed](../../attributes/#7-rotation-speed " Jump To General > Attributes > 7. Rotation Speed ") attribute of the unit 
+This is the attribute [Rotation Speed](./../../attributes/attributes/#6-rotation-speed) 
 
 ### 8.8. cArmor
 
 Value: `#!cpp int 8`
 
-This is the ID of the [Armor](../../attributes/#8-armor " Jump To General > Attributes > 8. Armor ") attribute of the unit 
+This is the attribute [Armor](./../../attributes/attributes/#8-armor) 
 
 ### 8.9. cAttack
 
 Value: `#!cpp int 9`
 
-This is the ID of the [Attack](../../attributes/#9-attack " Jump To General > Attributes > 9. Attack ") attribute of the unit 
+This is the attribute [Attack](./../../attributes/attributes/#9-attack) 
 
 ### 8.10. cAttackReloadTime
 
 Value: `#!cpp int 10`
 
-This is the ID of the [Attack Reload Time](../../attributes/#10-attack-reload-time " Jump To General > Attributes > 10. Attack Reload Time ") attribute of the unit 
+This is the attribute [Attack Reload Time](./../../attributes/attributes/#10-attack-reload-time) 
 
 ### 8.11. cAccuracyPercent
 
 Value: `#!cpp int 11`
 
-This is the ID of the [Accuracy Percent](../../attributes/#11-accuracy-percent " Jump To General > Attributes > 11. Accuracy Percent ") attribute of the unit 
+This is the attribute [Accuracy Percent](./../../attributes/attributes/#11-accuracy-percent) 
 
 ### 8.12. cMaxRange
 
 Value: `#!cpp int 12`
 
-This is the ID of the [Max Range](../../attributes/#12-max-range " Jump To General > Attributes > 12. Max Range ") attribute of the unit 
+This is the attribute [Max Range](./../../attributes/attributes/#12-max-range) 
 
 ### 8.13. cWorkRate
 
 Value: `#!cpp int 13`
 
-This is the ID of the [Work Rate](../../attributes/#13-work-rate " Jump To General > Attributes > 13. Work Rate ") attribute of the unit 
+This is the attribute [Work Rate](./../../attributes/attributes/#13-work-rate) 
 
 ### 8.14. cCarryCapacity
 
 Value: `#!cpp int 14`
 
-This is the ID of the [Carry Capacity](../../attributes/#14-carry-capacity " Jump To General > Attributes > 14. Carry Capacity ") attribute of the unit 
+This is the attribute [Carry Capacity](./../../attributes/attributes/#14-carry-capacity) 
 
 ### 8.15. cBaseArmor
 
 Value: `#!cpp int 15`
 
-This is the ID of the [Base Armor](../../attributes/#15-base-armor " Jump To General > Attributes > 15. Base Armor ") attribute of the unit 
+This is the attribute [Base Armor](./../../attributes/attributes/#15-base-armor) 
 
 ### 8.16. cProjectileUnit
 
 Value: `#!cpp int 16`
 
-This is the ID of the [Projectile Unit](../../attributes/#16-projectile-unit " Jump To General > Attributes > 16. Projectile Unit ") attribute of the unit 
+This is the attribute [Projectile Unit](./../../attributes/attributes/#16-projectile-unit) 
 
 ### 8.17. cIconGraphicsAngle
 
 Value: `#!cpp int 17`
 
-This is the ID of the [Icon Graphics Angle](../../attributes/#17-building-icon-override " Jump To General > Attributes > 17. Building Icon Override ") attribute of the unit 
+This is the attribute [Building Icon Override](./../../attributes/attributes/#17-building-icon-override) 
 
 ### 8.18. cTerrainDefenseBonus
 
 Value: `#!cpp int 18`
 
-This is the ID of the [Terrain Defense Bonus](../../attributes/#18-terrain-defense-bonus " Jump To General > Attributes > 18. Terrain Defense Bonus ") attribute of the unit 
+This is the attribute [Terrain Defense Bonus](./../../attributes/attributes/#18-terrain-defense-bonus) 
 
 ### 8.19. cEnableSmartProjectile
 
 Value: `#!cpp int 19`
 
-This is the ID of the [Enable Smart Projectile](../../attributes/#19-enable-smart-projectiles " Jump To General > Attributes > 19. Enable Smart Projectiles ") attribute of the unit 
+This is the attribute [Projectile Smart Mode](./../../attributes/attributes/#19-projectile-smart-mode) 
 
 ### 8.20. cMinimumRange
 
 Value: `#!cpp int 20`
 
-This is the ID of the [Minimum Range](../../attributes/#20-minimum-range " Jump To General > Attributes > 20. Minimum Range ") attribute of the unit 
+This is the attribute [Minimum Range](./../../attributes/attributes/#20-minimum-range) 
 
 ### 8.21. cAmountFirstStorage
 
 Value: `#!cpp int 21`
 
-This is the ID of the [Amount First Storage](../../attributes/#21-amount-of-1st-resources " Jump To General > Attributes > 21. Amount Of 1st Resources ") attribute of the unit 
+This is the attribute [Amount of 1st Resource Storage](./../../attributes/attributes/#21-amount-of-1st-resource-storage) 
 
 ### 8.22. cBlastWidth
 
 Value: `#!cpp int 22`
 
-This is the ID of the [Blast Width](../../attributes/#22-blast-width " Jump To General > Attributes > 22. Blast Width ") attribute of the unit 
+This is the attribute [Blast Width](./../../attributes/attributes/#22-blast-width) 
 
 ### 8.23. cSearchRadius
 
 Value: `#!cpp int 23`
 
-This is the ID of the [Search Radius](../../attributes/#23-search-radius " Jump To General > Attributes > 23. Search Radius ") attribute of the unit 
+This is the attribute [Search Radius](./../../attributes/attributes/#23-search-radius) 
 
 ### 8.24. cBonusResistance
 
 Value: `#!cpp int 24`
 
-This is the ID of the [Bonus Resistance](../../attributes/#24-bonus-damage-resist " Jump To General > Attributes > 24. Bonus Damage Resist ") attribute of the unit 
+This is the attribute [Bonus Damage Resistance](./../../attributes/attributes/#24-bonus-damage-resistance) 
 
 ### 8.25. cIconId
 
 Value: `#!cpp int 25`
 
-This is the ID of the [Icon Id](../../attributes/#25-icon-id " Jump To General > Attributes > 25. Icon ID ") attribute of the unit 
+This is the attribute [Icon ID](./../../attributes/attributes/#25-icon-id) 
 
-### 8.26. cFogFlag
+### 8.26. cAmountSecondStorage
+
+Value: `#!cpp int 26`
+
+This is the attribute [Amount of 2nd Resource Storage](./../../attributes/attributes/#26-amount-of-2nd-resource-storage) 
+
+### 8.27. cAmountThirdStorage
+
+Value: `#!cpp int 27`
+
+This is the attribute [Amount of 3rd Resource Storage](./../../attributes/attributes/#27-amount-of-3rd-resource-storage) 
+
+### 8.28. cFogFlag
 
 Value: `#!cpp int 28`
 
-This is the ID of the [Fog Flag](../../attributes/#25-fog-visibility " Jump To General > Attributes > 25. Fog Visibility ") attribute of the unit 
+This is the attribute [Fog Visibility](./../../attributes/attributes/#28-fog-visibility) 
 
-### 8.27. cHeroStatus
+### 8.29. cOcclusionMode
+
+Value: `#!cpp int 29`
+
+This is the attribute [Occlusion Mode](./../../attributes/attributes/#29-occlusion-mode) 
+
+### 8.30. cGarrisonType
+
+Value: `#!cpp int 30`
+
+This is the attribute [Garrison Type](./../../attributes/attributes/#30-garrison-type) 
+
+### 8.31. cUnitSizeZ
+
+Value: `#!cpp int 32`
+
+This is the attribute [Unit Size Z](./../../attributes/attributes/#32-unit-size-z) 
+
+### 8.32. cHeroStatus
 
 Value: `#!cpp int 40`
 
-This is the ID of the [Hero Status](../../attributes/#26-hero-status " Jump To General > Attributes > 26. Hero Status ") attribute of the unit 
+This is the attribute [Hero Status](./../../attributes/attributes/#40-hero-status) 
 
-### 8.28. cAttackDelay
+### 8.33. cAttackDelay
 
 Value: `#!cpp int 41`
 
-This is the ID of the [Attack Delay](../../attributes/#27-frame-delay " Jump To General > Attributes > 27. Frame Delay ") attribute of the unit 
+This is the attribute [Frame Delay](./../../attributes/attributes/#41-frame-delay) 
 
-### 8.29. cTrainLocation
+### 8.34. cTrainLocation
 
 Value: `#!cpp int 42`
 
-This is the ID of the [Train Location](../../attributes/#28-train-location " Jump To General > Attributes > 28. Train Location ") attribute of the unit 
+This is the attribute [Train Location](./../../attributes/attributes/#42-train-location) 
 
-### 8.30. cTrainButton
+### 8.35. cTrainButton
 
 Value: `#!cpp int 43`
 
-This is the ID of the [Train Button](../../attributes/#29-train-button " Jump To General > Attributes > 29. Train Button ") attribute of the unit 
+This is the attribute [Train Button](./../../attributes/attributes/#43-train-button) 
 
-### 8.31. cBlastAttackLevel
+### 8.36. cBlastAttackLevel
 
 Value: `#!cpp int 44`
 
-This is the ID of the [Blast Attack Level](../../attributes/#30-blast-attack-level " Jump To General > Attributes > 30. Blast Attack Level ") attribute of the unit 
+This is the attribute [Blast Attack Level](./../../attributes/attributes/#44-blast-attack-level) 
 
-### 8.32. cBlastDefenseLevel
+### 8.37. cBlastDefenseLevel
 
 Value: `#!cpp int 45`
 
-This is the ID of the [Blast Defense Level](../../attributes/#31-blast-defense-level " Jump To General > Attributes > 31. Blast Defense Level ") attribute of the unit 
+This is the attribute [Blast Defense Level](./../../attributes/attributes/#45-blast-defense-level) 
 
-### 8.33. cShownAttack
+### 8.38. cShownAttack
 
 Value: `#!cpp int 46`
 
-This is the ID of the [Shown Attack](../../attributes/#32-shown-attack " Jump To General > Attributes > 32. Shown Attack ") attribute of the unit 
+This is the attribute [Shown Attack](./../../attributes/attributes/#46-shown-attack) 
 
-### 8.34. cShownRange
+### 8.39. cShownRange
 
 Value: `#!cpp int 47`
 
-This is the ID of the [Shown Range](../../attributes/#33-shown-range " Jump To General > Attributes > 33. Shown Range ") attribute of the unit 
+This is the attribute [Shown Range](./../../attributes/attributes/#47-shown-range) 
 
-### 8.35. cShownMeleeArmor
+### 8.40. cShownMeleeArmor
 
 Value: `#!cpp int 48`
 
-This is the ID of the [Shown Melee Armor](../../attributes/#34-shown-melee-armor " Jump To General > Attributes > 34. Shown Melee Armor ") attribute of the unit 
+This is the attribute [Shown Melee Armor](./../../attributes/attributes/#48-shown-melee-armor) 
 
-### 8.36. cShownPierceArmor
+### 8.41. cShownPierceArmor
 
 Value: `#!cpp int 49`
 
-This is the ID of the [Shown Pierce Armor](../../attributes/#35-shown-pierce-armor " Jump To General > Attributes > 35. Shown Pierce Armor ") attribute of the unit 
+This is the attribute [Shown Pierce Armor](./../../attributes/attributes/#49-shown-pierce-armor) 
 
-### 8.37. cNameId
+### 8.42. cNameId
 
 Value: `#!cpp int 50`
 
-This is the ID of the [Name Id](../../attributes/#36-object-name-id " Jump To General > Attributes > 36. Object Name ID ") attribute of the unit 
+This is the attribute [Object Name ID](./../../attributes/attributes/#50-object-name-id) 
 
-### 8.38. cDescriptionId
+### 8.43. cDescriptionId
 
 Value: `#!cpp int 51`
 
-This is the ID of the [Description Id](../../attributes/#37-short-description-id " Jump To General > Attributes > 37. Short Description ID ") attribute of the unit 
+This is the attribute [Short Description ID](./../../attributes/attributes/#51-short-description-id) 
 
-### 8.39. cTerrainTable
+### 8.44. cTerrainTable
 
 Value: `#!cpp int 53`
 
-This is the ID of the [Terrain Table](../../attributes/#38-terrain-restriction-id " Jump To General > Attributes > 38. Terrain Restriction ID ") attribute of the unit 
+This is the attribute [Terrain Restriction ID](./../../attributes/attributes/#53-terrain-restriction-id) 
 
-### 8.40. cDeadUnitId
+### 8.45. cTraits
+
+Value: `#!cpp int 54`
+
+This is the attribute [Unit Trait](./../../attributes/attributes/#54-unit-trait) 
+
+### 8.46. cTraitPiece
+
+Value: `#!cpp int 56`
+
+This is the attribute [Trait Piece](./../../attributes/attributes/#56-trait-piece) 
+
+### 8.47. cDeadUnitId
 
 Value: `#!cpp int 57`
 
-This is the ID of the [Dead Unit Id](../../attributes/#39-dead-unit-id " Jump To General > Attributes > 39. Dead Unit ID ") attribute of the unit 
+This is the attribute [Dead Unit ID](./../../attributes/attributes/#57-dead-unit-id) 
 
-### 8.41. cHotkeyId
+### 8.48. cHotkeyId
 
 Value: `#!cpp int 58`
 
-This is the ID of the [Hotkey Id](../../attributes/#40-hotkey-id " Jump To General > Attributes > 40. HotKey ID ") attribute of the unit 
+This is the attribute [Hotkey ID](./../../attributes/attributes/#58-hotkey-id) 
 
-### 8.42. cResourceCost
+### 8.49. cMaxCharge
+
+Value: `#!cpp int 59`
+
+This is the attribute [Maximum Charge](./../../attributes/attributes/#59-maximum-charge) 
+
+### 8.50. cRechargeRate
+
+Value: `#!cpp int 60`
+
+This is the attribute [Recharge Rate](./../../attributes/attributes/#60-recharge-rate) 
+
+### 8.51. cChargeEvent
+
+Value: `#!cpp int 61`
+
+This is the attribute [Charge Event](./../../attributes/attributes/#61-charge-event) 
+
+### 8.52. cChargeType
+
+Value: `#!cpp int 62`
+
+This is the attribute [Charge Type](./../../attributes/attributes/#62-charge-type) 
+
+### 8.53. cCombatAbility
+
+Value: `#!cpp int 63`
+
+This is the attribute [Combat Ability](./../../attributes/attributes/#63-combat-ability) 
+
+### 8.54. cAttackDispersion
+
+Value: `#!cpp int 64`
+
+This is the attribute [Attack Dispersion](./../../attributes/attributes/#64-attack-dispersion) 
+
+### 8.55. cSecondaryProjectileUnit
+
+Value: `#!cpp int 65`
+
+This is the attribute [Secondary Projectile Unit](./../../attributes/attributes/#65-secondary-projectile-unit) 
+
+### 8.56. cBloodUnitId
+
+Value: `#!cpp int 66`
+
+This is the attribute [Blood Unit](./../../attributes/attributes/#66-blood-unit) 
+
+### 8.57. cHitMode
+
+Value: `#!cpp int 67`
+
+This is the attribute [Projectile Hit Mode](./../../attributes/attributes/#67-projectile-hit-mode) 
+
+### 8.58. cVanishMode
+
+Value: `#!cpp int 68`
+
+This is the attribute [Projectile Vanish Mode](./../../attributes/attributes/#68-projectile-vanish-mode) 
+
+### 8.59. cProjectileArc
+
+Value: `#!cpp int 69`
+
+This is the attribute [Projectile Arc](./../../attributes/attributes/#69-projectile-arc) 
+
+### 8.60. cResourceCost
 
 Value: `#!cpp int 100`
 
-This is the ID of the [Resource Cost](../../attributes/#41-resource-costs " Jump To General > Attributes > 41. Resource Costs ") attribute of the unit 
+This is the attribute [Resource Costs](./../../attributes/attributes/#100-resource-costs) 
 
-### 8.43. cTrainTime
+### 8.61. cTrainTime
 
 Value: `#!cpp int 101`
 
-This is the ID of the [Train Time](../../attributes/#42-train-time " Jump To General > Attributes > 42. Train Time ") attribute of the unit 
+This is the attribute [Train Time](./../../attributes/attributes/#101-train-time) 
 
-### 8.44. cTotalProjectiles
+### 8.62. cTotalProjectiles
 
 Value: `#!cpp int 102`
 
-This is the ID of the [Total Projectiles](../../attributes/#43-total-missiles " Jump To General > Attributes > 43. Total Missiles ") attribute of the unit 
+This is the attribute [Total Missiles](./../../attributes/attributes/#102-total-missiles) 
 
-### 8.45. cFoodCost
+### 8.63. cFoodCost
 
 Value: `#!cpp int 103`
 
-This is the ID of the [Food Cost](../../attributes/#44-food-costs " Jump To General > Attributes > 44. Food Costs ") attribute of the unit 
+This is the attribute [Food Costs](./../../attributes/attributes/#103-food-costs) 
 
-### 8.46. cWoodCost
+### 8.64. cWoodCost
 
 Value: `#!cpp int 104`
 
-This is the ID of the [Wood Cost](../../attributes/#45-wood-costs " Jump To General > Attributes > 45. Wood Costs ") attribute of the unit 
+This is the attribute [Wood Costs](./../../attributes/attributes/#104-wood-costs) 
 
-### 8.47. cGoldCost
+### 8.65. cGoldCost
 
 Value: `#!cpp int 105`
 
-This is the ID of the [Gold Cost](../../attributes/#46-gold-costs " Jump To General > Attributes > 46. Gold Costs ") attribute of the unit 
+This is the attribute [Gold Costs](./../../attributes/attributes/#105-gold-costs) 
 
-### 8.48. cStoneCost
+### 8.66. cStoneCost
 
 Value: `#!cpp int 106`
 
-This is the ID of the [Stone Cost](../../attributes/#47-stone-costs " Jump To General > Attributes > 47. Stone Costs ") attribute of the unit 
+This is the attribute [Stone Costs](./../../attributes/attributes/#106-stone-costs) 
 
-### 8.49. cMaxTotalProjectiles
+### 8.67. cMaxTotalProjectiles
 
 Value: `#!cpp int 107`
 
-This is the ID of the [Max Total Projectiles](../../attributes/#48-max-total-missiles " Jump To General > Attributes > 48. Max Total Missiles ") attribute of the unit 
+This is the attribute [Max Total Missiles](./../../attributes/attributes/#107-max-total-missiles) 
 
-### 8.50. cGarrisonHealRate
+### 8.68. cGarrisonHealRate
 
 Value: `#!cpp int 108`
 
-This is the ID of the [Garrison Heal Rate](../../attributes/#49-garrison-heal-rate " Jump To General > Attributes > 49. Garrison Heal Rate ") attribute of the unit 
+This is the attribute [Garrison Heal Rate](./../../attributes/attributes/#108-garrison-heal-rate) 
 
-### 8.51. cRegenerationRate
+### 8.69. cRegenerationRate
 
 Value: `#!cpp int 109`
 
-This is the ID of the [Regeneration Rate](../../attributes/#50-regeneration-rate " Jump To General > Attributes > 50. Regeneration Rate ") attribute of the unit 
+This is the attribute [Regeneration Rate](./../../attributes/attributes/#109-regeneration-rate) 
+
+### 8.70. cPopulation
+
+Value: `#!cpp int 110`
+
+This is the attribute [Population](./../../attributes/attributes/#110-population) 
 
 ## 9. EffectAmount Object Class
 
@@ -1984,11 +2116,11 @@ Value: `#!cpp int 95`
 
 ID of the player resource Raider Ability. Check [here](../../resources/resources/#95-enable-ptwc--kidnap--loot "Jump to: Game Mecahnicsc > Resources > #95-enable-ptwc--kidnap--loot") for more info about what this resource does.
 
-### 10.86. cAttributeBerserkerHealTimer
+### 10.86. cAttributeNoDropsiteFarmers
 
 Value: `#!cpp int 96`
 
-ID of the player resource Berserker Heal Timer. Check [here](../../resources/resources/#96-unused-resource-096 "Jump to: Game Mecahnicsc > Resources > #96-unused-resource-096") for more info about what this resource does.
+ID of the player resource No Dropsite Farmers. Check [here](../../resources/resources/#96-no-dropsite-farmers "Jump to: Game Mecahnicsc > Resources > #96-no-dropsite-farmers") for more info about what this resource does.
 
 ### 10.87. cAttributeDominantSheepControl
 
@@ -2480,7 +2612,7 @@ ID of the player resource Convert Max Adj. Check [here](../../resources/resource
 
 Value: `#!cpp int 178`
 
-ID of the player resource Convert Resist Min Adj. Check [here](../../resources/resources/#178-convert-resist-mio-adjustment "Jump to: Game Mecahnicsc > Resources > #178-convert-resist-mio-adjustment") for more info about what this resource does.
+ID of the player resource Convert Resist Min Adj. Check [here](../../resources/resources/#178-convert-resist-min-adjustment "Jump to: Game Mecahnicsc > Resources > #178-convert-resist-min-adjustment") for more info about what this resource does.
 
 ### 10.169. cAttributeConvertResistMaxAdj
 
@@ -2630,7 +2762,7 @@ ID of the player resource Trigger Shared L O S. Check [here](../../resources/res
 
 Value: `#!cpp int 218`
 
-ID of the player resource Feudal Town Center Limit. Check [here](../../resources/resources/#218-feudal-town-center-limit "Jump to: Game Mecahnicsc > Resources > #218-feudal-town-center-limit") for more info about what this resource does.
+ID of the player resource Feudal Town Center Limit. Check [here](../../resources/resources/#218-early-town-center-limit "Jump to: Game Mecahnicsc > Resources > #218-early-town-center-limit") for more info about what this resource does.
 
 ### 10.194. cAttributeUnused1
 
@@ -2690,7 +2822,7 @@ ID of the player resource Villgaers Killed By Animal. Check [here](../../resourc
 
 Value: `#!cpp int 228`
 
-ID of the player resource Villagers Killed By A I Player. Check [here](../../resources/resources/#228-villagers-killed-by-al-player "Jump to: Game Mecahnicsc > Resources > #228-villagers-killed-by-al-player") for more info about what this resource does.
+ID of the player resource Villagers Killed By A I Player. Check [here](../../resources/resources/#228-villagers-killed-by-ai-player "Jump to: Game Mecahnicsc > Resources > #228-villagers-killed-by-ai-player") for more info about what this resource does.
 
 ### 10.204. cAttributeVillagersKilledByHumanPlayer
 
@@ -2793,4 +2925,124 @@ ID of the player resource Workshop Stone Trickle. Check [here](../../resources/r
 Value: `#!cpp int 245`
 
 ID of the player resource Workshop Gold Trickle. Check [here](../../resources/resources/#245-trade-workshop-gold-productivity "Jump to: Game Mecahnicsc > Resources > #245-trade-workshop-gold-productivity") for more info about what this resource does.
+
+### 10.221. cAttributeUnitsValueTotal
+
+Value: `#!cpp int 246`
+
+ID of the player resource Units Value Total. Check [here](../../resources/resources/#246-units-value-total "Jump to: Game Mecahnicsc > Resources > #246-units-value-total") for more info about what this resource does.
+
+### 10.222. cAttributeBuildingsValueTotal
+
+Value: `#!cpp int 247`
+
+ID of the player resource Buildings Value Total. Check [here](../../resources/resources/#247-buildings-value-total "Jump to: Game Mecahnicsc > Resources > #247-buildings-value-total") for more info about what this resource does.
+
+### 10.223. cAttributeVillagersCreatedTotal
+
+Value: `#!cpp int 248`
+
+ID of the player resource Villagers Created Total. Check [here](../../resources/resources/#248-villagers-created-total "Jump to: Game Mecahnicsc > Resources > #248-villagers-created-total") for more info about what this resource does.
+
+### 10.224. cAttributeVillagersIdlePeriodsTotal
+
+Value: `#!cpp int 249`
+
+ID of the player resource Villagers Idle Periods Total. Check [here](../../resources/resources/#249-villagers-idle-periods-total "Jump to: Game Mecahnicsc > Resources > #249-villagers-idle-periods-total") for more info about what this resource does.
+
+### 10.225. cAttributeVillagersIdleSecondsTotal
+
+Value: `#!cpp int 250`
+
+ID of the player resource Villagers Idle Seconds Total. Check [here](../../resources/resources/#250-villagers-idle-seconds-total "Jump to: Game Mecahnicsc > Resources > #250-villagers-idle-seconds-total") for more info about what this resource does.
+
+### 10.226. cAttributeTradeFoodPercent
+
+Value: `#!cpp int 251`
+
+ID of the player resource Trade Food Percent. Check [here](../../resources/resources/#251-trade-food-percent "Jump to: Game Mecahnicsc > Resources > #251-trade-food-percent") for more info about what this resource does.
+
+### 10.227. cAttributeTradeWoodPercent
+
+Value: `#!cpp int 252`
+
+ID of the player resource Trade Wood Percent. Check [here](../../resources/resources/#252-trade-wood-percent "Jump to: Game Mecahnicsc > Resources > #252-trade-wood-percent") for more info about what this resource does.
+
+### 10.228. cAttributeTradeStonePercent
+
+Value: `#!cpp int 253`
+
+ID of the player resource Trade Stone Percent. Check [here](../../resources/resources/#253-trade-stone-percent "Jump to: Game Mecahnicsc > Resources > #253-trade-stone-percent") for more info about what this resource does.
+
+### 10.229. cAttributeLivestockFoodProductivity
+
+Value: `#!cpp int 254`
+
+ID of the player resource Livestock Food Productivity. Check [here](../../resources/resources/#254-livestock-food-productivity "Jump to: Game Mecahnicsc > Resources > #254-livestock-food-productivity") for more info about what this resource does.
+
+### 10.230. cAttributeSpeedUpBuildingType
+
+Value: `#!cpp int 255`
+
+ID of the player resource Speed Up Building Type. Check [here](../../resources/resources/#255-speed-up-building-type "Jump to: Game Mecahnicsc > Resources > #255-speed-up-building-type") for more info about what this resource does.
+
+### 10.231. cAttributeSpeedUpBuildingRange
+
+Value: `#!cpp int 256`
+
+ID of the player resource Speed Up Building Range. Check [here](../../resources/resources/#256-speed-up-building-range "Jump to: Game Mecahnicsc > Resources > #256-speed-up-building-range") for more info about what this resource does.
+
+### 10.232. cAttributeSpeedUpPercentage
+
+Value: `#!cpp int 257`
+
+ID of the player resource Speed Up Percentage. Check [here](../../resources/resources/#257-speed-up-percentage "Jump to: Game Mecahnicsc > Resources > #257-speed-up-percentage") for more info about what this resource does.
+
+### 10.233. cAttributeSpeedUpObjectType
+
+Value: `#!cpp int 258`
+
+ID of the player resource Speed Up Object Type. Check [here](../../resources/resources/#258-speed-up-object-type "Jump to: Game Mecahnicsc > Resources > #258-speed-up-object-type") for more info about what this resource does.
+
+### 10.234. cAttributeSpeedUpEffectType
+
+Value: `#!cpp int 259`
+
+ID of the player resource Speed Up Effect Type. Check [here](../../resources/resources/#259-speed-up-effect-type "Jump to: Game Mecahnicsc > Resources > #259-speed-up-effect-type") for more info about what this resource does.
+
+### 10.235. cAttributeSpeedUpSecondaryEffectType
+
+Value: `#!cpp int 260`
+
+ID of the player resource Speed Up Secondary Effect Type. Check [here](../../resources/resources/#260-speed-up-secondary-effect-type "Jump to: Game Mecahnicsc > Resources > #260-speed-up-secondary-effect-type") for more info about what this resource does.
+
+### 10.236. cAttributeSpeedUpSecondaryPercentage
+
+Value: `#!cpp int 261`
+
+ID of the player resource Speed Up Secondary Percentage. Check [here](../../resources/resources/#261-speed-up-secondary-percentage "Jump to: Game Mecahnicsc > Resources > #261-speed-up-secondary-percentage") for more info about what this resource does.
+
+### 10.237. cAttributeExtraElephantConvertResist
+
+Value: `#!cpp int 262`
+
+ID of the player resource Extra Elephant Convert Resist. Check [here](../../resources/resources/#262-extra-elephant-convert-resist "Jump to: Game Mecahnicsc > Resources > #262-extra-elephant-convert-resist") for more info about what this resource does.
+
+### 10.238. cAttributeStartingScoutID
+
+Value: `#!cpp int 263`
+
+ID of the player resource Starting Scout I D. Check [here](../../resources/resources/#263-starting-scout-id "Jump to: Game Mecahnicsc > Resources > #263-starting-scout-id") for more info about what this resource does.
+
+### 10.239. cAttributeRelicWoodRate
+
+Value: `#!cpp int 264`
+
+ID of the player resource Relic Wood Rate. Check [here](../../resources/resources/#264-relic-wood-production-rate "Jump to: Game Mecahnicsc > Resources > #264-relic-wood-production-rate") for more info about what this resource does.
+
+### 10.240. cAttributeRelicStoneRate
+
+Value: `#!cpp int 265`
+
+ID of the player resource Relic Stone Rate. Check [here](../../resources/resources/#265-relic-stone-production-rate "Jump to: Game Mecahnicsc > Resources > #265-relic-stone-production-rate") for more info about what this resource does.
 

@@ -19,13 +19,13 @@
     },
     "3": {
         "name": "Unit Size X",
-        "desc": "This determines the x-size of the unit's collison hitbox (width of the unit)",
+        "desc": "This determines the x-size of the unit's collision hitbox (width of the unit)",
         "notes": [],
         "flags": {}
     },
     "4": {
         "name": "Unit Size Y",
-        "desc": "This determines the y-size of the unit's collison hitbox (length of the unit)",
+        "desc": "This determines the y-size of the unit's collision hitbox (length of the unit)",
         "notes": [],
         "flags": {}
     },
@@ -204,7 +204,7 @@
     },
     "30": {
         "name": "Garrison Type",
-        "desc": "This is a combinable bit field. Controls which units are able to garrison in a buidling. A unit needs to have the garrison in building task to be able to garrison in a building to begin with",
+        "desc": "This is a combinable bit field. Controls which units are able to garrison in a building. A unit needs to have the garrison in building task to be able to garrison in a building to begin with",
         "notes": [],
         "flags": {
             "1": "Villagers",
@@ -218,7 +218,7 @@
     },
     "32": {
         "name": "Unit Size Z",
-        "desc": "This determines the z-size of the unit's collison hitbox (height of the unit)",
+        "desc": "This determines the z-size of the unit's collision hitbox (height of the unit)",
         "notes": [],
         "flags": {}
     },
