@@ -851,6 +851,13 @@
             "type": "int",
             "desc": "This is the ID of the `Attribute Set Stacking Research Cap` modifier for the xsEffectAmount function",
             "usage": null
+        },
+        {
+            "name": "cAttrSetHotkey",
+            "value": 11,
+            "type": "int",
+            "desc": "This is the ID of the `Attribute Set Hotkey` modifier for the xsEffectAmount function",
+            "usage": null
         }
     ],
     "EffectAmount Unit Attribute": [
@@ -2903,7 +2910,7 @@
             "usage": null
         },
         {
-            "name": "cAttributeTotalTributeReceived",
+            "name": "cAttributeTotalTributeReceived ",
             "value": 171,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
