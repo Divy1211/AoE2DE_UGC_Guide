@@ -2,7 +2,7 @@ import json
 
 md = """# Player Resources
 
-*Written by: Alian713*
+*Written by: Alian713 & Bradical*
 
 ---
 
@@ -13,11 +13,20 @@ def validify(name: str) -> str:
     name = name.upper()
     name = name.replace(" ", "_")
     name = name.replace("(", "_")
-    name = name.replace("%", "PERCENT")
+    name = name.replace("%", "_PERCENT")
     name = name.replace("/", "_")
     name = name.replace(")", "_")
+    name = name.replace("-", "_")
     name = name.replace("!", "")
+    name = name.replace(".", "_")
+    name = name.replace(",", "_")
+    name = name.replace("'", "_")
+    name = name.replace("+", "AND")
+    name = name.replace("[", "_")
+    name = name.replace("]", "_")
     name = regex.sub("_+", "_", name)
+    name = regex.sub("_$", "", name)
+    name = regex.sub("^_", "", name)
     return name
 
 with open("./res_desc.json") as file:

@@ -1,6 +1,6 @@
 # Player Resources
 
-*Written by: Alian713*
+*Written by: Alian713 & Bradical*
 
 ---
 
@@ -204,7 +204,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 28
 
-- Purpose: Boolean: allow enemy building conversions.
+- Purpose: Boolean: allow enemy building conversions
 
 - Default Values:
 
@@ -270,7 +270,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 175:  Generic
+    - 175:  Default
 
     - 220:  Chinese
 
@@ -350,7 +350,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0.3:  Generic
+    - 0.3:  Default
 
     - 0.2:  After Coinage
 
@@ -364,7 +364,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
     - 1.15:  Mayans
 
@@ -588,13 +588,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - +2:  with Teuton ally
 
     - +3:  after Faith
 
-- Note: Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this.
+- Note: Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this
 
 ## 78. Trade Vig Rate
 
@@ -604,7 +604,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0.3:  Generic Rate
+    - 0.3:  Default
 
     - 0.15:  after Guilds
 
@@ -618,7 +618,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
     - 1.15:  Mayans
 
@@ -664,13 +664,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 3:  Generic
+    - 3:  Default
 
     - 4:  Mayans
 
     - 6:  Chinese
 
-- Note: Only works for RMS, changing this manually in the editor does nothing.
+- Note: Only works for RMS, changing this manually in the editor does nothing
 
 ## 85. Research Cost Modifier
 
@@ -680,7 +680,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
     - 0.9:  Chinese in feudal age
 
@@ -714,7 +714,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 710:  Generic
+    - 710:  Default
 
     - 2130:  Malay
 
@@ -778,19 +778,25 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  default
+    - 0:  Default
 
-    - 1:  allows the TC to be packed and moved
+    - 1:  Allows the TC to be packed and moved
 
-    - $\geq$2:  no noticeable effect
+    - $\geq$2:  No noticeable effect
 
 - Note: Enabling kidnap/loot requires modding the units to have the kidnap/pillage action
 
-## 96. Unused Resource 096
+## 96. No Dropsite Farmers
 
 - ID: 96
 
-- Purpose: Unused
+- Purpose: Enable Khmer farmer bonus
+
+- Default Values:
+
+    - 0:  Default
+
+    - 1:  Khmer. Farmers no longer need dropoff and steadily gain resources while farming
 
 ## 97. Dominant Sheep Control
 
@@ -800,9 +806,9 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
-    - 1:  Celts
+    - $\geq$1:  Celts
 
 - Note: If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them. Celt sheep bonus
 
@@ -1290,7 +1296,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West") by T-West
 
-## 178. Convert Resist Mio Adjustment
+## 178. Convert Resist Min Adjustment
 
 - ID: 178
 
@@ -1382,7 +1388,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
     - 1.15:  Mayans
 
@@ -1396,7 +1402,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
     - 1.15:  Mayans
 
@@ -1406,13 +1412,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 191
 
-- Purpose: Relic gold generation rate in gold per second
+- Purpose: Relic gold generation rate in gold per minute
 
 - Default Values:
 
-    - 0.5:  default
+    - 30:  Default. 30 gold per minute (0.5 gold per second)
 
-    - 0.25:  after getting hit with Atheism 
+    - 15:  After getting hit with Atheism 
 
 ## 192. Converted Units Die
 
@@ -1458,7 +1464,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 1.3:  Spanish
 
@@ -1482,7 +1488,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 197
 
-- Purpose: Boolean: Halves the cost of spies per villager, and caps it at 15k gold max instead of the usual 30k.
+- Purpose: Boolean: Halves the cost of spies per villager, and caps it at 15k gold max instead of the usual 30k
 
 - Default Values:
 
@@ -1538,7 +1544,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
 - Note: The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`
 
@@ -1550,9 +1556,9 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
-- Note: The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 1`
+- Note: The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 0.7`
 
 ## 207. Feitoria Stone Productivity
 
@@ -1562,7 +1568,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
 - Note: The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`
 
@@ -1574,9 +1580,9 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
-- Note: The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 0.7`
+- Note: The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 1`
 
 ## 209. Reveal Enemy Town Centers
 
@@ -1586,7 +1592,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 5:  Vietnamese
 
@@ -1600,7 +1606,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - -1:  Generic
+    - -1:  Default
 
     - 42:  Burmese
 
@@ -1614,7 +1620,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 0.25:  Tatars
 
@@ -1628,7 +1634,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
 - Note: Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`
 
@@ -1640,7 +1646,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 50:  (0.5 g/s) Tatars
 
@@ -1654,7 +1660,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 10:  after a Cuman ally researches Cuman Mercenaries
 
@@ -1676,7 +1682,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
     - 1.57:  Tatars
 
@@ -1688,17 +1694,17 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unknown... what does this resource do?
 
-## 218. Feudal Town Center Limit
+## 218. Early Town Center Limit
 
 - ID: 218
 
-- Purpose: This is the number of extra TCs a player is allowed to build IF TCs are enabled in feudal age.
+- Purpose: This is the number of extra TCs a player is allowed to build IF TCs are enabled in feudal age
 
 - Default Values:
 
-    - 10002.1:  Generic
+    - 1:  Default
 
-    - 2.1:  Cumans
+    - 2:  Cumans
 
 - Note: Since generic civs don't get access to TCs in feudal, the 10k amount doesn't matter, but if you're trying to make a map where you want people to be able to make TCs in feudal, make sure to set this value to 10k for cumans!
 
@@ -1710,7 +1716,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
 - Note: Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate
 
@@ -1776,7 +1782,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 30:  Burgundians
 
@@ -1794,7 +1800,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Total number of villagers lost to wild animals
 
-## 228. Villagers Killed by Al Player
+## 228. Villagers Killed by AI Player
 
 - ID: 228
 
@@ -1852,9 +1858,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 2:  (0.02 g/s per farmer) after Burgundian Vineyards
+
+- Note: Only generates gold while collecting food from farms, and not when walking on them down
 
 ## 237. Folwark Collection Amount
 
@@ -1864,7 +1872,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 17.5:  Poles
 
@@ -1892,7 +1900,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Poles
 
-    - -1:  Generic
+    - -1:  Default
 
 ## 239. Folwark Building Type
 
@@ -1904,7 +1912,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 68:  (Mill) Poles
 
-    - -1:  Generic
+    - -1:  Default
 
 ## 240. Units Converted
 
@@ -1920,7 +1928,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
     - 18:  Poles
 
@@ -1936,9 +1944,9 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
-- Note: The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`.
+- Note: The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`
 
 ## 243. Trade Workshop Wood Productivity
 
@@ -1948,9 +1956,9 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
-- Note: The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`.
+- Note: The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`
 
 ## 244. Trade Workshop Stone Productivity
 
@@ -1960,9 +1968,9 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Generic
+    - 0:  Default
 
-- Note: The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`.
+- Note: The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`
 
 ## 245. Trade Workshop Gold Productivity
 
@@ -1972,7 +1980,351 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 1:  Generic
+    - 1:  Default
 
-- Note: The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`.
+- Note: The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`
+
+## 246. Units Value Total
+
+- ID: 246
+
+- Purpose: Total cost of all units created so far
+
+- Note: This does **not** decrease when the units die
+
+## 247. Buildings Value Total
+
+- ID: 247
+
+- Purpose: Total cost of all buildings created so far
+
+- Note: Increases when foundations are placed. This does **not** decrease if the foundation is deleted
+
+## 248. Villagers Created Total
+
+- ID: 248
+
+- Purpose: Total number of villagers created so far
+
+## 249. Villagers Idle Periods Total
+
+- ID: 249
+
+- Purpose: Unknown
+
+## 250. Villagers Idle Seconds Total
+
+- ID: 250
+
+- Purpose: Unknown
+
+## 251. Trade Food Percent
+
+- ID: 251
+
+- Purpose: Percentage of gold generated from trade that is also given as food
+
+- Default Values:
+
+    - 0:  Default
+
+    - 10:  Bengalis
+
+## 252. Trade Wood Percent
+
+- ID: 252
+
+- Purpose: Percentage of gold generated from trade that is also given as wood
+
+- Default Values:
+
+    - 0:  Default
+
+## 253. Trade Stone Percent
+
+- ID: 253
+
+- Purpose: Percentage of gold generated from trade that is also given as stone
+
+- Default Values:
+
+    - 0:  Default
+
+## 254. Livestock Food Productivity
+
+- ID: 254
+
+- Purpose: Garrisoned herdable food generation rate per 60 seconds
+
+- Default Values:
+
+    - 0:  Default
+
+    - 3.5:  (0.0583 f/s per herdable) Gurjaras
+
+## 255. Speed Up Building Type
+
+- ID: 255
+
+- Purpose: This is the ID of the building to use for the speed up effect.
+
+- Default Values:
+
+    - 1754:  (Caravanserai) Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 256. Speed Up Building Range
+
+- ID: 256
+
+- Purpose: This specifies the range (in tiles) of the area created around the building ([Speed Up Building Type](./#255-speed-up-building-type)) (square, from the edges of the building) for the speed up effect
+
+- Default Values:
+
+    - 8:  Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 257. Speed Up Percentage
+
+- ID: 257
+
+- Purpose: This amount is added to the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect
+
+- Default Values:
+
+    - 0.2:  Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 258. Speed Up Object Type
+
+- ID: 258
+
+- Purpose: This is `900 + class_id` for the class of units that should be affected by the speed up effect
+
+- Default Values:
+
+    - 919:  (Trade Cart class) Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 259. Speed Up Effect Type
+
+- ID: 259
+
+- Purpose: The ID of the attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far
+
+- Default Values:
+
+    - 5:  (Movement Speed) Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 260. Speed Up Secondary Effect Type
+
+- ID: 260
+
+- Purpose: This is the ID of the secondary attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far
+
+- Default Values:
+
+    - 109:  (Regeneration Rate) Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 261. Speed Up Secondary Percentage
+
+- ID: 261
+
+- Purpose: This amount is added to the secondary attribute ([Speed Up Secondary Effect Type](#260-speed-up-secondary-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect
+
+- Default Values:
+
+    - 60:  Default
+
+- Note: See also:
+
+    [Speed Up Building Type](./#255-speed-up-building-type)
+
+    [Speed Up Building Range](./#256-speed-up-building-range)
+
+    [Speed Up Percentage](./#257-speed-up-percentage)
+
+    [Speed Up Object Type](./#258-speed-up-object-type)
+
+    [Speed Up Effect Type](./#259-speed-up-effect-type)
+
+    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
+
+    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+
+## 262. Extra Elephant Convert Resist
+
+- ID: 262
+
+- Purpose: Provides additional conversion resistance to elephant units
+
+- Default Values:
+
+    - 0:  Default
+
+    - 1:  Bengalis
+
+## 263. Starting Scout ID
+
+- ID: 263
+
+- Purpose: Unit ID for the starting scout. Can be set to any unit (even buildings)
+
+- Default Values:
+
+    - 448:  (Scout Cavalry) Default
+
+    - 751:  (Eagle Scout) Aztecs, Incas and Mayans
+
+    - 1755:  (Camel Scout) Gurjaras
+
+## 264. Relic Wood Production Rate
+
+- ID: 264
+
+- Purpose: Relic wood production per minute
+
+- Default Values:
+
+    - 0:  Default
+
+- Note: This is not affected by Atheism
+
+## 265. Relic Stone Production Rate
+
+- ID: 265
+
+- Purpose: Relic stone production per minute
+
+- Note: This is not affected by Atheism
+
+## 266. Chopping Gold Productivity
+
+- ID: 266
+
+- Purpose: Lumberjack chopping gold generation rate per 100 seconds
+
+- Default Values:
+
+    - 0:  Default
+
+    - 1.5:  (0.015 g/s per lumberjack) Vietnamese with paper money
+
+    - 1.8:  (0.018 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe
+
+    - 2.16:  (0.0216 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw
+
+    - 2.376:  (0.02376 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw & Two-Man Saw
+
+- Note: Only generates gold while collecting wood from trees, and not when cutting them down
+
+## 267. Unused Resource 267
+
+- ID: 267
+
+- Purpose: Unused
+
+## 268. Unused Resource 268
+
+- ID: 268
+
+- Purpose: Unused
+
+## 269. Unused Resource 269
+
+- ID: 269
+
+- Purpose: Unused
 
