@@ -208,7 +208,7 @@ This page is a list of all the unit attributes that can be modified in the scena
     | Always Visible | 1 | 
     | Visible If Alive | 2 | 
     | Inverted Visibility | 3 | 
-    | Check Doppleganger | 4 | 
+    | Check Doppelganger | 4 | 
 
 ## 29. Occlusion Mode
 
