@@ -1748,7 +1748,7 @@
     },
     "257": {
         "name": "Speed Up Percentage",
-        "desc": "The formulae given below are used with this resource as the `value` to adjust the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect",
+        "desc": "The formulae given below are used with this resource as the `value` to adjust the attribute ([Speed Up Effect Type](./#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](./#258-speed-up-object-type)) when they are in the range of the speed up effect",
         "defaults": {
             "0.2": " Default"
         },
@@ -1780,7 +1780,7 @@
     },
     "261": {
         "name": "Speed Up Secondary Percentage",
-        "desc": "This amount is added to the secondary attribute ([Speed Up Secondary Effect Type](#260-speed-up-secondary-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect",
+        "desc": "This amount is added to the secondary attribute ([Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)) of all units of class ([Speed Up Object Type](./#258-speed-up-object-type)) when they are in the range of the speed up effect",
         "defaults": {
             "60": " Default"
         },
