@@ -31,26 +31,31 @@ def validify(name: str) -> str:
 
 with open("./res_desc.json") as file:
     data = json.load(file)
+    
+    # md = ""
     for resource in data:
         md+=f"## {resource}. {data[resource]['name']}\n\n- ID: {resource}\n\n" + \
             f"- Purpose: {data[resource]['desc']}\n\n"
         if data[resource]['defaults']:
             md+="- Default Values:\n\n"
         for value in data[resource]['defaults']:
-            md+=f"    - {value}: {data[resource]['defaults'][value]}\n\n"
+            md+=f"    - {value}: {data[resource]['defaults'][value]}\n"
+        if data[resource]['defaults']:
+            md += "\n"
         if data[resource]['note']:
             md+= f"- Note: {data[resource]['note']}\n\n"
-
+        
         # md+=f"{validify(data[resource]['name'])} = {resource}\n\"\"\"\n" + \
-        #     f"- Purpose: {data[resource]['desc']}\n"
+        #     f"- Purpose: {data[resource]['desc']}\n\n"
         # if data[resource]['defaults']:
-        #     md+="\n- Default Values:\n"
+        #     md+="- Default Values:\n\n"
         # for value in data[resource]['defaults']:
-        #     md+=f"\n    - {value}: {data[resource]['defaults'][value]}\n"
+        #     md+=f"    - {value}: {data[resource]['defaults'][value]}\n"
+        # if data[resource]['defaults']:
+        #     md += "\n"
         # if data[resource]['note']:
-        #     md+= f"\n- Note: {data[resource]['note']}\n"
+        #     md+= f"- Note: {data[resource]['note']}\n"
         # md+="\"\"\"\n"
-
 
 
 links = """ [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West")
@@ -75,5 +80,5 @@ for i in range(len(linkso)):
 with open("./resources.md", "w") as file:
     file.write(md)
 
-# with open("./resources_t.md", "w") as file:
+# with open("./resources_t.py", "w") as file:
 #     file.write(md)
