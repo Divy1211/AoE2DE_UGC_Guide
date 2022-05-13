@@ -1688,13 +1688,13 @@
         "name": "Villagers Idle Periods Total",
         "desc": "Amount of villagers that *entered* an idle state since game start",
         "defaults": {},
-        "note": "\n\n    1. This only updates every 5 physical minutes.\n\n    2. The number of villagers that *entered* an idle state since the last updated is added to this resource.\n\n    3. Starting villager count is the initial value"
+        "note": "\n    1. This only updates every 5 physical minutes.\n    2. The number of villagers that *entered* an idle state since the last updated is added to this resource.\n    3. Starting villager count is the initial value"
     },
     "250": {
         "name": "Villagers Idle Seconds Total",
         "desc": "Amount of total seconds all villagers have been idle since game start",
         "defaults": {},
-        "note": "\n\n    1. This only updates every 5 physical minutes.\n\n    2. The idle time in seconds for all villagers since the last time this resource was updated is added  to this resource.\n\n    3. A villager immediately adds its own idle time to this resource if it dies"
+        "note": "\n    1. This only updates every 5 physical minutes.\n    2. The idle time in seconds for all villagers since the last time this resource was updated is added  to this resource.\n    3. A villager immediately adds its own idle time to this resource if it dies"
     },
     "251": {
         "name": "Trade Food Percent",

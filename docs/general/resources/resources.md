@@ -54,6 +54,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 1:  Feudal Age
     - 2:  Castle Age
     - 3:  Imperial Age
+
 - Note: Setting this to an amount higher than 3 cycles the icon but keeps the age at imperial
 
 ## 7. Relics Captured
@@ -194,6 +195,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (default)
     - $\geq$ 1:  Yes, after Atonement
+
 ## 28. Enable Building Conversion
 
 - ID: 28
@@ -205,6 +207,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  No (default)
     - 1:  Yes, after Redemption
     - $\geq$2:  Monks can convert buildings from range
+
 ## 29. Unused Resource 029
 
 - ID: 29
@@ -252,6 +255,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  The unit of measurement for this rate is unknown
+
 ## 36. Farm Food Amount
 
 - ID: 36
@@ -262,6 +266,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 175:  Default
     - 220:  Chinese
+
 - Note: This is what horse collar etc. technologies modify
 
 ## 37. Civilian Population
@@ -286,6 +291,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No
     - 1:  Yes
+
 ## 40. Military Population
 
 - ID: 40
@@ -326,6 +332,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No
     - 1:  Yes
+
 ## 46. Tribute Inefficiency
 
 - ID: 46
@@ -337,6 +344,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0.3:  Default
     - 0.2:  After Coinage
     - 0:  After Banking
+
 ## 47. Gold Mining Productivity
 
 - ID: 47
@@ -347,6 +355,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1:  Default
     - 1.15:  Mayans
+
 - Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
 ## 48. Town Center Unavailable
@@ -359,6 +368,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (Sudden Death)
     - 1:  Yes (Normal)
+
 ## 49. Gold Counter
 
 - ID: 49
@@ -375,6 +385,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (default)
     - 1:  Yes, after Cartography or with a Portuguese ally
+
 - Note: Once set to `1`, setting it back to `0` won't take away the LoS of allies
 
 ## 51. Unused Resource 051
@@ -405,6 +416,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No
     - 1:  Yes
+
 ## 55. All Relics Captured
 
 - ID: 55
@@ -415,6 +427,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No
     - 1:  Yes
+
 ## 56. Ore Storage
 
 - ID: 56
@@ -495,6 +508,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No
     - 1:  Yes (default)
+
 ## 68. Hit Points Killed
 
 - ID: 68
@@ -560,6 +574,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - +2:  with Teuton ally
     - +3:  after Faith
+
 - Note: Probability of conversion is divided by this value for ALL source player units, Teuton team bonus for conversion resistance works by increasing this
 
 ## 78. Trade Vig Rate
@@ -573,6 +588,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0.3:  Default
     - 0.15:  after Guilds
     - 0.05:  Saracens
+
 ## 79. Stone Mining Productivity
 
 - ID: 79
@@ -583,6 +599,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1:  Default
     - 1.15:  Mayans
+
 - Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
 ## 80. Queued Units
@@ -628,6 +645,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 3:  Default
     - 4:  Mayans
     - 6:  Chinese
+
 - Note: Only works for RMS, changing this manually in the editor does nothing
 
 ## 85. Research Cost Modifier
@@ -642,6 +660,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0.9:  Chinese in feudal age
     - 0.85:  Chinese in castle age
     - 0.80:  Chinese in imperial age
+
 ## 86. Research Time Modifier
 
 - ID: 86
@@ -658,6 +677,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No
     - 1:  Yes (default)
+
 ## 88. Fish Trap Food Amount
 
 - ID: 88
@@ -668,6 +688,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 710:  Default
     - 2130:  Malay
+
 ## 89. Heal Rate Modifier
 
 - ID: 89
@@ -677,6 +698,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  The unit of measuremeant for this is unknown
+
 ## 90. Healing Range
 
 - ID: 90
@@ -686,6 +708,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 4:  Tiles
+
 ## 91. Starting Food
 
 - ID: 91
@@ -729,6 +752,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Allows the TC to be packed and moved
     - $\geq$2:  No noticeable effect
+
 - Note: Enabling kidnap/loot requires modding the units to have the kidnap/pillage action
 
 ## 96. No Dropsite Farmers
@@ -741,6 +765,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 1:  Khmer. Farmers no longer need dropoff and steadily gain resources while farming
+
 ## 97. Dominant Sheep Control
 
 - ID: 97
@@ -751,6 +776,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - $\geq$1:  Celts
+
 - Note: If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them. Celt sheep bonus
 
 ## 98. Building Cost Sum
@@ -1287,6 +1313,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (default)
     - 1:  Yes, after Spies
+
 - Note: Once set to `1`, setting it back to `0` won't take away LoS of enemies!
 
 ## 184. Value Wonders Castles
@@ -1329,6 +1356,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1:  Default
     - 1.15:  Mayans
+
 - Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%
 
 ## 190. Food Gathering Productivity
@@ -1341,6 +1369,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1:  Default
     - 1.15:  Mayans
+
 - Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%
 
 ## 191. Relic Gold Production Rate
@@ -1353,6 +1382,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 30:  Default. 30 gold per minute (0.5 gold per second)
     - 15:  After getting hit with Atheism 
+
 ## 192. Converted Units Die
 
 - ID: 192
@@ -1363,6 +1393,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (default)
     - 1:  Yes, after Heresey
+
 ## 193. Theocracy
 
 - ID: 193
@@ -1373,6 +1404,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (default)
     - 1:  Yes, after researching Theocracy
+
 ## 194. Crenellations
 
 - ID: 194
@@ -1383,6 +1415,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  No (default)
     - 1:  Yes, after crenellations
+
 ## 195. Construction Rate Modifier
 
 - ID: 195
@@ -1393,6 +1426,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 1.3:  Spanish
+
 - Note: The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`
 
 ## 196. Hun Wonder Discount
@@ -1405,6 +1439,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  default
     - 1000:  (100 years) for the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic/wonder victories, i.e. it adds up if multiple hun players get the tech
+
 - Note: Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame
 
 ## 197. Spies Discount
@@ -1416,6 +1451,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+
 ## 198. Unused Resource 198
 
 - ID: 198
@@ -1467,6 +1503,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`
 
 ## 206. Feitoria Wood Productivity
@@ -1478,6 +1515,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 0.7`
 
 ## 207. Feitoria Stone Productivity
@@ -1489,6 +1527,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`
 
 ## 208. Feitoria Gold Productivity
@@ -1500,6 +1539,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 1`
 
 ## 209. Reveal Enemy Town Centers
@@ -1512,6 +1552,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 5:  Vietnamese
+
 - Note: The bonus works for all values $\geq$1, the choice of setting it to 5 for vietnamese seems arbitrary
 
 ## 210. Relics Visible on Map
@@ -1524,6 +1565,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - -1:  Default
     - 42:  Burmese
+
 - Note: Burmese reveal relics on map bonus. Only works in RMS, manually changing this in the editor does not seem to have any effects
 
 ## 211. Elevation Higher Bonus
@@ -1536,6 +1578,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 0.25:  Tatars
+
 - Note: Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`
 
 ## 212. Elevation Lower Bonus
@@ -1547,6 +1590,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+
 - Note: Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`
 
 ## 213. Raiding Productivity
@@ -1559,6 +1603,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 50:  (0.5 g/s) Tatars
+
 - Note: Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 g/s, but a slightly lower value
 
 ## 214. Mercenary Kipchak Count
@@ -1571,6 +1616,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 10:  after a Cuman ally researches Cuman Mercenaries
+
 - Note: Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource
 
 ## 215. Mercenary Kipchak Limit
@@ -1591,6 +1637,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1:  Default
     - 1.57:  Tatars
+
 - Note: Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Tatars, This is compensated for by reducing villager work rate by 57%
 
 ## 217. Shared Line of Sight
@@ -1609,6 +1656,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1:  Default
     - 2:  Cumans
+
 - Note: Since generic civs don't get access to TCs in feudal, the 10k amount doesn't matter, but if you're trying to make a map where you want people to be able to make TCs in feudal, make sure to set this value to 10k for cumans!
 
 ## 219. Fishing Productivity
@@ -1620,6 +1668,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate
 
 ## 220. Unused Resource 220
@@ -1637,6 +1686,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  In KoTH games
+
 - Note: The amount of resources obtained by owning a monument is `0.7925 * food_trickle_from_monument`
 
 ## 222. Monument Wood Productivity
@@ -1648,6 +1698,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  In KoTH games
+
 - Note: The amount of resources obtained by owning a monument is `0.7925 * wood_trickle_from_monument`
 
 ## 223. Monument Stone Productivity
@@ -1659,6 +1710,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  In KoTH games
+
 - Note: The amount of resources obtained by owning a monument is `0.7925 * stone_trickle_from_monument`
 
 ## 224. Monument Gold Productivity
@@ -1670,6 +1722,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  In KoTH games
+
 - Note: The amount of resources obtained by owning a monument is `0.7925 * gold_trickle_from_monument`
 
 ## 225. Relic Food Production Rate
@@ -1683,6 +1736,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 30:  Burgundians
     - 15:  Burgundians after getting hit with Atheism
+
 ## 226. Villagers Killed by Gaia
 
 - ID: 226
@@ -1755,6 +1809,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 2:  (0.02 g/s per farmer) after Burgundian Vineyards
+
 - Note: Only generates gold while collecting food from farms, and not when walking on them down
 
 ## 237. Folwark Collection Amount
@@ -1774,6 +1829,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 41.25:  Poles with Heavy Plow & Chinese Ally
     - 55:  Poles with Crop Rotation
     - 60.5:  Poles with Crop Rotation & Chinese Ally
+
 ## 238. Folwark Attribute Type
 
 - ID: 238
@@ -1784,6 +1840,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Poles
     - -1:  Default
+
 ## 239. Folwark Building Type
 
 - ID: 239
@@ -1794,6 +1851,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 68:  (Mill) Poles
     - -1:  Default
+
 ## 240. Units Converted
 
 - ID: 240
@@ -1812,6 +1870,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 18:  Poles
     - 20.7:  Poles with Stone Mining
     - 23.805:  Poles with Stone Shaft Mining
+
 ## 242. Trade Workshop Food Productivity
 
 - ID: 242
@@ -1821,6 +1880,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`
 
 ## 243. Trade Workshop Wood Productivity
@@ -1832,6 +1892,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`
 
 ## 244. Trade Workshop Stone Productivity
@@ -1843,6 +1904,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+
 - Note: The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`
 
 ## 245. Trade Workshop Gold Productivity
@@ -1854,6 +1916,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
+
 - Note: The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`
 
 ## 246. Units Value Total
@@ -1885,11 +1948,8 @@ This page is a list of all the player resources in the scenario editor and their
 - Purpose: Amount of villagers that *entered* an idle state since game start
 
 - Note: 
-
     1. This only updates every 5 physical minutes.
-
     2. The number of villagers that *entered* an idle state since the last updated is added to this resource.
-
     3. Starting villager count is the initial value
 
 ## 250. Villagers Idle Seconds Total
@@ -1899,11 +1959,8 @@ This page is a list of all the player resources in the scenario editor and their
 - Purpose: Amount of total seconds all villagers have been idle since game start
 
 - Note: 
-
     1. This only updates every 5 physical minutes.
-
     2. The idle time in seconds for all villagers since the last time this resource was updated is added  to this resource.
-
     3. A villager immediately adds its own idle time to this resource if it dies
 
 ## 251. Trade Food Percent
@@ -1916,6 +1973,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 10:  Bengalis
+
 ## 252. Trade Wood Percent
 
 - ID: 252
@@ -1925,6 +1983,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+
 ## 253. Trade Stone Percent
 
 - ID: 253
@@ -1934,6 +1993,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+
 ## 254. Livestock Food Productivity
 
 - ID: 254
@@ -1944,6 +2004,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 3.5:  (0.0583 f/s per herdable) Gurjaras
+
 ## 255. Speed Up Building Type
 
 - ID: 255
@@ -1953,6 +2014,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1754:  (Caravanserai) Default
+
 - Note: See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
@@ -1978,6 +2040,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 8:  Default
+
 - Note: See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
@@ -2003,6 +2066,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0.2:  Default
+
 - Note: For each of the attributes that work with this resource, the new value to set is determined using the following formulae:
 
     (013) `new_workrate = original + value`
@@ -2036,6 +2100,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 919:  (Trade Cart class) Default
+
 - Note: See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
@@ -2061,6 +2126,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 5:  (Movement Speed) Default
+
 - Note: See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
@@ -2086,6 +2152,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 109:  (Regeneration Rate) Default
+
 - Note: See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
@@ -2111,6 +2178,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 60:  Default
+
 - Note: See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
@@ -2137,6 +2205,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
     - 1:  Bengalis
+
 ## 263. Starting Scout ID
 
 - ID: 263
@@ -2148,6 +2217,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 448:  (Scout Cavalry) Default
     - 751:  (Eagle Scout) Aztecs, Incas and Mayans
     - 1755:  (Camel Scout) Gurjaras
+
 ## 264. Relic Wood Production Rate
 
 - ID: 264
@@ -2157,6 +2227,7 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+
 - Note: This is not affected by Atheism
 
 ## 265. Relic Stone Production Rate
@@ -2180,6 +2251,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 1.8:  (0.018 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe
     - 2.16:  (0.0216 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw
     - 2.376:  (0.02376 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw & Two-Man Saw
+
 - Note: Only generates gold while collecting wood from trees, and not when cutting them down
 
 ## 267. Unused Resource 267
