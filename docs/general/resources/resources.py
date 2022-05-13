@@ -50,7 +50,9 @@ with open("./res_desc.json") as file:
         # if data[resource]['defaults']:
         #     md+="\n- Default Values:\n"
         # for value in data[resource]['defaults']:
-        #     md+=f"\n    - {value}: {data[resource]['defaults'][value]}\n"
+        #     md+=f"\n    - {value}: {data[resource]['defaults'][value]}"
+        # if data[resource]['defaults']:
+        #     md += "\n"
         # if data[resource]['note']:
         #     md+= f"\n- Note: {data[resource]['note']}\n"
         # md+="\"\"\"\n"
