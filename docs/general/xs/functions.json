@@ -1023,7 +1023,7 @@
             "name": "xsGetVictoryType",
             "return_type": "int",
             "params": [],
-            "desc": "Returns an integer corresponding to different victory settings ingame. These are:\n\n 0: Standard\n\n1: Consquest\n\n2: Time Limit\n\n3: Score\n\n4: Custom (scenarios only).\n\nLast Man Standing returns 0 as well."
+            "desc": "Returns an integer corresponding to different victory settings ingame. These are:\n\n 0: Standard\n\n1: Conquest\n\n2: Time Limit\n\n3: Score\n\n4: Custom (scenarios only).\n\nLast Man Standing returns 0 as well."
         },
         {
             "name": "xsGetVictoryPlayer",
@@ -1032,10 +1032,34 @@
             "desc": "Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument."
         },
         {
+            "name": "xsGetVictoryPlayerForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH"
+        },
+        {
             "name": "xsGetVictoryTime",
             "return_type": "int",
             "params": [],
-            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining"
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
+        },
+        {
+            "name": "xsGetVictoryTimeForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
+        },
+        {
+            "name": "xsGetVictoryCondition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
+        },
+        {
+            "name": "xsGetVictoryConditionForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
         },
         {
             "name": "xsGetPlayerNumberOfTechs",
@@ -1230,6 +1254,44 @@
                 }
             ],
             "desc": "Returns a boolean based on whether the technology was researched or not."
+        },
+        {
+            "name": "xsGetObjectCount",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object count for"
+                },
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the count for"
+                }
+            ],
+            "desc": "Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake."
+        },
+        {
+            "name": "xsGetObjectCountTotal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object count for"
+                },
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the count for"
+                }
+            ],
+            "desc": "Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake."
         }
     ],
     "Read/Write": [
@@ -1346,7 +1408,7 @@
                     "desc": "0 indexed byte offset to determine which byte to read and return from the file"
                 }
             ],
-            "desc": "This is the byte (0-indexed) of the file that the next read function will start reading from."
+            "desc": "Sets the byte (0-indexed) of the file that the next read function will start reading from."
         },
         {
             "name": "xsOffsetFilePosition",
@@ -1372,6 +1434,31 @@
             "return_type": "bool",
             "params": [],
             "desc": "Close the currently opened or created file. Returns `#!cpp true` if the file was successfully closed"
+        },
+        {
+            "name": "xsGetFilePosition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the byte (0-indexed) of the file that the next read function will start reading from."
+        },
+        {
+            "name": "xsGetDataTypeSize",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "required": true,
+                    "desc": "One of the `cOffsetXXX` constants may be used as a parameter"
+                }
+            ],
+            "desc": "Returns the number of bytes used to store a given type value."
+        },
+        {
+            "name": "xsGetFileSize",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the size (in bytes) of the currently open file"
         }
     ],
     "Functions With Seemingly No Practical Use": [

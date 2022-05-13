@@ -770,7 +770,33 @@ Prototype: `#!cpp int xsGetNumPlayers()`
 
 Returns the number of players in the game
 
-### 5.9. xsGetPlayerCivilization
+### 5.9. xsGetObjectCount
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetObjectCount(int playerId, int id)`
+
+Parameters:
+
+1.  `#!cpp int playerId`: The player to get the object count for
+2.  `#!cpp int id`: The ID of the object to get the count for
+
+Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake.
+
+### 5.10. xsGetObjectCountTotal
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetObjectCountTotal(int playerId, int id)`
+
+Parameters:
+
+1.  `#!cpp int playerId`: The player to get the object count for
+2.  `#!cpp int id`: The ID of the object to get the count for
+
+Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake.
+
+### 5.11. xsGetPlayerCivilization
 
 Returning Type: `#!cpp int`
 
@@ -782,7 +808,7 @@ Parameters:
 
 Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs
 
-### 5.10. xsGetPlayerInGame
+### 5.12. xsGetPlayerInGame
 
 Returning Type: `#!cpp bool`
 
@@ -794,7 +820,7 @@ Parameters:
 
 Returns true if the player given is still alive, and false otherwise.
 
-### 5.11. xsGetPlayerNumberOfTechs
+### 5.13. xsGetPlayerNumberOfTechs
 
 Returning Type: `#!cpp int`
 
@@ -806,7 +832,7 @@ Parameters:
 
 Returns the number of technologies available to the player in the entire game.
 
-### 5.12. xsGetRandomNumber
+### 5.14. xsGetRandomNumber
 
 Returning Type: `#!cpp int`
 
@@ -815,7 +841,7 @@ Prototype: `#!cpp int xsGetRandomNumber()`
 
 Returns a random number between 0 and 32766.
 
-### 5.13. xsGetRandomNumberLH
+### 5.15. xsGetRandomNumberLH
 
 Returning Type: `#!cpp int`
 
@@ -828,7 +854,7 @@ Parameters:
 
 Returns a random number between `low` and `high`
 
-### 5.14. xsGetRandomNumberMax
+### 5.16. xsGetRandomNumberMax
 
 Returning Type: `#!cpp int`
 
@@ -840,7 +866,7 @@ Parameters:
 
 Returns a random number between 0 and `max`.
 
-### 5.15. xsGetTime
+### 5.17. xsGetTime
 
 Returning Type: `#!cpp int`
 
@@ -849,7 +875,25 @@ Prototype: `#!cpp int xsGetTime()`
 
 Returns the current game time - 1 in seconds
 
-### 5.16. xsGetVictoryPlayer
+### 5.18. xsGetVictoryCondition
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryCondition()`
+
+
+Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
+
+### 5.19. xsGetVictoryConditionForSecondaryGameMode
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryConditionForSecondaryGameMode()`
+
+
+Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
+
+### 5.20. xsGetVictoryPlayer
 
 Returning Type: `#!cpp int`
 
@@ -858,16 +902,34 @@ Prototype: `#!cpp int xsGetVictoryPlayer()`
 
 Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument.
 
-### 5.17. xsGetVictoryTime
+### 5.21. xsGetVictoryPlayerForSecondaryGameMode
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryPlayerForSecondaryGameMode()`
+
+
+Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH
+
+### 5.22. xsGetVictoryTime
 
 Returning Type: `#!cpp int`
 
 Prototype: `#!cpp int xsGetVictoryTime()`
 
 
-For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining
+For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
 
-### 5.18. xsGetVictoryType
+### 5.23. xsGetVictoryTimeForSecondaryGameMode
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetVictoryTimeForSecondaryGameMode()`
+
+
+For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
+
+### 5.24. xsGetVictoryType
 
 Returning Type: `#!cpp int`
 
@@ -878,7 +940,7 @@ Returns an integer corresponding to different victory settings ingame. These are
 
  0: Standard
 
-1: Consquest
+1: Conquest
 
 2: Time Limit
 
@@ -888,7 +950,7 @@ Returns an integer corresponding to different victory settings ingame. These are
 
 Last Man Standing returns 0 as well.
 
-### 5.19. xsPlayerAttribute
+### 5.25. xsPlayerAttribute
 
 Returning Type: `#!cpp float`
 
@@ -901,7 +963,7 @@ Parameters:
 
 Returns the amount the specified resource of the given player.
 
-### 5.20. xsResearchTechnology
+### 5.26. xsResearchTechnology
 
 Returning Type: `#!cpp bool`
 
@@ -916,7 +978,7 @@ Parameters:
 
 Returns a boolean based on whether the technology was researched or not.
 
-### 5.21. xsSetPlayerAttribute
+### 5.27. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -930,7 +992,7 @@ Parameters:
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.22. xsSetTriggerVariable
+### 5.28. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -943,7 +1005,7 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.23. xsTriggerVariable
+### 5.29. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 
@@ -978,7 +1040,37 @@ Parameters:
 
 Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created
 
-### 6.3. xsOffsetFilePosition
+### 6.3. xsGetDataTypeSize
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetDataTypeSize(int type)`
+
+Parameters:
+
+1.  `#!cpp int type`: One of the `cOffsetXXX` constants may be used as a parameter
+
+Returns the number of bytes used to store a given type value.
+
+### 6.4. xsGetFilePosition
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetFilePosition()`
+
+
+Gets the byte (0-indexed) of the file that the next read function will start reading from.
+
+### 6.5. xsGetFileSize
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetFileSize()`
+
+
+Gets the size (in bytes) of the currently open file
+
+### 6.6. xsOffsetFilePosition
 
 Returning Type: `#!cpp bool`
 
@@ -991,7 +1083,7 @@ Parameters:
 
 Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 
-### 6.4. xsOpenFile
+### 6.7. xsOpenFile
 
 Returning Type: `#!cpp bool`
 
@@ -1003,7 +1095,7 @@ Parameters:
 
 Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened
 
-### 6.5. xsReadFloat
+### 6.8. xsReadFloat
 
 Returning Type: `#!cpp float`
 
@@ -1012,7 +1104,7 @@ Prototype: `#!cpp float xsReadFloat()`
 
 Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes
 
-### 6.6. xsReadInt
+### 6.9. xsReadInt
 
 Returning Type: `#!cpp int`
 
@@ -1021,7 +1113,7 @@ Prototype: `#!cpp int xsReadInt()`
 
 Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes
 
-### 6.7. xsReadString
+### 6.10. xsReadString
 
 Returning Type: `#!cpp string`
 
@@ -1030,7 +1122,7 @@ Prototype: `#!cpp string xsReadString()`
 
 Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string
 
-### 6.8. xsReadVector
+### 6.11. xsReadVector
 
 Returning Type: `#!cpp vector`
 
@@ -1039,7 +1131,7 @@ Prototype: `#!cpp vector xsReadVector()`
 
 Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes
 
-### 6.9. xsSetFilePosition
+### 6.12. xsSetFilePosition
 
 Returning Type: `#!cpp bool`
 
@@ -1049,9 +1141,9 @@ Parameters:
 
 1.  `#!cpp int byteOffset`: 0 indexed byte offset to determine which byte to read and return from the file
 
-This is the byte (0-indexed) of the file that the next read function will start reading from.
+Sets the byte (0-indexed) of the file that the next read function will start reading from.
 
-### 6.10. xsWriteFloat
+### 6.13. xsWriteFloat
 
 Returning Type: `#!cpp bool`
 
@@ -1063,7 +1155,7 @@ Parameters:
 
 Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
 
-### 6.11. xsWriteInt
+### 6.14. xsWriteInt
 
 Returning Type: `#!cpp bool`
 
@@ -1075,7 +1167,7 @@ Parameters:
 
 Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the integer was successfully written. Integers are written as signed 32 bit numbers
 
-### 6.12. xsWriteString
+### 6.15. xsWriteString
 
 Returning Type: `#!cpp bool`
 
@@ -1087,7 +1179,7 @@ Parameters:
 
 Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is made up of two parts, an unsigned 32 bit integer (the length of the string) followed by that many bytes making up the actual characters of the string
 
-### 6.13. xsWriteVector
+### 6.16. xsWriteVector
 
 Returning Type: `#!cpp bool`
 

@@ -82,6 +82,36 @@
             "usage": null
         }
     ],
+    "victory conditions": [
+        {
+            "name": "cStandardVictory",
+            "value": 100,
+            "type": "int",
+            "desc": "one of the values returned by the `xsGetVictoryCondition` function",
+            "usage": null
+        },
+        {
+            "name": "cWonderVictory",
+            "value": 101,
+            "type": "int",
+            "desc": "one of the values returned by the `xsGetVictoryCondition` function",
+            "usage": null
+        },
+        {
+            "name": "cRelicVictory",
+            "value": 102,
+            "type": "int",
+            "desc": "one of the values returned by the `xsGetVictoryCondition` function",
+            "usage": null
+        },
+        {
+            "name": "cKingOfTheHillVictory",
+            "value": 103,
+            "type": "int",
+            "desc": "one of the values returned by the `xsGetVictoryCondition` function",
+            "usage": null
+        }
+    ],
     "civs": [
         { 
             "name": "cGaia",
