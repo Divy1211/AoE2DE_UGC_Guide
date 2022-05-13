@@ -46,15 +46,13 @@ with open("./res_desc.json") as file:
             md+= f"- Note: {data[resource]['note']}\n\n"
         
         # md+=f"{validify(data[resource]['name'])} = {resource}\n\"\"\"\n" + \
-        #     f"- Purpose: {data[resource]['desc']}\n\n"
+        #     f"- Purpose: {data[resource]['desc']}\n"
         # if data[resource]['defaults']:
-        #     md+="- Default Values:\n\n"
+        #     md+="\n- Default Values:\n"
         # for value in data[resource]['defaults']:
-        #     md+=f"    - {value}: {data[resource]['defaults'][value]}\n"
-        # if data[resource]['defaults']:
-        #     md += "\n"
+        #     md+=f"\n    - {value}: {data[resource]['defaults'][value]}\n"
         # if data[resource]['note']:
-        #     md+= f"- Note: {data[resource]['note']}\n"
+        #     md+= f"\n- Note: {data[resource]['note']}\n"
         # md+="\"\"\"\n"
 
 
