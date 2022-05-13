@@ -2010,13 +2010,29 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 249
 
-- Purpose: Unknown
+- Purpose: Amount of villagers that *entered* an idle state since game start
+
+- Note: 
+
+    1. This only updates every 5 physical minutes.
+
+    2. The number of villagers that *entered* an idle state since the last updated is added to this resource.
+
+    3. Starting villager count is the initial value
 
 ## 250. Villagers Idle Seconds Total
 
 - ID: 250
 
-- Purpose: Unknown
+- Purpose: Amount of total seconds all villagers have been idle since game start
+
+- Note: 
+
+    1. This only updates every 5 physical minutes.
+
+    2. The idle time in seconds for all villagers since the last time this resource was updated is added  to this resource.
+
+    3. A villager immediately adds its own idle time to this resource if it dies
 
 ## 251. Trade Food Percent
 
@@ -2118,13 +2134,21 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 257
 
-- Purpose: This amount is added to the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect
+- Purpose: The formulae given below are used with this resource as the `value` to adjust the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect
 
 - Default Values:
 
     - 0.2:  Default
 
-- Note: See also:
+- Note: For each of the attributes that work with this resource, the new value to set is determined using the following formulae:
+
+    (013) `new_workrate = original + value`
+
+    (005) `new_movement_speed = original * (1 + value)`
+
+    (109) `new_regeneration_rate = original + (3600/value)`
+
+    See also:
 
     [Speed Up Building Type](./#255-speed-up-building-type)
 

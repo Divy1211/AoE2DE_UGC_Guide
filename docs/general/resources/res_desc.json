@@ -1686,15 +1686,15 @@
     },
     "249": {
         "name": "Villagers Idle Periods Total",
-        "desc": "Unknown",
+        "desc": "Amount of villagers that *entered* an idle state since game start",
         "defaults": {},
-        "note": ""
+        "note": "\n\n    1. This only updates every 5 physical minutes.\n\n    2. The number of villagers that *entered* an idle state since the last updated is added to this resource.\n\n    3. Starting villager count is the initial value"
     },
     "250": {
         "name": "Villagers Idle Seconds Total",
-        "desc": "Unknown",
+        "desc": "Amount of total seconds all villagers have been idle since game start",
         "defaults": {},
-        "note": ""
+        "note": "\n\n    1. This only updates every 5 physical minutes.\n\n    2. The idle time in seconds for all villagers since the last time this resource was updated is added  to this resource.\n\n    3. A villager immediately adds its own idle time to this resource if it dies"
     },
     "251": {
         "name": "Trade Food Percent",
@@ -1748,11 +1748,11 @@
     },
     "257": {
         "name": "Speed Up Percentage",
-        "desc": "This amount is added to the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect",
+        "desc": "The formulae given below are used with this resource as the `value` to adjust the attribute ([Speed Up Effect Type](#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](#258-speed-up-object-type)) when they are in the range of the speed up effect",
         "defaults": {
             "0.2": " Default"
         },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "note": "For each of the attributes that work with this resource, the new value to set is determined using the following formulae:\n\n    (013) `new_workrate = original + value`\n\n    (005) `new_movement_speed = original * (1 + value)`\n\n    (109) `new_regeneration_rate = original + (3600/value)`\n\n    See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
     },
     "258": {
         "name": "Speed Up Object Type",

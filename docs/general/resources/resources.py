@@ -72,7 +72,8 @@ for i in range(1, 9):
 for i in range(len(linkso)):
     md = md.replace(linkso[i], links[i])
 
-
-
 with open("./resources.md", "w") as file:
     file.write(md)
+
+# with open("./resources_t.md", "w") as file:
+#     file.write(md)
