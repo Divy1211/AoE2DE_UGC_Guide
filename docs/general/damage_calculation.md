@@ -102,109 +102,109 @@ For calculating the total amount of damage that this unupgraded Halberdier deals
 
     Melee Damage Class:
 
-    $dmg_4 =  \color{#ff6961}max( \color{#bfe3b4} At_4-\color{yellow} Ar_4, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_4 =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_4-\color{yellow} Ar_4, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_4 = \color{#ff6961}max( \color{#bfe3b4} 6-\color{yellow} 1, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_4 = \color{#ff6961}\text{max}( \color{#bfe3b4} 6-\color{yellow} 1, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_4 = \color{#ff6961}max( \color{#bfe3b4} 5, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_4 = \color{#ff6961}\text{max}( \color{#bfe3b4} 5, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_4 = \color{#ff6961} 5$
+    $\text{dmg}_4 = \color{#ff6961} 5$
 
     War Elephant Damage Class:
 
-    $dmg_5 =  \color{#ff6961}max( \color{#bfe3b4} At_5-\color{yellow} Ar_5, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_5 =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_5-\color{yellow} Ar_5, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_5 = \color{#ff6961}max( \color{#bfe3b4} 28-\color{yellow} 0, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_5 = \color{#ff6961}\text{max}( \color{#bfe3b4} 28-\color{yellow} 0, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_5 = \color{#ff6961}max( \color{#bfe3b4} 28, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_5 = \color{#ff6961}\text{max}( \color{#bfe3b4} 28, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_5 = \color{#ff6961} 28$
+    $\text{dmg}_5 = \color{#ff6961} 28$
 
     Cavalry Damage Class:
 
-    $dmg_8 =  \color{#ff6961}max( \color{#bfe3b4} Ar_8-\color{yellow} At_8, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_8 =  \color{#ff6961}\text{max}( \color{#bfe3b4} Ar_8-\color{yellow} At_8, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_8 = \color{#ff6961}max( \color{#bfe3b4} 32-\color{yellow} 0, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_8 = \color{#ff6961}\text{max}( \color{#bfe3b4} 32-\color{yellow} 0, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_8 = \color{#ff6961}max( \color{#bfe3b4} 32, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_8 = \color{#ff6961}\text{max}( \color{#bfe3b4} 32, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_8 = \color{#ff6961} 32$
+    $\text{dmg}_8 = \color{#ff6961} 32$
 
 3. For each attack class of the attacking unit for which there is no armour class for the defending unit, we use the base armour value to calculate how much attack needs to be dealt.
 
     Ships & Saboteers Damage Class:
 
-    $dmg_{16} =  \color{#ff6961}max( \color{#bfe3b4} At_{16}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{16} =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_{16}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{16} = \color{#ff6961}max( \color{#bfe3b4} 17-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{16} = \color{#ff6961}\text{max}( \color{#bfe3b4} 17-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{16} = \color{#ff6961}max( \color{#bfe3b4} -983, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{16} = \color{#ff6961}\text{max}( \color{#bfe3b4} -983, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{16} = \color{#ff6961} 0$
+    $\text{dmg}_{16} = \color{#ff6961} 0$
 
     Standard Buildings:
 
-    $dmg_{21} =  \color{#ff6961}max( \color{#bfe3b4} At_{21}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{21} =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_{21}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{21} = \color{#ff6961}max( \color{#bfe3b4} 1-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{21} = \color{#ff6961}\text{max}( \color{#bfe3b4} 1-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{21} = \color{#ff6961}max( \color{#bfe3b4} -999, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{21} = \color{#ff6961}\text{max}( \color{#bfe3b4} -999, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{21} = \color{#ff6961} 0$
+    $\text{dmg}_{21} = \color{#ff6961} 0$
 
     Eagle Warriors:
 
-    $dmg_{29} =  \color{#ff6961}max( \color{#bfe3b4} At_{29}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{29} =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_{29}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{29} = \color{#ff6961}max( \color{#bfe3b4} 1-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{29} = \color{#ff6961}\text{max}( \color{#bfe3b4} 1-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{29} = \color{#ff6961}max( \color{#bfe3b4} -999, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{29} = \color{#ff6961}\text{max}( \color{#bfe3b4} -999, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{29} = \color{#ff6961} 0$
+    $\text{dmg}_{29} = \color{#ff6961} 0$
 
     Camels:
 
-    $dmg_{30} =  \color{#ff6961}max( \color{#bfe3b4} At_{30}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{30} =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_{30}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{30} = \color{#ff6961}max( \color{#bfe3b4} 26-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{30} = \color{#ff6961}\text{max}( \color{#bfe3b4} 26-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{30} = \color{#ff6961}max( \color{#bfe3b4} -974, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{30} = \color{#ff6961}\text{max}( \color{#bfe3b4} -974, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{30} = \color{#ff6961} 0$
-
-    Fishing Ships:
-
-    $dmg_{34} =  \color{#ff6961}max( \color{#bfe3b4} At_{34}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
-
-    $dmg_{34} = \color{#ff6961}max( \color{#bfe3b4} 17-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
-
-    $dmg_{34} = \color{#ff6961}max( \color{#bfe3b4} -983, \; \color{white} 0 \color{#ff6961})$
-
-    $dmg_{34} = \color{#ff6961} 0$
+    $\text{dmg}_{30} = \color{#ff6961} 0$
 
     Fishing Ships:
 
-    $dmg_{35} =  \color{#ff6961}max( \color{#bfe3b4} At_{35}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{34} =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_{34}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{35} = \color{#ff6961}max( \color{#bfe3b4} 11-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{34} = \color{#ff6961}\text{max}( \color{#bfe3b4} 17-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{35} = \color{#ff6961}max( \color{#bfe3b4} -989, \; \color{white} 0 \color{#ff6961})$
+    $\text{dmg}_{34} = \color{#ff6961}\text{max}( \color{#bfe3b4} -983, \; \color{white} 0 \color{#ff6961})$
 
-    $dmg_{35} = \color{#ff6961} 0$
+    $\text{dmg}_{34} = \color{#ff6961} 0$
+
+    Fishing Ships:
+
+    $\text{dmg}_{35} =  \color{#ff6961}\text{max}( \color{#bfe3b4} At_{35}-\color{yellow} Ba, \; \color{white} 0 \color{#ff6961})$
+
+    $\text{dmg}_{35} = \color{#ff6961}\text{max}( \color{#bfe3b4} 11-\color{yellow} 1000, \; \color{white} 0 \color{#ff6961})$
+
+    $\text{dmg}_{35} = \color{#ff6961}\text{max}( \color{#bfe3b4} -989, \; \color{white} 0 \color{#ff6961})$
+
+    $\text{dmg}_{35} = \color{#ff6961} 0$
 
     Trick: Remember, the value for `Base Armour` is almost always 1000, so unless the unit has an attack of more than 1000 in an attack class, they practically have no effect on the amount of damage dealt! This above calculation with base armour can thus be skipped if that is the case
 
 4. Now add all of the differences found above. Round up to 1 if you get 0.
 
-    $dmg = \color{#add8e6} max( \color{#bfe3b4} dmg_4 + dmg_5 + dmg_8 +$
+    $\text{dmg} = \color{#add8e6} \text{max}( \color{#bfe3b4} \text{dmg}_4 + \text{dmg}_5 + \text{dmg}_8 +$
     
-    $\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\color{#bfe3b4}dmg_{16} + dmg_{21} + dmg_{29} + dmg_{30} + dmg_{34} + dmg_{35}, \; \color{#bfe3b4} 1 \color{#add8e6})$
+    $\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\color{#bfe3b4}\text{dmg}_{16} + \text{dmg}_{21} + \text{dmg}_{29} + \text{dmg}_{30} + \text{dmg}_{34} + \text{dmg}_{35}, \; \color{#bfe3b4} 1 \color{#add8e6})$
 
-    $dmg = \color{#add8e6} max( \color{#bfe3b4} 5+28+32+0, \; \color{#bfe3b4} 1 \color{#add8e6})$
+    $\text{dmg} = \color{#add8e6} \text{max}( \color{#bfe3b4} 5+28+32+0, \; \color{#bfe3b4} 1 \color{#add8e6})$
 
-    $dmg = \color{#add8e6} max( \color{#bfe3b4} 65, \; \color{#bfe3b4} 1 \color{#add8e6})$
+    $\text{dmg} = \color{#add8e6} \text{max}( \color{#bfe3b4} 65, \; \color{#bfe3b4} 1 \color{#add8e6})$
 
-    $dmg = 65$
+    $\text{dmg} = 65$
 
 5. The value thus obtained is the damage that the Halberdier deals to the War Elephant.
 
@@ -222,8 +222,8 @@ $\color{yellow} Ar_i$ is quantity of the armour class with id $i$ for the defend
 then:
 
 $$
-dmg =  \color{#ff6961} max( \color{#a66fb5} \sum\limits_{\forall \; i \; \in D}^{}
-                               \color{#add8e6}max( \color{#bfe3b4} At_i-\color{yellow} Ar_i, \; \color{white} 0 \color{#add8e6}), \;
+\text{dmg} =  \color{#ff6961} \text{max}( \color{#a66fb5} \sum\limits_{\forall \; i \; \in D}^{}
+                               \color{#add8e6}\text{max}( \color{#bfe3b4} At_i-\color{yellow} Ar_i, \; \color{white} 0 \color{#add8e6}), \;
                                \color{white} 1 \color{#ff6961})
 $$
 
@@ -257,7 +257,7 @@ For calculating the total amount of damage that this unupgraded War Elephant dea
 
 The only common damage class is `Base Melee (4)` (highlighted in the table above)
 
-This means that the damage that the War Elephant does to the Halberdier is simply given by $dmg = 15-1 = 14$ (The calculation with the base armour is not shown here since no attack class has an attack of more than 1000 to overecome the base armour)
+This means that the damage that the War Elephant does to the Halberdier is simply given by $\text{dmg} = 15-1 = 14$ (The calculation with the base armour is not shown here since no attack class has an attack of more than 1000 to overecome the base armour)
 
 ```py
 damage = 0
@@ -298,4 +298,4 @@ A2. One of the unused damage classes can be used for this purpose. Giving the de
 
 ### 3.6. The Sicilian 50% Bonus Damage Reduction
 
-The damage from all classes except the `Base Pierce (3)`, `Base Melee (4)` and `Leitis (31)` is multiplied by 0.5 before it is added to the total damage for Sicilian units. This property of bonus damage resistance is controlled by the [Bonus Damage Resist](../attributes/#24-bonus-damage-resist "Jump to: Game Mechanics > Attributes > Bonus Damage Resist") attribute of a unit. (Yes, every single unit can have a different value for this)
+The damage from all classes except the `Base Pierce (3)`, `Base Melee (4)` and `Leitis (31)` is multiplied by 0.5 before it is added to the total damage for Sicilian units. This property of bonus damage resistance is controlled by the [Bonus Damage Resist](../attributes/attributes/#24-bonus-damage-resistance "Jump to: Game Mechanics > Attributes > Bonus Damage Resist") attribute of a unit. (Yes, every single unit can have a different value for this)
