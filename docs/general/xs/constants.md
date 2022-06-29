@@ -1522,11 +1522,11 @@ Value: `#!cpp int 942`
 
 This is the ID used to target the Relic Class
 
-### 10.44. cMonKWithRelicClass
+### 10.44. cMonkWithRelicClass
 
 Value: `#!cpp int 943`
 
-This is the ID used to target the Mon K With Relic Class
+This is the ID used to target the Monk With Relic Class
 
 ### 10.45. cHandCannoneerClass
 

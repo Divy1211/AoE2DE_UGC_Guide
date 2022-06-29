@@ -1685,7 +1685,7 @@
             "usage": null
         },
         {
-            "name": "cMonKWithRelicClass",
+            "name": "cMonkWithRelicClass",
             "value": 943,
             "type": "int",
             "desc": "This is the ID used to target the CLASS_NAME",
