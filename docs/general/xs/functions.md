@@ -1177,7 +1177,7 @@ Parameters:
 
 1.  `#!cpp string data`: The string to write
 
-Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is made up of two parts, an unsigned 32 bit integer (the length of the string) followed by that many bytes making up the actual characters of the string
+Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
 
 ### 6.16. xsWriteVector
 
