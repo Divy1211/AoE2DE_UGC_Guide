@@ -9,9 +9,9 @@ Any new bugs discovered will be added to the list. This list will also be update
 
 If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the [About](../../../../) page for relevant information about the authors.
 
-Game Version: `101.101.61591.0 8647032`
+Game Version: `101.102.5558.0 (#71094) 9717890`
 
-Last Updated: `07.05.2022`
+Last Updated: `08.11.2022`
 
 Game Platform: Steam
 
