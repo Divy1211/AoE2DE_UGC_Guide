@@ -397,6 +397,19 @@
             "Code File": "res_tech.xs",
             "Version Fixed": "",
             "show": true
+        },
+        {
+            "Name": "Object Count Related XS function Do Not Work In RMS",
+            "Description" : "`xsGetObjectCount` and `xsGetObjectCountTotal` cannot be used in RMS",
+            "Expected Behaviour": "These functions should work in an RMS as they do in scenarios",
+            "Reproduction Steps": [
+                "Create a new RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "When a game is played using the XS script included in an RMS, a parsing error is shown"
+            ],
+            "Code File": "obj_cnt.xs",
+            "Version Fixed": "",
+            "show": true
         }
     ],
     "Crashes": [

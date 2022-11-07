@@ -46,3 +46,22 @@ void main() {
 ```
 3. When a game is played using the XS script included in an RMS, a parsing error is shown
 
+### 3. Object Count Related XS function Do Not Work In RMS
+
+Description: `xsGetObjectCount` and `xsGetObjectCountTotal` cannot be used in RMS
+
+Expected Behaviour: These functions should work in an RMS as they do in scenarios
+
+Reproduction Steps:
+
+1. Create a new RMS
+2. Create a new XS script with the following code:
+```cpp
+void main() {
+    // these functionds do not work in an RMS
+    xsGetObjectCount(1, 83);
+    xsGetObjectCountTotal(1, 83);
+}
+```
+3. When a game is played using the XS script included in an RMS, a parsing error is shown
+
