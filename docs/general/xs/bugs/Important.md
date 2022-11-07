@@ -1,15 +1,31 @@
-### 1. (UNVERIFIED) XS Files In Mods Are Not Detected
+### 1. XS File Transferring
 
-Description: XS scripts in a mod are not detected by the game.
+Description: 
 
-Expected Behaviour: Any XS scripts included in a mod should be detected by ANY scenario or RMS trying to use them, even if they are not a part of the mod itself.
+1. In a lobby, to other players:
+    1. In an RMS:
+        1. [ ] from the game dir
+        2. [X] from the profile dir
+        3. [X] from the mods (local/subscribed) dir
+    2. In a Scenario:
+        1. [ ] from the game dir
+        2. [X] from the profile dir
+        3. [X] from the mods (local/subscribed) dir
+2. To spectators:
+    1. In an RMS:
+        1. [ ] from the game dir
+        2. [ ] from the profile dir
+        3. [ ] Transfers the directly included XS (using #includeXS) file from the mods (local/subscribed) dir to others, but in the wrong temp folder location
+    2. In a Scenario:
+        1. [ ] from the game dir
+        2. [ ] from the profile dir
+        3. [ ] Transfers the directly included XS (using script file name box) file from the mods (local/subscribed) dir to others, but in the wrong temp folder location
+
+Expected Behaviour: --
 
 Reproduction Steps:
 
-1. Create a new scenario or RMS
-2. Create a local mod with an XS script in the following folder: `PathToModFolder\resources\_common\xs\fileName.xs`
-3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, the `failed to open file` error is shown
+1. --
 
 ### 2. Technology Related XS function Do Not Work In RMS
 
