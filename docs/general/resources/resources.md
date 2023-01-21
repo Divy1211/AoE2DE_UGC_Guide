@@ -2254,11 +2254,16 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Only generates gold while collecting wood from trees, and not when cutting them down
 
-## 267. Unused Resource 267
+## 267. Foraging Wood Productivity
 
 - ID: 267
 
-- Purpose: Unused
+- Purpose: Forager foraging wood generation rate per 100 seconds
+
+- Default Values:
+
+    - 0:  Default
+    - 10.4753:  (0.104753 w/s per forager) Portuguese
 
 ## 268. Unused Resource 268
 
