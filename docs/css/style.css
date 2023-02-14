@@ -1,3 +1,9 @@
+@media screen {
+     [data-md-color-scheme=slate] {
+          --md-default-bg-color: #222;
+     }
+}
+
 .md-header {
      box-shadow: 0px 0px 15px -5px #000000 !important;
 }
@@ -16,10 +22,6 @@ h2 {
 }
 h3, h4 { 
      color: #c0c0c0 !important;
-}
-
-body {
-     background-color: #222222 !important;
 }
 
 .highlighttable .linenos {
