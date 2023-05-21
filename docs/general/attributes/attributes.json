@@ -556,4 +556,41 @@
         "notes": [],
         "flags": {}
     }
+    "111": {
+        "name": "Minimum Conversion Time Modifier",
+        "desc": "Adds to the minimum time to convert the unit",
+        "notes": [],
+        "flags": {}
+    }
+    "112": {
+        "name": "Maximum Conversion Time Modifier",
+        "desc": "Adds to the maximum time to convert the unit",
+        "notes": [],
+        "flags": {}
+    }
+    "113": {
+        "name": "Conversion Chance Modifier",
+        "desc": "Reduces the chance to convert the unit per conversion roll",
+        "notes": [],
+        "flags": {}
+    }
+    "114": {
+        "name": "Formation Category",
+        "desc": "Control where the units in formation",
+        "notes": [],
+        "flags": {
+            "0": "not using formation",
+            "1": "mobile",
+            "2": "body"
+            "3": "ranged"
+            "4": "long ranged"
+            "5": "protected"
+        }
+    }
+    "115": {
+        "name": "Blast Damage",
+        "desc": "Multiplier to the percentage of blast damage the non-directly targeted units receive if positive value, fixed number damage if negative",
+        "notes": [],
+        "flags": {}
+    }
 }
