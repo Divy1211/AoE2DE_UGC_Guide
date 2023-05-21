@@ -264,17 +264,13 @@
         "name": "Blast Attack Level",
         "desc": "A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#45-blast-defense-level \"Jump to: Blast Defense Level\") that are in its blast radius. For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same",
         "notes": [
-            "One of the flags 0-3 can be combined with one of the flags from 4-64 by adding the two values"
+            "One of the flags 0-3 can be combined with one of the flags 64 or 128 by adding the two values"
         ],
         "flags": {
             "0": "damage resources, nearby allied units and tress",
             "1": "damage trees, nearby allied units",
             "2": "damage nearby allied units",
             "3": "damage targeted unit only",
-            "4": "Deal a fixed 5 HP of damage to nearby units",
-            "8": "Deal 50% of unit's own damage to nearby units",
-            "16": "Deal 25% of unit's own damage to nearby units",
-            "32": "Deal 33% of unit's own damage to nearby units",
             "64": "Attenuate damage as distance from the centre of attack increases (infantry only)",
             "128": "Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone"
         }
