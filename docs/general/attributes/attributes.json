@@ -157,8 +157,8 @@
     },
     "24": {
         "name": "Bonus Damage Resistance",
-        "desc": "Used by Sicilians for the 50% bonus damage resistance. Set to 0.5 for all Sicilian land military units except siege",
-        "notes": [],
+        "desc": "Used by Sicilians for the 33% bonus damage resistance. Set to 0.33 for all Sicilian land military units except siege",
+        "notes": [Do not make it greater than 1],
         "flags": {}
     },
     "25": {
@@ -219,6 +219,21 @@
     "32": {
         "name": "Unit Size Z",
         "desc": "This determines the z-size of the unit's collision hitbox (height of the unit)",
+        "notes": [],
+        "flags": {}
+    },
+    "33": {
+        "name": "Can be built on",
+        "desc": "See AGE",
+        "notes": [],
+        "flags": "0": "Default",
+            "1": "Graphic stays at highest elevation until destination is reached",
+            "2": "Graphic is not affected by elevation",
+        }
+    },
+    "34": {
+        "name": "Foundation Terrain",
+        "desc": "Terrain produced under a building when completed",
         "notes": [],
         "flags": {}
     },
@@ -441,6 +456,7 @@
             "4": "Damage the targeted unit's armor (Obuch)",
             "8": "Attack ground ability",
             "16": "Bulk volley release (kipchak/siege weapons)"
+            "32": "Enable task 155 ability (Stronghold castle/Caravanserai/Centurion)"
         }
     },
     "64": {
@@ -484,6 +500,54 @@
         "name": "Projectile Arc",
         "desc": "Controls the maximum height of the fired projectile",
         "notes": [],
+        "flags": {}
+    },
+    "70": {
+        "name": "AttackGraphic",
+        "desc": "Controls the AttackGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "71": {
+        "name": "StandingGraphic",
+        "desc": "Controls the StandingGraphic 1",
+        "notes": [Half of units in group use 1st],
+        "flags": {}
+    },
+    "72": {
+        "name": "Standing2Graphic",
+        "desc": "Controls the StandingGraphic 2",
+        "notes": [The rest use 2nd],
+        "flags": {}
+    },
+    "73": {
+        "name": "DyingGraphic",
+        "desc": "Controls the DyingGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "74": {
+        "name": "UndeadGraphic",
+        "desc": "Controls the UndeadGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "75": {
+        "name": "WalkingGraphic",
+        "desc": "Controls the WalkingGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "76": {
+        "name": "RunningGraphic",
+        "desc": "Controls the RunningGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "77": {
+        "name": "SpecialGraphic",
+        "desc": "Controls the SpecialGraphic",
+        "notes": [Activates depending on special ability],
         "flags": {}
     },
     "100": {
@@ -555,13 +619,13 @@
     "111": {
         "name": "Minimum Conversion Time Modifier",
         "desc": "Adds to the minimum time to convert the unit",
-        "notes": [],
+        "notes": [General units have 4 sec Minimum Conversion Time],
         "flags": {}
     }
     "112": {
         "name": "Maximum Conversion Time Modifier",
         "desc": "Adds to the maximum time to convert the unit",
-        "notes": [],
+        "notes": [General units have 8 sec Maximum Conversion Time],
         "flags": {}
     }
     "113": {
@@ -584,7 +648,7 @@
         }
     }
     "115": {
-        "name": "Blast Damage",
+        "name": "Area Damage",
         "desc": "Multiplier to the percentage of blast damage the non-directly targeted units receive if positive value, fixed number damage if negative",
         "notes": [],
         "flags": {}
