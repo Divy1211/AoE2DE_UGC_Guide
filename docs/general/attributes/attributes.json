@@ -158,7 +158,7 @@
     "24": {
         "name": "Bonus Damage Resistance",
         "desc": "Used by Sicilians for the 33% bonus damage resistance. Set to 0.33 for all Sicilian land military units except siege",
-        "notes": [Do not make it greater than 1],
+        "notes": ["Do not make it greater than 1"],
         "flags": {}
     },
     "25": {
@@ -226,9 +226,10 @@
         "name": "Can be built on",
         "desc": "See AGE",
         "notes": [],
-        "flags": "0": "Default",
-            "1": "Graphic stays at highest elevation until destination is reached",
-            "2": "Graphic is not affected by elevation",
+        "flags": {
+          "0": "Default",
+          "1": "Graphic stays at highest elevation until destination is reached",
+          "2": "Graphic is not affected by elevation"
         }
     },
     "34": {
@@ -455,7 +456,7 @@
             "2": "Resist armour-ignoring attacks",
             "4": "Damage the targeted unit's armor (Obuch)",
             "8": "Attack ground ability",
-            "16": "Bulk volley release (kipchak/siege weapons)"
+            "16": "Bulk volley release (kipchak/siege weapons)",
             "32": "Enable task 155 ability (Stronghold castle/Caravanserai/Centurion)"
         }
     },
@@ -511,13 +512,13 @@
     "71": {
         "name": "StandingGraphic",
         "desc": "Controls the StandingGraphic 1",
-        "notes": [Half of units in group use 1st],
+        "notes": ["Half of units in group use 1st"],
         "flags": {}
     },
     "72": {
         "name": "Standing2Graphic",
         "desc": "Controls the StandingGraphic 2",
-        "notes": [The rest use 2nd],
+        "notes": ["The rest use 2nd"],
         "flags": {}
     },
     "73": {
@@ -547,7 +548,7 @@
     "77": {
         "name": "SpecialGraphic",
         "desc": "Controls the SpecialGraphic",
-        "notes": [Activates depending on special ability],
+        "notes": ["Activates depending on special ability"],
         "flags": {}
     },
     "100": {
@@ -615,25 +616,25 @@
         "desc": "Modifies the population headroom storage of a unit. Negative values = require population (units), positive values = give population (houses). This is not a real attribute that exists in A.G.E., just seems like a way to edit the population heardroom provided by a unit",
         "notes": [],
         "flags": {}
-    }
+    },
     "111": {
         "name": "Minimum Conversion Time Modifier",
         "desc": "Adds to the minimum time to convert the unit",
-        "notes": [General units have 4 sec Minimum Conversion Time],
+        "notes": ["General units have 4 sec Minimum Conversion Time"],
         "flags": {}
-    }
+    },
     "112": {
         "name": "Maximum Conversion Time Modifier",
         "desc": "Adds to the maximum time to convert the unit",
-        "notes": [General units have 8 sec Maximum Conversion Time],
+        "notes": ["General units have 8 sec Maximum Conversion Time"],
         "flags": {}
-    }
+    },
     "113": {
         "name": "Conversion Chance Modifier",
         "desc": "Reduces the chance to convert the unit per conversion roll",
         "notes": [],
         "flags": {}
-    }
+    },
     "114": {
         "name": "Formation Category",
         "desc": "Control where the units in formation",
@@ -641,12 +642,12 @@
         "flags": {
             "0": "not using formation",
             "1": "mobile",
-            "2": "body"
-            "3": "ranged"
-            "4": "long ranged"
+            "2": "body",
+            "3": "ranged",
+            "4": "long ranged",
             "5": "protected"
         }
-    }
+    },
     "115": {
         "name": "Area Damage",
         "desc": "Multiplier to the percentage of blast damage the non-directly targeted units receive if positive value, fixed number damage if negative",
