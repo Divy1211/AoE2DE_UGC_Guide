@@ -2281,4 +2281,8 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 270
 
-- Purpose: Unused
+- Purpose: Determines the Repair Cost of Siege Weapons and Ships
+
+- DeFault Values:
+
+      - 0.5: Default
