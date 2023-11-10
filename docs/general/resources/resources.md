@@ -2277,3 +2277,8 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
+## 270. Unused Resource 270
+
+- ID: 270
+
+- Purpose: Unused
