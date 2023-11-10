@@ -1853,9 +1853,11 @@
         "note": ""
     },
     "270": {
-        "name": "Unused Resource 270",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Repair Cost of Siege Weapons and Ships",
+        "desc": "Effects the repair cost of siege weapons and ships",
+        "defaults": {
+            "0.5": " Default"
+        },
         "note": ""
     }
 }
