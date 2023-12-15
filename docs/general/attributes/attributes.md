@@ -176,7 +176,9 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 24
 
- - Used by Sicilians for the 50% bonus damage resistance. Set to 0.5 for all Sicilian land military units except siege
+ - Used by Sicilians for the 33% bonus damage resistance. Set to 0.33 for all Sicilian land military units except siege
+
+ - Do not make it greater than 1
 
 ## 25. Icon ID
 
@@ -245,6 +247,35 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - This determines the z-size of the unit's collision hitbox (height of the unit)
 
+ - Setting this to 0 allows other units to walk over this unit
+
+    Does this still control the HP bar location as specified in A.G.E.?
+
+## 33. Can Be Built On
+
+ - ID: 33
+
+ - Determines if a building foundation can be placed on top of a unit
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Disallow unit to be built on. This is the value for almost all units | 0 | 
+    | Allow unit to be built on. This is the value for corpses, rubble, eye candy | 1 | 
+
+## 34. Foundation Terrain
+
+ - ID: 34
+
+ - This is the ID of the terrain created under a building when its construction is finished
+
+ - Only affects units of Type 80 (Building)
+
+    
+
+    | Property | Flag Value |
+    | :- | -: |
+    | No terrain change | -1 | 
+
 ## 40. Hero Status
 
  - ID: 40
@@ -294,18 +325,15 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#45-blast-defense-level "Jump to: Blast Defense Level") that are in its blast radius. For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same
 
- - One of the flags 0-3 can be combined with one of the flags from 4-64 by adding the two values
+ - One of the flags 0-3 can be combined with the combinable flags 4 to 128 by adding the two values
 
     | Property | Flag Value |
     | :- | -: |
     | damage resources, nearby allied units and tress | 0 | 
     | damage trees, nearby allied units | 1 | 
-    | damage nearby allied units | 2 | 
+    | damage nearby and allied units | 2 | 
     | damage targeted unit only | 3 | 
-    | Deal a fixed 5 HP of damage to nearby units | 4 | 
-    | Deal 50% of unit's own damage to nearby units | 8 | 
-    | Deal 25% of unit's own damage to nearby units | 16 | 
-    | Deal 33% of unit's own damage to nearby units | 32 | 
+    | damage enemy units only | 4 | 
     | Attenuate damage as distance from the centre of attack increases (infantry only) | 64 | 
     | Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone | 128 | 
 
@@ -494,6 +522,7 @@ This page is a list of all the unit attributes that can be modified in the scena
     | Damage the targeted unit's armor (Obuch) | 4 | 
     | Attack ground ability | 8 | 
     | Bulk volley release (kipchak/siege weapons) | 16 | 
+    | Enable task 155 ability (Stronghold castle/Caravanserai/Centurion) | 32 | 
 
 ## 64. Attack Dispersion
 
@@ -541,6 +570,70 @@ This page is a list of all the unit attributes that can be modified in the scena
  - ID: 69
 
  - Controls the maximum height of the fired projectile
+
+## 70. Attack Graphic
+
+ - ID: 70
+
+ - Controls the Attack Graphic
+
+## 71. Standing Graphic
+
+ - ID: 71
+
+ - The sprite animation shown when a unit is idle
+
+ - Units randomly choose between this or Standing Graphic 2
+
+## 72. Standing Graphic 2
+
+ - ID: 72
+
+ - The sprite animation shown when a unit is idle
+
+ - Units randomly choose between this or Standing Graphic
+
+## 73. Dying Graphic
+
+ - ID: 73
+
+ - The sprite animation shown when a unit dies
+
+## 74. Undead Graphic
+
+ - ID: 74
+
+ - This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its "Undead Mode" is set to `1`
+
+ - Requires "Undead Mode" to be set to `1`
+
+## 75. Walking Graphic
+
+ - ID: 75
+
+ - The sprite animation shown when a unit is walking
+
+## 76. Running Graphic
+
+ - ID: 76
+
+ - The sprite animation shown when a unit is running
+
+ - A unit runs when it is issued an attack command, or when a unit is fleeing (deer-like units)
+
+    Most units do not have a running graphic
+
+    A graphic can multiply the speed of the unit it is applied to
+
+    This is used for deer, wolves, boars, etc. when they are issued an attack command
+
+## 77. Special Graphic
+
+ - ID: 77
+
+ - This sprite animation is shown  when a unit uses one of "Block", "Charge", or "Counter Charge" special abilities
+
+ - Special abilities are an unused feature in AoE2, they were planned but never made it into AoK
 
 ## 100. Resource Costs
 
@@ -607,4 +700,53 @@ This page is a list of all the unit attributes that can be modified in the scena
  - ID: 110
 
  - Modifies the population headroom storage of a unit. Negative values = require population (units), positive values = give population (houses). This is not a real attribute that exists in A.G.E., just seems like a way to edit the population heardroom provided by a unit
+
+## 111. Minimum Conversion Time Modifier
+
+ - ID: 111
+
+ - Adds to the minimum time required to convert the unit
+
+ - By default, units have a 4 monk second minimum conversion time
+
+    The overall minimum conversion time for all units is also affected by [Convert Resist Min Adjustment](../../resources/resources/#178-convert-resist-min-adjustment)
+
+## 112. Maximum Conversion Time Modifier
+
+ - ID: 112
+
+ - Adds to the maximum time after which a unit conversion is forced
+
+ - By default, units have a 10 monk second maximum conversion time
+
+    The overall maximum conversion time for all units is also affected by [Convert Resist Max Adjustment](../../resources/resources/#179-convert-resist-max-adjustment)
+
+## 113. Conversion Chance Modifier
+
+ - ID: 113
+
+ - The probability of conversion every monk second is divided by this value for the unit
+
+ - The overall conversion probability for all units is also affected by [Conversion Resistance](../../resources/resources/#77-conversion-resistance)
+
+## 114. Formation Category
+
+ - ID: 114
+
+ - Control where the units in formation
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Not using formation | 0 | 
+    | Mobile | 1 | 
+    | Body | 2 | 
+    | Ranged | 3 | 
+    | Long Ranged | 4 | 
+    | Protected | 5 | 
+
+## 115. Area Damage
+
+ - ID: 115
+
+ - Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative
 

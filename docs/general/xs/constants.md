@@ -10,7 +10,7 @@ Value: `#!cpp int 0`
 
 Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)
 
-### 1.2. cOffsetInterger
+### 1.2. cOffsetInteger
 
 Value: `#!cpp int 1`
 
@@ -80,25 +80,25 @@ The Invalid Vector
 
 Value: `#!cpp int 100`
 
-one of the values returned by the `xsGetVictoryCondition` function
+one of the values returned by the `xsGetVictoryCondition[ForSecondaryGameMode]` functions
 
 ### 4.2. cWonderVictory
 
 Value: `#!cpp int 101`
 
-one of the values returned by the `xsGetVictoryCondition` function
+one of the values returned by the `xsGetVictoryCondition[ForSecondaryGameMode]` functions
 
 ### 4.3. cRelicVictory
 
 Value: `#!cpp int 102`
 
-one of the values returned by the `xsGetVictoryCondition` function
+one of the values returned by the `xsGetVictoryCondition[ForSecondaryGameMode]` functions
 
 ### 4.4. cKingOfTheHillVictory
 
 Value: `#!cpp int 103`
 
-one of the values returned by the `xsGetVictoryCondition` function
+one of the values returned by the `xsGetVictoryCondition[ForSecondaryGameMode]` functions
 
 ## 5. Civs
 
@@ -360,6 +360,24 @@ Value: `#!cpp int 42`
 
 This is the civilization ID of Gurjaras
 
+### 5.44. cRomans
+
+Value: `#!cpp int 43`
+
+This is the civilization ID of Romans
+
+### 5.45. cArmenians
+
+Value: `#!cpp int 44`
+
+This is the civilization ID of Armenians
+
+### 5.46. cGeorgians
+
+Value: `#!cpp int 45`
+
+This is the civilization ID of Georgians
+
 ## 6. EffectAmount Effect Type
 
 ### 6.1. cSetAttribute
@@ -446,7 +464,7 @@ Example: `#!cpp xsEffectAmount(cMulResource, cAttributeFood, 0, 10)`
 
 This multiplies the food amount by 10 (the value)
 
-### 6.8. cEnableTech
+### 6.8. cSpawnUnit
 
 Value: `#!cpp int 7`
 
@@ -614,7 +632,7 @@ Example: `#!cpp xsEffectAmount(cGaiaMulResource, cAttributeFood, 0, 10)`
 
 This multiplies the food amount by 10 (the value)
 
-### 6.22. cGaiaEnableTech
+### 6.22. cGaiaSpawnUnit
 
 Value: `#!cpp int -8`
 
@@ -718,13 +736,19 @@ Value: `#!cpp int 2`
 
 This is the ID of the `Attribute Force` modifier for the xsEffectAmount function
 
-### 7.4. cAttributeSet
+### 7.4. cAttributeResearch
+
+Value: `#!cpp int 2`
+
+This is the ID of the `Attribute Research` modifier for the xsEffectAmount function
+
+### 7.5. cAttributeSet
 
 Value: `#!cpp int 0`
 
 This is the ID of the `Attribute Set` modifier for the xsEffectAmount function
 
-### 7.5. cAttributeAdd
+### 7.6. cAttributeAdd
 
 Value: `#!cpp int 1`
 
@@ -840,427 +864,523 @@ Value: `#!cpp int 11`
 
 This is the ID of the `Attribute Set Hotkey` modifier for the xsEffectAmount function
 
+### 8.19. cAttrSetState
+
+Value: `#!cpp int 12`
+
+This is the ID of the `Attribute Set State` modifier for the xsEffectAmount function
+
 ## 9. EffectAmount Unit Attribute
 
 ### 9.1. cHitpoints
 
 Value: `#!cpp int 0`
 
-This is the attribute [Hit Points](./../../attributes/attributes/#0-hit-points) 
+This is the attribute [Hit Points](./../../attributes/attributes/#0-hit-points)
 
 ### 9.2. cLineOfSight
 
 Value: `#!cpp int 1`
 
-This is the attribute [Line of Sight](./../../attributes/attributes/#1-line-of-sight) 
+This is the attribute [Line of Sight](./../../attributes/attributes/#1-line-of-sight)
 
 ### 9.3. cGarrisonCapacity
 
 Value: `#!cpp int 2`
 
-This is the attribute [Garrison Capacity](./../../attributes/attributes/#2-garrison-capacity) 
+This is the attribute [Garrison Capacity](./../../attributes/attributes/#2-garrison-capacity)
 
 ### 9.4. cUnitSizeX
 
 Value: `#!cpp int 3`
 
-This is the attribute [Unit Size X](./../../attributes/attributes/#3-unit-size-x) 
+This is the attribute [Unit Size X](./../../attributes/attributes/#3-unit-size-x)
 
 ### 9.5. cUnitSizeY
 
 Value: `#!cpp int 4`
 
-This is the attribute [Unit Size Y](./../../attributes/attributes/#4-unit-size-y) 
+This is the attribute [Unit Size Y](./../../attributes/attributes/#4-unit-size-y)
 
 ### 9.6. cMovementSpeed
 
 Value: `#!cpp int 5`
 
-This is the attribute [Movement Speed](./../../attributes/attributes/#5-movement-speed) 
+This is the attribute [Movement Speed](./../../attributes/attributes/#5-movement-speed)
 
 ### 9.7. cRotationSpeed
 
 Value: `#!cpp int 6`
 
-This is the attribute [Rotation Speed](./../../attributes/attributes/#6-rotation-speed) 
+This is the attribute [Rotation Speed](./../../attributes/attributes/#6-rotation-speed)
 
 ### 9.8. cArmor
 
 Value: `#!cpp int 8`
 
-This is the attribute [Armor](./../../attributes/attributes/#8-armor) 
+This is the attribute [Armor](./../../attributes/attributes/#8-armor)
 
 ### 9.9. cAttack
 
 Value: `#!cpp int 9`
 
-This is the attribute [Attack](./../../attributes/attributes/#9-attack) 
+This is the attribute [Attack](./../../attributes/attributes/#9-attack)
 
 ### 9.10. cAttackReloadTime
 
 Value: `#!cpp int 10`
 
-This is the attribute [Attack Reload Time](./../../attributes/attributes/#10-attack-reload-time) 
+This is the attribute [Attack Reload Time](./../../attributes/attributes/#10-attack-reload-time)
 
 ### 9.11. cAccuracyPercent
 
 Value: `#!cpp int 11`
 
-This is the attribute [Accuracy Percent](./../../attributes/attributes/#11-accuracy-percent) 
+This is the attribute [Accuracy Percent](./../../attributes/attributes/#11-accuracy-percent)
 
 ### 9.12. cMaxRange
 
 Value: `#!cpp int 12`
 
-This is the attribute [Max Range](./../../attributes/attributes/#12-max-range) 
+This is the attribute [Max Range](./../../attributes/attributes/#12-max-range)
 
 ### 9.13. cWorkRate
 
 Value: `#!cpp int 13`
 
-This is the attribute [Work Rate](./../../attributes/attributes/#13-work-rate) 
+This is the attribute [Work Rate](./../../attributes/attributes/#13-work-rate)
 
 ### 9.14. cCarryCapacity
 
 Value: `#!cpp int 14`
 
-This is the attribute [Carry Capacity](./../../attributes/attributes/#14-carry-capacity) 
+This is the attribute [Carry Capacity](./../../attributes/attributes/#14-carry-capacity)
 
 ### 9.15. cBaseArmor
 
 Value: `#!cpp int 15`
 
-This is the attribute [Base Armor](./../../attributes/attributes/#15-base-armor) 
+This is the attribute [Base Armor](./../../attributes/attributes/#15-base-armor)
 
 ### 9.16. cProjectileUnit
 
 Value: `#!cpp int 16`
 
-This is the attribute [Projectile Unit](./../../attributes/attributes/#16-projectile-unit) 
+This is the attribute [Projectile Unit](./../../attributes/attributes/#16-projectile-unit)
 
 ### 9.17. cIconGraphicsAngle
 
 Value: `#!cpp int 17`
 
-This is the attribute [Building Icon Override](./../../attributes/attributes/#17-building-icon-override) 
+This is the attribute [Building Icon Override](./../../attributes/attributes/#17-building-icon-override)
 
 ### 9.18. cTerrainDefenseBonus
 
 Value: `#!cpp int 18`
 
-This is the attribute [Terrain Defense Bonus](./../../attributes/attributes/#18-terrain-defense-bonus) 
+This is the attribute [Terrain Defense Bonus](./../../attributes/attributes/#18-terrain-defense-bonus)
 
 ### 9.19. cEnableSmartProjectile
 
 Value: `#!cpp int 19`
 
-This is the attribute [Projectile Smart Mode](./../../attributes/attributes/#19-projectile-smart-mode) 
+This is the attribute [Projectile Smart Mode](./../../attributes/attributes/#19-projectile-smart-mode)
 
 ### 9.20. cMinimumRange
 
 Value: `#!cpp int 20`
 
-This is the attribute [Minimum Range](./../../attributes/attributes/#20-minimum-range) 
+This is the attribute [Minimum Range](./../../attributes/attributes/#20-minimum-range)
 
 ### 9.21. cAmountFirstStorage
 
 Value: `#!cpp int 21`
 
-This is the attribute [Amount of 1st Resource Storage](./../../attributes/attributes/#21-amount-of-1st-resource-storage) 
+This is the attribute [Amount of 1st Resource Storage](./../../attributes/attributes/#21-amount-of-1st-resource-storage)
 
 ### 9.22. cBlastWidth
 
 Value: `#!cpp int 22`
 
-This is the attribute [Blast Width](./../../attributes/attributes/#22-blast-width) 
+This is the attribute [Blast Width](./../../attributes/attributes/#22-blast-width)
 
 ### 9.23. cSearchRadius
 
 Value: `#!cpp int 23`
 
-This is the attribute [Search Radius](./../../attributes/attributes/#23-search-radius) 
+This is the attribute [Search Radius](./../../attributes/attributes/#23-search-radius)
 
 ### 9.24. cBonusResistance
 
 Value: `#!cpp int 24`
 
-This is the attribute [Bonus Damage Resistance](./../../attributes/attributes/#24-bonus-damage-resistance) 
+This is the attribute [Bonus Damage Resistance](./../../attributes/attributes/#24-bonus-damage-resistance)
 
 ### 9.25. cIconId
 
 Value: `#!cpp int 25`
 
-This is the attribute [Icon ID](./../../attributes/attributes/#25-icon-id) 
+This is the attribute [Icon ID](./../../attributes/attributes/#25-icon-id)
 
 ### 9.26. cAmountSecondStorage
 
 Value: `#!cpp int 26`
 
-This is the attribute [Amount of 2nd Resource Storage](./../../attributes/attributes/#26-amount-of-2nd-resource-storage) 
+This is the attribute [Amount of 2nd Resource Storage](./../../attributes/attributes/#26-amount-of-2nd-resource-storage)
 
 ### 9.27. cAmountThirdStorage
 
 Value: `#!cpp int 27`
 
-This is the attribute [Amount of 3rd Resource Storage](./../../attributes/attributes/#27-amount-of-3rd-resource-storage) 
+This is the attribute [Amount of 3rd Resource Storage](./../../attributes/attributes/#27-amount-of-3rd-resource-storage)
 
 ### 9.28. cFogFlag
 
 Value: `#!cpp int 28`
 
-This is the attribute [Fog Visibility](./../../attributes/attributes/#28-fog-visibility) 
+This is the attribute [Fog Visibility](./../../attributes/attributes/#28-fog-visibility)
 
 ### 9.29. cOcclusionMode
 
 Value: `#!cpp int 29`
 
-This is the attribute [Occlusion Mode](./../../attributes/attributes/#29-occlusion-mode) 
+This is the attribute [Occlusion Mode](./../../attributes/attributes/#29-occlusion-mode)
 
 ### 9.30. cGarrisonType
 
 Value: `#!cpp int 30`
 
-This is the attribute [Garrison Type](./../../attributes/attributes/#30-garrison-type) 
+This is the attribute [Garrison Type](./../../attributes/attributes/#30-garrison-type)
 
 ### 9.31. cUnitSizeZ
 
 Value: `#!cpp int 32`
 
-This is the attribute [Unit Size Z](./../../attributes/attributes/#32-unit-size-z) 
+This is the attribute [Unit Size Z](./../../attributes/attributes/#32-unit-size-z)
 
-### 9.32. cHeroStatus
+### 9.32. cCanBeBuiltOn
+
+Value: `#!cpp int 33`
+
+This is the attribute [Can Be Built On](./../../attributes/attributes/#33-can-be-built-on)
+
+### 9.33. cFoundationTerrain
+
+Value: `#!cpp int 34`
+
+This is the attribute [Foundation Terrain](./../../attributes/attributes/#34-foundation-terrain)
+
+### 9.34. cHeroStatus
 
 Value: `#!cpp int 40`
 
-This is the attribute [Hero Status](./../../attributes/attributes/#40-hero-status) 
+This is the attribute [Hero Status](./../../attributes/attributes/#40-hero-status)
 
-### 9.33. cAttackDelay
+### 9.35. cAttackDelay
 
 Value: `#!cpp int 41`
 
-This is the attribute [Frame Delay](./../../attributes/attributes/#41-frame-delay) 
+This is the attribute [Frame Delay](./../../attributes/attributes/#41-frame-delay)
 
-### 9.34. cTrainLocation
+### 9.36. cTrainLocation
 
 Value: `#!cpp int 42`
 
-This is the attribute [Train Location](./../../attributes/attributes/#42-train-location) 
+This is the attribute [Train Location](./../../attributes/attributes/#42-train-location)
 
-### 9.35. cTrainButton
+### 9.37. cTrainButton
 
 Value: `#!cpp int 43`
 
-This is the attribute [Train Button](./../../attributes/attributes/#43-train-button) 
+This is the attribute [Train Button](./../../attributes/attributes/#43-train-button)
 
-### 9.36. cBlastAttackLevel
+### 9.38. cBlastAttackLevel
 
 Value: `#!cpp int 44`
 
-This is the attribute [Blast Attack Level](./../../attributes/attributes/#44-blast-attack-level) 
+This is the attribute [Blast Attack Level](./../../attributes/attributes/#44-blast-attack-level)
 
-### 9.37. cBlastDefenseLevel
+### 9.39. cBlastDefenseLevel
 
 Value: `#!cpp int 45`
 
-This is the attribute [Blast Defense Level](./../../attributes/attributes/#45-blast-defense-level) 
+This is the attribute [Blast Defense Level](./../../attributes/attributes/#45-blast-defense-level)
 
-### 9.38. cShownAttack
+### 9.40. cShownAttack
 
 Value: `#!cpp int 46`
 
-This is the attribute [Shown Attack](./../../attributes/attributes/#46-shown-attack) 
+This is the attribute [Shown Attack](./../../attributes/attributes/#46-shown-attack)
 
-### 9.39. cShownRange
+### 9.41. cShownRange
 
 Value: `#!cpp int 47`
 
-This is the attribute [Shown Range](./../../attributes/attributes/#47-shown-range) 
+This is the attribute [Shown Range](./../../attributes/attributes/#47-shown-range)
 
-### 9.40. cShownMeleeArmor
+### 9.42. cShownMeleeArmor
 
 Value: `#!cpp int 48`
 
-This is the attribute [Shown Melee Armor](./../../attributes/attributes/#48-shown-melee-armor) 
+This is the attribute [Shown Melee Armor](./../../attributes/attributes/#48-shown-melee-armor)
 
-### 9.41. cShownPierceArmor
+### 9.43. cShownPierceArmor
 
 Value: `#!cpp int 49`
 
-This is the attribute [Shown Pierce Armor](./../../attributes/attributes/#49-shown-pierce-armor) 
+This is the attribute [Shown Pierce Armor](./../../attributes/attributes/#49-shown-pierce-armor)
 
-### 9.42. cNameId
+### 9.44. cNameId
 
 Value: `#!cpp int 50`
 
-This is the attribute [Object Name ID](./../../attributes/attributes/#50-object-name-id) 
+This is the attribute [Object Name ID](./../../attributes/attributes/#50-object-name-id)
 
-### 9.43. cDescriptionId
+### 9.45. cDescriptionId
 
 Value: `#!cpp int 51`
 
-This is the attribute [Short Description ID](./../../attributes/attributes/#51-short-description-id) 
+This is the attribute [Short Description ID](./../../attributes/attributes/#51-short-description-id)
 
-### 9.44. cTerrainTable
+### 9.46. cTerrainTable
 
 Value: `#!cpp int 53`
 
-This is the attribute [Terrain Restriction ID](./../../attributes/attributes/#53-terrain-restriction-id) 
+This is the attribute [Terrain Restriction ID](./../../attributes/attributes/#53-terrain-restriction-id)
 
-### 9.45. cTraits
+### 9.47. cTraits
 
 Value: `#!cpp int 54`
 
-This is the attribute [Unit Trait](./../../attributes/attributes/#54-unit-trait) 
+This is the attribute [Unit Trait](./../../attributes/attributes/#54-unit-trait)
 
-### 9.46. cTraitPiece
+### 9.48. cTraitPiece
 
 Value: `#!cpp int 56`
 
-This is the attribute [Trait Piece](./../../attributes/attributes/#56-trait-piece) 
+This is the attribute [Trait Piece](./../../attributes/attributes/#56-trait-piece)
 
-### 9.47. cDeadUnitId
+### 9.49. cDeadUnitId
 
 Value: `#!cpp int 57`
 
-This is the attribute [Dead Unit ID](./../../attributes/attributes/#57-dead-unit-id) 
+This is the attribute [Dead Unit ID](./../../attributes/attributes/#57-dead-unit-id)
 
-### 9.48. cHotkeyId
+### 9.50. cHotkeyId
 
 Value: `#!cpp int 58`
 
-This is the attribute [Hotkey ID](./../../attributes/attributes/#58-hotkey-id) 
+This is the attribute [Hotkey ID](./../../attributes/attributes/#58-hotkey-id)
 
-### 9.49. cMaxCharge
+### 9.51. cMaxCharge
 
 Value: `#!cpp int 59`
 
-This is the attribute [Maximum Charge](./../../attributes/attributes/#59-maximum-charge) 
+This is the attribute [Maximum Charge](./../../attributes/attributes/#59-maximum-charge)
 
-### 9.50. cRechargeRate
+### 9.52. cRechargeRate
 
 Value: `#!cpp int 60`
 
-This is the attribute [Recharge Rate](./../../attributes/attributes/#60-recharge-rate) 
+This is the attribute [Recharge Rate](./../../attributes/attributes/#60-recharge-rate)
 
-### 9.51. cChargeEvent
+### 9.53. cChargeEvent
 
 Value: `#!cpp int 61`
 
-This is the attribute [Charge Event](./../../attributes/attributes/#61-charge-event) 
+This is the attribute [Charge Event](./../../attributes/attributes/#61-charge-event)
 
-### 9.52. cChargeType
+### 9.54. cChargeType
 
 Value: `#!cpp int 62`
 
-This is the attribute [Charge Type](./../../attributes/attributes/#62-charge-type) 
+This is the attribute [Charge Type](./../../attributes/attributes/#62-charge-type)
 
-### 9.53. cCombatAbility
+### 9.55. cCombatAbility
 
 Value: `#!cpp int 63`
 
-This is the attribute [Combat Ability](./../../attributes/attributes/#63-combat-ability) 
+This is the attribute [Combat Ability](./../../attributes/attributes/#63-combat-ability)
 
-### 9.54. cAttackDispersion
+### 9.56. cAttackDispersion
 
 Value: `#!cpp int 64`
 
-This is the attribute [Attack Dispersion](./../../attributes/attributes/#64-attack-dispersion) 
+This is the attribute [Attack Dispersion](./../../attributes/attributes/#64-attack-dispersion)
 
-### 9.55. cSecondaryProjectileUnit
+### 9.57. cSecondaryProjectileUnit
 
 Value: `#!cpp int 65`
 
-This is the attribute [Secondary Projectile Unit](./../../attributes/attributes/#65-secondary-projectile-unit) 
+This is the attribute [Secondary Projectile Unit](./../../attributes/attributes/#65-secondary-projectile-unit)
 
-### 9.56. cBloodUnitId
+### 9.58. cBloodUnitId
 
 Value: `#!cpp int 66`
 
-This is the attribute [Blood Unit](./../../attributes/attributes/#66-blood-unit) 
+This is the attribute [Blood Unit](./../../attributes/attributes/#66-blood-unit)
 
-### 9.57. cHitMode
+### 9.59. cHitMode
 
 Value: `#!cpp int 67`
 
-This is the attribute [Projectile Hit Mode](./../../attributes/attributes/#67-projectile-hit-mode) 
+This is the attribute [Projectile Hit Mode](./../../attributes/attributes/#67-projectile-hit-mode)
 
-### 9.58. cVanishMode
+### 9.60. cVanishMode
 
 Value: `#!cpp int 68`
 
-This is the attribute [Projectile Vanish Mode](./../../attributes/attributes/#68-projectile-vanish-mode) 
+This is the attribute [Projectile Vanish Mode](./../../attributes/attributes/#68-projectile-vanish-mode)
 
-### 9.59. cProjectileArc
+### 9.61. cProjectileArc
 
 Value: `#!cpp int 69`
 
-This is the attribute [Projectile Arc](./../../attributes/attributes/#69-projectile-arc) 
+This is the attribute [Projectile Arc](./../../attributes/attributes/#69-projectile-arc)
 
-### 9.60. cResourceCost
+### 9.62. cAttackGraphic
+
+Value: `#!cpp int 70`
+
+This is the attribute [Attack Graphic](./../../attributes/attributes/#70-attack-graphic)
+
+### 9.63. cStandingGraphic
+
+Value: `#!cpp int 71`
+
+This is the attribute [Standing Graphic](./../../attributes/attributes/#71-standing-graphic)
+
+### 9.64. cStanding2Graphic
+
+Value: `#!cpp int 72`
+
+This is the attribute [Standing Graphic 2](./../../attributes/attributes/#72-standing-graphic-2)
+
+### 9.65. cDyingGraphic
+
+Value: `#!cpp int 73`
+
+This is the attribute [Dying Graphic](./../../attributes/attributes/#73-dying-graphic)
+
+### 9.66. cUndeadGraphic
+
+Value: `#!cpp int 74`
+
+This is the attribute [Undead Graphic](./../../attributes/attributes/#74-undead-graphic)
+
+### 9.67. cWalkingGraphic
+
+Value: `#!cpp int 75`
+
+This is the attribute [Walking Graphic](./../../attributes/attributes/#75-walking-graphic)
+
+### 9.68. cRunningGraphic
+
+Value: `#!cpp int 76`
+
+This is the attribute [Running Graphic](./../../attributes/attributes/#76-running-graphic)
+
+### 9.69. cSpecialGraphic
+
+Value: `#!cpp int 77`
+
+This is the attribute [Special Graphic](./../../attributes/attributes/#77-special-graphic)
+
+### 9.70. cResourceCost
 
 Value: `#!cpp int 100`
 
-This is the attribute [Resource Costs](./../../attributes/attributes/#100-resource-costs) 
+This is the attribute [Resource Costs](./../../attributes/attributes/#100-resource-costs)
 
-### 9.61. cTrainTime
+### 9.71. cTrainTime
 
 Value: `#!cpp int 101`
 
-This is the attribute [Train Time](./../../attributes/attributes/#101-train-time) 
+This is the attribute [Train Time](./../../attributes/attributes/#101-train-time)
 
-### 9.62. cTotalProjectiles
+### 9.72. cTotalProjectiles
 
 Value: `#!cpp int 102`
 
-This is the attribute [Total Missiles](./../../attributes/attributes/#102-total-missiles) 
+This is the attribute [Total Missiles](./../../attributes/attributes/#102-total-missiles)
 
-### 9.63. cFoodCost
+### 9.73. cFoodCost
 
 Value: `#!cpp int 103`
 
-This is the attribute [Food Costs](./../../attributes/attributes/#103-food-costs) 
+This is the attribute [Food Costs](./../../attributes/attributes/#103-food-costs)
 
-### 9.64. cWoodCost
+### 9.74. cWoodCost
 
 Value: `#!cpp int 104`
 
-This is the attribute [Wood Costs](./../../attributes/attributes/#104-wood-costs) 
+This is the attribute [Wood Costs](./../../attributes/attributes/#104-wood-costs)
 
-### 9.65. cGoldCost
+### 9.75. cGoldCost
 
 Value: `#!cpp int 105`
 
-This is the attribute [Gold Costs](./../../attributes/attributes/#105-gold-costs) 
+This is the attribute [Gold Costs](./../../attributes/attributes/#105-gold-costs)
 
-### 9.66. cStoneCost
+### 9.76. cStoneCost
 
 Value: `#!cpp int 106`
 
-This is the attribute [Stone Costs](./../../attributes/attributes/#106-stone-costs) 
+This is the attribute [Stone Costs](./../../attributes/attributes/#106-stone-costs)
 
-### 9.67. cMaxTotalProjectiles
+### 9.77. cMaxTotalProjectiles
 
 Value: `#!cpp int 107`
 
-This is the attribute [Max Total Missiles](./../../attributes/attributes/#107-max-total-missiles) 
+This is the attribute [Max Total Missiles](./../../attributes/attributes/#107-max-total-missiles)
 
-### 9.68. cGarrisonHealRate
+### 9.78. cGarrisonHealRate
 
 Value: `#!cpp int 108`
 
-This is the attribute [Garrison Heal Rate](./../../attributes/attributes/#108-garrison-heal-rate) 
+This is the attribute [Garrison Heal Rate](./../../attributes/attributes/#108-garrison-heal-rate)
 
-### 9.69. cRegenerationRate
+### 9.79. cRegenerationRate
 
 Value: `#!cpp int 109`
 
-This is the attribute [Regeneration Rate](./../../attributes/attributes/#109-regeneration-rate) 
+This is the attribute [Regeneration Rate](./../../attributes/attributes/#109-regeneration-rate)
 
-### 9.70. cPopulation
+### 9.80. cPopulation
 
 Value: `#!cpp int 110`
 
-This is the attribute [Population](./../../attributes/attributes/#110-population) 
+This is the attribute [Population](./../../attributes/attributes/#110-population)
+
+### 9.81. cMinConversionTimeMod
+
+Value: `#!cpp int 111`
+
+This is the attribute [Minimum Conversion Time Modifier](./../../attributes/attributes/#111-minimum-conversion-time-modifier)
+
+### 9.82. cMaxConversionTimeMod
+
+Value: `#!cpp int 112`
+
+This is the attribute [Maximum Conversion Time Modifier](./../../attributes/attributes/#112-maximum-conversion-time-modifier)
+
+### 9.83. cConversionChanceMod
+
+Value: `#!cpp int 113`
+
+This is the attribute [Conversion Chance Modifier](./../../attributes/attributes/#113-conversion-chance-modifier)
+
+### 9.84. cFormationCategory
+
+Value: `#!cpp int 114`
+
+This is the attribute [Formation Category](./../../attributes/attributes/#114-formation-category)
+
+### 9.85. cAreaDamage
+
+Value: `#!cpp int 115`
+
+This is the attribute [Area Damage](./../../attributes/attributes/#115-area-damage)
 
 ## 10. EffectAmount Object Class
 
@@ -2598,7 +2718,7 @@ Value: `#!cpp int 170`
 
 ID of the player resource Total Value Of Kills. Check [here](../../resources/resources/#170-total-value-of-kills "Jump to: Game Mecahnicsc > Resources > #170-total-value-of-kills") for more info about what this resource does.
 
-### 11.161. cAttributeTotalTributeReceived 
+### 11.161. cAttributeTotalTributeReceived
 
 Value: `#!cpp int 171`
 
@@ -2778,11 +2898,11 @@ Value: `#!cpp int 211`
 
 ID of the player resource Elevation Bonus Higher. Check [here](../../resources/resources/#211-elevation-higher-bonus "Jump to: Game Mecahnicsc > Resources > #211-elevation-higher-bonus") for more info about what this resource does.
 
-### 11.191. cAttributeElevationBonusLoweer
+### 11.191. cAttributeElevationBonusLower
 
 Value: `#!cpp int 212`
 
-ID of the player resource Elevation Bonus Loweer. Check [here](../../resources/resources/#212-elevation-lower-bonus "Jump to: Game Mecahnicsc > Resources > #212-elevation-lower-bonus") for more info about what this resource does.
+ID of the player resource Elevation Bonus Lower. Check [here](../../resources/resources/#212-elevation-lower-bonus "Jump to: Game Mecahnicsc > Resources > #212-elevation-lower-bonus") for more info about what this resource does.
 
 ### 11.192. cAttributeTriggerSharedLOS
 
@@ -2796,17 +2916,17 @@ Value: `#!cpp int 218`
 
 ID of the player resource Feudal Town Center Limit. Check [here](../../resources/resources/#218-early-town-center-limit "Jump to: Game Mecahnicsc > Resources > #218-early-town-center-limit") for more info about what this resource does.
 
-### 11.194. cAttributeUnused1
+### 11.194. cAttributeFishingProductivity
 
 Value: `#!cpp int 219`
 
-ID of the player resource Unused1. Check [here](../../resources/resources/#219-fishing-productivity "Jump to: Game Mecahnicsc > Resources > #219-fishing-productivity") for more info about what this resource does.
+ID of the player resource Fishing Productivity. Check [here](../../resources/resources/#219-fishing-productivity "Jump to: Game Mecahnicsc > Resources > #219-fishing-productivity") for more info about what this resource does.
 
-### 11.195. cAttributeUnused2
+### 11.195. cAttributeUnused220
 
 Value: `#!cpp int 220`
 
-ID of the player resource Unused2. Check [here](../../resources/resources/#220-unused-resource-220 "Jump to: Game Mecahnicsc > Resources > #220-unused-resource-220") for more info about what this resource does.
+ID of the player resource Unused220. Check [here](../../resources/resources/#220-unused-resource-220 "Jump to: Game Mecahnicsc > Resources > #220-unused-resource-220") for more info about what this resource does.
 
 ### 11.196. cAttributeMonumentFoodTrickle
 
@@ -3054,11 +3174,11 @@ Value: `#!cpp int 261`
 
 ID of the player resource Speed Up Secondary Percentage. Check [here](../../resources/resources/#261-speed-up-secondary-percentage "Jump to: Game Mecahnicsc > Resources > #261-speed-up-secondary-percentage") for more info about what this resource does.
 
-### 11.237. cAttributeExtraElephantConvertResist
+### 11.237. cAttributeCivNameOverride
 
 Value: `#!cpp int 262`
 
-ID of the player resource Extra Elephant Convert Resist. Check [here](../../resources/resources/#262-extra-elephant-convert-resist "Jump to: Game Mecahnicsc > Resources > #262-extra-elephant-convert-resist") for more info about what this resource does.
+ID of the player resource Civ Name Override. Check [here](../../resources/resources/#262-civilization-name-override "Jump to: Game Mecahnicsc > Resources > #262-civilization-name-override") for more info about what this resource does.
 
 ### 11.238. cAttributeStartingScoutID
 
@@ -3077,4 +3197,94 @@ ID of the player resource Relic Wood Rate. Check [here](../../resources/resource
 Value: `#!cpp int 265`
 
 ID of the player resource Relic Stone Rate. Check [here](../../resources/resources/#265-relic-stone-production-rate "Jump to: Game Mecahnicsc > Resources > #265-relic-stone-production-rate") for more info about what this resource does.
+
+### 11.241. cAttributeChoppingGoldProductivity
+
+Value: `#!cpp int 266`
+
+ID of the player resource Chopping Gold Productivity. Check [here](../../resources/resources/#266-chopping-gold-productivity "Jump to: Game Mecahnicsc > Resources > #266-chopping-gold-productivity") for more info about what this resource does.
+
+### 11.242. cAttributeForagingWoodProductivity
+
+Value: `#!cpp int 267`
+
+ID of the player resource Foraging Wood Productivity. Check [here](../../resources/resources/#267-foraging-wood-productivity "Jump to: Game Mecahnicsc > Resources > #267-foraging-wood-productivity") for more info about what this resource does.
+
+### 11.243. cAttributeHuntingProductivity
+
+Value: `#!cpp int 268`
+
+ID of the player resource Hunting Productivity. Check [here](../../resources/resources/#268-hunter-productivity "Jump to: Game Mecahnicsc > Resources > #268-hunter-productivity") for more info about what this resource does.
+
+### 11.244. cAttributeTechnologyRewardEffect
+
+Value: `#!cpp int 269`
+
+ID of the player resource Technology Reward Effect. Check [here](../../resources/resources/#269-technology-reward-effect "Jump to: Game Mecahnicsc > Resources > #269-technology-reward-effect") for more info about what this resource does.
+
+### 11.245. cAttributeUnitRepairCost
+
+Value: `#!cpp int 270`
+
+ID of the player resource Unit Repair Cost. Check [here](../../resources/resources/#270-unit-repair-cost "Jump to: Game Mecahnicsc > Resources > #270-unit-repair-cost") for more info about what this resource does.
+
+### 11.246. cAttributeBuildingRepairCost
+
+Value: `#!cpp int 271`
+
+ID of the player resource Building Repair Cost. Check [here](../../resources/resources/#271-building-repair-cost "Jump to: Game Mecahnicsc > Resources > #271-building-repair-cost") for more info about what this resource does.
+
+### 11.247. cAttributeElevationDamageHigher
+
+Value: `#!cpp int 272`
+
+ID of the player resource Elevation Damage Higher. Check [here](../../resources/resources/#272-elevation-higher-damage "Jump to: Game Mecahnicsc > Resources > #272-elevation-higher-damage") for more info about what this resource does.
+
+### 11.248. cAttributeElevationDamageLower
+
+Value: `#!cpp int 273`
+
+ID of the player resource Elevation Damage Lower. Check [here](../../resources/resources/#273-elevation-lower-damage "Jump to: Game Mecahnicsc > Resources > #273-elevation-lower-damage") for more info about what this resource does.
+
+### 11.249. cAttributeInfantryKillReward
+
+Value: `#!cpp int 274`
+
+ID of the player resource Infantry Kill Reward. Check [here](../../resources/resources/#274-infantry-kill-reward "Jump to: Game Mecahnicsc > Resources > #274-infantry-kill-reward") for more info about what this resource does.
+
+### 11.250. cAttributeMilitaryCanConvert
+
+Value: `#!cpp int 279`
+
+ID of the player resource Military Can Convert. Check [here](../../resources/resources/#279-military-can-convert "Jump to: Game Mecahnicsc > Resources > #279-military-can-convert") for more info about what this resource does.
+
+### 11.251. cAttributeMilitaryConversionRangeAdj
+
+Value: `#!cpp int 280`
+
+ID of the player resource Military Conversion Range Adj. Check [here](../../resources/resources/#280-military-convert-range "Jump to: Game Mecahnicsc > Resources > #280-military-convert-range") for more info about what this resource does.
+
+### 11.252. cAttributeMilitaryConversionChance
+
+Value: `#!cpp int 281`
+
+ID of the player resource Military Conversion Chance. Check [here](../../resources/resources/#281-military-convert-chance "Jump to: Game Mecahnicsc > Resources > #281-military-convert-chance") for more info about what this resource does.
+
+### 11.253. cAttributeMilitaryConversionRechargeRate
+
+Value: `#!cpp int 282`
+
+ID of the player resource Military Conversion Recharge Rate. Check [here](../../resources/resources/#282-military-convert-recharge "Jump to: Game Mecahnicsc > Resources > #282-military-convert-recharge") for more info about what this resource does.
+
+### 11.254. cAttributeSpawnStayInside
+
+Value: `#!cpp int 283`
+
+ID of the player resource Spawn Stay Inside. Check [here](../../resources/resources/#283-spawn-inside "Jump to: Game Mecahnicsc > Resources > #283-spawn-inside") for more info about what this resource does.
+
+### 11.255. cAttributeCavalryKillReward
+
+Value: `#!cpp int 284`
+
+ID of the player resource Cavalry Kill Reward. Check [here](../../resources/resources/#284-cavalry-kill-reward "Jump to: Game Mecahnicsc > Resources > #284-cavalry-kill-reward") for more info about what this resource does.
 

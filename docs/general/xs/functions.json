@@ -1075,6 +1075,49 @@
             "desc": "Returns the number of technologies available to the player in the entire game."
         },
         {
+            "name": "xsObjectHasAction",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to check unit actions for"
+                },
+                {
+                    "name": "unitType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The type of unit to check actions for. Values 9xx refer to classes"
+                },
+                {
+                    "name": "actionId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The type of action to check for"
+                },
+                {
+                    "name": "targetPlayerID",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player"
+                },
+                {
+                    "name": "targetType",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes"
+                },
+                {
+                    "name": "targetUnitLevel",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Unknown"
+                }
+            ],
+            "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
+        },
+        {
             "name": "xsPlayerAttribute",
             "return_type": "float",
             "params": [
@@ -1272,7 +1315,7 @@
                     "desc": "The ID of the object to get the count for"
                 }
             ],
-            "desc": "Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake."
+            "desc": "Returns the number of currently alive objects with the given ID of the specified player"
         },
         {
             "name": "xsGetObjectCountTotal",
@@ -1291,7 +1334,7 @@
                     "desc": "The ID of the object to get the count for"
                 }
             ],
-            "desc": "Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake."
+            "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
         }
     ],
     "Read/Write": [
@@ -1504,7 +1547,7 @@
             "name": "xsBreakPoint",
             "return_type": "void",
             "params": [],
-            "desc": "This function adds a break point to the execution of code. Do not use this function and beware, if you do, it will likely cause a crash!"
+            "desc": "This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE."
         },
         {
             "name": "xsAddRuntimeEvent",

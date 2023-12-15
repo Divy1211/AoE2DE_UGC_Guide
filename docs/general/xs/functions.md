@@ -781,7 +781,7 @@ Parameters:
 1.  `#!cpp int playerId`: The player to get the object count for
 2.  `#!cpp int id`: The ID of the object to get the count for
 
-Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake.
+Returns the number of currently alive objects with the given ID of the specified player
 
 ### 5.10. xsGetObjectCountTotal
 
@@ -794,7 +794,7 @@ Parameters:
 1.  `#!cpp int playerId`: The player to get the object count for
 2.  `#!cpp int id`: The ID of the object to get the count for
 
-Returns the number of currently alive objects of with the given ID of the specified player. The behaviours of these two functions is identical, the same descriptions are not a mistake.
+Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player
 
 ### 5.11. xsGetPlayerCivilization
 
@@ -950,7 +950,24 @@ Returns an integer corresponding to different victory settings ingame. These are
 
 Last Man Standing returns 0 as well.
 
-### 5.25. xsPlayerAttribute
+### 5.25. xsObjectHasAction
+
+Returning Type: `#!cpp bool`
+
+Prototype: `#!cpp bool xsObjectHasAction(int playerID, int unitType, int actionId, int targetPlayerID, int targetType, int targetUnitLevel)`
+
+Parameters:
+
+1.  `#!cpp int playerID`: The player to check unit actions for
+2.  `#!cpp int unitType`: The type of unit to check actions for. Values 9xx refer to classes
+3.  `#!cpp int actionId`: The type of action to check for
+4. (Optional) `#!cpp int targetPlayerID`: Check if the action is being performed on a unit (eg. attacking) of this player
+5. (Optional) `#!cpp int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes
+6. (Optional) `#!cpp int targetUnitLevel`: Unknown
+
+Checks and returns if any unit matching the set filters of the given player has the specified action.
+
+### 5.26. xsPlayerAttribute
 
 Returning Type: `#!cpp float`
 
@@ -963,7 +980,7 @@ Parameters:
 
 Returns the amount the specified resource of the given player.
 
-### 5.26. xsResearchTechnology
+### 5.27. xsResearchTechnology
 
 Returning Type: `#!cpp bool`
 
@@ -978,7 +995,7 @@ Parameters:
 
 Returns a boolean based on whether the technology was researched or not.
 
-### 5.27. xsSetPlayerAttribute
+### 5.28. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -992,7 +1009,7 @@ Parameters:
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.28. xsSetTriggerVariable
+### 5.29. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -1005,7 +1022,7 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.29. xsTriggerVariable
+### 5.30. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 
@@ -1214,7 +1231,7 @@ Returning Type: `#!cpp void`
 Prototype: `#!cpp void xsBreakPoint()`
 
 
-This function adds a break point to the execution of code. Do not use this function and beware, if you do, it will likely cause a crash!
+This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE.
 
 ### 7.3. xsDumpArrays
 
