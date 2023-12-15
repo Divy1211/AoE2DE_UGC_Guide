@@ -4,6 +4,17 @@
      }
 }
 
+.md-nav__link .md-nav__link--index, .md-nav--secondary .md-nav__title { background: unset !important; box-shadow: unset !important; }
+.md-nav__link.md-nav__container { background: unset !important; box-shadow: unset !important; }
+.md-nav__link.md-nav__link--active { background: unset !important; box-shadow: unset !important; }
+.md-nav__link { background: unset !important; box-shadow: unset !important; }
+
+@media screen {
+    [data-md-color-scheme=slate] {
+        --md-admonition-bg-color: #222222;
+    }
+}
+
 .md-header {
      box-shadow: 0px 0px 15px -5px #000000 !important;
 }
