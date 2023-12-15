@@ -1787,7 +1787,7 @@
         "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
     },
     "262": {
-        "name": "Extra Elephant Convert Resist",
+        "name": "Civilization Name Override",
         "desc": "Provides additional conversion resistance to elephant units",
         "defaults": {
             "0": " Default",
@@ -1841,13 +1841,103 @@
         "note": ""
     },
     "268": {
-        "name": "Unused Resource 268",
+        "name": "Hunter Productivity",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "269": {
-        "name": "Unused Resource 269",
+        "name": "Technology Reward Effect",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "270": {
+        "name": "Unit Repair Cost",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "271": {
+        "name": "Building Repair Cost",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "272": {
+        "name": "Elevation Higher Damage",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "273": {
+        "name": "Elevation Lower Damage",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "274": {
+        "name": "Infantry Kill Reward",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "275": {
+        "name": "Unused Resource 275",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "276": {
+        "name": "Unused Resource 276",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "277": {
+        "name": "Unused Resource 277",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "278": {
+        "name": "Unused Resource 278",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "279": {
+        "name": "Military Can Convert",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "280": {
+        "name": "Military Convert Range",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "281": {
+        "name": "Military Convert Chance",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "282": {
+        "name": "Military Convert Recharge",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "283": {
+        "name": "Spawn Inside",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "284": {
+        "name": "Cavalry Kill Reward",
         "desc": "Unused",
         "defaults": {},
         "note": ""
