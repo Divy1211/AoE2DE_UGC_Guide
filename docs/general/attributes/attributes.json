@@ -157,8 +157,8 @@
     },
     "24": {
         "name": "Bonus Damage Resistance",
-        "desc": "Used by Sicilians for the 50% bonus damage resistance. Set to 0.5 for all Sicilian land military units except siege",
-        "notes": [],
+        "desc": "Used by Sicilians for the 33% bonus damage resistance. Set to 0.33 for all Sicilian land military units except siege",
+        "notes": ["Do not make it greater than 1"],
         "flags": {}
     },
     "25": {
@@ -222,6 +222,22 @@
         "notes": [],
         "flags": {}
     },
+    "33": {
+        "name": "Can be built on",
+        "desc": "See AGE",
+        "notes": [],
+        "flags": {
+          "0": "Default",
+          "1": "Graphic stays at highest elevation until destination is reached",
+          "2": "Graphic is not affected by elevation"
+        }
+    },
+    "34": {
+        "name": "Foundation Terrain",
+        "desc": "Terrain produced under a building when completed",
+        "notes": [],
+        "flags": {}
+    },
     "40": {
         "name": "Hero Status",
         "desc": "This is a combinable bit field. Controls the following properties:",
@@ -264,17 +280,13 @@
         "name": "Blast Attack Level",
         "desc": "A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#45-blast-defense-level \"Jump to: Blast Defense Level\") that are in its blast radius. For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same",
         "notes": [
-            "One of the flags 0-3 can be combined with one of the flags from 4-64 by adding the two values"
+            "One of the flags 0-3 can be combined with one of the flags 64 or 128 by adding the two values"
         ],
         "flags": {
             "0": "damage resources, nearby allied units and tress",
             "1": "damage trees, nearby allied units",
             "2": "damage nearby allied units",
             "3": "damage targeted unit only",
-            "4": "Deal a fixed 5 HP of damage to nearby units",
-            "8": "Deal 50% of unit's own damage to nearby units",
-            "16": "Deal 25% of unit's own damage to nearby units",
-            "32": "Deal 33% of unit's own damage to nearby units",
             "64": "Attenuate damage as distance from the centre of attack increases (infantry only)",
             "128": "Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone"
         }
@@ -444,7 +456,8 @@
             "2": "Resist armour-ignoring attacks",
             "4": "Damage the targeted unit's armor (Obuch)",
             "8": "Attack ground ability",
-            "16": "Bulk volley release (kipchak/siege weapons)"
+            "16": "Bulk volley release (kipchak/siege weapons)",
+            "32": "Enable task 155 ability (Stronghold castle/Caravanserai/Centurion)"
         }
     },
     "64": {
@@ -488,6 +501,54 @@
         "name": "Projectile Arc",
         "desc": "Controls the maximum height of the fired projectile",
         "notes": [],
+        "flags": {}
+    },
+    "70": {
+        "name": "AttackGraphic",
+        "desc": "Controls the AttackGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "71": {
+        "name": "StandingGraphic",
+        "desc": "Controls the StandingGraphic 1",
+        "notes": ["Half of units in group use 1st"],
+        "flags": {}
+    },
+    "72": {
+        "name": "Standing2Graphic",
+        "desc": "Controls the StandingGraphic 2",
+        "notes": ["The rest use 2nd"],
+        "flags": {}
+    },
+    "73": {
+        "name": "DyingGraphic",
+        "desc": "Controls the DyingGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "74": {
+        "name": "UndeadGraphic",
+        "desc": "Controls the UndeadGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "75": {
+        "name": "WalkingGraphic",
+        "desc": "Controls the WalkingGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "76": {
+        "name": "RunningGraphic",
+        "desc": "Controls the RunningGraphic",
+        "notes": [],
+        "flags": {}
+    },
+    "77": {
+        "name": "SpecialGraphic",
+        "desc": "Controls the SpecialGraphic",
+        "notes": ["Activates depending on special ability"],
         "flags": {}
     },
     "100": {
@@ -553,6 +614,43 @@
     "110": {
         "name": "Population",
         "desc": "Modifies the population headroom storage of a unit. Negative values = require population (units), positive values = give population (houses). This is not a real attribute that exists in A.G.E., just seems like a way to edit the population heardroom provided by a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "111": {
+        "name": "Minimum Conversion Time Modifier",
+        "desc": "Adds to the minimum time to convert the unit",
+        "notes": ["General units have 4 sec Minimum Conversion Time"],
+        "flags": {}
+    },
+    "112": {
+        "name": "Maximum Conversion Time Modifier",
+        "desc": "Adds to the maximum time to convert the unit",
+        "notes": ["General units have 8 sec Maximum Conversion Time"],
+        "flags": {}
+    },
+    "113": {
+        "name": "Conversion Chance Modifier",
+        "desc": "Reduces the chance to convert the unit per conversion roll",
+        "notes": [],
+        "flags": {}
+    },
+    "114": {
+        "name": "Formation Category",
+        "desc": "Control where the units in formation",
+        "notes": [],
+        "flags": {
+            "0": "not using formation",
+            "1": "mobile",
+            "2": "body",
+            "3": "ranged",
+            "4": "long ranged",
+            "5": "protected"
+        }
+    },
+    "115": {
+        "name": "Area Damage",
+        "desc": "Multiplier to the percentage of blast damage the non-directly targeted units receive if positive value, fixed number damage if negative",
         "notes": [],
         "flags": {}
     }
