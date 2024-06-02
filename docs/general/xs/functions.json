@@ -1504,6 +1504,72 @@
             "desc": "Gets the size (in bytes) of the currently open file"
         }
     ],
+    "AI Scripting": [
+        {
+            "name": "xsGetGoal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The goal id/number to get for the current AI"
+                }
+            ],
+            "desc": "Gets the goal id/number of the current AI"
+        },
+        {
+            "name": "xsGetStrategicNumber",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The SN to get for the current AI"
+                }
+            ],
+            "desc": "Gets the SN of the current AI"
+        },
+        {
+            "name": "xsSetGoal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The goal id/number to get for the current AI"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to set the goal id/number to"
+                }
+            ],
+            "desc": "Sets the goal id/number of the current AI"
+        },
+        {
+            "name": "xsSetStrategicNumber",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The SN to get for the current AI"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to set the SN to"
+                }
+            ],
+            "desc": "Sets the SN of the current AI"
+        }
+    ],
     "Functions With Seemingly No Practical Use": [
         {
             "name": "xsDumpArrays",
@@ -1557,7 +1623,7 @@
                     "name": "runtimeName",
                     "type": "string",
                     "required": true,
-                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname \"Jump To: Function Reference > xsGetMapName\") and checking the extension."
+                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname \"Jump To: Function Reference > xsGetMapName\") and checking the extension. To use with an AI, set the runtime name to \"Expert\" and pass the player number as the arg"
                 },
                 {
                     "name": "functionName",

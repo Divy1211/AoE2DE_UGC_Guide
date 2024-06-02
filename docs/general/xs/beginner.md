@@ -92,6 +92,16 @@ void main() {
 4. To test, load the RMS in a single player (or multi player) lobby and start the game. When the map is generated, the `main()` function in the XS Script will run and `30` will be shown in the chat.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
 
+### 1.3. In an AI
+
+1. Open the AI  per file in a text editor.
+2. Use `(inlcude "filename.xs")` at the top of the file to load an XS script.
+3. Use `xs-script-call "function name"` inside a `defrule` to call an xs function.
+4. We will use `xs-script-call "main"` to call the function we created above.
+5. To test, load the AI in a single player (or multi player) lobby and start the game. When the map is generated, the `main()` function in the XS Script will run and `30` will be shown in the chat.
+6. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
+7. Note: Each AI runs its XS code separately, and they are executed on the computer of the host (AIs behave as if the host controls them)
+
 Now that you have set up an XS file with a `main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one, and things will become clearer.
 
 ## 2. Programming Concepts:

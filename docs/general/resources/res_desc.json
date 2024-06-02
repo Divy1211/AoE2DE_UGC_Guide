@@ -459,50 +459,50 @@
         "note": ""
     },
     "69": {
-        "name": "Killed P1",
-        "desc": "Number of player1 units killed",
+        "name": "Unused Resource 69",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "70": {
-        "name": "Killed P2",
-        "desc": "Number of player2 units killed",
+        "name": "Unused Resource 70",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "71": {
-        "name": "Killed P3",
-        "desc": "Number of player3 units killed",
+        "name": "Unused Resource 71",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "72": {
-        "name": "Killed P4",
-        "desc": "Number of player4 units killed",
+        "name": "Unused Resource 72",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "73": {
-        "name": "Killed P5",
-        "desc": "Number of player5 units killed",
+        "name": "Unused Resource 73",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "74": {
-        "name": "Killed P6",
-        "desc": "Number of player6 units killed",
+        "name": "Unused Resource 74",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "75": {
-        "name": "Killed P7",
-        "desc": "Number of player7 units killed",
+        "name": "Unused Resource 75",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "76": {
-        "name": "Killed P8",
-        "desc": "Number of player8 units killed",
+        "name": "Unused Resource 76",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
@@ -695,194 +695,194 @@
         "note": ""
     },
     "102": {
-        "name": "P1 Tribute",
-        "desc": "Amount of resources tributed to player1",
+        "name": "Unused Resource 102",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "103": {
-        "name": "P2 Tribute",
-        "desc": "Amount of resources tributed to player2",
+        "name": "Unused Resource 103",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "104": {
-        "name": "P3 Tribute",
-        "desc": "Amount of resources tributed to player3",
+        "name": "Unused Resource 104",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "105": {
-        "name": "P4 Tribute",
-        "desc": "Amount of resources tributed to player4",
+        "name": "Unused Resource 105",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "106": {
-        "name": "P5 Tribute",
-        "desc": "Amount of resources tributed to player5",
+        "name": "Unused Resource 106",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "107": {
-        "name": "P6 Tribute",
-        "desc": "Amount of resources tributed to player6",
+        "name": "Unused Resource 107",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "108": {
-        "name": "P7 Tribute",
-        "desc": "Amount of resources tributed to player7",
+        "name": "Unused Resource 108",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "109": {
-        "name": "P8 Tribute",
-        "desc": "Amount of resources tributed to player8",
+        "name": "Unused Resource 109",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "110": {
-        "name": "P1 Kill Value",
-        "desc": "Total cost of all units killed of player1",
+        "name": "Unused Resource 110",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "111": {
-        "name": "P2 Kill Value",
-        "desc": "Total cost of all units killed of player2",
+        "name": "Unused Resource 111",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "112": {
-        "name": "P3 Kill Value",
-        "desc": "Total cost of all units killed of player3",
+        "name": "Unused Resource 112",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "113": {
-        "name": "P4 Kill Value",
-        "desc": "Total cost of all units killed of player4",
+        "name": "Unused Resource 113",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "114": {
-        "name": "P5 Kill Value",
-        "desc": "Total cost of all units killed of player5",
+        "name": "Unused Resource 114",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "115": {
-        "name": "P6 Kill Value",
-        "desc": "Total cost of all units killed of player6",
+        "name": "Unused Resource 115",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "116": {
-        "name": "P7 Kill Value",
-        "desc": "Total cost of all units killed of player7",
+        "name": "Unused Resource 116",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "117": {
-        "name": "P8 Kill Value",
-        "desc": "Total cost of all units killed of player8",
+        "name": "Unused Resource 117",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "118": {
-        "name": "P1 Razings",
-        "desc": "Number of buildings destroyed of player1",
+        "name": "Unused Resource 118",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "119": {
-        "name": "P2 Razings",
-        "desc": "Number of buildings destroyed of player2",
+        "name": "Unused Resource 119",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "120": {
-        "name": "P3 Razings",
-        "desc": "Number of buildings destroyed of player3",
+        "name": "Unused Resource 120",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "121": {
-        "name": "P4 Razings",
-        "desc": "Number of buildings destroyed of player4",
+        "name": "Unused Resource 121",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "122": {
-        "name": "P5 Razings",
-        "desc": "Number of buildings destroyed of player5",
+        "name": "Unused Resource 122",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "123": {
-        "name": "P6 Razings",
-        "desc": "Number of buildings destroyed of player6",
+        "name": "Unused Resource 123",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "124": {
-        "name": "P7 Razings",
-        "desc": "Number of buildings destroyed of player7",
+        "name": "Unused Resource 124",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "125": {
-        "name": "P8 Razings",
-        "desc": "Number of buildings destroyed of player8",
+        "name": "Unused Resource 125",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "126": {
-        "name": "P1 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player1",
+        "name": "Unused Resource 126",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "127": {
-        "name": "P2 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player2",
+        "name": "Unused Resource 127",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "128": {
-        "name": "P3 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player3",
+        "name": "Unused Resource 128",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "129": {
-        "name": "P4 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player4",
+        "name": "Unused Resource 129",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "130": {
-        "name": "P5 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player5",
+        "name": "Unused Resource 130",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "131": {
-        "name": "P6 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player6",
+        "name": "Unused Resource 131",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "132": {
-        "name": "P7 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player7",
+        "name": "Unused Resource 132",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "133": {
-        "name": "P8 Razing Value",
-        "desc": "Total cost of all buildings destroyed of player8",
+        "name": "Unused Resource 133",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
@@ -899,98 +899,98 @@
         "note": ""
     },
     "136": {
-        "name": "Kills by P1",
-        "desc": "Number of own units killed by player1",
+        "name": "Unused Resource 136",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "137": {
-        "name": "Kills by P2",
-        "desc": "Number of own units killed by player2",
+        "name": "Unused Resource 137",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "138": {
-        "name": "Kills by P3",
-        "desc": "Number of own units killed by player3",
+        "name": "Unused Resource 138",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "139": {
-        "name": "Kills by P4",
-        "desc": "Number of own units killed by player4",
+        "name": "Unused Resource 139",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "140": {
-        "name": "Kills by P5",
-        "desc": "Number of own units killed by player5",
+        "name": "Unused Resource 140",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "141": {
-        "name": "Kills by P6",
-        "desc": "Number of own units killed by player6",
+        "name": "Unused Resource 141",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "142": {
-        "name": "Kills by P7",
-        "desc": "Number of own units killed by player7",
+        "name": "Unused Resource 142",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "143": {
-        "name": "Kills by P8",
-        "desc": "Number of own units killed by player8",
+        "name": "Unused Resource 143",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "144": {
-        "name": "Razings by P1",
-        "desc": "Number of own buildings destroyed by player1",
+        "name": "Unused Resource 144",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "145": {
-        "name": "Razings by P2",
-        "desc": "Number of own buildings destroyed by player2",
+        "name": "Unused Resource 145",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "146": {
-        "name": "Razings by P3",
-        "desc": "Number of own buildings destroyed by player3",
+        "name": "Unused Resource 146",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "147": {
-        "name": "Razings by P4",
-        "desc": "Number of own buildings destroyed by player4",
+        "name": "Unused Resource 147",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "148": {
-        "name": "Razings by P5",
-        "desc": "Number of own buildings destroyed by player5",
+        "name": "Unused Resource 148",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "149": {
-        "name": "Razings by P6",
-        "desc": "Number of own buildings destroyed by player6",
+        "name": "Unused Resource 149",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "150": {
-        "name": "Razings by P7",
-        "desc": "Number of own buildings destroyed by player7",
+        "name": "Unused Resource 150",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "151": {
-        "name": "Razings by P8",
-        "desc": "Number of own buildings destroyed by player8",
+        "name": "Unused Resource 151",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
@@ -1019,50 +1019,50 @@
         "note": ""
     },
     "156": {
-        "name": "Tribute from P1",
-        "desc": "Tribute received from player1",
+        "name": "Unused Resource 156",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "157": {
-        "name": "Tribute from P2",
-        "desc": "Tribute received from player2",
+        "name": "Unused Resource 157",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "158": {
-        "name": "Tribute from P3",
-        "desc": "Tribute received from player3",
+        "name": "Unused Resource 158",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "159": {
-        "name": "Tribute from P4",
-        "desc": "Tribute received from player4",
+        "name": "Unused Resource 159",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "160": {
-        "name": "Tribute from P5",
-        "desc": "Tribute received from player5",
+        "name": "Unused Resource 160",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "161": {
-        "name": "Tribute from P6",
-        "desc": "Tribute received from player6",
+        "name": "Unused Resource 161",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "162": {
-        "name": "Tribute from P7",
-        "desc": "Tribute received from player7",
+        "name": "Unused Resource 162",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "163": {
-        "name": "Tribute from P8",
-        "desc": "Tribute received from player8",
+        "name": "Unused Resource 163",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
@@ -1943,5 +1943,1295 @@
             "0": "All Civs"
         },
         "note": "Technically, this resource is used as a multiplier for the resource generated by task 154 currently on cavalry units. Task 154 can change which resource does this, and it is also what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is just set to 1 for cavalry."
+    },
+    "285": {
+        "name": "Trigger Shared Visibility",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "286": {
+        "name": "Trigger Shared Exploration",
+        "desc": "Unknown",
+        "defaults": {},
+        "note": ""
+    },
+    "287": {
+        "name": "Unused Resource 287",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "288": {
+        "name": "Unused Resource 288",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "289": {
+        "name": "Unused Resource 289",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "290": {
+        "name": "Unused Resource 290",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "291": {
+        "name": "Unused Resource 291",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "292": {
+        "name": "Unused Resource 292",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "293": {
+        "name": "Unused Resource 293",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "294": {
+        "name": "Unused Resource 294",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "295": {
+        "name": "Unused Resource 295",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "296": {
+        "name": "Unused Resource 296",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "297": {
+        "name": "Unused Resource 297",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "298": {
+        "name": "Unused Resource 298",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "299": {
+        "name": "Unused Resource 299",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "300": {
+        "name": "Killed Gaia",
+        "desc": "Number of gaia units killed",
+        "defaults": {},
+        "note": ""
+    },
+    "301": {
+        "name": "Killed P1",
+        "desc": "Number of player1 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "302": {
+        "name": "Killed P2",
+        "desc": "Number of player2 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "303": {
+        "name": "Killed P3",
+        "desc": "Number of player3 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "304": {
+        "name": "Killed P4",
+        "desc": "Number of player4 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "305": {
+        "name": "Killed P5",
+        "desc": "Number of player5 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "306": {
+        "name": "Killed P6",
+        "desc": "Number of player6 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "307": {
+        "name": "Killed P7",
+        "desc": "Number of player7 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "308": {
+        "name": "Killed P8",
+        "desc": "Number of player8 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "309": {
+        "name": "Unused Resource 309",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "310": {
+        "name": "Unused Resource 310",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "311": {
+        "name": "Unused Resource 311",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "312": {
+        "name": "Unused Resource 312",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "313": {
+        "name": "Unused Resource 313",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "314": {
+        "name": "Unused Resource 314",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "315": {
+        "name": "Unused Resource 315",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "316": {
+        "name": "Unused Resource 316",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "317": {
+        "name": "Unused Resource 317",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "318": {
+        "name": "Unused Resource 318",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "319": {
+        "name": "Unused Resource 319",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "320": {
+        "name": "Unused Resource 320",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "321": {
+        "name": "Unused Resource 321",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "322": {
+        "name": "Unused Resource 322",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "323": {
+        "name": "Unused Resource 323",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "324": {
+        "name": "Unused Resource 324",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "325": {
+        "name": "Kills by Gaia",
+        "desc": "Number of own units killed by Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "326": {
+        "name": "Kills by P1",
+        "desc": "Number of own units killed by player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "327": {
+        "name": "Kills by P2",
+        "desc": "Number of own units killed by player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "328": {
+        "name": "Kills by P3",
+        "desc": "Number of own units killed by player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "329": {
+        "name": "Kills by P4",
+        "desc": "Number of own units killed by player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "330": {
+        "name": "Kills by P5",
+        "desc": "Number of own units killed by player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "331": {
+        "name": "Kills by P6",
+        "desc": "Number of own units killed by player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "332": {
+        "name": "Kills by P7",
+        "desc": "Number of own units killed by player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "333": {
+        "name": "Kills by P8",
+        "desc": "Number of own units killed by player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "334": {
+        "name": "Unused Resource 334",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "335": {
+        "name": "Unused Resource 335",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "336": {
+        "name": "Unused Resource 336",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "337": {
+        "name": "Unused Resource 337",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "338": {
+        "name": "Unused Resource 338",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "339": {
+        "name": "Unused Resource 339",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "340": {
+        "name": "Unused Resource 340",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "341": {
+        "name": "Unused Resource 341",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "342": {
+        "name": "Unused Resource 342",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "343": {
+        "name": "Unused Resource 343",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "344": {
+        "name": "Unused Resource 344",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "345": {
+        "name": "Unused Resource 345",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "346": {
+        "name": "Unused Resource 346",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "347": {
+        "name": "Unused Resource 347",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "348": {
+        "name": "Unused Resource 348",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "349": {
+        "name": "Unused Resource 349",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "350": {
+        "name": "Gaia Razings",
+        "desc": "Number of buildings destroyed of Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "351": {
+        "name": "P1 Razings",
+        "desc": "Number of buildings destroyed of player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "352": {
+        "name": "P2 Razings",
+        "desc": "Number of buildings destroyed of player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "353": {
+        "name": "P3 Razings",
+        "desc": "Number of buildings destroyed of player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "354": {
+        "name": "P4 Razings",
+        "desc": "Number of buildings destroyed of player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "355": {
+        "name": "P5 Razings",
+        "desc": "Number of buildings destroyed of player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "356": {
+        "name": "P6 Razings",
+        "desc": "Number of buildings destroyed of player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "357": {
+        "name": "P7 Razings",
+        "desc": "Number of buildings destroyed of player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "358": {
+        "name": "P8 Razings",
+        "desc": "Number of buildings destroyed of player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "359": {
+        "name": "Unused Resource 359",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "360": {
+        "name": "Unused Resource 360",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "361": {
+        "name": "Unused Resource 361",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "362": {
+        "name": "Unused Resource 362",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "363": {
+        "name": "Unused Resource 363",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "364": {
+        "name": "Unused Resource 364",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "365": {
+        "name": "Unused Resource 365",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "366": {
+        "name": "Unused Resource 366",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "367": {
+        "name": "Unused Resource 367",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "368": {
+        "name": "Unused Resource 368",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "369": {
+        "name": "Unused Resource 369",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "370": {
+        "name": "Unused Resource 370",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "371": {
+        "name": "Unused Resource 371",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "372": {
+        "name": "Unused Resource 372",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "373": {
+        "name": "Unused Resource 373",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "374": {
+        "name": "Unused Resource 374",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "375": {
+        "name": "Razings by Gaia",
+        "desc": "Number of own buildings destroyed by Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "376": {
+        "name": "Razings by P1",
+        "desc": "Number of own buildings destroyed by player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "377": {
+        "name": "Razings by P2",
+        "desc": "Number of own buildings destroyed by player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "378": {
+        "name": "Razings by P3",
+        "desc": "Number of own buildings destroyed by player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "379": {
+        "name": "Razings by P4",
+        "desc": "Number of own buildings destroyed by player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "380": {
+        "name": "Razings by P5",
+        "desc": "Number of own buildings destroyed by player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "381": {
+        "name": "Razings by P6",
+        "desc": "Number of own buildings destroyed by player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "382": {
+        "name": "Razings by P7",
+        "desc": "Number of own buildings destroyed by player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "383": {
+        "name": "Razings by P8",
+        "desc": "Number of own buildings destroyed by player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "384": {
+        "name": "Unused Resource 384",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "385": {
+        "name": "Unused Resource 385",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "386": {
+        "name": "Unused Resource 386",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "387": {
+        "name": "Unused Resource 387",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "388": {
+        "name": "Unused Resource 388",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "389": {
+        "name": "Unused Resource 389",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "390": {
+        "name": "Unused Resource 390",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "391": {
+        "name": "Unused Resource 391",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "392": {
+        "name": "Unused Resource 392",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "393": {
+        "name": "Unused Resource 393",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "394": {
+        "name": "Unused Resource 394",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "395": {
+        "name": "Unused Resource 395",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "396": {
+        "name": "Unused Resource 396",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "397": {
+        "name": "Unused Resource 397",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "398": {
+        "name": "Unused Resource 398",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "399": {
+        "name": "Unused Resource 399",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "400": {
+        "name": "Gaia Kill Value",
+        "desc": "Total cost of all units killed of Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "401": {
+        "name": "P1 Kill Value",
+        "desc": "Total cost of all units killed of player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "402": {
+        "name": "P2 Kill Value",
+        "desc": "Total cost of all units killed of player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "403": {
+        "name": "P3 Kill Value",
+        "desc": "Total cost of all units killed of player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "404": {
+        "name": "P4 Kill Value",
+        "desc": "Total cost of all units killed of player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "405": {
+        "name": "P5 Kill Value",
+        "desc": "Total cost of all units killed of player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "406": {
+        "name": "P6 Kill Value",
+        "desc": "Total cost of all units killed of player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "407": {
+        "name": "P7 Kill Value",
+        "desc": "Total cost of all units killed of player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "408": {
+        "name": "P8 Kill Value",
+        "desc": "Total cost of all units killed of player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "409": {
+        "name": "Unused Resource 409",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "410": {
+        "name": "Unused Resource 410",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "411": {
+        "name": "Unused Resource 411",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "412": {
+        "name": "Unused Resource 412",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "413": {
+        "name": "Unused Resource 413",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "414": {
+        "name": "Unused Resource 414",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "415": {
+        "name": "Unused Resource 415",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "416": {
+        "name": "Unused Resource 416",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "417": {
+        "name": "Unused Resource 417",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "418": {
+        "name": "Unused Resource 418",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "419": {
+        "name": "Unused Resource 419",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "420": {
+        "name": "Unused Resource 420",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "421": {
+        "name": "Unused Resource 421",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "422": {
+        "name": "Unused Resource 422",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "423": {
+        "name": "Unused Resource 423",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "424": {
+        "name": "Unused Resource 424",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "425": {
+        "name": "Gaia Razing Value",
+        "desc": "Total cost of all buildings destroyed of Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "426": {
+        "name": "P1 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "427": {
+        "name": "P2 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "428": {
+        "name": "P3 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "429": {
+        "name": "P4 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "430": {
+        "name": "P5 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "431": {
+        "name": "P6 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "432": {
+        "name": "P7 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "433": {
+        "name": "P8 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "434": {
+        "name": "Unused Resource 434",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "435": {
+        "name": "Unused Resource 435",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "436": {
+        "name": "Unused Resource 436",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "437": {
+        "name": "Unused Resource 437",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "438": {
+        "name": "Unused Resource 438",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "439": {
+        "name": "Unused Resource 439",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "440": {
+        "name": "Unused Resource 440",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "441": {
+        "name": "Unused Resource 441",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "442": {
+        "name": "Unused Resource 442",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "443": {
+        "name": "Unused Resource 443",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "444": {
+        "name": "Unused Resource 444",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "445": {
+        "name": "Unused Resource 445",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "446": {
+        "name": "Unused Resource 446",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "447": {
+        "name": "Unused Resource 447",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "448": {
+        "name": "Unused Resource 448",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "449": {
+        "name": "Unused Resource 449",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "450": {
+        "name": "Gaia Tribute",
+        "desc": "Amount of resources tributed to Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "451": {
+        "name": "P1 Tribute",
+        "desc": "Amount of resources tributed to player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "452": {
+        "name": "P2 Tribute",
+        "desc": "Amount of resources tributed to player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "453": {
+        "name": "P3 Tribute",
+        "desc": "Amount of resources tributed to player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "454": {
+        "name": "P4 Tribute",
+        "desc": "Amount of resources tributed to player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "455": {
+        "name": "P5 Tribute",
+        "desc": "Amount of resources tributed to player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "456": {
+        "name": "P6 Tribute",
+        "desc": "Amount of resources tributed to player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "457": {
+        "name": "P7 Tribute",
+        "desc": "Amount of resources tributed to player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "458": {
+        "name": "P8 Tribute",
+        "desc": "Amount of resources tributed to player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "459": {
+        "name": "Unused Resource 459",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "460": {
+        "name": "Unused Resource 460",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "461": {
+        "name": "Unused Resource 461",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "462": {
+        "name": "Unused Resource 462",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "463": {
+        "name": "Unused Resource 463",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "464": {
+        "name": "Unused Resource 464",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "465": {
+        "name": "Unused Resource 465",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "466": {
+        "name": "Unused Resource 466",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "467": {
+        "name": "Unused Resource 467",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "468": {
+        "name": "Unused Resource 468",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "469": {
+        "name": "Unused Resource 469",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "470": {
+        "name": "Unused Resource 470",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "471": {
+        "name": "Unused Resource 471",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "472": {
+        "name": "Unused Resource 472",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "473": {
+        "name": "Unused Resource 473",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "474": {
+        "name": "Unused Resource 474",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "475": {
+        "name": "Tribute from Gaia",
+        "desc": "Tribute received from Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "476": {
+        "name": "Tribute from P1",
+        "desc": "Tribute received from player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "477": {
+        "name": "Tribute from P2",
+        "desc": "Tribute received from player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "478": {
+        "name": "Tribute from P3",
+        "desc": "Tribute received from player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "479": {
+        "name": "Tribute from P4",
+        "desc": "Tribute received from player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "480": {
+        "name": "Tribute from P5",
+        "desc": "Tribute received from player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "481": {
+        "name": "Tribute from P6",
+        "desc": "Tribute received from player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "482": {
+        "name": "Tribute from P7",
+        "desc": "Tribute received from player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "483": {
+        "name": "Tribute from P8",
+        "desc": "Tribute received from player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "484": {
+        "name": "Unused Resource 484",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "485": {
+        "name": "Unused Resource 485",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "486": {
+        "name": "Unused Resource 486",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "487": {
+        "name": "Unused Resource 487",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "488": {
+        "name": "Unused Resource 488",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "489": {
+        "name": "Unused Resource 489",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "490": {
+        "name": "Unused Resource 490",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "491": {
+        "name": "Unused Resource 491",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "492": {
+        "name": "Unused Resource 492",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "493": {
+        "name": "Unused Resource 493",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "494": {
+        "name": "Unused Resource 494",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "495": {
+        "name": "Unused Resource 495",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "496": {
+        "name": "Unused Resource 496",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "497": {
+        "name": "Unused Resource 497",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "498": {
+        "name": "Unused Resource 498",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "499": {
+        "name": "Unused Resource 499",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     }
 }

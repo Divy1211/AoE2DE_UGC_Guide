@@ -515,53 +515,53 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Cumulative hp of all units killed
 
-## 69. Killed P1
+## 69. Unused Resource 69
 
 - ID: 69
 
-- Purpose: Number of player 1 units killed
+- Purpose: Unused
 
-## 70. Killed P2
+## 70. Unused Resource 70
 
 - ID: 70
 
-- Purpose: Number of player 2 units killed
+- Purpose: Unused
 
-## 71. Killed P3
+## 71. Unused Resource 71
 
 - ID: 71
 
-- Purpose: Number of player 3 units killed
+- Purpose: Unused
 
-## 72. Killed P4
+## 72. Unused Resource 72
 
 - ID: 72
 
-- Purpose: Number of player 4 units killed
+- Purpose: Unused
 
-## 73. Killed P5
+## 73. Unused Resource 73
 
 - ID: 73
 
-- Purpose: Number of player 5 units killed
+- Purpose: Unused
 
-## 74. Killed P6
+## 74. Unused Resource 74
 
 - ID: 74
 
-- Purpose: Number of player 6 units killed
+- Purpose: Unused
 
-## 75. Killed P7
+## 75. Unused Resource 75
 
 - ID: 75
 
-- Purpose: Number of player 7 units killed
+- Purpose: Unused
 
-## 76. Killed P8
+## 76. Unused Resource 76
 
 - ID: 76
 
-- Purpose: Number of player 8 units killed
+- Purpose: Unused
 
 ## 77. Conversion Resistance
 
@@ -801,197 +801,197 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Total trade gold generated
 
-## 102. P1 Tribute
+## 102. Unused Resource 102
 
 - ID: 102
 
-- Purpose: Amount of resources tributed to player 1
+- Purpose: Unused
 
-## 103. P2 Tribute
+## 103. Unused Resource 103
 
 - ID: 103
 
-- Purpose: Amount of resources tributed to player 2
+- Purpose: Unused
 
-## 104. P3 Tribute
+## 104. Unused Resource 104
 
 - ID: 104
 
-- Purpose: Amount of resources tributed to player 3
+- Purpose: Unused
 
-## 105. P4 Tribute
+## 105. Unused Resource 105
 
 - ID: 105
 
-- Purpose: Amount of resources tributed to player 4
+- Purpose: Unused
 
-## 106. P5 Tribute
+## 106. Unused Resource 106
 
 - ID: 106
 
-- Purpose: Amount of resources tributed to player 5
+- Purpose: Unused
 
-## 107. P6 Tribute
+## 107. Unused Resource 107
 
 - ID: 107
 
-- Purpose: Amount of resources tributed to player 6
+- Purpose: Unused
 
-## 108. P7 Tribute
+## 108. Unused Resource 108
 
 - ID: 108
 
-- Purpose: Amount of resources tributed to player 7
+- Purpose: Unused
 
-## 109. P8 Tribute
+## 109. Unused Resource 109
 
 - ID: 109
 
-- Purpose: Amount of resources tributed to player 8
+- Purpose: Unused
 
-## 110. P1 Kill Value
+## 110. Unused Resource 110
 
 - ID: 110
 
-- Purpose: Total cost of all units killed of player 1
+- Purpose: Unused
 
-## 111. P2 Kill Value
+## 111. Unused Resource 111
 
 - ID: 111
 
-- Purpose: Total cost of all units killed of player 2
+- Purpose: Unused
 
-## 112. P3 Kill Value
+## 112. Unused Resource 112
 
 - ID: 112
 
-- Purpose: Total cost of all units killed of player 3
+- Purpose: Unused
 
-## 113. P4 Kill Value
+## 113. Unused Resource 113
 
 - ID: 113
 
-- Purpose: Total cost of all units killed of player 4
+- Purpose: Unused
 
-## 114. P5 Kill Value
+## 114. Unused Resource 114
 
 - ID: 114
 
-- Purpose: Total cost of all units killed of player 5
+- Purpose: Unused
 
-## 115. P6 Kill Value
+## 115. Unused Resource 115
 
 - ID: 115
 
-- Purpose: Total cost of all units killed of player 6
+- Purpose: Unused
 
-## 116. P7 Kill Value
+## 116. Unused Resource 116
 
 - ID: 116
 
-- Purpose: Total cost of all units killed of player 7
+- Purpose: Unused
 
-## 117. P8 Kill Value
+## 117. Unused Resource 117
 
 - ID: 117
 
-- Purpose: Total cost of all units killed of player 8
+- Purpose: Unused
 
-## 118. P1 Razings
+## 118. Unused Resource 118
 
 - ID: 118
 
-- Purpose: Number of buildings destroyed of player 1
+- Purpose: Unused
 
-## 119. P2 Razings
+## 119. Unused Resource 119
 
 - ID: 119
 
-- Purpose: Number of buildings destroyed of player 2
+- Purpose: Unused
 
-## 120. P3 Razings
+## 120. Unused Resource 120
 
 - ID: 120
 
-- Purpose: Number of buildings destroyed of player 3
+- Purpose: Unused
 
-## 121. P4 Razings
+## 121. Unused Resource 121
 
 - ID: 121
 
-- Purpose: Number of buildings destroyed of player 4
+- Purpose: Unused
 
-## 122. P5 Razings
+## 122. Unused Resource 122
 
 - ID: 122
 
-- Purpose: Number of buildings destroyed of player 5
+- Purpose: Unused
 
-## 123. P6 Razings
+## 123. Unused Resource 123
 
 - ID: 123
 
-- Purpose: Number of buildings destroyed of player 6
+- Purpose: Unused
 
-## 124. P7 Razings
+## 124. Unused Resource 124
 
 - ID: 124
 
-- Purpose: Number of buildings destroyed of player 7
+- Purpose: Unused
 
-## 125. P8 Razings
+## 125. Unused Resource 125
 
 - ID: 125
 
-- Purpose: Number of buildings destroyed of player 8
+- Purpose: Unused
 
-## 126. P1 Razing Value
+## 126. Unused Resource 126
 
 - ID: 126
 
-- Purpose: Total cost of all buildings destroyed of player 1
+- Purpose: Unused
 
-## 127. P2 Razing Value
+## 127. Unused Resource 127
 
 - ID: 127
 
-- Purpose: Total cost of all buildings destroyed of player 2
+- Purpose: Unused
 
-## 128. P3 Razing Value
+## 128. Unused Resource 128
 
 - ID: 128
 
-- Purpose: Total cost of all buildings destroyed of player 3
+- Purpose: Unused
 
-## 129. P4 Razing Value
+## 129. Unused Resource 129
 
 - ID: 129
 
-- Purpose: Total cost of all buildings destroyed of player 4
+- Purpose: Unused
 
-## 130. P5 Razing Value
+## 130. Unused Resource 130
 
 - ID: 130
 
-- Purpose: Total cost of all buildings destroyed of player 5
+- Purpose: Unused
 
-## 131. P6 Razing Value
+## 131. Unused Resource 131
 
 - ID: 131
 
-- Purpose: Total cost of all buildings destroyed of player 6
+- Purpose: Unused
 
-## 132. P7 Razing Value
+## 132. Unused Resource 132
 
 - ID: 132
 
-- Purpose: Total cost of all buildings destroyed of player 7
+- Purpose: Unused
 
-## 133. P8 Razing Value
+## 133. Unused Resource 133
 
 - ID: 133
 
-- Purpose: Total cost of all buildings destroyed of player 8
+- Purpose: Unused
 
 ## 134. Standing Castles
 
@@ -1005,101 +1005,101 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Total HP of all buildings destroyed
 
-## 136. Kills by P1
+## 136. Unused Resource 136
 
 - ID: 136
 
-- Purpose: Number of own units killed by player 1
+- Purpose: Unused
 
-## 137. Kills by P2
+## 137. Unused Resource 137
 
 - ID: 137
 
-- Purpose: Number of own units killed by player 2
+- Purpose: Unused
 
-## 138. Kills by P3
+## 138. Unused Resource 138
 
 - ID: 138
 
-- Purpose: Number of own units killed by player 3
+- Purpose: Unused
 
-## 139. Kills by P4
+## 139. Unused Resource 139
 
 - ID: 139
 
-- Purpose: Number of own units killed by player 4
+- Purpose: Unused
 
-## 140. Kills by P5
+## 140. Unused Resource 140
 
 - ID: 140
 
-- Purpose: Number of own units killed by player 5
+- Purpose: Unused
 
-## 141. Kills by P6
+## 141. Unused Resource 141
 
 - ID: 141
 
-- Purpose: Number of own units killed by player 6
+- Purpose: Unused
 
-## 142. Kills by P7
+## 142. Unused Resource 142
 
 - ID: 142
 
-- Purpose: Number of own units killed by player 7
+- Purpose: Unused
 
-## 143. Kills by P8
+## 143. Unused Resource 143
 
 - ID: 143
 
-- Purpose: Number of own units killed by player 8
+- Purpose: Unused
 
-## 144. Razings by P1
+## 144. Unused Resource 144
 
 - ID: 144
 
-- Purpose: Number of own buildings destroyed by player 1
+- Purpose: Unused
 
-## 145. Razings by P2
+## 145. Unused Resource 145
 
 - ID: 145
 
-- Purpose: Number of own buildings destroyed by player 2
+- Purpose: Unused
 
-## 146. Razings by P3
+## 146. Unused Resource 146
 
 - ID: 146
 
-- Purpose: Number of own buildings destroyed by player 3
+- Purpose: Unused
 
-## 147. Razings by P4
+## 147. Unused Resource 147
 
 - ID: 147
 
-- Purpose: Number of own buildings destroyed by player 4
+- Purpose: Unused
 
-## 148. Razings by P5
+## 148. Unused Resource 148
 
 - ID: 148
 
-- Purpose: Number of own buildings destroyed by player 5
+- Purpose: Unused
 
-## 149. Razings by P6
+## 149. Unused Resource 149
 
 - ID: 149
 
-- Purpose: Number of own buildings destroyed by player 6
+- Purpose: Unused
 
-## 150. Razings by P7
+## 150. Unused Resource 150
 
 - ID: 150
 
-- Purpose: Number of own buildings destroyed by player 7
+- Purpose: Unused
 
-## 151. Razings by P8
+## 151. Unused Resource 151
 
 - ID: 151
 
-- Purpose: Number of own buildings destroyed by player 8
+- Purpose: Unused
 
 ## 152. Value Killed by Others
 
@@ -1125,53 +1125,53 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Number of own buildings destroyed by other players
 
-## 156. Tribute from P1
+## 156. Unused Resource 156
 
 - ID: 156
 
-- Purpose: Tribute received from player 1
+- Purpose: Unused
 
-## 157. Tribute from P2
+## 157. Unused Resource 157
 
 - ID: 157
 
-- Purpose: Tribute received from player 2
+- Purpose: Unused
 
-## 158. Tribute from P3
+## 158. Unused Resource 158
 
 - ID: 158
 
-- Purpose: Tribute received from player 3
+- Purpose: Unused
 
-## 159. Tribute from P4
+## 159. Unused Resource 159
 
 - ID: 159
 
-- Purpose: Tribute received from player 4
+- Purpose: Unused
 
-## 160. Tribute from P5
+## 160. Unused Resource 160
 
 - ID: 160
 
-- Purpose: Tribute received from player 5
+- Purpose: Unused
 
-## 161. Tribute from P6
+## 161. Unused Resource 161
 
 - ID: 161
 
-- Purpose: Tribute received from player 6
+- Purpose: Unused
 
-## 162. Tribute from P7
+## 162. Unused Resource 162
 
 - ID: 162
 
-- Purpose: Tribute received from player 7
+- Purpose: Unused
 
-## 163. Tribute from P8
+## 163. Unused Resource 163
 
 - ID: 163
 
-- Purpose: Tribute received from player 8
+- Purpose: Unused
 
 ## 164. Value Current Units
 
@@ -2376,4 +2376,1422 @@ This page is a list of all the player resources in the scenario editor and their
     - 0: All Civs
 
 - Note: Technically, this resource is used as a multiplier for the resource generated by task 154 currently on cavalry units. Task 154 can change which resource does this, and it is also what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is just set to 1 for cavalry.
+
+## 285. Trigger Shared Visibility
+
+- ID: 285
+
+- Purpose: Unknown
+
+## 286. Trigger Shared Exploration
+
+- ID: 286
+
+- Purpose: Unknown
+
+## 287. Unused Resource 287
+
+- ID: 287
+
+- Purpose: Unused
+
+## 288. Unused Resource 288
+
+- ID: 288
+
+- Purpose: Unused
+
+## 289. Unused Resource 289
+
+- ID: 289
+
+- Purpose: Unused
+
+## 290. Unused Resource 290
+
+- ID: 290
+
+- Purpose: Unused
+
+## 291. Unused Resource 291
+
+- ID: 291
+
+- Purpose: Unused
+
+## 292. Unused Resource 292
+
+- ID: 292
+
+- Purpose: Unused
+
+## 293. Unused Resource 293
+
+- ID: 293
+
+- Purpose: Unused
+
+## 294. Unused Resource 294
+
+- ID: 294
+
+- Purpose: Unused
+
+## 295. Unused Resource 295
+
+- ID: 295
+
+- Purpose: Unused
+
+## 296. Unused Resource 296
+
+- ID: 296
+
+- Purpose: Unused
+
+## 297. Unused Resource 297
+
+- ID: 297
+
+- Purpose: Unused
+
+## 298. Unused Resource 298
+
+- ID: 298
+
+- Purpose: Unused
+
+## 299. Unused Resource 299
+
+- ID: 299
+
+- Purpose: Unused
+
+## 300. Killed Gaia
+
+- ID: 300
+
+- Purpose: Number of gaia units killed
+
+## 301. Killed P1
+
+- ID: 301
+
+- Purpose: Number of player 1 units killed
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 302. Killed P2
+
+- ID: 302
+
+- Purpose: Number of player 2 units killed
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 303. Killed P3
+
+- ID: 303
+
+- Purpose: Number of player 3 units killed
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 304. Killed P4
+
+- ID: 304
+
+- Purpose: Number of player 4 units killed
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 305. Killed P5
+
+- ID: 305
+
+- Purpose: Number of player 5 units killed
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 306. Killed P6
+
+- ID: 306
+
+- Purpose: Number of player 6 units killed
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 307. Killed P7
+
+- ID: 307
+
+- Purpose: Number of player 7 units killed
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 308. Killed P8
+
+- ID: 308
+
+- Purpose: Number of player 8 units killed
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 309. Unused Resource 309
+
+- ID: 309
+
+- Purpose: Unused
+
+## 310. Unused Resource 310
+
+- ID: 310
+
+- Purpose: Unused
+
+## 311. Unused Resource 311
+
+- ID: 311
+
+- Purpose: Unused
+
+## 312. Unused Resource 312
+
+- ID: 312
+
+- Purpose: Unused
+
+## 313. Unused Resource 313
+
+- ID: 313
+
+- Purpose: Unused
+
+## 314. Unused Resource 314
+
+- ID: 314
+
+- Purpose: Unused
+
+## 315. Unused Resource 315
+
+- ID: 315
+
+- Purpose: Unused
+
+## 316. Unused Resource 316
+
+- ID: 316
+
+- Purpose: Unused
+
+## 317. Unused Resource 317
+
+- ID: 317
+
+- Purpose: Unused
+
+## 318. Unused Resource 318
+
+- ID: 318
+
+- Purpose: Unused
+
+## 319. Unused Resource 319
+
+- ID: 319
+
+- Purpose: Unused
+
+## 320. Unused Resource 320
+
+- ID: 320
+
+- Purpose: Unused
+
+## 321. Unused Resource 321
+
+- ID: 321
+
+- Purpose: Unused
+
+## 322. Unused Resource 322
+
+- ID: 322
+
+- Purpose: Unused
+
+## 323. Unused Resource 323
+
+- ID: 323
+
+- Purpose: Unused
+
+## 324. Unused Resource 324
+
+- ID: 324
+
+- Purpose: Unused
+
+## 325. Kills by Gaia
+
+- ID: 325
+
+- Purpose: Number of own units killed by Gaia
+
+## 326. Kills by P1
+
+- ID: 326
+
+- Purpose: Number of own units killed by player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 327. Kills by P2
+
+- ID: 327
+
+- Purpose: Number of own units killed by player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 328. Kills by P3
+
+- ID: 328
+
+- Purpose: Number of own units killed by player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 329. Kills by P4
+
+- ID: 329
+
+- Purpose: Number of own units killed by player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 330. Kills by P5
+
+- ID: 330
+
+- Purpose: Number of own units killed by player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 331. Kills by P6
+
+- ID: 331
+
+- Purpose: Number of own units killed by player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 332. Kills by P7
+
+- ID: 332
+
+- Purpose: Number of own units killed by player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 333. Kills by P8
+
+- ID: 333
+
+- Purpose: Number of own units killed by player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 334. Unused Resource 334
+
+- ID: 334
+
+- Purpose: Unused
+
+## 335. Unused Resource 335
+
+- ID: 335
+
+- Purpose: Unused
+
+## 336. Unused Resource 336
+
+- ID: 336
+
+- Purpose: Unused
+
+## 337. Unused Resource 337
+
+- ID: 337
+
+- Purpose: Unused
+
+## 338. Unused Resource 338
+
+- ID: 338
+
+- Purpose: Unused
+
+## 339. Unused Resource 339
+
+- ID: 339
+
+- Purpose: Unused
+
+## 340. Unused Resource 340
+
+- ID: 340
+
+- Purpose: Unused
+
+## 341. Unused Resource 341
+
+- ID: 341
+
+- Purpose: Unused
+
+## 342. Unused Resource 342
+
+- ID: 342
+
+- Purpose: Unused
+
+## 343. Unused Resource 343
+
+- ID: 343
+
+- Purpose: Unused
+
+## 344. Unused Resource 344
+
+- ID: 344
+
+- Purpose: Unused
+
+## 345. Unused Resource 345
+
+- ID: 345
+
+- Purpose: Unused
+
+## 346. Unused Resource 346
+
+- ID: 346
+
+- Purpose: Unused
+
+## 347. Unused Resource 347
+
+- ID: 347
+
+- Purpose: Unused
+
+## 348. Unused Resource 348
+
+- ID: 348
+
+- Purpose: Unused
+
+## 349. Unused Resource 349
+
+- ID: 349
+
+- Purpose: Unused
+
+## 350. Gaia Razings
+
+- ID: 350
+
+- Purpose: Number of buildings destroyed of Gaia
+
+## 351. P1 Razings
+
+- ID: 351
+
+- Purpose: Number of buildings destroyed of player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 352. P2 Razings
+
+- ID: 352
+
+- Purpose: Number of buildings destroyed of player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 353. P3 Razings
+
+- ID: 353
+
+- Purpose: Number of buildings destroyed of player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 354. P4 Razings
+
+- ID: 354
+
+- Purpose: Number of buildings destroyed of player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 355. P5 Razings
+
+- ID: 355
+
+- Purpose: Number of buildings destroyed of player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 356. P6 Razings
+
+- ID: 356
+
+- Purpose: Number of buildings destroyed of player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 357. P7 Razings
+
+- ID: 357
+
+- Purpose: Number of buildings destroyed of player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 358. P8 Razings
+
+- ID: 358
+
+- Purpose: Number of buildings destroyed of player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 359. Unused Resource 359
+
+- ID: 359
+
+- Purpose: Unused
+
+## 360. Unused Resource 360
+
+- ID: 360
+
+- Purpose: Unused
+
+## 361. Unused Resource 361
+
+- ID: 361
+
+- Purpose: Unused
+
+## 362. Unused Resource 362
+
+- ID: 362
+
+- Purpose: Unused
+
+## 363. Unused Resource 363
+
+- ID: 363
+
+- Purpose: Unused
+
+## 364. Unused Resource 364
+
+- ID: 364
+
+- Purpose: Unused
+
+## 365. Unused Resource 365
+
+- ID: 365
+
+- Purpose: Unused
+
+## 366. Unused Resource 366
+
+- ID: 366
+
+- Purpose: Unused
+
+## 367. Unused Resource 367
+
+- ID: 367
+
+- Purpose: Unused
+
+## 368. Unused Resource 368
+
+- ID: 368
+
+- Purpose: Unused
+
+## 369. Unused Resource 369
+
+- ID: 369
+
+- Purpose: Unused
+
+## 370. Unused Resource 370
+
+- ID: 370
+
+- Purpose: Unused
+
+## 371. Unused Resource 371
+
+- ID: 371
+
+- Purpose: Unused
+
+## 372. Unused Resource 372
+
+- ID: 372
+
+- Purpose: Unused
+
+## 373. Unused Resource 373
+
+- ID: 373
+
+- Purpose: Unused
+
+## 374. Unused Resource 374
+
+- ID: 374
+
+- Purpose: Unused
+
+## 375. Razings by Gaia
+
+- ID: 375
+
+- Purpose: Number of own buildings destroyed by Gaia
+
+## 376. Razings by P1
+
+- ID: 376
+
+- Purpose: Number of own buildings destroyed by player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 377. Razings by P2
+
+- ID: 377
+
+- Purpose: Number of own buildings destroyed by player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 378. Razings by P3
+
+- ID: 378
+
+- Purpose: Number of own buildings destroyed by player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 379. Razings by P4
+
+- ID: 379
+
+- Purpose: Number of own buildings destroyed by player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 380. Razings by P5
+
+- ID: 380
+
+- Purpose: Number of own buildings destroyed by player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 381. Razings by P6
+
+- ID: 381
+
+- Purpose: Number of own buildings destroyed by player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 382. Razings by P7
+
+- ID: 382
+
+- Purpose: Number of own buildings destroyed by player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 383. Razings by P8
+
+- ID: 383
+
+- Purpose: Number of own buildings destroyed by player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 384. Unused Resource 384
+
+- ID: 384
+
+- Purpose: Unused
+
+## 385. Unused Resource 385
+
+- ID: 385
+
+- Purpose: Unused
+
+## 386. Unused Resource 386
+
+- ID: 386
+
+- Purpose: Unused
+
+## 387. Unused Resource 387
+
+- ID: 387
+
+- Purpose: Unused
+
+## 388. Unused Resource 388
+
+- ID: 388
+
+- Purpose: Unused
+
+## 389. Unused Resource 389
+
+- ID: 389
+
+- Purpose: Unused
+
+## 390. Unused Resource 390
+
+- ID: 390
+
+- Purpose: Unused
+
+## 391. Unused Resource 391
+
+- ID: 391
+
+- Purpose: Unused
+
+## 392. Unused Resource 392
+
+- ID: 392
+
+- Purpose: Unused
+
+## 393. Unused Resource 393
+
+- ID: 393
+
+- Purpose: Unused
+
+## 394. Unused Resource 394
+
+- ID: 394
+
+- Purpose: Unused
+
+## 395. Unused Resource 395
+
+- ID: 395
+
+- Purpose: Unused
+
+## 396. Unused Resource 396
+
+- ID: 396
+
+- Purpose: Unused
+
+## 397. Unused Resource 397
+
+- ID: 397
+
+- Purpose: Unused
+
+## 398. Unused Resource 398
+
+- ID: 398
+
+- Purpose: Unused
+
+## 399. Unused Resource 399
+
+- ID: 399
+
+- Purpose: Unused
+
+## 400. Gaia Kill Value
+
+- ID: 400
+
+- Purpose: Total cost of all units killed of Gaia
+
+## 401. P1 Kill Value
+
+- ID: 401
+
+- Purpose: Total cost of all units killed of player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 402. P2 Kill Value
+
+- ID: 402
+
+- Purpose: Total cost of all units killed of player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 403. P3 Kill Value
+
+- ID: 403
+
+- Purpose: Total cost of all units killed of player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 404. P4 Kill Value
+
+- ID: 404
+
+- Purpose: Total cost of all units killed of player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 405. P5 Kill Value
+
+- ID: 405
+
+- Purpose: Total cost of all units killed of player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 406. P6 Kill Value
+
+- ID: 406
+
+- Purpose: Total cost of all units killed of player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 407. P7 Kill Value
+
+- ID: 407
+
+- Purpose: Total cost of all units killed of player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 408. P8 Kill Value
+
+- ID: 408
+
+- Purpose: Total cost of all units killed of player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 409. Unused Resource 409
+
+- ID: 409
+
+- Purpose: Unused
+
+## 410. Unused Resource 410
+
+- ID: 410
+
+- Purpose: Unused
+
+## 411. Unused Resource 411
+
+- ID: 411
+
+- Purpose: Unused
+
+## 412. Unused Resource 412
+
+- ID: 412
+
+- Purpose: Unused
+
+## 413. Unused Resource 413
+
+- ID: 413
+
+- Purpose: Unused
+
+## 414. Unused Resource 414
+
+- ID: 414
+
+- Purpose: Unused
+
+## 415. Unused Resource 415
+
+- ID: 415
+
+- Purpose: Unused
+
+## 416. Unused Resource 416
+
+- ID: 416
+
+- Purpose: Unused
+
+## 417. Unused Resource 417
+
+- ID: 417
+
+- Purpose: Unused
+
+## 418. Unused Resource 418
+
+- ID: 418
+
+- Purpose: Unused
+
+## 419. Unused Resource 419
+
+- ID: 419
+
+- Purpose: Unused
+
+## 420. Unused Resource 420
+
+- ID: 420
+
+- Purpose: Unused
+
+## 421. Unused Resource 421
+
+- ID: 421
+
+- Purpose: Unused
+
+## 422. Unused Resource 422
+
+- ID: 422
+
+- Purpose: Unused
+
+## 423. Unused Resource 423
+
+- ID: 423
+
+- Purpose: Unused
+
+## 424. Unused Resource 424
+
+- ID: 424
+
+- Purpose: Unused
+
+## 425. Gaia Razing Value
+
+- ID: 425
+
+- Purpose: Total cost of all buildings destroyed of Gaia
+
+## 426. P1 Razing Value
+
+- ID: 426
+
+- Purpose: Total cost of all buildings destroyed of player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 427. P2 Razing Value
+
+- ID: 427
+
+- Purpose: Total cost of all buildings destroyed of player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 428. P3 Razing Value
+
+- ID: 428
+
+- Purpose: Total cost of all buildings destroyed of player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 429. P4 Razing Value
+
+- ID: 429
+
+- Purpose: Total cost of all buildings destroyed of player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 430. P5 Razing Value
+
+- ID: 430
+
+- Purpose: Total cost of all buildings destroyed of player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 431. P6 Razing Value
+
+- ID: 431
+
+- Purpose: Total cost of all buildings destroyed of player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 432. P7 Razing Value
+
+- ID: 432
+
+- Purpose: Total cost of all buildings destroyed of player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 433. P8 Razing Value
+
+- ID: 433
+
+- Purpose: Total cost of all buildings destroyed of player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 434. Unused Resource 434
+
+- ID: 434
+
+- Purpose: Unused
+
+## 435. Unused Resource 435
+
+- ID: 435
+
+- Purpose: Unused
+
+## 436. Unused Resource 436
+
+- ID: 436
+
+- Purpose: Unused
+
+## 437. Unused Resource 437
+
+- ID: 437
+
+- Purpose: Unused
+
+## 438. Unused Resource 438
+
+- ID: 438
+
+- Purpose: Unused
+
+## 439. Unused Resource 439
+
+- ID: 439
+
+- Purpose: Unused
+
+## 440. Unused Resource 440
+
+- ID: 440
+
+- Purpose: Unused
+
+## 441. Unused Resource 441
+
+- ID: 441
+
+- Purpose: Unused
+
+## 442. Unused Resource 442
+
+- ID: 442
+
+- Purpose: Unused
+
+## 443. Unused Resource 443
+
+- ID: 443
+
+- Purpose: Unused
+
+## 444. Unused Resource 444
+
+- ID: 444
+
+- Purpose: Unused
+
+## 445. Unused Resource 445
+
+- ID: 445
+
+- Purpose: Unused
+
+## 446. Unused Resource 446
+
+- ID: 446
+
+- Purpose: Unused
+
+## 447. Unused Resource 447
+
+- ID: 447
+
+- Purpose: Unused
+
+## 448. Unused Resource 448
+
+- ID: 448
+
+- Purpose: Unused
+
+## 449. Unused Resource 449
+
+- ID: 449
+
+- Purpose: Unused
+
+## 450. Gaia Tribute
+
+- ID: 450
+
+- Purpose: Amount of resources tributed to Gaia
+
+## 451. P1 Tribute
+
+- ID: 451
+
+- Purpose: Amount of resources tributed to player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 452. P2 Tribute
+
+- ID: 452
+
+- Purpose: Amount of resources tributed to player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 453. P3 Tribute
+
+- ID: 453
+
+- Purpose: Amount of resources tributed to player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 454. P4 Tribute
+
+- ID: 454
+
+- Purpose: Amount of resources tributed to player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 455. P5 Tribute
+
+- ID: 455
+
+- Purpose: Amount of resources tributed to player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 456. P6 Tribute
+
+- ID: 456
+
+- Purpose: Amount of resources tributed to player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 457. P7 Tribute
+
+- ID: 457
+
+- Purpose: Amount of resources tributed to player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 458. P8 Tribute
+
+- ID: 458
+
+- Purpose: Amount of resources tributed to player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 459. Unused Resource 459
+
+- ID: 459
+
+- Purpose: Unused
+
+## 460. Unused Resource 460
+
+- ID: 460
+
+- Purpose: Unused
+
+## 461. Unused Resource 461
+
+- ID: 461
+
+- Purpose: Unused
+
+## 462. Unused Resource 462
+
+- ID: 462
+
+- Purpose: Unused
+
+## 463. Unused Resource 463
+
+- ID: 463
+
+- Purpose: Unused
+
+## 464. Unused Resource 464
+
+- ID: 464
+
+- Purpose: Unused
+
+## 465. Unused Resource 465
+
+- ID: 465
+
+- Purpose: Unused
+
+## 466. Unused Resource 466
+
+- ID: 466
+
+- Purpose: Unused
+
+## 467. Unused Resource 467
+
+- ID: 467
+
+- Purpose: Unused
+
+## 468. Unused Resource 468
+
+- ID: 468
+
+- Purpose: Unused
+
+## 469. Unused Resource 469
+
+- ID: 469
+
+- Purpose: Unused
+
+## 470. Unused Resource 470
+
+- ID: 470
+
+- Purpose: Unused
+
+## 471. Unused Resource 471
+
+- ID: 471
+
+- Purpose: Unused
+
+## 472. Unused Resource 472
+
+- ID: 472
+
+- Purpose: Unused
+
+## 473. Unused Resource 473
+
+- ID: 473
+
+- Purpose: Unused
+
+## 474. Unused Resource 474
+
+- ID: 474
+
+- Purpose: Unused
+
+## 475. Tribute from Gaia
+
+- ID: 475
+
+- Purpose: Tribute received from Gaia
+
+## 476. Tribute from P1
+
+- ID: 476
+
+- Purpose: Tribute received from player 1
+
+- Note: This refers to lobby/slot/world player 1, not editor/scenario player 1
+
+## 477. Tribute from P2
+
+- ID: 477
+
+- Purpose: Tribute received from player 2
+
+- Note: This refers to lobby/slot/world player 2, not editor/scenario player 2
+
+## 478. Tribute from P3
+
+- ID: 478
+
+- Purpose: Tribute received from player 3
+
+- Note: This refers to lobby/slot/world player 3, not editor/scenario player 3
+
+## 479. Tribute from P4
+
+- ID: 479
+
+- Purpose: Tribute received from player 4
+
+- Note: This refers to lobby/slot/world player 4, not editor/scenario player 4
+
+## 480. Tribute from P5
+
+- ID: 480
+
+- Purpose: Tribute received from player 5
+
+- Note: This refers to lobby/slot/world player 5, not editor/scenario player 5
+
+## 481. Tribute from P6
+
+- ID: 481
+
+- Purpose: Tribute received from player 6
+
+- Note: This refers to lobby/slot/world player 6, not editor/scenario player 6
+
+## 482. Tribute from P7
+
+- ID: 482
+
+- Purpose: Tribute received from player 7
+
+- Note: This refers to lobby/slot/world player 7, not editor/scenario player 7
+
+## 483. Tribute from P8
+
+- ID: 483
+
+- Purpose: Tribute received from player 8
+
+- Note: This refers to lobby/slot/world player 8, not editor/scenario player 8
+
+## 484. Unused Resource 484
+
+- ID: 484
+
+- Purpose: Unused
+
+## 485. Unused Resource 485
+
+- ID: 485
+
+- Purpose: Unused
+
+## 486. Unused Resource 486
+
+- ID: 486
+
+- Purpose: Unused
+
+## 487. Unused Resource 487
+
+- ID: 487
+
+- Purpose: Unused
+
+## 488. Unused Resource 488
+
+- ID: 488
+
+- Purpose: Unused
+
+## 489. Unused Resource 489
+
+- ID: 489
+
+- Purpose: Unused
+
+## 490. Unused Resource 490
+
+- ID: 490
+
+- Purpose: Unused
+
+## 491. Unused Resource 491
+
+- ID: 491
+
+- Purpose: Unused
+
+## 492. Unused Resource 492
+
+- ID: 492
+
+- Purpose: Unused
+
+## 493. Unused Resource 493
+
+- ID: 493
+
+- Purpose: Unused
+
+## 494. Unused Resource 494
+
+- ID: 494
+
+- Purpose: Unused
+
+## 495. Unused Resource 495
+
+- ID: 495
+
+- Purpose: Unused
+
+## 496. Unused Resource 496
+
+- ID: 496
+
+- Purpose: Unused
+
+## 497. Unused Resource 497
+
+- ID: 497
+
+- Purpose: Unused
+
+## 498. Unused Resource 498
+
+- ID: 498
+
+- Purpose: Unused
+
+## 499. Unused Resource 499
+
+- ID: 499
+
+- Purpose: Unused
 

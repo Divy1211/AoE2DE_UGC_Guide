@@ -66,8 +66,8 @@ linkso = """: https://youtu.be/-qRUaOHpbwI?t=870
 : https://youtu.be/-qRUaOHpbwI?t=830
 : https://youtu.be/-qRUaOHpbwI?t=902""".split("\n")
 
-md = md.replace(">=", "$\geq$")
-md = md.replace("<=", "$\leq$")
+md = md.replace(">=", r"$\geq$")
+md = md.replace("<=", r"$\leq$")
 md = md.replace(">", "$>$")
 md = md.replace("<", "$<$")
 

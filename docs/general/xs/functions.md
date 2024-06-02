@@ -1208,9 +1208,61 @@ Parameters:
 
 Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
 
-## 7. Functions With Seemingly No Practical Use
+## 7. Ai Scripting
 
-### 7.1. xsAddRuntimeEvent
+### 7.1. xsGetGoal
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetGoal(int id)`
+
+Parameters:
+
+1.  `#!cpp int id`: The goal id/number to get for the current AI
+
+Gets the goal id/number of the current AI
+
+### 7.2. xsGetStrategicNumber
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsGetStrategicNumber(int id)`
+
+Parameters:
+
+1.  `#!cpp int id`: The SN to get for the current AI
+
+Gets the SN of the current AI
+
+### 7.3. xsSetGoal
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsSetGoal(int id, int value)`
+
+Parameters:
+
+1.  `#!cpp int id`: The goal id/number to get for the current AI
+2.  `#!cpp int value`: The value to set the goal id/number to
+
+Sets the goal id/number of the current AI
+
+### 7.4. xsSetStrategicNumber
+
+Returning Type: `#!cpp int`
+
+Prototype: `#!cpp int xsSetStrategicNumber(int id, int value)`
+
+Parameters:
+
+1.  `#!cpp int id`: The SN to get for the current AI
+2.  `#!cpp int value`: The value to set the SN to
+
+Sets the SN of the current AI
+
+## 8. Functions With Seemingly No Practical Use
+
+### 8.1. xsAddRuntimeEvent
 
 Returning Type: `#!cpp bool`
 
@@ -1218,13 +1270,13 @@ Prototype: `#!cpp bool xsAddRuntimeEvent(string runtimeName, string functionName
 
 Parameters:
 
-1.  `#!cpp string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension.
+1.  `#!cpp string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 2.  `#!cpp string functionName`: This is the name of a user defined function that takes a single integer argument
 3.  `#!cpp int functionArgument`: This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 
 A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 
-### 7.2. xsBreakPoint
+### 8.2. xsBreakPoint
 
 Returning Type: `#!cpp void`
 
@@ -1233,7 +1285,7 @@ Prototype: `#!cpp void xsBreakPoint()`
 
 This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE.
 
-### 7.3. xsDumpArrays
+### 8.3. xsDumpArrays
 
 Returning Type: `#!cpp void`
 
@@ -1242,7 +1294,7 @@ Prototype: `#!cpp void xsDumpArrays()`
 
 This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing.
 
-### 7.4. xsGetContextPlayer
+### 8.4. xsGetContextPlayer
 
 Returning Type: `#!cpp int`
 
@@ -1251,7 +1303,7 @@ Prototype: `#!cpp int xsGetContextPlayer()`
 
 Returns the current context player ID.
 
-### 7.5. xsGetFunctionID
+### 8.5. xsGetFunctionID
 
 Returning Type: `#!cpp int`
 
@@ -1263,7 +1315,7 @@ Parameters:
 
 Returns the hash of a given function. This function has no practical application and is probably for internal usage only.
 
-### 7.6. xsSetContextPlayer
+### 8.6. xsSetContextPlayer
 
 Returning Type: `#!cpp void`
 

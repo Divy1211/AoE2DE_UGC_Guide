@@ -57,6 +57,34 @@
             "type": "int",
             "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Imperial Age",
             "usage": null
+        },
+        {
+            "name": "cStoneAge",
+            "value": 0,
+            "type": "int",
+            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Dark Age",
+            "usage": null
+        },
+        {
+            "name": "cToolAge",
+            "value": 1,
+            "type": "int",
+            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Feudal Age",
+            "usage": null
+        },
+        {
+            "name": "cBronzeAge",
+            "value": 2,
+            "type": "int",
+            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Castle Age",
+            "usage": null
+        },
+        {
+            "name": "cIronAge",
+            "value": 3,
+            "type": "int",
+            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Imperial Age",
+            "usage": null
         }
     ],
     "value": [
@@ -431,6 +459,125 @@
         {
             "name": "cGeorgians",
             "value": 45,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeEgyptians",
+            "value": 1,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeGreeks",
+            "value": 2,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeBabylonians",
+            "value": 3,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeAssyrians",
+            "value": 4,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeMinoans",
+            "value": 5,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeHittites",
+            "value": 6,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoePhoenicians",
+            "value": 7,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeSumerians",
+            "value": 8,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoePersians",
+            "value": 9,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeShang",
+            "value": 10,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeYamato",
+            "value": 11,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeChoson",
+            "value": 12,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeRomans",
+            "value": 13,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeCarthaginians",
+            "value": 14,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoePalmyrans",
+            "value": 15,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeMacedonians",
+            "value": 16,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAoeLacViet",
+            "value": 17,
             "type": "int",
             "desc": "This is the civilization ID of CIV_NAME",
             "usage": null
@@ -2366,62 +2513,6 @@
             "usage": null
         },
         {
-            "name": "cAttributePlayer1Kills",
-            "value": 69,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer2Kills",
-            "value": 70,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer3Kills",
-            "value": 71,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer4Kills",
-            "value": 72,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer5Kills",
-            "value": 73,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer6Kills",
-            "value": 74,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer7Kills",
-            "value": 75,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer8Kills",
-            "value": 76,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
             "name": "cAttributeConvertResistance",
             "value": 77,
             "type": "int",
@@ -2597,230 +2688,6 @@
             "usage": null
         },
         {
-            "name": "cAttributePlayer1Tribute",
-            "value": 102,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer2Tribute",
-            "value": 103,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer3Tribute",
-            "value": 104,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer4Tribute",
-            "value": 105,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer5Tribute",
-            "value": 106,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer6Tribute",
-            "value": 107,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer7Tribute",
-            "value": 108,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer8Tribute",
-            "value": 109,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer1KillValue",
-            "value": 110,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer2KillValue",
-            "value": 111,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer3KillValue",
-            "value": 112,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer4KillValue",
-            "value": 113,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer5KillValue",
-            "value": 114,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer6KillValue",
-            "value": 115,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer7KillValue",
-            "value": 116,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer8KillValue",
-            "value": 117,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer1Razings",
-            "value": 118,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer2Razings",
-            "value": 119,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer3Razings",
-            "value": 120,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer4Razings",
-            "value": 121,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer5Razings",
-            "value": 122,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer6Razings",
-            "value": 123,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer7Razings",
-            "value": 124,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer8Razings",
-            "value": 125,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer1RazingValue",
-            "value": 126,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer2RazingValue",
-            "value": 127,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer3RazingValue",
-            "value": 128,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer4RazingValue",
-            "value": 129,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer5RazingValue",
-            "value": 130,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer6RazingValue",
-            "value": 131,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer7RazingValue",
-            "value": 132,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributePlayer8RazingValue",
-            "value": 133,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
             "name": "cAttributeCastle",
             "value": 134,
             "type": "int",
@@ -2830,118 +2697,6 @@
         {
             "name": "cAttributeHitPointRazings",
             "value": 135,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer1",
-            "value": 136,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer2",
-            "value": 137,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer3",
-            "value": 138,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer4",
-            "value": 139,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer5",
-            "value": 140,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer6",
-            "value": 141,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer7",
-            "value": 142,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeKillsByPlayer8",
-            "value": 143,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer1",
-            "value": 144,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer2",
-            "value": 145,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer3",
-            "value": 146,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer4",
-            "value": 147,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer5",
-            "value": 148,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer6",
-            "value": 149,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer7",
-            "value": 150,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeRazingsByPlayer8",
-            "value": 151,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
@@ -2970,62 +2725,6 @@
         {
             "name": "cAttributeRazedByOthers",
             "value": 155,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer1",
-            "value": 156,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer2",
-            "value": 157,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer3",
-            "value": 158,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer4",
-            "value": 159,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer5",
-            "value": 160,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer6",
-            "value": 161,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer7",
-            "value": 162,
-            "type": "int",
-            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
-            "usage": null
-        },
-        {
-            "name": "cAttributeTributeFromPlayer8",
-            "value": 163,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
@@ -3743,6 +3442,524 @@
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
+        },
+        {
+            "name": "cAttributeTriggerSharedVisibility",
+            "value": 285,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeTriggerSharedExploration",
+            "value": 286,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeGaiaKills",
+            "value": 300,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributePlayer1Kills",
+            "value": 301,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer2Kills",
+            "value": 302,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer3Kills",
+            "value": 303,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer4Kills",
+            "value": 304,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer5Kills",
+            "value": 305,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer6Kills",
+            "value": 306,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer7Kills",
+            "value": 307,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer8Kills",
+            "value": 308,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByGaia",
+            "value": 325,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer1",
+            "value": 326,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer2",
+            "value": 327,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer3",
+            "value": 328,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer4",
+            "value": 329,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer5",
+            "value": 330,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer6",
+            "value": 331,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer7",
+            "value": 332,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeKillsByPlayer8",
+            "value": 333,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeGaiaRazings",
+            "value": 350,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer1Razings",
+            "value": 351,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer2Razings",
+            "value": 352,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer3Razings",
+            "value": 353,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer4Razings",
+            "value": 354,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer5Razings",
+            "value": 355,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer6Razings",
+            "value": 356,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer7Razings",
+            "value": 357,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer8Razings",
+            "value": 358,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByGaia",
+            "value": 375,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer1",
+            "value": 376,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer2",
+            "value": 377,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer3",
+            "value": 378,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer4",
+            "value": 379,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer5",
+            "value": 380,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer6",
+            "value": 381,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer7",
+            "value": 382,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeRazingsByPlayer8",
+            "value": 383,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeGaiaKillValue",
+            "value": 400,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer1KillValue",
+            "value": 401,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer2KillValue",
+            "value": 402,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer3KillValue",
+            "value": 403,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer4KillValue",
+            "value": 404,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer5KillValue",
+            "value": 405,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer6KillValue",
+            "value": 406,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer7KillValue",
+            "value": 407,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer8KillValue",
+            "value": 408,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeGaiaRazingValue",
+            "value": 425,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer1RazingValue",
+            "value": 426,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer2RazingValue",
+            "value": 427,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer3RazingValue",
+            "value": 428,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer4RazingValue",
+            "value": 429,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer5RazingValue",
+            "value": 430,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer6RazingValue",
+            "value": 431,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer7RazingValue",
+            "value": 432,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer8RazingValue",
+            "value": 433,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeGaiaTribute",
+            "value": 450,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer1Tribute",
+            "value": 451,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer2Tribute",
+            "value": 452,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer3Tribute",
+            "value": 453,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer4Tribute",
+            "value": 454,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer5Tribute",
+            "value": 455,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer6Tribute",
+            "value": 456,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer7Tribute",
+            "value": 457,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributePlayer8Tribute",
+            "value": 458,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromGaia",
+            "value": 475,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer1",
+            "value": 476,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer2",
+            "value": 477,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer3",
+            "value": 478,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer4",
+            "value": 479,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer5",
+            "value": 480,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer6",
+            "value": 481,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer7",
+            "value": 482,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
+        },
+        {
+            "name": "cAttributeTributeFromPlayer8",
+            "value": 483,
+            "type":  "int",
+            "desc":  "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage":  null
         }
     ]
 }
