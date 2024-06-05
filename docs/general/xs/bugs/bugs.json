@@ -76,6 +76,20 @@
             "Code File": "param.xs",
             "Version Fixed": "",
             "show": true
+        },
+        {
+            "Name": "Script Call A Function With Comments",
+            "Description" : "When a function that contains comments is defined in a script call box, a parsing error is encountered",
+            "Expected Behaviour": "Function call with comments should correctly ignore comments and parse",
+            "Reproduction Steps": [
+                "Create a new scenario",
+                "Create a new trigger with a script call effect",
+                "Place the following code inside the script call box: INSERT_CODE_BLOCK_HERE",
+                "When the effect is double clicked/the scenario is played, a parse error is shown"
+            ],
+            "Code File": "comment_fail.xs",
+            "Version Fixed": "",
+            "show": true
         }
     ],
     "Language Syntax": [
@@ -382,6 +396,18 @@
             "Expected Behaviour": "--",
             "Reproduction Steps": ["--"],
             "Code File": "",
+            "Version Fixed": "TEST THIS",
+            "show": false
+        },
+        {
+            "Name": "Researching a technology twice in XS causes a crash",
+            "Description" : "Calling `xsResearchTechnology` twice for the same tech on the same player crashes the game",
+            "Expected Behaviour": "These functions should work in an RMS as they do in scenarios",
+            "Reproduction Steps": [
+                "Create a new RMS/Scenario with the following code XS script included: INSERT_CODE_BLOCK_HERE",
+                "When a game is played a crash occurs"
+            ],
+            "Code File": "res_tech_2x.xs",
             "Version Fixed": "",
             "show": true
         },
@@ -395,8 +421,8 @@
                 "When a game is played using the XS script included in an RMS, a parsing error is shown"
             ],
             "Code File": "res_tech.xs",
-            "Version Fixed": "",
-            "show": true
+            "Version Fixed": "???",
+            "show": false
         },
         {
             "Name": "Object Count Related XS function Do Not Work In RMS",
@@ -408,8 +434,8 @@
                 "When a game is played using the XS script included in an RMS, a parsing error is shown"
             ],
             "Code File": "obj_cnt.xs",
-            "Version Fixed": "",
-            "show": true
+            "Version Fixed": "???",
+            "show": false
         }
     ],
     "Crashes": [
