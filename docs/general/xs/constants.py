@@ -25,9 +25,17 @@ def toTitle(string):
     return string.strip()
 
 def format_name(string):
-    return string.lower().replace(" ", "-").replace("%", "").replace("(", "").replace(")", "").replace("/", "").replace("!", "")
+    return (
+        string.lower()
+            .replace(" ", "-")
+            .replace("%", "")
+            .replace("(", "")
+            .replace(")", "")
+            .replace("/", "")
+            .replace("!", "")
+    )
 
-def replace_placeholders(string, is_res):
+def replace_placeholders(string, is_res, constant):
     string = string.replace('RES_NAME', toTitle(constant['name']))
 
     if is_res:
@@ -45,10 +53,12 @@ for index, (category, constants) in enumerate(const_docs.items(), 1):
     for c_index, constant in enumerate(constants, 1):
         outmd += f"### {index}.{c_index}. {constant['name']}\n\n"
         outmd += f"Value: `#!cpp {constant['type']} {constant['value']}`\n\n"
-        outmd += f"{replace_placeholders(constant['desc'], category == 'resource')}\n\n"
+        outmd += f"{replace_placeholders(constant['desc'], category == 'resource', constant)}\n\n"
         if constant['usage']:
-            outmd += f"Syntax: `#!cpp {constant['usage']['syntax']}`\n\n"
-            outmd += f"Example: `#!cpp {constant['usage']['example']}`\n\n"
+            # outmd += f"Syntax: `#!cpp {constant['usage']['syntax']}`\n\n"
+            # outmd += f"Example: `#!cpp {constant['usage']['example']}`\n\n"
+            outmd += f"Syntax:\n\n```cpp\n {constant['usage']['syntax']}\n```\n\n"
+            outmd += f"Example:\n\n```cpp\n {constant['usage']['example']}\n```\n\n"
             outmd += f"{constant['usage']['explanation']}\n\n"
     
 with open("./constants.md", "w") as file:

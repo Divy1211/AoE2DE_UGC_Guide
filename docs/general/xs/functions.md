@@ -139,12 +139,12 @@ Sets the min interval of the rule this function is called inside. Cannot be used
 
 Returning Type: `#!cpp void`
 
-Prototype: `#!cpp void xsSetRulePriority(string ruleName, int priority)`
+Prototype: `#!cpp void xsSetRulePriority(string ruleName, int rulePriority)`
 
 Parameters:
 
 1.  `#!cpp string ruleName`: The name of the rule to set the priority of
-2.  `#!cpp int priority`: The new priority of the rule
+2.  `#!cpp int rulePriority`: The new priority of the rule
 
 Sets the priority of the given rule.
 
@@ -152,11 +152,11 @@ Sets the priority of the given rule.
 
 Returning Type: `#!cpp void`
 
-Prototype: `#!cpp void xsSetRulePrioritySelf(int priority)`
+Prototype: `#!cpp void xsSetRulePrioritySelf(int rulePriority)`
 
 Parameters:
 
-1.  `#!cpp int priority`: The new priority of the rule
+1.  `#!cpp int rulePriority`: The new priority of the rule
 
 Sets the priority of the rule this function is called inside. Cannot be used outside of a rule's body!
 

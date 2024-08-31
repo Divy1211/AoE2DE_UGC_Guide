@@ -4,28 +4,28 @@
             "name": "cOffsetString",
             "value": 0,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)",
             "usage": null
         },
         {
             "name": "cOffsetInteger",
             "value": 1,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)",
             "usage": null
         },
         {
             "name": "cOffsetFloat",
             "value": 2,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)",
             "usage": null
         },
         {
             "name": "cOffsetVector",
             "value": 3,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)",
+            "desc": "Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)",
             "usage": null
         }
     ],
@@ -34,63 +34,63 @@
             "name": "cDarkAge",
             "value": 0,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Dark Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Dark Age",
             "usage": null
         },
         {
             "name": "cFeudalAge",
             "value": 1,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Feudal Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Feudal Age",
             "usage": null
         },
         {
             "name": "cCastleAge",
             "value": 2,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Castle Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Castle Age",
             "usage": null
         },
         {
             "name": "cImperialAge",
             "value": 3,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Imperial Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Imperial Age",
             "usage": null
         },
         {
             "name": "cStoneAge",
             "value": 0,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Dark Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Dark Age",
             "usage": null
         },
         {
             "name": "cToolAge",
             "value": 1,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Feudal Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Feudal Age",
             "usage": null
         },
         {
             "name": "cBronzeAge",
             "value": 2,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Castle Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Castle Age",
             "usage": null
         },
         {
             "name": "cIronAge",
             "value": 3,
             "type": "int",
-            "desc": "Value of the [Current Age](../../resources/resources/#7-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Imperial Age",
+            "desc": "Value of the [Current Age](../../resources/resources/#6-current-age \"Jump to: Game Mechanics > Resources > #7. Current Age\") resource when a player is in the Imperial Age",
             "usage": null
         }
     ],
     "value": [
         {
             "name": "cActivationTime",
-            "value": null,
+            "value": -1,
             "type": "int",
             "desc": "This value is only defined inside the body of a rule. It holds the time of initial activation of that rule",
             "usage": null
@@ -140,7 +140,7 @@
             "usage": null
         }
     ],
-    "civs": [
+    "civilization": [
         { 
             "name": "cGaia",
             "value": 0,
@@ -665,11 +665,11 @@
             "name": "cSpawnUnit",
             "value": 7,
             "type": "int",
-            "desc": "This is the ID of the `Enable (or disable) Technology` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Spawn Unit` effect for the xsEffectAmount function",
             "usage": {
-                "syntax": "xsEffectAmount(cEnableTech, techID, enableOrDisable, 0)",
-                "example": "xsEffectAmount(cEnableTech, 6, cAttributeEnable, 0)",
-                "explanation": "This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead"
+                "syntax": "xsEffectAmount(cModResource, cAttributeSpawnCap, cAttributeSet, numBuildings);\n xsEffectAmount(cSpawnUnit, unitID, buildingID, numUnits)",
+                "example": "xsEffectAmount(cModResource, cAttributeSpawnCap, cAttributeSet, 2);\n xsEffectAmount(cSpawnUnit, 83, 109, 5)",
+                "explanation": "This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect."
             }
         },
         {
