@@ -118,7 +118,7 @@ theme:
     # - toc.integrate
   font:
     text: Roboto
-    code: Fira Code
+    code: Spline Sans Mono
   icon:
     logo: octicons/file-code-24
     admonition:

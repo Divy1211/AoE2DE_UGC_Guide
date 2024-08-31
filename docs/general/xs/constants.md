@@ -8,25 +8,25 @@
 
 Value: `#!cpp int 0`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)
+Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)
 
 ### 1.2. cOffsetInteger
 
 Value: `#!cpp int 1`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)
+Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)
 
 ### 1.3. cOffsetFloat
 
 Value: `#!cpp int 2`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)
+Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)
 
 ### 1.4. cOffsetVector
 
 Value: `#!cpp int 3`
 
-Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-datatype-bool-forward "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)
+Used with the [xsOffsetFilePosition](../functions/#66-xsoffsetfileposition "Jump To: XS > Function Reference > xsOffsetFilePosition"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)
 
 ## 2. Age
 
@@ -34,55 +34,55 @@ Used with the [xsOffsetFilePosition](../functions/#63-xsoffsetfilepositionint-da
 
 Value: `#!cpp int 0`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Dark Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Dark Age
 
 ### 2.2. cFeudalAge
 
 Value: `#!cpp int 1`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Feudal Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Feudal Age
 
 ### 2.3. cCastleAge
 
 Value: `#!cpp int 2`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Castle Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Castle Age
 
 ### 2.4. cImperialAge
 
 Value: `#!cpp int 3`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Imperial Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Imperial Age
 
 ### 2.5. cStoneAge
 
 Value: `#!cpp int 0`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Dark Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Dark Age
 
 ### 2.6. cToolAge
 
 Value: `#!cpp int 1`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Feudal Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Feudal Age
 
 ### 2.7. cBronzeAge
 
 Value: `#!cpp int 2`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Castle Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Castle Age
 
 ### 2.8. cIronAge
 
 Value: `#!cpp int 3`
 
-Value of the [Current Age](../../resources/resources/#7-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Imperial Age
+Value of the [Current Age](../../resources/resources/#6-current-age "Jump to: Game Mechanics > Resources > #7. Current Age") resource when a player is in the Imperial Age
 
 ## 3. Value
 
 ### 3.1. cActivationTime
 
-Value: `#!cpp int None`
+Value: `#!cpp int -1`
 
 This value is only defined inside the body of a rule. It holds the time of initial activation of that rule
 
@@ -124,7 +124,7 @@ Value: `#!cpp int 103`
 
 one of the values returned by the `xsGetVictoryCondition[ForSecondaryGameMode]` functions
 
-## 5. Civs
+## 5. Civilization
 
 ### 5.1. cGaia
 
@@ -512,9 +512,17 @@ Value: `#!cpp int 0`
 
 This is the ID of the `Set Attribute` effect of the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cSetAttribute, unitID, attributeID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cSetAttribute, 74, cHitpoints, 100)`
+```cpp
+ xsEffectAmount(cSetAttribute, unitID, attributeID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cSetAttribute, 74, cHitpoints, 100)
+```
 
 This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of the [Unit Attribute Constants](./#7-effectamount-unit-attribute "Jump to: Unit Attribute Constants") may be used to modify the corresponding unit property
 
@@ -524,9 +532,17 @@ Value: `#!cpp int 1`
 
 This is the ID of the `Modify Resource` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cModResource, resourceID, operation, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)`
+```cpp
+ xsEffectAmount(cModResource, resourceID, operation, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)
+```
 
 This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](./#9-resource "Jump to: Constant Reference > Resource")
 
@@ -536,9 +552,17 @@ Value: `#!cpp int 2`
 
 This is the ID of the `Enable (or disable) Object` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cEnableObject, unitID, enableOrDisable, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cEnableObject, 74, cAttributeDisable, 0)`
+```cpp
+ xsEffectAmount(cEnableObject, unitID, enableOrDisable, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cEnableObject, 74, cAttributeDisable, 0)
+```
 
 This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be used to enable an object instead
 
@@ -548,9 +572,17 @@ Value: `#!cpp int 3`
 
 This is the ID of the `Upgrade Unit` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cUpgradeUnit, oldUnitID, newUnitID, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cUpgradeUnit, 74, 75, 0)`
+```cpp
+ xsEffectAmount(cUpgradeUnit, oldUnitID, newUnitID, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cUpgradeUnit, 74, 75, 0)
+```
 
 This copies all units attributes except ID and available from unit 75 (man at arms) to 74 (militia)
 
@@ -560,9 +592,17 @@ Value: `#!cpp int 4`
 
 This is the ID of the `Add Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cAddAttribute, unitID, attributeID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cAddAttribute, 74, 0, 100)`
+```cpp
+ xsEffectAmount(cAddAttribute, unitID, attributeID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cAddAttribute, 74, 0, 100)
+```
 
 This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
@@ -572,9 +612,17 @@ Value: `#!cpp int 5`
 
 This is the ID of the `Multiply Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cMulAttribute, unitID, attributeID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cMulAttribute, 74, 0, 100)`
+```cpp
+ xsEffectAmount(cMulAttribute, unitID, attributeID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cMulAttribute, 74, 0, 100)
+```
 
 This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
@@ -584,9 +632,17 @@ Value: `#!cpp int 6`
 
 This is the ID of the `Multiply Resource` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cMulResource, resourceID, 0, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cMulResource, cAttributeFood, 0, 10)`
+```cpp
+ xsEffectAmount(cMulResource, resourceID, 0, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cMulResource, cAttributeFood, 0, 10)
+```
 
 This multiplies the food amount by 10 (the value)
 
@@ -594,13 +650,23 @@ This multiplies the food amount by 10 (the value)
 
 Value: `#!cpp int 7`
 
-This is the ID of the `Enable (or disable) Technology` effect for the xsEffectAmount function
+This is the ID of the `Spawn Unit` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cEnableTech, techID, enableOrDisable, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cEnableTech, 6, cAttributeEnable, 0)`
+```cpp
+ xsEffectAmount(cModResource, cAttributeSpawnCap, cAttributeSet, numBuildings);
+ xsEffectAmount(cSpawnUnit, unitID, buildingID, numUnits)
+```
 
-This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead
+Example:
+
+```cpp
+ xsEffectAmount(cModResource, cAttributeSpawnCap, cAttributeSet, 2);
+ xsEffectAmount(cSpawnUnit, 83, 109, 5)
+```
+
+This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect.
 
 ### 6.9. cModifyTech
 
@@ -608,9 +674,17 @@ Value: `#!cpp int 8`
 
 This is the ID of the `Modify Technology` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cModifyTech, techID, techAttribute, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cModifyTech, 22, cAttrSetTime, 10)`
+```cpp
+ xsEffectAmount(cModifyTech, techID, techAttribute, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cModifyTech, 22, cAttrSetTime, 10)
+```
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./#6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
 
@@ -620,9 +694,17 @@ Value: `#!cpp int 9`
 
 This is the ID of the `Set Player Data` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cSetPlayerData, 0, cAttributeSet, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cSetPlayerData, 0, cAttributeSet, 10230)`
+```cpp
+ xsEffectAmount(cSetPlayerData, 0, cAttributeSet, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cSetPlayerData, 0, cAttributeSet, 10230)
+```
 
 This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
@@ -632,9 +714,17 @@ Value: `#!cpp int 100`
 
 This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cSetTechCost, techID, resourceID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10)`
+```cpp
+ xsEffectAmount(cSetTechCost, techID, resourceID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10)
+```
 
 This sets the food cost of tech 22 (loom) to 10 (the value)
 
@@ -644,9 +734,17 @@ Value: `#!cpp int 101`
 
 This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cAddTechCost, techID, resourceID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cAddTechCost, 22, cAttributeFood, 10)`
+```cpp
+ xsEffectAmount(cAddTechCost, techID, resourceID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cAddTechCost, 22, cAttributeFood, 10)
+```
 
 This adds 10 (the) to the current food cost of tech 22 (loom)
 
@@ -656,9 +754,17 @@ Value: `#!cpp int 102`
 
 This is the ID of the `Disable Tech` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cDisableTech, techID, 0, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cDisableTech, 22, 0, 0)`
+```cpp
+ xsEffectAmount(cDisableTech, techID, 0, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cDisableTech, 22, 0, 0)
+```
 
 This disables the tech 22 (loom)
 
@@ -668,9 +774,17 @@ Value: `#!cpp int 103`
 
 This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cModTechTime, techID, operation, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cModTechTime, 22, cAttributeSet, 10)`
+```cpp
+ xsEffectAmount(cModTechTime, techID, operation, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cModTechTime, 22, cAttributeSet, 10)
+```
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, `cAttributeAdd` may be used to add to the current research time of the technology
 
@@ -680,9 +794,17 @@ Value: `#!cpp int -1`
 
 This is the ID of the `Gaia Set Attribute` effect of the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaSetAttribute, unitID, attributeID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaSetAttribute, 74, 0, 100)`
+```cpp
+ xsEffectAmount(cGaiaSetAttribute, unitID, attributeID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaSetAttribute, 74, 0, 100)
+```
 
 This sets the attribute 0 (HP) of unit 74 (militia) to 100 (the value)
 
@@ -692,9 +814,17 @@ Value: `#!cpp int -2`
 
 This is the ID of the `Gaia Modify Resource` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaModResource, resourceID, operation, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaModResource, cAttributeFood, cAttributeAdd, 100)`
+```cpp
+ xsEffectAmount(cGaiaModResource, resourceID, operation, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaModResource, cAttributeFood, cAttributeAdd, 100)
+```
 
 This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100
 
@@ -704,9 +834,17 @@ Value: `#!cpp int -3`
 
 This is the ID of the `Gaia Enable (or disable) Object` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaEnableObject, unitID, enableOrDisable, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaEnableObject, 74, cAttributeDisable, 0)`
+```cpp
+ xsEffectAmount(cGaiaEnableObject, unitID, enableOrDisable, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaEnableObject, 74, cAttributeDisable, 0)
+```
 
 This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be used to enable an object instead
 
@@ -716,9 +854,17 @@ Value: `#!cpp int -4`
 
 This is the ID of the `Gaia Upgrade Unit` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaUpgradeUnit, oldUnitID, newUnitID, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaUpgradeUnit, 74, 75, 0)`
+```cpp
+ xsEffectAmount(cGaiaUpgradeUnit, oldUnitID, newUnitID, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaUpgradeUnit, 74, 75, 0)
+```
 
 This replaces all units 74 (militia) with 75 (man at arms) on the map and also disables unit 74 and enables unit 75
 
@@ -728,9 +874,17 @@ Value: `#!cpp int -5`
 
 This is the ID of the `Gaia Add Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaAddAttribute, unitID, attributeID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaAddAttribute, 74, 0, 100)`
+```cpp
+ xsEffectAmount(cGaiaAddAttribute, unitID, attributeID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaAddAttribute, 74, 0, 100)
+```
 
 This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
@@ -740,9 +894,17 @@ Value: `#!cpp int -6`
 
 This is the ID of the `Gaia Multiply Attribute` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaMulAttribute, unitID, attributeID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaMulAttribute, 74, 0, 100)`
+```cpp
+ xsEffectAmount(cGaiaMulAttribute, unitID, attributeID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaMulAttribute, 74, 0, 100)
+```
 
 This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
@@ -752,9 +914,17 @@ Value: `#!cpp int -7`
 
 This is the ID of the `Gaia Multiply Resource` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaMulResource, resourceID, 0, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaMulResource, cAttributeFood, 0, 10)`
+```cpp
+ xsEffectAmount(cGaiaMulResource, resourceID, 0, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaMulResource, cAttributeFood, 0, 10)
+```
 
 This multiplies the food amount by 10 (the value)
 
@@ -764,9 +934,17 @@ Value: `#!cpp int -8`
 
 This is the ID of the `Gaia Enable (or disable) Technology` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaEnableTech, techID, enableOrDisable, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaEnableTech, 6, cAttributeEnable, 0)`
+```cpp
+ xsEffectAmount(cGaiaEnableTech, techID, enableOrDisable, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaEnableTech, 6, cAttributeEnable, 0)
+```
 
 This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead
 
@@ -776,9 +954,17 @@ Value: `#!cpp int -9`
 
 This is the ID of the `Gaia Modify Technology` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaModifyTech, techID, techAttribute, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaModifyTech, 22, cAttrSetTime, 10)`
+```cpp
+ xsEffectAmount(cGaiaModifyTech, techID, techAttribute, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaModifyTech, 22, cAttrSetTime, 10)
+```
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
 
@@ -788,9 +974,17 @@ Value: `#!cpp int -10`
 
 This is the ID of the `Gaia Set Player Data` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, 10230)`
+```cpp
+ xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaSetPlayerData, 0, cAttributeSet, 10230)
+```
 
 This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
@@ -800,9 +994,17 @@ Value: `#!cpp int -101`
 
 This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaSetTechCost, techID, resourceID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaSetTechCost, 22, cAttributeFood, 10)`
+```cpp
+ xsEffectAmount(cGaiaSetTechCost, techID, resourceID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaSetTechCost, 22, cAttributeFood, 10)
+```
 
 This sets the food cost of tech 22 (loom) to 10 (the value)
 
@@ -812,9 +1014,17 @@ Value: `#!cpp int -102`
 
 This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaAddTechCost, techID, resourceID, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaAddTechCost, 22, cAttributeFood, 10)`
+```cpp
+ xsEffectAmount(cGaiaAddTechCost, techID, resourceID, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaAddTechCost, 22, cAttributeFood, 10)
+```
 
 This adds 10 (the) to the current food cost of tech 22 (loom)
 
@@ -824,9 +1034,17 @@ Value: `#!cpp int -103`
 
 This is the ID of the `Gaia Disable Tech` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaDisableTech, techID, 0, 0)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaDisableTech, 22, 0, 0)`
+```cpp
+ xsEffectAmount(cGaiaDisableTech, techID, 0, 0)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaDisableTech, 22, 0, 0)
+```
 
 This disables the tech 22 (loom)
 
@@ -836,9 +1054,17 @@ Value: `#!cpp int -104`
 
 This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function
 
-Syntax: `#!cpp xsEffectAmount(cGaiaModTechTime, techID, operation, value)`
+Syntax:
 
-Example: `#!cpp xsEffectAmount(cGaiaModTechTime, 22, cAttributeSet, 10)`
+```cpp
+ xsEffectAmount(cGaiaModTechTime, techID, operation, value)
+```
+
+Example:
+
+```cpp
+ xsEffectAmount(cGaiaModTechTime, 22, cAttributeSet, 10)
+```
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, `cAttributeAdd` may be used to add to the current research time of the technology
 
