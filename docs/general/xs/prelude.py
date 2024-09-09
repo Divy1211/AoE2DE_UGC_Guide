@@ -76,7 +76,12 @@ def main():
         file.write(f"// + --------------{'-'*19} +\n")
         file.write(f"// | Generated on: {datetime.now().strftime('%Y/%m/%d %H:%M:%S'):<19} |\n")
         file.write(f"// | Made by:      {'Alian713':<19} |\n")
-        file.write(f"// + --------------{'-'*19} +\n\n")
+        file.write(f"// + --------------{'-'*19} +\n\n\n")
+
+        file.write("/** Set the max number of times a loop is allowed to repeat. The first iteration is not counted as a repeat */\n")
+        file.write("extern int infiniteLoopLimit = -1;\n")
+        file.write("/** Set the max number of stack frames that can be constructed in one function call */\n")
+        file.write("extern int infiniteRecursionLimit = -1;\n\n")
 
         write_consts(constants, file)
         write_fns(functions, file)

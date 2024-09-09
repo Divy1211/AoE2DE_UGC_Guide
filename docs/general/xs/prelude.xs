@@ -1,7 +1,13 @@
 // + --------------------------------- +
-// | Generated on: 2024/08/30 13:18:09 |
+// | Generated on: 2024/09/09 23:00:28 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
+
+
+/** Set the max number of times a loop is allowed to repeat. The first iteration is not counted as a repeat */
+extern int infiniteLoopLimit = -1;
+/** Set the max number of stack frames that can be constructed in one function call */
+extern int infiniteRecursionLimit = -1;
 
 
 // 1. Read/Write
