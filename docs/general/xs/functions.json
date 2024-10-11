@@ -1349,7 +1349,7 @@
                     "desc": "Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name."
                 }
             ],
-            "desc": "Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game file is created for each player, and subsequent writes will be duplicated to each player."
+            "desc": "Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player."
         },
         {
             "name": "xsOpenFile",
