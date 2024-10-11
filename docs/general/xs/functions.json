@@ -1100,19 +1100,19 @@
                     "name": "targetPlayerID",
                     "type": "int",
                     "required": false,
-                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player"
+                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter."
                 },
                 {
                     "name": "targetType",
                     "type": "int",
                     "required": false,
-                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes"
+                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter."
                 },
                 {
                     "name": "targetUnitLevel",
                     "type": "int",
                     "required": false,
-                    "desc": "Unknown"
+                    "desc": "Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter."
                 }
             ],
             "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
