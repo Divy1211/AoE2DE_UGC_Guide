@@ -666,7 +666,7 @@ Example:
  xsEffectAmount(cSpawnUnit, 83, 109, 5)
 ```
 
-This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect. If you prefer spawning the units garrisoned set `cAttributeSpawnStayInside` to `1`.
+This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect. If you prefer spawning the units garrisoned set resource `cAttributeSpawnStayInside` to 1.
 
 ### 6.9. cModifyTech
 
