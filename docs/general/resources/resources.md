@@ -2363,7 +2363,14 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 283
 
-- Purpose: Unknown
+- Purpose: Determines whenever spawned unit is spawned garrisoned or outside
+
+- Default Values:
+
+    - 0: All Civs
+    - 1: Set briefly for the Armenians after their first Fortified Church is built to spawn the relic garrisoned.
+
+- Note: This is usually overridden by techs
 
 ## 284. Cavalry Kill Reward
 
