@@ -961,9 +961,9 @@ Parameters:
 1.  `#!cpp int playerID`: The player to check unit actions for
 2.  `#!cpp int unitType`: The type of unit to check actions for. Values 9xx refer to classes
 3.  `#!cpp int actionId`: The type of action to check for
-4. (Optional) `#!cpp int targetPlayerID`: Check if the action is being performed on a unit (eg. attacking) of this player
-5. (Optional) `#!cpp int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes
-6. (Optional) `#!cpp int targetUnitLevel`: Unknown
+4. (Optional) `#!cpp int targetPlayerID`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
+5. (Optional) `#!cpp int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
+6. (Optional) `#!cpp int targetUnitLevel`: Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
 
 Checks and returns if any unit matching the set filters of the given player has the specified action.
 
