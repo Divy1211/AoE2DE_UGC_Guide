@@ -1055,7 +1055,7 @@ Parameters:
 
 1. (Optional) `#!cpp bool append`: Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name.
 
-Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created
+Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game file is created for each player, and subsequent writes will be duplicated to each player.
 
 ### 6.3. xsGetDataTypeSize
 
@@ -1110,7 +1110,7 @@ Parameters:
 
 1.  `#!cpp string filename`: The name of the file to open, without the `.xsdat` extension
 
-Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened
+Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game all players files are read, and if any of them contain different data that can cause desync errors.
 
 ### 6.8. xsReadFloat
 
