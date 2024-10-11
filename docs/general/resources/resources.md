@@ -2363,7 +2363,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 283
 
-- Purpose: Determines whenever spawned unit is spawned garrisoned or outside
+- Purpose: Determines whenever spawned unit via `xsEffectAmount(cSpawnUnit,...)` or certain techs is spawned garrisoned or outside
 
 - Default Values:
 
