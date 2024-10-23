@@ -3795,3 +3795,63 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
+## 502. Chopping food productivity
+
+- ID: 502
+
+- Purpose: Chopping food generation rate per 100 seconds
+
+- Default Values:
+
+    - 0:  Default
+    - 4:  Athenians
+
+## 503. Trade wood percentage
+
+- ID: 503
+
+- Purpose: Amount of trade will be returned as wood instead of gold
+
+- Default Values:
+
+    - 0:  Default
+
+- Note: Setting it to 0.5 will return half the amount in gold and half in wood. Seems to be working for trade cogs only. Setting it to a value $\geq$ 1 will make it so no trade resources are returned
+
+## 507. Unknown Athenian resource
+
+- ID: 507
+
+- Purpose: Unknown... What does this resource do?
+
+- Default Values:
+
+    - 0:  Default
+    - 1:  Athenians
+
+- Note: Unknown, but probably something related to Athenian policies
+
+## 521. Castle Gold Productivity
+
+- ID: 521
+
+- Purpose: Castle gold production rate multiplier
+
+- Default Values:
+
+    - 0:  Default
+    - 1:  After Peloponnesian League researched
+
+- Note: The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`
+
+## 551. Tyranny
+
+- ID: 551
+
+- Purpose: Unknown... What does this resource do?
+
+- Default Values:
+
+    - 0:  Default and after Reset Tyranny researched
+    - 1:  After Tyranny researched
+

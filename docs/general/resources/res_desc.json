@@ -3233,5 +3233,49 @@
         "desc": "Unused",
         "defaults": {},
         "note": ""
+    },
+    "502": {
+        "name": "Chopping food productivity",
+        "desc": "Chopping food generation rate per 100 seconds",
+        "defaults": {
+            "0": " Default",
+            "4": " Athenians"
+        },
+        "note": ""
+    },
+    "503": {
+        "name": "Trade wood percentage",
+        "desc": "Amount of trade will be returned as wood instead of gold",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": "Setting it to 0.5 will return half the amount in gold and half in wood. Seems to be working for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned"
+    },
+    "507": {
+        "name": "Unknown Athenian resource",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {
+            "0": " Default",
+            "1": " Athenians"
+        },
+        "note": "Unknown, but probably something related to Athenian policies"
+    },
+    "521": {
+        "name": "Castle Gold Productivity",
+        "desc": "Castle gold production rate multiplier",
+        "defaults": {
+            "0": " Default",
+            "1": " After Peloponnesian League researched"
+        },
+        "note": "The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`"
+    },
+    "551": {
+        "name": "Tyranny",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {
+            "0": " Default and after Reset Tyranny researched",
+            "1": " After Tyranny researched"
+        },
+        "note": ""
     }
 }
