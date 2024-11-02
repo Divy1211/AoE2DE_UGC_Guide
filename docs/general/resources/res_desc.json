@@ -3290,7 +3290,7 @@
             "0": " Default",
             "1": " Athenians"
         },
-        "note": "Athenians start with 1."
+        "note": "Athenians start with it set to 1."
     },
     "508": {
         "name": "Unknown Resource 508",
@@ -3368,7 +3368,7 @@
     },
     "520": {
         "name": "Unknown Resource 520",
-        "desc": "Gives gold generation on kills to certain `Elite Hoplite` units. Similar to resource 550 and 551.",
+        "desc": "Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.",
         "defaults": {
             "0": " Default"
         },

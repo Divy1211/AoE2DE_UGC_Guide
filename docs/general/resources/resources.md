@@ -3867,7 +3867,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Athenians
 
-- Note: Athenians start with 1.
+- Note: Athenians start with it set to 1.
 
 ## 508. Unknown Resource 508
 
@@ -3951,7 +3951,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 520
 
-- Purpose: Gives gold generation on kills to certain `Elite Hoplite` units. Similar to resource 550 and 551.
+- Purpose: Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.
 
 - Default Values:
 
