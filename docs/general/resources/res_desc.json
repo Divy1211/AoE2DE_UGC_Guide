@@ -3566,7 +3566,7 @@
             "0": " Default",
             "1": " After Military Policy activated"
         },
-        "note": "The amount of gold obtained from killing a unit `u` is `u * unit_loot+productivity * 3`."
+        "note": "The amount of gold obtained from killing a unit `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class action."
     },
     "552": {
         "name": "Unknown Resource 552",
