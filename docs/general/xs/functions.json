@@ -1362,7 +1362,7 @@
                     "desc": "The name of the file to open, without the `.xsdat` extension"
                 }
             ],
-            "desc": "Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game all players files are read, and if any of them contain different data that can cause desync errors."
+            "desc": "Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error"
         },
         {
             "name": "xsWriteString",
