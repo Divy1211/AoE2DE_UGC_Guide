@@ -3370,7 +3370,7 @@
         "name": "Unknown Resource 520",
         "desc": "Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.",
         "defaults": {
-            "0": " Default"
+            "1": " Default"
         },
         "note": ""
     },
@@ -3555,7 +3555,7 @@
         "name": "Unknown Resource 550",
         "desc": "Gives gold generation on kills to certain `Elite Hoplite`, `Camel Raider` and probably other units. Similar to resource 520 and 551.",
         "defaults": {
-            "0": " Default"
+            "1": " Default"
         },
         "note": ""
     },

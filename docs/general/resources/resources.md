@@ -3955,7 +3955,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Default
+    - 1:  Default
 
 ## 521. Castle Gold Productivity
 
@@ -4146,7 +4146,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Default Values:
 
-    - 0:  Default
+    - 1:  Default
 
 ## 551. Unit Loot Productivity
 
