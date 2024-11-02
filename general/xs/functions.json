@@ -1,0 +1,1644 @@
+{
+    "rules": [
+        {
+            "name": "xsDisableRule",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule to disable"
+                }
+            ],
+            "desc": "Disables the given rule."
+        },
+        {
+            "name": "xsDisableSelf",
+            "return_type": "void",
+            "params": [],
+            "desc": "Disables the rule this function is called inside. Cannot be used outside of a rule's body!"
+        },
+        {
+            "name": "xsEnableRule",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule to enable"
+                }
+            ],
+            "desc": "Enables the given rule."
+        },
+        {
+            "name": "xsIsRuleEnabled",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "ruleName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule to check"
+                }
+            ],
+            "desc": "Returns true if the rule is enabled, else returns false."
+        },
+        {
+            "name": "xsSetRulePriority",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule to set the priority of"
+                },
+                {
+                    "name": "rulePriority",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new priority of the rule"
+                }
+            ],
+            "desc": "Sets the priority of the given rule."
+        },
+        {
+            "name": "xsSetRulePrioritySelf",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "rulePriority",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new priority of the rule"
+                }
+            ],
+            "desc": "Sets the priority of the rule this function is called inside. Cannot be used outside of a rule's body!"
+        },
+        {
+            "name": "xsSetRuleMinInterval",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule to set the min interval of"
+                },
+                {
+                    "name": "interval",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new min interval of the rule"
+                }
+            ],
+            "desc": "Sets the min interval of the given rule."
+        },
+        {
+            "name": "xsSetRuleMinIntervalSelf",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "interval",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new min interval of the rule"
+                }
+            ],
+            "desc": "Sets the min interval of the rule this function is called inside. Cannot be used outside of a rule's body!"
+        },
+        {
+            "name": "xsSetRuleMaxInterval",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule to set the max interval of"
+                },
+                {
+                    "name": "interval",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new max interval of the rule"
+                }
+            ],
+            "desc": "Sets the max interval of the given rule."
+        },
+        {
+            "name": "xsSetRuleMaxIntervalSelf",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "interval",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new max interval of the rule"
+                }
+            ],
+            "desc": "Sets the max interval of the rule this function is called inside. Cannot be used outside of a rule's body!"
+        },
+        {
+            "name": "xsEnableRuleGroup",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleGroupName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule group to enable"
+                }
+            ],
+            "desc": "Enables all the rules in the given rule group"
+        },
+        {
+            "name": "xsDisableRuleGroup",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "ruleGroupName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule group to disable"
+                }
+            ],
+            "desc": "Disables all the rules in the given rule group"
+        },
+        {
+            "name": "xsIsRuleGroupEnabled",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "ruleGroupName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the rule group to check"
+                }
+            ],
+            "desc": "Returns true, if all the rules in the given rule group are enabled"
+        }
+    ],
+    "vectors": [
+        {
+            "name": "xsVectorGetX",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to get the X coordinate of"
+                }
+            ],
+            "desc": "The X coordinate of the vector given."
+        },
+        {
+            "name": "xsVectorGetY",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to get the Y coordinate of"
+                }
+            ],
+            "desc": "The Y coordinate of the vector given."
+        },
+        {
+            "name": "xsVectorGetZ",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to get the Z coordinate of"
+                }
+            ],
+            "desc": "The Z coordinate of the vector given."
+        },
+        {
+            "name": "xsVectorSetX",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to modify the X coordinate of"
+                },
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the X coordinate to"
+                }
+            ],
+            "desc": "Returns a new vector with the X component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!"
+        },
+        {
+            "name": "xsVectorSetY",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to modify the Y coordinate of"
+                },
+                {
+                    "name": "y",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the Y coordinate to"
+                }
+            ],
+            "desc": "Returns a new vector with the Y component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!"
+        },
+        {
+            "name": "xsVectorSetZ",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to modify the Z coordinate of"
+                },
+                {
+                    "name": "z",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the Z coordinate to"
+                }
+            ],
+            "desc": "Returns a new vector with the Z component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!"
+        },
+        {
+            "name": "xsVectorSet",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the X coordinate to"
+                },
+                {
+                    "name": "y",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the Y coordinate to"
+                },
+                {
+                    "name": "z",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the Z coordinate to"
+                }
+            ],
+            "desc": "Returns a vector with the given X, Y and Z components."
+        },
+        {
+            "name": "xsVectorLength",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to calculate the length of"
+                }
+            ],
+            "desc": "Returns the length of the given vector."
+        },
+        {
+            "name": "xsVectorNormalize",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to normalise"
+                }
+            ],
+            "desc": "Returns the normalised vector in the direction of the given vector."
+        }
+    ],
+    "arrays": [
+        {
+            "name": "xsArrayCreateInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "size",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The length of the array to create"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The default value to initialise all the values in the array to"
+                },
+                {
+                    "name": "uniqueName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "A unique name of the created array"
+                }
+            ],
+            "desc": "Creates an array of type int and returns its ID."
+        },
+        {
+            "name": "xsArrayCreateFloat",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "size",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The length of the array to create"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The default value to initialise all the values in the array to"
+                },
+                {
+                    "name": "uniqueName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "A unique name of the created array"
+                }
+            ],
+            "desc": "Creates an array of type float and returns its ID."
+        },
+        {
+            "name": "xsArrayCreateBool",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "size",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The length of the array to create"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "The default value to initialise all the values in the array to"
+                },
+                {
+                    "name": "uniqueName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "A unique name of the created array"
+                }
+            ],
+            "desc": "Creates an array of type bool and returns its ID."
+        },
+        {
+            "name": "xsArrayCreateString",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "size",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The length of the array to create"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The default value to initialise all the values in the array to"
+                },
+                {
+                    "name": "uniqueName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "A unique name of the created array"
+                }
+            ],
+            "desc": "Creates an array of type String and returns its ID."
+        },
+        {
+            "name": "xsArrayCreateVector",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "size",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The length of the array to create"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The default value to initialise all the values in the array to"
+                },
+                {
+                    "name": "uniqueName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "A unique name of the created array"
+                }
+            ],
+            "desc": "Creates an array of type Vector and returns its ID."
+        },
+        {
+            "name": "xsArraySetInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to set the value in"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new value to set"
+                }
+            ],
+            "desc": "Sets the valat the specified indedx ue of the given int arrindex to the provided value and returns 1."
+        },
+        {
+            "name": "xsArraySetFloat",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to set the value in"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The new value to set"
+                }
+            ],
+            "desc": "Sets the valueat the specified indedx  of the given float array to the provided value and returns 1."
+        },
+        {
+            "name": "xsArraySetBool",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to set the value in"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "The new value to set"
+                }
+            ],
+            "desc": "Sets the valuat the specified indedx e of the given bool arrindex to the provided value and returns 1."
+        },
+        {
+            "name": "xsArraySetString",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to set the value in"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The new value to set"
+                }
+            ],
+            "desc": "Sets the value at the specified indedx of the given String array to the provided value and returns 1."
+        },
+        {
+            "name": "xsArraySetVector",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to set the value in"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The new value to set"
+                }
+            ],
+            "desc": "Sets the value at the specified indedx of the given Vector array to the provided value and returns 1."
+        },
+        {
+            "name": "xsArrayGetInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to get the value from"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to get the value of"
+                }
+            ],
+            "desc": "Gets and returns the value of the given int array at the specifed index."
+        },
+        {
+            "name": "xsArrayGetFloat",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to get the value from"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to get the value of"
+                }
+            ],
+            "desc": "Gets and returns the value of the given float array at the specifed index."
+        },
+        {
+            "name": "xsArrayGetBool",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to get the value from"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to get the value of"
+                }
+            ],
+            "desc": "Gets and returns the value of the given bool array at the specifed index."
+        },
+        {
+            "name": "xsArrayGetString",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to get the value from"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to get the value of"
+                }
+            ],
+            "desc": "Gets and returns the value of the given String array at the specifed index."
+        },
+        {
+            "name": "xsArrayGetVector",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to get the value from"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to get the value of"
+                }
+            ],
+            "desc": "Gets and returns the value of the given Vector array at the specifed index."
+        },
+        {
+            "name": "xsArrayResizeInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to resize"
+                },
+                {
+                    "name": "newSize",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new size of the array"
+                }
+            ],
+            "desc": "Resizes the the given int array to the specifed size and returns 1."
+        },
+        {
+            "name": "xsArrayResizeFloat",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to resize"
+                },
+                {
+                    "name": "newSize",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new size of the array"
+                }
+            ],
+            "desc": "Resizes the the given float array to the specifed size and returns 1."
+        },
+        {
+            "name": "xsArrayResizeBool",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to resize"
+                },
+                {
+                    "name": "newSize",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new size of the array"
+                }
+            ],
+            "desc": "Resizes the the given bool array to the specifed size and returns 1."
+        },
+        {
+            "name": "xsArrayResizeString",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to resize"
+                },
+                {
+                    "name": "newSize",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new size of the array"
+                }
+            ],
+            "desc": "Resizes the the given String array to the specifed size and returns 1."
+        },
+        {
+            "name": "xsArrayResizeVector",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to resize"
+                },
+                {
+                    "name": "newSize",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new size of the array"
+                }
+            ],
+            "desc": "Resizes the the given Vector array to the specifed size and returns 1."
+        },
+        {
+            "name": "xsArrayGetSize",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the array to get the length of"
+                }
+            ],
+            "desc": "Returns the length of the given array."
+        }
+    ],
+    "maths": [
+        {
+            "name": "abs",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The number to find the absolute value of"
+                }
+            ],
+            "desc": "Returns the absolute value (magnitude) of the given number."
+        },
+        {
+            "name": "sqrt",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The number to find the square root of"
+                }
+            ],
+            "desc": "Returns the square root of the given number."
+        },
+        {
+            "name": "pow",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The base value"
+                },
+                {
+                    "name": "y",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The exponenet to raise the base value to"
+                }
+            ],
+            "desc": "Returns x raised to the power y (x**y)."
+        },
+        {
+            "name": "sin",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The angle (in radians) to find the sine of"
+                }
+            ],
+            "desc": "Returns the sine of the angle in radians."
+        },
+        {
+            "name": "cos",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The angle (in radians) to find the cosine of"
+                }
+            ],
+            "desc": "Returns the cosine of the angle in radians"
+        },
+        {
+            "name": "tan",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The angle (in radians) to find the tangent of"
+                }
+            ],
+            "desc": "Returns the tangent of the angle in radians"
+        },
+        {
+            "name": "asin",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the inverse sine of"
+                }
+            ],
+            "desc": "Returns the inverse sine (arcsin) of the given value"
+        },
+        {
+            "name": "acos",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the inverse cosine of"
+                }
+            ],
+            "desc": "Returns the inverse cosine (arccos) of the given value"
+        },
+        {
+            "name": "atan",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the inverse tangent of"
+                }
+            ],
+            "desc": "Returns the inverse tangent (arctan) of the given value"
+        },
+        {
+            "name": "atan2",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The X coordinate of the point to find the amplitude of"
+                }
+            ],
+            "desc": "This is supposed to be the atan2(y, x) function but apparently it only takes one input. ThxDE"
+        }
+    ],
+    "general": [
+        {
+            "name": "xsGetRandomNumber",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns a random number between 0 and 32766."
+        },
+        {
+            "name": "xsGetRandomNumberLH",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "low",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The lower bound for the range for the random number returned (included)"
+                },
+                {
+                    "name": "high",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The upper bound for the range for the random number returned (excluded)"
+                }
+            ],
+            "desc": "Returns a random number between `low` and `high`"
+        },
+        {
+            "name": "xsGetRandomNumberMax",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "max",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The upper bound for the range for the random number returned (excluded)"
+                }
+            ],
+            "desc": "Returns a random number between 0 and `max`."
+        },
+        {
+            "name": "xsGetPlayerCivilization",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the civilization of"
+                }
+            ],
+            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scriptin > Constant Reference > #3. Civs\") for all the different civ IDs"
+        },
+        {
+            "name": "xsGetPlayerInGame",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Check if this player is still alive"
+                }
+            ],
+            "desc": "Returns true if the player given is still alive, and false otherwise."
+        },
+        {
+            "name": "xsGetMapName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "showFileExtension",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "If this is set to true, then the returned name also contains the file extension"
+                }
+            ],
+            "desc": "Returns the name of the map currently being played."
+        },
+        {
+            "name": "xsGetMapID",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the AI map type."
+        },
+        {
+            "name": "xsGetMapHeight",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the Height of the map."
+        },
+        {
+            "name": "xsGetMapWidth",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the Width of the map."
+        },
+        {
+            "name": "xsGetVictoryType",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns an integer corresponding to different victory settings ingame. These are:\n\n 0: Standard\n\n1: Conquest\n\n2: Time Limit\n\n3: Score\n\n4: Custom (scenarios only).\n\nLast Man Standing returns 0 as well."
+        },
+        {
+            "name": "xsGetVictoryPlayer",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument."
+        },
+        {
+            "name": "xsGetVictoryPlayerForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH"
+        },
+        {
+            "name": "xsGetVictoryTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
+        },
+        {
+            "name": "xsGetVictoryTimeForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
+        },
+        {
+            "name": "xsGetVictoryCondition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
+        },
+        {
+            "name": "xsGetVictoryConditionForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
+        },
+        {
+            "name": "xsGetPlayerNumberOfTechs",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whoes technology count is being requested."
+                }
+            ],
+            "desc": "Returns the number of technologies available to the player in the entire game."
+        },
+        {
+            "name": "xsObjectHasAction",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to check unit actions for"
+                },
+                {
+                    "name": "unitType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The type of unit to check actions for. Values 9xx refer to classes"
+                },
+                {
+                    "name": "actionId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The type of action to check for"
+                },
+                {
+                    "name": "targetPlayerID",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter."
+                },
+                {
+                    "name": "targetType",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter."
+                },
+                {
+                    "name": "targetUnitLevel",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter."
+                }
+            ],
+            "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
+        },
+        {
+            "name": "xsPlayerAttribute",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the resource of (0 for Gaia)"
+                },
+                {
+                    "name": "resourceID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the resource to get the amount of"
+                }
+            ],
+            "desc": "Returns the amount the specified resource of the given player."
+        },
+        {
+            "name": "xsSetPlayerAttribute",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the resource of (0 for Gaia)"
+                },
+                {
+                    "name": "resourceID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the resource to set the amount of"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The amount to set the resource to"
+                }
+            ],
+            "desc": "Sets the amount of the specified resource of the given player to the provided value."
+        },
+        {
+            "name": "xsTriggerVariable",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "variableID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the variable to get the value of"
+                }
+            ],
+            "desc": "Returns the value of the variable of the given variable ID."
+        },
+        {
+            "name": "xsSetTriggerVariable",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "variableID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the variable to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to set the variable to"
+                }
+            ],
+            "desc": "Sets the value of the variable of the given variable ID to the provided value."
+        },
+        {
+            "name": "xsGetNumPlayers",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the number of players in the game"
+        },
+        {
+            "name": "xsChatData",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The message to display in chat"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": false,
+                    "desc": "This value is inserted in place of any `%d` used in the message of the function"
+                }
+            ],
+            "desc": "Shows the given message in the game chat"
+        },
+        {
+            "name": "xsGetTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game time - 1 in seconds"
+        },
+        {
+            "name": "xsGetGameTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game time in seconds"
+        },
+        {
+            "name": "xsEffectAmount",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "effectID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the effect to use"
+                },
+                {
+                    "name": "unitOrTechnologyID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the unit or technology to effect"
+                },
+                {
+                    "name": "attributeOrOperation",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The attribute to modify or the operation to perform"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value of the effect"
+                },
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The player to apply the effect to. If unspecified, applies to all players except Gaia."
+                }
+            ],
+            "desc": "Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch](\"Jump to: UserPatch NON EXISTENT\") section of the guide"
+        },
+        {
+            "name": "xsResearchTechnology",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "techID",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The technology ID to research."
+                },
+                {
+                    "name": "force",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false"
+                },
+                {
+                    "name": "techAvailable",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "This flag determines if it is required to check if a tech is available before researching it"
+                },
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to research the technology for"
+                }
+            ],
+            "desc": "Returns a boolean based on whether the technology was researched or not."
+        },
+        {
+            "name": "xsGetObjectCount",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object count for"
+                },
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the count for"
+                }
+            ],
+            "desc": "Returns the number of currently alive objects with the given ID of the specified player"
+        },
+        {
+            "name": "xsGetObjectCountTotal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object count for"
+                },
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the count for"
+                }
+            ],
+            "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
+        }
+    ],
+    "Read/Write": [
+        {
+            "name": "xsCreateFile",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "append",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name."
+                }
+            ],
+            "desc": "Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player."
+        },
+        {
+            "name": "xsOpenFile",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "filename",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the file to open, without the `.xsdat` extension"
+                }
+            ],
+            "desc": "Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error"
+        },
+        {
+            "name": "xsWriteString",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to write"
+                }
+            ],
+            "desc": "Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string"
+        },
+        {
+            "name": "xsWriteInt",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The integer to write"
+                }
+            ],
+            "desc": "Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the integer was successfully written. Integers are written as signed 32 bit numbers"
+        },
+        {
+            "name": "xsWriteFloat",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The float value to write"
+                }
+            ],
+            "desc": "Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format"
+        },
+        {
+            "name": "xsWriteVector",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to write"
+                }
+            ],
+            "desc": "Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate."
+        },
+        {
+            "name": "xsReadString",
+            "return_type": "string",
+            "params": [],
+            "desc": "Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string"
+        },
+        {
+            "name": "xsReadInt",
+            "return_type": "int",
+            "params": [],
+            "desc": "Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes"
+        },
+        {
+            "name": "xsReadFloat",
+            "return_type": "float",
+            "params": [],
+            "desc": "Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes"
+        },
+        {
+            "name": "xsReadVector",
+            "return_type": "vector",
+            "params": [],
+            "desc": "Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes"
+        },
+        {
+            "name": "xsSetFilePosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "byteOffset",
+                    "type": "int",
+                    "required": true,
+                    "desc": "0 indexed byte offset to determine which byte to read and return from the file"
+                }
+            ],
+            "desc": "Sets the byte (0-indexed) of the file that the next read function will start reading from."
+        },
+        {
+            "name": "xsOffsetFilePosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "dataType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The [cOffset constants](../constants/#1-readwrite \"Jump To: XS > Constant Reference > Read/Write Constants\") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceeding the chars of the string)"
+                },
+                {
+                    "name": "forward",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Default: `#!cpp true`. Setting this to `#!cpp false` will make the file position move back"
+                }
+            ],
+            "desc": "Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type"
+        },
+        {
+            "name": "xsCloseFile",
+            "return_type": "bool",
+            "params": [],
+            "desc": "Close the currently opened or created file. Returns `#!cpp true` if the file was successfully closed"
+        },
+        {
+            "name": "xsGetFilePosition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the byte (0-indexed) of the file that the next read function will start reading from."
+        },
+        {
+            "name": "xsGetDataTypeSize",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "type",
+                    "type": "int",
+                    "required": true,
+                    "desc": "One of the `cOffsetXXX` constants may be used as a parameter"
+                }
+            ],
+            "desc": "Returns the number of bytes used to store a given type value."
+        },
+        {
+            "name": "xsGetFileSize",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the size (in bytes) of the currently open file"
+        }
+    ],
+    "AI Scripting": [
+        {
+            "name": "xsGetGoal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The goal id/number to get for the current AI"
+                }
+            ],
+            "desc": "Gets the goal id/number of the current AI"
+        },
+        {
+            "name": "xsGetStrategicNumber",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The SN to get for the current AI"
+                }
+            ],
+            "desc": "Gets the SN of the current AI"
+        },
+        {
+            "name": "xsSetGoal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The goal id/number to get for the current AI"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to set the goal id/number to"
+                }
+            ],
+            "desc": "Sets the goal id/number of the current AI"
+        },
+        {
+            "name": "xsSetStrategicNumber",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "id",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The SN to get for the current AI"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to set the SN to"
+                }
+            ],
+            "desc": "Sets the SN of the current AI"
+        }
+    ],
+    "Functions With Seemingly No Practical Use": [
+        {
+            "name": "xsDumpArrays",
+            "return_type": "void",
+            "params": [],
+            "desc": "This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing."
+        },
+        {
+            "name": "xsGetContextPlayer",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current context player ID."
+        },
+        {
+            "name": "xsSetContextPlayer",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the context player to"
+                }
+            ],
+            "desc": "In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if `-2` is passed to it as the player argument."
+        },
+        {
+            "name": "xsGetFunctionID",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "functionName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the function to get the hash of"
+                }
+            ],
+            "desc": "Returns the hash of a given function. This function has no practical application and is probably for internal usage only."
+        },
+        {
+            "name": "xsBreakPoint",
+            "return_type": "void",
+            "params": [],
+            "desc": "This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE."
+        },
+        {
+            "name": "xsAddRuntimeEvent",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "runtimeName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname \"Jump To: Function Reference > xsGetMapName\") and checking the extension. To use with an AI, set the runtime name to \"Expert\" and pass the player number as the arg"
+                },
+                {
+                    "name": "functionName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "This is the name of a user defined function that takes a single integer argument"
+                },
+                {
+                    "name": "functionArgument",
+                    "type": "int",
+                    "required": true,
+                    "desc": "This is an integer argument that is passed to the function given to the argument `functionName` when this event runs."
+                }
+            ],
+            "desc": "A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins"
+        }
+    ]
+}
