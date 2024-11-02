@@ -4159,7 +4159,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  After Military Policy activated
 
-- Note: The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class action.
+- Note: The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class task.
 
 ## 552. Unknown Resource 552
 
