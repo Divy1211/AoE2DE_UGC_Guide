@@ -1932,9 +1932,12 @@
     },
     "283": {
         "name": "Spawn Inside",
-        "desc": "Unknown",
-        "defaults": {},
-        "note": ""
+        "desc": "Determines whenever spawned unit via `xsEffectAmount(cSpawnUnit,...)` or certain techs is spawned garrisoned or outside",
+        "defaults": {
+            "0": "All Civs",
+            "1": "Set briefly for the Armenians after their first Fortified Church is built to spawn the relic garrisoned."
+        },
+        "note": "This is usually overridden by techs"
     },
     "284": {
         "name": "Cavalry Kill Reward",
