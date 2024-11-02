@@ -3802,3 +3802,657 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
+## 500. Unknown Resource 500
+
+- ID: 500
+
+- Purpose: Unknown... What does this resource do?
+
+## 501. Basileus Dead
+
+- ID: 501
+
+- Purpose: Unknown... What does this resource do?
+
+- Note: Incremented when `Basileus Dead` unit is spawned.
+
+## 502. Chopping Food Productivity
+
+- ID: 502
+
+- Purpose: Chopping food generation rate per 100 seconds.
+
+- Default Values:
+
+    - 0:  Default
+    - 4:  Athenians
+
+## 503. Trade Wood Percentage
+
+- ID: 503
+
+- Purpose: Amount of trade will be returned as wood instead of gold.
+
+- Default Values:
+
+    - 0:  Default
+
+- Note: Setting it to 0.5 will return half the amount in gold and half in wood. Seems to be working for trade cogs only. Setting it to a value $\geq$ 1 will make it so no trade resources are returned.
+
+## 504. Unknown Resource 504
+
+- ID: 504
+
+- Purpose: Unknown... What does this resource do?
+
+## 505. Unknown Resource 505
+
+- ID: 505
+
+- Purpose: Unknown... What does this resource do?
+
+## 506. Town Center Loss
+
+- ID: 506
+
+- Purpose: Decremented for every town center lost.
+
+- Default Values:
+
+    - 0:  Default
+
+- Note: Will go into negatives.
+
+## 507. Unknown Resource 507
+
+- ID: 507
+
+- Purpose: Unknown... What does this resource do?
+
+- Default Values:
+
+    - 0:  Default
+    - 1:  Athenians
+
+- Note: Athenians start with it set to 1.
+
+## 508. Unknown Resource 508
+
+- ID: 508
+
+- Purpose: Unknown... What does this resource do?
+
+## 509. Building Loot Productivity
+
+- ID: 509
+
+- Purpose: Gain gold when attacking buildings.
+
+- Default Values:
+
+    - 0: Default
+
+- Note: Formula is unknown, but the higher the resource the faster the gold gain is.
+
+## 510. Unknown Resource 510
+
+- ID: 510
+
+- Purpose: Unknown... What does this resource do?
+
+## 511. Unknown Resource 511
+
+- ID: 511
+
+- Purpose: Unknown... What does this resource do?
+
+## 512. Unknown Resource 512
+
+- ID: 512
+
+- Purpose: Unknown... What does this resource do?
+
+## 513. Unknown Resource 513
+
+- ID: 513
+
+- Purpose: Unknown... What does this resource do?
+
+## 514. Unknown Resource 514
+
+- ID: 514
+
+- Purpose: Unknown... What does this resource do?
+
+## 515. Unknown Resource 515
+
+- ID: 515
+
+- Purpose: Unknown... What does this resource do?
+
+## 516. Unknown Resource 516
+
+- ID: 516
+
+- Purpose: Unknown... What does this resource do?
+
+## 517. Unknown Resource 517
+
+- ID: 517
+
+- Purpose: Unknown... What does this resource do?
+
+## 518. Unknown Resource 518
+
+- ID: 518
+
+- Purpose: Unknown... What does this resource do?
+
+## 519. Unknown Resource 519
+
+- ID: 519
+
+- Purpose: Unknown... What does this resource do?
+
+## 520. Unknown Resource 520
+
+- ID: 520
+
+- Purpose: Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.
+
+- Default Values:
+
+    - 1:  Default
+
+## 521. Castle Gold Productivity
+
+- ID: 521
+
+- Purpose: Castle gold production rate multiplier.
+
+- Default Values:
+
+    - 0:  Default
+    - 1:  After Peloponnesian League researched
+
+- Note: The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`.
+
+## 522. Unknown Resource 522
+
+- ID: 522
+
+- Purpose: Unknown... What does this resource do?
+
+## 523. Unknown Resource 523
+
+- ID: 523
+
+- Purpose: Unknown... What does this resource do?
+
+## 524. Unknown Resource 524
+
+- ID: 524
+
+- Purpose: Unknown... What does this resource do?
+
+## 525. Unknown Resource 525
+
+- ID: 525
+
+- Purpose: Unknown... What does this resource do?
+
+## 526. Unknown Resource 526
+
+- ID: 526
+
+- Purpose: Unknown... What does this resource do?
+
+## 527. Unknown Resource 527
+
+- ID: 527
+
+- Purpose: Unknown... What does this resource do?
+
+## 528. Unknown Resource 528
+
+- ID: 528
+
+- Purpose: Unknown... What does this resource do?
+
+## 529. Unknown Resource 529
+
+- ID: 529
+
+- Purpose: Unknown... What does this resource do?
+
+## 530. Unknown Resource 530
+
+- ID: 530
+
+- Purpose: Unknown... What does this resource do?
+
+## 531. Unknown Resource 531
+
+- ID: 531
+
+- Purpose: Unknown... What does this resource do?
+
+## 532. Unknown Resource 532
+
+- ID: 532
+
+- Purpose: Unknown... What does this resource do?
+
+## 533. Unknown Resource 533
+
+- ID: 533
+
+- Purpose: Unknown... What does this resource do?
+
+## 534. Unknown Resource 534
+
+- ID: 534
+
+- Purpose: Unknown... What does this resource do?
+
+## 535. Unknown Resource 535
+
+- ID: 535
+
+- Purpose: Unknown... What does this resource do?
+
+## 536. Unknown Resource 536
+
+- ID: 536
+
+- Purpose: Unknown... What does this resource do?
+
+## 537. Unknown Resource 537
+
+- ID: 537
+
+- Purpose: Unknown... What does this resource do?
+
+## 538. Unknown Resource 538
+
+- ID: 538
+
+- Purpose: Unknown... What does this resource do?
+
+## 539. Unknown Resource 539
+
+- ID: 539
+
+- Purpose: Unknown... What does this resource do?
+
+## 540. Unknown Resource 540
+
+- ID: 540
+
+- Purpose: Unknown... What does this resource do?
+
+## 541. Unknown Resource 541
+
+- ID: 541
+
+- Purpose: Unknown... What does this resource do?
+
+## 542. Unknown Resource 542
+
+- ID: 542
+
+- Purpose: Unknown... What does this resource do?
+
+## 543. Unknown Resource 543
+
+- ID: 543
+
+- Purpose: Unknown... What does this resource do?
+
+## 544. Unknown Resource 544
+
+- ID: 544
+
+- Purpose: Unknown... What does this resource do?
+
+## 545. Unknown Resource 545
+
+- ID: 545
+
+- Purpose: Unknown... What does this resource do?
+
+## 546. Unknown Resource 546
+
+- ID: 546
+
+- Purpose: Unknown... What does this resource do?
+
+## 547. Unknown Resource 547
+
+- ID: 547
+
+- Purpose: Unknown... What does this resource do?
+
+## 548. Unknown Resource 548
+
+- ID: 548
+
+- Purpose: Unknown... What does this resource do?
+
+## 549. Unknown Resource 549
+
+- ID: 549
+
+- Purpose: Unknown... What does this resource do?
+
+## 550. Unknown Resource 550
+
+- ID: 550
+
+- Purpose: Gives gold generation on kills to certain `Elite Hoplite`, `Camel Raider` and probably other units. Similar to resource 520 and 551.
+
+- Default Values:
+
+    - 1:  Default
+
+## 551. Unit Loot Productivity
+
+- ID: 551
+
+- Purpose: Gain gold per unit killed.
+
+- Default Values:
+
+    - 0:  Default
+    - 1:  After Military Policy activated
+
+- Note: The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class task.
+
+## 552. Unknown Resource 552
+
+- ID: 552
+
+- Purpose: Unknown... What does this resource do?
+
+## 553. Unknown Resource 553
+
+- ID: 553
+
+- Purpose: Unknown... What does this resource do?
+
+## 554. Unknown Resource 554
+
+- ID: 554
+
+- Purpose: Unknown... What does this resource do?
+
+## 555. Unknown Resource 555
+
+- ID: 555
+
+- Purpose: Unknown... What does this resource do?
+
+## 556. Unknown Resource 556
+
+- ID: 556
+
+- Purpose: Unknown... What does this resource do?
+
+## 557. Unknown Resource 557
+
+- ID: 557
+
+- Purpose: Unknown... What does this resource do?
+
+## 558. Unknown Resource 558
+
+- ID: 558
+
+- Purpose: Unknown... What does this resource do?
+
+## 559. Unknown Resource 559
+
+- ID: 559
+
+- Purpose: Unknown... What does this resource do?
+
+## 560. Unknown Resource 560
+
+- ID: 560
+
+- Purpose: Unknown... What does this resource do?
+
+## 561. Unknown Resource 561
+
+- ID: 561
+
+- Purpose: Unknown... What does this resource do?
+
+## 562. Unknown Resource 562
+
+- ID: 562
+
+- Purpose: Unknown... What does this resource do?
+
+## 563. Unknown Resource 563
+
+- ID: 563
+
+- Purpose: Unknown... What does this resource do?
+
+## 564. Unknown Resource 564
+
+- ID: 564
+
+- Purpose: Unknown... What does this resource do?
+
+## 565. Unknown Resource 565
+
+- ID: 565
+
+- Purpose: Unknown... What does this resource do?
+
+## 566. Unknown Resource 566
+
+- ID: 566
+
+- Purpose: Unknown... What does this resource do?
+
+## 567. Unknown Resource 567
+
+- ID: 567
+
+- Purpose: Unknown... What does this resource do?
+
+## 568. Unknown Resource 568
+
+- ID: 568
+
+- Purpose: Unknown... What does this resource do?
+
+## 569. Unknown Resource 569
+
+- ID: 569
+
+- Purpose: Unknown... What does this resource do?
+
+## 570. Unknown Resource 570
+
+- ID: 570
+
+- Purpose: Unknown... What does this resource do?
+
+## 571. Unknown Resource 571
+
+- ID: 571
+
+- Purpose: Unknown... What does this resource do?
+
+## 572. Unknown Resource 572
+
+- ID: 572
+
+- Purpose: Unknown... What does this resource do?
+
+## 573. Unknown Resource 573
+
+- ID: 573
+
+- Purpose: Unknown... What does this resource do?
+
+## 574. Unknown Resource 574
+
+- ID: 574
+
+- Purpose: Unknown... What does this resource do?
+
+## 575. Unknown Resource 575
+
+- ID: 575
+
+- Purpose: Unknown... What does this resource do?
+
+## 576. Unknown Resource 576
+
+- ID: 576
+
+- Purpose: Unknown... What does this resource do?
+
+## 577. Unknown Resource 577
+
+- ID: 577
+
+- Purpose: Unknown... What does this resource do?
+
+## 578. Unknown Resource 578
+
+- ID: 578
+
+- Purpose: Unknown... What does this resource do?
+
+## 579. Unknown Resource 579
+
+- ID: 579
+
+- Purpose: Unknown... What does this resource do?
+
+## 580. Unknown Resource 580
+
+- ID: 580
+
+- Purpose: Unknown... What does this resource do?
+
+## 581. Unknown Resource 581
+
+- ID: 581
+
+- Purpose: Unknown... What does this resource do?
+
+## 582. Unknown Resource 582
+
+- ID: 582
+
+- Purpose: Unknown... What does this resource do?
+
+## 583. Unknown Resource 583
+
+- ID: 583
+
+- Purpose: Unknown... What does this resource do?
+
+## 584. Unknown Resource 584
+
+- ID: 584
+
+- Purpose: Unknown... What does this resource do?
+
+## 585. Unknown Resource 585
+
+- ID: 585
+
+- Purpose: Unknown... What does this resource do?
+
+## 586. Unknown Resource 586
+
+- ID: 586
+
+- Purpose: Unknown... What does this resource do?
+
+## 587. Unknown Resource 587
+
+- ID: 587
+
+- Purpose: Unknown... What does this resource do?
+
+## 588. Unknown Resource 588
+
+- ID: 588
+
+- Purpose: Unknown... What does this resource do?
+
+## 589. Unknown Resource 589
+
+- ID: 589
+
+- Purpose: Unknown... What does this resource do?
+
+## 590. Unknown Resource 590
+
+- ID: 590
+
+- Purpose: Unknown... What does this resource do?
+
+## 591. Unknown Resource 591
+
+- ID: 591
+
+- Purpose: Unknown... What does this resource do?
+
+## 592. Unknown Resource 592
+
+- ID: 592
+
+- Purpose: Unknown... What does this resource do?
+
+## 593. Unknown Resource 593
+
+- ID: 593
+
+- Purpose: Unknown... What does this resource do?
+
+## 594. Unknown Resource 594
+
+- ID: 594
+
+- Purpose: Unknown... What does this resource do?
+
+## 595. Unknown Resource 595
+
+- ID: 595
+
+- Purpose: Unknown... What does this resource do?
+
+## 596. Unknown Resource 596
+
+- ID: 596
+
+- Purpose: Unknown... What does this resource do?
+
+## 597. Unknown Resource 597
+
+- ID: 597
+
+- Purpose: Unknown... What does this resource do?
+
+## 598. Unknown Resource 598
+
+- ID: 598
+
+- Purpose: Unknown... What does this resource do?
+
+## 599. Unknown Resource 599
+
+- ID: 599
+
+- Purpose: Unknown... What does this resource do?
+
