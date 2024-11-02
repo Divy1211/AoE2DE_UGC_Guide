@@ -546,7 +546,7 @@ This effect makes it so that the specified units of the given player can be targ
 
 ### 3.49. Freeze Object
 
-This effect can be used to stop units of a specific player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+This effect does not actually freeze the objects but sets them to a no attack stance. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
 
 1. Unit List 1: This is the unit to affect
 2. Source Player: The player that is affected by the effect
