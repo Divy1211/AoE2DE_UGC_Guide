@@ -1050,7 +1050,7 @@ Parameters:
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-This function inserts a task with field defined by the `xsTaskAmount` function to a specified unit.
+This function inserts a task with the fields defined by the `xsTaskAmount` function to a specified unit.
 
 ### 5.32. xsTaskAmount
 

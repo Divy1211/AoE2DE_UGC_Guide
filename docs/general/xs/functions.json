@@ -1384,7 +1384,7 @@
                     "desc": "The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia."
                 }
             ],
-            "desc": "This function inserts a task with field defined by the `xsTaskAmount` function to a specified unit."
+            "desc": "This function inserts a task with the fields defined by the `xsTaskAmount` function to a specified unit."
         },
         {
             "name": "xsRemoveTask",
