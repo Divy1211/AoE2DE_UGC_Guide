@@ -1067,6 +1067,7 @@ This function is used to populate task fields before insertion. Multiple calls w
 `0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
 `1` - `Work Value 2` (eg.: minimum number of units in range to activate the auras)\
 `2` - `Work Range` (eg.: aura range)\
+`3` - `Work Flag 2`\
 `4` - `Search Wait Time` (eg.: attributeId for auras).\
 `5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).\
 `6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras).
