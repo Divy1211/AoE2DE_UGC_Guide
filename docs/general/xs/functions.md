@@ -989,7 +989,7 @@ Prototype: `#!cpp void xsRemoveTask(int masterUnitID, int actionType, int target
 Parameters:
 
 1.  `#!cpp int masterUnitID`: Unit to remove the task from.
-2.  `#!cpp int actionType`: Task type. Eg.: Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
+2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
 

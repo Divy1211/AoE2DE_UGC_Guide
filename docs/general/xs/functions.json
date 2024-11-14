@@ -1400,7 +1400,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Eg.: Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E."
+                    "desc": "Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E."
                 },
                 {
                     "name": "targetMasterUnitID",
