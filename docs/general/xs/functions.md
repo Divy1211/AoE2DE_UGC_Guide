@@ -980,7 +980,22 @@ Parameters:
 
 Returns the amount the specified resource of the given player.
 
-### 5.27. xsResearchTechnology
+### 5.27. xsRemoveTask
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsRemoveTask(int masterUnitID, int actionType, int targetMasterUnitID, int playerID)`
+
+Parameters:
+
+1.  `#!cpp int masterUnitID`: Unit to remove the task from.
+2.  `#!cpp int actionType`: Task type. Eg.: Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
+3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
+4. (Optional) `#!cpp int playerID`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
+
+This function removes a task from a specified unit.
+
+### 5.28. xsResearchTechnology
 
 Returning Type: `#!cpp bool`
 
@@ -995,7 +1010,7 @@ Parameters:
 
 Returns a boolean based on whether the technology was researched or not.
 
-### 5.28. xsSetPlayerAttribute
+### 5.29. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -1009,7 +1024,7 @@ Parameters:
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.29. xsSetTriggerVariable
+### 5.30. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -1022,7 +1037,41 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.30. xsTriggerVariable
+### 5.31. xsTask
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsTask(int masterUnitID, int actionType, int targetMasterUnitID, int playerID)`
+
+Parameters:
+
+1.  `#!cpp int masterUnitID`: Unit to insert the task to.
+2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
+3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
+4. (Optional) `#!cpp int playerID`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
+
+This function inserts a task with field defined by the `xsTaskAmount` function to a specified unit.
+
+### 5.32. xsTaskAmount
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsTaskAmount(int taskFieldId, float value)`
+
+Parameters:
+
+1.  `#!cpp int taskFieldId`: Field id.
+2.  `#!cpp float value`: Field value.
+
+This function is used to populate task fields before insertion. Multiple calls with different `taskFieldId` are needed to populate all the fields. After all the fields are populated a task can be inserted to a unit with `xsTask`. `taskFieldId`s are:\
+`0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
+`1` - `Work Value 2` (eg.: minimum number of units in range to activate the auras)\
+`2` - `Work Range` (eg.: aura range)\
+`4` - `Search Wait Time` (eg.: attributeId for auras).\
+`5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).\
+`6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras).
+
+### 5.33. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 
