@@ -1353,7 +1353,7 @@
                     "desc": "Field value."
                 }
             ],
-            "desc": "This function is used to populate task fields before insertion. Multiple calls with different `taskFieldId` are needed to populate all the fields. After all the fields are populated a task can be inserted to a unit with `xsTask`. `taskFieldId`s are:\\\n`0` - `Work Value 1` (eg.: amount of attribute to add for auras).\\\n`1` - `Work Value 2` (eg.: minimum number of units in range to activate the auras)\\\n`2` - `Work Range` (eg.: aura range)\\\n`3` - `Work Flag 2`\\\n`4` - `Search Wait Time` (eg.: attributeId for auras).\\\n`5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).\\\n`6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras)."
+            "desc": "This function is used to populate task fields before insertion. Multiple calls with different `taskFieldId` are needed to populate all the fields. After all the fields are populated a task can be inserted to a unit with `xsTask`. `taskFieldId`s are:\\\n`0` - `Work Value 1` (eg.: amount of attribute to add for auras).\\\n`1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)\\\n`2` - `Work Range` (eg.: aura range)\\\n`3` - `Work Flag 2`\\\n`4` - `Search Wait Time` (eg.: attributeId for auras).\\\n`5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).\\\n`6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras)."
         },
         {
             "name": "xsTask",

@@ -1065,7 +1065,7 @@ Parameters:
 
 This function is used to populate task fields before insertion. Multiple calls with different `taskFieldId` are needed to populate all the fields. After all the fields are populated a task can be inserted to a unit with `xsTask`. `taskFieldId`s are:\
 `0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
-`1` - `Work Value 2` (eg.: minimum number of units in range to activate the auras)\
+`1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)\
 `2` - `Work Range` (eg.: aura range)\
 `3` - `Work Flag 2`\
 `4` - `Search Wait Time` (eg.: attributeId for auras).\
