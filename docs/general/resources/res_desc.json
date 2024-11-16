@@ -3245,7 +3245,7 @@
     },
     "501": {
         "name": "Maximum Polemarchs",
-        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarches.",
+        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.",
         "defaults": {
             "0": "Default"
         },

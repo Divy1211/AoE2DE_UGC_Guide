@@ -3812,7 +3812,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 501
 
-- Purpose: Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarches.
+- Purpose: Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.
 
 - Default Values:
 
