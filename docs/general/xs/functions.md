@@ -1063,7 +1063,7 @@ Parameters:
 1.  `#!cpp int taskFieldId`: Field id.
 2.  `#!cpp float value`: Field value.
 
-This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:\
+This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated, a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:\
 `0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
 `1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)\
 `2` - `Work Range` (eg.: aura range)\
