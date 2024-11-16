@@ -993,7 +993,7 @@ Parameters:
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
 
-This function removes a task from a specified unit.
+This function removes a task from a specified unit. The task is removed if it matches `actionType`, `targetMasterUnitID` and `Search Wait Time` (from `xsTaskAmount`). Other `xsTaskAmount` fields play no role in task removal.
 
 ### 5.28. xsResearchTechnology
 
@@ -1050,7 +1050,7 @@ Parameters:
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-This function inserts a task with the fields defined by the `xsTaskAmount` function to a specified unit.
+This function inserts or overwrites a task with the fields defined by the `xsTaskAmount` to a specified unit. If the task with the `actionType`, `targetMasterUnitID` and `Search Wait Time` (from `xsTaskAmount`) already exists it is overwritten, otherwise a new one is inserted at the end of the task list.
 
 ### 5.32. xsTaskAmount
 
@@ -1063,12 +1063,12 @@ Parameters:
 1.  `#!cpp int taskFieldId`: Field id.
 2.  `#!cpp float value`: Field value.
 
-This function is used to populate task fields before insertion. Multiple calls with different `taskFieldId` are needed to populate all the fields. After all the fields are populated a task can be inserted to a unit with `xsTask`. `taskFieldId`s are:\
+This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:\
 `0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
 `1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)\
 `2` - `Work Range` (eg.: aura range)\
 `3` - `Work Flag 2`\
-`4` - `Search Wait Time` (eg.: attributeId for auras).\
+`4` - `Search Wait Time` part of task uniqueness, but also serves as various options based on task type (eg.: attributeId for auras).\
 `5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).\
 `6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras).
 
