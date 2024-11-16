@@ -1060,16 +1060,23 @@ Prototype: `#!cpp void xsTaskAmount(int taskFieldId, float value)`
 
 Parameters:
 
-1.  `#!cpp int taskFieldId`: Specifies which property of the task to change\n - 0: Work Value 1\n - 1: Work Value 2\n - 2: Work Range\n - 3: Work Flag \n - 4: Search Wait Time\n - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)\n - 6: Target Diplomacy
+1.  `#!cpp int taskFieldId`: Specifies which property of the task to change
+ - 0: Work Value 1
+ - 1: Work Value 2
+ - 2: Work Range
+ - 3: Work Flag 
+ - 4: Search Wait Time
+ - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)
+ - 6: Target Diplomacy
 2.  `#!cpp float value`: The value to set the task field to
 
-This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated, a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:\
+This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated, a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:
 `0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
-`1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)\
-`2` - `Work Range` (eg.: aura range)\
-`3` - `Work Flag 2`\
-`4` - `Search Wait Time` part of task uniqueness, but also serves as various options based on task type (eg.: attributeId for auras).\
-`5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).\
+`1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)
+`2` - `Work Range` (eg.: aura range)
+`3` - `Work Flag 2`
+`4` - `Search Wait Time` part of task uniqueness, but also serves as various options based on task type (eg.: attributeId for auras).
+`5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).
 `6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras).
 
 ### 5.33. xsTriggerVariable
