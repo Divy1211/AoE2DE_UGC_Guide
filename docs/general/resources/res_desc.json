@@ -3244,7 +3244,7 @@
         "note": ""
     },
     "501": {
-        "name": "Polemarch Resource",
+        "name": "Maximum Polemarchs",
         "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarches.",
         "defaults": {
             "0": "Default"
@@ -3265,9 +3265,9 @@
         "desc": "Amount of trade will be returned as wood instead of gold.",
         "defaults": {
             "0": " Default",
-            "0.25": " Achaemenids, Athenians and Spartans"
+            "0.25": " Achaemenids, Athenians and Spartans."
         },
-        "note": "Setting it to 0.5 will return half the amount in gold and half in wood. Seems to be working for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
+        "note": "Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
     },
     "504": {
         "name": "Unknown Resource 504",
@@ -3291,7 +3291,7 @@
             "0": " Default",
             "1": " Achaemenids, Athenians and Spartans"
         },
-        "note": "Will go into negatives."
+        "note": "Will go into negatives. Is connected to Achaemenids Town center upgrades, but is not changed by them. Maybe no longer used?"
     },
     "507": {
         "name": "Unknown Resource 507",
@@ -3300,7 +3300,7 @@
             "0": " Default",
             "1": " Athenians"
         },
-        "note": "Athenians start with it set to 1 by initial Economic Policy"
+        "note": "Athenians start with it set to 1 by initial Economic Policy."
     },
     "508": {
         "name": "Unknown Resource 508",
