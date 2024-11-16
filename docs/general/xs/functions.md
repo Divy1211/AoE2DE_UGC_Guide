@@ -993,7 +993,7 @@ Parameters:
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
 
-This function removes a task from a specified unit. The task is removed if it matches `actionType`, `targetMasterUnitID` and `Search Wait Time` (from `xsTaskAmount`). Other `xsTaskAmount` fields play no role in task removal.
+Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) match an existing task in a unit. No other fields are used for filtering (same as when `xsTask` edits instead of adding a new task)
 
 ### 5.28. xsResearchTechnology
 
@@ -1045,7 +1045,7 @@ Prototype: `#!cpp void xsTask(int masterUnitID, int actionType, int targetMaster
 
 Parameters:
 
-1.  `#!cpp int masterUnitID`: Unit to insert the task to.
+1.  `#!cpp int masterUnitID`: Unit to insert the task to
 2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
@@ -1060,8 +1060,8 @@ Prototype: `#!cpp void xsTaskAmount(int taskFieldId, float value)`
 
 Parameters:
 
-1.  `#!cpp int taskFieldId`: Field id.
-2.  `#!cpp float value`: Field value.
+1.  `#!cpp int taskFieldId`: Specifies which property of the task to change\n - 0: Work Value 1\n - 1: Work Value 2\n - 2: Work Range\n - 3: Work Flag \n - 4: Search Wait Time\n - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)\n - 6: Target Diplomacy
+2.  `#!cpp float value`: The value to set the task field to
 
 This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated, a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:\
 `0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
