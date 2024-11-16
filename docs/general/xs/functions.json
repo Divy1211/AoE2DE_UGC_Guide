@@ -1384,7 +1384,7 @@
                     "desc": "The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia."
                 }
             ],
-            "desc": "This function inserts or overwrites a task with the fields defined by the `xsTaskAmount` to a specified unit. If the task with the `actionType`, `targetMasterUnitID` and `Search Wait Time` (from `xsTaskAmount`) already exists it is overwritten, otherwise a new one is inserted at the end of the task list."
+            "desc": "This function inserts or overwrites a task with the fields defined by the `xsTaskAmount` into a specified unit. If the task with the `actionType`, `targetMasterUnitID`, and `Search Wait Time` (from `xsTaskAmount`) already exists, it is overwritten, otherwise a new one is inserted at the end of the task list."
         },
         {
             "name": "xsRemoveTask",

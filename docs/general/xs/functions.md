@@ -1050,7 +1050,7 @@ Parameters:
 3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerID`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-This function inserts or overwrites a task with the fields defined by the `xsTaskAmount` to a specified unit. If the task with the `actionType`, `targetMasterUnitID` and `Search Wait Time` (from `xsTaskAmount`) already exists it is overwritten, otherwise a new one is inserted at the end of the task list.
+This function inserts or overwrites a task with the fields defined by the `xsTaskAmount` into a specified unit. If the task with the `actionType`, `targetMasterUnitID`, and `Search Wait Time` (from `xsTaskAmount`) already exists, it is overwritten, otherwise a new one is inserted at the end of the task list.
 
 ### 5.32. xsTaskAmount
 
