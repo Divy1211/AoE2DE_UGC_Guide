@@ -1314,6 +1314,38 @@ There are two kinds of type casting:
         float c = (int)22.5; // assigns 22.0 to c
     }
     ```
+   
+### 2.10. Static Variables
+
+Static variables keep their value even after they are out of their scope. This means they preserve whatever changes were applied to them in their previous scope.
+
+To create a static variable you add a word `#!cpp static` in front of its type. For example: `#!cpp static int a = 10;`
+
+They are useful to use in functions to remember what was the previous value of a certain variable. Most common use case is to implement some kind of counter.
+
+You can see the difference between a regular variable and a `#!cpp static` one in this example:
+```cpp
+void staticVariableExample() {
+    static int staticVariable = 1;
+    int regularVariable = 1;
+    xsChatData("static variable was: %d", staticVariable);
+    xsChatData("regular variable was: %d", regularVariable);
+    staticVariable = staticVariable + 1;
+    regularVariable = regularVariable + 1;
+}
+```
+
+Calling this function once will print:
+```
+static variable was: 1
+regular variable was: 1
+```
+But calling it the second time, will print:
+```
+static variable was: 2
+regular variable was: 1
+```
+Both variables were incremented at the end of the function, but the regular one ran out of scope and its value was lost, but the `#!cpp static` one kept it until the function was called again.
 
 ## 3. Rules
 

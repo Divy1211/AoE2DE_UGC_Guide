@@ -961,9 +961,9 @@ Parameters:
 1.  `#!cpp int playerID`: The player to check unit actions for
 2.  `#!cpp int unitType`: The type of unit to check actions for. Values 9xx refer to classes
 3.  `#!cpp int actionId`: The type of action to check for
-4. (Optional) `#!cpp int targetPlayerID`: Check if the action is being performed on a unit (eg. attacking) of this player
-5. (Optional) `#!cpp int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes
-6. (Optional) `#!cpp int targetUnitLevel`: Unknown
+4. (Optional) `#!cpp int targetPlayerID`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
+5. (Optional) `#!cpp int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
+6. (Optional) `#!cpp int targetUnitLevel`: Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
 
 Checks and returns if any unit matching the set filters of the given player has the specified action.
 
@@ -980,7 +980,22 @@ Parameters:
 
 Returns the amount the specified resource of the given player.
 
-### 5.27. xsResearchTechnology
+### 5.27. xsRemoveTask
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsRemoveTask(int unitId, int actionType, int targetUnitId, int playerId)`
+
+Parameters:
+
+1.  `#!cpp int unitId`: Unit to remove the task from.
+2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
+3. (Optional) `#!cpp int targetUnitId`: Target unitId for the task if exists. Values 9xx refer to classes.
+4. (Optional) `#!cpp int playerId`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
+
+Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) match an existing task in a unit. No other fields are used for filtering (same as when `xsTask` edits instead of adding a new task)
+
+### 5.28. xsResearchTechnology
 
 Returning Type: `#!cpp bool`
 
@@ -995,7 +1010,7 @@ Parameters:
 
 Returns a boolean based on whether the technology was researched or not.
 
-### 5.28. xsSetPlayerAttribute
+### 5.29. xsSetPlayerAttribute
 
 Returning Type: `#!cpp void`
 
@@ -1009,7 +1024,7 @@ Parameters:
 
 Sets the amount of the specified resource of the given player to the provided value.
 
-### 5.29. xsSetTriggerVariable
+### 5.30. xsSetTriggerVariable
 
 Returning Type: `#!cpp void`
 
@@ -1022,7 +1037,44 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.30. xsTriggerVariable
+### 5.31. xsTask
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsTask(int unitId, int actionType, int targetUnitId, int playerId)`
+
+Parameters:
+
+1.  `#!cpp int unitId`: The unit to add the task to
+2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
+3. (Optional) `#!cpp int targetUnitId`: Target unitId for the task if exists. Values 9xx refer to classes.
+4. (Optional) `#!cpp int playerId`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
+
+Adds a new (or edits an existing) task with the fields previously defined by calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+
+Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount)) and then submitting multiple copies of it for different people)
+
+### 5.32. xsTaskAmount
+
+Returning Type: `#!cpp void`
+
+Prototype: `#!cpp void xsTaskAmount(int taskFieldId, float value)`
+
+Parameters:
+
+1.  `#!cpp int taskFieldId`: Specifies which property of the task to change
+ - 0: Work Value 1
+ - 1: Work Value 2
+ - 2: Work Range
+ - 3: Work Flag 
+ - 4: Search Wait Time
+ - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)
+ - 6: Target Diplomacy
+2.  `#!cpp float value`: The value to set the task field to
+
+Sets the value of the given field of the global XS task struct to the provided value. See also [`#!cpp xsTask`](./#530-xstask)
+
+### 5.33. xsTriggerVariable
 
 Returning Type: `#!cpp int`
 
@@ -1055,7 +1107,7 @@ Parameters:
 
 1. (Optional) `#!cpp bool append`: Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name.
 
-Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created
+Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
 
 ### 6.3. xsGetDataTypeSize
 
@@ -1110,7 +1162,7 @@ Parameters:
 
 1.  `#!cpp string filename`: The name of the file to open, without the `.xsdat` extension
 
-Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened
+Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
 
 ### 6.8. xsReadFloat
 

@@ -91,12 +91,16 @@ Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scriptin
 !!! Bug "No Vars in Vector Initialisation"
     Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
 
-!!! info "Constants and Scope"
+!!! info "Constants, Statics and Scope"
     1. Constant Variables
 
         Syntax `#!cpp const int a = 10;` or `#!cpp const float PI = 3.1415;` will declare an immutable variable.
 
-    2. Scope of a Variable
+    2. Static Variables
+
+        Syntax `#!cpp static int counter = 0;` will declare a static variable.
+
+    3. Scope of a Variable
 
         The concept of local and global variables applies to XS.
 

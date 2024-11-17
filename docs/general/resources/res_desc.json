@@ -1932,9 +1932,12 @@
     },
     "283": {
         "name": "Spawn Inside",
-        "desc": "Unknown",
-        "defaults": {},
-        "note": ""
+        "desc": "Determines whenever spawned unit via `xsEffectAmount(cSpawnUnit,...)` or certain techs is spawned garrisoned or outside",
+        "defaults": {
+            "0": "All Civs",
+            "1": "Set briefly for the Armenians after their first Fortified Church is built to spawn the relic garrisoned."
+        },
+        "note": "This is usually overridden by techs"
     },
     "284": {
         "name": "Cavalry Kill Reward",
@@ -3231,6 +3234,643 @@
     "499": {
         "name": "Unused Resource 499",
         "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "500": {
+        "name": "Unknown Resource 500",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "501": {
+        "name": "Maximum Polemarchs",
+        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.",
+        "defaults": {
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "502": {
+        "name": "Chopping Food Productivity",
+        "desc": "Chopping food generation rate per 100 seconds.",
+        "defaults": {
+            "0": " Default",
+            "4": " Athenians"
+        },
+        "note": ""
+    },
+    "503": {
+        "name": "Trade Wood Percentage",
+        "desc": "Amount of trade will be returned as wood instead of gold.",
+        "defaults": {
+            "0": " Default",
+            "0.25": " Achaemenids, Athenians and Spartans."
+        },
+        "note": "Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
+    },
+    "504": {
+        "name": "Unknown Resource 504",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "505": {
+        "name": "Unknown Resource 505",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {
+            "0": " Default",
+            "1": " Achaemenids, Athenians and Spartans"
+        },
+        "note": ""
+    },
+    "506": {
+        "name": "Town Center Loss",
+        "desc": "Decremented for every town center lost.",
+        "defaults": {
+            "0": " Default",
+            "1": " Achaemenids, Athenians and Spartans"
+        },
+        "note": "Will go into negatives. Is connected to Achaemenids Town center upgrades, but is not changed by them. Maybe no longer used?"
+    },
+    "507": {
+        "name": "Unknown Resource 507",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {
+            "0": " Default",
+            "1": " Athenians"
+        },
+        "note": "Athenians start with it set to 1 by initial Economic Policy."
+    },
+    "508": {
+        "name": "Unknown Resource 508",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "509": {
+        "name": "Building Loot Productivity",
+        "desc": "Gain gold when attacking buildings.",
+        "defaults": {
+            "0": "Default"
+        },
+        "note": "Formula is unknown, but the higher the resource the faster the gold gain is."
+    },
+    "510": {
+        "name": "Unknown Resource 510",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {
+            "1": " Spartans"
+        },
+        "note": "Spartans start with it set to 1."
+    },
+    "511": {
+        "name": "Unknown Resource 511",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "512": {
+        "name": "Unknown Resource 512",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "513": {
+        "name": "Unknown Resource 513",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "514": {
+        "name": "Unknown Resource 514",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "515": {
+        "name": "Unknown Resource 515",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "516": {
+        "name": "Unknown Resource 516",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "517": {
+        "name": "Unknown Resource 517",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "518": {
+        "name": "Unknown Resource 518",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "519": {
+        "name": "Unknown Resource 519",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "520": {
+        "name": "Unknown Resource 520",
+        "desc": "Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": ""
+    },
+    "521": {
+        "name": "Castle Gold Productivity",
+        "desc": "Castle gold production rate multiplier.",
+        "defaults": {
+            "0": " Default",
+            "1": " After Peloponnesian League researched"
+        },
+        "note": "The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`."
+    },
+    "522": {
+        "name": "Unknown Resource 522",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "523": {
+        "name": "Unknown Resource 523",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "524": {
+        "name": "Unknown Resource 524",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "525": {
+        "name": "Unknown Resource 525",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "526": {
+        "name": "Unknown Resource 526",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "527": {
+        "name": "Unknown Resource 527",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "528": {
+        "name": "Unknown Resource 528",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "529": {
+        "name": "Unknown Resource 529",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "530": {
+        "name": "Unknown Resource 530",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "531": {
+        "name": "Unknown Resource 531",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "532": {
+        "name": "Unknown Resource 532",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "533": {
+        "name": "Unknown Resource 533",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "534": {
+        "name": "Unknown Resource 534",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "535": {
+        "name": "Unknown Resource 535",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "536": {
+        "name": "Unknown Resource 536",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "537": {
+        "name": "Unknown Resource 537",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "538": {
+        "name": "Unknown Resource 538",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "539": {
+        "name": "Unknown Resource 539",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "540": {
+        "name": "Unknown Resource 540",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+     "541": {
+        "name": "Unknown Resource 541",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "542": {
+        "name": "Unknown Resource 542",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "543": {
+        "name": "Unknown Resource 543",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "544": {
+        "name": "Unknown Resource 544",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "545": {
+        "name": "Unknown Resource 545",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "546": {
+        "name": "Unknown Resource 546",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "547": {
+        "name": "Unknown Resource 547",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "548": {
+        "name": "Unknown Resource 548",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "549": {
+        "name": "Unknown Resource 549",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "550": {
+        "name": "Unknown Resource 550",
+        "desc": "Gives gold generation on kills to certain `Elite Hoplite`, `Camel Raider` and probably other units. Similar to resource 520 and 551.",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": ""
+    },
+    "551": {
+        "name": "Unit Loot Productivity",
+        "desc": "Gain gold per unit killed.",
+        "defaults": {
+            "0": " Default",
+            "1": " After Military Policy activated"
+        },
+        "note": "The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class task."
+    },
+    "552": {
+        "name": "Unknown Resource 552",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "553": {
+        "name": "Unknown Resource 553",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "554": {
+        "name": "Unknown Resource 554",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "555": {
+        "name": "Unknown Resource 555",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "556": {
+        "name": "Unknown Resource 556",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "557": {
+        "name": "Unknown Resource 557",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "558": {
+        "name": "Unknown Resource 558",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "559": {
+        "name": "Unknown Resource 559",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "560": {
+        "name": "Unknown Resource 560",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "561": {
+        "name": "Unknown Resource 561",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+     "562": {
+        "name": "Unknown Resource 562",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "563": {
+        "name": "Unknown Resource 563",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "564": {
+        "name": "Unknown Resource 564",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "565": {
+        "name": "Unknown Resource 565",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "566": {
+        "name": "Unknown Resource 566",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "567": {
+        "name": "Unknown Resource 567",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "568": {
+        "name": "Unknown Resource 568",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "569": {
+        "name": "Unknown Resource 569",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "570": {
+        "name": "Unknown Resource 570",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "571": {
+        "name": "Unknown Resource 571",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "572": {
+        "name": "Unknown Resource 572",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "573": {
+        "name": "Unknown Resource 573",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "574": {
+        "name": "Unknown Resource 574",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "575": {
+        "name": "Unknown Resource 575",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "576": {
+        "name": "Unknown Resource 576",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "577": {
+        "name": "Unknown Resource 577",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "578": {
+        "name": "Unknown Resource 578",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "579": {
+        "name": "Unknown Resource 579",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "580": {
+        "name": "Unknown Resource 580",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "581": {
+        "name": "Unknown Resource 581",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+     "582": {
+        "name": "Unknown Resource 582",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "583": {
+        "name": "Unknown Resource 583",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "584": {
+        "name": "Unknown Resource 584",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "585": {
+        "name": "Unknown Resource 585",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "586": {
+        "name": "Unknown Resource 586",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "587": {
+        "name": "Unknown Resource 587",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "588": {
+        "name": "Unknown Resource 588",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "589": {
+        "name": "Unknown Resource 589",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "590": {
+        "name": "Unknown Resource 590",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "591": {
+        "name": "Unknown Resource 591",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+     "592": {
+        "name": "Unknown Resource 592",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "593": {
+        "name": "Unknown Resource 593",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "594": {
+        "name": "Unknown Resource 594",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "595": {
+        "name": "Unknown Resource 595",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "596": {
+        "name": "Unknown Resource 596",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "597": {
+        "name": "Unknown Resource 597",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "598": {
+        "name": "Unknown Resource 598",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "599": {
+        "name": "Unknown Resource 599",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "600": {
+        "name": "Unknown Resource 600",
+        "desc": "Unknown... What does this resource do?",
         "defaults": {},
         "note": ""
     }
