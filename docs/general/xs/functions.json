@@ -1335,6 +1335,87 @@
                 }
             ],
             "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
+        },
+        {
+            "name": "xsTaskAmount",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "taskFieldId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Specifies which property of the task to change\n - 0: Work Value 1\n - 1: Work Value 2\n - 2: Work Range\n - 3: Work Flag \n - 4: Search Wait Time\n - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)\n - 6: Target Diplomacy"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the task field to"
+                }
+            ],
+            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [`#!cpp xsTask`](./#530-xstask)"
+        },
+        {
+            "name": "xsTask",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to add the task to"
+                },
+                {
+                    "name": "actionType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E."
+                },
+                {
+                    "name": "targetUnitId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Target unitId for the task if exists. Values 9xx refer to classes."
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia."
+                }
+            ],
+            "desc": "Adds a new (or edits an existing) task with the fields previously defined by calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.\n\nNote that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount)) and then submitting multiple copies of it for different people)"
+        },
+        {
+            "name": "xsRemoveTask",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Unit to remove the task from."
+                },
+                {
+                    "name": "actionType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E."
+                },
+                {
+                    "name": "targetUnitId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Target unitId for the task if exists. Values 9xx refer to classes."
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia."
+                }
+            ],
+            "desc": "Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) match an existing task in a unit. No other fields are used for filtering (same as when `xsTask` edits instead of adding a new task)"
         }
     ],
     "Read/Write": [
