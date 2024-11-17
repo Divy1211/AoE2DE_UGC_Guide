@@ -55,3 +55,4 @@ This guide has been written by
 | KSneijders (MrKirby) | MrKirby#5063  |  [here](https://github.com/KSneijders "MrKirby's GitHub")  |                             -                             | [here](https://www.twitch.tv/MrKirbyOfficial "MrKirby's Twitch") |
 |        hszemi        |  hszemi#2325  |    [here](https://github.com/HSZemi "HSZemi's GitHub")     |                             -                             |      [here](https://www.twitch.tv/hszemi "HSZemi's Twitch")      |
 |       Bradical       | Bradical#2561 | [here](https://github.com/bradsmithee "Bradical's GitHub") |                             -                             |                                -                                 |
+|        Kramb         |  Kramb#7067   | [here](https://github.com/mardaravicius "Kramb's GitHub")  |                             -                             |                                -                                 |

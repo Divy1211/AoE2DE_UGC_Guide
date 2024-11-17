@@ -2,7 +2,7 @@ import json
 with open("./functions.json") as file:
     function_docs = json.load(file)
 
-outmd = """*Written by: Alian713*
+outmd = """*Written by: Alian713, Kramb*
 <div id="hide-toc-elements"></div>
 ---
 

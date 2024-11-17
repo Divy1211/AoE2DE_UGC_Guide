@@ -349,9 +349,9 @@ Creates an array of type Vector and returns its ID.
 
 ### 3.6. xsArrayGetBool
 
-Returning Type: `#!cpp int`
+Returning Type: `#!cpp bool`
 
-Prototype: `#!cpp int xsArrayGetBool(int arrayID, int index)`
+Prototype: `#!cpp bool xsArrayGetBool(int arrayID, int index)`
 
 Parameters:
 
@@ -362,9 +362,9 @@ Gets and returns the value of the given bool array at the specifed index.
 
 ### 3.7. xsArrayGetFloat
 
-Returning Type: `#!cpp int`
+Returning Type: `#!cpp float`
 
-Prototype: `#!cpp int xsArrayGetFloat(int arrayID, int index)`
+Prototype: `#!cpp float xsArrayGetFloat(int arrayID, int index)`
 
 Parameters:
 
@@ -400,9 +400,9 @@ Returns the length of the given array.
 
 ### 3.10. xsArrayGetString
 
-Returning Type: `#!cpp int`
+Returning Type: `#!cpp string`
 
-Prototype: `#!cpp int xsArrayGetString(int arrayID, int index)`
+Prototype: `#!cpp string xsArrayGetString(int arrayID, int index)`
 
 Parameters:
 
@@ -413,9 +413,9 @@ Gets and returns the value of the given String array at the specifed index.
 
 ### 3.11. xsArrayGetVector
 
-Returning Type: `#!cpp int`
+Returning Type: `#!cpp vector`
 
-Prototype: `#!cpp int xsArrayGetVector(int arrayID, int index)`
+Prototype: `#!cpp vector xsArrayGetVector(int arrayID, int index)`
 
 Parameters:
 

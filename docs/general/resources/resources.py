@@ -2,7 +2,7 @@ import json
 
 md = """# Player Resources
 
-*Written by: Alian713 & Bradical*
+*Written by: Alian713, Bradical, Kramb*
 
 ---
 

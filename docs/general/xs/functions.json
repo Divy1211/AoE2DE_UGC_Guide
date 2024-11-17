@@ -602,7 +602,7 @@
         },
         {
             "name": "xsArrayGetFloat",
-            "return_type": "int",
+            "return_type": "float",
             "params": [
                 {
                     "name": "arrayID",
@@ -621,7 +621,7 @@
         },
         {
             "name": "xsArrayGetBool",
-            "return_type": "int",
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayID",
@@ -640,7 +640,7 @@
         },
         {
             "name": "xsArrayGetString",
-            "return_type": "int",
+            "return_type": "string",
             "params": [
                 {
                     "name": "arrayID",
@@ -659,7 +659,7 @@
         },
         {
             "name": "xsArrayGetVector",
-            "return_type": "int",
+            "return_type": "vector",
             "params": [
                 {
                     "name": "arrayID",

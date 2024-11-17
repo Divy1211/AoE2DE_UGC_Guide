@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2024/09/09 23:00:28 |
+// | Generated on: 2024/09/19 19:22:17 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -1968,9 +1968,9 @@ int xsArrayCreateVector(int size = -1, vector defaultValue = vector(-1, -1, -1),
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
 *
-* @returns int
+* @returns bool
 */
-int xsArrayGetBool(int arrayID = -1, int index = -1) {}
+bool xsArrayGetBool(int arrayID = -1, int index = -1) {}
 
 /**
 * Gets and returns the value of the given float array at the specifed index.
@@ -1978,9 +1978,9 @@ int xsArrayGetBool(int arrayID = -1, int index = -1) {}
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
 *
-* @returns int
+* @returns float
 */
-int xsArrayGetFloat(int arrayID = -1, int index = -1) {}
+float xsArrayGetFloat(int arrayID = -1, int index = -1) {}
 
 /**
 * Gets and returns the value of the given int array at the specifed index.
@@ -2007,9 +2007,9 @@ int xsArrayGetSize(int arrayID = -1) {}
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
 *
-* @returns int
+* @returns string
 */
-int xsArrayGetString(int arrayID = -1, int index = -1) {}
+string xsArrayGetString(int arrayID = -1, int index = -1) {}
 
 /**
 * Gets and returns the value of the given Vector array at the specifed index.
@@ -2017,9 +2017,9 @@ int xsArrayGetString(int arrayID = -1, int index = -1) {}
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
 *
-* @returns int
+* @returns vector
 */
-int xsArrayGetVector(int arrayID = -1, int index = -1) {}
+vector xsArrayGetVector(int arrayID = -1, int index = -1) {}
 
 /**
 * Resizes the the given bool array to the specifed size and returns 1.
