@@ -984,14 +984,14 @@ Returns the amount the specified resource of the given player.
 
 Returning Type: `#!cpp void`
 
-Prototype: `#!cpp void xsRemoveTask(int masterUnitID, int actionType, int targetMasterUnitID, int playerID)`
+Prototype: `#!cpp void xsRemoveTask(int unitId, int actionType, int targetUnitId, int playerId)`
 
 Parameters:
 
-1.  `#!cpp int masterUnitID`: Unit to remove the task from.
+1.  `#!cpp int unitId`: Unit to remove the task from.
 2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
-3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
-4. (Optional) `#!cpp int playerID`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
+3. (Optional) `#!cpp int targetUnitId`: Target unitId for the task if exists. Values 9xx refer to classes.
+4. (Optional) `#!cpp int playerId`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
 
 Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) match an existing task in a unit. No other fields are used for filtering (same as when `xsTask` edits instead of adding a new task)
 
@@ -1041,16 +1041,18 @@ Sets the value of the variable of the given variable ID to the provided value.
 
 Returning Type: `#!cpp void`
 
-Prototype: `#!cpp void xsTask(int masterUnitID, int actionType, int targetMasterUnitID, int playerID)`
+Prototype: `#!cpp void xsTask(int unitId, int actionType, int targetUnitId, int playerId)`
 
 Parameters:
 
-1.  `#!cpp int masterUnitID`: Unit to insert the task to
+1.  `#!cpp int unitId`: The unit to add the task to
 2.  `#!cpp int actionType`: Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
-3. (Optional) `#!cpp int targetMasterUnitID`: Target unitId for the task if exists. Values 9xx refer to classes.
-4. (Optional) `#!cpp int playerID`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
+3. (Optional) `#!cpp int targetUnitId`: Target unitId for the task if exists. Values 9xx refer to classes.
+4. (Optional) `#!cpp int playerId`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-This function inserts or overwrites a task with the fields defined by the `xsTaskAmount` into a specified unit. If the task with the `actionType`, `targetMasterUnitID`, and `Search Wait Time` (from `xsTaskAmount`) already exists, it is overwritten, otherwise a new one is inserted at the end of the task list.
+Adds a new (or edits an existing) task with the fields previously defined by calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+
+Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount)) and then submitting multiple copies of it for different people)
 
 ### 5.32. xsTaskAmount
 
@@ -1070,14 +1072,7 @@ Parameters:
  - 6: Target Diplomacy
 2.  `#!cpp float value`: The value to set the task field to
 
-This function is used to populate task fields before modification by `xsTask` or `xsRemoveTask`. Multiple calls with different `taskFieldId` are needed to populate all the fields. After the fields are populated, a task can be modified by `xsTask` or `xsRemoveTask`. Subsequent calls to `xsTask` or `xsRemoveTask` inherit previously defined fields. `taskFieldId`s are:
-`0` - `Work Value 1` (eg.: amount of attribute to add for auras).\
-`1` - `Work Value 2` (eg.: minimum number of units in range to activate the aura)
-`2` - `Work Range` (eg.: aura range)
-`3` - `Work Flag 2`
-`4` - `Search Wait Time` part of task uniqueness, but also serves as various options based on task type (eg.: attributeId for auras).
-`5` - `Unused Flag` (eg.: combinable bit field for auras: a circular (bit value 2), visible (bit value 4), translucent (bit value 32)).
-`6` - `Target Diplomacy` (eg.: 4 to apply to gaia, player and allied units for auras).
+Sets the value of the given field of the global XS task struct to the provided value. See also [`#!cpp xsTask`](./#530-xstask)
 
 ### 5.33. xsTriggerVariable
 
