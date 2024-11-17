@@ -464,6 +464,27 @@
             "usage": null
         },
         {
+            "name": "cAchaemenids",
+            "value": 46,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cAthenians",
+            "value": 47,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cSpartans",
+            "value": 48,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
             "name": "cAoeEgyptians",
             "value": 1,
             "type": "int",

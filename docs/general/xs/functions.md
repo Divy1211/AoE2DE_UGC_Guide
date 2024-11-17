@@ -1,4 +1,4 @@
-*Written by: Alian713*
+*Written by: Alian713, Kramb*
 <div id="hide-toc-elements"></div>
 ---
 
@@ -993,7 +993,7 @@ Parameters:
 3. (Optional) `#!cpp int targetUnitId`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerId`: The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
 
-Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) match an existing task in a unit. No other fields are used for filtering (same as when `xsTask` edits instead of adding a new task)
+Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by [xsTaskAmount](./#532-xstaskamount)) match an existing task in a unit. No other fields are used for filtering (same as when [xsTask](./#531-xstask) edits instead of adding a new task)
 
 ### 5.28. xsResearchTechnology
 
@@ -1050,9 +1050,9 @@ Parameters:
 3. (Optional) `#!cpp int targetUnitId`: Target unitId for the task if exists. Values 9xx refer to classes.
 4. (Optional) `#!cpp int playerId`: The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-Adds a new (or edits an existing) task with the fields previously defined by calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 
-Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [`#!cpp xsTaskAmount`](./#531-xstaskamount)) and then submitting multiple copies of it for different people)
+Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
 
 ### 5.32. xsTaskAmount
 
@@ -1072,7 +1072,7 @@ Parameters:
  - 6: Target Diplomacy
 2.  `#!cpp float value`: The value to set the task field to
 
-Sets the value of the given field of the global XS task struct to the provided value. See also [`#!cpp xsTask`](./#530-xstask)
+Sets the value of the given field of the global XS task struct to the provided value. See also [#!cpp xsTask](./#531-xstask)
 
 ### 5.33. xsTriggerVariable
 

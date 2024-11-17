@@ -402,103 +402,121 @@ Value: `#!cpp int 45`
 
 This is the civilization ID of Georgians
 
-### 5.47. cAoeEgyptians
+### 5.47. cAchaemenids
+
+Value: `#!cpp int 46`
+
+This is the civilization ID of Achaemenids
+
+### 5.48. cAthenians
+
+Value: `#!cpp int 47`
+
+This is the civilization ID of Athenians
+
+### 5.49. cSpartans
+
+Value: `#!cpp int 48`
+
+This is the civilization ID of Spartans
+
+### 5.50. cAoeEgyptians
 
 Value: `#!cpp int 1`
 
 This is the civilization ID of Aoe Egyptians
 
-### 5.48. cAoeGreeks
+### 5.51. cAoeGreeks
 
 Value: `#!cpp int 2`
 
 This is the civilization ID of Aoe Greeks
 
-### 5.49. cAoeBabylonians
+### 5.52. cAoeBabylonians
 
 Value: `#!cpp int 3`
 
 This is the civilization ID of Aoe Babylonians
 
-### 5.50. cAoeAssyrians
+### 5.53. cAoeAssyrians
 
 Value: `#!cpp int 4`
 
 This is the civilization ID of Aoe Assyrians
 
-### 5.51. cAoeMinoans
+### 5.54. cAoeMinoans
 
 Value: `#!cpp int 5`
 
 This is the civilization ID of Aoe Minoans
 
-### 5.52. cAoeHittites
+### 5.55. cAoeHittites
 
 Value: `#!cpp int 6`
 
 This is the civilization ID of Aoe Hittites
 
-### 5.53. cAoePhoenicians
+### 5.56. cAoePhoenicians
 
 Value: `#!cpp int 7`
 
 This is the civilization ID of Aoe Phoenicians
 
-### 5.54. cAoeSumerians
+### 5.57. cAoeSumerians
 
 Value: `#!cpp int 8`
 
 This is the civilization ID of Aoe Sumerians
 
-### 5.55. cAoePersians
+### 5.58. cAoePersians
 
 Value: `#!cpp int 9`
 
 This is the civilization ID of Aoe Persians
 
-### 5.56. cAoeShang
+### 5.59. cAoeShang
 
 Value: `#!cpp int 10`
 
 This is the civilization ID of Aoe Shang
 
-### 5.57. cAoeYamato
+### 5.60. cAoeYamato
 
 Value: `#!cpp int 11`
 
 This is the civilization ID of Aoe Yamato
 
-### 5.58. cAoeChoson
+### 5.61. cAoeChoson
 
 Value: `#!cpp int 12`
 
 This is the civilization ID of Aoe Choson
 
-### 5.59. cAoeRomans
+### 5.62. cAoeRomans
 
 Value: `#!cpp int 13`
 
 This is the civilization ID of Aoe Romans
 
-### 5.60. cAoeCarthaginians
+### 5.63. cAoeCarthaginians
 
 Value: `#!cpp int 14`
 
 This is the civilization ID of Aoe Carthaginians
 
-### 5.61. cAoePalmyrans
+### 5.64. cAoePalmyrans
 
 Value: `#!cpp int 15`
 
 This is the civilization ID of Aoe Palmyrans
 
-### 5.62. cAoeMacedonians
+### 5.65. cAoeMacedonians
 
 Value: `#!cpp int 16`
 
 This is the civilization ID of Aoe Macedonians
 
-### 5.63. cAoeLacViet
+### 5.66. cAoeLacViet
 
 Value: `#!cpp int 17`
 
