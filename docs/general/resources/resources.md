@@ -3808,13 +3808,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unknown... What does this resource do?
 
-## 501. Basileus Dead
+## 501. Maximum Polemarchs
 
 - ID: 501
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.
 
-- Note: Incremented when `Basileus Dead` unit is spawned.
+- Default Values:
+
+    - 0: Default
 
 ## 502. Chopping Food Productivity
 
@@ -3836,8 +3838,9 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+    - 0.25:  Achaemenids, Athenians and Spartans.
 
-- Note: Setting it to 0.5 will return half the amount in gold and half in wood. Seems to be working for trade cogs only. Setting it to a value $\geq$ 1 will make it so no trade resources are returned.
+- Note: Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value $\geq$ 1 will make it so no trade resources are returned.
 
 ## 504. Unknown Resource 504
 
@@ -3851,6 +3854,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unknown... What does this resource do?
 
+- Default Values:
+
+    - 0:  Default
+    - 1:  Achaemenids, Athenians and Spartans
+
 ## 506. Town Center Loss
 
 - ID: 506
@@ -3860,8 +3868,9 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 0:  Default
+    - 1:  Achaemenids, Athenians and Spartans
 
-- Note: Will go into negatives.
+- Note: Will go into negatives. Is connected to Achaemenids Town center upgrades, but is not changed by them. Maybe no longer used?
 
 ## 507. Unknown Resource 507
 
@@ -3874,7 +3883,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Athenians
 
-- Note: Athenians start with it set to 1.
+- Note: Athenians start with it set to 1 by initial Economic Policy.
 
 ## 508. Unknown Resource 508
 
@@ -3899,6 +3908,12 @@ This page is a list of all the player resources in the scenario editor and their
 - ID: 510
 
 - Purpose: Unknown... What does this resource do?
+
+- Default Values:
+
+    - 1:  Spartans
+
+- Note: Spartans start with it set to 1.
 
 ## 511. Unknown Resource 511
 
@@ -4453,6 +4468,12 @@ This page is a list of all the player resources in the scenario editor and their
 ## 599. Unknown Resource 599
 
 - ID: 599
+
+- Purpose: Unknown... What does this resource do?
+
+## 600. Unknown Resource 600
+
+- ID: 600
 
 - Purpose: Unknown... What does this resource do?
 

@@ -3244,10 +3244,12 @@
         "note": ""
     },
     "501": {
-        "name": "Basileus Dead",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
-        "note": "Incremented when `Basileus Dead` unit is spawned."
+        "name": "Maximum Polemarchs",
+        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.",
+        "defaults": {
+            "0": "Default"
+        },
+        "note": ""
     },
     "502": {
         "name": "Chopping Food Productivity",
@@ -3262,9 +3264,10 @@
         "name": "Trade Wood Percentage",
         "desc": "Amount of trade will be returned as wood instead of gold.",
         "defaults": {
-            "0": " Default"
+            "0": " Default",
+            "0.25": " Achaemenids, Athenians and Spartans."
         },
-        "note": "Setting it to 0.5 will return half the amount in gold and half in wood. Seems to be working for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
+        "note": "Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
     },
     "504": {
         "name": "Unknown Resource 504",
@@ -3275,16 +3278,20 @@
     "505": {
         "name": "Unknown Resource 505",
         "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "defaults": {
+            "0": " Default",
+            "1": " Achaemenids, Athenians and Spartans"
+        },
         "note": ""
     },
     "506": {
         "name": "Town Center Loss",
         "desc": "Decremented for every town center lost.",
         "defaults": {
-            "0": " Default"
+            "0": " Default",
+            "1": " Achaemenids, Athenians and Spartans"
         },
-        "note": "Will go into negatives."
+        "note": "Will go into negatives. Is connected to Achaemenids Town center upgrades, but is not changed by them. Maybe no longer used?"
     },
     "507": {
         "name": "Unknown Resource 507",
@@ -3293,7 +3300,7 @@
             "0": " Default",
             "1": " Athenians"
         },
-        "note": "Athenians start with it set to 1."
+        "note": "Athenians start with it set to 1 by initial Economic Policy."
     },
     "508": {
         "name": "Unknown Resource 508",
@@ -3312,8 +3319,10 @@
     "510": {
         "name": "Unknown Resource 510",
         "desc": "Unknown... What does this resource do?",
-        "defaults": {},
-        "note": ""
+        "defaults": {
+            "1": " Spartans"
+        },
+        "note": "Spartans start with it set to 1."
     },
     "511": {
         "name": "Unknown Resource 511",
@@ -3855,6 +3864,12 @@
     },
     "599": {
         "name": "Unknown Resource 599",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "600": {
+        "name": "Unknown Resource 600",
         "desc": "Unknown... What does this resource do?",
         "defaults": {},
         "note": ""
