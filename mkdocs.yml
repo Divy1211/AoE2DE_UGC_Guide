@@ -51,6 +51,7 @@ nav:
       # - Fixed:                      "general/xs/bugs/Fixed.md"
       - Important:                  "general/xs/bugs/Important.md"
       - Language Syntax:            "general/xs/bugs/Language Syntax.md"
+      - Task:                       "general/xs/bugs/Task.md"
   - Mods:
     -                               "mods/index.md"
 #   - Data Mods

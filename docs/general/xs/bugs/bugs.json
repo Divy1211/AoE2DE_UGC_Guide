@@ -500,9 +500,9 @@
     ],
     "Task": [
         {
-            "Name": "Can not add 2 class based targets to the same unit under `xsTask`",
-            "Description" : "When using `xsTask` and adding several target unit classes to the same unit, the last one overrides the previous one. While if using regular unit targets, they are added separately.",
-            "Expected Behaviour": "Class target units should also be added separately instead of overriding each other",
+            "Name": "`xsTask` does not check the Class field when comparing fields with existing tasks",
+            "Description" : "Attempting to add a task with multiple target unit classes to the same unit will only create one task and subsequent calls will override the class field of that single task",
+            "Expected Behaviour": "A new task should be created with otherwise identical fields for each target unit class",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
