@@ -1344,7 +1344,7 @@
                     "name": "taskFieldId",
                     "type": "int",
                     "required": true,
-                    "desc": "Specifies which property of the task to change\n - 0: Work Value 1\n - 1: Work Value 2\n - 2: Work Range\n - 3: Work Flag \n - 4: Search Wait Time\n - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)\n - 6: Target Diplomacy"
+                    "desc": "Specifies which property of the task to change\n    - 0: Work Value 1 (For aura tasks its stores the amount of attribute that will be gained by the effected units)\n    - 1: Work Value 2 (For aura tasks its store how many units need to be in range to turn on the aura)\n    - 2: Work Range (For aura tasks its stores the aura range)\n    - 3: Work Flag 2 (There is no work flag 1, just what it's called in A.G.E)\n    - 4: Search Wait Time (Not related to the name, just what it's called in A.G.E. For aura task its store which attribute the aura increases. Only few attributes are supported: 5 - movement speed, 9 - attack, 10 - attack reload time, 13 - work rate, 109 - hp regen, 116 - melee armor, 117 - pierce armor)\n    - 5: Unused Flag (It is not actually unused, just what it's called in A.G.E. For aura task its a bitfield of: 1 - multiply instead of add, 2 - circular instead of rectangle, 4 - visible, 32 - translucent. Add them together to activate multiple effects)\n    - 6: Target Diplomacy (Which targets are effected: 0 - all, 1 - your only, 2 - neutral and enemy, 3 - gaia only, 4 - gaia, your and ally, 5 - gaia, neutral and enemy, 6 - all but yours)"
                 },
                 {
                     "name": "value",
@@ -1353,7 +1353,7 @@
                     "desc": "The value to set the task field to"
                 }
             ],
-            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [#!cpp xsTask](./#531-xstask)"
+            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail."
         },
         {
             "name": "xsTask",
