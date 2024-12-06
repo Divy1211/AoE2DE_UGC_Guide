@@ -497,5 +497,21 @@
             "Version Fixed": "",
             "show": true
         }
+    ],
+    "Task": [
+        {
+            "Name": "Can not add 2 class based targets to the same unit under `xsTask`",
+            "Description" : "When using `xsTask` and adding several target unit classes to the same unit, the last one overrides the previous one. While if using regular unit targets, they are added separately.",
+            "Expected Behaviour": "Class target units should also be added separately instead of overriding each other",
+            "Reproduction Steps": [
+                "Create a new scenario or RMS",
+                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+                "Include the script in the scenario or RMS",
+                "When a game is played using the scenario or RMS, The Genghis Khan aura is only applied to cavalry units."
+            ],
+            "Code File": "task.xs",
+            "Version Fixed": "",
+            "show": true
+        }
     ]
 }
