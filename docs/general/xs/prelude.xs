@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2024/11/17 18:34:01 |
+// | Generated on: 2024/12/07 01:18:56 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -2423,18 +2423,18 @@ int xsGetVictoryTimeForSecondaryGameMode() {}
 
 /**
 * Returns an integer corresponding to different victory settings ingame. These are:
-
- 0: Standard
-
-1: Conquest
-
-2: Time Limit
-
-3: Score
-
-4: Custom (scenarios only).
-
-Last Man Standing returns 0 as well.
+* 
+*  0: Standard
+* 
+* 1: Conquest
+* 
+* 2: Time Limit
+* 
+* 3: Score
+* 
+* 4: Custom (scenarios only).
+* 
+* Last Man Standing returns 0 as well.
 *
 * @returns int
 */
@@ -2511,8 +2511,8 @@ void xsSetTriggerVariable(int variableID = -1, int value = -1) {}
 
 /**
 * Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
-
-Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
+* 
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
 *
 * @param unitId The unit to add the task to
 * @param actionType Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
@@ -2524,16 +2524,16 @@ Note that `xsTaskAmount` modifies a global task struct which is re-used every ti
 void xsTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, int playerId = -1) {}
 
 /**
-* Sets the value of the given field of the global XS task struct to the provided value. See also [#!cpp xsTask](./#531-xstask)
+* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 *
-* @param taskFieldId Specifies which property of the task to change
- - 0: Work Value 1
- - 1: Work Value 2
- - 2: Work Range
- - 3: Work Flag 
- - 4: Search Wait Time
- - 5: Unused Flag (it is not actually unused, just what it's called in A.G.E.)
- - 6: Target Diplomacy
+* @param taskFieldId Specifies which property of the task to change (names correspond with A.G.E.):
+*     - 0: Work Value 1 (Task 155 - Quantity to mul/add to the attribute modified)
+*     - 1: Work Value 2 (Task 155 - Min number of units required to activate the effect. See Monaspa)
+*     - 2: Work Range
+*     - 3: Work Flag 2
+*     - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), 116 - Melee Armor, 117 - Pierce Armor)
+*     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Unused, 16 - Unused, 32 - Translucent)
+*     - 6: Target Diplomacy
 * @param value The value to set the task field to
 *
 * @returns void

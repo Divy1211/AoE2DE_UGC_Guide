@@ -26,7 +26,7 @@ def write_consts(constants, file: TextIO):
     for idx, (category, consts) in enumerate(constants.items(), 1):
         file.write(f"\n// {idx}. {category.title().replace('Effectamount', 'EffectAmount')}\n\n\n")
         for c_idx, constant in enumerate(consts, 1):
-            file.write(f"/** {replace_placeholders(resolve_links(constant['desc']), category == 'resource', constant)}")
+            file.write(f"/** {replace_placeholders(resolve_links(constant['desc'].replace("\n", "\n* ")), category == 'resource', constant)}")
             if constant['usage']:
                 file.write(f" View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#{idx}{c_idx}-{format_name(constant['name'])})")
             file.write(" */\n")
@@ -47,10 +47,10 @@ def write_fns(functions, file: TextIO):
 
         for f_index, func in enumerate(functions, 1):
             file.write("/**\n")
-            file.write(f"* {func['desc']}\n*\n")
+            file.write(f"* {func['desc'].replace("\n", "\n* ")}\n*\n")
             last = False
             for param in func['params']:
-                file.write(f"* @param {param['name']} {param['desc']}\n")
+                file.write(f"* @param {param['name']} {param['desc'].replace("\n", "\n* ")}\n")
                 last = True
             if last:
                 file.write("*\n")
