@@ -47,8 +47,8 @@
     ],
     "Effect Amount": [
         {
-            "Name": "`xsEffectAmount` effect `cMulAttribute` and `cAddAttribute` with attribute `cAttack/cArmor`",
-            "Description" : "When using `xsEffectAmount` and `cMulAttribute` or `cAddAttribute` to modify `cAttack/cArmor`, the effect does not change the attack/armour at all",
+            "Name": "`xsEffectAmount` effect `c[Set/Add/Mul]Attribute` with attribute `cAttack/cArmor`",
+            "Description" : "Weird behaviour is encountered when using `xsEffectAmount` with `cSetAttribute`, `cAddAttribute`, or `cMulAttribute` to modify `cAttack` or `cArmor`",
             "Expected Behaviour": "Expected behaviour is demonstrated using the following example:",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
