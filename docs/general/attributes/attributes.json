@@ -572,6 +572,45 @@
         ],
         "flags": {}
     },
+    "78": {
+        "name": "Obstruction Type",
+        "desc": "Controls unit outline and collision",
+        "notes": [],
+        "flags": {
+            "0": "Square outline, and passable",
+            "1": "Same as 0",
+            "2": "Solid square outline, and has collision box",
+            "3": "Square outline, and has collision box",
+            "4": "No outline, and passable",
+            "5": "Round outline, and has collision box",
+            "10": "Same as 2, but designed for mountains"
+        }
+    },
+    "79": {
+        "name": "Blockage Class",
+        "desc": "Controls unit blockage class",
+        "notes": [],
+        "flags": {
+            "0": "Forces default obstruction type",
+            "1": "Resource",
+            "2": "Unit",
+            "3": "Building",
+            "4": "Wall",
+            "5": "Gate, allows trespassing",
+            "6": "Cliff, blocks walling"
+        }
+    },
+    "80": {
+        "name": "Selection Effect",
+        "desc": "Controls unit hit point bar and outline",
+        "notes": [],
+        "flags": {
+            "0": "Has hit point bar",
+            "1": "Has hit point bar, and outline",
+            "2": "No hit point bar, or outline",
+            "3": "No hit point bar, but has outline"
+        }
+    },
     "100": {
         "name": "Resource Costs",
         "desc": "Refers to the first resource cost of a unit. Refer to A.G.E. to see which resource cost that is",

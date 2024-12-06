@@ -635,6 +635,51 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - Special abilities are an unused feature in AoE2, they were planned but never made it into AoK
 
+## 78. Obstruction Type
+
+ - ID: 78
+
+ - Controls unit outline and collision
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Square outline, and passable | 0 | 
+    | Same as 0 | 1 | 
+    | Solid square outline, and has collision box | 2 | 
+    | Square outline, and has collision box | 3 | 
+    | No outline, and passable | 4 | 
+    | Round outline, and has collision box | 5 | 
+    | Same as 2, but designed for mountains | 10 | 
+
+## 79. Blockage Class
+
+ - ID: 79
+
+ - Controls unit blockage class
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Forces default obstruction type | 0 | 
+    | Resource | 1 | 
+    | Unit | 2 | 
+    | Building | 3 | 
+    | Wall | 4 | 
+    | Gate, allows trespassing | 5 | 
+    | Cliff, blocks walling | 6 | 
+
+## 80. Selection Effect
+
+ - ID: 80
+
+ - Controls unit hit point bar and outline
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Has hit point bar | 0 | 
+    | Has hit point bar, and outline | 1 | 
+    | No hit point bar, or outline | 2 | 
+    | No hit point bar, but has outline | 3 | 
+
 ## 100. Resource Costs
 
  - ID: 100
