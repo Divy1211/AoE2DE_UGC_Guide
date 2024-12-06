@@ -522,7 +522,8 @@ This page is a list of all the unit attributes that can be modified in the scena
     | Damage the targeted unit's armor (Obuch) | 4 | 
     | Attack ground ability | 8 | 
     | Bulk volley release (kipchak/siege weapons) | 16 | 
-    | Enable task 155 ability (Stronghold castle/Caravanserai/Centurion) | 32 | 
+    | Enable aura ability (task 155) (Stronghold castle/Caravanserai/Centurion) | 32 | 
+    | Change aura ability (task 155) to affect self (Monaspa) | 64 | 
 
 ## 64. Attack Dispersion
 

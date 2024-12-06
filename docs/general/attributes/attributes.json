@@ -465,7 +465,8 @@
             "4": "Damage the targeted unit's armor (Obuch)",
             "8": "Attack ground ability",
             "16": "Bulk volley release (kipchak/siege weapons)",
-            "32": "Enable task 155 ability (Stronghold castle/Caravanserai/Centurion)"
+            "32": "Enable aura ability (task 155) (Stronghold castle/Caravanserai/Centurion)",
+            "64": "Change aura ability (task 155) to affect self (Monaspa)"
         }
     },
     "64": {
