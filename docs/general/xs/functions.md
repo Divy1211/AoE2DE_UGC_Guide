@@ -1062,14 +1062,14 @@ Prototype: `#!cpp void xsTaskAmount(int taskFieldId, float value)`
 
 Parameters:
 
-1.  `#!cpp int taskFieldId`: Specifies which property of the task to change
-    - 0: Work Value 1 (For aura tasks its stores the amount of attribute that will be gained by the effected units)
-    - 1: Work Value 2 (For aura tasks its store how many units need to be in range to turn on the aura)
-    - 2: Work Range (For aura tasks its stores the aura range)
-    - 3: Work Flag 2 (There is no work flag 1, just what it's called in A.G.E)
-    - 4: Search Wait Time (Not related to the name, just what it's called in A.G.E. For aura task its store which attribute the aura increases. Only few attributes are supported: 5 - movement speed, 9 - attack, 10 - attack reload time, 13 - work rate, 109 - hp regen, 116 - melee armor, 117 - pierce armor)
-    - 5: Unused Flag (It is not actually unused, just what it's called in A.G.E. For aura task its a bitfield of: 1 - multiply instead of add, 2 - circular instead of rectangle, 4 - visible, 32 - translucent. Add them together to activate multiple effects)
-    - 6: Target Diplomacy (Which targets are effected: 0 - all, 1 - your only, 2 - neutral and enemy, 3 - gaia only, 4 - gaia, your and ally, 5 - gaia, neutral and enemy, 6 - all but yours)
+1.  `#!cpp int taskFieldId`: Specifies which property of the task to change (names correspond with A.G.E.):
+    - 0: Work Value 1 (Task 155 - Quantity to mul/add to the attribute modified)
+    - 1: Work Value 2 (Task 155 - Min number of units required to activate the effect. See Monaspa)
+    - 2: Work Range
+    - 3: Work Flag 2
+    - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), 116 - Melee Armor, 117 - Pierce Armor)
+    - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Unused, 16 - Unused, 32 - Translucent)
+    - 6: Target Diplomacy
 2.  `#!cpp float value`: The value to set the task field to
 
 Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
