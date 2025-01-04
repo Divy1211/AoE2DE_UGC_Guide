@@ -3285,13 +3285,13 @@
         "note": ""
     },
     "506": {
-        "name": "Town Center Loss",
-        "desc": "Decremented for every town center lost.",
+        "name": "Achamenids Town Center Upgrades",
+        "desc": "Used as a local resource in Town Centers to know which of them have the Achamenids Town Center upgrade researched",
         "defaults": {
             "0": " Default",
             "1": " Achaemenids, Athenians and Spartans"
         },
-        "note": "Will go into negatives. Is connected to Achaemenids Town center upgrades, but is not changed by them. Maybe no longer used?"
+        "note": "Local Town Center resource is incremented when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed."
     },
     "507": {
         "name": "Unknown Resource 507",
@@ -3380,7 +3380,7 @@
     },
     "520": {
         "name": "Unknown Resource 520",
-        "desc": "Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.",
+        "desc": "Gives gold generation on kills to certain `Lysander's Raider` and probably other units. Similar to resource 550 and 551.",
         "defaults": {
             "1": " Default"
         },
@@ -3565,7 +3565,7 @@
     },
     "550": {
         "name": "Unknown Resource 550",
-        "desc": "Gives gold generation on kills to certain `Elite Hoplite`, `Camel Raider` and probably other units. Similar to resource 520 and 551.",
+        "desc": "Gives gold generation on kills to certain `Lysander's Raider`, `Camel Raider` and probably other units. Similar to resource 520 and 551.",
         "defaults": {
             "1": " Default"
         },

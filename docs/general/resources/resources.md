@@ -1,6 +1,6 @@
 # Player Resources
 
-*Written by: Alian713 & Bradical*
+*Written by: Alian713, Bradical, Kramb*
 
 ---
 
@@ -3859,18 +3859,18 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Achaemenids, Athenians and Spartans
 
-## 506. Town Center Loss
+## 506. Achamenids Town Center Upgrades
 
 - ID: 506
 
-- Purpose: Decremented for every town center lost.
+- Purpose: Used as a local resource in Town Centers to know which of them have the Achamenids Town Center upgrade researched
 
 - Default Values:
 
     - 0:  Default
     - 1:  Achaemenids, Athenians and Spartans
 
-- Note: Will go into negatives. Is connected to Achaemenids Town center upgrades, but is not changed by them. Maybe no longer used?
+- Note: Local Town Center resource is incremented when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed.
 
 ## 507. Unknown Resource 507
 
@@ -3973,7 +3973,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 520
 
-- Purpose: Gives gold generation on kills to certain `Elite Hoplite` and probably other units. Similar to resource 550 and 551.
+- Purpose: Gives gold generation on kills to certain `Lysander's Raider` and probably other units. Similar to resource 550 and 551.
 
 - Default Values:
 
@@ -4164,7 +4164,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 550
 
-- Purpose: Gives gold generation on kills to certain `Elite Hoplite`, `Camel Raider` and probably other units. Similar to resource 520 and 551.
+- Purpose: Gives gold generation on kills to certain `Lysander's Raider`, `Camel Raider` and probably other units. Similar to resource 520 and 551.
 
 - Default Values:
 
