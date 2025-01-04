@@ -286,7 +286,7 @@ Prototype: `#!cpp int xsArrayCreateBool(int size, bool defaultValue, string uniq
 Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
-2.  `#!cpp bool defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be false
+2. (Optional) `#!cpp bool defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be false
 3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1
 
 Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
