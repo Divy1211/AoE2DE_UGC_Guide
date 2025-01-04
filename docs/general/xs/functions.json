@@ -351,7 +351,7 @@
                     "name": "uniqueName",
                     "type": "string",
                     "required": false,
-                    "desc": "A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1"
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
             "desc": "Creates an array of type int and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
@@ -376,7 +376,7 @@
                     "name": "uniqueName",
                     "type": "string",
                     "required": false,
-                    "desc": "A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1"
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
             "desc": "Creates an array of type float and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
@@ -401,7 +401,7 @@
                     "name": "uniqueName",
                     "type": "string",
                     "required": false,
-                    "desc": "A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1"
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
             "desc": "Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
@@ -426,7 +426,7 @@
                     "name": "uniqueName",
                     "type": "string",
                     "required": false,
-                    "desc": "A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1"
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
             "desc": "Creates an array of type String and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
@@ -451,7 +451,7 @@
                     "name": "uniqueName",
                     "type": "string",
                     "required": false,
-                    "desc": "A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1"
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
             "desc": "Creates an array of type Vector and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
