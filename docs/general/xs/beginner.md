@@ -1197,6 +1197,8 @@ For the name of the array, any string may be used but all names must be unique
 
 All of these functions return an integer which is the ID of the array that you just created. This ID is used to perform other operations on the array. You want to store this integer in a variable that is named apty so that you can use the array later.
 
+Arrays are global and never go out of scope (only their ids do). As long as an array was created and you know its id it can be accessed within any scope. So it is better to not create them in a code that will be executing multiple times as that can create memory leaks.
+
 To get a value at a specific index from an array, we use the following functions for the relevant data types:
 
 ```cpp

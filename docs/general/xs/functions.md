@@ -287,9 +287,9 @@ Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
 2.  `#!cpp bool defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type bool and returns its ID.
+Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.2. xsArrayCreateFloat
 
@@ -301,9 +301,9 @@ Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
 2.  `#!cpp float defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type float and returns its ID.
+Creates an array of type float and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.3. xsArrayCreateInt
 
@@ -315,9 +315,9 @@ Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
 2.  `#!cpp int defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type int and returns its ID.
+Creates an array of type int and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.4. xsArrayCreateString
 
@@ -329,9 +329,9 @@ Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
 2.  `#!cpp string defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type String and returns its ID.
+Creates an array of type String and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.5. xsArrayCreateVector
 
@@ -343,9 +343,9 @@ Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
 2.  `#!cpp vector defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type Vector and returns its ID.
+Creates an array of type Vector and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.6. xsArrayGetBool
 
