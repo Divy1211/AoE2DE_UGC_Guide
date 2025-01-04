@@ -344,8 +344,8 @@
                 {
                     "name": "defaultValue",
                     "type": "int",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be 0"
                 },
                 {
                     "name": "uniqueName",
@@ -369,8 +369,8 @@
                 {
                     "name": "defaultValue",
                     "type": "float",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be 0.0"
                 },
                 {
                     "name": "uniqueName",
@@ -394,8 +394,8 @@
                 {
                     "name": "defaultValue",
                     "type": "bool",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be false"
                 },
                 {
                     "name": "uniqueName",
@@ -419,8 +419,8 @@
                 {
                     "name": "defaultValue",
                     "type": "string",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be \"<default string>\""
                 },
                 {
                     "name": "uniqueName",
@@ -444,8 +444,8 @@
                 {
                     "name": "defaultValue",
                     "type": "vector",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be (-1.0, -1.0, -1.0)"
                 },
                 {
                     "name": "uniqueName",
