@@ -293,7 +293,7 @@ Refer to the [Array Manipulation](../functions/#3-arrays "Jump to: XS Scriptig >
 
 Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supported by XS.
 
-Arrays are global and never go out of scope (only their ids do).
+Arrays are global and never go out of scope (only their IDs do).
 
 ## 7. Type Casting
 
