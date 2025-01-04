@@ -3870,7 +3870,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Achaemenids, Athenians and Spartans
 
-- Note: Local Town Center resource is incremented when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed.
+- Note: Local Town Center resource is changed when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed.
 
 ## 507. Unknown Resource 507
 
