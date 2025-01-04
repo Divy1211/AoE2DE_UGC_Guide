@@ -445,7 +445,7 @@
                     "name": "defaultValue",
                     "type": "vector",
                     "required": false,
-                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be (-1.0, -1.0, -1.0)"
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be vector(-1.0, -1.0, -1.0)"
                 },
                 {
                     "name": "uniqueName",
