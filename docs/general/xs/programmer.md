@@ -293,6 +293,8 @@ Refer to the [Array Manipulation](../functions/#3-arrays "Jump to: XS Scriptig >
 
 Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supported by XS.
 
+Arrays are global and never go out of scope (only their IDs do).
+
 ## 7. Type Casting
 
 `#!cpp int`, `#!cpp float` and `#!cpp bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!cpp string a = "this would work "+5.6;`. However, `#!cpp string a = 5.5;` will not work, instead use: `#!cpp string a = ""+5.5;`.

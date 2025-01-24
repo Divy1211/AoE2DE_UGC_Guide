@@ -286,10 +286,10 @@ Prototype: `#!cpp int xsArrayCreateBool(int size, bool defaultValue, string uniq
 Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
-2.  `#!cpp bool defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+2. (Optional) `#!cpp bool defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be false
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type bool and returns its ID.
+Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.2. xsArrayCreateFloat
 
@@ -300,10 +300,10 @@ Prototype: `#!cpp int xsArrayCreateFloat(int size, float defaultValue, string un
 Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
-2.  `#!cpp float defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+2. (Optional) `#!cpp float defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be 0.0
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type float and returns its ID.
+Creates an array of type float and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.3. xsArrayCreateInt
 
@@ -314,10 +314,10 @@ Prototype: `#!cpp int xsArrayCreateInt(int size, int defaultValue, string unique
 Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
-2.  `#!cpp int defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+2. (Optional) `#!cpp int defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be 0
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type int and returns its ID.
+Creates an array of type int and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.4. xsArrayCreateString
 
@@ -328,10 +328,10 @@ Prototype: `#!cpp int xsArrayCreateString(int size, string defaultValue, string 
 Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
-2.  `#!cpp string defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+2. (Optional) `#!cpp string defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be "<default string>"
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type String and returns its ID.
+Creates an array of type String and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.5. xsArrayCreateVector
 
@@ -342,10 +342,10 @@ Prototype: `#!cpp int xsArrayCreateVector(int size, vector defaultValue, string 
 Parameters:
 
 1.  `#!cpp int size`: The length of the array to create
-2.  `#!cpp vector defaultValue`: The default value to initialise all the values in the array to
-3.  `#!cpp string uniqueName`: A unique name of the created array
+2. (Optional) `#!cpp vector defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be vector(-1.0, -1.0, -1.0)
+3. (Optional) `#!cpp string uniqueName`: A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1
 
-Creates an array of type Vector and returns its ID.
+Creates an array of type Vector and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
 ### 3.6. xsArrayGetBool
 

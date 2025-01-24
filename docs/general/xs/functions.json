@@ -344,17 +344,17 @@
                 {
                     "name": "defaultValue",
                     "type": "int",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be 0"
                 },
                 {
                     "name": "uniqueName",
                     "type": "string",
-                    "required": true,
-                    "desc": "A unique name of the created array"
+                    "required": false,
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
-            "desc": "Creates an array of type int and returns its ID."
+            "desc": "Creates an array of type int and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
         },
         {
             "name": "xsArrayCreateFloat",
@@ -369,17 +369,17 @@
                 {
                     "name": "defaultValue",
                     "type": "float",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be 0.0"
                 },
                 {
                     "name": "uniqueName",
                     "type": "string",
-                    "required": true,
-                    "desc": "A unique name of the created array"
+                    "required": false,
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
-            "desc": "Creates an array of type float and returns its ID."
+            "desc": "Creates an array of type float and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
         },
         {
             "name": "xsArrayCreateBool",
@@ -394,17 +394,17 @@
                 {
                     "name": "defaultValue",
                     "type": "bool",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be false"
                 },
                 {
                     "name": "uniqueName",
                     "type": "string",
-                    "required": true,
-                    "desc": "A unique name of the created array"
+                    "required": false,
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
-            "desc": "Creates an array of type bool and returns its ID."
+            "desc": "Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
         },
         {
             "name": "xsArrayCreateString",
@@ -419,17 +419,17 @@
                 {
                     "name": "defaultValue",
                     "type": "string",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be \"<default string>\""
                 },
                 {
                     "name": "uniqueName",
                     "type": "string",
-                    "required": true,
-                    "desc": "A unique name of the created array"
+                    "required": false,
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
-            "desc": "Creates an array of type String and returns its ID."
+            "desc": "Creates an array of type String and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
         },
         {
             "name": "xsArrayCreateVector",
@@ -444,17 +444,17 @@
                 {
                     "name": "defaultValue",
                     "type": "vector",
-                    "required": true,
-                    "desc": "The default value to initialise all the values in the array to"
+                    "required": false,
+                    "desc": "The default value to initialise all the values in the array to. If not set all array values will be vector(-1.0, -1.0, -1.0)"
                 },
                 {
                     "name": "uniqueName",
                     "type": "string",
-                    "required": true,
-                    "desc": "A unique name of the created array"
+                    "required": false,
+                    "desc": "A unique name of the created array. If set, array with this name can not be created again and subsequent creations will return -1"
                 }
             ],
-            "desc": "Creates an array of type Vector and returns its ID."
+            "desc": "Creates an array of type Vector and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks."
         },
         {
             "name": "xsArraySetInt",
