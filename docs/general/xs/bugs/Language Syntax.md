@@ -1,6 +1,6 @@
 ### 1. Outputs Of Operations Are Of The Wrong Data Type
 
-Description: The output type of an operation is determined by the first operand `a*b`. For example: `#!cpp 9*5.5` evaluates to `#!cpp 49` and not `#!cpp 49.5`. However, the expression `#!cpp 5.5*9` gives the correct result.
+Description: The output type of an operation is determined by the first operand `a*b`. For example: `#!xs 9*5.5` evaluates to `#!xs 49` and not `#!xs 49.5`. However, the expression `#!xs 5.5*9` gives the correct result.
 
 Expected Behaviour: Both the expressions in the above example should yield the same result.
 
@@ -8,7 +8,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     int a = 7;
     float b = 1.1;
@@ -19,7 +19,7 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, `#!cpp 6.363636` should have been chatted to the screen, but instead `#!cpp 6` is shown on the screen.
+4. When a game is played using the scenario or RMS, `#!xs 6.363636` should have been chatted to the screen, but instead `#!xs 6` is shown on the screen.
 
 ### 2. Modulo Operator Does Not Work Properly With Floating Point Values
 
@@ -31,7 +31,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     // expected `5.5 mod 1 = 0.500000` but actually
     // prints `5.5 mod 1 = 0.000000`
@@ -39,11 +39,11 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, `#!cpp 0.500000` should be chatted to the screen, but instaed 0.000000 is shown.
+4. When a game is played using the scenario or RMS, `#!xs 0.500000` should be chatted to the screen, but instaed 0.000000 is shown.
 
 ### 3. Function Parameters And Return Statements Do Not Implicitly Type Cast
 
-Description: Passing an `#!cpp int` to a function parameter that is supposed to take in a `#!cpp float` value gets used as an `#!cpp int` and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an `#!cpp int` is returned in a function that is supposed to return a `#!cpp float`, it will just return the `#!cpp int` as is without type casting into `#!cpp float`
+Description: Passing an `#!xs int` to a function parameter that is supposed to take in a `#!xs float` value gets used as an `#!xs int` and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an `#!xs int` is returned in a function that is supposed to return a `#!xs float`, it will just return the `#!xs int` as is without type casting into `#!xs float`
 
 Expected Behaviour: Values that are passed to/returned from a function should be correctly type casted.
 
@@ -51,7 +51,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 float test(float a = -1) {
     // keeping in mind the previous bug,
     // 5*5.5 evaluates to 27 (an int)
@@ -73,7 +73,7 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, `#!cpp 13.750000` should be chatted to the screen, but `#!cpp 13` is shown instead
+4. When a game is played using the scenario or RMS, `#!xs 13.750000` should be chatted to the screen, but `#!xs 13` is shown instead
 
 ### 4. Limit On Number Of Params In A Function Call
 
@@ -85,7 +85,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void test(
     int a1 = 1, int a2 = 1, int a3 = 1, int a4 = 1,
     int a5 = 1, int a6 = 1, int a7 = 1, int a8 = 1,
@@ -118,7 +118,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     float x = 2;
     float y = 4;
@@ -147,7 +147,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     int a = 5;
     float b = 3.4;
@@ -176,7 +176,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     float a = 5.5;
     float b = (int)a; // will outwright assign 0 to b
@@ -200,15 +200,15 @@ void main() {
 
 ### 8. Loop Variable Not Bounded To The Scope Of The Loop
 
-Description: The loop variable from a `#!cpp for` loop can be used anywhere outside the body of the loop
+Description: The loop variable from a `#!xs for` loop can be used anywhere outside the body of the loop
 
-Expected Behaviour: The scope of the looping variable in `#!cpp for` loop should be limited only to the body of the loop
+Expected Behaviour: The scope of the looping variable in `#!xs for` loop should be limited only to the body of the loop
 
 Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     for(j = 2; < 10) {
         xsChatData("j ="+j,);
@@ -223,7 +223,7 @@ void main() {
 
 ### 9. Assigning Loop Variable To Itself Does Not Throw An Error
 
-Description: Assigning the loop variable from a `#!cpp for` loop to itself in the loop definition statement doesn't throw an error. The loop body is even run once
+Description: Assigning the loop variable from a `#!xs for` loop to itself in the loop definition statement doesn't throw an error. The loop body is even run once
 
 Expected Behaviour: This should throw an error in the editor
 
@@ -231,7 +231,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     xsChatData("test before for lop for loop");
     for(j = j; < 10) {
@@ -246,7 +246,7 @@ void main() {
 
 ### 10. Integers Softly Limited To `999_999_999`
 
-Description: An `#!cpp int` cannot be directly initialised a value greater than `999_999_999`. Attempting to do so causes a parsing error. They can still be given values higher than `999_999_999` by just adding/any other math operations
+Description: An `#!xs int` cannot be directly initialised a value greater than `999_999_999`. Attempting to do so causes a parsing error. They can still be given values higher than `999_999_999` by just adding/any other math operations
 
 Expected Behaviour: Any value between the 32 bit signed int limits (`-2147483648` and `2147483647` inclusive) should be a valid initial value for an integer
 
@@ -254,7 +254,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     // this line will cause a parsing error:
     int a = 1000000000;
@@ -273,7 +273,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 int preventInfiniteRecursion = 1;
 void test() {
     static int a = 1;
@@ -295,13 +295,13 @@ void main() {
 
 Description: If a static variable is declared in the global scope, XS execution fails silently
 
-Expected Behaviour: This should be allowed (or throws an error) since static variables technically give variables internal linkage which they already have by default in XS. What should really not be allowed though is using `#!cpp extern static int a = 10;`
+Expected Behaviour: This should be allowed (or throws an error) since static variables technically give variables internal linkage which they already have by default in XS. What should really not be allowed though is using `#!xs extern static int a = 10;`
 
 Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 static int a = 10;
 void main() {
     xsChatData("test "+a);
@@ -321,7 +321,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 string a = "test";
 
 void main() {
@@ -343,7 +343,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     infiniteLoopLimit = 10;
     int loopCount = 1;
@@ -356,7 +356,7 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp "loop count 11"`.
+4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!xs "loop count 11"`.
 
 ### 15. Silent XS Crash with `infiniteRecursionLimit`
 
@@ -368,7 +368,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 int calls = 1;
 void recursionTest() {
     infiniteRecursionLimit = 10;
@@ -385,7 +385,7 @@ void main() {
 }
 ```
 3. Include the script in the scenario or RMS
-4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp "recursion test 9"`. The last xsChatData in main() isn't run at all.
+4. When a game is played using the scenario or RMS, the last line chatted to the screen is `#!xs "recursion test 9"`. The last xsChatData in main() isn't run at all.
 
 ### 16. Return Statements Do Not Work As Documented
 
@@ -397,7 +397,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 int test() {
     return 5+5;
     // instead, `return (5+5);` would work.
@@ -420,7 +420,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     {
         int a = 10;
@@ -432,17 +432,17 @@ void main() {
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, a parsing error is thrown
 
-### 18. Cannot Declare Variables As A `#!cpp const` In Function Parameters
+### 18. Cannot Declare Variables As A `#!xs const` In Function Parameters
 
-Description: It is not possible to declare a function parameter as a `#!cpp const` even though it is used in the `#!cpp xsChatData` function in the official documentation.
+Description: It is not possible to declare a function parameter as a `#!xs const` even though it is used in the `#!xs xsChatData` function in the official documentation.
 
-Expected Behaviour: It should bee possible to declare function parameters as a `#!cpp const`
+Expected Behaviour: It should bee possible to declare function parameters as a `#!xs const`
 
 Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 float test(const float a = -1) {
     return (a*5);
 }
@@ -455,15 +455,15 @@ void main() {
 
 ### 19. Missing Data Types Which Are Documented
 
-Description: The `#!cpp long`, `#!cpp char` and `#!cpp double` data types do not exist, even though the official XS documentation references them.
+Description: The `#!xs long`, `#!xs char` and `#!xs double` data types do not exist, even though the official XS documentation references them.
 
-Expected Behaviour: Variables of the `#!cpp long`, `#!cpp char` and `#!cpp double` data types shoulld be able to be initialised.
+Expected Behaviour: Variables of the `#!xs long`, `#!xs char` and `#!xs double` data types shoulld be able to be initialised.
 
 Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     // none of these declarations work:
     long a = 1000;
@@ -484,7 +484,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 float test(float a = -1) {
     // thisDoesNot... is not a function
     return thisDoesNotMatterWhatIsGoingOn(a)/55 + 2*2;
@@ -510,7 +510,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void unrelatedFunc() {
     // ...
 }

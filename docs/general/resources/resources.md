@@ -1,6 +1,6 @@
 # Player Resources
 
-*Written by: Alian713, Bradical, Kramb*
+*Written by: Alian713, Bradical, & Kramb*
 
 ---
 

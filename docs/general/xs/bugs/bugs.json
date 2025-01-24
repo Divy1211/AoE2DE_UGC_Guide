@@ -31,7 +31,7 @@
         {
             "Name": "XS Files Do Not Transfer In A Lobby",
             "Description" : "When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host. (Currently, `#includeXS` works for scripts that the host has in their profile folder, but recursive includes and scripts from other sources are still not transferred)",
-            "Expected Behaviour": "The main XS script and all XS scripts imported in the main script using `#!cpp include \"fileName.xs\";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.",
+            "Expected Behaviour": "The main XS script and all XS scripts imported in the main script using `#!xs include \"fileName.xs\";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script that chats something to the screen",
@@ -70,7 +70,7 @@
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario, and create a trigger with a script call condition/effect",
-                "Type `#!cpp test(1, 2)`; in the message box for the script call",
+                "Type `#!xs test(1, 2)`; in the message box for the script call",
                 "When the scenario is played, no text is chatted to the screen, execution fails silently"
             ],
             "Code File": "param.xs",
@@ -95,13 +95,13 @@
     "Language Syntax": [
         {
             "Name": "Outputs Of Operations Are Of The Wrong Data Type",
-            "Description" : "The output type of an operation is determined by the first operand `a*b`. For example: `#!cpp 9*5.5` evaluates to `#!cpp 49` and not `#!cpp 49.5`. However, the expression `#!cpp 5.5*9` gives the correct result.",
+            "Description" : "The output type of an operation is determined by the first operand `a*b`. For example: `#!xs 9*5.5` evaluates to `#!xs 49` and not `#!xs 49.5`. However, the expression `#!xs 5.5*9` gives the correct result.",
             "Expected Behaviour": "Both the expressions in the above example should yield the same result.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, `#!cpp 6.363636` should have been chatted to the screen, but instead `#!cpp 6` is shown on the screen."
+                "When a game is played using the scenario or RMS, `#!xs 6.363636` should have been chatted to the screen, but instead `#!xs 6` is shown on the screen."
             ],
             "Code File": "operator_types.xs",
             "Version Fixed": "",
@@ -115,7 +115,7 @@
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, `#!cpp 0.500000` should be chatted to the screen, but instaed 0.000000 is shown."
+                "When a game is played using the scenario or RMS, `#!xs 0.500000` should be chatted to the screen, but instaed 0.000000 is shown."
             ],
             "Code File": "modulo.xs",
             "Version Fixed": "",
@@ -123,13 +123,13 @@
         },
         {
             "Name": "Function Parameters And Return Statements Do Not Implicitly Type Cast",
-            "Description" : "Passing an `#!cpp int` to a function parameter that is supposed to take in a `#!cpp float` value gets used as an `#!cpp int` and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an `#!cpp int` is returned in a function that is supposed to return a `#!cpp float`, it will just return the `#!cpp int` as is without type casting into `#!cpp float`",
+            "Description" : "Passing an `#!xs int` to a function parameter that is supposed to take in a `#!xs float` value gets used as an `#!xs int` and is not type casted. Similarly, values returned from a function are not type casted to the function's return type. For example, if an `#!xs int` is returned in a function that is supposed to return a `#!xs float`, it will just return the `#!xs int` as is without type casting into `#!xs float`",
             "Expected Behaviour": "Values that are passed to/returned from a function should be correctly type casted.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, `#!cpp 13.750000` should be chatted to the screen, but `#!cpp 13` is shown instead"
+                "When a game is played using the scenario or RMS, `#!xs 13.750000` should be chatted to the screen, but `#!xs 13` is shown instead"
             ],
             "Code File": "return2.xs",
             "Version Fixed": "",
@@ -194,8 +194,8 @@
         },
         {
             "Name": "Loop Variable Not Bounded To The Scope Of The Loop",
-            "Description" : "The loop variable from a `#!cpp for` loop can be used anywhere outside the body of the loop",
-            "Expected Behaviour": "The scope of the looping variable in `#!cpp for` loop should be limited only to the body of the loop",
+            "Description" : "The loop variable from a `#!xs for` loop can be used anywhere outside the body of the loop",
+            "Expected Behaviour": "The scope of the looping variable in `#!xs for` loop should be limited only to the body of the loop",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
@@ -208,7 +208,7 @@
         },
         {
             "Name": "Assigning Loop Variable To Itself Does Not Throw An Error",
-            "Description" : "Assigning the loop variable from a `#!cpp for` loop to itself in the loop definition statement doesn't throw an error. The loop body is even run once",
+            "Description" : "Assigning the loop variable from a `#!xs for` loop to itself in the loop definition statement doesn't throw an error. The loop body is even run once",
             "Expected Behaviour": "This should throw an error in the editor",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
@@ -222,7 +222,7 @@
         },
         {
             "Name": "Integers Softly Limited To `999_999_999`",
-            "Description" : "An `#!cpp int` cannot be directly initialised a value greater than `999_999_999`. Attempting to do so causes a parsing error. They can still be given values higher than `999_999_999` by just adding/any other math operations",
+            "Description" : "An `#!xs int` cannot be directly initialised a value greater than `999_999_999`. Attempting to do so causes a parsing error. They can still be given values higher than `999_999_999` by just adding/any other math operations",
             "Expected Behaviour": "Any value between the 32 bit signed int limits (`-2147483648` and `2147483647` inclusive) should be a valid initial value for an integer",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
@@ -251,7 +251,7 @@
         {
             "Name": "Static Variables In Global Scope",
             "Description" : "If a static variable is declared in the global scope, XS execution fails silently",
-            "Expected Behaviour": "This should be allowed (or throws an error) since static variables technically give variables internal linkage which they already have by default in XS. What should really not be allowed though is using `#!cpp extern static int a = 10;`",
+            "Expected Behaviour": "This should be allowed (or throws an error) since static variables technically give variables internal linkage which they already have by default in XS. What should really not be allowed though is using `#!xs extern static int a = 10;`",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
@@ -284,7 +284,7 @@
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp \"loop count 11\"`."
+                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!xs \"loop count 11\"`."
             ],
             "Code File": "infloop.xs",
             "Version Fixed": "",
@@ -298,7 +298,7 @@
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!cpp \"recursion test 9\"`. The last xsChatData in main() isn't run at all."
+                "When a game is played using the scenario or RMS, the last line chatted to the screen is `#!xs \"recursion test 9\"`. The last xsChatData in main() isn't run at all."
             ],
             "Code File": "infrec.xs",
             "Version Fixed": "",
@@ -333,9 +333,9 @@
             "show": true
         },
         {
-            "Name": "Cannot Declare Variables As A `#!cpp const` In Function Parameters",
-            "Description" : "It is not possible to declare a function parameter as a `#!cpp const` even though it is used in the `#!cpp xsChatData` function in the official documentation.",
-            "Expected Behaviour": "It should bee possible to declare function parameters as a `#!cpp const`",
+            "Name": "Cannot Declare Variables As A `#!xs const` In Function Parameters",
+            "Description" : "It is not possible to declare a function parameter as a `#!xs const` even though it is used in the `#!xs xsChatData` function in the official documentation.",
+            "Expected Behaviour": "It should bee possible to declare function parameters as a `#!xs const`",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
@@ -348,8 +348,8 @@
         },
         {
             "Name": "Missing Data Types Which Are Documented",
-            "Description" : "The `#!cpp long`, `#!cpp char` and `#!cpp double` data types do not exist, even though the official XS documentation references them.",
-            "Expected Behaviour": "Variables of the `#!cpp long`, `#!cpp char` and `#!cpp double` data types shoulld be able to be initialised.",
+            "Description" : "The `#!xs long`, `#!xs char` and `#!xs double` data types do not exist, even though the official XS documentation references them.",
+            "Expected Behaviour": "Variables of the `#!xs long`, `#!xs char` and `#!xs double` data types shoulld be able to be initialised.",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
@@ -469,7 +469,7 @@
         },
         {
             "Name": "Crash On Using An Integer Larger Than `999_999_999` In Chat Data",
-            "Description" : "Trying to chan an `#!cpp int` that is bigger than `999_999_999` with `%d` in `xsChatData` causes a crash",
+            "Description" : "Trying to chan an `#!xs int` that is bigger than `999_999_999` with `%d` in `xsChatData` causes a crash",
             "Expected Behaviour": "The int value should be printed properly as expected",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
@@ -484,14 +484,14 @@
     ],
     "Chat Data": [
         {
-            "Name": "Cannot Print `#!cpp 0` Or `#!cpp 1` At The Start Of The Line In `xsChatData()`",
-            "Description" : "If a `#!cpp 0` or `#!cpp 1` character occurs at the beginning of a string that is being chatted to the screen using `xsChatData`, then the `#!cpp 0` or `#!cpp 1` characters do not appear in the message.",
-            "Expected Behaviour": "`#!cpp 0` or `#!cpp 1` should be shown correctly at the beginning of the line if used in an `xsChatData` function",
+            "Name": "Cannot Print `#!xs 0` Or `#!xs 1` At The Start Of The Line In `xsChatData()`",
+            "Description" : "If a `#!xs 0` or `#!xs 1` character occurs at the beginning of a string that is being chatted to the screen using `xsChatData`, then the `#!xs 0` or `#!xs 1` characters do not appear in the message.",
+            "Expected Behaviour": "`#!xs 0` or `#!xs 1` should be shown correctly at the beginning of the line if used in an `xsChatData` function",
             "Reproduction Steps": [
                 "Create a new scenario or RMS",
                 "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
                 "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, any `#!cpp 1` or `#!cpp 0` at the beginning of the lines are omitted in the resulting message on screen."
+                "When a game is played using the scenario or RMS, any `#!xs 1` or `#!xs 0` at the beginning of the lines are omitted in the resulting message on screen."
             ],
             "Code File": "chatdata2.xs",
             "Version Fixed": "",

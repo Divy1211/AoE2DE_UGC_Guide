@@ -8,7 +8,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     const int cGenghisKhan = 731;
     const int cAuraTask = 155;

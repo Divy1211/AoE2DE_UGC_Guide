@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aoe2lexers"
+version = "0.1.0"
+dependencies = ["Pygments"]
+
+[project.entry-points."pygments.lexers"]
+rms = "lexers:RMSLexer"
+xs = "lexers:XSLexer"

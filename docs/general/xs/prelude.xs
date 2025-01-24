@@ -2512,7 +2512,7 @@ void xsSetTriggerVariable(int variableID = -1, int value = -1) {}
 /**
 * Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 * 
-* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
 *
 * @param unitId The unit to add the task to
 * @param actionType Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
@@ -2553,16 +2553,16 @@ int xsTriggerVariable(int variableID = -1) {}
 // 6. Read/Write
 
 /**
-* Close the currently opened or created file. Returns `#!cpp true` if the file was successfully closed
+* Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed
 *
 * @returns bool
 */
 bool xsCloseFile() {}
 
 /**
-* Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
+* Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!xs true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
 *
-* @param append Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name.
+* @param append Default: `#!xs true`. If set to `#!xs false`, this will overwrite any existing file with the same name.
 *
 * @returns bool
 */
@@ -2595,14 +2595,14 @@ int xsGetFileSize() {}
 * Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 *
 * @param dataType The [cOffset constants](../constants/#1-readwrite "Jump To: XS > Constant Reference > Read/Write Constants") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceeding the chars of the string)
-* @param forward Default: `#!cpp true`. Setting this to `#!cpp false` will make the file position move back
+* @param forward Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
 *
 * @returns bool
 */
 bool xsOffsetFilePosition(int dataType = -1, bool forward = false) {}
 
 /**
-* Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
+* Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!xs true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
 *
 * @param filename The name of the file to open, without the `.xsdat` extension
 *
@@ -2648,7 +2648,7 @@ vector xsReadVector() {}
 bool xsSetFilePosition(int byteOffset = -1) {}
 
 /**
-* Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
+* Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
 *
 * @param data The float value to write
 *
@@ -2657,7 +2657,7 @@ bool xsSetFilePosition(int byteOffset = -1) {}
 bool xsWriteFloat(float data = -1.0) {}
 
 /**
-* Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the integer was successfully written. Integers are written as signed 32 bit numbers
+* Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the integer was successfully written. Integers are written as signed 32 bit numbers
 *
 * @param data The integer to write
 *
@@ -2666,7 +2666,7 @@ bool xsWriteFloat(float data = -1.0) {}
 bool xsWriteInt(int data = -1) {}
 
 /**
-* Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
+* Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
 *
 * @param data The string to write
 *
@@ -2675,7 +2675,7 @@ bool xsWriteInt(int data = -1) {}
 bool xsWriteString(string data = "") {}
 
 /**
-* Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
+* Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
 *
 * @param data The vector to write
 *
@@ -2730,7 +2730,7 @@ int xsSetStrategicNumber(int id = -1, int value = -1) {}
 /**
 * A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 *
-* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
+* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 * @param functionName This is the name of a user defined function that takes a single integer argument
 * @param functionArgument This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 *

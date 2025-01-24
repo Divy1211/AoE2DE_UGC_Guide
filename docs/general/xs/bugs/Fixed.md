@@ -8,7 +8,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     xsEffectAmount(cSetAttribute, 1071, cAmountFirstStorage, current_pop - 250, 8);
     // if the game is not an 8 player game, this will crash
@@ -27,7 +27,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     xsEffectAmount(cEnableObject, -1, cEnableObject, 0);
 }
@@ -39,7 +39,7 @@ void main() {
 
 Description: When playing in a multiplayer lobby, the required XS scripts are not transfered to other players from the host. (Currently, `#includeXS` works for scripts that the host has in their profile folder, but recursive includes and scripts from other sources are still not transferred)
 
-Expected Behaviour: The main XS script and all XS scripts imported in the main script using `#!cpp include "fileName.xs";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.
+Expected Behaviour: The main XS script and all XS scripts imported in the main script using `#!xs include "fileName.xs";` (and potentially more imported scripts inside those scripts too) should be transfered to everyone.
 
 Reproduction Steps:
 
