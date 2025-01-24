@@ -1,0 +1,308 @@
+{
+    "1": {
+        "name": "Bring Object To Area",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "2": {
+        "name": "Bring Object To Object",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "next_object",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "3": {
+        "name": "Own Objects",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "object_list",
+            "source_player",
+            "object_group",
+            "object_type"
+        ],
+        "tricks": []
+    },
+    "4": {
+        "name": "Own Fewer Objects",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "object_list",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type"
+        ],
+        "tricks": []
+    },
+    "5": {
+        "name": "Object In Area",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "object_list",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "6": {
+        "name": "Destroy Object",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "7": {
+        "name": "Capture Object",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "source_player",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "8": {
+        "name": "Accumulate Attribute",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "resource_type_or_tribute_list",
+            "source_player",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "9": {
+        "name": "Research Technology",
+        "desc": "",
+        "attrs": [
+            "source_player",
+            "technology",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "10": {
+        "name": "Timer",
+        "desc": "",
+        "attrs": [
+            "timer",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "11": {
+        "name": "Object Selected",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "12": {
+        "name": "Ai Signal",
+        "desc": "",
+        "attrs": [
+            "ai_signal",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "13": {
+        "name": "Player Defeated",
+        "desc": "",
+        "attrs": [
+            "source_player",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "14": {
+        "name": "Object Has Target",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "next_object",
+            "object_list",
+            "object_group",
+            "object_type",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "15": {
+        "name": "Object Visible",
+        "desc": "",
+        "attrs": [
+            "unit_object"
+        ],
+        "tricks": []
+    },
+    "16": {
+        "name": "Object Not Visible",
+        "desc": "",
+        "attrs": [
+            "unit_object"
+        ],
+        "tricks": []
+    },
+    "17": {
+        "name": "Researching Tech",
+        "desc": "",
+        "attrs": [
+            "source_player",
+            "technology",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "18": {
+        "name": "Units Garrisoned",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "unit_object",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "19": {
+        "name": "Difficulty Level",
+        "desc": "",
+        "attrs": [
+            "condition_type",
+            "amount_or_quantity",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "20": {
+        "name": "Chance",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity"
+        ],
+        "tricks": []
+    },
+    "21": {
+        "name": "Technology State",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "source_player",
+            "technology",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "22": {
+        "name": "Variable Value",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "inverted",
+            "variable",
+            "comparison"
+        ],
+        "tricks": []
+    },
+    "23": {
+        "name": "Object Hp",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "unit_object",
+            "inverted",
+            "comparison"
+        ],
+        "tricks": []
+    },
+    "24": {
+        "name": "Diplomacy State",
+        "desc": "",
+        "attrs": [
+            "amount_or_quantity",
+            "source_player",
+            "inverted",
+            "target_player"
+        ],
+        "tricks": []
+    },
+    "25": {
+        "name": "Script Call",
+        "desc": "",
+        "attrs": [
+            "xs_function"
+        ],
+        "tricks": []
+    },
+    "26": {
+        "name": "Object Visible Multiplayer",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "source_player",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "27": {
+        "name": "Object Selected Multiplayer",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "source_player",
+            "inverted"
+        ],
+        "tricks": []
+    },
+    "28": {
+        "name": "Object Has Action",
+        "desc": "",
+        "attrs": [
+            "unit_object",
+            "next_object",
+            "inverted",
+            "unit_ai_action"
+        ],
+        "tricks": []
+    },
+    "29": {
+        "name": "Or",
+        "desc": "",
+        "attrs": [],
+        "tricks": []
+    },
+    "30": {
+        "name": "Or",
+        "desc": "",
+        "attrs": [],
+        "tricks": []
+    }
+}
