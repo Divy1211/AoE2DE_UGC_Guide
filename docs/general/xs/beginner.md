@@ -164,7 +164,7 @@ Some questions that you might have now are:
 
         A `#!xs vector` is a variable that can store the coordinates of a point `#!xs (x, y, z)`. If you don't know what that means, just take it as a variable that stores three different `#!xs float` values. The first value is called the "X component", the second value is called the "Y component" and the last value is called the "Z component".
 
-        Usage `#!xs vector v = vector(1.2, 2.3., 3.2);` This declares a variable of type `#!xs vector` called `v` that represents a point with coordinates `#!xs (1.2, 2.3, 3.2)`.
+        Usage `#!xs vector v = vector(1.2, 2.3, 3.2);` This declares a variable of type `#!xs vector` called `v` that represents a point with coordinates `#!xs (1.2, 2.3, 3.2)`.
 
     Remember that your variable names can be almost anything! However, this does not mean that you should just use single letters or alphabets for variable names. Variable names should be chosen such that they represent, or hint to what the purpose of the variable is. Naming your variables such that they make intuitive sense is a good programming practise.
 
