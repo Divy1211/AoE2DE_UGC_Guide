@@ -290,11 +290,14 @@
             "One of the flags 0-3 can be combined with the combinable flags 4 to 128 by adding the two values"
         ],
         "flags": {
-            "0": "damage resources, nearby allied units and tress",
-            "1": "damage trees, nearby allied units",
-            "2": "damage nearby and allied units",
-            "3": "damage targeted unit only",
-            "4": "damage enemy units only",
+            "0": "Damage resources, nearby allied units and tress",
+            "1": "Damage trees, nearby allied units",
+            "2": "Damage nearby and allied units",
+            "3": "Damage targeted unit only",
+            "4": "Damage enemy units only",
+            "8": "Ignore friendly fire",
+            "16": "Unused",
+            "32": "Unused",
             "64": "Attenuate damage as distance from the centre of attack increases (infantry only)",
             "128": "Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone"
         }
