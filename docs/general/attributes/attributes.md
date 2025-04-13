@@ -329,11 +329,14 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     | Property | Flag Value |
     | :- | -: |
-    | damage resources, nearby allied units and tress | 0 | 
-    | damage trees, nearby allied units | 1 | 
-    | damage nearby and allied units | 2 | 
-    | damage targeted unit only | 3 | 
-    | damage enemy units only | 4 | 
+    | Damage resources, nearby allied units and tress | 0 | 
+    | Damage trees, nearby allied units | 1 | 
+    | Damage nearby and allied units | 2 | 
+    | Damage targeted unit only | 3 | 
+    | Damage enemy units only | 4 | 
+    | Ignore friendly fire | 8 | 
+    | Unused | 16 | 
+    | Unused | 32 | 
     | Attenuate damage as distance from the centre of attack increases (infantry only) | 64 | 
     | Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone | 128 | 
 
