@@ -90,7 +90,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     2. A shot that is fired from lower elevation would normally deal only 75% of its normal damage due to the elevation damage reduction. deleting a mangonel in this case also makes the damage the full 100% as if there was no elevation difference
 
-## 12. Max Range
+## 12. Maximum Range
 
  - ID: 12
 
@@ -440,7 +440,7 @@ This page is a list of all the unit attributes that can be modified in the scena
     | :- | -: |
     | Garrison Unit | 1 | 
     | Ship Unit | 2 | 
-    | Build Another Building (Serjeants) | 4 | 
+    | Build Another Building (Serjeants) [See Special Ability: Mode 7] | 4 | 
     | Transform Into Another Unit (Ratha) | 8 | 
     | Auto Scout Unit | 16 | 
 
@@ -494,7 +494,12 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     | Property | Flag Value |
     | :- | -: |
-    | If charge type is set to `1`, `2` or `3`, depletes charge on attacking | 1 | 
+    | 1 - Deplete charge, 0 - Keep charge | Charge Type one of `1`, `2`, or `3` | 
+    | Max range modifier | Charge Type one of `6`, or `7` | 
+    | 0 - Transform unit until one attack, -1 - perform attack ground on it's location | Charge Type is `-1` | 
+    | 0 - Transform unit until one attack | Charge Type is `-2` | 
+    | Aura task duration | Charge Type is `-3` | 
+    | Conversion range (maybe overridden by conversion tasks) | Charge Type is `-4` | 
 
 ## 62. Charge Type
 
@@ -504,10 +509,18 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     | Property | Flag Value |
     | :- | -: |
+    | Spawn Building on top of the unit (Uses unit set in Trait Piece) | -5 | 
+    | Conversion ability (Needs task 104). Charge Target defines the conversion percent chance | -4 | 
+    | Active aura ability (Needs task 155 with unused flag 8 set) | -3 | 
+    | Active targetted transform (Uses unit set in Trait Piece). If charge target = -1, use attack ground targetting | -2 | 
+    | Active temporary transform (Uses unit set in Trait Piece) | -1 | 
     | Attack charge | 1 | 
     | ??? charge | 2 | 
     | Area attack charge | 3 | 
     | Agility charge | 4 | 
+    | Ignore Melee Attack | 5 | 
+    | Fire only Charge projectiles, sets Total Projectiles to the value of Max Total Projectiles (Lou Chuan) | 6 | 
+    | Fires 1 Charge projectile and additional Secondary Projectiles, sets Total Projectiles to the value of Max Total Projectiles | 7 | 
 
 ## 63. Combat Ability
 
@@ -519,11 +532,12 @@ This page is a list of all the unit attributes that can be modified in the scena
     | :- | -: |
     | Ignore melee and pierce armours of the targeted unit | 1 | 
     | Resist armour-ignoring attacks | 2 | 
-    | Damage the targeted unit's armor (Obuch) | 4 | 
+    | Damage the targeted unit's melee and pierce armors by 1, for a minimum of 0 (Obuch) | 4 | 
     | Attack ground ability | 8 | 
     | Bulk volley release (kipchak/siege weapons) | 16 | 
     | Enable aura ability (task 155) (Stronghold castle/Caravanserai/Centurion) | 32 | 
-    | Change aura ability (task 155) to affect self (Monaspa) | 64 | 
+    | Invert aura ability (task 155) to boost self (Monaspa) - Auto Search = 1 needed for multiple tasks | 64 | 
+    | Activate stringer ability (task 157) | 128 | 
 
 ## 64. Attack Dispersion
 
@@ -565,6 +579,7 @@ This page is a list of all the unit attributes that can be modified in the scena
     | :- | -: |
     | Disappear on first impact | 0 | 
     | Pass through | 1 | 
+    | Always spawn a dead unit | 2 | 
 
 ## 69. Projectile Arc
 
@@ -604,9 +619,9 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 74
 
- - This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its "Undead Mode" is set to `1`
+ - This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its "Undead Mode" is set to `1`. Used to assign decay graphic to units without "Undead Mode" set to 1. Overrides the standing graphic of the object's dead unit
 
- - Requires "Undead Mode" to be set to `1`
+ - Depends on Undead Mode flag
 
 ## 75. Walking Graphic
 
@@ -651,6 +666,9 @@ This page is a list of all the unit attributes that can be modified in the scena
     | No outline, and passable | 4 | 
     | Round outline, and has collision box | 5 | 
     | Same as 2, but designed for mountains | 10 | 
+    | Consider the selection size of a radius entirely as opposed to the actual defined collision size | 11 | 
+    | Ignore hard obstructions entirely and just consider the space occupied with no obstruction at all | 12 | 
+    | Consider the selection radius when placing other objects, but use the original obstruction size for hard obstructions | 13 | 
 
 ## 79. Blockage Class
 
@@ -723,7 +741,7 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - The stone cost of a unit
 
-## 107. Max Total Missiles
+## 107. Maximum Total Missiles
 
  - ID: 107
 
@@ -795,4 +813,110 @@ This page is a list of all the unit attributes that can be modified in the scena
  - ID: 115
 
  - Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative
+
+## 118. Damage Reflection
+
+ - ID: 118
+
+ - Damage percentage of the received damage to be reflected on the attacker (only for melee damage)
+
+## 119. Friendly Fire Damage
+
+ - ID: 119
+
+ - Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative
+
+## 120. Regeneration HP Percent
+
+ - ID: 120
+
+ - Percentage of the unit’s max HP that is regenerated over a minute
+
+## 121. Ability Button Icon ID
+
+ - ID: 121
+
+ - Override for Transform/Active Ability Icon. Uses ID from `Materials.json`
+
+## 122. Ability Short Tooltip I
+
+ - ID: 122
+
+ - Override for Transform/Active Ability Short Tooltip
+
+## 123. Ability Extended Toolti
+
+ - ID: 123
+
+ - Override for Transform/Active Ability Long Tooltip
+
+## 124. Ability Hotkey Action
+
+ - ID: 124
+
+ - `button_action_list` when pressing button/hotkey for the ability or transformation
+
+## 125. Charge Projectile Unit
+
+ - ID: 125
+
+ - Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative
+
+## 126. Available Unit Flag
+
+ - ID: 126
+
+ - When Disabled flag 2 or 4 is set, sets value for number of trainable unit. Will use units paired in `LinkedUnits.json` to count them together
+
+## 127. Disabled Unit Flag
+
+ - ID: 127
+
+ - Enable/Disable a unit
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Disabled | 1 | 
+    | Limited training. Cannot be retrained after death | 2 | 
+    | Limited training. Can be retrained after death | 4 | 
+
+## 128. Attack Priority
+
+ - ID: 128
+
+ - Defines what type of target the unit will prioritize
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Units > Buildings | 1 | 
+    | Buildings > Units | 2 | 
+    | Buildings only | 3 | 
+
+## 129. Invulnerability Level
+
+ - ID: 129
+
+ - Sets an HP threshold after which a unit no longer receives damage when attacked
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Multiplier of Base HP | > 0 | 
+    | Fixed value of HP | < 0 | 
+
+## 130. Garrison Firepower
+
+ - ID: 130
+
+ - Adds to the damage of the unit to calculate the number of garrison arrows to fire
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Acts as multiplier | > 0 | 
+    | Flat dps value added to the unit’s dps | < 0 | 
+
+## 131. Attack Graphic 2
+
+ - ID: 131
+
+ - Second attack graphic of the unit; alternates with the first attack graphic when assigned
 

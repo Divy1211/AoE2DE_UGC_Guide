@@ -921,6 +921,19 @@
                 }
             ],
             "desc": "This is supposed to be the atan2(y, x) function but apparently it only takes one input. ThxDE"
+        },
+        {
+            "name": "xsCeilToInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to determine the ceil of"
+                }
+            ],
+            "desc": "Rounds the number **up** to the next integer"
         }
     ],
     "general": [
@@ -1416,6 +1429,31 @@
                 }
             ],
             "desc": "Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by [xsTaskAmount](./#532-xstaskamount)) match an existing task in a unit. No other fields are used for filtering (same as when [xsTask](./#531-xstask) edits instead of adding a new task)"
+        },
+        {
+            "name": "xsGetObjectAttribute",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whose unit to get the attribute for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the attribute for"
+                },
+                {
+                    "name": "attribute",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The attribute to get"
+                }
+            ],
+            "desc": "Returns the attribute value for an object"
         }
     ],
     "Read/Write": [

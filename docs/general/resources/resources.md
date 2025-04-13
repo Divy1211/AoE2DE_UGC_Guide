@@ -208,11 +208,17 @@ This page is a list of all the player resources in the scenario editor and their
     - 1:  Yes, after Redemption
     - $\geq$2:  Monks can convert buildings from range
 
-## 29. Unused Resource 029
+## 29. Enable Siege Conversion
 
 - ID: 29
 
-- Purpose: Unused
+- Purpose: Boolean: allow enemy siege conversions
+
+- Default Values:
+
+    - 0:  No (default)
+    - 1:  Yes, after Redemption
+    - $\geq$2:  Monks can convert siege from range
 
 ## 30. Unused Resource 030
 
@@ -234,27 +240,23 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: 10 for goths
 
-## 33. Food Maintenance
+## 33. Unused Resource 33
 
 - ID: 33
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 34. Faith
+## 34. Unused Resource 34
 
 - ID: 34
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 35. Faith Recharging Rate
+## 35. Unused Resource 35
 
 - ID: 35
 
-- Purpose: Monk faith recovery rate
-
-- Default Values:
-
-    - 1:  The unit of measurement for this rate is unknown
+- Purpose: Unused
 
 ## 36. Farm Food Amount
 
@@ -275,11 +277,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Current civilian population
 
-## 38. Unused Resource 038
+## 38. Villager Population
 
 - ID: 38
 
-- Purpose: Unused
+- Purpose: Current villager population
 
 ## 39. All Techs Achieved
 
@@ -515,11 +517,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Cumulative hp of all units killed
 
-## 69. Unused Resource 69
+## 69. Farm Food Multiplier
 
 - ID: 69
 
-- Purpose: Unused
+- Purpose: Multiplier for the amount of extra food granted by mill upgrades
+
+- Default Values:
+
+    - 1: No multiplier (default)
 
 ## 70. Unused Resource 70
 
@@ -624,13 +630,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing
 
-## 83. Boarding Recharge Rate
+## 83. Unused Resource 83
 
 - ID: 83
 
-- Purpose: ABGAL faith recharge rate amount
-
-- Note: This is similar to monk's faith except for a special ship unit 536 called the ABGAL in the editor that can convert ships form 1 range away
+- Purpose: Unused
 
 ## 84. Starting Villagers
 
@@ -1403,16 +1407,11 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  No (default)
     - 1:  Yes, after researching Theocracy
 
-## 194. Crenellations
+## 194. Unused Resource 194
 
 - ID: 194
 
-- Purpose: Boolean: Garrisoned infantry fire arrows
-
-- Default Values:
-
-    - 0:  No (default)
-    - 1:  Yes, after crenellations
+- Purpose: Unused
 
 ## 195. Construction Rate Modifier
 
@@ -1610,20 +1609,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Total number of mercenary kipchak creatable
 
-- Default Values:
-
-    - 0:  Default
-    - 10:  after a Cuman ally researches Cuman Mercenaries
-
 - Note: Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource
 
-## 215. Mercenary Kipchak Limit
+## 215. Unused Resource 215
 
 - ID: 215
 
-- Purpose: Number of mercenary kipchaks created/queued
-
-- Note: Making mercenary Kipchaks gives one unit of this resource
+- Purpose: Unused
 
 ## 216. Shepherd Productivity
 
@@ -1642,7 +1634,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 217
 
-- Purpose: Unknown... what does this resource do?
+- Purpose: Unused
 
 ## 218. Early Town Center Limit
 
@@ -2003,195 +1995,47 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 3.5:  (0.0583 f/s per herdable) Gurjaras
 
-## 255. Speed Up Building Type
+## 255. Unused Resource 255
 
 - ID: 255
 
-- Purpose: This is the ID of the building to use for the speed up effect.
+- Purpose: Unused
 
-- Default Values:
-
-    - 1754:  (Caravanserai) Default
-
-- Note: See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
-
-## 256. Speed Up Building Range
+## 256. Unused Resource 256
 
 - ID: 256
 
-- Purpose: This specifies the range (in tiles) of the area created around the building ([Speed Up Building Type](./#255-speed-up-building-type)) (square, from the edges of the building) for the speed up effect
+- Purpose: Unused
 
-- Default Values:
-
-    - 8:  Default
-
-- Note: See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
-
-## 257. Speed Up Percentage
+## 257. Unused Resource 257
 
 - ID: 257
 
-- Purpose: The formulae given below are used with this resource as the `value` to adjust the attribute ([Speed Up Effect Type](./#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](./#258-speed-up-object-type)) when they are in the range of the speed up effect
+- Purpose: Unused
 
-- Default Values:
-
-    - 0.2:  Default
-
-- Note: For each of the attributes that work with this resource, the new value to set is determined using the following formulae:
-
-    (013) `new_workrate = original + value`
-
-    (005) `new_movement_speed = original * (1 + value)`
-
-    (109) `new_regeneration_rate = original + (3600/value)`
-
-    See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
-
-## 258. Speed Up Object Type
+## 258. Unused Resource 258
 
 - ID: 258
 
-- Purpose: This is `900 + class_id` for the class of units that should be affected by the speed up effect
+- Purpose: Unused
 
-- Default Values:
-
-    - 919:  (Trade Cart class) Default
-
-- Note: See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
-
-## 259. Speed Up Effect Type
+## 259. Unused Resource 259
 
 - ID: 259
 
-- Purpose: The ID of the attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far
+- Purpose: Unused
 
-- Default Values:
-
-    - 5:  (Movement Speed) Default
-
-- Note: See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
-
-## 260. Speed Up Secondary Effect Type
+## 260. Unused Resource 260
 
 - ID: 260
 
-- Purpose: This is the ID of the secondary attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far
+- Purpose: Unused
 
-- Default Values:
-
-    - 109:  (Regeneration Rate) Default
-
-- Note: See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
-
-## 261. Speed Up Secondary Percentage
+## 261. Unused Resource 261
 
 - ID: 261
 
-- Purpose: This amount is added to the secondary attribute ([Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)) of all units of class ([Speed Up Object Type](./#258-speed-up-object-type)) when they are in the range of the speed up effect
-
-- Default Values:
-
-    - 60:  Default
-
-- Note: See also:
-
-    [Speed Up Building Type](./#255-speed-up-building-type)
-
-    [Speed Up Building Range](./#256-speed-up-building-range)
-
-    [Speed Up Percentage](./#257-speed-up-percentage)
-
-    [Speed Up Object Type](./#258-speed-up-object-type)
-
-    [Speed Up Effect Type](./#259-speed-up-effect-type)
-
-    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)
-
-    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)
+- Purpose: Unused
 
 ## 262. Civilization Name Override
 
@@ -2323,11 +2167,18 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 277. Unused Resource 277
+## 277. Red Cliffs Tactics Damage
 
 - ID: 277
 
-- Purpose: Unused
+- Purpose: Multiplier for the amount of fire damage done by demolition ships
+
+- Default Values:
+
+    - 0: Before red cliffs tactics is researched
+    - 1: After red cliffs tactics is researched
+
+- Note: This implies that converted units that are affected by the tech won't do fire damage after being converted
 
 ## 278. Unused Resource 278
 
@@ -2384,65 +2235,69 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Technically, this resource is used as a multiplier for the resource generated by task 154 currently on cavalry units. Task 154 can change which resource does this, and it is also what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is just set to 1 for cavalry.
 
-## 285. Trigger Shared Visibility
+## 285. Shared Visibility
 
 - ID: 285
 
-- Purpose: Unknown
+- Purpose: Lower bits 1 to 9 control LoS with players 0 to 8 with 0 being gaia.
 
-## 286. Trigger Shared Exploration
+- Note: This does not change LoS for allies if the shared exploration setting in the lobby is enabled
+
+## 286. Shared Exploration
 
 - ID: 286
 
-- Purpose: Unknown
+- Purpose: Lower bits 1 to 9 control map exploration with players 0 to 8 with 0 being gaia.
 
-## 287. Unused Resource 287
+- Note: This does not change exploration for allies if the shared exploration setting in the lobby is enabled
+
+## 287. Military Food Productivity
 
 - ID: 287
 
-- Purpose: Unused
+- Purpose: The amount of food generated by soldiers per 100 seconds
 
-## 288. Unused Resource 288
+## 288. Pasture Food Amount
 
 - ID: 288
 
-- Purpose: Unused
+- Purpose: Determines the amount of food pastures provide
 
-## 289. Unused Resource 289
+## 289. Pasture Animal Count
 
 - ID: 289
 
-- Purpose: Unused
+- Purpose: Determines the amount of animals on a pasture.
 
-## 290. Unused Resource 290
+## 290. Pasture Herder Count
 
 - ID: 290
 
-- Purpose: Unused
+- Purpose: Determines the maximum amount of villagers that can work at once on a pasture
 
-## 291. Unused Resource 291
+## 291. Chopping Food Productivity
 
 - ID: 291
 
-- Purpose: Unused
+- Purpose: Unused - duplicate name, actually controlled by resource 502
 
-## 292. Unused Resource 292
+## 292. Animal Decay Prevention
 
 - ID: 292
 
-- Purpose: Unused
+- Purpose: Prevents animal corpses from losing food when being gathered by a villager
 
-## 293. Unused Resource 293
+## 293. Herder Food Productivity
 
 - ID: 293
 
-- Purpose: Unused
+- Purpose: Percent extra food generated by herders and shepherds
 
-## 294. Unused Resource 294
+## 294. Shepherd Food Productivity
 
 - ID: 294
 
-- Purpose: Unused
+- Purpose: Percent extra food generated by herders and shepherds
 
 ## 295. Unused Resource 295
 

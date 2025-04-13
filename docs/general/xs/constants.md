@@ -950,21 +950,23 @@ This multiplies the food amount by 10 (the value)
 
 Value: `#!xs int -8`
 
-This is the ID of the `Gaia Enable (or disable) Technology` effect for the xsEffectAmount function
+This is the ID of the `Gaia Spawn Unit` effect for the xsEffectAmount function
 
 Syntax:
 
 ```xs
- xsEffectAmount(cGaiaEnableTech, techID, enableOrDisable, 0)
+ xsEffectAmount(cGaiaModResource, cAttributeSpawnCap, cAttributeSet, numBuildings);
+ xsEffectAmount(cGaiaSpawnUnit, unitID, buildingID, numUnits)
 ```
 
 Example:
 
 ```xs
- xsEffectAmount(cGaiaEnableTech, 6, cAttributeEnable, 0)
+ xsEffectAmount(cGaiaModResource, cAttributeSpawnCap, cAttributeSet, 2);
+ xsEffectAmount(cGaiaSpawnUnit, 83, 109, 5)
 ```
 
-This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead
+This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect. If you prefer spawning the units garrisoned set resource `cAttributeSpawnStayInside` to 1.
 
 ### 6.23. cGaiaModifyTech
 
@@ -1656,101 +1658,203 @@ Value: `#!xs int 77`
 
 This is the attribute [Special Graphic](./../../attributes/attributes/#77-special-graphic)
 
-### 9.70. cResourceCost
+### 9.70. cObstructionType
+
+Value: `#!xs int 78`
+
+This is the attribute [Obstruction Type](./../../attributes/attributes/#78-obstruction-type)
+
+### 9.71. cBlockageClass
+
+Value: `#!xs int 79`
+
+This is the attribute [Blockage Class](./../../attributes/attributes/#79-blockage-class)
+
+### 9.72. cSelectionEffect
+
+Value: `#!xs int 80`
+
+This is the attribute [Selection Effect](./../../attributes/attributes/#80-selection-effect)
+
+### 9.73. cAttack2Graphic
+
+Value: `#!xs int 81`
+
+This is the attribute [Attack Graphic 2](./../../attributes/attributes/#81-attack-graphic-2)
+
+### 9.74. cResourceCost
 
 Value: `#!xs int 100`
 
 This is the attribute [Resource Costs](./../../attributes/attributes/#100-resource-costs)
 
-### 9.71. cTrainTime
+### 9.75. cTrainTime
 
 Value: `#!xs int 101`
 
 This is the attribute [Train Time](./../../attributes/attributes/#101-train-time)
 
-### 9.72. cTotalProjectiles
+### 9.76. cTotalProjectiles
 
 Value: `#!xs int 102`
 
 This is the attribute [Total Missiles](./../../attributes/attributes/#102-total-missiles)
 
-### 9.73. cFoodCost
+### 9.77. cFoodCost
 
 Value: `#!xs int 103`
 
 This is the attribute [Food Costs](./../../attributes/attributes/#103-food-costs)
 
-### 9.74. cWoodCost
+### 9.78. cWoodCost
 
 Value: `#!xs int 104`
 
 This is the attribute [Wood Costs](./../../attributes/attributes/#104-wood-costs)
 
-### 9.75. cGoldCost
+### 9.79. cGoldCost
 
 Value: `#!xs int 105`
 
 This is the attribute [Gold Costs](./../../attributes/attributes/#105-gold-costs)
 
-### 9.76. cStoneCost
+### 9.80. cStoneCost
 
 Value: `#!xs int 106`
 
 This is the attribute [Stone Costs](./../../attributes/attributes/#106-stone-costs)
 
-### 9.77. cMaxTotalProjectiles
+### 9.81. cMaxTotalProjectiles
 
 Value: `#!xs int 107`
 
 This is the attribute [Max Total Missiles](./../../attributes/attributes/#107-max-total-missiles)
 
-### 9.78. cGarrisonHealRate
+### 9.82. cGarrisonHealRate
 
 Value: `#!xs int 108`
 
 This is the attribute [Garrison Heal Rate](./../../attributes/attributes/#108-garrison-heal-rate)
 
-### 9.79. cRegenerationRate
+### 9.83. cRegenerationRate
 
 Value: `#!xs int 109`
 
 This is the attribute [Regeneration Rate](./../../attributes/attributes/#109-regeneration-rate)
 
-### 9.80. cPopulation
+### 9.84. cPopulation
 
 Value: `#!xs int 110`
 
 This is the attribute [Population](./../../attributes/attributes/#110-population)
 
-### 9.81. cMinConversionTimeMod
+### 9.85. cMinConversionTimeMod
 
 Value: `#!xs int 111`
 
 This is the attribute [Minimum Conversion Time Modifier](./../../attributes/attributes/#111-minimum-conversion-time-modifier)
 
-### 9.82. cMaxConversionTimeMod
+### 9.86. cMaxConversionTimeMod
 
 Value: `#!xs int 112`
 
 This is the attribute [Maximum Conversion Time Modifier](./../../attributes/attributes/#112-maximum-conversion-time-modifier)
 
-### 9.83. cConversionChanceMod
+### 9.87. cConversionChanceMod
 
 Value: `#!xs int 113`
 
 This is the attribute [Conversion Chance Modifier](./../../attributes/attributes/#113-conversion-chance-modifier)
 
-### 9.84. cFormationCategory
+### 9.88. cFormationCategory
 
 Value: `#!xs int 114`
 
 This is the attribute [Formation Category](./../../attributes/attributes/#114-formation-category)
 
-### 9.85. cAreaDamage
+### 9.89. cAreaDamage
 
 Value: `#!xs int 115`
 
 This is the attribute [Area Damage](./../../attributes/attributes/#115-area-damage)
+
+### 9.90. cDamageReflection
+
+Value: `#!xs int 118`
+
+This is the attribute [Damage Reflection](./../../attributes/attributes/#118-damage-reflection)
+
+### 9.91. cFriendlyFireDamage
+
+Value: `#!xs int 119`
+
+This is the attribute [Friendly Fire Damage](./../../attributes/attributes/#119-friendly-fire-damage)
+
+### 9.92. cRegenerationHpPercent
+
+Value: `#!xs int 120`
+
+This is the attribute [Regeneration Hp Percent](./../../attributes/attributes/#120-regeneration-hp-percent)
+
+### 9.93. cButtonIconId
+
+Value: `#!xs int 121`
+
+This is the attribute [Button Icon Id](./../../attributes/attributes/#121-button-icon-id)
+
+### 9.94. cShortTooltipId
+
+Value: `#!xs int 122`
+
+This is the attribute [Short Tooltip Id](./../../attributes/attributes/#122-short-tooltip-id)
+
+### 9.95. cExtendedTooltipId
+
+Value: `#!xs int 123`
+
+This is the attribute [Extended Tooltip Id](./../../attributes/attributes/#123-extended-tooltip-id)
+
+### 9.96. cHotkeyAction
+
+Value: `#!xs int 124`
+
+This is the attribute [Hotkey Action](./../../attributes/attributes/#124-hotkey-action)
+
+### 9.97. cChargeProjectileUnit
+
+Value: `#!xs int 125`
+
+This is the attribute [Charge Projectile Unit](./../../attributes/attributes/#125-charge-projectile-unit)
+
+### 9.98. cAvailableFlag
+
+Value: `#!xs int 126`
+
+This is the attribute [Available Flag](./../../attributes/attributes/#126-available-flag)
+
+### 9.99. cDisabledFlag
+
+Value: `#!xs int 127`
+
+This is the attribute [Disabled Flag](./../../attributes/attributes/#127-disabled-flag)
+
+### 9.100. cAttackPriority
+
+Value: `#!xs int 128`
+
+This is the attribute [Attack Priority](./../../attributes/attributes/#128-attack-priority)
+
+### 9.101. cInvulnerabilityLevel
+
+Value: `#!xs int 129`
+
+This is the attribute [Invulnerability Level](./../../attributes/attributes/#129-invulnerability-level)
+
+### 9.102. cGarrisonFirepower
+
+Value: `#!xs int 130`
+
+This is the attribute [Garrison Firepower](./../../attributes/attributes/#130-garrison-firepower)
 
 ## 10. EffectAmount Object Class
 
@@ -2288,19 +2392,19 @@ ID of the player resource Unit Limit. Check [here](../../resources/resources/#32
 
 Value: `#!xs int 33`
 
-ID of the player resource Maintenance. Check [here](../../resources/resources/#33-food-maintenance "Jump to: Game Mecahnicsc > Resources > #33-food-maintenance") for more info about what this resource does.
+ID of the player resource Maintenance. Check [here](../../resources/resources/#33-unused-resource-33 "Jump to: Game Mecahnicsc > Resources > #33-unused-resource-33") for more info about what this resource does.
 
 ### 11.28. cAttributeFaith
 
 Value: `#!xs int 34`
 
-ID of the player resource Faith. Check [here](../../resources/resources/#34-faith "Jump to: Game Mecahnicsc > Resources > #34-faith") for more info about what this resource does.
+ID of the player resource Faith. Check [here](../../resources/resources/#34-unused-resource-34 "Jump to: Game Mecahnicsc > Resources > #34-unused-resource-34") for more info about what this resource does.
 
 ### 11.29. cAttributeFaithRechargeRate
 
 Value: `#!xs int 35`
 
-ID of the player resource Faith Recharge Rate. Check [here](../../resources/resources/#35-faith-recharging-rate "Jump to: Game Mecahnicsc > Resources > #35-faith-recharging-rate") for more info about what this resource does.
+ID of the player resource Faith Recharge Rate. Check [here](../../resources/resources/#35-unused-resource-35 "Jump to: Game Mecahnicsc > Resources > #35-unused-resource-35") for more info about what this resource does.
 
 ### 11.30. cAttributeFarmFood
 
@@ -2516,7 +2620,7 @@ ID of the player resource Raider. Check [here](../../resources/resources/#82-sta
 
 Value: `#!xs int 83`
 
-ID of the player resource Boarding Recharge Rate. Check [here](../../resources/resources/#83-boarding-recharge-rate "Jump to: Game Mecahnicsc > Resources > #83-boarding-recharge-rate") for more info about what this resource does.
+ID of the player resource Boarding Recharge Rate. Check [here](../../resources/resources/#83-unused-resource-83 "Jump to: Game Mecahnicsc > Resources > #83-unused-resource-83") for more info about what this resource does.
 
 ### 11.66. cAttributeStartingVillagers
 
@@ -2846,7 +2950,7 @@ ID of the player resource Theocracy. Check [here](../../resources/resources/#193
 
 Value: `#!xs int 194`
 
-ID of the player resource Crenellations. Check [here](../../resources/resources/#194-crenellations "Jump to: Game Mecahnicsc > Resources > #194-crenellations") for more info about what this resource does.
+ID of the player resource Crenellations. Check [here](../../resources/resources/#194-unused-resource-194 "Jump to: Game Mecahnicsc > Resources > #194-unused-resource-194") for more info about what this resource does.
 
 ### 11.121. cAttributeConstructionRateMod
 
@@ -3122,43 +3226,43 @@ ID of the player resource Livestock Food Productivity. Check [here](../../resour
 
 Value: `#!xs int 255`
 
-ID of the player resource Speed Up Building Type. Check [here](../../resources/resources/#255-speed-up-building-type "Jump to: Game Mecahnicsc > Resources > #255-speed-up-building-type") for more info about what this resource does.
+ID of the player resource Speed Up Building Type. Check [here](../../resources/resources/#255-unused-resource-255 "Jump to: Game Mecahnicsc > Resources > #255-unused-resource-255") for more info about what this resource does.
 
 ### 11.167. cAttributeSpeedUpBuildingRange
 
 Value: `#!xs int 256`
 
-ID of the player resource Speed Up Building Range. Check [here](../../resources/resources/#256-speed-up-building-range "Jump to: Game Mecahnicsc > Resources > #256-speed-up-building-range") for more info about what this resource does.
+ID of the player resource Speed Up Building Range. Check [here](../../resources/resources/#256-unused-resource-256 "Jump to: Game Mecahnicsc > Resources > #256-unused-resource-256") for more info about what this resource does.
 
 ### 11.168. cAttributeSpeedUpPercentage
 
 Value: `#!xs int 257`
 
-ID of the player resource Speed Up Percentage. Check [here](../../resources/resources/#257-speed-up-percentage "Jump to: Game Mecahnicsc > Resources > #257-speed-up-percentage") for more info about what this resource does.
+ID of the player resource Speed Up Percentage. Check [here](../../resources/resources/#257-unused-resource-257 "Jump to: Game Mecahnicsc > Resources > #257-unused-resource-257") for more info about what this resource does.
 
 ### 11.169. cAttributeSpeedUpObjectType
 
 Value: `#!xs int 258`
 
-ID of the player resource Speed Up Object Type. Check [here](../../resources/resources/#258-speed-up-object-type "Jump to: Game Mecahnicsc > Resources > #258-speed-up-object-type") for more info about what this resource does.
+ID of the player resource Speed Up Object Type. Check [here](../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
 
 ### 11.170. cAttributeSpeedUpEffectType
 
 Value: `#!xs int 259`
 
-ID of the player resource Speed Up Effect Type. Check [here](../../resources/resources/#259-speed-up-effect-type "Jump to: Game Mecahnicsc > Resources > #259-speed-up-effect-type") for more info about what this resource does.
+ID of the player resource Speed Up Effect Type. Check [here](../../resources/resources/#259-unused-resource-259 "Jump to: Game Mecahnicsc > Resources > #259-unused-resource-259") for more info about what this resource does.
 
 ### 11.171. cAttributeSpeedUpSecondaryEffectType
 
 Value: `#!xs int 260`
 
-ID of the player resource Speed Up Secondary Effect Type. Check [here](../../resources/resources/#260-speed-up-secondary-effect-type "Jump to: Game Mecahnicsc > Resources > #260-speed-up-secondary-effect-type") for more info about what this resource does.
+ID of the player resource Speed Up Secondary Effect Type. Check [here](../../resources/resources/#260-unused-resource-260 "Jump to: Game Mecahnicsc > Resources > #260-unused-resource-260") for more info about what this resource does.
 
 ### 11.172. cAttributeSpeedUpSecondaryPercentage
 
 Value: `#!xs int 261`
 
-ID of the player resource Speed Up Secondary Percentage. Check [here](../../resources/resources/#261-speed-up-secondary-percentage "Jump to: Game Mecahnicsc > Resources > #261-speed-up-secondary-percentage") for more info about what this resource does.
+ID of the player resource Speed Up Secondary Percentage. Check [here](../../resources/resources/#261-unused-resource-261 "Jump to: Game Mecahnicsc > Resources > #261-unused-resource-261") for more info about what this resource does.
 
 ### 11.173. cAttributeCivNameOverride
 
@@ -3278,13 +3382,13 @@ ID of the player resource Cavalry Kill Reward. Check [here](../../resources/reso
 
 Value: `#!xs int 285`
 
-ID of the player resource Trigger Shared Visibility. Check [here](../../resources/resources/#285-trigger-shared-visibility "Jump to: Game Mecahnicsc > Resources > #285-trigger-shared-visibility") for more info about what this resource does.
+ID of the player resource Trigger Shared Visibility. Check [here](../../resources/resources/#285-shared-visibility "Jump to: Game Mecahnicsc > Resources > #285-shared-visibility") for more info about what this resource does.
 
 ### 11.193. cAttributeTriggerSharedExploration
 
 Value: `#!xs int 286`
 
-ID of the player resource Trigger Shared Exploration. Check [here](../../resources/resources/#286-trigger-shared-exploration "Jump to: Game Mecahnicsc > Resources > #286-trigger-shared-exploration") for more info about what this resource does.
+ID of the player resource Trigger Shared Exploration. Check [here](../../resources/resources/#286-shared-exploration "Jump to: Game Mecahnicsc > Resources > #286-shared-exploration") for more info about what this resource does.
 
 ### 11.194. cAttributeGaiaKills
 

@@ -186,9 +186,13 @@
         "note": ""
     },
     "29": {
-        "name": "Unused Resource 029",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Enable Siege Conversion",
+        "desc": "Boolean: allow enemy siege conversions",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after Redemption",
+            ">=2": " Monks can convert siege from range"
+        },
         "note": ""
     },
     "30": {
@@ -210,23 +214,21 @@
         "note": "10 for goths"
     },
     "33": {
-        "name": "Food Maintenance",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 33",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "34": {
-        "name": "Faith",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 34",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "35": {
-        "name": "Faith Recharging Rate",
-        "desc": "Monk faith recovery rate",
-        "defaults": {
-            "1": " The unit of measurement for this rate is unknown"
-        },
+        "name": "Unused Resource 35",
+        "desc": "Unused",
+        "defaults": {},
         "note": ""
     },
     "36": {
@@ -245,8 +247,8 @@
         "note": ""
     },
     "38": {
-        "name": "Unused Resource 038",
-        "desc": "Unused",
+        "name": "Villager Population",
+        "desc": "Current villager population",
         "defaults": {},
         "note": ""
     },
@@ -459,9 +461,11 @@
         "note": ""
     },
     "69": {
-        "name": "Unused Resource 69",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Farm Food Multiplier",
+        "desc": "Multiplier for the amount of extra food granted by mill upgrades",
+        "defaults": {
+            "1": "No multiplier (default)"
+        },
         "note": ""
     },
     "70": {
@@ -552,10 +556,10 @@
         "note": "Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing"
     },
     "83": {
-        "name": "Boarding Recharge Rate",
-        "desc": "ABGAL faith recharge rate amount",
+        "name": "Unused Resource 83",
+        "desc": "Unused",
         "defaults": {},
-        "note": "This is similar to monk's faith except for a special ship unit 536 called the ABGAL in the editor that can convert ships form 1 range away"
+        "note": ""
     },
     "84": {
         "name": "Starting Villagers",
@@ -1265,12 +1269,9 @@
         "note": ""
     },
     "194": {
-        "name": "Crenellations",
-        "desc": "Boolean: Garrisoned infantry fire arrows",
-        "defaults": {
-            "0": " No (default)",
-            "1": " Yes, after crenellations"
-        },
+        "name": "Unused Resource 194",
+        "desc": "Unused",
+        "defaults": {},
         "note": ""
     },
     "195": {
@@ -1420,17 +1421,14 @@
     "214": {
         "name": "Mercenary Kipchak Count",
         "desc": "Total number of mercenary kipchak creatable",
-        "defaults": {
-            "0": " Default",
-            "10": " after a Cuman ally researches Cuman Mercenaries"
-        },
+        "defaults": {},
         "note": "Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource"
     },
     "215": {
-        "name": "Mercenary Kipchak Limit",
-        "desc": "Number of mercenary kipchaks created/queued",
+        "name": "Unused Resource 215",
+        "desc": "Unused",
         "defaults": {},
-        "note": "Making mercenary Kipchaks gives one unit of this resource"
+        "note": ""
     },
     "216": {
         "name": "Shepherd Productivity",
@@ -1443,7 +1441,7 @@
     },
     "217": {
         "name": "Shared Line of Sight",
-        "desc": "Unknown... what does this resource do?",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
@@ -1729,60 +1727,46 @@
         "note": ""
     },
     "255": {
-        "name": "Speed Up Building Type",
-        "desc": "This is the ID of the building to use for the speed up effect.",
-        "defaults": {
-            "1754": " (Caravanserai) Default"
-        },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 255",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "256": {
-        "name": "Speed Up Building Range",
-        "desc": "This specifies the range (in tiles) of the area created around the building ([Speed Up Building Type](./#255-speed-up-building-type)) (square, from the edges of the building) for the speed up effect",
-        "defaults": {
-            "8": " Default"
-        },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 256",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "257": {
-        "name": "Speed Up Percentage",
-        "desc": "The formulae given below are used with this resource as the `value` to adjust the attribute ([Speed Up Effect Type](./#259-speed-up-effect-type)) of all units of class ([Speed Up Object Type](./#258-speed-up-object-type)) when they are in the range of the speed up effect",
-        "defaults": {
-            "0.2": " Default"
-        },
-        "note": "For each of the attributes that work with this resource, the new value to set is determined using the following formulae:\n\n    (013) `new_workrate = original + value`\n\n    (005) `new_movement_speed = original * (1 + value)`\n\n    (109) `new_regeneration_rate = original + (3600/value)`\n\n    See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 257",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "258": {
-        "name": "Speed Up Object Type",
-        "desc": "This is `900 + class_id` for the class of units that should be affected by the speed up effect",
-        "defaults": {
-            "919": " (Trade Cart class) Default"
-        },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 258",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "259": {
-        "name": "Speed Up Effect Type",
-        "desc": "The ID of the attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far",
-        "defaults": {
-            "5": " (Movement Speed) Default"
-        },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 259",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "260": {
-        "name": "Speed Up Secondary Effect Type",
-        "desc": "This is the ID of the secondary attribute that is modified by the speed up effect. Only 5 (Movement Speed), 13 (Work Rate) and 109 (Regeneration) have been found to work so far",
-        "defaults": {
-            "109": " (Regeneration Rate) Default"
-        },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 260",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "261": {
-        "name": "Speed Up Secondary Percentage",
-        "desc": "This amount is added to the secondary attribute ([Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)) of all units of class ([Speed Up Object Type](./#258-speed-up-object-type)) when they are in the range of the speed up effect",
-        "defaults": {
-            "60": " Default"
-        },
-        "note": "See also:\n\n    [Speed Up Building Type](./#255-speed-up-building-type)\n\n    [Speed Up Building Range](./#256-speed-up-building-range)\n\n    [Speed Up Percentage](./#257-speed-up-percentage)\n\n    [Speed Up Object Type](./#258-speed-up-object-type)\n\n    [Speed Up Effect Type](./#259-speed-up-effect-type)\n\n    [Speed Up Secondary Effect Type](./#260-speed-up-secondary-effect-type)\n\n    [Speed Up Secondary Percentage](./#261-speed-up-secondary-percentage)"
+        "name": "Unused Resource 261",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
     },
     "262": {
         "name": "Civilization Name Override",
@@ -1895,10 +1879,13 @@
         "note": ""
     },
     "277": {
-        "name": "Unused Resource 277",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Red Cliffs Tactics Damage",
+        "desc": "Multiplier for the amount of fire damage done by demolition ships",
+        "defaults": {
+            "0": "Before red cliffs tactics is researched",
+            "1": "After red cliffs tactics is researched"
+        },
+        "note": "This implies that converted units that are affected by the tech won't do fire damage after being converted"
     },
     "278": {
         "name": "Unused Resource 278",
@@ -1948,62 +1935,62 @@
         "note": "Technically, this resource is used as a multiplier for the resource generated by task 154 currently on cavalry units. Task 154 can change which resource does this, and it is also what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is just set to 1 for cavalry."
     },
     "285": {
-        "name": "Trigger Shared Visibility",
-        "desc": "Unknown",
+        "name": "Shared Visibility",
+        "desc": "Lower bits 1 to 9 control LoS with players 0 to 8 with 0 being gaia.",
         "defaults": {},
-        "note": ""
+        "note": "This does not change LoS for allies if the shared exploration setting in the lobby is enabled"
     },
     "286": {
-        "name": "Trigger Shared Exploration",
-        "desc": "Unknown",
+        "name": "Shared Exploration",
+        "desc": "Lower bits 1 to 9 control map exploration with players 0 to 8 with 0 being gaia.",
         "defaults": {},
-        "note": ""
+        "note": "This does not change exploration for allies if the shared exploration setting in the lobby is enabled"
     },
     "287": {
-        "name": "Unused Resource 287",
-        "desc": "Unused",
+        "name": "Military Food Productivity",
+        "desc": "The amount of food generated by soldiers per 100 seconds",
         "defaults": {},
         "note": ""
     },
     "288": {
-        "name": "Unused Resource 288",
-        "desc": "Unused",
+        "name": "Pasture Food Amount",
+        "desc": "Determines the amount of food pastures provide",
         "defaults": {},
         "note": ""
     },
     "289": {
-        "name": "Unused Resource 289",
-        "desc": "Unused",
+        "name": "Pasture Animal Count",
+        "desc": "Determines the amount of animals on a pasture.",
         "defaults": {},
         "note": ""
     },
     "290": {
-        "name": "Unused Resource 290",
-        "desc": "Unused",
+        "name": "Pasture Herder Count",
+        "desc": "Determines the maximum amount of villagers that can work at once on a pasture",
         "defaults": {},
         "note": ""
     },
     "291": {
-        "name": "Unused Resource 291",
-        "desc": "Unused",
+        "name": "Chopping Food Productivity",
+        "desc": "Unused - duplicate name, actually controlled by resource 502",
         "defaults": {},
         "note": ""
     },
     "292": {
-        "name": "Unused Resource 292",
-        "desc": "Unused",
+        "name": "Animal Decay Prevention",
+        "desc": "Prevents animal corpses from losing food when being gathered by a villager",
         "defaults": {},
         "note": ""
     },
     "293": {
-        "name": "Unused Resource 293",
-        "desc": "Unused",
+        "name": "Herder Food Productivity",
+        "desc": "Percent extra food generated by herders and shepherds",
         "defaults": {},
         "note": ""
     },
     "294": {
-        "name": "Unused Resource 294",
-        "desc": "Unused",
+        "name": "Shepherd Food Productivity",
+        "desc": "Percent extra food generated by herders and shepherds",
         "defaults": {},
         "note": ""
     },

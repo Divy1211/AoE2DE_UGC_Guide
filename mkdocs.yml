@@ -58,8 +58,13 @@ nav:
 #   - Data Mods
 #     - Advanced Genie Editor:
 #       - A.G.E. Basics:            "mods/age/basics.md"
-#   - RMS:
+  - RMS:
+    -                               "rms/index.md"
 #     - RMS Basics:                 "rms/basics.md"
+  - AI:
+    -                               "ai/index.md"
+  - Audio:
+    -                               "audio/index.md"
 
 markdown_extensions:
   - attr_list

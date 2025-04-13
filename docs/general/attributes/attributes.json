@@ -77,7 +77,7 @@
         "flags": {}
     },
     "12": {
-        "name": "Max Range",
+        "name": "Maximum Range",
         "desc": "This is the maximum range of a unit. Note that to be able to shoot at a target, it must be visible to the unit via its own line of sight or from another unit's line of sight",
         "notes": [],
         "flags": {}
@@ -393,7 +393,7 @@
         "flags": {
             "1": "Garrison Unit",
             "2": "Ship Unit",
-            "4": "Build Another Building (Serjeants)",
+            "4": "Build Another Building (Serjeants) [See Special Ability: Mode 7]",
             "8": "Transform Into Another Unit (Ratha)",
             "16": "Auto Scout Unit"
         }
@@ -441,7 +441,12 @@
         "desc": "This action depletes the unit's charge",
         "notes": [],
         "flags": {
-            "1": "If charge type is set to `1`, `2` or `3`, depletes charge on attacking"
+            "Charge Type one of `1`, `2`, or `3`": "1 - Deplete charge, 0 - Keep charge",
+            "Charge Type one of `6`, or `7`": "Max range modifier",
+            "Charge Type is `-1`": "0 - Transform unit until one attack, -1 - perform attack ground on it's location",
+            "Charge Type is `-2`": "0 - Transform unit until one attack",
+            "Charge Type is `-3`": "Aura task duration",
+            "Charge Type is `-4`": "Conversion range (maybe overridden by conversion tasks)"
         }
     },
     "62": {
@@ -449,10 +454,18 @@
         "desc": "The type of charge that a unit holds",
         "notes": [],
         "flags": {
+            "-5": "Spawn Building on top of the unit (Uses unit set in Trait Piece)",
+            "-4": "Conversion ability (Needs task 104). Charge Target defines the conversion percent chance",
+            "-3": "Active aura ability (Needs task 155 with unused flag 8 set)",
+            "-2": "Active targetted transform (Uses unit set in Trait Piece). If charge target = -1, use attack ground targetting",
+            "-1": "Active temporary transform (Uses unit set in Trait Piece)",
             "1": "Attack charge",
             "2": "??? charge",
             "3": "Area attack charge",
-            "4": "Agility charge"
+            "4": "Agility charge",
+            "5": "Ignore Melee Attack",
+            "6": "Fire only Charge projectiles, sets Total Projectiles to the value of Max Total Projectiles (Lou Chuan)",
+            "7": "Fires 1 Charge projectile and additional Secondary Projectiles, sets Total Projectiles to the value of Max Total Projectiles"
         }
     },
     "63": {
@@ -462,11 +475,12 @@
         "flags": {
             "1": "Ignore melee and pierce armours of the targeted unit",
             "2": "Resist armour-ignoring attacks",
-            "4": "Damage the targeted unit's armor (Obuch)",
+            "4": "Damage the targeted unit's melee and pierce armors by 1, for a minimum of 0 (Obuch)",
             "8": "Attack ground ability",
             "16": "Bulk volley release (kipchak/siege weapons)",
             "32": "Enable aura ability (task 155) (Stronghold castle/Caravanserai/Centurion)",
-            "64": "Change aura ability (task 155) to affect self (Monaspa)"
+            "64": "Invert aura ability (task 155) to boost self (Monaspa) - Auto Search = 1 needed for multiple tasks",
+            "128": "Activate stringer ability (task 157)"
         }
     },
     "64": {
@@ -503,7 +517,8 @@
         "notes": [],
         "flags": {
             "0": "Disappear on first impact",
-            "1": "Pass through"
+            "1": "Pass through",
+            "2": "Always spawn a dead unit"
         }
     },
     "69": {
@@ -542,9 +557,9 @@
     },
     "74": {
         "name": "Undead Graphic",
-        "desc": "This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its \"Undead Mode\" is set to `1`",
+        "desc": "This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its \"Undead Mode\" is set to `1`. Used to assign decay graphic to units without \"Undead Mode\" set to 1. Overrides the standing graphic of the object's dead unit",
         "notes": [
-            "Requires \"Undead Mode\" to be set to `1`"
+            "Depends on Undead Mode flag"
         ],
         "flags": {}
     },
@@ -584,7 +599,10 @@
             "3": "Square outline, and has collision box",
             "4": "No outline, and passable",
             "5": "Round outline, and has collision box",
-            "10": "Same as 2, but designed for mountains"
+            "10": "Same as 2, but designed for mountains",
+            "11": "Consider the selection size of a radius entirely as opposed to the actual defined collision size",
+            "12": "Ignore hard obstructions entirely and just consider the space occupied with no obstruction at all",
+            "13": "Consider the selection radius when placing other objects, but use the original obstruction size for hard obstructions"
         }
     },
     "79": {
@@ -655,7 +673,7 @@
         "flags": {}
     },
     "107": {
-        "name": "Max Total Missiles",
+        "name": "Maximum Total Missiles",
         "desc": "The maximum number of projectiles a unit can fire when other units are garrisoned inside of it. A castle fires 5 projectiles by default but can fire more if units are garrisoned inside it. This attribute controls the maximum number of those",
         "notes": [],
         "flags": {}
@@ -720,6 +738,104 @@
     "115": {
         "name": "Area Damage",
         "desc": "Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative",
+        "notes": [],
+        "flags": {}
+    },
+    "118": {
+        "name": "Damage Reflection",
+        "desc": "Damage percentage of the received damage to be reflected on the attacker (only for melee damage)",
+        "notes": [],
+        "flags": {}
+    },
+    "119": {
+        "name": "Friendly Fire Damage",
+        "desc": "Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative",
+        "notes": [],
+        "flags": {}
+    },
+    "120": {
+        "name": "Regeneration HP Percent",
+        "desc": "Percentage of the unit’s max HP that is regenerated over a minute",
+        "notes": [],
+        "flags": {}
+    },
+    "121": {
+        "name": "Ability Button Icon ID",
+        "desc": "Override for Transform/Active Ability Icon. Uses ID from `Materials.json`",
+        "notes": [],
+        "flags": {}
+    },
+    "122": {
+        "name": "Ability Short Tooltip I",
+        "desc": "Override for Transform/Active Ability Short Tooltip",
+        "notes": [],
+        "flags": {}
+    },
+    "123": {
+        "name": "Ability Extended Toolti",
+        "desc": "Override for Transform/Active Ability Long Tooltip",
+        "notes": [],
+        "flags": {}
+    },
+    "124": {
+        "name": "Ability Hotkey Action",
+        "desc": "`button_action_list` when pressing button/hotkey for the ability or transformation",
+        "notes": [],
+        "flags": {}
+    },
+    "125": {
+        "name": "Charge Projectile Unit",
+        "desc": "Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative",
+        "notes": [],
+        "flags": {}
+    },
+    "126": {
+        "name": "Available Unit Flag",
+        "desc": "When Disabled flag 2 or 4 is set, sets value for number of trainable unit. Will use units paired in `LinkedUnits.json` to count them together",
+        "notes": [],
+        "flags": {}
+    },
+    "127": {
+        "name": "Disabled Unit Flag",
+        "desc": "Enable/Disable a unit",
+        "notes": [],
+        "flags": {
+            "1": "Disabled",
+            "2": "Limited training. Cannot be retrained after death",
+            "4": "Limited training. Can be retrained after death"
+        }
+    },
+    "128": {
+        "name": "Attack Priority",
+        "desc": "Defines what type of target the unit will prioritize",
+        "notes": [],
+        "flags": {
+            "1": "Units > Buildings",
+            "2": "Buildings > Units",
+            "3": "Buildings only"
+        }
+    },
+    "129": {
+        "name": "Invulnerability Level",
+        "desc": "Sets an HP threshold after which a unit no longer receives damage when attacked",
+        "notes": [],
+        "flags": {
+            "> 0": "Multiplier of Base HP",
+            "< 0": "Fixed value of HP"
+        }
+    },
+    "130": {
+        "name": "Garrison Firepower",
+        "desc": "Adds to the damage of the unit to calculate the number of garrison arrows to fire",
+        "notes": [],
+        "flags": {
+            "> 0": "Acts as multiplier",
+            "< 0": "Flat dps value added to the unit’s dps"
+        }
+    },
+    "131": {
+        "name": "Attack Graphic 2",
+        "desc": "Second attack graphic of the unit; alternates with the first attack graphic when assigned",
         "notes": [],
         "flags": {}
     }
