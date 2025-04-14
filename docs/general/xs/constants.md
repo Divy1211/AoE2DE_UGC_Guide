@@ -1680,7 +1680,7 @@ This is the attribute [Selection Effect](./../../attributes/attributes/#80-selec
 
 Value: `#!xs int 81`
 
-This is the attribute [Attack Graphic 2](./../../attributes/attributes/#81-attack-graphic-2)
+This is the attribute [Attack Graphic 2](./../../attributes/attributes/#131-attack-graphic-2). Note that this constant is wrong, and should be `131`.
 
 ### 9.74. cResourceCost
 

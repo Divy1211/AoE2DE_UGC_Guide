@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/04/13 01:03:46 |
+// | Generated on: 2025/04/14 19:37:36 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -675,7 +675,7 @@ extern const int cBlockageClass = 79;
 /** This is the attribute [Selection Effect](https://ugc.aoe2.rocks/general/attributes/attributes/#80-selection-effect) */
 extern const int cSelectionEffect = 80;
 
-/** This is the attribute [Attack Graphic 2](https://ugc.aoe2.rocks/general/attributes/attributes/#81-attack-graphic-2) */
+/** This is the attribute [Attack Graphic 2](https://ugc.aoe2.rocks/general/attributes/attributes/#131-attack-graphic-2). Note that this constant is wrong, and should be `131`. */
 extern const int cAttack2Graphic = 81;
 
 /** This is the attribute [Resource Costs](https://ugc.aoe2.rocks/general/attributes/attributes/#100-resource-costs) */
@@ -1037,13 +1037,13 @@ extern const int cAttributeFoodLimit = 31;
 /** ID of the player resource [Unit Limit](https://ugc.aoe2.rocks/general/resources/resources/#32-bonus-population-cap) */
 extern const int cAttributeUnitLimit = 32;
 
-/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-food-maintenance) */
+/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-unused-resource-33) */
 extern const int cAttributeMaintenance = 33;
 
-/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-faith) */
+/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-34) */
 extern const int cAttributeFaith = 34;
 
-/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-faith-recharging-rate) */
+/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-unused-resource-35) */
 extern const int cAttributeFaithRechargeRate = 35;
 
 /** ID of the player resource [Farm Food](https://ugc.aoe2.rocks/general/resources/resources/#36-farm-food-amount) */
@@ -1151,7 +1151,7 @@ extern const int cAttributeTrainingCount = 81;
 /** ID of the player resource [Raider](https://ugc.aoe2.rocks/general/resources/resources/#82-start-with-unit-444-ptwc) */
 extern const int cAttributeRaider = 82;
 
-/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-boarding-recharge-rate) */
+/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-unused-resource-83) */
 extern const int cAttributeBoardingRechargeRate = 83;
 
 /** ID of the player resource [Starting Villagers](https://ugc.aoe2.rocks/general/resources/resources/#84-starting-villagers) */
@@ -1316,7 +1316,7 @@ extern const int cAttributeHeresy = 192;
 /** ID of the player resource [Theocracy](https://ugc.aoe2.rocks/general/resources/resources/#193-theocracy) */
 extern const int cAttributeTheocracy = 193;
 
-/** ID of the player resource [Crenellations](https://ugc.aoe2.rocks/general/resources/resources/#194-crenellations) */
+/** ID of the player resource [Crenellations](https://ugc.aoe2.rocks/general/resources/resources/#194-unused-resource-194) */
 extern const int cAttributeCrenellations = 194;
 
 /** ID of the player resource [Construction Rate Mod](https://ugc.aoe2.rocks/general/resources/resources/#195-construction-rate-modifier) */
@@ -1454,25 +1454,25 @@ extern const int cAttributeTradeStonePercent = 253;
 /** ID of the player resource [Livestock Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#254-livestock-food-productivity) */
 extern const int cAttributeLivestockFoodProductivity = 254;
 
-/** ID of the player resource [Speed Up Building Type](https://ugc.aoe2.rocks/general/resources/resources/#255-speed-up-building-type) */
+/** ID of the player resource [Speed Up Building Type](https://ugc.aoe2.rocks/general/resources/resources/#255-unused-resource-255) */
 extern const int cAttributeSpeedUpBuildingType = 255;
 
-/** ID of the player resource [Speed Up Building Range](https://ugc.aoe2.rocks/general/resources/resources/#256-speed-up-building-range) */
+/** ID of the player resource [Speed Up Building Range](https://ugc.aoe2.rocks/general/resources/resources/#256-unused-resource-256) */
 extern const int cAttributeSpeedUpBuildingRange = 256;
 
-/** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-speed-up-percentage) */
+/** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-unused-resource-257) */
 extern const int cAttributeSpeedUpPercentage = 257;
 
-/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-speed-up-object-type) */
+/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
 extern const int cAttributeSpeedUpObjectType = 258;
 
-/** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-speed-up-effect-type) */
+/** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-unused-resource-259) */
 extern const int cAttributeSpeedUpEffectType = 259;
 
-/** ID of the player resource [Speed Up Secondary Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#260-speed-up-secondary-effect-type) */
+/** ID of the player resource [Speed Up Secondary Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#260-unused-resource-260) */
 extern const int cAttributeSpeedUpSecondaryEffectType = 260;
 
-/** ID of the player resource [Speed Up Secondary Percentage](https://ugc.aoe2.rocks/general/resources/resources/#261-speed-up-secondary-percentage) */
+/** ID of the player resource [Speed Up Secondary Percentage](https://ugc.aoe2.rocks/general/resources/resources/#261-unused-resource-261) */
 extern const int cAttributeSpeedUpSecondaryPercentage = 261;
 
 /** ID of the player resource [Civ Name Override](https://ugc.aoe2.rocks/general/resources/resources/#262-civilization-name-override) */
@@ -1532,10 +1532,10 @@ extern const int cAttributeSpawnStayInside = 283;
 /** ID of the player resource [Cavalry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#284-cavalry-kill-reward) */
 extern const int cAttributeCavalryKillReward = 284;
 
-/** ID of the player resource [Trigger Shared Visibility](https://ugc.aoe2.rocks/general/resources/resources/#285-trigger-shared-visibility) */
+/** ID of the player resource [Trigger Shared Visibility](https://ugc.aoe2.rocks/general/resources/resources/#285-shared-visibility) */
 extern const int cAttributeTriggerSharedVisibility = 285;
 
-/** ID of the player resource [Trigger Shared Exploration](https://ugc.aoe2.rocks/general/resources/resources/#286-trigger-shared-exploration) */
+/** ID of the player resource [Trigger Shared Exploration](https://ugc.aoe2.rocks/general/resources/resources/#286-shared-exploration) */
 extern const int cAttributeTriggerSharedExploration = 286;
 
 /** ID of the player resource [Gaia Kills](https://ugc.aoe2.rocks/general/resources/resources/#300-killed-gaia) */
@@ -2603,7 +2603,7 @@ void xsTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, int pla
 *     - 2: Work Range
 *     - 3: Work Flag 2
 *     - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), [Conversion Chance Modifier](../../attributes/attributes/#113-conversion-chance-modifier), 116 - Melee Armor, 117 - Pierce Armor)
-*     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Unused, 16 - Unused, 32 - Translucent)
+*     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Temporary Aura, 16 - Use with 8 - applies buffs only units around when the ability is triggered, 32 - Translucent)
 *     - 6: Target Diplomacy
 * @param value The value to set the task field to
 *

@@ -1602,7 +1602,7 @@
             "name": "cAttack2Graphic",
             "value": 81,
             "type": "int",
-            "desc": "This is the attribute [Attack Graphic 2](./../../attributes/attributes/#81-attack-graphic-2)",
+            "desc": "This is the attribute [Attack Graphic 2](./../../attributes/attributes/#131-attack-graphic-2). Note that this constant is wrong, and should be `131`.",
             "usage": null
         },
         {
