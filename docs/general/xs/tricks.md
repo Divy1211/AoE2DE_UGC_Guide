@@ -126,7 +126,8 @@ bool xsRemoveAura(
     int auraUnit = -1, /* unit from which remove the aura */
     int affectedUnit = -1, /* unit or unit class (9xx) to be affected by the aura */
     int player = -1, /* aura unit player, does not work with -1, make multiple calls to all players instead */
-    int attribute = -1 /* aura attribute, not all attributes supported by auras, constants are provided */
+    int attribute = -1, /* aura attribute, not all attributes supported by auras, constants are provided */
+    bool removeTempAuraAttributes = false /* if set removes temp aura attributes from unit */
 ) { 
     /* Function removes the aura added by xsAddAura. Leaves combat ability unchanged. Removing auras "freezes" the unit for further non task modifications.
     Function returns `true` if function parameter validation passed and `false` if it did not (no aura removed). */
@@ -140,16 +141,18 @@ bool xsRemoveAura(
     }
 
     /* Remove temporary aura values */
-    float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
-    if (ct == -3.0) {
-        int setCommand = cSetAttribute;
-        if (player == 0) {
-            setCommand = cGaiaSetAttribute;
+    if (removeTempAuraAttributes) {
+        float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
+        if (ct == -3.0) {
+            int setCommand = cSetAttribute;
+            if (player == 0) {
+                setCommand = cGaiaSetAttribute;
+            }
+            xsEffectAmount(setCommand, auraUnit, cMaxCharge, 0.0, player);
+            xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
+            xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0, player);
+            xsEffectAmount(setCommand, auraUnit, cChargeType, 0.0, player);
         }
-        xsEffectAmount(setCommand, auraUnit, cMaxCharge, 0.0, player);
-        xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
-        xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0, player);
-        xsEffectAmount(setCommand, auraUnit, cChargeType, 0.0, player);
     }
 
     /* Workaround for a bug setting multiple unit classes with an aura*/
@@ -194,7 +197,6 @@ const int cAuraDiplomacyGaiaYouAlly = 4;
 const int cAuraDiplomacyGaiaNeutralAlly = 5;
 const int cAuraDiplomacyAllButYou = 6;
 ```
-
 To use, copy the code above to a non-running `Script Call` effect or to your scenarios `.xs` file and then call the function in your xs code, eg:
 
 ```cpp
