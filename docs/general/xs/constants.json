@@ -840,11 +840,11 @@
             "name": "cGaiaSpawnUnit",
             "value": -8,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Enable (or disable) Technology` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Spawn Unit` effect for the xsEffectAmount function",
             "usage": {
-                "syntax": "xsEffectAmount(cGaiaEnableTech, techID, enableOrDisable, 0)",
-                "example": "xsEffectAmount(cGaiaEnableTech, 6, cAttributeEnable, 0)",
-                "explanation": "This enables the tech 6 (Drill). Alternatively, `cAttributeDisable` may be used to disable the tech instead"
+                "syntax": "xsEffectAmount(cGaiaModResource, cAttributeSpawnCap, cAttributeSet, numBuildings);\n xsEffectAmount(cGaiaSpawnUnit, unitID, buildingID, numUnits)",
+                "example": "xsEffectAmount(cGaiaModResource, cAttributeSpawnCap, cAttributeSet, 2);\n xsEffectAmount(cGaiaSpawnUnit, 83, 109, 5)",
+                "explanation": "This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect. If you prefer spawning the units garrisoned set resource `cAttributeSpawnStayInside` to 1."
             }
         },
         {
@@ -1578,6 +1578,34 @@
             "usage": null
         },
         {
+            "name": "cObstructionType",
+            "value": 78,
+            "type": "int",
+            "desc": "This is the attribute [Obstruction Type](./../../attributes/attributes/#78-obstruction-type)",
+            "usage": null
+        },
+        {
+            "name": "cBlockageClass",
+            "value": 79,
+            "type": "int",
+            "desc": "This is the attribute [Blockage Class](./../../attributes/attributes/#79-blockage-class)",
+            "usage": null
+        },
+        {
+            "name": "cSelectionEffect",
+            "value": 80,
+            "type": "int",
+            "desc": "This is the attribute [Selection Effect](./../../attributes/attributes/#80-selection-effect)",
+            "usage": null
+        },
+        {
+            "name": "cAttack2Graphic",
+            "value": 81,
+            "type": "int",
+            "desc": "This is the attribute [Attack Graphic 2](./../../attributes/attributes/#131-attack-graphic-2). Note that this constant is wrong, and should be `131`.",
+            "usage": null
+        },
+        {
             "name": "cResourceCost",
             "value": 100,
             "type": "int",
@@ -1687,6 +1715,97 @@
             "value": 115,
             "type": "int",
             "desc": "This is the attribute [Area Damage](./../../attributes/attributes/#115-area-damage)",
+            "usage": null
+        },
+        {
+            "name": "cDamageReflection",
+            "value": 118,
+            "type": "int",
+            "desc": "This is the attribute [Damage Reflection](./../../attributes/attributes/#118-damage-reflection)",
+            "usage": null
+        },
+        {
+            "name": "cFriendlyFireDamage",
+            "value": 119,
+            "type": "int",
+            "desc": "This is the attribute [Friendly Fire Damage](./../../attributes/attributes/#119-friendly-fire-damage)",
+            "usage": null
+        },
+        {
+            "name": "cRegenerationHpPercent",
+            "value": 120,
+            "type": "int",
+            "desc": "This is the attribute [Regeneration Hp Percent](./../../attributes/attributes/#120-regeneration-hp-percent)",
+            "usage": null
+        },
+        {
+            "name": "cButtonIconId",
+            "value": 121,
+            "type": "int",
+            "desc": "This is the attribute [Button Icon Id](./../../attributes/attributes/#121-button-icon-id)",
+            "usage": null
+        },
+        {
+            "name": "cShortTooltipId",
+            "value": 122,
+            "type": "int",
+            "desc": "This is the attribute [Short Tooltip Id](./../../attributes/attributes/#122-short-tooltip-id)",
+            "usage": null
+        },
+        {
+            "name": "cExtendedTooltipId",
+            "value": 123,
+            "type": "int",
+            "desc": "This is the attribute [Extended Tooltip Id](./../../attributes/attributes/#123-extended-tooltip-id)",
+            "usage": null
+        },
+        {
+            "name": "cHotkeyAction",
+            "value": 124,
+            "type": "int",
+            "desc": "This is the attribute [Hotkey Action](./../../attributes/attributes/#124-hotkey-action)",
+            "usage": null
+        },
+        {
+            "name": "cChargeProjectileUnit",
+            "value": 125,
+            "type": "int",
+            "desc": "This is the attribute [Charge Projectile Unit](./../../attributes/attributes/#125-charge-projectile-unit)",
+            "usage": null
+        },
+        {
+            "name": "cAvailableFlag",
+            "value": 126,
+            "type": "int",
+            "desc": "This is the attribute [Available Flag](./../../attributes/attributes/#126-available-flag)",
+            "usage": null
+        },
+        {
+            "name": "cDisabledFlag",
+            "value": 127,
+            "type": "int",
+            "desc": "This is the attribute [Disabled Flag](./../../attributes/attributes/#127-disabled-flag)",
+            "usage": null
+        },
+        {
+            "name": "cAttackPriority",
+            "value": 128,
+            "type": "int",
+            "desc": "This is the attribute [Attack Priority](./../../attributes/attributes/#128-attack-priority)",
+            "usage": null
+        },
+        {
+            "name": "cInvulnerabilityLevel",
+            "value": 129,
+            "type": "int",
+            "desc": "This is the attribute [Invulnerability Level](./../../attributes/attributes/#129-invulnerability-level)",
+            "usage": null
+        },
+        {
+            "name": "cGarrisonFirepower",
+            "value": 130,
+            "type": "int",
+            "desc": "This is the attribute [Garrison Firepower](./../../attributes/attributes/#130-garrison-firepower)",
             "usage": null
         }
     ],

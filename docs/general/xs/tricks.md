@@ -6,7 +6,7 @@
 
 A house normally costs 25 wood, but what if we want to make it cost, lets say, 10 stone instead?
 
-```cpp
+```xs
 const int HOUSE = 70;
 
 xsEffectAmount(cMulAttribute, HOUSE, cWoodCost, -2, 1);

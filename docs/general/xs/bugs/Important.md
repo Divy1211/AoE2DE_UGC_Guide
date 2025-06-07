@@ -7,7 +7,7 @@ Expected Behaviour: These functions should work in an RMS as they do in scenario
 Reproduction Steps:
 
 1. Create a new RMS/Scenario with the following code XS script included:
-```cpp
+```xs
 void main() {
     xsResearchTechnology(22, true, false, 1);
     xsResearchTechnology(22, true, false, 1);

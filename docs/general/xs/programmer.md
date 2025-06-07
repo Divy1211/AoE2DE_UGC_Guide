@@ -26,7 +26,7 @@ To use an XS script:
 
 3. To begin with using XS, write this basic code in the file:
 
-    ```cpp
+    ```xs
     // this is a comment
     /* this
     is a multiline
@@ -51,15 +51,15 @@ To use an XS script:
 3. Now, under the `Triggers` tab in the editor, add a new trigger, then add a new effect. (If you do not know what a trigger/effect is, please go through the `Custom Scenarios: Triggers: Trigger Basics` section of this guide)
 4. From the `Effects List` select `Script Call`.
 5. You can now use the functions in the XS Script in the message box using a normal function call. Keep in mind, only those functions that do not take any parameters work here!
-6. The `main()` function that we made above is automatically run when the scenario is played.
+6. The `#!xs main()` function that we made above is automatically run when the scenario is played.
 7. If there are no errors in the code, clicking the `E#0: Script Call` effect will turn it green. If there is an error in the script, an error message will be shown.
-8. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `main()` function in the XS Script and `30` will be shown in the chat.
+8. Testing the scenario now will run the `Script Call` effect in the trigger defined above, which in turn will run the `#!xs main()` function in the XS Script and `30` will be shown in the chat.
 
 ### 1.2. In an RMS
 
 1. Open the RM Script in a text editor
 2. At the very top, type `#includeXS filename.xs`. Here, `filename.xs` is the name of the file that you created above.
-3. The `main();` function is automatically called when a map is generated using the RMS.
+3. The `#!xs main()` function is automatically called when a map is generated using the RMS.
 4. To test, load the RMS in a single player (or multi player) lobby and start the game.
 5. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
 
@@ -69,36 +69,36 @@ To use an XS script:
 2. Use `(inlcude "filename.xs")` at the top of the file to load an XS script.
 3. Use `xs-script-call "function name"` inside a `defrule` to call an xs function.
 4. We will use `xs-script-call "main"` to call the function we created above.
-5. To test, load the AI in a single player (or multi player) lobby and start the game. When the map is generated, the `main()` function in the XS Script will run and `30` will be shown in the chat.
+5. To test, load the AI in a single player (or multi player) lobby and start the game. When the map is generated, the `#!xs main()` function in the XS Script will run and `30` will be shown in the chat.
 6. It is recommended that you use a custom scenario to test XS Scripts, as it is easier to debug them in the editor.
 7. Note: Each AI runs its XS code separately, and they are executed on the computer of the host (AIs behave as if the host controls them)
 
-Now that you have set up an XS file with a `main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one:
+Now that you have set up an XS file with a `#!xs main()` function inside, you can type code inside this function to do different things! We'll be walking through all of the different things that are known to be possible one by one:
 
 ## 2. Variables Data Types
 There are a total of 5 data types supported by XS, they are:
 
 |**Data Type** | **Syntax** |
 | :-:          | :-:        |
-|`#!cpp int`    | `#!cpp int a = 10;`                     |
-|`#!cpp float`  | `#!cpp float a = 3.1;`                  |
-|`#!cpp string` | `#!cpp string a = "string";`            |
-|`#!cpp bool`   | `#!cpp bool a = true;`                  |
-|`#!cpp vector` | `#!cpp vector v = vector(1.2, 2.3, 3);` |
+|`#!xs int`    | `#!xs int a = 10;`                     |
+|`#!xs float`  | `#!xs float a = 3.1;`                  |
+|`#!xs string` | `#!xs string a = "string";`            |
+|`#!xs bool`   | `#!xs bool a = true;`                  |
+|`#!xs vector` | `#!xs vector v = vector(1.2, 2.3, 3);` |
 
 Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scripting > Function Reference > Vectors") section of this guide for all the different functions that can be used on vectors.
 
 !!! Bug "No Vars in Vector Initialisation"
-    Variables cannot be used in vector initialisation. For example: `#!cpp vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!cpp vector v = xsVectorSet(x, y, z);` instead.
+    Variables cannot be used in vector initialisation. For example: `#!xs vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!xs vector v = xsVectorSet(x, y, z);` instead.
 
 !!! info "Constants, Statics and Scope"
     1. Constant Variables
 
-        Syntax `#!cpp const int a = 10;` or `#!cpp const float PI = 3.1415;` will declare an immutable variable.
+        Syntax `#!xs const int a = 10;` or `#!xs const float PI = 3.1415;` will declare an immutable variable.
 
     2. Static Variables
 
-        Syntax `#!cpp static int counter = 0;` will declare a static variable.
+        Syntax `#!xs static int counter = 0;` will declare a static variable.
 
     3. Scope of a Variable
 
@@ -120,7 +120,7 @@ Refer to the [Mathematical Operations](../functions/#4-maths "Jump to: XS Script
 !!! warning "Unary Negative"
     There is no unary negative operator in XS
 
-    ```cpp
+    ```xs
     void main() {
         int a = 10;
 
@@ -170,16 +170,16 @@ Bitwise operations are not supported by XS.
 Negation is not supported by XS.
 
 !!! bug "DataType of Result of Operation"
-    Due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!cpp 9*5.5` evaluates to `#!cpp 49` instead of `#!cpp 49.5`. However, `#!cpp 5.5*9` will correctly evaluate to `#!cpp 49.5`.
+    Due to a bug at the moment, the data type of the answer of any operation is determined by the first operand. This means that `#!xs 9*5.5` evaluates to `#!xs 49` instead of `#!xs 49.5`. However, `#!xs 5.5*9` will correctly evaluate to `#!xs 49.5`.
 
 ## 4. Flow Control Statements
 The following flow control statements are supported by XS:
 
-1. `#!cpp if else if` construct:
+1. `#!xs if else if` construct:
 
     Example Syntax:
 
-    ```cpp
+    ```xs
     void main() {
         int a = 10;
         float b = 20;
@@ -194,11 +194,11 @@ The following flow control statements are supported by XS:
     }
     ```
 
-2. `#!cpp switch-case` construct:
+2. `#!xs switch-case` construct:
 
     Example Syntax:
     
-    ```cpp
+    ```xs
     void main() {
         int a = 10;
         switch(a) {
@@ -218,11 +218,11 @@ The following flow control statements are supported by XS:
     }
     ```
 
-3. `#!cpp while` loop:
+3. `#!xs while` loop:
 
     Example Syntax:
     
-    ```cpp
+    ```xs
     void main() {
         int a = 0;
         while(a < 10) {
@@ -232,11 +232,11 @@ The following flow control statements are supported by XS:
     }
     ```
 
-3. `#!cpp for` loop:
+3. `#!xs for` loop:
 
     Syntax:
     
-    ```cpp
+    ```xs
     void main() {
         // this loops a from 0 to 10
         for(a = 0; < 10)
@@ -257,7 +257,7 @@ The following flow control statements are supported by XS:
 
 Syntax:
 
-```cpp
+```xs
 returnType functionName(dataType parameter1 = defaultValue1, dataType parameter2 = defaultValue2) {
     return (value);
     // value must be enclosed by parantheses
@@ -266,7 +266,7 @@ returnType functionName(dataType parameter1 = defaultValue1, dataType parameter2
 
 Example Syntax:
 
-```cpp
+```xs
 int max(int a = 0, int b = 2) {
     if(a > b)
         return (a);
@@ -283,7 +283,7 @@ void main() {
 
 An XS Script can import other XS Scripts using the following syntax:
 
-```cpp
+```xs
 include "absolute/or/relative/path/to/file.xs";
 ```
 
@@ -291,11 +291,13 @@ include "absolute/or/relative/path/to/file.xs";
 
 Refer to the [Array Manipulation](../functions/#3-arrays "Jump to: XS Scriptig > Function Reference > Arrays") section of this guide on how to use arrays.
 
-Standard syntax like `#!cpp int a[] = new int[10];` or `#!cpp a[2];` is not supported by XS.
+Standard syntax like `#!xs int a[] = new int[10];` or `#!xs a[2];` is not supported by XS.
+
+Arrays are global and never go out of scope (only their IDs do).
 
 ## 7. Type Casting
 
-`#!cpp int`, `#!cpp float` and `#!cpp bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!cpp string a = "this would work "+5.6;`. However, `#!cpp string a = 5.5;` will not work, instead use: `#!cpp string a = ""+5.5;`.
+`#!xs int`, `#!xs float` and `#!xs bool` data types can be implicitly casted into each other. All of them can be implicitly casted into strings by doing `#!xs string a = "this would work "+5.6;`. However, `#!xs string a = 5.5;` will not work, instead use: `#!xs string a = ""+5.5;`.
 
 It is unknown if XS supports proper explicit type casting
 
@@ -305,7 +307,7 @@ A rule is a block of code that can be set to repeatedly execute at set intervals
 
 Syntax:
 
-```cpp
+```xs
 rule ruleName // This is the name of the rule. Follows same naming laws as variables.
 
     active/inactive // this is the initial state of the rule, active means that runs by default
@@ -328,7 +330,7 @@ rule ruleName // This is the name of the rule. Follows same naming laws as varia
 
 Example:
 
-```cpp
+```xs
 int a = 0;
 // This rule prints the value of a every 2 seconds.
 rule chatTheValueOfA

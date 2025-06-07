@@ -8,14 +8,14 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void test(int a = 0, int b = 0) {
     xsChatData("this is var a: %d", a);
     xsChatData("this is var b: %d", b);
 }
 ```
 3. Include the script in the scenario, and create a trigger with a script call condition/effect
-4. Type `#!cpp test(1, 2)`; in the message box for the script call
+4. Type `#!xs test(1, 2)`; in the message box for the script call
 5. When the scenario is played, no text is chatted to the screen, execution fails silently
 
 ### 2. Script Call A Function With Comments
@@ -29,7 +29,7 @@ Reproduction Steps:
 1. Create a new scenario
 2. Create a new trigger with a script call effect
 3. Place the following code inside the script call box:
-```cpp
+```xs
 void main() {
     // hello, world
     xsChatData("hello, world");

@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2024/12/07 01:18:56 |
+// | Generated on: 2025/04/14 19:37:36 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -351,7 +351,7 @@ extern const int cGaiaMulAttribute = -6;
 /** This is the ID of the `Gaia Multiply Resource` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#621-cgaiamulresource) */
 extern const int cGaiaMulResource = -7;
 
-/** This is the ID of the `Gaia Enable (or disable) Technology` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#622-cgaiaspawnunit) */
+/** This is the ID of the `Gaia Spawn Unit` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#622-cgaiaspawnunit) */
 extern const int cGaiaSpawnUnit = -8;
 
 /** This is the ID of the `Gaia Modify Technology` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#623-cgaiamodifytech) */
@@ -666,6 +666,18 @@ extern const int cRunningGraphic = 76;
 /** This is the attribute [Special Graphic](https://ugc.aoe2.rocks/general/attributes/attributes/#77-special-graphic) */
 extern const int cSpecialGraphic = 77;
 
+/** This is the attribute [Obstruction Type](https://ugc.aoe2.rocks/general/attributes/attributes/#78-obstruction-type) */
+extern const int cObstructionType = 78;
+
+/** This is the attribute [Blockage Class](https://ugc.aoe2.rocks/general/attributes/attributes/#79-blockage-class) */
+extern const int cBlockageClass = 79;
+
+/** This is the attribute [Selection Effect](https://ugc.aoe2.rocks/general/attributes/attributes/#80-selection-effect) */
+extern const int cSelectionEffect = 80;
+
+/** This is the attribute [Attack Graphic 2](https://ugc.aoe2.rocks/general/attributes/attributes/#131-attack-graphic-2). Note that this constant is wrong, and should be `131`. */
+extern const int cAttack2Graphic = 81;
+
 /** This is the attribute [Resource Costs](https://ugc.aoe2.rocks/general/attributes/attributes/#100-resource-costs) */
 extern const int cResourceCost = 100;
 
@@ -713,6 +725,45 @@ extern const int cFormationCategory = 114;
 
 /** This is the attribute [Area Damage](https://ugc.aoe2.rocks/general/attributes/attributes/#115-area-damage) */
 extern const int cAreaDamage = 115;
+
+/** This is the attribute [Damage Reflection](https://ugc.aoe2.rocks/general/attributes/attributes/#118-damage-reflection) */
+extern const int cDamageReflection = 118;
+
+/** This is the attribute [Friendly Fire Damage](https://ugc.aoe2.rocks/general/attributes/attributes/#119-friendly-fire-damage) */
+extern const int cFriendlyFireDamage = 119;
+
+/** This is the attribute [Regeneration Hp Percent](https://ugc.aoe2.rocks/general/attributes/attributes/#120-regeneration-hp-percent) */
+extern const int cRegenerationHpPercent = 120;
+
+/** This is the attribute [Button Icon Id](https://ugc.aoe2.rocks/general/attributes/attributes/#121-button-icon-id) */
+extern const int cButtonIconId = 121;
+
+/** This is the attribute [Short Tooltip Id](https://ugc.aoe2.rocks/general/attributes/attributes/#122-short-tooltip-id) */
+extern const int cShortTooltipId = 122;
+
+/** This is the attribute [Extended Tooltip Id](https://ugc.aoe2.rocks/general/attributes/attributes/#123-extended-tooltip-id) */
+extern const int cExtendedTooltipId = 123;
+
+/** This is the attribute [Hotkey Action](https://ugc.aoe2.rocks/general/attributes/attributes/#124-hotkey-action) */
+extern const int cHotkeyAction = 124;
+
+/** This is the attribute [Charge Projectile Unit](https://ugc.aoe2.rocks/general/attributes/attributes/#125-charge-projectile-unit) */
+extern const int cChargeProjectileUnit = 125;
+
+/** This is the attribute [Available Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#126-available-flag) */
+extern const int cAvailableFlag = 126;
+
+/** This is the attribute [Disabled Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#127-disabled-flag) */
+extern const int cDisabledFlag = 127;
+
+/** This is the attribute [Attack Priority](https://ugc.aoe2.rocks/general/attributes/attributes/#128-attack-priority) */
+extern const int cAttackPriority = 128;
+
+/** This is the attribute [Invulnerability Level](https://ugc.aoe2.rocks/general/attributes/attributes/#129-invulnerability-level) */
+extern const int cInvulnerabilityLevel = 129;
+
+/** This is the attribute [Garrison Firepower](https://ugc.aoe2.rocks/general/attributes/attributes/#130-garrison-firepower) */
+extern const int cGarrisonFirepower = 130;
 
 
 // 10. EffectAmount Object Class
@@ -986,13 +1037,13 @@ extern const int cAttributeFoodLimit = 31;
 /** ID of the player resource [Unit Limit](https://ugc.aoe2.rocks/general/resources/resources/#32-bonus-population-cap) */
 extern const int cAttributeUnitLimit = 32;
 
-/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-food-maintenance) */
+/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-unused-resource-33) */
 extern const int cAttributeMaintenance = 33;
 
-/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-faith) */
+/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-34) */
 extern const int cAttributeFaith = 34;
 
-/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-faith-recharging-rate) */
+/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-unused-resource-35) */
 extern const int cAttributeFaithRechargeRate = 35;
 
 /** ID of the player resource [Farm Food](https://ugc.aoe2.rocks/general/resources/resources/#36-farm-food-amount) */
@@ -1100,7 +1151,7 @@ extern const int cAttributeTrainingCount = 81;
 /** ID of the player resource [Raider](https://ugc.aoe2.rocks/general/resources/resources/#82-start-with-unit-444-ptwc) */
 extern const int cAttributeRaider = 82;
 
-/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-boarding-recharge-rate) */
+/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-unused-resource-83) */
 extern const int cAttributeBoardingRechargeRate = 83;
 
 /** ID of the player resource [Starting Villagers](https://ugc.aoe2.rocks/general/resources/resources/#84-starting-villagers) */
@@ -1265,7 +1316,7 @@ extern const int cAttributeHeresy = 192;
 /** ID of the player resource [Theocracy](https://ugc.aoe2.rocks/general/resources/resources/#193-theocracy) */
 extern const int cAttributeTheocracy = 193;
 
-/** ID of the player resource [Crenellations](https://ugc.aoe2.rocks/general/resources/resources/#194-crenellations) */
+/** ID of the player resource [Crenellations](https://ugc.aoe2.rocks/general/resources/resources/#194-unused-resource-194) */
 extern const int cAttributeCrenellations = 194;
 
 /** ID of the player resource [Construction Rate Mod](https://ugc.aoe2.rocks/general/resources/resources/#195-construction-rate-modifier) */
@@ -1403,25 +1454,25 @@ extern const int cAttributeTradeStonePercent = 253;
 /** ID of the player resource [Livestock Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#254-livestock-food-productivity) */
 extern const int cAttributeLivestockFoodProductivity = 254;
 
-/** ID of the player resource [Speed Up Building Type](https://ugc.aoe2.rocks/general/resources/resources/#255-speed-up-building-type) */
+/** ID of the player resource [Speed Up Building Type](https://ugc.aoe2.rocks/general/resources/resources/#255-unused-resource-255) */
 extern const int cAttributeSpeedUpBuildingType = 255;
 
-/** ID of the player resource [Speed Up Building Range](https://ugc.aoe2.rocks/general/resources/resources/#256-speed-up-building-range) */
+/** ID of the player resource [Speed Up Building Range](https://ugc.aoe2.rocks/general/resources/resources/#256-unused-resource-256) */
 extern const int cAttributeSpeedUpBuildingRange = 256;
 
-/** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-speed-up-percentage) */
+/** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-unused-resource-257) */
 extern const int cAttributeSpeedUpPercentage = 257;
 
-/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-speed-up-object-type) */
+/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
 extern const int cAttributeSpeedUpObjectType = 258;
 
-/** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-speed-up-effect-type) */
+/** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-unused-resource-259) */
 extern const int cAttributeSpeedUpEffectType = 259;
 
-/** ID of the player resource [Speed Up Secondary Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#260-speed-up-secondary-effect-type) */
+/** ID of the player resource [Speed Up Secondary Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#260-unused-resource-260) */
 extern const int cAttributeSpeedUpSecondaryEffectType = 260;
 
-/** ID of the player resource [Speed Up Secondary Percentage](https://ugc.aoe2.rocks/general/resources/resources/#261-speed-up-secondary-percentage) */
+/** ID of the player resource [Speed Up Secondary Percentage](https://ugc.aoe2.rocks/general/resources/resources/#261-unused-resource-261) */
 extern const int cAttributeSpeedUpSecondaryPercentage = 261;
 
 /** ID of the player resource [Civ Name Override](https://ugc.aoe2.rocks/general/resources/resources/#262-civilization-name-override) */
@@ -1481,10 +1532,10 @@ extern const int cAttributeSpawnStayInside = 283;
 /** ID of the player resource [Cavalry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#284-cavalry-kill-reward) */
 extern const int cAttributeCavalryKillReward = 284;
 
-/** ID of the player resource [Trigger Shared Visibility](https://ugc.aoe2.rocks/general/resources/resources/#285-trigger-shared-visibility) */
+/** ID of the player resource [Trigger Shared Visibility](https://ugc.aoe2.rocks/general/resources/resources/#285-shared-visibility) */
 extern const int cAttributeTriggerSharedVisibility = 285;
 
-/** ID of the player resource [Trigger Shared Exploration](https://ugc.aoe2.rocks/general/resources/resources/#286-trigger-shared-exploration) */
+/** ID of the player resource [Trigger Shared Exploration](https://ugc.aoe2.rocks/general/resources/resources/#286-shared-exploration) */
 extern const int cAttributeTriggerSharedExploration = 286;
 
 /** ID of the player resource [Gaia Kills](https://ugc.aoe2.rocks/general/resources/resources/#300-killed-gaia) */
@@ -1917,62 +1968,62 @@ vector xsVectorSetZ(vector v = vector(-1, -1, -1), float z = -1.0) {}
 // 3. Arrays
 
 /**
-* Creates an array of type bool and returns its ID.
+* Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 *
 * @param size The length of the array to create
-* @param defaultValue The default value to initialise all the values in the array to
-* @param uniqueName A unique name of the created array
+* @param defaultValue The default value to initialise all the values in the array to. If not set all array values will be false
+* @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
 */
 int xsArrayCreateBool(int size = -1, bool defaultValue = false, string uniqueName = "") {}
 
 /**
-* Creates an array of type float and returns its ID.
+* Creates an array of type float and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 *
 * @param size The length of the array to create
-* @param defaultValue The default value to initialise all the values in the array to
-* @param uniqueName A unique name of the created array
+* @param defaultValue The default value to initialise all the values in the array to. If not set all array values will be 0.0
+* @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
 */
 int xsArrayCreateFloat(int size = -1, float defaultValue = -1.0, string uniqueName = "") {}
 
 /**
-* Creates an array of type int and returns its ID.
+* Creates an array of type int and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 *
 * @param size The length of the array to create
-* @param defaultValue The default value to initialise all the values in the array to
-* @param uniqueName A unique name of the created array
+* @param defaultValue The default value to initialise all the values in the array to. If not set all array values will be 0
+* @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
 */
 int xsArrayCreateInt(int size = -1, int defaultValue = -1, string uniqueName = "") {}
 
 /**
-* Creates an array of type String and returns its ID.
+* Creates an array of type String and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 *
 * @param size The length of the array to create
-* @param defaultValue The default value to initialise all the values in the array to
-* @param uniqueName A unique name of the created array
+* @param defaultValue The default value to initialise all the values in the array to. If not set all array values will be "<default string>"
+* @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
 */
 int xsArrayCreateString(int size = -1, string defaultValue = "", string uniqueName = "") {}
 
 /**
-* Creates an array of type Vector and returns its ID.
+* Creates an array of type Vector and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 *
 * @param size The length of the array to create
-* @param defaultValue The default value to initialise all the values in the array to
-* @param uniqueName A unique name of the created array
+* @param defaultValue The default value to initialise all the values in the array to. If not set all array values will be vector(-1.0, -1.0, -1.0)
+* @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
 */
 int xsArrayCreateVector(int size = -1, vector defaultValue = vector(-1, -1, -1), string uniqueName = "") {}
 
 /**
-* Gets and returns the value of the given bool array at the specifed index.
+* Gets and returns the value of the given bool array at the specified index.
 *
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
@@ -1982,7 +2033,7 @@ int xsArrayCreateVector(int size = -1, vector defaultValue = vector(-1, -1, -1),
 bool xsArrayGetBool(int arrayID = -1, int index = -1) {}
 
 /**
-* Gets and returns the value of the given float array at the specifed index.
+* Gets and returns the value of the given float array at the specified index.
 *
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
@@ -1992,7 +2043,7 @@ bool xsArrayGetBool(int arrayID = -1, int index = -1) {}
 float xsArrayGetFloat(int arrayID = -1, int index = -1) {}
 
 /**
-* Gets and returns the value of the given int array at the specifed index.
+* Gets and returns the value of the given int array at the specified index.
 *
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
@@ -2011,7 +2062,7 @@ int xsArrayGetInt(int arrayID = -1, int index = -1) {}
 int xsArrayGetSize(int arrayID = -1) {}
 
 /**
-* Gets and returns the value of the given String array at the specifed index.
+* Gets and returns the value of the given string array at the specified index.
 *
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
@@ -2021,7 +2072,7 @@ int xsArrayGetSize(int arrayID = -1) {}
 string xsArrayGetString(int arrayID = -1, int index = -1) {}
 
 /**
-* Gets and returns the value of the given Vector array at the specifed index.
+* Gets and returns the value of the given vector array at the specified index.
 *
 * @param arrayID The ID of the array to get the value from
 * @param index The index to get the value of
@@ -2031,7 +2082,7 @@ string xsArrayGetString(int arrayID = -1, int index = -1) {}
 vector xsArrayGetVector(int arrayID = -1, int index = -1) {}
 
 /**
-* Resizes the the given bool array to the specifed size and returns 1.
+* Resizes the the given bool array to the specified size and returns 1.
 *
 * @param arrayID The ID of the array to resize
 * @param newSize The new size of the array
@@ -2041,7 +2092,7 @@ vector xsArrayGetVector(int arrayID = -1, int index = -1) {}
 int xsArrayResizeBool(int arrayID = -1, int newSize = -1) {}
 
 /**
-* Resizes the the given float array to the specifed size and returns 1.
+* Resizes the the given float array to the specified size and returns 1.
 *
 * @param arrayID The ID of the array to resize
 * @param newSize The new size of the array
@@ -2051,7 +2102,7 @@ int xsArrayResizeBool(int arrayID = -1, int newSize = -1) {}
 int xsArrayResizeFloat(int arrayID = -1, int newSize = -1) {}
 
 /**
-* Resizes the the given int array to the specifed size and returns 1.
+* Resizes the the given int array to the specified size and returns 1.
 *
 * @param arrayID The ID of the array to resize
 * @param newSize The new size of the array
@@ -2061,7 +2112,7 @@ int xsArrayResizeFloat(int arrayID = -1, int newSize = -1) {}
 int xsArrayResizeInt(int arrayID = -1, int newSize = -1) {}
 
 /**
-* Resizes the the given String array to the specifed size and returns 1.
+* Resizes the the given string array to the specified size and returns 1.
 *
 * @param arrayID The ID of the array to resize
 * @param newSize The new size of the array
@@ -2071,7 +2122,7 @@ int xsArrayResizeInt(int arrayID = -1, int newSize = -1) {}
 int xsArrayResizeString(int arrayID = -1, int newSize = -1) {}
 
 /**
-* Resizes the the given Vector array to the specifed size and returns 1.
+* Resizes the the given vector array to the specified size and returns 1.
 *
 * @param arrayID The ID of the array to resize
 * @param newSize The new size of the array
@@ -2081,7 +2132,7 @@ int xsArrayResizeString(int arrayID = -1, int newSize = -1) {}
 int xsArrayResizeVector(int arrayID = -1, int newSize = -1) {}
 
 /**
-* Sets the valuat the specified indedx e of the given bool arrindex to the provided value and returns 1.
+* Sets the value at the specified index of the given bool array to the provided value and returns 1.
 *
 * @param arrayID The ID of the array to set the value in
 * @param index The index to set the value of
@@ -2092,7 +2143,7 @@ int xsArrayResizeVector(int arrayID = -1, int newSize = -1) {}
 int xsArraySetBool(int arrayID = -1, int index = -1, bool value = false) {}
 
 /**
-* Sets the valueat the specified indedx  of the given float array to the provided value and returns 1.
+* Sets the value at the specified index of the given float array to the provided value and returns 1.
 *
 * @param arrayID The ID of the array to set the value in
 * @param index The index to set the value of
@@ -2103,7 +2154,7 @@ int xsArraySetBool(int arrayID = -1, int index = -1, bool value = false) {}
 int xsArraySetFloat(int arrayID = -1, int index = -1, float value = -1.0) {}
 
 /**
-* Sets the valat the specified indedx ue of the given int arrindex to the provided value and returns 1.
+* Sets the value at the specified index of the given int array to the provided value and returns 1.
 *
 * @param arrayID The ID of the array to set the value in
 * @param index The index to set the value of
@@ -2114,7 +2165,7 @@ int xsArraySetFloat(int arrayID = -1, int index = -1, float value = -1.0) {}
 int xsArraySetInt(int arrayID = -1, int index = -1, int value = -1) {}
 
 /**
-* Sets the value at the specified indedx of the given String array to the provided value and returns 1.
+* Sets the value at the specified index of the given string array to the provided value and returns 1.
 *
 * @param arrayID The ID of the array to set the value in
 * @param index The index to set the value of
@@ -2125,7 +2176,7 @@ int xsArraySetInt(int arrayID = -1, int index = -1, int value = -1) {}
 int xsArraySetString(int arrayID = -1, int index = -1, string value = "") {}
 
 /**
-* Sets the value at the specified indedx of the given Vector array to the provided value and returns 1.
+* Sets the value at the specified index of the given vector array to the provided value and returns 1.
 *
 * @param arrayID The ID of the array to set the value in
 * @param index The index to set the value of
@@ -2196,7 +2247,7 @@ float cos(float x = -1.0) {}
 * Returns x raised to the power y (x**y).
 *
 * @param x The base value
-* @param y The exponenet to raise the base value to
+* @param y The exponent to raise the base value to
 *
 * @returns float
 */
@@ -2228,6 +2279,15 @@ float sqrt(float x = -1.0) {}
 * @returns float
 */
 float tan(float x = -1.0) {}
+
+/**
+* Rounds the number **up** to the next integer
+*
+* @param value The value to determine the ceil of
+*
+* @returns int
+*/
+int xsCeilToInt(float value = -1.0) {}
 
 
 // 5. General
@@ -2300,6 +2360,17 @@ int xsGetMapWidth() {}
 int xsGetNumPlayers() {}
 
 /**
+* Returns the attribute value for an object
+*
+* @param playerId The player whose unit to get the attribute for
+* @param objectId The unit to get the attribute for
+* @param attribute The attribute to get
+*
+* @returns float
+*/
+float xsGetObjectAttribute(int playerId = -1, int objectId = -1, int attribute = -1) {}
+
+/**
 * Returns the number of currently alive objects with the given ID of the specified player
 *
 * @param playerId The player to get the object count for
@@ -2320,7 +2391,7 @@ int xsGetObjectCount(int playerId = -1, int id = -1) {}
 int xsGetObjectCountTotal(int playerId = -1, int id = -1) {}
 
 /**
-* Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scriptin > Constant Reference > #3. Civs") for all the different civ IDs
+* Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scripting > Constant Reference > #3. Civs") for all the different civ IDs
 *
 * @param playerNumber The player to get the civilization of
 *
@@ -2340,7 +2411,7 @@ bool xsGetPlayerInGame(int playerNumber = -1) {}
 /**
 * Returns the number of technologies available to the player in the entire game.
 *
-* @param playerNumber The player whoes technology count is being requested.
+* @param playerNumber The player whose technology count is being requested.
 *
 * @returns int
 */
@@ -2422,7 +2493,7 @@ int xsGetVictoryTime() {}
 int xsGetVictoryTimeForSecondaryGameMode() {}
 
 /**
-* Returns an integer corresponding to different victory settings ingame. These are:
+* Returns an integer corresponding to different victory settings in game. These are:
 * 
 *  0: Standard
 * 
@@ -2512,7 +2583,7 @@ void xsSetTriggerVariable(int variableID = -1, int value = -1) {}
 /**
 * Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 * 
-* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!cpp xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
 *
 * @param unitId The unit to add the task to
 * @param actionType Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
@@ -2531,8 +2602,8 @@ void xsTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, int pla
 *     - 1: Work Value 2 (Task 155 - Min number of units required to activate the effect. See Monaspa)
 *     - 2: Work Range
 *     - 3: Work Flag 2
-*     - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), 116 - Melee Armor, 117 - Pierce Armor)
-*     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Unused, 16 - Unused, 32 - Translucent)
+*     - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), [Conversion Chance Modifier](../../attributes/attributes/#113-conversion-chance-modifier), 116 - Melee Armor, 117 - Pierce Armor)
+*     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Temporary Aura, 16 - Use with 8 - applies buffs only units around when the ability is triggered, 32 - Translucent)
 *     - 6: Target Diplomacy
 * @param value The value to set the task field to
 *
@@ -2553,16 +2624,16 @@ int xsTriggerVariable(int variableID = -1) {}
 // 6. Read/Write
 
 /**
-* Close the currently opened or created file. Returns `#!cpp true` if the file was successfully closed
+* Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed
 *
 * @returns bool
 */
 bool xsCloseFile() {}
 
 /**
-* Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!cpp true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
+* Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!xs true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
 *
-* @param append Default: `#!cpp true`. If set to `#!cpp false`, this will overwrite any existing file with the same name.
+* @param append Default: `#!xs true`. If set to `#!xs false`, this will overwrite any existing file with the same name.
 *
 * @returns bool
 */
@@ -2594,15 +2665,15 @@ int xsGetFileSize() {}
 /**
 * Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 *
-* @param dataType The [cOffset constants](../constants/#1-readwrite "Jump To: XS > Constant Reference > Read/Write Constants") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceeding the chars of the string)
-* @param forward Default: `#!cpp true`. Setting this to `#!cpp false` will make the file position move back
+* @param dataType The [cOffset constants](../constants/#1-readwrite "Jump To: XS > Constant Reference > Read/Write Constants") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
+* @param forward Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
 *
 * @returns bool
 */
 bool xsOffsetFilePosition(int dataType = -1, bool forward = false) {}
 
 /**
-* Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!cpp true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
+* Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!xs true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
 *
 * @param filename The name of the file to open, without the `.xsdat` extension
 *
@@ -2648,7 +2719,7 @@ vector xsReadVector() {}
 bool xsSetFilePosition(int byteOffset = -1) {}
 
 /**
-* Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
+* Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
 *
 * @param data The float value to write
 *
@@ -2657,7 +2728,7 @@ bool xsSetFilePosition(int byteOffset = -1) {}
 bool xsWriteFloat(float data = -1.0) {}
 
 /**
-* Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the integer was successfully written. Integers are written as signed 32 bit numbers
+* Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the integer was successfully written. Integers are written as signed 32 bit numbers
 *
 * @param data The integer to write
 *
@@ -2666,7 +2737,7 @@ bool xsWriteFloat(float data = -1.0) {}
 bool xsWriteInt(int data = -1) {}
 
 /**
-* Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
+* Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
 *
 * @param data The string to write
 *
@@ -2675,7 +2746,7 @@ bool xsWriteInt(int data = -1) {}
 bool xsWriteString(string data = "") {}
 
 /**
-* Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!cpp true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
+* Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
 *
 * @param data The vector to write
 *
@@ -2730,7 +2801,7 @@ int xsSetStrategicNumber(int id = -1, int value = -1) {}
 /**
 * A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 *
-* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!cpp xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
+* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 * @param functionName This is the name of a user defined function that takes a single integer argument
 * @param functionArgument This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 *

@@ -42,6 +42,7 @@ nav:
     - Tricks:                       "general/xs/tricks.md"
     - Functions Reference:          "general/xs/functions.md"
     - Constant Reference:           "general/xs/constants.md"
+    - Useful Resources:             "general/xs/useful.md"
     - Known Bugs:
       -                             "general/xs/bugs/index.md"
       - Chat Data:                  "general/xs/bugs/Chat Data.md"
@@ -57,8 +58,13 @@ nav:
 #   - Data Mods
 #     - Advanced Genie Editor:
 #       - A.G.E. Basics:            "mods/age/basics.md"
-#   - RMS:
+  - RMS:
+    -                               "rms/index.md"
 #     - RMS Basics:                 "rms/basics.md"
+  - AI:
+    -                               "ai/index.md"
+  - Audio:
+    -                               "audio/index.md"
 
 markdown_extensions:
   - attr_list
@@ -143,6 +149,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js
 extra_css:
   - ./css/style.css
+  - ./css/monokai-pro.css
 extra:
   analytics:
     provider: google

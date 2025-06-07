@@ -3,6 +3,8 @@
 
 ---
 
+Foreword: This page is quite outdated, and no longer accurately reflects the damage calculation algorithm. It is majorly still correct as this algorithm is still the foundation for the system, but additional attributes affect the calculation too which are not discussed here.
+
 ## 1. The Purpose
 
 Have you ever wondered how bonus damage works in AoE2? How does a Halberdier get its +32 damage against cavalry? How does a Cataphract only take +16 damage from Halbderdiers instead of the full 32? And finally, how could **you** give bonus damage or armour against bonus damage to units for yourself? Lets find the answers to these questions by learning about the armour and attack class system of AoE2

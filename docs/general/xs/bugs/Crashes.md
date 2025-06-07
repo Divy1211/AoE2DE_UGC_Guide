@@ -8,7 +8,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     // This crashes the game altogether
 
@@ -32,7 +32,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     goto non_existent_label;
 }
@@ -42,7 +42,7 @@ void main() {
 
 ### 3. Crash On Using An Integer Larger Than `999_999_999` In Chat Data
 
-Description: Trying to chan an `#!cpp int` that is bigger than `999_999_999` with `%d` in `xsChatData` causes a crash
+Description: Trying to chan an `#!xs int` that is bigger than `999_999_999` with `%d` in `xsChatData` causes a crash
 
 Expected Behaviour: The int value should be printed properly as expected
 
@@ -50,7 +50,7 @@ Reproduction Steps:
 
 1. Create a new scenario or RMS
 2. Create a new XS script with the following code:
-```cpp
+```xs
 void main() {
     int a = 999999999+1;
 

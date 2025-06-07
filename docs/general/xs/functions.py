@@ -15,9 +15,9 @@ for index, (category, functions) in enumerate(function_docs.items(), 1):
     for f_index, func in enumerate(functions, 1):
         outmd += f"### {index}.{f_index}. {func['name']}\n\n"
 
-        outmd += f"Returning Type: `#!cpp {func['return_type']}`\n\n"
+        outmd += f"Returning Type: `#!xs {func['return_type']}`\n\n"
 
-        outmd += f"Prototype: `#!cpp {func['return_type']} {func['name']}("
+        outmd += f"Prototype: `#!xs {func['return_type']} {func['name']}("
         for param in func['params']:
             outmd+=f"{param['type']} {param['name']}, "        
         if len(func['params']) != 0:
@@ -29,7 +29,7 @@ for index, (category, functions) in enumerate(function_docs.items(), 1):
 
         for p_index, param in enumerate(func['params'], 1):
             optional = "" if param['required'] else "(Optional)"
-            outmd += f"{p_index}. {optional} `#!cpp {param['type']} {param['name']}`: {param['desc']}\n"
+            outmd += f"{p_index}. {optional} `#!xs {param['type']} {param['name']}`: {param['desc']}\n"
         
         outmd+="\n"
         
