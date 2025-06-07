@@ -126,7 +126,7 @@ bool xsRemoveAura(
     int auraUnit = -1, /* unit from which remove the aura */
     int affectedUnit = -1, /* unit or unit class (9xx) to be affected by the aura */
     int player = -1, /* aura unit player, does not work with -1, make multiple calls to all players instead */
-    int attribute = -1, /* aura attribute, not all attributes supported by auras, constants are provided */
+    int attribute = -1 /* aura attribute, not all attributes supported by auras, constants are provided */
 ) { 
     /* Function removes the aura added by xsAddAura. Leaves combat ability unchanged. Removing auras "freezes" the unit for further non task modifications.
     Function returns `true` if function parameter validation passed and `false` if it did not (no aura removed). */
