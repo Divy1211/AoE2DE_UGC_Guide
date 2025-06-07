@@ -1,4 +1,4 @@
-*Written by: Alian713, Kramb*
+*Written by: Alian713 & Kramb*
 
 ---
 
