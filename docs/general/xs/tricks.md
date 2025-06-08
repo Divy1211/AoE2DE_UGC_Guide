@@ -127,7 +127,8 @@ bool xsRemoveAura(
     int affectedUnit = -1, /* unit or unit class (9xx) to be affected by the aura */
     int player = -1, /* aura unit player, does not work with -1, make multiple calls to all players instead */
     int attribute = -1, /* aura attribute, not all attributes supported by auras, constants are provided */
-    bool removeTempAuraAttributes = false /* if set removes temp aura attributes from unit */
+    bool removeTempAuraAttributes = false, /* if set removes temp aura attributes from unit */
+    bool removeAllAuraAbilities = false /* if set removes unit aura ability disabling all auras and removing indicators */
 ) { 
     /* Function removes the aura added by xsAddAura. Leaves combat ability unchanged. Removing auras "freezes" the unit for further non task modifications.
     Function returns `true` if function parameter validation passed and `false` if it did not (no aura removed). */
@@ -152,6 +153,23 @@ bool xsRemoveAura(
             xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cChargeType, 0.0, player);
+        }
+    }
+
+    /* Remove combat ability */
+    if (removeAllAuraAbilities) {
+        int ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
+        int caMod = 0;
+        int auraBit = (ca / 32) % 2;
+        if (auraBit == 1) {
+            caMod = -32;
+        }
+        int selfBit = (ca / 64) % 2;
+        if (selfBit == 1) {
+            caMod = caMod - 64;
+        }
+        if (caMod != 0) {
+            xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
         }
     }
 
