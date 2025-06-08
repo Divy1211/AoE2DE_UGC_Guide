@@ -74,7 +74,7 @@ bool xsAddAura(
         caMod = caMod - 64;
     }
     if (caMod != 0) {
-        xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
+        xsEffectAmount(setCommand, auraUnit, cCombatAbility, 0.0 + ca + caMod, player);
     }
 
     /* Setting temporary aura values if enabled */
@@ -88,11 +88,11 @@ bool xsAddAura(
         }
         xsEffectAmount(setCommand, auraUnit, cMaxCharge, maxCharge, player);
         xsEffectAmount(setCommand, auraUnit, cRechargeRate, cdRatio, player);
-        xsEffectAmount(setCommand, auraUnit, cChargeEvent, tempAuraDuration, player);
+        xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0 + tempAuraDuration, player);
         xsEffectAmount(setCommand, auraUnit, cChargeType, -3.0, player);
     } else {
-        float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
-        if (ct == -3.0) {
+        int ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
+        if (ct == -3) {
             xsEffectAmount(setCommand, auraUnit, cMaxCharge, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0, player);
@@ -106,17 +106,16 @@ bool xsAddAura(
         float auf = affectedUnit;
         statMod = (auf - 900.0) / 100000.0;
     }
-    float af = attribute;
-    float attributeAndMod = af + statMod;
+    float attributeAndMod = statMod + attribute;
 
     /* Setting aura task */
     xsTaskAmount(0, value);
-    xsTaskAmount(1, unitsInRangeToTurnOn);
+    xsTaskAmount(1, 0.0 + unitsInRangeToTurnOn);
     xsTaskAmount(2, range);
     xsTaskAmount(3, 0.0);
     xsTaskAmount(4, attributeAndMod);
-    xsTaskAmount(5, auraEffectsBitField);
-    xsTaskAmount(6, targetDiplomacy);
+    xsTaskAmount(5, 0.0 + auraEffectsBitField);
+    xsTaskAmount(6, 0.0 + targetDiplomacy);
     xsTask(auraUnit, 155, affectedUnit, player);
 
     return (true);
@@ -143,8 +142,8 @@ bool xsRemoveAura(
 
     /* Remove temporary aura values */
     if (removeTempAuraAttributes) {
-        float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
-        if (ct == -3.0) {
+        int ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
+        if (ct == -3) {
             int setCommand = cSetAttribute;
             if (player == 0) {
                 setCommand = cGaiaSetAttribute;
@@ -169,7 +168,7 @@ bool xsRemoveAura(
             caMod = caMod - 64;
         }
         if (caMod != 0) {
-            xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
+            xsEffectAmount(setCommand, auraUnit, cCombatAbility, 0.0 + ca + caMod, player);
         }
     }
 
@@ -179,8 +178,7 @@ bool xsRemoveAura(
         float auf = affectedUnit;
         statMod = (auf - 900.0) / 100000.0;
     }
-    float af = attribute;
-    float attributeAndMod = af + statMod;
+    float attributeAndMod = statMod + attribute;
 
     /* Setting aura task */
     xsTaskAmount(4, attributeAndMod);
@@ -215,6 +213,7 @@ const int cAuraDiplomacyGaiaYouAlly = 4;
 const int cAuraDiplomacyGaiaNeutralAlly = 5;
 const int cAuraDiplomacyAllButYou = 6;
 ```
+
 To use, copy the code above to a non-running `Script Call` effect or to your scenarios `.xs` file and then call the function in your xs code, eg:
 
 ```cpp
