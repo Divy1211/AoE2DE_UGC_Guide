@@ -81,7 +81,7 @@ bool xsAddAura(
     int tempEffectBit = (auraEffectsBitField / 8) % 2;
     if (tempEffectBit == 1) {
         float maxCharge = 1.0;
-        float cdRatio = maxCharge;
+        float cdRatio = 1000.0;
         if (tempAuraCooldown > 0) {
             float tacf = tempAuraCooldown;
             cdRatio = maxCharge / tacf;
