@@ -26,8 +26,8 @@ bool xsAddAura(
     int affectedUnit = -1, /* unit or unit class (9xx) to be affected by the aura */
     int player = -1, /* aura unit player, does not work with -1, make multiple calls to all players instead */
     int attribute = -1, /* aura attribute, not all attributes supported by auras, constants are provided */
-    float value = 0.0, /* aura value */ 
-    float range = 0.0,  /* aura range */
+    float value = 0, /* aura value */ 
+    float range = 0,  /* aura range */
     int auraEffectsBitField = 0, /* bit field for aura effects, constants are provided, add them together for multiple effects */
     int targetDiplomacy = 0, /* aura target diplomacy, controls what diplomacy target unit needs to be to be affected, constants are provided */
     int tempAuraDuration = 0, /* only works with cAuraEffectBitTemporary effect, specifies how long the temp aura lasts in seconds */
@@ -47,7 +47,7 @@ bool xsAddAura(
     if (attribute != 0 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 && attribute != 120) {
         return (false);
     }
-    if (range < 0.0 || auraEffectsBitField < 0 || targetDiplomacy < 0 || targetDiplomacy > 6 || unitsInRangeToTurnOn < 0 || tempAuraDuration < 0 || tempAuraCooldown < 0) {
+    if (range < 0 || auraEffectsBitField < 0 || targetDiplomacy < 0 || targetDiplomacy > 6 || unitsInRangeToTurnOn < 0 || tempAuraDuration < 0 || tempAuraCooldown < 0) {
         return (false);
     }
 
@@ -58,30 +58,30 @@ bool xsAddAura(
     }
 
     /* Setting right combat ability flags */
-    int ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
+    float ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
     if (ca < 0) {
         ca = 0;
     }
-    int caMod = 0;
-    int auraBit = (ca / 32) % 2;
+    float caMod = 0;
+    float auraBit = (ca / 32) % 2;
     if (auraBit == 0) {
         caMod = 32;
     }
-    int selfBit = (ca / 64) % 2;
+    float selfBit = (ca / 64) % 2;
     if (affectSelf && selfBit == 0) {
         caMod = caMod + 64;
     } else if (affectSelf == false && selfBit == 1) {
         caMod = caMod - 64;
     }
     if (caMod != 0) {
-        xsEffectAmount(setCommand, auraUnit, cCombatAbility, 0.0 + ca + caMod, player);
+        xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
     }
 
     /* Setting temporary aura values if enabled */
     int tempEffectBit = (auraEffectsBitField / 8) % 2;
     if (tempEffectBit == 1) {
-        float maxCharge = 1.0;
-        float cdRatio = 1000.0;
+        float maxCharge = 1;
+        float cdRatio = 1000;
         if (tempAuraCooldown > 0) {
             float tacf = tempAuraCooldown;
             cdRatio = maxCharge / tacf;
@@ -91,7 +91,7 @@ bool xsAddAura(
         xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0 + tempAuraDuration, player);
         xsEffectAmount(setCommand, auraUnit, cChargeType, -3.0, player);
     } else {
-        int ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
+        float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
         if (ct == -3) {
             xsEffectAmount(setCommand, auraUnit, cMaxCharge, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
@@ -101,19 +101,17 @@ bool xsAddAura(
     }
 
     /* Workaround for a bug setting multiple unit classes with an aura*/
-    float statMod = 0.0;
+    float statMod = 0;
     if (affectedUnit >= 900 && affectedUnit < 1000) {
-        float auf = affectedUnit;
-        statMod = (auf - 900.0) / 100000.0;
+        statMod = (0.0 + affectedUnit - 900) / 100000;
     }
-    float attributeAndMod = statMod + attribute;
 
     /* Setting aura task */
     xsTaskAmount(0, value);
     xsTaskAmount(1, 0.0 + unitsInRangeToTurnOn);
     xsTaskAmount(2, range);
     xsTaskAmount(3, 0.0);
-    xsTaskAmount(4, attributeAndMod);
+    xsTaskAmount(4, statMod + attribute);
     xsTaskAmount(5, 0.0 + auraEffectsBitField);
     xsTaskAmount(6, 0.0 + targetDiplomacy);
     xsTask(auraUnit, 155, affectedUnit, player);
@@ -142,7 +140,7 @@ bool xsRemoveAura(
 
     /* Remove temporary aura values */
     if (removeTempAuraAttributes) {
-        int ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
+        float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
         if (ct == -3) {
             int setCommand = cSetAttribute;
             if (player == 0) {
@@ -157,31 +155,29 @@ bool xsRemoveAura(
 
     /* Remove combat ability */
     if (removeAllAuraAbilities) {
-        int ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
-        int caMod = 0;
-        int auraBit = (ca / 32) % 2;
+        float ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
+        float caMod = 0;
+        float auraBit = (ca / 32) % 2;
         if (auraBit == 1) {
             caMod = -32;
         }
-        int selfBit = (ca / 64) % 2;
+        float selfBit = (ca / 64) % 2;
         if (selfBit == 1) {
             caMod = caMod - 64;
         }
         if (caMod != 0) {
-            xsEffectAmount(setCommand, auraUnit, cCombatAbility, 0.0 + ca + caMod, player);
+            xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
         }
     }
 
     /* Workaround for a bug setting multiple unit classes with an aura*/
-    float statMod = 0.0;
+    float statMod = 0;
     if (affectedUnit >= 900 && affectedUnit < 1000) {
-        float auf = affectedUnit;
-        statMod = (auf - 900.0) / 100000.0;
+        statMod = (0.0 + affectedUnit - 900) / 100000;
     }
-    float attributeAndMod = statMod + attribute;
 
     /* Setting aura task */
-    xsTaskAmount(4, attributeAndMod);
+    xsTaskAmount(4, statMod + attribute);
     xsRemoveTask(auraUnit, 155, affectedUnit, player);
 
     return (true);
@@ -220,12 +216,12 @@ To use, copy the code above to a non-running `Script Call` effect or to your sce
 void addAuraTest() {
   /* Adds a temporary activatable aura that doubles cavalry (912) speed for player 1 joan of arc hero (629) */
   int tempAuraEffects = cAuraEffectBitTemporary + cAuraEffectBitMultiply + cAuraEffectBitCircular + cAuraEffectBitRangeIndicator;
-  bool aura1Added = xsAddAura(629, 912, 1, cAuraAttributeMovementSpeed, 2, 10, tempAuraEffects, cAuraDiplomacyGaiaYouAlly, 30, 60);
+  bool aura1Added = xsAddAura(629, 912, 1, cAuraAttributeMovementSpeed, 2.0, 10.0, tempAuraEffects, cAuraDiplomacyGaiaYouAlly, 30, 60);
 
   /* also adds a permanent aura that adds +5 to attack for cavalry (912) and infantry (906) */
   int permaAuraEffects = cAuraEffectBitCircular + cAuraEffectBitRangeIndicator + cAuraEffectBitAdvancedRangeIndicator;
-  bool aura2Added = xsAddAura(629, 912, 1, cAuraAttributeAttack, 5, 10, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
-  bool aura3Added = xsAddAura(629, 906, 1, cAuraAttributeAttack, 5, 10, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
+  bool aura2Added = xsAddAura(629, 912, 1, cAuraAttributeAttack, 5.0, 10.0, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
+  bool aura3Added = xsAddAura(629, 906, 1, cAuraAttributeAttack, 5.0, 10.0, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
 
   xsChatData("aura 1 added: " + aura1Added + ", aura 2 added: " + aura2Added + ", aura 3 added: " + aura3Added);
 }
