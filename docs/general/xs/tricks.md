@@ -138,14 +138,16 @@ bool xsRemoveAura(
         return (false);
     }
 
+    /* Handling gaia player */
+    int setCommand = cSetAttribute;
+    if (player == 0) {
+        setCommand = cGaiaSetAttribute;
+    }
+
     /* Remove temporary aura values */
     if (removeTempAuraAttributes) {
         float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
         if (ct == -3) {
-            int setCommand = cSetAttribute;
-            if (player == 0) {
-                setCommand = cGaiaSetAttribute;
-            }
             xsEffectAmount(setCommand, auraUnit, cMaxCharge, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
             xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0, player);
