@@ -35,7 +35,8 @@ bool xsAddAura(
     int unitsInRangeToTurnOn = 1, /* how many units need to be in range for aura to turn on */
     bool affectSelf = false /* if set makes aura affect auraUnit instead, affectedUnit still needs to be in range to activate */
 ) {
-    /* Function adds an aura to the provided unit based on a your config. Note that adding auras "freezes" the unit for further non task modifications.
+    /* Function adds an aura to the provided unit based on a your config. 
+    Note that adding auras "freezes" the unit for further non task modifications.
     To work around that can respawn the unit or do a double replace with another unit and itself.
     Adding an aura to a unit of the same player that already has an aura for the same attribute and affectedUnit will overwrite it instead.
     Function returns `true` if function parameter validation passed and `false` if it did not (no aura added). */
@@ -44,10 +45,13 @@ bool xsAddAura(
     if (auraUnit < 0 || affectedUnit < 0 || player < 0 || player > 8) {
         return (false);
     }
-    if (attribute != 0 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 && attribute != 120) {
+    if (attribute != 0 && attribute != 1 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 12 
+        && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 
+        && attribute != 120) {
         return (false);
     }
-    if (range < 0 || auraEffectsBitField < 0 || targetDiplomacy < 0 || targetDiplomacy > 6 || unitsInRangeToTurnOn < 0 || tempAuraDuration < 0 || tempAuraCooldown < 0) {
+    if (range < 0 || auraEffectsBitField < 0 || targetDiplomacy < 0 || targetDiplomacy > 6 
+        || unitsInRangeToTurnOn < 0 || tempAuraDuration < 0 || tempAuraCooldown < 0) {
         return (false);
     }
 
@@ -90,14 +94,6 @@ bool xsAddAura(
         xsEffectAmount(setCommand, auraUnit, cRechargeRate, cdRatio, player);
         xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0 + tempAuraDuration, player);
         xsEffectAmount(setCommand, auraUnit, cChargeType, -3.0, player);
-    } else {
-        float ct = xsGetObjectAttribute(player, auraUnit, cChargeType);
-        if (ct == -3) {
-            xsEffectAmount(setCommand, auraUnit, cMaxCharge, 0.0, player);
-            xsEffectAmount(setCommand, auraUnit, cRechargeRate, 0.0, player);
-            xsEffectAmount(setCommand, auraUnit, cChargeEvent, 0.0, player);
-            xsEffectAmount(setCommand, auraUnit, cChargeType, 0.0, player);
-        }
     }
 
     /* Workaround for a bug setting multiple unit classes with an aura*/
@@ -127,14 +123,17 @@ bool xsRemoveAura(
     bool removeTempAuraAttributes = false, /* if set removes temp aura attributes from unit */
     bool removeAllAuraAbilities = false /* if set removes unit aura ability disabling all auras and removing indicators */
 ) { 
-    /* Function removes the aura added by xsAddAura. Leaves combat ability unchanged. Removing auras "freezes" the unit for further non task modifications.
+    /* Function removes the aura added by xsAddAura. Leaves combat ability unchanged. 
+    Removing auras "freezes" the unit for further non task modifications.
     Function returns `true` if function parameter validation passed and `false` if it did not (no aura removed). */
     
     /* Validation */
     if (auraUnit < 0 || affectedUnit < 0 || player < 0 || player > 8) {
         return (false);
     }
-    if (attribute != 0 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 && attribute != 120) {
+    if (attribute != 0 && attribute != 1 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 12 
+        && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 
+        && attribute != 120) {
         return (false);
     }
 
@@ -185,31 +184,33 @@ bool xsRemoveAura(
     return (true);
 }
 
-const int cAuraAttributeHitpoints = 0;
-const int cAuraAttributeMovementSpeed = 5;
-const int cAuraAttributeAttack = 9;
-const int cAuraAttributeAttackReloadTime = 10;
-const int cAuraAttributeWorkRate = 13;
-const int cAuraAttributeRegenerationRate = 109;
-const int cAuraAttributeConversionChanceMod = 113;
-const int cAuraAttributeMeleeArmor = 116;
-const int cAuraAttributePierceArmor = 117;
-const int cAuraAttributeRegenerationHpPercent = 120;
+extern const int cAuraAttributeHitpoints = 0;
+extern const int cAuraAttributeLineOfSights = 1;
+extern const int cAuraAttributeMovementSpeed = 5;
+extern const int cAuraAttributeAttack = 9;
+extern const int cAuraAttributeAttackReloadTime = 10;
+extern const int cAuraAttributeMaxRange = 12; /* changes the display attribute, but not the range, bug? */
+extern const int cAuraAttributeWorkRate = 13;
+extern const int cAuraAttributeRegenerationRate = 109;
+extern const int cAuraAttributeConversionChanceMod = 113;
+extern const int cAuraAttributeMeleeArmor = 116;
+extern const int cAuraAttributePierceArmor = 117;
+extern const int cAuraAttributeRegenerationHpPercent = 120;
 
-const int cAuraEffectBitMultiply = 1; /* if not added, value is added instead */
-const int cAuraEffectBitCircular = 2; /* if not added, aura is square shaped */
-const int cAuraEffectBitRangeIndicator = 4;
-const int cAuraEffectBitTemporary = 8;
-const int cAuraEffectBitAppliedWhenActivatedOnly = 16; /* only works with cAuraEffectBitTemporary */
-const int cAuraEffectBitAdvancedRangeIndicator = 32;
+extern const int cAuraEffectBitMultiply = 1; /* if not added, value is added instead */
+extern const int cAuraEffectBitCircular = 2; /* if not added, aura is square shaped */
+extern const int cAuraEffectBitRangeIndicator = 4;
+extern const int cAuraEffectBitTemporary = 8;
+extern const int cAuraEffectBitAppliedWhenActivatedOnly = 16; /* only works with cAuraEffectBitTemporary */
+extern const int cAuraEffectBitAdvancedRangeIndicator = 32;
 
-const int cAuraDiplomacyAll = 0;
-const int cAuraDiplomacyYou = 1;
-const int cAuraDiplomacyNeutralEnemy = 2;
-const int cAuraDiplomacyGaia = 3;
-const int cAuraDiplomacyGaiaYouAlly = 4;
-const int cAuraDiplomacyGaiaNeutralAlly = 5;
-const int cAuraDiplomacyAllButYou = 6;
+extern const int cAuraDiplomacyAll = 0;
+extern const int cAuraDiplomacyYou = 1;
+extern const int cAuraDiplomacyNeutralEnemy = 2;
+extern const int cAuraDiplomacyGaia = 3;
+extern const int cAuraDiplomacyGaiaYouAlly = 4;
+extern const int cAuraDiplomacyGaiaNeutralAlly = 5;
+extern const int cAuraDiplomacyAllButYou = 6;
 ```
 
 To use, copy the code above to a non-running `Script Call` effect or to your scenarios `.xs` file and then call the function in your xs code, eg:
