@@ -1093,7 +1093,7 @@ Parameters:
     - 1: Work Value 2 (Task 155 - Min number of units required to activate the effect. See Monaspa)
     - 2: Work Range
     - 3: Work Flag 2
-    - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), [Conversion Chance Modifier](../../attributes/attributes/#113-conversion-chance-modifier), 116 - Melee Armor, 117 - Pierce Armor)
+    - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Hit Points](../../attributes/attributes/#0-hit-points), [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), [Conversion Chance Modifier](../../attributes/attributes/#113-conversion-chance-modifier), 116 - Melee Armor, 117 - Pierce Armor, [Regeneration HP Percent](../../attributes/attributes/#120-regeneration-hp-percent))
     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Temporary Aura, 16 - Use with 8 - applies buffs only units around when the ability is triggered, 32 - Translucent)
     - 6: Target Diplomacy
 2.  `#!xs float value`: The value to set the task field to
