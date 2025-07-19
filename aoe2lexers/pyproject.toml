@@ -9,4 +9,5 @@ dependencies = ["Pygments"]
 
 [project.entry-points."pygments.lexers"]
 rms = "lexers:RMSLexer"
+per = "lexers:PERLexer"
 xs = "lexers:XSLexer"

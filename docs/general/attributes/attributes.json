@@ -633,6 +633,120 @@
             "3": "No hit point bar, but has outline"
         }
     },
+    "81": {
+        "name": "Special Ability",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "82": {
+        "name": "Idle Attack Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "83": {
+        "name": "Hero Glow Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "84": {
+        "name": "Garrison Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "85": {
+        "name": "Construction Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "86": {
+        "name": "Snow Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "87": {
+        "name": "Destruction Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "88": {
+        "name": "Destruction Rubble Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "89": {
+        "name": "Researching Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "90": {
+        "name": "Research Completed Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "91": {
+        "name": "Damage Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "92": {
+        "name": "Selection Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "93": {
+        "name": "Selection Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "94": {
+        "name": "Dying Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "95": {
+        "name": "Dying Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "96": {
+        "name": "Train Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "97": {
+        "name": "Train Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "98": {
+        "name": "Damage Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "99": {
+        "name": "Damage Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
     "100": {
         "name": "Resource Costs",
         "desc": "Refers to the first resource cost of a unit. Refer to A.G.E. to see which resource cost that is",
@@ -839,6 +953,162 @@
     "131": {
         "name": "Attack Graphic 2",
         "desc": "Second attack graphic of the unit; alternates with the first attack graphic when assigned",
+        "notes": [],
+        "flags": {}
+    },
+    "132": {
+        "name": "Command Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "133": {
+        "name": "Command Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "134": {
+        "name": "Move Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "135": {
+        "name": "Move Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "136": {
+        "name": "Construction Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "137": {
+        "name": "Construction Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "138": {
+        "name": "Transform Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "139": {
+        "name": "Transform Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "140": {
+        "name": "Run Pattern",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "141": {
+        "name": "Interface Kind",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "142": {
+        "name": "Combat Level",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "143": {
+        "name": "Interaction Mode",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "144": {
+        "name": "Minimap Mode",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "145": {
+        "name": "Trailing Unit",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "146": {
+        "name": "Trail Mode",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "147": {
+        "name": "Trail Density",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "148": {
+        "name": "Projectile Graphic Displacement X",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "149": {
+        "name": "Projectile Graphic Displacement Y",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "150": {
+        "name": "Projectile Graphic Displacement Z",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "151": {
+        "name": "Projectile Spawning Area Width",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "152": {
+        "name": "Projectile Spawning Area Length",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "153": {
+        "name": "Projectile Spawning Area Randomness",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "154": {
+        "name": "Damage Graphics Entry Mod",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "155": {
+        "name": "Damage Graphics Total Num",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "156": {
+        "name": "Damage Graphic Percent",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "157": {
+        "name": "Damage Graphic Apply Mode",
+        "desc": "TODO",
         "notes": [],
         "flags": {}
     }

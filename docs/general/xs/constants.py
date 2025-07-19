@@ -1,5 +1,4 @@
 import json
-import regex
 
 
 with open("./constants.json") as file:
@@ -16,6 +15,10 @@ outmd = """*Written by: Alian713*
 
 def toTitle(string):
     string = string[1:].replace("Attribute", "")
+    string = string[1:].replace("DamageClass", "")
+    string = string[1:].replace("TaskAttr", "")
+    string = string[1:].replace("TaskType", "")
+    string = string[1:].replace("TechState", "")
     i = 0
     while(i < len(string)):
         if string[i].isupper():
@@ -44,6 +47,8 @@ def replace_placeholders(string, is_res, constant):
     string = string.replace('ATTR_NAME', toTitle(constant['name']))
     string = string.replace('CIV_NAME', toTitle(constant['name']))
     string = string.replace('CLASS_NAME', toTitle(constant['name']))
+    string = string.replace('TASK_NAME', toTitle(constant['name']))
+    string = string.replace('STATE_NAME', toTitle(constant['name']))
     return string
 
 
@@ -63,3 +68,20 @@ for index, (category, constants) in enumerate(const_docs.items(), 1):
 
 with open("./constants.md", "w") as file:
     file.write(outmd)
+
+def convert(name: str):
+    with open(f"./{name}.json", "r") as file:
+        data = json.load(file)
+    
+    consts = {}
+
+    for category, constants in data.items():
+        for constant in constants:
+            consts[constant["name"]] = constant
+
+    with open(f"{name}_c.json", "w") as file:
+        json.dump(consts, file, indent = 4)
+
+if __name__ == "__main__":
+    convert("functions")
+    convert("constants")

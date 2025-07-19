@@ -702,6 +702,120 @@ This page is a list of all the unit attributes that can be modified in the scena
     | No hit point bar, or outline | 2 | 
     | No hit point bar, but has outline | 3 | 
 
+## 81. Special Ability
+
+ - ID: 81
+
+ - TODO
+
+## 82. Idle Attack Graphic
+
+ - ID: 82
+
+ - TODO
+
+## 83. Hero Glow Graphic
+
+ - ID: 83
+
+ - TODO
+
+## 84. Garrison Graphic
+
+ - ID: 84
+
+ - TODO
+
+## 85. Construction Graphic
+
+ - ID: 85
+
+ - TODO
+
+## 86. Snow Graphic
+
+ - ID: 86
+
+ - TODO
+
+## 87. Destruction Graphic
+
+ - ID: 87
+
+ - TODO
+
+## 88. Destruction Rubble Graphic
+
+ - ID: 88
+
+ - TODO
+
+## 89. Researching Graphic
+
+ - ID: 89
+
+ - TODO
+
+## 90. Research Completed Graphic
+
+ - ID: 90
+
+ - TODO
+
+## 91. Damage Graphic
+
+ - ID: 91
+
+ - TODO
+
+## 92. Selection Sound
+
+ - ID: 92
+
+ - TODO
+
+## 93. Selection Sound Event
+
+ - ID: 93
+
+ - TODO
+
+## 94. Dying Sound
+
+ - ID: 94
+
+ - TODO
+
+## 95. Dying Sound Event
+
+ - ID: 95
+
+ - TODO
+
+## 96. Train Sound
+
+ - ID: 96
+
+ - TODO
+
+## 97. Train Sound Event
+
+ - ID: 97
+
+ - TODO
+
+## 98. Damage Sound
+
+ - ID: 98
+
+ - TODO
+
+## 99. Damage Sound Event
+
+ - ID: 99
+
+ - TODO
+
 ## 100. Resource Costs
 
  - ID: 100
@@ -922,4 +1036,160 @@ This page is a list of all the unit attributes that can be modified in the scena
  - ID: 131
 
  - Second attack graphic of the unit; alternates with the first attack graphic when assigned
+
+## 132. Command Sound
+
+ - ID: 132
+
+ - TODO
+
+## 133. Command Sound Event
+
+ - ID: 133
+
+ - TODO
+
+## 134. Move Sound
+
+ - ID: 134
+
+ - TODO
+
+## 135. Move Sound Event
+
+ - ID: 135
+
+ - TODO
+
+## 136. Construction Sound
+
+ - ID: 136
+
+ - TODO
+
+## 137. Construction Sound Event
+
+ - ID: 137
+
+ - TODO
+
+## 138. Transform Sound
+
+ - ID: 138
+
+ - TODO
+
+## 139. Transform Sound Event
+
+ - ID: 139
+
+ - TODO
+
+## 140. Run Pattern
+
+ - ID: 140
+
+ - TODO
+
+## 141. Interface Kind
+
+ - ID: 141
+
+ - TODO
+
+## 142. Combat Level
+
+ - ID: 142
+
+ - TODO
+
+## 143. Interaction Mode
+
+ - ID: 143
+
+ - TODO
+
+## 144. Minimap Mode
+
+ - ID: 144
+
+ - TODO
+
+## 145. Trailing Unit
+
+ - ID: 145
+
+ - TODO
+
+## 146. Trail Mode
+
+ - ID: 146
+
+ - TODO
+
+## 147. Trail Density
+
+ - ID: 147
+
+ - TODO
+
+## 148. Projectile Graphic Displacement X
+
+ - ID: 148
+
+ - TODO
+
+## 149. Projectile Graphic Displacement Y
+
+ - ID: 149
+
+ - TODO
+
+## 150. Projectile Graphic Displacement Z
+
+ - ID: 150
+
+ - TODO
+
+## 151. Projectile Spawning Area Width
+
+ - ID: 151
+
+ - TODO
+
+## 152. Projectile Spawning Area Length
+
+ - ID: 152
+
+ - TODO
+
+## 153. Projectile Spawning Area Randomness
+
+ - ID: 153
+
+ - TODO
+
+## 154. Damage Graphics Entry Mod
+
+ - ID: 154
+
+ - TODO
+
+## 155. Damage Graphics Total Num
+
+ - ID: 155
+
+ - TODO
+
+## 156. Damage Graphic Percent
+
+ - ID: 156
+
+ - TODO
+
+## 157. Damage Graphic Apply Mode
+
+ - ID: 157
+
+ - TODO
 
