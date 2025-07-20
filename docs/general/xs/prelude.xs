@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/07/20 01:47:11 |
+// | Generated on: 2025/07/20 09:02:27 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -86,217 +86,217 @@ extern const int cKingOfTheHillVictory = 103;
 // 5. Civilization
 
 
-/** This is the civilization ID of  */
+/** This is the civilization ID of Gaia */
 extern const int cGaia = 0;
 
-/** This is the civilization ID of ons */
+/** This is the civilization ID of Britons */
 extern const int cBritons = 1;
 
-/** This is the civilization ID of ks */
+/** This is the civilization ID of Franks */
 extern const int cFranks = 2;
 
-/** This is the civilization ID of s */
+/** This is the civilization ID of Goths */
 extern const int cGoths = 3;
 
-/** This is the civilization ID of ons */
+/** This is the civilization ID of Teutons */
 extern const int cTeutons = 4;
 
-/** This is the civilization ID of nese */
+/** This is the civilization ID of Japanese */
 extern const int cJapanese = 5;
 
-/** This is the civilization ID of ese */
+/** This is the civilization ID of Chinese */
 extern const int cChinese = 6;
 
-/** This is the civilization ID of ntines */
+/** This is the civilization ID of Byzantines */
 extern const int cByzantines = 7;
 
-/** This is the civilization ID of ians */
+/** This is the civilization ID of Persians */
 extern const int cPersians = 8;
 
-/** This is the civilization ID of cens */
+/** This is the civilization ID of Saracens */
 extern const int cSaracens = 9;
 
-/** This is the civilization ID of s */
+/** This is the civilization ID of Turks */
 extern const int cTurks = 10;
 
-/** This is the civilization ID of ngs */
+/** This is the civilization ID of Vikings */
 extern const int cVikings = 11;
 
-/** This is the civilization ID of ols */
+/** This is the civilization ID of Mongols */
 extern const int cMongols = 12;
 
-/** This is the civilization ID of s */
+/** This is the civilization ID of Celts */
 extern const int cCelts = 13;
 
-/** This is the civilization ID of ish */
+/** This is the civilization ID of Spanish */
 extern const int cSpanish = 14;
 
-/** This is the civilization ID of cs */
+/** This is the civilization ID of Aztecs */
 extern const int cAztecs = 15;
 
-/** This is the civilization ID of ns */
+/** This is the civilization ID of Mayans */
 extern const int cMayans = 16;
 
-/** This is the civilization ID of  */
+/** This is the civilization ID of Huns */
 extern const int cHuns = 17;
 
-/** This is the civilization ID of ans */
+/** This is the civilization ID of Koreans */
 extern const int cKoreans = 18;
 
-/** This is the civilization ID of ians */
+/** This is the civilization ID of Italians */
 extern const int cItalians = 19;
 
-/** This is the civilization ID of ans */
+/** This is the civilization ID of Indians */
 extern const int cIndians = 20;
 
-/** This is the civilization ID of s */
+/** This is the civilization ID of Incas */
 extern const int cIncas = 21;
 
-/** This is the civilization ID of ars */
+/** This is the civilization ID of Magyars */
 extern const int cMagyars = 22;
 
-/** This is the civilization ID of s */
+/** This is the civilization ID of Slavs */
 extern const int cSlavs = 23;
 
-/** This is the civilization ID of uguese */
+/** This is the civilization ID of Portuguese */
 extern const int cPortuguese = 24;
 
-/** This is the civilization ID of opians */
+/** This is the civilization ID of Ethiopians */
 extern const int cEthiopians = 25;
 
-/** This is the civilization ID of ans */
+/** This is the civilization ID of Malians */
 extern const int cMalians = 26;
 
-/** This is the civilization ID of ers */
+/** This is the civilization ID of Berbers */
 extern const int cBerbers = 27;
 
-/** This is the civilization ID of r */
+/** This is the civilization ID of Khmer */
 extern const int cKhmer = 28;
 
-/** This is the civilization ID of y */
+/** This is the civilization ID of Malay */
 extern const int cMalay = 29;
 
-/** This is the civilization ID of ese */
+/** This is the civilization ID of Burmese */
 extern const int cBurmese = 30;
 
-/** This is the civilization ID of namese */
+/** This is the civilization ID of Vietnamese */
 extern const int cVietnamese = 31;
 
-/** This is the civilization ID of arians */
+/** This is the civilization ID of Bulgarians */
 extern const int cBulgarians = 32;
 
-/** This is the civilization ID of rs */
+/** This is the civilization ID of Tatars */
 extern const int cTatars = 33;
 
-/** This is the civilization ID of ns */
+/** This is the civilization ID of Cumans */
 extern const int cCumans = 34;
 
-/** This is the civilization ID of uanians */
+/** This is the civilization ID of Lithuanians */
 extern const int cLithuanians = 35;
 
-/** This is the civilization ID of undians */
+/** This is the civilization ID of Burgundians */
 extern const int cBurgundians = 36;
 
-/** This is the civilization ID of lians */
+/** This is the civilization ID of Sicilians */
 extern const int cSicilians = 37;
 
-/** This is the civilization ID of s */
+/** This is the civilization ID of Poles */
 extern const int cPoles = 38;
 
-/** This is the civilization ID of mians */
+/** This is the civilization ID of Bohemians */
 extern const int cBohemians = 39;
 
-/** This is the civilization ID of idians */
+/** This is the civilization ID of Dravidians */
 extern const int cDravidians = 40;
 
-/** This is the civilization ID of alis */
+/** This is the civilization ID of Bengalis */
 extern const int cBengalis = 41;
 
-/** This is the civilization ID of aras */
+/** This is the civilization ID of Gurjaras */
 extern const int cGurjaras = 42;
 
-/** This is the civilization ID of ns */
+/** This is the civilization ID of Romans */
 extern const int cRomans = 43;
 
-/** This is the civilization ID of nians */
+/** This is the civilization ID of Armenians */
 extern const int cArmenians = 44;
 
-/** This is the civilization ID of gians */
+/** This is the civilization ID of Georgians */
 extern const int cGeorgians = 45;
 
-/** This is the civilization ID of emenids */
+/** This is the civilization ID of Achaemenids */
 extern const int cAchaemenids = 46;
 
-/** This is the civilization ID of nians */
+/** This is the civilization ID of Athenians */
 extern const int cAthenians = 47;
 
-/** This is the civilization ID of tans */
+/** This is the civilization ID of Spartans */
 extern const int cSpartans = 48;
 
-/** This is the civilization ID of  */
+/** This is the civilization ID of Shu */
 extern const int cShu = 49;
 
-/** This is the civilization ID of  */
+/** This is the civilization ID of Wu */
 extern const int cWu = 50;
 
-/** This is the civilization ID of  */
+/** This is the civilization ID of Wei */
 extern const int cWei = 51;
 
-/** This is the civilization ID of hens */
+/** This is the civilization ID of Jurchens */
 extern const int cJurchens = 52;
 
-/** This is the civilization ID of ans */
+/** This is the civilization ID of Khitans */
 extern const int cKhitans = 53;
 
-/** This is the civilization ID of gyptians */
+/** This is the civilization ID of Aoe Egyptians */
 extern const int cAoeEgyptians = 1;
 
-/** This is the civilization ID of reeks */
+/** This is the civilization ID of Aoe Greeks */
 extern const int cAoeGreeks = 2;
 
-/** This is the civilization ID of abylonians */
+/** This is the civilization ID of Aoe Babylonians */
 extern const int cAoeBabylonians = 3;
 
-/** This is the civilization ID of ssyrians */
+/** This is the civilization ID of Aoe Assyrians */
 extern const int cAoeAssyrians = 4;
 
-/** This is the civilization ID of inoans */
+/** This is the civilization ID of Aoe Minoans */
 extern const int cAoeMinoans = 5;
 
-/** This is the civilization ID of ittites */
+/** This is the civilization ID of Aoe Hittites */
 extern const int cAoeHittites = 6;
 
-/** This is the civilization ID of hoenicians */
+/** This is the civilization ID of Aoe Phoenicians */
 extern const int cAoePhoenicians = 7;
 
-/** This is the civilization ID of umerians */
+/** This is the civilization ID of Aoe Sumerians */
 extern const int cAoeSumerians = 8;
 
-/** This is the civilization ID of ersians */
+/** This is the civilization ID of Aoe Persians */
 extern const int cAoePersians = 9;
 
-/** This is the civilization ID of hang */
+/** This is the civilization ID of Aoe Shang */
 extern const int cAoeShang = 10;
 
-/** This is the civilization ID of amato */
+/** This is the civilization ID of Aoe Yamato */
 extern const int cAoeYamato = 11;
 
-/** This is the civilization ID of hoson */
+/** This is the civilization ID of Aoe Choson */
 extern const int cAoeChoson = 12;
 
-/** This is the civilization ID of omans */
+/** This is the civilization ID of Aoe Romans */
 extern const int cAoeRomans = 13;
 
-/** This is the civilization ID of arthaginians */
+/** This is the civilization ID of Aoe Carthaginians */
 extern const int cAoeCarthaginians = 14;
 
-/** This is the civilization ID of almyrans */
+/** This is the civilization ID of Aoe Palmyrans */
 extern const int cAoePalmyrans = 15;
 
-/** This is the civilization ID of acedonians */
+/** This is the civilization ID of Aoe Macedonians */
 extern const int cAoeMacedonians = 16;
 
-/** This is the civilization ID of ac Viet */
+/** This is the civilization ID of Aoe Lac Viet */
 extern const int cAoeLacViet = 17;
 
 
@@ -940,1016 +940,1016 @@ extern const int cDamageGraphicApplyMode = 157;
 // 10. EffectAmount Object Class
 
 
-/** This is the ID used to target the er Class */
+/** This is the ID used to target the Archer Class */
 extern const int cArcherClass = 900;
 
-/** This is the ID used to target the fact Class */
+/** This is the ID used to target the Artifact Class */
 extern const int cArtifactClass = 901;
 
-/** This is the ID used to target the e Boat Class */
+/** This is the ID used to target the Trade Boat Class */
 extern const int cTradeBoatClass = 902;
 
-/** This is the ID used to target the ding Class */
+/** This is the ID used to target the Building Class */
 extern const int cBuildingClass = 903;
 
-/** This is the ID used to target the ager Class */
+/** This is the ID used to target the Villager Class */
 extern const int cVillagerClass = 904;
 
-/** This is the ID used to target the ish Class */
+/** This is the ID used to target the Sea Fish Class */
 extern const int cSeaFishClass = 905;
 
-/** This is the ID used to target the ntry Class */
+/** This is the ID used to target the Infantry Class */
 extern const int cInfantryClass = 906;
 
-/** This is the ID used to target the ge Bush Class */
+/** This is the ID used to target the Forage Bush Class */
 extern const int cForageBushClass = 907;
 
-/** This is the ID used to target the e Mine Class */
+/** This is the ID used to target the Stone Mine Class */
 extern const int cStoneMineClass = 908;
 
-/** This is the ID used to target the Animal Class */
+/** This is the ID used to target the Prey Animal Class */
 extern const int cPreyAnimalClass = 909;
 
-/** This is the ID used to target the ator Animal Class */
+/** This is the ID used to target the Predator Animal Class */
 extern const int cPredatorAnimalClass = 910;
 
-/** This is the ID used to target the ellaneous Class */
+/** This is the ID used to target the Miscellaneous Class */
 extern const int cMiscellaneousClass = 911;
 
-/** This is the ID used to target the lry Class */
+/** This is the ID used to target the Cavalry Class */
 extern const int cCavalryClass = 912;
 
-/** This is the ID used to target the e Weapon Class */
+/** This is the ID used to target the Siege Weapon Class */
 extern const int cSiegeWeaponClass = 913;
 
-/** This is the ID used to target the ain Class */
+/** This is the ID used to target the Terrain Class */
 extern const int cTerrainClass = 914;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Tree Class */
 extern const int cTreeClass = 915;
 
-/** This is the ID used to target the Stump Class */
+/** This is the ID used to target the Tree Stump Class */
 extern const int cTreeStumpClass = 916;
 
-/** This is the ID used to target the er Class */
+/** This is the ID used to target the Healer Class */
 extern const int cHealerClass = 917;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Monk Class */
 extern const int cMonkClass = 918;
 
-/** This is the ID used to target the e Cart Class */
+/** This is the ID used to target the Trade Cart Class */
 extern const int cTradeCartClass = 919;
 
-/** This is the ID used to target the sport Ship Class */
+/** This is the ID used to target the Transport Ship Class */
 extern const int cTransportShipClass = 920;
 
-/** This is the ID used to target the ing Boat Class */
+/** This is the ID used to target the Fishing Boat Class */
 extern const int cFishingBoatClass = 921;
 
-/** This is the ID used to target the hip Class */
+/** This is the ID used to target the Warship Class */
 extern const int cWarshipClass = 922;
 
-/** This is the ID used to target the uistador Class */
+/** This is the ID used to target the Conquistador Class */
 extern const int cConquistadorClass = 923;
 
-/** This is the ID used to target the lephant Class */
+/** This is the ID used to target the War Elephant Class */
 extern const int cWarElephantClass = 924;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Hero Class */
 extern const int cHeroClass = 925;
 
-/** This is the ID used to target the hant Archer Class */
+/** This is the ID used to target the Elephant Archer Class */
 extern const int cElephantArcherClass = 926;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Wall Class */
 extern const int cWallClass = 927;
 
-/** This is the ID used to target the anx Class */
+/** This is the ID used to target the Phalanx Class */
 extern const int cPhalanxClass = 928;
 
-/** This is the ID used to target the stic Animal Class */
+/** This is the ID used to target the Domestic Animal Class */
 extern const int cDomesticAnimalClass = 929;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Flag Class */
 extern const int cFlagClass = 930;
 
-/** This is the ID used to target the Sea Fish Class */
+/** This is the ID used to target the Deep Sea Fish Class */
 extern const int cDeepSeaFishClass = 931;
 
-/** This is the ID used to target the Mine */
+/** This is the ID used to target the Gold Mine */
 extern const int cGoldMine = 932;
 
-/** This is the ID used to target the e Fish */
+/** This is the ID used to target the Shore Fish */
 extern const int cShoreFish = 933;
 
-/** This is the ID used to target the f Class */
+/** This is the ID used to target the Cliff Class */
 extern const int cCliffClass = 934;
 
-/** This is the ID used to target the rd Class */
+/** This is the ID used to target the Petard Class */
 extern const int cPetardClass = 935;
 
-/** This is the ID used to target the lry Archer Class */
+/** This is the ID used to target the Cavalry Archer Class */
 extern const int cCavalryArcherClass = 936;
 
-/** This is the ID used to target the elganger Class */
+/** This is the ID used to target the Doppelganger Class */
 extern const int cDoppelgangerClass = 937;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Bird Class */
 extern const int cBirdClass = 938;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Gate Class */
 extern const int cGateClass = 939;
 
-/** This is the ID used to target the age Pile Class */
+/** This is the ID used to target the Salvage Pile Class */
 extern const int cSalvagePileClass = 940;
 
-/** This is the ID used to target the urce Pile Class */
+/** This is the ID used to target the Resource Pile Class */
 extern const int cResourcePileClass = 941;
 
-/** This is the ID used to target the c Class */
+/** This is the ID used to target the Relic Class */
 extern const int cRelicClass = 942;
 
-/** This is the ID used to target the With Relic Class */
+/** This is the ID used to target the Monk With Relic Class */
 extern const int cMonkWithRelicClass = 943;
 
-/** This is the ID used to target the Cannoneer Class */
+/** This is the ID used to target the Hand Cannoneer Class */
 extern const int cHandCannoneerClass = 944;
 
-/** This is the ID used to target the anded Swordsman Class */
+/** This is the ID used to target the Two Handed Swordsman Class */
 extern const int cTwoHandedSwordsmanClass = 945;
 
-/** This is the ID used to target the man Class */
+/** This is the ID used to target the Pikeman Class */
 extern const int cPikemanClass = 946;
 
-/** This is the ID used to target the t Cavalry Class */
+/** This is the ID used to target the Scout Cavalry Class */
 extern const int cScoutCavalryClass = 947;
 
-/** This is the ID used to target the ine Class */
+/** This is the ID used to target the Ore Mine Class */
 extern const int cOreMineClass = 948;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the Farm Class */
 extern const int cFarmClass = 949;
 
-/** This is the ID used to target the rman Class */
+/** This is the ID used to target the Spearman Class */
 extern const int cSpearmanClass = 950;
 
-/** This is the ID used to target the ed Unit Class */
+/** This is the ID used to target the Packed Unit Class */
 extern const int cPackedUnitClass = 951;
 
-/** This is the ID used to target the r Class */
+/** This is the ID used to target the Tower Class */
 extern const int cTowerClass = 952;
 
-/** This is the ID used to target the ding Ship Class */
+/** This is the ID used to target the Boarding Ship Class */
 extern const int cBoardingShipClass = 953;
 
-/** This is the ID used to target the cked Siege Unit Class */
+/** This is the ID used to target the Unpacked Siege Unit Class */
 extern const int cUnpackedSiegeUnitClass = 954;
 
-/** This is the ID used to target the pion Class */
+/** This is the ID used to target the Scorpion Class */
 extern const int cScorpionClass = 955;
 
-/** This is the ID used to target the er Class */
+/** This is the ID used to target the Raider Class */
 extern const int cRaiderClass = 956;
 
-/** This is the ID used to target the lry Raider Class */
+/** This is the ID used to target the Cavalry Raider Class */
 extern const int cCavalryRaiderClass = 957;
 
-/** This is the ID used to target the stock Class */
+/** This is the ID used to target the Livestock Class */
 extern const int cLivestockClass = 958;
 
-/** This is the ID used to target the Class */
+/** This is the ID used to target the King Class */
 extern const int cKingClass = 959;
 
-/** This is the ID used to target the Building Class */
+/** This is the ID used to target the Misc Building Class */
 extern const int cMiscBuildingClass = 960;
 
-/** This is the ID used to target the rolled Animal Class */
+/** This is the ID used to target the Controlled Animal Class */
 extern const int cControlledAnimalClass = 961;
 
-/** This is the ID used to target the Fish Class */
+/** This is the ID used to target the Gold Fish Class */
 extern const int cGoldFishClass = 963;
 
-/** This is the ID used to target the Mine Class */
+/** This is the ID used to target the Land Mine Class */
 extern const int cLandMineClass = 964;
 
 
 // 11. Resource
 
 
-/** ID of the player resource [](https://ugc.aoe2.rocks/general/resources/resources/#0-food-storage) */
+/** ID of the player resource [Food](https://ugc.aoe2.rocks/general/resources/resources/#0-food-storage) */
 extern const int cAttributeFood = 0;
 
-/** ID of the player resource [](https://ugc.aoe2.rocks/general/resources/resources/#1-wood-storage) */
+/** ID of the player resource [Wood](https://ugc.aoe2.rocks/general/resources/resources/#1-wood-storage) */
 extern const int cAttributeWood = 1;
 
-/** ID of the player resource [e](https://ugc.aoe2.rocks/general/resources/resources/#2-stone-storage) */
+/** ID of the player resource [Stone](https://ugc.aoe2.rocks/general/resources/resources/#2-stone-storage) */
 extern const int cAttributeStone = 2;
 
-/** ID of the player resource [](https://ugc.aoe2.rocks/general/resources/resources/#3-gold-storage) */
+/** ID of the player resource [Gold](https://ugc.aoe2.rocks/general/resources/resources/#3-gold-storage) */
 extern const int cAttributeGold = 3;
 
-/** ID of the player resource [lation Cap](https://ugc.aoe2.rocks/general/resources/resources/#4-population-headroom) */
+/** ID of the player resource [Population Cap](https://ugc.aoe2.rocks/general/resources/resources/#4-population-headroom) */
 extern const int cAttributePopulationCap = 4;
 
-/** ID of the player resource [gion](https://ugc.aoe2.rocks/general/resources/resources/#5-conversion-range) */
+/** ID of the player resource [Religion](https://ugc.aoe2.rocks/general/resources/resources/#5-conversion-range) */
 extern const int cAttributeReligion = 5;
 
-/** ID of the player resource [ent Age](https://ugc.aoe2.rocks/general/resources/resources/#6-current-age) */
+/** ID of the player resource [Current Age](https://ugc.aoe2.rocks/general/resources/resources/#6-current-age) */
 extern const int cAttributeCurrentAge = 6;
 
-/** ID of the player resource [cs](https://ugc.aoe2.rocks/general/resources/resources/#7-relics-captured) */
+/** ID of the player resource [Relics](https://ugc.aoe2.rocks/general/resources/resources/#7-relics-captured) */
 extern const int cAttributeRelics = 7;
 
-/** ID of the player resource [e Bonus. Click [here](https://ugc.aoe2.rocks/general/resources/resources/#8-unused-resource-008). The name is mispelled in the `Constants.xs` Check so thats how it needs to be used */
+/** ID of the player resource [Trage Bonus. Click [here](https://ugc.aoe2.rocks/general/resources/resources/#8-unused-resource-008). The name is mispelled in the `Constants.xs` Check so thats how it needs to be used */
 extern const int cAttributeTrageBonus = 8;
 
-/** ID of the player resource [e Goods](https://ugc.aoe2.rocks/general/resources/resources/#9-trade-goods) */
+/** ID of the player resource [Trade Goods](https://ugc.aoe2.rocks/general/resources/resources/#9-trade-goods) */
 extern const int cAttributeTradeGoods = 9;
 
-/** ID of the player resource [e Producation](https://ugc.aoe2.rocks/general/resources/resources/#10-unused-resource-010) */
+/** ID of the player resource [Trade Producation](https://ugc.aoe2.rocks/general/resources/resources/#10-unused-resource-010) */
 extern const int cAttributeTradeProducation = 10;
 
-/** ID of the player resource [lation](https://ugc.aoe2.rocks/general/resources/resources/#11-current-population) */
+/** ID of the player resource [Population](https://ugc.aoe2.rocks/general/resources/resources/#11-current-population) */
 extern const int cAttributePopulation = 11;
 
-/** ID of the player resource [y](https://ugc.aoe2.rocks/general/resources/resources/#12-corpse-decay-time) */
+/** ID of the player resource [Decay](https://ugc.aoe2.rocks/general/resources/resources/#12-corpse-decay-time) */
 extern const int cAttributeDecay = 12;
 
-/** ID of the player resource [overy](https://ugc.aoe2.rocks/general/resources/resources/#13-remarkable-discovery) */
+/** ID of the player resource [Discovery](https://ugc.aoe2.rocks/general/resources/resources/#13-remarkable-discovery) */
 extern const int cAttributeDiscovery = 13;
 
-/** ID of the player resource [s](https://ugc.aoe2.rocks/general/resources/resources/#14-monuments-captured) */
+/** ID of the player resource [Ruins](https://ugc.aoe2.rocks/general/resources/resources/#14-monuments-captured) */
 extern const int cAttributeRuins = 14;
 
-/** ID of the player resource [](https://ugc.aoe2.rocks/general/resources/resources/#15-meat-storage) */
+/** ID of the player resource [Meat](https://ugc.aoe2.rocks/general/resources/resources/#15-meat-storage) */
 extern const int cAttributeMeat = 15;
 
-/** ID of the player resource [ies](https://ugc.aoe2.rocks/general/resources/resources/#16-berry-storage) */
+/** ID of the player resource [Berries](https://ugc.aoe2.rocks/general/resources/resources/#16-berry-storage) */
 extern const int cAttributeBerries = 16;
 
-/** ID of the player resource [](https://ugc.aoe2.rocks/general/resources/resources/#17-fish-storage) */
+/** ID of the player resource [Fish](https://ugc.aoe2.rocks/general/resources/resources/#17-fish-storage) */
 extern const int cAttributeFish = 17;
 
-/** ID of the player resource [s](https://ugc.aoe2.rocks/general/resources/resources/#20-units-killed) */
+/** ID of the player resource [Kills](https://ugc.aoe2.rocks/general/resources/resources/#20-units-killed) */
 extern const int cAttributeKills = 20;
 
-/** ID of the player resource [arch Count](https://ugc.aoe2.rocks/general/resources/resources/#21-technology-count) */
+/** ID of the player resource [Research Count](https://ugc.aoe2.rocks/general/resources/resources/#21-technology-count) */
 extern const int cAttributeResearchCount = 21;
 
-/** ID of the player resource [oration](https://ugc.aoe2.rocks/general/resources/resources/#22--map-explored) */
+/** ID of the player resource [Exploration](https://ugc.aoe2.rocks/general/resources/resources/#22--map-explored) */
 extern const int cAttributeExploration = 22;
 
-/** ID of the player resource [ert Priest](https://ugc.aoe2.rocks/general/resources/resources/#27-enable-monk-conversion) */
+/** ID of the player resource [Convert Priest](https://ugc.aoe2.rocks/general/resources/resources/#27-enable-monk-conversion) */
 extern const int cAttributeConvertPriest = 27;
 
-/** ID of the player resource [ert Building](https://ugc.aoe2.rocks/general/resources/resources/#28-enable-building-conversion) */
+/** ID of the player resource [Convert Building](https://ugc.aoe2.rocks/general/resources/resources/#28-enable-building-conversion) */
 extern const int cAttributeConvertBuilding = 28;
 
-/** ID of the player resource [ding Limit](https://ugc.aoe2.rocks/general/resources/resources/#30-unused-resource-030) */
+/** ID of the player resource [Building Limit](https://ugc.aoe2.rocks/general/resources/resources/#30-unused-resource-030) */
 extern const int cAttributeBuildingLimit = 30;
 
-/** ID of the player resource [Limit](https://ugc.aoe2.rocks/general/resources/resources/#31-unused-resource-031) */
+/** ID of the player resource [Food Limit](https://ugc.aoe2.rocks/general/resources/resources/#31-unused-resource-031) */
 extern const int cAttributeFoodLimit = 31;
 
-/** ID of the player resource [Limit](https://ugc.aoe2.rocks/general/resources/resources/#32-bonus-population-cap) */
+/** ID of the player resource [Unit Limit](https://ugc.aoe2.rocks/general/resources/resources/#32-bonus-population-cap) */
 extern const int cAttributeUnitLimit = 32;
 
-/** ID of the player resource [tenance](https://ugc.aoe2.rocks/general/resources/resources/#33-unused-resource-33) */
+/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-unused-resource-33) */
 extern const int cAttributeMaintenance = 33;
 
-/** ID of the player resource [h](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-34) */
+/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-34) */
 extern const int cAttributeFaith = 34;
 
-/** ID of the player resource [h Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-unused-resource-35) */
+/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-unused-resource-35) */
 extern const int cAttributeFaithRechargeRate = 35;
 
-/** ID of the player resource [Food](https://ugc.aoe2.rocks/general/resources/resources/#36-farm-food-amount) */
+/** ID of the player resource [Farm Food](https://ugc.aoe2.rocks/general/resources/resources/#36-farm-food-amount) */
 extern const int cAttributeFarmFood = 36;
 
-/** ID of the player resource [lian Population](https://ugc.aoe2.rocks/general/resources/resources/#37-civilian-population) */
+/** ID of the player resource [Civilian Population](https://ugc.aoe2.rocks/general/resources/resources/#37-civilian-population) */
 extern const int cAttributeCivilianPopulation = 37;
 
-/** ID of the player resource [echs Achieved](https://ugc.aoe2.rocks/general/resources/resources/#39-all-techs-achieved) */
+/** ID of the player resource [All Techs Achieved](https://ugc.aoe2.rocks/general/resources/resources/#39-all-techs-achieved) */
 extern const int cAttributeAllTechsAchieved = 39;
 
-/** ID of the player resource [tary Population](https://ugc.aoe2.rocks/general/resources/resources/#40-military-population) */
+/** ID of the player resource [Military Population](https://ugc.aoe2.rocks/general/resources/resources/#40-military-population) */
 extern const int cAttributeMilitaryPopulation = 40;
 
-/** ID of the player resource [ersions](https://ugc.aoe2.rocks/general/resources/resources/#41-conversions) */
+/** ID of the player resource [Conversions](https://ugc.aoe2.rocks/general/resources/resources/#41-conversions) */
 extern const int cAttributeConversions = 41;
 
-/** ID of the player resource [er](https://ugc.aoe2.rocks/general/resources/resources/#42-standing-wonders) */
+/** ID of the player resource [Wonder](https://ugc.aoe2.rocks/general/resources/resources/#42-standing-wonders) */
 extern const int cAttributeWonder = 42;
 
-/** ID of the player resource [ngs](https://ugc.aoe2.rocks/general/resources/resources/#43-razings) */
+/** ID of the player resource [Razings](https://ugc.aoe2.rocks/general/resources/resources/#43-razings) */
 extern const int cAttributeRazings = 43;
 
-/** ID of the player resource [Ratio](https://ugc.aoe2.rocks/general/resources/resources/#44-kill-ratio) */
+/** ID of the player resource [Kill Ratio](https://ugc.aoe2.rocks/general/resources/resources/#44-kill-ratio) */
 extern const int cAttributeKillRatio = 44;
 
-/** ID of the player resource [er Killed](https://ugc.aoe2.rocks/general/resources/resources/#45-survival-to-finish) */
+/** ID of the player resource [Player Killed](https://ugc.aoe2.rocks/general/resources/resources/#45-survival-to-finish) */
 extern const int cAttributePlayerKilled = 45;
 
-/** ID of the player resource [ute Inefficency](https://ugc.aoe2.rocks/general/resources/resources/#46-tribute-inefficiency) */
+/** ID of the player resource [Tribute Inefficency](https://ugc.aoe2.rocks/general/resources/resources/#46-tribute-inefficiency) */
 extern const int cAttributeTributeInefficency = 46;
 
-/** ID of the player resource [Bonus](https://ugc.aoe2.rocks/general/resources/resources/#47-gold-mining-productivity) */
+/** ID of the player resource [Gold Bonus](https://ugc.aoe2.rocks/general/resources/resources/#47-gold-mining-productivity) */
 extern const int cAttributeGoldBonus = 47;
 
-/** ID of the player resource [Center Unavailable](https://ugc.aoe2.rocks/general/resources/resources/#48-town-center-unavailable) */
+/** ID of the player resource [Town Center Unavailable](https://ugc.aoe2.rocks/general/resources/resources/#48-town-center-unavailable) */
 extern const int cAttributeTownCenterUnavailable = 48;
 
-/** ID of the player resource [Counter](https://ugc.aoe2.rocks/general/resources/resources/#49-gold-counter) */
+/** ID of the player resource [Gold Counter](https://ugc.aoe2.rocks/general/resources/resources/#49-gold-counter) */
 extern const int cAttributeGoldCounter = 49;
 
-/** ID of the player resource [ing](https://ugc.aoe2.rocks/general/resources/resources/#50-reveal-ally) */
+/** ID of the player resource [Writing](https://ugc.aoe2.rocks/general/resources/resources/#50-reveal-ally) */
 extern const int cAttributeWriting = 50;
 
-/** ID of the player resource [steries](https://ugc.aoe2.rocks/general/resources/resources/#52-monasteries) */
+/** ID of the player resource [Monasteries](https://ugc.aoe2.rocks/general/resources/resources/#52-monasteries) */
 extern const int cAttributeMonasteries = 52;
 
-/** ID of the player resource [ute](https://ugc.aoe2.rocks/general/resources/resources/#53-tribute-sent) */
+/** ID of the player resource [Tribute](https://ugc.aoe2.rocks/general/resources/resources/#53-tribute-sent) */
 extern const int cAttributeTribute = 53;
 
-/** ID of the player resource [Ruins](https://ugc.aoe2.rocks/general/resources/resources/#54-all-monuments-captured) */
+/** ID of the player resource [Hold Ruins](https://ugc.aoe2.rocks/general/resources/resources/#54-all-monuments-captured) */
 extern const int cAttributeHoldRuins = 54;
 
-/** ID of the player resource [Relics](https://ugc.aoe2.rocks/general/resources/resources/#55-all-relics-captured) */
+/** ID of the player resource [Hold Relics](https://ugc.aoe2.rocks/general/resources/resources/#55-all-relics-captured) */
 extern const int cAttributeHoldRelics = 55;
 
-/** ID of the player resource [](https://ugc.aoe2.rocks/general/resources/resources/#56-ore-storage) */
+/** ID of the player resource [Ore](https://ugc.aoe2.rocks/general/resources/resources/#56-ore-storage) */
 extern const int cAttributeOre = 56;
 
-/** ID of the player resource [ured Unit](https://ugc.aoe2.rocks/general/resources/resources/#57-kidnap-storage) */
+/** ID of the player resource [Captured Unit](https://ugc.aoe2.rocks/general/resources/resources/#57-kidnap-storage) */
 extern const int cAttributeCapturedUnit = 57;
 
-/** ID of the player resource [e Good Quality](https://ugc.aoe2.rocks/general/resources/resources/#59-unused-resource-059) */
+/** ID of the player resource [Trade Good Quality](https://ugc.aoe2.rocks/general/resources/resources/#59-unused-resource-059) */
 extern const int cAttributeTradeGoodQuality = 59;
 
-/** ID of the player resource [e Market Level](https://ugc.aoe2.rocks/general/resources/resources/#60-unused-resource-060) */
+/** ID of the player resource [Trade Market Level](https://ugc.aoe2.rocks/general/resources/resources/#60-unused-resource-060) */
 extern const int cAttributeTradeMarketLevel = 60;
 
-/** ID of the player resource [ations](https://ugc.aoe2.rocks/general/resources/resources/#61-unused-resource-061) */
+/** ID of the player resource [Formations](https://ugc.aoe2.rocks/general/resources/resources/#61-unused-resource-061) */
 extern const int cAttributeFormations = 61;
 
-/** ID of the player resource [ding House Rate](https://ugc.aoe2.rocks/general/resources/resources/#62-building-housing-rate) */
+/** ID of the player resource [Building House Rate](https://ugc.aoe2.rocks/general/resources/resources/#62-building-housing-rate) */
 extern const int cAttributeBuildingHouseRate = 62;
 
-/** ID of the player resource [er Tax Rate](https://ugc.aoe2.rocks/general/resources/resources/#63-tax-gather-rate) */
+/** ID of the player resource [Gather Tax Rate](https://ugc.aoe2.rocks/general/resources/resources/#63-tax-gather-rate) */
 extern const int cAttributeGatherTaxRate = 63;
 
-/** ID of the player resource [er Accumalation](https://ugc.aoe2.rocks/general/resources/resources/#64-gather-accumulator) */
+/** ID of the player resource [Gather Accumalation](https://ugc.aoe2.rocks/general/resources/resources/#64-gather-accumulator) */
 extern const int cAttributeGatherAccumalation = 64;
 
-/** ID of the player resource [age Decay Rate](https://ugc.aoe2.rocks/general/resources/resources/#65-salvage-decay-rate) */
+/** ID of the player resource [Salvage Decay Rate](https://ugc.aoe2.rocks/general/resources/resources/#65-salvage-decay-rate) */
 extern const int cAttributeSalvageDecayRate = 65;
 
-/** ID of the player resource [w Formations](https://ugc.aoe2.rocks/general/resources/resources/#66-unused-resource-066) */
+/** ID of the player resource [Allow Formations](https://ugc.aoe2.rocks/general/resources/resources/#66-unused-resource-066) */
 extern const int cAttributeAllowFormations = 66;
 
-/** ID of the player resource [onvert](https://ugc.aoe2.rocks/general/resources/resources/#67-can-convert) */
+/** ID of the player resource [Can Convert](https://ugc.aoe2.rocks/general/resources/resources/#67-can-convert) */
 extern const int cAttributeCanConvert = 67;
 
-/** ID of the player resource [ert Resistance](https://ugc.aoe2.rocks/general/resources/resources/#77-conversion-resistance) */
+/** ID of the player resource [Convert Resistance](https://ugc.aoe2.rocks/general/resources/resources/#77-conversion-resistance) */
 extern const int cAttributeConvertResistance = 77;
 
-/** ID of the player resource [e Vig Rate](https://ugc.aoe2.rocks/general/resources/resources/#78-trade-vig-rate) */
+/** ID of the player resource [Trade Vig Rate](https://ugc.aoe2.rocks/general/resources/resources/#78-trade-vig-rate) */
 extern const int cAttributeTradeVigRate = 78;
 
-/** ID of the player resource [e Bonus](https://ugc.aoe2.rocks/general/resources/resources/#79-stone-mining-productivity) */
+/** ID of the player resource [Stone Bonus](https://ugc.aoe2.rocks/general/resources/resources/#79-stone-mining-productivity) */
 extern const int cAttributeStoneBonus = 79;
 
-/** ID of the player resource [ed Count](https://ugc.aoe2.rocks/general/resources/resources/#80-queued-units) */
+/** ID of the player resource [Queued Count](https://ugc.aoe2.rocks/general/resources/resources/#80-queued-units) */
 extern const int cAttributeQueuedCount = 80;
 
-/** ID of the player resource [ning Count](https://ugc.aoe2.rocks/general/resources/resources/#81-training-count) */
+/** ID of the player resource [Training Count](https://ugc.aoe2.rocks/general/resources/resources/#81-training-count) */
 extern const int cAttributeTrainingCount = 81;
 
-/** ID of the player resource [er](https://ugc.aoe2.rocks/general/resources/resources/#82-start-with-unit-444-ptwc) */
+/** ID of the player resource [Raider](https://ugc.aoe2.rocks/general/resources/resources/#82-start-with-unit-444-ptwc) */
 extern const int cAttributeRaider = 82;
 
-/** ID of the player resource [ding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-unused-resource-83) */
+/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-unused-resource-83) */
 extern const int cAttributeBoardingRechargeRate = 83;
 
-/** ID of the player resource [ting Villagers](https://ugc.aoe2.rocks/general/resources/resources/#84-starting-villagers) */
+/** ID of the player resource [Starting Villagers](https://ugc.aoe2.rocks/general/resources/resources/#84-starting-villagers) */
 extern const int cAttributeStartingVillagers = 84;
 
-/** ID of the player resource [arch Cost Mod](https://ugc.aoe2.rocks/general/resources/resources/#85-research-cost-modifier) */
+/** ID of the player resource [Research Cost Mod](https://ugc.aoe2.rocks/general/resources/resources/#85-research-cost-modifier) */
 extern const int cAttributeResearchCostMod = 85;
 
-/** ID of the player resource [arch Time Mod](https://ugc.aoe2.rocks/general/resources/resources/#86-research-time-modifier) */
+/** ID of the player resource [Research Time Mod](https://ugc.aoe2.rocks/general/resources/resources/#86-research-time-modifier) */
 extern const int cAttributeResearchTimeMod = 86;
 
-/** ID of the player resource [ert Boats](https://ugc.aoe2.rocks/general/resources/resources/#87-convert-boats) */
+/** ID of the player resource [Convert Boats](https://ugc.aoe2.rocks/general/resources/resources/#87-convert-boats) */
 extern const int cAttributeConvertBoats = 87;
 
-/** ID of the player resource [Trap Food](https://ugc.aoe2.rocks/general/resources/resources/#88-fish-trap-food-amount) */
+/** ID of the player resource [Fish Trap Food](https://ugc.aoe2.rocks/general/resources/resources/#88-fish-trap-food-amount) */
 extern const int cAttributeFishTrapFood = 88;
 
-/** ID of the player resource [Rate Modifer](https://ugc.aoe2.rocks/general/resources/resources/#89-heal-rate-modifier) */
+/** ID of the player resource [Heal Rate Modifer](https://ugc.aoe2.rocks/general/resources/resources/#89-heal-rate-modifier) */
 extern const int cAttributeHealRateModifer = 89;
 
-/** ID of the player resource [Range](https://ugc.aoe2.rocks/general/resources/resources/#90-healing-range) */
+/** ID of the player resource [Heal Range](https://ugc.aoe2.rocks/general/resources/resources/#90-healing-range) */
 extern const int cAttributeHealRange = 90;
 
-/** ID of the player resource [ting Food](https://ugc.aoe2.rocks/general/resources/resources/#91-starting-food) */
+/** ID of the player resource [Starting Food](https://ugc.aoe2.rocks/general/resources/resources/#91-starting-food) */
 extern const int cAttributeStartingFood = 91;
 
-/** ID of the player resource [ting Wood](https://ugc.aoe2.rocks/general/resources/resources/#92-starting-wood) */
+/** ID of the player resource [Starting Wood](https://ugc.aoe2.rocks/general/resources/resources/#92-starting-wood) */
 extern const int cAttributeStartingWood = 92;
 
-/** ID of the player resource [ting Stone](https://ugc.aoe2.rocks/general/resources/resources/#93-starting-stone) */
+/** ID of the player resource [Starting Stone](https://ugc.aoe2.rocks/general/resources/resources/#93-starting-stone) */
 extern const int cAttributeStartingStone = 93;
 
-/** ID of the player resource [ting Gold](https://ugc.aoe2.rocks/general/resources/resources/#94-starting-gold) */
+/** ID of the player resource [Starting Gold](https://ugc.aoe2.rocks/general/resources/resources/#94-starting-gold) */
 extern const int cAttributeStartingGold = 94;
 
-/** ID of the player resource [er Ability](https://ugc.aoe2.rocks/general/resources/resources/#95-enable-ptwc--kidnap--loot) */
+/** ID of the player resource [Raider Ability](https://ugc.aoe2.rocks/general/resources/resources/#95-enable-ptwc--kidnap--loot) */
 extern const int cAttributeRaiderAbility = 95;
 
-/** ID of the player resource [opsite Farmers](https://ugc.aoe2.rocks/general/resources/resources/#96-no-dropsite-farmers) */
+/** ID of the player resource [No Dropsite Farmers](https://ugc.aoe2.rocks/general/resources/resources/#96-no-dropsite-farmers) */
 extern const int cAttributeNoDropsiteFarmers = 96;
 
-/** ID of the player resource [nant Sheep Control](https://ugc.aoe2.rocks/general/resources/resources/#97-dominant-sheep-control) */
+/** ID of the player resource [Dominant Sheep Control](https://ugc.aoe2.rocks/general/resources/resources/#97-dominant-sheep-control) */
 extern const int cAttributeDominantSheepControl = 97;
 
-/** ID of the player resource [ct Cost Summation](https://ugc.aoe2.rocks/general/resources/resources/#98-building-cost-sum) */
+/** ID of the player resource [Object Cost Summation](https://ugc.aoe2.rocks/general/resources/resources/#98-building-cost-sum) */
 extern const int cAttributeObjectCostSummation = 98;
 
-/** ID of the player resource [arch Cost Summation](https://ugc.aoe2.rocks/general/resources/resources/#99-tech-cost-sum) */
+/** ID of the player resource [Research Cost Summation](https://ugc.aoe2.rocks/general/resources/resources/#99-tech-cost-sum) */
 extern const int cAttributeResearchCostSummation = 99;
 
-/** ID of the player resource [c Income Summation](https://ugc.aoe2.rocks/general/resources/resources/#100-relic-income-sum) */
+/** ID of the player resource [Relic Income Summation](https://ugc.aoe2.rocks/general/resources/resources/#100-relic-income-sum) */
 extern const int cAttributeRelicIncomeSummation = 100;
 
-/** ID of the player resource [e Income Summation](https://ugc.aoe2.rocks/general/resources/resources/#101-trade-income-sum) */
+/** ID of the player resource [Trade Income Summation](https://ugc.aoe2.rocks/general/resources/resources/#101-trade-income-sum) */
 extern const int cAttributeTradeIncomeSummation = 101;
 
-/** ID of the player resource [le](https://ugc.aoe2.rocks/general/resources/resources/#134-standing-castles) */
+/** ID of the player resource [Castle](https://ugc.aoe2.rocks/general/resources/resources/#134-standing-castles) */
 extern const int cAttributeCastle = 134;
 
-/** ID of the player resource [oint Razings](https://ugc.aoe2.rocks/general/resources/resources/#135-hit-points-razed) */
+/** ID of the player resource [Hit Point Razings](https://ugc.aoe2.rocks/general/resources/resources/#135-hit-points-razed) */
 extern const int cAttributeHitPointRazings = 135;
 
-/** ID of the player resource [e Killed By Others](https://ugc.aoe2.rocks/general/resources/resources/#152-value-killed-by-others) */
+/** ID of the player resource [Value Killed By Others](https://ugc.aoe2.rocks/general/resources/resources/#152-value-killed-by-others) */
 extern const int cAttributeValueKilledByOthers = 152;
 
-/** ID of the player resource [e Razed By Others](https://ugc.aoe2.rocks/general/resources/resources/#153-value-razed-by-others) */
+/** ID of the player resource [Value Razed By Others](https://ugc.aoe2.rocks/general/resources/resources/#153-value-razed-by-others) */
 extern const int cAttributeValueRazedByOthers = 153;
 
-/** ID of the player resource [ed By Others](https://ugc.aoe2.rocks/general/resources/resources/#154-killed-by-others) */
+/** ID of the player resource [Killed By Others](https://ugc.aoe2.rocks/general/resources/resources/#154-killed-by-others) */
 extern const int cAttributeKilledByOthers = 154;
 
-/** ID of the player resource [d By Others](https://ugc.aoe2.rocks/general/resources/resources/#155-razed-by-others) */
+/** ID of the player resource [Razed By Others](https://ugc.aoe2.rocks/general/resources/resources/#155-razed-by-others) */
 extern const int cAttributeRazedByOthers = 155;
 
-/** ID of the player resource [e Current Units](https://ugc.aoe2.rocks/general/resources/resources/#164-value-current-units) */
+/** ID of the player resource [Value Current Units](https://ugc.aoe2.rocks/general/resources/resources/#164-value-current-units) */
 extern const int cAttributeValueCurrentUnits = 164;
 
-/** ID of the player resource [e Current Buildings](https://ugc.aoe2.rocks/general/resources/resources/#165-value-current-buildings) */
+/** ID of the player resource [Value Current Buildings](https://ugc.aoe2.rocks/general/resources/resources/#165-value-current-buildings) */
 extern const int cAttributeValueCurrentBuildings = 165;
 
-/** ID of the player resource [Total](https://ugc.aoe2.rocks/general/resources/resources/#166-food-total) */
+/** ID of the player resource [Food Total](https://ugc.aoe2.rocks/general/resources/resources/#166-food-total) */
 extern const int cAttributeFoodTotal = 166;
 
-/** ID of the player resource [Total](https://ugc.aoe2.rocks/general/resources/resources/#167-wood-total) */
+/** ID of the player resource [Wood Total](https://ugc.aoe2.rocks/general/resources/resources/#167-wood-total) */
 extern const int cAttributeWoodTotal = 167;
 
-/** ID of the player resource [e Total](https://ugc.aoe2.rocks/general/resources/resources/#168-stone-total) */
+/** ID of the player resource [Stone Total](https://ugc.aoe2.rocks/general/resources/resources/#168-stone-total) */
 extern const int cAttributeStoneTotal = 168;
 
-/** ID of the player resource [Total](https://ugc.aoe2.rocks/general/resources/resources/#169-gold-total) */
+/** ID of the player resource [Gold Total](https://ugc.aoe2.rocks/general/resources/resources/#169-gold-total) */
 extern const int cAttributeGoldTotal = 169;
 
-/** ID of the player resource [l Value Of Kills](https://ugc.aoe2.rocks/general/resources/resources/#170-total-value-of-kills) */
+/** ID of the player resource [Total Value Of Kills](https://ugc.aoe2.rocks/general/resources/resources/#170-total-value-of-kills) */
 extern const int cAttributeTotalValueOfKills = 170;
 
-/** ID of the player resource [l Tribute Received](https://ugc.aoe2.rocks/general/resources/resources/#171-total-tribute-received) */
+/** ID of the player resource [Total Tribute Received](https://ugc.aoe2.rocks/general/resources/resources/#171-total-tribute-received) */
 extern const int cAttributeTotalTributeReceived = 171;
 
-/** ID of the player resource [l Value Of Razings](https://ugc.aoe2.rocks/general/resources/resources/#172-total-value-of-razings) */
+/** ID of the player resource [Total Value Of Razings](https://ugc.aoe2.rocks/general/resources/resources/#172-total-value-of-razings) */
 extern const int cAttributeTotalValueOfRazings = 172;
 
-/** ID of the player resource [l Castles Built](https://ugc.aoe2.rocks/general/resources/resources/#173-total-castles-built) */
+/** ID of the player resource [Total Castles Built](https://ugc.aoe2.rocks/general/resources/resources/#173-total-castles-built) */
 extern const int cAttributeTotalCastlesBuilt = 173;
 
-/** ID of the player resource [l Wonders Built](https://ugc.aoe2.rocks/general/resources/resources/#174-total-wonders-built) */
+/** ID of the player resource [Total Wonders Built](https://ugc.aoe2.rocks/general/resources/resources/#174-total-wonders-built) */
 extern const int cAttributeTotalWondersBuilt = 174;
 
-/** ID of the player resource [ute Score](https://ugc.aoe2.rocks/general/resources/resources/#175-tribute-score) */
+/** ID of the player resource [Tribute Score](https://ugc.aoe2.rocks/general/resources/resources/#175-tribute-score) */
 extern const int cAttributeTributeScore = 175;
 
-/** ID of the player resource [ert Min Adj](https://ugc.aoe2.rocks/general/resources/resources/#176-convert-min-adjustment) */
+/** ID of the player resource [Convert Min Adj](https://ugc.aoe2.rocks/general/resources/resources/#176-convert-min-adjustment) */
 extern const int cAttributeConvertMinAdj = 176;
 
-/** ID of the player resource [ert Max Adj](https://ugc.aoe2.rocks/general/resources/resources/#177-convert-max-adjustment) */
+/** ID of the player resource [Convert Max Adj](https://ugc.aoe2.rocks/general/resources/resources/#177-convert-max-adjustment) */
 extern const int cAttributeConvertMaxAdj = 177;
 
-/** ID of the player resource [ert Resist Min Adj](https://ugc.aoe2.rocks/general/resources/resources/#178-convert-resist-min-adjustment) */
+/** ID of the player resource [Convert Resist Min Adj](https://ugc.aoe2.rocks/general/resources/resources/#178-convert-resist-min-adjustment) */
 extern const int cAttributeConvertResistMinAdj = 178;
 
-/** ID of the player resource [ert Resist Max Adj](https://ugc.aoe2.rocks/general/resources/resources/#179-convert-resist-max-adjustment) */
+/** ID of the player resource [Convert Resist Max Adj](https://ugc.aoe2.rocks/general/resources/resources/#179-convert-resist-max-adjustment) */
 extern const int cAttributeConvertResistMaxAdj = 179;
 
-/** ID of the player resource [ert Building Min](https://ugc.aoe2.rocks/general/resources/resources/#180-convert-building-min) */
+/** ID of the player resource [Convert Building Min](https://ugc.aoe2.rocks/general/resources/resources/#180-convert-building-min) */
 extern const int cAttributeConvertBuildingMin = 180;
 
-/** ID of the player resource [ert Building Max](https://ugc.aoe2.rocks/general/resources/resources/#181-convert-building-max) */
+/** ID of the player resource [Convert Building Max](https://ugc.aoe2.rocks/general/resources/resources/#181-convert-building-max) */
 extern const int cAttributeConvertBuildingMax = 181;
 
-/** ID of the player resource [ert Building Chance](https://ugc.aoe2.rocks/general/resources/resources/#182-convert-building-chance) */
+/** ID of the player resource [Convert Building Chance](https://ugc.aoe2.rocks/general/resources/resources/#182-convert-building-chance) */
 extern const int cAttributeConvertBuildingChance = 182;
 
-/** ID of the player resource [s](https://ugc.aoe2.rocks/general/resources/resources/#183-reveal-enemy) */
+/** ID of the player resource [Spies](https://ugc.aoe2.rocks/general/resources/resources/#183-reveal-enemy) */
 extern const int cAttributeSpies = 183;
 
-/** ID of the player resource [e Wonders Castles](https://ugc.aoe2.rocks/general/resources/resources/#184-value-wonders-castles) */
+/** ID of the player resource [Value Wonders Castles](https://ugc.aoe2.rocks/general/resources/resources/#184-value-wonders-castles) */
 extern const int cAttributeValueWondersCastles = 184;
 
-/** ID of the player resource [Score](https://ugc.aoe2.rocks/general/resources/resources/#185-food-score) */
+/** ID of the player resource [Food Score](https://ugc.aoe2.rocks/general/resources/resources/#185-food-score) */
 extern const int cAttributeFoodScore = 185;
 
-/** ID of the player resource [Score](https://ugc.aoe2.rocks/general/resources/resources/#186-wood-score) */
+/** ID of the player resource [Wood Score](https://ugc.aoe2.rocks/general/resources/resources/#186-wood-score) */
 extern const int cAttributeWoodScore = 186;
 
-/** ID of the player resource [e Score](https://ugc.aoe2.rocks/general/resources/resources/#187-stone-score) */
+/** ID of the player resource [Stone Score](https://ugc.aoe2.rocks/general/resources/resources/#187-stone-score) */
 extern const int cAttributeStoneScore = 187;
 
-/** ID of the player resource [Score](https://ugc.aoe2.rocks/general/resources/resources/#188-gold-score) */
+/** ID of the player resource [Gold Score](https://ugc.aoe2.rocks/general/resources/resources/#188-gold-score) */
 extern const int cAttributeGoldScore = 188;
 
-/** ID of the player resource [Bonus](https://ugc.aoe2.rocks/general/resources/resources/#189-chopping-productivity) */
+/** ID of the player resource [Wood Bonus](https://ugc.aoe2.rocks/general/resources/resources/#189-chopping-productivity) */
 extern const int cAttributeWoodBonus = 189;
 
-/** ID of the player resource [Bonus](https://ugc.aoe2.rocks/general/resources/resources/#190-food-gathering-productivity) */
+/** ID of the player resource [Food Bonus](https://ugc.aoe2.rocks/general/resources/resources/#190-food-gathering-productivity) */
 extern const int cAttributeFoodBonus = 190;
 
-/** ID of the player resource [c Rate](https://ugc.aoe2.rocks/general/resources/resources/#191-relic-gold-production-rate) */
+/** ID of the player resource [Relic Rate](https://ugc.aoe2.rocks/general/resources/resources/#191-relic-gold-production-rate) */
 extern const int cAttributeRelicRate = 191;
 
-/** ID of the player resource [sy](https://ugc.aoe2.rocks/general/resources/resources/#192-converted-units-die) */
+/** ID of the player resource [Heresy](https://ugc.aoe2.rocks/general/resources/resources/#192-converted-units-die) */
 extern const int cAttributeHeresy = 192;
 
-/** ID of the player resource [cracy](https://ugc.aoe2.rocks/general/resources/resources/#193-theocracy) */
+/** ID of the player resource [Theocracy](https://ugc.aoe2.rocks/general/resources/resources/#193-theocracy) */
 extern const int cAttributeTheocracy = 193;
 
-/** ID of the player resource [ellations](https://ugc.aoe2.rocks/general/resources/resources/#194-unused-resource-194) */
+/** ID of the player resource [Crenellations](https://ugc.aoe2.rocks/general/resources/resources/#194-unused-resource-194) */
 extern const int cAttributeCrenellations = 194;
 
-/** ID of the player resource [truction Rate Mod](https://ugc.aoe2.rocks/general/resources/resources/#195-construction-rate-modifier) */
+/** ID of the player resource [Construction Rate Mod](https://ugc.aoe2.rocks/general/resources/resources/#195-construction-rate-modifier) */
 extern const int cAttributeConstructionRateMod = 195;
 
-/** ID of the player resource [onder Bonus](https://ugc.aoe2.rocks/general/resources/resources/#196-hun-wonder-discount) */
+/** ID of the player resource [Hun Wonder Bonus](https://ugc.aoe2.rocks/general/resources/resources/#196-hun-wonder-discount) */
 extern const int cAttributeHunWonderBonus = 196;
 
-/** ID of the player resource [s Discount](https://ugc.aoe2.rocks/general/resources/resources/#197-spies-discount) */
+/** ID of the player resource [Spies Discount](https://ugc.aoe2.rocks/general/resources/resources/#197-spies-discount) */
 extern const int cAttributeSpiesDiscount = 197;
 
-/** ID of the player resource [orary Map Reveal](https://ugc.aoe2.rocks/general/resources/resources/#209-reveal-enemy-town-centers) */
+/** ID of the player resource [Temporary Map Reveal](https://ugc.aoe2.rocks/general/resources/resources/#209-reveal-enemy-town-centers) */
 extern const int cAttributeTemporaryMapReveal = 209;
 
-/** ID of the player resource [al Initial Type](https://ugc.aoe2.rocks/general/resources/resources/#210-relics-visible-on-map) */
+/** ID of the player resource [Reveal Initial Type](https://ugc.aoe2.rocks/general/resources/resources/#210-relics-visible-on-map) */
 extern const int cAttributeRevealInitialType = 210;
 
-/** ID of the player resource [ation Bonus Higher](https://ugc.aoe2.rocks/general/resources/resources/#211-elevation-higher-bonus) */
+/** ID of the player resource [Elevation Bonus Higher](https://ugc.aoe2.rocks/general/resources/resources/#211-elevation-higher-bonus) */
 extern const int cAttributeElevationBonusHigher = 211;
 
-/** ID of the player resource [ation Bonus Lower](https://ugc.aoe2.rocks/general/resources/resources/#212-elevation-lower-bonus) */
+/** ID of the player resource [Elevation Bonus Lower](https://ugc.aoe2.rocks/general/resources/resources/#212-elevation-lower-bonus) */
 extern const int cAttributeElevationBonusLower = 212;
 
-/** ID of the player resource [ger Shared L O S](https://ugc.aoe2.rocks/general/resources/resources/#217-shared-line-of-sight) */
+/** ID of the player resource [Trigger Shared L O S](https://ugc.aoe2.rocks/general/resources/resources/#217-shared-line-of-sight) */
 extern const int cAttributeTriggerSharedLOS = 217;
 
-/** ID of the player resource [al Town Center Limit](https://ugc.aoe2.rocks/general/resources/resources/#218-early-town-center-limit) */
+/** ID of the player resource [Feudal Town Center Limit](https://ugc.aoe2.rocks/general/resources/resources/#218-early-town-center-limit) */
 extern const int cAttributeFeudalTownCenterLimit = 218;
 
-/** ID of the player resource [ing Productivity](https://ugc.aoe2.rocks/general/resources/resources/#219-fishing-productivity) */
+/** ID of the player resource [Fishing Productivity](https://ugc.aoe2.rocks/general/resources/resources/#219-fishing-productivity) */
 extern const int cAttributeFishingProductivity = 219;
 
-/** ID of the player resource [ed220](https://ugc.aoe2.rocks/general/resources/resources/#220-unused-resource-220) */
+/** ID of the player resource [Unused220](https://ugc.aoe2.rocks/general/resources/resources/#220-unused-resource-220) */
 extern const int cAttributeUnused220 = 220;
 
-/** ID of the player resource [ment Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#221-monument-food-productivity) */
+/** ID of the player resource [Monument Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#221-monument-food-productivity) */
 extern const int cAttributeMonumentFoodTrickle = 221;
 
-/** ID of the player resource [ment Wood Trickle](https://ugc.aoe2.rocks/general/resources/resources/#222-monument-wood-productivity) */
+/** ID of the player resource [Monument Wood Trickle](https://ugc.aoe2.rocks/general/resources/resources/#222-monument-wood-productivity) */
 extern const int cAttributeMonumentWoodTrickle = 222;
 
-/** ID of the player resource [ment Stone Trickle](https://ugc.aoe2.rocks/general/resources/resources/#223-monument-stone-productivity) */
+/** ID of the player resource [Monument Stone Trickle](https://ugc.aoe2.rocks/general/resources/resources/#223-monument-stone-productivity) */
 extern const int cAttributeMonumentStoneTrickle = 223;
 
-/** ID of the player resource [ment Gold Trickle](https://ugc.aoe2.rocks/general/resources/resources/#224-monument-gold-productivity) */
+/** ID of the player resource [Monument Gold Trickle](https://ugc.aoe2.rocks/general/resources/resources/#224-monument-gold-productivity) */
 extern const int cAttributeMonumentGoldTrickle = 224;
 
-/** ID of the player resource [c Food Rate](https://ugc.aoe2.rocks/general/resources/resources/#225-relic-food-production-rate) */
+/** ID of the player resource [Relic Food Rate](https://ugc.aoe2.rocks/general/resources/resources/#225-relic-food-production-rate) */
 extern const int cAttributeRelicFoodRate = 225;
 
-/** ID of the player resource [agers Killed By Gaia](https://ugc.aoe2.rocks/general/resources/resources/#226-villagers-killed-by-gaia) */
+/** ID of the player resource [Villagers Killed By Gaia](https://ugc.aoe2.rocks/general/resources/resources/#226-villagers-killed-by-gaia) */
 extern const int cAttributeVillagersKilledByGaia = 226;
 
-/** ID of the player resource [gaers Killed By Animal](https://ugc.aoe2.rocks/general/resources/resources/#227-villagers-killed-by-animals) */
+/** ID of the player resource [Villgaers Killed By Animal](https://ugc.aoe2.rocks/general/resources/resources/#227-villagers-killed-by-animals) */
 extern const int cAttributeVillgaersKilledByAnimal = 227;
 
-/** ID of the player resource [agers Killed By A I Player](https://ugc.aoe2.rocks/general/resources/resources/#228-villagers-killed-by-ai-player) */
+/** ID of the player resource [Villagers Killed By A I Player](https://ugc.aoe2.rocks/general/resources/resources/#228-villagers-killed-by-ai-player) */
 extern const int cAttributeVillagersKilledByAIPlayer = 228;
 
-/** ID of the player resource [agers Killed By Human Player](https://ugc.aoe2.rocks/general/resources/resources/#229-villagers-killed-by-human-player) */
+/** ID of the player resource [Villagers Killed By Human Player](https://ugc.aoe2.rocks/general/resources/resources/#229-villagers-killed-by-human-player) */
 extern const int cAttributeVillagersKilledByHumanPlayer = 229;
 
-/** ID of the player resource [Generation](https://ugc.aoe2.rocks/general/resources/resources/#230-food-generation-rate) */
+/** ID of the player resource [Food Generation](https://ugc.aoe2.rocks/general/resources/resources/#230-food-generation-rate) */
 extern const int cAttributeFoodGeneration = 230;
 
-/** ID of the player resource [Generation](https://ugc.aoe2.rocks/general/resources/resources/#231-wood-generation-rate) */
+/** ID of the player resource [Wood Generation](https://ugc.aoe2.rocks/general/resources/resources/#231-wood-generation-rate) */
 extern const int cAttributeWoodGeneration = 231;
 
-/** ID of the player resource [e Generation](https://ugc.aoe2.rocks/general/resources/resources/#232-stone-generation-rate) */
+/** ID of the player resource [Stone Generation](https://ugc.aoe2.rocks/general/resources/resources/#232-stone-generation-rate) */
 extern const int cAttributeStoneGeneration = 232;
 
-/** ID of the player resource [Generation](https://ugc.aoe2.rocks/general/resources/resources/#233-gold-generation-rate) */
+/** ID of the player resource [Gold Generation](https://ugc.aoe2.rocks/general/resources/resources/#233-gold-generation-rate) */
 extern const int cAttributeGoldGeneration = 233;
 
-/** ID of the player resource [n Cap](https://ugc.aoe2.rocks/general/resources/resources/#234-spawn-limit) */
+/** ID of the player resource [Spawn Cap](https://ugc.aoe2.rocks/general/resources/resources/#234-spawn-limit) */
 extern const int cAttributeSpawnCap = 234;
 
-/** ID of the player resource [ish Militia Pop](https://ugc.aoe2.rocks/general/resources/resources/#235-flemish-militia-population) */
+/** ID of the player resource [Flemish Militia Pop](https://ugc.aoe2.rocks/general/resources/resources/#235-flemish-militia-population) */
 extern const int cAttributeFlemishMilitiaPop = 235;
 
-/** ID of the player resource [Farming Productivity](https://ugc.aoe2.rocks/general/resources/resources/#236-farming-gold-productivity) */
+/** ID of the player resource [Gold Farming Productivity](https://ugc.aoe2.rocks/general/resources/resources/#236-farming-gold-productivity) */
 extern const int cAttributeGoldFarmingProductivity = 236;
 
-/** ID of the player resource [ark Collection Amount](https://ugc.aoe2.rocks/general/resources/resources/#237-folwark-collection-amount) */
+/** ID of the player resource [Folwark Collection Amount](https://ugc.aoe2.rocks/general/resources/resources/#237-folwark-collection-amount) */
 extern const int cAttributeFolwarkCollectionAmount = 237;
 
-/** ID of the player resource [ark Collection Type](https://ugc.aoe2.rocks/general/resources/resources/#238-folwark-attribute-type) */
+/** ID of the player resource [Folwark Collection Type](https://ugc.aoe2.rocks/general/resources/resources/#238-folwark-attribute-type) */
 extern const int cAttributeFolwarkCollectionType = 238;
 
-/** ID of the player resource [ding Id](https://ugc.aoe2.rocks/general/resources/resources/#239-folwark-building-type) */
+/** ID of the player resource [Building Id](https://ugc.aoe2.rocks/general/resources/resources/#239-folwark-building-type) */
 extern const int cAttributeBuildingId = 239;
 
-/** ID of the player resource [s Converted](https://ugc.aoe2.rocks/general/resources/resources/#240-units-converted) */
+/** ID of the player resource [Units Converted](https://ugc.aoe2.rocks/general/resources/resources/#240-units-converted) */
 extern const int cAttributeUnitsConverted = 240;
 
-/** ID of the player resource [e Gold Mining Productivity](https://ugc.aoe2.rocks/general/resources/resources/#241-stone-mining-gold-productivity) */
+/** ID of the player resource [Stone Gold Mining Productivity](https://ugc.aoe2.rocks/general/resources/resources/#241-stone-mining-gold-productivity) */
 extern const int cAttributeStoneGoldMiningProductivity = 241;
 
-/** ID of the player resource [shop Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#242-trade-workshop-food-productivity) */
+/** ID of the player resource [Workshop Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#242-trade-workshop-food-productivity) */
 extern const int cAttributeWorkshopFoodTrickle = 242;
 
-/** ID of the player resource [shop Wood Trickle](https://ugc.aoe2.rocks/general/resources/resources/#243-trade-workshop-wood-productivity) */
+/** ID of the player resource [Workshop Wood Trickle](https://ugc.aoe2.rocks/general/resources/resources/#243-trade-workshop-wood-productivity) */
 extern const int cAttributeWorkshopWoodTrickle = 243;
 
-/** ID of the player resource [shop Stone Trickle](https://ugc.aoe2.rocks/general/resources/resources/#244-trade-workshop-stone-productivity) */
+/** ID of the player resource [Workshop Stone Trickle](https://ugc.aoe2.rocks/general/resources/resources/#244-trade-workshop-stone-productivity) */
 extern const int cAttributeWorkshopStoneTrickle = 244;
 
-/** ID of the player resource [shop Gold Trickle](https://ugc.aoe2.rocks/general/resources/resources/#245-trade-workshop-gold-productivity) */
+/** ID of the player resource [Workshop Gold Trickle](https://ugc.aoe2.rocks/general/resources/resources/#245-trade-workshop-gold-productivity) */
 extern const int cAttributeWorkshopGoldTrickle = 245;
 
-/** ID of the player resource [s Value Total](https://ugc.aoe2.rocks/general/resources/resources/#246-units-value-total) */
+/** ID of the player resource [Units Value Total](https://ugc.aoe2.rocks/general/resources/resources/#246-units-value-total) */
 extern const int cAttributeUnitsValueTotal = 246;
 
-/** ID of the player resource [dings Value Total](https://ugc.aoe2.rocks/general/resources/resources/#247-buildings-value-total) */
+/** ID of the player resource [Buildings Value Total](https://ugc.aoe2.rocks/general/resources/resources/#247-buildings-value-total) */
 extern const int cAttributeBuildingsValueTotal = 247;
 
-/** ID of the player resource [agers Created Total](https://ugc.aoe2.rocks/general/resources/resources/#248-villagers-created-total) */
+/** ID of the player resource [Villagers Created Total](https://ugc.aoe2.rocks/general/resources/resources/#248-villagers-created-total) */
 extern const int cAttributeVillagersCreatedTotal = 248;
 
-/** ID of the player resource [agers Idle Periods Total](https://ugc.aoe2.rocks/general/resources/resources/#249-villagers-idle-periods-total) */
+/** ID of the player resource [Villagers Idle Periods Total](https://ugc.aoe2.rocks/general/resources/resources/#249-villagers-idle-periods-total) */
 extern const int cAttributeVillagersIdlePeriodsTotal = 249;
 
-/** ID of the player resource [agers Idle Seconds Total](https://ugc.aoe2.rocks/general/resources/resources/#250-villagers-idle-seconds-total) */
+/** ID of the player resource [Villagers Idle Seconds Total](https://ugc.aoe2.rocks/general/resources/resources/#250-villagers-idle-seconds-total) */
 extern const int cAttributeVillagersIdleSecondsTotal = 250;
 
-/** ID of the player resource [e Food Percent](https://ugc.aoe2.rocks/general/resources/resources/#251-trade-food-percent) */
+/** ID of the player resource [Trade Food Percent](https://ugc.aoe2.rocks/general/resources/resources/#251-trade-food-percent) */
 extern const int cAttributeTradeFoodPercent = 251;
 
-/** ID of the player resource [e Wood Percent](https://ugc.aoe2.rocks/general/resources/resources/#252-trade-wood-percent) */
+/** ID of the player resource [Trade Wood Percent](https://ugc.aoe2.rocks/general/resources/resources/#252-trade-wood-percent) */
 extern const int cAttributeTradeWoodPercent = 252;
 
-/** ID of the player resource [e Stone Percent](https://ugc.aoe2.rocks/general/resources/resources/#253-trade-stone-percent) */
+/** ID of the player resource [Trade Stone Percent](https://ugc.aoe2.rocks/general/resources/resources/#253-trade-stone-percent) */
 extern const int cAttributeTradeStonePercent = 253;
 
-/** ID of the player resource [stock Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#254-livestock-food-productivity) */
+/** ID of the player resource [Livestock Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#254-livestock-food-productivity) */
 extern const int cAttributeLivestockFoodProductivity = 254;
 
-/** ID of the player resource [d Up Building Type](https://ugc.aoe2.rocks/general/resources/resources/#255-unused-resource-255) */
+/** ID of the player resource [Speed Up Building Type](https://ugc.aoe2.rocks/general/resources/resources/#255-unused-resource-255) */
 extern const int cAttributeSpeedUpBuildingType = 255;
 
-/** ID of the player resource [d Up Building Range](https://ugc.aoe2.rocks/general/resources/resources/#256-unused-resource-256) */
+/** ID of the player resource [Speed Up Building Range](https://ugc.aoe2.rocks/general/resources/resources/#256-unused-resource-256) */
 extern const int cAttributeSpeedUpBuildingRange = 256;
 
-/** ID of the player resource [d Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-unused-resource-257) */
+/** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-unused-resource-257) */
 extern const int cAttributeSpeedUpPercentage = 257;
 
-/** ID of the player resource [d Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
+/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
 extern const int cAttributeSpeedUpObjectType = 258;
 
-/** ID of the player resource [d Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-unused-resource-259) */
+/** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-unused-resource-259) */
 extern const int cAttributeSpeedUpEffectType = 259;
 
-/** ID of the player resource [d Up Secondary Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#260-unused-resource-260) */
+/** ID of the player resource [Speed Up Secondary Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#260-unused-resource-260) */
 extern const int cAttributeSpeedUpSecondaryEffectType = 260;
 
-/** ID of the player resource [d Up Secondary Percentage](https://ugc.aoe2.rocks/general/resources/resources/#261-unused-resource-261) */
+/** ID of the player resource [Speed Up Secondary Percentage](https://ugc.aoe2.rocks/general/resources/resources/#261-unused-resource-261) */
 extern const int cAttributeSpeedUpSecondaryPercentage = 261;
 
-/** ID of the player resource [ame Override](https://ugc.aoe2.rocks/general/resources/resources/#262-civilization-name-override) */
+/** ID of the player resource [Civ Name Override](https://ugc.aoe2.rocks/general/resources/resources/#262-civilization-name-override) */
 extern const int cAttributeCivNameOverride = 262;
 
-/** ID of the player resource [ting Scout I D](https://ugc.aoe2.rocks/general/resources/resources/#263-starting-scout-id) */
+/** ID of the player resource [Starting Scout I D](https://ugc.aoe2.rocks/general/resources/resources/#263-starting-scout-id) */
 extern const int cAttributeStartingScoutID = 263;
 
-/** ID of the player resource [c Wood Rate](https://ugc.aoe2.rocks/general/resources/resources/#264-relic-wood-production-rate) */
+/** ID of the player resource [Relic Wood Rate](https://ugc.aoe2.rocks/general/resources/resources/#264-relic-wood-production-rate) */
 extern const int cAttributeRelicWoodRate = 264;
 
-/** ID of the player resource [c Stone Rate](https://ugc.aoe2.rocks/general/resources/resources/#265-relic-stone-production-rate) */
+/** ID of the player resource [Relic Stone Rate](https://ugc.aoe2.rocks/general/resources/resources/#265-relic-stone-production-rate) */
 extern const int cAttributeRelicStoneRate = 265;
 
-/** ID of the player resource [ping Gold Productivity](https://ugc.aoe2.rocks/general/resources/resources/#266-chopping-gold-productivity) */
+/** ID of the player resource [Chopping Gold Productivity](https://ugc.aoe2.rocks/general/resources/resources/#266-chopping-gold-productivity) */
 extern const int cAttributeChoppingGoldProductivity = 266;
 
-/** ID of the player resource [ging Wood Productivity](https://ugc.aoe2.rocks/general/resources/resources/#267-foraging-wood-productivity) */
+/** ID of the player resource [Foraging Wood Productivity](https://ugc.aoe2.rocks/general/resources/resources/#267-foraging-wood-productivity) */
 extern const int cAttributeForagingWoodProductivity = 267;
 
-/** ID of the player resource [ing Productivity](https://ugc.aoe2.rocks/general/resources/resources/#268-hunter-productivity) */
+/** ID of the player resource [Hunting Productivity](https://ugc.aoe2.rocks/general/resources/resources/#268-hunter-productivity) */
 extern const int cAttributeHuntingProductivity = 268;
 
-/** ID of the player resource [nology Reward Effect](https://ugc.aoe2.rocks/general/resources/resources/#269-technology-reward-effect) */
+/** ID of the player resource [Technology Reward Effect](https://ugc.aoe2.rocks/general/resources/resources/#269-technology-reward-effect) */
 extern const int cAttributeTechnologyRewardEffect = 269;
 
-/** ID of the player resource [Repair Cost](https://ugc.aoe2.rocks/general/resources/resources/#270-unit-repair-cost) */
+/** ID of the player resource [Unit Repair Cost](https://ugc.aoe2.rocks/general/resources/resources/#270-unit-repair-cost) */
 extern const int cAttributeUnitRepairCost = 270;
 
-/** ID of the player resource [ding Repair Cost](https://ugc.aoe2.rocks/general/resources/resources/#271-building-repair-cost) */
+/** ID of the player resource [Building Repair Cost](https://ugc.aoe2.rocks/general/resources/resources/#271-building-repair-cost) */
 extern const int cAttributeBuildingRepairCost = 271;
 
-/** ID of the player resource [ation Damage Higher](https://ugc.aoe2.rocks/general/resources/resources/#272-elevation-higher-damage) */
+/** ID of the player resource [Elevation Damage Higher](https://ugc.aoe2.rocks/general/resources/resources/#272-elevation-higher-damage) */
 extern const int cAttributeElevationDamageHigher = 272;
 
-/** ID of the player resource [ation Damage Lower](https://ugc.aoe2.rocks/general/resources/resources/#273-elevation-lower-damage) */
+/** ID of the player resource [Elevation Damage Lower](https://ugc.aoe2.rocks/general/resources/resources/#273-elevation-lower-damage) */
 extern const int cAttributeElevationDamageLower = 273;
 
-/** ID of the player resource [ntry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#274-infantry-kill-reward) */
+/** ID of the player resource [Infantry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#274-infantry-kill-reward) */
 extern const int cAttributeInfantryKillReward = 274;
 
-/** ID of the player resource [tary Can Convert](https://ugc.aoe2.rocks/general/resources/resources/#279-military-can-convert) */
+/** ID of the player resource [Military Can Convert](https://ugc.aoe2.rocks/general/resources/resources/#279-military-can-convert) */
 extern const int cAttributeMilitaryCanConvert = 279;
 
-/** ID of the player resource [tary Conversion Range Adj](https://ugc.aoe2.rocks/general/resources/resources/#280-military-convert-range) */
+/** ID of the player resource [Military Conversion Range Adj](https://ugc.aoe2.rocks/general/resources/resources/#280-military-convert-range) */
 extern const int cAttributeMilitaryConversionRangeAdj = 280;
 
-/** ID of the player resource [tary Conversion Chance](https://ugc.aoe2.rocks/general/resources/resources/#281-military-convert-chance) */
+/** ID of the player resource [Military Conversion Chance](https://ugc.aoe2.rocks/general/resources/resources/#281-military-convert-chance) */
 extern const int cAttributeMilitaryConversionChance = 281;
 
-/** ID of the player resource [tary Conversion Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#282-military-convert-recharge) */
+/** ID of the player resource [Military Conversion Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#282-military-convert-recharge) */
 extern const int cAttributeMilitaryConversionRechargeRate = 282;
 
-/** ID of the player resource [n Stay Inside](https://ugc.aoe2.rocks/general/resources/resources/#283-spawn-inside) */
+/** ID of the player resource [Spawn Stay Inside](https://ugc.aoe2.rocks/general/resources/resources/#283-spawn-inside) */
 extern const int cAttributeSpawnStayInside = 283;
 
-/** ID of the player resource [lry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#284-cavalry-kill-reward) */
+/** ID of the player resource [Cavalry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#284-cavalry-kill-reward) */
 extern const int cAttributeCavalryKillReward = 284;
 
-/** ID of the player resource [ger Shared Visibility](https://ugc.aoe2.rocks/general/resources/resources/#285-shared-visibility) */
+/** ID of the player resource [Trigger Shared Visibility](https://ugc.aoe2.rocks/general/resources/resources/#285-shared-visibility) */
 extern const int cAttributeTriggerSharedVisibility = 285;
 
-/** ID of the player resource [ger Shared Exploration](https://ugc.aoe2.rocks/general/resources/resources/#286-shared-exploration) */
+/** ID of the player resource [Trigger Shared Exploration](https://ugc.aoe2.rocks/general/resources/resources/#286-shared-exploration) */
 extern const int cAttributeTriggerSharedExploration = 286;
 
-/** ID of the player resource [tary Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#287-military-food-productivity) */
+/** ID of the player resource [Military Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#287-military-food-productivity) */
 extern const int cAttributeMilitaryFoodTrickle = 287;
 
-/** ID of the player resource [ure Food Amount](https://ugc.aoe2.rocks/general/resources/resources/#288-pasture-food-amount) */
+/** ID of the player resource [Pasture Food Amount](https://ugc.aoe2.rocks/general/resources/resources/#288-pasture-food-amount) */
 extern const int cAttributePastureFoodAmount = 288;
 
-/** ID of the player resource [ure Animal Count](https://ugc.aoe2.rocks/general/resources/resources/#289-pasture-animal-count) */
+/** ID of the player resource [Pasture Animal Count](https://ugc.aoe2.rocks/general/resources/resources/#289-pasture-animal-count) */
 extern const int cAttributePastureAnimalCount = 289;
 
-/** ID of the player resource [ure Herder Count](https://ugc.aoe2.rocks/general/resources/resources/#290-pasture-herder-count) */
+/** ID of the player resource [Pasture Herder Count](https://ugc.aoe2.rocks/general/resources/resources/#290-pasture-herder-count) */
 extern const int cAttributePastureHerderCount = 290;
 
-/** ID of the player resource [ble Animal Decay](https://ugc.aoe2.rocks/general/resources/resources/#292-animal-decay-prevention) */
+/** ID of the player resource [Disable Animal Decay](https://ugc.aoe2.rocks/general/resources/resources/#292-animal-decay-prevention) */
 extern const int cAttributeDisableAnimalDecay = 292;
 
-/** ID of the player resource [ing Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#293-herder-food-productivity) */
+/** ID of the player resource [Herding Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#293-herder-food-productivity) */
 extern const int cAttributeHerdingFoodProductivity = 293;
 
-/** ID of the player resource [herding Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#294-shepherd-food-productivity) */
+/** ID of the player resource [Shepherding Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#294-shepherd-food-productivity) */
 extern const int cAttributeShepherdingFoodProductivity = 294;
 
-/** ID of the player resource [Kills](https://ugc.aoe2.rocks/general/resources/resources/#300-killed-gaia) */
+/** ID of the player resource [Gaia Kills](https://ugc.aoe2.rocks/general/resources/resources/#300-killed-gaia) */
 extern const int cAttributeGaiaKills = 300;
 
-/** ID of the player resource [er1 Kills](https://ugc.aoe2.rocks/general/resources/resources/#301-killed-p1) */
+/** ID of the player resource [Player1 Kills](https://ugc.aoe2.rocks/general/resources/resources/#301-killed-p1) */
 extern const int cAttributePlayer1Kills = 301;
 
-/** ID of the player resource [er2 Kills](https://ugc.aoe2.rocks/general/resources/resources/#302-killed-p2) */
+/** ID of the player resource [Player2 Kills](https://ugc.aoe2.rocks/general/resources/resources/#302-killed-p2) */
 extern const int cAttributePlayer2Kills = 302;
 
-/** ID of the player resource [er3 Kills](https://ugc.aoe2.rocks/general/resources/resources/#303-killed-p3) */
+/** ID of the player resource [Player3 Kills](https://ugc.aoe2.rocks/general/resources/resources/#303-killed-p3) */
 extern const int cAttributePlayer3Kills = 303;
 
-/** ID of the player resource [er4 Kills](https://ugc.aoe2.rocks/general/resources/resources/#304-killed-p4) */
+/** ID of the player resource [Player4 Kills](https://ugc.aoe2.rocks/general/resources/resources/#304-killed-p4) */
 extern const int cAttributePlayer4Kills = 304;
 
-/** ID of the player resource [er5 Kills](https://ugc.aoe2.rocks/general/resources/resources/#305-killed-p5) */
+/** ID of the player resource [Player5 Kills](https://ugc.aoe2.rocks/general/resources/resources/#305-killed-p5) */
 extern const int cAttributePlayer5Kills = 305;
 
-/** ID of the player resource [er6 Kills](https://ugc.aoe2.rocks/general/resources/resources/#306-killed-p6) */
+/** ID of the player resource [Player6 Kills](https://ugc.aoe2.rocks/general/resources/resources/#306-killed-p6) */
 extern const int cAttributePlayer6Kills = 306;
 
-/** ID of the player resource [er7 Kills](https://ugc.aoe2.rocks/general/resources/resources/#307-killed-p7) */
+/** ID of the player resource [Player7 Kills](https://ugc.aoe2.rocks/general/resources/resources/#307-killed-p7) */
 extern const int cAttributePlayer7Kills = 307;
 
-/** ID of the player resource [er8 Kills](https://ugc.aoe2.rocks/general/resources/resources/#308-killed-p8) */
+/** ID of the player resource [Player8 Kills](https://ugc.aoe2.rocks/general/resources/resources/#308-killed-p8) */
 extern const int cAttributePlayer8Kills = 308;
 
-/** ID of the player resource [s By Gaia](https://ugc.aoe2.rocks/general/resources/resources/#325-kills-by-gaia) */
+/** ID of the player resource [Kills By Gaia](https://ugc.aoe2.rocks/general/resources/resources/#325-kills-by-gaia) */
 extern const int cAttributeKillsByGaia = 325;
 
-/** ID of the player resource [s By Player1](https://ugc.aoe2.rocks/general/resources/resources/#326-kills-by-p1) */
+/** ID of the player resource [Kills By Player1](https://ugc.aoe2.rocks/general/resources/resources/#326-kills-by-p1) */
 extern const int cAttributeKillsByPlayer1 = 326;
 
-/** ID of the player resource [s By Player2](https://ugc.aoe2.rocks/general/resources/resources/#327-kills-by-p2) */
+/** ID of the player resource [Kills By Player2](https://ugc.aoe2.rocks/general/resources/resources/#327-kills-by-p2) */
 extern const int cAttributeKillsByPlayer2 = 327;
 
-/** ID of the player resource [s By Player3](https://ugc.aoe2.rocks/general/resources/resources/#328-kills-by-p3) */
+/** ID of the player resource [Kills By Player3](https://ugc.aoe2.rocks/general/resources/resources/#328-kills-by-p3) */
 extern const int cAttributeKillsByPlayer3 = 328;
 
-/** ID of the player resource [s By Player4](https://ugc.aoe2.rocks/general/resources/resources/#329-kills-by-p4) */
+/** ID of the player resource [Kills By Player4](https://ugc.aoe2.rocks/general/resources/resources/#329-kills-by-p4) */
 extern const int cAttributeKillsByPlayer4 = 329;
 
-/** ID of the player resource [s By Player5](https://ugc.aoe2.rocks/general/resources/resources/#330-kills-by-p5) */
+/** ID of the player resource [Kills By Player5](https://ugc.aoe2.rocks/general/resources/resources/#330-kills-by-p5) */
 extern const int cAttributeKillsByPlayer5 = 330;
 
-/** ID of the player resource [s By Player6](https://ugc.aoe2.rocks/general/resources/resources/#331-kills-by-p6) */
+/** ID of the player resource [Kills By Player6](https://ugc.aoe2.rocks/general/resources/resources/#331-kills-by-p6) */
 extern const int cAttributeKillsByPlayer6 = 331;
 
-/** ID of the player resource [s By Player7](https://ugc.aoe2.rocks/general/resources/resources/#332-kills-by-p7) */
+/** ID of the player resource [Kills By Player7](https://ugc.aoe2.rocks/general/resources/resources/#332-kills-by-p7) */
 extern const int cAttributeKillsByPlayer7 = 332;
 
-/** ID of the player resource [s By Player8](https://ugc.aoe2.rocks/general/resources/resources/#333-kills-by-p8) */
+/** ID of the player resource [Kills By Player8](https://ugc.aoe2.rocks/general/resources/resources/#333-kills-by-p8) */
 extern const int cAttributeKillsByPlayer8 = 333;
 
-/** ID of the player resource [Razings](https://ugc.aoe2.rocks/general/resources/resources/#350-gaia-razings) */
+/** ID of the player resource [Gaia Razings](https://ugc.aoe2.rocks/general/resources/resources/#350-gaia-razings) */
 extern const int cAttributeGaiaRazings = 350;
 
-/** ID of the player resource [er1 Razings](https://ugc.aoe2.rocks/general/resources/resources/#351-p1-razings) */
+/** ID of the player resource [Player1 Razings](https://ugc.aoe2.rocks/general/resources/resources/#351-p1-razings) */
 extern const int cAttributePlayer1Razings = 351;
 
-/** ID of the player resource [er2 Razings](https://ugc.aoe2.rocks/general/resources/resources/#352-p2-razings) */
+/** ID of the player resource [Player2 Razings](https://ugc.aoe2.rocks/general/resources/resources/#352-p2-razings) */
 extern const int cAttributePlayer2Razings = 352;
 
-/** ID of the player resource [er3 Razings](https://ugc.aoe2.rocks/general/resources/resources/#353-p3-razings) */
+/** ID of the player resource [Player3 Razings](https://ugc.aoe2.rocks/general/resources/resources/#353-p3-razings) */
 extern const int cAttributePlayer3Razings = 353;
 
-/** ID of the player resource [er4 Razings](https://ugc.aoe2.rocks/general/resources/resources/#354-p4-razings) */
+/** ID of the player resource [Player4 Razings](https://ugc.aoe2.rocks/general/resources/resources/#354-p4-razings) */
 extern const int cAttributePlayer4Razings = 354;
 
-/** ID of the player resource [er5 Razings](https://ugc.aoe2.rocks/general/resources/resources/#355-p5-razings) */
+/** ID of the player resource [Player5 Razings](https://ugc.aoe2.rocks/general/resources/resources/#355-p5-razings) */
 extern const int cAttributePlayer5Razings = 355;
 
-/** ID of the player resource [er6 Razings](https://ugc.aoe2.rocks/general/resources/resources/#356-p6-razings) */
+/** ID of the player resource [Player6 Razings](https://ugc.aoe2.rocks/general/resources/resources/#356-p6-razings) */
 extern const int cAttributePlayer6Razings = 356;
 
-/** ID of the player resource [er7 Razings](https://ugc.aoe2.rocks/general/resources/resources/#357-p7-razings) */
+/** ID of the player resource [Player7 Razings](https://ugc.aoe2.rocks/general/resources/resources/#357-p7-razings) */
 extern const int cAttributePlayer7Razings = 357;
 
-/** ID of the player resource [er8 Razings](https://ugc.aoe2.rocks/general/resources/resources/#358-p8-razings) */
+/** ID of the player resource [Player8 Razings](https://ugc.aoe2.rocks/general/resources/resources/#358-p8-razings) */
 extern const int cAttributePlayer8Razings = 358;
 
-/** ID of the player resource [ngs By Gaia](https://ugc.aoe2.rocks/general/resources/resources/#375-razings-by-gaia) */
+/** ID of the player resource [Razings By Gaia](https://ugc.aoe2.rocks/general/resources/resources/#375-razings-by-gaia) */
 extern const int cAttributeRazingsByGaia = 375;
 
-/** ID of the player resource [ngs By Player1](https://ugc.aoe2.rocks/general/resources/resources/#376-razings-by-p1) */
+/** ID of the player resource [Razings By Player1](https://ugc.aoe2.rocks/general/resources/resources/#376-razings-by-p1) */
 extern const int cAttributeRazingsByPlayer1 = 376;
 
-/** ID of the player resource [ngs By Player2](https://ugc.aoe2.rocks/general/resources/resources/#377-razings-by-p2) */
+/** ID of the player resource [Razings By Player2](https://ugc.aoe2.rocks/general/resources/resources/#377-razings-by-p2) */
 extern const int cAttributeRazingsByPlayer2 = 377;
 
-/** ID of the player resource [ngs By Player3](https://ugc.aoe2.rocks/general/resources/resources/#378-razings-by-p3) */
+/** ID of the player resource [Razings By Player3](https://ugc.aoe2.rocks/general/resources/resources/#378-razings-by-p3) */
 extern const int cAttributeRazingsByPlayer3 = 378;
 
-/** ID of the player resource [ngs By Player4](https://ugc.aoe2.rocks/general/resources/resources/#379-razings-by-p4) */
+/** ID of the player resource [Razings By Player4](https://ugc.aoe2.rocks/general/resources/resources/#379-razings-by-p4) */
 extern const int cAttributeRazingsByPlayer4 = 379;
 
-/** ID of the player resource [ngs By Player5](https://ugc.aoe2.rocks/general/resources/resources/#380-razings-by-p5) */
+/** ID of the player resource [Razings By Player5](https://ugc.aoe2.rocks/general/resources/resources/#380-razings-by-p5) */
 extern const int cAttributeRazingsByPlayer5 = 380;
 
-/** ID of the player resource [ngs By Player6](https://ugc.aoe2.rocks/general/resources/resources/#381-razings-by-p6) */
+/** ID of the player resource [Razings By Player6](https://ugc.aoe2.rocks/general/resources/resources/#381-razings-by-p6) */
 extern const int cAttributeRazingsByPlayer6 = 381;
 
-/** ID of the player resource [ngs By Player7](https://ugc.aoe2.rocks/general/resources/resources/#382-razings-by-p7) */
+/** ID of the player resource [Razings By Player7](https://ugc.aoe2.rocks/general/resources/resources/#382-razings-by-p7) */
 extern const int cAttributeRazingsByPlayer7 = 382;
 
-/** ID of the player resource [ngs By Player8](https://ugc.aoe2.rocks/general/resources/resources/#383-razings-by-p8) */
+/** ID of the player resource [Razings By Player8](https://ugc.aoe2.rocks/general/resources/resources/#383-razings-by-p8) */
 extern const int cAttributeRazingsByPlayer8 = 383;
 
-/** ID of the player resource [Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#400-gaia-kill-value) */
+/** ID of the player resource [Gaia Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#400-gaia-kill-value) */
 extern const int cAttributeGaiaKillValue = 400;
 
-/** ID of the player resource [er1 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#401-p1-kill-value) */
+/** ID of the player resource [Player1 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#401-p1-kill-value) */
 extern const int cAttributePlayer1KillValue = 401;
 
-/** ID of the player resource [er2 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#402-p2-kill-value) */
+/** ID of the player resource [Player2 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#402-p2-kill-value) */
 extern const int cAttributePlayer2KillValue = 402;
 
-/** ID of the player resource [er3 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#403-p3-kill-value) */
+/** ID of the player resource [Player3 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#403-p3-kill-value) */
 extern const int cAttributePlayer3KillValue = 403;
 
-/** ID of the player resource [er4 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#404-p4-kill-value) */
+/** ID of the player resource [Player4 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#404-p4-kill-value) */
 extern const int cAttributePlayer4KillValue = 404;
 
-/** ID of the player resource [er5 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#405-p5-kill-value) */
+/** ID of the player resource [Player5 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#405-p5-kill-value) */
 extern const int cAttributePlayer5KillValue = 405;
 
-/** ID of the player resource [er6 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#406-p6-kill-value) */
+/** ID of the player resource [Player6 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#406-p6-kill-value) */
 extern const int cAttributePlayer6KillValue = 406;
 
-/** ID of the player resource [er7 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#407-p7-kill-value) */
+/** ID of the player resource [Player7 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#407-p7-kill-value) */
 extern const int cAttributePlayer7KillValue = 407;
 
-/** ID of the player resource [er8 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#408-p8-kill-value) */
+/** ID of the player resource [Player8 Kill Value](https://ugc.aoe2.rocks/general/resources/resources/#408-p8-kill-value) */
 extern const int cAttributePlayer8KillValue = 408;
 
-/** ID of the player resource [Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#425-gaia-razing-value) */
+/** ID of the player resource [Gaia Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#425-gaia-razing-value) */
 extern const int cAttributeGaiaRazingValue = 425;
 
-/** ID of the player resource [er1 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#426-p1-razing-value) */
+/** ID of the player resource [Player1 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#426-p1-razing-value) */
 extern const int cAttributePlayer1RazingValue = 426;
 
-/** ID of the player resource [er2 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#427-p2-razing-value) */
+/** ID of the player resource [Player2 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#427-p2-razing-value) */
 extern const int cAttributePlayer2RazingValue = 427;
 
-/** ID of the player resource [er3 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#428-p3-razing-value) */
+/** ID of the player resource [Player3 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#428-p3-razing-value) */
 extern const int cAttributePlayer3RazingValue = 428;
 
-/** ID of the player resource [er4 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#429-p4-razing-value) */
+/** ID of the player resource [Player4 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#429-p4-razing-value) */
 extern const int cAttributePlayer4RazingValue = 429;
 
-/** ID of the player resource [er5 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#430-p5-razing-value) */
+/** ID of the player resource [Player5 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#430-p5-razing-value) */
 extern const int cAttributePlayer5RazingValue = 430;
 
-/** ID of the player resource [er6 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#431-p6-razing-value) */
+/** ID of the player resource [Player6 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#431-p6-razing-value) */
 extern const int cAttributePlayer6RazingValue = 431;
 
-/** ID of the player resource [er7 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#432-p7-razing-value) */
+/** ID of the player resource [Player7 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#432-p7-razing-value) */
 extern const int cAttributePlayer7RazingValue = 432;
 
-/** ID of the player resource [er8 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#433-p8-razing-value) */
+/** ID of the player resource [Player8 Razing Value](https://ugc.aoe2.rocks/general/resources/resources/#433-p8-razing-value) */
 extern const int cAttributePlayer8RazingValue = 433;
 
-/** ID of the player resource [Tribute](https://ugc.aoe2.rocks/general/resources/resources/#450-gaia-tribute) */
+/** ID of the player resource [Gaia Tribute](https://ugc.aoe2.rocks/general/resources/resources/#450-gaia-tribute) */
 extern const int cAttributeGaiaTribute = 450;
 
-/** ID of the player resource [er1 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#451-p1-tribute) */
+/** ID of the player resource [Player1 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#451-p1-tribute) */
 extern const int cAttributePlayer1Tribute = 451;
 
-/** ID of the player resource [er2 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#452-p2-tribute) */
+/** ID of the player resource [Player2 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#452-p2-tribute) */
 extern const int cAttributePlayer2Tribute = 452;
 
-/** ID of the player resource [er3 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#453-p3-tribute) */
+/** ID of the player resource [Player3 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#453-p3-tribute) */
 extern const int cAttributePlayer3Tribute = 453;
 
-/** ID of the player resource [er4 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#454-p4-tribute) */
+/** ID of the player resource [Player4 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#454-p4-tribute) */
 extern const int cAttributePlayer4Tribute = 454;
 
-/** ID of the player resource [er5 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#455-p5-tribute) */
+/** ID of the player resource [Player5 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#455-p5-tribute) */
 extern const int cAttributePlayer5Tribute = 455;
 
-/** ID of the player resource [er6 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#456-p6-tribute) */
+/** ID of the player resource [Player6 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#456-p6-tribute) */
 extern const int cAttributePlayer6Tribute = 456;
 
-/** ID of the player resource [er7 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#457-p7-tribute) */
+/** ID of the player resource [Player7 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#457-p7-tribute) */
 extern const int cAttributePlayer7Tribute = 457;
 
-/** ID of the player resource [er8 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#458-p8-tribute) */
+/** ID of the player resource [Player8 Tribute](https://ugc.aoe2.rocks/general/resources/resources/#458-p8-tribute) */
 extern const int cAttributePlayer8Tribute = 458;
 
-/** ID of the player resource [ute From Gaia](https://ugc.aoe2.rocks/general/resources/resources/#475-tribute-from-gaia) */
+/** ID of the player resource [Tribute From Gaia](https://ugc.aoe2.rocks/general/resources/resources/#475-tribute-from-gaia) */
 extern const int cAttributeTributeFromGaia = 475;
 
-/** ID of the player resource [ute From Player1](https://ugc.aoe2.rocks/general/resources/resources/#476-tribute-from-p1) */
+/** ID of the player resource [Tribute From Player1](https://ugc.aoe2.rocks/general/resources/resources/#476-tribute-from-p1) */
 extern const int cAttributeTributeFromPlayer1 = 476;
 
-/** ID of the player resource [ute From Player2](https://ugc.aoe2.rocks/general/resources/resources/#477-tribute-from-p2) */
+/** ID of the player resource [Tribute From Player2](https://ugc.aoe2.rocks/general/resources/resources/#477-tribute-from-p2) */
 extern const int cAttributeTributeFromPlayer2 = 477;
 
-/** ID of the player resource [ute From Player3](https://ugc.aoe2.rocks/general/resources/resources/#478-tribute-from-p3) */
+/** ID of the player resource [Tribute From Player3](https://ugc.aoe2.rocks/general/resources/resources/#478-tribute-from-p3) */
 extern const int cAttributeTributeFromPlayer3 = 478;
 
-/** ID of the player resource [ute From Player4](https://ugc.aoe2.rocks/general/resources/resources/#479-tribute-from-p4) */
+/** ID of the player resource [Tribute From Player4](https://ugc.aoe2.rocks/general/resources/resources/#479-tribute-from-p4) */
 extern const int cAttributeTributeFromPlayer4 = 479;
 
-/** ID of the player resource [ute From Player5](https://ugc.aoe2.rocks/general/resources/resources/#480-tribute-from-p5) */
+/** ID of the player resource [Tribute From Player5](https://ugc.aoe2.rocks/general/resources/resources/#480-tribute-from-p5) */
 extern const int cAttributeTributeFromPlayer5 = 480;
 
-/** ID of the player resource [ute From Player6](https://ugc.aoe2.rocks/general/resources/resources/#481-tribute-from-p6) */
+/** ID of the player resource [Tribute From Player6](https://ugc.aoe2.rocks/general/resources/resources/#481-tribute-from-p6) */
 extern const int cAttributeTributeFromPlayer6 = 481;
 
-/** ID of the player resource [ute From Player7](https://ugc.aoe2.rocks/general/resources/resources/#482-tribute-from-p7) */
+/** ID of the player resource [Tribute From Player7](https://ugc.aoe2.rocks/general/resources/resources/#482-tribute-from-p7) */
 extern const int cAttributeTributeFromPlayer7 = 482;
 
-/** ID of the player resource [ute From Player8](https://ugc.aoe2.rocks/general/resources/resources/#483-tribute-from-p8) */
+/** ID of the player resource [Tribute From Player8](https://ugc.aoe2.rocks/general/resources/resources/#483-tribute-from-p8) */
 extern const int cAttributeTributeFromPlayer8 = 483;
 
 /** This constant is set incorrectly, it should be 291 */
@@ -1959,355 +1959,355 @@ extern const int cAttributeChoppingFoodProductivity = 502;
 // 12. Damage Classes
 
 
-/** ID of the Damage Class ge Class Infantry */
+/** ID of the Damage Class Infantry */
 extern const int cDamageClassInfantry = 1;
 
-/** ID of the Damage Class ge Class Capital Ships */
+/** ID of the Damage Class Capital Ships */
 extern const int cDamageClassCapitalShips = 2;
 
-/** ID of the Damage Class ge Class Pierce */
+/** ID of the Damage Class Pierce */
 extern const int cDamageClassPierce = 3;
 
-/** ID of the Damage Class ge Class Melee */
+/** ID of the Damage Class Melee */
 extern const int cDamageClassMelee = 4;
 
-/** ID of the Damage Class ge Class Elephant Units */
+/** ID of the Damage Class Elephant Units */
 extern const int cDamageClassElephantUnits = 5;
 
-/** ID of the Damage Class ge Class Cavalry */
+/** ID of the Damage Class Cavalry */
 extern const int cDamageClassCavalry = 8;
 
-/** ID of the Damage Class ge Class All Buildings */
+/** ID of the Damage Class All Buildings */
 extern const int cDamageClassAllBuildings = 11;
 
-/** ID of the Damage Class ge Class Stone Defense */
+/** ID of the Damage Class Stone Defense */
 extern const int cDamageClassStoneDefense = 13;
 
-/** ID of the Damage Class ge Class Predator Animals */
+/** ID of the Damage Class Predator Animals */
 extern const int cDamageClassPredatorAnimals = 14;
 
-/** ID of the Damage Class ge Class Archers */
+/** ID of the Damage Class Archers */
 extern const int cDamageClassArchers = 15;
 
-/** ID of the Damage Class ge Class Ships */
+/** ID of the Damage Class Ships */
 extern const int cDamageClassShips = 16;
 
-/** ID of the Damage Class ge Class Rams */
+/** ID of the Damage Class Rams */
 extern const int cDamageClassRams = 17;
 
-/** ID of the Damage Class ge Class Trees */
+/** ID of the Damage Class Trees */
 extern const int cDamageClassTrees = 18;
 
-/** ID of the Damage Class ge Class Unique Units */
+/** ID of the Damage Class Unique Units */
 extern const int cDamageClassUniqueUnits = 19;
 
-/** ID of the Damage Class ge Class Siege Weapons */
+/** ID of the Damage Class Siege Weapons */
 extern const int cDamageClassSiegeWeapons = 20;
 
-/** ID of the Damage Class ge Class Standard Buildings */
+/** ID of the Damage Class Standard Buildings */
 extern const int cDamageClassStandardBuildings = 21;
 
-/** ID of the Damage Class ge Class Walls And Gates */
+/** ID of the Damage Class Walls And Gates */
 extern const int cDamageClassWallsAndGates = 22;
 
-/** ID of the Damage Class ge Class Gunpowder Units */
+/** ID of the Damage Class Gunpowder Units */
 extern const int cDamageClassGunpowderUnits = 23;
 
-/** ID of the Damage Class ge Class Boars */
+/** ID of the Damage Class Boars */
 extern const int cDamageClassBoars = 24;
 
-/** ID of the Damage Class ge Class Monks */
+/** ID of the Damage Class Monks */
 extern const int cDamageClassMonks = 25;
 
-/** ID of the Damage Class ge Class Castles */
+/** ID of the Damage Class Castles */
 extern const int cDamageClassCastles = 26;
 
-/** ID of the Damage Class ge Class Spearmen */
+/** ID of the Damage Class Spearmen */
 extern const int cDamageClassSpearmen = 27;
 
-/** ID of the Damage Class ge Class Cavalry Archers */
+/** ID of the Damage Class Cavalry Archers */
 extern const int cDamageClassCavalryArchers = 28;
 
-/** ID of the Damage Class ge Class Shock Infantry */
+/** ID of the Damage Class Shock Infantry */
 extern const int cDamageClassShockInfantry = 29;
 
-/** ID of the Damage Class ge Class Camel Units */
+/** ID of the Damage Class Camel Units */
 extern const int cDamageClassCamelUnits = 30;
 
-/** ID of the Damage Class ge Class Condottieri */
+/** ID of the Damage Class Condottieri */
 extern const int cDamageClassCondottieri = 32;
 
-/** ID of the Damage Class ge Class Fishing Ships */
+/** ID of the Damage Class Fishing Ships */
 extern const int cDamageClassFishingShips = 34;
 
-/** ID of the Damage Class ge Class Mamelukes */
+/** ID of the Damage Class Mamelukes */
 extern const int cDamageClassMamelukes = 35;
 
-/** ID of the Damage Class ge Class Heroes And Kings */
+/** ID of the Damage Class Heroes And Kings */
 extern const int cDamageClassHeroesAndKings = 36;
 
-/** ID of the Damage Class ge Class Heavy Siege */
+/** ID of the Damage Class Heavy Siege */
 extern const int cDamageClassHeavySiege = 37;
 
-/** ID of the Damage Class ge Class Skirmishers */
+/** ID of the Damage Class Skirmishers */
 extern const int cDamageClassSkirmishers = 38;
 
-/** ID of the Damage Class ge Class Royal Heirs */
+/** ID of the Damage Class Royal Heirs */
 extern const int cDamageClassRoyalHeirs = 39;
 
 
 // 13. Task Attributes
 
 
-/** ID for the task amount Task Attribute Attr Work Value1 */
+/** ID for the task amount Task Attribute Work Value1 */
 extern const int cTaskAttrWorkValue1 = 0;
 
-/** ID for the task amount Task Attribute Attr Work Value2 */
+/** ID for the task amount Task Attribute Work Value2 */
 extern const int cTaskAttrWorkValue2 = 1;
 
-/** ID for the task amount Task Attribute Attr Work Range */
+/** ID for the task amount Task Attribute Work Range */
 extern const int cTaskAttrWorkRange = 2;
 
-/** ID for the task amount Task Attribute Attr Work Flag2 */
+/** ID for the task amount Task Attribute Work Flag2 */
 extern const int cTaskAttrWorkFlag2 = 3;
 
-/** ID for the task amount Task Attribute Attr Search Wait Time */
+/** ID for the task amount Task Attribute Search Wait Time */
 extern const int cTaskAttrSearchWaitTime = 4;
 
-/** ID for the task amount Task Attribute Attr Combat Level Flag */
+/** ID for the task amount Task Attribute Combat Level Flag */
 extern const int cTaskAttrCombatLevelFlag = 5;
 
-/** ID for the task amount Task Attribute Attr Owner Type */
+/** ID for the task amount Task Attribute Owner Type */
 extern const int cTaskAttrOwnerType = 6;
 
-/** ID for the task amount Task Attribute Attr Terrain */
+/** ID for the task amount Task Attribute Terrain */
 extern const int cTaskAttrTerrain = 7;
 
-/** ID for the task amount Task Attribute Attr Resource In */
+/** ID for the task amount Task Attribute Resource In */
 extern const int cTaskAttrResourceIn = 8;
 
-/** ID for the task amount Task Attribute Attr Productivity Resource */
+/** ID for the task amount Task Attribute Productivity Resource */
 extern const int cTaskAttrProductivityResource = 9;
 
-/** ID for the task amount Task Attribute Attr Resource Out */
+/** ID for the task amount Task Attribute Resource Out */
 extern const int cTaskAttrResourceOut = 10;
 
-/** ID for the task amount Task Attribute Attr Unused Resource */
+/** ID for the task amount Task Attribute Unused Resource */
 extern const int cTaskAttrUnusedResource = 11;
 
-/** ID for the task amount Task Attribute Attr Moving Graphic */
+/** ID for the task amount Task Attribute Moving Graphic */
 extern const int cTaskAttrMovingGraphic = 12;
 
-/** ID for the task amount Task Attribute Attr Proceeding Graphic */
+/** ID for the task amount Task Attribute Proceeding Graphic */
 extern const int cTaskAttrProceedingGraphic = 13;
 
-/** ID for the task amount Task Attribute Attr Working Graphic */
+/** ID for the task amount Task Attribute Working Graphic */
 extern const int cTaskAttrWorkingGraphic = 14;
 
-/** ID for the task amount Task Attribute Attr Carrying Graphic */
+/** ID for the task amount Task Attribute Carrying Graphic */
 extern const int cTaskAttrCarryingGraphic = 15;
 
-/** ID for the task amount Task Attribute Attr Gathering Sound */
+/** ID for the task amount Task Attribute Gathering Sound */
 extern const int cTaskAttrGatheringSound = 16;
 
-/** ID for the task amount Task Attribute Attr Gathering Sound Event */
+/** ID for the task amount Task Attribute Gathering Sound Event */
 extern const int cTaskAttrGatheringSoundEvent = 17;
 
-/** ID for the task amount Task Attribute Attr Gathering Sound Int32 */
+/** ID for the task amount Task Attribute Gathering Sound Int32 */
 extern const int cTaskAttrGatheringSoundInt32 = 18;
 
-/** ID for the task amount Task Attribute Attr Deposit Sound */
+/** ID for the task amount Task Attribute Deposit Sound */
 extern const int cTaskAttrDepositSound = 19;
 
-/** ID for the task amount Task Attribute Attr Deposit Sound Event */
+/** ID for the task amount Task Attribute Deposit Sound Event */
 extern const int cTaskAttrDepositSoundEvent = 20;
 
-/** ID for the task amount Task Attribute Attr Deposit Sound Int32 */
+/** ID for the task amount Task Attribute Deposit Sound Int32 */
 extern const int cTaskAttrDepositSoundInt32 = 21;
 
-/** ID for the task amount Task Attribute Attr Auto Search */
+/** ID for the task amount Task Attribute Auto Search */
 extern const int cTaskAttrAutoSearch = 22;
 
-/** ID for the task amount Task Attribute Attr Carry Check */
+/** ID for the task amount Task Attribute Carry Check */
 extern const int cTaskAttrCarryCheck = 23;
 
-/** ID for the task amount Task Attribute Attr Building Pick */
+/** ID for the task amount Task Attribute Building Pick */
 extern const int cTaskAttrBuildingPick = 24;
 
-/** ID for the task amount Task Attribute Attr Gather Type */
+/** ID for the task amount Task Attribute Gather Type */
 extern const int cTaskAttrGatherType = 25;
 
-/** ID for the task amount Task Attribute Attr Enable Targeting */
+/** ID for the task amount Task Attribute Enable Targeting */
 extern const int cTaskAttrEnableTargeting = 26;
 
-/** ID for the task amount Task Attribute Attr Enabled */
+/** ID for the task amount Task Attribute Enabled */
 extern const int cTaskAttrEnabled = 27;
 
 
 // 14. Tasks
 
 
-/** ID for the task Type Move To */
+/** ID for the task Move To */
 extern const int cTaskTypeMoveTo = 1;
 
-/** ID for the task Type Follow */
+/** ID for the task Follow */
 extern const int cTaskTypeFollow = 2;
 
-/** ID for the task Type Garrison */
+/** ID for the task Garrison */
 extern const int cTaskTypeGarrison = 3;
 
-/** ID for the task Type Explore */
+/** ID for the task Explore */
 extern const int cTaskTypeExplore = 4;
 
-/** ID for the task Type Gather Rebuild */
+/** ID for the task Gather Rebuild */
 extern const int cTaskTypeGatherRebuild = 5;
 
-/** ID for the task Type Graze */
+/** ID for the task Graze */
 extern const int cTaskTypeGraze = 6;
 
-/** ID for the task Type Combat */
+/** ID for the task Combat */
 extern const int cTaskTypeCombat = 7;
 
-/** ID for the task Type Shoot */
+/** ID for the task Shoot */
 extern const int cTaskTypeShoot = 8;
 
-/** ID for the task Type Attack */
+/** ID for the task Attack */
 extern const int cTaskTypeAttack = 9;
 
-/** ID for the task Type Fly */
+/** ID for the task Fly */
 extern const int cTaskTypeFly = 10;
 
-/** ID for the task Type Unload Boat Like */
+/** ID for the task Unload Boat Like */
 extern const int cTaskTypeUnloadBoatLike = 12;
 
-/** ID for the task Type Guard */
+/** ID for the task Guard */
 extern const int cTaskTypeGuard = 13;
 
-/** ID for the task Type Unload Over Wall */
+/** ID for the task Unload Over Wall */
 extern const int cTaskTypeUnloadOverWall = 14;
 
-/** ID for the task Type Make */
+/** ID for the task Make */
 extern const int cTaskTypeMake = 21;
 
-/** ID for the task Type Build */
+/** ID for the task Build */
 extern const int cTaskTypeBuild = 101;
 
-/** ID for the task Type Make Unit */
+/** ID for the task Make Unit */
 extern const int cTaskTypeMakeUnit = 102;
 
-/** ID for the task Type Make Tech */
+/** ID for the task Make Tech */
 extern const int cTaskTypeMakeTech = 103;
 
-/** ID for the task Type Convert */
+/** ID for the task Convert */
 extern const int cTaskTypeConvert = 104;
 
-/** ID for the task Type Heal */
+/** ID for the task Heal */
 extern const int cTaskTypeHeal = 105;
 
-/** ID for the task Type Repair */
+/** ID for the task Repair */
 extern const int cTaskTypeRepair = 106;
 
-/** ID for the task Type Get Auto Converted */
+/** ID for the task Get Auto Converted */
 extern const int cTaskTypeGetAutoConverted = 107;
 
-/** ID for the task Type Discovery Artifact */
+/** ID for the task Discovery Artifact */
 extern const int cTaskTypeDiscoveryArtifact = 108;
 
-/** ID for the task Type Hunt */
+/** ID for the task Hunt */
 extern const int cTaskTypeHunt = 110;
 
-/** ID for the task Type Trade */
+/** ID for the task Trade */
 extern const int cTaskTypeTrade = 111;
 
-/** ID for the task Type Generate Wonder Victory */
+/** ID for the task Generate Wonder Victory */
 extern const int cTaskTypeGenerateWonderVictory = 120;
 
-/** ID for the task Type Deselect When Tasked */
+/** ID for the task Deselect When Tasked */
 extern const int cTaskTypeDeselectWhenTasked = 121;
 
-/** ID for the task Type Loot Gather */
+/** ID for the task Loot Gather */
 extern const int cTaskTypeLootGather = 122;
 
-/** ID for the task Type Housing */
+/** ID for the task Housing */
 extern const int cTaskTypeHousing = 123;
 
-/** ID for the task Type Pack */
+/** ID for the task Pack */
 extern const int cTaskTypePack = 124;
 
-/** ID for the task Type Unpack And Attack */
+/** ID for the task Unpack And Attack */
 extern const int cTaskTypeUnpackAndAttack = 125;
 
-/** ID for the task Type Off Map Trade */
+/** ID for the task Off Map Trade */
 extern const int cTaskTypeOffMapTrade = 131;
 
-/** ID for the task Type Pickup Unit */
+/** ID for the task Pickup Unit */
 extern const int cTaskTypePickupUnit = 132;
 
-/** ID for the task Type Charge Attack */
+/** ID for the task Charge Attack */
 extern const int cTaskTypeChargeAttack = 133;
 
-/** ID for the task Type Transform Unit */
+/** ID for the task Transform Unit */
 extern const int cTaskTypeTransformUnit = 134;
 
-/** ID for the task Type Kidnap Unit */
+/** ID for the task Kidnap Unit */
 extern const int cTaskTypeKidnapUnit = 135;
 
-/** ID for the task Type Deposit Unit */
+/** ID for the task Deposit Unit */
 extern const int cTaskTypeDepositUnit = 136;
 
-/** ID for the task Type Shear */
+/** ID for the task Shear */
 extern const int cTaskTypeShear = 149;
 
-/** ID for the task Type Generate Resources */
+/** ID for the task Generate Resources */
 extern const int cTaskTypeGenerateResources = 151;
 
-/** ID for the task Type Movement Damage */
+/** ID for the task Movement Damage */
 extern const int cTaskTypeMovementDamage = 152;
 
-/** ID for the task Type Movable Dropsite */
+/** ID for the task Movable Dropsite */
 extern const int cTaskTypeMovableDropsite = 153;
 
-/** ID for the task Type Loot */
+/** ID for the task Loot */
 extern const int cTaskTypeLoot = 154;
 
-/** ID for the task Type Aura */
+/** ID for the task Aura */
 extern const int cTaskTypeAura = 155;
 
-/** ID for the task Type Extra Spawn */
+/** ID for the task Extra Spawn */
 extern const int cTaskTypeExtraSpawn = 156;
 
-/** ID for the task Type Stinger */
+/** ID for the task Stinger */
 extern const int cTaskTypeStinger = 157;
 
-/** ID for the task Type H P Transform */
+/** ID for the task H P Transform */
 extern const int cTaskTypeHPTransform = 158;
 
-/** ID for the task Type H P Modifier */
+/** ID for the task H P Modifier */
 extern const int cTaskTypeHPModifier = 160;
 
 
 // 15. Tech States
 
 
-/** Enum value for the tech state State Not Ready */
+/** Enum value for the tech state Not Ready */
 extern const int cTechStateNotReady = 0;
 
-/** Enum value for the tech state State Ready */
+/** Enum value for the tech state Ready */
 extern const int cTechStateReady = 1;
 
-/** Enum value for the tech state State Queued */
+/** Enum value for the tech state Queued */
 extern const int cTechStateQueued = 4;
 
-/** Enum value for the tech state State Researching */
+/** Enum value for the tech state Researching */
 extern const int cTechStateResearching = 2;
 
-/** Enum value for the tech state State Done */
+/** Enum value for the tech state Done */
 extern const int cTechStateDone = 3;
 
-/** Enum value for the tech state State Disabled */
+/** Enum value for the tech state Disabled */
 extern const int cTechStateDisabled = -1;
 
-/** Enum value for the tech state State Invalid */
+/** Enum value for the tech state Invalid */
 extern const int cTechStateInvalid = -2;
 
 

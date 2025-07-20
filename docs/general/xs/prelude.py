@@ -87,7 +87,7 @@ def main():
         write_consts(constants, file)
         write_fns(functions, file)
 
-    shutil.copy("prelude.xs", r"C:\Users\Divy\RustroverProjects\xs-check\src\prelude.xs")
+    # shutil.copy("prelude.xs", r"C:\Users\Divy\RustroverProjects\xs-check\src\prelude.xs")
 
 if __name__ == "__main__":
     main()
