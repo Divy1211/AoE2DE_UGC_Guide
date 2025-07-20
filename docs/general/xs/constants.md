@@ -4588,7 +4588,7 @@ Value: `#!xs int 27`
 
 ID for the task amount Task Attribute Enabled
 
-## 14. Tasks
+## 14. Task Types
 
 ### 14.1. cTaskTypeMoveTo
 

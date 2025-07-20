@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/07/20 09:02:27 |
+// | Generated on: 2025/07/20 10:01:21 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -2581,166 +2581,166 @@ int xsArrayCreateVector(int size = -1, vector defaultValue = vector(-1, -1, -1),
 /**
 * Gets and returns the value of the given bool array at the specified index.
 *
-* @param arrayID The ID of the array to get the value from
+* @param arrayId The ID of the array to get the value from
 * @param index The index to get the value of
 *
 * @returns bool
 */
-bool xsArrayGetBool(int arrayID = -1, int index = -1) {}
+bool xsArrayGetBool(int arrayId = -1, int index = -1) {}
 
 /**
 * Gets and returns the value of the given float array at the specified index.
 *
-* @param arrayID The ID of the array to get the value from
+* @param arrayId The ID of the array to get the value from
 * @param index The index to get the value of
 *
 * @returns float
 */
-float xsArrayGetFloat(int arrayID = -1, int index = -1) {}
+float xsArrayGetFloat(int arrayId = -1, int index = -1) {}
 
 /**
 * Gets and returns the value of the given int array at the specified index.
 *
-* @param arrayID The ID of the array to get the value from
+* @param arrayId The ID of the array to get the value from
 * @param index The index to get the value of
 *
 * @returns int
 */
-int xsArrayGetInt(int arrayID = -1, int index = -1) {}
+int xsArrayGetInt(int arrayId = -1, int index = -1) {}
 
 /**
 * Returns the length of the given array.
 *
-* @param arrayID The ID of the array to get the length of
+* @param arrayId The ID of the array to get the length of
 *
 * @returns int
 */
-int xsArrayGetSize(int arrayID = -1) {}
+int xsArrayGetSize(int arrayId = -1) {}
 
 /**
 * Gets and returns the value of the given string array at the specified index.
 *
-* @param arrayID The ID of the array to get the value from
+* @param arrayId The ID of the array to get the value from
 * @param index The index to get the value of
 *
 * @returns string
 */
-string xsArrayGetString(int arrayID = -1, int index = -1) {}
+string xsArrayGetString(int arrayId = -1, int index = -1) {}
 
 /**
 * Gets and returns the value of the given vector array at the specified index.
 *
-* @param arrayID The ID of the array to get the value from
+* @param arrayId The ID of the array to get the value from
 * @param index The index to get the value of
 *
 * @returns vector
 */
-vector xsArrayGetVector(int arrayID = -1, int index = -1) {}
+vector xsArrayGetVector(int arrayId = -1, int index = -1) {}
 
 /**
 * Resizes the the given bool array to the specified size and returns 1.
 *
-* @param arrayID The ID of the array to resize
+* @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
 * @returns int
 */
-int xsArrayResizeBool(int arrayID = -1, int newSize = -1) {}
+int xsArrayResizeBool(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given float array to the specified size and returns 1.
 *
-* @param arrayID The ID of the array to resize
+* @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
 * @returns int
 */
-int xsArrayResizeFloat(int arrayID = -1, int newSize = -1) {}
+int xsArrayResizeFloat(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given int array to the specified size and returns 1.
 *
-* @param arrayID The ID of the array to resize
+* @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
 * @returns int
 */
-int xsArrayResizeInt(int arrayID = -1, int newSize = -1) {}
+int xsArrayResizeInt(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given string array to the specified size and returns 1.
 *
-* @param arrayID The ID of the array to resize
+* @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
 * @returns int
 */
-int xsArrayResizeString(int arrayID = -1, int newSize = -1) {}
+int xsArrayResizeString(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given vector array to the specified size and returns 1.
 *
-* @param arrayID The ID of the array to resize
+* @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
 * @returns int
 */
-int xsArrayResizeVector(int arrayID = -1, int newSize = -1) {}
+int xsArrayResizeVector(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Sets the value at the specified index of the given bool array to the provided value and returns 1.
 *
-* @param arrayID The ID of the array to set the value in
+* @param arrayId The ID of the array to set the value in
 * @param index The index to set the value of
 * @param value The new value to set
 *
 * @returns int
 */
-int xsArraySetBool(int arrayID = -1, int index = -1, bool value = false) {}
+int xsArraySetBool(int arrayId = -1, int index = -1, bool value = false) {}
 
 /**
 * Sets the value at the specified index of the given float array to the provided value and returns 1.
 *
-* @param arrayID The ID of the array to set the value in
+* @param arrayId The ID of the array to set the value in
 * @param index The index to set the value of
 * @param value The new value to set
 *
 * @returns int
 */
-int xsArraySetFloat(int arrayID = -1, int index = -1, float value = -1.0) {}
+int xsArraySetFloat(int arrayId = -1, int index = -1, float value = -1.0) {}
 
 /**
 * Sets the value at the specified index of the given int array to the provided value and returns 1.
 *
-* @param arrayID The ID of the array to set the value in
+* @param arrayId The ID of the array to set the value in
 * @param index The index to set the value of
 * @param value The new value to set
 *
 * @returns int
 */
-int xsArraySetInt(int arrayID = -1, int index = -1, int value = -1) {}
+int xsArraySetInt(int arrayId = -1, int index = -1, int value = -1) {}
 
 /**
 * Sets the value at the specified index of the given string array to the provided value and returns 1.
 *
-* @param arrayID The ID of the array to set the value in
+* @param arrayId The ID of the array to set the value in
 * @param index The index to set the value of
 * @param value The new value to set
 *
 * @returns int
 */
-int xsArraySetString(int arrayID = -1, int index = -1, string value = "") {}
+int xsArraySetString(int arrayId = -1, int index = -1, string value = "") {}
 
 /**
 * Sets the value at the specified index of the given vector array to the provided value and returns 1.
 *
-* @param arrayID The ID of the array to set the value in
+* @param arrayId The ID of the array to set the value in
 * @param index The index to set the value of
 * @param value The new value to set
 *
 * @returns int
 */
-int xsArraySetVector(int arrayID = -1, int index = -1, vector value = vector(-1, -1, -1)) {}
+int xsArraySetVector(int arrayId = -1, int index = -1, vector value = vector(-1, -1, -1)) {}
 
 
 // 4. Maths
@@ -2888,15 +2888,15 @@ bool xsDoesUnitExist(int unitId = -1) {}
 /**
 * Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
 *
-* @param effectID The ID of the effect to use
-* @param unitOrTechnologyID The ID of the unit or technology to effect
+* @param effectId The ID of the effect to use
+* @param unitOrTechnologyId The ID of the unit or technology to effect
 * @param attributeOrOperation The attribute to modify or the operation to perform
 * @param value The value of the effect
 * @param playerNumber The player to apply the effect to. If unspecified, applies to all players except Gaia.
 *
 * @returns void
 */
-void xsEffectAmount(int effectID = -1, int unitOrTechnologyID = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
+void xsEffectAmount(int effectId = -1, int unitOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
 
 /**
 * Returns the current game time in seconds
@@ -2958,21 +2958,21 @@ float xsGetObjectAttribute(int playerId = -1, int objectId = -1, int attribute =
 * Returns the number of currently alive objects with the given ID of the specified player
 *
 * @param playerId The player to get the object count for
-* @param id The ID of the object to get the count for
+* @param objectOrClassId The ID of the object or class to get the count for
 *
 * @returns int
 */
-int xsGetObjectCount(int playerId = -1, int id = -1) {}
+int xsGetObjectCount(int playerId = -1, int objectOrClassId = -1) {}
 
 /**
 * Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player
 *
 * @param playerId The player to get the object count for
-* @param id The ID of the object to get the count for
+* @param objectOrClassId The ID of the object or class to get the count for
 *
 * @returns int
 */
-int xsGetObjectCountTotal(int playerId = -1, int id = -1) {}
+int xsGetObjectCountTotal(int playerId = -1, int objectOrClassId = -1) {}
 
 /**
 * Returns the current name of the given object for the specified player.
@@ -3022,11 +3022,11 @@ string xsGetPlayerName(int playerId = -1) {}
 int xsGetPlayerNumberOfTechs(int playerNumber = -1) {}
 
 /**
-* Returns the unit IDs of all the units of a specific player of the given object ID or class on the map. The IDs here are the same as the `reference_id` used by the scenario editor
+* Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
 *
 * @param playerId The player to get the unit IDs for
-* @param objectOrClassId The type of units to get
-* @param arrayId Reuse an existing array to get units
+* @param objectOrClassId The ID of the object or class to get the unit reference IDs for
+* @param arrayId Reuse an existing array to save memory
 *
 * @returns int
 */
@@ -3094,7 +3094,7 @@ int xsGetTime() {}
 int xsGetTurn() {}
 
 /**
-* Returns the attribute value for a specific object on the map.
+* Returns the attribute value for a specific unit on the map.
 *
 * @param unitId The unit to get the attribute for.
 * @param attribute The attribute to get
@@ -3224,26 +3224,26 @@ bool xsIsObjectAvailable(int objectId = -1, int playerId = -1) {}
 /**
 * Checks and returns if any unit matching the set filters of the given player has the specified action.
 *
-* @param playerID The player to check unit actions for
-* @param unitType The type of unit to check actions for. Values 9xx refer to classes
+* @param playerId The player to check unit actions for
+* @param objectOrClassId The ID of the object or class to check actions for
 * @param actionId The type of action to check for
-* @param targetPlayerID Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
+* @param targetPlayerId Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
 * @param targetType Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
 * @param targetUnitLevel Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
 *
 * @returns bool
 */
-bool xsObjectHasAction(int playerID = -1, int unitType = -1, int actionId = -1, int targetPlayerID = -1, int targetType = -1, int targetUnitLevel = -1) {}
+bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId = -1, int targetPlayerId = -1, int targetType = -1, int targetUnitLevel = -1) {}
 
 /**
 * Returns the amount the specified resource of the given player.
 *
 * @param playerNumber The player to get the resource of (0 for Gaia)
-* @param resourceID The ID of the resource to get the amount of
+* @param resourceId The ID of the resource to get the amount of
 *
 * @returns float
 */
-float xsPlayerAttribute(int playerNumber = -1, int resourceID = -1) {}
+float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
 
 /**
 * Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by [xsTaskAmount](./#532-xstaskamount)) match an existing task in a unit. No other fields are used for filtering (same as when [xsTask](./#531-xstask) edits instead of adding a new task)
@@ -3260,14 +3260,14 @@ void xsRemoveTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, i
 /**
 * Returns a boolean based on whether the technology was researched or not.
 *
-* @param techID The technology ID to research.
+* @param techId The technology ID to research.
 * @param force Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
 * @param techAvailable This flag determines if it is required to check if a tech is available before researching it
 * @param playerNumber The player to research the technology for
 *
 * @returns bool
 */
-bool xsResearchTechnology(int techID = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
+bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
 
 /**
 * Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#531-xstask).
@@ -3280,22 +3280,22 @@ void xsResetTaskAmount() {}
 * Sets the amount of the specified resource of the given player to the provided value.
 *
 * @param playerNumber The player to set the resource of (0 for Gaia)
-* @param resourceID The ID of the resource to set the amount of
+* @param resourceId The ID of the resource to set the amount of
 * @param value The amount to set the resource to
 *
 * @returns void
 */
-void xsSetPlayerAttribute(int playerNumber = -1, int resourceID = -1, float value = -1.0) {}
+void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float value = -1.0) {}
 
 /**
 * Sets the value of the variable of the given variable ID to the provided value.
 *
-* @param variableID The ID of the variable to set the value of
+* @param variableId The ID of the variable to set the value of
 * @param value The value to set the variable to
 *
 * @returns void
 */
-void xsSetTriggerVariable(int variableID = -1, int value = -1) {}
+void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
 
 /**
 * Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
@@ -3331,11 +3331,11 @@ void xsTaskAmount(int taskFieldId = -1, float value = -1.0) {}
 /**
 * Returns the value of the variable of the given variable ID.
 *
-* @param variableID The ID of the variable to get the value of
+* @param variableId The ID of the variable to get the value of
 *
 * @returns int
 */
-int xsTriggerVariable(int variableID = -1) {}
+int xsTriggerVariable(int variableId = -1) {}
 
 
 // 6. Read/Write

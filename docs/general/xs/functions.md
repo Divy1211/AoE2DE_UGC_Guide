@@ -1,8 +1,8 @@
 *Written by: Alian713, Kramb*
-<div id="hide-toc-elements"></div>
----
+    <div id="hide-toc-elements"></div>
+    ---
 
-## 1. Rules
+    ## 1. Rules
 
 ### 1.1. xsDisableRule
 
@@ -351,11 +351,11 @@ Creates an array of type Vector and returns its ID. Created arrays never go out 
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsArrayGetBool(int arrayID, int index)`
+Prototype: `#!xs bool xsArrayGetBool(int arrayId, int index)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to get the value from
+1.  `#!xs int arrayId`: The ID of the array to get the value from
 2.  `#!xs int index`: The index to get the value of
 
 Gets and returns the value of the given bool array at the specified index.
@@ -364,11 +364,11 @@ Gets and returns the value of the given bool array at the specified index.
 
 Returning Type: `#!xs float`
 
-Prototype: `#!xs float xsArrayGetFloat(int arrayID, int index)`
+Prototype: `#!xs float xsArrayGetFloat(int arrayId, int index)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to get the value from
+1.  `#!xs int arrayId`: The ID of the array to get the value from
 2.  `#!xs int index`: The index to get the value of
 
 Gets and returns the value of the given float array at the specified index.
@@ -377,11 +377,11 @@ Gets and returns the value of the given float array at the specified index.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayGetInt(int arrayID, int index)`
+Prototype: `#!xs int xsArrayGetInt(int arrayId, int index)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to get the value from
+1.  `#!xs int arrayId`: The ID of the array to get the value from
 2.  `#!xs int index`: The index to get the value of
 
 Gets and returns the value of the given int array at the specified index.
@@ -390,11 +390,11 @@ Gets and returns the value of the given int array at the specified index.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayGetSize(int arrayID)`
+Prototype: `#!xs int xsArrayGetSize(int arrayId)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to get the length of
+1.  `#!xs int arrayId`: The ID of the array to get the length of
 
 Returns the length of the given array.
 
@@ -402,11 +402,11 @@ Returns the length of the given array.
 
 Returning Type: `#!xs string`
 
-Prototype: `#!xs string xsArrayGetString(int arrayID, int index)`
+Prototype: `#!xs string xsArrayGetString(int arrayId, int index)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to get the value from
+1.  `#!xs int arrayId`: The ID of the array to get the value from
 2.  `#!xs int index`: The index to get the value of
 
 Gets and returns the value of the given string array at the specified index.
@@ -415,11 +415,11 @@ Gets and returns the value of the given string array at the specified index.
 
 Returning Type: `#!xs vector`
 
-Prototype: `#!xs vector xsArrayGetVector(int arrayID, int index)`
+Prototype: `#!xs vector xsArrayGetVector(int arrayId, int index)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to get the value from
+1.  `#!xs int arrayId`: The ID of the array to get the value from
 2.  `#!xs int index`: The index to get the value of
 
 Gets and returns the value of the given vector array at the specified index.
@@ -428,11 +428,11 @@ Gets and returns the value of the given vector array at the specified index.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayResizeBool(int arrayID, int newSize)`
+Prototype: `#!xs int xsArrayResizeBool(int arrayId, int newSize)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to resize
+1.  `#!xs int arrayId`: The ID of the array to resize
 2.  `#!xs int newSize`: The new size of the array
 
 Resizes the the given bool array to the specified size and returns 1.
@@ -441,11 +441,11 @@ Resizes the the given bool array to the specified size and returns 1.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayResizeFloat(int arrayID, int newSize)`
+Prototype: `#!xs int xsArrayResizeFloat(int arrayId, int newSize)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to resize
+1.  `#!xs int arrayId`: The ID of the array to resize
 2.  `#!xs int newSize`: The new size of the array
 
 Resizes the the given float array to the specified size and returns 1.
@@ -454,11 +454,11 @@ Resizes the the given float array to the specified size and returns 1.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayResizeInt(int arrayID, int newSize)`
+Prototype: `#!xs int xsArrayResizeInt(int arrayId, int newSize)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to resize
+1.  `#!xs int arrayId`: The ID of the array to resize
 2.  `#!xs int newSize`: The new size of the array
 
 Resizes the the given int array to the specified size and returns 1.
@@ -467,11 +467,11 @@ Resizes the the given int array to the specified size and returns 1.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayResizeString(int arrayID, int newSize)`
+Prototype: `#!xs int xsArrayResizeString(int arrayId, int newSize)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to resize
+1.  `#!xs int arrayId`: The ID of the array to resize
 2.  `#!xs int newSize`: The new size of the array
 
 Resizes the the given string array to the specified size and returns 1.
@@ -480,11 +480,11 @@ Resizes the the given string array to the specified size and returns 1.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArrayResizeVector(int arrayID, int newSize)`
+Prototype: `#!xs int xsArrayResizeVector(int arrayId, int newSize)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to resize
+1.  `#!xs int arrayId`: The ID of the array to resize
 2.  `#!xs int newSize`: The new size of the array
 
 Resizes the the given vector array to the specified size and returns 1.
@@ -493,11 +493,11 @@ Resizes the the given vector array to the specified size and returns 1.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArraySetBool(int arrayID, int index, bool value)`
+Prototype: `#!xs int xsArraySetBool(int arrayId, int index, bool value)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to set the value in
+1.  `#!xs int arrayId`: The ID of the array to set the value in
 2.  `#!xs int index`: The index to set the value of
 3.  `#!xs bool value`: The new value to set
 
@@ -507,11 +507,11 @@ Sets the value at the specified index of the given bool array to the provided va
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArraySetFloat(int arrayID, int index, float value)`
+Prototype: `#!xs int xsArraySetFloat(int arrayId, int index, float value)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to set the value in
+1.  `#!xs int arrayId`: The ID of the array to set the value in
 2.  `#!xs int index`: The index to set the value of
 3.  `#!xs float value`: The new value to set
 
@@ -521,11 +521,11 @@ Sets the value at the specified index of the given float array to the provided v
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArraySetInt(int arrayID, int index, int value)`
+Prototype: `#!xs int xsArraySetInt(int arrayId, int index, int value)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to set the value in
+1.  `#!xs int arrayId`: The ID of the array to set the value in
 2.  `#!xs int index`: The index to set the value of
 3.  `#!xs int value`: The new value to set
 
@@ -535,11 +535,11 @@ Sets the value at the specified index of the given int array to the provided val
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArraySetString(int arrayID, int index, string value)`
+Prototype: `#!xs int xsArraySetString(int arrayId, int index, string value)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to set the value in
+1.  `#!xs int arrayId`: The ID of the array to set the value in
 2.  `#!xs int index`: The index to set the value of
 3.  `#!xs string value`: The new value to set
 
@@ -549,11 +549,11 @@ Sets the value at the specified index of the given string array to the provided 
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsArraySetVector(int arrayID, int index, vector value)`
+Prototype: `#!xs int xsArraySetVector(int arrayId, int index, vector value)`
 
 Parameters:
 
-1.  `#!xs int arrayID`: The ID of the array to set the value in
+1.  `#!xs int arrayId`: The ID of the array to set the value in
 2.  `#!xs int index`: The index to set the value of
 3.  `#!xs vector value`: The new value to set
 
@@ -749,12 +749,12 @@ Returns true if a unit with the given ID exists on the map.
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsEffectAmount(int effectID, int unitOrTechnologyID, int attributeOrOperation, float value, int playerNumber)`
+Prototype: `#!xs void xsEffectAmount(int effectId, int unitOrTechnologyId, int attributeOrOperation, float value, int playerNumber)`
 
 Parameters:
 
-1.  `#!xs int effectID`: The ID of the effect to use
-2.  `#!xs int unitOrTechnologyID`: The ID of the unit or technology to effect
+1.  `#!xs int effectId`: The ID of the effect to use
+2.  `#!xs int unitOrTechnologyId`: The ID of the unit or technology to effect
 3.  `#!xs int attributeOrOperation`: The attribute to modify or the operation to perform
 4.  `#!xs float value`: The value of the effect
 5. (Optional) `#!xs int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
@@ -837,12 +837,12 @@ Returns the attribute value for an object
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetObjectCount(int playerId, int id)`
+Prototype: `#!xs int xsGetObjectCount(int playerId, int objectOrClassId)`
 
 Parameters:
 
 1.  `#!xs int playerId`: The player to get the object count for
-2.  `#!xs int id`: The ID of the object to get the count for
+2.  `#!xs int objectOrClassId`: The ID of the object or class to get the count for
 
 Returns the number of currently alive objects with the given ID of the specified player
 
@@ -850,12 +850,12 @@ Returns the number of currently alive objects with the given ID of the specified
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetObjectCountTotal(int playerId, int id)`
+Prototype: `#!xs int xsGetObjectCountTotal(int playerId, int objectOrClassId)`
 
 Parameters:
 
 1.  `#!xs int playerId`: The player to get the object count for
-2.  `#!xs int id`: The ID of the object to get the count for
+2.  `#!xs int objectOrClassId`: The ID of the object or class to get the count for
 
 Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player
 
@@ -930,10 +930,10 @@ Prototype: `#!xs int xsGetPlayerUnitIds(int playerId, int objectOrClassId, int a
 Parameters:
 
 1.  `#!xs int playerId`: The player to get the unit IDs for
-2.  `#!xs int objectOrClassId`: The type of units to get
-3. (Optional) `#!xs int arrayId`: Reuse an existing array to get units
+2.  `#!xs int objectOrClassId`: The ID of the object or class to get the unit reference IDs for
+3. (Optional) `#!xs int arrayId`: Reuse an existing array to save memory
 
-Returns the unit IDs of all the units of a specific player of the given object ID or class on the map. The IDs here are the same as the `reference_id` used by the scenario editor
+Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
 
 ### 5.19. xsGetRandomNumber
 
@@ -1026,7 +1026,7 @@ Parameters:
 2.  `#!xs int attribute`: The attribute to get
 3.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
 
-Returns the attribute value for a specific object on the map.
+Returns the attribute value for a specific unit on the map.
 
 ### 5.27. xsGetUnitMoveTarget
 
@@ -1181,14 +1181,14 @@ Returns true if this object can currently be trained or built.
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsObjectHasAction(int playerID, int unitType, int actionId, int targetPlayerID, int targetType, int targetUnitLevel)`
+Prototype: `#!xs bool xsObjectHasAction(int playerId, int objectOrClassId, int actionId, int targetPlayerId, int targetType, int targetUnitLevel)`
 
 Parameters:
 
-1.  `#!xs int playerID`: The player to check unit actions for
-2.  `#!xs int unitType`: The type of unit to check actions for. Values 9xx refer to classes
+1.  `#!xs int playerId`: The player to check unit actions for
+2.  `#!xs int objectOrClassId`: The ID of the object or class to check actions for
 3.  `#!xs int actionId`: The type of action to check for
-4. (Optional) `#!xs int targetPlayerID`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
+4. (Optional) `#!xs int targetPlayerId`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
 5. (Optional) `#!xs int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
 6. (Optional) `#!xs int targetUnitLevel`: Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
 
@@ -1198,12 +1198,12 @@ Checks and returns if any unit matching the set filters of the given player has 
 
 Returning Type: `#!xs float`
 
-Prototype: `#!xs float xsPlayerAttribute(int playerNumber, int resourceID)`
+Prototype: `#!xs float xsPlayerAttribute(int playerNumber, int resourceId)`
 
 Parameters:
 
 1.  `#!xs int playerNumber`: The player to get the resource of (0 for Gaia)
-2.  `#!xs int resourceID`: The ID of the resource to get the amount of
+2.  `#!xs int resourceId`: The ID of the resource to get the amount of
 
 Returns the amount the specified resource of the given player.
 
@@ -1226,11 +1226,11 @@ Removes a task from a unit if the specified `actionType`, `unitId`, and `Search 
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsResearchTechnology(int techID, bool force, bool techAvailable, int playerNumber)`
+Prototype: `#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerNumber)`
 
 Parameters:
 
-1.  `#!xs int techID`: The technology ID to research.
+1.  `#!xs int techId`: The technology ID to research.
 2.  `#!xs bool force`: Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
 3.  `#!xs bool techAvailable`: This flag determines if it is required to check if a tech is available before researching it
 4.  `#!xs int playerNumber`: The player to research the technology for
@@ -1250,12 +1250,12 @@ Resets all the values of the global XS task struct to their defaults. See also [
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsSetPlayerAttribute(int playerNumber, int resourceID, float value)`
+Prototype: `#!xs void xsSetPlayerAttribute(int playerNumber, int resourceId, float value)`
 
 Parameters:
 
 1.  `#!xs int playerNumber`: The player to set the resource of (0 for Gaia)
-2.  `#!xs int resourceID`: The ID of the resource to set the amount of
+2.  `#!xs int resourceId`: The ID of the resource to set the amount of
 3.  `#!xs float value`: The amount to set the resource to
 
 Sets the amount of the specified resource of the given player to the provided value.
@@ -1264,11 +1264,11 @@ Sets the amount of the specified resource of the given player to the provided va
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsSetTriggerVariable(int variableID, int value)`
+Prototype: `#!xs void xsSetTriggerVariable(int variableId, int value)`
 
 Parameters:
 
-1.  `#!xs int variableID`: The ID of the variable to set the value of
+1.  `#!xs int variableId`: The ID of the variable to set the value of
 2.  `#!xs int value`: The value to set the variable to
 
 Sets the value of the variable of the given variable ID to the provided value.
@@ -1314,11 +1314,11 @@ Sets the value of the given field of the global XS task struct to the provided v
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsTriggerVariable(int variableID)`
+Prototype: `#!xs int xsTriggerVariable(int variableId)`
 
 Parameters:
 
-1.  `#!xs int variableID`: The ID of the variable to get the value of
+1.  `#!xs int variableId`: The ID of the variable to get the value of
 
 Returns the value of the variable of the given variable ID.
 
