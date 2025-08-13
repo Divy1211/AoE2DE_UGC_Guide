@@ -914,13 +914,19 @@
             "return_type": "float",
             "params": [
                 {
+                    "name": "y",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The Y coordinate of the point to find the X+ angle of"
+                },
+                {
                     "name": "x",
                     "type": "float",
                     "required": true,
-                    "desc": "The X coordinate of the point to find the amplitude of"
+                    "desc": "The X coordinate of the point to find the X+ angle of"
                 }
             ],
-            "desc": "This is supposed to be the atan2(y, x) function but apparently it only takes one input. ThxDE"
+            "desc": "Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\\pi, \\pi]$"
         },
         {
             "name": "xsCeilToInt",
@@ -936,30 +942,82 @@
             "desc": "Rounds the number **up** to the next integer"
         },
         {
+            "name": "atan2v",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "v",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The vector to get the atan2 from"
+                }
+            ],
+            "desc": "Returns the angle of the given vector from the X+ axis, in the range $[-\\pi, \\pi]$. Ignores the Z component"
+        },
+        {
+            "name": "exp",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the exp of"
+                }
+            ],
+            "desc": "Returns $e^x$"
+        },
+        {
+            "name": "ceil",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the ceil of"
+                }
+            ],
+            "desc": "Returns $\\left \\lceil{x}\\right \\rceil$"
+        },
+        {
+            "name": "floor",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the ceil of"
+                }
+            ],
+            "desc": "Returns $\\left \\lfloor{x}\\right \\rfloor$"
+        },
+        {
             "name": "bitCastToFloat",
             "return_type": "float",
             "params": [
                 {
-                    "name": "value",
+                    "name": "number",
                     "type": "int",
                     "required": true,
-                    "desc": "The value to bit cast"
+                    "desc": "The value to `reinterpret/bit_cast` to `float`"
                 }
             ],
-            "desc": "Does `bit_cast<float>(value)`"
+            "desc": "Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `#!rs std::mem::transmute::<i32, f32>(number)`"
         },
         {
             "name": "bitCastToInt",
             "return_type": "int",
             "params": [
                 {
-                    "name": "value",
+                    "name": "number",
                     "type": "float",
                     "required": true,
-                    "desc": "The value to bit cast"
+                    "desc": "The value to `reinterpret/bit_cast` to `int`"
                 }
             ],
-            "desc": "Does `bit_cast<int>(value)`"
+            "desc": "Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `#!rs std::mem::transmute::<f32, i32>(number)`"
         }
     ],
     "general": [
@@ -1383,7 +1441,7 @@
                     "name": "taskFieldId",
                     "type": "int",
                     "required": true,
-                    "desc": "Specifies which property of the task to change (names correspond with A.G.E.):\n    - 0: Work Value 1 (Task 155 - Quantity to mul/add to the attribute modified)\n    - 1: Work Value 2 (Task 155 - Min number of units required to activate the effect. See Monaspa)\n    - 2: Work Range\n    - 3: Work Flag 2\n    - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), [Conversion Chance Modifier](../../attributes/attributes/#113-conversion-chance-modifier), 116 - Melee Armor, 117 - Pierce Armor)\n    - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Temporary Aura, 16 - Use with 8 - applies buffs only units around when the ability is triggered, 32 - Translucent)\n    - 6: Target Diplomacy"
+                    "desc": "Specifies which property of the task to change. Refer to [cTaskAttr constants](../constants/#14-task-attribute \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "value",
@@ -1414,7 +1472,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Refer to [cTaskType constants](../constants/#14-tasktypes \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Task type. Refer to [cTaskType constants](../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "targetObjectOrClassId",
@@ -1445,7 +1503,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E."
+                    "desc": "Task type. Refer to [cTaskType constants](../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "targetObjectOrClassId",
@@ -1733,6 +1791,268 @@
                 }
             ],
             "desc": "Returns one of the [cTechState constants](../constants/#15-techstate \"Jump To: XS > Constant Reference > Tech State Constants\") based on the tech's status"
+        },
+        {
+            "name": "xsGetUnitHitpoints",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the HP for"
+                }
+            ],
+            "desc": "Returns the given unit's HP"
+        },
+        {
+            "name": "xsSetUnitHitpoints",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the HP for"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the HP to"
+                }
+            ],
+            "desc": "Sets the given unit's HP"
+        },
+        {
+            "name": "xsGetUnitBuildPoints",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the Build Points for"
+                }
+            ],
+            "desc": "Returns the given unit's Built Points"
+        },
+        {
+            "name": "xsSetUnitBuildPoints",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the build points for"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the build points to"
+                }
+            ],
+            "desc": "Sets the given unit's Build Points"
+        },
+        {
+            "name": "xsGetUnitObjectId",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the object ID for"
+                }
+            ],
+            "desc": "Returns the given unit's ID in data"
+        },
+        {
+            "name": "xsGetUnitCopyId",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the copy ID for"
+                }
+            ],
+            "desc": "Returns the given unit's copy ID in data"
+        },
+        {
+            "name": "xsGetObjectCopyId",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's copy ID for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the copy ID for"
+                }
+            ],
+            "desc": "Returns the given object's copy ID in data for the specified player"
+        },
+        {
+            "name": "xsGetUnitClass",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the class for"
+                }
+            ],
+            "desc": "Returns the given unit's class See [cClass constants](../constants/#10-effectamount-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
+        },
+        {
+            "name": "xsGetObjectClass",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's class for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the class for"
+                }
+            ],
+            "desc": "Returns the given object's class for the specified player. See [cClass constants](../constants/#10-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
+        },
+        {
+            "name": "xsGetUnitType",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the type for"
+                }
+            ],
+            "desc": "Returns the given unit's type. See [cObjectType constants](../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
+        },
+        {
+            "name": "xsGetObjectType",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's type for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the type for"
+                }
+            ],
+            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
+        },
+        {
+            "name": "xsGetUnitAttributeTypesHeld",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the held resource types for"
+                }
+            ],
+            "desc": "Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog."
+        },
+        {
+            "name": "xsGetUnitAttributeHeld",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the resource held for"
+                },
+                {
+                    "name": "attributeId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The ID of the resource to get. If unspecified, return the first resource which the unit holds"
+                }
+            ],
+            "desc": "Returns the given unit's amount of the specified resource held."
+        },
+        {
+            "name": "xsSetUnitAttributeHeld",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the resource held for"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The amount to set the held resource to"
+                },
+                {
+                    "name": "attributeId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The ID of the resource to set. If unspecified, sets the first resource which the unit holds"
+                }
+            ],
+            "desc": "Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog."
+        },
+        {
+            "name": "xsGetUnitCharge",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the charge for"
+                }
+            ],
+            "desc": "Returns the given unit's charge"
+        },
+        {
+            "name": "xsSetUnitCharge",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the charge for"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the charge to"
+                }
+            ],
+            "desc": "Sets the given unit's charge"
         }
     ],
     "Read/Write": [

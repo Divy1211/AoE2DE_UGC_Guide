@@ -8,13 +8,15 @@ import regex
 from docs.general.xs.constants import replace_placeholders, format_name
 
 
-def resolve_links(string: str) -> str:
+def resolve_links(string: str, is_funcs: bool = False) -> str:
+    keyword = "functions" if is_funcs else "constants"
     string = (
         string
             .replace('(../functions/', '(https://ugc.aoe2.rocks/general/xs/functions/')
+            .replace('(../constants/', '(https://ugc.aoe2.rocks/general/xs/constants/')
             .replace('(../../resources/resources/', '(https://ugc.aoe2.rocks/general/resources/resources/')
             .replace('(./../../attributes/attributes/', '(https://ugc.aoe2.rocks/general/attributes/attributes/')
-            .replace('(./', '(https://ugc.aoe2.rocks/general/xs/constants/')
+            .replace(f'(./', f'(https://ugc.aoe2.rocks/general/xs/{keyword}/')
             .replace(' for more info about what this resource does.', '')
             .replace('. Check [here]', ']')
             .replace('RES_NAME', '[RES_NAME')
@@ -48,10 +50,10 @@ def write_fns(functions, file: TextIO):
 
         for f_index, func in enumerate(functions, 1):
             file.write("/**\n")
-            file.write(f"* {func['desc'].replace("\n", "\n* ")}\n*\n")
+            file.write(f"* {resolve_links(func['desc'], True).replace("\n", "\n* ")}\n*\n")
             last = False
             for param in func['params']:
-                file.write(f"* @param {param['name']} {param['desc'].replace("\n", "\n* ")}\n")
+                file.write(f"* @param {param['name']} {resolve_links(param['desc'], True).replace("\n", "\n* ")}\n")
                 last = True
             if last:
                 file.write("*\n")

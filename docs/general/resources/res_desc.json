@@ -469,14 +469,14 @@
         "note": ""
     },
     "70": {
-        "name": "Unused Resource 70",
-        "desc": "Unused",
+        "name": "Source Market or Dock X Coordinate",
+        "desc": "Controls the amount of gold that trade carts and trade cogs deposit, when the source market is changed",
         "defaults": {},
         "note": ""
     },
     "71": {
-        "name": "Unused Resource 71",
-        "desc": "Unused",
+        "name": "Source Market or Dock Y Coordinate",
+        "desc": "Controls the amount of gold that trade carts and trade cogs deposit, when the source market is changed",
         "defaults": {},
         "note": ""
     },
@@ -1331,16 +1331,20 @@
         "note": ""
     },
     "203": {
-        "name": "Unused Resource 203",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Reveal Map",
+        "desc": "Controls the map visibility for a player.",
+        "defaults": {
+            "0": " Normal",
+            "1": " Explored",
+            "2": " All Visible"
+        },
         "note": ""
     },
     "204": {
-        "name": "Unused Resource 204",
-        "desc": "Unused",
+        "name": "Reveal Unit on Map",
+        "desc": "Controls the visibility of other players' units for a player",
         "defaults": {},
-        "note": ""
+        "note": "Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently"
     },
     "205": {
         "name": "Feitoria Food Productivity",

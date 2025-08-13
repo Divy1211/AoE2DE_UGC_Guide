@@ -5,10 +5,10 @@ def main():
         function_docs = json.load(file)
 
     outmd = """*Written by: Alian713, Kramb*
-    <div id="hide-toc-elements"></div>
-    ---
+<div id="hide-toc-elements"></div>
+---
 
-    """
+"""
 
     for index, (category, functions) in enumerate(function_docs.items(), 1):
         functions = sorted(functions, key = lambda x: x["name"])

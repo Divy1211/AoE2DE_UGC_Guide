@@ -20,6 +20,7 @@ def to_title(string):
     string = string.replace("TaskAttr", "")
     string = string.replace("TaskType", "")
     string = string.replace("TechState", "")
+    string = string.replace("ObjectType", "")
     i = 0
     while(i < len(string)):
         if string[i].isupper():
@@ -63,6 +64,7 @@ def replace_placeholders(string, is_res, constant):
     string = string.replace('CLASS_NAME', to_title(constant['name']))
     string = string.replace('TASK_NAME', to_title(constant['name']))
     string = string.replace('STATE_NAME', to_title(constant['name']))
+    string = string.replace('TYPE_NAME', to_title(constant['name']))
     return string
 
 def main():

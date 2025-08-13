@@ -4571,7 +4571,7 @@
             "usage":  null
         }
     ],
-    "damage classes": [
+    "damage class": [
         {
             "name": "cDamageClassInfantry",
             "value": 1,
@@ -4797,7 +4797,7 @@
             "usage": null
         }
     ],
-    "task attributes": [
+    "task attribute": [
         {
             "name": "cTaskAttrWorkValue1",
             "value": 0,
@@ -4995,7 +4995,7 @@
             "usage":  null
         }
     ],
-    "task types": [
+    "task type": [
         {
             "name": "cTaskTypeMoveTo",
             "value": 1,
@@ -5319,7 +5319,7 @@
             "usage": null
         }
     ],
-    "tech states": [
+    "tech state": [
         {
             "name": "cTechStateNotReady",
             "value": 0,
@@ -5367,6 +5367,85 @@
             "value": -2,
             "type": "int",
             "desc": "Enum value for the tech state STATE_NAME",
+            "usage": null
+        }
+    ],
+    "object type": [
+        {
+            "name": "cObjectTypeEyeCandy",
+            "value":10,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeTrees",
+            "value":15,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeAnimated",
+            "value":20,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeDoppleganger",
+            "value":25,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeMoving",
+            "value":30,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeActing",
+            "value": 40,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeCombat",
+            "value": 50,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeProjectile",
+            "value": 60,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeCreatable",
+            "value": 70,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeBuilding",
+            "value": 80,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cObjectTypeLegacyTree",
+            "value": 90,
+            "type": "int",
+            "desc": "Enum value for the object type TYPE_NAME",
             "usage": null
         }
     ]

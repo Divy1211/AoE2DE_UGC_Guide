@@ -3598,7 +3598,7 @@ ID of the player resource Speed Up Percentage. Check [here](../../resources/reso
 
 Value: `#!xs int 258`
 
-ID of the player resource Speed Up Object Type. Check [here](../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
+ID of the player resource Speed Up. Check [here](../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
 
 ### 11.170. cAttributeSpeedUpEffectType
 
@@ -4224,7 +4224,7 @@ Value: `#!xs int 502`
 
 This constant is set incorrectly, it should be 291
 
-## 12. Damage Classes
+## 12. Damage Class
 
 ### 12.1. cDamageClassInfantry
 
@@ -4418,7 +4418,7 @@ Value: `#!xs int 39`
 
 ID of the Damage Class Royal Heirs
 
-## 13. Task Attributes
+## 13. Task Attribute
 
 ### 13.1. cTaskAttrWorkValue1
 
@@ -4588,7 +4588,7 @@ Value: `#!xs int 27`
 
 ID for the task amount Task Attribute Enabled
 
-## 14. Task Types
+## 14. Task Type
 
 ### 14.1. cTaskTypeMoveTo
 
@@ -4866,7 +4866,7 @@ Value: `#!xs int 160`
 
 ID for the task H P Modifier
 
-## 15. Tech States
+## 15. Tech State
 
 ### 15.1. cTechStateNotReady
 
@@ -4909,4 +4909,72 @@ Enum value for the tech state Disabled
 Value: `#!xs int -2`
 
 Enum value for the tech state Invalid
+
+## 16. Object Type
+
+### 16.1. cObjectTypeEyeCandy
+
+Value: `#!xs int 10`
+
+Enum value for the object type Eye Candy
+
+### 16.2. cObjectTypeTrees
+
+Value: `#!xs int 15`
+
+Enum value for the object type Trees
+
+### 16.3. cObjectTypeAnimated
+
+Value: `#!xs int 20`
+
+Enum value for the object type Animated
+
+### 16.4. cObjectTypeDoppleganger
+
+Value: `#!xs int 25`
+
+Enum value for the object type Doppleganger
+
+### 16.5. cObjectTypeMoving
+
+Value: `#!xs int 30`
+
+Enum value for the object type Moving
+
+### 16.6. cObjectTypeActing
+
+Value: `#!xs int 40`
+
+Enum value for the object type Acting
+
+### 16.7. cObjectTypeCombat
+
+Value: `#!xs int 50`
+
+Enum value for the object type Combat
+
+### 16.8. cObjectTypeProjectile
+
+Value: `#!xs int 60`
+
+Enum value for the object type Projectile
+
+### 16.9. cObjectTypeCreatable
+
+Value: `#!xs int 70`
+
+Enum value for the object type Creatable
+
+### 16.10. cObjectTypeBuilding
+
+Value: `#!xs int 80`
+
+Enum value for the object type Building
+
+### 16.11. cObjectTypeLegacyTree
+
+Value: `#!xs int 90`
+
+Enum value for the object type Legacy Tree
 

@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/07/20 10:01:21 |
+// | Generated on: 2025/08/13 12:15:15 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -1640,7 +1640,7 @@ extern const int cAttributeSpeedUpBuildingRange = 256;
 /** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-unused-resource-257) */
 extern const int cAttributeSpeedUpPercentage = 257;
 
-/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
+/** ID of the player resource [Speed Up](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
 extern const int cAttributeSpeedUpObjectType = 258;
 
 /** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-unused-resource-259) */
@@ -1956,7 +1956,7 @@ extern const int cAttributeTributeFromPlayer8 = 483;
 extern const int cAttributeChoppingFoodProductivity = 502;
 
 
-// 12. Damage Classes
+// 12. Damage Class
 
 
 /** ID of the Damage Class Infantry */
@@ -2056,7 +2056,7 @@ extern const int cDamageClassSkirmishers = 38;
 extern const int cDamageClassRoyalHeirs = 39;
 
 
-// 13. Task Attributes
+// 13. Task Attribute
 
 
 /** ID for the task amount Task Attribute Work Value1 */
@@ -2144,7 +2144,7 @@ extern const int cTaskAttrEnableTargeting = 26;
 extern const int cTaskAttrEnabled = 27;
 
 
-// 14. Tasks
+// 14. Task Type
 
 
 /** ID for the task Move To */
@@ -2286,7 +2286,7 @@ extern const int cTaskTypeHPTransform = 158;
 extern const int cTaskTypeHPModifier = 160;
 
 
-// 15. Tech States
+// 15. Tech State
 
 
 /** Enum value for the tech state Not Ready */
@@ -2309,6 +2309,43 @@ extern const int cTechStateDisabled = -1;
 
 /** Enum value for the tech state Invalid */
 extern const int cTechStateInvalid = -2;
+
+
+// 16. Object Type
+
+
+/** Enum value for the object type Eye Candy */
+extern const int cObjectTypeEyeCandy = 10;
+
+/** Enum value for the object type Trees */
+extern const int cObjectTypeTrees = 15;
+
+/** Enum value for the object type Animated */
+extern const int cObjectTypeAnimated = 20;
+
+/** Enum value for the object type Doppleganger */
+extern const int cObjectTypeDoppleganger = 25;
+
+/** Enum value for the object type Moving */
+extern const int cObjectTypeMoving = 30;
+
+/** Enum value for the object type Acting */
+extern const int cObjectTypeActing = 40;
+
+/** Enum value for the object type Combat */
+extern const int cObjectTypeCombat = 50;
+
+/** Enum value for the object type Projectile */
+extern const int cObjectTypeProjectile = 60;
+
+/** Enum value for the object type Creatable */
+extern const int cObjectTypeCreatable = 70;
+
+/** Enum value for the object type Building */
+extern const int cObjectTypeBuilding = 80;
+
+/** Enum value for the object type Legacy Tree */
+extern const int cObjectTypeLegacyTree = 90;
 
 
 // 1. Rules
@@ -2782,13 +2819,14 @@ float asin(float x = -1.0) {}
 float atan(float x = -1.0) {}
 
 /**
-* This is supposed to be the atan2(y, x) function but apparently it only takes one input. ThxDE
+* Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\pi, \pi]$
 *
-* @param x The X coordinate of the point to find the amplitude of
+* @param y The Y coordinate of the point to find the X+ angle of
+* @param x The X coordinate of the point to find the X+ angle of
 *
 * @returns float
 */
-float atan2(float x = -1.0) {}
+float atan2(float y = -1.0, float x = -1.0) {}
 
 /**
 * Does `bit_cast<float>(value)`
@@ -2867,6 +2905,60 @@ int xsCeilToInt(float value = -1.0) {}
 // 5. General
 
 /**
+* Returns the angle of the given vector from the X+ axis, in the range $[-\pi, \pi]$. Ignores the Z component
+*
+* @param v The vector to get the atan2 from
+*
+* @returns float
+*/
+float atan2v(vector v = vector(-1, -1, -1)) {}
+
+/**
+* Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `!#rs std::mem::transmute::<i32, f32>(number)`
+*
+* @param number The value to `reinterpret/bit_cast` to `float`
+*
+* @returns float
+*/
+float bitCastToFloat(int number = -1) {}
+
+/**
+* Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `!#rs std::mem::transmute::<f32, i32>(number)`
+*
+* @param number The value to `reinterpret/bit_cast` to `int`
+*
+* @returns int
+*/
+int bitCastToInt(float number = -1.0) {}
+
+/**
+* Returns $\left \lceil{x}\right \rceil $
+*
+* @param x The value to find the ceil of
+*
+* @returns float
+*/
+float ceil(float x = -1.0) {}
+
+/**
+* Returns $e^x$
+*
+* @param x The value to find the exp of
+*
+* @returns float
+*/
+float exp(float x = -1.0) {}
+
+/**
+* Returns $\left \lfloor{x}\right \rfloor $
+*
+* @param x The value to find the ceil of
+*
+* @returns float
+*/
+float floor(float x = -1.0) {}
+
+/**
 * Shows the given message in the game chat
 *
 * @param message The message to display in chat
@@ -2886,17 +2978,17 @@ void xsChatData(string message = "", int value = -1) {}
 bool xsDoesUnitExist(int unitId = -1) {}
 
 /**
-* Change the specified attribute of the specified unit or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
+* Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
 *
 * @param effectId The ID of the effect to use
-* @param unitOrTechnologyId The ID of the unit or technology to effect
+* @param objectOrTechnologyId The ID of the object or technology to effect
 * @param attributeOrOperation The attribute to modify or the operation to perform
 * @param value The value of the effect
 * @param playerNumber The player to apply the effect to. If unspecified, applies to all players except Gaia.
 *
 * @returns void
 */
-void xsEffectAmount(int effectId = -1, int unitOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
+void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
 
 /**
 * Returns the current game time in seconds
@@ -2945,7 +3037,7 @@ int xsGetNumPlayers() {}
 /**
 * Returns the attribute value for an object
 *
-* @param playerId The player whose unit to get the attribute for
+* @param playerId The player whose object to get the attribute for
 * @param objectId The object to get the attribute for
 * @param attribute The attribute to get
 * @param damageClass For use with armor/attack attributes - specifies which armor/attack class to get
@@ -2953,6 +3045,26 @@ int xsGetNumPlayers() {}
 * @returns float
 */
 float xsGetObjectAttribute(int playerId = -1, int objectId = -1, int attribute = -1, int damageClass = -1) {}
+
+/**
+* Returns the given object's class for the specified player. See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/#10-object-class)
+*
+* @param playerId The player to get the object's class for
+* @param objectId The object to get the class for
+*
+* @returns int
+*/
+int xsGetObjectClass(int playerId = -1, int objectId = -1) {}
+
+/**
+* Returns the given object's copy ID in data for the specified player
+*
+* @param playerId The player to get the object's copy ID for
+* @param objectId The object to get the copy ID for
+*
+* @returns int
+*/
+int xsGetObjectCopyId(int playerId = -1, int objectId = -1) {}
 
 /**
 * Returns the number of currently alive objects with the given ID of the specified player
@@ -2986,7 +3098,17 @@ int xsGetObjectCountTotal(int playerId = -1, int objectOrClassId = -1) {}
 string xsGetObjectName(int objectId = -1, int playerId = -1, bool internalName = false) {}
 
 /**
-* Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scripting > Constant Reference > #3. Civs") for all the different civ IDs
+* Returns the given object's type for the specified player. See [cObjectType constants](https://ugc.aoe2.rocks/general/xs/constants/#16-object-type)
+*
+* @param playerId The player to get the object's type for
+* @param objectId The object to get the type for
+*
+* @returns int
+*/
+int xsGetObjectType(int playerId = -1, int objectId = -1) {}
+
+/**
+* Returns the civilization ID of the given player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#3-civs) for all the different civ IDs
 *
 * @param playerNumber The player to get the civilization of
 *
@@ -3070,7 +3192,7 @@ int xsGetRandomNumberMax(int max = -1) {}
 string xsGetTechName(int techId = -1, int playerId = -1, bool internalName = false) {}
 
 /**
-* Returns one of the [cTechState constants](../constants/#15-techstate "Jump To: XS > Constant Reference > Tech State Constants") based on the tech's status
+* Returns one of the [cTechState constants](https://ugc.aoe2.rocks/general/xs/constants/#15-techstate) based on the tech's status
 *
 * @param techId The tech to get the state for
 * @param playerId The player to get the tech's state for
@@ -3105,6 +3227,70 @@ int xsGetTurn() {}
 float xsGetUnitAttribute(int unitId = -1, int attribute = -1, int damageClass = -1) {}
 
 /**
+* Returns the given unit's amount of the specified resource held.
+*
+* @param unitId The unit to get the resource held for
+* @param attributeId The ID of the resource to get. If unspecified, return the first resource which the unit holds
+*
+* @returns float
+*/
+float xsGetUnitAttributeHeld(int unitId = -1, int attributeId = -1) {}
+
+/**
+* Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog.
+*
+* @param unitId The unit to get the held resource types for
+*
+* @returns int
+*/
+int xsGetUnitAttributeTypesHeld(int unitId = -1) {}
+
+/**
+* Returns the given unit's Built Points
+*
+* @param unitId The unit to get the Build Points for
+*
+* @returns float
+*/
+float xsGetUnitBuildPoints(int unitId = -1) {}
+
+/**
+* Returns the given unit's charge
+*
+* @param unitId The unit to get the charge for
+*
+* @returns float
+*/
+float xsGetUnitCharge(int unitId = -1) {}
+
+/**
+* Returns the given unit's class See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/#10-effectamount-object-class)
+*
+* @param unitId The unit to get the class for
+*
+* @returns int
+*/
+int xsGetUnitClass(int unitId = -1) {}
+
+/**
+* Returns the given unit's copy ID in data
+*
+* @param unitId The unit to get the copy ID for
+*
+* @returns int
+*/
+int xsGetUnitCopyId(int unitId = -1) {}
+
+/**
+* Returns the given unit's HP
+*
+* @param unitId The unit to get the HP for
+*
+* @returns float
+*/
+float xsGetUnitHitpoints(int unitId = -1) {}
+
+/**
 * Returns the location this unit is currently moving to
 *
 * @param unitId The unit to get the movement target for
@@ -3122,6 +3308,15 @@ vector xsGetUnitMoveTarget(int unitId = -1) {}
 * @returns string
 */
 string xsGetUnitName(int unitId = -1, bool internalName = false) {}
+
+/**
+* Returns the given unit's ID in data
+*
+* @param unitId The unit to get the object ID for
+*
+* @returns int
+*/
+int xsGetUnitObjectId(int unitId = -1) {}
 
 /**
 * Returns the lobby index of the player owning this unit.
@@ -3149,6 +3344,15 @@ vector xsGetUnitPosition(int unitId = -1) {}
 * @returns int
 */
 int xsGetUnitTargetUnitId(int unitId = -1) {}
+
+/**
+* Returns the given unit's type. See [cObjectType constants](https://ugc.aoe2.rocks/general/xs/constants/#16-object-type)
+*
+* @param unitId The unit to get the type for
+*
+* @returns int
+*/
+int xsGetUnitType(int unitId = -1) {}
 
 /**
 * Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
@@ -3246,16 +3450,16 @@ bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId
 float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
 
 /**
-* Removes a task from a unit if the specified `actionType`, `unitId`, and `Search Wait Time` (set by [xsTaskAmount](./#532-xstaskamount)) match an existing task in a unit. No other fields are used for filtering (same as when [xsTask](./#531-xstask) edits instead of adding a new task)
+* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#532-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#531-xstask) edits instead of adding a new task)
 *
-* @param unitId Unit to remove the task from.
-* @param actionType Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
-* @param targetUnitId Target unitId for the task if exists. Values 9xx refer to classes.
-* @param playerId The player from whose units the task will be removed. If unspecified or -1, applies to all players except Gaia.
+* @param objectOrClassId The object or class ID to remove the task from.
+* @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-type)
+* @param targetObjectOrClassId Target object or class ID for the task to filter by.
+* @param playerId The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
 */
-void xsRemoveTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, int playerId = -1) {}
+void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
 /**
 * Returns a boolean based on whether the technology was researched or not.
@@ -3270,7 +3474,7 @@ void xsRemoveTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, i
 bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
 
 /**
-* Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#531-xstask).
+* Resets all the values of the global XS task struct to their defaults. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#531-xstask).
 *
 * @returns void
 */
@@ -3298,30 +3502,64 @@ void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float valu
 void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
 
 /**
-* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified unit at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `unitId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
-* 
-* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
+* Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
 *
-* @param unitId The unit to add the task to
-* @param actionType Task type. Eg.: 105 for heal, 155 for aura and etc. Look in the A.G.E.
-* @param targetUnitId Target unitId for the task if exists. Values 9xx refer to classes.
-* @param playerId The player to whose units the task will be inserted. If unspecified or -1, applies to all players except Gaia.
+* @param unitId The unit to set the resource held for
+* @param value The amount to set the held resource to
+* @param attributeId The ID of the resource to set. If unspecified, sets the first resource which the unit holds
+*
+* @returns bool
+*/
+bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId = -1) {}
+
+/**
+* Sets the given unit's Build Points
+*
+* @param unitId The unit to set the build points for
+* @param value The value to set the build points to
+*
+* @returns bool
+*/
+bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
+
+/**
+* Sets the given unit's charge
+*
+* @param unitId The unit to set the charge for
+* @param value The value to set the charge to
+*
+* @returns bool
+*/
+bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
+
+/**
+* Sets the given unit's HP
+*
+* @param unitId The unit to set the HP for
+* @param value The value to set the HP to
+*
+* @returns bool
+*/
+bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
+
+/**
+* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#532-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+* 
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#532-xstaskamount)) and then submitting multiple copies of it for different people)
+*
+* @param objectOrClassId The object or class ID to add the task to
+* @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-type)
+* @param targetObjectOrClassId Target object or class ID for the task to filter by.
+* @param playerId The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
 */
-void xsTask(int unitId = -1, int actionType = -1, int targetUnitId = -1, int playerId = -1) {}
+void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
 /**
-* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
+* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 *
-* @param taskFieldId Specifies which property of the task to change (names correspond with A.G.E.):
-*     - 0: Work Value 1 (Task 155 - Quantity to mul/add to the attribute modified)
-*     - 1: Work Value 2 (Task 155 - Min number of units required to activate the effect. See Monaspa)
-*     - 2: Work Range
-*     - 3: Work Flag 2
-*     - 4: Search Wait Time (Task 155 - Attribute to modify. Only some attributes are supported: [Movement Speed](../../attributes/attributes/#5-movement-speed), [Attack](../../attributes/attributes/#9-attack), [Attack Reload Time](../../attributes/attributes/#10-attack-reload-time), [Work Rate](../../attributes/attributes/#13-work-rate), [Regeneration Rate](../../attributes/attributes/#109-regeneration-rate), [Conversion Chance Modifier](../../attributes/attributes/#113-conversion-chance-modifier), 116 - Melee Armor, 117 - Pierce Armor)
-*     - 5: Unused Flag (Task 155 - Combinable bitfield: 1 - Multiply instead of Add, 2 - Circular instead of Rectangular radius, 4 - Range indicator shown, 8 - Temporary Aura, 16 - Use with 8 - applies buffs only units around when the ability is triggered, 32 - Translucent)
-*     - 6: Target Diplomacy
+* @param taskFieldId Specifies which property of the task to change. Refer to [cTaskAttr constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-attribute)
 * @param value The value to set the task field to
 *
 * @returns void
@@ -3382,7 +3620,7 @@ int xsGetFileSize() {}
 /**
 * Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 *
-* @param dataType The [cOffset constants](../constants/#1-readwrite "Jump To: XS > Constant Reference > Read/Write Constants") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
+* @param dataType The [cOffset constants](https://ugc.aoe2.rocks/general/xs/constants/#1-readwrite) can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
 * @param forward Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
 *
 * @returns bool
@@ -3518,7 +3756,7 @@ int xsSetStrategicNumber(int id = -1, int value = -1) {}
 /**
 * A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 *
-* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
+* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](https://ugc.aoe2.rocks/general/xs/functions/#56-xsgetmapname) and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 * @param functionName This is the name of a user defined function that takes a single integer argument
 * @param functionArgument This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 *
