@@ -536,7 +536,7 @@
             "return_type": "int",
             "params": [
                 {
-                    "name": "arrayID",
+                    "name": "arrayId",
                     "type": "int",
                     "required": true,
                     "desc": "The ID of the array to set the value in"
@@ -988,7 +988,7 @@
                     "name": "x",
                     "type": "float",
                     "required": true,
-                    "desc": "The value to find the ceil of"
+                    "desc": "The value to find the floor of"
                 }
             ],
             "desc": "Returns $\\left \\lfloor{x}\\right \\rfloor$"

@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/08/13 12:15:15 |
+// | Generated on: 2025/08/13 16:11:43 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -2829,22 +2829,40 @@ float atan(float x = -1.0) {}
 float atan2(float y = -1.0, float x = -1.0) {}
 
 /**
-* Does `bit_cast<float>(value)`
+* Returns the angle of the given vector from the X+ axis, in the range $[-\pi, \pi]$. Ignores the Z component
 *
-* @param value The value to bit cast
+* @param v The vector to get the atan2 from
 *
 * @returns float
 */
-float bitCastToFloat(int value = -1) {}
+float atan2v(vector v = vector(-1, -1, -1)) {}
 
 /**
-* Does `bit_cast<int>(value)`
+* Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `#!rs std::mem::transmute::<i32, f32>(number)`
 *
-* @param value The value to bit cast
+* @param number The value to `reinterpret/bit_cast` to `float`
+*
+* @returns float
+*/
+float bitCastToFloat(int number = -1) {}
+
+/**
+* Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `#!rs std::mem::transmute::<f32, i32>(number)`
+*
+* @param number The value to `reinterpret/bit_cast` to `int`
 *
 * @returns int
 */
-int bitCastToInt(float value = -1.0) {}
+int bitCastToInt(float number = -1.0) {}
+
+/**
+* Returns $\left \lceil{x}\right \rceil$
+*
+* @param x The value to find the ceil of
+*
+* @returns float
+*/
+float ceil(float x = -1.0) {}
 
 /**
 * Returns the cosine of the angle in radians
@@ -2854,6 +2872,24 @@ int bitCastToInt(float value = -1.0) {}
 * @returns float
 */
 float cos(float x = -1.0) {}
+
+/**
+* Returns $e^x$
+*
+* @param x The value to find the exp of
+*
+* @returns float
+*/
+float exp(float x = -1.0) {}
+
+/**
+* Returns $\left \lfloor{x}\right \rfloor$
+*
+* @param x The value to find the floor of
+*
+* @returns float
+*/
+float floor(float x = -1.0) {}
 
 /**
 * Returns x raised to the power y (x**y).
@@ -2903,60 +2939,6 @@ int xsCeilToInt(float value = -1.0) {}
 
 
 // 5. General
-
-/**
-* Returns the angle of the given vector from the X+ axis, in the range $[-\pi, \pi]$. Ignores the Z component
-*
-* @param v The vector to get the atan2 from
-*
-* @returns float
-*/
-float atan2v(vector v = vector(-1, -1, -1)) {}
-
-/**
-* Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `!#rs std::mem::transmute::<i32, f32>(number)`
-*
-* @param number The value to `reinterpret/bit_cast` to `float`
-*
-* @returns float
-*/
-float bitCastToFloat(int number = -1) {}
-
-/**
-* Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `!#rs std::mem::transmute::<f32, i32>(number)`
-*
-* @param number The value to `reinterpret/bit_cast` to `int`
-*
-* @returns int
-*/
-int bitCastToInt(float number = -1.0) {}
-
-/**
-* Returns $\left \lceil{x}\right \rceil $
-*
-* @param x The value to find the ceil of
-*
-* @returns float
-*/
-float ceil(float x = -1.0) {}
-
-/**
-* Returns $e^x$
-*
-* @param x The value to find the exp of
-*
-* @returns float
-*/
-float exp(float x = -1.0) {}
-
-/**
-* Returns $\left \lfloor{x}\right \rfloor $
-*
-* @param x The value to find the ceil of
-*
-* @returns float
-*/
-float floor(float x = -1.0) {}
 
 /**
 * Shows the given message in the game chat

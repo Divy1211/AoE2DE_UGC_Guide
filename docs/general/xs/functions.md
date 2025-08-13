@@ -702,7 +702,7 @@ Prototype: `#!xs float floor(float x)`
 
 Parameters:
 
-1.  `#!xs float x`: The value to find the ceil of
+1.  `#!xs float x`: The value to find the floor of
 
 Returns $\left \lfloor{x}\right \rfloor$
 
