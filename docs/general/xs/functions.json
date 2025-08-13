@@ -536,7 +536,7 @@
             "return_type": "int",
             "params": [
                 {
-                    "name": "arrayId",
+                    "name": "arrayID",
                     "type": "int",
                     "required": true,
                     "desc": "The ID of the array to set the value in"
