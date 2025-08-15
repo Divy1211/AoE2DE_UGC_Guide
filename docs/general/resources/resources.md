@@ -244,7 +244,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 33
 
-- Purpose: Unused
+- Purpose: Used to invoke functions in XS from data. When set to a non zero value `N`, it will automatically call a function named `EffectFunctionN` from the `Effects.xs` file.
 
 ## 34. Unused Resource 34
 
@@ -527,7 +527,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1: No multiplier (default)
 
-  ## 70. Source Market or Dock X Coordinate
+## 70. Source Market or Dock X Coordinate
 
 - ID: 70
 

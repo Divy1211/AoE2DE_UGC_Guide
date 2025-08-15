@@ -1417,7 +1417,7 @@ Parameters:
 3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
 4. (Optional) `#!xs int playerId`: The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
 
-Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#532-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#531-xstask) edits instead of adding a new task)
+Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#564-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#563-xstask) edits instead of adding a new task)
 
 ### 5.55. xsResearchTechnology
 
@@ -1441,7 +1441,7 @@ Returning Type: `#!xs void`
 Prototype: `#!xs void xsResetTaskAmount()`
 
 
-Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#531-xstask).
+Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#563-xstask).
 
 ### 5.57. xsSetPlayerAttribute
 
@@ -1536,9 +1536,9 @@ Parameters:
 3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
 4. (Optional) `#!xs int playerId`: The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#532-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#564-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 
-Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#532-xstaskamount)) and then submitting multiple copies of it for different people)
+Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#564-xstaskamount)) and then submitting multiple copies of it for different people)
 
 ### 5.64. xsTaskAmount
 
@@ -1548,10 +1548,10 @@ Prototype: `#!xs void xsTaskAmount(int taskFieldId, float value)`
 
 Parameters:
 
-1.  `#!xs int taskFieldId`: Specifies which property of the task to change. Refer to [cTaskAttr constants](../constants/#14-task-attribute "Jump To: XS > Constant Reference > Task Type Constants")
+1.  `#!xs int taskFieldId`: Specifies which property of the task to change. Refer to [cTaskAttr constants](../constants/#13-task-attribute "Jump To: XS > Constant Reference > Task Type Constants")
 2.  `#!xs float value`: The value to set the task field to
 
-Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
+Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 
 ### 5.65. xsTriggerVariable
 

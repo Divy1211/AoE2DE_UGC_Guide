@@ -4802,15 +4802,25 @@
             "name": "cTaskAttrWorkValue1",
             "value": 0,
             "type": "int",
-            "desc":  "ID for the task amount Task Attribute ATTR_NAME",
-            "usage":  null
+            "desc":  "ID for the task amount Task Attribute ATTR_NAME.",
+            "usage": {
+                "[Aura Task](./#1442-ctasktypeaura)": {
+                    "desc": "Quantity to mul/add to the attribute modified",
+                    "list": null
+                }
+            }
         },
         {
             "name": "cTaskAttrWorkValue2",
             "value": 1,
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
-            "usage":  null
+            "usage": {
+                "[Aura Task](./#1442-ctasktypeaura)": {
+                    "desc": "Min number of units required to activate the effect. See Monaspa",
+                    "list": null
+                }
+            }
         },
         {
             "name": "cTaskAttrWorkRange",
@@ -4831,14 +4841,40 @@
             "value": 4,
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
-            "usage":  null
+            "usage":  {
+                "[Aura Task](./#1442-ctasktypeaura)": {
+                    "desc": "The attribute to modify. Only the following attributes are supported:",
+                    "list": [
+                        "[Movement Speed](./#96-cmovementspeed)",
+                        "[Attack](./#99-cattack)",
+                        "[Attack Reload Time](./#910-cattackreloadtime)",
+                        "[Work Rate](./#913-cworkrate)",
+                        "[Regeneration Rate](./#9101-cregenerationrate)",
+                        "[Conversion Chance Modifier](./#9105-cconversionchancemod)",
+                        "116: Melee Armor",
+                        "117: Pierce Armor"
+                    ]
+                }
+            }
         },
         {
             "name": "cTaskAttrCombatLevelFlag",
             "value": 5,
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
-            "usage":  null
+            "usage": {
+                "[Aura Task](./#1442-ctasktypeaura)": {
+                    "desc": "Combinable bit-field:",
+                    "list": [
+                        "1: Multiply instead of Add",
+                        "2: Circular instead of Rectangular radius",
+                        "4: Range indicator shown",
+                        "8: Temporary Aura",
+                        "16: Use with 8 - applies buffs only units around when the ability is triggered",
+                        "32: Translucent"
+                    ]
+                }
+            }
         },
         {
             "name": "cTaskAttrOwnerType",

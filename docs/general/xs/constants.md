@@ -2746,7 +2746,7 @@ ID of the player resource Unit Limit. Check [here](../../resources/resources/#32
 
 Value: `#!xs int 33`
 
-ID of the player resource Maintenance. Check [here](../../resources/resources/#33-unused-resource-33 "Jump to: Game Mecahnicsc > Resources > #33-unused-resource-33") for more info about what this resource does.
+ID of the player resource Maintenance. Check [here](../../resources/resources/#33-effect-function-number "Jump to: Game Mecahnicsc > Resources > #33-effect-function-number") for more info about what this resource does.
 
 ### 11.28. cAttributeFaith
 
@@ -4424,13 +4424,21 @@ ID of the Damage Class Royal Heirs
 
 Value: `#!xs int 0`
 
-ID for the task amount Task Attribute Work Value1
+ID for the task amount Task Attribute Work Value1.
+
+Usages per task type:
+
+  - [Aura Task](./#1442-ctasktypeaura): Quantity to mul/add to the attribute modified
 
 ### 13.2. cTaskAttrWorkValue2
 
 Value: `#!xs int 1`
 
 ID for the task amount Task Attribute Work Value2
+
+Usages per task type:
+
+  - [Aura Task](./#1442-ctasktypeaura): Min number of units required to activate the effect. See Monaspa
 
 ### 13.3. cTaskAttrWorkRange
 
@@ -4450,11 +4458,33 @@ Value: `#!xs int 4`
 
 ID for the task amount Task Attribute Search Wait Time
 
+Usages per task type:
+
+  - [Aura Task](./#1442-ctasktypeaura): The attribute to modify. Only the following attributes are supported:
+    - [Movement Speed](./#96-cmovementspeed)
+    - [Attack](./#99-cattack)
+    - [Attack Reload Time](./#910-cattackreloadtime)
+    - [Work Rate](./#913-cworkrate)
+    - [Regeneration Rate](./#9101-cregenerationrate)
+    - [Conversion Chance Modifier](./#9105-cconversionchancemod)
+    - 116: Melee Armor
+    - 117: Pierce Armor
+
 ### 13.6. cTaskAttrCombatLevelFlag
 
 Value: `#!xs int 5`
 
 ID for the task amount Task Attribute Combat Level Flag
+
+Usages per task type:
+
+  - [Aura Task](./#1442-ctasktypeaura): Combinable bit-field:
+    - 1: Multiply instead of Add
+    - 2: Circular instead of Rectangular radius
+    - 4: Range indicator shown
+    - 8: Temporary Aura
+    - 16: Use with 8 - applies buffs only units around when the ability is triggered
+    - 32: Translucent
 
 ### 13.7. cTaskAttrOwnerType
 

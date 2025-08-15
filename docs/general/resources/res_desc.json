@@ -215,7 +215,7 @@
     },
     "33": {
         "name": "Effect Function Number",
-        "desc": "Unused",
+        "desc": "Used to invoke functions in XS from data. When set to a non zero value `N`, it will automatically call a function named `EffectFunctionN` from the `Effects.xs` file.",
         "defaults": {},
         "note": ""
     },

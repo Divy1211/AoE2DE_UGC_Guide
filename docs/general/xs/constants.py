@@ -78,11 +78,19 @@ def main():
             outmd += f"Value: `#!xs {constant['type']} {constant['value']}`\n\n"
             outmd += f"{replace_placeholders(constant['desc'], category == 'resource', constant)}\n\n"
             if constant['usage']:
-                # outmd += f"Syntax: `#!xs {constant['usage']['syntax']}`\n\n"
-                # outmd += f"Example: `#!xs {constant['usage']['example']}`\n\n"
-                outmd += f"Syntax:\n\n```xs\n {constant['usage']['syntax']}\n```\n\n"
-                outmd += f"Example:\n\n```xs\n {constant['usage']['example']}\n```\n\n"
-                outmd += f"{constant['usage']['explanation']}\n\n"
+                if category != "task attribute":
+                    # outmd += f"Syntax: `#!xs {constant['usage']['syntax']}`\n\n"
+                    # outmd += f"Example: `#!xs {constant['usage']['example']}`\n\n"
+                    outmd += f"Syntax:\n\n```xs\n {constant['usage']['syntax']}\n```\n\n"
+                    outmd += f"Example:\n\n```xs\n {constant['usage']['example']}\n```\n\n"
+                    outmd += f"{constant['usage']['explanation']}\n\n"
+                else:
+                    outmd += f"Usages per task type:\n\n"
+                    for task, usage in constant["usage"].items():
+                        outmd += f"  - {task}: {usage['desc']}\n"
+                        if usage["list"]:
+                            outmd += f'    - {"\n    - ".join(usage["list"])}\n'
+                        outmd += "\n"
 
     with open("./constants.md", "w") as file:
         file.write(outmd)

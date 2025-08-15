@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/08/13 16:11:43 |
+// | Generated on: 2025/08/15 22:42:58 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -1214,7 +1214,7 @@ extern const int cAttributeFoodLimit = 31;
 /** ID of the player resource [Unit Limit](https://ugc.aoe2.rocks/general/resources/resources/#32-bonus-population-cap) */
 extern const int cAttributeUnitLimit = 32;
 
-/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-unused-resource-33) */
+/** ID of the player resource [Maintenance](https://ugc.aoe2.rocks/general/resources/resources/#33-effect-function-number) */
 extern const int cAttributeMaintenance = 33;
 
 /** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-34) */
@@ -2059,10 +2059,10 @@ extern const int cDamageClassRoyalHeirs = 39;
 // 13. Task Attribute
 
 
-/** ID for the task amount Task Attribute Work Value1 */
+/** ID for the task amount Task Attribute Work Value1. View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#131-ctaskattrworkvalue1) */
 extern const int cTaskAttrWorkValue1 = 0;
 
-/** ID for the task amount Task Attribute Work Value2 */
+/** ID for the task amount Task Attribute Work Value2 View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#132-ctaskattrworkvalue2) */
 extern const int cTaskAttrWorkValue2 = 1;
 
 /** ID for the task amount Task Attribute Work Range */
@@ -2071,10 +2071,10 @@ extern const int cTaskAttrWorkRange = 2;
 /** ID for the task amount Task Attribute Work Flag2 */
 extern const int cTaskAttrWorkFlag2 = 3;
 
-/** ID for the task amount Task Attribute Search Wait Time */
+/** ID for the task amount Task Attribute Search Wait Time View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#135-ctaskattrsearchwaittime) */
 extern const int cTaskAttrSearchWaitTime = 4;
 
-/** ID for the task amount Task Attribute Combat Level Flag */
+/** ID for the task amount Task Attribute Combat Level Flag View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#136-ctaskattrcombatlevelflag) */
 extern const int cTaskAttrCombatLevelFlag = 5;
 
 /** ID for the task amount Task Attribute Owner Type */
@@ -3432,7 +3432,7 @@ bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId
 float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
 
 /**
-* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#532-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#531-xstask) edits instead of adding a new task)
+* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#564-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#563-xstask) edits instead of adding a new task)
 *
 * @param objectOrClassId The object or class ID to remove the task from.
 * @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-type)
@@ -3456,7 +3456,7 @@ void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjec
 bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
 
 /**
-* Resets all the values of the global XS task struct to their defaults. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#531-xstask).
+* Resets all the values of the global XS task struct to their defaults. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#563-xstask).
 *
 * @returns void
 */
@@ -3525,9 +3525,9 @@ bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
 bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 
 /**
-* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#532-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#564-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 * 
-* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#532-xstaskamount)) and then submitting multiple copies of it for different people)
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#564-xstaskamount)) and then submitting multiple copies of it for different people)
 *
 * @param objectOrClassId The object or class ID to add the task to
 * @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-type)
@@ -3539,9 +3539,9 @@ bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
 /**
-* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#531-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
+* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 *
-* @param taskFieldId Specifies which property of the task to change. Refer to [cTaskAttr constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-attribute)
+* @param taskFieldId Specifies which property of the task to change. Refer to [cTaskAttr constants](https://ugc.aoe2.rocks/general/xs/constants/#13-task-attribute)
 * @param value The value to set the task field to
 *
 * @returns void
