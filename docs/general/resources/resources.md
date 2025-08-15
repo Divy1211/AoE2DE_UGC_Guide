@@ -240,7 +240,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: 10 for goths
 
-## 33. Unused Resource 33
+## 33. Effect Function Number
 
 - ID: 33
 
@@ -527,17 +527,17 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 1: No multiplier (default)
 
-## 70. Unused Resource 70
+  ## 70. Source Market or Dock X Coordinate
 
 - ID: 70
 
-- Purpose: Unused
+- Purpose: Controls the amount of gold that trade carts and trade cogs deposit, when the source market is changed
 
-## 71. Unused Resource 71
+## 71. Source Market or Dock Y Coordinate
 
 - ID: 71
 
-- Purpose: Unused
+- Purpose: Controls the amount of gold that trade carts and trade cogs deposit, when the source market is changed
 
 ## 72. Unused Resource 72
 
@@ -1479,17 +1479,25 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 203. Unused Resource 203
+## 203. Reveal Map
 
 - ID: 203
 
-- Purpose: Unused
+- Purpose: Controls the map visibility for a player.
 
-## 204. Unused Resource 204
+- Default Values:
+
+    - 0:  Normal
+    - 1:  Explored
+    - 2:  All Visible
+
+## 204. Reveal Unit on Map
 
 - ID: 204
 
-- Purpose: Unused
+- Purpose: Controls the visibility of other players' units for a player
+
+- Note: Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently
 
 ## 205. Feitoria Food Productivity
 
