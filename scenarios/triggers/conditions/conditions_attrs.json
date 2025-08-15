@@ -1,0 +1,124 @@
+{
+    "ai_signal": {
+        "display_name": "Ai Signal",
+        "show": true,
+        "desc": "TODO"
+    },
+    "amount_or_quantity": {
+        "display_name": "Amount/Quantity",
+        "show": true,
+        "desc": "The quantity to check for"
+    },
+    "area_1_x": {
+        "display_name": "Area",
+        "show": true,
+        "desc": "To Check if the units are in the selected area"
+    },
+    "area_1_y": {
+        "display_name": "Area 1 Y",
+        "show": false,
+        "desc": ""
+    },
+    "area_2_x": {
+        "display_name": "Area 2 X",
+        "show": false,
+        "desc": ""
+    },
+    "area_2_y": {
+        "display_name": "Area 2 Y",
+        "show": false,
+        "desc": ""
+    },
+    "comparison": {
+        "display_name": "Comparison",
+        "show": true,
+        "desc": "The type of comparison to perfom, less than, greater than, less than or equal to, greater than or equal to, equal to, not equal to"
+    },
+    "condition_type": {
+        "display_name": "Condition Type",
+        "show": true,
+        "desc": "TODO"
+    },
+    "inverted": {
+        "display_name": "Inverted",
+        "show": true,
+        "desc": "If this is selected, then the condition behaves the opposite. That is, when it should be true, it becomes false, when its false, it becomes true"
+    },
+    "next_object": {
+        "display_name": "Next Object",
+        "show": true,
+        "desc": "The unit to bring the first unit to"
+    },
+    "object_group": {
+        "display_name": "Object Group",
+        "show": true,
+        "desc": "The group/category of units to affect TODO"
+    },
+    "object_list": {
+        "display_name": "Unit List",
+        "show": true,
+        "desc": "The kind of unit to check for in the condition"
+    },
+    "object_type": {
+        "display_name": "Object Type",
+        "show": true,
+        "desc": "This is the class of the units to check for"
+    },
+    "resource_type_or_tribute_list": [
+        {
+            "display_name": "Resource Type TODO",
+            "show": true,
+            "desc": "The type of resource to check for"
+        },
+        {
+            "display_name": "Tribute List TODO",
+            "show": true,
+            "desc": "The type of resource to check for"
+        }
+    ],
+    "source_player": {
+        "display_name": "Source Player",
+        "show": true,
+        "desc": "The player to check the condition for"
+    },
+    "target_player": {
+        "display_name": "Target Player",
+        "show": true,
+        "desc": "The second player to check the condition for"
+    },
+    "technology": {
+        "display_name": "Technology",
+        "show": true,
+        "desc": "The technology to check the condition for"
+    },
+    "timer": {
+        "display_name": "Timer",
+        "show": true,
+        "desc": "The amount in seconds to wait before the condition is true"
+    },
+    "unit_ai_action": {
+        "display_name": "Unit Ai Action",
+        "show": true,
+        "desc": "TODO"
+    },
+    "unit_object": {
+        "display_name": "Unit Object",
+        "show": true,
+        "desc": "The object to check the condition for"
+    },
+    "variable": {
+        "display_name": "Variable",
+        "show": true,
+        "desc": "The variable to check the condition fors"
+    },
+    "xs_function": {
+        "display_name": "Message",
+        "show": true,
+        "desc": "Write an XS Script here"
+    },
+    "object_state": {
+        "display_name": "Object State",
+        "show": true,
+        "desc": "The state that the object must be in"
+    }
+}
