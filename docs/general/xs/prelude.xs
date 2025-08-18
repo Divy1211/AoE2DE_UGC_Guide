@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2025/08/15 22:42:58 |
+// | Generated on: 2025/08/18 17:11:58 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -2980,6 +2980,15 @@ void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attrib
 int xsGetGameTime() {}
 
 /**
+* Returns the location this group (formation) is currently moving to
+*
+* @param groupId The group (formation) to get the movement target for
+*
+* @returns vector
+*/
+vector xsGetGroupMoveTarget(int groupId = -1) {}
+
+/**
 * Returns the Height of the map.
 *
 * @returns int
@@ -3262,6 +3271,15 @@ int xsGetUnitClass(int unitId = -1) {}
 * @returns int
 */
 int xsGetUnitCopyId(int unitId = -1) {}
+
+/**
+* Returns the ID of the group (formation) for this unit
+*
+* @param unitId The unit to get the group ID (formation) for
+*
+* @returns int
+*/
+int xsGetUnitGroupId(int unitId = -1) {}
 
 /**
 * Returns the given unit's HP

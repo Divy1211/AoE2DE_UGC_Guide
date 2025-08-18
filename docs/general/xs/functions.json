@@ -1705,6 +1705,32 @@
             "desc": "Returns the location this unit is currently moving to"
         },
         {
+            "name": "xsGetUnitGroupId",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the group ID (formation) for"
+                }
+            ],
+            "desc": "Returns the ID of the group (formation) for this unit"
+        },
+        {
+            "name": "xsGetGroupMoveTarget",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "groupId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The group (formation) to get the movement target for"
+                }
+            ],
+            "desc": "Returns the location this group (formation) is currently moving to"
+        },
+        {
             "name": "xsGetObjectName",
             "return_type": "string",
             "params": [
