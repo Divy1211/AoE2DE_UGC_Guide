@@ -14,8 +14,6 @@ xsEffectAmount(cMulAttribute, HOUSE, cStoneCost, -1, 1);
 xsEffectAmount(cSetAttribute, HOUSE, cStoneCost, 10, 1);
 ```
 
-This same trick also works for changing technology costs.
-
 ## 2. Adding auras
 
 Adding auras to units can be a bit tricky with lots of function calls and edge cases. This xs function handles most of those cases.
@@ -96,18 +94,13 @@ bool xsAddAura(
         xsEffectAmount(setCommand, auraUnit, cChargeType, -3.0, player);
     }
 
-    /* Workaround for a bug setting multiple unit classes with an aura*/
-    float statMod = 0;
-    if (affectedUnit >= 900 && affectedUnit < 1000) {
-        statMod = (0.0 + affectedUnit - 900) / 100000;
-    }
-
     /* Setting aura task */
+    xsResetTaskAmount();
     xsTaskAmount(0, value);
     xsTaskAmount(1, 0.0 + unitsInRangeToTurnOn);
     xsTaskAmount(2, range);
     xsTaskAmount(3, 0.0);
-    xsTaskAmount(4, statMod + attribute);
+    xsTaskAmount(4, 0.0 + attribute);
     xsTaskAmount(5, 0.0 + auraEffectsBitField);
     xsTaskAmount(6, 0.0 + targetDiplomacy);
     xsTask(auraUnit, 155, affectedUnit, player);
@@ -171,14 +164,9 @@ bool xsRemoveAura(
         }
     }
 
-    /* Workaround for a bug setting multiple unit classes with an aura*/
-    float statMod = 0;
-    if (affectedUnit >= 900 && affectedUnit < 1000) {
-        statMod = (0.0 + affectedUnit - 900) / 100000;
-    }
-
     /* Setting aura task */
-    xsTaskAmount(4, statMod + attribute);
+    xsResetTaskAmount();
+    xsTaskAmount(4, 0.0 + attribute);
     xsRemoveTask(auraUnit, 155, affectedUnit, player);
 
     return (true);
@@ -229,3 +217,61 @@ void addAuraTest() {
   xsChatData("aura 1 added: " + aura1Added + ", aura 2 added: " + aura2Added + ", aura 3 added: " + aura3Added);
 }
 ```
+
+## 3. Changing multiple train locations and damage sprites
+
+To change multiple train locations and damage sprites you can use global struct `cTrainLocationsEntryMod`, `cTrainLocationsTotalNum`, `cDamageGraphicsEntryMod` and `cDamageGraphicsTotalNum` values.
+Based on developer notes:
+```
+Units no longer have a single train location, but a list of train locations. 
+To change the train location of a unit, you now have to give the index of the list entry that you want to change.
+
+You can modify the array size, and you can also use the "multiply attribute" operation on the Entry Mod attribute to insert/delete an entry at a specific index. 
+For example you have 5 entries and you want to delete the 3rd one, you use "multiply attribute" on entry mod with -3 and that specific element will be gone.
+Insert entry: mul with 0, 1, 2, ...
+Delete entry: mul with -1, -2, -3, ... (or "Divide" with 0, 1, 2, ... in Scenario Triggers).
+So no need to resize and repopulate the rest of the list.
+In a similar way, you can use mul attribute with 32767 to always insert an entry at the tail, even when you don't know the current size of the array.
+This works for both Damage Sprites modding and Train Locations modding.
+```
+
+We can create these examples for locations:
+
+Change 2nd location:
+```xs
+xsEffectAmount(cSetAttribute, unitId, cTrainLocationsEntryMod, 1, player);
+xsEffectAmount(cSetAttribute, unitId, cTrainLocation, buildingId, player);
+```
+
+Read total location count
+```xs
+int numOfLocations = xsGetObjectAttribute(player, unitId, cTrainLocationsTotalNum);
+```
+
+Insert 2nd location (eg: middle of the list):
+```xs
+xsEffectAmount(cMulAttribute, unitId, cTrainLocationsEntryMod, 1, player);
+xsEffectAmount(cSetAttribute, unitId, cTrainLocation, buildingId, player);
+```
+
+Remove 2nd location:
+```xs
+xsEffectAmount(cMulAttribute, unitId, cTrainLocationsEntryMod, -2, player);
+```
+
+Add new location to the end of the list:
+```xs
+xsEffectAmount(cMulAttribute, unitId, cTrainLocationsEntryMod, 32767, player);
+xsEffectAmount(cSetAttribute, unitId, cTrainLocation, buildingId, player);
+```
+
+Read 2nd location:
+```xs
+xsEffectAmount(cSetAttribute, unitId, cTrainLocationsEntryMod, 1, player);
+int buildingId = xsGetObjectAttribute(player, unitId, cTrainLocation);
+```
+
+If location change or value read is needed it's always better to set `cTrainLocationsEntryMod` beforehand.
+
+The same principle can be used for damage sprites just using its constants: `cDamageGraphicsEntryMod` and `cDamageGraphicsTotalNum`.
+But for last index value you should use `254` instead of `32767` (since sprites list is smaller).
