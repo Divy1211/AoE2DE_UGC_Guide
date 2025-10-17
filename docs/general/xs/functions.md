@@ -767,22 +767,9 @@ Parameters:
 
 Rounds the number **up** to the next integer
 
-## 5. General
+## 5. Unit
 
-### 5.1. xsChatData
-
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsChatData(string message, int value)`
-
-Parameters:
-
-1.  `#!xs string message`: The message to display in chat
-2. (Optional) `#!xs int value`: This value is inserted in place of any `%d` used in the message of the function
-
-Shows the given message in the game chat
-
-### 5.2. xsDoesUnitExist
+### 5.1. xsDoesUnitExist
 
 Returning Type: `#!xs bool`
 
@@ -794,7 +781,286 @@ Parameters:
 
 Returns true if a unit with the given ID exists on the map.
 
-### 5.3. xsEffectAmount
+### 5.2. xsGetPlayerUnitIds
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetPlayerUnitIds(int playerId, int objectOrClassId, int arrayId)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to get the unit IDs for
+2.  `#!xs int objectOrClassId`: The ID of the object or class to get the unit reference IDs for
+3. (Optional) `#!xs int arrayId`: Reuse an existing array to save memory
+
+Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
+
+### 5.3. xsGetUnitAttribute
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetUnitAttribute(int unitId, int attribute, int damageClass)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the attribute for.
+2.  `#!xs int attribute`: The attribute to get
+3.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
+
+Returns the attribute value for a specific unit on the map.
+
+### 5.4. xsGetUnitAttributeHeld
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetUnitAttributeHeld(int unitId, int attributeId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the resource held for
+2. (Optional) `#!xs int attributeId`: The ID of the resource to get. If unspecified, return the first resource which the unit holds
+
+Returns the given unit's amount of the specified resource held.
+
+### 5.5. xsGetUnitAttributeTypesHeld
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitAttributeTypesHeld(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the held resource types for
+
+Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog.
+
+### 5.6. xsGetUnitBuildPoints
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetUnitBuildPoints(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the Build Points for
+
+Returns the given unit's Built Points
+
+### 5.7. xsGetUnitCharge
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetUnitCharge(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the charge for
+
+Returns the given unit's charge
+
+### 5.8. xsGetUnitClass
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitClass(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the class for
+
+Returns the given unit's class See [cClass constants](../constants/#10-effectamount-object-class "Jump To: XS > Constant Reference > EffectAmount Object Class")
+
+### 5.9. xsGetUnitCopyId
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitCopyId(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the copy ID for
+
+Returns the given unit's copy ID in data
+
+### 5.10. xsGetUnitHitpoints
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetUnitHitpoints(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the HP for
+
+Returns the given unit's HP
+
+### 5.11. xsGetUnitMoveTarget
+
+Returning Type: `#!xs vector`
+
+Prototype: `#!xs vector xsGetUnitMoveTarget(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the movement target for
+
+Returns the location this unit is currently moving to
+
+### 5.12. xsGetUnitName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetUnitName(int unitId, bool internalName)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit ID to check
+2. (Optional) `#!xs bool internalName`: Returns the internal name of the unit if set. `!#xs false` by default.
+
+Returns the current name of a given unit
+
+### 5.13. xsGetUnitObjectId
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitObjectId(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the object ID for
+
+Returns the given unit's ID in data
+
+### 5.14. xsGetUnitOwner
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitOwner(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the owner ID for
+
+Returns the lobby index of the player owning this unit.
+
+### 5.15. xsGetUnitPosition
+
+Returning Type: `#!xs vector`
+
+Prototype: `#!xs vector xsGetUnitPosition(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the position for
+
+Returns the current position of a unit.
+
+### 5.16. xsGetUnitTargetUnitId
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitTargetUnitId(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the target for
+
+Returns the ID of the currently targeted unit for this unit
+
+### 5.17. xsGetUnitType
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitType(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the type for
+
+Returns the given unit's type. See [cObjectType constants](../constants/#16-object-type "Jump To: XS > Constant Reference > Object Type")
+
+### 5.18. xsSetUnitAttributeHeld
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitAttributeHeld(int unitId, float value, int attributeId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the resource held for
+2.  `#!xs float value`: The amount to set the held resource to
+3. (Optional) `#!xs int attributeId`: The ID of the resource to set. If unspecified, sets the first resource which the unit holds
+
+Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
+
+### 5.19. xsSetUnitBuildPoints
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitBuildPoints(int unitId, float value)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the build points for
+2.  `#!xs float value`: The value to set the build points to
+
+Sets the given unit's Build Points
+
+### 5.20. xsSetUnitCharge
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitCharge(int unitId, float value)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the charge for
+2.  `#!xs float value`: The value to set the charge to
+
+Sets the given unit's charge
+
+### 5.21. xsSetUnitHitpoints
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitHitpoints(int unitId, float value)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the HP for
+2.  `#!xs float value`: The value to set the HP to
+
+Sets the given unit's HP
+
+## 6. Group
+
+### 6.1. xsGetGroupMoveTarget
+
+Returning Type: `#!xs vector`
+
+Prototype: `#!xs vector xsGetGroupMoveTarget(int groupId)`
+
+Parameters:
+
+1.  `#!xs int groupId`: The group (formation) to get the movement target for
+
+Returns the location this group (formation) is currently moving to
+
+### 6.2. xsGetUnitGroupId
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetUnitGroupId(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the group ID (formation) for
+
+Returns the ID of the group (formation) for this unit
+
+## 7. Object
+
+### 7.1. xsEffectAmount
 
 Returning Type: `#!xs void`
 
@@ -810,76 +1076,7 @@ Parameters:
 
 Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
 
-### 5.4. xsGetGameTime
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetGameTime()`
-
-
-Returns the current game time in seconds
-
-### 5.5. xsGetGroupMoveTarget
-
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetGroupMoveTarget(int groupId)`
-
-Parameters:
-
-1.  `#!xs int groupId`: The group (formation) to get the movement target for
-
-Returns the location this group (formation) is currently moving to
-
-### 5.6. xsGetMapHeight
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapHeight()`
-
-
-Returns the Height of the map.
-
-### 5.7. xsGetMapID
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapID()`
-
-
-Returns the AI map type.
-
-### 5.8. xsGetMapName
-
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetMapName(bool showFileExtension)`
-
-Parameters:
-
-1.  `#!xs bool showFileExtension`: If this is set to true, then the returned name also contains the file extension
-
-Returns the name of the map currently being played.
-
-### 5.9. xsGetMapWidth
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapWidth()`
-
-
-Returns the Width of the map.
-
-### 5.10. xsGetNumPlayers
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetNumPlayers()`
-
-
-Returns the number of players in the game
-
-### 5.11. xsGetObjectAttribute
+### 7.2. xsGetObjectAttribute
 
 Returning Type: `#!xs float`
 
@@ -894,7 +1091,7 @@ Parameters:
 
 Returns the attribute value for an object
 
-### 5.12. xsGetObjectClass
+### 7.3. xsGetObjectClass
 
 Returning Type: `#!xs int`
 
@@ -907,7 +1104,7 @@ Parameters:
 
 Returns the given object's class for the specified player. See [cClass constants](../constants/#10-object-class "Jump To: XS > Constant Reference > EffectAmount Object Class")
 
-### 5.13. xsGetObjectCopyId
+### 7.4. xsGetObjectCopyId
 
 Returning Type: `#!xs int`
 
@@ -920,33 +1117,7 @@ Parameters:
 
 Returns the given object's copy ID in data for the specified player
 
-### 5.14. xsGetObjectCount
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectCount(int playerId, int objectOrClassId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object count for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to get the count for
-
-Returns the number of currently alive objects with the given ID of the specified player
-
-### 5.15. xsGetObjectCountTotal
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectCountTotal(int playerId, int objectOrClassId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object count for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to get the count for
-
-Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player
-
-### 5.16. xsGetObjectName
+### 7.5. xsGetObjectName
 
 Returning Type: `#!xs string`
 
@@ -960,7 +1131,7 @@ Parameters:
 
 Returns the current name of the given object for the specified player.
 
-### 5.17. xsGetObjectType
+### 7.6. xsGetObjectType
 
 Returning Type: `#!xs int`
 
@@ -973,103 +1144,93 @@ Parameters:
 
 Returns the given object's type for the specified player. See [cObjectType constants](../constants/#16-object-type "Jump To: XS > Constant Reference > Object Type")
 
-### 5.18. xsGetPlayerCivilization
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerCivilization(int playerNumber)`
-
-Parameters:
-
-1.  `#!xs int playerNumber`: The player to get the civilization of
-
-Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scripting > Constant Reference > #3. Civs") for all the different civ IDs
-
-### 5.19. xsGetPlayerInGame
+### 7.7. xsIsObjectAvailable
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsGetPlayerInGame(int playerNumber)`
+Prototype: `#!xs bool xsIsObjectAvailable(int objectId, int playerId)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: Check if this player is still alive
+1.  `#!xs int objectId`: The object to check the availability for
+2.  `#!xs int playerId`: The player to get the object's availability for
 
-Returns true if the player given is still alive, and false otherwise.
+Returns true if this object can currently be trained or built.
 
-### 5.20. xsGetPlayerName
+### 7.8. xsObjectHasAction
 
-Returning Type: `#!xs string`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs string xsGetPlayerName(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The lobby index of the player
-
-Returns the given player's name.
-
-### 5.21. xsGetPlayerNumberOfTechs
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerNumberOfTechs(int playerNumber)`
+Prototype: `#!xs bool xsObjectHasAction(int playerId, int objectOrClassId, int actionId, int targetPlayerId, int targetType, int targetUnitLevel)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: The player whose technology count is being requested.
+1.  `#!xs int playerId`: The player to check unit actions for
+2.  `#!xs int objectOrClassId`: The ID of the object or class to check actions for
+3.  `#!xs int actionId`: The type of action to check for
+4. (Optional) `#!xs int targetPlayerId`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
+5. (Optional) `#!xs int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
+6. (Optional) `#!xs int targetUnitLevel`: Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
 
-Returns the number of technologies available to the player in the entire game.
+Checks and returns if any unit matching the set filters of the given player has the specified action.
 
-### 5.22. xsGetPlayerUnitIds
+### 7.9. xsRemoveTask
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs void`
 
-Prototype: `#!xs int xsGetPlayerUnitIds(int playerId, int objectOrClassId, int arrayId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the unit IDs for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to get the unit reference IDs for
-3. (Optional) `#!xs int arrayId`: Reuse an existing array to save memory
-
-Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
-
-### 5.23. xsGetRandomNumber
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetRandomNumber()`
-
-
-Returns a random number between 0 and 32766.
-
-### 5.24. xsGetRandomNumberLH
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetRandomNumberLH(int low, int high)`
+Prototype: `#!xs void xsRemoveTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
 
 Parameters:
 
-1.  `#!xs int low`: The lower bound for the range for the random number returned (included)
-2.  `#!xs int high`: The upper bound for the range for the random number returned (excluded)
+1.  `#!xs int objectOrClassId`: The object or class ID to remove the task from.
+2.  `#!xs int actionType`: Task type. Refer to [cTaskType constants](../constants/#14-task-type "Jump To: XS > Constant Reference > Task Type Constants")
+3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
+4. (Optional) `#!xs int playerId`: The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
 
-Returns a random number between `low` and `high`
+Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#564-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#563-xstask) edits instead of adding a new task)
 
-### 5.25. xsGetRandomNumberMax
+### 7.10. xsResetTaskAmount
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs void`
 
-Prototype: `#!xs int xsGetRandomNumberMax(int max)`
+Prototype: `#!xs void xsResetTaskAmount()`
+
+
+Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#563-xstask).
+
+### 7.11. xsTask
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
 
 Parameters:
 
-1.  `#!xs int max`: The upper bound for the range for the random number returned (excluded)
+1.  `#!xs int objectOrClassId`: The object or class ID to add the task to
+2.  `#!xs int actionType`: Task type. Refer to [cTaskType constants](../constants/#14-task-type "Jump To: XS > Constant Reference > Task Type Constants")
+3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
+4. (Optional) `#!xs int playerId`: The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 
-Returns a random number between 0 and `max`.
+Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#564-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 
-### 5.26. xsGetTechName
+Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#564-xstaskamount)) and then submitting multiple copies of it for different people)
+
+### 7.12. xsTaskAmount
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsTaskAmount(int taskFieldId, float value)`
+
+Parameters:
+
+1.  `#!xs int taskFieldId`: Specifies which property of the task to change. Refer to [cTaskAttr constants](../constants/#13-task-attribute "Jump To: XS > Constant Reference > Task Type Constants")
+2.  `#!xs float value`: The value to set the task field to
+
+Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
+
+## 8. Tech
+
+### 8.1. xsGetTechName
 
 Returning Type: `#!xs string`
 
@@ -1083,7 +1244,7 @@ Parameters:
 
 Returns the current name of the given tech for the specified player.
 
-### 5.27. xsGetTechState
+### 8.2. xsGetTechState
 
 Returning Type: `#!xs int`
 
@@ -1096,221 +1257,151 @@ Parameters:
 
 Returns one of the [cTechState constants](../constants/#15-techstate "Jump To: XS > Constant Reference > Tech State Constants") based on the tech's status
 
-### 5.28. xsGetTime
+### 8.3. xsResearchTechnology
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerNumber)`
+
+Parameters:
+
+1.  `#!xs int techId`: The technology ID to research.
+2.  `#!xs bool force`: Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
+3.  `#!xs bool techAvailable`: This flag determines if it is required to check if a tech is available before researching it
+4.  `#!xs int playerNumber`: The player to research the technology for
+
+Returns a boolean based on whether the technology was researched or not.
+
+## 9. Player
+
+### 9.1. xsGetNumPlayers
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetTime()`
+Prototype: `#!xs int xsGetNumPlayers()`
 
 
-Returns the current game time - 1 in seconds
+Returns the number of players in the game
 
-### 5.29. xsGetTurn
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetTurn()`
-
-
-Returns the current game tick (called turn).
-
-### 5.30. xsGetUnitAttribute
-
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitAttribute(int unitId, int attribute, int damageClass)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the attribute for.
-2.  `#!xs int attribute`: The attribute to get
-3.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
-
-Returns the attribute value for a specific unit on the map.
-
-### 5.31. xsGetUnitAttributeHeld
-
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitAttributeHeld(int unitId, int attributeId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the resource held for
-2. (Optional) `#!xs int attributeId`: The ID of the resource to get. If unspecified, return the first resource which the unit holds
-
-Returns the given unit's amount of the specified resource held.
-
-### 5.32. xsGetUnitAttributeTypesHeld
+### 9.2. xsGetPlayerCivilization
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetUnitAttributeTypesHeld(int unitId)`
+Prototype: `#!xs int xsGetPlayerCivilization(int playerNumber)`
 
 Parameters:
 
-1.  `#!xs int unitId`: The unit to get the held resource types for
+1.  `#!xs int playerNumber`: The player to get the civilization of
 
-Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog.
+Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs "Jump to: XS Scripting > Constant Reference > #3. Civs") for all the different civ IDs
 
-### 5.33. xsGetUnitBuildPoints
+### 9.3. xsGetPlayerInGame
 
-Returning Type: `#!xs float`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs float xsGetUnitBuildPoints(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the Build Points for
-
-Returns the given unit's Built Points
-
-### 5.34. xsGetUnitCharge
-
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitCharge(int unitId)`
+Prototype: `#!xs bool xsGetPlayerInGame(int playerNumber)`
 
 Parameters:
 
-1.  `#!xs int unitId`: The unit to get the charge for
+1.  `#!xs int playerNumber`: Check if this player is still alive
 
-Returns the given unit's charge
+Returns true if the player given is still alive, and false otherwise.
 
-### 5.35. xsGetUnitClass
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitClass(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the class for
-
-Returns the given unit's class See [cClass constants](../constants/#10-effectamount-object-class "Jump To: XS > Constant Reference > EffectAmount Object Class")
-
-### 5.36. xsGetUnitCopyId
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitCopyId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the copy ID for
-
-Returns the given unit's copy ID in data
-
-### 5.37. xsGetUnitGroupId
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitGroupId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the group ID (formation) for
-
-Returns the ID of the group (formation) for this unit
-
-### 5.38. xsGetUnitHitpoints
-
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitHitpoints(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the HP for
-
-Returns the given unit's HP
-
-### 5.39. xsGetUnitMoveTarget
-
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetUnitMoveTarget(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the movement target for
-
-Returns the location this unit is currently moving to
-
-### 5.40. xsGetUnitName
+### 9.4. xsGetPlayerName
 
 Returning Type: `#!xs string`
 
-Prototype: `#!xs string xsGetUnitName(int unitId, bool internalName)`
+Prototype: `#!xs string xsGetPlayerName(int playerId)`
 
 Parameters:
 
-1.  `#!xs int unitId`: The unit ID to check
-2. (Optional) `#!xs bool internalName`: Returns the internal name of the unit if set. `!#xs false` by default.
+1.  `#!xs int playerId`: The lobby index of the player
 
-Returns the current name of a given unit
+Returns the given player's name.
 
-### 5.41. xsGetUnitObjectId
+### 9.5. xsGetPlayerNumberOfTechs
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetUnitObjectId(int unitId)`
+Prototype: `#!xs int xsGetPlayerNumberOfTechs(int playerNumber)`
 
 Parameters:
 
-1.  `#!xs int unitId`: The unit to get the object ID for
+1.  `#!xs int playerNumber`: The player whose technology count is being requested.
 
-Returns the given unit's ID in data
+Returns the number of technologies available to the player in the entire game.
 
-### 5.42. xsGetUnitOwner
+### 9.6. xsPlayerAttribute
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsPlayerAttribute(int playerNumber, int resourceId)`
+
+Parameters:
+
+1.  `#!xs int playerNumber`: The player to get the resource of (0 for Gaia)
+2.  `#!xs int resourceId`: The ID of the resource to get the amount of
+
+Returns the amount the specified resource of the given player.
+
+### 9.7. xsSetPlayerAttribute
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsSetPlayerAttribute(int playerNumber, int resourceId, float value)`
+
+Parameters:
+
+1.  `#!xs int playerNumber`: The player to set the resource of (0 for Gaia)
+2.  `#!xs int resourceId`: The ID of the resource to set the amount of
+3.  `#!xs float value`: The amount to set the resource to
+
+Sets the amount of the specified resource of the given player to the provided value.
+
+## 10. Map
+
+### 10.1. xsGetMapHeight
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetUnitOwner(int unitId)`
+Prototype: `#!xs int xsGetMapHeight()`
 
-Parameters:
 
-1.  `#!xs int unitId`: The unit to get the owner ID for
+Returns the Height of the map.
 
-Returns the lobby index of the player owning this unit.
-
-### 5.43. xsGetUnitPosition
-
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetUnitPosition(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the position for
-
-Returns the current position of a unit.
-
-### 5.44. xsGetUnitTargetUnitId
+### 10.2. xsGetMapID
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetUnitTargetUnitId(int unitId)`
+Prototype: `#!xs int xsGetMapID()`
+
+
+Returns the AI map type.
+
+### 10.3. xsGetMapName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetMapName(bool showFileExtension)`
 
 Parameters:
 
-1.  `#!xs int unitId`: The unit to get the target for
+1.  `#!xs bool showFileExtension`: If this is set to true, then the returned name also contains the file extension
 
-Returns the ID of the currently targeted unit for this unit
+Returns the name of the map currently being played.
 
-### 5.45. xsGetUnitType
+### 10.4. xsGetMapWidth
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetUnitType(int unitId)`
+Prototype: `#!xs int xsGetMapWidth()`
 
-Parameters:
 
-1.  `#!xs int unitId`: The unit to get the type for
+Returns the Width of the map.
 
-Returns the given unit's type. See [cObjectType constants](../constants/#16-object-type "Jump To: XS > Constant Reference > Object Type")
+## 11. Victory
 
-### 5.46. xsGetVictoryCondition
+### 11.1. xsGetVictoryCondition
 
 Returning Type: `#!xs int`
 
@@ -1319,7 +1410,7 @@ Prototype: `#!xs int xsGetVictoryCondition()`
 
 Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
 
-### 5.47. xsGetVictoryConditionForSecondaryGameMode
+### 11.2. xsGetVictoryConditionForSecondaryGameMode
 
 Returning Type: `#!xs int`
 
@@ -1328,7 +1419,7 @@ Prototype: `#!xs int xsGetVictoryConditionForSecondaryGameMode()`
 
 Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
 
-### 5.48. xsGetVictoryPlayer
+### 11.3. xsGetVictoryPlayer
 
 Returning Type: `#!xs int`
 
@@ -1337,7 +1428,7 @@ Prototype: `#!xs int xsGetVictoryPlayer()`
 
 Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument.
 
-### 5.49. xsGetVictoryPlayerForSecondaryGameMode
+### 11.4. xsGetVictoryPlayerForSecondaryGameMode
 
 Returning Type: `#!xs int`
 
@@ -1346,7 +1437,7 @@ Prototype: `#!xs int xsGetVictoryPlayerForSecondaryGameMode()`
 
 Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH
 
-### 5.50. xsGetVictoryTime
+### 11.5. xsGetVictoryTime
 
 Returning Type: `#!xs int`
 
@@ -1355,7 +1446,7 @@ Prototype: `#!xs int xsGetVictoryTime()`
 
 For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
 
-### 5.51. xsGetVictoryTimeForSecondaryGameMode
+### 11.6. xsGetVictoryTimeForSecondaryGameMode
 
 Returning Type: `#!xs int`
 
@@ -1364,7 +1455,7 @@ Prototype: `#!xs int xsGetVictoryTimeForSecondaryGameMode()`
 
 For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
 
-### 5.52. xsGetVictoryType
+### 11.7. xsGetVictoryType
 
 Returning Type: `#!xs int`
 
@@ -1385,103 +1476,83 @@ Returns an integer corresponding to different victory settings in game. These ar
 
 Last Man Standing returns 0 as well.
 
-### 5.53. xsIsObjectAvailable
+## 12. General
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsIsObjectAvailable(int objectId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The object to check the availability for
-2.  `#!xs int playerId`: The player to get the object's availability for
-
-Returns true if this object can currently be trained or built.
-
-### 5.54. xsObjectHasAction
-
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsObjectHasAction(int playerId, int objectOrClassId, int actionId, int targetPlayerId, int targetType, int targetUnitLevel)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to check unit actions for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to check actions for
-3.  `#!xs int actionId`: The type of action to check for
-4. (Optional) `#!xs int targetPlayerId`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
-5. (Optional) `#!xs int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
-6. (Optional) `#!xs int targetUnitLevel`: Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
-
-Checks and returns if any unit matching the set filters of the given player has the specified action.
-
-### 5.55. xsPlayerAttribute
-
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsPlayerAttribute(int playerNumber, int resourceId)`
-
-Parameters:
-
-1.  `#!xs int playerNumber`: The player to get the resource of (0 for Gaia)
-2.  `#!xs int resourceId`: The ID of the resource to get the amount of
-
-Returns the amount the specified resource of the given player.
-
-### 5.56. xsRemoveTask
+### 12.1. xsChatData
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsRemoveTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
+Prototype: `#!xs void xsChatData(string message, int value)`
 
 Parameters:
 
-1.  `#!xs int objectOrClassId`: The object or class ID to remove the task from.
-2.  `#!xs int actionType`: Task type. Refer to [cTaskType constants](../constants/#14-task-type "Jump To: XS > Constant Reference > Task Type Constants")
-3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
-4. (Optional) `#!xs int playerId`: The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
+1.  `#!xs string message`: The message to display in chat
+2. (Optional) `#!xs int value`: This value is inserted in place of any `%d` used in the message of the function
 
-Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#564-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#563-xstask) edits instead of adding a new task)
+Shows the given message in the game chat
 
-### 5.57. xsResearchTechnology
+### 12.2. xsGetGameTime
 
-Returning Type: `#!xs bool`
+Returning Type: `#!xs int`
 
-Prototype: `#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerNumber)`
-
-Parameters:
-
-1.  `#!xs int techId`: The technology ID to research.
-2.  `#!xs bool force`: Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
-3.  `#!xs bool techAvailable`: This flag determines if it is required to check if a tech is available before researching it
-4.  `#!xs int playerNumber`: The player to research the technology for
-
-Returns a boolean based on whether the technology was researched or not.
-
-### 5.58. xsResetTaskAmount
-
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsResetTaskAmount()`
+Prototype: `#!xs int xsGetGameTime()`
 
 
-Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#563-xstask).
+Returns the current game time in seconds
 
-### 5.59. xsSetPlayerAttribute
+### 12.3. xsGetRandomNumber
 
-Returning Type: `#!xs void`
+Returning Type: `#!xs int`
 
-Prototype: `#!xs void xsSetPlayerAttribute(int playerNumber, int resourceId, float value)`
+Prototype: `#!xs int xsGetRandomNumber()`
+
+
+Returns a random number between 0 and 32766.
+
+### 12.4. xsGetRandomNumberLH
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetRandomNumberLH(int low, int high)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: The player to set the resource of (0 for Gaia)
-2.  `#!xs int resourceId`: The ID of the resource to set the amount of
-3.  `#!xs float value`: The amount to set the resource to
+1.  `#!xs int low`: The lower bound for the range for the random number returned (included)
+2.  `#!xs int high`: The upper bound for the range for the random number returned (excluded)
 
-Sets the amount of the specified resource of the given player to the provided value.
+Returns a random number between `low` and `high`
 
-### 5.60. xsSetTriggerVariable
+### 12.5. xsGetRandomNumberMax
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetRandomNumberMax(int max)`
+
+Parameters:
+
+1.  `#!xs int max`: The upper bound for the range for the random number returned (excluded)
+
+Returns a random number between 0 and `max`.
+
+### 12.6. xsGetTime
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetTime()`
+
+
+Returns the current game time - 1 in seconds
+
+### 12.7. xsGetTurn
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetTurn()`
+
+
+Returns the current game tick (called turn).
+
+### 12.8. xsSetTriggerVariable
 
 Returning Type: `#!xs void`
 
@@ -1494,90 +1565,7 @@ Parameters:
 
 Sets the value of the variable of the given variable ID to the provided value.
 
-### 5.61. xsSetUnitAttributeHeld
-
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitAttributeHeld(int unitId, float value, int attributeId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the resource held for
-2.  `#!xs float value`: The amount to set the held resource to
-3. (Optional) `#!xs int attributeId`: The ID of the resource to set. If unspecified, sets the first resource which the unit holds
-
-Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
-
-### 5.62. xsSetUnitBuildPoints
-
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitBuildPoints(int unitId, float value)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the build points for
-2.  `#!xs float value`: The value to set the build points to
-
-Sets the given unit's Build Points
-
-### 5.63. xsSetUnitCharge
-
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitCharge(int unitId, float value)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the charge for
-2.  `#!xs float value`: The value to set the charge to
-
-Sets the given unit's charge
-
-### 5.64. xsSetUnitHitpoints
-
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitHitpoints(int unitId, float value)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the HP for
-2.  `#!xs float value`: The value to set the HP to
-
-Sets the given unit's HP
-
-### 5.65. xsTask
-
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int objectOrClassId`: The object or class ID to add the task to
-2.  `#!xs int actionType`: Task type. Refer to [cTaskType constants](../constants/#14-task-type "Jump To: XS > Constant Reference > Task Type Constants")
-3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
-4. (Optional) `#!xs int playerId`: The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
-
-Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#564-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
-
-Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#564-xstaskamount)) and then submitting multiple copies of it for different people)
-
-### 5.66. xsTaskAmount
-
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsTaskAmount(int taskFieldId, float value)`
-
-Parameters:
-
-1.  `#!xs int taskFieldId`: Specifies which property of the task to change. Refer to [cTaskAttr constants](../constants/#13-task-attribute "Jump To: XS > Constant Reference > Task Type Constants")
-2.  `#!xs float value`: The value to set the task field to
-
-Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
-
-### 5.67. xsTriggerVariable
+### 12.9. xsTriggerVariable
 
 Returning Type: `#!xs int`
 
@@ -1589,9 +1577,9 @@ Parameters:
 
 Returns the value of the variable of the given variable ID.
 
-## 6. Read/Write
+## 13. Read/Write
 
-### 6.1. xsCloseFile
+### 13.1. xsCloseFile
 
 Returning Type: `#!xs bool`
 
@@ -1600,7 +1588,7 @@ Prototype: `#!xs bool xsCloseFile()`
 
 Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed
 
-### 6.2. xsCreateFile
+### 13.2. xsCreateFile
 
 Returning Type: `#!xs bool`
 
@@ -1612,7 +1600,7 @@ Parameters:
 
 Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!xs true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
 
-### 6.3. xsGetDataTypeSize
+### 13.3. xsGetDataTypeSize
 
 Returning Type: `#!xs int`
 
@@ -1624,7 +1612,7 @@ Parameters:
 
 Returns the number of bytes used to store a given type value.
 
-### 6.4. xsGetFilePosition
+### 13.4. xsGetFilePosition
 
 Returning Type: `#!xs int`
 
@@ -1633,7 +1621,7 @@ Prototype: `#!xs int xsGetFilePosition()`
 
 Gets the byte (0-indexed) of the file that the next read function will start reading from.
 
-### 6.5. xsGetFileSize
+### 13.5. xsGetFileSize
 
 Returning Type: `#!xs int`
 
@@ -1642,7 +1630,7 @@ Prototype: `#!xs int xsGetFileSize()`
 
 Gets the size (in bytes) of the currently open file
 
-### 6.6. xsOffsetFilePosition
+### 13.6. xsOffsetFilePosition
 
 Returning Type: `#!xs bool`
 
@@ -1655,7 +1643,7 @@ Parameters:
 
 Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 
-### 6.7. xsOpenFile
+### 13.7. xsOpenFile
 
 Returning Type: `#!xs bool`
 
@@ -1667,7 +1655,7 @@ Parameters:
 
 Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!xs true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
 
-### 6.8. xsReadFloat
+### 13.8. xsReadFloat
 
 Returning Type: `#!xs float`
 
@@ -1676,7 +1664,7 @@ Prototype: `#!xs float xsReadFloat()`
 
 Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes
 
-### 6.9. xsReadInt
+### 13.9. xsReadInt
 
 Returning Type: `#!xs int`
 
@@ -1685,7 +1673,7 @@ Prototype: `#!xs int xsReadInt()`
 
 Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes
 
-### 6.10. xsReadString
+### 13.10. xsReadString
 
 Returning Type: `#!xs string`
 
@@ -1694,7 +1682,7 @@ Prototype: `#!xs string xsReadString()`
 
 Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string
 
-### 6.11. xsReadVector
+### 13.11. xsReadVector
 
 Returning Type: `#!xs vector`
 
@@ -1703,7 +1691,7 @@ Prototype: `#!xs vector xsReadVector()`
 
 Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes
 
-### 6.12. xsSetFilePosition
+### 13.12. xsSetFilePosition
 
 Returning Type: `#!xs bool`
 
@@ -1715,7 +1703,7 @@ Parameters:
 
 Sets the byte (0-indexed) of the file that the next read function will start reading from.
 
-### 6.13. xsWriteFloat
+### 13.13. xsWriteFloat
 
 Returning Type: `#!xs bool`
 
@@ -1727,7 +1715,7 @@ Parameters:
 
 Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
 
-### 6.14. xsWriteInt
+### 13.14. xsWriteInt
 
 Returning Type: `#!xs bool`
 
@@ -1739,7 +1727,7 @@ Parameters:
 
 Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the integer was successfully written. Integers are written as signed 32 bit numbers
 
-### 6.15. xsWriteString
+### 13.15. xsWriteString
 
 Returning Type: `#!xs bool`
 
@@ -1751,7 +1739,7 @@ Parameters:
 
 Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
 
-### 6.16. xsWriteVector
+### 13.16. xsWriteVector
 
 Returning Type: `#!xs bool`
 
@@ -1763,9 +1751,9 @@ Parameters:
 
 Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
 
-## 7. Ai Scripting
+## 14. Ai Scripting
 
-### 7.1. xsGetGoal
+### 14.1. xsGetGoal
 
 Returning Type: `#!xs int`
 
@@ -1777,7 +1765,7 @@ Parameters:
 
 Gets the goal id/number of the current AI
 
-### 7.2. xsGetStrategicNumber
+### 14.2. xsGetStrategicNumber
 
 Returning Type: `#!xs int`
 
@@ -1789,7 +1777,7 @@ Parameters:
 
 Gets the SN of the current AI
 
-### 7.3. xsSetGoal
+### 14.3. xsSetGoal
 
 Returning Type: `#!xs int`
 
@@ -1802,7 +1790,7 @@ Parameters:
 
 Sets the goal id/number of the current AI
 
-### 7.4. xsSetStrategicNumber
+### 14.4. xsSetStrategicNumber
 
 Returning Type: `#!xs int`
 
@@ -1815,9 +1803,9 @@ Parameters:
 
 Sets the SN of the current AI
 
-## 8. Functions With Seemingly No Practical Use
+## 15. Functions With Seemingly No Practical Use
 
-### 8.1. xsAddRuntimeEvent
+### 15.1. xsAddRuntimeEvent
 
 Returning Type: `#!xs bool`
 
@@ -1831,7 +1819,7 @@ Parameters:
 
 A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 
-### 8.2. xsBreakPoint
+### 15.2. xsBreakPoint
 
 Returning Type: `#!xs void`
 
@@ -1840,7 +1828,7 @@ Prototype: `#!xs void xsBreakPoint()`
 
 This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE.
 
-### 8.3. xsDumpArrays
+### 15.3. xsDumpArrays
 
 Returning Type: `#!xs void`
 
@@ -1849,7 +1837,7 @@ Prototype: `#!xs void xsDumpArrays()`
 
 This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing.
 
-### 8.4. xsGetContextPlayer
+### 15.4. xsGetContextPlayer
 
 Returning Type: `#!xs int`
 
@@ -1858,7 +1846,7 @@ Prototype: `#!xs int xsGetContextPlayer()`
 
 Returns the current context player ID.
 
-### 8.5. xsGetFunctionID
+### 15.5. xsGetFunctionID
 
 Returning Type: `#!xs int`
 
@@ -1870,7 +1858,7 @@ Parameters:
 
 Returns the hash of a given function. This function has no practical application and is probably for internal usage only.
 
-### 8.6. xsSetContextPlayer
+### 15.6. xsSetContextPlayer
 
 Returning Type: `#!xs void`
 
