@@ -1228,7 +1228,7 @@ Parameters:
 
 Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 
-## 8. Tech
+## 8. Technology
 
 ### 8.1. xsGetTechName
 

@@ -1690,7 +1690,7 @@
             "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
         }
     ],
-    "tech": [
+    "technology": [
         {
             "name": "xsResearchTechnology",
             "return_type": "bool",
