@@ -45,22 +45,6 @@
             "show": true
         }
     ],
-    "Effect Amount": [
-        {
-            "Name": "`xsEffectAmount` effect `c[Set/Add/Mul]Attribute` with attribute `cAttack/cArmor`",
-            "Description" : "Weird behaviour is encountered when using `xsEffectAmount` with `cSetAttribute`, `cAddAttribute`, or `cMulAttribute` to modify `cAttack` or `cArmor`",
-            "Expected Behaviour": "Expected behaviour is demonstrated using the following example:",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, The attack and armour of the Genghis Khan unit is unchanged"
-            ],
-            "Code File": "effect_amount2.xs",
-            "Version Fixed": "",
-            "show": true
-        }
-    ],
     "Editor": [
         {
             "Name": "Script Call A Function With Parameters",
@@ -494,22 +478,6 @@
                 "When a game is played using the scenario or RMS, any `#!xs 1` or `#!xs 0` at the beginning of the lines are omitted in the resulting message on screen."
             ],
             "Code File": "chatdata2.xs",
-            "Version Fixed": "",
-            "show": true
-        }
-    ],
-    "Task": [
-        {
-            "Name": "`xsTask` does not check the Class field when comparing fields with existing tasks",
-            "Description" : "Attempting to add a task with multiple target unit classes to the same unit will only create one task and subsequent calls will override the class field of that single task",
-            "Expected Behaviour": "A new task should be created with otherwise identical fields for each target unit class",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, The Genghis Khan aura is only applied to cavalry units."
-            ],
-            "Code File": "task.xs",
             "Version Fixed": "",
             "show": true
         }

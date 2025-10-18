@@ -2,7 +2,24 @@
 
 ---
 
-## 1. Setting and Unsetting Costs
+## 1. Changing unit specific damage class value
+
+To change unit damage class values you need to multiply the damage class by 256 and add its value.
+This does not work for values greater than 255 and negative values. It also does not work correctly with `cMulAttribute`.
+
+This sets the genghis pierce attack to 5, and then adds another 5 to it, makes it 10 in total.
+
+```xs
+const int cGenghisKhan = 731;
+
+xsEffectAmount(cSetAttribute, cGenghisKhan, cAttack, cDamageClassPierce * 256 + 5);
+xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, cDamageClassPierce * 256 + 5);
+}
+```
+
+## 2. Setting and unsetting costs
+
+You can unset the objects resource cost by multiplying its cost by -2 and creating a new resource cost by multiplying its cost by -1.
 
 A house normally costs 25 wood, but what if we want to make it cost, lets say, 10 stone instead?
 
@@ -14,7 +31,7 @@ xsEffectAmount(cMulAttribute, HOUSE, cStoneCost, -1, 1);
 xsEffectAmount(cSetAttribute, HOUSE, cStoneCost, 10, 1);
 ```
 
-## 2. Adding auras
+## 3. Adding auras
 
 Adding auras to units can be a bit tricky with lots of function calls and edge cases. This xs function handles most of those cases.
 
@@ -23,7 +40,7 @@ bool xsAddAura(
     int auraUnit = -1, /* unit to add the aura to */
     int affectedUnit = -1, /* unit or unit class (9xx) to be affected by the aura */
     int player = -1, /* aura unit player, does not work with -1, make multiple calls to all players instead */
-    int attribute = -1, /* aura attribute, not all attributes supported by auras, constants are provided */
+    int attribute = -1, /* aura attribute, not all attributes supported by auras */
     float value = 0, /* aura value */ 
     float range = 0,  /* aura range */
     int auraEffectsBitField = 0, /* bit field for aura effects, constants are provided, add them together for multiple effects */
@@ -41,11 +58,6 @@ bool xsAddAura(
     
     /* Validation */
     if (auraUnit < 0 || affectedUnit < 0 || player < 0 || player > 8) {
-        return (false);
-    }
-    if (attribute != 0 && attribute != 1 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 12 
-        && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 
-        && attribute != 120) {
         return (false);
     }
     if (range < 0 || auraEffectsBitField < 0 || targetDiplomacy < 0 || targetDiplomacy > 6 
@@ -96,13 +108,12 @@ bool xsAddAura(
 
     /* Setting aura task */
     xsResetTaskAmount();
-    xsTaskAmount(0, value);
-    xsTaskAmount(1, 0.0 + unitsInRangeToTurnOn);
-    xsTaskAmount(2, range);
-    xsTaskAmount(3, 0.0);
-    xsTaskAmount(4, 0.0 + attribute);
-    xsTaskAmount(5, 0.0 + auraEffectsBitField);
-    xsTaskAmount(6, 0.0 + targetDiplomacy);
+    xsTaskAmount(cTaskAttrWorkValue1, value);
+    xsTaskAmount(cTaskAttrWorkValue2, 0.0 + unitsInRangeToTurnOn);
+    xsTaskAmount(cTaskAttrWorkRange, range);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.0 + attribute);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 0.0 + auraEffectsBitField);
+    xsTaskAmount(cTaskAttrOwnerType, 0.0 + targetDiplomacy);
     xsTask(auraUnit, 155, affectedUnit, player);
 
     return (true);
@@ -112,7 +123,7 @@ bool xsRemoveAura(
     int auraUnit = -1, /* unit from which remove the aura */
     int affectedUnit = -1, /* unit or unit class (9xx) to be affected by the aura */
     int player = -1, /* aura unit player, does not work with -1, make multiple calls to all players instead */
-    int attribute = -1, /* aura attribute, not all attributes supported by auras, constants are provided */
+    int attribute = -1, /* aura attribute, not all attributes supported by auras */
     bool removeTempAuraAttributes = false, /* if set removes temp aura attributes from unit */
     bool removeAllAuraAbilities = false /* if set removes unit aura ability disabling all auras and removing indicators */
 ) { 
@@ -122,11 +133,6 @@ bool xsRemoveAura(
     
     /* Validation */
     if (auraUnit < 0 || affectedUnit < 0 || player < 0 || player > 8) {
-        return (false);
-    }
-    if (attribute != 0 && attribute != 1 && attribute != 5 && attribute != 9 && attribute != 10 && attribute != 12 
-        && attribute != 13 && attribute != 109 && attribute != 113 && attribute != 116 && attribute != 117 
-        && attribute != 120) {
         return (false);
     }
 
@@ -165,25 +171,11 @@ bool xsRemoveAura(
     }
 
     /* Setting aura task */
-    xsResetTaskAmount();
-    xsTaskAmount(4, 0.0 + attribute);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.0 + attribute);
     xsRemoveTask(auraUnit, 155, affectedUnit, player);
 
     return (true);
 }
-
-extern const int cAuraAttributeHitpoints = 0;
-extern const int cAuraAttributeLineOfSights = 1;
-extern const int cAuraAttributeMovementSpeed = 5;
-extern const int cAuraAttributeAttack = 9;
-extern const int cAuraAttributeAttackReloadTime = 10;
-extern const int cAuraAttributeMaxRange = 12; /* changes the display attribute, but not the range, bug? */
-extern const int cAuraAttributeWorkRate = 13;
-extern const int cAuraAttributeRegenerationRate = 109;
-extern const int cAuraAttributeConversionChanceMod = 113;
-extern const int cAuraAttributeMeleeArmor = 116;
-extern const int cAuraAttributePierceArmor = 117;
-extern const int cAuraAttributeRegenerationHpPercent = 120;
 
 extern const int cAuraEffectBitMultiply = 1; /* if not added, value is added instead */
 extern const int cAuraEffectBitCircular = 2; /* if not added, aura is square shaped */
@@ -207,18 +199,18 @@ To use, copy the code above to a non-running `Script Call` effect or to your sce
 void addAuraTest() {
   /* Adds a temporary activatable aura that doubles cavalry (912) speed for player 1 joan of arc hero (629) */
   int tempAuraEffects = cAuraEffectBitTemporary + cAuraEffectBitMultiply + cAuraEffectBitCircular + cAuraEffectBitRangeIndicator;
-  bool aura1Added = xsAddAura(629, 912, 1, cAuraAttributeMovementSpeed, 2.0, 10.0, tempAuraEffects, cAuraDiplomacyGaiaYouAlly, 30, 60);
+  bool aura1Added = xsAddAura(629, 912, 1, cMovementSpeed, 2.0, 10.0, tempAuraEffects, cAuraDiplomacyGaiaYouAlly, 30, 60);
 
   /* also adds a permanent aura that adds +5 to attack for cavalry (912) and infantry (906) */
   int permaAuraEffects = cAuraEffectBitCircular + cAuraEffectBitRangeIndicator + cAuraEffectBitAdvancedRangeIndicator;
-  bool aura2Added = xsAddAura(629, 912, 1, cAuraAttributeAttack, 5.0, 10.0, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
-  bool aura3Added = xsAddAura(629, 906, 1, cAuraAttributeAttack, 5.0, 10.0, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
+  bool aura2Added = xsAddAura(629, 912, 1, cAttack, 5.0, 10.0, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
+  bool aura3Added = xsAddAura(629, 906, 1, cAttack, 5.0, 10.0, permaAuraEffects, cAuraDiplomacyGaiaYouAlly);
 
   xsChatData("aura 1 added: " + aura1Added + ", aura 2 added: " + aura2Added + ", aura 3 added: " + aura3Added);
 }
 ```
 
-## 3. Changing multiple train locations and damage sprites
+## 4. Changing multiple train locations and damage sprites
 
 To change multiple train locations and damage sprites you can use global struct `cTrainLocationsEntryMod`, `cTrainLocationsTotalNum`, `cDamageGraphicsEntryMod` and `cDamageGraphicsTotalNum` values.
 Based on developer notes:
@@ -238,34 +230,40 @@ This works for both Damage Sprites modding and Train Locations modding.
 We can create these examples for locations:
 
 Change 2nd location:
+
 ```xs
 xsEffectAmount(cSetAttribute, unitId, cTrainLocationsEntryMod, 1, player);
 xsEffectAmount(cSetAttribute, unitId, cTrainLocation, buildingId, player);
 ```
 
-Read total location count
+Read total location count:
+
 ```xs
 int numOfLocations = xsGetObjectAttribute(player, unitId, cTrainLocationsTotalNum);
 ```
 
 Insert 2nd location (eg: middle of the list):
+
 ```xs
 xsEffectAmount(cMulAttribute, unitId, cTrainLocationsEntryMod, 1, player);
 xsEffectAmount(cSetAttribute, unitId, cTrainLocation, buildingId, player);
 ```
 
 Remove 2nd location:
+
 ```xs
 xsEffectAmount(cMulAttribute, unitId, cTrainLocationsEntryMod, -2, player);
 ```
 
 Add new location to the end of the list:
+
 ```xs
 xsEffectAmount(cMulAttribute, unitId, cTrainLocationsEntryMod, 32767, player);
 xsEffectAmount(cSetAttribute, unitId, cTrainLocation, buildingId, player);
 ```
 
 Read 2nd location:
+
 ```xs
 xsEffectAmount(cSetAttribute, unitId, cTrainLocationsEntryMod, 1, player);
 int buildingId = xsGetObjectAttribute(player, unitId, cTrainLocation);
