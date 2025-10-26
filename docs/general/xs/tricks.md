@@ -4,17 +4,21 @@
 
 ## 1. Changing unit specific damage class value
 
-To change unit damage class values you need to multiply the damage class by 256 and add its value.
-This does not work for values greater than 255 and negative values. It also does not work correctly with `cMulAttribute`.
+To change unit damage class values you need to multiply the damage class by 256 and add its value. 
+If you need a negative value you need to then multiply that whole number by -1.
+This does not work for values greater than 255.
+For `cMulAttribute` you need to also multiply the value by 100. This only works for multiplying by 2.
+If you need greater values will have to call this function several times.
 
-This sets the genghis pierce attack to 5, and then adds another 5 to it, makes it 10 in total.
+This example sets the genghis pierce attack to 5, adds 5, subtracts 3 and then multiplies it by 2, making it 14 in total:
 
 ```xs
 const int cGenghisKhan = 731;
 
 xsEffectAmount(cSetAttribute, cGenghisKhan, cAttack, cDamageClassPierce * 256 + 5);
 xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, cDamageClassPierce * 256 + 5);
-}
+xsEffectAmount(cAddAttribute, cGenghisKhan, cAttack, (cDamageClassPierce * 256 + 3) * -1);
+xsEffectAmount(cMulAttribute, cGenghisKhan, cAttack, cDamageClassPierce * 256 + 100 * 2);
 ```
 
 ## 2. Setting and unsetting costs

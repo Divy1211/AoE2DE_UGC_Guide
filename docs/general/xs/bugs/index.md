@@ -11,7 +11,7 @@ If you know of a bug that is not documented here, or if a bug listed here is act
 
 Game Version: `101.102.62906.0 (#128441) 16271343`
 
-Last Updated: `18.10.2025`
+Last Updated: `26.10.2025`
 
 Game Platform: Steam
 
