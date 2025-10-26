@@ -1617,7 +1617,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Total number of mercenary kipchak creatable
 
-- Note: Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource
+- Note: Researching Cuman Mercenaries gives 5 of this resource per castle. Making mercenary Kipchaks costs one unit of this resource. Each newly constructed castle gives +5
 
 ## 215. Unused Resource 215
 

@@ -1426,7 +1426,7 @@
         "name": "Mercenary Kipchak Count",
         "desc": "Total number of mercenary kipchak creatable",
         "defaults": {},
-        "note": "Researching Cuman Mercenaries sets this to 10. Making mercenary Kipchaks costs one unit of this resource"
+        "note": "Researching Cuman Mercenaries gives 5 of this resource per castle. Making mercenary Kipchaks costs one unit of this resource. Each newly constructed castle gives +5"
     },
     "215": {
         "name": "Unused Resource 215",

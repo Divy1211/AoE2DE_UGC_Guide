@@ -955,13 +955,13 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - Override for Transform/Active Ability Icon. Uses ID from `Materials.json`
 
-## 122. Ability Short Tooltip I
+## 122. Ability Short Tooltip ID
 
  - ID: 122
 
  - Override for Transform/Active Ability Short Tooltip
 
-## 123. Ability Extended Toolti
+## 123. Ability Extended Tooltip ID
 
  - ID: 123
 

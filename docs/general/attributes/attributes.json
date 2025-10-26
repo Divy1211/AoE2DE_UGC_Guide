@@ -883,13 +883,13 @@
         "flags": {}
     },
     "122": {
-        "name": "Ability Short Tooltip I",
+        "name": "Ability Short Tooltip ID",
         "desc": "Override for Transform/Active Ability Short Tooltip",
         "notes": [],
         "flags": {}
     },
     "123": {
-        "name": "Ability Extended Toolti",
+        "name": "Ability Extended Tooltip ID",
         "desc": "Override for Transform/Active Ability Long Tooltip",
         "notes": [],
         "flags": {}
