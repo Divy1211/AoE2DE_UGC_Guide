@@ -17,7 +17,7 @@ Any new bugs discovered will be added to the list. This list will also be update
 
 If you know of a bug that is not documented here, or if a bug listed here is actually fixed in the *indicated* game version, reach out to the authors of this guide! Check the [About](../../../../) page for relevant information about the authors.
 
-Game Version: `101.102.62906.0 (#128441) 16271343`
+Game Version: `101.103.26969.0 (#158041) 20295388`
 
 Last Updated: `{date_t}`
 
