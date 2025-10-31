@@ -7,8 +7,9 @@
 To change unit damage class values you need to multiply the damage class by 256 and add its value. 
 If you need a negative value you need to then multiply that whole number by -1.
 This does not work for values greater than 255.
-For `cMulAttribute` you need to also multiply the value by 100. This only works for multiplying by 2.
-If you need greater values will have to call this function several times.
+For `cMulAttribute` you need to also multiply the value by 100. 
+This total value can't exceed 255, so in practice you can only multiply by 2.55 times at most.
+If you need greater values, you will have to call this function several times.
 
 This example sets the genghis pierce attack to 5, adds 5, subtracts 3 and then multiplies it by 2, making it 14 in total:
 
