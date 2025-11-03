@@ -58,7 +58,7 @@
             ],
             "Code File": "effect_amount2.xs",
             "Version Fixed": "",
-            "show": true
+            "show": false
         }
     ],
     "Editor": [
@@ -510,8 +510,8 @@
                 "When a game is played using the scenario or RMS, The Genghis Khan aura is only applied to cavalry units."
             ],
             "Code File": "task.xs",
-            "Version Fixed": "",
-            "show": true
+            "Version Fixed": "153015",
+            "show": false
         }
     ]
 }
