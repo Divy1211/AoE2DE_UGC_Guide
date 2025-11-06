@@ -10,7 +10,7 @@ Reproduction Steps:
 2. Create a new XS script with the following code:
 ```xs
 void main() {
-    xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10, 1);
+    xsEffectAmount(cSetTechCost, 22, cAttributeGold, 10, 1);
     xsEffectAmount(cModTechTime, 22, cAttributeSet, 1, 1);
 }
 ```
