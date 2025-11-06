@@ -287,7 +287,7 @@ Other commands `cSetTechCost`, `cAddTechCost` and `cModTechTime` no longer work.
 You can not add or change which resources the tech cost, only their amounts. 
 So if a tech cost food and gold you can not add wood cost. 
 Be careful when using addition and multiplication sub commands such as: `cAttrAddFoodCost` or `cAttrMulGoldCost`. When doing calculations sometimes they take current tech price and sometimes the original price.
-This leads to unexpected results. Better to do calculations and cost tracking yourself and use commands such as `cAttrSetGoldCost` to update the cost.
+This leads to unexpected results. It is better to do calculations and cost tracking yourself and use sub commands such as `cAttrSetGoldCost` to update the cost.
 Same things apply to time changing sub commands such as `cAttrSetTime`, `cAttrAddTime` and `cAttrMulTime`.
 
 ```xs
