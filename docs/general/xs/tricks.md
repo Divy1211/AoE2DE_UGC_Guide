@@ -323,4 +323,4 @@ void doubleTechCost() {
     xsEffectAmount(cModifyTech, tech, cAttrSetGoldCost, goldCost, player);
 }
 ```
-The code above can be easily change to any mathematical formula to change tech cost.
+The code above can be easily changed to any mathematical formula to change tech cost.
