@@ -513,5 +513,20 @@
             "Version Fixed": "153015",
             "show": false
         }
+    ],
+    "cSetTechCost": [
+      {
+        "Name": "`cSetTechCost`, `cAddTechCost`, `cModTechTime` and their gaia equivalent no longer work",
+        "Description": "Attempting to set or change tech time and cost with these `xsEffectAmount` commands no longer work and they do not do anything.",
+        "Expected Behaviour": "These commands should let you modify tech cost or time. They should even let you set arbitrary resources. It does not work with any combination.",
+        "Reproduction Steps": [
+            "Create a new scenario with a Town Center in dark age",
+            "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+            "Include the script in the scenario",
+            "When a game is played using the scenario, Loom tech cost and time does not change"
+        ],
+        "Code File": "cSetTechCost.xs",
+        "show": true
+      }
     ]
 }
