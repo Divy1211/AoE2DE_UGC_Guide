@@ -514,7 +514,7 @@
             "show": false
         }
     ],
-    "cSetTechCost": [
+    "Individual Tech Modifiers": [
       {
         "Name": "`cSetTechCost`, `cAddTechCost`, `cModTechTime` and their gaia equivalent no longer work",
         "Description": "Attempting to set or change tech time and cost with these `xsEffectAmount` commands no longer work and they do not do anything.",
@@ -525,7 +525,7 @@
             "Include the script in the scenario",
             "When a game is played using the scenario, Loom tech cost and time does not change"
         ],
-        "Code File": "cSetTechCost.xs",
+        "Code File": "set_tech_cost.xs",
         "show": true
       }
     ]
