@@ -760,7 +760,7 @@ This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
 Value: `#!xs int 100`
 
-This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -780,7 +780,7 @@ This sets the food cost of tech 22 (loom) to 10 (the value)
 
 Value: `#!xs int 101`
 
-This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -820,7 +820,7 @@ This disables the tech 22 (loom)
 
 Value: `#!xs int 103`
 
-This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function
+This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -1042,7 +1042,7 @@ This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
 Value: `#!xs int -101`
 
-This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -1062,7 +1062,7 @@ This sets the food cost of tech 22 (loom) to 10 (the value)
 
 Value: `#!xs int -102`
 
-This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -1102,7 +1102,7 @@ This disables the tech 22 (loom)
 
 Value: `#!xs int -104`
 
-This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function
+This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 

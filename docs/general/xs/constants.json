@@ -754,7 +754,7 @@
             "name": "cSetTechCost",
             "value": 100,
             "type": "int",
-            "desc": "This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cSetTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10)",
@@ -765,7 +765,7 @@
             "name": "cAddTechCost",
             "value": 101,
             "type": "int",
-            "desc": "This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cAddTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cAddTechCost, 22, cAttributeFood, 10)",
@@ -787,7 +787,7 @@
             "name": "cModTechTime",
             "value": 103,
             "type": "int",
-            "desc": "This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cModTechTime, techID, operation, value)",
                 "example": "xsEffectAmount(cModTechTime, 22, cAttributeSet, 10)",
@@ -908,7 +908,7 @@
             "name": "cGaiaSetTechCost",
             "value": -101,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaSetTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cGaiaSetTechCost, 22, cAttributeFood, 10)",
@@ -919,7 +919,7 @@
             "name": "cGaiaAddTechCost",
             "value": -102,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaAddTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cGaiaAddTechCost, 22, cAttributeFood, 10)",
@@ -941,7 +941,7 @@
             "name": "cGaiaModTechTime",
             "value": -104,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaModTechTime, techID, operation, value)",
                 "example": "xsEffectAmount(cGaiaModTechTime, 22, cAttributeSet, 10)",
