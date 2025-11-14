@@ -297,7 +297,7 @@ xsEffectAmount(cModifyTech, loom, cAttrSetGoldCost, 66, 1);
 // Sets loom research time to 1 second for player 1
 xsEffectAmount(cModifyTech, loom, cAttrSetTime, 1, 1);
 
-// After running multiplication additional commands loom cost is 166 gold: (50 + 50 + 66) + 100.
+// After running these commands loom cost is 266 gold: (50 + 50 + 66) + 100.
 xsEffectAmount(cModifyTech, loom, cAttrMulGoldCost, 3, 1);
 xsEffectAmount(cModifyTech, loom, cAttrAddGoldCost, 100, 1);
 
