@@ -278,3 +278,49 @@ If location change or value read is needed it's always better to set `cTrainLoca
 
 The same principle can be used for damage sprites just using its constants: `cDamageGraphicsEntryMod` and `cDamageGraphicsTotalNum`.
 But for last index value you should use `254` instead of `32767` (since sprites list is smaller).
+
+
+## 5. Changing tech cost or time
+
+To change tech cost or time `xsEffectAmount(cModifyTech, techId, subCommand, value, player)` command variants should be used. 
+Other commands `cSetTechCost`, `cAddTechCost` and `cModTechTime` no longer work.
+You can not add or change which resources the tech cost, only their amounts. 
+So if a tech cost food and gold you can not add wood cost. 
+Be careful when using addition and multiplication sub commands such as: `cAttrAddFoodCost` or `cAttrMulGoldCost`. When doing calculations sometimes they take current tech price and sometimes the original price.
+This leads to unexpected results. It is better to do calculations and cost tracking yourself and use sub commands such as `cAttrSetGoldCost` to update the cost.
+Same things apply to time changing sub commands such as `cAttrSetTime`, `cAttrAddTime` and `cAttrMulTime`.
+
+```xs
+const int loom = 22;
+// Sets loom cost to 66 gold for player 1
+xsEffectAmount(cModifyTech, loom, cAttrSetGoldCost, 66, 1);
+// Sets loom research time to 1 second for player 1
+xsEffectAmount(cModifyTech, loom, cAttrSetTime, 1, 1);
+
+// After running these commands loom cost is 266 gold: (50 + 50 + 66) + 100.
+xsEffectAmount(cModifyTech, loom, cAttrMulGoldCost, 3, 1);
+xsEffectAmount(cModifyTech, loom, cAttrAddGoldCost, 100, 1);
+
+// Does not do anything since loom does not already have food cost
+xsEffectAmount(cModifyTech, loom, cAttrSetFoodCost, 50, 1);
+```
+
+Safe multiplying cost:
+
+```xs
+const int tech = 22;
+const int player = 1;
+int goldCost = 50;
+
+void main() {
+    // Set to the known innitial gold cost on map load
+    xsEffectAmount(cModifyTech, tech, cAttrSetGoldCost, goldCost, player);
+}
+
+void doubleTechCost() {
+    //Function that can be called from code or triggers to double the cost
+    goldCost = goldCost * 2;
+    xsEffectAmount(cModifyTech, tech, cAttrSetGoldCost, goldCost, player);
+}
+```
+The code above can be easily changed to any mathematical formula to change tech cost.

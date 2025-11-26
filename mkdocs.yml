@@ -53,6 +53,7 @@ nav:
       - Important:                  "general/xs/bugs/Important.md"
       - Language Syntax:            "general/xs/bugs/Language Syntax.md"
       - Task:                       "general/xs/bugs/Task.md"
+      - Task:                       "general/xs/bugs/Individual Tech Modifiers.md"
   - Mods:
     -                               "mods/index.md"
 #   - Data Mods
