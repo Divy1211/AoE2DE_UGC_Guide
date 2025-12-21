@@ -495,7 +495,8 @@ This effect can be used to display a timer on screen. The configurations for thi
 
 Some useful tricks with this effect:
 
-1. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
+1. Use `%d` as a placeholder in the message field for remaining time in the time units that you chose.
+2. Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:
     1. <BLUE\>
     2. <RED\>
     3. <GREEN\>

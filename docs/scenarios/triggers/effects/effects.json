@@ -547,6 +547,7 @@
             "message"
         ],
         "tricks": [
+            "Use `%d` as a placeholder in the message field for remaining time in the time units that you chose.",
             "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
         ]
     },
