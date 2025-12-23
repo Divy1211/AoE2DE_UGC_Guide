@@ -4460,7 +4460,9 @@ ID for the task amount Task Attribute Search Wait Time
 
 Usages per task type:
 
-  - [Aura Task](./#1442-ctasktypeaura): The attribute to modify. Only the following attributes are supported:
+  - [Aura Task](./#1442-ctasktypeaura): The attribute to modify. Not all attributes are supported. Known attributes:
+    - [Hit Points](./#91-chitpoints)
+    - [Line of Sight](./#92-clineofsight)
     - [Movement Speed](./#96-cmovementspeed)
     - [Attack](./#99-cattack)
     - [Attack Reload Time](./#910-cattackreloadtime)
@@ -4469,6 +4471,7 @@ Usages per task type:
     - [Conversion Chance Modifier](./#9105-cconversionchancemod)
     - 116: Melee Armor
     - 117: Pierce Armor
+    - [Regeneration Hp Percent](./#9110-cregenerationhppercent)
 
 ### 13.6. cTaskAttrCombatLevelFlag
 

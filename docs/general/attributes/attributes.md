@@ -706,7 +706,11 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 81
 
- - TODO
+ - Enables certain special abilities
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Enable charge attack ability (task 133) | 3 | 
 
 ## 82. Idle Attack Graphic
 
