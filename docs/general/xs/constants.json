@@ -4843,8 +4843,10 @@
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
             "usage":  {
                 "[Aura Task](./#1442-ctasktypeaura)": {
-                    "desc": "The attribute to modify. Only the following attributes are supported:",
+                    "desc": "The attribute to modify. Not all attributes are supported. Known attributes:",
                     "list": [
+                        "[Hit Points](./#91-chitpoints)",
+                        "[Line of Sight](./#92-clineofsight)",
                         "[Movement Speed](./#96-cmovementspeed)",
                         "[Attack](./#99-cattack)",
                         "[Attack Reload Time](./#910-cattackreloadtime)",
@@ -4852,7 +4854,8 @@
                         "[Regeneration Rate](./#9101-cregenerationrate)",
                         "[Conversion Chance Modifier](./#9105-cconversionchancemod)",
                         "116: Melee Armor",
-                        "117: Pierce Armor"
+                        "117: Pierce Armor",
+                        "[Regeneration Hp Percent](./#9110-cregenerationhppercent)"
                     ]
                 }
             }
