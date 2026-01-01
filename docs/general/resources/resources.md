@@ -69,6 +69,12 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Enables `Sun Ce` to convert buildings
 
+- Default Values:
+
+    - 0:  No (default)
+    - 1:  Yes
+    - $\geq$2: Sun Ce can convert buildings from range
+
 ## 9. Trade Goods
 
 - ID: 9
@@ -484,7 +490,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 60
 
-- Purpose: Unused but effect with id 18 sets it to 1
+- Purpose: Unused but not used effect with id 18 sets it to 1
 
 ## 61. Unused Resource 061
 

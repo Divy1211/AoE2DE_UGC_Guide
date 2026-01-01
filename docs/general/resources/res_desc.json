@@ -55,7 +55,11 @@
     "8": {
         "name": "Enable Sun Ce Building Conversion",
         "desc": "Enables `Sun Ce` to convert buildings",
-        "defaults": {},
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes",
+            ">=2": "Sun Ce can convert buildings from range"
+        },
         "note": ""
     },
     "9": {
