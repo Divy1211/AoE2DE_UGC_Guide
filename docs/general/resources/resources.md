@@ -67,7 +67,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 8
 
-- Purpose: Unused
+- Purpose: Seems unused but `Sun Ce` units `Convert` task has reference to it in the `Unused Resource` field. Maybe by mistake?
 
 ## 9. Trade Goods
 
@@ -224,13 +224,21 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 30
 
-- Purpose: Unused
+- Purpose: Unused but civs start with 500 at the start of the game
+
+- Default Values:
+
+    - 500: Default
 
 ## 31. Unused Resource 031
 
 - ID: 31
 
-- Purpose: Unused
+- Purpose: Unused but civs start with -1 at the start of the game
+
+- Default Values:
+
+    - -1: Default
 
 ## 32. Bonus Population Cap
 
@@ -250,13 +258,23 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 34
 
-- Purpose: Unused
+- Purpose: Unused, but `Aztecs` start with 2
+
+- Default Values:
+
+    - 0: Default
+    - 2: Aztecs
 
 ## 35. Unused Resource 35
 
 - ID: 35
 
-- Purpose: Unused
+- Purpose: Unused, but `Macedonians`, `Puru` and `Thracians` start with 1.6
+
+- Default Values:
+
+    - 0: Default
+    - 1.6: `Macedonians`, `Puru` and `Thracians`
 
 ## 36. Farm Food Amount
 
@@ -456,13 +474,17 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 59
 
-- Purpose: Unused
+- Purpose: Unused but civs start with 1 at the start of the game. Not used effect with id 25 also sets it to 1
+
+- Default Values:
+
+    - 1: Default
 
 ## 60. Unused Resource 060
 
 - ID: 60
 
-- Purpose: Unused
+- Purpose: Unused but effect with id 18 sets it to 1
 
 ## 61. Unused Resource 061
 
@@ -498,7 +520,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 66
 
-- Purpose: Unused
+- Purpose: Unused but not used effect with id 86 and `Dark Age` also sets it to 1
+
+- Default Values:
+
+    - 1: Default
 
 ## 67. Can Convert
 
@@ -1479,25 +1505,17 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 203. Reveal Map
+## 203. Unused Resource 203
 
 - ID: 203
 
-- Purpose: Controls the map visibility for a player.
+- Purpose: Unused
 
-- Default Values:
-
-    - 0:  Normal
-    - 1:  Explored
-    - 2:  All Visible
-
-## 204. Reveal Unit on Map
+## 204. Unused Resource 204
 
 - ID: 204
 
-- Purpose: Controls the visibility of other players' units for a player
-
-- Note: Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently
+- Purpose: Unused
 
 ## 205. Feitoria Food Productivity
 
@@ -1623,7 +1641,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 215
 
-- Purpose: Unused
+- Purpose: Unused but some units use it as part of their cost as a leftover: `Urus Khan`, `CUMANDISABLED` and `CUMANPLACEHOLDER`
 
 ## 216. Shepherd Productivity
 
@@ -1669,11 +1687,17 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate
 
-## 220. Unused Resource 220
+## 220. Enable Certain Hero Level Up
 
 - ID: 220
 
-- Purpose: Unused
+- Purpose: Enables leveling up when killing units for `Richard the Lionheart`, `Sieur de Metz`, `Kushluk`, `Zawisza the Black`
+
+- Default Values:
+
+    - 0: Default
+
+- Note: This enabled `Loot` task which makes these heroes gain stats instead of resources.
 
 ## 221. Monument Food Productivity
 
@@ -3665,17 +3689,17 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 500. Unknown Resource 500
+## 500. Unused Resource 500
 
 - ID: 500
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 501. Maximum Polemarchs
+## 501. Polemarch Build Limit
 
 - ID: 501
 
-- Purpose: Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.
+- Purpose: Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs
 
 - Default Values:
 
@@ -3692,7 +3716,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 4:  Athenians
 
-## 503. Trade Wood Percentage
+## 503. Wood Trade Ratio
 
 - ID: 503
 
@@ -3705,24 +3729,28 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value $\geq$ 1 will make it so no trade resources are returned.
 
-## 504. Unknown Resource 504
+## 504. Unused Resource 504
 
 - ID: 504
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused but civs start with 1 at the start of the game. Also unused `Spanish team bonus` effect multiplies its value by 0.8
 
-## 505. Unknown Resource 505
+- Default Values:
+
+    - 1: At the start of the game. Does not seem to do anything
+
+## 505. Unused Resource 505
 
 - ID: 505
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused, but Achaemenids, Athenians and Spartans have it set to 1
 
 - Default Values:
 
     - 0:  Default
     - 1:  Achaemenids, Athenians and Spartans
 
-## 506. Achamenids Town Center Upgrades
+## 506. Achamenids Town Center Local Upgrade
 
 - ID: 506
 
@@ -3733,13 +3761,13 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Achaemenids, Athenians and Spartans
 
-- Note: Local Town Center resource is changed when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed.
+- Note: Achamenids Town Center Local Upgrade resource is changed when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed.
 
-## 507. Unknown Resource 507
+## 507. Unused Resource 507
 
 - ID: 507
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused, but `Athenians Static Bonuses` effect sets it to 1
 
 - Default Values:
 
@@ -3748,105 +3776,115 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Athenians start with it set to 1 by initial Economic Policy.
 
-## 508. Unknown Resource 508
+## 508. Fortified Outpost Local Upgrade
 
 - ID: 508
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Used as a local resource in `Outposts`
 
-## 509. Building Loot Productivity
+- Note: Fortified Outpost Local Upgrade resource is changed when its tech is researched. As a side effect its global player value will be decremented every time an Outpost is destroyed.
+
+## 509. Mercenary Hoplite Productivity
 
 - ID: 509
 
-- Purpose: Gain gold when attacking buildings.
+- Purpose: It is named in the editor but seems to no longer affect `Mercenary Hoplite` and therefore unused
+
+## 510. Odomantian Raiders Productivity
+
+- ID: 510
+
+- Purpose: Modifies how much gold units gain affected by `Odomantian Raiders` tech
 
 - Default Values:
 
     - 0: Default
+    - 1: Spartans or after Odomantian Raiders is researched
 
-- Note: Formula is unknown, but the higher the resource the faster the gold gain is.
-
-## 510. Unknown Resource 510
-
-- ID: 510
-
-- Purpose: Unknown... What does this resource do?
-
-- Default Values:
-
-    - 1:  Spartans
-
-- Note: Spartans start with it set to 1.
-
-## 511. Unknown Resource 511
+## 511. Dii Plunderers Productivity
 
 - ID: 511
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Modifies how much resources units gain affected by `Dii Plunderers` tech
 
-## 512. Unknown Resource 512
+- Default Values:
+
+    - 0: Default
+    - 1: After Dii Plunderers is researched
+
+## 512. Stone Mining Food Productivity
 
 - ID: 512
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Stone mining food generation rate
 
-## 513. Unknown Resource 513
+- Default Values:
+
+    - 0: Default
+    - 1: Puru
+
+## 513. Emplacement Local Upgrade
 
 - ID: 513
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Used as a local cost to upgrade `Fort` to an emplacement
 
-## 514. Unknown Resource 514
+## 514. Helepolis Limit
 
 - ID: 514
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Limit the amount of `Helepolis` that can be built. Only works if `Helepolis` are built as buildings
 
-## 515. Unknown Resource 515
+## 515. Scythian Horse Archer Productivity
 
 - ID: 515
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Modifies how much gold `Scythian Horse Archer` and `Elite Scythian Horse Archer` gain when killing units
 
-## 516. Unknown Resource 516
+- Default Values:
+
+    - 1: Default
+    - 0: Shu, Wu, Wei, Jurchens, Khitans
+
+## 516. Unused Resource 516
 
 - ID: 516
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 517. Unknown Resource 517
+## 517. Unused Resource 517
 
 - ID: 517
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 518. Unknown Resource 518
+## 518. Unused Resource 518
 
 - ID: 518
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 519. Unknown Resource 519
+## 519. Unused Resource 519
 
 - ID: 519
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 520. Unknown Resource 520
+## 520. Lysanders Raider Productivity
 
 - ID: 520
 
-- Purpose: Gives gold generation on kills to certain `Lysander's Raider` and probably other units. Similar to resource 550 and 551.
+- Purpose: Modifies how much gold `Lysanders Raider` gains when killing units
 
 - Default Values:
 
     - 1:  Default
 
-## 521. Castle Gold Productivity
+## 521. Peloponnesian League Productivity
 
 - ID: 521
 
-- Purpose: Castle gold production rate multiplier.
+- Purpose: Castle gold production rate multiplier
 
 - Default Values:
 
@@ -3855,189 +3893,224 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`.
 
-## 522. Unknown Resource 522
+## 522. Base Hoplite Aura Enabled
 
 - ID: 522
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on base `Hoplite` aura
 
-## 523. Unknown Resource 523
+- Default Values:
+
+    - 1: Default
+    - 0: Macedonians, Thracians, Puru or after Agoge is researched
+
+## 523. Agoge Hoplite Aura Enabled
 
 - ID: 523
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on aura gained via `Agoge` tech for `Hoplites`
 
-## 524. Unknown Resource 524
+- Default Values:
+
+    - 1: After Agoge is researched
+    - 0: Default
+
+## 524. Xyphos Hoplite Aura Enabled
 
 - ID: 524
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on aura gained via `Xyphos` tech for `Hoplites`
 
-## 525. Unknown Resource 525
+- Default Values:
+
+    - 1: After Xyphos is researched
+    - 0: Default
+
+## 525. Base Strategos Aura Enabled
 
 - ID: 525
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on base `Strategos` aura
 
-## 526. Unknown Resource 526
+- Default Values:
+
+    - 1: Default
+    - 0: Macedonians, Thracians, Puru or after Taxiarchs is researched
+
+## 526. Taxiarchs Strategos Aura Enabled
 
 - ID: 526
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on aura gained via `Taxiarchs` tech for `Strategos`
 
-## 527. Unknown Resource 527
+- Default Values:
+
+    - 1: After Taxiarchs is researched
+    - 0: Default
+
+## 527. Hippeus Aura No Tech
 
 - ID: 527
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on base `Hippeus` aura
 
-## 528. Unknown Resource 528
+- Default Values:
+
+    - 1: Default
+    - 0: Macedonians, Thracians, Puru or after Morai is researched
+
+## 528. Hippeus Aura With Techs
 
 - ID: 528
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on aura gained via `Morai` tech for `Hippeus`
 
-## 529. Unknown Resource 529
+- Default Values:
+
+    - 1: After Morai is researched
+    - 0: Default
+
+## 529. Unused Resource 529
 
 - ID: 529
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 530. Unknown Resource 530
+## 530. Unused Resource 530
 
 - ID: 530
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 531. Unknown Resource 531
+## 531. Unused Resource 531
 
 - ID: 531
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 532. Unknown Resource 532
+## 532. Unused Resource 532
 
 - ID: 532
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 533. Unknown Resource 533
+## 533. Unused Resource 533
 
 - ID: 533
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 534. Unknown Resource 534
+## 534. Unused Resource 534
 
 - ID: 534
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 535. Unknown Resource 535
+## 535. Unused Resource 535
 
 - ID: 535
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 536. Unknown Resource 536
+## 536. Unused Resource 536
 
 - ID: 536
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 537. Unknown Resource 537
+## 537. Unused Resource 537
 
 - ID: 537
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 538. Unknown Resource 538
+## 538. Unused Resource 538
 
 - ID: 538
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 539. Unknown Resource 539
+## 539. Unused Resource 539
 
 - ID: 539
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 540. Unknown Resource 540
+## 540. Unused Resource 540
 
 - ID: 540
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 541. Unknown Resource 541
+## 541. Unused Resource 541
 
 - ID: 541
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 542. Unknown Resource 542
+## 542. Unused Resource 542
 
 - ID: 542
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 543. Unknown Resource 543
+## 543. Unused Resource 543
 
 - ID: 543
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 544. Unknown Resource 544
+## 544. Unused Resource 544
 
 - ID: 544
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 545. Unknown Resource 545
+## 545. Unused Resource 545
 
 - ID: 545
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 546. Unknown Resource 546
+## 546. Unused Resource 546
 
 - ID: 546
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 547. Unknown Resource 547
+## 547. Unused Resource 547
 
 - ID: 547
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 548. Unknown Resource 548
+## 548. Unused Resource 548
 
 - ID: 548
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 549. Unknown Resource 549
+## 549. Unused Resource 549
 
 - ID: 549
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 550. Unknown Resource 550
+## 550. Camel Raider Productivity
 
 - ID: 550
 
-- Purpose: Gives gold generation on kills to certain `Lysander's Raider`, `Camel Raider` and probably other units. Similar to resource 520 and 551.
+- Purpose: Modifies how much gold `Lysander's Raider` and `Camel Raider` gain when killing units
 
 - Default Values:
 
     - 1:  Default
 
-## 551. Unit Loot Productivity
+## 551. Tyranny Productivity
 
 - ID: 551
 
-- Purpose: Gain gold per unit killed.
+- Purpose: Gain gold per unit killed
 
 - Default Values:
 
@@ -4046,297 +4119,312 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class task.
 
-## 552. Unknown Resource 552
+## 552. Unused Resource 552
 
 - ID: 552
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 553. Unknown Resource 553
+## 553. Unused Resource 553
 
 - ID: 553
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 554. Unknown Resource 554
+## 554. Unused Resource 554
 
 - ID: 554
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 555. Unknown Resource 555
+## 555. Unused Resource 555
 
 - ID: 555
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 556. Unknown Resource 556
+## 556. Unused Resource 556
 
 - ID: 556
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 557. Unknown Resource 557
+## 557. Unused Resource 557
 
 - ID: 557
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 558. Unknown Resource 558
+## 558. Unused Resource 558
 
 - ID: 558
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 559. Unknown Resource 559
+## 559. Unused Resource 559
 
 - ID: 559
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 560. Unknown Resource 560
+## 560. Ends of the World Productivity
 
 - ID: 560
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on aura gained via `Ends of the World` tech for `Fortified Outpost`
 
-## 561. Unknown Resource 561
+## 561. Pattiyodha Longbowman Default
 
 - ID: 561
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on base `Pattiyodha Longbowman` aura
 
-## 562. Unknown Resource 562
+- Default Values:
+
+    - 1: Default
+    - 0: Macedonians, Thracians, Puru or after Leaf-Headed Shafts is researched
+
+## 562. Pattiyodha Longbowman Upgraded
 
 - ID: 562
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Turns on aura gained via `Leaf-Headed Shafts` tech for `Pattiyodha Longbowman`
 
-## 563. Unknown Resource 563
+- Default Values:
+
+    - 1: After Leaf-Headed Shafts is researched
+    - 0: Default
+
+## 563. Shepherd Gold Productivity
 
 - ID: 563
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Sheep herding and hunting gold generation rate
 
-## 564. Unknown Resource 564
+- Default Values:
+
+    - 0: Default
+    - 1: Thracians
+
+## 564. Unused Resource 564
 
 - ID: 564
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 565. Unknown Resource 565
+## 565. Unused Resource 565
 
 - ID: 565
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 566. Unknown Resource 566
+## 566. Unused Resource 566
 
 - ID: 566
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 567. Unknown Resource 567
+## 567. Unused Resource 567
 
 - ID: 567
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 568. Unknown Resource 568
+## 568. Unused Resource 568
 
 - ID: 568
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 569. Unknown Resource 569
+## 569. Unused Resource 569
 
 - ID: 569
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 570. Unknown Resource 570
+## 570. Unused Resource 570
 
 - ID: 570
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 571. Unknown Resource 571
+## 571. Unused Resource 571
 
 - ID: 571
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 572. Unknown Resource 572
+## 572. Unused Resource 572
 
 - ID: 572
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 573. Unknown Resource 573
+## 573. Unused Resource 573
 
 - ID: 573
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 574. Unknown Resource 574
+## 574. Unused Resource 574
 
 - ID: 574
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 575. Unknown Resource 575
+## 575. Unused Resource 575
 
 - ID: 575
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 576. Unknown Resource 576
+## 576. Unused Resource 576
 
 - ID: 576
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 577. Unknown Resource 577
+## 577. Unused Resource 577
 
 - ID: 577
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 578. Unknown Resource 578
+## 578. Unused Resource 578
 
 - ID: 578
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 579. Unknown Resource 579
+## 579. Unused Resource 579
 
 - ID: 579
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 580. Unknown Resource 580
+## 580. Unused Resource 580
 
 - ID: 580
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 581. Unknown Resource 581
+## 581. Unused Resource 581
 
 - ID: 581
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 582. Unknown Resource 582
+## 582. Unused Resource 582
 
 - ID: 582
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 583. Unknown Resource 583
+## 583. Unused Resource 583
 
 - ID: 583
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 584. Unknown Resource 584
+## 584. Unused Resource 584
 
 - ID: 584
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 585. Unknown Resource 585
+## 585. Unused Resource 585
 
 - ID: 585
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 586. Unknown Resource 586
+## 586. Unused Resource 586
 
 - ID: 586
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 587. Unknown Resource 587
+## 587. Unused Resource 587
 
 - ID: 587
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 588. Unknown Resource 588
+## 588. Unused Resource 588
 
 - ID: 588
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 589. Unknown Resource 589
+## 589. Unused Resource 589
 
 - ID: 589
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 590. Unknown Resource 590
+## 590. Unused Resource 590
 
 - ID: 590
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 591. Unknown Resource 591
+## 591. Unused Resource 591
 
 - ID: 591
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 592. Unknown Resource 592
+## 592. Unused Resource 592
 
 - ID: 592
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 593. Unknown Resource 593
+## 593. Unused Resource 593
 
 - ID: 593
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 594. Unknown Resource 594
+## 594. Unused Resource 594
 
 - ID: 594
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 595. Unknown Resource 595
+## 595. Unused Resource 595
 
 - ID: 595
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 596. Unknown Resource 596
+## 596. Unused Resource 596
 
 - ID: 596
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 597. Unknown Resource 597
+## 597. Unused Resource 597
 
 - ID: 597
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 598. Unknown Resource 598
+## 598. Unused Resource 598
 
 - ID: 598
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 599. Unknown Resource 599
+## 599. Unused Resource 599
 
 - ID: 599
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 
-## 600. Unknown Resource 600
+## 600. Unused Resource 600
 
 - ID: 600
 
-- Purpose: Unknown... What does this resource do?
+- Purpose: Unused
 

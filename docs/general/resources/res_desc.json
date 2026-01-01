@@ -54,7 +54,7 @@
     },
     "8": {
         "name": "Unused Resource 008",
-        "desc": "Unused",
+        "desc": "Seems unused but `Sun Ce` units `Convert` task has reference to it in the `Unused Resource` field. Maybe by mistake?",
         "defaults": {},
         "note": ""
     },
@@ -197,14 +197,18 @@
     },
     "30": {
         "name": "Unused Resource 030",
-        "desc": "Unused",
-        "defaults": {},
+        "desc": "Unused but civs start with 500 at the start of the game",
+        "defaults": {
+            "500": "Default"
+        },
         "note": ""
     },
     "31": {
         "name": "Unused Resource 031",
-        "desc": "Unused",
-        "defaults": {},
+        "desc": "Unused but civs start with -1 at the start of the game",
+        "defaults": {
+            "-1": "Default"
+        },
         "note": ""
     },
     "32": {
@@ -221,14 +225,20 @@
     },
     "34": {
         "name": "Unused Resource 34",
-        "desc": "Unused",
-        "defaults": {},
+        "desc": "Unused, but `Aztecs` start with 2",
+        "defaults": {
+            "0": "Default",
+            "2": "Aztecs"
+        },
         "note": ""
     },
     "35": {
         "name": "Unused Resource 35",
-        "desc": "Unused",
-        "defaults": {},
+        "desc": "Unused, but `Macedonians`, `Puru` and `Thracians` start with 1.6",
+        "defaults": {
+            "0": "Default",
+            "1.6": "`Macedonians`, `Puru` and `Thracians`"
+        },
         "note": ""
     },
     "36": {
@@ -399,13 +409,15 @@
     },
     "59": {
         "name": "Unused Resource 059",
-        "desc": "Unused",
-        "defaults": {},
+        "desc": "Unused but civs start with 1 at the start of the game. Not used effect with id 25 also sets it to 1",
+        "defaults": {
+            "1": "Default"
+        },
         "note": ""
     },
     "60": {
         "name": "Unused Resource 060",
-        "desc": "Unused",
+        "desc": "Unused but effect with id 18 sets it to 1",
         "defaults": {},
         "note": ""
     },
@@ -441,8 +453,10 @@
     },
     "66": {
         "name": "Unused Resource 066",
-        "desc": "Unused",
-        "defaults": {},
+        "desc": "Unused but not used effect with id 86 and `Dark Age` also sets it to 1",
+        "defaults": {
+            "1": "Default"
+        },
         "note": ""
     },
     "67": {
@@ -1331,20 +1345,16 @@
         "note": ""
     },
     "203": {
-        "name": "Reveal Map",
-        "desc": "Controls the map visibility for a player.",
-        "defaults": {
-            "0": " Normal",
-            "1": " Explored",
-            "2": " All Visible"
-        },
+        "name": "Unused Resource 203",
+        "desc": "Unused",
+        "defaults": {},
         "note": ""
     },
     "204": {
-        "name": "Reveal Unit on Map",
-        "desc": "Controls the visibility of other players' units for a player",
+        "name": "Unused Resource 204",
+        "desc": "Unused",
         "defaults": {},
-        "note": "Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently"
+        "note": ""
     },
     "205": {
         "name": "Feitoria Food Productivity",
@@ -1430,7 +1440,7 @@
     },
     "215": {
         "name": "Unused Resource 215",
-        "desc": "Unused",
+        "desc": "Unused but some units use it as part of their cost as a leftover: `Urus Khan`, `CUMANDISABLED` and `CUMANPLACEHOLDER`",
         "defaults": {},
         "note": ""
     },
@@ -1467,10 +1477,12 @@
         "note": "Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate"
     },
     "220": {
-        "name": "Unused Resource 220",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Enable Certain Hero Level Up",
+        "desc": "Enables leveling up when killing units for `Richard the Lionheart`, `Sieur de Metz`, `Kushluk`, `Zawisza the Black`",
+        "defaults": {
+            "0": "Default"
+        },
+        "note": "This enabled `Loot` task which makes these heroes gain stats instead of resources."
     },
     "221": {
         "name": "Monument Food Productivity",
@@ -3229,14 +3241,14 @@
         "note": ""
     },
     "500": {
-        "name": "Unknown Resource 500",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 500",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "501": {
-        "name": "Maximum Polemarchs",
-        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs.",
+        "name": "Polemarch Build Limit",
+        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs",
         "defaults": {
             "0": "Default"
         },
@@ -3252,7 +3264,7 @@
         "note": ""
     },
     "503": {
-        "name": "Trade Wood Percentage",
+        "name": "Wood Trade Ratio",
         "desc": "Amount of trade will be returned as wood instead of gold.",
         "defaults": {
             "0": " Default",
@@ -3261,14 +3273,16 @@
         "note": "Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
     },
     "504": {
-        "name": "Unknown Resource 504",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Unused Resource 504",
+        "desc": "Unused but civs start with 1 at the start of the game. Also unused `Spanish team bonus` effect multiplies its value by 0.8",
+        "defaults": {
+            "1": "At the start of the game. Does not seem to do anything"
+        },
         "note": ""
     },
     "505": {
-        "name": "Unknown Resource 505",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 505",
+        "desc": "Unused, but Achaemenids, Athenians and Spartans have it set to 1",
         "defaults": {
             "0": " Default",
             "1": " Achaemenids, Athenians and Spartans"
@@ -3276,17 +3290,17 @@
         "note": ""
     },
     "506": {
-        "name": "Achamenids Town Center Upgrades",
+        "name": "Achamenids Town Center Local Upgrade",
         "desc": "Used as a local resource in Town Centers to know which of them have the Achamenids Town Center upgrade researched",
         "defaults": {
             "0": " Default",
             "1": " Achaemenids, Athenians and Spartans"
         },
-        "note": "Local Town Center resource is changed when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed."
+        "note": "Achamenids Town Center Local Upgrade resource is changed when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed."
     },
     "507": {
-        "name": "Unknown Resource 507",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 507",
+        "desc": "Unused, but `Athenians Static Bonuses` effect sets it to 1",
         "defaults": {
             "0": " Default",
             "1": " Athenians"
@@ -3294,92 +3308,100 @@
         "note": "Athenians start with it set to 1 by initial Economic Policy."
     },
     "508": {
-        "name": "Unknown Resource 508",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Fortified Outpost Local Upgrade",
+        "desc": "Used as a local resource in `Outposts`",
+        "defaults": {},
+        "note": "Fortified Outpost Local Upgrade resource is changed when its tech is researched. As a side effect its global player value will be decremented every time an Outpost is destroyed."
+    },
+    "509": {
+        "name": "Mercenary Hoplite Productivity",
+        "desc": "It is named in the editor but seems to no longer affect `Mercenary Hoplite` and therefore unused",
         "defaults": {},
         "note": ""
     },
-    "509": {
-        "name": "Building Loot Productivity",
-        "desc": "Gain gold when attacking buildings.",
-        "defaults": {
-            "0": "Default"
-        },
-        "note": "Formula is unknown, but the higher the resource the faster the gold gain is."
-    },
     "510": {
-        "name": "Unknown Resource 510",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Odomantian Raiders Productivity",
+        "desc": "Modifies how much gold units gain affected by `Odomantian Raiders` tech",
         "defaults": {
-            "1": " Spartans"
+            "0": "Default",
+            "1": "Spartans or after Odomantian Raiders is researched"
         },
-        "note": "Spartans start with it set to 1."
+        "note": ""
     },
     "511": {
-        "name": "Unknown Resource 511",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Dii Plunderers Productivity",
+        "desc": "Modifies how much resources units gain affected by `Dii Plunderers` tech",
+        "defaults": {
+            "0": "Default",
+            "1": "After Dii Plunderers is researched"
+        },
         "note": ""
     },
     "512": {
-        "name": "Unknown Resource 512",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Stone Mining Food Productivity",
+        "desc": "Stone mining food generation rate",
+        "defaults": {
+            "0": "Default",
+            "1": "Puru"
+        },
         "note": ""
     },
     "513": {
-        "name": "Unknown Resource 513",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Emplacement Local Upgrade",
+        "desc": "Used as a local cost to upgrade `Fort` to an emplacement",
         "defaults": {},
         "note": ""
     },
     "514": {
-        "name": "Unknown Resource 514",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Helepolis Limit",
+        "desc": "Limit the amount of `Helepolis` that can be built. Only works if `Helepolis` are built as buildings",
         "defaults": {},
         "note": ""
     },
     "515": {
-        "name": "Unknown Resource 515",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Scythian Horse Archer Productivity",
+        "desc": "Modifies how much gold `Scythian Horse Archer` and `Elite Scythian Horse Archer` gain when killing units",
+        "defaults": {
+            "1": "Default",
+            "0": "Shu, Wu, Wei, Jurchens, Khitans"
+        },
         "note": ""
     },
     "516": {
-        "name": "Unknown Resource 516",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 516",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "517": {
-        "name": "Unknown Resource 517",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 517",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "518": {
-        "name": "Unknown Resource 518",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 518",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "519": {
-        "name": "Unknown Resource 519",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 519",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "520": {
-        "name": "Unknown Resource 520",
-        "desc": "Gives gold generation on kills to certain `Lysander's Raider` and probably other units. Similar to resource 550 and 551.",
+        "name": "Lysanders Raider Productivity",
+        "desc": "Modifies how much gold `Lysanders Raider` gains when killing units",
         "defaults": {
             "1": " Default"
         },
         "note": ""
     },
     "521": {
-        "name": "Castle Gold Productivity",
-        "desc": "Castle gold production rate multiplier.",
+        "name": "Peloponnesian League Productivity",
+        "desc": "Castle gold production rate multiplier",
         "defaults": {
             "0": " Default",
             "1": " After Peloponnesian League researched"
@@ -3387,184 +3409,205 @@
         "note": "The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`."
     },
     "522": {
-        "name": "Unknown Resource 522",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Base Hoplite Aura Enabled",
+        "desc": "Turns on base `Hoplite` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Agoge is researched"
+        },
         "note": ""
     },
     "523": {
-        "name": "Unknown Resource 523",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Agoge Hoplite Aura Enabled",
+        "desc": "Turns on aura gained via `Agoge` tech for `Hoplites`",
+        "defaults": {
+            "1": "After Agoge is researched",
+            "0": "Default"
+        },
         "note": ""
     },
     "524": {
-        "name": "Unknown Resource 524",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Xyphos Hoplite Aura Enabled",
+        "desc": "Turns on aura gained via `Xyphos` tech for `Hoplites`",
+        "defaults": {
+            "1": "After Xyphos is researched",
+            "0": "Default"
+        },
         "note": ""
     },
     "525": {
-        "name": "Unknown Resource 525",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Base Strategos Aura Enabled",
+        "desc": "Turns on base `Strategos` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Taxiarchs is researched"
+        },
         "note": ""
     },
     "526": {
-        "name": "Unknown Resource 526",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Taxiarchs Strategos Aura Enabled",
+        "desc": "Turns on aura gained via `Taxiarchs` tech for `Strategos`",
+        "defaults": {
+            "1": "After Taxiarchs is researched",
+            "0": "Default"
+        },
         "note": ""
     },
     "527": {
-        "name": "Unknown Resource 527",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Hippeus Aura No Tech",
+        "desc": "Turns on base `Hippeus` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Morai is researched"
+        },
         "note": ""
     },
     "528": {
-        "name": "Unknown Resource 528",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Hippeus Aura With Techs",
+        "desc": "Turns on aura gained via `Morai` tech for `Hippeus`",
+        "defaults": {
+            "1": "After Morai is researched",
+            "0": "Default"
+        },
         "note": ""
     },
     "529": {
-        "name": "Unknown Resource 529",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 529",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "530": {
-        "name": "Unknown Resource 530",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 530",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "531": {
-        "name": "Unknown Resource 531",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 531",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "532": {
-        "name": "Unknown Resource 532",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 532",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "533": {
-        "name": "Unknown Resource 533",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 533",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "534": {
-        "name": "Unknown Resource 534",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 534",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "535": {
-        "name": "Unknown Resource 535",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 535",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "536": {
-        "name": "Unknown Resource 536",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 536",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "537": {
-        "name": "Unknown Resource 537",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 537",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "538": {
-        "name": "Unknown Resource 538",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 538",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "539": {
-        "name": "Unknown Resource 539",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 539",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "540": {
-        "name": "Unknown Resource 540",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 540",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
      "541": {
-        "name": "Unknown Resource 541",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 541",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "542": {
-        "name": "Unknown Resource 542",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 542",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "543": {
-        "name": "Unknown Resource 543",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 543",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "544": {
-        "name": "Unknown Resource 544",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 544",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "545": {
-        "name": "Unknown Resource 545",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 545",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "546": {
-        "name": "Unknown Resource 546",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 546",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "547": {
-        "name": "Unknown Resource 547",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 547",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "548": {
-        "name": "Unknown Resource 548",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 548",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "549": {
-        "name": "Unknown Resource 549",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 549",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "550": {
-        "name": "Unknown Resource 550",
-        "desc": "Gives gold generation on kills to certain `Lysander's Raider`, `Camel Raider` and probably other units. Similar to resource 520 and 551.",
+        "name": "Camel Raider Productivity",
+        "desc": "Modifies how much gold `Lysander's Raider` and `Camel Raider` gain when killing units",
         "defaults": {
             "1": " Default"
         },
         "note": ""
     },
     "551": {
-        "name": "Unit Loot Productivity",
-        "desc": "Gain gold per unit killed.",
+        "name": "Tyranny Productivity",
+        "desc": "Gain gold per unit killed",
         "defaults": {
             "0": " Default",
             "1": " After Military Policy activated"
@@ -3572,296 +3615,305 @@
         "note": "The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class task."
     },
     "552": {
-        "name": "Unknown Resource 552",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 552",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "553": {
-        "name": "Unknown Resource 553",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 553",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "554": {
-        "name": "Unknown Resource 554",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 554",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "555": {
-        "name": "Unknown Resource 555",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 555",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "556": {
-        "name": "Unknown Resource 556",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 556",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "557": {
-        "name": "Unknown Resource 557",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 557",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "558": {
-        "name": "Unknown Resource 558",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 558",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "559": {
-        "name": "Unknown Resource 559",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 559",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "560": {
-        "name": "Unknown Resource 560",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Ends of the World Productivity",
+        "desc": "Turns on aura gained via `Ends of the World` tech for `Fortified Outpost`",
         "defaults": {},
         "note": ""
     },
     "561": {
-        "name": "Unknown Resource 561",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Pattiyodha Longbowman Default",
+        "desc": "Turns on base `Pattiyodha Longbowman` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Leaf-Headed Shafts is researched"
+        },
         "note": ""
     },
      "562": {
-        "name": "Unknown Resource 562",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Pattiyodha Longbowman Upgraded",
+        "desc": "Turns on aura gained via `Leaf-Headed Shafts` tech for `Pattiyodha Longbowman`",
+        "defaults": {
+            "1": "After Leaf-Headed Shafts is researched",
+            "0": "Default"
+        },
         "note": ""
     },
     "563": {
-        "name": "Unknown Resource 563",
-        "desc": "Unknown... What does this resource do?",
-        "defaults": {},
+        "name": "Shepherd Gold Productivity",
+        "desc": "Sheep herding and hunting gold generation rate",
+        "defaults": {
+            "0": "Default",
+            "1": "Thracians"
+        },
         "note": ""
     },
     "564": {
-        "name": "Unknown Resource 564",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 564",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "565": {
-        "name": "Unknown Resource 565",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 565",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "566": {
-        "name": "Unknown Resource 566",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 566",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "567": {
-        "name": "Unknown Resource 567",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 567",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "568": {
-        "name": "Unknown Resource 568",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 568",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "569": {
-        "name": "Unknown Resource 569",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 569",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "570": {
-        "name": "Unknown Resource 570",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 570",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "571": {
-        "name": "Unknown Resource 571",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 571",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "572": {
-        "name": "Unknown Resource 572",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 572",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "573": {
-        "name": "Unknown Resource 573",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 573",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "574": {
-        "name": "Unknown Resource 574",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 574",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "575": {
-        "name": "Unknown Resource 575",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 575",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "576": {
-        "name": "Unknown Resource 576",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 576",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "577": {
-        "name": "Unknown Resource 577",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 577",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "578": {
-        "name": "Unknown Resource 578",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 578",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "579": {
-        "name": "Unknown Resource 579",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 579",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "580": {
-        "name": "Unknown Resource 580",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 580",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "581": {
-        "name": "Unknown Resource 581",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 581",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
      "582": {
-        "name": "Unknown Resource 582",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 582",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "583": {
-        "name": "Unknown Resource 583",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 583",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "584": {
-        "name": "Unknown Resource 584",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 584",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "585": {
-        "name": "Unknown Resource 585",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 585",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "586": {
-        "name": "Unknown Resource 586",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 586",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "587": {
-        "name": "Unknown Resource 587",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 587",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "588": {
-        "name": "Unknown Resource 588",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 588",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "589": {
-        "name": "Unknown Resource 589",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 589",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "590": {
-        "name": "Unknown Resource 590",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 590",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "591": {
-        "name": "Unknown Resource 591",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 591",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
      "592": {
-        "name": "Unknown Resource 592",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 592",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "593": {
-        "name": "Unknown Resource 593",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 593",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "594": {
-        "name": "Unknown Resource 594",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 594",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "595": {
-        "name": "Unknown Resource 595",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 595",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "596": {
-        "name": "Unknown Resource 596",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 596",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "597": {
-        "name": "Unknown Resource 597",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 597",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "598": {
-        "name": "Unknown Resource 598",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 598",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "599": {
-        "name": "Unknown Resource 599",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 599",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "600": {
-        "name": "Unknown Resource 600",
-        "desc": "Unknown... What does this resource do?",
+        "name": "Unused Resource 600",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     }
