@@ -53,8 +53,8 @@
         "note": ""
     },
     "8": {
-        "name": "Unused Resource 008",
-        "desc": "Seems unused but `Sun Ce` units `Convert` task has reference to it in the `Unused Resource` field. Maybe by mistake?",
+        "name": "Enable Sun Ce Building Conversion",
+        "desc": "Enables `Sun Ce` to convert buildings",
         "defaults": {},
         "note": ""
     },

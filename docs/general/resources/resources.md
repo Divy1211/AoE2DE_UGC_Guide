@@ -63,11 +63,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Number of relics held
 
-## 8. Unused Resource 008
+## 8. Enable Sun Ce Building Conversion
 
 - ID: 8
 
-- Purpose: Seems unused but `Sun Ce` units `Convert` task has reference to it in the `Unused Resource` field. Maybe by mistake?
+- Purpose: Enables `Sun Ce` to convert buildings
 
 ## 9. Trade Goods
 
