@@ -417,7 +417,7 @@
     },
     "60": {
         "name": "Unused Resource 060",
-        "desc": "Unused but effect with id 18 sets it to 1",
+        "desc": "Unused but not used effect with id 18 sets it to 1",
         "defaults": {},
         "note": ""
     },
