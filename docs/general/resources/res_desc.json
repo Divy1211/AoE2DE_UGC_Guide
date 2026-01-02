@@ -201,18 +201,14 @@
     },
     "30": {
         "name": "Unused Resource 030",
-        "desc": "Unused but civs start with 500 at the start of the game",
-        "defaults": {
-            "500": "Default"
-        },
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
         "note": ""
     },
     "31": {
         "name": "Unused Resource 031",
-        "desc": "Unused but civs start with -1 at the start of the game",
-        "defaults": {
-            "-1": "Default"
-        },
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
         "note": ""
     },
     "32": {
@@ -229,20 +225,14 @@
     },
     "34": {
         "name": "Unused Resource 34",
-        "desc": "Unused, but `Aztecs` start with 2",
-        "defaults": {
-            "0": "Default",
-            "2": "Aztecs"
-        },
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
         "note": ""
     },
     "35": {
         "name": "Unused Resource 35",
-        "desc": "Unused, but `Macedonians`, `Puru` and `Thracians` start with 1.6",
-        "defaults": {
-            "0": "Default",
-            "1.6": "`Macedonians`, `Puru` and `Thracians`"
-        },
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
         "note": ""
     },
     "36": {
@@ -413,15 +403,13 @@
     },
     "59": {
         "name": "Unused Resource 059",
-        "desc": "Unused but civs start with 1 at the start of the game. Not used effect with id 25 also sets it to 1",
-        "defaults": {
-            "1": "Default"
-        },
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
         "note": ""
     },
     "60": {
         "name": "Unused Resource 060",
-        "desc": "Unused but not used effect with id 18 sets it to 1",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
         "defaults": {},
         "note": ""
     },
@@ -457,10 +445,8 @@
     },
     "66": {
         "name": "Unused Resource 066",
-        "desc": "Unused but not used effect with id 86 and `Dark Age` also sets it to 1",
-        "defaults": {
-            "1": "Default"
-        },
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
         "note": ""
     },
     "67": {
@@ -1349,16 +1335,20 @@
         "note": ""
     },
     "203": {
-        "name": "Unused Resource 203",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Reveal Map",
+        "desc": "Controls the map visibility for a player.",
+        "defaults": {
+            "0": " Normal",
+            "1": " Explored",
+            "2": " All Visible"
+        },
         "note": ""
     },
     "204": {
-        "name": "Unused Resource 204",
-        "desc": "Unused",
+        "name": "Reveal Unit on Map",
+        "desc": "Controls the visibility of other players' units for a player",
         "defaults": {},
-        "note": ""
+        "note": "Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently"
     },
     "205": {
         "name": "Feitoria Food Productivity",

@@ -230,21 +230,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 30
 
-- Purpose: Unused but civs start with 500 at the start of the game
-
-- Default Values:
-
-    - 500: Default
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 31. Unused Resource 031
 
 - ID: 31
 
-- Purpose: Unused but civs start with -1 at the start of the game
-
-- Default Values:
-
-    - -1: Default
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 32. Bonus Population Cap
 
@@ -264,23 +256,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 34
 
-- Purpose: Unused, but `Aztecs` start with 2
-
-- Default Values:
-
-    - 0: Default
-    - 2: Aztecs
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 35. Unused Resource 35
 
 - ID: 35
 
-- Purpose: Unused, but `Macedonians`, `Puru` and `Thracians` start with 1.6
-
-- Default Values:
-
-    - 0: Default
-    - 1.6: `Macedonians`, `Puru` and `Thracians`
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 36. Farm Food Amount
 
@@ -480,17 +462,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 59
 
-- Purpose: Unused but civs start with 1 at the start of the game. Not used effect with id 25 also sets it to 1
-
-- Default Values:
-
-    - 1: Default
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 60. Unused Resource 060
 
 - ID: 60
 
-- Purpose: Unused but not used effect with id 18 sets it to 1
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 61. Unused Resource 061
 
@@ -526,11 +504,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 66
 
-- Purpose: Unused but not used effect with id 86 and `Dark Age` also sets it to 1
-
-- Default Values:
-
-    - 1: Default
+- Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
 ## 67. Can Convert
 
@@ -1511,17 +1485,25 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 203. Unused Resource 203
+## 203. Reveal Map
 
 - ID: 203
 
-- Purpose: Unused
+- Purpose: Controls the map visibility for a player.
 
-## 204. Unused Resource 204
+- Default Values:
+
+    - 0:  Normal
+    - 1:  Explored
+    - 2:  All Visible
+
+## 204. Reveal Unit on Map
 
 - ID: 204
 
-- Purpose: Unused
+- Purpose: Controls the visibility of other players' units for a player
+
+- Note: Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently
 
 ## 205. Feitoria Food Productivity
 
