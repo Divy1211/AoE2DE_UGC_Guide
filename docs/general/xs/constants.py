@@ -21,6 +21,10 @@ def to_title(string):
     string = string.replace("TaskType", "")
     string = string.replace("TechState", "")
     string = string.replace("ObjectType", "")
+    string = string.replace("PlayerType", "")
+    string = string.replace("Diplomacy", "")
+    string = string.replace("ColorMood", "")
+    string = string.replace("Difficulty", "")
     i = 0
     while(i < len(string)):
         if string[i].isupper():

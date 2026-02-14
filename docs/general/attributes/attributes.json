@@ -1090,24 +1090,80 @@
     },
     "154": {
         "name": "Damage Graphics Entry Mod",
-        "desc": "TODO",
-        "notes": [],
+        "desc": "Determines the index at which damage graphic/damage graphic percent/damage graphic apply mode values are changed via effects in XS.",
+        "notes": [
+            "- Multiply by N to insert a new entry at index N, and then set entry mod to N",
+            "- Multiply by -(N+1) to delete index N, and then set entry mod to N",
+            "- Multiply with 255 (32767 also works) to append an entry at the end, and set the entry mod to the last index",
+            "- Multiply with -255 (-32768 also works) to delete the index at the end, and set entry mod to the new last index",
+            "- Note that inserting a new entry copies the existing last entry in the list as the default"
+        ],
         "flags": {}
     },
     "155": {
         "name": "Damage Graphics Total Num",
-        "desc": "TODO",
+        "desc": "The length of the damage sprites list. Can be set to shrink/extend the list (duplicates the last entry when extending).",
         "notes": [],
         "flags": {}
     },
     "156": {
         "name": "Damage Graphic Percent",
-        "desc": "TODO",
+        "desc": "The damage percent at which this sprite starts to be applied. This sprite remains active until the damage percent of the next damage sprite entry",
         "notes": [],
         "flags": {}
     },
     "157": {
         "name": "Damage Graphic Apply Mode",
+        "desc": "The apply mode for this damage sprite.",
+        "notes": [
+            "- 0: Overlay flames on building",
+            "- 1: Overlay randomly",
+            "- 2: Replace (walls)"
+        ],
+        "flags": {}
+    },
+    "158": {
+        "name": "Train Locations Entry Mod",
+        "desc": "Determines the index at which train location/train button/train time/hotkey values are modified via effects in XS.",
+        "notes": [
+            "- Multiply by N to insert a new entry at index N, and then set entry mod to N",
+            "- Multiply by -(N+1) to delete index N, and then set entry mod to N",
+            "- Multiply with 32767 to append an entry at the end, and set the entry mod to the last index",
+            "- Multiply with -32768 to delete the index at the end, and set entry mod to the new last index",
+            "- Note that inserting a new entry copies the existing last entry in the list as the default"
+        ],
+        "flags": {}
+    },
+    "159": {
+        "name": "Train Locations Total Num",
+        "desc": "The length of the train locations list. Can be set to shrink/extend the list (duplicates the last entry when extending).",
+        "notes": [],
+        "flags": {}
+    },
+    "160": {
+        "name": "Add Armor Type",
+        "desc": "Setting this creates a new armor class in the targeted object/unit",
+        "notes": [
+            "Note: You still need to set the value of the class using the regular damage class modification effect."
+        ],
+        "flags": {}
+    },
+    "161": {
+        "name": "Add Attack Type",
+        "desc": "Setting this creates a new attack class in the targeted object/unit",
+        "notes": [
+            "Note: You still need to set the value of the class using the regular damage class modification effect."
+        ],
+        "flags": {}
+    },
+    "162": {
+        "name": "Charge Target",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "163": {
+        "name": "Size Class",
         "desc": "TODO",
         "notes": [],
         "flags": {}

@@ -450,107 +450,155 @@ Value: `#!xs int 53`
 
 This is the civilization ID of Khitans
 
-### 5.55. cAoeEgyptians
+### 5.55. cMacedonians
+
+Value: `#!xs int 54`
+
+This is the civilization ID of Macedonians
+
+### 5.56. cThracians
+
+Value: `#!xs int 55`
+
+This is the civilization ID of Thracians
+
+### 5.57. cPuru
+
+Value: `#!xs int 56`
+
+This is the civilization ID of Puru
+
+### 5.58. cMuisca
+
+Value: `#!xs int 57`
+
+This is the civilization ID of Muisca
+
+### 5.59. cMapuche
+
+Value: `#!xs int 58`
+
+This is the civilization ID of Mapuche
+
+### 5.60. cTupi
+
+Value: `#!xs int 59`
+
+This is the civilization ID of Tupi
+
+### 5.61. cNumCivs
+
+Value: `#!xs int 60`
+
+The number of civilizations for AoE2
+
+### 5.62. cAoeEgyptians
 
 Value: `#!xs int 1`
 
 This is the civilization ID of Aoe Egyptians
 
-### 5.56. cAoeGreeks
+### 5.63. cAoeGreeks
 
 Value: `#!xs int 2`
 
 This is the civilization ID of Aoe Greeks
 
-### 5.57. cAoeBabylonians
+### 5.64. cAoeBabylonians
 
 Value: `#!xs int 3`
 
 This is the civilization ID of Aoe Babylonians
 
-### 5.58. cAoeAssyrians
+### 5.65. cAoeAssyrians
 
 Value: `#!xs int 4`
 
 This is the civilization ID of Aoe Assyrians
 
-### 5.59. cAoeMinoans
+### 5.66. cAoeMinoans
 
 Value: `#!xs int 5`
 
 This is the civilization ID of Aoe Minoans
 
-### 5.60. cAoeHittites
+### 5.67. cAoeHittites
 
 Value: `#!xs int 6`
 
 This is the civilization ID of Aoe Hittites
 
-### 5.61. cAoePhoenicians
+### 5.68. cAoePhoenicians
 
 Value: `#!xs int 7`
 
 This is the civilization ID of Aoe Phoenicians
 
-### 5.62. cAoeSumerians
+### 5.69. cAoeSumerians
 
 Value: `#!xs int 8`
 
 This is the civilization ID of Aoe Sumerians
 
-### 5.63. cAoePersians
+### 5.70. cAoePersians
 
 Value: `#!xs int 9`
 
 This is the civilization ID of Aoe Persians
 
-### 5.64. cAoeShang
+### 5.71. cAoeShang
 
 Value: `#!xs int 10`
 
 This is the civilization ID of Aoe Shang
 
-### 5.65. cAoeYamato
+### 5.72. cAoeYamato
 
 Value: `#!xs int 11`
 
 This is the civilization ID of Aoe Yamato
 
-### 5.66. cAoeChoson
+### 5.73. cAoeChoson
 
 Value: `#!xs int 12`
 
 This is the civilization ID of Aoe Choson
 
-### 5.67. cAoeRomans
+### 5.74. cAoeRomans
 
 Value: `#!xs int 13`
 
 This is the civilization ID of Aoe Romans
 
-### 5.68. cAoeCarthaginians
+### 5.75. cAoeCarthaginians
 
 Value: `#!xs int 14`
 
 This is the civilization ID of Aoe Carthaginians
 
-### 5.69. cAoePalmyrans
+### 5.76. cAoePalmyrans
 
 Value: `#!xs int 15`
 
 This is the civilization ID of Aoe Palmyrans
 
-### 5.70. cAoeMacedonians
+### 5.77. cAoeMacedonians
 
 Value: `#!xs int 16`
 
 This is the civilization ID of Aoe Macedonians
 
-### 5.71. cAoeLacViet
+### 5.78. cAoeLacViet
 
 Value: `#!xs int 17`
 
 This is the civilization ID of Aoe Lac Viet
+
+### 5.79. cNumAoeCivs
+
+Value: `#!xs int 18`
+
+The number of civilizations for RoR
 
 ## 6. EffectAmount Effect Type
 
@@ -756,7 +804,67 @@ Example:
 
 This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
-### 6.11. cSetTechCost
+### 6.11. cSetUnitAttribute
+
+Value: `#!xs int 10`
+
+This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function
+
+Syntax:
+
+```xs
+ xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)
+```
+
+Example:
+
+```xs
+ xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)
+```
+
+This sets unit 0's HP to 40. This is the same as modify object attribute in the editor
+
+### 6.12. cAddUnitAttribute
+
+Value: `#!xs int 11`
+
+This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function
+
+Syntax:
+
+```xs
+ xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)
+```
+
+Example:
+
+```xs
+ xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)
+```
+
+This adds 40 to unit 0's HP. This is the same as modify object attribute in the editor
+
+### 6.13. cMulUnitAttribute
+
+Value: `#!xs int 12`
+
+This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function
+
+Syntax:
+
+```xs
+ xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)
+```
+
+Example:
+
+```xs
+ xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)
+```
+
+This multiplies unit 0's HP by 40. This is the same as modify object attribute in the editor
+
+### 6.14. cSetTechCost
 
 Value: `#!xs int 100`
 
@@ -776,7 +884,7 @@ Example:
 
 This sets the food cost of tech 22 (loom) to 10 (the value)
 
-### 6.12. cAddTechCost
+### 6.15. cAddTechCost
 
 Value: `#!xs int 101`
 
@@ -796,7 +904,7 @@ Example:
 
 This adds 10 (the) to the current food cost of tech 22 (loom)
 
-### 6.13. cDisableTech
+### 6.16. cDisableTech
 
 Value: `#!xs int 102`
 
@@ -816,7 +924,7 @@ Example:
 
 This disables the tech 22 (loom)
 
-### 6.14. cModTechTime
+### 6.17. cModTechTime
 
 Value: `#!xs int 103`
 
@@ -836,7 +944,7 @@ Example:
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, `cAttributeAdd` may be used to add to the current research time of the technology
 
-### 6.15. cGaiaSetAttribute
+### 6.18. cGaiaSetAttribute
 
 Value: `#!xs int -1`
 
@@ -856,7 +964,7 @@ Example:
 
 This sets the attribute 0 (HP) of unit 74 (militia) to 100 (the value)
 
-### 6.16. cGaiaModResource
+### 6.19. cGaiaModResource
 
 Value: `#!xs int -2`
 
@@ -876,7 +984,7 @@ Example:
 
 This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100
 
-### 6.17. cGaiaEnableObject
+### 6.20. cGaiaEnableObject
 
 Value: `#!xs int -3`
 
@@ -896,7 +1004,7 @@ Example:
 
 This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be used to enable an object instead
 
-### 6.18. cGaiaUpgradeUnit
+### 6.21. cGaiaUpgradeUnit
 
 Value: `#!xs int -4`
 
@@ -916,7 +1024,7 @@ Example:
 
 This replaces all units 74 (militia) with 75 (man at arms) on the map and also disables unit 74 and enables unit 75
 
-### 6.19. cGaiaAddAttribute
+### 6.22. cGaiaAddAttribute
 
 Value: `#!xs int -5`
 
@@ -936,7 +1044,7 @@ Example:
 
 This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
-### 6.20. cGaiaMulAttribute
+### 6.23. cGaiaMulAttribute
 
 Value: `#!xs int -6`
 
@@ -956,7 +1064,7 @@ Example:
 
 This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
-### 6.21. cGaiaMulResource
+### 6.24. cGaiaMulResource
 
 Value: `#!xs int -7`
 
@@ -976,7 +1084,7 @@ Example:
 
 This multiplies the food amount by 10 (the value)
 
-### 6.22. cGaiaSpawnUnit
+### 6.25. cGaiaSpawnUnit
 
 Value: `#!xs int -8`
 
@@ -998,7 +1106,7 @@ Example:
 
 This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2 town centres. Note that setting the `cAttributeCap` resource to a non 0 value is required for using this effect. If you prefer spawning the units garrisoned set resource `cAttributeSpawnStayInside` to 1.
 
-### 6.23. cGaiaModifyTech
+### 6.26. cGaiaModifyTech
 
 Value: `#!xs int -9`
 
@@ -1018,7 +1126,7 @@ Example:
 
 This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
 
-### 6.24. cGaiaSetPlayerData
+### 6.27. cGaiaSetPlayerData
 
 Value: `#!xs int -10`
 
@@ -1038,7 +1146,7 @@ Example:
 
 This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
-### 6.25. cGaiaSetTechCost
+### 6.28. cGaiaSetTechCost
 
 Value: `#!xs int -101`
 
@@ -1058,7 +1166,7 @@ Example:
 
 This sets the food cost of tech 22 (loom) to 10 (the value)
 
-### 6.26. cGaiaAddTechCost
+### 6.29. cGaiaAddTechCost
 
 Value: `#!xs int -102`
 
@@ -1078,7 +1186,7 @@ Example:
 
 This adds 10 (the) to the current food cost of tech 22 (loom)
 
-### 6.27. cGaiaDisableTech
+### 6.30. cGaiaDisableTech
 
 Value: `#!xs int -103`
 
@@ -1098,7 +1206,7 @@ Example:
 
 This disables the tech 22 (loom)
 
-### 6.28. cGaiaModTechTime
+### 6.31. cGaiaModTechTime
 
 Value: `#!xs int -104`
 
@@ -2198,6 +2306,42 @@ Value: `#!xs int 157`
 
 This is the attribute [Damage Graphic Apply Mode](./../../attributes/attributes/#157-damage-graphic-apply-mode).
 
+### 9.148. cTrainLocationsEntryMod
+
+Value: `#!xs int 158`
+
+This is the attribute [Train Locations Entry Mod](./../../attributes/attributes/#158-train-locations-entry-mod).
+
+### 9.149. cTrainLocationsTotalNum
+
+Value: `#!xs int 159`
+
+This is the attribute [Train Locations Total Num](./../../attributes/attributes/#159-train-locations-total-num).
+
+### 9.150. cAddArmorType
+
+Value: `#!xs int 160`
+
+This is the attribute [Add Armor Type](./../../attributes/attributes/#160-add-armor-type).
+
+### 9.151. cAddAttackType
+
+Value: `#!xs int 161`
+
+This is the attribute [Add Attack Type](./../../attributes/attributes/#161-add-attack-type).
+
+### 9.152. cChargeTarget
+
+Value: `#!xs int 162`
+
+This is the attribute [Charge Target](./../../attributes/attributes/#162-charge-target).
+
+### 9.153. cSizeClass
+
+Value: `#!xs int 163`
+
+This is the attribute [Size Class](./../../attributes/attributes/#163-size-class).
+
 ## 10. EffectAmount Object Class
 
 ### 10.1. cArcherClass
@@ -2583,6 +2727,12 @@ This is the ID used to target the Gold Fish Class
 Value: `#!xs int 964`
 
 This is the ID used to target the Land Mine Class
+
+### 10.65. cSentinelEndClass
+
+Value: `#!xs int 965`
+
+This marks the end of the unit class list
 
 ## 11. Resource
 
@@ -3324,901 +3474,925 @@ Value: `#!xs int 197`
 
 ID of the player resource Spies Discount. Check [here](../../resources/resources/#197-spies-discount "Jump to: Game Mecahnicsc > Resources > #197-spies-discount") for more info about what this resource does.
 
-### 11.124. cAttributeTemporaryMapReveal
+### 11.124. cAttributeFeitoriaFoodProductivity
+
+Value: `#!xs int 205`
+
+ID of the player resource Feitoria Food Productivity. Check [here](../../resources/resources/#205-feitoria-food-productivity "Jump to: Game Mecahnicsc > Resources > #205-feitoria-food-productivity") for more info about what this resource does.
+
+### 11.125. cAttributeFeitoriaWoodProductivity
+
+Value: `#!xs int 206`
+
+ID of the player resource Feitoria Wood Productivity. Check [here](../../resources/resources/#206-feitoria-wood-productivity "Jump to: Game Mecahnicsc > Resources > #206-feitoria-wood-productivity") for more info about what this resource does.
+
+### 11.126. cAttributeFeitoriaStoneProductivity
+
+Value: `#!xs int 207`
+
+ID of the player resource Feitoria Stone Productivity. Check [here](../../resources/resources/#207-feitoria-stone-productivity "Jump to: Game Mecahnicsc > Resources > #207-feitoria-stone-productivity") for more info about what this resource does.
+
+### 11.127. cAttributeFeitoriaGoldProductivity
+
+Value: `#!xs int 208`
+
+ID of the player resource Feitoria Gold Productivity. Check [here](../../resources/resources/#208-feitoria-gold-productivity "Jump to: Game Mecahnicsc > Resources > #208-feitoria-gold-productivity") for more info about what this resource does.
+
+### 11.128. cAttributeTemporaryMapReveal
 
 Value: `#!xs int 209`
 
 ID of the player resource Temporary Map Reveal. Check [here](../../resources/resources/#209-reveal-enemy-town-centers "Jump to: Game Mecahnicsc > Resources > #209-reveal-enemy-town-centers") for more info about what this resource does.
 
-### 11.125. cAttributeRevealInitialType
+### 11.129. cAttributeRevealInitialType
 
 Value: `#!xs int 210`
 
 ID of the player resource Reveal Initial Type. Check [here](../../resources/resources/#210-relics-visible-on-map "Jump to: Game Mecahnicsc > Resources > #210-relics-visible-on-map") for more info about what this resource does.
 
-### 11.126. cAttributeElevationBonusHigher
+### 11.130. cAttributeElevationBonusHigher
 
 Value: `#!xs int 211`
 
 ID of the player resource Elevation Bonus Higher. Check [here](../../resources/resources/#211-elevation-higher-bonus "Jump to: Game Mecahnicsc > Resources > #211-elevation-higher-bonus") for more info about what this resource does.
 
-### 11.127. cAttributeElevationBonusLower
+### 11.131. cAttributeElevationBonusLower
 
 Value: `#!xs int 212`
 
 ID of the player resource Elevation Bonus Lower. Check [here](../../resources/resources/#212-elevation-lower-bonus "Jump to: Game Mecahnicsc > Resources > #212-elevation-lower-bonus") for more info about what this resource does.
 
-### 11.128. cAttributeTriggerSharedLOS
+### 11.132. cAttributeTriggerSharedLOS
 
 Value: `#!xs int 217`
 
 ID of the player resource Trigger Shared L O S. Check [here](../../resources/resources/#217-shared-line-of-sight "Jump to: Game Mecahnicsc > Resources > #217-shared-line-of-sight") for more info about what this resource does.
 
-### 11.129. cAttributeFeudalTownCenterLimit
+### 11.133. cAttributeFeudalTownCenterLimit
 
 Value: `#!xs int 218`
 
 ID of the player resource Feudal Town Center Limit. Check [here](../../resources/resources/#218-early-town-center-limit "Jump to: Game Mecahnicsc > Resources > #218-early-town-center-limit") for more info about what this resource does.
 
-### 11.130. cAttributeFishingProductivity
+### 11.134. cAttributeFishingProductivity
 
 Value: `#!xs int 219`
 
 ID of the player resource Fishing Productivity. Check [here](../../resources/resources/#219-fishing-productivity "Jump to: Game Mecahnicsc > Resources > #219-fishing-productivity") for more info about what this resource does.
 
-### 11.131. cAttributeUnused220
+### 11.135. cAttributeUnused220
 
 Value: `#!xs int 220`
 
 ID of the player resource Unused220. Check [here](../../resources/resources/#220-unused-resource-220 "Jump to: Game Mecahnicsc > Resources > #220-unused-resource-220") for more info about what this resource does.
 
-### 11.132. cAttributeMonumentFoodTrickle
+### 11.136. cAttributeMonumentFoodTrickle
 
 Value: `#!xs int 221`
 
 ID of the player resource Monument Food Trickle. Check [here](../../resources/resources/#221-monument-food-productivity "Jump to: Game Mecahnicsc > Resources > #221-monument-food-productivity") for more info about what this resource does.
 
-### 11.133. cAttributeMonumentWoodTrickle
+### 11.137. cAttributeMonumentWoodTrickle
 
 Value: `#!xs int 222`
 
 ID of the player resource Monument Wood Trickle. Check [here](../../resources/resources/#222-monument-wood-productivity "Jump to: Game Mecahnicsc > Resources > #222-monument-wood-productivity") for more info about what this resource does.
 
-### 11.134. cAttributeMonumentStoneTrickle
+### 11.138. cAttributeMonumentStoneTrickle
 
 Value: `#!xs int 223`
 
 ID of the player resource Monument Stone Trickle. Check [here](../../resources/resources/#223-monument-stone-productivity "Jump to: Game Mecahnicsc > Resources > #223-monument-stone-productivity") for more info about what this resource does.
 
-### 11.135. cAttributeMonumentGoldTrickle
+### 11.139. cAttributeMonumentGoldTrickle
 
 Value: `#!xs int 224`
 
 ID of the player resource Monument Gold Trickle. Check [here](../../resources/resources/#224-monument-gold-productivity "Jump to: Game Mecahnicsc > Resources > #224-monument-gold-productivity") for more info about what this resource does.
 
-### 11.136. cAttributeRelicFoodRate
+### 11.140. cAttributeRelicFoodRate
 
 Value: `#!xs int 225`
 
 ID of the player resource Relic Food Rate. Check [here](../../resources/resources/#225-relic-food-production-rate "Jump to: Game Mecahnicsc > Resources > #225-relic-food-production-rate") for more info about what this resource does.
 
-### 11.137. cAttributeVillagersKilledByGaia
+### 11.141. cAttributeVillagersKilledByGaia
 
 Value: `#!xs int 226`
 
 ID of the player resource Villagers Killed By Gaia. Check [here](../../resources/resources/#226-villagers-killed-by-gaia "Jump to: Game Mecahnicsc > Resources > #226-villagers-killed-by-gaia") for more info about what this resource does.
 
-### 11.138. cAttributeVillgaersKilledByAnimal
+### 11.142. cAttributeVillgaersKilledByAnimal
 
 Value: `#!xs int 227`
 
 ID of the player resource Villgaers Killed By Animal. Check [here](../../resources/resources/#227-villagers-killed-by-animals "Jump to: Game Mecahnicsc > Resources > #227-villagers-killed-by-animals") for more info about what this resource does.
 
-### 11.139. cAttributeVillagersKilledByAIPlayer
+### 11.143. cAttributeVillagersKilledByAIPlayer
 
 Value: `#!xs int 228`
 
 ID of the player resource Villagers Killed By A I Player. Check [here](../../resources/resources/#228-villagers-killed-by-ai-player "Jump to: Game Mecahnicsc > Resources > #228-villagers-killed-by-ai-player") for more info about what this resource does.
 
-### 11.140. cAttributeVillagersKilledByHumanPlayer
+### 11.144. cAttributeVillagersKilledByHumanPlayer
 
 Value: `#!xs int 229`
 
 ID of the player resource Villagers Killed By Human Player. Check [here](../../resources/resources/#229-villagers-killed-by-human-player "Jump to: Game Mecahnicsc > Resources > #229-villagers-killed-by-human-player") for more info about what this resource does.
 
-### 11.141. cAttributeFoodGeneration
+### 11.145. cAttributeFoodGeneration
 
 Value: `#!xs int 230`
 
 ID of the player resource Food Generation. Check [here](../../resources/resources/#230-food-generation-rate "Jump to: Game Mecahnicsc > Resources > #230-food-generation-rate") for more info about what this resource does.
 
-### 11.142. cAttributeWoodGeneration
+### 11.146. cAttributeWoodGeneration
 
 Value: `#!xs int 231`
 
 ID of the player resource Wood Generation. Check [here](../../resources/resources/#231-wood-generation-rate "Jump to: Game Mecahnicsc > Resources > #231-wood-generation-rate") for more info about what this resource does.
 
-### 11.143. cAttributeStoneGeneration
+### 11.147. cAttributeStoneGeneration
 
 Value: `#!xs int 232`
 
 ID of the player resource Stone Generation. Check [here](../../resources/resources/#232-stone-generation-rate "Jump to: Game Mecahnicsc > Resources > #232-stone-generation-rate") for more info about what this resource does.
 
-### 11.144. cAttributeGoldGeneration
+### 11.148. cAttributeGoldGeneration
 
 Value: `#!xs int 233`
 
 ID of the player resource Gold Generation. Check [here](../../resources/resources/#233-gold-generation-rate "Jump to: Game Mecahnicsc > Resources > #233-gold-generation-rate") for more info about what this resource does.
 
-### 11.145. cAttributeSpawnCap
+### 11.149. cAttributeSpawnCap
 
 Value: `#!xs int 234`
 
 ID of the player resource Spawn Cap. Check [here](../../resources/resources/#234-spawn-limit "Jump to: Game Mecahnicsc > Resources > #234-spawn-limit") for more info about what this resource does.
 
-### 11.146. cAttributeFlemishMilitiaPop
+### 11.150. cAttributeFlemishMilitiaPop
 
 Value: `#!xs int 235`
 
 ID of the player resource Flemish Militia Pop. Check [here](../../resources/resources/#235-flemish-militia-population "Jump to: Game Mecahnicsc > Resources > #235-flemish-militia-population") for more info about what this resource does.
 
-### 11.147. cAttributeGoldFarmingProductivity
+### 11.151. cAttributeGoldFarmingProductivity
 
 Value: `#!xs int 236`
 
 ID of the player resource Gold Farming Productivity. Check [here](../../resources/resources/#236-farming-gold-productivity "Jump to: Game Mecahnicsc > Resources > #236-farming-gold-productivity") for more info about what this resource does.
 
-### 11.148. cAttributeFolwarkCollectionAmount
+### 11.152. cAttributeFolwarkCollectionAmount
 
 Value: `#!xs int 237`
 
 ID of the player resource Folwark Collection Amount. Check [here](../../resources/resources/#237-folwark-collection-amount "Jump to: Game Mecahnicsc > Resources > #237-folwark-collection-amount") for more info about what this resource does.
 
-### 11.149. cAttributeFolwarkCollectionType
+### 11.153. cAttributeFolwarkCollectionType
 
 Value: `#!xs int 238`
 
 ID of the player resource Folwark Collection Type. Check [here](../../resources/resources/#238-folwark-attribute-type "Jump to: Game Mecahnicsc > Resources > #238-folwark-attribute-type") for more info about what this resource does.
 
-### 11.150. cAttributeBuildingId
+### 11.154. cAttributeBuildingId
 
 Value: `#!xs int 239`
 
 ID of the player resource Building Id. Check [here](../../resources/resources/#239-folwark-building-type "Jump to: Game Mecahnicsc > Resources > #239-folwark-building-type") for more info about what this resource does.
 
-### 11.151. cAttributeUnitsConverted
+### 11.155. cAttributeUnitsConverted
 
 Value: `#!xs int 240`
 
 ID of the player resource Units Converted. Check [here](../../resources/resources/#240-units-converted "Jump to: Game Mecahnicsc > Resources > #240-units-converted") for more info about what this resource does.
 
-### 11.152. cAttributeStoneGoldMiningProductivity
+### 11.156. cAttributeStoneGoldMiningProductivity
 
 Value: `#!xs int 241`
 
 ID of the player resource Stone Gold Mining Productivity. Check [here](../../resources/resources/#241-stone-mining-gold-productivity "Jump to: Game Mecahnicsc > Resources > #241-stone-mining-gold-productivity") for more info about what this resource does.
 
-### 11.153. cAttributeWorkshopFoodTrickle
+### 11.157. cAttributeWorkshopFoodTrickle
 
 Value: `#!xs int 242`
 
 ID of the player resource Workshop Food Trickle. Check [here](../../resources/resources/#242-trade-workshop-food-productivity "Jump to: Game Mecahnicsc > Resources > #242-trade-workshop-food-productivity") for more info about what this resource does.
 
-### 11.154. cAttributeWorkshopWoodTrickle
+### 11.158. cAttributeWorkshopWoodTrickle
 
 Value: `#!xs int 243`
 
 ID of the player resource Workshop Wood Trickle. Check [here](../../resources/resources/#243-trade-workshop-wood-productivity "Jump to: Game Mecahnicsc > Resources > #243-trade-workshop-wood-productivity") for more info about what this resource does.
 
-### 11.155. cAttributeWorkshopStoneTrickle
+### 11.159. cAttributeWorkshopStoneTrickle
 
 Value: `#!xs int 244`
 
 ID of the player resource Workshop Stone Trickle. Check [here](../../resources/resources/#244-trade-workshop-stone-productivity "Jump to: Game Mecahnicsc > Resources > #244-trade-workshop-stone-productivity") for more info about what this resource does.
 
-### 11.156. cAttributeWorkshopGoldTrickle
+### 11.160. cAttributeWorkshopGoldTrickle
 
 Value: `#!xs int 245`
 
 ID of the player resource Workshop Gold Trickle. Check [here](../../resources/resources/#245-trade-workshop-gold-productivity "Jump to: Game Mecahnicsc > Resources > #245-trade-workshop-gold-productivity") for more info about what this resource does.
 
-### 11.157. cAttributeUnitsValueTotal
+### 11.161. cAttributeUnitsValueTotal
 
 Value: `#!xs int 246`
 
 ID of the player resource Units Value Total. Check [here](../../resources/resources/#246-units-value-total "Jump to: Game Mecahnicsc > Resources > #246-units-value-total") for more info about what this resource does.
 
-### 11.158. cAttributeBuildingsValueTotal
+### 11.162. cAttributeBuildingsValueTotal
 
 Value: `#!xs int 247`
 
 ID of the player resource Buildings Value Total. Check [here](../../resources/resources/#247-buildings-value-total "Jump to: Game Mecahnicsc > Resources > #247-buildings-value-total") for more info about what this resource does.
 
-### 11.159. cAttributeVillagersCreatedTotal
+### 11.163. cAttributeVillagersCreatedTotal
 
 Value: `#!xs int 248`
 
 ID of the player resource Villagers Created Total. Check [here](../../resources/resources/#248-villagers-created-total "Jump to: Game Mecahnicsc > Resources > #248-villagers-created-total") for more info about what this resource does.
 
-### 11.160. cAttributeVillagersIdlePeriodsTotal
+### 11.164. cAttributeVillagersIdlePeriodsTotal
 
 Value: `#!xs int 249`
 
 ID of the player resource Villagers Idle Periods Total. Check [here](../../resources/resources/#249-villagers-idle-periods-total "Jump to: Game Mecahnicsc > Resources > #249-villagers-idle-periods-total") for more info about what this resource does.
 
-### 11.161. cAttributeVillagersIdleSecondsTotal
+### 11.165. cAttributeVillagersIdleSecondsTotal
 
 Value: `#!xs int 250`
 
 ID of the player resource Villagers Idle Seconds Total. Check [here](../../resources/resources/#250-villagers-idle-seconds-total "Jump to: Game Mecahnicsc > Resources > #250-villagers-idle-seconds-total") for more info about what this resource does.
 
-### 11.162. cAttributeTradeFoodPercent
+### 11.166. cAttributeTradeFoodPercent
 
 Value: `#!xs int 251`
 
 ID of the player resource Trade Food Percent. Check [here](../../resources/resources/#251-trade-food-percent "Jump to: Game Mecahnicsc > Resources > #251-trade-food-percent") for more info about what this resource does.
 
-### 11.163. cAttributeTradeWoodPercent
+### 11.167. cAttributeTradeWoodPercent
 
 Value: `#!xs int 252`
 
 ID of the player resource Trade Wood Percent. Check [here](../../resources/resources/#252-trade-wood-percent "Jump to: Game Mecahnicsc > Resources > #252-trade-wood-percent") for more info about what this resource does.
 
-### 11.164. cAttributeTradeStonePercent
+### 11.168. cAttributeTradeStonePercent
 
 Value: `#!xs int 253`
 
 ID of the player resource Trade Stone Percent. Check [here](../../resources/resources/#253-trade-stone-percent "Jump to: Game Mecahnicsc > Resources > #253-trade-stone-percent") for more info about what this resource does.
 
-### 11.165. cAttributeLivestockFoodProductivity
+### 11.169. cAttributeLivestockFoodProductivity
 
 Value: `#!xs int 254`
 
 ID of the player resource Livestock Food Productivity. Check [here](../../resources/resources/#254-livestock-food-productivity "Jump to: Game Mecahnicsc > Resources > #254-livestock-food-productivity") for more info about what this resource does.
 
-### 11.166. cAttributeSpeedUpBuildingType
+### 11.170. cAttributeSpeedUpBuildingType
 
 Value: `#!xs int 255`
 
 ID of the player resource Speed Up Building Type. Check [here](../../resources/resources/#255-unused-resource-255 "Jump to: Game Mecahnicsc > Resources > #255-unused-resource-255") for more info about what this resource does.
 
-### 11.167. cAttributeSpeedUpBuildingRange
+### 11.171. cAttributeSpeedUpBuildingRange
 
 Value: `#!xs int 256`
 
 ID of the player resource Speed Up Building Range. Check [here](../../resources/resources/#256-unused-resource-256 "Jump to: Game Mecahnicsc > Resources > #256-unused-resource-256") for more info about what this resource does.
 
-### 11.168. cAttributeSpeedUpPercentage
+### 11.172. cAttributeSpeedUpPercentage
 
 Value: `#!xs int 257`
 
 ID of the player resource Speed Up Percentage. Check [here](../../resources/resources/#257-unused-resource-257 "Jump to: Game Mecahnicsc > Resources > #257-unused-resource-257") for more info about what this resource does.
 
-### 11.169. cAttributeSpeedUpObjectType
+### 11.173. cAttributeSpeedUpObjectType
 
 Value: `#!xs int 258`
 
 ID of the player resource Speed Up. Check [here](../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
 
-### 11.170. cAttributeSpeedUpEffectType
+### 11.174. cAttributeSpeedUpEffectType
 
 Value: `#!xs int 259`
 
 ID of the player resource Speed Up Effect Type. Check [here](../../resources/resources/#259-unused-resource-259 "Jump to: Game Mecahnicsc > Resources > #259-unused-resource-259") for more info about what this resource does.
 
-### 11.171. cAttributeSpeedUpSecondaryEffectType
+### 11.175. cAttributeSpeedUpSecondaryEffectType
 
 Value: `#!xs int 260`
 
 ID of the player resource Speed Up Secondary Effect Type. Check [here](../../resources/resources/#260-unused-resource-260 "Jump to: Game Mecahnicsc > Resources > #260-unused-resource-260") for more info about what this resource does.
 
-### 11.172. cAttributeSpeedUpSecondaryPercentage
+### 11.176. cAttributeSpeedUpSecondaryPercentage
 
 Value: `#!xs int 261`
 
 ID of the player resource Speed Up Secondary Percentage. Check [here](../../resources/resources/#261-unused-resource-261 "Jump to: Game Mecahnicsc > Resources > #261-unused-resource-261") for more info about what this resource does.
 
-### 11.173. cAttributeCivNameOverride
+### 11.177. cAttributeCivNameOverride
 
 Value: `#!xs int 262`
 
 ID of the player resource Civ Name Override. Check [here](../../resources/resources/#262-civilization-name-override "Jump to: Game Mecahnicsc > Resources > #262-civilization-name-override") for more info about what this resource does.
 
-### 11.174. cAttributeStartingScoutID
+### 11.178. cAttributeStartingScoutID
 
 Value: `#!xs int 263`
 
 ID of the player resource Starting Scout I D. Check [here](../../resources/resources/#263-starting-scout-id "Jump to: Game Mecahnicsc > Resources > #263-starting-scout-id") for more info about what this resource does.
 
-### 11.175. cAttributeRelicWoodRate
+### 11.179. cAttributeRelicWoodRate
 
 Value: `#!xs int 264`
 
 ID of the player resource Relic Wood Rate. Check [here](../../resources/resources/#264-relic-wood-production-rate "Jump to: Game Mecahnicsc > Resources > #264-relic-wood-production-rate") for more info about what this resource does.
 
-### 11.176. cAttributeRelicStoneRate
+### 11.180. cAttributeRelicStoneRate
 
 Value: `#!xs int 265`
 
 ID of the player resource Relic Stone Rate. Check [here](../../resources/resources/#265-relic-stone-production-rate "Jump to: Game Mecahnicsc > Resources > #265-relic-stone-production-rate") for more info about what this resource does.
 
-### 11.177. cAttributeChoppingGoldProductivity
+### 11.181. cAttributeChoppingGoldProductivity
 
 Value: `#!xs int 266`
 
 ID of the player resource Chopping Gold Productivity. Check [here](../../resources/resources/#266-chopping-gold-productivity "Jump to: Game Mecahnicsc > Resources > #266-chopping-gold-productivity") for more info about what this resource does.
 
-### 11.178. cAttributeForagingWoodProductivity
+### 11.182. cAttributeForagingWoodProductivity
 
 Value: `#!xs int 267`
 
 ID of the player resource Foraging Wood Productivity. Check [here](../../resources/resources/#267-foraging-wood-productivity "Jump to: Game Mecahnicsc > Resources > #267-foraging-wood-productivity") for more info about what this resource does.
 
-### 11.179. cAttributeHuntingProductivity
+### 11.183. cAttributeHuntingProductivity
 
 Value: `#!xs int 268`
 
 ID of the player resource Hunting Productivity. Check [here](../../resources/resources/#268-hunter-productivity "Jump to: Game Mecahnicsc > Resources > #268-hunter-productivity") for more info about what this resource does.
 
-### 11.180. cAttributeTechnologyRewardEffect
+### 11.184. cAttributeTechnologyRewardEffect
 
 Value: `#!xs int 269`
 
 ID of the player resource Technology Reward Effect. Check [here](../../resources/resources/#269-technology-reward-effect "Jump to: Game Mecahnicsc > Resources > #269-technology-reward-effect") for more info about what this resource does.
 
-### 11.181. cAttributeUnitRepairCost
+### 11.185. cAttributeUnitRepairCost
 
 Value: `#!xs int 270`
 
 ID of the player resource Unit Repair Cost. Check [here](../../resources/resources/#270-unit-repair-cost "Jump to: Game Mecahnicsc > Resources > #270-unit-repair-cost") for more info about what this resource does.
 
-### 11.182. cAttributeBuildingRepairCost
+### 11.186. cAttributeBuildingRepairCost
 
 Value: `#!xs int 271`
 
 ID of the player resource Building Repair Cost. Check [here](../../resources/resources/#271-building-repair-cost "Jump to: Game Mecahnicsc > Resources > #271-building-repair-cost") for more info about what this resource does.
 
-### 11.183. cAttributeElevationDamageHigher
+### 11.187. cAttributeElevationDamageHigher
 
 Value: `#!xs int 272`
 
 ID of the player resource Elevation Damage Higher. Check [here](../../resources/resources/#272-elevation-higher-damage "Jump to: Game Mecahnicsc > Resources > #272-elevation-higher-damage") for more info about what this resource does.
 
-### 11.184. cAttributeElevationDamageLower
+### 11.188. cAttributeElevationDamageLower
 
 Value: `#!xs int 273`
 
 ID of the player resource Elevation Damage Lower. Check [here](../../resources/resources/#273-elevation-lower-damage "Jump to: Game Mecahnicsc > Resources > #273-elevation-lower-damage") for more info about what this resource does.
 
-### 11.185. cAttributeInfantryKillReward
+### 11.189. cAttributeInfantryKillReward
 
 Value: `#!xs int 274`
 
 ID of the player resource Infantry Kill Reward. Check [here](../../resources/resources/#274-infantry-kill-reward "Jump to: Game Mecahnicsc > Resources > #274-infantry-kill-reward") for more info about what this resource does.
 
-### 11.186. cAttributeMilitaryCanConvert
+### 11.190. cAttributeMilitaryCanConvert
 
 Value: `#!xs int 279`
 
 ID of the player resource Military Can Convert. Check [here](../../resources/resources/#279-military-can-convert "Jump to: Game Mecahnicsc > Resources > #279-military-can-convert") for more info about what this resource does.
 
-### 11.187. cAttributeMilitaryConversionRangeAdj
+### 11.191. cAttributeMilitaryConversionRangeAdj
 
 Value: `#!xs int 280`
 
 ID of the player resource Military Conversion Range Adj. Check [here](../../resources/resources/#280-military-convert-range "Jump to: Game Mecahnicsc > Resources > #280-military-convert-range") for more info about what this resource does.
 
-### 11.188. cAttributeMilitaryConversionChance
+### 11.192. cAttributeMilitaryConversionChance
 
 Value: `#!xs int 281`
 
 ID of the player resource Military Conversion Chance. Check [here](../../resources/resources/#281-military-convert-chance "Jump to: Game Mecahnicsc > Resources > #281-military-convert-chance") for more info about what this resource does.
 
-### 11.189. cAttributeMilitaryConversionRechargeRate
+### 11.193. cAttributeMilitaryConversionRechargeRate
 
 Value: `#!xs int 282`
 
 ID of the player resource Military Conversion Recharge Rate. Check [here](../../resources/resources/#282-military-convert-recharge "Jump to: Game Mecahnicsc > Resources > #282-military-convert-recharge") for more info about what this resource does.
 
-### 11.190. cAttributeSpawnStayInside
+### 11.194. cAttributeSpawnStayInside
 
 Value: `#!xs int 283`
 
 ID of the player resource Spawn Stay Inside. Check [here](../../resources/resources/#283-spawn-inside "Jump to: Game Mecahnicsc > Resources > #283-spawn-inside") for more info about what this resource does.
 
-### 11.191. cAttributeCavalryKillReward
+### 11.195. cAttributeCavalryKillReward
 
 Value: `#!xs int 284`
 
 ID of the player resource Cavalry Kill Reward. Check [here](../../resources/resources/#284-cavalry-kill-reward "Jump to: Game Mecahnicsc > Resources > #284-cavalry-kill-reward") for more info about what this resource does.
 
-### 11.192. cAttributeTriggerSharedVisibility
+### 11.196. cAttributeTriggerSharedVisibility
 
 Value: `#!xs int 285`
 
 ID of the player resource Trigger Shared Visibility. Check [here](../../resources/resources/#285-shared-visibility "Jump to: Game Mecahnicsc > Resources > #285-shared-visibility") for more info about what this resource does.
 
-### 11.193. cAttributeTriggerSharedExploration
+### 11.197. cAttributeTriggerSharedExploration
 
 Value: `#!xs int 286`
 
 ID of the player resource Trigger Shared Exploration. Check [here](../../resources/resources/#286-shared-exploration "Jump to: Game Mecahnicsc > Resources > #286-shared-exploration") for more info about what this resource does.
 
-### 11.194. cAttributeMilitaryFoodTrickle
+### 11.198. cAttributeMilitaryFoodTrickle
 
 Value: `#!xs int 287`
 
 ID of the player resource Military Food Trickle. Check [here](../../resources/resources/#287-military-food-productivity "Jump to: Game Mecahnicsc > Resources > #287-military-food-productivity") for more info about what this resource does.
 
-### 11.195. cAttributePastureFoodAmount
+### 11.199. cAttributePastureFoodAmount
 
 Value: `#!xs int 288`
 
 ID of the player resource Pasture Food Amount. Check [here](../../resources/resources/#288-pasture-food-amount "Jump to: Game Mecahnicsc > Resources > #288-pasture-food-amount") for more info about what this resource does.
 
-### 11.196. cAttributePastureAnimalCount
+### 11.200. cAttributePastureAnimalCount
 
 Value: `#!xs int 289`
 
 ID of the player resource Pasture Animal Count. Check [here](../../resources/resources/#289-pasture-animal-count "Jump to: Game Mecahnicsc > Resources > #289-pasture-animal-count") for more info about what this resource does.
 
-### 11.197. cAttributePastureHerderCount
+### 11.201. cAttributePastureHerderCount
 
 Value: `#!xs int 290`
 
 ID of the player resource Pasture Herder Count. Check [here](../../resources/resources/#290-pasture-herder-count "Jump to: Game Mecahnicsc > Resources > #290-pasture-herder-count") for more info about what this resource does.
 
-### 11.198. cAttributeDisableAnimalDecay
+### 11.202. cAttributeDisableAnimalDecay
 
 Value: `#!xs int 292`
 
 ID of the player resource Disable Animal Decay. Check [here](../../resources/resources/#292-animal-decay-prevention "Jump to: Game Mecahnicsc > Resources > #292-animal-decay-prevention") for more info about what this resource does.
 
-### 11.199. cAttributeHerdingFoodProductivity
+### 11.203. cAttributeHerdingFoodProductivity
 
 Value: `#!xs int 293`
 
 ID of the player resource Herding Food Productivity. Check [here](../../resources/resources/#293-herder-food-productivity "Jump to: Game Mecahnicsc > Resources > #293-herder-food-productivity") for more info about what this resource does.
 
-### 11.200. cAttributeShepherdingFoodProductivity
+### 11.204. cAttributeShepherdingFoodProductivity
 
 Value: `#!xs int 294`
 
 ID of the player resource Shepherding Food Productivity. Check [here](../../resources/resources/#294-shepherd-food-productivity "Jump to: Game Mecahnicsc > Resources > #294-shepherd-food-productivity") for more info about what this resource does.
 
-### 11.201. cAttributeGaiaKills
+### 11.205. cAttributeGaiaKills
 
 Value: `#!xs int 300`
 
 ID of the player resource Gaia Kills. Check [here](../../resources/resources/#300-killed-gaia "Jump to: Game Mecahnicsc > Resources > #300-killed-gaia") for more info about what this resource does.
 
-### 11.202. cAttributePlayer1Kills
+### 11.206. cAttributePlayer1Kills
 
 Value: `#!xs int 301`
 
 ID of the player resource Player1 Kills. Check [here](../../resources/resources/#301-killed-p1 "Jump to: Game Mecahnicsc > Resources > #301-killed-p1") for more info about what this resource does.
 
-### 11.203. cAttributePlayer2Kills
+### 11.207. cAttributePlayer2Kills
 
 Value: `#!xs int 302`
 
 ID of the player resource Player2 Kills. Check [here](../../resources/resources/#302-killed-p2 "Jump to: Game Mecahnicsc > Resources > #302-killed-p2") for more info about what this resource does.
 
-### 11.204. cAttributePlayer3Kills
+### 11.208. cAttributePlayer3Kills
 
 Value: `#!xs int 303`
 
 ID of the player resource Player3 Kills. Check [here](../../resources/resources/#303-killed-p3 "Jump to: Game Mecahnicsc > Resources > #303-killed-p3") for more info about what this resource does.
 
-### 11.205. cAttributePlayer4Kills
+### 11.209. cAttributePlayer4Kills
 
 Value: `#!xs int 304`
 
 ID of the player resource Player4 Kills. Check [here](../../resources/resources/#304-killed-p4 "Jump to: Game Mecahnicsc > Resources > #304-killed-p4") for more info about what this resource does.
 
-### 11.206. cAttributePlayer5Kills
+### 11.210. cAttributePlayer5Kills
 
 Value: `#!xs int 305`
 
 ID of the player resource Player5 Kills. Check [here](../../resources/resources/#305-killed-p5 "Jump to: Game Mecahnicsc > Resources > #305-killed-p5") for more info about what this resource does.
 
-### 11.207. cAttributePlayer6Kills
+### 11.211. cAttributePlayer6Kills
 
 Value: `#!xs int 306`
 
 ID of the player resource Player6 Kills. Check [here](../../resources/resources/#306-killed-p6 "Jump to: Game Mecahnicsc > Resources > #306-killed-p6") for more info about what this resource does.
 
-### 11.208. cAttributePlayer7Kills
+### 11.212. cAttributePlayer7Kills
 
 Value: `#!xs int 307`
 
 ID of the player resource Player7 Kills. Check [here](../../resources/resources/#307-killed-p7 "Jump to: Game Mecahnicsc > Resources > #307-killed-p7") for more info about what this resource does.
 
-### 11.209. cAttributePlayer8Kills
+### 11.213. cAttributePlayer8Kills
 
 Value: `#!xs int 308`
 
 ID of the player resource Player8 Kills. Check [here](../../resources/resources/#308-killed-p8 "Jump to: Game Mecahnicsc > Resources > #308-killed-p8") for more info about what this resource does.
 
-### 11.210. cAttributeKillsByGaia
+### 11.214. cAttributeKillsByGaia
 
 Value: `#!xs int 325`
 
 ID of the player resource Kills By Gaia. Check [here](../../resources/resources/#325-kills-by-gaia "Jump to: Game Mecahnicsc > Resources > #325-kills-by-gaia") for more info about what this resource does.
 
-### 11.211. cAttributeKillsByPlayer1
+### 11.215. cAttributeKillsByPlayer1
 
 Value: `#!xs int 326`
 
 ID of the player resource Kills By Player1. Check [here](../../resources/resources/#326-kills-by-p1 "Jump to: Game Mecahnicsc > Resources > #326-kills-by-p1") for more info about what this resource does.
 
-### 11.212. cAttributeKillsByPlayer2
+### 11.216. cAttributeKillsByPlayer2
 
 Value: `#!xs int 327`
 
 ID of the player resource Kills By Player2. Check [here](../../resources/resources/#327-kills-by-p2 "Jump to: Game Mecahnicsc > Resources > #327-kills-by-p2") for more info about what this resource does.
 
-### 11.213. cAttributeKillsByPlayer3
+### 11.217. cAttributeKillsByPlayer3
 
 Value: `#!xs int 328`
 
 ID of the player resource Kills By Player3. Check [here](../../resources/resources/#328-kills-by-p3 "Jump to: Game Mecahnicsc > Resources > #328-kills-by-p3") for more info about what this resource does.
 
-### 11.214. cAttributeKillsByPlayer4
+### 11.218. cAttributeKillsByPlayer4
 
 Value: `#!xs int 329`
 
 ID of the player resource Kills By Player4. Check [here](../../resources/resources/#329-kills-by-p4 "Jump to: Game Mecahnicsc > Resources > #329-kills-by-p4") for more info about what this resource does.
 
-### 11.215. cAttributeKillsByPlayer5
+### 11.219. cAttributeKillsByPlayer5
 
 Value: `#!xs int 330`
 
 ID of the player resource Kills By Player5. Check [here](../../resources/resources/#330-kills-by-p5 "Jump to: Game Mecahnicsc > Resources > #330-kills-by-p5") for more info about what this resource does.
 
-### 11.216. cAttributeKillsByPlayer6
+### 11.220. cAttributeKillsByPlayer6
 
 Value: `#!xs int 331`
 
 ID of the player resource Kills By Player6. Check [here](../../resources/resources/#331-kills-by-p6 "Jump to: Game Mecahnicsc > Resources > #331-kills-by-p6") for more info about what this resource does.
 
-### 11.217. cAttributeKillsByPlayer7
+### 11.221. cAttributeKillsByPlayer7
 
 Value: `#!xs int 332`
 
 ID of the player resource Kills By Player7. Check [here](../../resources/resources/#332-kills-by-p7 "Jump to: Game Mecahnicsc > Resources > #332-kills-by-p7") for more info about what this resource does.
 
-### 11.218. cAttributeKillsByPlayer8
+### 11.222. cAttributeKillsByPlayer8
 
 Value: `#!xs int 333`
 
 ID of the player resource Kills By Player8. Check [here](../../resources/resources/#333-kills-by-p8 "Jump to: Game Mecahnicsc > Resources > #333-kills-by-p8") for more info about what this resource does.
 
-### 11.219. cAttributeGaiaRazings
+### 11.223. cAttributeGaiaRazings
 
 Value: `#!xs int 350`
 
 ID of the player resource Gaia Razings. Check [here](../../resources/resources/#350-gaia-razings "Jump to: Game Mecahnicsc > Resources > #350-gaia-razings") for more info about what this resource does.
 
-### 11.220. cAttributePlayer1Razings
+### 11.224. cAttributePlayer1Razings
 
 Value: `#!xs int 351`
 
 ID of the player resource Player1 Razings. Check [here](../../resources/resources/#351-p1-razings "Jump to: Game Mecahnicsc > Resources > #351-p1-razings") for more info about what this resource does.
 
-### 11.221. cAttributePlayer2Razings
+### 11.225. cAttributePlayer2Razings
 
 Value: `#!xs int 352`
 
 ID of the player resource Player2 Razings. Check [here](../../resources/resources/#352-p2-razings "Jump to: Game Mecahnicsc > Resources > #352-p2-razings") for more info about what this resource does.
 
-### 11.222. cAttributePlayer3Razings
+### 11.226. cAttributePlayer3Razings
 
 Value: `#!xs int 353`
 
 ID of the player resource Player3 Razings. Check [here](../../resources/resources/#353-p3-razings "Jump to: Game Mecahnicsc > Resources > #353-p3-razings") for more info about what this resource does.
 
-### 11.223. cAttributePlayer4Razings
+### 11.227. cAttributePlayer4Razings
 
 Value: `#!xs int 354`
 
 ID of the player resource Player4 Razings. Check [here](../../resources/resources/#354-p4-razings "Jump to: Game Mecahnicsc > Resources > #354-p4-razings") for more info about what this resource does.
 
-### 11.224. cAttributePlayer5Razings
+### 11.228. cAttributePlayer5Razings
 
 Value: `#!xs int 355`
 
 ID of the player resource Player5 Razings. Check [here](../../resources/resources/#355-p5-razings "Jump to: Game Mecahnicsc > Resources > #355-p5-razings") for more info about what this resource does.
 
-### 11.225. cAttributePlayer6Razings
+### 11.229. cAttributePlayer6Razings
 
 Value: `#!xs int 356`
 
 ID of the player resource Player6 Razings. Check [here](../../resources/resources/#356-p6-razings "Jump to: Game Mecahnicsc > Resources > #356-p6-razings") for more info about what this resource does.
 
-### 11.226. cAttributePlayer7Razings
+### 11.230. cAttributePlayer7Razings
 
 Value: `#!xs int 357`
 
 ID of the player resource Player7 Razings. Check [here](../../resources/resources/#357-p7-razings "Jump to: Game Mecahnicsc > Resources > #357-p7-razings") for more info about what this resource does.
 
-### 11.227. cAttributePlayer8Razings
+### 11.231. cAttributePlayer8Razings
 
 Value: `#!xs int 358`
 
 ID of the player resource Player8 Razings. Check [here](../../resources/resources/#358-p8-razings "Jump to: Game Mecahnicsc > Resources > #358-p8-razings") for more info about what this resource does.
 
-### 11.228. cAttributeRazingsByGaia
+### 11.232. cAttributeRazingsByGaia
 
 Value: `#!xs int 375`
 
 ID of the player resource Razings By Gaia. Check [here](../../resources/resources/#375-razings-by-gaia "Jump to: Game Mecahnicsc > Resources > #375-razings-by-gaia") for more info about what this resource does.
 
-### 11.229. cAttributeRazingsByPlayer1
+### 11.233. cAttributeRazingsByPlayer1
 
 Value: `#!xs int 376`
 
 ID of the player resource Razings By Player1. Check [here](../../resources/resources/#376-razings-by-p1 "Jump to: Game Mecahnicsc > Resources > #376-razings-by-p1") for more info about what this resource does.
 
-### 11.230. cAttributeRazingsByPlayer2
+### 11.234. cAttributeRazingsByPlayer2
 
 Value: `#!xs int 377`
 
 ID of the player resource Razings By Player2. Check [here](../../resources/resources/#377-razings-by-p2 "Jump to: Game Mecahnicsc > Resources > #377-razings-by-p2") for more info about what this resource does.
 
-### 11.231. cAttributeRazingsByPlayer3
+### 11.235. cAttributeRazingsByPlayer3
 
 Value: `#!xs int 378`
 
 ID of the player resource Razings By Player3. Check [here](../../resources/resources/#378-razings-by-p3 "Jump to: Game Mecahnicsc > Resources > #378-razings-by-p3") for more info about what this resource does.
 
-### 11.232. cAttributeRazingsByPlayer4
+### 11.236. cAttributeRazingsByPlayer4
 
 Value: `#!xs int 379`
 
 ID of the player resource Razings By Player4. Check [here](../../resources/resources/#379-razings-by-p4 "Jump to: Game Mecahnicsc > Resources > #379-razings-by-p4") for more info about what this resource does.
 
-### 11.233. cAttributeRazingsByPlayer5
+### 11.237. cAttributeRazingsByPlayer5
 
 Value: `#!xs int 380`
 
 ID of the player resource Razings By Player5. Check [here](../../resources/resources/#380-razings-by-p5 "Jump to: Game Mecahnicsc > Resources > #380-razings-by-p5") for more info about what this resource does.
 
-### 11.234. cAttributeRazingsByPlayer6
+### 11.238. cAttributeRazingsByPlayer6
 
 Value: `#!xs int 381`
 
 ID of the player resource Razings By Player6. Check [here](../../resources/resources/#381-razings-by-p6 "Jump to: Game Mecahnicsc > Resources > #381-razings-by-p6") for more info about what this resource does.
 
-### 11.235. cAttributeRazingsByPlayer7
+### 11.239. cAttributeRazingsByPlayer7
 
 Value: `#!xs int 382`
 
 ID of the player resource Razings By Player7. Check [here](../../resources/resources/#382-razings-by-p7 "Jump to: Game Mecahnicsc > Resources > #382-razings-by-p7") for more info about what this resource does.
 
-### 11.236. cAttributeRazingsByPlayer8
+### 11.240. cAttributeRazingsByPlayer8
 
 Value: `#!xs int 383`
 
 ID of the player resource Razings By Player8. Check [here](../../resources/resources/#383-razings-by-p8 "Jump to: Game Mecahnicsc > Resources > #383-razings-by-p8") for more info about what this resource does.
 
-### 11.237. cAttributeGaiaKillValue
+### 11.241. cAttributeGaiaKillValue
 
 Value: `#!xs int 400`
 
 ID of the player resource Gaia Kill Value. Check [here](../../resources/resources/#400-gaia-kill-value "Jump to: Game Mecahnicsc > Resources > #400-gaia-kill-value") for more info about what this resource does.
 
-### 11.238. cAttributePlayer1KillValue
+### 11.242. cAttributePlayer1KillValue
 
 Value: `#!xs int 401`
 
 ID of the player resource Player1 Kill Value. Check [here](../../resources/resources/#401-p1-kill-value "Jump to: Game Mecahnicsc > Resources > #401-p1-kill-value") for more info about what this resource does.
 
-### 11.239. cAttributePlayer2KillValue
+### 11.243. cAttributePlayer2KillValue
 
 Value: `#!xs int 402`
 
 ID of the player resource Player2 Kill Value. Check [here](../../resources/resources/#402-p2-kill-value "Jump to: Game Mecahnicsc > Resources > #402-p2-kill-value") for more info about what this resource does.
 
-### 11.240. cAttributePlayer3KillValue
+### 11.244. cAttributePlayer3KillValue
 
 Value: `#!xs int 403`
 
 ID of the player resource Player3 Kill Value. Check [here](../../resources/resources/#403-p3-kill-value "Jump to: Game Mecahnicsc > Resources > #403-p3-kill-value") for more info about what this resource does.
 
-### 11.241. cAttributePlayer4KillValue
+### 11.245. cAttributePlayer4KillValue
 
 Value: `#!xs int 404`
 
 ID of the player resource Player4 Kill Value. Check [here](../../resources/resources/#404-p4-kill-value "Jump to: Game Mecahnicsc > Resources > #404-p4-kill-value") for more info about what this resource does.
 
-### 11.242. cAttributePlayer5KillValue
+### 11.246. cAttributePlayer5KillValue
 
 Value: `#!xs int 405`
 
 ID of the player resource Player5 Kill Value. Check [here](../../resources/resources/#405-p5-kill-value "Jump to: Game Mecahnicsc > Resources > #405-p5-kill-value") for more info about what this resource does.
 
-### 11.243. cAttributePlayer6KillValue
+### 11.247. cAttributePlayer6KillValue
 
 Value: `#!xs int 406`
 
 ID of the player resource Player6 Kill Value. Check [here](../../resources/resources/#406-p6-kill-value "Jump to: Game Mecahnicsc > Resources > #406-p6-kill-value") for more info about what this resource does.
 
-### 11.244. cAttributePlayer7KillValue
+### 11.248. cAttributePlayer7KillValue
 
 Value: `#!xs int 407`
 
 ID of the player resource Player7 Kill Value. Check [here](../../resources/resources/#407-p7-kill-value "Jump to: Game Mecahnicsc > Resources > #407-p7-kill-value") for more info about what this resource does.
 
-### 11.245. cAttributePlayer8KillValue
+### 11.249. cAttributePlayer8KillValue
 
 Value: `#!xs int 408`
 
 ID of the player resource Player8 Kill Value. Check [here](../../resources/resources/#408-p8-kill-value "Jump to: Game Mecahnicsc > Resources > #408-p8-kill-value") for more info about what this resource does.
 
-### 11.246. cAttributeGaiaRazingValue
+### 11.250. cAttributeGaiaRazingValue
 
 Value: `#!xs int 425`
 
 ID of the player resource Gaia Razing Value. Check [here](../../resources/resources/#425-gaia-razing-value "Jump to: Game Mecahnicsc > Resources > #425-gaia-razing-value") for more info about what this resource does.
 
-### 11.247. cAttributePlayer1RazingValue
+### 11.251. cAttributePlayer1RazingValue
 
 Value: `#!xs int 426`
 
 ID of the player resource Player1 Razing Value. Check [here](../../resources/resources/#426-p1-razing-value "Jump to: Game Mecahnicsc > Resources > #426-p1-razing-value") for more info about what this resource does.
 
-### 11.248. cAttributePlayer2RazingValue
+### 11.252. cAttributePlayer2RazingValue
 
 Value: `#!xs int 427`
 
 ID of the player resource Player2 Razing Value. Check [here](../../resources/resources/#427-p2-razing-value "Jump to: Game Mecahnicsc > Resources > #427-p2-razing-value") for more info about what this resource does.
 
-### 11.249. cAttributePlayer3RazingValue
+### 11.253. cAttributePlayer3RazingValue
 
 Value: `#!xs int 428`
 
 ID of the player resource Player3 Razing Value. Check [here](../../resources/resources/#428-p3-razing-value "Jump to: Game Mecahnicsc > Resources > #428-p3-razing-value") for more info about what this resource does.
 
-### 11.250. cAttributePlayer4RazingValue
+### 11.254. cAttributePlayer4RazingValue
 
 Value: `#!xs int 429`
 
 ID of the player resource Player4 Razing Value. Check [here](../../resources/resources/#429-p4-razing-value "Jump to: Game Mecahnicsc > Resources > #429-p4-razing-value") for more info about what this resource does.
 
-### 11.251. cAttributePlayer5RazingValue
+### 11.255. cAttributePlayer5RazingValue
 
 Value: `#!xs int 430`
 
 ID of the player resource Player5 Razing Value. Check [here](../../resources/resources/#430-p5-razing-value "Jump to: Game Mecahnicsc > Resources > #430-p5-razing-value") for more info about what this resource does.
 
-### 11.252. cAttributePlayer6RazingValue
+### 11.256. cAttributePlayer6RazingValue
 
 Value: `#!xs int 431`
 
 ID of the player resource Player6 Razing Value. Check [here](../../resources/resources/#431-p6-razing-value "Jump to: Game Mecahnicsc > Resources > #431-p6-razing-value") for more info about what this resource does.
 
-### 11.253. cAttributePlayer7RazingValue
+### 11.257. cAttributePlayer7RazingValue
 
 Value: `#!xs int 432`
 
 ID of the player resource Player7 Razing Value. Check [here](../../resources/resources/#432-p7-razing-value "Jump to: Game Mecahnicsc > Resources > #432-p7-razing-value") for more info about what this resource does.
 
-### 11.254. cAttributePlayer8RazingValue
+### 11.258. cAttributePlayer8RazingValue
 
 Value: `#!xs int 433`
 
 ID of the player resource Player8 Razing Value. Check [here](../../resources/resources/#433-p8-razing-value "Jump to: Game Mecahnicsc > Resources > #433-p8-razing-value") for more info about what this resource does.
 
-### 11.255. cAttributeGaiaTribute
+### 11.259. cAttributeGaiaTribute
 
 Value: `#!xs int 450`
 
 ID of the player resource Gaia Tribute. Check [here](../../resources/resources/#450-gaia-tribute "Jump to: Game Mecahnicsc > Resources > #450-gaia-tribute") for more info about what this resource does.
 
-### 11.256. cAttributePlayer1Tribute
+### 11.260. cAttributePlayer1Tribute
 
 Value: `#!xs int 451`
 
 ID of the player resource Player1 Tribute. Check [here](../../resources/resources/#451-p1-tribute "Jump to: Game Mecahnicsc > Resources > #451-p1-tribute") for more info about what this resource does.
 
-### 11.257. cAttributePlayer2Tribute
+### 11.261. cAttributePlayer2Tribute
 
 Value: `#!xs int 452`
 
 ID of the player resource Player2 Tribute. Check [here](../../resources/resources/#452-p2-tribute "Jump to: Game Mecahnicsc > Resources > #452-p2-tribute") for more info about what this resource does.
 
-### 11.258. cAttributePlayer3Tribute
+### 11.262. cAttributePlayer3Tribute
 
 Value: `#!xs int 453`
 
 ID of the player resource Player3 Tribute. Check [here](../../resources/resources/#453-p3-tribute "Jump to: Game Mecahnicsc > Resources > #453-p3-tribute") for more info about what this resource does.
 
-### 11.259. cAttributePlayer4Tribute
+### 11.263. cAttributePlayer4Tribute
 
 Value: `#!xs int 454`
 
 ID of the player resource Player4 Tribute. Check [here](../../resources/resources/#454-p4-tribute "Jump to: Game Mecahnicsc > Resources > #454-p4-tribute") for more info about what this resource does.
 
-### 11.260. cAttributePlayer5Tribute
+### 11.264. cAttributePlayer5Tribute
 
 Value: `#!xs int 455`
 
 ID of the player resource Player5 Tribute. Check [here](../../resources/resources/#455-p5-tribute "Jump to: Game Mecahnicsc > Resources > #455-p5-tribute") for more info about what this resource does.
 
-### 11.261. cAttributePlayer6Tribute
+### 11.265. cAttributePlayer6Tribute
 
 Value: `#!xs int 456`
 
 ID of the player resource Player6 Tribute. Check [here](../../resources/resources/#456-p6-tribute "Jump to: Game Mecahnicsc > Resources > #456-p6-tribute") for more info about what this resource does.
 
-### 11.262. cAttributePlayer7Tribute
+### 11.266. cAttributePlayer7Tribute
 
 Value: `#!xs int 457`
 
 ID of the player resource Player7 Tribute. Check [here](../../resources/resources/#457-p7-tribute "Jump to: Game Mecahnicsc > Resources > #457-p7-tribute") for more info about what this resource does.
 
-### 11.263. cAttributePlayer8Tribute
+### 11.267. cAttributePlayer8Tribute
 
 Value: `#!xs int 458`
 
 ID of the player resource Player8 Tribute. Check [here](../../resources/resources/#458-p8-tribute "Jump to: Game Mecahnicsc > Resources > #458-p8-tribute") for more info about what this resource does.
 
-### 11.264. cAttributeTributeFromGaia
+### 11.268. cAttributeTributeFromGaia
 
 Value: `#!xs int 475`
 
 ID of the player resource Tribute From Gaia. Check [here](../../resources/resources/#475-tribute-from-gaia "Jump to: Game Mecahnicsc > Resources > #475-tribute-from-gaia") for more info about what this resource does.
 
-### 11.265. cAttributeTributeFromPlayer1
+### 11.269. cAttributeTributeFromPlayer1
 
 Value: `#!xs int 476`
 
 ID of the player resource Tribute From Player1. Check [here](../../resources/resources/#476-tribute-from-p1 "Jump to: Game Mecahnicsc > Resources > #476-tribute-from-p1") for more info about what this resource does.
 
-### 11.266. cAttributeTributeFromPlayer2
+### 11.270. cAttributeTributeFromPlayer2
 
 Value: `#!xs int 477`
 
 ID of the player resource Tribute From Player2. Check [here](../../resources/resources/#477-tribute-from-p2 "Jump to: Game Mecahnicsc > Resources > #477-tribute-from-p2") for more info about what this resource does.
 
-### 11.267. cAttributeTributeFromPlayer3
+### 11.271. cAttributeTributeFromPlayer3
 
 Value: `#!xs int 478`
 
 ID of the player resource Tribute From Player3. Check [here](../../resources/resources/#478-tribute-from-p3 "Jump to: Game Mecahnicsc > Resources > #478-tribute-from-p3") for more info about what this resource does.
 
-### 11.268. cAttributeTributeFromPlayer4
+### 11.272. cAttributeTributeFromPlayer4
 
 Value: `#!xs int 479`
 
 ID of the player resource Tribute From Player4. Check [here](../../resources/resources/#479-tribute-from-p4 "Jump to: Game Mecahnicsc > Resources > #479-tribute-from-p4") for more info about what this resource does.
 
-### 11.269. cAttributeTributeFromPlayer5
+### 11.273. cAttributeTributeFromPlayer5
 
 Value: `#!xs int 480`
 
 ID of the player resource Tribute From Player5. Check [here](../../resources/resources/#480-tribute-from-p5 "Jump to: Game Mecahnicsc > Resources > #480-tribute-from-p5") for more info about what this resource does.
 
-### 11.270. cAttributeTributeFromPlayer6
+### 11.274. cAttributeTributeFromPlayer6
 
 Value: `#!xs int 481`
 
 ID of the player resource Tribute From Player6. Check [here](../../resources/resources/#481-tribute-from-p6 "Jump to: Game Mecahnicsc > Resources > #481-tribute-from-p6") for more info about what this resource does.
 
-### 11.271. cAttributeTributeFromPlayer7
+### 11.275. cAttributeTributeFromPlayer7
 
 Value: `#!xs int 482`
 
 ID of the player resource Tribute From Player7. Check [here](../../resources/resources/#482-tribute-from-p7 "Jump to: Game Mecahnicsc > Resources > #482-tribute-from-p7") for more info about what this resource does.
 
-### 11.272. cAttributeTributeFromPlayer8
+### 11.276. cAttributeTributeFromPlayer8
 
 Value: `#!xs int 483`
 
 ID of the player resource Tribute From Player8. Check [here](../../resources/resources/#483-tribute-from-p8 "Jump to: Game Mecahnicsc > Resources > #483-tribute-from-p8") for more info about what this resource does.
 
-### 11.273. cAttributeChoppingFoodProductivity
+### 11.277. cAttributeChoppingFoodProductivity
 
 Value: `#!xs int 502`
 
@@ -4417,6 +4591,12 @@ ID of the Damage Class Skirmishers
 Value: `#!xs int 39`
 
 ID of the Damage Class Royal Heirs
+
+### 12.33. cNumDamageClasses
+
+Value: `#!xs int 39`
+
+ID of the Damage Class Numes
 
 ## 13. Task Attribute
 
@@ -4617,6 +4797,30 @@ ID for the task amount Task Attribute Enable Targeting
 Value: `#!xs int 27`
 
 ID for the task amount Task Attribute Enabled
+
+### 13.29. cTaskAttrTaskType
+
+Value: `#!xs int 28`
+
+ID for the task amount Task Attribute 
+
+### 13.30. cTaskAttrObjectId
+
+Value: `#!xs int 29`
+
+ID for the task amount Task Attribute Object Id
+
+### 13.31. cTaskAttrObjectClass
+
+Value: `#!xs int 30`
+
+ID for the task amount Task Attribute Object Class
+
+### 13.32. cNumTaskAttrs
+
+Value: `#!xs int 31`
+
+This is the number of task attributes in a task
 
 ## 14. Task Type
 
@@ -4890,11 +5094,23 @@ Value: `#!xs int 158`
 
 ID for the task H P Transform
 
-### 14.46. cTaskTypeHPModifier
+### 14.46. cTaskTypeAmphibious
+
+Value: `#!xs int 159`
+
+ID for the task Amphibious
+
+### 14.47. cTaskTypeHPModifier
 
 Value: `#!xs int 160`
 
 ID for the task H P Modifier
+
+### 14.48. cTaskTypeRefund
+
+Value: `#!xs int 161`
+
+ID for the task Refund
 
 ## 15. Tech State
 
@@ -5007,4 +5223,234 @@ Enum value for the object type Building
 Value: `#!xs int 90`
 
 Enum value for the object type Legacy Tree
+
+## 17. Player Type
+
+### 17.1. cPlayerTypeNone
+
+Value: `#!xs int -1`
+
+Enum value for the player type None
+
+### 17.2. cPlayerTypeScenarioEditorPhantom
+
+Value: `#!xs int 0`
+
+Enum value for the player type Scenario Editor Phantom
+
+### 17.3. cPlayerTypeHuman
+
+Value: `#!xs int 1`
+
+Enum value for the player type Human
+
+### 17.4. cPlayerTypeGaia
+
+Value: `#!xs int 2`
+
+Enum value for the player type Gaia
+
+### 17.5. cPlayerTypeComputer
+
+Value: `#!xs int 3`
+
+Enum value for the player type Computer
+
+## 18. Diplomacy
+
+### 18.1. cDiplomacyInvalid
+
+Value: `#!xs int -1`
+
+Enum value for diplomacy Invalid
+
+### 18.2. cDiplomacyAlly
+
+Value: `#!xs int 0`
+
+Enum value for diplomacy Ally
+
+### 18.3. cDiplomacyNeutral
+
+Value: `#!xs int 1`
+
+Enum value for diplomacy Neutral
+
+### 18.4. cDiplomacyAny
+
+Value: `#!xs int 2`
+
+Enum value for diplomacy Any
+
+### 18.5. cDiplomacyEnemy
+
+Value: `#!xs int 3`
+
+Enum value for diplomacy Enemy
+
+### 18.6. cDiplomacyTreaty
+
+Value: `#!xs int 4`
+
+Enum value for diplomacy Treaty
+
+## 19. Color Mood
+
+### 19.1. cColorMoodDefault
+
+Value: `#!xs int 0`
+
+Enum value for color mood Default
+
+### 19.2. cColorMoodAutumn
+
+Value: `#!xs int 1`
+
+Enum value for color mood Autumn
+
+### 19.3. cColorMoodWinter
+
+Value: `#!xs int 2`
+
+Enum value for color mood Winter
+
+### 19.4. cColorMoodJungle
+
+Value: `#!xs int 3`
+
+Enum value for color mood Jungle
+
+### 19.5. cColorMoodDesert
+
+Value: `#!xs int 4`
+
+Enum value for color mood Desert
+
+### 19.6. cColorMoodNight
+
+Value: `#!xs int 5`
+
+Enum value for color mood Night
+
+### 19.7. cColorMoodEvening
+
+Value: `#!xs int 6`
+
+Enum value for color mood Evening
+
+### 19.8. cColorMoodSpring
+
+Value: `#!xs int 7`
+
+Enum value for color mood Spring
+
+### 19.9. cColorMoodSavannah
+
+Value: `#!xs int 8`
+
+Enum value for color mood Savannah
+
+### 19.10. cColorMoodArctic
+
+Value: `#!xs int 9`
+
+Enum value for color mood Arctic
+
+### 19.11. cColorMoodRainforest
+
+Value: `#!xs int 10`
+
+Enum value for color mood Rainforest
+
+### 19.12. cColorMoodSwamp
+
+Value: `#!xs int 11`
+
+Enum value for color mood Swamp
+
+### 19.13. cColorMoodSteppes
+
+Value: `#!xs int 12`
+
+Enum value for color mood Steppes
+
+### 19.14. cColorMoodMisty
+
+Value: `#!xs int 13`
+
+Enum value for color mood Misty
+
+### 19.15. cColorMoodSummer
+
+Value: `#!xs int 14`
+
+Enum value for color mood Summer
+
+### 19.16. cColorMoodMurky
+
+Value: `#!xs int 15`
+
+Enum value for color mood Murky
+
+### 19.17. cColorMoodBrumous
+
+Value: `#!xs int 16`
+
+Enum value for color mood Brumous
+
+### 19.18. cColorMoodTwilight
+
+Value: `#!xs int 17`
+
+Enum value for color mood Twilight
+
+### 19.19. cColorMoodDarkness
+
+Value: `#!xs int 18`
+
+Enum value for color mood Darkness
+
+### 19.20. cNumColorMoods
+
+Value: `#!xs int 19`
+
+Enum value for color mood Nums
+
+## 20. Difficulty
+
+### 20.1. cDifficultyExtreme
+
+Value: `#!xs int -1`
+
+Enum value for difficulty Extreme
+
+### 20.2. cDifficultyHardest
+
+Value: `#!xs int 0`
+
+Enum value for difficulty Hardest
+
+### 20.3. cDifficultyHard
+
+Value: `#!xs int 1`
+
+Enum value for difficulty Hard
+
+### 20.4. cDifficultyModerate
+
+Value: `#!xs int 2`
+
+Enum value for difficulty Moderate
+
+### 20.5. cDifficultyEasy
+
+Value: `#!xs int 3`
+
+Enum value for difficulty Easy
+
+### 20.6. cDifficultyEasiest
+
+Value: `#!xs int 4`
+
+Enum value for difficulty Easiest
 

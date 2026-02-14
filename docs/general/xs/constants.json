@@ -520,6 +520,55 @@
             "usage": null
         },
         {
+            "name": "cMacedonians",
+            "value": 54,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cThracians",
+            "value": 55,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPuru",
+            "value": 56,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cMuisca",
+            "value": 57,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cMapuche",
+            "value": 58,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTupi",
+            "value": 59,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cNumCivs",
+            "value": 60,
+            "type": "int",
+            "desc": "The number of civilizations for AoE2",
+            "usage": null
+        },
+        {
             "name": "cAoeEgyptians",
             "value": 1,
             "type": "int",
@@ -637,6 +686,13 @@
             "type": "int",
             "desc": "This is the civilization ID of CIV_NAME",
             "usage": null
+        },
+        {
+            "name": "cNumAoeCivs",
+            "value": 18,
+            "type": "int",
+            "desc": "The number of civilizations for RoR",
+            "usage": null
         }
     ],
     "EffectAmount Effect Type": [
@@ -748,6 +804,39 @@
                 "syntax": "xsEffectAmount(cSetPlayerData, 0, cAttributeSet, value)",
                 "example": "xsEffectAmount(cSetPlayerData, 0, cAttributeSet, 10230)",
                 "explanation": "This sets the player data 0 (Civilization Name ID) to 10230 (the value)"
+            }
+        },
+        {
+            "name": "cSetUnitAttribute",
+            "value": 10,
+            "type": "int",
+            "desc": "This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function",
+            "usage": {
+                "syntax": "xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)",
+                "example": "xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)",
+                "explanation": "This sets unit 0's HP to 40. This is the same as modify object attribute in the editor"
+            }
+        },
+        {
+            "name": "cAddUnitAttribute",
+            "value": 11,
+            "type": "int",
+            "desc": "This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function",
+            "usage": {
+                "syntax": "xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)",
+                "example": "xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)",
+                "explanation": "This adds 40 to unit 0's HP. This is the same as modify object attribute in the editor"
+            }
+        },
+        {
+            "name": "cMulUnitAttribute",
+            "value": 12,
+            "type": "int",
+            "desc": "This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function",
+            "usage": {
+                "syntax": "xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)",
+                "example": "xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)",
+                "explanation": "This multiplies unit 0's HP by 40. This is the same as modify object attribute in the editor"
             }
         },
         {
@@ -2206,6 +2295,48 @@
             "type": "int",
             "desc": "This is the attribute [Damage Graphic Apply Mode](./../../attributes/attributes/#157-damage-graphic-apply-mode).",
             "usage": null
+        },
+        {
+            "name": "cTrainLocationsEntryMod",
+            "value": 158,
+            "type": "int",
+            "desc": "This is the attribute [Train Locations Entry Mod](./../../attributes/attributes/#158-train-locations-entry-mod).",
+            "usage": null
+        },
+        {
+            "name": "cTrainLocationsTotalNum",
+            "value": 159,
+            "type": "int",
+            "desc": "This is the attribute [Train Locations Total Num](./../../attributes/attributes/#159-train-locations-total-num).",
+            "usage": null
+        },
+        {
+            "name": "cAddArmorType",
+            "value": 160,
+            "type": "int",
+            "desc": "This is the attribute [Add Armor Type](./../../attributes/attributes/#160-add-armor-type).",
+            "usage": null
+        },
+        {
+            "name": "cAddAttackType",
+            "value": 161,
+            "type": "int",
+            "desc": "This is the attribute [Add Attack Type](./../../attributes/attributes/#161-add-attack-type).",
+            "usage": null
+        },
+        {
+            "name": "cChargeTarget",
+            "value": 162,
+            "type": "int",
+            "desc": "This is the attribute [Charge Target](./../../attributes/attributes/#162-charge-target).",
+            "usage": null
+        },
+        {
+            "name": "cSizeClass",
+            "value": 163,
+            "type": "int",
+            "desc": "This is the attribute [Size Class](./../../attributes/attributes/#163-size-class).",
+            "usage": null
         }
     ],
     "EffectAmount Object Class": [
@@ -2655,6 +2786,13 @@
             "value": 964,
             "type": "int",
             "desc": "This is the ID used to target the CLASS_NAME",
+            "usage": null
+        },
+        {
+            "name": "cSentinelEndClass",
+            "value": 965,
+            "type": "int",
+            "desc": "This marks the end of the unit class list",
             "usage": null
         }
     ],
@@ -3517,6 +3655,34 @@
             "name": "cAttributeSpiesDiscount",
             "value": 197,
             "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeFeitoriaFoodProductivity",
+            "type": "int",
+            "value": 205,
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeFeitoriaWoodProductivity",
+            "type": "int",
+            "value": 206,
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeFeitoriaStoneProductivity",
+            "type": "int",
+            "value": 207,
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeFeitoriaGoldProductivity",
+            "type": "int",
+            "value": 208,
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
         },
@@ -4795,6 +4961,13 @@
             "type": "int",
             "desc": "ID of the Damage Class CLASS_NAME",
             "usage": null
+        },
+        {
+            "name": "cNumDamageClasses",
+            "value": 39,
+            "type": "int",
+            "desc": "ID of the Damage Class CLASS_NAME",
+            "usage": null
         }
     ],
     "task attribute": [
@@ -5028,6 +5201,34 @@
             "value": 27,
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
+            "usage":  null
+        },
+        {
+            "name": "cTaskAttrTaskType",
+            "value": 28,
+            "type": "int",
+            "desc":  "ID for the task amount Task Attribute ATTR_NAME",
+            "usage":  null
+        },
+        {
+            "name": "cTaskAttrObjectId",
+            "value": 29,
+            "type": "int",
+            "desc":  "ID for the task amount Task Attribute ATTR_NAME",
+            "usage":  null
+        },
+        {
+            "name": "cTaskAttrObjectClass",
+            "value": 30,
+            "type": "int",
+            "desc":  "ID for the task amount Task Attribute ATTR_NAME",
+            "usage":  null
+        },
+        {
+            "name": "cNumTaskAttrs",
+            "value": 31,
+            "type": "int",
+            "desc":  "This is the number of task attributes in a task",
             "usage":  null
         }
     ],
@@ -5348,8 +5549,22 @@
             "usage": null
         },
         {
+            "name": "cTaskTypeAmphibious",
+            "value": 159,
+            "type": "int",
+            "desc": "ID for the task TASK_NAME",
+            "usage": null
+        },
+        {
             "name": "cTaskTypeHPModifier",
             "value": 160,
+            "type": "int",
+            "desc": "ID for the task TASK_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTaskTypeRefund",
+            "value": 161,
             "type": "int",
             "desc": "ID for the task TASK_NAME",
             "usage": null
@@ -5482,6 +5697,273 @@
             "value": 90,
             "type": "int",
             "desc": "Enum value for the object type TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "player type": [
+        {
+            "name": "cPlayerTypeNone",
+            "value": -1,
+            "type": "int",
+            "desc":"Enum value for the player type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPlayerTypeScenarioEditorPhantom",
+            "value": 0,
+            "type": "int",
+            "desc": "Enum value for the player type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPlayerTypeHuman",
+            "value": 1,
+            "type": "int",
+            "desc": "Enum value for the player type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPlayerTypeGaia",
+            "value": 2,
+            "type": "int",
+            "desc": "Enum value for the player type TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPlayerTypeComputer",
+            "value": 3,
+            "type": "int",
+            "desc": "Enum value for the player type TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "diplomacy": [
+        {
+            "name": "cDiplomacyInvalid",
+            "value": -1,
+            "type": "int",
+            "desc":"Enum value for diplomacy TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDiplomacyAlly",
+            "value": 0,
+            "type": "int",
+            "desc": "Enum value for diplomacy TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDiplomacyNeutral",
+            "value": 1,
+            "type": "int",
+            "desc": "Enum value for diplomacy TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDiplomacyAny",
+            "value": 2,
+            "type": "int",
+            "desc": "Enum value for diplomacy TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDiplomacyEnemy",
+            "value": 3,
+            "type": "int",
+            "desc": "Enum value for diplomacy TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDiplomacyTreaty",
+            "value": 4,
+            "type": "int",
+            "desc": "Enum value for diplomacy TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "color mood": [
+        {
+            "name": "cColorMoodDefault",
+            "type": "int",
+            "value": 0,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodAutumn",
+            "type": "int",
+            "value": 1,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodWinter",
+            "type": "int",
+            "value": 2,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodJungle",
+            "type": "int",
+            "value": 3,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodDesert",
+            "type": "int",
+            "value": 4,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodNight",
+            "type": "int",
+            "value": 5,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodEvening",
+            "type": "int",
+            "value": 6,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodSpring",
+            "type": "int",
+            "value": 7,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodSavannah",
+            "type": "int",
+            "value": 8,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodArctic",
+            "type": "int",
+            "value": 9,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodRainforest",
+            "type": "int",
+            "value": 10,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodSwamp",
+            "type": "int",
+            "value": 11,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodSteppes",
+            "type": "int",
+            "value": 12,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodMisty",
+            "type": "int",
+            "value": 13,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodSummer",
+            "type": "int",
+            "value": 14,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodMurky",
+            "type": "int",
+            "value": 15,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodBrumous",
+            "type": "int",
+            "value": 16,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodTwilight",
+            "type": "int",
+            "value": 17,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorMoodDarkness",
+            "type": "int",
+            "value": 18,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cNumColorMoods",
+            "type": "int",
+            "value": 19,
+            "desc": "Enum value for color mood TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "difficulty": [
+        {
+            "name": "cDifficultyExtreme",
+            "type": "int",
+            "value": -1,
+            "desc": "Enum value for difficulty TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDifficultyHardest",
+            "type": "int",
+            "value": 0,
+            "desc": "Enum value for difficulty TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDifficultyHard",
+            "type": "int",
+            "value": 1,
+            "desc": "Enum value for difficulty TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDifficultyModerate",
+            "type": "int",
+            "value": 2,
+            "desc": "Enum value for difficulty TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDifficultyEasy",
+            "type": "int",
+            "value": 3,
+            "desc": "Enum value for difficulty TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cDifficultyEasiest",
+            "type": "int",
+            "value": 4,
+            "desc": "Enum value for difficulty TYPE_NAME",
             "usage": null
         }
     ]
