@@ -821,10 +821,10 @@
             "name": "cAddUnitAttribute",
             "value": 11,
             "type": "int",
-            "desc": "This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Add Unit Attribute` effect for the xsEffectAmount function",
             "usage": {
-                "syntax": "xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)",
-                "example": "xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)",
+                "syntax": "xsEffectAmount(cAddUnitAttribute, unitId, attribute, value)",
+                "example": "xsEffectAmount(cAddUnitAttribute, 0, cHitpoints, 40)",
                 "explanation": "This adds 40 to unit 0's HP. This is the same as modify object attribute in the editor"
             }
         },
@@ -832,10 +832,10 @@
             "name": "cMulUnitAttribute",
             "value": 12,
             "type": "int",
-            "desc": "This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Multiply Unit Attribute` effect for the xsEffectAmount function",
             "usage": {
-                "syntax": "xsEffectAmount(cSetUnitAttribute, unitId, attribute, value)",
-                "example": "xsEffectAmount(cSetUnitAttribute, 0, cHitpoints, 40)",
+                "syntax": "xsEffectAmount(cMulUnitAttribute, unitId, attribute, value)",
+                "example": "xsEffectAmount(cMulUnitAttribute, 0, cHitpoints, 40)",
                 "explanation": "This multiplies unit 0's HP by 40. This is the same as modify object attribute in the editor"
             }
         },
