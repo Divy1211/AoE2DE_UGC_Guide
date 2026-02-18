@@ -1166,8 +1166,18 @@
     },
     "163": {
         "name": "Size Class",
-        "desc": "TODO",
-        "notes": [],
+        "desc": "Controls garrison type properties",
+        "notes": [
+            "- 0: Legacy object_group dependent behaviour",
+            "- 1: Civilian",
+            "- 2: Infantry",
+            "- 3: Cavalry",
+            "- 4: Religious",
+            "- 5: Livestock",
+            "- 6: Siege",
+            "- 7: Ships",
+            "- 8: Unused"
+        ],
         "flags": {}
     }
 }

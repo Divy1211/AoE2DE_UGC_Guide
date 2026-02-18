@@ -1177,23 +1177,107 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - ID: 154
 
- - TODO
+ - Determines the index at which damage graphic/damage graphic percent/damage graphic apply mode values are changed via effects in XS.
+
+ - - Multiply by N to insert a new entry at index N, and then set entry mod to N
+
+    - Multiply by -(N+1) to delete index N, and then set entry mod to N
+
+    - Multiply with 255 (32767 also works) to append an entry at the end, and set the entry mod to the last index
+
+    - Multiply with -255 (-32768 also works) to delete the index at the end, and set entry mod to the new last index
+
+    - Note that inserting a new entry copies the existing last entry in the list as the default
 
 ## 155. Damage Graphics Total Num
 
  - ID: 155
 
- - TODO
+ - The length of the damage sprites list. Can be set to shrink/extend the list (duplicates the last entry when extending).
 
 ## 156. Damage Graphic Percent
 
  - ID: 156
 
- - TODO
+ - The damage percent at which this sprite starts to be applied. This sprite remains active until the damage percent of the next damage sprite entry
 
 ## 157. Damage Graphic Apply Mode
 
  - ID: 157
 
+ - The apply mode for this damage sprite.
+
+ - - 0: Overlay flames on building
+
+    - 1: Overlay randomly
+
+    - 2: Replace (walls)
+
+## 158. Train Locations Entry Mod
+
+ - ID: 158
+
+ - Determines the index at which train location/train button/train time/hotkey values are modified via effects in XS.
+
+ - - Multiply by N to insert a new entry at index N, and then set entry mod to N
+
+    - Multiply by -(N+1) to delete index N, and then set entry mod to N
+
+    - Multiply with 32767 to append an entry at the end, and set the entry mod to the last index
+
+    - Multiply with -32768 to delete the index at the end, and set entry mod to the new last index
+
+    - Note that inserting a new entry copies the existing last entry in the list as the default
+
+## 159. Train Locations Total Num
+
+ - ID: 159
+
+ - The length of the train locations list. Can be set to shrink/extend the list (duplicates the last entry when extending).
+
+## 160. Add Armor Type
+
+ - ID: 160
+
+ - Setting this creates a new armor class in the targeted object/unit
+
+ - Note: You still need to set the value of the class using the regular damage class modification effect.
+
+## 161. Add Attack Type
+
+ - ID: 161
+
+ - Setting this creates a new attack class in the targeted object/unit
+
+ - Note: You still need to set the value of the class using the regular damage class modification effect.
+
+## 162. Charge Target
+
+ - ID: 162
+
  - TODO
+
+## 163. Size Class
+
+ - ID: 163
+
+ - Controls garrison type properties
+
+ - - 0: Legacy object_group dependent behaviour
+
+    - 1: Civilian
+
+    - 2: Infantry
+
+    - 3: Cavalry
+
+    - 4: Religious
+
+    - 5: Livestock
+
+    - 6: Siege
+
+    - 7: Ships
+
+    - 8: Unused
 
