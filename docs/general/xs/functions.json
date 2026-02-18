@@ -2125,11 +2125,11 @@
             "desc": "Returns the handicap multiplier for the given player (a float between 1 and 2)"
         },
         {
-            "name": "xsGetWorldPlayer",
+            "name": "xsGetWorldPlayerId",
             "return_type": "int",
             "params": [
                 {
-                    "name": "playerId",
+                    "name": "scxPlayerId",
                     "type": "int",
                     "required": true,
                     "desc": "The player to get the world index (lobby slot) for"

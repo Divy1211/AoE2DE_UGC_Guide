@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/02/15 03:06:26 |
+// | Generated on: 2026/02/18 11:00:04 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -366,16 +366,16 @@ extern const int cAddUnitAttribute = 11;
 /** This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#613-cmulunitattribute) */
 extern const int cMulUnitAttribute = 12;
 
-/** This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#614-csettechcost) */
+/** This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#614-csettechcost) */
 extern const int cSetTechCost = 100;
 
-/** This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#615-caddtechcost) */
+/** This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#615-caddtechcost) */
 extern const int cAddTechCost = 101;
 
 /** This is the ID of the `Disable Tech` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#616-cdisabletech) */
 extern const int cDisableTech = 102;
 
-/** This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#617-cmodtechtime) */
+/** This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#617-cmodtechtime) */
 extern const int cModTechTime = 103;
 
 /** This is the ID of the `Gaia Set Attribute` effect of the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#618-cgaiasetattribute) */
@@ -408,16 +408,16 @@ extern const int cGaiaModifyTech = -9;
 /** This is the ID of the `Gaia Set Player Data` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#627-cgaiasetplayerdata) */
 extern const int cGaiaSetPlayerData = -10;
 
-/** This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#628-cgaiasettechcost) */
+/** This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#628-cgaiasettechcost) */
 extern const int cGaiaSetTechCost = -101;
 
-/** This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#629-cgaiaaddtechcost) */
+/** This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#629-cgaiaaddtechcost) */
 extern const int cGaiaAddTechCost = -102;
 
 /** This is the ID of the `Gaia Disable Tech` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#630-cgaiadisabletech) */
 extern const int cGaiaDisableTech = -103;
 
-/** This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#631-cgaiamodtechtime) */
+/** This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#631-cgaiamodtechtime) */
 extern const int cGaiaModTechTime = -104;
 
 
@@ -3444,7 +3444,7 @@ int xsGetPlayerType(int playerId = -1) {}
 int xsGetPlayerUnitIds(int playerId = -1, int objectOrClassId = -1, int arrayId = -1) {}
 
 /**
-* Returns a random number between 0 and 32766.
+* Returns a random number between 0 and 32767.
 *
 * @returns int
 */
@@ -3734,11 +3734,11 @@ int xsGetVictoryType() {}
 /**
 * Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario.
 *
-* @param playerId The player to get the world index (lobby slot) for
+* @param scxPlayerId The player to get the world index (lobby slot) for
 *
 * @returns int
 */
-int xsGetWorldPlayer(int playerId = -1) {}
+int xsGetWorldPlayerId(int scxPlayerId = -1) {}
 
 /**
 * Returns the current game time in milliseconds

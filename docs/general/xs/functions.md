@@ -1518,15 +1518,15 @@ Returns an integer corresponding to different victory settings in game. These ar
 
 Last Man Standing returns 0 as well.
 
-### 5.64. xsGetWorldPlayer
+### 5.64. xsGetWorldPlayerId
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetWorldPlayer(int playerId)`
+Prototype: `#!xs int xsGetWorldPlayerId(int scxPlayerId)`
 
 Parameters:
 
-1.  `#!xs int playerId`: The player to get the world index (lobby slot) for
+1.  `#!xs int scxPlayerId`: The player to get the world index (lobby slot) for
 
 Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario.
 
