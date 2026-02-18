@@ -635,9 +635,11 @@
     },
     "81": {
         "name": "Special Ability",
-        "desc": "TODO",
+        "desc": "Enables certain special abilities",
         "notes": [],
-        "flags": {}
+        "flags": {
+            "3": "Enable charge attack ability (task 133)"
+        }
     },
     "82": {
         "name": "Idle Attack Graphic",

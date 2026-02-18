@@ -868,7 +868,7 @@ This multiplies unit 0's HP by 40. This is the same as modify object attribute i
 
 Value: `#!xs int 100`
 
-This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -888,7 +888,7 @@ This sets the food cost of tech 22 (loom) to 10 (the value)
 
 Value: `#!xs int 101`
 
-This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -928,7 +928,7 @@ This disables the tech 22 (loom)
 
 Value: `#!xs int 103`
 
-This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function
+This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -1150,7 +1150,7 @@ This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
 Value: `#!xs int -101`
 
-This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -1170,7 +1170,7 @@ This sets the food cost of tech 22 (loom) to 10 (the value)
 
 Value: `#!xs int -102`
 
-This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function
+This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -1210,7 +1210,7 @@ This disables the tech 22 (loom)
 
 Value: `#!xs int -104`
 
-This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function
+This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -4640,7 +4640,9 @@ ID for the task amount Task Attribute Search Wait Time
 
 Usages per task type:
 
-  - [Aura Task](./#1442-ctasktypeaura): The attribute to modify. Only the following attributes are supported:
+  - [Aura Task](./#1442-ctasktypeaura): The attribute to modify. Not all attributes are supported. Known attributes:
+    - [Hit Points](./#91-chitpoints)
+    - [Line of Sight](./#92-clineofsight)
     - [Movement Speed](./#96-cmovementspeed)
     - [Attack](./#99-cattack)
     - [Attack Reload Time](./#910-cattackreloadtime)
@@ -4649,6 +4651,7 @@ Usages per task type:
     - [Conversion Chance Modifier](./#9105-cconversionchancemod)
     - 116: Melee Armor
     - 117: Pierce Armor
+    - [Regeneration Hp Percent](./#9110-cregenerationhppercent)
 
 ### 13.6. cTaskAttrCombatLevelFlag
 

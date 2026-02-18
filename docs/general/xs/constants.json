@@ -843,7 +843,7 @@
             "name": "cSetTechCost",
             "value": 100,
             "type": "int",
-            "desc": "This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cSetTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cSetTechCost, 22, cAttributeFood, 10)",
@@ -854,7 +854,7 @@
             "name": "cAddTechCost",
             "value": 101,
             "type": "int",
-            "desc": "This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cAddTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cAddTechCost, 22, cAttributeFood, 10)",
@@ -876,7 +876,7 @@
             "name": "cModTechTime",
             "value": 103,
             "type": "int",
-            "desc": "This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cModTechTime, techID, operation, value)",
                 "example": "xsEffectAmount(cModTechTime, 22, cAttributeSet, 10)",
@@ -997,7 +997,7 @@
             "name": "cGaiaSetTechCost",
             "value": -101,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaSetTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cGaiaSetTechCost, 22, cAttributeFood, 10)",
@@ -1008,7 +1008,7 @@
             "name": "cGaiaAddTechCost",
             "value": -102,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaAddTechCost, techID, resourceID, value)",
                 "example": "xsEffectAmount(cGaiaAddTechCost, 22, cAttributeFood, 10)",
@@ -1030,7 +1030,7 @@
             "name": "cGaiaModTechTime",
             "value": -104,
             "type": "int",
-            "desc": "This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function",
+            "desc": "This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead",
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaModTechTime, techID, operation, value)",
                 "example": "xsEffectAmount(cGaiaModTechTime, 22, cAttributeSet, 10)",
@@ -5016,8 +5016,10 @@
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
             "usage":  {
                 "[Aura Task](./#1442-ctasktypeaura)": {
-                    "desc": "The attribute to modify. Only the following attributes are supported:",
+                    "desc": "The attribute to modify. Not all attributes are supported. Known attributes:",
                     "list": [
+                        "[Hit Points](./#91-chitpoints)",
+                        "[Line of Sight](./#92-clineofsight)",
                         "[Movement Speed](./#96-cmovementspeed)",
                         "[Attack](./#99-cattack)",
                         "[Attack Reload Time](./#910-cattackreloadtime)",
@@ -5025,7 +5027,8 @@
                         "[Regeneration Rate](./#9101-cregenerationrate)",
                         "[Conversion Chance Modifier](./#9105-cconversionchancemod)",
                         "116: Melee Armor",
-                        "117: Pierce Armor"
+                        "117: Pierce Armor",
+                        "[Regeneration Hp Percent](./#9110-cregenerationhppercent)"
                     ]
                 }
             }

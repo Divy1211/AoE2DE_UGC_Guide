@@ -1151,7 +1151,7 @@ Returning Type: `#!xs int`
 Prototype: `#!xs int xsGetRandomNumber()`
 
 
-Returns a random number between 0 and 32766.
+Returns a random number between 0 and 32767.
 
 ### 5.33. xsGetRandomNumberLH
 
