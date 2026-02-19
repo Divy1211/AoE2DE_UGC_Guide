@@ -1,0 +1,3914 @@
+{
+    "0": {
+        "name": "!Food Storage",
+        "desc": "Current food amount",
+        "defaults": {},
+        "note": ""
+    },
+    "1": {
+        "name": "!Wood Storage",
+        "desc": "Current wood amount",
+        "defaults": {},
+        "note": ""
+    },
+    "2": {
+        "name": "!Stone Storage",
+        "desc": "Current stone amount",
+        "defaults": {},
+        "note": ""
+    },
+    "3": {
+        "name": "!Gold Storage",
+        "desc": "Current gold amount",
+        "defaults": {},
+        "note": ""
+    },
+    "4": {
+        "name": "Population Headroom",
+        "desc": "Amount of free population space. Note that this is NOT the population cap",
+        "defaults": {},
+        "note": ""
+    },
+    "5": {
+        "name": "Conversion Range",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "6": {
+        "name": "Current Age",
+        "desc": "Controls the age name and icon at the top of the screen",
+        "defaults": {
+            "0": " Dark Age",
+            "1": " Feudal Age",
+            "2": " Castle Age",
+            "3": " Imperial Age"
+        },
+        "note": "Setting this to an amount higher than 3 cycles the icon but keeps the age at imperial"
+    },
+    "7": {
+        "name": "Relics Captured",
+        "desc": "Number of relics held",
+        "defaults": {},
+        "note": ""
+    },
+    "8": {
+        "name": "Enable Sun Ce Building Conversion",
+        "desc": "Enables `Sun Ce` to convert buildings",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes",
+            ">=2": "Sun Ce can convert buildings from range"
+        },
+        "note": ""
+    },
+    "9": {
+        "name": "Trade Goods",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "10": {
+        "name": "Unused Resource 010",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "11": {
+        "name": "Current Population",
+        "desc": "The current population",
+        "defaults": {},
+        "note": ""
+    },
+    "12": {
+        "name": "Corpse Decay Time",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "13": {
+        "name": "Remarkable Discovery",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "14": {
+        "name": "Monuments Captured",
+        "desc": "Number of monuments owned",
+        "defaults": {},
+        "note": ""
+    },
+    "15": {
+        "name": "Meat Storage",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "16": {
+        "name": "Berry Storage",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "17": {
+        "name": "Fish Storage",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "18": {
+        "name": "Unused Resource 018",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "19": {
+        "name": "Total Units Owned",
+        "desc": "Total units owned, excluding buildings",
+        "defaults": {},
+        "note": ""
+    },
+    "20": {
+        "name": "Units Killed",
+        "desc": "Total units killed, excluding buildings",
+        "defaults": {},
+        "note": ""
+    },
+    "21": {
+        "name": "Technology Count",
+        "desc": "Number of technologies researched till now",
+        "defaults": {},
+        "note": ""
+    },
+    "22": {
+        "name": "% Map Explored",
+        "desc": "Percentage of the map explored",
+        "defaults": {},
+        "note": ""
+    },
+    "23": {
+        "name": "Castle Age Tech ID",
+        "desc": "Always 102",
+        "defaults": {},
+        "note": "Nothing happens when you change this, probably for mods only"
+    },
+    "24": {
+        "name": "Imperial Age Tech ID",
+        "desc": "Always 103",
+        "defaults": {},
+        "note": "Nothing happens when you change this, probably for mods only"
+    },
+    "25": {
+        "name": "Feudal Age Tech ID",
+        "desc": "Always 101",
+        "defaults": {},
+        "note": "Nothing happens when you change this, probably for mods only"
+    },
+    "26": {
+        "name": "Attack Warning Sound ID",
+        "desc": "Always 0",
+        "defaults": {},
+        "note": "Nothing happens when you change this, probably for mods only"
+    },
+    "27": {
+        "name": "Enable Monk Conversion",
+        "desc": "Boolean: allow enemy monk conversions",
+        "defaults": {
+            "0": " No (default)",
+            ">= 1": " Yes, after Atonement"
+        },
+        "note": ""
+    },
+    "28": {
+        "name": "Enable Building Conversion",
+        "desc": "Boolean: allow enemy building conversions",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after Redemption",
+            ">=2": " Monks can convert buildings from range"
+        },
+        "note": ""
+    },
+    "29": {
+        "name": "Enable Siege Conversion",
+        "desc": "Boolean: allow enemy siege conversions",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after Redemption",
+            ">=2": " Monks can convert siege from range"
+        },
+        "note": ""
+    },
+    "30": {
+        "name": "Unused Resource 030",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "31": {
+        "name": "Unused Resource 031",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "32": {
+        "name": "Bonus Population Cap",
+        "desc": "Additional pop space to grant on top of maximum pop cap",
+        "defaults": {},
+        "note": "10 for goths"
+    },
+    "33": {
+        "name": "Effect Function Number",
+        "desc": "Used to invoke functions in XS from data. When set to a non zero value `N`, it will automatically call a function named `EffectFunctionN` from the `Effects.xs` file.",
+        "defaults": {},
+        "note": ""
+    },
+    "34": {
+        "name": "Unused Resource 34",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "35": {
+        "name": "Unused Resource 35",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "36": {
+        "name": "Farm Food Amount",
+        "desc": "Maximum farm food amount",
+        "defaults": {
+            "175": " Default",
+            "220": " Chinese"
+        },
+        "note": "This is what horse collar etc. technologies modify"
+    },
+    "37": {
+        "name": "Civilian Population",
+        "desc": "Current civilian population",
+        "defaults": {},
+        "note": ""
+    },
+    "38": {
+        "name": "Villager Population",
+        "desc": "Current villager population",
+        "defaults": {},
+        "note": ""
+    },
+    "39": {
+        "name": "All Techs Achieved",
+        "desc": "Boolean: If all available technologies have been researched",
+        "defaults": {
+            "0": " No",
+            "1": " Yes"
+        },
+        "note": ""
+    },
+    "40": {
+        "name": "Military Population",
+        "desc": "Current military popupation",
+        "defaults": {},
+        "note": ""
+    },
+    "41": {
+        "name": "Conversions",
+        "desc": "Number of units converted",
+        "defaults": {},
+        "note": ""
+    },
+    "42": {
+        "name": "Standing Wonders",
+        "desc": "Number of standing wonders",
+        "defaults": {},
+        "note": ""
+    },
+    "43": {
+        "name": "Razings",
+        "desc": "Number of buildings razed",
+        "defaults": {},
+        "note": ""
+    },
+    "44": {
+        "name": "Kill Ratio",
+        "desc": "This is the number of units lost subtracted from the number of units killed in total",
+        "defaults": {},
+        "note": ""
+    },
+    "45": {
+        "name": "Survival to Finish",
+        "desc": "Boolean: This is set to `0` under the same conditions which are required to defeat a player",
+        "defaults": {
+            "0": " No",
+            "1": " Yes"
+        },
+        "note": ""
+    },
+    "46": {
+        "name": "Tribute Inefficiency",
+        "desc": "This is the fraction of tributes sent that are collected as tax",
+        "defaults": {
+            "0.3": " Default",
+            "0.2": " After Coinage",
+            "0": " After Banking"
+        },
+        "note": ""
+    },
+    "47": {
+        "name": "Gold Mining Productivity",
+        "desc": "Multiplier for gold mined by gold miners",
+        "defaults": {
+            "1": " Default",
+            "1.15": " Mayans"
+        },
+        "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
+    },
+    "48": {
+        "name": "Town Center Unavailable",
+        "desc": "Boolean: allow building extra tcs",
+        "defaults": {
+            "0": " No (Sudden Death)",
+            "1": " Yes (Normal)"
+        },
+        "note": ""
+    },
+    "49": {
+        "name": "Gold Counter",
+        "desc": "Total gold collected",
+        "defaults": {},
+        "note": ""
+    },
+    "50": {
+        "name": "Reveal Ally",
+        "desc": "Boolean: show ally los for the source player",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after Cartography or with a Portuguese ally"
+        },
+        "note": "Once set to `1`, setting it back to `0` won't take away the LoS of allies"
+    },
+    "51": {
+        "name": "Unused Resource 051",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "52": {
+        "name": "Monasteries",
+        "desc": "Number of monasteries",
+        "defaults": {},
+        "note": ""
+    },
+    "53": {
+        "name": "Tribute Sent",
+        "desc": "Total of all resources tributed to others. This does not count taxes paid on tributing",
+        "defaults": {},
+        "note": ""
+    },
+    "54": {
+        "name": "All Monuments Captured",
+        "desc": "Boolean: all monuments on the map captured",
+        "defaults": {
+            "0": " No",
+            "1": " Yes"
+        },
+        "note": ""
+    },
+    "55": {
+        "name": "All Relics Captured",
+        "desc": "Boolean: all relics on the map captured",
+        "defaults": {
+            "0": " No",
+            "1": " Yes"
+        },
+        "note": ""
+    },
+    "56": {
+        "name": "Ore Storage",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "57": {
+        "name": "Kidnap Storage",
+        "desc": "Number of units kidnapped",
+        "defaults": {},
+        "note": "This is probably only used by mods, this usage may be incorrect"
+    },
+    "58": {
+        "name": "Dark Age Tech ID",
+        "desc": "Always 104 ",
+        "defaults": {},
+        "note": "Nothing happens when you change this"
+    },
+    "59": {
+        "name": "Unused Resource 059",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "60": {
+        "name": "Unused Resource 060",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "61": {
+        "name": "Unused Resource 061",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "62": {
+        "name": "Building Housing Rate",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "63": {
+        "name": "Tax Gather Rate",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "64": {
+        "name": "Gather Accumulator",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "65": {
+        "name": "Salvage Decay Rate",
+        "desc": "Unknown... What does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "66": {
+        "name": "Unused Resource 066",
+        "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
+        "defaults": {},
+        "note": ""
+    },
+    "67": {
+        "name": "Can Convert",
+        "desc": "Boolean: monks can convert enemy units",
+        "defaults": {
+            "0": " No",
+            "1": " Yes (default)"
+        },
+        "note": ""
+    },
+    "68": {
+        "name": "Hit Points Killed",
+        "desc": "Cumulative hp of all units killed",
+        "defaults": {},
+        "note": ""
+    },
+    "69": {
+        "name": "Farm Food Multiplier",
+        "desc": "Multiplier for the amount of extra food granted by mill upgrades",
+        "defaults": {
+            "1": "No multiplier (default)"
+        },
+        "note": ""
+    },
+    "70": {
+        "name": "Source Market or Dock X Coordinate",
+        "desc": "Controls the amount of gold that trade carts and trade cogs deposit, when the source market is changed",
+        "defaults": {},
+        "note": ""
+    },
+    "71": {
+        "name": "Source Market or Dock Y Coordinate",
+        "desc": "Controls the amount of gold that trade carts and trade cogs deposit, when the source market is changed",
+        "defaults": {},
+        "note": ""
+    },
+    "72": {
+        "name": "Unused Resource 72",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "73": {
+        "name": "Unused Resource 73",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "74": {
+        "name": "Unused Resource 74",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "75": {
+        "name": "Unused Resource 75",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "76": {
+        "name": "Unused Resource 76",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "77": {
+        "name": "Conversion Resistance",
+        "desc": "Coefficient of conversion resistance",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": "Probability of conversion every monk second is divided by this value for ALL source player units."
+    },
+    "78": {
+        "name": "Trade Vig Rate",
+        "desc": "Market exchange rate fraction for the source player",
+        "defaults": {
+            "0.3": " Default",
+            "0.15": " after Guilds",
+            "0.05": " Saracens"
+        },
+        "note": ""
+    },
+    "79": {
+        "name": "Stone Mining Productivity",
+        "desc": "Multiplier for stone mined by stone miners",
+        "defaults": {
+            "1": " Default",
+            "1.15": " Mayans"
+        },
+        "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
+    },
+    "80": {
+        "name": "Queued Units",
+        "desc": "Amount of units in queue",
+        "defaults": {},
+        "note": "Note that only the units waiting to be trained are considered in the queue so if an archery range has 3 archers being made, there is 1 archer that is being trained and 2 archers that are in queue"
+    },
+    "81": {
+        "name": "Training Count",
+        "desc": "Amount of units being trained",
+        "defaults": {},
+        "note": "Note that only the FIRST unit in each building is considered as being trained so if a town centre has 4 villagers being made, there is 1 archer that is being trained and 3 villagers that are in queue"
+    },
+    "82": {
+        "name": "Start with Unit 444 (PTWC)",
+        "desc": "Boolean: started with PTWC",
+        "defaults": {},
+        "note": "Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing"
+    },
+    "83": {
+        "name": "Unused Resource 83",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "84": {
+        "name": "Starting Villagers",
+        "desc": "Number of starting villagers",
+        "defaults": {
+            "3": " Default",
+            "4": " Mayans",
+            "6": " Chinese"
+        },
+        "note": "Only works for RMS, changing this manually in the editor does nothing"
+    },
+    "85": {
+        "name": "Research Cost Modifier",
+        "desc": "Multiply technology costs by this value",
+        "defaults": {
+            "1": " Default",
+            "0.9": " Chinese in feudal age",
+            "0.85": " Chinese in castle age",
+            "0.80": " Chinese in imperial age"
+        },
+        "note": ""
+    },
+    "86": {
+        "name": "Research Time Modifier",
+        "desc": "Multiply technology research times by this value",
+        "defaults": {},
+        "note": ""
+    },
+    "87": {
+        "name": "Convert Boats",
+        "desc": "Boolean: allow monks to convert boats",
+        "defaults": {
+            "0": " No",
+            "1": " Yes (default)"
+        },
+        "note": ""
+    },
+    "88": {
+        "name": "Fish Trap Food Amount",
+        "desc": "Maximum fishtrap food amount",
+        "defaults": {
+            "710": " Default",
+            "2130": " Malay"
+        },
+        "note": ""
+    },
+    "89": {
+        "name": "Heal Rate Modifier",
+        "desc": "Monk healing rate modifier",
+        "defaults": {
+            "0": " The unit of measuremeant for this is unknown"
+        },
+        "note": ""
+    },
+    "90": {
+        "name": "Healing Range",
+        "desc": "Monk heal range",
+        "defaults": {
+            "4": " Tiles"
+        },
+        "note": ""
+    },
+    "91": {
+        "name": "Starting Food",
+        "desc": "Starting food amount",
+        "defaults": {},
+        "note": "Only works for RMS, changing this manually in the editor does nothing but its a way to check starting food amount"
+    },
+    "92": {
+        "name": "Starting Wood",
+        "desc": "Starting wood amount",
+        "defaults": {},
+        "note": "Only works for RMS, changing this manually in the editor does nothing but its a way to check starting wood amount"
+    },
+    "93": {
+        "name": "Starting Stone",
+        "desc": "Starting stone amount",
+        "defaults": {},
+        "note": "Only works for RMS, changing this manually in the editor does nothing but its a way to check starting stone amount"
+    },
+    "94": {
+        "name": "Starting Gold",
+        "desc": "Starting gold amount",
+        "defaults": {},
+        "note": "Only works for RMS, changing this manually in the editor does nothing but its a way to check starting gold amount"
+    },
+    "95": {
+        "name": "Enable PTWC / Kidnap / Loot",
+        "desc": "Enable town centre packing for the source player",
+        "defaults": {
+            "0": " Default",
+            "1": " Allows the TC to be packed and moved",
+            ">=2": " No noticeable effect"
+        },
+        "note": "Enabling kidnap/loot requires modding the units to have the kidnap/pillage action"
+    },
+    "96": {
+        "name": "No Dropsite Farmers",
+        "desc": "Enable Khmer farmer bonus",
+        "defaults": {
+            "0": " Default",
+            "1": " Khmer. Farmers no longer need dropoff and steadily gain resources while farming"
+        },
+        "note": ""
+    },
+    "97": {
+        "name": "Dominant Sheep Control",
+        "desc": "Boolean: force sheep conversion",
+        "defaults": {
+            "0": " Default",
+            ">=1": " Celts"
+        },
+        "note": "If this is set to a non zero value, other players' sheep convert to you even if they have a unit in their LOS, unless this is also a non zero value for them. Celt sheep bonus"
+    },
+    "98": {
+        "name": "Building Cost Sum",
+        "desc": "Total cost of all units and buildings owned",
+        "defaults": {},
+        "note": ""
+    },
+    "99": {
+        "name": "Tech Cost Sum",
+        "desc": "Total cost of all researches researched",
+        "defaults": {},
+        "note": ""
+    },
+    "100": {
+        "name": "Relic Income Sum",
+        "desc": "Total relic gold generated",
+        "defaults": {},
+        "note": ""
+    },
+    "101": {
+        "name": "Trade Income Sum",
+        "desc": "Total trade gold generated",
+        "defaults": {},
+        "note": ""
+    },
+    "102": {
+        "name": "Unused Resource 102",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "103": {
+        "name": "Unused Resource 103",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "104": {
+        "name": "Unused Resource 104",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "105": {
+        "name": "Unused Resource 105",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "106": {
+        "name": "Unused Resource 106",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "107": {
+        "name": "Unused Resource 107",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "108": {
+        "name": "Unused Resource 108",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "109": {
+        "name": "Unused Resource 109",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "110": {
+        "name": "Unused Resource 110",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "111": {
+        "name": "Unused Resource 111",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "112": {
+        "name": "Unused Resource 112",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "113": {
+        "name": "Unused Resource 113",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "114": {
+        "name": "Unused Resource 114",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "115": {
+        "name": "Unused Resource 115",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "116": {
+        "name": "Unused Resource 116",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "117": {
+        "name": "Unused Resource 117",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "118": {
+        "name": "Unused Resource 118",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "119": {
+        "name": "Unused Resource 119",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "120": {
+        "name": "Unused Resource 120",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "121": {
+        "name": "Unused Resource 121",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "122": {
+        "name": "Unused Resource 122",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "123": {
+        "name": "Unused Resource 123",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "124": {
+        "name": "Unused Resource 124",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "125": {
+        "name": "Unused Resource 125",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "126": {
+        "name": "Unused Resource 126",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "127": {
+        "name": "Unused Resource 127",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "128": {
+        "name": "Unused Resource 128",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "129": {
+        "name": "Unused Resource 129",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "130": {
+        "name": "Unused Resource 130",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "131": {
+        "name": "Unused Resource 131",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "132": {
+        "name": "Unused Resource 132",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "133": {
+        "name": "Unused Resource 133",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "134": {
+        "name": "Standing Castles",
+        "desc": "Number of standing castles",
+        "defaults": {},
+        "note": ""
+    },
+    "135": {
+        "name": "Hit Points Razed",
+        "desc": "Total HP of all buildings destroyed",
+        "defaults": {},
+        "note": ""
+    },
+    "136": {
+        "name": "Unused Resource 136",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "137": {
+        "name": "Unused Resource 137",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "138": {
+        "name": "Unused Resource 138",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "139": {
+        "name": "Unused Resource 139",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "140": {
+        "name": "Unused Resource 140",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "141": {
+        "name": "Unused Resource 141",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "142": {
+        "name": "Unused Resource 142",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "143": {
+        "name": "Unused Resource 143",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "144": {
+        "name": "Unused Resource 144",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "145": {
+        "name": "Unused Resource 145",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "146": {
+        "name": "Unused Resource 146",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "147": {
+        "name": "Unused Resource 147",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "148": {
+        "name": "Unused Resource 148",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "149": {
+        "name": "Unused Resource 149",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "150": {
+        "name": "Unused Resource 150",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "151": {
+        "name": "Unused Resource 151",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "152": {
+        "name": "Value Killed by Others",
+        "desc": "Total cost of all own units lost",
+        "defaults": {},
+        "note": ""
+    },
+    "153": {
+        "name": "Value Razed by Others",
+        "desc": "Total cost of all own buildings lost",
+        "defaults": {},
+        "note": ""
+    },
+    "154": {
+        "name": "Killed by Others",
+        "desc": "Number of own units killed by other players",
+        "defaults": {},
+        "note": ""
+    },
+    "155": {
+        "name": "Razed by Others",
+        "desc": "Number of own buildings destroyed by other players",
+        "defaults": {},
+        "note": ""
+    },
+    "156": {
+        "name": "Unused Resource 156",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "157": {
+        "name": "Unused Resource 157",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "158": {
+        "name": "Unused Resource 158",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "159": {
+        "name": "Unused Resource 159",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "160": {
+        "name": "Unused Resource 160",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "161": {
+        "name": "Unused Resource 161",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "162": {
+        "name": "Unused Resource 162",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "163": {
+        "name": "Unused Resource 163",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "164": {
+        "name": "Value Current Units",
+        "desc": "Total cost of all own alive units",
+        "defaults": {},
+        "note": ""
+    },
+    "165": {
+        "name": "Value Current Buildings",
+        "desc": "Total cost of all own standing buildings",
+        "defaults": {},
+        "note": ""
+    },
+    "166": {
+        "name": "Food Total",
+        "desc": "Total food collected",
+        "defaults": {},
+        "note": ""
+    },
+    "167": {
+        "name": "Wood Total",
+        "desc": "Total wood collected",
+        "defaults": {},
+        "note": ""
+    },
+    "168": {
+        "name": "Stone Total",
+        "desc": "Total stone collected",
+        "defaults": {},
+        "note": ""
+    },
+    "169": {
+        "name": "Gold Total",
+        "desc": "Total gold collected",
+        "defaults": {},
+        "note": ""
+    },
+    "170": {
+        "name": "Total Value of Kills",
+        "desc": "Total cost of all units killed",
+        "defaults": {},
+        "note": ""
+    },
+    "171": {
+        "name": "Total Tribute Received",
+        "desc": "Total of all resources received in tribute",
+        "defaults": {},
+        "note": ""
+    },
+    "172": {
+        "name": "Total Value of Razings",
+        "desc": "Total cost of all buildings destroyed",
+        "defaults": {},
+        "note": ""
+    },
+    "173": {
+        "name": "Total Castles Built",
+        "desc": "Number of total castles built",
+        "defaults": {},
+        "note": ""
+    },
+    "174": {
+        "name": "Total Wonders Built",
+        "desc": "Number of total wonders built",
+        "defaults": {},
+        "note": ""
+    },
+    "175": {
+        "name": "Tribute score",
+        "desc": "Total amount of resources sent in tribute including taxes. 10% of this is counted towards the economy score",
+        "defaults": {},
+        "note": ""
+    },
+    "176": {
+        "name": "Convert Min Adjustment",
+        "desc": "Additional monk seconds needed before a conversion is even possible",
+        "defaults": {},
+        "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=870 by T-West"
+    },
+    "177": {
+        "name": "Convert Max Adjustment",
+        "desc": "Additional monk seconds needed before a conversion is forced",
+        "defaults": {},
+        "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=870 by T-West"
+    },
+    "178": {
+        "name": "Convert Resist Min Adjustment",
+        "desc": "Additional monk seconds needed before conversion by enemy monks is even possible",
+        "defaults": {},
+        "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West"
+    },
+    "179": {
+        "name": "Convert Resist Max Adjustment",
+        "desc": "Additional monk seconds needed before conversion by enemy monks is forced",
+        "defaults": {},
+        "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West."
+    },
+    "180": {
+        "name": "Convert Building Min",
+        "desc": "Minimum time required to convert a building",
+        "defaults": {},
+        "note": "A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West"
+    },
+    "181": {
+        "name": "Convert Building Max",
+        "desc": "Maximum time required to convert a building",
+        "defaults": {},
+        "note": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West"
+    },
+    "182": {
+        "name": "Convert Building Chance",
+        "desc": "Percent chance for monks to convert buildings",
+        "defaults": {},
+        "note": "A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West"
+    },
+    "183": {
+        "name": "Reveal Enemy",
+        "desc": "Boolean: show enemy los for the source player",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after Spies"
+        },
+        "note": "Once set to `1`, setting it back to `0` won't take away LoS of enemies!"
+    },
+    "184": {
+        "name": "Value Wonders Castles",
+        "desc": "Total cost of all wonders and castles constructed",
+        "defaults": {},
+        "note": ""
+    },
+    "185": {
+        "name": "Food Score",
+        "desc": "Unknown... what does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "186": {
+        "name": "Wood Score",
+        "desc": "Unknown... what does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "187": {
+        "name": "Stone Score",
+        "desc": "Unknown... what does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "188": {
+        "name": "Gold Score",
+        "desc": "Unknown... what does this resource do?",
+        "defaults": {},
+        "note": ""
+    },
+    "189": {
+        "name": "Chopping Productivity",
+        "desc": "Multiplier for wood chopped by lumberjacks",
+        "defaults": {
+            "1": " Default",
+            "1.15": " Mayans"
+        },
+        "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%"
+    },
+    "190": {
+        "name": "Food Gathering Productivity",
+        "desc": "Multiplier for food gathered from all sources",
+        "defaults": {
+            "1": " Default",
+            "1.15": " Mayans"
+        },
+        "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Mayans, This is compensated for by reducing villager work rate by 15%. The work rate for farmers is reduced by about 23.4%"
+    },
+    "191": {
+        "name": "Relic Gold Production Rate",
+        "desc": "Relic gold generation rate in gold per minute",
+        "defaults": {
+            "30": " Default. 30 gold per minute (0.5 gold per second)",
+            "15": " After getting hit with Atheism "
+        },
+        "note": ""
+    },
+    "192": {
+        "name": "Converted Units Die",
+        "desc": "Boolean: converted units die instead of switching over to the enemy",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after Heresey"
+        },
+        "note": ""
+    },
+    "193": {
+        "name": "Theocracy",
+        "desc": "Boolean: only one monk needs to regen faith after group conversion for the source player",
+        "defaults": {
+            "0": " No (default)",
+            "1": " Yes, after researching Theocracy"
+        },
+        "note": ""
+    },
+    "194": {
+        "name": "Unused Resource 194",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "195": {
+        "name": "Construction Rate Modifier",
+        "desc": "Builder work rate multiplier",
+        "defaults": {
+            "0": " Default",
+            "1.3": " Spanish"
+        },
+        "note": "The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`"
+    },
+    "196": {
+        "name": "Hun Wonder Discount",
+        "desc": "Additional time required for relic/wonder victories in one tenth of a year",
+        "defaults": {
+            "0": " default",
+            "1000": " (100 years) for the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic/wonder victories, i.e. it adds up if multiple hun players get the tech"
+        },
+        "note": "Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame"
+    },
+    "197": {
+        "name": "Spies Discount",
+        "desc": "Boolean: Halves the cost of spies per villager, and caps it at 15k gold max instead of the usual 30k",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": ""
+    },
+    "198": {
+        "name": "Unused Resource 198",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "199": {
+        "name": "Unused Resource 199",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "200": {
+        "name": "Unused Resource 200",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "201": {
+        "name": "Unused Resource 201",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "202": {
+        "name": "Unused Resource 202",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "203": {
+        "name": "Reveal Map",
+        "desc": "Controls the map visibility for a player.",
+        "defaults": {
+            "0": " Normal",
+            "1": " Explored",
+            "2": " All Visible"
+        },
+        "note": ""
+    },
+    "204": {
+        "name": "Reveal Unit on Map",
+        "desc": "Controls the visibility of other players' units for a player",
+        "defaults": {},
+        "note": "Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently"
+    },
+    "205": {
+        "name": "Feitoria Food Productivity",
+        "desc": "Feitoria food production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of food obtained from owning `n` number of Feitorias is given by `n * feitoria_food_productivity * 1.6`"
+    },
+    "206": {
+        "name": "Feitoria Wood Productivity",
+        "desc": "Feitoria wood production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of wood obtained from owning `n` number of Feitorias is given by `n * feitoria_wood_productivity * 0.7`"
+    },
+    "207": {
+        "name": "Feitoria Stone Productivity",
+        "desc": "Feitoria stone production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of stone obtained from owning `n` number of Feitorias is given by `n * feitoria_stone_productivity * 0.3`"
+    },
+    "208": {
+        "name": "Feitoria Gold Productivity",
+        "desc": "Feitoria gold production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of gold obtained from owning `n` number of Feitorias is given by `n * feitoria_gold_productivity * 1`"
+    },
+    "209": {
+        "name": "Reveal Enemy Town Centers",
+        "desc": "Boolean: reveal enemy town centre location for the source player",
+        "defaults": {
+            "0": " Default",
+            "5": " Vietnamese"
+        },
+        "note": "The bonus works for all values >=1, the choice of setting it to 5 for vietnamese seems arbitrary"
+    },
+    "210": {
+        "name": "Relics Visible on Map",
+        "desc": "Boolean: reveal relics on map amount",
+        "defaults": {
+            "-1": " Default",
+            "42": " Burmese"
+        },
+        "note": "Burmese reveal relics on map bonus. Only works in RMS, manually changing this in the editor does not seem to have any effects"
+    },
+    "211": {
+        "name": "Elevation Higher Bonus",
+        "desc": "The fraction for additional bonus damage dealt from higher elevation",
+        "defaults": {
+            "0": " Default",
+            "0.25": " Tatars"
+        },
+        "note": "Damage that units on higher elevation deal to units on lower elevation is multiplied by `1.25 + elevation_bonus_higher`"
+    },
+    "212": {
+        "name": "Elevation Lower Bonus",
+        "desc": "The fraction for additional bonus damage dealt from lower elevation",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": "Damage that units on lower elevation deal to units on higher elevation is multiplied by `0.75 + elevation_bonus_lower`"
+    },
+    "213": {
+        "name": "Raiding Productivity",
+        "desc": "Keshik gold generation rate per 100 seconds",
+        "defaults": {
+            "0": " Default",
+            "50": " (0.5 g/s) Tatars"
+        },
+        "note": "Note that in practice, due to attack reload time and frame delay, Keshiks don't actually produce 0.5 g/s, but a slightly lower value"
+    },
+    "214": {
+        "name": "Mercenary Kipchak Count",
+        "desc": "Total number of mercenary kipchak creatable",
+        "defaults": {},
+        "note": "Researching Cuman Mercenaries gives 5 of this resource per castle. Making mercenary Kipchaks costs one unit of this resource. Each newly constructed castle gives +5"
+    },
+    "215": {
+        "name": "Unused Resource 215",
+        "desc": "Unused but some units use it as part of their cost as a leftover: `Urus Khan`, `CUMANDISABLED` and `CUMANPLACEHOLDER`",
+        "defaults": {},
+        "note": ""
+    },
+    "216": {
+        "name": "Shepherd Productivity",
+        "desc": "Amount of food collected from sheep multiplier",
+        "defaults": {
+            "1": " Default",
+            "1.57": " Tatars"
+        },
+        "note": "Since this works by multiplying the amount of resources gathered by a villager, it has a side effect of increasing the gather rate. In the case of Tatars, This is compensated for by reducing villager work rate by 57%"
+    },
+    "217": {
+        "name": "Shared Line of Sight",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "218": {
+        "name": "Early Town Center Limit",
+        "desc": "This is the number of extra TCs a player is allowed to build IF TCs are enabled in feudal age",
+        "defaults": {
+            "1": " Default",
+            "2": " Cumans"
+        },
+        "note": "Since generic civs don't get access to TCs in feudal, the 10k amount doesn't matter, but if you're trying to make a map where you want people to be able to make TCs in feudal, make sure to set this value to 10k for cumans!"
+    },
+    "219": {
+        "name": "Fishing Productivity",
+        "desc": "Multiplier for food gathered by fishing ships",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate"
+    },
+    "220": {
+        "name": "Enable Certain Hero Level Up",
+        "desc": "Enables leveling up when killing units for `Richard the Lionheart`, `Sieur de Metz`, `Kushluk`, `Zawisza the Black`",
+        "defaults": {
+            "0": "Default"
+        },
+        "note": "This enabled `Loot` task which makes these heroes gain stats instead of resources."
+    },
+    "221": {
+        "name": "Monument Food Productivity",
+        "desc": "Monument food trickle rate multiplier",
+        "defaults": {
+            "1": " In KoTH games"
+        },
+        "note": "The amount of resources obtained by owning a monument is `0.7925 * food_trickle_from_monument`"
+    },
+    "222": {
+        "name": "Monument Wood Productivity",
+        "desc": "Monument wood trickle rate multiplier",
+        "defaults": {
+            "1": " In KoTH games"
+        },
+        "note": "The amount of resources obtained by owning a monument is `0.7925 * wood_trickle_from_monument`"
+    },
+    "223": {
+        "name": "Monument Stone Productivity",
+        "desc": "Monument stone trickle rate multiplier",
+        "defaults": {
+            "1": " In KoTH games"
+        },
+        "note": "The amount of resources obtained by owning a monument is `0.7925 * stone_trickle_from_monument`"
+    },
+    "224": {
+        "name": "Monument Gold Productivity",
+        "desc": "Monument gold trickle rate multiplier",
+        "defaults": {
+            "1": " In KoTH games"
+        },
+        "note": "The amount of resources obtained by owning a monument is `0.7925 * gold_trickle_from_monument`"
+    },
+    "225": {
+        "name": "Relic Food Production Rate",
+        "desc": "Relic food production per minute",
+        "defaults": {
+            "0": " Default",
+            "30": " Burgundians",
+            "15": " Burgundians after getting hit with Atheism"
+        },
+        "note": ""
+    },
+    "226": {
+        "name": "Villagers Killed by Gaia",
+        "desc": "Total number of villagers lost to gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "227": {
+        "name": "Villagers Killed by Animals",
+        "desc": "Total number of villagers lost to wild animals",
+        "defaults": {},
+        "note": ""
+    },
+    "228": {
+        "name": "Villagers Killed by AI Player",
+        "desc": "Total number of villagers lost to AIs",
+        "defaults": {},
+        "note": ""
+    },
+    "229": {
+        "name": "Villagers Killed by Human Player",
+        "desc": "Total number of villagers lost to human players",
+        "defaults": {},
+        "note": ""
+    },
+    "230": {
+        "name": "Food Generation Rate",
+        "desc": "Free food trickle rate (per minute)",
+        "defaults": {},
+        "note": ""
+    },
+    "231": {
+        "name": "Wood Generation Rate",
+        "desc": "Free wood trickle rate (per minute)",
+        "defaults": {},
+        "note": ""
+    },
+    "232": {
+        "name": "Stone Generation Rate",
+        "desc": "Free stone trickle rate (per minute)",
+        "defaults": {},
+        "note": ""
+    },
+    "233": {
+        "name": "Gold Generation Rate",
+        "desc": "Free gold trickle rate (per minute)",
+        "defaults": {},
+        "note": ""
+    },
+    "234": {
+        "name": "Spawn Limit",
+        "desc": "The limit to the number of spawning buildings that can spawn units from spawn command in a technology",
+        "defaults": {},
+        "note": "This is usually overridden by techs"
+    },
+    "235": {
+        "name": "Flemish Militia Population",
+        "desc": "Number of alive flemish militia",
+        "defaults": {},
+        "note": ""
+    },
+    "236": {
+        "name": "Farming Gold Productivity",
+        "desc": "Farming gold generation rate per 100 seconds",
+        "defaults": {
+            "0": " Default",
+            "2": " (0.02 g/s per farmer) after Burgundian Vineyards"
+        },
+        "note": "Only generates gold while collecting food from farms, and not when walking on them down"
+    },
+    "237": {
+        "name": "Folwark Collection Amount",
+        "desc": "This is the amount of food collected from farms built around a folwark",
+        "defaults": {
+            "0": " Default",
+            "17.5": " Poles",
+            "19.25": " Poles with Chinese Ally",
+            "25": " Poles with Horse Collar",
+            "27.5": " Poles with Horse Collar & Chinese Ally",
+            "37.5": " Poles with Heavy Plow",
+            "41.25": " Poles with Heavy Plow & Chinese Ally",
+            "55": " Poles with Crop Rotation",
+            "60.5": " Poles with Crop Rotation & Chinese Ally"
+        },
+        "note": ""
+    },
+    "238": {
+        "name": "Folwark Attribute Type",
+        "desc": "This is the ID of the resource that is given when a farm is constructed around a folwark",
+        "defaults": {
+            "0": " Poles",
+            "-1": " Default"
+        },
+        "note": ""
+    },
+    "239": {
+        "name": "Folwark Building Type",
+        "desc": "This is the ID of the building that the Folwark needs to upgrade from for the farm collection ability to work",
+        "defaults": {
+            "68": " (Mill) Poles",
+            "-1": " Default"
+        },
+        "note": ""
+    },
+    "240": {
+        "name": "Units Converted",
+        "desc": "The amount of units lost to enemy conversions",
+        "defaults": {},
+        "note": ""
+    },
+    "241": {
+        "name": "Stone Mining Gold Productivity",
+        "desc": "Stone mining gold generation rate per 100 seconds",
+        "defaults": {
+            "0": " Default",
+            "18": " Poles",
+            "20.7": " Poles with Stone Mining",
+            "23.805": " Poles with Stone Shaft Mining"
+        },
+        "note": ""
+    },
+    "242": {
+        "name": "Trade Workshop Food Productivity",
+        "desc": "Trade Workshop food production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of food obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_food_productivity * 2.25`"
+    },
+    "243": {
+        "name": "Trade Workshop Wood Productivity",
+        "desc": "Trade Workshop wood production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of wood obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_wood_productivity * 2.25`"
+    },
+    "244": {
+        "name": "Trade Workshop Stone Productivity",
+        "desc": "Trade Workshop stone production rate multiplier",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": "The amount of stone obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_stone_productivity * 2.25`"
+    },
+    "245": {
+        "name": "Trade Workshop Gold Productivity",
+        "desc": "Trade Workshop gold production rate multiplier",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": "The amount of gold obtained from owning `n` number of TWS (Unit 1647) is given by `n * tws_gold_productivity * 2.25`"
+    },
+    "246": {
+        "name": "Units Value Total",
+        "desc": "Total cost of all units created so far",
+        "defaults": {},
+        "note": "This does **not** decrease when the units die"
+    },
+    "247": {
+        "name": "Buildings Value Total",
+        "desc": "Total cost of all buildings created so far",
+        "defaults": {},
+        "note": "Increases when foundations are placed. This does **not** decrease if the foundation is deleted"
+    },
+    "248": {
+        "name": "Villagers Created Total",
+        "desc": "Total number of villagers created so far",
+        "defaults": {},
+        "note": ""
+    },
+    "249": {
+        "name": "Villagers Idle Periods Total",
+        "desc": "Amount of villagers that *entered* an idle state since game start",
+        "defaults": {},
+        "note": "\n    1. This only updates every 5 physical minutes.\n    2. The number of villagers that *entered* an idle state since the last updated is added to this resource.\n    3. Starting villager count is the initial value"
+    },
+    "250": {
+        "name": "Villagers Idle Seconds Total",
+        "desc": "Amount of total seconds all villagers have been idle since game start",
+        "defaults": {},
+        "note": "\n    1. This only updates every 5 physical minutes.\n    2. The idle time in seconds for all villagers since the last time this resource was updated is added  to this resource.\n    3. A villager immediately adds its own idle time to this resource if it dies"
+    },
+    "251": {
+        "name": "Trade Food Percent",
+        "desc": "Percentage of gold generated from trade that is also given as food",
+        "defaults": {
+            "0": " Default",
+            "10": " Bengalis"
+        },
+        "note": ""
+    },
+    "252": {
+        "name": "Trade Wood Percent",
+        "desc": "Percentage of gold generated from trade that is also given as wood",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": ""
+    },
+    "253": {
+        "name": "Trade Stone Percent",
+        "desc": "Percentage of gold generated from trade that is also given as stone",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": ""
+    },
+    "254": {
+        "name": "Livestock Food Productivity",
+        "desc": "Garrisoned herdable food generation rate per 60 seconds",
+        "defaults": {
+            "0": " Default",
+            "3.5": " (0.0583 f/s per herdable) Gurjaras"
+        },
+        "note": ""
+    },
+    "255": {
+        "name": "Unused Resource 255",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "256": {
+        "name": "Unused Resource 256",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "257": {
+        "name": "Unused Resource 257",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "258": {
+        "name": "Unused Resource 258",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "259": {
+        "name": "Unused Resource 259",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "260": {
+        "name": "Unused Resource 260",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "261": {
+        "name": "Unused Resource 261",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "262": {
+        "name": "Civilization Name Override",
+        "desc": "",
+        "defaults": {},
+        "note": ""
+    },
+    "263": {
+        "name": "Starting Scout ID",
+        "desc": "Unit ID for the starting scout. Can be set to any unit (even buildings)",
+        "defaults": {
+            "448": " (Scout Cavalry) Default",
+            "751": " (Eagle Scout) Aztecs, Incas and Mayans",
+            "1755": " (Camel Scout) Gurjaras"
+        },
+        "note": ""
+    },
+    "264": {
+        "name": "Relic Wood Production Rate",
+        "desc": "Relic wood production per minute",
+        "defaults": {
+            "0": " Default"
+        },
+        "note": "This is not affected by Atheism"
+    },
+    "265": {
+        "name": "Relic Stone Production Rate",
+        "desc": "Relic stone production per minute",
+        "defaults": {},
+        "note": "This is not affected by Atheism"
+    },
+    "266": {
+        "name": "Chopping Gold Productivity",
+        "desc": "Lumberjack chopping gold generation rate per 100 seconds",
+        "defaults": {
+            "0":     " Default",
+            "1.5":   " (0.015 g/s per lumberjack) Vietnamese with paper money",
+            "1.8":   " (0.018 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe",
+            "2.16":  " (0.0216 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw",
+            "2.376": " (0.02376 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw & Two-Man Saw"
+        },
+        "note": "Only generates gold while collecting wood from trees, and not when cutting them down"
+    },
+    "267": {
+        "name": "Foraging Wood Productivity",
+        "desc": "Forager foraging wood generation rate per 100 seconds",
+        "defaults": {
+            "0":       " Default",
+            "10.4753": " (0.104753 w/s per forager) Portuguese"
+        },
+        "note": ""
+    },
+    "268": {
+        "name": "Hunter Productivity",
+        "desc": "Hunter hunting gold production rate per 100 seconds",
+        "defaults": {
+
+        },
+        "note": ""
+    },
+    "269": {
+        "name": "Technology Reward Effect",
+        "desc": "This is the ID of an additional effect which will fire when any technology is researched",
+        "defaults": {},
+        "note": ""
+    },
+    "270": {
+        "name": "Unit Repair Cost",
+        "desc": "Percentage of cost required to repair siege units and ships",
+        "defaults": {},
+        "note": ""
+    },
+    "271": {
+        "name": "Building Repair Cost",
+        "desc": "Percentage of cost required to repair buildings",
+        "defaults": {},
+        "note": ""
+    },
+    "272": {
+        "name": "Elevation Higher Damage",
+        "desc": "Damage modifier for own units when attacked from higher elevation",
+        "defaults": {},
+        "note": "This is applied after the calculations from [Elevation Higher Bonus](./#211-elevation-higher-bonus) and [Elevation Lower Bonus](./#212-elevation-lower-bonus)"
+    },
+    "273": {
+        "name": "Elevation Lower Damage",
+        "desc": "Damage modifier for own units when attacked from lower elevation",
+        "defaults": {},
+        "note": "This is applied after the calculations from [Elevation Higher Bonus](./#211-elevation-higher-bonus) and [Elevation Lower Bonus](./#212-elevation-lower-bonus)"
+    },
+    "274": {
+        "name": "Infantry Kill Reward",
+        "desc": "This resource currently effectively enables/disables gold generation per second by infantry killing villagers, trade units and monks",
+        "defaults": {
+            "0": "All Civs",
+            "1": "Vikings after Chieftains"
+        },
+        "note": "Technically, this resource is used as a multiplier for the resource generated by task 154 currently on infantry units. Task 154 can change which resource does this, and it is what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is set to the different rates for different types of targets for infantry"
+    },
+    "275": {
+        "name": "Unused Resource 275",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "276": {
+        "name": "Unused Resource 276",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "277": {
+        "name": "Red Cliffs Tactics Damage",
+        "desc": "Multiplier for the amount of fire damage done by demolition ships",
+        "defaults": {
+            "0": "Before red cliffs tactics is researched",
+            "1": "After red cliffs tactics is researched"
+        },
+        "note": "This implies that converted units that are affected by the tech won't do fire damage after being converted"
+    },
+    "278": {
+        "name": "Unused Resource 278",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "279": {
+        "name": "Military Can Convert",
+        "desc": "Military units with the conversion task can convert units if this is set to > 0 for a player",
+        "defaults": {},
+        "note": ""
+    },
+    "280": {
+        "name": "Military Convert Range",
+        "desc": "Adds to the conversion range of military units",
+        "defaults": {},
+        "note": ""
+    },
+    "281": {
+        "name": "Military Convert Chance",
+        "desc": "Determines the conversion probability per monk second",
+        "defaults": {},
+        "note": ""
+    },
+    "282": {
+        "name": "Military Convert Recharge",
+        "desc": "Determines the faith recharge rate after successful conversions",
+        "defaults": {},
+        "note": ""
+    },
+    "283": {
+        "name": "Spawn Inside",
+        "desc": "Determines whenever spawned unit via `xsEffectAmount(cSpawnUnit,...)` or certain techs is spawned garrisoned or outside",
+        "defaults": {
+            "0": "All Civs",
+            "1": "Set briefly for the Armenians after their first Fortified Church is built to spawn the relic garrisoned."
+        },
+        "note": "This is usually overridden by techs"
+    },
+    "284": {
+        "name": "Cavalry Kill Reward",
+        "desc": "This resource effectively sets the gold generation rate per second by cavalry fighting other military units",
+        "defaults": {
+            "0": "All Civs"
+        },
+        "note": "Technically, this resource is used as a multiplier for the resource generated by task 154 currently on cavalry units. Task 154 can change which resource does this, and it is also what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is just set to 1 for cavalry."
+    },
+    "285": {
+        "name": "Shared Visibility",
+        "desc": "Lower bits 1 to 9 control LoS with players 0 to 8 with 0 being gaia.",
+        "defaults": {},
+        "note": "This does not change LoS for allies if the shared exploration setting in the lobby is enabled"
+    },
+    "286": {
+        "name": "Shared Exploration",
+        "desc": "Lower bits 1 to 9 control map exploration with players 0 to 8 with 0 being gaia.",
+        "defaults": {},
+        "note": "This does not change exploration for allies if the shared exploration setting in the lobby is enabled"
+    },
+    "287": {
+        "name": "Military Food Productivity",
+        "desc": "The amount of food generated by soldiers per 100 seconds",
+        "defaults": {},
+        "note": ""
+    },
+    "288": {
+        "name": "Pasture Food Amount",
+        "desc": "Determines the amount of food pastures provide",
+        "defaults": {},
+        "note": ""
+    },
+    "289": {
+        "name": "Pasture Animal Count",
+        "desc": "Determines the amount of animals on a pasture.",
+        "defaults": {},
+        "note": ""
+    },
+    "290": {
+        "name": "Pasture Herder Count",
+        "desc": "Determines the maximum amount of villagers that can work at once on a pasture",
+        "defaults": {},
+        "note": ""
+    },
+    "291": {
+        "name": "Chopping Food Productivity",
+        "desc": "Unused - duplicate name, actually controlled by resource 502",
+        "defaults": {},
+        "note": ""
+    },
+    "292": {
+        "name": "Animal Decay Prevention",
+        "desc": "Prevents animal corpses from losing food when being gathered by a villager",
+        "defaults": {},
+        "note": ""
+    },
+    "293": {
+        "name": "Herder Food Productivity",
+        "desc": "Percent extra food generated by herders and shepherds",
+        "defaults": {},
+        "note": ""
+    },
+    "294": {
+        "name": "Shepherd Food Productivity",
+        "desc": "Percent extra food generated by herders and shepherds",
+        "defaults": {},
+        "note": ""
+    },
+    "295": {
+        "name": "Unused Resource 295",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "296": {
+        "name": "Unused Resource 296",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "297": {
+        "name": "Unused Resource 297",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "298": {
+        "name": "Unused Resource 298",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "299": {
+        "name": "Unused Resource 299",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "300": {
+        "name": "Killed Gaia",
+        "desc": "Number of gaia units killed",
+        "defaults": {},
+        "note": ""
+    },
+    "301": {
+        "name": "Killed P1",
+        "desc": "Number of player1 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "302": {
+        "name": "Killed P2",
+        "desc": "Number of player2 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "303": {
+        "name": "Killed P3",
+        "desc": "Number of player3 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "304": {
+        "name": "Killed P4",
+        "desc": "Number of player4 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "305": {
+        "name": "Killed P5",
+        "desc": "Number of player5 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "306": {
+        "name": "Killed P6",
+        "desc": "Number of player6 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "307": {
+        "name": "Killed P7",
+        "desc": "Number of player7 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "308": {
+        "name": "Killed P8",
+        "desc": "Number of player8 units killed",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "309": {
+        "name": "Unused Resource 309",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "310": {
+        "name": "Unused Resource 310",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "311": {
+        "name": "Unused Resource 311",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "312": {
+        "name": "Unused Resource 312",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "313": {
+        "name": "Unused Resource 313",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "314": {
+        "name": "Unused Resource 314",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "315": {
+        "name": "Unused Resource 315",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "316": {
+        "name": "Unused Resource 316",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "317": {
+        "name": "Unused Resource 317",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "318": {
+        "name": "Unused Resource 318",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "319": {
+        "name": "Unused Resource 319",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "320": {
+        "name": "Unused Resource 320",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "321": {
+        "name": "Unused Resource 321",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "322": {
+        "name": "Unused Resource 322",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "323": {
+        "name": "Unused Resource 323",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "324": {
+        "name": "Unused Resource 324",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "325": {
+        "name": "Kills by Gaia",
+        "desc": "Number of own units killed by Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "326": {
+        "name": "Kills by P1",
+        "desc": "Number of own units killed by player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "327": {
+        "name": "Kills by P2",
+        "desc": "Number of own units killed by player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "328": {
+        "name": "Kills by P3",
+        "desc": "Number of own units killed by player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "329": {
+        "name": "Kills by P4",
+        "desc": "Number of own units killed by player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "330": {
+        "name": "Kills by P5",
+        "desc": "Number of own units killed by player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "331": {
+        "name": "Kills by P6",
+        "desc": "Number of own units killed by player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "332": {
+        "name": "Kills by P7",
+        "desc": "Number of own units killed by player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "333": {
+        "name": "Kills by P8",
+        "desc": "Number of own units killed by player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "334": {
+        "name": "Unused Resource 334",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "335": {
+        "name": "Unused Resource 335",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "336": {
+        "name": "Unused Resource 336",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "337": {
+        "name": "Unused Resource 337",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "338": {
+        "name": "Unused Resource 338",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "339": {
+        "name": "Unused Resource 339",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "340": {
+        "name": "Unused Resource 340",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "341": {
+        "name": "Unused Resource 341",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "342": {
+        "name": "Unused Resource 342",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "343": {
+        "name": "Unused Resource 343",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "344": {
+        "name": "Unused Resource 344",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "345": {
+        "name": "Unused Resource 345",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "346": {
+        "name": "Unused Resource 346",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "347": {
+        "name": "Unused Resource 347",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "348": {
+        "name": "Unused Resource 348",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "349": {
+        "name": "Unused Resource 349",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "350": {
+        "name": "Gaia Razings",
+        "desc": "Number of buildings destroyed of Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "351": {
+        "name": "P1 Razings",
+        "desc": "Number of buildings destroyed of player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "352": {
+        "name": "P2 Razings",
+        "desc": "Number of buildings destroyed of player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "353": {
+        "name": "P3 Razings",
+        "desc": "Number of buildings destroyed of player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "354": {
+        "name": "P4 Razings",
+        "desc": "Number of buildings destroyed of player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "355": {
+        "name": "P5 Razings",
+        "desc": "Number of buildings destroyed of player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "356": {
+        "name": "P6 Razings",
+        "desc": "Number of buildings destroyed of player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "357": {
+        "name": "P7 Razings",
+        "desc": "Number of buildings destroyed of player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "358": {
+        "name": "P8 Razings",
+        "desc": "Number of buildings destroyed of player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "359": {
+        "name": "Unused Resource 359",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "360": {
+        "name": "Unused Resource 360",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "361": {
+        "name": "Unused Resource 361",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "362": {
+        "name": "Unused Resource 362",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "363": {
+        "name": "Unused Resource 363",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "364": {
+        "name": "Unused Resource 364",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "365": {
+        "name": "Unused Resource 365",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "366": {
+        "name": "Unused Resource 366",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "367": {
+        "name": "Unused Resource 367",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "368": {
+        "name": "Unused Resource 368",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "369": {
+        "name": "Unused Resource 369",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "370": {
+        "name": "Unused Resource 370",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "371": {
+        "name": "Unused Resource 371",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "372": {
+        "name": "Unused Resource 372",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "373": {
+        "name": "Unused Resource 373",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "374": {
+        "name": "Unused Resource 374",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "375": {
+        "name": "Razings by Gaia",
+        "desc": "Number of own buildings destroyed by Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "376": {
+        "name": "Razings by P1",
+        "desc": "Number of own buildings destroyed by player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "377": {
+        "name": "Razings by P2",
+        "desc": "Number of own buildings destroyed by player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "378": {
+        "name": "Razings by P3",
+        "desc": "Number of own buildings destroyed by player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "379": {
+        "name": "Razings by P4",
+        "desc": "Number of own buildings destroyed by player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "380": {
+        "name": "Razings by P5",
+        "desc": "Number of own buildings destroyed by player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "381": {
+        "name": "Razings by P6",
+        "desc": "Number of own buildings destroyed by player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "382": {
+        "name": "Razings by P7",
+        "desc": "Number of own buildings destroyed by player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "383": {
+        "name": "Razings by P8",
+        "desc": "Number of own buildings destroyed by player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "384": {
+        "name": "Unused Resource 384",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "385": {
+        "name": "Unused Resource 385",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "386": {
+        "name": "Unused Resource 386",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "387": {
+        "name": "Unused Resource 387",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "388": {
+        "name": "Unused Resource 388",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "389": {
+        "name": "Unused Resource 389",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "390": {
+        "name": "Unused Resource 390",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "391": {
+        "name": "Unused Resource 391",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "392": {
+        "name": "Unused Resource 392",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "393": {
+        "name": "Unused Resource 393",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "394": {
+        "name": "Unused Resource 394",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "395": {
+        "name": "Unused Resource 395",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "396": {
+        "name": "Unused Resource 396",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "397": {
+        "name": "Unused Resource 397",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "398": {
+        "name": "Unused Resource 398",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "399": {
+        "name": "Unused Resource 399",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "400": {
+        "name": "Gaia Kill Value",
+        "desc": "Total cost of all units killed of Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "401": {
+        "name": "P1 Kill Value",
+        "desc": "Total cost of all units killed of player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "402": {
+        "name": "P2 Kill Value",
+        "desc": "Total cost of all units killed of player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "403": {
+        "name": "P3 Kill Value",
+        "desc": "Total cost of all units killed of player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "404": {
+        "name": "P4 Kill Value",
+        "desc": "Total cost of all units killed of player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "405": {
+        "name": "P5 Kill Value",
+        "desc": "Total cost of all units killed of player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "406": {
+        "name": "P6 Kill Value",
+        "desc": "Total cost of all units killed of player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "407": {
+        "name": "P7 Kill Value",
+        "desc": "Total cost of all units killed of player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "408": {
+        "name": "P8 Kill Value",
+        "desc": "Total cost of all units killed of player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "409": {
+        "name": "Unused Resource 409",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "410": {
+        "name": "Unused Resource 410",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "411": {
+        "name": "Unused Resource 411",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "412": {
+        "name": "Unused Resource 412",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "413": {
+        "name": "Unused Resource 413",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "414": {
+        "name": "Unused Resource 414",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "415": {
+        "name": "Unused Resource 415",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "416": {
+        "name": "Unused Resource 416",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "417": {
+        "name": "Unused Resource 417",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "418": {
+        "name": "Unused Resource 418",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "419": {
+        "name": "Unused Resource 419",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "420": {
+        "name": "Unused Resource 420",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "421": {
+        "name": "Unused Resource 421",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "422": {
+        "name": "Unused Resource 422",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "423": {
+        "name": "Unused Resource 423",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "424": {
+        "name": "Unused Resource 424",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "425": {
+        "name": "Gaia Razing Value",
+        "desc": "Total cost of all buildings destroyed of Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "426": {
+        "name": "P1 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "427": {
+        "name": "P2 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "428": {
+        "name": "P3 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "429": {
+        "name": "P4 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "430": {
+        "name": "P5 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "431": {
+        "name": "P6 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "432": {
+        "name": "P7 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "433": {
+        "name": "P8 Razing Value",
+        "desc": "Total cost of all buildings destroyed of player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "434": {
+        "name": "Unused Resource 434",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "435": {
+        "name": "Unused Resource 435",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "436": {
+        "name": "Unused Resource 436",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "437": {
+        "name": "Unused Resource 437",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "438": {
+        "name": "Unused Resource 438",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "439": {
+        "name": "Unused Resource 439",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "440": {
+        "name": "Unused Resource 440",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "441": {
+        "name": "Unused Resource 441",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "442": {
+        "name": "Unused Resource 442",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "443": {
+        "name": "Unused Resource 443",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "444": {
+        "name": "Unused Resource 444",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "445": {
+        "name": "Unused Resource 445",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "446": {
+        "name": "Unused Resource 446",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "447": {
+        "name": "Unused Resource 447",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "448": {
+        "name": "Unused Resource 448",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "449": {
+        "name": "Unused Resource 449",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "450": {
+        "name": "Gaia Tribute",
+        "desc": "Amount of resources tributed to Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "451": {
+        "name": "P1 Tribute",
+        "desc": "Amount of resources tributed to player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "452": {
+        "name": "P2 Tribute",
+        "desc": "Amount of resources tributed to player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "453": {
+        "name": "P3 Tribute",
+        "desc": "Amount of resources tributed to player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "454": {
+        "name": "P4 Tribute",
+        "desc": "Amount of resources tributed to player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "455": {
+        "name": "P5 Tribute",
+        "desc": "Amount of resources tributed to player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "456": {
+        "name": "P6 Tribute",
+        "desc": "Amount of resources tributed to player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "457": {
+        "name": "P7 Tribute",
+        "desc": "Amount of resources tributed to player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "458": {
+        "name": "P8 Tribute",
+        "desc": "Amount of resources tributed to player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "459": {
+        "name": "Unused Resource 459",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "460": {
+        "name": "Unused Resource 460",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "461": {
+        "name": "Unused Resource 461",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "462": {
+        "name": "Unused Resource 462",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "463": {
+        "name": "Unused Resource 463",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "464": {
+        "name": "Unused Resource 464",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "465": {
+        "name": "Unused Resource 465",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "466": {
+        "name": "Unused Resource 466",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "467": {
+        "name": "Unused Resource 467",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "468": {
+        "name": "Unused Resource 468",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "469": {
+        "name": "Unused Resource 469",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "470": {
+        "name": "Unused Resource 470",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "471": {
+        "name": "Unused Resource 471",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "472": {
+        "name": "Unused Resource 472",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "473": {
+        "name": "Unused Resource 473",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "474": {
+        "name": "Unused Resource 474",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "475": {
+        "name": "Tribute from Gaia",
+        "desc": "Tribute received from Gaia",
+        "defaults": {},
+        "note": ""
+    },
+    "476": {
+        "name": "Tribute from P1",
+        "desc": "Tribute received from player1",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 1, not editor/scenario player 1"
+    },
+    "477": {
+        "name": "Tribute from P2",
+        "desc": "Tribute received from player2",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 2, not editor/scenario player 2"
+    },
+    "478": {
+        "name": "Tribute from P3",
+        "desc": "Tribute received from player3",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 3, not editor/scenario player 3"
+    },
+    "479": {
+        "name": "Tribute from P4",
+        "desc": "Tribute received from player4",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 4, not editor/scenario player 4"
+    },
+    "480": {
+        "name": "Tribute from P5",
+        "desc": "Tribute received from player5",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 5, not editor/scenario player 5"
+    },
+    "481": {
+        "name": "Tribute from P6",
+        "desc": "Tribute received from player6",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 6, not editor/scenario player 6"
+    },
+    "482": {
+        "name": "Tribute from P7",
+        "desc": "Tribute received from player7",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 7, not editor/scenario player 7"
+    },
+    "483": {
+        "name": "Tribute from P8",
+        "desc": "Tribute received from player8",
+        "defaults": {},
+        "note": "This refers to lobby/slot/world player 8, not editor/scenario player 8"
+    },
+    "484": {
+        "name": "Unused Resource 484",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "485": {
+        "name": "Unused Resource 485",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "486": {
+        "name": "Unused Resource 486",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "487": {
+        "name": "Unused Resource 487",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "488": {
+        "name": "Unused Resource 488",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "489": {
+        "name": "Unused Resource 489",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "490": {
+        "name": "Unused Resource 490",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "491": {
+        "name": "Unused Resource 491",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "492": {
+        "name": "Unused Resource 492",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "493": {
+        "name": "Unused Resource 493",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "494": {
+        "name": "Unused Resource 494",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "495": {
+        "name": "Unused Resource 495",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "496": {
+        "name": "Unused Resource 496",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "497": {
+        "name": "Unused Resource 497",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "498": {
+        "name": "Unused Resource 498",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "499": {
+        "name": "Unused Resource 499",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "500": {
+        "name": "Unused Resource 500",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "501": {
+        "name": "Polemarch Build Limit",
+        "desc": "Hidden resource that is part of the cost of Polemarch. Incremented when the Polemarch dies, decremented when a Polemarch is trained. Increment this value to allow training of more Polemarchs",
+        "defaults": {
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "502": {
+        "name": "Chopping Food Productivity",
+        "desc": "Chopping food generation rate per 100 seconds.",
+        "defaults": {
+            "0": " Default",
+            "4": " Athenians"
+        },
+        "note": ""
+    },
+    "503": {
+        "name": "Wood Trade Ratio",
+        "desc": "Amount of trade will be returned as wood instead of gold.",
+        "defaults": {
+            "0": " Default",
+            "0.25": " Achaemenids, Athenians and Spartans."
+        },
+        "note": "Changed in the Battle of Greece civs Port by a toggle to 0.25, 0.5, and 0.75 or by researching equivalent tech in the editor. Setting it to 0.5 will return half the amount in gold and half in wood. Works for trade cogs only. Setting it to a value >= 1 will make it so no trade resources are returned."
+    },
+    "504": {
+        "name": "Unused Resource 504",
+        "desc": "Unused but civs start with 1 at the start of the game. Also unused `Spanish team bonus` effect multiplies its value by 0.8",
+        "defaults": {
+            "1": "At the start of the game. Does not seem to do anything"
+        },
+        "note": ""
+    },
+    "505": {
+        "name": "Unused Resource 505",
+        "desc": "Unused, but Achaemenids, Athenians and Spartans have it set to 1",
+        "defaults": {
+            "0": " Default",
+            "1": " Achaemenids, Athenians and Spartans"
+        },
+        "note": ""
+    },
+    "506": {
+        "name": "Achamenids Town Center Local Upgrade",
+        "desc": "Used as a local resource in Town Centers to know which of them have the Achamenids Town Center upgrade researched",
+        "defaults": {
+            "0": " Default",
+            "1": " Achaemenids, Athenians and Spartans"
+        },
+        "note": "Achamenids Town Center Local Upgrade resource is changed when its tech is researched. As a side effect its global player value will be decremented every time a Town Center is destroyed."
+    },
+    "507": {
+        "name": "Unused Resource 507",
+        "desc": "Unused, but `Athenians Static Bonuses` effect sets it to 1",
+        "defaults": {
+            "0": " Default",
+            "1": " Athenians"
+        },
+        "note": "Athenians start with it set to 1 by initial Economic Policy."
+    },
+    "508": {
+        "name": "Fortified Outpost Local Upgrade",
+        "desc": "Used as a local resource in `Outposts`",
+        "defaults": {},
+        "note": "Fortified Outpost Local Upgrade resource is changed when its tech is researched. As a side effect its global player value will be decremented every time an Outpost is destroyed."
+    },
+    "509": {
+        "name": "Mercenary Hoplite Productivity",
+        "desc": "It is named in the editor but seems to no longer affect `Mercenary Hoplite` and therefore unused",
+        "defaults": {},
+        "note": ""
+    },
+    "510": {
+        "name": "Odomantian Raiders Productivity",
+        "desc": "Modifies how much gold units gain affected by `Odomantian Raiders` tech",
+        "defaults": {
+            "0": "Default",
+            "1": "Spartans or after Odomantian Raiders is researched"
+        },
+        "note": ""
+    },
+    "511": {
+        "name": "Dii Plunderers Productivity",
+        "desc": "Modifies how much resources units gain affected by `Dii Plunderers` tech",
+        "defaults": {
+            "0": "Default",
+            "1": "After Dii Plunderers is researched"
+        },
+        "note": ""
+    },
+    "512": {
+        "name": "Stone Mining Food Productivity",
+        "desc": "Stone mining food generation rate",
+        "defaults": {
+            "0": "Default",
+            "1": "Puru"
+        },
+        "note": ""
+    },
+    "513": {
+        "name": "Emplacement Local Upgrade",
+        "desc": "Used as a local cost to upgrade `Fort` to an emplacement",
+        "defaults": {},
+        "note": ""
+    },
+    "514": {
+        "name": "Helepolis Limit",
+        "desc": "Limit the amount of `Helepolis` that can be built. Only works if `Helepolis` are built as buildings",
+        "defaults": {},
+        "note": ""
+    },
+    "515": {
+        "name": "Scythian Horse Archer Productivity",
+        "desc": "Modifies how much gold `Scythian Horse Archer` and `Elite Scythian Horse Archer` gain when killing units",
+        "defaults": {
+            "1": "Default",
+            "0": "Shu, Wu, Wei, Jurchens, Khitans"
+        },
+        "note": ""
+    },
+    "516": {
+        "name": "Unused Resource 516",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "517": {
+        "name": "Unused Resource 517",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "518": {
+        "name": "Unused Resource 518",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "519": {
+        "name": "Unused Resource 519",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "520": {
+        "name": "Lysanders Raider Productivity",
+        "desc": "Modifies how much gold `Lysanders Raider` gains when killing units",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": ""
+    },
+    "521": {
+        "name": "Peloponnesian League Productivity",
+        "desc": "Castle gold production rate multiplier",
+        "defaults": {
+            "0": " Default",
+            "1": " After Peloponnesian League researched"
+        },
+        "note": "The amount of gold obtained from owning `n` number of Castles is given by `n * castle_gold_productivity * 0.33333`."
+    },
+    "522": {
+        "name": "Base Hoplite Aura Enabled",
+        "desc": "Turns on base `Hoplite` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Agoge is researched"
+        },
+        "note": ""
+    },
+    "523": {
+        "name": "Agoge Hoplite Aura Enabled",
+        "desc": "Turns on aura gained via `Agoge` tech for `Hoplites`",
+        "defaults": {
+            "1": "After Agoge is researched",
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "524": {
+        "name": "Xyphos Hoplite Aura Enabled",
+        "desc": "Turns on aura gained via `Xyphos` tech for `Hoplites`",
+        "defaults": {
+            "1": "After Xyphos is researched",
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "525": {
+        "name": "Base Strategos Aura Enabled",
+        "desc": "Turns on base `Strategos` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Taxiarchs is researched"
+        },
+        "note": ""
+    },
+    "526": {
+        "name": "Taxiarchs Strategos Aura Enabled",
+        "desc": "Turns on aura gained via `Taxiarchs` tech for `Strategos`",
+        "defaults": {
+            "1": "After Taxiarchs is researched",
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "527": {
+        "name": "Hippeus Aura No Tech",
+        "desc": "Turns on base `Hippeus` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Morai is researched"
+        },
+        "note": ""
+    },
+    "528": {
+        "name": "Hippeus Aura With Techs",
+        "desc": "Turns on aura gained via `Morai` tech for `Hippeus`",
+        "defaults": {
+            "1": "After Morai is researched",
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "529": {
+        "name": "Unused Resource 529",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "530": {
+        "name": "Unused Resource 530",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "531": {
+        "name": "Unused Resource 531",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "532": {
+        "name": "Unused Resource 532",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "533": {
+        "name": "Unused Resource 533",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "534": {
+        "name": "Unused Resource 534",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "535": {
+        "name": "Unused Resource 535",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "536": {
+        "name": "Unused Resource 536",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "537": {
+        "name": "Unused Resource 537",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "538": {
+        "name": "Unused Resource 538",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "539": {
+        "name": "Unused Resource 539",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "540": {
+        "name": "Unused Resource 540",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+     "541": {
+        "name": "Unused Resource 541",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "542": {
+        "name": "Unused Resource 542",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "543": {
+        "name": "Unused Resource 543",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "544": {
+        "name": "Unused Resource 544",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "545": {
+        "name": "Unused Resource 545",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "546": {
+        "name": "Unused Resource 546",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "547": {
+        "name": "Unused Resource 547",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "548": {
+        "name": "Unused Resource 548",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "549": {
+        "name": "Unused Resource 549",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "550": {
+        "name": "Camel Raider Productivity",
+        "desc": "Modifies how much gold `Lysander's Raider` and `Camel Raider` gain when killing units",
+        "defaults": {
+            "1": " Default"
+        },
+        "note": ""
+    },
+    "551": {
+        "name": "Tyranny Productivity",
+        "desc": "Gain gold per unit killed",
+        "defaults": {
+            "0": " Default",
+            "1": " After Military Policy activated"
+        },
+        "note": "The amount of gold obtained from killing number of units `u` is `u * unit_loot_productivity * 3`. Unlike resources 520 and 550 works on most units. Look at A.G.E. for units with 154 loot class task."
+    },
+    "552": {
+        "name": "Unused Resource 552",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "553": {
+        "name": "Unused Resource 553",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "554": {
+        "name": "Unused Resource 554",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "555": {
+        "name": "Unused Resource 555",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "556": {
+        "name": "Unused Resource 556",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "557": {
+        "name": "Unused Resource 557",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "558": {
+        "name": "Unused Resource 558",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "559": {
+        "name": "Unused Resource 559",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "560": {
+        "name": "Ends of the World Productivity",
+        "desc": "Turns on aura gained via `Ends of the World` tech for `Fortified Outpost`",
+        "defaults": {},
+        "note": ""
+    },
+    "561": {
+        "name": "Pattiyodha Longbowman Default",
+        "desc": "Turns on base `Pattiyodha Longbowman` aura",
+        "defaults": {
+            "1": "Default",
+            "0": "Macedonians, Thracians, Puru or after Leaf-Headed Shafts is researched"
+        },
+        "note": ""
+    },
+     "562": {
+        "name": "Pattiyodha Longbowman Upgraded",
+        "desc": "Turns on aura gained via `Leaf-Headed Shafts` tech for `Pattiyodha Longbowman`",
+        "defaults": {
+            "1": "After Leaf-Headed Shafts is researched",
+            "0": "Default"
+        },
+        "note": ""
+    },
+    "563": {
+        "name": "Shepherd Gold Productivity",
+        "desc": "Sheep herding and hunting gold generation rate",
+        "defaults": {
+            "0": "Default",
+            "1": "Thracians"
+        },
+        "note": ""
+    },
+    "564": {
+        "name": "Unused Resource 564",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "565": {
+        "name": "Unused Resource 565",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "566": {
+        "name": "Unused Resource 566",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "567": {
+        "name": "Unused Resource 567",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "568": {
+        "name": "Unused Resource 568",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "569": {
+        "name": "Unused Resource 569",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "570": {
+        "name": "Unused Resource 570",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "571": {
+        "name": "Unused Resource 571",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "572": {
+        "name": "Unused Resource 572",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "573": {
+        "name": "Unused Resource 573",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "574": {
+        "name": "Unused Resource 574",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "575": {
+        "name": "Unused Resource 575",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "576": {
+        "name": "Unused Resource 576",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "577": {
+        "name": "Unused Resource 577",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "578": {
+        "name": "Unused Resource 578",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "579": {
+        "name": "Unused Resource 579",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "580": {
+        "name": "Unused Resource 580",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "581": {
+        "name": "Unused Resource 581",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+     "582": {
+        "name": "Unused Resource 582",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "583": {
+        "name": "Unused Resource 583",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "584": {
+        "name": "Unused Resource 584",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "585": {
+        "name": "Unused Resource 585",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "586": {
+        "name": "Unused Resource 586",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "587": {
+        "name": "Unused Resource 587",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "588": {
+        "name": "Unused Resource 588",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "589": {
+        "name": "Unused Resource 589",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "590": {
+        "name": "Unused Resource 590",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "591": {
+        "name": "Unused Resource 591",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+     "592": {
+        "name": "Unused Resource 592",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "593": {
+        "name": "Unused Resource 593",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "594": {
+        "name": "Unused Resource 594",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "595": {
+        "name": "Unused Resource 595",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "596": {
+        "name": "Unused Resource 596",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "597": {
+        "name": "Unused Resource 597",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "598": {
+        "name": "Unused Resource 598",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "599": {
+        "name": "Unused Resource 599",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    },
+    "600": {
+        "name": "Unused Resource 600",
+        "desc": "Unused",
+        "defaults": {},
+        "note": ""
+    }
+}
