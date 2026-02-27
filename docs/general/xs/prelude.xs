@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/02/18 11:00:04 |
+// | Generated on: 2026/02/27 19:56:14 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -360,10 +360,10 @@ extern const int cSetPlayerData = 9;
 /** This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#611-csetunitattribute) */
 extern const int cSetUnitAttribute = 10;
 
-/** This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#612-caddunitattribute) */
+/** This is the ID of the `Add Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#612-caddunitattribute) */
 extern const int cAddUnitAttribute = 11;
 
-/** This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#613-cmulunitattribute) */
+/** This is the ID of the `Multiply Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#613-cmulunitattribute) */
 extern const int cMulUnitAttribute = 12;
 
 /** This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#614-csettechcost) */
@@ -3778,14 +3778,13 @@ bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, 
 *     - When `#!xs edit = true`, edit an existing task instead of inserting one.
 *     - ID -(N+1) will remove the task at index N
 *
-* @param objectId The ID of the object to modify the task for
-* @param playerId The player whose object to modify the task for
+* @param unitId The ID of the unit on the map to modify the task for
 * @param taskId The index to insert the task at
 * @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
 *
 * @returns bool
 */
-bool xsModifyUnitTasks(int objectId = -1, int playerId = -1, int taskId = -1, bool edit = false) {}
+bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
 
 /**
 * Checks and returns if any unit matching the set filters of the given player has the specified action.

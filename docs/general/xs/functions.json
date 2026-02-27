@@ -2438,16 +2438,10 @@
             "return_type": "bool",
             "params": [
                 {
-                    "name": "objectId",
+                    "name": "unitId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the object to modify the task for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player whose object to modify the task for"
+                    "desc": "The ID of the unit on the map to modify the task for"
                 },
                 {
                     "name": "taskId",

@@ -1574,14 +1574,13 @@ A copy of the global XS task struct is inserted at the provided index in the tas
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsModifyUnitTasks(int objectId, int playerId, int taskId, bool edit)`
+Prototype: `#!xs bool xsModifyUnitTasks(int unitId, int taskId, bool edit)`
 
 Parameters:
 
-1.  `#!xs int objectId`: The ID of the object to modify the task for
-2.  `#!xs int playerId`: The player whose object to modify the task for
-3.  `#!xs int taskId`: The index to insert the task at
-4. (Optional) `#!xs bool edit`: If true, edit the task at the given index instead of inserting (ignored with negative indices)
+1.  `#!xs int unitId`: The ID of the unit on the map to modify the task for
+2.  `#!xs int taskId`: The index to insert the task at
+3. (Optional) `#!xs bool edit`: If true, edit the task at the given index instead of inserting (ignored with negative indices)
 
 A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.
     - ID N will insert the task at index N
