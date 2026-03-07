@@ -1,0 +1,6944 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Ultimate Guide To AoE2DE UGC">
+      
+      
+        <meta name="author" content="Alian713, MrKirby, hszemi">
+      
+      
+        <link rel="canonical" href="https://ugc.aoe2.rocks/general/attributes/attributes/">
+      
+      
+        <link rel="prev" href="../../damage_calculation/">
+      
+      
+        <link rel="next" href="../../resources/resources/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Attributes - AoE2DE UGC Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13.274 9.537v-.001l-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074ZM4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75Z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.488 3.488 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.036 5.036 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.677 1.677 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06Zm.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.172.172 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173Z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.249 1.249 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429Zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.036.036 0 0 0-.004-.009l-.006-.006-.008-.001c-.003 0-.006.002-.009.004Z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343h-.001a8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746Zm1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275ZM6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L6.94 8 4.97 6.03a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018Z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>');--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.484 4.484 0 0 1-.563-1.191 3.835 3.835 0 0 1-.05-2.063 4.647 4.647 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .748.748 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.425 2.425 0 0 1-.507-.441 3.075 3.075 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.884.884 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.737 3.737 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75Z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Zm4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0Z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CSpline+Sans+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Spline Sans Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/style.css">
+    
+      <link rel="stylesheet" href="../../../css/monokai-pro.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-X6E7LFHRLR"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-X6E7LFHRLR",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-X6E7LFHRLR",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#0-hit-points" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AoE2DE UGC Guide" class="md-header__button md-logo" aria-label="AoE2DE UGC Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AoE2DE UGC Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Attributes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  AoE2DE UGC Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Game Mechanics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../scenarios/" class="md-tabs__link">
+          
+  
+    
+  
+  Custom Scenarios
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../xs/" class="md-tabs__link">
+          
+  
+    
+  
+  XS Scripting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mods/" class="md-tabs__link">
+          
+  
+    
+  
+  Mods
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../rms/" class="md-tabs__link">
+          
+  
+    
+  
+  RMS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ai/" class="md-tabs__link">
+          
+  
+    
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../audio/" class="md-tabs__link">
+          
+  
+    
+  
+  Audio
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AoE2DE UGC Guide" class="md-nav__button md-logo" aria-label="AoE2DE UGC Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0Zm12-.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"/><path d="M4.53 12.24a.75.75 0 0 1-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 1 1-1.022 1.1l-3.23-3a.75.75 0 0 1 0-1.1l3.23-3a.75.75 0 0 1 1.06.04Zm3.979 1.06a.75.75 0 1 1 1.02-1.1l3.231 3a.75.75 0 0 1 0 1.1l-3.23 3a.75.75 0 1 1-1.021-1.1l2.639-2.45-2.64-2.45Z"/></svg>
+
+    </a>
+    AoE2DE UGC Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Divy1211/AoE2DE_UGC_Guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AoE2DE_UGC_Guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AoE2DE UGC Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Game Mechanics
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Game Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../damage_calculation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Damage Calculation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Attributes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Attributes
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-hit-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Hit Points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-line-of-sight" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Line of Sight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-garrison-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Garrison Capacity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-unit-size-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Unit Size X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-unit-size-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Unit Size Y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-movement-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Movement Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rotation-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Rotation Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Attack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-attack-reload-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Attack Reload Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-accuracy-percent" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Accuracy Percent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-maximum-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Maximum Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-work-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Work Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-carry-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Carry Capacity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-base-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Base Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-projectile-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Projectile Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-building-icon-override" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Building Icon Override
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-terrain-defense-bonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Terrain Defense Bonus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-projectile-smart-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Projectile Smart Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-minimum-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Minimum Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-amount-of-1st-resource-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Amount of 1st Resource Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-blast-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Blast Width
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-search-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Search Radius
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-bonus-damage-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Bonus Damage Resistance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-icon-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Icon ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-amount-of-2nd-resource-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Amount of 2nd Resource Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-amount-of-3rd-resource-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Amount of 3rd Resource Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-fog-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Fog Visibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-occlusion-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Occlusion Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-garrison-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Garrison Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-unit-size-z" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Unit Size Z
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-can-be-built-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. Can Be Built On
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-foundation-terrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. Foundation Terrain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#40-hero-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      40. Hero Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41-frame-delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      41. Frame Delay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-train-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      42. Train Location
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-train-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      43. Train Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-blast-attack-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      44. Blast Attack Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-blast-defense-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      45. Blast Defense Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-shown-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      46. Shown Attack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-shown-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      47. Shown Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#48-shown-melee-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      48. Shown Melee Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#49-shown-pierce-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      49. Shown Pierce Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#50-object-name-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      50. Object Name ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-short-description-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      51. Short Description ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-terrain-restriction-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      53. Terrain Restriction ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-unit-trait" class="md-nav__link">
+    <span class="md-ellipsis">
+      54. Unit Trait
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-trait-piece" class="md-nav__link">
+    <span class="md-ellipsis">
+      56. Trait Piece
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57-dead-unit-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      57. Dead Unit ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58-hotkey-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      58. Hotkey ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59-maximum-charge" class="md-nav__link">
+    <span class="md-ellipsis">
+      59. Maximum Charge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#60-recharge-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      60. Recharge Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#61-charge-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      61. Charge Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-charge-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      62. Charge Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-combat-ability" class="md-nav__link">
+    <span class="md-ellipsis">
+      63. Combat Ability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-attack-dispersion" class="md-nav__link">
+    <span class="md-ellipsis">
+      64. Attack Dispersion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-secondary-projectile-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      65. Secondary Projectile Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66-blood-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      66. Blood Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67-projectile-hit-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      67. Projectile Hit Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#68-projectile-vanish-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      68. Projectile Vanish Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#69-projectile-arc" class="md-nav__link">
+    <span class="md-ellipsis">
+      69. Projectile Arc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#70-attack-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      70. Attack Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#71-standing-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      71. Standing Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-standing-graphic-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      72. Standing Graphic 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-dying-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      73. Dying Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-undead-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      74. Undead Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-walking-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      75. Walking Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76-running-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      76. Running Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#77-special-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      77. Special Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#78-obstruction-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      78. Obstruction Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79-blockage-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      79. Blockage Class
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#80-selection-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      80. Selection Effect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#81-special-ability" class="md-nav__link">
+    <span class="md-ellipsis">
+      81. Special Ability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-idle-attack-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      82. Idle Attack Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-hero-glow-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      83. Hero Glow Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-garrison-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      84. Garrison Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-construction-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      85. Construction Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86-snow-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      86. Snow Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#87-destruction-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      87. Destruction Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#88-destruction-rubble-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      88. Destruction Rubble Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#89-researching-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      89. Researching Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#90-research-completed-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      90. Research Completed Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#91-damage-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      91. Damage Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-selection-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      92. Selection Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-selection-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      93. Selection Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-dying-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      94. Dying Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-dying-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      95. Dying Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-train-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      96. Train Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#97-train-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      97. Train Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#98-damage-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      98. Damage Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#99-damage-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      99. Damage Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-resource-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      100. Resource Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-train-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      101. Train Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-total-missiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      102. Total Missiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-food-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      103. Food Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-wood-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      104. Wood Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-gold-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      105. Gold Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-stone-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      106. Stone Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-maximum-total-missiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      107. Maximum Total Missiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-garrison-heal-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      108. Garrison Heal Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-regeneration-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      109. Regeneration Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-population" class="md-nav__link">
+    <span class="md-ellipsis">
+      110. Population
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#111-minimum-conversion-time-modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      111. Minimum Conversion Time Modifier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112-maximum-conversion-time-modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      112. Maximum Conversion Time Modifier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-conversion-chance-modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      113. Conversion Chance Modifier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114-formation-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      114. Formation Category
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115-area-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      115. Area Damage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#118-damage-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      118. Damage Reflection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#119-friendly-fire-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      119. Friendly Fire Damage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120-regeneration-hp-percent" class="md-nav__link">
+    <span class="md-ellipsis">
+      120. Regeneration HP Percent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121-ability-button-icon-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      121. Ability Button Icon ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-ability-short-tooltip-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      122. Ability Short Tooltip ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-ability-extended-tooltip-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      123. Ability Extended Tooltip ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-ability-hotkey-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      124. Ability Hotkey Action
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-charge-projectile-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      125. Charge Projectile Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-available-unit-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      126. Available Unit Flag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-disabled-unit-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      127. Disabled Unit Flag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#128-attack-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      128. Attack Priority
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#129-invulnerability-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      129. Invulnerability Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130-garrison-firepower" class="md-nav__link">
+    <span class="md-ellipsis">
+      130. Garrison Firepower
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#131-attack-graphic-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      131. Attack Graphic 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-command-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      132. Command Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-command-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      133. Command Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-move-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      134. Move Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-move-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      135. Move Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-construction-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      136. Construction Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-construction-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      137. Construction Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-transform-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      138. Transform Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#139-transform-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      139. Transform Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140-run-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      140. Run Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141-interface-kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      141. Interface Kind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-combat-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      142. Combat Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-interaction-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      143. Interaction Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-minimap-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      144. Minimap Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-trailing-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      145. Trailing Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-trail-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      146. Trail Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#147-trail-density" class="md-nav__link">
+    <span class="md-ellipsis">
+      147. Trail Density
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#148-projectile-graphic-displacement-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      148. Projectile Graphic Displacement X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#149-projectile-graphic-displacement-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      149. Projectile Graphic Displacement Y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#150-projectile-graphic-displacement-z" class="md-nav__link">
+    <span class="md-ellipsis">
+      150. Projectile Graphic Displacement Z
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#151-projectile-spawning-area-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      151. Projectile Spawning Area Width
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#152-projectile-spawning-area-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      152. Projectile Spawning Area Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153-projectile-spawning-area-randomness" class="md-nav__link">
+    <span class="md-ellipsis">
+      153. Projectile Spawning Area Randomness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#154-damage-graphics-entry-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      154. Damage Graphics Entry Mod
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#155-damage-graphics-total-num" class="md-nav__link">
+    <span class="md-ellipsis">
+      155. Damage Graphics Total Num
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#156-damage-graphic-percent" class="md-nav__link">
+    <span class="md-ellipsis">
+      156. Damage Graphic Percent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#157-damage-graphic-apply-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      157. Damage Graphic Apply Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#158-train-locations-entry-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      158. Train Locations Entry Mod
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#159-train-locations-total-num" class="md-nav__link">
+    <span class="md-ellipsis">
+      159. Train Locations Total Num
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160-add-armor-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      160. Add Armor Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#161-add-attack-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      161. Add Attack Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-charge-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      162. Charge Target
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-size-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      163. Size Class
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hotkeys/hotkeys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hotkeys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../scenarios/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Custom Scenarios
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Custom Scenarios
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../scenarios/triggers/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Triggers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Triggers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../scenarios/triggers/effects/effects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Effects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Useful Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Useful Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../scenarios/useful_tools/parser/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AoE2ScenarioParser
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            AoE2ScenarioParser
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../xs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    XS Scripting
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            XS Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/beginner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    For Beginners
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/programmer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    For Programmers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/tricks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tricks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/constants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Constant Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/useful/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../xs/bugs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Known Bugs
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Known Bugs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Chat%20Data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chat Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Crashes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crashes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Effect%20Amount/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Effect Amount
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Important/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Important
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Language%20Syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language Syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Task/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xs/bugs/Individual%20Tech%20Modifiers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../mods/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Mods
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Mods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../rms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    RMS
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            RMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../ai/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AI
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../audio/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Audio
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Audio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-hit-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Hit Points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-line-of-sight" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Line of Sight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-garrison-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Garrison Capacity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-unit-size-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Unit Size X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-unit-size-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Unit Size Y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-movement-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Movement Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rotation-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Rotation Speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Attack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-attack-reload-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Attack Reload Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-accuracy-percent" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Accuracy Percent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-maximum-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Maximum Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-work-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Work Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-carry-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Carry Capacity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-base-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Base Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-projectile-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Projectile Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-building-icon-override" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Building Icon Override
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-terrain-defense-bonus" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Terrain Defense Bonus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-projectile-smart-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Projectile Smart Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-minimum-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Minimum Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-amount-of-1st-resource-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Amount of 1st Resource Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-blast-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Blast Width
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-search-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Search Radius
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-bonus-damage-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Bonus Damage Resistance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-icon-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Icon ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-amount-of-2nd-resource-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Amount of 2nd Resource Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-amount-of-3rd-resource-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Amount of 3rd Resource Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-fog-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Fog Visibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-occlusion-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Occlusion Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-garrison-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Garrison Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-unit-size-z" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Unit Size Z
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-can-be-built-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. Can Be Built On
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-foundation-terrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. Foundation Terrain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#40-hero-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      40. Hero Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41-frame-delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      41. Frame Delay
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-train-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      42. Train Location
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-train-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      43. Train Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-blast-attack-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      44. Blast Attack Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-blast-defense-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      45. Blast Defense Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-shown-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      46. Shown Attack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-shown-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      47. Shown Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#48-shown-melee-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      48. Shown Melee Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#49-shown-pierce-armor" class="md-nav__link">
+    <span class="md-ellipsis">
+      49. Shown Pierce Armor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#50-object-name-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      50. Object Name ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-short-description-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      51. Short Description ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-terrain-restriction-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      53. Terrain Restriction ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-unit-trait" class="md-nav__link">
+    <span class="md-ellipsis">
+      54. Unit Trait
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#56-trait-piece" class="md-nav__link">
+    <span class="md-ellipsis">
+      56. Trait Piece
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#57-dead-unit-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      57. Dead Unit ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#58-hotkey-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      58. Hotkey ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#59-maximum-charge" class="md-nav__link">
+    <span class="md-ellipsis">
+      59. Maximum Charge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#60-recharge-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      60. Recharge Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#61-charge-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      61. Charge Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-charge-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      62. Charge Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-combat-ability" class="md-nav__link">
+    <span class="md-ellipsis">
+      63. Combat Ability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-attack-dispersion" class="md-nav__link">
+    <span class="md-ellipsis">
+      64. Attack Dispersion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-secondary-projectile-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      65. Secondary Projectile Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66-blood-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      66. Blood Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67-projectile-hit-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      67. Projectile Hit Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#68-projectile-vanish-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      68. Projectile Vanish Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#69-projectile-arc" class="md-nav__link">
+    <span class="md-ellipsis">
+      69. Projectile Arc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#70-attack-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      70. Attack Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#71-standing-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      71. Standing Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-standing-graphic-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      72. Standing Graphic 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-dying-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      73. Dying Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-undead-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      74. Undead Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-walking-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      75. Walking Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76-running-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      76. Running Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#77-special-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      77. Special Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#78-obstruction-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      78. Obstruction Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79-blockage-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      79. Blockage Class
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#80-selection-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      80. Selection Effect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#81-special-ability" class="md-nav__link">
+    <span class="md-ellipsis">
+      81. Special Ability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-idle-attack-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      82. Idle Attack Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-hero-glow-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      83. Hero Glow Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-garrison-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      84. Garrison Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-construction-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      85. Construction Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86-snow-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      86. Snow Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#87-destruction-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      87. Destruction Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#88-destruction-rubble-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      88. Destruction Rubble Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#89-researching-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      89. Researching Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#90-research-completed-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      90. Research Completed Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#91-damage-graphic" class="md-nav__link">
+    <span class="md-ellipsis">
+      91. Damage Graphic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-selection-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      92. Selection Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-selection-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      93. Selection Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-dying-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      94. Dying Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-dying-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      95. Dying Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-train-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      96. Train Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#97-train-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      97. Train Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#98-damage-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      98. Damage Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#99-damage-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      99. Damage Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-resource-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      100. Resource Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101-train-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      101. Train Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-total-missiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      102. Total Missiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-food-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      103. Food Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-wood-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      104. Wood Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-gold-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      105. Gold Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-stone-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      106. Stone Costs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-maximum-total-missiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      107. Maximum Total Missiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-garrison-heal-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      108. Garrison Heal Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-regeneration-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      109. Regeneration Rate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-population" class="md-nav__link">
+    <span class="md-ellipsis">
+      110. Population
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#111-minimum-conversion-time-modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      111. Minimum Conversion Time Modifier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112-maximum-conversion-time-modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      112. Maximum Conversion Time Modifier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-conversion-chance-modifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      113. Conversion Chance Modifier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114-formation-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      114. Formation Category
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115-area-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      115. Area Damage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#118-damage-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      118. Damage Reflection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#119-friendly-fire-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      119. Friendly Fire Damage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120-regeneration-hp-percent" class="md-nav__link">
+    <span class="md-ellipsis">
+      120. Regeneration HP Percent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#121-ability-button-icon-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      121. Ability Button Icon ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-ability-short-tooltip-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      122. Ability Short Tooltip ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-ability-extended-tooltip-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      123. Ability Extended Tooltip ID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-ability-hotkey-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      124. Ability Hotkey Action
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-charge-projectile-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      125. Charge Projectile Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-available-unit-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      126. Available Unit Flag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-disabled-unit-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      127. Disabled Unit Flag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#128-attack-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      128. Attack Priority
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#129-invulnerability-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      129. Invulnerability Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130-garrison-firepower" class="md-nav__link">
+    <span class="md-ellipsis">
+      130. Garrison Firepower
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#131-attack-graphic-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      131. Attack Graphic 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-command-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      132. Command Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-command-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      133. Command Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-move-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      134. Move Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-move-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      135. Move Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-construction-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      136. Construction Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-construction-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      137. Construction Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-transform-sound" class="md-nav__link">
+    <span class="md-ellipsis">
+      138. Transform Sound
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#139-transform-sound-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      139. Transform Sound Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140-run-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      140. Run Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141-interface-kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      141. Interface Kind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-combat-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      142. Combat Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-interaction-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      143. Interaction Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-minimap-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      144. Minimap Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-trailing-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      145. Trailing Unit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-trail-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      146. Trail Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#147-trail-density" class="md-nav__link">
+    <span class="md-ellipsis">
+      147. Trail Density
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#148-projectile-graphic-displacement-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      148. Projectile Graphic Displacement X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#149-projectile-graphic-displacement-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      149. Projectile Graphic Displacement Y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#150-projectile-graphic-displacement-z" class="md-nav__link">
+    <span class="md-ellipsis">
+      150. Projectile Graphic Displacement Z
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#151-projectile-spawning-area-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      151. Projectile Spawning Area Width
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#152-projectile-spawning-area-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      152. Projectile Spawning Area Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153-projectile-spawning-area-randomness" class="md-nav__link">
+    <span class="md-ellipsis">
+      153. Projectile Spawning Area Randomness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#154-damage-graphics-entry-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      154. Damage Graphics Entry Mod
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#155-damage-graphics-total-num" class="md-nav__link">
+    <span class="md-ellipsis">
+      155. Damage Graphics Total Num
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#156-damage-graphic-percent" class="md-nav__link">
+    <span class="md-ellipsis">
+      156. Damage Graphic Percent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#157-damage-graphic-apply-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      157. Damage Graphic Apply Mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#158-train-locations-entry-mod" class="md-nav__link">
+    <span class="md-ellipsis">
+      158. Train Locations Entry Mod
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#159-train-locations-total-num" class="md-nav__link">
+    <span class="md-ellipsis">
+      159. Train Locations Total Num
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160-add-armor-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      160. Add Armor Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#161-add-attack-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      161. Add Attack Type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-charge-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      162. Charge Target
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-size-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      163. Size Class
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Attributes</h1>
+
+<p><em>Written by: Alian713</em></p>
+<hr />
+<p>This page is a list of all the unit attributes that can be modified in the scenario editor and their purposes. If you know of any attributes that are not written on this page, or if the descriptions of the attributes are wrong, please let the authors of this guide know!</p>
+<h2 id="0-hit-points">0. Hit Points<a class="headerlink" href="#0-hit-points" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 0</p>
+</li>
+<li>
+<p>This attribute refers to the health of the units</p>
+</li>
+</ul>
+<h2 id="1-line-of-sight">1. Line of Sight<a class="headerlink" href="#1-line-of-sight" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 1</p>
+</li>
+<li>
+<p>This is the distance a unit can see around itself</p>
+</li>
+</ul>
+<h2 id="2-garrison-capacity">2. Garrison Capacity<a class="headerlink" href="#2-garrison-capacity" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 2</p>
+</li>
+<li>
+<p>This is the amount of units that can garrison inside another unit</p>
+</li>
+</ul>
+<h2 id="3-unit-size-x">3. Unit Size X<a class="headerlink" href="#3-unit-size-x" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 3</p>
+</li>
+<li>
+<p>This determines the x-size of the unit's collision hitbox (width of the unit)</p>
+</li>
+</ul>
+<h2 id="4-unit-size-y">4. Unit Size Y<a class="headerlink" href="#4-unit-size-y" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 4</p>
+</li>
+<li>
+<p>This determines the y-size of the unit's collision hitbox (length of the unit)</p>
+</li>
+</ul>
+<h2 id="5-movement-speed">5. Movement Speed<a class="headerlink" href="#5-movement-speed" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 5</p>
+</li>
+<li>
+<p>This is the movement speed of a unit, measured in tiles per second</p>
+</li>
+</ul>
+<h2 id="6-rotation-speed">6. Rotation Speed<a class="headerlink" href="#6-rotation-speed" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 6</p>
+</li>
+<li>
+<p>This is the rate at which units can rotate, measured in seconds per frame (this many seconds must pass before the object can switch to the next rotation frame). For example, for a trebuchet to start attacking a building facing the opposite direction, it has to rotate to face that way first</p>
+</li>
+</ul>
+<h2 id="8-armor">8. Armor<a class="headerlink" href="#8-armor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 8</p>
+</li>
+<li>
+<p>This is the quantity of armour a unit has on any of its <code>Armour Classes</code>. If you do not know what an <code>Armour Class</code> is, refer to the <a href="../damage_calculation" title="Jump to: Game Mechanics &gt; Damage Calculation">Damage Calculation</a> section of this guide. Note that changing the armour through this option will show it as being added to the base armour amount. (for example: 4+4)</p>
+</li>
+</ul>
+<h2 id="9-attack">9. Attack<a class="headerlink" href="#9-attack" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 9</p>
+</li>
+<li>
+<p>This is the quantity of attack a unit has on any of its <code>Attack Classes</code>. If you do not know what an <code>Attack Class</code> is, refer to the <a href="../damage_calculation" title="Jump to: Game Mechanics &gt; Damage Calculation">Damage Calculation</a> section of this guide. Note that changing the attack through this option will show it as being added to the base attack amount. (for example: 6+2)</p>
+</li>
+</ul>
+<h2 id="10-attack-reload-time">10. Attack Reload Time<a class="headerlink" href="#10-attack-reload-time" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 10</p>
+</li>
+<li>
+<p>This is the minimum time that must pass before a unit is able to fire another shot. For melee units it is the minimum time between two successive hits that they can do</p>
+</li>
+</ul>
+<h2 id="11-accuracy-percent">11. Accuracy Percent<a class="headerlink" href="#11-accuracy-percent" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 11</p>
+</li>
+<li>
+<p>This determines how accurately a unit can aim at another unit</p>
+</li>
+<li>
+<p>This accuracy is the accuracy of a unit to fire at the exact centre of its target. If the shot fired is not aimed at the exact centre of the target, it may still hit the target if its not off by too much since it can still land within the hitbox of the target, just not at the exact centre</p>
+<p>Thus, bigger targets are actually easier to hit, which explains why buildings are an easier target to hit for trebuchets than small units</p>
+<p><img alt="Visually Smaller" src="../imgs/visually_smaller.png" title="Targets that are farther away are visually smaller" /></p>
+<p>In this image, you can see that shots that were fired in the red area in the 2<sup>nd</sup> scenario would've hit if the target had been closer like in the first scenario, but since the target is far away, they actually miss</p>
+<p>More technically, the visual angle of an object of the same size that is farther away is smaller, thus giving a smaller room for error for the shot in terms of the range of angles that will make the shot hit</p>
+<p>The chance of a unit getting converted by a monk is also determined by its accuracy</p>
+<p>If you modify an onager to have a big blast radius and give it a small accuracy, then attack a lot of units bunched together, the accuracy determines what percentage of units take damage from the blast of the onager! This is the reason why warwolf trebuchets get 100% accuracy because otherwise the blast wouldn't damage all of the units. Another interesting consequence of this is the delete trick with onagers and mangonels. This is where a mangonel is deleted immediately after it fires its shot and because a dead unit doesn't have an accuracy, it defaults to 100% and thus deals more damage to all the units in the blast radius</p>
+<p>Note: There are two other factors that play a role in determining the damage from the shot fired by the deleted mangonel</p>
+<ol>
+<li>
+<p>The damage from a mangonel's shot is decreased over distance when moving outward from the centre of the blast (the targeted point). However, when the mangonel is deleted, this decrease over distance doesn't happen, and the projectile deals the full 100% damage to all the units in the blast radius!</p>
+</li>
+<li>
+<p>A shot that is fired from lower elevation would normally deal only 75% of its normal damage due to the elevation damage reduction. deleting a mangonel in this case also makes the damage the full 100% as if there was no elevation difference</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="12-maximum-range">12. Maximum Range<a class="headerlink" href="#12-maximum-range" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 12</p>
+</li>
+<li>
+<p>This is the maximum range of a unit. Note that to be able to shoot at a target, it must be visible to the unit via its own line of sight or from another unit's line of sight</p>
+</li>
+</ul>
+<h2 id="13-work-rate">13. Work Rate<a class="headerlink" href="#13-work-rate" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 13</p>
+</li>
+<li>
+<p>This is the work rate for any unit that can do work. Villagers, Fishing Ships, Serjeants</p>
+</li>
+</ul>
+<h2 id="14-carry-capacity">14. Carry Capacity<a class="headerlink" href="#14-carry-capacity" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 14</p>
+</li>
+<li>
+<p>This is the carry capacity of Villagers</p>
+</li>
+</ul>
+<h2 id="15-base-armor">15. Base Armor<a class="headerlink" href="#15-base-armor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 15</p>
+</li>
+<li>
+<p>This is the quantity of base armour a unit has on any of its <code>Armour Classes</code>. If you do not know what an <code>Armour Class</code> is, refer to the <a href="../damage_calculation" title="Jump to: Game Mechanics &gt; Damage Calculation">Damage Calculation</a> section of this guide. Note that changing the armour through this option will show it as the base armour itself, and it will not be added to the regular amount</p>
+</li>
+</ul>
+<h2 id="16-projectile-unit">16. Projectile Unit<a class="headerlink" href="#16-projectile-unit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 16</p>
+</li>
+<li>
+<p>This is the ID of the projectile that a unit fires</p>
+</li>
+</ul>
+<h2 id="17-building-icon-override">17. Building Icon Override<a class="headerlink" href="#17-building-icon-override" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 17</p>
+</li>
+<li>
+<p>The functionality of this attribute is unknown as it doesn't always behave certainly. If you know what this attribute does, please let the authors of this guide know!</p>
+</li>
+</ul>
+<h2 id="18-terrain-defense-bonus">18. Terrain Defense Bonus<a class="headerlink" href="#18-terrain-defense-bonus" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 18</p>
+</li>
+<li>
+<p>Unknown... What does this attribute do?</p>
+</li>
+</ul>
+<h2 id="19-projectile-smart-mode">19. Projectile Smart Mode<a class="headerlink" href="#19-projectile-smart-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 19</p>
+</li>
+<li>
+<p>This is a combinable bit field. Controls the following two behaviours for projectiles:</p>
+</li>
+<li>
+<p>For example, if we set this property of the projectile used by an archer to <code>1</code>, it will have ballistics. (This is exactly what researching ballistics does in the first place). If we set this property to <code>2</code>, a missed projectile that hits another unit will deal its full damage instead of the 50% that it would normally do</p>
+<p>What if we want to enable both properties at once? This is achieved by adding the flag values for both of them together. Setting this property to <code>3</code> enables both effects</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">No Ballistics</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Has Ballistics</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Deals full damage on missed hit</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="20-minimum-range">20. Minimum Range<a class="headerlink" href="#20-minimum-range" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 20</p>
+</li>
+<li>
+<p>The minimum distance a unit must be from an attacking unit for the attacking unit to be able to fire its projectile</p>
+</li>
+</ul>
+<h2 id="21-amount-of-1st-resource-storage">21. Amount of 1<sup>st</sup> Resource Storage<a class="headerlink" href="#21-amount-of-1st-resource-storage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 21</p>
+</li>
+<li>
+<p>This is the amount of 1<sup>st</sup> resource contained in any unit. Refer to A.G.E. to see which resource this is for each unit</p>
+</li>
+</ul>
+<h2 id="22-blast-width">22. Blast Width<a class="headerlink" href="#22-blast-width" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 22</p>
+</li>
+<li>
+<p>All enemy units inside this radius take damage from an attacking unit. This is used by elephants, Druzhina Halberdiers, and Logistica Cataphracts</p>
+</li>
+</ul>
+<h2 id="23-search-radius">23. Search Radius<a class="headerlink" href="#23-search-radius" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 23</p>
+</li>
+<li>
+<p>The maximum distance at which a unit can detect and auto attack enemy units</p>
+</li>
+</ul>
+<h2 id="24-bonus-damage-resistance">24. Bonus Damage Resistance<a class="headerlink" href="#24-bonus-damage-resistance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 24</p>
+</li>
+<li>
+<p>Used by Sicilians for the 33% bonus damage resistance. Set to 0.33 for all Sicilian land military units except siege</p>
+</li>
+<li>
+<p>Do not make it greater than 1</p>
+</li>
+</ul>
+<h2 id="25-icon-id">25. Icon ID<a class="headerlink" href="#25-icon-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 25</p>
+</li>
+<li>
+<p>The ID of the icon that you want a unit to show</p>
+</li>
+</ul>
+<h2 id="26-amount-of-2nd-resource-storage">26. Amount of 2<sup>nd</sup> Resource Storage<a class="headerlink" href="#26-amount-of-2nd-resource-storage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 26</p>
+</li>
+<li>
+<p>This is the amount of 2<sup>nd</sup> resource contained in any unit. Refer to A.G.E. to see which resource this is for each unit</p>
+</li>
+</ul>
+<h2 id="27-amount-of-3rd-resource-storage">27. Amount of 3<sup>rd</sup> Resource Storage<a class="headerlink" href="#27-amount-of-3rd-resource-storage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 27</p>
+</li>
+<li>
+<p>This is the amount of 3<sup>rd</sup> resource contained in any unit. Refer to A.G.E. to see which resource this is for each unit</p>
+</li>
+</ul>
+<h2 id="28-fog-visibility">28. Fog Visibility<a class="headerlink" href="#28-fog-visibility" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 28</p>
+</li>
+<li>
+<p>Controls visibility of a unit through the fog of war</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Not Visible</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Always Visible</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Visible If Alive</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inverted Visibility</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check Doppelganger</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="29-occlusion-mode">29. Occlusion Mode<a class="headerlink" href="#29-occlusion-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 29</p>
+</li>
+<li>
+<p>This is a combinable bit field. Controls the outlines of units as seen through other units</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">No outline</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Display outline when behind other units that have flag 2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other units' outlines are rendered when they are behind this unit</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Display outline on this unit's foundation when behind other units that have flag 2</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="30-garrison-type">30. Garrison Type<a class="headerlink" href="#30-garrison-type" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 30</p>
+</li>
+<li>
+<p>This is a combinable bit field. Controls which units are able to garrison in a building. A unit needs to have the garrison in building task to be able to garrison in a building to begin with</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Villagers</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Infantry</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cavalry</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monks</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Herdables</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Siege</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ships</td>
+<td style="text-align: right;">64</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="32-unit-size-z">32. Unit Size Z<a class="headerlink" href="#32-unit-size-z" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 32</p>
+</li>
+<li>
+<p>This determines the z-size of the unit's collision hitbox (height of the unit)</p>
+</li>
+<li>
+<p>Setting this to 0 allows other units to walk over this unit</p>
+<p>Does this still control the HP bar location as specified in A.G.E.?</p>
+</li>
+</ul>
+<h2 id="33-can-be-built-on">33. Can Be Built On<a class="headerlink" href="#33-can-be-built-on" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 33</p>
+</li>
+<li>
+<p>Determines if a building foundation can be placed on top of a unit</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Disallow unit to be built on. This is the value for almost all units</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allow unit to be built on. This is the value for corpses, rubble, eye candy</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="34-foundation-terrain">34. Foundation Terrain<a class="headerlink" href="#34-foundation-terrain" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 34</p>
+</li>
+<li>
+<p>This is the ID of the terrain created under a building when its construction is finished</p>
+</li>
+<li>
+<p>Only affects units of Type 80 (Building)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">No terrain change</td>
+<td style="text-align: right;">-1</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="40-hero-status">40. Hero Status<a class="headerlink" href="#40-hero-status" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 40</p>
+</li>
+<li>
+<p>This is a combinable bit field. Controls the following properties:</p>
+</li>
+<li>
+<p>For example, if we set the hero status of a knight to 2, a monk will not be able to convert it. If we set the hero status of a militia to 4, it will regenerate HP automatically</p>
+<p>What if we want to enable multiple properties at once? This is achieved by adding the flag values for those properties together and setting the hero status to that value. For example, if we want to make a paladin both unconvertable and regenerate HP automatically, we can set its hero status to 2+4 = 6. This means that the hero status of a unit can take on any values in the range 1-63. If you set it to any other value, it does not have any effect on the unit</p>
+<p>This works because notice that there is one and only one way to add different flag values together to obtain a particular value for the hero status! For example, if we have a value of 20 for the hero status of a unit, the only way to make 20 from the above flag values is to add 4 and 16. Thus, we know that the properties corresponding to the flag values 4 (self regeneration) and 16 (protected formation by default) must be enabled for that unit</p>
+<p>This is a consequence of the fact that every number can be represented as a unique sum of powers of two (binary numbers)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Full Hero Status</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cannot be Converted</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Self Regeneration (30 HP/min)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Defensive Stance by Default</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protected Formation by Default</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Safe Delete Confirmation</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hero Glow</td>
+<td style="text-align: right;">64</td>
+</tr>
+<tr>
+<td style="text-align: left;">Invert All Flags (except flag 1)</td>
+<td style="text-align: right;">128</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="41-frame-delay">41. Frame Delay<a class="headerlink" href="#41-frame-delay" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 41</p>
+</li>
+<li>
+<p>The amount of delay between the point when the attacking animation starts and the actual hit happening for military units. This is what makes Cavalry Archers annoying to micro</p>
+</li>
+</ul>
+<h2 id="42-train-location">42. Train Location<a class="headerlink" href="#42-train-location" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 42</p>
+</li>
+<li>
+<p>The ID of the unit that trains any given unit. Barracks train Militia, so the train location of a Militia is the ID of the Barracks</p>
+</li>
+</ul>
+<h2 id="43-train-button">43. Train Button<a class="headerlink" href="#43-train-button" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 43</p>
+</li>
+<li>
+<p>The button used for training any given unit. For example, Militia are trained by using the first button, hence the Button Location of Militia is 1. This number ranges from 0-15</p>
+</li>
+</ul>
+<h2 id="44-blast-attack-level">44. Blast Attack Level<a class="headerlink" href="#44-blast-attack-level" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 44</p>
+</li>
+<li>
+<p>A unit deals blast damage to <strong><em>other</em></strong> units with <strong><em>equal or higher</em></strong> <a href="./#45-blast-defense-level" title="Jump to: Blast Defense Level">Blast Defense Level</a> that are in its blast radius. For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same</p>
+</li>
+<li>
+<p>One of the flags 0-3 can be combined with the combinable flags 4 to 128 by adding the two values</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Damage resources, nearby allied units and tress</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Damage trees, nearby allied units</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Damage nearby and allied units</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Damage targeted unit only</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Damage enemy units only</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ignore friendly fire</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unused</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unused</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attenuate damage as distance from the centre of attack increases (infantry only)</td>
+<td style="text-align: right;">64</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone</td>
+<td style="text-align: right;">128</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="45-blast-defense-level">45. Blast Defense Level<a class="headerlink" href="#45-blast-defense-level" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 45</p>
+</li>
+<li>
+<p>A unit feels the blast damage from <strong><em>other</em></strong> units with <strong><em>equal or lower</em></strong> <a href="./#44-blast-attack-level" title="Jump to: Blast Attack Level">Blast Attack Level</a> and if it is inside the attacker's blast radius. For example, while onagers (blast attack: 1) can cut trees (blast defense 1), mangonels (blast attack: 2) cannot do the same</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">damage resources, nearby allied units and tress</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">damage trees, nearby allied units</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">damage nearby allied units</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">damage targeted unit only</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="46-shown-attack">46. Shown Attack<a class="headerlink" href="#46-shown-attack" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 46</p>
+</li>
+<li>
+<p>The amount of attack that is displayed as a unit's attack (may not actually be the true attack)</p>
+</li>
+</ul>
+<h2 id="47-shown-range">47. Shown Range<a class="headerlink" href="#47-shown-range" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 47</p>
+</li>
+<li>
+<p>The quantity that is displayed as a unit's attack ingame (may not actually be the true attack)</p>
+</li>
+</ul>
+<h2 id="48-shown-melee-armor">48. Shown Melee Armor<a class="headerlink" href="#48-shown-melee-armor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 48</p>
+</li>
+<li>
+<p>The quantity that is displayed as a unit's melee armour ingame (may not actually be the true armour)</p>
+</li>
+</ul>
+<h2 id="49-shown-pierce-armor">49. Shown Pierce Armor<a class="headerlink" href="#49-shown-pierce-armor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 49</p>
+</li>
+<li>
+<p>The quantity that is displayed as a unit's pierce armour ingame (may not actually be the true armour)</p>
+</li>
+</ul>
+<h2 id="50-object-name-id">50. Object Name ID<a class="headerlink" href="#50-object-name-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 50</p>
+</li>
+<li>
+<p>The string ID to use for the name of an object. A string ID is used for refering to strings that the game recognises by default. It can be used to automatically set names by using a value that the game recognises. Trying out the value 1 on a unit and seeing what happens is left as an excersise for the reader</p>
+</li>
+</ul>
+<h2 id="51-short-description-id">51. Short Description ID<a class="headerlink" href="#51-short-description-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 51</p>
+</li>
+<li>
+<p>The string ID for the Short Description of an object. A string ID is used for refering to strings that the game recognises by default. It can be used to automatically set a Short Description by using a value that the game recognises. Trying out the value 1 on a unit and seeing what happens is left as an excersise for the reader</p>
+</li>
+</ul>
+<h2 id="53-terrain-restriction-id">53. Terrain Restriction ID<a class="headerlink" href="#53-terrain-restriction-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 53</p>
+</li>
+<li>
+<p>This number determines how a unit interacts with terrains and which terrains it can walk on</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">All</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Land And Shallows</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Beach</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Water Small Trail</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Land</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nothing</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Water No Trail</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Land Except Farm</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nothing 2</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Land And Beach</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Land Except Farm 2</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water Bridge Cannon</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Water Medium Trail</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water Bridge Arrow</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Water Large Trail</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Grass And Beach</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Water And Bridge Except Beach</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water Bridge Spear</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: left;">Only Water And Ice</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water Wheel</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shallow Water</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Dart</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Arrow Fire</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Cannon Fire</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Spear Fire</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Dart Fire</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Laser</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water Cavalry</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td style="text-align: left;">All Except Water Packet Trebuchet</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr>
+<td style="text-align: left;">Water Smallest Trail</td>
+<td style="text-align: right;">30</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="54-unit-trait">54. Unit Trait<a class="headerlink" href="#54-unit-trait" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 54</p>
+</li>
+<li>
+<p>This is a combinable bit field. Controls the following properties:</p>
+</li>
+<li>
+<p>See Also:</p>
+<p><a href="./#56-trait-piece">Trait Piece</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Garrison Unit</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ship Unit</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Build Another Building (Serjeants) [See Special Ability: Mode 7]</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Transform Into Another Unit (Ratha)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Auto Scout Unit</td>
+<td style="text-align: right;">16</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="56-trait-piece">56. Trait Piece<a class="headerlink" href="#56-trait-piece" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 56</p>
+</li>
+<li>
+<p>This can be set to the ID of a unit that is used along with some of the Unit Traits</p>
+</li>
+<li>
+<p>See Also:</p>
+<p><a href="./#54-unit-trait">Unit Trait</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unused</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unused</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Build Unit</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Transform Unit</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unused</td>
+<td style="text-align: right;">16</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="57-dead-unit-id">57. Dead Unit ID<a class="headerlink" href="#57-dead-unit-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 57</p>
+</li>
+<li>
+<p>This is the ID of the unit to spawn after the current unit dies. This is whats used to make the dismounted konniks possible</p>
+</li>
+</ul>
+<h2 id="58-hotkey-id">58. Hotkey ID<a class="headerlink" href="#58-hotkey-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 58</p>
+</li>
+<li>
+<p>This number determines which hotkey is assigned to a unit</p>
+</li>
+</ul>
+<h2 id="59-maximum-charge">59. Maximum Charge<a class="headerlink" href="#59-maximum-charge" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 59</p>
+</li>
+<li>
+<p>The maximum amount of charge that a unit can hold</p>
+</li>
+</ul>
+<h2 id="60-recharge-rate">60. Recharge Rate<a class="headerlink" href="#60-recharge-rate" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 60</p>
+</li>
+<li>
+<p>The rate of charge regeneration per second</p>
+</li>
+</ul>
+<h2 id="61-charge-event">61. Charge Event<a class="headerlink" href="#61-charge-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 61</p>
+</li>
+<li>
+<p>This action depletes the unit's charge</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1 - Deplete charge, 0 - Keep charge</td>
+<td style="text-align: right;">Charge Type one of <code>1</code>, <code>2</code>, or <code>3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Max range modifier</td>
+<td style="text-align: right;">Charge Type one of <code>6</code>, or <code>7</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">0 - Transform unit until one attack, -1 - perform attack ground on it's location</td>
+<td style="text-align: right;">Charge Type is <code>-1</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">0 - Transform unit until one attack</td>
+<td style="text-align: right;">Charge Type is <code>-2</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Aura task duration</td>
+<td style="text-align: right;">Charge Type is <code>-3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Conversion range (maybe overridden by conversion tasks)</td>
+<td style="text-align: right;">Charge Type is <code>-4</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="62-charge-type">62. Charge Type<a class="headerlink" href="#62-charge-type" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 62</p>
+</li>
+<li>
+<p>The type of charge that a unit holds</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Spawn Building on top of the unit (Uses unit set in Trait Piece)</td>
+<td style="text-align: right;">-5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Conversion ability (Needs task 104). Charge Target defines the conversion percent chance</td>
+<td style="text-align: right;">-4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Active aura ability (Needs task 155 with unused flag 8 set)</td>
+<td style="text-align: right;">-3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Active targetted transform (Uses unit set in Trait Piece). If charge target = -1, use attack ground targetting</td>
+<td style="text-align: right;">-2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Active temporary transform (Uses unit set in Trait Piece)</td>
+<td style="text-align: right;">-1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attack charge</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">??? charge</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Area attack charge</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agility charge</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ignore Melee Attack</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fire only Charge projectiles, sets Total Projectiles to the value of Max Total Projectiles (Lou Chuan)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fires 1 Charge projectile and additional Secondary Projectiles, sets Total Projectiles to the value of Max Total Projectiles</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="63-combat-ability">63. Combat Ability<a class="headerlink" href="#63-combat-ability" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 63</p>
+</li>
+<li>
+<p>Combinable bit field. Controls several attacking behaviours for units</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Ignore melee and pierce armours of the targeted unit</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resist armour-ignoring attacks</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Damage the targeted unit's melee and pierce armors by 1, for a minimum of 0 (Obuch)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Attack ground ability</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bulk volley release (kipchak/siege weapons)</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Enable aura ability (task 155) (Stronghold castle/Caravanserai/Centurion)</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td style="text-align: left;">Invert aura ability (task 155) to boost self (Monaspa) - Auto Search = 1 needed for multiple tasks</td>
+<td style="text-align: right;">64</td>
+</tr>
+<tr>
+<td style="text-align: left;">Activate stringer ability (task 157)</td>
+<td style="text-align: right;">128</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="64-attack-dispersion">64. Attack Dispersion<a class="headerlink" href="#64-attack-dispersion" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 64</p>
+</li>
+<li>
+<p>Half of the radius from the target unit in which missed projectiles fired by this unit can land in</p>
+</li>
+</ul>
+<h2 id="65-secondary-projectile-unit">65. Secondary Projectile Unit<a class="headerlink" href="#65-secondary-projectile-unit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 65</p>
+</li>
+<li>
+<p>This is the ID of the secondary projectile that a unit fires (Chu Ko Nu)</p>
+</li>
+</ul>
+<h2 id="66-blood-unit">66. Blood Unit<a class="headerlink" href="#66-blood-unit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 66</p>
+</li>
+<li>
+<p>This is the ID of a secondary unit to spawn after the current unit dies. This could potentially be used along with dead unit ID to spawn two units after a single unit dies</p>
+</li>
+</ul>
+<h2 id="67-projectile-hit-mode">67. Projectile Hit Mode<a class="headerlink" href="#67-projectile-hit-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 67</p>
+</li>
+<li>
+<p>Controls how a projectile collides with units in the path of its target. Currently changing this through XS has no effect</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Collide only with the targeted unit</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Collide with any damage-able units in the path to the targetted unit</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Collide with any unit in the path to the targetted unit</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="68-projectile-vanish-mode">68. Projectile Vanish Mode<a class="headerlink" href="#68-projectile-vanish-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 68</p>
+</li>
+<li>
+<p>Controls if a projectile passes through or disappears on impact. Currently changing this through XS has no effect</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Disappear on first impact</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pass through</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Always spawn a dead unit</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="69-projectile-arc">69. Projectile Arc<a class="headerlink" href="#69-projectile-arc" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 69</p>
+</li>
+<li>
+<p>Controls the maximum height of the fired projectile</p>
+</li>
+</ul>
+<h2 id="70-attack-graphic">70. Attack Graphic<a class="headerlink" href="#70-attack-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 70</p>
+</li>
+<li>
+<p>Controls the Attack Graphic</p>
+</li>
+</ul>
+<h2 id="71-standing-graphic">71. Standing Graphic<a class="headerlink" href="#71-standing-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 71</p>
+</li>
+<li>
+<p>The sprite animation shown when a unit is idle</p>
+</li>
+<li>
+<p>Units randomly choose between this or Standing Graphic 2</p>
+</li>
+</ul>
+<h2 id="72-standing-graphic-2">72. Standing Graphic 2<a class="headerlink" href="#72-standing-graphic-2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 72</p>
+</li>
+<li>
+<p>The sprite animation shown when a unit is idle</p>
+</li>
+<li>
+<p>Units randomly choose between this or Standing Graphic</p>
+</li>
+</ul>
+<h2 id="73-dying-graphic">73. Dying Graphic<a class="headerlink" href="#73-dying-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 73</p>
+</li>
+<li>
+<p>The sprite animation shown when a unit dies</p>
+</li>
+</ul>
+<h2 id="74-undead-graphic">74. Undead Graphic<a class="headerlink" href="#74-undead-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 74</p>
+</li>
+<li>
+<p>This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its "Undead Mode" is set to <code>1</code>. Used to assign decay graphic to units without "Undead Mode" set to 1. Overrides the standing graphic of the object's dead unit</p>
+</li>
+<li>
+<p>Depends on Undead Mode flag</p>
+</li>
+</ul>
+<h2 id="75-walking-graphic">75. Walking Graphic<a class="headerlink" href="#75-walking-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 75</p>
+</li>
+<li>
+<p>The sprite animation shown when a unit is walking</p>
+</li>
+</ul>
+<h2 id="76-running-graphic">76. Running Graphic<a class="headerlink" href="#76-running-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 76</p>
+</li>
+<li>
+<p>The sprite animation shown when a unit is running</p>
+</li>
+<li>
+<p>A unit runs when it is issued an attack command, or when a unit is fleeing (deer-like units)</p>
+<p>Most units do not have a running graphic</p>
+<p>A graphic can multiply the speed of the unit it is applied to</p>
+<p>This is used for deer, wolves, boars, etc. when they are issued an attack command</p>
+</li>
+</ul>
+<h2 id="77-special-graphic">77. Special Graphic<a class="headerlink" href="#77-special-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 77</p>
+</li>
+<li>
+<p>This sprite animation is shown  when a unit uses one of "Block", "Charge", or "Counter Charge" special abilities</p>
+</li>
+<li>
+<p>Special abilities are an unused feature in AoE2, they were planned but never made it into AoK</p>
+</li>
+</ul>
+<h2 id="78-obstruction-type">78. Obstruction Type<a class="headerlink" href="#78-obstruction-type" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 78</p>
+</li>
+<li>
+<p>Controls unit outline and collision</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Square outline, and passable</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Same as 0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Solid square outline, and has collision box</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Square outline, and has collision box</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">No outline, and passable</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Round outline, and has collision box</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Same as 2, but designed for mountains</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Consider the selection size of a radius entirely as opposed to the actual defined collision size</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ignore hard obstructions entirely and just consider the space occupied with no obstruction at all</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Consider the selection radius when placing other objects, but use the original obstruction size for hard obstructions</td>
+<td style="text-align: right;">13</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="79-blockage-class">79. Blockage Class<a class="headerlink" href="#79-blockage-class" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 79</p>
+</li>
+<li>
+<p>Controls unit blockage class</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Forces default obstruction type</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resource</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unit</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Building</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wall</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gate, allows trespassing</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cliff, blocks walling</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="80-selection-effect">80. Selection Effect<a class="headerlink" href="#80-selection-effect" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 80</p>
+</li>
+<li>
+<p>Controls unit hit point bar and outline</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Has hit point bar</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Has hit point bar, and outline</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">No hit point bar, or outline</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">No hit point bar, but has outline</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="81-special-ability">81. Special Ability<a class="headerlink" href="#81-special-ability" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 81</p>
+</li>
+<li>
+<p>Enables certain special abilities</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Enable charge attack ability (task 133)</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="82-idle-attack-graphic">82. Idle Attack Graphic<a class="headerlink" href="#82-idle-attack-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 82</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="83-hero-glow-graphic">83. Hero Glow Graphic<a class="headerlink" href="#83-hero-glow-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 83</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="84-garrison-graphic">84. Garrison Graphic<a class="headerlink" href="#84-garrison-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 84</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="85-construction-graphic">85. Construction Graphic<a class="headerlink" href="#85-construction-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 85</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="86-snow-graphic">86. Snow Graphic<a class="headerlink" href="#86-snow-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 86</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="87-destruction-graphic">87. Destruction Graphic<a class="headerlink" href="#87-destruction-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 87</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="88-destruction-rubble-graphic">88. Destruction Rubble Graphic<a class="headerlink" href="#88-destruction-rubble-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 88</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="89-researching-graphic">89. Researching Graphic<a class="headerlink" href="#89-researching-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 89</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="90-research-completed-graphic">90. Research Completed Graphic<a class="headerlink" href="#90-research-completed-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 90</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="91-damage-graphic">91. Damage Graphic<a class="headerlink" href="#91-damage-graphic" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 91</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="92-selection-sound">92. Selection Sound<a class="headerlink" href="#92-selection-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 92</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="93-selection-sound-event">93. Selection Sound Event<a class="headerlink" href="#93-selection-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 93</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="94-dying-sound">94. Dying Sound<a class="headerlink" href="#94-dying-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 94</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="95-dying-sound-event">95. Dying Sound Event<a class="headerlink" href="#95-dying-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 95</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="96-train-sound">96. Train Sound<a class="headerlink" href="#96-train-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 96</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="97-train-sound-event">97. Train Sound Event<a class="headerlink" href="#97-train-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 97</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="98-damage-sound">98. Damage Sound<a class="headerlink" href="#98-damage-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 98</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="99-damage-sound-event">99. Damage Sound Event<a class="headerlink" href="#99-damage-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 99</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="100-resource-costs">100. Resource Costs<a class="headerlink" href="#100-resource-costs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 100</p>
+</li>
+<li>
+<p>Refers to the first resource cost of a unit. Refer to A.G.E. to see which resource cost that is</p>
+</li>
+</ul>
+<h2 id="101-train-time">101. Train Time<a class="headerlink" href="#101-train-time" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 101</p>
+</li>
+<li>
+<p>This is the amount of time it takes to create a unit</p>
+</li>
+</ul>
+<h2 id="102-total-missiles">102. Total Missiles<a class="headerlink" href="#102-total-missiles" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 102</p>
+</li>
+<li>
+<p>This is the number of projectiles a unit fires. The Chu Ko Nu fires 3 and the Elite Chu Ko Nu fires 5</p>
+</li>
+</ul>
+<h2 id="103-food-costs">103. Food Costs<a class="headerlink" href="#103-food-costs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 103</p>
+</li>
+<li>
+<p>The food cost of a unit</p>
+</li>
+</ul>
+<h2 id="104-wood-costs">104. Wood Costs<a class="headerlink" href="#104-wood-costs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 104</p>
+</li>
+<li>
+<p>The wood cost of a unit</p>
+</li>
+</ul>
+<h2 id="105-gold-costs">105. Gold Costs<a class="headerlink" href="#105-gold-costs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 105</p>
+</li>
+<li>
+<p>The gold cost of a unit</p>
+</li>
+</ul>
+<h2 id="106-stone-costs">106. Stone Costs<a class="headerlink" href="#106-stone-costs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 106</p>
+</li>
+<li>
+<p>The stone cost of a unit</p>
+</li>
+</ul>
+<h2 id="107-maximum-total-missiles">107. Maximum Total Missiles<a class="headerlink" href="#107-maximum-total-missiles" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 107</p>
+</li>
+<li>
+<p>The maximum number of projectiles a unit can fire when other units are garrisoned inside of it. A castle fires 5 projectiles by default but can fire more if units are garrisoned inside it. This attribute controls the maximum number of those</p>
+</li>
+</ul>
+<h2 id="108-garrison-heal-rate">108. Garrison Heal Rate<a class="headerlink" href="#108-garrison-heal-rate" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 108</p>
+</li>
+<li>
+<p>The rate measured in HP/s at which garissoned units are healed inside a given building</p>
+</li>
+</ul>
+<h2 id="109-regeneration-rate">109. Regeneration Rate<a class="headerlink" href="#109-regeneration-rate" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 109</p>
+</li>
+<li>
+<p>The rate measured in HP/minute at which units heal themselves. This value is overridden to 30 HP/minute if the flag for Self Regeneration is set in the <a href="./#40-hero-status" title="Jump to: 26. Hero Status">Hero Status</a> of a unit</p>
+</li>
+</ul>
+<h2 id="110-population">110. Population<a class="headerlink" href="#110-population" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 110</p>
+</li>
+<li>
+<p>Modifies the population headroom storage of a unit. Negative values = require population (units), positive values = give population (houses). This is not a real attribute that exists in A.G.E., just seems like a way to edit the population heardroom provided by a unit</p>
+</li>
+</ul>
+<h2 id="111-minimum-conversion-time-modifier">111. Minimum Conversion Time Modifier<a class="headerlink" href="#111-minimum-conversion-time-modifier" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 111</p>
+</li>
+<li>
+<p>Adds to the minimum time required to convert the unit</p>
+</li>
+<li>
+<p>By default, units have a 4 monk second minimum conversion time</p>
+<p>The overall minimum conversion time for all units is also affected by <a href="../../resources/resources/#178-convert-resist-min-adjustment">Convert Resist Min Adjustment</a></p>
+</li>
+</ul>
+<h2 id="112-maximum-conversion-time-modifier">112. Maximum Conversion Time Modifier<a class="headerlink" href="#112-maximum-conversion-time-modifier" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 112</p>
+</li>
+<li>
+<p>Adds to the maximum time after which a unit conversion is forced</p>
+</li>
+<li>
+<p>By default, units have a 10 monk second maximum conversion time</p>
+<p>The overall maximum conversion time for all units is also affected by <a href="../../resources/resources/#179-convert-resist-max-adjustment">Convert Resist Max Adjustment</a></p>
+</li>
+</ul>
+<h2 id="113-conversion-chance-modifier">113. Conversion Chance Modifier<a class="headerlink" href="#113-conversion-chance-modifier" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 113</p>
+</li>
+<li>
+<p>The probability of conversion every monk second is divided by this value for the unit</p>
+</li>
+<li>
+<p>The overall conversion probability for all units is also affected by <a href="../../resources/resources/#77-conversion-resistance">Conversion Resistance</a></p>
+</li>
+</ul>
+<h2 id="114-formation-category">114. Formation Category<a class="headerlink" href="#114-formation-category" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 114</p>
+</li>
+<li>
+<p>Control where the units in formation</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Not using formation</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mobile</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Body</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ranged</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Long Ranged</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Protected</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="115-area-damage">115. Area Damage<a class="headerlink" href="#115-area-damage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 115</p>
+</li>
+<li>
+<p>Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative</p>
+</li>
+</ul>
+<h2 id="118-damage-reflection">118. Damage Reflection<a class="headerlink" href="#118-damage-reflection" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 118</p>
+</li>
+<li>
+<p>Damage percentage of the received damage to be reflected on the attacker (only for melee damage)</p>
+</li>
+</ul>
+<h2 id="119-friendly-fire-damage">119. Friendly Fire Damage<a class="headerlink" href="#119-friendly-fire-damage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 119</p>
+</li>
+<li>
+<p>Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative</p>
+</li>
+</ul>
+<h2 id="120-regeneration-hp-percent">120. Regeneration HP Percent<a class="headerlink" href="#120-regeneration-hp-percent" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 120</p>
+</li>
+<li>
+<p>Percentage of the unit’s max HP that is regenerated over a minute</p>
+</li>
+</ul>
+<h2 id="121-ability-button-icon-id">121. Ability Button Icon ID<a class="headerlink" href="#121-ability-button-icon-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 121</p>
+</li>
+<li>
+<p>Override for Transform/Active Ability Icon. Uses ID from <code>Materials.json</code></p>
+</li>
+</ul>
+<h2 id="122-ability-short-tooltip-id">122. Ability Short Tooltip ID<a class="headerlink" href="#122-ability-short-tooltip-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 122</p>
+</li>
+<li>
+<p>Override for Transform/Active Ability Short Tooltip</p>
+</li>
+</ul>
+<h2 id="123-ability-extended-tooltip-id">123. Ability Extended Tooltip ID<a class="headerlink" href="#123-ability-extended-tooltip-id" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 123</p>
+</li>
+<li>
+<p>Override for Transform/Active Ability Long Tooltip</p>
+</li>
+</ul>
+<h2 id="124-ability-hotkey-action">124. Ability Hotkey Action<a class="headerlink" href="#124-ability-hotkey-action" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 124</p>
+</li>
+<li>
+<p><code>button_action_list</code> when pressing button/hotkey for the ability or transformation</p>
+</li>
+</ul>
+<h2 id="125-charge-projectile-unit">125. Charge Projectile Unit<a class="headerlink" href="#125-charge-projectile-unit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 125</p>
+</li>
+<li>
+<p>Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative</p>
+</li>
+</ul>
+<h2 id="126-available-unit-flag">126. Available Unit Flag<a class="headerlink" href="#126-available-unit-flag" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 126</p>
+</li>
+<li>
+<p>When Disabled flag 2 or 4 is set, sets value for number of trainable unit. Will use units paired in <code>LinkedUnits.json</code> to count them together</p>
+</li>
+</ul>
+<h2 id="127-disabled-unit-flag">127. Disabled Unit Flag<a class="headerlink" href="#127-disabled-unit-flag" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 127</p>
+</li>
+<li>
+<p>Enable/Disable a unit</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Disabled</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Limited training. Cannot be retrained after death</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Limited training. Can be retrained after death</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="128-attack-priority">128. Attack Priority<a class="headerlink" href="#128-attack-priority" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 128</p>
+</li>
+<li>
+<p>Defines what type of target the unit will prioritize</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Units &gt; Buildings</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Buildings &gt; Units</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Buildings only</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="129-invulnerability-level">129. Invulnerability Level<a class="headerlink" href="#129-invulnerability-level" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 129</p>
+</li>
+<li>
+<p>Sets an HP threshold after which a unit no longer receives damage when attacked</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Multiplier of Base HP</td>
+<td style="text-align: right;">&gt; 0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed value of HP</td>
+<td style="text-align: right;">&lt; 0</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="130-garrison-firepower">130. Garrison Firepower<a class="headerlink" href="#130-garrison-firepower" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 130</p>
+</li>
+<li>
+<p>Adds to the damage of the unit to calculate the number of garrison arrows to fire</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: right;">Flag Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Acts as multiplier</td>
+<td style="text-align: right;">&gt; 0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flat dps value added to the unit’s dps</td>
+<td style="text-align: right;">&lt; 0</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="131-attack-graphic-2">131. Attack Graphic 2<a class="headerlink" href="#131-attack-graphic-2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 131</p>
+</li>
+<li>
+<p>Second attack graphic of the unit; alternates with the first attack graphic when assigned</p>
+</li>
+</ul>
+<h2 id="132-command-sound">132. Command Sound<a class="headerlink" href="#132-command-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 132</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="133-command-sound-event">133. Command Sound Event<a class="headerlink" href="#133-command-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 133</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="134-move-sound">134. Move Sound<a class="headerlink" href="#134-move-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 134</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="135-move-sound-event">135. Move Sound Event<a class="headerlink" href="#135-move-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 135</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="136-construction-sound">136. Construction Sound<a class="headerlink" href="#136-construction-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 136</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="137-construction-sound-event">137. Construction Sound Event<a class="headerlink" href="#137-construction-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 137</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="138-transform-sound">138. Transform Sound<a class="headerlink" href="#138-transform-sound" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 138</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="139-transform-sound-event">139. Transform Sound Event<a class="headerlink" href="#139-transform-sound-event" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 139</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="140-run-pattern">140. Run Pattern<a class="headerlink" href="#140-run-pattern" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 140</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="141-interface-kind">141. Interface Kind<a class="headerlink" href="#141-interface-kind" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 141</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="142-combat-level">142. Combat Level<a class="headerlink" href="#142-combat-level" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 142</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="143-interaction-mode">143. Interaction Mode<a class="headerlink" href="#143-interaction-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 143</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="144-minimap-mode">144. Minimap Mode<a class="headerlink" href="#144-minimap-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 144</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="145-trailing-unit">145. Trailing Unit<a class="headerlink" href="#145-trailing-unit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 145</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="146-trail-mode">146. Trail Mode<a class="headerlink" href="#146-trail-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 146</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="147-trail-density">147. Trail Density<a class="headerlink" href="#147-trail-density" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 147</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="148-projectile-graphic-displacement-x">148. Projectile Graphic Displacement X<a class="headerlink" href="#148-projectile-graphic-displacement-x" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 148</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="149-projectile-graphic-displacement-y">149. Projectile Graphic Displacement Y<a class="headerlink" href="#149-projectile-graphic-displacement-y" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 149</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="150-projectile-graphic-displacement-z">150. Projectile Graphic Displacement Z<a class="headerlink" href="#150-projectile-graphic-displacement-z" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 150</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="151-projectile-spawning-area-width">151. Projectile Spawning Area Width<a class="headerlink" href="#151-projectile-spawning-area-width" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 151</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="152-projectile-spawning-area-length">152. Projectile Spawning Area Length<a class="headerlink" href="#152-projectile-spawning-area-length" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 152</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="153-projectile-spawning-area-randomness">153. Projectile Spawning Area Randomness<a class="headerlink" href="#153-projectile-spawning-area-randomness" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 153</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="154-damage-graphics-entry-mod">154. Damage Graphics Entry Mod<a class="headerlink" href="#154-damage-graphics-entry-mod" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 154</p>
+</li>
+<li>
+<p>Determines the index at which damage graphic/damage graphic percent/damage graphic apply mode values are changed via effects in XS.</p>
+</li>
+<li>
+<ul>
+<li>
+<p>Multiply by N to insert a new entry at index N, and then set entry mod to N</p>
+</li>
+<li>
+<p>Multiply by -(N+1) to delete index N, and then set entry mod to N</p>
+</li>
+<li>
+<p>Multiply with 255 (32767 also works) to append an entry at the end, and set the entry mod to the last index</p>
+</li>
+<li>
+<p>Multiply with -255 (-32768 also works) to delete the index at the end, and set entry mod to the new last index</p>
+</li>
+<li>
+<p>Note that inserting a new entry copies the existing last entry in the list as the default</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="155-damage-graphics-total-num">155. Damage Graphics Total Num<a class="headerlink" href="#155-damage-graphics-total-num" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 155</p>
+</li>
+<li>
+<p>The length of the damage sprites list. Can be set to shrink/extend the list (duplicates the last entry when extending).</p>
+</li>
+</ul>
+<h2 id="156-damage-graphic-percent">156. Damage Graphic Percent<a class="headerlink" href="#156-damage-graphic-percent" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 156</p>
+</li>
+<li>
+<p>The damage percent at which this sprite starts to be applied. This sprite remains active until the damage percent of the next damage sprite entry</p>
+</li>
+</ul>
+<h2 id="157-damage-graphic-apply-mode">157. Damage Graphic Apply Mode<a class="headerlink" href="#157-damage-graphic-apply-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 157</p>
+</li>
+<li>
+<p>The apply mode for this damage sprite.</p>
+</li>
+<li>
+<ul>
+<li>
+<p>0: Overlay flames on building</p>
+</li>
+<li>
+<p>1: Overlay randomly</p>
+</li>
+<li>
+<p>2: Replace (walls)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="158-train-locations-entry-mod">158. Train Locations Entry Mod<a class="headerlink" href="#158-train-locations-entry-mod" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 158</p>
+</li>
+<li>
+<p>Determines the index at which train location/train button/train time/hotkey values are modified via effects in XS.</p>
+</li>
+<li>
+<ul>
+<li>
+<p>Multiply by N to insert a new entry at index N, and then set entry mod to N</p>
+</li>
+<li>
+<p>Multiply by -(N+1) to delete index N, and then set entry mod to N</p>
+</li>
+<li>
+<p>Multiply with 32767 to append an entry at the end, and set the entry mod to the last index</p>
+</li>
+<li>
+<p>Multiply with -32768 to delete the index at the end, and set entry mod to the new last index</p>
+</li>
+<li>
+<p>Note that inserting a new entry copies the existing last entry in the list as the default</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="159-train-locations-total-num">159. Train Locations Total Num<a class="headerlink" href="#159-train-locations-total-num" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 159</p>
+</li>
+<li>
+<p>The length of the train locations list. Can be set to shrink/extend the list (duplicates the last entry when extending).</p>
+</li>
+</ul>
+<h2 id="160-add-armor-type">160. Add Armor Type<a class="headerlink" href="#160-add-armor-type" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 160</p>
+</li>
+<li>
+<p>Setting this creates a new armor class in the targeted object/unit</p>
+</li>
+<li>
+<p>Note: You still need to set the value of the class using the regular damage class modification effect.</p>
+</li>
+</ul>
+<h2 id="161-add-attack-type">161. Add Attack Type<a class="headerlink" href="#161-add-attack-type" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 161</p>
+</li>
+<li>
+<p>Setting this creates a new attack class in the targeted object/unit</p>
+</li>
+<li>
+<p>Note: You still need to set the value of the class using the regular damage class modification effect.</p>
+</li>
+</ul>
+<h2 id="162-charge-target">162. Charge Target<a class="headerlink" href="#162-charge-target" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 162</p>
+</li>
+<li>
+<p>TODO</p>
+</li>
+</ul>
+<h2 id="163-size-class">163. Size Class<a class="headerlink" href="#163-size-class" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ID: 163</p>
+</li>
+<li>
+<p>Controls garrison type properties</p>
+</li>
+<li>
+<ul>
+<li>
+<p>0: Legacy object_group dependent behaviour</p>
+</li>
+<li>
+<p>1: Civilian</p>
+</li>
+<li>
+<p>2: Infantry</p>
+</li>
+<li>
+<p>3: Cavalry</p>
+</li>
+<li>
+<p>4: Religious</p>
+</li>
+<li>
+<p>5: Livestock</p>
+</li>
+<li>
+<p>6: Siege</p>
+</li>
+<li>
+<p>7: Ships</p>
+</li>
+<li>
+<p>8: Unused</p>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="..." target=_blank>feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "navigation.expand", "navigation.indexes", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
