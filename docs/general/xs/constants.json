@@ -2980,7 +2980,7 @@
             "usage": null
         },
         {
-            "name": "cAttributeMaintenance",
+            "name": "cAttributeEffectFunctionNumber",
             "value": 33,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
@@ -3199,6 +3199,20 @@
         {
             "name": "cAttributeCanConvert",
             "value": 67,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeSourceMarketOrDockX",
+            "value": 70,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeSourceMarketOrDockY",
+            "value": 71,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
@@ -3659,6 +3673,20 @@
             "usage": null
         },
         {
+            "name": "cAttributeMapReveal",
+            "value": 203,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeUnitReveal",
+            "value": 204,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
             "name": "cAttributeFeitoriaFoodProductivity",
             "type": "int",
             "value": 205,
@@ -3710,6 +3738,13 @@
         {
             "name": "cAttributeElevationBonusLower",
             "value": 212,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeShepherdingProductivity",
+            "value": 216,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
@@ -4221,6 +4256,20 @@
         {
             "name": "cAttributeShepherdingFoodProductivity",
             "value": 294,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeUnitCostRefund",
+            "value": 295,
+            "type": "int",
+            "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
+            "usage": null
+        },
+        {
+            "name": "cAttributeForagingProductivity",
+            "value": 296,
             "type": "int",
             "desc": "ID of the player resource RES_NAME. Check [here](../../resources/resources/#ID_HERE-RES_HEAD \"Jump to: Game Mecahnicsc > Resources > #ID_HERE-RES_HEAD\") for more info about what this resource does.",
             "usage": null
