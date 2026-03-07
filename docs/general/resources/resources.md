@@ -63,7 +63,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Number of relics held
 
-## 8. Enable Sun Ce Building Conversion
+## 8. Enable Sun Ce Building Conversion (Unused Resource 08)
 
 - ID: 8
 
@@ -75,13 +75,15 @@ This page is a list of all the player resources in the scenario editor and their
     - 1:  Yes
     - $\geq$2: Sun Ce can convert buildings from range
 
+- Note: The editor name of the resource is incorrect
+
 ## 9. Trade Goods
 
 - ID: 9
 
 - Purpose: Unused
 
-## 10. Unused Resource 010
+## 10. Unused Resource 10
 
 - ID: 10
 
@@ -252,13 +254,13 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Used to invoke functions in XS from data. When set to a non zero value `N`, it will automatically call a function named `EffectFunctionN` from the `Effects.xs` file.
 
-## 34. Unused Resource 34
+## 34. Unused Resource 034
 
 - ID: 34
 
 - Purpose: This resource is unused but is known to sometimes have some values. Use with caution
 
-## 35. Unused Resource 35
+## 35. Unused Resource 035
 
 - ID: 35
 
@@ -551,25 +553,25 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 73. Unused Resource 73
+## 73. Waypoint Sprite Graphic ID
 
 - ID: 73
 
-- Purpose: Unused
+- Purpose: Per-civ waypoint flag graphic ID
 
-## 74. Unused Resource 74
+## 74. Unused Resource 074
 
 - ID: 74
 
 - Purpose: Unused
 
-## 75. Unused Resource 75
+## 75. Unused Resource 075
 
 - ID: 75
 
 - Purpose: Unused
 
-## 76. Unused Resource 76
+## 76. Unused Resource 076
 
 - ID: 76
 
@@ -636,7 +638,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing
 
-## 83. Unused Resource 83
+## 83. Unused Resource 083
 
 - ID: 83
 
@@ -811,11 +813,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Total trade gold generated
 
-## 102. Unused Resource 102
+## 102. Naval Trade Wood
 
 - ID: 102
 
-- Purpose: Unused
+- Purpose: Unknown
 
 ## 103. Unused Resource 103
 
@@ -1485,7 +1487,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 203. Reveal Map
+## 203. Map Reveal
 
 - ID: 203
 
@@ -1497,7 +1499,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 1:  Explored
     - 2:  All Visible
 
-## 204. Reveal Unit on Map
+## 204. Unit Reveal
 
 - ID: 204
 
@@ -1675,7 +1677,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate
 
-## 220. Enable Certain Hero Level Up
+## 220. Enable Certain Hero Level Up (Unused Resource 220)
 
 - ID: 220
 
@@ -1685,7 +1687,8 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0: Default
 
-- Note: This enabled `Loot` task which makes these heroes gain stats instead of resources.
+- Note: - This enabled `Loot` task which makes these heroes gain stats instead of resources.
+- The editor name of the resource is incorrect
 
 ## 221. Monument Food Productivity
 
@@ -2295,11 +2298,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Determines the maximum amount of villagers that can work at once on a pasture
 
-## 291. Chopping Food Productivity
+## 291. Unused Resource 291
 
 - ID: 291
 
-- Purpose: Unused - duplicate name, actually controlled by resource 502
+- Purpose: Unused
 
 ## 292. Animal Decay Prevention
 
@@ -2325,13 +2328,18 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 296. Unused Resource 296
+## 296. Forager Productivity
 
 - ID: 296
 
-- Purpose: Unused
+- Purpose: Multiplier for food collected by foragers
 
-## 297. Unused Resource 297
+- Default Values:
+
+    - 1:  Default
+    - 1.20:  Mapuche
+
+## 297. Curare Poison
 
 - ID: 297
 
@@ -3693,7 +3701,7 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0: Default
 
-## 502. Chopping Food Productivity
+## 502. Athenian Chopping Food Productivity
 
 - ID: 502
 
@@ -3738,7 +3746,7 @@ This page is a list of all the player resources in the scenario editor and their
     - 0:  Default
     - 1:  Achaemenids, Athenians and Spartans
 
-## 506. Achamenids Town Center Local Upgrade
+## 506. Achaemenid Town Center Local Upgrade
 
 - ID: 506
 
@@ -3970,103 +3978,103 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unused
 
-## 531. Unused Resource 531
+## 531. Scenario Resource 01
 
 - ID: 531
 
 - Purpose: Unused
 
-## 532. Unused Resource 532
+## 532. Scenario Resource 02
 
 - ID: 532
 
 - Purpose: Unused
 
-## 533. Unused Resource 533
+## 533. Scenario Resource 03
 
 - ID: 533
 
 - Purpose: Unused
 
-## 534. Unused Resource 534
+## 534. Scenario Resource 04
 
 - ID: 534
 
 - Purpose: Unused
 
-## 535. Unused Resource 535
+## 535. Scenario Resource 05
 
 - ID: 535
 
 - Purpose: Unused
 
-## 536. Unused Resource 536
+## 536. Scenario Resource 06
 
 - ID: 536
 
 - Purpose: Unused
 
-## 537. Unused Resource 537
+## 537. Scenario Resource 07
 
 - ID: 537
 
 - Purpose: Unused
 
-## 538. Unused Resource 538
+## 538. Scenario Resource 08
 
 - ID: 538
 
 - Purpose: Unused
 
-## 539. Unused Resource 539
+## 539. Scenario Resource 09
 
 - ID: 539
 
 - Purpose: Unused
 
-## 540. Unused Resource 540
+## 540. Scenario Resource 10
 
 - ID: 540
 
 - Purpose: Unused
 
-## 541. Unused Resource 541
+## 541. Scenario Resource 11
 
 - ID: 541
 
 - Purpose: Unused
 
-## 542. Unused Resource 542
+## 542. Scenario Resource 12
 
 - ID: 542
 
 - Purpose: Unused
 
-## 543. Unused Resource 543
+## 543. Scenario Resource 13
 
 - ID: 543
 
 - Purpose: Unused
 
-## 544. Unused Resource 544
+## 544. Scenario Resource 14
 
 - ID: 544
 
 - Purpose: Unused
 
-## 545. Unused Resource 545
+## 545. Scenario Resource 15
 
 - ID: 545
 
 - Purpose: Unused
 
-## 546. Unused Resource 546
+## 546. Scenario Resource 16
 
 - ID: 546
 
 - Purpose: Unused
 
-## 547. Unused Resource 547
+## 547. Scenario Resource 17
 
 - ID: 547
 

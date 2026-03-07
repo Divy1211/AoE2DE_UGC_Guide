@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/03/07 10:59:03 |
+// | Generated on: 2026/03/07 11:12:02 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -1214,13 +1214,13 @@ extern const int cAttributeCurrentAge = 6;
 /** ID of the player resource [Relics](https://ugc.aoe2.rocks/general/resources/resources/#7-relics-captured) */
 extern const int cAttributeRelics = 7;
 
-/** ID of the player resource [Trage Bonus. Click [here](https://ugc.aoe2.rocks/general/resources/resources/#8-enable-sun-ce-building-conversion). The name is mispelled in the `Constants.xs` Check so thats how it needs to be used */
+/** ID of the player resource [Trage Bonus. Click [here](https://ugc.aoe2.rocks/general/resources/resources/#8-enable-sun-ce-building-conversion-unused-resource-08). The name is mispelled in the `Constants.xs` Check so thats how it needs to be used */
 extern const int cAttributeTrageBonus = 8;
 
 /** ID of the player resource [Trade Goods](https://ugc.aoe2.rocks/general/resources/resources/#9-trade-goods) */
 extern const int cAttributeTradeGoods = 9;
 
-/** ID of the player resource [Trade Producation](https://ugc.aoe2.rocks/general/resources/resources/#10-unused-resource-010) */
+/** ID of the player resource [Trade Producation](https://ugc.aoe2.rocks/general/resources/resources/#10-unused-resource-10) */
 extern const int cAttributeTradeProducation = 10;
 
 /** ID of the player resource [Population](https://ugc.aoe2.rocks/general/resources/resources/#11-current-population) */
@@ -1271,10 +1271,10 @@ extern const int cAttributeUnitLimit = 32;
 /** ID of the player resource [Effect Function Number](https://ugc.aoe2.rocks/general/resources/resources/#33-effect-function-number) */
 extern const int cAttributeEffectFunctionNumber = 33;
 
-/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-34) */
+/** ID of the player resource [Faith](https://ugc.aoe2.rocks/general/resources/resources/#34-unused-resource-034) */
 extern const int cAttributeFaith = 34;
 
-/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-unused-resource-35) */
+/** ID of the player resource [Faith Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#35-unused-resource-035) */
 extern const int cAttributeFaithRechargeRate = 35;
 
 /** ID of the player resource [Farm Food](https://ugc.aoe2.rocks/general/resources/resources/#36-farm-food-amount) */
@@ -1388,7 +1388,7 @@ extern const int cAttributeTrainingCount = 81;
 /** ID of the player resource [Raider](https://ugc.aoe2.rocks/general/resources/resources/#82-start-with-unit-444-ptwc) */
 extern const int cAttributeRaider = 82;
 
-/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-unused-resource-83) */
+/** ID of the player resource [Boarding Recharge Rate](https://ugc.aoe2.rocks/general/resources/resources/#83-unused-resource-083) */
 extern const int cAttributeBoardingRechargeRate = 83;
 
 /** ID of the player resource [Starting Villagers](https://ugc.aoe2.rocks/general/resources/resources/#84-starting-villagers) */
@@ -1565,10 +1565,10 @@ extern const int cAttributeHunWonderBonus = 196;
 /** ID of the player resource [Spies Discount](https://ugc.aoe2.rocks/general/resources/resources/#197-spies-discount) */
 extern const int cAttributeSpiesDiscount = 197;
 
-/** ID of the player resource [Map Reveal](https://ugc.aoe2.rocks/general/resources/resources/#203-reveal-map) */
+/** ID of the player resource [Map Reveal](https://ugc.aoe2.rocks/general/resources/resources/#203-map-reveal) */
 extern const int cAttributeMapReveal = 203;
 
-/** ID of the player resource [Unit Reveal](https://ugc.aoe2.rocks/general/resources/resources/#204-reveal-unit-on-map) */
+/** ID of the player resource [Unit Reveal](https://ugc.aoe2.rocks/general/resources/resources/#204-unit-reveal) */
 extern const int cAttributeUnitReveal = 204;
 
 /** ID of the player resource [Feitoria Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#205-feitoria-food-productivity) */
@@ -1607,7 +1607,7 @@ extern const int cAttributeFeudalTownCenterLimit = 218;
 /** ID of the player resource [Fishing Productivity](https://ugc.aoe2.rocks/general/resources/resources/#219-fishing-productivity) */
 extern const int cAttributeFishingProductivity = 219;
 
-/** ID of the player resource [Unused220](https://ugc.aoe2.rocks/general/resources/resources/#220-enable-certain-hero-level-up) */
+/** ID of the player resource [Unused220](https://ugc.aoe2.rocks/general/resources/resources/#220-enable-certain-hero-level-up-unused-resource-220) */
 extern const int cAttributeUnused220 = 220;
 
 /** ID of the player resource [Monument Food Trickle](https://ugc.aoe2.rocks/general/resources/resources/#221-monument-food-productivity) */
@@ -1820,7 +1820,7 @@ extern const int cAttributeShepherdingFoodProductivity = 294;
 /** ID of the player resource [Unit Cost Refund](https://ugc.aoe2.rocks/general/resources/resources/#295-unused-resource-295) */
 extern const int cAttributeUnitCostRefund = 295;
 
-/** ID of the player resource [Foraging Productivity](https://ugc.aoe2.rocks/general/resources/resources/#296-unused-resource-296) */
+/** ID of the player resource [Foraging Productivity](https://ugc.aoe2.rocks/general/resources/resources/#296-forager-productivity) */
 extern const int cAttributeForagingProductivity = 296;
 
 /** ID of the player resource [Gaia Kills](https://ugc.aoe2.rocks/general/resources/resources/#300-killed-gaia) */

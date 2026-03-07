@@ -53,14 +53,14 @@
         "note": ""
     },
     "8": {
-        "name": "Enable Sun Ce Building Conversion",
+        "name": "Enable Sun Ce Building Conversion (Unused Resource 08)",
         "desc": "Enables `Sun Ce` to convert buildings",
         "defaults": {
             "0": " No (default)",
             "1": " Yes",
             ">=2": "Sun Ce can convert buildings from range"
         },
-        "note": ""
+        "note": "The editor name of the resource is incorrect"
     },
     "9": {
         "name": "Trade Goods",
@@ -69,7 +69,7 @@
         "note": ""
     },
     "10": {
-        "name": "Unused Resource 010",
+        "name": "Unused Resource 10",
         "desc": "Unused",
         "defaults": {},
         "note": ""
@@ -224,13 +224,13 @@
         "note": ""
     },
     "34": {
-        "name": "Unused Resource 34",
+        "name": "Unused Resource 034",
         "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
         "defaults": {},
         "note": ""
     },
     "35": {
-        "name": "Unused Resource 35",
+        "name": "Unused Resource 035",
         "desc": "This resource is unused but is known to sometimes have some values. Use with caution",
         "defaults": {},
         "note": ""
@@ -491,25 +491,25 @@
         "note": ""
     },
     "73": {
-        "name": "Unused Resource 73",
-        "desc": "Unused",
+        "name": "Waypoint Sprite Graphic ID",
+        "desc": "Per-civ waypoint flag graphic ID",
         "defaults": {},
         "note": ""
     },
     "74": {
-        "name": "Unused Resource 74",
+        "name": "Unused Resource 074",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "75": {
-        "name": "Unused Resource 75",
+        "name": "Unused Resource 075",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "76": {
-        "name": "Unused Resource 76",
+        "name": "Unused Resource 076",
         "desc": "Unused",
         "defaults": {},
         "note": ""
@@ -560,7 +560,7 @@
         "note": "Setting this to 1 in an RMS allows for starting with PTWC. Manually changing this in the editor does nothing"
     },
     "83": {
-        "name": "Unused Resource 83",
+        "name": "Unused Resource 083",
         "desc": "Unused",
         "defaults": {},
         "note": ""
@@ -703,8 +703,8 @@
         "note": ""
     },
     "102": {
-        "name": "Unused Resource 102",
-        "desc": "Unused",
+        "name": "Naval Trade Wood",
+        "desc": "Unknown",
         "defaults": {},
         "note": ""
     },
@@ -1335,7 +1335,7 @@
         "note": ""
     },
     "203": {
-        "name": "Reveal Map",
+        "name": "Map Reveal",
         "desc": "Controls the map visibility for a player.",
         "defaults": {
             "0": " Normal",
@@ -1345,7 +1345,7 @@
         "note": ""
     },
     "204": {
-        "name": "Reveal Unit on Map",
+        "name": "Unit Reveal",
         "desc": "Controls the visibility of other players' units for a player",
         "defaults": {},
         "note": "Positive IDs will reveal a unit temporarily only when it is created, Negative IDs will reveal a unit permanently"
@@ -1471,12 +1471,12 @@
         "note": "Since this works by multiplying the amount of resources gathered by a fishing ship, it has a side effect of increasing the gather rate"
     },
     "220": {
-        "name": "Enable Certain Hero Level Up",
+        "name": "Enable Certain Hero Level Up (Unused Resource 220)",
         "desc": "Enables leveling up when killing units for `Richard the Lionheart`, `Sieur de Metz`, `Kushluk`, `Zawisza the Black`",
         "defaults": {
             "0": "Default"
         },
-        "note": "This enabled `Loot` task which makes these heroes gain stats instead of resources."
+        "note": "- This enabled `Loot` task which makes these heroes gain stats instead of resources.\n- The editor name of the resource is incorrect"
     },
     "221": {
         "name": "Monument Food Productivity",
@@ -1981,8 +1981,8 @@
         "note": ""
     },
     "291": {
-        "name": "Chopping Food Productivity",
-        "desc": "Unused - duplicate name, actually controlled by resource 502",
+        "name": "Unused Resource 291",
+        "desc": "Unused",
         "defaults": {},
         "note": ""
     },
@@ -2011,13 +2011,16 @@
         "note": ""
     },
     "296": {
-        "name": "Unused Resource 296",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Forager Productivity",
+        "desc": "Multiplier for food collected by foragers",
+        "defaults": {
+            "1": " Default",
+            "1.20": " Mapuche"
+        },
         "note": ""
     },
     "297": {
-        "name": "Unused Resource 297",
+        "name": "Curare Poison",
         "desc": "Unused",
         "defaults": {},
         "note": ""
@@ -3249,7 +3252,7 @@
         "note": ""
     },
     "502": {
-        "name": "Chopping Food Productivity",
+        "name": "Athenian Chopping Food Productivity",
         "desc": "Chopping food generation rate per 100 seconds.",
         "defaults": {
             "0": " Default",
@@ -3284,7 +3287,7 @@
         "note": ""
     },
     "506": {
-        "name": "Achamenids Town Center Local Upgrade",
+        "name": "Achaemenid Town Center Local Upgrade",
         "desc": "Used as a local resource in Town Centers to know which of them have the Achamenids Town Center upgrade researched",
         "defaults": {
             "0": " Default",
@@ -3478,103 +3481,103 @@
         "note": ""
     },
     "531": {
-        "name": "Unused Resource 531",
+        "name": "Scenario Resource 01",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "532": {
-        "name": "Unused Resource 532",
+        "name": "Scenario Resource 02",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "533": {
-        "name": "Unused Resource 533",
+        "name": "Scenario Resource 03",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "534": {
-        "name": "Unused Resource 534",
+        "name": "Scenario Resource 04",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "535": {
-        "name": "Unused Resource 535",
+        "name": "Scenario Resource 05",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "536": {
-        "name": "Unused Resource 536",
+        "name": "Scenario Resource 06",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "537": {
-        "name": "Unused Resource 537",
+        "name": "Scenario Resource 07",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "538": {
-        "name": "Unused Resource 538",
+        "name": "Scenario Resource 08",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "539": {
-        "name": "Unused Resource 539",
+        "name": "Scenario Resource 09",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "540": {
-        "name": "Unused Resource 540",
+        "name": "Scenario Resource 10",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
      "541": {
-        "name": "Unused Resource 541",
+        "name": "Scenario Resource 11",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "542": {
-        "name": "Unused Resource 542",
+        "name": "Scenario Resource 12",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "543": {
-        "name": "Unused Resource 543",
+        "name": "Scenario Resource 13",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "544": {
-        "name": "Unused Resource 544",
+        "name": "Scenario Resource 14",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "545": {
-        "name": "Unused Resource 545",
+        "name": "Scenario Resource 15",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "546": {
-        "name": "Unused Resource 546",
+        "name": "Scenario Resource 16",
         "desc": "Unused",
         "defaults": {},
         "note": ""
     },
     "547": {
-        "name": "Unused Resource 547",
+        "name": "Scenario Resource 17",
         "desc": "Unused",
         "defaults": {},
         "note": ""
