@@ -1070,7 +1070,7 @@
                     "desc": "The player to get the civilization of"
                 }
             ],
-            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../constants/#3-civs \"Jump to: XS Scripting > Constant Reference > #3. Civs\") for all the different civ IDs"
+            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../../constants/#3-civs \"Jump to: XS Scripting > Constant Reference > #3. Civs\") for all the different civ IDs"
         },
         {
             "name": "xsGetPlayerInGame",
@@ -1447,7 +1447,7 @@
                     "name": "taskFieldId",
                     "type": "int",
                     "required": true,
-                    "desc": "Specifies which property of the task to change. Refer to [cTaskAttr constants](../constants/#13-task-attribute \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Specifies which property of the task to change. Refer to [cTaskAttr constants](../../constants/#13-task-attribute \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "value",
@@ -1478,7 +1478,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Refer to [cTaskType constants](../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Task type. Refer to [cTaskType constants](../../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "targetObjectOrClassId",
@@ -1509,7 +1509,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Refer to [cTaskType constants](../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Task type. Refer to [cTaskType constants](../../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "targetObjectOrClassId",
@@ -1822,7 +1822,7 @@
                     "desc": "The player to get the tech's state for"
                 }
             ],
-            "desc": "Returns one of the [cTechState constants](../constants/#15-techstate \"Jump To: XS > Constant Reference > Tech State Constants\") based on the tech's status"
+            "desc": "Returns one of the [cTechState constants](../../constants/#15-techstate \"Jump To: XS > Constant Reference > Tech State Constants\") based on the tech's status"
         },
         {
             "name": "xsGetUnitHitpoints",
@@ -1944,7 +1944,7 @@
                     "desc": "The unit to get the class for"
                 }
             ],
-            "desc": "Returns the given unit's class See [cClass constants](../constants/#10-effectamount-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
+            "desc": "Returns the given unit's class See [cClass constants](../../constants/#10-effectamount-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
         },
         {
             "name": "xsGetObjectClass",
@@ -1963,7 +1963,7 @@
                     "desc": "The object to get the class for"
                 }
             ],
-            "desc": "Returns the given object's class for the specified player. See [cClass constants](../constants/#10-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
+            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/#10-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
         },
         {
             "name": "xsGetUnitType",
@@ -1976,7 +1976,7 @@
                     "desc": "The unit to get the type for"
                 }
             ],
-            "desc": "Returns the given unit's type. See [cObjectType constants](../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
+            "desc": "Returns the given unit's type. See [cObjectType constants](../../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
         },
         {
             "name": "xsGetObjectType",
@@ -1995,7 +1995,7 @@
                     "desc": "The object to get the type for"
                 }
             ],
-            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
+            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
         },
         {
             "name": "xsGetUnitAttributeTypesHeld",
@@ -2174,7 +2174,7 @@
                     "desc": "The player to get the type for"
                 }
             ],
-            "desc": "Returns the type of player. Refer to the [Constant Reference](../constants/#17-player-type \"Jump to: XS Scripting > Constant Reference > #17. Player Type\") for all the different player types"
+            "desc": "Returns the type of player. Refer to the [Constant Reference](../../constants/#17-player-type \"Jump to: XS Scripting > Constant Reference > #17. Player Type\") for all the different player types"
         },
         {
             "name": "xsRemoveUnit",
@@ -2243,7 +2243,7 @@
             "name": "xsGetColorMood",
             "return_type": "int",
             "params": [],
-            "desc": "Returns the current color mood of the map. Refer to the [Constant Reference](../constants/#19-color-mood \"Jump to: XS Scripting > Constant Reference > #19. Color Mood\") for all the different color mood IDs"
+            "desc": "Returns the current color mood of the map. Refer to the [Constant Reference](../../constants/#19-color-mood \"Jump to: XS Scripting > Constant Reference > #19. Color Mood\") for all the different color mood IDs"
         },
         {
             "name": "xsSetColorMood",
@@ -2262,13 +2262,13 @@
                     "desc": "The transition duration in seconds"
                 }
             ],
-            "desc": "Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../constants/#19-color-mood \"Jump to: XS Scripting > Constant Reference > #19. Color Mood\") for all the different color mood IDs"
+            "desc": "Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../../constants/#19-color-mood \"Jump to: XS Scripting > Constant Reference > #19. Color Mood\") for all the different color mood IDs"
         },
         {
             "name": "xsGetDifficulty",
             "return_type": "int",
             "params": [],
-            "desc": "Returns the difficulty setting for the game. Refer to the [Constant Reference](../constants/#20-difficulty \"Jump to: XS Scripting > Constant Reference > #20. Difficulty\") for all the different difficulty IDs"
+            "desc": "Returns the difficulty setting for the game. Refer to the [Constant Reference](../../constants/#20-difficulty \"Jump to: XS Scripting > Constant Reference > #20. Difficulty\") for all the different difficulty IDs"
         },
         {
             "name": "xsCreateUnit",
@@ -2397,7 +2397,7 @@
                     "name": "taskFieldId",
                     "type": "int",
                     "required": true,
-                    "desc": "The task field to ge the value for. Refer to the [Constant Reference](../constants/#13-task-attribute \"Jump to: XS Scripting > Constant Reference > #13. Task Attribute\") for all the different task field IDs"
+                    "desc": "The task field to ge the value for. Refer to the [Constant Reference](../../constants/#13-task-attribute \"Jump to: XS Scripting > Constant Reference > #13. Task Attribute\") for all the different task field IDs"
                 }
             ],
             "desc": "Returns the given task field from XS' global task struct."
@@ -2583,7 +2583,7 @@
                     "name": "dataType",
                     "type": "int",
                     "required": true,
-                    "desc": "The [cOffset constants](../constants/#1-readwrite \"Jump To: XS > Constant Reference > Read/Write Constants\") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)"
+                    "desc": "The [cOffset constants](../../constants/#1-readwrite \"Jump To: XS > Constant Reference > Read/Write Constants\") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)"
                 },
                 {
                     "name": "forward",
@@ -2692,7 +2692,7 @@
             "desc": "Sets the SN of the current AI"
         }
     ],
-    "Functions With Seemingly No Practical Use": [
+    "misc": [
         {
             "name": "xsDumpArrays",
             "return_type": "void",

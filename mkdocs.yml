@@ -12,60 +12,113 @@ edit_uri:           "edit/main/docs/"
 use_directory_urls: true
 
 nav:
-  -                                 "index.md"
+  -                                                 "index.md"
   - Game Mechanics:
-    -                               "general/index.md"
-    - Damage Calculation:           "general/damage_calculation.md"
-    - Attributes:                   "general/attributes/attributes.md"
-    - Resources:                    "general/resources/resources.md"
-    - Hotkeys:                      "general/hotkeys/hotkeys.md"
+    -                                               "general/index.md"
+    - Guides:
+      - Damage Calculation:                         "general/damage_calculation.md"
+      - Hotkeys:                                    "general/hotkeys/hotkeys.md"
+    - References:
+      - Attributes:                                 "general/attributes/attributes.md"
+      - Resources:                                  "general/resources/resources.md"
   - Custom Scenarios:
-    -                               "scenarios/index.md"
+    -                                               "scenarios/index.md"
     - Triggers:
-      -                             "scenarios/triggers/index.md"
-      - Effects:                    "scenarios/triggers/effects/effects.md"
-    #   - Conditions:               "scenarios/triggers/conditions/conditions.md"
-    #   - Variables:                "scenarios/triggers/variables.md"
-    # - Tricks and Tips:            "scenarios/tricks.md"
+      -                                             "scenarios/triggers/index.md"
+      - Effects:                                    "scenarios/triggers/effects/effects.md"
+    #   - Conditions:                               "scenarios/triggers/conditions/conditions.md"
+    #   - Variables:                                "scenarios/triggers/variables.md"
+    # - Tricks and Tips:                            "scenarios/tricks.md"
     # - Advanced:
-    #   - File Byte Structure:      "scenarios/advanced/byte_structure.md"
+    #   - File Byte Structure:                      "scenarios/advanced/byte_structure.md"
     - Useful Tools:
       # - Advanced Genie Editor:
-      #   - A.G.E. Uses:            "scenarios/useful_tools/age/uses.md"
-      #   - Unhiding Editor Units:  "scenarios/useful_tools/age/unhide.md"
+      #   - A.G.E. Uses:                            "scenarios/useful_tools/age/uses.md"
+      #   - Unhiding Editor Units:                  "scenarios/useful_tools/age/unhide.md"
       - AoE2ScenarioParser:
-        -                           "scenarios/useful_tools/parser/index.md"
+        -                                           "scenarios/useful_tools/parser/index.md"
   - XS Scripting:
-    -                               "general/xs/index.md"
-    - For Beginners:                "general/xs/beginner.md"
-    - For Programmers:              "general/xs/programmer.md"
-    - Tricks:                       "general/xs/tricks.md"
-    - Functions Reference:          "general/xs/functions.md"
-    - Constant Reference:           "general/xs/constants.md"
-    - Useful Resources:             "general/xs/useful.md"
+    -                                               "general/xs/index.md"
+    - Tutorials:
+      - For Beginners:                              "general/xs/beginner.md"
+      - For Programmers:                            "general/xs/programmer.md"
+    - Guides:
+      - Tricks:                                     "general/xs/tricks.md"
+    - References:
+      - Functions:
+#        -                                           "general/xs/functions/functions.md"
+        - Gameplay:
+          - Player:                                 "general/xs/functions/player.md"
+          - Tasks:                                  "general/xs/functions/tasks.md"
+          - Units/Objects:                          "general/xs/functions/units_objects.md"
+          - AI Scripting:                           "general/xs/functions/ai_scripting.md"
+          - UI:                                     "general/xs/functions/ui.md"
+          - Map:                                    "general/xs/functions/map.md"
+          - Game Info:                              "general/xs/functions/game_info.md"
+        - Language:
+          - Randomization:                          "general/xs/functions/rng.md"
+          - Arrays:                                 "general/xs/functions/arrays.md"
+          - Rules:                                  "general/xs/functions/rules.md"
+          - Vectors:                                "general/xs/functions/vectors.md"
+          - Maths:                                  "general/xs/functions/maths.md"
+          - File I/O:                               "general/xs/functions/read_write.md"
+        - General:                                  "general/xs/functions/general.md"
+        - Misc:                                     "general/xs/functions/misc.md"
+      - Constants:
+  #      -                                           "general/xs/constants/constants.md"
+        - Gameplay:
+          - Effect Amount:
+            - Effect Operations:                    "general/xs/constants/effect_amount_effect_operations.md"
+            - Effect Type:                          "general/xs/constants/effect_amount_effect_type.md"
+            - Technology Attribute:                 "general/xs/constants/effect_amount_technology_attribute.md"
+          - Units:
+            - Object Type:                          "general/xs/constants/object_type.md"
+            - Object Class:                         "general/xs/constants/object_class.md"
+            - Object Attribute:                     "general/xs/constants/object_attribute.md"
+            - Damage Class:                         "general/xs/constants/damage_class.md"
+          - Tasks:
+            - Attribute:                            "general/xs/constants/task_attribute.md"
+            - Type:                                 "general/xs/constants/task_type.md"
+          - Players:
+            - Resource:                             "general/xs/constants/resource.md"
+            - Tech State:                           "general/xs/constants/tech_state.md"
+            - Difficulty:                           "general/xs/constants/difficulty.md"
+            - Diplomacy:                            "general/xs/constants/diplomacy.md"
+            - Player Type:                          "general/xs/constants/player_type.md"
+            - Age:                                  "general/xs/constants/age.md"
+            - Victory Conditions:                       "general/xs/constants/victory_conditions.md"
+          - Map:
+            - Color Mood:                           "general/xs/constants/color_mood.md"
+          - Civs:
+            - AoE2:                                 "general/xs/constants/aoe2_civs.md"
+            - Chronicles:                           "general/xs/constants/chronicles_civs.md"
+            - RoR:                                  "general/xs/constants/ror_civs.md"
+        - Language:
+          - Read/Write:                             "general/xs/constants/read_write.md"
+          - Constants:                              "general/xs/constants/value.md"
+    - Useful Resources:                             "general/xs/useful.md"
     - Known Bugs:
-      -                             "general/xs/bugs/index.md"
-      - Chat Data:                  "general/xs/bugs/Chat Data.md"
-      - Crashes:                    "general/xs/bugs/Crashes.md"
-      - Editor:                     "general/xs/bugs/Editor.md"
-      - Effect Amount:              "general/xs/bugs/Effect Amount.md"
-      # - Fixed:                      "general/xs/bugs/Fixed.md"
-      - Important:                  "general/xs/bugs/Important.md"
-      - Language Syntax:            "general/xs/bugs/Language Syntax.md"
-      - Task:                       "general/xs/bugs/Task.md"
-      - Task:                       "general/xs/bugs/Individual Tech Modifiers.md"
+      -                                             "general/xs/bugs/index.md"
+      - Chat Data:                                  "general/xs/bugs/Chat Data.md"
+      - Crashes:                                    "general/xs/bugs/Crashes.md"
+      - Editor:                                     "general/xs/bugs/Editor.md"
+      - Effect Amount:                              "general/xs/bugs/Effect Amount.md"
+      # - Fixed:                                    "general/xs/bugs/Fixed.md"
+      - Important:                                  "general/xs/bugs/Important.md"
+      - Language Syntax:                            "general/xs/bugs/Language Syntax.md"
+      - Task:                                       "general/xs/bugs/Individual Tech Modifiers.md"
   - Mods:
-    -                               "mods/index.md"
+    -                                               "mods/index.md"
 #   - Data Mods
 #     - Advanced Genie Editor:
-#       - A.G.E. Basics:            "mods/age/basics.md"
+#       - A.G.E. Basics:                            "mods/age/basics.md"
   - RMS:
-    -                               "rms/index.md"
-#     - RMS Basics:                 "rms/basics.md"
+    -                                               "rms/index.md"
+#     - RMS Basics:                                 "rms/basics.md"
   - AI:
-    -                               "ai/index.md"
+    -                                               "ai/index.md"
   - Audio:
-    -                               "audio/index.md"
+    -                                               "audio/index.md"
 
 markdown_extensions:
   - attr_list
@@ -105,7 +158,11 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-\.\_]+'
-
+validation:
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
 theme:
   # favicon:
   language: en
@@ -113,17 +170,17 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
-    - navigation.expand
+#    - navigation.expand
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.sections
+#    - navigation.instant
+    - navigation.sections
     - navigation.tabs
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    # - toc.integrate
+#    - toc.integrate
   font:
     text: Roboto
     code: Spline Sans Mono

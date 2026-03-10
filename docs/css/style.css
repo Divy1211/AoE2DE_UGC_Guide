@@ -4,6 +4,18 @@
      }
 }
 
+/* Sidebar tree guides */
+
+.md-nav:not([data-md-level="0"]):not([data-md-level="1"]) > .md-nav__list {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  margin-left: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.md-nav:not([data-md-level="0"]):not([data-md-level="1"]) > .md-nav__list > .md-nav__item + .md-nav__item {
+  margin-top: 0.5rem;
+}
+
 .md-nav__link .md-nav__link--index, .md-nav--secondary .md-nav__title { background: unset !important; box-shadow: unset !important; }
 .md-nav__link.md-nav__container { background: unset !important; box-shadow: unset !important; }
 .md-nav__link.md-nav__link--active { background: unset !important; box-shadow: unset !important; }
