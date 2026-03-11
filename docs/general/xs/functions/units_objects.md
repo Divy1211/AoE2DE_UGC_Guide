@@ -44,7 +44,7 @@ Parameters:
 3.  `#!xs int attribute`: The attribute to get
 4.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
 
-Returns the attribute value for an object
+Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/object_attribute/#85-cselectionsoundevent) must be converted using [bitCastToInt](../maths/#16-bitcasttoint) after being returned.
 
 ## 4. xsGetUnitAttribute
 
@@ -58,7 +58,7 @@ Parameters:
 2.  `#!xs int attribute`: The attribute to get
 3.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
 
-Returns the attribute value for a specific unit on the map.
+Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/object_attribute/#85-cselectionsoundevent) must be converted using [bitCastToInt](../maths/#16-bitcasttoint) after being returned.
 
 ## 5. xsDoesUnitExist
 

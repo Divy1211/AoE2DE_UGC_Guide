@@ -20,7 +20,7 @@ Example:
  xsEffectAmount(cSetAttribute, 74, cHitpoints, 100)
 ```
 
-This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of the [Unit Attribute Constants](./#7-effectamount-unit-attribute "Jump to: Unit Attribute Constants") may be used to modify the corresponding unit property
+This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of the [Unit Attribute Constants](../object_attribute "Jump to: XS > Constant Reference > Object Attribute") may be used to modify the corresponding unit property
 
 ## 2. cModResource
 
@@ -40,7 +40,7 @@ Example:
  xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)
 ```
 
-This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](./#9-resource "Jump to: Constant Reference > Resource")
+This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](../resource "Jump to: XS > Constant Reference > Resource")
 
 ## 3. cEnableObject
 
@@ -182,7 +182,7 @@ Example:
  xsEffectAmount(cModifyTech, 22, cAttrSetTime, 10)
 ```
 
-This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./#6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
+This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](../effect_amount_technology_attribute "Jump to: XS > Constant Reference > Effect Amount Tech Attribute") may be used to modify the corresponding tech property
 
 ## 10. cSetPlayerData
 
@@ -524,7 +524,7 @@ Example:
  xsEffectAmount(cGaiaModifyTech, 22, cAttrSetTime, 10)
 ```
 
-This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./6-effectamount-technology-attribute "Jump to: Tech Attribute Constants") may be used to modify the corresponding tech property
+This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](../effect_amount_technology_attribute "Jump to: XS > Constant Reference > Effect Amount Tech Attribute") may be used to modify the corresponding tech property
 
 ## 27. cGaiaSetPlayerData
 

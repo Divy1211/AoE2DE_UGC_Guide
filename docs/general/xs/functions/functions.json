@@ -1146,19 +1146,19 @@
                     "name": "effectId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the effect to use"
+                    "desc": "The ID of the effect to use. See the [Effect Type](../../constants/effect_amount_effect_type/ \"Jump To: XS > Constant Reference > Effect Amount Effect Type\") and [Technology Attribute](../../constants/effect_amount_technology_attribute/ \"Jump To: XS > Constant Reference > Effect Amount Tech Attribute\") constants"
                 },
                 {
                     "name": "objectOrTechnologyId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the object or technology to effect"
+                    "desc": "The ID of the object, unit, or technology to effect"
                 },
                 {
                     "name": "attributeOrOperation",
                     "type": "int",
                     "required": true,
-                    "desc": "The attribute to modify or the operation to perform"
+                    "desc": "The attribute to modify or the operation to perform, See the [Effect Operation](../../constants/effect_amount_effect_operations/ \"Jump To: XS > Constant Reference > Effect Amount Effect Operation\") constants"
                 },
                 {
                     "name": "value",
@@ -1173,7 +1173,7 @@
                     "desc": "The player to apply the effect to. If unspecified, applies to all players except Gaia."
                 }
             ],
-            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch](\"Jump to: UserPatch NON EXISTENT\") section of the guide"
+            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/object_attribute/#85-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](../maths/#15-bitcasttofloat)."
         },
         {
             "name": "xsGetPlayerUnitIds",
@@ -1712,7 +1712,7 @@
                     "desc": "For use with armor/attack attributes - specifies which armor/attack class to get"
                 }
             ],
-            "desc": "Returns the attribute value for an object"
+            "desc": "Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/object_attribute/#85-cselectionsoundevent) must be converted using [bitCastToInt](../maths/#16-bitcasttoint) after being returned."
         },
         {
             "name": "xsGetUnitAttribute",
@@ -1737,7 +1737,7 @@
                     "desc": "For use with armor/attack attributes - specifies which armor/attack class to get"
                 }
             ],
-            "desc": "Returns the attribute value for a specific unit on the map."
+            "desc": "Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/object_attribute/#85-cselectionsoundevent) must be converted using [bitCastToInt](../maths/#16-bitcasttoint) after being returned."
         },
         {
             "name": "xsDoesUnitExist",

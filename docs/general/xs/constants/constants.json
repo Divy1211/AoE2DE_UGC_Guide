@@ -708,7 +708,7 @@
             "usage": {
                 "syntax": "xsEffectAmount(cSetAttribute, unitID, attributeID, value)",
                 "example": "xsEffectAmount(cSetAttribute, 74, cHitpoints, 100)",
-                "explanation": "This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of the [Unit Attribute Constants](./#7-effectamount-unit-attribute \"Jump to: Unit Attribute Constants\") may be used to modify the corresponding unit property"
+                "explanation": "This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of the [Unit Attribute Constants](../object_attribute \"Jump to: XS > Constant Reference > Object Attribute\") may be used to modify the corresponding unit property"
             }
         },
         {
@@ -719,7 +719,7 @@
             "usage":{
                 "syntax": "xsEffectAmount(cModResource, resourceID, operation, value)",
                 "example": "xsEffectAmount(cModResource, cAttributeFood, cAttributeAdd, 100)",
-                "explanation": "This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](./#9-resource \"Jump to: Constant Reference > Resource\")"
+                "explanation": "This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be used to set the food amount to 100. Also, see the [Resource](../resource \"Jump to: XS > Constant Reference > Resource\")"
             }
         },
         {
@@ -796,7 +796,7 @@
             "usage": {
                 "syntax": "xsEffectAmount(cModifyTech, techID, techAttribute, value)",
                 "example": "xsEffectAmount(cModifyTech, 22, cAttrSetTime, 10)",
-                "explanation": "This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./#6-effectamount-technology-attribute \"Jump to: Tech Attribute Constants\") may be used to modify the corresponding tech property"
+                "explanation": "This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](../effect_amount_technology_attribute \"Jump to: XS > Constant Reference > Effect Amount Tech Attribute\") may be used to modify the corresponding tech property"
             }
         },
         {
@@ -983,7 +983,7 @@
             "usage": {
                 "syntax": "xsEffectAmount(cGaiaModifyTech, techID, techAttribute, value)",
                 "example": "xsEffectAmount(cGaiaModifyTech, 22, cAttrSetTime, 10)",
-                "explanation": "This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](./6-effectamount-technology-attribute \"Jump to: Tech Attribute Constants\") may be used to modify the corresponding tech property"
+                "explanation": "This sets the research time of tech 22 (loom) to 10s (the value). Alternatively, any of the [Tech Attribute Constants](../effect_amount_technology_attribute \"Jump to: XS > Constant Reference > Effect Amount Tech Attribute\") may be used to modify the corresponding tech property"
             }
         },
         {
@@ -1275,1071 +1275,1071 @@
             "name": "cHitpoints",
             "value": 0,
             "type": "int",
-            "desc": "This is the attribute [Hit Points](./../../attributes/attributes/#0-hit-points)",
+            "desc": "This is the attribute [Hit Points](../../../attributes/attributes/#0-hit-points)",
             "usage": null
         },
         {
             "name": "cLineOfSight",
             "value": 1,
             "type": "int",
-            "desc": "This is the attribute [Line of Sight](./../../attributes/attributes/#1-line-of-sight)",
+            "desc": "This is the attribute [Line of Sight](../../../attributes/attributes/#1-line-of-sight)",
             "usage": null
         },
         {
             "name": "cGarrisonCapacity",
             "value": 2,
             "type": "int",
-            "desc": "This is the attribute [Garrison Capacity](./../../attributes/attributes/#2-garrison-capacity)",
+            "desc": "This is the attribute [Garrison Capacity](../../../attributes/attributes/#2-garrison-capacity)",
             "usage": null
         },
         {
             "name": "cUnitSizeX",
             "value": 3,
             "type": "int",
-            "desc": "This is the attribute [Unit Size X](./../../attributes/attributes/#3-unit-size-x)",
+            "desc": "This is the attribute [Unit Size X](../../../attributes/attributes/#3-unit-size-x)",
             "usage": null
         },
         {
             "name": "cUnitSizeY",
             "value": 4,
             "type": "int",
-            "desc": "This is the attribute [Unit Size Y](./../../attributes/attributes/#4-unit-size-y)",
+            "desc": "This is the attribute [Unit Size Y](../../../attributes/attributes/#4-unit-size-y)",
             "usage": null
         },
         {
             "name": "cMovementSpeed",
             "value": 5,
             "type": "int",
-            "desc": "This is the attribute [Movement Speed](./../../attributes/attributes/#5-movement-speed)",
+            "desc": "This is the attribute [Movement Speed](../../../attributes/attributes/#5-movement-speed)",
             "usage": null
         },
         {
             "name": "cRotationSpeed",
             "value": 6,
             "type": "int",
-            "desc": "This is the attribute [Rotation Speed](./../../attributes/attributes/#6-rotation-speed)",
+            "desc": "This is the attribute [Rotation Speed](../../../attributes/attributes/#6-rotation-speed)",
             "usage": null
         },
         {
             "name": "cArmor",
             "value": 8,
             "type": "int",
-            "desc": "This is the attribute [Armor](./../../attributes/attributes/#8-armor)",
+            "desc": "This is the attribute [Armor](../../../attributes/attributes/#8-armor)",
             "usage": null
         },
         {
             "name": "cAttack",
             "value": 9,
             "type": "int",
-            "desc": "This is the attribute [Attack](./../../attributes/attributes/#9-attack)",
+            "desc": "This is the attribute [Attack](../../../attributes/attributes/#9-attack)",
             "usage": null
         },
         {
             "name": "cAttackReloadTime",
             "value": 10,
             "type": "int",
-            "desc": "This is the attribute [Attack Reload Time](./../../attributes/attributes/#10-attack-reload-time)",
+            "desc": "This is the attribute [Attack Reload Time](../../../attributes/attributes/#10-attack-reload-time)",
             "usage": null
         },
         {
             "name": "cAccuracyPercent",
             "value": 11,
             "type": "int",
-            "desc": "This is the attribute [Accuracy Percent](./../../attributes/attributes/#11-accuracy-percent)",
+            "desc": "This is the attribute [Accuracy Percent](../../../attributes/attributes/#11-accuracy-percent)",
             "usage": null
         },
         {
             "name": "cMaxRange",
             "value": 12,
             "type": "int",
-            "desc": "This is the attribute [Max Range](./../../attributes/attributes/#12-max-range)",
+            "desc": "This is the attribute [Max Range](../../../attributes/attributes/#12-max-range)",
             "usage": null
         },
         {
             "name": "cWorkRate",
             "value": 13,
             "type": "int",
-            "desc": "This is the attribute [Work Rate](./../../attributes/attributes/#13-work-rate)",
+            "desc": "This is the attribute [Work Rate](../../../attributes/attributes/#13-work-rate)",
             "usage": null
         },
         {
             "name": "cCarryCapacity",
             "value": 14,
             "type": "int",
-            "desc": "This is the attribute [Carry Capacity](./../../attributes/attributes/#14-carry-capacity)",
+            "desc": "This is the attribute [Carry Capacity](../../../attributes/attributes/#14-carry-capacity)",
             "usage": null
         },
         {
             "name": "cBaseArmor",
             "value": 15,
             "type": "int",
-            "desc": "This is the attribute [Base Armor](./../../attributes/attributes/#15-base-armor)",
+            "desc": "This is the attribute [Base Armor](../../../attributes/attributes/#15-base-armor)",
             "usage": null
         },
         {
             "name": "cProjectileUnit",
             "value": 16,
             "type": "int",
-            "desc": "This is the attribute [Projectile Unit](./../../attributes/attributes/#16-projectile-unit)",
+            "desc": "This is the attribute [Projectile Unit](../../../attributes/attributes/#16-projectile-unit)",
             "usage": null
         },
         {
             "name": "cIconGraphicsAngle",
             "value": 17,
             "type": "int",
-            "desc": "This is the attribute [Building Icon Override](./../../attributes/attributes/#17-building-icon-override)",
+            "desc": "This is the attribute [Building Icon Override](../../../attributes/attributes/#17-building-icon-override)",
             "usage": null
         },
         {
             "name": "cTerrainDefenseBonus",
             "value": 18,
             "type": "int",
-            "desc": "This is the attribute [Terrain Defense Bonus](./../../attributes/attributes/#18-terrain-defense-bonus)",
+            "desc": "This is the attribute [Terrain Defense Bonus](../../../attributes/attributes/#18-terrain-defense-bonus)",
             "usage": null
         },
         {
             "name": "cEnableSmartProjectile",
             "value": 19,
             "type": "int",
-            "desc": "This is the attribute [Projectile Smart Mode](./../../attributes/attributes/#19-projectile-smart-mode)",
+            "desc": "This is the attribute [Projectile Smart Mode](../../../attributes/attributes/#19-projectile-smart-mode)",
             "usage": null
         },
         {
             "name": "cMinimumRange",
             "value": 20,
             "type": "int",
-            "desc": "This is the attribute [Minimum Range](./../../attributes/attributes/#20-minimum-range)",
+            "desc": "This is the attribute [Minimum Range](../../../attributes/attributes/#20-minimum-range)",
             "usage": null
         },
         {
             "name": "cAmountFirstStorage",
             "value": 21,
             "type": "int",
-            "desc": "This is the attribute [Amount of 1st Resource Storage](./../../attributes/attributes/#21-amount-of-1st-resource-storage)",
+            "desc": "This is the attribute [Amount of 1st Resource Storage](../../../attributes/attributes/#21-amount-of-1st-resource-storage)",
             "usage": null
         },
         {
             "name": "cBlastWidth",
             "value": 22,
             "type": "int",
-            "desc": "This is the attribute [Blast Width](./../../attributes/attributes/#22-blast-width)",
+            "desc": "This is the attribute [Blast Width](../../../attributes/attributes/#22-blast-width)",
             "usage": null
         },
         {
             "name": "cSearchRadius",
             "value": 23,
             "type": "int",
-            "desc": "This is the attribute [Search Radius](./../../attributes/attributes/#23-search-radius)",
+            "desc": "This is the attribute [Search Radius](../../../attributes/attributes/#23-search-radius)",
             "usage": null
         },
         {
             "name": "cBonusResistance",
             "value": 24,
             "type": "int",
-            "desc": "This is the attribute [Bonus Damage Resistance](./../../attributes/attributes/#24-bonus-damage-resistance)",
+            "desc": "This is the attribute [Bonus Damage Resistance](../../../attributes/attributes/#24-bonus-damage-resistance)",
             "usage": null
         },
         {
             "name": "cIconId",
             "value": 25,
             "type": "int",
-            "desc": "This is the attribute [Icon ID](./../../attributes/attributes/#25-icon-id)",
+            "desc": "This is the attribute [Icon ID](../../../attributes/attributes/#25-icon-id)",
             "usage": null
         },
         {
             "name": "cAmountSecondStorage",
             "value": 26,
             "type": "int",
-            "desc": "This is the attribute [Amount of 2nd Resource Storage](./../../attributes/attributes/#26-amount-of-2nd-resource-storage)",
+            "desc": "This is the attribute [Amount of 2nd Resource Storage](../../../attributes/attributes/#26-amount-of-2nd-resource-storage)",
             "usage": null
         },
         {
             "name": "cAmountThirdStorage",
             "value": 27,
             "type": "int",
-            "desc": "This is the attribute [Amount of 3rd Resource Storage](./../../attributes/attributes/#27-amount-of-3rd-resource-storage)",
+            "desc": "This is the attribute [Amount of 3rd Resource Storage](../../../attributes/attributes/#27-amount-of-3rd-resource-storage)",
             "usage": null
         },
         {
             "name": "cFogFlag",
             "value": 28,
             "type": "int",
-            "desc": "This is the attribute [Fog Visibility](./../../attributes/attributes/#28-fog-visibility)",
+            "desc": "This is the attribute [Fog Visibility](../../../attributes/attributes/#28-fog-visibility)",
             "usage": null
         },
         {
             "name": "cOcclusionMode",
             "value": 29,
             "type": "int",
-            "desc": "This is the attribute [Occlusion Mode](./../../attributes/attributes/#29-occlusion-mode)",
+            "desc": "This is the attribute [Occlusion Mode](../../../attributes/attributes/#29-occlusion-mode)",
             "usage": null
         },
         {
             "name": "cGarrisonType",
             "value": 30,
             "type": "int",
-            "desc": "This is the attribute [Garrison Type](./../../attributes/attributes/#30-garrison-type)",
+            "desc": "This is the attribute [Garrison Type](../../../attributes/attributes/#30-garrison-type)",
             "usage": null
         },
         {
             "name": "cUnitSizeZ",
             "value": 32,
             "type": "int",
-            "desc": "This is the attribute [Unit Size Z](./../../attributes/attributes/#32-unit-size-z)",
+            "desc": "This is the attribute [Unit Size Z](../../../attributes/attributes/#32-unit-size-z)",
             "usage": null
         },
         {
             "name": "cCanBeBuiltOn",
             "value": 33,
             "type": "int",
-            "desc": "This is the attribute [Can Be Built On](./../../attributes/attributes/#33-can-be-built-on)",
+            "desc": "This is the attribute [Can Be Built On](../../../attributes/attributes/#33-can-be-built-on)",
             "usage": null
         },
         {
             "name": "cFoundationTerrain",
             "value": 34,
             "type": "int",
-            "desc": "This is the attribute [Foundation Terrain](./../../attributes/attributes/#34-foundation-terrain)",
+            "desc": "This is the attribute [Foundation Terrain](../../../attributes/attributes/#34-foundation-terrain)",
             "usage": null
         },
         {
             "name": "cHeroStatus",
             "value": 40,
             "type": "int",
-            "desc": "This is the attribute [Hero Status](./../../attributes/attributes/#40-hero-status)",
+            "desc": "This is the attribute [Hero Status](../../../attributes/attributes/#40-hero-status)",
             "usage": null
         },
         {
             "name": "cAttackDelay",
             "value": 41,
             "type": "int",
-            "desc": "This is the attribute [Frame Delay](./../../attributes/attributes/#41-frame-delay)",
+            "desc": "This is the attribute [Frame Delay](../../../attributes/attributes/#41-frame-delay)",
             "usage": null
         },
         {
             "name": "cTrainLocation",
             "value": 42,
             "type": "int",
-            "desc": "This is the attribute [Train Location](./../../attributes/attributes/#42-train-location)",
+            "desc": "This is the attribute [Train Location](../../../attributes/attributes/#42-train-location)",
             "usage": null
         },
         {
             "name": "cTrainButton",
             "value": 43,
             "type": "int",
-            "desc": "This is the attribute [Train Button](./../../attributes/attributes/#43-train-button)",
+            "desc": "This is the attribute [Train Button](../../../attributes/attributes/#43-train-button)",
             "usage": null
         },
         {
             "name": "cBlastAttackLevel",
             "value": 44,
             "type": "int",
-            "desc": "This is the attribute [Blast Attack Level](./../../attributes/attributes/#44-blast-attack-level)",
+            "desc": "This is the attribute [Blast Attack Level](../../../attributes/attributes/#44-blast-attack-level)",
             "usage": null
         },
         {
             "name": "cBlastDefenseLevel",
             "value": 45,
             "type": "int",
-            "desc": "This is the attribute [Blast Defense Level](./../../attributes/attributes/#45-blast-defense-level)",
+            "desc": "This is the attribute [Blast Defense Level](../../../attributes/attributes/#45-blast-defense-level)",
             "usage": null
         },
         {
             "name": "cShownAttack",
             "value": 46,
             "type": "int",
-            "desc": "This is the attribute [Shown Attack](./../../attributes/attributes/#46-shown-attack)",
+            "desc": "This is the attribute [Shown Attack](../../../attributes/attributes/#46-shown-attack)",
             "usage": null
         },
         {
             "name": "cShownRange",
             "value": 47,
             "type": "int",
-            "desc": "This is the attribute [Shown Range](./../../attributes/attributes/#47-shown-range)",
+            "desc": "This is the attribute [Shown Range](../../../attributes/attributes/#47-shown-range)",
             "usage": null
         },
         {
             "name": "cShownMeleeArmor",
             "value": 48,
             "type": "int",
-            "desc": "This is the attribute [Shown Melee Armor](./../../attributes/attributes/#48-shown-melee-armor)",
+            "desc": "This is the attribute [Shown Melee Armor](../../../attributes/attributes/#48-shown-melee-armor)",
             "usage": null
         },
         {
             "name": "cShownPierceArmor",
             "value": 49,
             "type": "int",
-            "desc": "This is the attribute [Shown Pierce Armor](./../../attributes/attributes/#49-shown-pierce-armor)",
+            "desc": "This is the attribute [Shown Pierce Armor](../../../attributes/attributes/#49-shown-pierce-armor)",
             "usage": null
         },
         {
             "name": "cNameId",
             "value": 50,
             "type": "int",
-            "desc": "This is the attribute [Object Name ID](./../../attributes/attributes/#50-object-name-id)",
+            "desc": "This is the attribute [Object Name ID](../../../attributes/attributes/#50-object-name-id)",
             "usage": null
         },
         {
             "name": "cDescriptionId",
             "value": 51,
             "type": "int",
-            "desc": "This is the attribute [Short Description ID](./../../attributes/attributes/#51-short-description-id)",
+            "desc": "This is the attribute [Short Description ID](../../../attributes/attributes/#51-short-description-id)",
             "usage": null
         },
         {
             "name": "cTerrainTable",
             "value": 53,
             "type": "int",
-            "desc": "This is the attribute [Terrain Restriction ID](./../../attributes/attributes/#53-terrain-restriction-id)",
+            "desc": "This is the attribute [Terrain Restriction ID](../../../attributes/attributes/#53-terrain-restriction-id)",
             "usage": null
         },
         {
             "name": "cTraits",
             "value": 54,
             "type": "int",
-            "desc": "This is the attribute [Unit Trait](./../../attributes/attributes/#54-unit-trait)",
+            "desc": "This is the attribute [Unit Trait](../../../attributes/attributes/#54-unit-trait)",
             "usage": null
         },
         {
             "name": "cTraitPiece",
             "value": 56,
             "type": "int",
-            "desc": "This is the attribute [Trait Piece](./../../attributes/attributes/#56-trait-piece)",
+            "desc": "This is the attribute [Trait Piece](../../../attributes/attributes/#56-trait-piece)",
             "usage": null
         },
         {
             "name": "cDeadUnitId",
             "value": 57,
             "type": "int",
-            "desc": "This is the attribute [Dead Unit ID](./../../attributes/attributes/#57-dead-unit-id)",
+            "desc": "This is the attribute [Dead Unit ID](../../../attributes/attributes/#57-dead-unit-id)",
             "usage": null
         },
         {
             "name": "cHotkeyId",
             "value": 58,
             "type": "int",
-            "desc": "This is the attribute [Hotkey ID](./../../attributes/attributes/#58-hotkey-id)",
+            "desc": "This is the attribute [Hotkey ID](../../../attributes/attributes/#58-hotkey-id)",
             "usage": null
         },
         {
             "name": "cMaxCharge",
             "value": 59,
             "type": "int",
-            "desc": "This is the attribute [Maximum Charge](./../../attributes/attributes/#59-maximum-charge)",
+            "desc": "This is the attribute [Maximum Charge](../../../attributes/attributes/#59-maximum-charge)",
             "usage": null
         },
         {
             "name": "cRechargeRate",
             "value": 60,
             "type": "int",
-            "desc": "This is the attribute [Recharge Rate](./../../attributes/attributes/#60-recharge-rate)",
+            "desc": "This is the attribute [Recharge Rate](../../../attributes/attributes/#60-recharge-rate)",
             "usage": null
         },
         {
             "name": "cChargeEvent",
             "value": 61,
             "type": "int",
-            "desc": "This is the attribute [Charge Event](./../../attributes/attributes/#61-charge-event)",
+            "desc": "This is the attribute [Charge Event](../../../attributes/attributes/#61-charge-event)",
             "usage": null
         },
         {
             "name": "cChargeType",
             "value": 62,
             "type": "int",
-            "desc": "This is the attribute [Charge Type](./../../attributes/attributes/#62-charge-type)",
+            "desc": "This is the attribute [Charge Type](../../../attributes/attributes/#62-charge-type)",
             "usage": null
         },
         {
             "name": "cCombatAbility",
             "value": 63,
             "type": "int",
-            "desc": "This is the attribute [Combat Ability](./../../attributes/attributes/#63-combat-ability)",
+            "desc": "This is the attribute [Combat Ability](../../../attributes/attributes/#63-combat-ability)",
             "usage": null
         },
         {
             "name": "cAttackDispersion",
             "value": 64,
             "type": "int",
-            "desc": "This is the attribute [Attack Dispersion](./../../attributes/attributes/#64-attack-dispersion)",
+            "desc": "This is the attribute [Attack Dispersion](../../../attributes/attributes/#64-attack-dispersion)",
             "usage": null
         },
         {
             "name": "cSecondaryProjectileUnit",
             "value": 65,
             "type": "int",
-            "desc": "This is the attribute [Secondary Projectile Unit](./../../attributes/attributes/#65-secondary-projectile-unit)",
+            "desc": "This is the attribute [Secondary Projectile Unit](../../../attributes/attributes/#65-secondary-projectile-unit)",
             "usage": null
         },
         {
             "name": "cBloodUnitId",
             "value": 66,
             "type": "int",
-            "desc": "This is the attribute [Blood Unit](./../../attributes/attributes/#66-blood-unit)",
+            "desc": "This is the attribute [Blood Unit](../../../attributes/attributes/#66-blood-unit)",
             "usage": null
         },
         {
             "name": "cHitMode",
             "value": 67,
             "type": "int",
-            "desc": "This is the attribute [Projectile Hit Mode](./../../attributes/attributes/#67-projectile-hit-mode)",
+            "desc": "This is the attribute [Projectile Hit Mode](../../../attributes/attributes/#67-projectile-hit-mode)",
             "usage": null
         },
         {
             "name": "cVanishMode",
             "value": 68,
             "type": "int",
-            "desc": "This is the attribute [Projectile Vanish Mode](./../../attributes/attributes/#68-projectile-vanish-mode)",
+            "desc": "This is the attribute [Projectile Vanish Mode](../../../attributes/attributes/#68-projectile-vanish-mode)",
             "usage": null
         },
         {
             "name": "cProjectileArc",
             "value": 69,
             "type": "int",
-            "desc": "This is the attribute [Projectile Arc](./../../attributes/attributes/#69-projectile-arc)",
+            "desc": "This is the attribute [Projectile Arc](../../../attributes/attributes/#69-projectile-arc)",
             "usage": null
         },
         {
             "name": "cAttackGraphic",
             "value": 70,
             "type": "int",
-            "desc": "This is the attribute [Attack Graphic](./../../attributes/attributes/#70-attack-graphic)",
+            "desc": "This is the attribute [Attack Graphic](../../../attributes/attributes/#70-attack-graphic)",
             "usage": null
         },
         {
             "name": "cStandingGraphic",
             "value": 71,
             "type": "int",
-            "desc": "This is the attribute [Standing Graphic](./../../attributes/attributes/#71-standing-graphic)",
+            "desc": "This is the attribute [Standing Graphic](../../../attributes/attributes/#71-standing-graphic)",
             "usage": null
         },
         {
             "name": "cStanding2Graphic",
             "value": 72,
             "type": "int",
-            "desc": "This is the attribute [Standing Graphic 2](./../../attributes/attributes/#72-standing-graphic-2)",
+            "desc": "This is the attribute [Standing Graphic 2](../../../attributes/attributes/#72-standing-graphic-2)",
             "usage": null
         },
         {
             "name": "cDyingGraphic",
             "value": 73,
             "type": "int",
-            "desc": "This is the attribute [Dying Graphic](./../../attributes/attributes/#73-dying-graphic)",
+            "desc": "This is the attribute [Dying Graphic](../../../attributes/attributes/#73-dying-graphic)",
             "usage": null
         },
         {
             "name": "cUndeadGraphic",
             "value": 74,
             "type": "int",
-            "desc": "This is the attribute [Undead Graphic](./../../attributes/attributes/#74-undead-graphic)",
+            "desc": "This is the attribute [Undead Graphic](../../../attributes/attributes/#74-undead-graphic)",
             "usage": null
         },
         {
             "name": "cWalkingGraphic",
             "value": 75,
             "type": "int",
-            "desc": "This is the attribute [Walking Graphic](./../../attributes/attributes/#75-walking-graphic)",
+            "desc": "This is the attribute [Walking Graphic](../../../attributes/attributes/#75-walking-graphic)",
             "usage": null
         },
         {
             "name": "cRunningGraphic",
             "value": 76,
             "type": "int",
-            "desc": "This is the attribute [Running Graphic](./../../attributes/attributes/#76-running-graphic)",
+            "desc": "This is the attribute [Running Graphic](../../../attributes/attributes/#76-running-graphic)",
             "usage": null
         },
         {
             "name": "cSpecialGraphic",
             "value": 77,
             "type": "int",
-            "desc": "This is the attribute [Special Graphic](./../../attributes/attributes/#77-special-graphic)",
+            "desc": "This is the attribute [Special Graphic](../../../attributes/attributes/#77-special-graphic)",
             "usage": null
         },
         {
             "name": "cObstructionType",
             "value": 78,
             "type": "int",
-            "desc": "This is the attribute [Obstruction Type](./../../attributes/attributes/#78-obstruction-type)",
+            "desc": "This is the attribute [Obstruction Type](../../../attributes/attributes/#78-obstruction-type)",
             "usage": null
         },
         {
             "name": "cBlockageClass",
             "value": 79,
             "type": "int",
-            "desc": "This is the attribute [Blockage Class](./../../attributes/attributes/#79-blockage-class)",
+            "desc": "This is the attribute [Blockage Class](../../../attributes/attributes/#79-blockage-class)",
             "usage": null
         },
         {
             "name": "cSelectionEffect",
             "value": 80,
             "type": "int",
-            "desc": "This is the attribute [Selection Effect](./../../attributes/attributes/#80-selection-effect)",
+            "desc": "This is the attribute [Selection Effect](../../../attributes/attributes/#80-selection-effect)",
             "usage": null
         },
         {
             "name": "cSpecialAbility",
             "value": 81,
             "type": "int",
-            "desc": "This is the attribute [Special Ability](./../../attributes/attributes/#81-special-ability)",
+            "desc": "This is the attribute [Special Ability](../../../attributes/attributes/#81-special-ability)",
             "usage": null
         },
         {
             "name": "cIdleAttackGraphic",
             "value": 82,
             "type": "int",
-            "desc": "This is the attribute [Idle Attack Graphic](./../../attributes/attributes/#82-idle-attack-graphic)",
+            "desc": "This is the attribute [Idle Attack Graphic](../../../attributes/attributes/#82-idle-attack-graphic)",
             "usage": null
         },
         {
             "name": "cHeroGlowGraphic",
             "value": 83,
             "type": "int",
-            "desc": "This is the attribute [Hero Glow Graphic](./../../attributes/attributes/#83-hero-glow-graphic)",
+            "desc": "This is the attribute [Hero Glow Graphic](../../../attributes/attributes/#83-hero-glow-graphic)",
             "usage": null
         },
         {
             "name": "cGarrisonGraphic",
             "value": 84,
             "type": "int",
-            "desc": "This is the attribute [Garrison Graphic](./../../attributes/attributes/#84-garrison-graphic)",
+            "desc": "This is the attribute [Garrison Graphic](../../../attributes/attributes/#84-garrison-graphic)",
             "usage": null
         },
         {
             "name": "cConstructionGraphic",
             "value": 85,
             "type": "int",
-            "desc": "This is the attribute [Construction Graphic](./../../attributes/attributes/#85-construction-graphic)",
+            "desc": "This is the attribute [Construction Graphic](../../../attributes/attributes/#85-construction-graphic)",
             "usage": null
         },
         {
             "name": "cSnowGraphic",
             "value": 86,
             "type": "int",
-            "desc": "This is the attribute [Snow Graphic](./../../attributes/attributes/#86-snow-graphic)",
+            "desc": "This is the attribute [Snow Graphic](../../../attributes/attributes/#86-snow-graphic)",
             "usage": null
         },
         {
             "name": "cDestructionGraphic",
             "value": 87,
             "type": "int",
-            "desc": "This is the attribute [Destruction Graphic](./../../attributes/attributes/#87-destruction-graphic)",
+            "desc": "This is the attribute [Destruction Graphic](../../../attributes/attributes/#87-destruction-graphic)",
             "usage": null
         },
         {
             "name": "cDestructionRubbleGraphic",
             "value": 88,
             "type": "int",
-            "desc": "This is the attribute [Destruction Rubble Graphic](./../../attributes/attributes/#88-destruction-rubble-graphic)",
+            "desc": "This is the attribute [Destruction Rubble Graphic](../../../attributes/attributes/#88-destruction-rubble-graphic)",
             "usage": null
         },
         {
             "name": "cResearchingGraphic",
             "value": 89,
             "type": "int",
-            "desc": "This is the attribute [Researching Graphic](./../../attributes/attributes/#89-researching-graphic)",
+            "desc": "This is the attribute [Researching Graphic](../../../attributes/attributes/#89-researching-graphic)",
             "usage": null
         },
         {
             "name": "cResearchCompletedGraphic",
             "value": 90,
             "type": "int",
-            "desc": "This is the attribute [Research Completed Graphic](./../../attributes/attributes/#90-research-completed-graphic)",
+            "desc": "This is the attribute [Research Completed Graphic](../../../attributes/attributes/#90-research-completed-graphic)",
             "usage": null
         },
         {
             "name": "cDamageGraphic",
             "value": 91,
             "type": "int",
-            "desc": "This is the attribute [Damage Graphic](./../../attributes/attributes/#91-damage-graphic)",
+            "desc": "This is the attribute [Damage Graphic](../../../attributes/attributes/#91-damage-graphic)",
             "usage": null
         },
         {
             "name": "cSelectionSound",
             "value": 92,
             "type": "int",
-            "desc": "This is the attribute [Selection Sound](./../../attributes/attributes/#92-selection-sound)",
+            "desc": "This is the attribute [Selection Sound](../../../attributes/attributes/#92-selection-sound)",
             "usage": null
         },
         {
             "name": "cSelectionSoundEvent",
             "value": 93,
             "type": "int",
-            "desc": "This is the attribute [Selection Sound Event](./../../attributes/attributes/#93-selection-sound-event)",
+            "desc": "This is the attribute [Selection Sound Event](../../../attributes/attributes/#93-selection-sound-event) Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cDyingSound",
             "value": 94,
             "type": "int",
-            "desc": "This is the attribute [Dying Sound](./../../attributes/attributes/#94-dying-sound)",
+            "desc": "This is the attribute [Dying Sound](../../../attributes/attributes/#94-dying-sound)",
             "usage": null
         },
         {
             "name": "cDyingSoundEvent",
             "value": 95,
             "type": "int",
-            "desc": "This is the attribute [Dying Sound Event](./../../attributes/attributes/#95-dying-sound-event)",
+            "desc": "This is the attribute [Dying Sound Event](../../../attributes/attributes/#95-dying-sound-event) Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cTrainSound",
             "value": 96,
             "type": "int",
-            "desc": "This is the attribute [Train Sound](./../../attributes/attributes/#96-train-sound)",
+            "desc": "This is the attribute [Train Sound](../../../attributes/attributes/#96-train-sound)",
             "usage": null
         },
         {
             "name": "cTrainSoundEvent",
             "value": 97,
             "type": "int",
-            "desc": "This is the attribute [Train Sound Event](./../../attributes/attributes/#97-train-sound-event)",
+            "desc": "This is the attribute [Train Sound Event](../../../attributes/attributes/#97-train-sound-event) Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cDamageSound",
             "value": 98,
             "type": "int",
-            "desc": "This is the attribute [Damage Sound](./../../attributes/attributes/#98-damage-sound)",
+            "desc": "This is the attribute [Damage Sound](../../../attributes/attributes/#98-damage-sound)",
             "usage": null
         },
         {
             "name": "cDamageSoundEvent",
             "value": 99,
             "type": "int",
-            "desc": "This is the attribute [Damage Sound Event](./../../attributes/attributes/#99-damage-sound-event)",
+            "desc": "This is the attribute [Damage Sound Event](../../../attributes/attributes/#99-damage-sound-event) Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cResourceCost",
             "value": 100,
             "type": "int",
-            "desc": "This is the attribute [Resource Costs](./../../attributes/attributes/#100-resource-costs)",
+            "desc": "This is the attribute [Resource Costs](../../../attributes/attributes/#100-resource-costs)",
             "usage": null
         },
         {
             "name": "cTrainTime",
             "value": 101,
             "type": "int",
-            "desc": "This is the attribute [Train Time](./../../attributes/attributes/#101-train-time)",
+            "desc": "This is the attribute [Train Time](../../../attributes/attributes/#101-train-time)",
             "usage": null
         },
         {
             "name": "cTotalProjectiles",
             "value": 102,
             "type": "int",
-            "desc": "This is the attribute [Total Missiles](./../../attributes/attributes/#102-total-missiles)",
+            "desc": "This is the attribute [Total Missiles](../../../attributes/attributes/#102-total-missiles)",
             "usage": null
         },
         {
             "name": "cFoodCost",
             "value": 103,
             "type": "int",
-            "desc": "This is the attribute [Food Costs](./../../attributes/attributes/#103-food-costs)",
+            "desc": "This is the attribute [Food Costs](../../../attributes/attributes/#103-food-costs)",
             "usage": null
         },
         {
             "name": "cWoodCost",
             "value": 104,
             "type": "int",
-            "desc": "This is the attribute [Wood Costs](./../../attributes/attributes/#104-wood-costs)",
+            "desc": "This is the attribute [Wood Costs](../../../attributes/attributes/#104-wood-costs)",
             "usage": null
         },
         {
             "name": "cGoldCost",
             "value": 105,
             "type": "int",
-            "desc": "This is the attribute [Gold Costs](./../../attributes/attributes/#105-gold-costs)",
+            "desc": "This is the attribute [Gold Costs](../../../attributes/attributes/#105-gold-costs)",
             "usage": null
         },
         {
             "name": "cStoneCost",
             "value": 106,
             "type": "int",
-            "desc": "This is the attribute [Stone Costs](./../../attributes/attributes/#106-stone-costs)",
+            "desc": "This is the attribute [Stone Costs](../../../attributes/attributes/#106-stone-costs)",
             "usage": null
         },
         {
             "name": "cMaxTotalProjectiles",
             "value": 107,
             "type": "int",
-            "desc": "This is the attribute [Max Total Missiles](./../../attributes/attributes/#107-max-total-missiles)",
+            "desc": "This is the attribute [Max Total Missiles](../../../attributes/attributes/#107-max-total-missiles)",
             "usage": null
         },
         {
             "name": "cGarrisonHealRate",
             "value": 108,
             "type": "int",
-            "desc": "This is the attribute [Garrison Heal Rate](./../../attributes/attributes/#108-garrison-heal-rate)",
+            "desc": "This is the attribute [Garrison Heal Rate](../../../attributes/attributes/#108-garrison-heal-rate)",
             "usage": null
         },
         {
             "name": "cRegenerationRate",
             "value": 109,
             "type": "int",
-            "desc": "This is the attribute [Regeneration Rate](./../../attributes/attributes/#109-regeneration-rate)",
+            "desc": "This is the attribute [Regeneration Rate](../../../attributes/attributes/#109-regeneration-rate)",
             "usage": null
         },
         {
             "name": "cPopulation",
             "value": 110,
             "type": "int",
-            "desc": "This is the attribute [Population](./../../attributes/attributes/#110-population)",
+            "desc": "This is the attribute [Population](../../../attributes/attributes/#110-population)",
             "usage": null
         },
         {
             "name": "cMinConversionTimeMod",
             "value": 111,
             "type": "int",
-            "desc": "This is the attribute [Minimum Conversion Time Modifier](./../../attributes/attributes/#111-minimum-conversion-time-modifier)",
+            "desc": "This is the attribute [Minimum Conversion Time Modifier](../../../attributes/attributes/#111-minimum-conversion-time-modifier)",
             "usage": null
         },
         {
             "name": "cMaxConversionTimeMod",
             "value": 112,
             "type": "int",
-            "desc": "This is the attribute [Maximum Conversion Time Modifier](./../../attributes/attributes/#112-maximum-conversion-time-modifier)",
+            "desc": "This is the attribute [Maximum Conversion Time Modifier](../../../attributes/attributes/#112-maximum-conversion-time-modifier)",
             "usage": null
         },
         {
             "name": "cConversionChanceMod",
             "value": 113,
             "type": "int",
-            "desc": "This is the attribute [Conversion Chance Modifier](./../../attributes/attributes/#113-conversion-chance-modifier)",
+            "desc": "This is the attribute [Conversion Chance Modifier](../../../attributes/attributes/#113-conversion-chance-modifier)",
             "usage": null
         },
         {
             "name": "cFormationCategory",
             "value": 114,
             "type": "int",
-            "desc": "This is the attribute [Formation Category](./../../attributes/attributes/#114-formation-category)",
+            "desc": "This is the attribute [Formation Category](../../../attributes/attributes/#114-formation-category)",
             "usage": null
         },
         {
             "name": "cAreaDamage",
             "value": 115,
             "type": "int",
-            "desc": "This is the attribute [Area Damage](./../../attributes/attributes/#115-area-damage)",
+            "desc": "This is the attribute [Area Damage](../../../attributes/attributes/#115-area-damage)",
             "usage": null
         },
         {
             "name": "cDamageReflection",
             "value": 118,
             "type": "int",
-            "desc": "This is the attribute [Damage Reflection](./../../attributes/attributes/#118-damage-reflection)",
+            "desc": "This is the attribute [Damage Reflection](../../../attributes/attributes/#118-damage-reflection)",
             "usage": null
         },
         {
             "name": "cFriendlyFireDamage",
             "value": 119,
             "type": "int",
-            "desc": "This is the attribute [Friendly Fire Damage](./../../attributes/attributes/#119-friendly-fire-damage)",
+            "desc": "This is the attribute [Friendly Fire Damage](../../../attributes/attributes/#119-friendly-fire-damage)",
             "usage": null
         },
         {
             "name": "cRegenerationHpPercent",
             "value": 120,
             "type": "int",
-            "desc": "This is the attribute [Regeneration Hp Percent](./../../attributes/attributes/#120-regeneration-hp-percent)",
+            "desc": "This is the attribute [Regeneration Hp Percent](../../../attributes/attributes/#120-regeneration-hp-percent)",
             "usage": null
         },
         {
             "name": "cButtonIconId",
             "value": 121,
             "type": "int",
-            "desc": "This is the attribute [Button Icon Id](./../../attributes/attributes/#121-button-icon-id)",
+            "desc": "This is the attribute [Button Icon Id](../../../attributes/attributes/#121-button-icon-id)",
             "usage": null
         },
         {
             "name": "cShortTooltipId",
             "value": 122,
             "type": "int",
-            "desc": "This is the attribute [Short Tooltip Id](./../../attributes/attributes/#122-short-tooltip-id)",
+            "desc": "This is the attribute [Short Tooltip Id](../../../attributes/attributes/#122-short-tooltip-id)",
             "usage": null
         },
         {
             "name": "cExtendedTooltipId",
             "value": 123,
             "type": "int",
-            "desc": "This is the attribute [Extended Tooltip Id](./../../attributes/attributes/#123-extended-tooltip-id)",
+            "desc": "This is the attribute [Extended Tooltip Id](../../../attributes/attributes/#123-extended-tooltip-id)",
             "usage": null
         },
         {
             "name": "cHotkeyAction",
             "value": 124,
             "type": "int",
-            "desc": "This is the attribute [Hotkey Action](./../../attributes/attributes/#124-hotkey-action)",
+            "desc": "This is the attribute [Hotkey Action](../../../attributes/attributes/#124-hotkey-action)",
             "usage": null
         },
         {
             "name": "cChargeProjectileUnit",
             "value": 125,
             "type": "int",
-            "desc": "This is the attribute [Charge Projectile Unit](./../../attributes/attributes/#125-charge-projectile-unit)",
+            "desc": "This is the attribute [Charge Projectile Unit](../../../attributes/attributes/#125-charge-projectile-unit)",
             "usage": null
         },
         {
             "name": "cAvailableFlag",
             "value": 126,
             "type": "int",
-            "desc": "This is the attribute [Available Flag](./../../attributes/attributes/#126-available-flag)",
+            "desc": "This is the attribute [Available Flag](../../../attributes/attributes/#126-available-flag)",
             "usage": null
         },
         {
             "name": "cDisabledFlag",
             "value": 127,
             "type": "int",
-            "desc": "This is the attribute [Disabled Flag](./../../attributes/attributes/#127-disabled-flag)",
+            "desc": "This is the attribute [Disabled Flag](../../../attributes/attributes/#127-disabled-flag)",
             "usage": null
         },
         {
             "name": "cAttackPriority",
             "value": 128,
             "type": "int",
-            "desc": "This is the attribute [Attack Priority](./../../attributes/attributes/#128-attack-priority)",
+            "desc": "This is the attribute [Attack Priority](../../../attributes/attributes/#128-attack-priority)",
             "usage": null
         },
         {
             "name": "cInvulnerabilityLevel",
             "value": 129,
             "type": "int",
-            "desc": "This is the attribute [Invulnerability Level](./../../attributes/attributes/#129-invulnerability-level)",
+            "desc": "This is the attribute [Invulnerability Level](../../../attributes/attributes/#129-invulnerability-level)",
             "usage": null
         },
         {
             "name": "cGarrisonFirepower",
             "value": 130,
             "type": "int",
-            "desc": "This is the attribute [Garrison Firepower](./../../attributes/attributes/#130-garrison-firepower)",
+            "desc": "This is the attribute [Garrison Firepower](../../../attributes/attributes/#130-garrison-firepower)",
             "usage": null
         },
         {
             "name": "cAttack2Graphic",
             "value": 131,
             "type": "int",
-            "desc": "This is the attribute [Attack Graphic 2](./../../attributes/attributes/#131-attack-graphic-2).",
+            "desc": "This is the attribute [Attack Graphic 2](../../../attributes/attributes/#131-attack-graphic-2).",
             "usage": null
         },
         {
             "name": "cCommandSound",
             "value": 132,
             "type": "int",
-            "desc": "This is the attribute [Command Sound](./../../attributes/attributes/#132-command-sound).",
+            "desc": "This is the attribute [Command Sound](../../../attributes/attributes/#132-command-sound).",
             "usage": null
         },
         {
             "name": "cCommandSoundEvent",
             "value": 133,
             "type": "int",
-            "desc": "This is the attribute [Command Sound Event](./../../attributes/attributes/#133-command-sound-event).",
+            "desc": "This is the attribute [Command Sound Event](../../../attributes/attributes/#133-command-sound-event). Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cMoveSound",
             "value": 134,
             "type": "int",
-            "desc": "This is the attribute [Move Sound](./../../attributes/attributes/#134-move-sound).",
+            "desc": "This is the attribute [Move Sound](../../../attributes/attributes/#134-move-sound).",
             "usage": null
         },
         {
             "name": "cMoveSoundEvent",
             "value": 135,
             "type": "int",
-            "desc": "This is the attribute [Move Sound Event](./../../attributes/attributes/#135-move-sound-event).",
+            "desc": "This is the attribute [Move Sound Event](../../../attributes/attributes/#135-move-sound-event). Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cConstructionSound",
             "value": 136,
             "type": "int",
-            "desc": "This is the attribute [Construction Sound](./../../attributes/attributes/#136-construction-sound).",
+            "desc": "This is the attribute [Construction Sound](../../../attributes/attributes/#136-construction-sound).",
             "usage": null
         },
         {
             "name": "cConstructionSoundEvent",
             "value": 137,
             "type": "int",
-            "desc": "This is the attribute [Construction Sound Event](./../../attributes/attributes/#137-construction-sound-event).",
+            "desc": "This is the attribute [Construction Sound Event](../../../attributes/attributes/#137-construction-sound-event). Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cTransformSound",
             "value": 138,
             "type": "int",
-            "desc": "This is the attribute [Transform Sound](./../../attributes/attributes/#138-transform-sound).",
+            "desc": "This is the attribute [Transform Sound](../../../attributes/attributes/#138-transform-sound).",
             "usage": null
         },
         {
             "name": "cTransformSoundEvent",
             "value": 139,
             "type": "int",
-            "desc": "This is the attribute [Transform Sound Event](./../../attributes/attributes/#139-transform-sound-event).",
+            "desc": "This is the attribute [Transform Sound Event](../../../attributes/attributes/#139-transform-sound-event). Note: When using with [xsEffectAmount](../../functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](../../functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](../../functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](../maths/#15-bitcasttofloat) and [bitCastToInt](../maths/#16-bitcasttoint) respectively.",
             "usage": null
         },
         {
             "name": "cRunPattern",
             "value": 140,
             "type": "int",
-            "desc": "This is the attribute [Run Pattern](./../../attributes/attributes/#140-run-pattern).",
+            "desc": "This is the attribute [Run Pattern](../../../attributes/attributes/#140-run-pattern).",
             "usage": null
         },
         {
             "name": "cInterfaceKind",
             "value": 141,
             "type": "int",
-            "desc": "This is the attribute [Interface Kind](./../../attributes/attributes/#141-interface-kind).",
+            "desc": "This is the attribute [Interface Kind](../../../attributes/attributes/#141-interface-kind).",
             "usage": null
         },
         {
             "name": "cCombatLevel",
             "value": 142,
             "type": "int",
-            "desc": "This is the attribute [Combat Level](./../../attributes/attributes/#142-combat-level).",
+            "desc": "This is the attribute [Combat Level](../../../attributes/attributes/#142-combat-level).",
             "usage": null
         },
         {
             "name": "cInteractionMode",
             "value": 143,
             "type": "int",
-            "desc": "This is the attribute [Interaction Mode](./../../attributes/attributes/#143-interaction-mode).",
+            "desc": "This is the attribute [Interaction Mode](../../../attributes/attributes/#143-interaction-mode).",
             "usage": null
         },
         {
             "name": "cMinimapMode",
             "value": 144,
             "type": "int",
-            "desc": "This is the attribute [Minimap Mode](./../../attributes/attributes/#144-minimap-mode).",
+            "desc": "This is the attribute [Minimap Mode](../../../attributes/attributes/#144-minimap-mode).",
             "usage": null
         },
         {
             "name": "cTrailingUnit",
             "value": 145,
             "type": "int",
-            "desc": "This is the attribute [Trailing Unit](./../../attributes/attributes/#145-trailing-unit).",
+            "desc": "This is the attribute [Trailing Unit](../../../attributes/attributes/#145-trailing-unit).",
             "usage": null
         },
         {
             "name": "cTrailMode",
             "value": 146,
             "type": "int",
-            "desc": "This is the attribute [Trail Mode](./../../attributes/attributes/#146-trail-mode).",
+            "desc": "This is the attribute [Trail Mode](../../../attributes/attributes/#146-trail-mode).",
             "usage": null
         },
         {
             "name": "cTrailDensity",
             "value": 147,
             "type": "int",
-            "desc": "This is the attribute [Trail Density](./../../attributes/attributes/#147-trail-density).",
+            "desc": "This is the attribute [Trail Density](../../../attributes/attributes/#147-trail-density).",
             "usage": null
         },
         {
             "name": "cProjectileGraphicDisplacementX",
             "value": 148,
             "type": "int",
-            "desc": "This is the attribute [Projectile Graphic Displacement X](./../../attributes/attributes/#148-projectile-graphic-displacement-x).",
+            "desc": "This is the attribute [Projectile Graphic Displacement X](../../../attributes/attributes/#148-projectile-graphic-displacement-x).",
             "usage": null
         },
         {
             "name": "cProjectileGraphicDisplacementY",
             "value": 149,
             "type": "int",
-            "desc": "This is the attribute [Projectile Graphic Displacement Y](./../../attributes/attributes/#149-projectile-graphic-displacement-y).",
+            "desc": "This is the attribute [Projectile Graphic Displacement Y](../../../attributes/attributes/#149-projectile-graphic-displacement-y).",
             "usage": null
         },
         {
             "name": "cProjectileGraphicDisplacementZ",
             "value": 150,
             "type": "int",
-            "desc": "This is the attribute [Projectile Graphic Displacement Z](./../../attributes/attributes/#150-projectile-graphic-displacement-z).",
+            "desc": "This is the attribute [Projectile Graphic Displacement Z](../../../attributes/attributes/#150-projectile-graphic-displacement-z).",
             "usage": null
         },
         {
             "name": "cProjectileSpawningAreaWidth",
             "value": 151,
             "type": "int",
-            "desc": "This is the attribute [Projectile Spawning Area Width](./../../attributes/attributes/#151-projectile-spawning-area-width).",
+            "desc": "This is the attribute [Projectile Spawning Area Width](../../../attributes/attributes/#151-projectile-spawning-area-width).",
             "usage": null
         },
         {
             "name": "cProjectileSpawningAreaLength",
             "value": 152,
             "type": "int",
-            "desc": "This is the attribute [Projectile Spawning Area Length](./../../attributes/attributes/#152-projectile-spawning-area-length).",
+            "desc": "This is the attribute [Projectile Spawning Area Length](../../../attributes/attributes/#152-projectile-spawning-area-length).",
             "usage": null
         },
         {
             "name": "cProjectileSpawningAreaRandomness",
             "value": 153,
             "type": "int",
-            "desc": "This is the attribute [Projectile Spawning Area Randomness](./../../attributes/attributes/#153-projectile-spawning-area-randomness).",
+            "desc": "This is the attribute [Projectile Spawning Area Randomness](../../../attributes/attributes/#153-projectile-spawning-area-randomness).",
             "usage": null
         },
         {
             "name": "cDamageGraphicsEntryMod",
             "value": 154,
             "type": "int",
-            "desc": "This is the attribute [Damage Graphics Entry Mod](./../../attributes/attributes/#154-damage-graphics-entry-mod).",
+            "desc": "This is the attribute [Damage Graphics Entry Mod](../../../attributes/attributes/#154-damage-graphics-entry-mod).",
             "usage": null
         },
         {
             "name": "cDamageGraphicsTotalNum",
             "value": 155,
             "type": "int",
-            "desc": "This is the attribute [Damage Graphics Total Num](./../../attributes/attributes/#155-damage-graphics-total-num).",
+            "desc": "This is the attribute [Damage Graphics Total Num](../../../attributes/attributes/#155-damage-graphics-total-num).",
             "usage": null
         },
         {
             "name": "cDamageGraphicPercent",
             "value": 156,
             "type": "int",
-            "desc": "This is the attribute [Damage Graphic Percent](./../../attributes/attributes/#156-damage-graphic-percent).",
+            "desc": "This is the attribute [Damage Graphic Percent](../../../attributes/attributes/#156-damage-graphic-percent).",
             "usage": null
         },
         {
             "name": "cDamageGraphicApplyMode",
             "value": 157,
             "type": "int",
-            "desc": "This is the attribute [Damage Graphic Apply Mode](./../../attributes/attributes/#157-damage-graphic-apply-mode).",
+            "desc": "This is the attribute [Damage Graphic Apply Mode](../../../attributes/attributes/#157-damage-graphic-apply-mode).",
             "usage": null
         },
         {
             "name": "cTrainLocationsEntryMod",
             "value": 158,
             "type": "int",
-            "desc": "This is the attribute [Train Locations Entry Mod](./../../attributes/attributes/#158-train-locations-entry-mod).",
+            "desc": "This is the attribute [Train Locations Entry Mod](../../../attributes/attributes/#158-train-locations-entry-mod).",
             "usage": null
         },
         {
             "name": "cTrainLocationsTotalNum",
             "value": 159,
             "type": "int",
-            "desc": "This is the attribute [Train Locations Total Num](./../../attributes/attributes/#159-train-locations-total-num).",
+            "desc": "This is the attribute [Train Locations Total Num](../../../attributes/attributes/#159-train-locations-total-num).",
             "usage": null
         },
         {
             "name": "cAddArmorType",
             "value": 160,
             "type": "int",
-            "desc": "This is the attribute [Add Armor Type](./../../attributes/attributes/#160-add-armor-type).",
+            "desc": "This is the attribute [Add Armor Type](../../../attributes/attributes/#160-add-armor-type).",
             "usage": null
         },
         {
             "name": "cAddAttackType",
             "value": 161,
             "type": "int",
-            "desc": "This is the attribute [Add Attack Type](./../../attributes/attributes/#161-add-attack-type).",
+            "desc": "This is the attribute [Add Attack Type](../../../attributes/attributes/#161-add-attack-type).",
             "usage": null
         },
         {
             "name": "cChargeTarget",
             "value": 162,
             "type": "int",
-            "desc": "This is the attribute [Charge Target](./../../attributes/attributes/#162-charge-target).",
+            "desc": "This is the attribute [Charge Target](../../../attributes/attributes/#162-charge-target).",
             "usage": null
         },
         {
             "name": "cSizeClass",
             "value": 163,
             "type": "int",
-            "desc": "This is the attribute [Size Class](./../../attributes/attributes/#163-size-class).",
+            "desc": "This is the attribute [Size Class](../../../attributes/attributes/#163-size-class).",
             "usage": null
         }
     ],
@@ -5030,7 +5030,7 @@
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME.",
             "usage": {
-                "[Aura Task](./#1442-ctasktypeaura)": {
+                "[Aura Task](../task_type/#42-ctasktypeaura)": {
                     "desc": "Quantity to mul/add to the attribute modified",
                     "list": null
                 }
@@ -5042,7 +5042,7 @@
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
             "usage": {
-                "[Aura Task](./#1442-ctasktypeaura)": {
+                "[Aura Task](../task_type/#42-ctasktypeaura)": {
                     "desc": "Min number of units required to activate the effect. See Monaspa",
                     "list": null
                 }
@@ -5068,20 +5068,20 @@
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
             "usage":  {
-                "[Aura Task](./#1442-ctasktypeaura)": {
+                "[Aura Task](../task_type/#42-ctasktypeaura)": {
                     "desc": "The attribute to modify. Not all attributes are supported. Known attributes:",
                     "list": [
-                        "[Hit Points](./#91-chitpoints)",
-                        "[Line of Sight](./#92-clineofsight)",
-                        "[Movement Speed](./#96-cmovementspeed)",
-                        "[Attack](./#99-cattack)",
-                        "[Attack Reload Time](./#910-cattackreloadtime)",
-                        "[Work Rate](./#913-cworkrate)",
-                        "[Regeneration Rate](./#9101-cregenerationrate)",
-                        "[Conversion Chance Modifier](./#9105-cconversionchancemod)",
+                        "[Hit Points](../object_attribute/#1-chitpoints)",
+                        "[Line of Sight](../object_attribute/#2-clineofsight)",
+                        "[Movement Speed](../object_attribute/#6-cmovementspeed)",
+                        "[Attack](../object_attribute/#9-cattack)",
+                        "[Attack Reload Time](../object_attribute/#10-cattackreloadtime)",
+                        "[Work Rate](../object_attribute/#13-cworkrate)",
+                        "[Regeneration Rate](../object_attribute/#101-cregenerationrate)",
+                        "[Conversion Chance Modifier](../object_attribute/#105-cconversionchancemod)",
                         "116: Melee Armor",
                         "117: Pierce Armor",
-                        "[Regeneration Hp Percent](./#9110-cregenerationhppercent)"
+                        "[Regeneration Hp Percent](../object_attribute/#110-cregenerationhppercent)"
                     ]
                 }
             }
@@ -5092,7 +5092,7 @@
             "type": "int",
             "desc":  "ID for the task amount Task Attribute ATTR_NAME",
             "usage": {
-                "[Aura Task](./#1442-ctasktypeaura)": {
+                "[Aura Task](../task_type/#42-ctasktypeaura)": {
                     "desc": "Combinable bit-field:",
                     "list": [
                         "1: Multiply instead of Add",

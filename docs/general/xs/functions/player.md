@@ -10,13 +10,13 @@ Prototype: `#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int
 
 Parameters:
 
-1.  `#!xs int effectId`: The ID of the effect to use
-2.  `#!xs int objectOrTechnologyId`: The ID of the object or technology to effect
-3.  `#!xs int attributeOrOperation`: The attribute to modify or the operation to perform
+1.  `#!xs int effectId`: The ID of the effect to use. See the [Effect Type](../../constants/effect_amount_effect_type/ "Jump To: XS > Constant Reference > Effect Amount Effect Type") and [Technology Attribute](../../constants/effect_amount_technology_attribute/ "Jump To: XS > Constant Reference > Effect Amount Tech Attribute") constants
+2.  `#!xs int objectOrTechnologyId`: The ID of the object, unit, or technology to effect
+3.  `#!xs int attributeOrOperation`: The attribute to modify or the operation to perform, See the [Effect Operation](../../constants/effect_amount_effect_operations/ "Jump To: XS > Constant Reference > Effect Amount Effect Operation") constants
 4.  `#!xs float value`: The value of the effect
 5. (Optional) `#!xs int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
 
-Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
+Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/object_attribute/#85-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](../maths/#15-bitcasttofloat).
 
 ## 2. xsGetPlayerUnitIds
 
