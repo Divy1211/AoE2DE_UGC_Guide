@@ -12,11 +12,11 @@ def resolve_links(string: str, is_funcs: bool = False) -> str:
     keyword = "functions" if is_funcs else "constants"
     string = (
         string
-            .replace('(../functions/', '(https://ugc.aoe2.rocks/general/xs/functions/')
-            .replace('(../constants/', '(https://ugc.aoe2.rocks/general/xs/constants/')
-            .replace('(../../resources/resources/', '(https://ugc.aoe2.rocks/general/resources/resources/')
-            .replace('(./../../attributes/attributes/', '(https://ugc.aoe2.rocks/general/attributes/attributes/')
-            .replace(f'(./', f'(https://ugc.aoe2.rocks/general/xs/{keyword}/')
+            .replace('(../../functions/', '(https://ugc.aoe2.rocks/general/xs/functions/')
+            .replace('(../../constants/', '(https://ugc.aoe2.rocks/general/xs/constants/')
+            .replace('(../../../resources/resources/', '(https://ugc.aoe2.rocks/general/resources/resources/')
+            .replace('(../../../attributes/attributes/', '(https://ugc.aoe2.rocks/general/attributes/attributes/')
+            .replace(f'(../', f'(https://ugc.aoe2.rocks/general/xs/{keyword}/')
             .replace(' for more info about what this resource does.', '')
             .replace('. Check [here]', ']')
             .replace('RES_NAME', '[RES_NAME')
@@ -70,9 +70,9 @@ def write_fns(functions, file: TextIO):
             file.write(") {}\n\n")
 
 def main():
-    with open("./constants.json") as file:
+    with open("./constants/constants.json") as file:
         constants = json.load(file)
-    with open("./functions.json") as file:
+    with open("./functions/functions.json") as file:
         functions = json.load(file)
 
     with open("prelude.xs", "w") as file:

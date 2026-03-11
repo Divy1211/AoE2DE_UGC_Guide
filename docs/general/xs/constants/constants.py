@@ -1,11 +1,17 @@
 import json
 
+if __name__ == "__main__":
+    with open("../constants/constants.json") as file:
+        const_docs = json.load(file)
 
-with open("../constants/constants.json") as file:
-    const_docs = json.load(file)
+    with open("../../resources/res_desc.json") as file:
+        res_decs = json.load(file)
+else:
+    with open("./constants/constants.json") as file:
+        const_docs = json.load(file)
 
-with open("../../resources/res_desc.json") as file:
-    res_decs = json.load(file)
+    with open("./../resources/res_desc.json") as file:
+        res_decs = json.load(file)
 
 outmd = """*Written by: Alian713, Kramb*
 

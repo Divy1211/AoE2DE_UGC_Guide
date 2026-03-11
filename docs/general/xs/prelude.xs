@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/03/07 11:12:02 |
+// | Generated on: 2026/03/11 09:27:10 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -10,19 +10,19 @@ extern int infiniteLoopLimit = -1;
 extern int infiniteRecursionLimit = -1;
 
 
-// 1. Read/Write
+// 1. File Io
 
 
-/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/#66-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent) */
+/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/file_io/#12-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent) */
 extern const int cOffsetString = 0;
 
-/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/#66-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes) */
+/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/file_io/#12-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes) */
 extern const int cOffsetInteger = 1;
 
-/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/#66-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes) */
+/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/file_io/#12-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes) */
 extern const int cOffsetFloat = 2;
 
-/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/#66-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes) */
+/** Used with the [xsOffsetFilePosition](https://ugc.aoe2.rocks/general/xs/functions/file_io/#12-xsoffsetfileposition). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes) */
 extern const int cOffsetVector = 3;
 
 
@@ -54,7 +54,7 @@ extern const int cBronzeAge = 2;
 extern const int cIronAge = 3;
 
 
-// 3. Value
+// 3. Language Constants
 
 
 /** This value is only defined inside the body of a rule. It holds the time of initial activation of that rule */
@@ -83,7 +83,7 @@ extern const int cRelicVictory = 102;
 extern const int cKingOfTheHillVictory = 103;
 
 
-// 5. Civilization
+// 5. Aoe2 Civs
 
 
 /** This is the civilization ID of Gaia */
@@ -224,15 +224,6 @@ extern const int cArmenians = 44;
 /** This is the civilization ID of Georgians */
 extern const int cGeorgians = 45;
 
-/** This is the civilization ID of Achaemenids */
-extern const int cAchaemenids = 46;
-
-/** This is the civilization ID of Athenians */
-extern const int cAthenians = 47;
-
-/** This is the civilization ID of Spartans */
-extern const int cSpartans = 48;
-
 /** This is the civilization ID of Shu */
 extern const int cShu = 49;
 
@@ -248,15 +239,6 @@ extern const int cJurchens = 52;
 /** This is the civilization ID of Khitans */
 extern const int cKhitans = 53;
 
-/** This is the civilization ID of Macedonians */
-extern const int cMacedonians = 54;
-
-/** This is the civilization ID of Thracians */
-extern const int cThracians = 55;
-
-/** This is the civilization ID of Puru */
-extern const int cPuru = 56;
-
 /** This is the civilization ID of Muisca */
 extern const int cMuisca = 57;
 
@@ -268,6 +250,32 @@ extern const int cTupi = 59;
 
 /** The number of civilizations for AoE2 */
 extern const int cNumCivs = 60;
+
+
+// 6. Chronicles Civs
+
+
+/** This is the civilization ID of Achaemenids */
+extern const int cAchaemenids = 46;
+
+/** This is the civilization ID of Athenians */
+extern const int cAthenians = 47;
+
+/** This is the civilization ID of Spartans */
+extern const int cSpartans = 48;
+
+/** This is the civilization ID of Macedonians */
+extern const int cMacedonians = 54;
+
+/** This is the civilization ID of Thracians */
+extern const int cThracians = 55;
+
+/** This is the civilization ID of Puru */
+extern const int cPuru = 56;
+
+
+// 7. Ror Civs
+
 
 /** This is the civilization ID of Aoe Egyptians */
 extern const int cAoeEgyptians = 1;
@@ -324,208 +332,208 @@ extern const int cAoeLacViet = 17;
 extern const int cNumAoeCivs = 18;
 
 
-// 6. EffectAmount Effect Type
+// 8. EffectAmount Effect Type
 
 
-/** This is the ID of the `Set Attribute` effect of the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#61-csetattribute) */
+/** This is the ID of the `Set Attribute` effect of the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#81-csetattribute) */
 extern const int cSetAttribute = 0;
 
-/** This is the ID of the `Modify Resource` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#62-cmodresource) */
+/** This is the ID of the `Modify Resource` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#82-cmodresource) */
 extern const int cModResource = 1;
 
-/** This is the ID of the `Enable (or disable) Object` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#63-cenableobject) */
+/** This is the ID of the `Enable (or disable) Object` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#83-cenableobject) */
 extern const int cEnableObject = 2;
 
-/** This is the ID of the `Upgrade Unit` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#64-cupgradeunit) */
+/** This is the ID of the `Upgrade Unit` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#84-cupgradeunit) */
 extern const int cUpgradeUnit = 3;
 
-/** This is the ID of the `Add Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#65-caddattribute) */
+/** This is the ID of the `Add Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#85-caddattribute) */
 extern const int cAddAttribute = 4;
 
-/** This is the ID of the `Multiply Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#66-cmulattribute) */
+/** This is the ID of the `Multiply Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#86-cmulattribute) */
 extern const int cMulAttribute = 5;
 
-/** This is the ID of the `Multiply Resource` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#67-cmulresource) */
+/** This is the ID of the `Multiply Resource` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#87-cmulresource) */
 extern const int cMulResource = 6;
 
-/** This is the ID of the `Spawn Unit` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#68-cspawnunit) */
+/** This is the ID of the `Spawn Unit` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#88-cspawnunit) */
 extern const int cSpawnUnit = 7;
 
-/** This is the ID of the `Modify Technology` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#69-cmodifytech) */
+/** This is the ID of the `Modify Technology` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#89-cmodifytech) */
 extern const int cModifyTech = 8;
 
-/** This is the ID of the `Set Player Data` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#610-csetplayerdata) */
+/** This is the ID of the `Set Player Data` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#810-csetplayerdata) */
 extern const int cSetPlayerData = 9;
 
-/** This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#611-csetunitattribute) */
+/** This is the ID of the `Set Unit Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#811-csetunitattribute) */
 extern const int cSetUnitAttribute = 10;
 
-/** This is the ID of the `Add Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#612-caddunitattribute) */
+/** This is the ID of the `Add Unit Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#812-caddunitattribute) */
 extern const int cAddUnitAttribute = 11;
 
-/** This is the ID of the `Multiply Unit Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#613-cmulunitattribute) */
+/** This is the ID of the `Multiply Unit Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#813-cmulunitattribute) */
 extern const int cMulUnitAttribute = 12;
 
-/** This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#614-csettechcost) */
+/** This is the ID of the `Set Technology Cost` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#814-csettechcost) */
 extern const int cSetTechCost = 100;
 
-/** This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#615-caddtechcost) */
+/** This is the ID of the `Add Technology Cost` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#815-caddtechcost) */
 extern const int cAddTechCost = 101;
 
-/** This is the ID of the `Disable Tech` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#616-cdisabletech) */
+/** This is the ID of the `Disable Tech` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#816-cdisabletech) */
 extern const int cDisableTech = 102;
 
-/** This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#617-cmodtechtime) */
+/** This is the ID of the `Modify Technology Time` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#817-cmodtechtime) */
 extern const int cModTechTime = 103;
 
-/** This is the ID of the `Gaia Set Attribute` effect of the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#618-cgaiasetattribute) */
+/** This is the ID of the `Gaia Set Attribute` effect of the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#818-cgaiasetattribute) */
 extern const int cGaiaSetAttribute = -1;
 
-/** This is the ID of the `Gaia Modify Resource` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#619-cgaiamodresource) */
+/** This is the ID of the `Gaia Modify Resource` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#819-cgaiamodresource) */
 extern const int cGaiaModResource = -2;
 
-/** This is the ID of the `Gaia Enable (or disable) Object` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#620-cgaiaenableobject) */
+/** This is the ID of the `Gaia Enable (or disable) Object` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#820-cgaiaenableobject) */
 extern const int cGaiaEnableObject = -3;
 
-/** This is the ID of the `Gaia Upgrade Unit` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#621-cgaiaupgradeunit) */
+/** This is the ID of the `Gaia Upgrade Unit` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#821-cgaiaupgradeunit) */
 extern const int cGaiaUpgradeUnit = -4;
 
-/** This is the ID of the `Gaia Add Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#622-cgaiaaddattribute) */
+/** This is the ID of the `Gaia Add Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#822-cgaiaaddattribute) */
 extern const int cGaiaAddAttribute = -5;
 
-/** This is the ID of the `Gaia Multiply Attribute` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#623-cgaiamulattribute) */
+/** This is the ID of the `Gaia Multiply Attribute` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#823-cgaiamulattribute) */
 extern const int cGaiaMulAttribute = -6;
 
-/** This is the ID of the `Gaia Multiply Resource` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#624-cgaiamulresource) */
+/** This is the ID of the `Gaia Multiply Resource` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#824-cgaiamulresource) */
 extern const int cGaiaMulResource = -7;
 
-/** This is the ID of the `Gaia Spawn Unit` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#625-cgaiaspawnunit) */
+/** This is the ID of the `Gaia Spawn Unit` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#825-cgaiaspawnunit) */
 extern const int cGaiaSpawnUnit = -8;
 
-/** This is the ID of the `Gaia Modify Technology` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#626-cgaiamodifytech) */
+/** This is the ID of the `Gaia Modify Technology` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#826-cgaiamodifytech) */
 extern const int cGaiaModifyTech = -9;
 
-/** This is the ID of the `Gaia Set Player Data` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#627-cgaiasetplayerdata) */
+/** This is the ID of the `Gaia Set Player Data` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#827-cgaiasetplayerdata) */
 extern const int cGaiaSetPlayerData = -10;
 
-/** This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#628-cgaiasettechcost) */
+/** This is the ID of the `Gaia Set Technology Cost` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#828-cgaiasettechcost) */
 extern const int cGaiaSetTechCost = -101;
 
-/** This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#629-cgaiaaddtechcost) */
+/** This is the ID of the `Gaia Add Technology Cost` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#829-cgaiaaddtechcost) */
 extern const int cGaiaAddTechCost = -102;
 
-/** This is the ID of the `Gaia Disable Tech` effect for the xsEffectAmount function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#630-cgaiadisabletech) */
+/** This is the ID of the `Gaia Disable Tech` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#830-cgaiadisabletech) */
 extern const int cGaiaDisableTech = -103;
 
-/** This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#631-cgaiamodtechtime) */
+/** This is the ID of the `Gaia Modify Technology Time` effect for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function. No Longer works, use `cModifyTech` instead View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#831-cgaiamodtechtime) */
 extern const int cGaiaModTechTime = -104;
 
 
-// 7. EffectAmount Effect Operations
+// 9. EffectAmount Effect Operations
 
 
-/** This is the ID of the `Attribute Disbale` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Disbale` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttributeDisable = 0;
 
-/** This is the ID of the `Attribute Enable` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Enable` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttributeEnable = 1;
 
-/** This is the ID of the `Attribute Force` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Force` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttributeForce = 2;
 
-/** This is the ID of the `Attribute Research` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Research` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttributeResearch = 2;
 
-/** This is the ID of the `Attribute Set` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttributeSet = 0;
 
-/** This is the ID of the `Attribute Add` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Add` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttributeAdd = 1;
 
 
-// 8. EffectAmount Technology Attribute
+// 10. EffectAmount Technology Attribute
 
 
-/** This is the ID of the `Attribute Set Time` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Time` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetTime = -1;
 
-/** This is the ID of the `Attribute Add Time` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Add Time` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrAddTime = -2;
 
-/** This is the ID of the `Attribute Multiply Time` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Multiply Time` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrMulTime = -3;
 
-/** This is the ID of the `Attribute Set Food Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Food Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetFoodCost = 0;
 
-/** This is the ID of the `Attribute Set Wood Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Wood Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetWoodCost = 1;
 
-/** This is the ID of the `Attribute Set Stone Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Stone Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetStoneCost = 2;
 
-/** This is the ID of the `Attribute Set Gold Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Gold Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetGoldCost = 3;
 
-/** This is the ID of the `Attribute Add Food Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Add Food Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrAddFoodCost = 16384;
 
-/** This is the ID of the `Attribute Add Wood Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Add Wood Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrAddWoodCost = 16385;
 
-/** This is the ID of the `Attribute Add Stone Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Add Stone Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrAddStoneCost = 16386;
 
-/** This is the ID of the `Attribute Add Gold Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Add Gold Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrAddGoldCost = 16387;
 
-/** This is the ID of the `Attribute Multiply Food Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Multiply Food Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrMulFoodCost = 13;
 
-/** This is the ID of the `Attribute Multiply Wood Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Multiply Wood Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrMulWoodCost = 14;
 
-/** This is the ID of the `Attribute Multiply Stone Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Multiply Stone Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrMulStoneCost = 15;
 
-/** This is the ID of the `Attribute Multiply Gold Cost` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Multiply Gold Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrMulGoldCost = 16;
 
-/** This is the ID of the `Attribute Multiply All Costs` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Multiply All Costs` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrMulAllCosts = 17;
 
-/** This is the ID of the `Attribute Set Effect` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Effect` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetEffect = 18;
 
-/** This is the ID of the `Attribute Set Tech Location` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Tech Location` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetLocation = 4;
 
-/** This is the ID of the `Attribute Set Tech Button` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Tech Button` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetButton = 5;
 
-/** This is the ID of the `Attribute Set Tech Icon` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Tech Icon` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetIcon = 6;
 
-/** This is the ID of the `Attribute Set Tech Name` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Tech Name` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetName = 7;
 
-/** This is the ID of the `Attribute Set Tech Description` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Tech Description` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetDescription = 8;
 
-/** This is the ID of the `Attribute Set Tech Stacking` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Tech Stacking` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetStacking = 9;
 
-/** This is the ID of the `Attribute Set Stacking Research Cap` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Stacking Research Cap` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetStackingResearchCap = 10;
 
-/** This is the ID of the `Attribute Set Hotkey` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set Hotkey` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetHotkey = 11;
 
-/** This is the ID of the `Attribute Set State` modifier for the xsEffectAmount function */
+/** This is the ID of the `Attribute Set State` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) function */
 extern const int cAttrSetState = 12;
 
 
-// 9. EffectAmount Unit Attribute
+// 11. Object Attribute
 
 
 /** This is the attribute [Hit Points](https://ugc.aoe2.rocks/general/attributes/attributes/#0-hit-points) */
@@ -780,25 +788,25 @@ extern const int cDamageGraphic = 91;
 /** This is the attribute [Selection Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#92-selection-sound) */
 extern const int cSelectionSound = 92;
 
-/** This is the attribute [Selection Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#93-selection-sound-event) */
+/** This is the attribute [Selection Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#93-selection-sound-event) Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cSelectionSoundEvent = 93;
 
 /** This is the attribute [Dying Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#94-dying-sound) */
 extern const int cDyingSound = 94;
 
-/** This is the attribute [Dying Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#95-dying-sound-event) */
+/** This is the attribute [Dying Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#95-dying-sound-event) Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cDyingSoundEvent = 95;
 
 /** This is the attribute [Train Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#96-train-sound) */
 extern const int cTrainSound = 96;
 
-/** This is the attribute [Train Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#97-train-sound-event) */
+/** This is the attribute [Train Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#97-train-sound-event) Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cTrainSoundEvent = 97;
 
 /** This is the attribute [Damage Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#98-damage-sound) */
 extern const int cDamageSound = 98;
 
-/** This is the attribute [Damage Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#99-damage-sound-event) */
+/** This is the attribute [Damage Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#99-damage-sound-event) Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cDamageSoundEvent = 99;
 
 /** This is the attribute [Resource Costs](https://ugc.aoe2.rocks/general/attributes/attributes/#100-resource-costs) */
@@ -894,25 +902,25 @@ extern const int cAttack2Graphic = 131;
 /** This is the attribute [Command Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#132-command-sound). */
 extern const int cCommandSound = 132;
 
-/** This is the attribute [Command Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#133-command-sound-event). */
+/** This is the attribute [Command Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#133-command-sound-event). Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cCommandSoundEvent = 133;
 
 /** This is the attribute [Move Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#134-move-sound). */
 extern const int cMoveSound = 134;
 
-/** This is the attribute [Move Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#135-move-sound-event). */
+/** This is the attribute [Move Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#135-move-sound-event). Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cMoveSoundEvent = 135;
 
 /** This is the attribute [Construction Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#136-construction-sound). */
 extern const int cConstructionSound = 136;
 
-/** This is the attribute [Construction Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#137-construction-sound-event). */
+/** This is the attribute [Construction Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#137-construction-sound-event). Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cConstructionSoundEvent = 137;
 
 /** This is the attribute [Transform Sound](https://ugc.aoe2.rocks/general/attributes/attributes/#138-transform-sound). */
 extern const int cTransformSound = 138;
 
-/** This is the attribute [Transform Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#139-transform-sound-event). */
+/** This is the attribute [Transform Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#139-transform-sound-event). Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/player/#1-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#3-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/units_objects/#4-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/constants/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/constants/maths/#16-bitcasttoint) respectively. */
 extern const int cTransformSoundEvent = 139;
 
 /** This is the attribute [Run Pattern](https://ugc.aoe2.rocks/general/attributes/attributes/#140-run-pattern). */
@@ -988,7 +996,7 @@ extern const int cChargeTarget = 162;
 extern const int cSizeClass = 163;
 
 
-// 10. EffectAmount Object Class
+// 12. Object Class
 
 
 /** This is the ID used to target the Archer Class */
@@ -1187,7 +1195,7 @@ extern const int cLandMineClass = 964;
 extern const int cSentinelEndClass = 965;
 
 
-// 11. Resource
+// 13. Resource
 
 
 /** ID of the player resource [Food](https://ugc.aoe2.rocks/general/resources/resources/#0-food-storage) */
@@ -2043,7 +2051,7 @@ extern const int cAttributeTributeFromPlayer8 = 483;
 extern const int cAttributeChoppingFoodProductivity = 502;
 
 
-// 12. Damage Class
+// 14. Damage Class
 
 
 /** ID of the Damage Class Infantry */
@@ -2146,13 +2154,13 @@ extern const int cDamageClassRoyalHeirs = 39;
 extern const int cNumDamageClasses = 39;
 
 
-// 13. Task Attribute
+// 15. Task Attribute
 
 
-/** ID for the task amount Task Attribute Work Value1. View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#131-ctaskattrworkvalue1) */
+/** ID for the task amount Task Attribute Work Value1. View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#151-ctaskattrworkvalue1) */
 extern const int cTaskAttrWorkValue1 = 0;
 
-/** ID for the task amount Task Attribute Work Value2 View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#132-ctaskattrworkvalue2) */
+/** ID for the task amount Task Attribute Work Value2 View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#152-ctaskattrworkvalue2) */
 extern const int cTaskAttrWorkValue2 = 1;
 
 /** ID for the task amount Task Attribute Work Range */
@@ -2161,10 +2169,10 @@ extern const int cTaskAttrWorkRange = 2;
 /** ID for the task amount Task Attribute Work Flag2 */
 extern const int cTaskAttrWorkFlag2 = 3;
 
-/** ID for the task amount Task Attribute Search Wait Time View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#135-ctaskattrsearchwaittime) */
+/** ID for the task amount Task Attribute Search Wait Time View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#155-ctaskattrsearchwaittime) */
 extern const int cTaskAttrSearchWaitTime = 4;
 
-/** ID for the task amount Task Attribute Combat Level Flag View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#136-ctaskattrcombatlevelflag) */
+/** ID for the task amount Task Attribute Combat Level Flag View usage details on [ugc.aoe2.rocks](https://ugc.aoe2.rocks/general/xs/constants/#156-ctaskattrcombatlevelflag) */
 extern const int cTaskAttrCombatLevelFlag = 5;
 
 /** ID for the task amount Task Attribute Owner Type */
@@ -2246,7 +2254,7 @@ extern const int cTaskAttrObjectClass = 30;
 extern const int cNumTaskAttrs = 31;
 
 
-// 14. Task Type
+// 16. Task Type
 
 
 /** ID for the task Move To */
@@ -2394,7 +2402,7 @@ extern const int cTaskTypeHPModifier = 160;
 extern const int cTaskTypeRefund = 161;
 
 
-// 15. Tech State
+// 17. Tech State
 
 
 /** Enum value for the tech state Not Ready */
@@ -2419,7 +2427,7 @@ extern const int cTechStateDisabled = -1;
 extern const int cTechStateInvalid = -2;
 
 
-// 16. Object Type
+// 18. Object Type
 
 
 /** Enum value for the object type Eye Candy */
@@ -2456,7 +2464,7 @@ extern const int cObjectTypeBuilding = 80;
 extern const int cObjectTypeLegacyTree = 90;
 
 
-// 17. Player Type
+// 19. Player Type
 
 
 /** Enum value for the player type None */
@@ -2475,7 +2483,7 @@ extern const int cPlayerTypeGaia = 2;
 extern const int cPlayerTypeComputer = 3;
 
 
-// 18. Diplomacy
+// 20. Diplomacy
 
 
 /** Enum value for diplomacy Invalid */
@@ -2497,7 +2505,7 @@ extern const int cDiplomacyEnemy = 3;
 extern const int cDiplomacyTreaty = 4;
 
 
-// 19. Color Mood
+// 21. Color Mood
 
 
 /** Enum value for color mood Default */
@@ -2561,7 +2569,7 @@ extern const int cColorMoodDarkness = 18;
 extern const int cNumColorMoods = 19;
 
 
-// 20. Difficulty
+// 22. Difficulty
 
 
 /** Enum value for difficulty Extreme */
@@ -3173,17 +3181,336 @@ float tan(float x = -1.0) {}
 int xsCeilToInt(float value = -1.0) {}
 
 
-// 5. General
+// 5. Randomization
 
 /**
-* Shows the given message in the game chat
+* Returns a random number between 0 and 32767.
 *
-* @param message The message to display in chat
-* @param value This value is inserted in place of any `%d` used in the message of the function
+* @returns int
+*/
+int xsGetRandomNumber() {}
+
+/**
+* Returns a random number between `low` and `high`
+*
+* @param low The lower bound for the range for the random number returned (included)
+* @param high The upper bound for the range for the random number returned (excluded)
+*
+* @returns int
+*/
+int xsGetRandomNumberLH(int low = -1, int high = -1) {}
+
+/**
+* Returns a random number between 0 and `max`.
+*
+* @param max The upper bound for the range for the random number returned (excluded)
+*
+* @returns int
+*/
+int xsGetRandomNumberMax(int max = -1) {}
+
+
+// 6. Techs
+
+/**
+* Returns the current name of the given tech for the specified player.
+*
+* @param techId The tech to get the name for
+* @param playerId The player to get the tech's name for
+* @param internalName Returns the internal name of the tech if set. `!#xs false` by default.
+*
+* @returns string
+*/
+string xsGetTechName(int techId = -1, int playerId = -1, bool internalName = false) {}
+
+/**
+* Returns one of the [cTechState constants](https://ugc.aoe2.rocks/general/xs/constants/tech_state) based on the tech's status
+*
+* @param techId The tech to get the state for
+* @param playerId The player to get the tech's state for
+*
+* @returns int
+*/
+int xsGetTechState(int techId = -1, int playerId = -1) {}
+
+/**
+* Returns a boolean based on whether the technology was researched or not.
+*
+* @param techId The technology ID to research.
+* @param force Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
+* @param techAvailable This flag determines if it is required to check if a tech is available before researching it
+* @param playerNumber The player to research the technology for
+*
+* @returns bool
+*/
+bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
+
+
+// 7. Player
+
+/**
+* Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/object_attribute/#85-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/functions/maths/#15-bitcasttofloat).
+*
+* @param effectId The ID of the effect to use. See the [Effect Type](https://ugc.aoe2.rocks/general/xs/constants/effect_amount_effect_type/) and [Technology Attribute](https://ugc.aoe2.rocks/general/xs/constants/effect_amount_technology_attribute/) constants
+* @param objectOrTechnologyId The ID of the object, unit, or technology to effect
+* @param attributeOrOperation The attribute to modify or the operation to perform, See the [Effect Operation](https://ugc.aoe2.rocks/general/xs/constants/effect_amount_effect_operations/) constants
+* @param value The value of the effect
+* @param playerNumber The player to apply the effect to. If unspecified, applies to all players except Gaia.
 *
 * @returns void
 */
-void xsChatData(string message = "", int value = -1) {}
+void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
+
+/**
+* Returns the difficulty setting for the game. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/difficulty) for all the different difficulty IDs
+*
+* @returns int
+*/
+int xsGetDifficulty() {}
+
+/**
+* Returns the source player's stance towards the target player
+*
+* @param sourcePlayerId The player to get the stance for
+* @param targetPlayerId The player to get the stance towards
+*
+* @returns int
+*/
+int xsGetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1) {}
+
+/**
+* Returns the handicap multiplier for the given player (a float between 1 and 2)
+*
+* @param playerId The player to get the handicap for
+*
+* @returns float
+*/
+float xsGetHandicapMultiplier(int playerId = -1) {}
+
+/**
+* Returns the civilization ID of the given player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/aoe2_civs) for all the different civ IDs
+*
+* @param playerNumber The player to get the civilization of
+*
+* @returns int
+*/
+int xsGetPlayerCivilization(int playerNumber = -1) {}
+
+/**
+* Returns true if the player given is still alive, and false otherwise.
+*
+* @param playerNumber Check if this player is still alive
+*
+* @returns bool
+*/
+bool xsGetPlayerInGame(int playerNumber = -1) {}
+
+/**
+* Returns the given player's name.
+*
+* @param playerId The lobby index of the player
+*
+* @returns string
+*/
+string xsGetPlayerName(int playerId = -1) {}
+
+/**
+* Returns the number of technologies available to the player in the entire game.
+*
+* @param playerNumber The player whose technology count is being requested.
+*
+* @returns int
+*/
+int xsGetPlayerNumberOfTechs(int playerNumber = -1) {}
+
+/**
+* Returns the type of player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/player_type) for all the different player types
+*
+* @param playerId The player to get the type for
+*
+* @returns int
+*/
+int xsGetPlayerType(int playerId = -1) {}
+
+/**
+* Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
+*
+* @param playerId The player to get the unit IDs for
+* @param objectOrClassId The ID of the object or class to get the unit reference IDs for
+* @param arrayId Reuse an existing array to save memory
+*
+* @returns int
+*/
+int xsGetPlayerUnitIds(int playerId = -1, int objectOrClassId = -1, int arrayId = -1) {}
+
+/**
+* Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario.
+*
+* @param scxPlayerId The player to get the world index (lobby slot) for
+*
+* @returns int
+*/
+int xsGetWorldPlayerId(int scxPlayerId = -1) {}
+
+/**
+* Returns the amount the specified resource of the given player.
+*
+* @param playerNumber The player to get the resource of (0 for Gaia)
+* @param resourceId The ID of the resource to get the amount of
+*
+* @returns float
+*/
+float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
+
+/**
+* Sets the diplomacy of source player towards the target player
+*
+* @param sourcePlayerId The player to set the stance for
+* @param targetPlayerId The player to set the stance towards
+* @param diploStance The stance to set
+* @param mirror If true, make the target player set their stance towards the source player to the same.
+*
+* @returns bool
+*/
+bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploStance = -1, bool mirror = false) {}
+
+/**
+* Sets the amount of the specified resource of the given player to the provided value.
+*
+* @param playerNumber The player to set the resource of (0 for Gaia)
+* @param resourceId The ID of the resource to set the amount of
+* @param value The amount to set the resource to
+*
+* @returns void
+*/
+void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float value = -1.0) {}
+
+
+// 8. Tasks
+
+/**
+* Returns the number of tasks the specific object for the given player has
+*
+* @param objectId The ID of the object to get the number of tasks for
+* @param playerId The player whose object to get the number of tasks for
+*
+* @returns int
+*/
+int xsGetObjectTaskCount(int objectId = -1, int playerId = -1) {}
+
+/**
+* Returns the given task field from XS' global task struct.
+*
+* @param taskFieldId The task field to ge the value for. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/task_attribute) for all the different task field IDs
+*
+* @returns float
+*/
+float xsGetTaskAmount(int taskFieldId = -1) {}
+
+/**
+* Returns the number of tasks the given unit has
+*
+* @param unitId The ID of the object to get the number of tasks for
+*
+* @returns int
+*/
+int xsGetUnitTaskCount(int unitId = -1) {}
+
+/**
+* A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.
+*     - ID N will insert the task at index N
+*     - When `#!xs edit = true`, edit an existing task instead of inserting one.
+*     - ID -(N+1) will remove the task at index N
+*
+* @param objectId The ID of the object to modify the task for
+* @param playerId The player whose object to modify the task for
+* @param taskId The index to insert the task at
+* @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
+*
+* @returns bool
+*/
+bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, bool edit = false) {}
+
+/**
+* A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.
+*     - ID N will insert the task at index N
+*     - When `#!xs edit = true`, edit an existing task instead of inserting one.
+*     - ID -(N+1) will remove the task at index N
+*
+* @param unitId The ID of the unit on the map to modify the task for
+* @param taskId The index to insert the task at
+* @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
+*
+* @returns bool
+*/
+bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
+
+/**
+* Copies the provided task of the specific object from the given player into XS' global task struct
+*
+* @param objectId The ID of the object to get the task for
+* @param playerId The player whose object to get the task for
+* @param taskId The ID (index) of the task to get
+*
+* @returns bool
+*/
+bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {}
+
+/**
+* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#1-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#1-xstask) edits instead of adding a new task)
+*
+* @param objectOrClassId The object or class ID to remove the task from.
+* @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/task_type)
+* @param targetObjectOrClassId Target object or class ID for the task to filter by.
+* @param playerId The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
+*
+* @returns void
+*/
+void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
+
+/**
+* Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#8-xsmodifyobjecttasks).
+*
+* @returns void
+*/
+void xsResetTaskAmount() {}
+
+/**
+* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#1-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+* 
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#1-xstaskamount)) and then submitting multiple copies of it for different people)
+*
+* @param objectOrClassId The object or class ID to add the task to
+* @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/task_type)
+* @param targetObjectOrClassId Target object or class ID for the task to filter by.
+* @param playerId The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
+*
+* @returns void
+*/
+void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
+
+/**
+* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#8-xsmodifyobjecttasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
+*
+* @param taskFieldId Specifies which property of the task to change. Refer to [cTaskAttr constants](https://ugc.aoe2.rocks/general/xs/constants/task_attribute)
+* @param value The value to set the task field to
+*
+* @returns void
+*/
+void xsTaskAmount(int taskFieldId = -1, float value = -1.0) {}
+
+/**
+* Copies the provided task of the specific unit into XS' global task struct
+*
+* @param unitId The ID of the unit to get the task for
+* @param taskId The ID (index) of the task to get
+*
+* @returns bool
+*/
+bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
+
+
+// 9. Units_Objects
 
 /**
 * Creates a unit on the map and returns its ID, or -1 if creation failed
@@ -3207,50 +3534,6 @@ int xsCreateUnit(int objectId = -1, int playerId = -1, vector location = vector(
 * @returns bool
 */
 bool xsDoesUnitExist(int unitId = -1) {}
-
-/**
-* Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch]("Jump to: UserPatch NON EXISTENT") section of the guide
-*
-* @param effectId The ID of the effect to use
-* @param objectOrTechnologyId The ID of the object or technology to effect
-* @param attributeOrOperation The attribute to modify or the operation to perform
-* @param value The value of the effect
-* @param playerNumber The player to apply the effect to. If unspecified, applies to all players except Gaia.
-*
-* @returns void
-*/
-void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
-
-/**
-* Returns the current color mood of the map. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#19-color-mood) for all the different color mood IDs
-*
-* @returns int
-*/
-int xsGetColorMood() {}
-
-/**
-* Returns the difficulty setting for the game. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#20-difficulty) for all the different difficulty IDs
-*
-* @returns int
-*/
-int xsGetDifficulty() {}
-
-/**
-* Returns the source player's stance towards the target player
-*
-* @param sourcePlayerId The player to get the stance for
-* @param targetPlayerId The player to get the stance towards
-*
-* @returns int
-*/
-int xsGetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1) {}
-
-/**
-* Returns the current game time in seconds
-*
-* @returns int
-*/
-int xsGetGameTime() {}
 
 /**
 * Returns the ID of the unit in which this unit is garrisoned in
@@ -3280,53 +3563,7 @@ int xsGetGarrisonedUnitIds(int unitId = -1) {}
 vector xsGetGroupMoveTarget(int groupId = -1) {}
 
 /**
-* Returns the handicap multiplier for the given player (a float between 1 and 2)
-*
-* @param playerId The player to get the handicap for
-*
-* @returns float
-*/
-float xsGetHandicapMultiplier(int playerId = -1) {}
-
-/**
-* Returns the Height of the map.
-*
-* @returns int
-*/
-int xsGetMapHeight() {}
-
-/**
-* Returns the AI map type.
-*
-* @returns int
-*/
-int xsGetMapID() {}
-
-/**
-* Returns the name of the map currently being played.
-*
-* @param showFileExtension If this is set to true, then the returned name also contains the file extension
-*
-* @returns string
-*/
-string xsGetMapName(bool showFileExtension = false) {}
-
-/**
-* Returns the Width of the map.
-*
-* @returns int
-*/
-int xsGetMapWidth() {}
-
-/**
-* Returns the number of players in the game
-*
-* @returns int
-*/
-int xsGetNumPlayers() {}
-
-/**
-* Returns the attribute value for an object
+* Returns the attribute value for an object. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/object_attribute/#85-cselectionsoundevent) must be converted using [bitCastToInt](https://ugc.aoe2.rocks/general/xs/functions/maths/#16-bitcasttoint) after being returned.
 *
 * @param playerId The player whose object to get the attribute for
 * @param objectId The object to get the attribute for
@@ -3338,7 +3575,7 @@ int xsGetNumPlayers() {}
 float xsGetObjectAttribute(int playerId = -1, int objectId = -1, int attribute = -1, int damageClass = -1) {}
 
 /**
-* Returns the given object's class for the specified player. See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/#10-object-class)
+* Returns the given object's class for the specified player. See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/object_class)
 *
 * @param playerId The player to get the object's class for
 * @param objectId The object to get the class for
@@ -3389,17 +3626,7 @@ int xsGetObjectCountTotal(int playerId = -1, int objectOrClassId = -1) {}
 string xsGetObjectName(int objectId = -1, int playerId = -1, bool internalName = false) {}
 
 /**
-* Returns the number of tasks the specific object for the given player has
-*
-* @param objectId The ID of the object to get the number of tasks for
-* @param playerId The player whose object to get the number of tasks for
-*
-* @returns int
-*/
-int xsGetObjectTaskCount(int objectId = -1, int playerId = -1) {}
-
-/**
-* Returns the given object's type for the specified player. See [cObjectType constants](https://ugc.aoe2.rocks/general/xs/constants/#16-object-type)
+* Returns the given object's type for the specified player. See [cObjectType constants](https://ugc.aoe2.rocks/general/xs/constants/object_type)
 *
 * @param playerId The player to get the object's type for
 * @param objectId The object to get the type for
@@ -3409,133 +3636,7 @@ int xsGetObjectTaskCount(int objectId = -1, int playerId = -1) {}
 int xsGetObjectType(int playerId = -1, int objectId = -1) {}
 
 /**
-* Returns the civilization ID of the given player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#3-civs) for all the different civ IDs
-*
-* @param playerNumber The player to get the civilization of
-*
-* @returns int
-*/
-int xsGetPlayerCivilization(int playerNumber = -1) {}
-
-/**
-* Returns true if the player given is still alive, and false otherwise.
-*
-* @param playerNumber Check if this player is still alive
-*
-* @returns bool
-*/
-bool xsGetPlayerInGame(int playerNumber = -1) {}
-
-/**
-* Returns the given player's name.
-*
-* @param playerId The lobby index of the player
-*
-* @returns string
-*/
-string xsGetPlayerName(int playerId = -1) {}
-
-/**
-* Returns the number of technologies available to the player in the entire game.
-*
-* @param playerNumber The player whose technology count is being requested.
-*
-* @returns int
-*/
-int xsGetPlayerNumberOfTechs(int playerNumber = -1) {}
-
-/**
-* Returns the type of player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#17-player-type) for all the different player types
-*
-* @param playerId The player to get the type for
-*
-* @returns int
-*/
-int xsGetPlayerType(int playerId = -1) {}
-
-/**
-* Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
-*
-* @param playerId The player to get the unit IDs for
-* @param objectOrClassId The ID of the object or class to get the unit reference IDs for
-* @param arrayId Reuse an existing array to save memory
-*
-* @returns int
-*/
-int xsGetPlayerUnitIds(int playerId = -1, int objectOrClassId = -1, int arrayId = -1) {}
-
-/**
-* Returns a random number between 0 and 32767.
-*
-* @returns int
-*/
-int xsGetRandomNumber() {}
-
-/**
-* Returns a random number between `low` and `high`
-*
-* @param low The lower bound for the range for the random number returned (included)
-* @param high The upper bound for the range for the random number returned (excluded)
-*
-* @returns int
-*/
-int xsGetRandomNumberLH(int low = -1, int high = -1) {}
-
-/**
-* Returns a random number between 0 and `max`.
-*
-* @param max The upper bound for the range for the random number returned (excluded)
-*
-* @returns int
-*/
-int xsGetRandomNumberMax(int max = -1) {}
-
-/**
-* Returns the given task field from XS' global task struct.
-*
-* @param taskFieldId The task field to ge the value for. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#13-task-attribute) for all the different task field IDs
-*
-* @returns float
-*/
-float xsGetTaskAmount(int taskFieldId = -1) {}
-
-/**
-* Returns the current name of the given tech for the specified player.
-*
-* @param techId The tech to get the name for
-* @param playerId The player to get the tech's name for
-* @param internalName Returns the internal name of the tech if set. `!#xs false` by default.
-*
-* @returns string
-*/
-string xsGetTechName(int techId = -1, int playerId = -1, bool internalName = false) {}
-
-/**
-* Returns one of the [cTechState constants](https://ugc.aoe2.rocks/general/xs/constants/#15-techstate) based on the tech's status
-*
-* @param techId The tech to get the state for
-* @param playerId The player to get the tech's state for
-*
-* @returns int
-*/
-int xsGetTechState(int techId = -1, int playerId = -1) {}
-
-/**
-* Returns the current game time - 1 in seconds
-*
-* @returns int
-*/
-int xsGetTime() {}
-
-/**
-* Returns the current game tick (called turn).
-*
-* @returns int
-*/
-int xsGetTurn() {}
-
-/**
-* Returns the attribute value for a specific unit on the map.
+* Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/object_attribute/#85-cselectionsoundevent) must be converted using [bitCastToInt](https://ugc.aoe2.rocks/general/xs/functions/maths/#16-bitcasttoint) after being returned.
 *
 * @param unitId The unit to get the attribute for.
 * @param attribute The attribute to get
@@ -3583,7 +3684,7 @@ float xsGetUnitBuildPoints(int unitId = -1) {}
 float xsGetUnitCharge(int unitId = -1) {}
 
 /**
-* Returns the given unit's class See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/#10-effectamount-object-class)
+* Returns the given unit's class See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/object_class)
 *
 * @param unitId The unit to get the class for
 *
@@ -3674,22 +3775,198 @@ vector xsGetUnitPosition(int unitId = -1) {}
 int xsGetUnitTargetUnitId(int unitId = -1) {}
 
 /**
-* Returns the number of tasks the given unit has
-*
-* @param unitId The ID of the object to get the number of tasks for
-*
-* @returns int
-*/
-int xsGetUnitTaskCount(int unitId = -1) {}
-
-/**
-* Returns the given unit's type. See [cObjectType constants](https://ugc.aoe2.rocks/general/xs/constants/#16-object-type)
+* Returns the given unit's type. See [cObjectType constants](https://ugc.aoe2.rocks/general/xs/constants/object_type)
 *
 * @param unitId The unit to get the type for
 *
 * @returns int
 */
 int xsGetUnitType(int unitId = -1) {}
+
+/**
+* Returns true if this object can currently be trained or built.
+*
+* @param objectId The object to check the availability for
+* @param playerId The player to get the object's availability for
+*
+* @returns bool
+*/
+bool xsIsObjectAvailable(int objectId = -1, int playerId = -1) {}
+
+/**
+* Checks and returns if any unit matching the set filters of the given player has the specified action.
+*
+* @param playerId The player to check unit actions for
+* @param objectOrClassId The ID of the object or class to check actions for
+* @param actionId The type of action to check for
+* @param targetPlayerId Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
+* @param targetType Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
+* @param targetUnitLevel Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
+*
+* @returns bool
+*/
+bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId = -1, int targetPlayerId = -1, int targetType = -1, int targetUnitLevel = -1) {}
+
+/**
+* Removes the given unit from the map
+*
+* @param unitId The unit to remove
+*
+* @returns bool
+*/
+bool xsRemoveUnit(int unitId = -1) {}
+
+/**
+* Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
+*
+* @param unitId The unit to set the resource held for
+* @param value The amount to set the held resource to
+* @param attributeId The ID of the resource to set. If unspecified, sets the first resource which the unit holds
+*
+* @returns bool
+*/
+bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId = -1) {}
+
+/**
+* Sets the given unit's Build Points
+*
+* @param unitId The unit to set the build points for
+* @param value The value to set the build points to
+*
+* @returns bool
+*/
+bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
+
+/**
+* Sets the given unit's charge
+*
+* @param unitId The unit to set the charge for
+* @param value The value to set the charge to
+*
+* @returns bool
+*/
+bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
+
+/**
+* Sets the given unit's HP
+*
+* @param unitId The unit to set the HP for
+* @param value The value to set the HP to
+*
+* @returns bool
+*/
+bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
+
+/**
+* Sets the given unit's position.
+*
+* @param unitId The unit to set the position for
+* @param position The position to set
+* @param checkCollision If false, don't check for collision before moving the unit
+*
+* @returns bool
+*/
+bool xsSetUnitPosition(int unitId = -1, vector position = vector(-1, -1, -1), bool checkCollision = false) {}
+
+
+// 10. Map
+
+/**
+* Returns the current color mood of the map. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/color_mood) for all the different color mood IDs
+*
+* @returns int
+*/
+int xsGetColorMood() {}
+
+/**
+* Returns the Height of the map.
+*
+* @returns int
+*/
+int xsGetMapHeight() {}
+
+/**
+* Returns the AI map type.
+*
+* @returns int
+*/
+int xsGetMapID() {}
+
+/**
+* Returns the name of the map currently being played.
+*
+* @param showFileExtension If this is set to true, then the returned name also contains the file extension
+*
+* @returns string
+*/
+string xsGetMapName(bool showFileExtension = false) {}
+
+/**
+* Returns the Width of the map.
+*
+* @returns int
+*/
+int xsGetMapWidth() {}
+
+/**
+* Sets the color mood of the map with a transition time. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/color_mood) for all the different color mood IDs
+*
+* @param colorMood The color mood to set
+* @param interval The transition duration in seconds
+*
+* @returns bool
+*/
+bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
+
+/**
+* Sets the value of the variable of the given variable ID to the provided value.
+*
+* @param variableId The ID of the variable to set the value of
+* @param value The value to set the variable to
+*
+* @returns void
+*/
+void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
+
+/**
+* Returns the value of the variable of the given variable ID.
+*
+* @param variableId The ID of the variable to get the value of
+*
+* @returns int
+*/
+int xsTriggerVariable(int variableId = -1) {}
+
+
+// 11. Game Info
+
+/**
+* Returns the current game time in seconds
+*
+* @returns int
+*/
+int xsGetGameTime() {}
+
+/**
+* Returns the number of players in the game
+*
+* @returns int
+*/
+int xsGetNumPlayers() {}
+
+/**
+* Returns the current game time - 1 in seconds
+*
+* @returns int
+*/
+int xsGetTime() {}
+
+/**
+* Returns the current game tick (called turn). Note: ticks may differ in games and replays
+*
+* @returns int
+*/
+int xsGetTurn() {}
 
 /**
 * Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
@@ -3753,275 +4030,27 @@ int xsGetVictoryTimeForSecondaryGameMode() {}
 int xsGetVictoryType() {}
 
 /**
-* Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario.
-*
-* @param scxPlayerId The player to get the world index (lobby slot) for
-*
-* @returns int
-*/
-int xsGetWorldPlayerId(int scxPlayerId = -1) {}
-
-/**
 * Returns the current game time in milliseconds
 *
 * @returns int
 */
 int xsGetWorldTime() {}
 
-/**
-* Returns true if this object can currently be trained or built.
-*
-* @param objectId The object to check the availability for
-* @param playerId The player to get the object's availability for
-*
-* @returns bool
-*/
-bool xsIsObjectAvailable(int objectId = -1, int playerId = -1) {}
+
+// 12. Ui
 
 /**
-* A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.
-*     - ID N will insert the task at index N
-*     - When `#!xs edit = true`, edit an existing task instead of inserting one.
-*     - ID -(N+1) will remove the task at index N
+* Shows the given message in the game chat
 *
-* @param objectId The ID of the object to modify the task for
-* @param playerId The player whose object to modify the task for
-* @param taskId The index to insert the task at
-* @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
-*
-* @returns bool
-*/
-bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, bool edit = false) {}
-
-/**
-* A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.
-*     - ID N will insert the task at index N
-*     - When `#!xs edit = true`, edit an existing task instead of inserting one.
-*     - ID -(N+1) will remove the task at index N
-*
-* @param unitId The ID of the unit on the map to modify the task for
-* @param taskId The index to insert the task at
-* @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
-*
-* @returns bool
-*/
-bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
-
-/**
-* Checks and returns if any unit matching the set filters of the given player has the specified action.
-*
-* @param playerId The player to check unit actions for
-* @param objectOrClassId The ID of the object or class to check actions for
-* @param actionId The type of action to check for
-* @param targetPlayerId Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
-* @param targetType Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
-* @param targetUnitLevel Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
-*
-* @returns bool
-*/
-bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId = -1, int targetPlayerId = -1, int targetType = -1, int targetUnitLevel = -1) {}
-
-/**
-* Copies the provided task of the specific object from the given player into XS' global task struct
-*
-* @param objectId The ID of the object to get the task for
-* @param playerId The player whose object to get the task for
-* @param taskId The ID (index) of the task to get
-*
-* @returns bool
-*/
-bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {}
-
-/**
-* Returns the amount the specified resource of the given player.
-*
-* @param playerNumber The player to get the resource of (0 for Gaia)
-* @param resourceId The ID of the resource to get the amount of
-*
-* @returns float
-*/
-float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
-
-/**
-* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#564-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#563-xstask) edits instead of adding a new task)
-*
-* @param objectOrClassId The object or class ID to remove the task from.
-* @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-type)
-* @param targetObjectOrClassId Target object or class ID for the task to filter by.
-* @param playerId The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
+* @param message The message to display in chat
+* @param value This value is inserted in place of any `%d` used in the message of the function
 *
 * @returns void
 */
-void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
-
-/**
-* Removes the given unit from the map
-*
-* @param unitId The unit to remove
-*
-* @returns bool
-*/
-bool xsRemoveUnit(int unitId = -1) {}
-
-/**
-* Returns a boolean based on whether the technology was researched or not.
-*
-* @param techId The technology ID to research.
-* @param force Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
-* @param techAvailable This flag determines if it is required to check if a tech is available before researching it
-* @param playerNumber The player to research the technology for
-*
-* @returns bool
-*/
-bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
-
-/**
-* Resets all the values of the global XS task struct to their defaults. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#563-xstask).
-*
-* @returns void
-*/
-void xsResetTaskAmount() {}
-
-/**
-* Sets the color mood of the map with a transition time. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/#19-color-mood) for all the different color mood IDs
-*
-* @param colorMood The color mood to set
-* @param interval The transition duration in seconds
-*
-* @returns bool
-*/
-bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
-
-/**
-* Sets the diplomacy of source player towards the target player
-*
-* @param sourcePlayerId The player to set the stance for
-* @param targetPlayerId The player to set the stance towards
-* @param diploStance The stance to set
-* @param mirror If true, make the target player set their stance towards the source player to the same.
-*
-* @returns bool
-*/
-bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploStance = -1, bool mirror = false) {}
-
-/**
-* Sets the amount of the specified resource of the given player to the provided value.
-*
-* @param playerNumber The player to set the resource of (0 for Gaia)
-* @param resourceId The ID of the resource to set the amount of
-* @param value The amount to set the resource to
-*
-* @returns void
-*/
-void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float value = -1.0) {}
-
-/**
-* Sets the value of the variable of the given variable ID to the provided value.
-*
-* @param variableId The ID of the variable to set the value of
-* @param value The value to set the variable to
-*
-* @returns void
-*/
-void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
-
-/**
-* Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
-*
-* @param unitId The unit to set the resource held for
-* @param value The amount to set the held resource to
-* @param attributeId The ID of the resource to set. If unspecified, sets the first resource which the unit holds
-*
-* @returns bool
-*/
-bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId = -1) {}
-
-/**
-* Sets the given unit's Build Points
-*
-* @param unitId The unit to set the build points for
-* @param value The value to set the build points to
-*
-* @returns bool
-*/
-bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
-
-/**
-* Sets the given unit's charge
-*
-* @param unitId The unit to set the charge for
-* @param value The value to set the charge to
-*
-* @returns bool
-*/
-bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
-
-/**
-* Sets the given unit's HP
-*
-* @param unitId The unit to set the HP for
-* @param value The value to set the HP to
-*
-* @returns bool
-*/
-bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
-
-/**
-* Sets the given unit's position.
-*
-* @param unitId The unit to set the position for
-* @param position The position to set
-* @param checkCollision If false, don't check for collision before moving the unit
-*
-* @returns bool
-*/
-bool xsSetUnitPosition(int unitId = -1, vector position = vector(-1, -1, -1), bool checkCollision = false) {}
-
-/**
-* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#564-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
-* 
-* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/#564-xstaskamount)) and then submitting multiple copies of it for different people)
-*
-* @param objectOrClassId The object or class ID to add the task to
-* @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/#14-task-type)
-* @param targetObjectOrClassId Target object or class ID for the task to filter by.
-* @param playerId The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
-*
-* @returns void
-*/
-void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
-
-/**
-* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
-*
-* @param taskFieldId Specifies which property of the task to change. Refer to [cTaskAttr constants](https://ugc.aoe2.rocks/general/xs/constants/#13-task-attribute)
-* @param value The value to set the task field to
-*
-* @returns void
-*/
-void xsTaskAmount(int taskFieldId = -1, float value = -1.0) {}
-
-/**
-* Returns the value of the variable of the given variable ID.
-*
-* @param variableId The ID of the variable to get the value of
-*
-* @returns int
-*/
-int xsTriggerVariable(int variableId = -1) {}
-
-/**
-* Copies the provided task of the specific unit into XS' global task struct
-*
-* @param unitId The ID of the unit to get the task for
-* @param taskId The ID (index) of the task to get
-*
-* @returns bool
-*/
-bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
+void xsChatData(string message = "", int value = -1) {}
 
 
-// 6. Read/Write
+// 13. File Io
 
 /**
 * Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed
@@ -4065,7 +4094,7 @@ int xsGetFileSize() {}
 /**
 * Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 *
-* @param dataType The [cOffset constants](https://ugc.aoe2.rocks/general/xs/constants/#1-readwrite) can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
+* @param dataType The [cOffset constants](https://ugc.aoe2.rocks/general/xs/constants/file_io) can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
 * @param forward Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
 *
 * @returns bool
@@ -4155,7 +4184,7 @@ bool xsWriteString(string data = "") {}
 bool xsWriteVector(vector data = vector(-1, -1, -1)) {}
 
 
-// 7. Ai Scripting
+// 14. Ai Scripting
 
 /**
 * Gets the goal id/number of the current AI
@@ -4196,12 +4225,12 @@ int xsSetGoal(int id = -1, int value = -1) {}
 int xsSetStrategicNumber(int id = -1, int value = -1) {}
 
 
-// 8. Functions With Seemingly No Practical Use
+// 15. Misc
 
 /**
 * A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 *
-* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](https://ugc.aoe2.rocks/general/xs/functions/#56-xsgetmapname) and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
+* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](https://ugc.aoe2.rocks/general/xs/functions/map/#1-xsgetmapname) and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 * @param functionName This is the name of a user defined function that takes a single integer argument
 * @param functionArgument This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 *
