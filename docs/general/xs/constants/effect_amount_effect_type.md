@@ -6,7 +6,7 @@
 
 Value: `#!xs int 0`
 
-This is the ID of the `Set Attribute` effect of the xsEffectAmount function
+This is the ID of the `Set Attribute` effect of the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -26,7 +26,7 @@ This sets the HP of unit 74 (militia) to 100 (the value). Alternatively, any of 
 
 Value: `#!xs int 1`
 
-This is the ID of the `Modify Resource` effect for the xsEffectAmount function
+This is the ID of the `Modify Resource` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -46,7 +46,7 @@ This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be 
 
 Value: `#!xs int 2`
 
-This is the ID of the `Enable (or disable) Object` effect for the xsEffectAmount function
+This is the ID of the `Enable (or disable) Object` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -66,7 +66,7 @@ This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be us
 
 Value: `#!xs int 3`
 
-This is the ID of the `Upgrade Unit` effect for the xsEffectAmount function
+This is the ID of the `Upgrade Unit` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -86,7 +86,7 @@ This copies all units attributes except ID and available from unit 75 (man at ar
 
 Value: `#!xs int 4`
 
-This is the ID of the `Add Attribute` effect for the xsEffectAmount function
+This is the ID of the `Add Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -106,7 +106,7 @@ This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
 Value: `#!xs int 5`
 
-This is the ID of the `Multiply Attribute` effect for the xsEffectAmount function
+This is the ID of the `Multiply Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -126,7 +126,7 @@ This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
 Value: `#!xs int 6`
 
-This is the ID of the `Multiply Resource` effect for the xsEffectAmount function
+This is the ID of the `Multiply Resource` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -146,7 +146,7 @@ This multiplies the food amount by 10 (the value)
 
 Value: `#!xs int 7`
 
-This is the ID of the `Spawn Unit` effect for the xsEffectAmount function
+This is the ID of the `Spawn Unit` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -168,7 +168,7 @@ This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2
 
 Value: `#!xs int 8`
 
-This is the ID of the `Modify Technology` effect for the xsEffectAmount function
+This is the ID of the `Modify Technology` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -188,7 +188,7 @@ This sets the research time of tech 22 (loom) to 10s (the value). Alternatively,
 
 Value: `#!xs int 9`
 
-This is the ID of the `Set Player Data` effect for the xsEffectAmount function
+This is the ID of the `Set Player Data` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -208,7 +208,7 @@ This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
 Value: `#!xs int 10`
 
-This is the ID of the `Set Unit Attribute` effect for the xsEffectAmount function
+This is the ID of the `Set Unit Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -228,7 +228,7 @@ This sets unit 0's HP to 40. This is the same as modify object attribute in the 
 
 Value: `#!xs int 11`
 
-This is the ID of the `Add Unit Attribute` effect for the xsEffectAmount function
+This is the ID of the `Add Unit Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -248,7 +248,7 @@ This adds 40 to unit 0's HP. This is the same as modify object attribute in the 
 
 Value: `#!xs int 12`
 
-This is the ID of the `Multiply Unit Attribute` effect for the xsEffectAmount function
+This is the ID of the `Multiply Unit Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -268,7 +268,7 @@ This multiplies unit 0's HP by 40. This is the same as modify object attribute i
 
 Value: `#!xs int 100`
 
-This is the ID of the `Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
+This is the ID of the `Set Technology Cost` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -288,7 +288,7 @@ This sets the food cost of tech 22 (loom) to 10 (the value)
 
 Value: `#!xs int 101`
 
-This is the ID of the `Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
+This is the ID of the `Add Technology Cost` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -308,7 +308,7 @@ This adds 10 (the) to the current food cost of tech 22 (loom)
 
 Value: `#!xs int 102`
 
-This is the ID of the `Disable Tech` effect for the xsEffectAmount function
+This is the ID of the `Disable Tech` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -328,7 +328,7 @@ This disables the tech 22 (loom)
 
 Value: `#!xs int 103`
 
-This is the ID of the `Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
+This is the ID of the `Modify Technology Time` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -348,7 +348,7 @@ This sets the research time of tech 22 (loom) to 10s (the value). Alternatively,
 
 Value: `#!xs int -1`
 
-This is the ID of the `Gaia Set Attribute` effect of the xsEffectAmount function
+This is the ID of the `Gaia Set Attribute` effect of the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -368,7 +368,7 @@ This sets the attribute 0 (HP) of unit 74 (militia) to 100 (the value)
 
 Value: `#!xs int -2`
 
-This is the ID of the `Gaia Modify Resource` effect for the xsEffectAmount function
+This is the ID of the `Gaia Modify Resource` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -388,7 +388,7 @@ This adds 100 to the current food amount. Alternatively, `cAttributeSet` may be 
 
 Value: `#!xs int -3`
 
-This is the ID of the `Gaia Enable (or disable) Object` effect for the xsEffectAmount function
+This is the ID of the `Gaia Enable (or disable) Object` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -408,7 +408,7 @@ This disables the unit 74 (militia). Alternatively, `cAttributeEnable` may be us
 
 Value: `#!xs int -4`
 
-This is the ID of the `Gaia Upgrade Unit` effect for the xsEffectAmount function
+This is the ID of the `Gaia Upgrade Unit` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -428,7 +428,7 @@ This replaces all units 74 (militia) with 75 (man at arms) on the map and also d
 
 Value: `#!xs int -5`
 
-This is the ID of the `Gaia Add Attribute` effect for the xsEffectAmount function
+This is the ID of the `Gaia Add Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -448,7 +448,7 @@ This adds 100 (the value) to the attribute 0 (HP) of unit 74 (militia)
 
 Value: `#!xs int -6`
 
-This is the ID of the `Gaia Multiply Attribute` effect for the xsEffectAmount function
+This is the ID of the `Gaia Multiply Attribute` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -468,7 +468,7 @@ This multiplies the attribute 0 (HP) of unit 74 (militia) by 100 (the value)
 
 Value: `#!xs int -7`
 
-This is the ID of the `Gaia Multiply Resource` effect for the xsEffectAmount function
+This is the ID of the `Gaia Multiply Resource` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -488,7 +488,7 @@ This multiplies the food amount by 10 (the value)
 
 Value: `#!xs int -8`
 
-This is the ID of the `Gaia Spawn Unit` effect for the xsEffectAmount function
+This is the ID of the `Gaia Spawn Unit` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -510,7 +510,7 @@ This will spawn 5 villagers (83) from each town centre (109), for a maximum of 2
 
 Value: `#!xs int -9`
 
-This is the ID of the `Gaia Modify Technology` effect for the xsEffectAmount function
+This is the ID of the `Gaia Modify Technology` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -530,7 +530,7 @@ This sets the research time of tech 22 (loom) to 10s (the value). Alternatively,
 
 Value: `#!xs int -10`
 
-This is the ID of the `Gaia Set Player Data` effect for the xsEffectAmount function
+This is the ID of the `Gaia Set Player Data` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -550,7 +550,7 @@ This sets the player data 0 (Civilization Name ID) to 10230 (the value)
 
 Value: `#!xs int -101`
 
-This is the ID of the `Gaia Set Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
+This is the ID of the `Gaia Set Technology Cost` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -570,7 +570,7 @@ This sets the food cost of tech 22 (loom) to 10 (the value)
 
 Value: `#!xs int -102`
 
-This is the ID of the `Gaia Add Technology Cost` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
+This is the ID of the `Gaia Add Technology Cost` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
@@ -590,7 +590,7 @@ This adds 10 (the) to the current food cost of tech 22 (loom)
 
 Value: `#!xs int -103`
 
-This is the ID of the `Gaia Disable Tech` effect for the xsEffectAmount function
+This is the ID of the `Gaia Disable Tech` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
 Syntax:
 
@@ -610,7 +610,7 @@ This disables the tech 22 (loom)
 
 Value: `#!xs int -104`
 
-This is the ID of the `Gaia Modify Technology Time` effect for the xsEffectAmount function. No Longer works, use `cModifyTech` instead
+This is the ID of the `Gaia Modify Technology Time` effect for the [xsEffectAmount](../../functions/player/#1-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. No Longer works, use `cModifyTech` instead
 
 Syntax:
 
