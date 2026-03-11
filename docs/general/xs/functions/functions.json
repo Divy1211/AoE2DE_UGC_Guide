@@ -929,19 +929,6 @@
             "desc": "Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\\pi, \\pi]$"
         },
         {
-            "name": "xsCeilToInt",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "value",
-                    "type": "float",
-                    "required": true,
-                    "desc": "The value to determine the ceil of"
-                }
-            ],
-            "desc": "Rounds the number **up** to the next integer"
-        },
-        {
             "name": "atan2v",
             "return_type": "float",
             "params": [
@@ -1018,9 +1005,22 @@
                 }
             ],
             "desc": "Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `#!rs std::mem::transmute::<f32, i32>(number)`"
+        },
+        {
+            "name": "xsCeilToInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to determine the ceil of"
+                }
+            ],
+            "desc": "Rounds the number **up** to the next integer"
         }
     ],
-    "general": [
+    "randomization": [
         {
             "name": "xsGetRandomNumber",
             "return_type": "int",
@@ -1058,6 +1058,173 @@
                 }
             ],
             "desc": "Returns a random number between 0 and `max`."
+        }
+    ],
+    "techs": [
+        {
+            "name": "xsResearchTechnology",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The technology ID to research."
+                },
+                {
+                    "name": "force",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false"
+                },
+                {
+                    "name": "techAvailable",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "This flag determines if it is required to check if a tech is available before researching it"
+                },
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to research the technology for"
+                }
+            ],
+            "desc": "Returns a boolean based on whether the technology was researched or not."
+        },
+        {
+            "name": "xsGetTechName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech to get the name for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the tech's name for"
+                },
+                {
+                    "name": "internalName",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Returns the internal name of the tech if set. `!#xs false` by default."
+                }
+            ],
+            "desc": "Returns the current name of the given tech for the specified player."
+        },
+        {
+            "name": "xsGetTechState",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech to get the state for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the tech's state for"
+                }
+            ],
+            "desc": "Returns one of the [cTechState constants](../../constants/tech_state \"Jump To: XS > Constant Reference > Tech State Constants\") based on the tech's status"
+        }
+    ],
+    "player": [
+        {
+            "name": "xsEffectAmount",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "effectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the effect to use"
+                },
+                {
+                    "name": "objectOrTechnologyId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object or technology to effect"
+                },
+                {
+                    "name": "attributeOrOperation",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The attribute to modify or the operation to perform"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value of the effect"
+                },
+                {
+                    "name": "playerNumber",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The player to apply the effect to. If unspecified, applies to all players except Gaia."
+                }
+            ],
+            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch](\"Jump to: UserPatch NON EXISTENT\") section of the guide"
+        },
+        {
+            "name": "xsGetPlayerUnitIds",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the unit IDs for"
+                },
+                {
+                    "name": "objectOrClassId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object or class to get the unit reference IDs for"
+                },
+                {
+                    "name": "arrayId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Reuse an existing array to save memory"
+                }
+            ],
+            "desc": "Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor"
+        },
+        {
+            "name": "xsGetHandicapMultiplier",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the handicap for"
+                }
+            ],
+            "desc": "Returns the handicap multiplier for the given player (a float between 1 and 2)"
+        },
+        {
+            "name": "xsGetWorldPlayerId",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "scxPlayerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the world index (lobby slot) for"
+                }
+            ],
+            "desc": "Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario."
         },
         {
             "name": "xsGetPlayerCivilization",
@@ -1070,7 +1237,7 @@
                     "desc": "The player to get the civilization of"
                 }
             ],
-            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../../constants/#3-civs \"Jump to: XS Scripting > Constant Reference > #3. Civs\") for all the different civ IDs"
+            "desc": "Returns the civilization ID of the given player. Refer to the [Constant Reference](../../constants/aoe2_civs \"Jump to: XS Scripting > Constant Reference > #3. Civs\") for all the different civ IDs"
         },
         {
             "name": "xsGetPlayerInGame",
@@ -1086,79 +1253,6 @@
             "desc": "Returns true if the player given is still alive, and false otherwise."
         },
         {
-            "name": "xsGetMapName",
-            "return_type": "string",
-            "params": [
-                {
-                    "name": "showFileExtension",
-                    "type": "bool",
-                    "required": true,
-                    "desc": "If this is set to true, then the returned name also contains the file extension"
-                }
-            ],
-            "desc": "Returns the name of the map currently being played."
-        },
-        {
-            "name": "xsGetMapID",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the AI map type."
-        },
-        {
-            "name": "xsGetMapHeight",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the Height of the map."
-        },
-        {
-            "name": "xsGetMapWidth",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the Width of the map."
-        },
-        {
-            "name": "xsGetVictoryType",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns an integer corresponding to different victory settings in game. These are:\n\n 0: Standard\n\n1: Conquest\n\n2: Time Limit\n\n3: Score\n\n4: Custom (scenarios only).\n\nLast Man Standing returns 0 as well."
-        },
-        {
-            "name": "xsGetVictoryPlayer",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument."
-        },
-        {
-            "name": "xsGetVictoryPlayerForSecondaryGameMode",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH"
-        },
-        {
-            "name": "xsGetVictoryTime",
-            "return_type": "int",
-            "params": [],
-            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
-        },
-        {
-            "name": "xsGetVictoryTimeForSecondaryGameMode",
-            "return_type": "int",
-            "params": [],
-            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
-        },
-        {
-            "name": "xsGetVictoryCondition",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
-        },
-        {
-            "name": "xsGetVictoryConditionForSecondaryGameMode",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
-        },
-        {
             "name": "xsGetPlayerNumberOfTechs",
             "return_type": "int",
             "params": [
@@ -1170,49 +1264,6 @@
                 }
             ],
             "desc": "Returns the number of technologies available to the player in the entire game."
-        },
-        {
-            "name": "xsObjectHasAction",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to check unit actions for"
-                },
-                {
-                    "name": "objectOrClassId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or class to check actions for"
-                },
-                {
-                    "name": "actionId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The type of action to check for"
-                },
-                {
-                    "name": "targetPlayerId",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter."
-                },
-                {
-                    "name": "targetType",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter."
-                },
-                {
-                    "name": "targetUnitLevel",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter."
-                }
-            ],
-            "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
         },
         {
             "name": "xsPlayerAttribute",
@@ -1259,186 +1310,89 @@
             "desc": "Sets the amount of the specified resource of the given player to the provided value."
         },
         {
-            "name": "xsTriggerVariable",
+            "name": "xsGetPlayerName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The lobby index of the player"
+                }
+            ],
+            "desc": "Returns the given player's name."
+        },
+        {
+            "name": "xsGetPlayerType",
             "return_type": "int",
             "params": [
                 {
-                    "name": "variableId",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the variable to get the value of"
+                    "desc": "The player to get the type for"
                 }
             ],
-            "desc": "Returns the value of the variable of the given variable ID."
+            "desc": "Returns the type of player. Refer to the [Constant Reference](../../constants/player_type \"Jump to: XS Scripting > Constant Reference > #17. Player Type\") for all the different player types"
         },
         {
-            "name": "xsSetTriggerVariable",
-            "return_type": "void",
+            "name": "xsGetDiplomacy",
+            "return_type": "int",
             "params": [
-                {
-                    "name": "variableId",
+                 {
+                    "name": "sourcePlayerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the variable to set the value of"
+                    "desc": "The player to get the stance for"
                 },
                 {
-                    "name": "value",
+                    "name": "targetPlayerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The value to set the variable to"
+                    "desc": "The player to get the stance towards"
                 }
             ],
-            "desc": "Sets the value of the variable of the given variable ID to the provided value."
+            "desc": "Returns the source player's stance towards the target player"
         },
         {
-            "name": "xsGetNumPlayers",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the number of players in the game"
-        },
-        {
-            "name": "xsChatData",
-            "return_type": "void",
-            "params": [
-                {
-                    "name": "message",
-                    "type": "string",
-                    "required": true,
-                    "desc": "The message to display in chat"
-                },
-                {
-                    "name": "value",
-                    "type": "int",
-                    "required": false,
-                    "desc": "This value is inserted in place of any `%d` used in the message of the function"
-                }
-            ],
-            "desc": "Shows the given message in the game chat"
-        },
-        {
-            "name": "xsGetTime",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the current game time - 1 in seconds"
-        },
-        {
-            "name": "xsGetGameTime",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the current game time in seconds"
-        },
-        {
-            "name": "xsGetWorldTime",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the current game time in milliseconds"
-        },
-        {
-            "name": "xsEffectAmount",
-            "return_type": "void",
-            "params": [
-                {
-                    "name": "effectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the effect to use"
-                },
-                {
-                    "name": "objectOrTechnologyId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or technology to effect"
-                },
-                {
-                    "name": "attributeOrOperation",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The attribute to modify or the operation to perform"
-                },
-                {
-                    "name": "value",
-                    "type": "float",
-                    "required": true,
-                    "desc": "The value of the effect"
-                },
-                {
-                    "name": "playerNumber",
-                    "type": "int",
-                    "required": false,
-                    "desc": "The player to apply the effect to. If unspecified, applies to all players except Gaia."
-                }
-            ],
-            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. For more information on this, check the [UserPatch](\"Jump to: UserPatch NON EXISTENT\") section of the guide"
-        },
-        {
-            "name": "xsResearchTechnology",
+            "name": "xsSetDiplomacy",
             "return_type": "bool",
             "params": [
-                {
-                    "name": "techId",
+                 {
+                    "name": "sourcePlayerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The technology ID to research."
+                    "desc": "The player to set the stance for"
                 },
                 {
-                    "name": "force",
-                    "type": "bool",
-                    "required": true,
-                    "desc": "Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false"
-                },
-                {
-                    "name": "techAvailable",
-                    "type": "bool",
-                    "required": true,
-                    "desc": "This flag determines if it is required to check if a tech is available before researching it"
-                },
-                {
-                    "name": "playerNumber",
+                    "name": "targetPlayerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to research the technology for"
+                    "desc": "The player to set the stance towards"
+                },
+                {
+                    "name": "diploStance",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The stance to set"
+                },
+                {
+                    "name": "mirror",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, make the target player set their stance towards the source player to the same."
                 }
             ],
-            "desc": "Returns a boolean based on whether the technology was researched or not."
+            "desc": "Sets the diplomacy of source player towards the target player"
         },
         {
-            "name": "xsGetObjectCount",
+            "name": "xsGetDifficulty",
             "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object count for"
-                },
-                {
-                    "name": "objectOrClassId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or class to get the count for"
-                }
-            ],
-            "desc": "Returns the number of currently alive objects with the given ID of the specified player"
-        },
-        {
-            "name": "xsGetObjectCountTotal",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object count for"
-                },
-                {
-                    "name": "objectOrClassId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or class to get the count for"
-                }
-            ],
-            "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
-        },
+            "params": [],
+            "desc": "Returns the difficulty setting for the game. Refer to the [Constant Reference](../../constants/difficulty \"Jump to: XS Scripting > Constant Reference > #20. Difficulty\") for all the different difficulty IDs"
+        }
+    ],
+    "tasks": [
         {
             "name": "xsTaskAmount",
             "return_type": "void",
@@ -1447,7 +1401,7 @@
                     "name": "taskFieldId",
                     "type": "int",
                     "required": true,
-                    "desc": "Specifies which property of the task to change. Refer to [cTaskAttr constants](../../constants/#13-task-attribute \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Specifies which property of the task to change. Refer to [cTaskAttr constants](../../constants/task_attribute \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "value",
@@ -1456,13 +1410,158 @@
                     "desc": "The value to set the task field to"
                 }
             ],
-            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#563-xstask). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail."
+            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#8-xsmodifyobjecttasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail."
         },
         {
             "name": "xsResetTaskAmount",
             "return_type": "void",
             "params": [],
-            "desc": "Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#563-xstask)."
+            "desc": "Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#8-xsmodifyobjecttasks)."
+        },
+        {
+            "name": "xsGetObjectTaskCount",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the number of tasks for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whose object to get the number of tasks for"
+                }
+            ],
+            "desc": "Returns the number of tasks the specific object for the given player has"
+        },
+        {
+            "name": "xsGetUnitTaskCount",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the number of tasks for"
+                }
+            ],
+            "desc": "Returns the number of tasks the given unit has"
+        },
+        {
+            "name": "xsObjectTaskAmount",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to get the task for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whose object to get the task for"
+                },
+                {
+                    "name": "taskId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID (index) of the task to get"
+                }
+            ],
+            "desc": "Copies the provided task of the specific object from the given player into XS' global task struct"
+        },
+        {
+            "name": "xsUnitTaskAmount",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the unit to get the task for"
+                },
+                {
+                    "name": "taskId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID (index) of the task to get"
+                }
+            ],
+            "desc": "Copies the provided task of the specific unit into XS' global task struct"
+        },
+        {
+            "name": "xsGetTaskAmount",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "taskFieldId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The task field to ge the value for. Refer to the [Constant Reference](../../constants/task_attribute \"Jump to: XS Scripting > Constant Reference > #13. Task Attribute\") for all the different task field IDs"
+                }
+            ],
+            "desc": "Returns the given task field from XS' global task struct."
+        },
+        {
+            "name": "xsModifyObjectTasks",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to modify the task for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whose object to modify the task for"
+                },
+                {
+                    "name": "taskId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to insert the task at"
+                },
+                {
+                    "name": "edit",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
+                }
+            ],
+            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.\n    - ID N will insert the task at index N\n    - When `#!xs edit = true`, edit an existing task instead of inserting one.\n    - ID -(N+1) will remove the task at index N"
+        },
+        {
+            "name": "xsModifyUnitTasks",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the unit on the map to modify the task for"
+                },
+                {
+                    "name": "taskId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to insert the task at"
+                },
+                {
+                    "name": "edit",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
+                }
+            ],
+            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.\n    - ID N will insert the task at index N\n    - When `#!xs edit = true`, edit an existing task instead of inserting one.\n    - ID -(N+1) will remove the task at index N"
         },
         {
             "name": "xsTask",
@@ -1478,7 +1577,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Refer to [cTaskType constants](../../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Task type. Refer to [cTaskType constants](../../constants/task_type \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "targetObjectOrClassId",
@@ -1493,7 +1592,7 @@
                     "desc": "The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia."
                 }
             ],
-            "desc": "Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#564-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.\n\nNote that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#564-xstaskamount)) and then submitting multiple copies of it for different people)"
+            "desc": "Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#1-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.\n\nNote that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#1-xstaskamount)) and then submitting multiple copies of it for different people)"
         },
         {
             "name": "xsRemoveTask",
@@ -1509,7 +1608,7 @@
                     "name": "actionType",
                     "type": "int",
                     "required": true,
-                    "desc": "Task type. Refer to [cTaskType constants](../../constants/#14-task-type \"Jump To: XS > Constant Reference > Task Type Constants\")"
+                    "desc": "Task type. Refer to [cTaskType constants](../../constants/task_type \"Jump To: XS > Constant Reference > Task Type Constants\")"
                 },
                 {
                     "name": "targetObjectOrClassId",
@@ -1524,7 +1623,65 @@
                     "desc": "The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia."
                 }
             ],
-            "desc": "Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#564-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#563-xstask) edits instead of adding a new task)"
+            "desc": "Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#1-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#1-xstask) edits instead of adding a new task)"
+        }
+    ],
+    "units_objects": [
+        {
+            "name": "xsCreateUnit",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to create"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to create the unit for"
+                },
+                {
+                    "name": "location",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The location to create the unit at"
+                },
+                {
+                    "name": "foundation",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, create a foundation (ignored for non buildings)"
+                },
+                {
+                    "name": "playCreatedSound",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If false, don't play the unit creation sound"
+                },
+                {
+                    "name": "checkCollision",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If false, don't check for collision before creating the unit"
+                }
+            ],
+            "desc": "Creates a unit on the map and returns its ID, or -1 if creation failed"
+        },
+        {
+            "name": "xsRemoveUnit",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to remove"
+                }
+            ],
+            "desc": "Removes the given unit from the map"
         },
         {
             "name": "xsGetObjectAttribute",
@@ -1556,37 +1713,6 @@
                 }
             ],
             "desc": "Returns the attribute value for an object"
-        },
-        {
-            "name": "xsGetTurn",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the current game tick (called turn)."
-        },
-        {
-            "name": "xsGetPlayerUnitIds",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the unit IDs for"
-                },
-                {
-                    "name": "objectOrClassId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or class to get the unit reference IDs for"
-                },
-                {
-                    "name": "arrayId",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Reuse an existing array to save memory"
-                }
-            ],
-            "desc": "Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor"
         },
         {
             "name": "xsGetUnitAttribute",
@@ -1640,19 +1766,6 @@
             "desc": "Returns the lobby index of the player owning this unit."
         },
         {
-            "name": "xsGetPlayerName",
-            "return_type": "string",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The lobby index of the player"
-                }
-            ],
-            "desc": "Returns the given player's name."
-        },
-        {
             "name": "xsGetUnitPosition",
             "return_type": "vector",
             "params": [
@@ -1664,6 +1777,31 @@
                 }
             ],
             "desc": "Returns the current position of a unit."
+        },
+        {
+            "name": "xsSetUnitPosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the position for"
+                },
+                {
+                    "name": "position",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The position to set"
+                },
+                {
+                    "name": "checkCollision",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If false, don't check for collision before moving the unit"
+                }
+            ],
+            "desc": "Sets the given unit's position."
         },
         {
             "name": "xsGetUnitName",
@@ -1683,6 +1821,31 @@
                 }
             ],
             "desc": "Returns the current name of a given unit"
+        },
+        {
+            "name": "xsGetObjectName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the name for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's name for"
+                },
+                {
+                    "name": "internalName",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Returns the internal name of the object if set. `!#xs false` by default."
+                }
+            ],
+            "desc": "Returns the current name of the given object for the specified player."
         },
         {
             "name": "xsGetUnitTargetUnitId",
@@ -1737,31 +1900,6 @@
             "desc": "Returns the location this group (formation) is currently moving to"
         },
         {
-            "name": "xsGetObjectName",
-            "return_type": "string",
-            "params": [
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to get the name for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object's name for"
-                },
-                {
-                    "name": "internalName",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "Returns the internal name of the object if set. `!#xs false` by default."
-                }
-            ],
-            "desc": "Returns the current name of the given object for the specified player."
-        },
-        {
             "name": "xsIsObjectAvailable",
             "return_type": "bool",
             "params": [
@@ -1780,51 +1918,7 @@
             ],
             "desc": "Returns true if this object can currently be trained or built."
         },
-        {
-            "name": "xsGetTechName",
-            "return_type": "string",
-            "params": [
                 {
-                    "name": "techId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The tech to get the name for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the tech's name for"
-                },
-                {
-                    "name": "internalName",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "Returns the internal name of the tech if set. `!#xs false` by default."
-                }
-            ],
-            "desc": "Returns the current name of the given tech for the specified player."
-        },
-        {
-            "name": "xsGetTechState",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "techId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The tech to get the state for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the tech's state for"
-                }
-            ],
-            "desc": "Returns one of the [cTechState constants](../../constants/#15-techstate \"Jump To: XS > Constant Reference > Tech State Constants\") based on the tech's status"
-        },
-        {
             "name": "xsGetUnitHitpoints",
             "return_type": "float",
             "params": [
@@ -1944,7 +2038,7 @@
                     "desc": "The unit to get the class for"
                 }
             ],
-            "desc": "Returns the given unit's class See [cClass constants](../../constants/#10-effectamount-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
+            "desc": "Returns the given unit's class See [cClass constants](../../constants/object_class \"Jump To: XS > Constant Reference > Object Class\")"
         },
         {
             "name": "xsGetObjectClass",
@@ -1963,7 +2057,7 @@
                     "desc": "The object to get the class for"
                 }
             ],
-            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/#10-object-class \"Jump To: XS > Constant Reference > EffectAmount Object Class\")"
+            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/object_class \"Jump To: XS > Constant Reference > Object Class\")"
         },
         {
             "name": "xsGetUnitType",
@@ -1976,7 +2070,7 @@
                     "desc": "The unit to get the type for"
                 }
             ],
-            "desc": "Returns the given unit's type. See [cObjectType constants](../../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
+            "desc": "Returns the given unit's type. See [cObjectType constants](../../constants/object_type \"Jump To: XS > Constant Reference > Object Type\")"
         },
         {
             "name": "xsGetObjectType",
@@ -1995,7 +2089,7 @@
                     "desc": "The object to get the type for"
                 }
             ],
-            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/#16-object-type \"Jump To: XS > Constant Reference > Object Type\")"
+            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/object_type \"Jump To: XS > Constant Reference > Object Type\")"
         },
         {
             "name": "xsGetUnitAttributeTypesHeld",
@@ -2087,57 +2181,6 @@
             "desc": "Sets the given unit's charge"
         },
         {
-            "name": "xsSetUnitPosition",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "unitId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The unit to set the position for"
-                },
-                {
-                    "name": "position",
-                    "type": "vector",
-                    "required": true,
-                    "desc": "The position to set"
-                },
-                {
-                    "name": "checkCollision",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If false, don't check for collision before moving the unit"
-                }
-            ],
-            "desc": "Sets the given unit's position."
-        },
-        {
-            "name": "xsGetHandicapMultiplier",
-            "return_type": "float",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the handicap for"
-                }
-            ],
-            "desc": "Returns the handicap multiplier for the given player (a float between 1 and 2)"
-        },
-        {
-            "name": "xsGetWorldPlayerId",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "scxPlayerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the world index (lobby slot) for"
-                }
-            ],
-            "desc": "Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario."
-        },
-        {
             "name": "xsGetGarrisonedInUnitId",
             "return_type": "int",
             "params": [
@@ -2164,86 +2207,124 @@
             "desc": "Returns an int array which contains the IDs of all the units garrisoned inside this unit"
         },
         {
-            "name": "xsGetPlayerType",
+            "name": "xsGetObjectCount",
             "return_type": "int",
             "params": [
                 {
                     "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to get the type for"
-                }
-            ],
-            "desc": "Returns the type of player. Refer to the [Constant Reference](../../constants/#17-player-type \"Jump to: XS Scripting > Constant Reference > #17. Player Type\") for all the different player types"
-        },
-        {
-            "name": "xsRemoveUnit",
-            "return_type": "bool",
-            "params": [
+                    "desc": "The player to get the object count for"
+                },
                 {
-                    "name": "unitId",
+                    "name": "objectOrClassId",
                     "type": "int",
                     "required": true,
-                    "desc": "The unit to remove"
+                    "desc": "The ID of the object or class to get the count for"
                 }
             ],
-            "desc": "Removes the given unit from the map"
+            "desc": "Returns the number of currently alive objects with the given ID of the specified player"
         },
         {
-            "name": "xsGetDiplomacy",
+            "name": "xsGetObjectCountTotal",
             "return_type": "int",
             "params": [
-                 {
-                    "name": "sourcePlayerId",
+                {
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to get the stance for"
+                    "desc": "The player to get the object count for"
                 },
                 {
-                    "name": "targetPlayerId",
+                    "name": "objectOrClassId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to get the stance towards"
+                    "desc": "The ID of the object or class to get the count for"
                 }
             ],
-            "desc": "Returns the source player's stance towards the target player"
+            "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
         },
         {
-            "name": "xsSetDiplomacy",
+            "name": "xsObjectHasAction",
             "return_type": "bool",
             "params": [
-                 {
-                    "name": "sourcePlayerId",
+                {
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to set the stance for"
+                    "desc": "The player to check unit actions for"
+                },
+                {
+                    "name": "objectOrClassId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object or class to check actions for"
+                },
+                {
+                    "name": "actionId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The type of action to check for"
                 },
                 {
                     "name": "targetPlayerId",
                     "type": "int",
-                    "required": true,
-                    "desc": "The player to set the stance towards"
-                },
-                {
-                    "name": "diploStance",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The stance to set"
-                },
-                {
-                    "name": "mirror",
-                    "type": "bool",
                     "required": false,
-                    "desc": "If true, make the target player set their stance towards the source player to the same."
+                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter."
+                },
+                {
+                    "name": "targetType",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter."
+                },
+                {
+                    "name": "targetUnitLevel",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter."
                 }
             ],
-            "desc": "Sets the diplomacy of source player towards the target player"
+            "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
+        }
+    ],
+    "map": [
+        {
+            "name": "xsGetMapName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "showFileExtension",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "If this is set to true, then the returned name also contains the file extension"
+                }
+            ],
+            "desc": "Returns the name of the map currently being played."
+        },
+        {
+            "name": "xsGetMapID",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the AI map type."
+        },
+        {
+            "name": "xsGetMapHeight",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the Height of the map."
+        },
+        {
+            "name": "xsGetMapWidth",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the Width of the map."
         },
         {
             "name": "xsGetColorMood",
             "return_type": "int",
             "params": [],
-            "desc": "Returns the current color mood of the map. Refer to the [Constant Reference](../../constants/#19-color-mood \"Jump to: XS Scripting > Constant Reference > #19. Color Mood\") for all the different color mood IDs"
+            "desc": "Returns the current color mood of the map. Refer to the [Constant Reference](../../constants/color_mood \"Jump to: XS Scripting > Constant Reference > Color Mood\") for all the different color mood IDs"
         },
         {
             "name": "xsSetColorMood",
@@ -2262,204 +2343,137 @@
                     "desc": "The transition duration in seconds"
                 }
             ],
-            "desc": "Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../../constants/#19-color-mood \"Jump to: XS Scripting > Constant Reference > #19. Color Mood\") for all the different color mood IDs"
+            "desc": "Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../../constants/color_mood \"Jump to: XS Scripting > Constant Reference > Color Mood\") for all the different color mood IDs"
         },
         {
-            "name": "xsGetDifficulty",
-            "return_type": "int",
-            "params": [],
-            "desc": "Returns the difficulty setting for the game. Refer to the [Constant Reference](../../constants/#20-difficulty \"Jump to: XS Scripting > Constant Reference > #20. Difficulty\") for all the different difficulty IDs"
-        },
-        {
-            "name": "xsCreateUnit",
+            "name": "xsTriggerVariable",
             "return_type": "int",
             "params": [
                 {
-                    "name": "objectId",
+                    "name": "variableId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the object to create"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to create the unit for"
-                },
-                {
-                    "name": "location",
-                    "type": "vector",
-                    "required": true,
-                    "desc": "The location to create the unit at"
-                },
-                {
-                    "name": "foundation",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If true, create a foundation (ignored for non buildings)"
-                },
-                {
-                    "name": "playCreatedSound",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If false, don't play the unit creation sound"
-                },
-                {
-                    "name": "checkCollision",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If false, don't check for collision before creating the unit"
+                    "desc": "The ID of the variable to get the value of"
                 }
             ],
-            "desc": "Creates a unit on the map and returns its ID, or -1 if creation failed"
+            "desc": "Returns the value of the variable of the given variable ID."
         },
         {
-            "name": "xsGetObjectTaskCount",
-            "return_type": "int",
+            "name": "xsSetTriggerVariable",
+            "return_type": "void",
             "params": [
                 {
-                    "name": "objectId",
+                    "name": "variableId",
                     "type": "int",
                     "required": true,
-                    "desc": "The ID of the object to get the number of tasks for"
+                    "desc": "The ID of the variable to set the value of"
                 },
                 {
-                    "name": "playerId",
+                    "name": "value",
                     "type": "int",
                     "required": true,
-                    "desc": "The player whose object to get the number of tasks for"
+                    "desc": "The value to set the variable to"
                 }
             ],
-            "desc": "Returns the number of tasks the specific object for the given player has"
-        },
-        {
-            "name": "xsGetUnitTaskCount",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "unitId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object to get the number of tasks for"
-                }
-            ],
-            "desc": "Returns the number of tasks the given unit has"
-        },
-        {
-            "name": "xsObjectTaskAmount",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object to get the task for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player whose object to get the task for"
-                },
-                {
-                    "name": "taskId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID (index) of the task to get"
-                }
-            ],
-            "desc": "Copies the provided task of the specific object from the given player into XS' global task struct"
-        },
-        {
-            "name": "xsUnitTaskAmount",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "unitId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the unit to get the task for"
-                },
-                {
-                    "name": "taskId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID (index) of the task to get"
-                }
-            ],
-            "desc": "Copies the provided task of the specific unit into XS' global task struct"
-        },
-        {
-            "name": "xsGetTaskAmount",
-            "return_type": "float",
-            "params": [
-                {
-                    "name": "taskFieldId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The task field to ge the value for. Refer to the [Constant Reference](../../constants/#13-task-attribute \"Jump to: XS Scripting > Constant Reference > #13. Task Attribute\") for all the different task field IDs"
-                }
-            ],
-            "desc": "Returns the given task field from XS' global task struct."
-        },
-        {
-            "name": "xsModifyObjectTasks",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object to modify the task for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player whose object to modify the task for"
-                },
-                {
-                    "name": "taskId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The index to insert the task at"
-                },
-                {
-                    "name": "edit",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
-                }
-            ],
-            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.\n    - ID N will insert the task at index N\n    - When `#!xs edit = true`, edit an existing task instead of inserting one.\n    - ID -(N+1) will remove the task at index N"
-        },
-        {
-            "name": "xsModifyUnitTasks",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "unitId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the unit on the map to modify the task for"
-                },
-                {
-                    "name": "taskId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The index to insert the task at"
-                },
-                {
-                    "name": "edit",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
-                }
-            ],
-            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.\n    - ID N will insert the task at index N\n    - When `#!xs edit = true`, edit an existing task instead of inserting one.\n    - ID -(N+1) will remove the task at index N"
+            "desc": "Sets the value of the variable of the given variable ID to the provided value."
         }
     ],
-    "Read/Write": [
+    "game info": [
+        {
+            "name": "xsGetNumPlayers",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the number of players in the game"
+        },
+        {
+            "name": "xsGetTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game time - 1 in seconds"
+        },
+        {
+            "name": "xsGetGameTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game time in seconds"
+        },
+        {
+            "name": "xsGetWorldTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game time in milliseconds"
+        },
+        {
+            "name": "xsGetTurn",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the current game tick (called turn). Note: ticks may differ in games and replays"
+        },
+        {
+            "name": "xsGetVictoryType",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns an integer corresponding to different victory settings in game. These are:\n\n 0: Standard\n\n1: Conquest\n\n2: Time Limit\n\n3: Score\n\n4: Custom (scenarios only).\n\nLast Man Standing returns 0 as well."
+        },
+        {
+            "name": "xsGetVictoryPlayer",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument."
+        },
+        {
+            "name": "xsGetVictoryPlayerForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH"
+        },
+        {
+            "name": "xsGetVictoryTime",
+            "return_type": "int",
+            "params": [],
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
+        },
+        {
+            "name": "xsGetVictoryTimeForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise"
+        },
+        {
+            "name": "xsGetVictoryCondition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
+        },
+        {
+            "name": "xsGetVictoryConditionForSecondaryGameMode",
+            "return_type": "int",
+            "params": [],
+            "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
+        }
+    ],
+    "ui": [
+        {
+            "name": "xsChatData",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The message to display in chat"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": false,
+                    "desc": "This value is inserted in place of any `%d` used in the message of the function"
+                }
+            ],
+            "desc": "Shows the given message in the game chat"
+        }
+    ],
+    "File IO": [
         {
             "name": "xsCreateFile",
             "return_type": "bool",
@@ -2583,7 +2597,7 @@
                     "name": "dataType",
                     "type": "int",
                     "required": true,
-                    "desc": "The [cOffset constants](../../constants/#1-readwrite \"Jump To: XS > Constant Reference > Read/Write Constants\") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)"
+                    "desc": "The [cOffset constants](../../constants/file_io \"Jump To: XS > Constant Reference > File I/O\") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)"
                 },
                 {
                     "name": "forward",
@@ -2745,7 +2759,7 @@
                     "name": "runtimeName",
                     "type": "string",
                     "required": true,
-                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#56-xsgetmapname \"Jump To: Function Reference > xsGetMapName\") and checking the extension. To use with an AI, set the runtime name to \"Expert\" and pass the player number as the arg"
+                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](../map/#1-xsgetmapname \"Jump To: Function Reference > xsGetMapName\") and checking the extension. To use with an AI, set the runtime name to \"Expert\" and pass the player number as the arg"
                 },
                 {
                     "name": "functionName",

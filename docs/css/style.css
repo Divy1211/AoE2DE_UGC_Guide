@@ -8,12 +8,21 @@
 
 .md-nav:not([data-md-level="0"]):not([data-md-level="1"]) > .md-nav__list {
   border-left: 1px solid var(--md-default-fg-color--lightest);
-  margin-left: 0.75rem;
-  padding-left: 0.25rem;
+  margin-left: 0.3rem;
+  padding-left: 0.35rem;
 }
 
-.md-nav:not([data-md-level="0"]):not([data-md-level="1"]) > .md-nav__list > .md-nav__item + .md-nav__item {
-  margin-top: 0.5rem;
+.md-nav:not([data-md-level="0"]):not([data-md-level="1"]):not([data-md-level="2"]) > .md-nav__list > .md-nav__item:first-child > .md-nav__link {
+    margin-top: 0.0rem;
+}
+
+.md-nav[data-md-level="2"] {
+  margin-left: -.1rem !important;
+}
+
+.md-nav:not([data-md-level="0"]):not([data-md-level="1"]) .md-nav__item--nested > .md-nav__link {
+  padding-top: 0.0rem;
+  padding-bottom: 0.4rem;
 }
 
 .md-nav__link .md-nav__link--index, .md-nav--secondary .md-nav__title { background: unset !important; box-shadow: unset !important; }

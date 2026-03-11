@@ -278,201 +278,57 @@ Value: `#!xs int 45`
 
 This is the civilization ID of Georgians
 
-## 47. cAchaemenids
-
-Value: `#!xs int 46`
-
-This is the civilization ID of Achaemenids
-
-## 48. cAthenians
-
-Value: `#!xs int 47`
-
-This is the civilization ID of Athenians
-
-## 49. cSpartans
-
-Value: `#!xs int 48`
-
-This is the civilization ID of Spartans
-
-## 50. cShu
+## 47. cShu
 
 Value: `#!xs int 49`
 
 This is the civilization ID of Shu
 
-## 51. cWu
+## 48. cWu
 
 Value: `#!xs int 50`
 
 This is the civilization ID of Wu
 
-## 52. cWei
+## 49. cWei
 
 Value: `#!xs int 51`
 
 This is the civilization ID of Wei
 
-## 53. cJurchens
+## 50. cJurchens
 
 Value: `#!xs int 52`
 
 This is the civilization ID of Jurchens
 
-## 54. cKhitans
+## 51. cKhitans
 
 Value: `#!xs int 53`
 
 This is the civilization ID of Khitans
 
-## 55. cMacedonians
-
-Value: `#!xs int 54`
-
-This is the civilization ID of Macedonians
-
-## 56. cThracians
-
-Value: `#!xs int 55`
-
-This is the civilization ID of Thracians
-
-## 57. cPuru
-
-Value: `#!xs int 56`
-
-This is the civilization ID of Puru
-
-## 58. cMuisca
+## 52. cMuisca
 
 Value: `#!xs int 57`
 
 This is the civilization ID of Muisca
 
-## 59. cMapuche
+## 53. cMapuche
 
 Value: `#!xs int 58`
 
 This is the civilization ID of Mapuche
 
-## 60. cTupi
+## 54. cTupi
 
 Value: `#!xs int 59`
 
 This is the civilization ID of Tupi
 
-## 61. cNumCivs
+## 55. cNumCivs
 
 Value: `#!xs int 60`
 
 The number of civilizations for AoE2
-
-## 62. cAoeEgyptians
-
-Value: `#!xs int 1`
-
-This is the civilization ID of Aoe Egyptians
-
-## 63. cAoeGreeks
-
-Value: `#!xs int 2`
-
-This is the civilization ID of Aoe Greeks
-
-## 64. cAoeBabylonians
-
-Value: `#!xs int 3`
-
-This is the civilization ID of Aoe Babylonians
-
-## 65. cAoeAssyrians
-
-Value: `#!xs int 4`
-
-This is the civilization ID of Aoe Assyrians
-
-## 66. cAoeMinoans
-
-Value: `#!xs int 5`
-
-This is the civilization ID of Aoe Minoans
-
-## 67. cAoeHittites
-
-Value: `#!xs int 6`
-
-This is the civilization ID of Aoe Hittites
-
-## 68. cAoePhoenicians
-
-Value: `#!xs int 7`
-
-This is the civilization ID of Aoe Phoenicians
-
-## 69. cAoeSumerians
-
-Value: `#!xs int 8`
-
-This is the civilization ID of Aoe Sumerians
-
-## 70. cAoePersians
-
-Value: `#!xs int 9`
-
-This is the civilization ID of Aoe Persians
-
-## 71. cAoeShang
-
-Value: `#!xs int 10`
-
-This is the civilization ID of Aoe Shang
-
-## 72. cAoeYamato
-
-Value: `#!xs int 11`
-
-This is the civilization ID of Aoe Yamato
-
-## 73. cAoeChoson
-
-Value: `#!xs int 12`
-
-This is the civilization ID of Aoe Choson
-
-## 74. cAoeRomans
-
-Value: `#!xs int 13`
-
-This is the civilization ID of Aoe Romans
-
-## 75. cAoeCarthaginians
-
-Value: `#!xs int 14`
-
-This is the civilization ID of Aoe Carthaginians
-
-## 76. cAoePalmyrans
-
-Value: `#!xs int 15`
-
-This is the civilization ID of Aoe Palmyrans
-
-## 77. cAoeMacedonians
-
-Value: `#!xs int 16`
-
-This is the civilization ID of Aoe Macedonians
-
-## 78. cAoeLacViet
-
-Value: `#!xs int 17`
-
-This is the civilization ID of Aoe Lac Viet
-
-## 79. cNumAoeCivs
-
-Value: `#!xs int 18`
-
-The number of civilizations for RoR
 

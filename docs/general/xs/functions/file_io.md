@@ -130,7 +130,7 @@ Prototype: `#!xs bool xsOffsetFilePosition(int dataType, bool forward)`
 
 Parameters:
 
-1.  `#!xs int dataType`: The [cOffset constants](../constants/#1-readwrite "Jump To: XS > Constant Reference > Read/Write Constants") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
+1.  `#!xs int dataType`: The [cOffset constants](../../constants/file_io "Jump To: XS > Constant Reference > File I/O") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
 2. (Optional) `#!xs bool forward`: Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
 
 Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type

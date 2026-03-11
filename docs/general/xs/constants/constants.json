@@ -1,31 +1,31 @@
 {
-    "read/write": [
+    "file io": [
         {
             "name": "cOffsetString",
             "value": 0,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)",
+            "desc": "Used with the [xsOffsetFilePosition](../../functions/file_io/#12-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a string (4 bytes + a number of bytes that is determined by the integer that the first 4 bytes represent)",
             "usage": null
         },
         {
             "name": "cOffsetInteger",
             "value": 1,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)",
+            "desc": "Used with the [xsOffsetFilePosition](../../functions/file_io/#12-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store an integer (4 bytes)",
             "usage": null
         },
         {
             "name": "cOffsetFloat",
             "value": 2,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)",
+            "desc": "Used with the [xsOffsetFilePosition](../../functions/file_io/#12-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a float (4 bytes)",
             "usage": null
         },
         {
             "name": "cOffsetVector",
             "value": 3,
             "type": "int",
-            "desc": "Used with the [xsOffsetFilePosition](../../functions/#66-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)",
+            "desc": "Used with the [xsOffsetFilePosition](../../functions/file_io/#12-xsoffsetfileposition \"Jump To: XS > Function Reference > xsOffsetFilePosition\"). Makes the offset function move the file position by the number of bytes it takes to store a vector (12 bytes)",
             "usage": null
         }
     ],
@@ -87,7 +87,7 @@
             "usage": null
         }
     ],
-    "value": [
+    "language constants": [
         {
             "name": "cActivationTime",
             "value": -1,
@@ -140,7 +140,7 @@
             "usage": null
         }
     ],
-    "civilization": [
+    "aoe2 civs": [
         { 
             "name": "cGaia",
             "value": 0,
@@ -464,27 +464,6 @@
             "usage": null
         },
         {
-            "name": "cAchaemenids",
-            "value": 46,
-            "type": "int",
-            "desc": "This is the civilization ID of CIV_NAME",
-            "usage": null
-        },
-        {
-            "name": "cAthenians",
-            "value": 47,
-            "type": "int",
-            "desc": "This is the civilization ID of CIV_NAME",
-            "usage": null
-        },
-        {
-            "name": "cSpartans",
-            "value": 48,
-            "type": "int",
-            "desc": "This is the civilization ID of CIV_NAME",
-            "usage": null
-        },
-        {
             "name": "cShu",
             "value": 49,
             "type": "int",
@@ -520,27 +499,6 @@
             "usage": null
         },
         {
-            "name": "cMacedonians",
-            "value": 54,
-            "type": "int",
-            "desc": "This is the civilization ID of CIV_NAME",
-            "usage": null
-        },
-        {
-            "name": "cThracians",
-            "value": 55,
-            "type": "int",
-            "desc": "This is the civilization ID of CIV_NAME",
-            "usage": null
-        },
-        {
-            "name": "cPuru",
-            "value": 56,
-            "type": "int",
-            "desc": "This is the civilization ID of CIV_NAME",
-            "usage": null
-        },
-        {
             "name": "cMuisca",
             "value": 57,
             "type": "int",
@@ -567,7 +525,53 @@
             "type": "int",
             "desc": "The number of civilizations for AoE2",
             "usage": null
+        }
+    ],
+    "chronicles civs": [
+        {
+            "name": "cAchaemenids",
+            "value": 46,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
         },
+        {
+            "name": "cAthenians",
+            "value": 47,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cSpartans",
+            "value": 48,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+                {
+            "name": "cMacedonians",
+            "value": 54,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cThracians",
+            "value": 55,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPuru",
+            "value": 56,
+            "type": "int",
+            "desc": "This is the civilization ID of CIV_NAME",
+            "usage": null
+        }
+    ],
+    "ror civs": [
         {
             "name": "cAoeEgyptians",
             "value": 1,
@@ -1266,7 +1270,7 @@
             "usage": null
         }
     ],
-    "EffectAmount Unit Attribute": [
+    "Object Attribute": [
         {
             "name": "cHitpoints",
             "value": 0,
@@ -2339,7 +2343,7 @@
             "usage": null
         }
     ],
-    "EffectAmount Object Class": [
+    "Object Class": [
         {
             "name": "cArcherClass",
             "value": 900,

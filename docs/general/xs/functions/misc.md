@@ -61,7 +61,7 @@ Prototype: `#!xs bool xsAddRuntimeEvent(string runtimeName, string functionName,
 
 Parameters:
 
-1.  `#!xs string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#56-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
+1.  `#!xs string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](../map/#1-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 2.  `#!xs string functionName`: This is the name of a user defined function that takes a single integer argument
 3.  `#!xs int functionArgument`: This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 

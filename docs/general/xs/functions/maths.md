@@ -124,19 +124,7 @@ Parameters:
 
 Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\pi, \pi]$
 
-## 11. xsCeilToInt
-
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsCeilToInt(float value)`
-
-Parameters:
-
-1.  `#!xs float value`: The value to determine the ceil of
-
-Rounds the number **up** to the next integer
-
-## 12. atan2v
+## 11. atan2v
 
 Returning Type: `#!xs float`
 
@@ -148,7 +136,7 @@ Parameters:
 
 Returns the angle of the given vector from the X+ axis, in the range $[-\pi, \pi]$. Ignores the Z component
 
-## 13. exp
+## 12. exp
 
 Returning Type: `#!xs float`
 
@@ -160,7 +148,7 @@ Parameters:
 
 Returns $e^x$
 
-## 14. ceil
+## 13. ceil
 
 Returning Type: `#!xs float`
 
@@ -172,7 +160,7 @@ Parameters:
 
 Returns $\left \lceil{x}\right \rceil$
 
-## 15. floor
+## 14. floor
 
 Returning Type: `#!xs float`
 
@@ -184,7 +172,7 @@ Parameters:
 
 Returns $\left \lfloor{x}\right \rfloor$
 
-## 16. bitCastToFloat
+## 15. bitCastToFloat
 
 Returning Type: `#!xs float`
 
@@ -196,7 +184,7 @@ Parameters:
 
 Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `#!rs std::mem::transmute::<i32, f32>(number)`
 
-## 17. bitCastToInt
+## 16. bitCastToInt
 
 Returning Type: `#!xs int`
 
@@ -207,4 +195,16 @@ Parameters:
 1.  `#!xs float number`: The value to `reinterpret/bit_cast` to `int`
 
 Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `#!rs std::mem::transmute::<f32, i32>(number)`
+
+## 17. xsCeilToInt
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsCeilToInt(float value)`
+
+Parameters:
+
+1.  `#!xs float value`: The value to determine the ceil of
+
+Rounds the number **up** to the next integer
 

@@ -49,26 +49,26 @@ nav:
 #        -                                           "general/xs/functions/functions.md"
         - Gameplay:
           - Player:                                 "general/xs/functions/player.md"
-          - Tasks:                                  "general/xs/functions/tasks.md"
-          - Units/Objects:                          "general/xs/functions/units_objects.md"
-          - AI Scripting:                           "general/xs/functions/ai_scripting.md"
+          - Task:                                   "general/xs/functions/tasks.md"
+          - Unit/Object:                            "general/xs/functions/units_objects.md"
+          - Technology:                             "general/xs/functions/techs.md"
+          - AI:                                     "general/xs/functions/ai_scripting.md"
           - UI:                                     "general/xs/functions/ui.md"
           - Map:                                    "general/xs/functions/map.md"
           - Game Info:                              "general/xs/functions/game_info.md"
         - Language:
-          - Randomization:                          "general/xs/functions/rng.md"
-          - Arrays:                                 "general/xs/functions/arrays.md"
-          - Rules:                                  "general/xs/functions/rules.md"
-          - Vectors:                                "general/xs/functions/vectors.md"
+          - Randomization:                          "general/xs/functions/randomization.md"
+          - Array:                                  "general/xs/functions/arrays.md"
+          - Rule:                                   "general/xs/functions/rules.md"
+          - Vector:                                 "general/xs/functions/vectors.md"
           - Maths:                                  "general/xs/functions/maths.md"
-          - File I/O:                               "general/xs/functions/read_write.md"
-        - General:                                  "general/xs/functions/general.md"
+          - File I/O:                               "general/xs/functions/file_io.md"
         - Misc:                                     "general/xs/functions/misc.md"
       - Constants:
   #      -                                           "general/xs/constants/constants.md"
         - Gameplay:
           - Effect Amount:
-            - Effect Operations:                    "general/xs/constants/effect_amount_effect_operations.md"
+            - Effect Operation:                     "general/xs/constants/effect_amount_effect_operations.md"
             - Effect Type:                          "general/xs/constants/effect_amount_effect_type.md"
             - Technology Attribute:                 "general/xs/constants/effect_amount_technology_attribute.md"
           - Units:
@@ -77,8 +77,8 @@ nav:
             - Object Attribute:                     "general/xs/constants/object_attribute.md"
             - Damage Class:                         "general/xs/constants/damage_class.md"
           - Tasks:
-            - Attribute:                            "general/xs/constants/task_attribute.md"
-            - Type:                                 "general/xs/constants/task_type.md"
+            - Task Attribute:                       "general/xs/constants/task_attribute.md"
+            - Task Type:                            "general/xs/constants/task_type.md"
           - Players:
             - Resource:                             "general/xs/constants/resource.md"
             - Tech State:                           "general/xs/constants/tech_state.md"
@@ -86,7 +86,7 @@ nav:
             - Diplomacy:                            "general/xs/constants/diplomacy.md"
             - Player Type:                          "general/xs/constants/player_type.md"
             - Age:                                  "general/xs/constants/age.md"
-            - Victory Conditions:                       "general/xs/constants/victory_conditions.md"
+            - Victory Condition:                    "general/xs/constants/victory_conditions.md"
           - Map:
             - Color Mood:                           "general/xs/constants/color_mood.md"
           - Civs:
@@ -94,8 +94,8 @@ nav:
             - Chronicles:                           "general/xs/constants/chronicles_civs.md"
             - RoR:                                  "general/xs/constants/ror_civs.md"
         - Language:
-          - Read/Write:                             "general/xs/constants/read_write.md"
-          - Constants:                              "general/xs/constants/value.md"
+          - File I/O:                               "general/xs/constants/file_io.md"
+          - Constants:                              "general/xs/constants/language_constants.md"
     - Useful Resources:                             "general/xs/useful.md"
     - Known Bugs:
       -                                             "general/xs/bugs/index.md"
