@@ -74,9 +74,9 @@ Creates an array of type Vector and returns its ID. Created arrays never go out 
 
 ## 6. xsArraySetInt
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArraySetInt(int arrayId, int index, int value)`
+Prototype: `#!xs bool xsArraySetInt(int arrayId, int index, int value)`
 
 Parameters:
 
@@ -88,9 +88,9 @@ Sets the value at the specified index of the given int array to the provided val
 
 ## 7. xsArraySetFloat
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArraySetFloat(int arrayId, int index, float value)`
+Prototype: `#!xs bool xsArraySetFloat(int arrayId, int index, float value)`
 
 Parameters:
 
@@ -102,9 +102,9 @@ Sets the value at the specified index of the given float array to the provided v
 
 ## 8. xsArraySetBool
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArraySetBool(int arrayId, int index, bool value)`
+Prototype: `#!xs bool xsArraySetBool(int arrayId, int index, bool value)`
 
 Parameters:
 
@@ -116,9 +116,9 @@ Sets the value at the specified index of the given bool array to the provided va
 
 ## 9. xsArraySetString
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArraySetString(int arrayId, int index, string value)`
+Prototype: `#!xs bool xsArraySetString(int arrayId, int index, string value)`
 
 Parameters:
 
@@ -130,9 +130,9 @@ Sets the value at the specified index of the given string array to the provided 
 
 ## 10. xsArraySetVector
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArraySetVector(int arrayId, int index, vector value)`
+Prototype: `#!xs bool xsArraySetVector(int arrayId, int index, vector value)`
 
 Parameters:
 
@@ -209,9 +209,9 @@ Gets and returns the value of the given vector array at the specified index.
 
 ## 16. xsArrayResizeInt
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArrayResizeInt(int arrayId, int newSize)`
+Prototype: `#!xs bool xsArrayResizeInt(int arrayId, int newSize)`
 
 Parameters:
 
@@ -222,9 +222,9 @@ Resizes the the given int array to the specified size and returns 1.
 
 ## 17. xsArrayResizeFloat
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArrayResizeFloat(int arrayId, int newSize)`
+Prototype: `#!xs bool xsArrayResizeFloat(int arrayId, int newSize)`
 
 Parameters:
 
@@ -235,9 +235,9 @@ Resizes the the given float array to the specified size and returns 1.
 
 ## 18. xsArrayResizeBool
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArrayResizeBool(int arrayId, int newSize)`
+Prototype: `#!xs bool xsArrayResizeBool(int arrayId, int newSize)`
 
 Parameters:
 
@@ -248,9 +248,9 @@ Resizes the the given bool array to the specified size and returns 1.
 
 ## 19. xsArrayResizeString
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArrayResizeString(int arrayId, int newSize)`
+Prototype: `#!xs bool xsArrayResizeString(int arrayId, int newSize)`
 
 Parameters:
 
@@ -261,9 +261,9 @@ Resizes the the given string array to the specified size and returns 1.
 
 ## 20. xsArrayResizeVector
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs bool`
 
-Prototype: `#!xs int xsArrayResizeVector(int arrayId, int newSize)`
+Prototype: `#!xs bool xsArrayResizeVector(int arrayId, int newSize)`
 
 Parameters:
 

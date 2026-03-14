@@ -28,9 +28,9 @@ Gets the SN of the current AI
 
 ## 3. xsSetGoal
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs void`
 
-Prototype: `#!xs int xsSetGoal(int id, int value)`
+Prototype: `#!xs void xsSetGoal(int id, int value)`
 
 Parameters:
 
@@ -41,9 +41,9 @@ Sets the goal id/number of the current AI
 
 ## 4. xsSetStrategicNumber
 
-Returning Type: `#!xs int`
+Returning Type: `#!xs void`
 
-Prototype: `#!xs int xsSetStrategicNumber(int id, int value)`
+Prototype: `#!xs void xsSetStrategicNumber(int id, int value)`
 
 Parameters:
 
