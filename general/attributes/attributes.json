@@ -1,0 +1,1183 @@
+{
+    "0": {
+        "name": "Hit Points",
+        "desc": "This attribute refers to the health of the units",
+        "notes": [],
+        "flags": {}
+    },
+    "1": {
+        "name": "Line of Sight",
+        "desc": "This is the distance a unit can see around itself",
+        "notes": [],
+        "flags": {}
+    },
+    "2": {
+        "name": "Garrison Capacity",
+        "desc": "This is the amount of units that can garrison inside another unit",
+        "notes": [],
+        "flags": {}
+    },
+    "3": {
+        "name": "Unit Size X",
+        "desc": "This determines the x-size of the unit's collision hitbox (width of the unit)",
+        "notes": [],
+        "flags": {}
+    },
+    "4": {
+        "name": "Unit Size Y",
+        "desc": "This determines the y-size of the unit's collision hitbox (length of the unit)",
+        "notes": [],
+        "flags": {}
+    },
+    "5": {
+        "name": "Movement Speed",
+        "desc": "This is the movement speed of a unit, measured in tiles per second",
+        "notes": [],
+        "flags": {}
+    },
+    "6": {
+        "name": "Rotation Speed",
+        "desc": "This is the rate at which units can rotate, measured in seconds per frame (this many seconds must pass before the object can switch to the next rotation frame). For example, for a trebuchet to start attacking a building facing the opposite direction, it has to rotate to face that way first",
+        "notes": [],
+        "flags": {}
+    },
+    "8": {
+        "name": "Armor",
+        "desc": "This is the quantity of armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the armour through this option will show it as being added to the base armour amount. (for example: 4+4)",
+        "notes": [],
+        "flags": {}
+    },
+    "9": {
+        "name": "Attack",
+        "desc": "This is the quantity of attack a unit has on any of its `Attack Classes`. If you do not know what an `Attack Class` is, refer to the [Damage Calculation](../damage_calculation \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the attack through this option will show it as being added to the base attack amount. (for example: 6+2)",
+        "notes": [],
+        "flags": {}
+    },
+    "10": {
+        "name": "Attack Reload Time",
+        "desc": "This is the minimum time that must pass before a unit is able to fire another shot. For melee units it is the minimum time between two successive hits that they can do",
+        "notes": [],
+        "flags": {}
+    },
+    "11": {
+        "name": "Accuracy Percent",
+        "desc": "This determines how accurately a unit can aim at another unit",
+        "notes": [
+            "This accuracy is the accuracy of a unit to fire at the exact centre of its target. If the shot fired is not aimed at the exact centre of the target, it may still hit the target if its not off by too much since it can still land within the hitbox of the target, just not at the exact centre",
+            "Thus, bigger targets are actually easier to hit, which explains why buildings are an easier target to hit for trebuchets than small units",
+            "![Visually Smaller](./imgs/visually_smaller.png \"Targets that are farther away are visually smaller\")",
+            "In this image, you can see that shots that were fired in the red area in the 2nd scenario would've hit if the target had been closer like in the first scenario, but since the target is far away, they actually miss",
+            "More technically, the visual angle of an object of the same size that is farther away is smaller, thus giving a smaller room for error for the shot in terms of the range of angles that will make the shot hit",
+            "The chance of a unit getting converted by a monk is also determined by its accuracy",
+            "If you modify an onager to have a big blast radius and give it a small accuracy, then attack a lot of units bunched together, the accuracy determines what percentage of units take damage from the blast of the onager! This is the reason why warwolf trebuchets get 100% accuracy because otherwise the blast wouldn't damage all of the units. Another interesting consequence of this is the delete trick with onagers and mangonels. This is where a mangonel is deleted immediately after it fires its shot and because a dead unit doesn't have an accuracy, it defaults to 100% and thus deals more damage to all the units in the blast radius",
+            "Note: There are two other factors that play a role in determining the damage from the shot fired by the deleted mangonel",
+            "1. The damage from a mangonel's shot is decreased over distance when moving outward from the centre of the blast (the targeted point). However, when the mangonel is deleted, this decrease over distance doesn't happen, and the projectile deals the full 100% damage to all the units in the blast radius!",
+            "2. A shot that is fired from lower elevation would normally deal only 75% of its normal damage due to the elevation damage reduction. deleting a mangonel in this case also makes the damage the full 100% as if there was no elevation difference"
+        ],
+        "flags": {}
+    },
+    "12": {
+        "name": "Maximum Range",
+        "desc": "This is the maximum range of a unit. Note that to be able to shoot at a target, it must be visible to the unit via its own line of sight or from another unit's line of sight",
+        "notes": [],
+        "flags": {}
+    },
+    "13": {
+        "name": "Work Rate",
+        "desc": "This is the work rate for any unit that can do work. Villagers, Fishing Ships, Serjeants",
+        "notes": [],
+        "flags": {}
+    },
+    "14": {
+        "name": "Carry Capacity",
+        "desc": "This is the carry capacity of Villagers",
+        "notes": [],
+        "flags": {}
+    },
+    "15": {
+        "name": "Base Armor",
+        "desc": "This is the quantity of base armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the armour through this option will show it as the base armour itself, and it will not be added to the regular amount",
+        "notes": [],
+        "flags": {}
+    },
+    "16": {
+        "name": "Projectile Unit",
+        "desc": "This is the ID of the projectile that a unit fires",
+        "notes": [],
+        "flags": {}
+    },
+    "17": {
+        "name": "Building Icon Override",
+        "desc": "The functionality of this attribute is unknown as it doesn't always behave certainly. If you know what this attribute does, please let the authors of this guide know!",
+        "notes": [],
+        "flags": {}
+    },
+    "18": {
+        "name": "Terrain Defense Bonus",
+        "desc": "Unknown... What does this attribute do?",
+        "notes": [],
+        "flags": {}
+    },
+    "19": {
+        "name": "Projectile Smart Mode",
+        "desc": "This is a combinable bit field. Controls the following two behaviours for projectiles:",
+        "notes": [
+            "For example, if we set this property of the projectile used by an archer to `1`, it will have ballistics. (This is exactly what researching ballistics does in the first place). If we set this property to `2`, a missed projectile that hits another unit will deal its full damage instead of the 50% that it would normally do",
+            "What if we want to enable both properties at once? This is achieved by adding the flag values for both of them together. Setting this property to `3` enables both effects"
+        ],
+        "flags": {
+            "0": "No Ballistics",
+            "1": "Has Ballistics",
+            "2": "Deals full damage on missed hit"
+        }
+    },
+    "20": {
+        "name": "Minimum Range",
+        "desc": "The minimum distance a unit must be from an attacking unit for the attacking unit to be able to fire its projectile",
+        "notes": [],
+        "flags": {}
+    },
+    "21": {
+        "name": "Amount of 1st Resource Storage",
+        "desc": "This is the amount of 1st resource contained in any unit. Refer to A.G.E. to see which resource this is for each unit",
+        "notes": [],
+        "flags": {}
+    },
+    "22": {
+        "name": "Blast Width",
+        "desc": "All enemy units inside this radius take damage from an attacking unit. This is used by elephants, Druzhina Halberdiers, and Logistica Cataphracts",
+        "notes": [],
+        "flags": {}
+    },
+    "23": {
+        "name": "Search Radius",
+        "desc": "The maximum distance at which a unit can detect and auto attack enemy units",
+        "notes": [],
+        "flags": {}
+    },
+    "24": {
+        "name": "Bonus Damage Resistance",
+        "desc": "Used by Sicilians for the 33% bonus damage resistance. Set to 0.33 for all Sicilian land military units except siege",
+        "notes": ["Do not make it greater than 1"],
+        "flags": {}
+    },
+    "25": {
+        "name": "Icon ID",
+        "desc": "The ID of the icon that you want a unit to show",
+        "notes": [],
+        "flags": {}
+    },
+    "26": {
+        "name": "Amount of 2nd Resource Storage",
+        "desc": "This is the amount of 2nd resource contained in any unit. Refer to A.G.E. to see which resource this is for each unit",
+        "notes": [],
+        "flags": {}
+    },
+    "27": {
+        "name": "Amount of 3rd Resource Storage",
+        "desc": "This is the amount of 3rd resource contained in any unit. Refer to A.G.E. to see which resource this is for each unit",
+        "notes": [],
+        "flags": {}
+    },
+    "28": {
+        "name": "Fog Visibility",
+        "desc": "Controls visibility of a unit through the fog of war",
+        "notes": [],
+        "flags": {
+            "0": "Not Visible",
+            "1": "Always Visible",
+            "2": "Visible If Alive",
+            "3": "Inverted Visibility",
+            "4": "Check Doppelganger"
+        }
+    },
+    "29": {
+        "name": "Occlusion Mode",
+        "desc": "This is a combinable bit field. Controls the outlines of units as seen through other units",
+        "notes": [],
+        "flags": {
+            "0": "No outline",
+            "1": "Display outline when behind other units that have flag 2",
+            "2": "Other units' outlines are rendered when they are behind this unit",
+            "4": "Display outline on this unit's foundation when behind other units that have flag 2"
+        }
+    },
+    "30": {
+        "name": "Garrison Type",
+        "desc": "This is a combinable bit field. Controls which units are able to garrison in a building. A unit needs to have the garrison in building task to be able to garrison in a building to begin with",
+        "notes": [],
+        "flags": {
+            "1": "Villagers",
+            "2": "Infantry",
+            "4": "Cavalry",
+            "8": "Monks",
+            "16": "Herdables",
+            "32": "Siege",
+            "64": "Ships"
+        }
+    },
+    "32": {
+        "name": "Unit Size Z",
+        "desc": "This determines the z-size of the unit's collision hitbox (height of the unit)",
+        "notes": [
+            "Setting this to 0 allows other units to walk over this unit",
+            "Does this still control the HP bar location as specified in A.G.E.?"
+        ],
+        "flags": {}
+    },
+    "33": {
+        "name": "Can Be Built On",
+        "desc": "Determines if a building foundation can be placed on top of a unit",
+        "notes": [],
+        "flags": {
+          "0": "Disallow unit to be built on. This is the value for almost all units",
+          "1": "Allow unit to be built on. This is the value for corpses, rubble, eye candy"
+        }
+    },
+    "34": {
+        "name": "Foundation Terrain",
+        "desc": "This is the ID of the terrain created under a building when its construction is finished",
+        "notes": [
+            "Only affects units of Type 80 (Building)",
+            ""
+        ],
+        "flags": {
+            "-1": "No terrain change"
+        }
+    },
+    "40": {
+        "name": "Hero Status",
+        "desc": "This is a combinable bit field. Controls the following properties:",
+        "notes": [
+            "For example, if we set the hero status of a knight to 2, a monk will not be able to convert it. If we set the hero status of a militia to 4, it will regenerate HP automatically",
+            "What if we want to enable multiple properties at once? This is achieved by adding the flag values for those properties together and setting the hero status to that value. For example, if we want to make a paladin both unconvertable and regenerate HP automatically, we can set its hero status to 2+4 = 6. This means that the hero status of a unit can take on any values in the range 1-63. If you set it to any other value, it does not have any effect on the unit",
+            "This works because notice that there is one and only one way to add different flag values together to obtain a particular value for the hero status! For example, if we have a value of 20 for the hero status of a unit, the only way to make 20 from the above flag values is to add 4 and 16. Thus, we know that the properties corresponding to the flag values 4 (self regeneration) and 16 (protected formation by default) must be enabled for that unit",
+            "This is a consequence of the fact that every number can be represented as a unique sum of powers of two (binary numbers)"
+        ],
+        "flags": {
+            "1": "Full Hero Status",
+            "2": "Cannot be Converted",
+            "4": "Self Regeneration (30 HP/min)",
+            "8": "Defensive Stance by Default",
+            "16": "Protected Formation by Default",
+            "32": "Safe Delete Confirmation",
+            "64": "Hero Glow",
+            "128": "Invert All Flags (except flag 1)"
+        }
+    },
+    "41": {
+        "name": "Frame Delay",
+        "desc": "The amount of delay between the point when the attacking animation starts and the actual hit happening for military units. This is what makes Cavalry Archers annoying to micro",
+        "notes": [],
+        "flags": {}
+    },
+    "42": {
+        "name": "Train Location",
+        "desc": "The ID of the unit that trains any given unit. Barracks train Militia, so the train location of a Militia is the ID of the Barracks",
+        "notes": [],
+        "flags": {}
+    },
+    "43": {
+        "name": "Train Button",
+        "desc": "The button used for training any given unit. For example, Militia are trained by using the first button, hence the Button Location of Militia is 1. This number ranges from 0-15",
+        "notes": [],
+        "flags": {}
+    },
+    "44": {
+        "name": "Blast Attack Level",
+        "desc": "A unit deals blast damage to ***other*** units with ***equal or higher*** [Blast Defense Level](./#45-blast-defense-level \"Jump to: Blast Defense Level\") that are in its blast radius. For example, while mangonels (blast attack: 2) can damage your own units (blast defense of all player owned units is always 2), scorpions (blast attack: 3) cannot do the same",
+        "notes": [
+            "One of the flags 0-3 can be combined with the combinable flags 4 to 128 by adding the two values"
+        ],
+        "flags": {
+            "0": "Damage resources, nearby allied units and tress",
+            "1": "Damage trees, nearby allied units",
+            "2": "Damage nearby and allied units",
+            "3": "Damage targeted unit only",
+            "4": "Damage enemy units only",
+            "8": "Ignore friendly fire",
+            "16": "Unused",
+            "32": "Unused",
+            "64": "Attenuate damage as distance from the centre of attack increases (infantry only)",
+            "128": "Blast damage is dealt along the direction the unit is facing only. This area is a very narrow cone"
+        }
+    },
+    "45": {
+        "name": "Blast Defense Level",
+        "desc": "A unit feels the blast damage from ***other*** units with ***equal or lower*** [Blast Attack Level](./#44-blast-attack-level \"Jump to: Blast Attack Level\") and if it is inside the attacker's blast radius. For example, while onagers (blast attack: 1) can cut trees (blast defense 1), mangonels (blast attack: 2) cannot do the same",
+        "notes": [],
+        "flags": {
+            "0": "damage resources, nearby allied units and tress",
+            "1": "damage trees, nearby allied units",
+            "2": "damage nearby allied units",
+            "3": "damage targeted unit only"
+        }
+    },
+    "46": {
+        "name": "Shown Attack",
+        "desc": "The amount of attack that is displayed as a unit's attack (may not actually be the true attack)",
+        "notes": [],
+        "flags": {}
+    },
+    "47": {
+        "name": "Shown Range",
+        "desc": "The quantity that is displayed as a unit's attack ingame (may not actually be the true attack)",
+        "notes": [],
+        "flags": {}
+    },
+    "48": {
+        "name": "Shown Melee Armor",
+        "desc": "The quantity that is displayed as a unit's melee armour ingame (may not actually be the true armour)",
+        "notes": [],
+        "flags": {}
+    },
+    "49": {
+        "name": "Shown Pierce Armor",
+        "desc": "The quantity that is displayed as a unit's pierce armour ingame (may not actually be the true armour)",
+        "notes": [],
+        "flags": {}
+    },
+    "50": {
+        "name": "Object Name ID",
+        "desc": "The string ID to use for the name of an object. A string ID is used for refering to strings that the game recognises by default. It can be used to automatically set names by using a value that the game recognises. Trying out the value 1 on a unit and seeing what happens is left as an excersise for the reader",
+        "notes": [],
+        "flags": {}
+    },
+    "51": {
+        "name": "Short Description ID",
+        "desc": "The string ID for the Short Description of an object. A string ID is used for refering to strings that the game recognises by default. It can be used to automatically set a Short Description by using a value that the game recognises. Trying out the value 1 on a unit and seeing what happens is left as an excersise for the reader",
+        "notes": [],
+        "flags": {}
+    },
+    "53": {
+        "name": "Terrain Restriction ID",
+        "desc": "This number determines how a unit interacts with terrains and which terrains it can walk on",
+        "notes": [],
+        "flags": {
+            "0": "All",
+            "1": "Land And Shallows",
+            "2": "Beach",
+            "3": "Water Small Trail",
+            "4": "Land",
+            "5": "Nothing",
+            "6": "Water No Trail",
+            "7": "All Except Water",
+            "8": "Land Except Farm",
+            "9": "Nothing 2",
+            "10": "Land And Beach",
+            "11": "Land Except Farm 2",
+            "12": "All Except Water Bridge Cannon",
+            "13": "Water Medium Trail",
+            "14": "All Except Water Bridge Arrow",
+            "15": "Water Large Trail",
+            "16": "Grass And Beach",
+            "17": "Water And Bridge Except Beach",
+            "18": "All Except Water Bridge Spear",
+            "19": "Only Water And Ice",
+            "20": "All Except Water Wheel",
+            "21": "Shallow Water",
+            "22": "All Dart",
+            "23": "All Arrow Fire",
+            "24": "All Cannon Fire",
+            "25": "All Spear Fire",
+            "26": "All Dart Fire",
+            "27": "All Laser",
+            "28": "All Except Water Cavalry",
+            "29": "All Except Water Packet Trebuchet",
+            "30": "Water Smallest Trail"
+        }
+    },
+    "54": {
+        "name": "Unit Trait",
+        "desc": "This is a combinable bit field. Controls the following properties:",
+        "notes": [
+            "See Also:\n\n    [Trait Piece](./#56-trait-piece)"
+        ],
+        "flags": {
+            "1": "Garrison Unit",
+            "2": "Ship Unit",
+            "4": "Build Another Building (Serjeants) [See Special Ability: Mode 7]",
+            "8": "Transform Into Another Unit (Ratha)",
+            "16": "Auto Scout Unit"
+        }
+    },
+    "56": {
+        "name": "Trait Piece",
+        "desc": "This can be set to the ID of a unit that is used along with some of the Unit Traits",
+        "notes": [
+            "See Also:\n\n    [Unit Trait](./#54-unit-trait)"
+        ],
+        "flags": {
+            "1": "Unused",
+            "2": "Unused",
+            "4": "Build Unit",
+            "8": "Transform Unit",
+            "16": "Unused"
+        }
+    },
+    "57": {
+        "name": "Dead Unit ID",
+        "desc": "This is the ID of the unit to spawn after the current unit dies. This is whats used to make the dismounted konniks possible",
+        "notes": [],
+        "flags": {}
+    },
+    "58": {
+        "name": "Hotkey ID",
+        "desc": "This number determines which hotkey is assigned to a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "59": {
+        "name": "Maximum Charge",
+        "desc": "The maximum amount of charge that a unit can hold",
+        "notes": [],
+        "flags": {}
+    },
+    "60": {
+        "name": "Recharge Rate",
+        "desc": "The rate of charge regeneration per second",
+        "notes": [],
+        "flags": {}
+    },
+    "61": {
+        "name": "Charge Event",
+        "desc": "This action depletes the unit's charge",
+        "notes": [],
+        "flags": {
+            "Charge Type one of `1`, `2`, or `3`": "1 - Deplete charge, 0 - Keep charge",
+            "Charge Type one of `6`, or `7`": "Max range modifier",
+            "Charge Type is `-1`": "0 - Transform unit until one attack, -1 - perform attack ground on it's location",
+            "Charge Type is `-2`": "0 - Transform unit until one attack",
+            "Charge Type is `-3`": "Aura task duration",
+            "Charge Type is `-4`": "Conversion range (maybe overridden by conversion tasks)"
+        }
+    },
+    "62": {
+        "name": "Charge Type",
+        "desc": "The type of charge that a unit holds",
+        "notes": [],
+        "flags": {
+            "-5": "Spawn Building on top of the unit (Uses unit set in Trait Piece)",
+            "-4": "Conversion ability (Needs task 104). Charge Target defines the conversion percent chance",
+            "-3": "Active aura ability (Needs task 155 with unused flag 8 set)",
+            "-2": "Active targetted transform (Uses unit set in Trait Piece). If charge target = -1, use attack ground targetting",
+            "-1": "Active temporary transform (Uses unit set in Trait Piece)",
+            "1": "Attack charge",
+            "2": "??? charge",
+            "3": "Area attack charge",
+            "4": "Agility charge",
+            "5": "Ignore Melee Attack",
+            "6": "Fire only Charge projectiles, sets Total Projectiles to the value of Max Total Projectiles (Lou Chuan)",
+            "7": "Fires 1 Charge projectile and additional Secondary Projectiles, sets Total Projectiles to the value of Max Total Projectiles"
+        }
+    },
+    "63": {
+        "name": "Combat Ability",
+        "desc": "Combinable bit field. Controls several attacking behaviours for units",
+        "notes": [],
+        "flags": {
+            "1": "Ignore melee and pierce armours of the targeted unit",
+            "2": "Resist armour-ignoring attacks",
+            "4": "Damage the targeted unit's melee and pierce armors by 1, for a minimum of 0 (Obuch)",
+            "8": "Attack ground ability",
+            "16": "Bulk volley release (kipchak/siege weapons)",
+            "32": "Enable aura ability (task 155) (Stronghold castle/Caravanserai/Centurion)",
+            "64": "Invert aura ability (task 155) to boost self (Monaspa) - Auto Search = 1 needed for multiple tasks",
+            "128": "Activate stringer ability (task 157)"
+        }
+    },
+    "64": {
+        "name": "Attack Dispersion",
+        "desc": "Half of the radius from the target unit in which missed projectiles fired by this unit can land in",
+        "notes": [],
+        "flags": {}
+    },
+    "65": {
+        "name": "Secondary Projectile Unit",
+        "desc": "This is the ID of the secondary projectile that a unit fires (Chu Ko Nu)",
+        "notes": [],
+        "flags": {}
+    },
+    "66": {
+        "name": "Blood Unit",
+        "desc": "This is the ID of a secondary unit to spawn after the current unit dies. This could potentially be used along with dead unit ID to spawn two units after a single unit dies",
+        "notes": [],
+        "flags": {}
+    },
+    "67": {
+        "name": "Projectile Hit Mode",
+        "desc": "Controls how a projectile collides with units in the path of its target. Currently changing this through XS has no effect",
+        "notes": [],
+        "flags": {
+            "0": "Collide only with the targeted unit",
+            "1": "Collide with any damage-able units in the path to the targetted unit",
+            "2": "Collide with any unit in the path to the targetted unit"
+        }
+    },
+    "68": {
+        "name": "Projectile Vanish Mode",
+        "desc": "Controls if a projectile passes through or disappears on impact. Currently changing this through XS has no effect",
+        "notes": [],
+        "flags": {
+            "0": "Disappear on first impact",
+            "1": "Pass through",
+            "2": "Always spawn a dead unit"
+        }
+    },
+    "69": {
+        "name": "Projectile Arc",
+        "desc": "Controls the maximum height of the fired projectile",
+        "notes": [],
+        "flags": {}
+    },
+    "70": {
+        "name": "Attack Graphic",
+        "desc": "Controls the Attack Graphic",
+        "notes": [],
+        "flags": {}
+    },
+    "71": {
+        "name": "Standing Graphic",
+        "desc": "The sprite animation shown when a unit is idle",
+        "notes": [
+            "Units randomly choose between this or Standing Graphic 2"
+        ],
+        "flags": {}
+    },
+    "72": {
+        "name": "Standing Graphic 2",
+        "desc": "The sprite animation shown when a unit is idle",
+        "notes": [
+            "Units randomly choose between this or Standing Graphic"
+        ],
+        "flags": {}
+    },
+    "73": {
+        "name": "Dying Graphic",
+        "desc": "The sprite animation shown when a unit dies",
+        "notes": [],
+        "flags": {}
+    },
+    "74": {
+        "name": "Undead Graphic",
+        "desc": "This graphic is shown after a unit's dying animation instead of replacing it with its dead unit if its \"Undead Mode\" is set to `1`. Used to assign decay graphic to units without \"Undead Mode\" set to 1. Overrides the standing graphic of the object's dead unit",
+        "notes": [
+            "Depends on Undead Mode flag"
+        ],
+        "flags": {}
+    },
+    "75": {
+        "name": "Walking Graphic",
+        "desc": "The sprite animation shown when a unit is walking",
+        "notes": [],
+        "flags": {}
+    },
+    "76": {
+        "name": "Running Graphic",
+        "desc": "The sprite animation shown when a unit is running",
+        "notes": [
+            "A unit runs when it is issued an attack command, or when a unit is fleeing (deer-like units)",
+            "Most units do not have a running graphic",
+            "A graphic can multiply the speed of the unit it is applied to",
+            "This is used for deer, wolves, boars, etc. when they are issued an attack command"
+        ],
+        "flags": {}
+    },
+    "77": {
+        "name": "Special Graphic",
+        "desc": "This sprite animation is shown  when a unit uses one of \"Block\", \"Charge\", or \"Counter Charge\" special abilities",
+        "notes": [
+            "Special abilities are an unused feature in AoE2, they were planned but never made it into AoK"
+        ],
+        "flags": {}
+    },
+    "78": {
+        "name": "Obstruction Type",
+        "desc": "Controls unit outline and collision",
+        "notes": [],
+        "flags": {
+            "0": "Square outline, and passable",
+            "1": "Same as 0",
+            "2": "Solid square outline, and has collision box",
+            "3": "Square outline, and has collision box",
+            "4": "No outline, and passable",
+            "5": "Round outline, and has collision box",
+            "10": "Same as 2, but designed for mountains",
+            "11": "Consider the selection size of a radius entirely as opposed to the actual defined collision size",
+            "12": "Ignore hard obstructions entirely and just consider the space occupied with no obstruction at all",
+            "13": "Consider the selection radius when placing other objects, but use the original obstruction size for hard obstructions"
+        }
+    },
+    "79": {
+        "name": "Blockage Class",
+        "desc": "Controls unit blockage class",
+        "notes": [],
+        "flags": {
+            "0": "Forces default obstruction type",
+            "1": "Resource",
+            "2": "Unit",
+            "3": "Building",
+            "4": "Wall",
+            "5": "Gate, allows trespassing",
+            "6": "Cliff, blocks walling"
+        }
+    },
+    "80": {
+        "name": "Selection Effect",
+        "desc": "Controls unit hit point bar and outline",
+        "notes": [],
+        "flags": {
+            "0": "Has hit point bar",
+            "1": "Has hit point bar, and outline",
+            "2": "No hit point bar, or outline",
+            "3": "No hit point bar, but has outline"
+        }
+    },
+    "81": {
+        "name": "Special Ability",
+        "desc": "Enables certain special abilities",
+        "notes": [],
+        "flags": {
+            "3": "Enable charge attack ability (task 133)"
+        }
+    },
+    "82": {
+        "name": "Idle Attack Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "83": {
+        "name": "Hero Glow Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "84": {
+        "name": "Garrison Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "85": {
+        "name": "Construction Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "86": {
+        "name": "Snow Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "87": {
+        "name": "Destruction Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "88": {
+        "name": "Destruction Rubble Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "89": {
+        "name": "Researching Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "90": {
+        "name": "Research Completed Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "91": {
+        "name": "Damage Graphic",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "92": {
+        "name": "Selection Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "93": {
+        "name": "Selection Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "94": {
+        "name": "Dying Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "95": {
+        "name": "Dying Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "96": {
+        "name": "Train Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "97": {
+        "name": "Train Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "98": {
+        "name": "Damage Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "99": {
+        "name": "Damage Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "100": {
+        "name": "Resource Costs",
+        "desc": "Refers to the first resource cost of a unit. Refer to A.G.E. to see which resource cost that is",
+        "notes": [],
+        "flags": {}
+    },
+    "101": {
+        "name": "Train Time",
+        "desc": "This is the amount of time it takes to create a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "102": {
+        "name": "Total Missiles",
+        "desc": "This is the number of projectiles a unit fires. The Chu Ko Nu fires 3 and the Elite Chu Ko Nu fires 5",
+        "notes": [],
+        "flags": {}
+    },
+    "103": {
+        "name": "Food Costs",
+        "desc": "The food cost of a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "104": {
+        "name": "Wood Costs",
+        "desc": "The wood cost of a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "105": {
+        "name": "Gold Costs",
+        "desc": "The gold cost of a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "106": {
+        "name": "Stone Costs",
+        "desc": "The stone cost of a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "107": {
+        "name": "Maximum Total Missiles",
+        "desc": "The maximum number of projectiles a unit can fire when other units are garrisoned inside of it. A castle fires 5 projectiles by default but can fire more if units are garrisoned inside it. This attribute controls the maximum number of those",
+        "notes": [],
+        "flags": {}
+    },
+    "108": {
+        "name": "Garrison Heal Rate",
+        "desc": "The rate measured in HP/s at which garissoned units are healed inside a given building",
+        "notes": [],
+        "flags": {}
+    },
+    "109": {
+        "name": "Regeneration Rate",
+        "desc": "The rate measured in HP/minute at which units heal themselves. This value is overridden to 30 HP/minute if the flag for Self Regeneration is set in the [Hero Status](./#40-hero-status \"Jump to: 26. Hero Status\") of a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "110": {
+        "name": "Population",
+        "desc": "Modifies the population headroom storage of a unit. Negative values = require population (units), positive values = give population (houses). This is not a real attribute that exists in A.G.E., just seems like a way to edit the population heardroom provided by a unit",
+        "notes": [],
+        "flags": {}
+    },
+    "111": {
+        "name": "Minimum Conversion Time Modifier",
+        "desc": "Adds to the minimum time required to convert the unit",
+        "notes": [
+            "By default, units have a 4 monk second minimum conversion time",
+            "The overall minimum conversion time for all units is also affected by [Convert Resist Min Adjustment](../../resources/resources/#178-convert-resist-min-adjustment)"
+        ],
+        "flags": {}
+    },
+    "112": {
+        "name": "Maximum Conversion Time Modifier",
+        "desc": "Adds to the maximum time after which a unit conversion is forced",
+        "notes": [
+            "By default, units have a 10 monk second maximum conversion time",
+            "The overall maximum conversion time for all units is also affected by [Convert Resist Max Adjustment](../../resources/resources/#179-convert-resist-max-adjustment)"
+        ],
+        "flags": {}
+    },
+    "113": {
+        "name": "Conversion Chance Modifier",
+        "desc": "The probability of conversion every monk second is divided by this value for the unit",
+        "notes": [
+            "The overall conversion probability for all units is also affected by [Conversion Resistance](../../resources/resources/#77-conversion-resistance)"
+        ],
+        "flags": {}
+    },
+    "114": {
+        "name": "Formation Category",
+        "desc": "Control where the units in formation",
+        "notes": [],
+        "flags": {
+            "0": "Not using formation",
+            "1": "Mobile",
+            "2": "Body",
+            "3": "Ranged",
+            "4": "Long Ranged",
+            "5": "Protected"
+        }
+    },
+    "115": {
+        "name": "Area Damage",
+        "desc": "Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative",
+        "notes": [],
+        "flags": {}
+    },
+    "118": {
+        "name": "Damage Reflection",
+        "desc": "Damage percentage of the received damage to be reflected on the attacker (only for melee damage)",
+        "notes": [],
+        "flags": {}
+    },
+    "119": {
+        "name": "Friendly Fire Damage",
+        "desc": "Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative",
+        "notes": [],
+        "flags": {}
+    },
+    "120": {
+        "name": "Regeneration HP Percent",
+        "desc": "Percentage of the unit’s max HP that is regenerated over a minute",
+        "notes": [],
+        "flags": {}
+    },
+    "121": {
+        "name": "Ability Button Icon ID",
+        "desc": "Override for Transform/Active Ability Icon. Uses ID from `Materials.json`",
+        "notes": [],
+        "flags": {}
+    },
+    "122": {
+        "name": "Ability Short Tooltip ID",
+        "desc": "Override for Transform/Active Ability Short Tooltip",
+        "notes": [],
+        "flags": {}
+    },
+    "123": {
+        "name": "Ability Extended Tooltip ID",
+        "desc": "Override for Transform/Active Ability Long Tooltip",
+        "notes": [],
+        "flags": {}
+    },
+    "124": {
+        "name": "Ability Hotkey Action",
+        "desc": "`button_action_list` when pressing button/hotkey for the ability or transformation",
+        "notes": [],
+        "flags": {}
+    },
+    "125": {
+        "name": "Charge Projectile Unit",
+        "desc": "Blast damage multiplier to non directly targeted units. Blast damage to non directly targeted units is a fixed value if this is negative",
+        "notes": [],
+        "flags": {}
+    },
+    "126": {
+        "name": "Available Unit Flag",
+        "desc": "When Disabled flag 2 or 4 is set, sets value for number of trainable unit. Will use units paired in `LinkedUnits.json` to count them together",
+        "notes": [],
+        "flags": {}
+    },
+    "127": {
+        "name": "Disabled Unit Flag",
+        "desc": "Enable/Disable a unit",
+        "notes": [],
+        "flags": {
+            "1": "Disabled",
+            "2": "Limited training. Cannot be retrained after death",
+            "4": "Limited training. Can be retrained after death"
+        }
+    },
+    "128": {
+        "name": "Attack Priority",
+        "desc": "Defines what type of target the unit will prioritize",
+        "notes": [],
+        "flags": {
+            "1": "Units > Buildings",
+            "2": "Buildings > Units",
+            "3": "Buildings only"
+        }
+    },
+    "129": {
+        "name": "Invulnerability Level",
+        "desc": "Sets an HP threshold after which a unit no longer receives damage when attacked",
+        "notes": [],
+        "flags": {
+            "> 0": "Multiplier of Base HP",
+            "< 0": "Fixed value of HP"
+        }
+    },
+    "130": {
+        "name": "Garrison Firepower",
+        "desc": "Adds to the damage of the unit to calculate the number of garrison arrows to fire",
+        "notes": [],
+        "flags": {
+            "> 0": "Acts as multiplier",
+            "< 0": "Flat dps value added to the unit’s dps"
+        }
+    },
+    "131": {
+        "name": "Attack Graphic 2",
+        "desc": "Second attack graphic of the unit; alternates with the first attack graphic when assigned",
+        "notes": [],
+        "flags": {}
+    },
+    "132": {
+        "name": "Command Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "133": {
+        "name": "Command Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "134": {
+        "name": "Move Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "135": {
+        "name": "Move Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "136": {
+        "name": "Construction Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "137": {
+        "name": "Construction Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "138": {
+        "name": "Transform Sound",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "139": {
+        "name": "Transform Sound Event",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "140": {
+        "name": "Run Pattern",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "141": {
+        "name": "Interface Kind",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "142": {
+        "name": "Combat Level",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "143": {
+        "name": "Interaction Mode",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "144": {
+        "name": "Minimap Mode",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "145": {
+        "name": "Trailing Unit",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "146": {
+        "name": "Trail Mode",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "147": {
+        "name": "Trail Density",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "148": {
+        "name": "Projectile Graphic Displacement X",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "149": {
+        "name": "Projectile Graphic Displacement Y",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "150": {
+        "name": "Projectile Graphic Displacement Z",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "151": {
+        "name": "Projectile Spawning Area Width",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "152": {
+        "name": "Projectile Spawning Area Length",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "153": {
+        "name": "Projectile Spawning Area Randomness",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "154": {
+        "name": "Damage Graphics Entry Mod",
+        "desc": "Determines the index at which damage graphic/damage graphic percent/damage graphic apply mode values are changed via effects in XS.",
+        "notes": [
+            "- Multiply by N to insert a new entry at index N, and then set entry mod to N",
+            "- Multiply by -(N+1) to delete index N, and then set entry mod to N",
+            "- Multiply with 255 (32767 also works) to append an entry at the end, and set the entry mod to the last index",
+            "- Multiply with -255 (-32768 also works) to delete the index at the end, and set entry mod to the new last index",
+            "- Note that inserting a new entry copies the existing last entry in the list as the default"
+        ],
+        "flags": {}
+    },
+    "155": {
+        "name": "Damage Graphics Total Num",
+        "desc": "The length of the damage sprites list. Can be set to shrink/extend the list (duplicates the last entry when extending).",
+        "notes": [],
+        "flags": {}
+    },
+    "156": {
+        "name": "Damage Graphic Percent",
+        "desc": "The damage percent at which this sprite starts to be applied. This sprite remains active until the damage percent of the next damage sprite entry",
+        "notes": [],
+        "flags": {}
+    },
+    "157": {
+        "name": "Damage Graphic Apply Mode",
+        "desc": "The apply mode for this damage sprite.",
+        "notes": [
+            "- 0: Overlay flames on building",
+            "- 1: Overlay randomly",
+            "- 2: Replace (walls)"
+        ],
+        "flags": {}
+    },
+    "158": {
+        "name": "Train Locations Entry Mod",
+        "desc": "Determines the index at which train location/train button/train time/hotkey values are modified via effects in XS.",
+        "notes": [
+            "- Multiply by N to insert a new entry at index N, and then set entry mod to N",
+            "- Multiply by -(N+1) to delete index N, and then set entry mod to N",
+            "- Multiply with 32767 to append an entry at the end, and set the entry mod to the last index",
+            "- Multiply with -32768 to delete the index at the end, and set entry mod to the new last index",
+            "- Note that inserting a new entry copies the existing last entry in the list as the default"
+        ],
+        "flags": {}
+    },
+    "159": {
+        "name": "Train Locations Total Num",
+        "desc": "The length of the train locations list. Can be set to shrink/extend the list (duplicates the last entry when extending).",
+        "notes": [],
+        "flags": {}
+    },
+    "160": {
+        "name": "Add Armor Type",
+        "desc": "Setting this creates a new armor class in the targeted object/unit",
+        "notes": [
+            "Note: You still need to set the value of the class using the regular damage class modification effect."
+        ],
+        "flags": {}
+    },
+    "161": {
+        "name": "Add Attack Type",
+        "desc": "Setting this creates a new attack class in the targeted object/unit",
+        "notes": [
+            "Note: You still need to set the value of the class using the regular damage class modification effect."
+        ],
+        "flags": {}
+    },
+    "162": {
+        "name": "Charge Target",
+        "desc": "TODO",
+        "notes": [],
+        "flags": {}
+    },
+    "163": {
+        "name": "Size Class",
+        "desc": "Controls garrison type properties",
+        "notes": [
+            "- 0: Legacy object_group dependent behaviour",
+            "- 1: Civilian",
+            "- 2: Infantry",
+            "- 3: Cavalry",
+            "- 4: Religious",
+            "- 5: Livestock",
+            "- 6: Siege",
+            "- 7: Ships",
+            "- 8: Unused"
+        ],
+        "flags": {}
+    }
+}
