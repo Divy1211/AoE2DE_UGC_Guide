@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/03/11 09:27:10 |
+// | Generated on: 2026/03/14 11:04:06 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -2923,9 +2923,10 @@ vector xsArrayGetVector(int arrayId = -1, int index = -1) {}
 * @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArrayResizeBool(int arrayId = -1, int newSize = -1) {}
+bool xsArrayResizeBool(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given float array to the specified size and returns 1.
@@ -2933,9 +2934,10 @@ int xsArrayResizeBool(int arrayId = -1, int newSize = -1) {}
 * @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArrayResizeFloat(int arrayId = -1, int newSize = -1) {}
+bool xsArrayResizeFloat(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given int array to the specified size and returns 1.
@@ -2943,9 +2945,10 @@ int xsArrayResizeFloat(int arrayId = -1, int newSize = -1) {}
 * @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArrayResizeInt(int arrayId = -1, int newSize = -1) {}
+bool xsArrayResizeInt(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given string array to the specified size and returns 1.
@@ -2953,9 +2956,10 @@ int xsArrayResizeInt(int arrayId = -1, int newSize = -1) {}
 * @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArrayResizeString(int arrayId = -1, int newSize = -1) {}
+bool xsArrayResizeString(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Resizes the the given vector array to the specified size and returns 1.
@@ -2963,9 +2967,10 @@ int xsArrayResizeString(int arrayId = -1, int newSize = -1) {}
 * @param arrayId The ID of the array to resize
 * @param newSize The new size of the array
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArrayResizeVector(int arrayId = -1, int newSize = -1) {}
+bool xsArrayResizeVector(int arrayId = -1, int newSize = -1) {}
 
 /**
 * Sets the value at the specified index of the given bool array to the provided value and returns 1.
@@ -2974,9 +2979,10 @@ int xsArrayResizeVector(int arrayId = -1, int newSize = -1) {}
 * @param index The index to set the value of
 * @param value The new value to set
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArraySetBool(int arrayId = -1, int index = -1, bool value = false) {}
+bool xsArraySetBool(int arrayId = -1, int index = -1, bool value = false) {}
 
 /**
 * Sets the value at the specified index of the given float array to the provided value and returns 1.
@@ -2985,9 +2991,10 @@ int xsArraySetBool(int arrayId = -1, int index = -1, bool value = false) {}
 * @param index The index to set the value of
 * @param value The new value to set
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArraySetFloat(int arrayId = -1, int index = -1, float value = -1.0) {}
+bool xsArraySetFloat(int arrayId = -1, int index = -1, float value = -1.0) {}
 
 /**
 * Sets the value at the specified index of the given int array to the provided value and returns 1.
@@ -2996,9 +3003,10 @@ int xsArraySetFloat(int arrayId = -1, int index = -1, float value = -1.0) {}
 * @param index The index to set the value of
 * @param value The new value to set
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArraySetInt(int arrayId = -1, int index = -1, int value = -1) {}
+bool xsArraySetInt(int arrayId = -1, int index = -1, int value = -1) {}
 
 /**
 * Sets the value at the specified index of the given string array to the provided value and returns 1.
@@ -3007,9 +3015,10 @@ int xsArraySetInt(int arrayId = -1, int index = -1, int value = -1) {}
 * @param index The index to set the value of
 * @param value The new value to set
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArraySetString(int arrayId = -1, int index = -1, string value = "") {}
+bool xsArraySetString(int arrayId = -1, int index = -1, string value = "") {}
 
 /**
 * Sets the value at the specified index of the given vector array to the provided value and returns 1.
@@ -3018,9 +3027,10 @@ int xsArraySetString(int arrayId = -1, int index = -1, string value = "") {}
 * @param index The index to set the value of
 * @param value The new value to set
 *
-* @returns int
+* @returns bool
+* @allow_discard
 */
-int xsArraySetVector(int arrayId = -1, int index = -1, vector value = vector(-1, -1, -1)) {}
+bool xsArraySetVector(int arrayId = -1, int index = -1, vector value = vector(-1, -1, -1)) {}
 
 
 // 4. Maths
@@ -3242,6 +3252,7 @@ int xsGetTechState(int techId = -1, int playerId = -1) {}
 * @param playerNumber The player to research the technology for
 *
 * @returns bool
+* @allow_discard
 */
 bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
 
@@ -3371,6 +3382,7 @@ float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
 * @param mirror If true, make the target player set their stance towards the source player to the same.
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploStance = -1, bool mirror = false) {}
 
@@ -3428,6 +3440,7 @@ int xsGetUnitTaskCount(int unitId = -1) {}
 * @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
 *
 * @returns bool
+* @allow_discard
 */
 bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, bool edit = false) {}
 
@@ -3442,6 +3455,7 @@ bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, 
 * @param edit If true, edit the task at the given index instead of inserting (ignored with negative indices)
 *
 * @returns bool
+* @allow_discard
 */
 bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
 
@@ -3453,6 +3467,7 @@ bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
 * @param taskId The ID (index) of the task to get
 *
 * @returns bool
+* @allow_discard
 */
 bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {}
 
@@ -3506,6 +3521,7 @@ void xsTaskAmount(int taskFieldId = -1, float value = -1.0) {}
 * @param taskId The ID (index) of the task to get
 *
 * @returns bool
+* @allow_discard
 */
 bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
 
@@ -3813,6 +3829,7 @@ bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId
 * @param unitId The unit to remove
 *
 * @returns bool
+* @allow_discard
 */
 bool xsRemoveUnit(int unitId = -1) {}
 
@@ -3824,6 +3841,7 @@ bool xsRemoveUnit(int unitId = -1) {}
 * @param attributeId The ID of the resource to set. If unspecified, sets the first resource which the unit holds
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId = -1) {}
 
@@ -3834,6 +3852,7 @@ bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId
 * @param value The value to set the build points to
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
 
@@ -3844,6 +3863,7 @@ bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
 * @param value The value to set the charge to
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
 
@@ -3854,6 +3874,7 @@ bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
 * @param value The value to set the HP to
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 
@@ -3865,6 +3886,7 @@ bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 * @param checkCollision If false, don't check for collision before moving the unit
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetUnitPosition(int unitId = -1, vector position = vector(-1, -1, -1), bool checkCollision = false) {}
 
@@ -3915,6 +3937,7 @@ int xsGetMapWidth() {}
 * @param interval The transition duration in seconds
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
 
@@ -4056,6 +4079,7 @@ void xsChatData(string message = "", int value = -1) {}
 * Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed
 *
 * @returns bool
+* @allow_discard
 */
 bool xsCloseFile() {}
 
@@ -4065,6 +4089,7 @@ bool xsCloseFile() {}
 * @param append Default: `#!xs true`. If set to `#!xs false`, this will overwrite any existing file with the same name.
 *
 * @returns bool
+* @allow_discard
 */
 bool xsCreateFile(bool append = false) {}
 
@@ -4098,6 +4123,7 @@ int xsGetFileSize() {}
 * @param forward Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
 *
 * @returns bool
+* @allow_discard
 */
 bool xsOffsetFilePosition(int dataType = -1, bool forward = false) {}
 
@@ -4144,6 +4170,7 @@ vector xsReadVector() {}
 * @param byteOffset 0 indexed byte offset to determine which byte to read and return from the file
 *
 * @returns bool
+* @allow_discard
 */
 bool xsSetFilePosition(int byteOffset = -1) {}
 
@@ -4153,6 +4180,7 @@ bool xsSetFilePosition(int byteOffset = -1) {}
 * @param data The float value to write
 *
 * @returns bool
+* @allow_discard
 */
 bool xsWriteFloat(float data = -1.0) {}
 
@@ -4162,6 +4190,7 @@ bool xsWriteFloat(float data = -1.0) {}
 * @param data The integer to write
 *
 * @returns bool
+* @allow_discard
 */
 bool xsWriteInt(int data = -1) {}
 
@@ -4171,6 +4200,7 @@ bool xsWriteInt(int data = -1) {}
 * @param data The string to write
 *
 * @returns bool
+* @allow_discard
 */
 bool xsWriteString(string data = "") {}
 
@@ -4180,6 +4210,7 @@ bool xsWriteString(string data = "") {}
 * @param data The vector to write
 *
 * @returns bool
+* @allow_discard
 */
 bool xsWriteVector(vector data = vector(-1, -1, -1)) {}
 
@@ -4210,9 +4241,9 @@ int xsGetStrategicNumber(int id = -1) {}
 * @param id The goal id/number to get for the current AI
 * @param value The value to set the goal id/number to
 *
-* @returns int
+* @returns void
 */
-int xsSetGoal(int id = -1, int value = -1) {}
+void xsSetGoal(int id = -1, int value = -1) {}
 
 /**
 * Sets the SN of the current AI
@@ -4220,9 +4251,9 @@ int xsSetGoal(int id = -1, int value = -1) {}
 * @param id The SN to get for the current AI
 * @param value The value to set the SN to
 *
-* @returns int
+* @returns void
 */
-int xsSetStrategicNumber(int id = -1, int value = -1) {}
+void xsSetStrategicNumber(int id = -1, int value = -1) {}
 
 
 // 15. Misc
@@ -4235,6 +4266,7 @@ int xsSetStrategicNumber(int id = -1, int value = -1) {}
 * @param functionArgument This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 *
 * @returns bool
+* @allow_discard
 */
 bool xsAddRuntimeEvent(string runtimeName = "", string functionName = "", int functionArgument = -1) {}
 

@@ -458,7 +458,8 @@
         },
         {
             "name": "xsArraySetInt",
-            "return_type": "int",
+            "allow_discard":true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -483,7 +484,8 @@
         },
         {
             "name": "xsArraySetFloat",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -508,7 +510,8 @@
         },
         {
             "name": "xsArraySetBool",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -533,7 +536,8 @@
         },
         {
             "name": "xsArraySetString",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -558,7 +562,8 @@
         },
         {
             "name": "xsArraySetVector",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -678,7 +683,8 @@
         },
         {
             "name": "xsArrayResizeInt",
-            "return_type": "int",
+            "allow_discard":true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -697,7 +703,8 @@
         },
         {
             "name": "xsArrayResizeFloat",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -716,7 +723,8 @@
         },
         {
             "name": "xsArrayResizeBool",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -735,7 +743,8 @@
         },
         {
             "name": "xsArrayResizeString",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -754,7 +763,8 @@
         },
         {
             "name": "xsArrayResizeVector",
-            "return_type": "int",
+            "allow_discard": true,
+            "return_type": "bool",
             "params": [
                 {
                     "name": "arrayId",
@@ -1063,6 +1073,7 @@
     "techs": [
         {
             "name": "xsResearchTechnology",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1356,6 +1367,7 @@
         },
         {
             "name": "xsSetDiplomacy",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                  {
@@ -1452,6 +1464,7 @@
         },
         {
             "name": "xsObjectTaskAmount",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1477,6 +1490,7 @@
         },
         {
             "name": "xsUnitTaskAmount",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1509,6 +1523,7 @@
         },
         {
             "name": "xsModifyObjectTasks",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1540,6 +1555,7 @@
         },
         {
             "name": "xsModifyUnitTasks",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1672,6 +1688,7 @@
         },
         {
             "name": "xsRemoveUnit",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1780,6 +1797,7 @@
         },
         {
             "name": "xsSetUnitPosition",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1933,6 +1951,7 @@
         },
         {
             "name": "xsSetUnitHitpoints",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1965,6 +1984,7 @@
         },
         {
             "name": "xsSetUnitBuildPoints",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2125,6 +2145,7 @@
         },
         {
             "name": "xsSetUnitAttributeHeld",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2163,6 +2184,7 @@
         },
         {
             "name": "xsSetUnitCharge",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2328,6 +2350,7 @@
         },
         {
             "name": "xsSetColorMood",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2476,6 +2499,7 @@
     "File IO": [
         {
             "name": "xsCreateFile",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2502,6 +2526,7 @@
         },
         {
             "name": "xsWriteString",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2515,6 +2540,7 @@
         },
         {
             "name": "xsWriteInt",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2528,6 +2554,7 @@
         },
         {
             "name": "xsWriteFloat",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2541,6 +2568,7 @@
         },
         {
             "name": "xsWriteVector",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2578,6 +2606,7 @@
         },
         {
             "name": "xsSetFilePosition",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2591,6 +2620,7 @@
         },
         {
             "name": "xsOffsetFilePosition",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -2610,6 +2640,7 @@
         },
         {
             "name": "xsCloseFile",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [],
             "desc": "Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed"
@@ -2669,7 +2700,7 @@
         },
         {
             "name": "xsSetGoal",
-            "return_type": "int",
+            "return_type": "void",
             "params": [
                 {
                     "name": "id",
@@ -2688,7 +2719,7 @@
         },
         {
             "name": "xsSetStrategicNumber",
-            "return_type": "int",
+            "return_type": "void",
             "params": [
                 {
                     "name": "id",
@@ -2753,6 +2784,7 @@
         },
         {
             "name": "xsAddRuntimeEvent",
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {

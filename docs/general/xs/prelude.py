@@ -58,6 +58,8 @@ def write_fns(functions, file: TextIO):
             if last:
                 file.write("*\n")
             file.write(f"* @returns {func['return_type']}\n")
+            if func.get("allow_discard", False):
+                file.write(f"* @allow_discard\n")
             file.write("*/\n")
             file.write(f"{func['return_type']} {func['name']}(")
             first = True
