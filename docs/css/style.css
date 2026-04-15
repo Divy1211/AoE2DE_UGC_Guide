@@ -161,3 +161,11 @@ table {
 .arithmatex {
      font-size: 1em;
 }
+
+.md-typeset__table {
+   min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
