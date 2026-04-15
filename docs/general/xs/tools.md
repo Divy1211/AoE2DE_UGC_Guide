@@ -1,7 +1,7 @@
-| Tool                                                        | Description                                                   |
-|-------------------------------------------------------------|---------------------------------------------------------------|
-| [XS Check](#xs-check)                                       | A linter for XS that warns about common pitfalls and errors.  |
-| [VS Code XS Syntax Extension](#vs-code-xs-syntax-extension) | Syntax highlighting and support for XS in Visual Studio Code. |
+| Tool                                                        | Description                                                   | Author   |
+|-------------------------------------------------------------|---------------------------------------------------------------|----------|
+| [XS Check](#xs-check)                                       | A linter for XS that warns about common pitfalls and errors.  | Alian713 |
+| [VS Code XS Syntax Extension](#vs-code-xs-syntax-extension) | Syntax highlighting and support for XS in Visual Studio Code. | Alian713 |
 
 ---
 

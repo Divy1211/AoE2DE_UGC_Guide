@@ -1,6 +1,6 @@
-| Tool | Description |
-| ---- | ----------- |
-| [AoE2ScenarioParser](#aoe2scenarioparser) | A Python library for reading and editing AoE2:DE scenario files programmatically. |
+| Tool | Description | Author |
+| ---- | ----------- | ------ |
+| [AoE2ScenarioParser](#aoe2scenarioparser) | A Python library for reading and editing AoE2:DE scenario files programmatically. | KSneijders |
 
 ---
 
