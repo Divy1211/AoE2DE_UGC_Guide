@@ -161,3 +161,24 @@ table {
 .arithmatex {
      font-size: 1em;
 }
+
+/* XS function overview grid */
+.xs-func-category-header {
+     font-size: 1.1rem;
+     font-weight: 700;
+     color: #c0c0c0;
+     margin: 1rem 0 0.4rem;
+}
+
+.xs-func-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 0.4rem 1rem;
+     margin-bottom: 1.5rem;
+}
+
+.xs-func-grid a {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}

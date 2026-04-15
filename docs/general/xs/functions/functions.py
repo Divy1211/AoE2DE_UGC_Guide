@@ -4,13 +4,24 @@ def main():
     with open("./functions.json") as file:
         function_docs = json.load(file)
 
-    outmd = """*Written by: Alian713, Kramb*
+    outmd = """*Written by: Alian713, Kramb, KSneijders*
 <div id="hide-toc-elements"></div>
 ---
 
 """
 
-    outmd_old = outmd[:]
+    # Build the funcs grid section
+    funcs = "## All Available Functions\n\n"
+    for cat_index, (category, functions) in enumerate(function_docs.items(), 1):
+        funcs += f'<p class="xs-func-category-header">{category.title()}</p>\n\n'
+        funcs += '<div class="xs-func-grid">\n'
+        for f_index, func in enumerate(functions, 1):
+            anchor = f"#{cat_index}{f_index}-{func['name'].lower()}"
+            funcs += f'<a href="{anchor}" title="{func["name"]}">{func["name"]}</a>\n'
+        funcs += "</div>\n\n"
+    funcs += "---\n\n"
+
+    outmd_old = outmd + funcs
     for index, (category, functions) in enumerate(function_docs.items(), 1):
         # functions = sorted(functions, key = lambda x: x["name"])
         catmd = outmd[:]
