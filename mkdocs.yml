@@ -124,9 +124,9 @@ nav:
     - Custom Scenarios:                             "tools/scenarios/index.md"
     - XS Scripting:                                 "tools/xs/index.md"
     - Mods:                                         "tools/mods/index.md"
-    - RMS:                                          "tools/rms/index.md"
-    - AI:                                           "tools/ai/index.md"
-    - Audio:                                        "tools/audio/index.md"
+#   - RMS:                                          "tools/rms/index.md"
+#   - AI:                                           "tools/ai/index.md"
+#   - Audio:                                        "tools/audio/index.md"
 
 markdown_extensions:
   - attr_list
