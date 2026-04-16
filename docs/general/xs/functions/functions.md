@@ -1,5 +1,258 @@
-*Written by: Alian713, Kramb*
+*Written by: Alian713, Kramb, KSneijders*
 <div id="hide-toc-elements"></div>
+---
+
+## All Available Functions
+
+<p class="xs-func-category-header">Rules</p>
+
+<div class="xs-func-grid">
+<a href="#11-xsdisablerule" title="xsDisableRule">xsDisableRule</a>
+<a href="#12-xsdisableself" title="xsDisableSelf">xsDisableSelf</a>
+<a href="#13-xsenablerule" title="xsEnableRule">xsEnableRule</a>
+<a href="#14-xsisruleenabled" title="xsIsRuleEnabled">xsIsRuleEnabled</a>
+<a href="#15-xssetrulepriority" title="xsSetRulePriority">xsSetRulePriority</a>
+<a href="#16-xssetrulepriorityself" title="xsSetRulePrioritySelf">xsSetRulePrioritySelf</a>
+<a href="#17-xssetrulemininterval" title="xsSetRuleMinInterval">xsSetRuleMinInterval</a>
+<a href="#18-xssetruleminintervalself" title="xsSetRuleMinIntervalSelf">xsSetRuleMinIntervalSelf</a>
+<a href="#19-xssetrulemaxinterval" title="xsSetRuleMaxInterval">xsSetRuleMaxInterval</a>
+<a href="#110-xssetrulemaxintervalself" title="xsSetRuleMaxIntervalSelf">xsSetRuleMaxIntervalSelf</a>
+<a href="#111-xsenablerulegroup" title="xsEnableRuleGroup">xsEnableRuleGroup</a>
+<a href="#112-xsdisablerulegroup" title="xsDisableRuleGroup">xsDisableRuleGroup</a>
+<a href="#113-xsisrulegroupenabled" title="xsIsRuleGroupEnabled">xsIsRuleGroupEnabled</a>
+</div>
+
+<p class="xs-func-category-header">Vectors</p>
+
+<div class="xs-func-grid">
+<a href="#21-xsvectorgetx" title="xsVectorGetX">xsVectorGetX</a>
+<a href="#22-xsvectorgety" title="xsVectorGetY">xsVectorGetY</a>
+<a href="#23-xsvectorgetz" title="xsVectorGetZ">xsVectorGetZ</a>
+<a href="#24-xsvectorsetx" title="xsVectorSetX">xsVectorSetX</a>
+<a href="#25-xsvectorsety" title="xsVectorSetY">xsVectorSetY</a>
+<a href="#26-xsvectorsetz" title="xsVectorSetZ">xsVectorSetZ</a>
+<a href="#27-xsvectorset" title="xsVectorSet">xsVectorSet</a>
+<a href="#28-xsvectorlength" title="xsVectorLength">xsVectorLength</a>
+<a href="#29-xsvectornormalize" title="xsVectorNormalize">xsVectorNormalize</a>
+</div>
+
+<p class="xs-func-category-header">Arrays</p>
+
+<div class="xs-func-grid">
+<a href="#31-xsarraycreateint" title="xsArrayCreateInt">xsArrayCreateInt</a>
+<a href="#32-xsarraycreatefloat" title="xsArrayCreateFloat">xsArrayCreateFloat</a>
+<a href="#33-xsarraycreatebool" title="xsArrayCreateBool">xsArrayCreateBool</a>
+<a href="#34-xsarraycreatestring" title="xsArrayCreateString">xsArrayCreateString</a>
+<a href="#35-xsarraycreatevector" title="xsArrayCreateVector">xsArrayCreateVector</a>
+<a href="#36-xsarraysetint" title="xsArraySetInt">xsArraySetInt</a>
+<a href="#37-xsarraysetfloat" title="xsArraySetFloat">xsArraySetFloat</a>
+<a href="#38-xsarraysetbool" title="xsArraySetBool">xsArraySetBool</a>
+<a href="#39-xsarraysetstring" title="xsArraySetString">xsArraySetString</a>
+<a href="#310-xsarraysetvector" title="xsArraySetVector">xsArraySetVector</a>
+<a href="#311-xsarraygetint" title="xsArrayGetInt">xsArrayGetInt</a>
+<a href="#312-xsarraygetfloat" title="xsArrayGetFloat">xsArrayGetFloat</a>
+<a href="#313-xsarraygetbool" title="xsArrayGetBool">xsArrayGetBool</a>
+<a href="#314-xsarraygetstring" title="xsArrayGetString">xsArrayGetString</a>
+<a href="#315-xsarraygetvector" title="xsArrayGetVector">xsArrayGetVector</a>
+<a href="#316-xsarrayresizeint" title="xsArrayResizeInt">xsArrayResizeInt</a>
+<a href="#317-xsarrayresizefloat" title="xsArrayResizeFloat">xsArrayResizeFloat</a>
+<a href="#318-xsarrayresizebool" title="xsArrayResizeBool">xsArrayResizeBool</a>
+<a href="#319-xsarrayresizestring" title="xsArrayResizeString">xsArrayResizeString</a>
+<a href="#320-xsarrayresizevector" title="xsArrayResizeVector">xsArrayResizeVector</a>
+<a href="#321-xsarraygetsize" title="xsArrayGetSize">xsArrayGetSize</a>
+</div>
+
+<p class="xs-func-category-header">Maths</p>
+
+<div class="xs-func-grid">
+<a href="#41-abs" title="abs">abs</a>
+<a href="#42-sqrt" title="sqrt">sqrt</a>
+<a href="#43-pow" title="pow">pow</a>
+<a href="#44-sin" title="sin">sin</a>
+<a href="#45-cos" title="cos">cos</a>
+<a href="#46-tan" title="tan">tan</a>
+<a href="#47-asin" title="asin">asin</a>
+<a href="#48-acos" title="acos">acos</a>
+<a href="#49-atan" title="atan">atan</a>
+<a href="#410-atan2" title="atan2">atan2</a>
+<a href="#411-atan2v" title="atan2v">atan2v</a>
+<a href="#412-exp" title="exp">exp</a>
+<a href="#413-ceil" title="ceil">ceil</a>
+<a href="#414-floor" title="floor">floor</a>
+<a href="#415-bitcasttofloat" title="bitCastToFloat">bitCastToFloat</a>
+<a href="#416-bitcasttoint" title="bitCastToInt">bitCastToInt</a>
+<a href="#417-xsceiltoint" title="xsCeilToInt">xsCeilToInt</a>
+</div>
+
+<p class="xs-func-category-header">Randomization</p>
+
+<div class="xs-func-grid">
+<a href="#51-xsgetrandomnumber" title="xsGetRandomNumber">xsGetRandomNumber</a>
+<a href="#52-xsgetrandomnumberlh" title="xsGetRandomNumberLH">xsGetRandomNumberLH</a>
+<a href="#53-xsgetrandomnumbermax" title="xsGetRandomNumberMax">xsGetRandomNumberMax</a>
+</div>
+
+<p class="xs-func-category-header">Techs</p>
+
+<div class="xs-func-grid">
+<a href="#61-xsresearchtechnology" title="xsResearchTechnology">xsResearchTechnology</a>
+<a href="#62-xsgettechname" title="xsGetTechName">xsGetTechName</a>
+<a href="#63-xsgettechstate" title="xsGetTechState">xsGetTechState</a>
+</div>
+
+<p class="xs-func-category-header">Player</p>
+
+<div class="xs-func-grid">
+<a href="#71-xseffectamount" title="xsEffectAmount">xsEffectAmount</a>
+<a href="#72-xsgetplayerunitids" title="xsGetPlayerUnitIds">xsGetPlayerUnitIds</a>
+<a href="#73-xsgethandicapmultiplier" title="xsGetHandicapMultiplier">xsGetHandicapMultiplier</a>
+<a href="#74-xsgetworldplayerid" title="xsGetWorldPlayerId">xsGetWorldPlayerId</a>
+<a href="#75-xsgetplayercivilization" title="xsGetPlayerCivilization">xsGetPlayerCivilization</a>
+<a href="#76-xsgetplayeringame" title="xsGetPlayerInGame">xsGetPlayerInGame</a>
+<a href="#77-xsgetplayernumberoftechs" title="xsGetPlayerNumberOfTechs">xsGetPlayerNumberOfTechs</a>
+<a href="#78-xsplayerattribute" title="xsPlayerAttribute">xsPlayerAttribute</a>
+<a href="#79-xssetplayerattribute" title="xsSetPlayerAttribute">xsSetPlayerAttribute</a>
+<a href="#710-xsgetplayername" title="xsGetPlayerName">xsGetPlayerName</a>
+<a href="#711-xsgetplayertype" title="xsGetPlayerType">xsGetPlayerType</a>
+<a href="#712-xsgetdiplomacy" title="xsGetDiplomacy">xsGetDiplomacy</a>
+<a href="#713-xssetdiplomacy" title="xsSetDiplomacy">xsSetDiplomacy</a>
+<a href="#714-xsgetdifficulty" title="xsGetDifficulty">xsGetDifficulty</a>
+</div>
+
+<p class="xs-func-category-header">Tasks</p>
+
+<div class="xs-func-grid">
+<a href="#81-xstaskamount" title="xsTaskAmount">xsTaskAmount</a>
+<a href="#82-xsresettaskamount" title="xsResetTaskAmount">xsResetTaskAmount</a>
+<a href="#83-xsgetobjecttaskcount" title="xsGetObjectTaskCount">xsGetObjectTaskCount</a>
+<a href="#84-xsgetunittaskcount" title="xsGetUnitTaskCount">xsGetUnitTaskCount</a>
+<a href="#85-xsobjecttaskamount" title="xsObjectTaskAmount">xsObjectTaskAmount</a>
+<a href="#86-xsunittaskamount" title="xsUnitTaskAmount">xsUnitTaskAmount</a>
+<a href="#87-xsgettaskamount" title="xsGetTaskAmount">xsGetTaskAmount</a>
+<a href="#88-xsmodifyobjecttasks" title="xsModifyObjectTasks">xsModifyObjectTasks</a>
+<a href="#89-xsmodifyunittasks" title="xsModifyUnitTasks">xsModifyUnitTasks</a>
+<a href="#810-xstask" title="xsTask">xsTask</a>
+<a href="#811-xsremovetask" title="xsRemoveTask">xsRemoveTask</a>
+</div>
+
+<p class="xs-func-category-header">Units And Objects</p>
+
+<div class="xs-func-grid">
+<a href="#91-xscreateunit" title="xsCreateUnit">xsCreateUnit</a>
+<a href="#92-xsremoveunit" title="xsRemoveUnit">xsRemoveUnit</a>
+<a href="#93-xsgetobjectattribute" title="xsGetObjectAttribute">xsGetObjectAttribute</a>
+<a href="#94-xsgetunitattribute" title="xsGetUnitAttribute">xsGetUnitAttribute</a>
+<a href="#95-xsdoesunitexist" title="xsDoesUnitExist">xsDoesUnitExist</a>
+<a href="#96-xsgetunitowner" title="xsGetUnitOwner">xsGetUnitOwner</a>
+<a href="#97-xsgetunitposition" title="xsGetUnitPosition">xsGetUnitPosition</a>
+<a href="#98-xssetunitposition" title="xsSetUnitPosition">xsSetUnitPosition</a>
+<a href="#99-xsgetunitname" title="xsGetUnitName">xsGetUnitName</a>
+<a href="#910-xsgetobjectname" title="xsGetObjectName">xsGetObjectName</a>
+<a href="#911-xsgetunittargetunitid" title="xsGetUnitTargetUnitId">xsGetUnitTargetUnitId</a>
+<a href="#912-xsgetunitmovetarget" title="xsGetUnitMoveTarget">xsGetUnitMoveTarget</a>
+<a href="#913-xsgetunitgroupid" title="xsGetUnitGroupId">xsGetUnitGroupId</a>
+<a href="#914-xsgetgroupmovetarget" title="xsGetGroupMoveTarget">xsGetGroupMoveTarget</a>
+<a href="#915-xsisobjectavailable" title="xsIsObjectAvailable">xsIsObjectAvailable</a>
+<a href="#916-xsgetunithitpoints" title="xsGetUnitHitpoints">xsGetUnitHitpoints</a>
+<a href="#917-xssetunithitpoints" title="xsSetUnitHitpoints">xsSetUnitHitpoints</a>
+<a href="#918-xsgetunitbuildpoints" title="xsGetUnitBuildPoints">xsGetUnitBuildPoints</a>
+<a href="#919-xssetunitbuildpoints" title="xsSetUnitBuildPoints">xsSetUnitBuildPoints</a>
+<a href="#920-xsgetunitobjectid" title="xsGetUnitObjectId">xsGetUnitObjectId</a>
+<a href="#921-xsgetunitcopyid" title="xsGetUnitCopyId">xsGetUnitCopyId</a>
+<a href="#922-xsgetobjectcopyid" title="xsGetObjectCopyId">xsGetObjectCopyId</a>
+<a href="#923-xsgetunitclass" title="xsGetUnitClass">xsGetUnitClass</a>
+<a href="#924-xsgetobjectclass" title="xsGetObjectClass">xsGetObjectClass</a>
+<a href="#925-xsgetunittype" title="xsGetUnitType">xsGetUnitType</a>
+<a href="#926-xsgetobjecttype" title="xsGetObjectType">xsGetObjectType</a>
+<a href="#927-xsgetunitattributetypesheld" title="xsGetUnitAttributeTypesHeld">xsGetUnitAttributeTypesHeld</a>
+<a href="#928-xsgetunitattributeheld" title="xsGetUnitAttributeHeld">xsGetUnitAttributeHeld</a>
+<a href="#929-xssetunitattributeheld" title="xsSetUnitAttributeHeld">xsSetUnitAttributeHeld</a>
+<a href="#930-xsgetunitcharge" title="xsGetUnitCharge">xsGetUnitCharge</a>
+<a href="#931-xssetunitcharge" title="xsSetUnitCharge">xsSetUnitCharge</a>
+<a href="#932-xsgetgarrisonedinunitid" title="xsGetGarrisonedInUnitId">xsGetGarrisonedInUnitId</a>
+<a href="#933-xsgetgarrisonedunitids" title="xsGetGarrisonedUnitIds">xsGetGarrisonedUnitIds</a>
+<a href="#934-xsgetobjectcount" title="xsGetObjectCount">xsGetObjectCount</a>
+<a href="#935-xsgetobjectcounttotal" title="xsGetObjectCountTotal">xsGetObjectCountTotal</a>
+<a href="#936-xsobjecthasaction" title="xsObjectHasAction">xsObjectHasAction</a>
+</div>
+
+<p class="xs-func-category-header">Map</p>
+
+<div class="xs-func-grid">
+<a href="#101-xsgetmapname" title="xsGetMapName">xsGetMapName</a>
+<a href="#102-xsgetmapid" title="xsGetMapID">xsGetMapID</a>
+<a href="#103-xsgetmapheight" title="xsGetMapHeight">xsGetMapHeight</a>
+<a href="#104-xsgetmapwidth" title="xsGetMapWidth">xsGetMapWidth</a>
+<a href="#105-xsgetcolormood" title="xsGetColorMood">xsGetColorMood</a>
+<a href="#106-xssetcolormood" title="xsSetColorMood">xsSetColorMood</a>
+<a href="#107-xstriggervariable" title="xsTriggerVariable">xsTriggerVariable</a>
+<a href="#108-xssettriggervariable" title="xsSetTriggerVariable">xsSetTriggerVariable</a>
+</div>
+
+<p class="xs-func-category-header">Game Info</p>
+
+<div class="xs-func-grid">
+<a href="#111-xsgetnumplayers" title="xsGetNumPlayers">xsGetNumPlayers</a>
+<a href="#112-xsgettime" title="xsGetTime">xsGetTime</a>
+<a href="#113-xsgetgametime" title="xsGetGameTime">xsGetGameTime</a>
+<a href="#114-xsgetworldtime" title="xsGetWorldTime">xsGetWorldTime</a>
+<a href="#115-xsgetturn" title="xsGetTurn">xsGetTurn</a>
+<a href="#116-xsgetvictorytype" title="xsGetVictoryType">xsGetVictoryType</a>
+<a href="#117-xsgetvictoryplayer" title="xsGetVictoryPlayer">xsGetVictoryPlayer</a>
+<a href="#118-xsgetvictoryplayerforsecondarygamemode" title="xsGetVictoryPlayerForSecondaryGameMode">xsGetVictoryPlayerForSecondaryGameMode</a>
+<a href="#119-xsgetvictorytime" title="xsGetVictoryTime">xsGetVictoryTime</a>
+<a href="#1110-xsgetvictorytimeforsecondarygamemode" title="xsGetVictoryTimeForSecondaryGameMode">xsGetVictoryTimeForSecondaryGameMode</a>
+<a href="#1111-xsgetvictorycondition" title="xsGetVictoryCondition">xsGetVictoryCondition</a>
+<a href="#1112-xsgetvictoryconditionforsecondarygamemode" title="xsGetVictoryConditionForSecondaryGameMode">xsGetVictoryConditionForSecondaryGameMode</a>
+</div>
+
+<p class="xs-func-category-header">Ui</p>
+
+<div class="xs-func-grid">
+<a href="#121-xschatdata" title="xsChatData">xsChatData</a>
+</div>
+
+<p class="xs-func-category-header">File Io</p>
+
+<div class="xs-func-grid">
+<a href="#131-xscreatefile" title="xsCreateFile">xsCreateFile</a>
+<a href="#132-xsopenfile" title="xsOpenFile">xsOpenFile</a>
+<a href="#133-xswritestring" title="xsWriteString">xsWriteString</a>
+<a href="#134-xswriteint" title="xsWriteInt">xsWriteInt</a>
+<a href="#135-xswritefloat" title="xsWriteFloat">xsWriteFloat</a>
+<a href="#136-xswritevector" title="xsWriteVector">xsWriteVector</a>
+<a href="#137-xsreadstring" title="xsReadString">xsReadString</a>
+<a href="#138-xsreadint" title="xsReadInt">xsReadInt</a>
+<a href="#139-xsreadfloat" title="xsReadFloat">xsReadFloat</a>
+<a href="#1310-xsreadvector" title="xsReadVector">xsReadVector</a>
+<a href="#1311-xssetfileposition" title="xsSetFilePosition">xsSetFilePosition</a>
+<a href="#1312-xsoffsetfileposition" title="xsOffsetFilePosition">xsOffsetFilePosition</a>
+<a href="#1313-xsclosefile" title="xsCloseFile">xsCloseFile</a>
+<a href="#1314-xsgetfileposition" title="xsGetFilePosition">xsGetFilePosition</a>
+<a href="#1315-xsgetdatatypesize" title="xsGetDataTypeSize">xsGetDataTypeSize</a>
+<a href="#1316-xsgetfilesize" title="xsGetFileSize">xsGetFileSize</a>
+</div>
+
+<p class="xs-func-category-header">Ai Scripting</p>
+
+<div class="xs-func-grid">
+<a href="#141-xsgetgoal" title="xsGetGoal">xsGetGoal</a>
+<a href="#142-xsgetstrategicnumber" title="xsGetStrategicNumber">xsGetStrategicNumber</a>
+<a href="#143-xssetgoal" title="xsSetGoal">xsSetGoal</a>
+<a href="#144-xssetstrategicnumber" title="xsSetStrategicNumber">xsSetStrategicNumber</a>
+</div>
+
+<p class="xs-func-category-header">Misc</p>
+
+<div class="xs-func-grid">
+<a href="#151-xsdumparrays" title="xsDumpArrays">xsDumpArrays</a>
+<a href="#152-xsgetcontextplayer" title="xsGetContextPlayer">xsGetContextPlayer</a>
+<a href="#153-xssetcontextplayer" title="xsSetContextPlayer">xsSetContextPlayer</a>
+<a href="#154-xsgetfunctionid" title="xsGetFunctionID">xsGetFunctionID</a>
+<a href="#155-xsbreakpoint" title="xsBreakPoint">xsBreakPoint</a>
+<a href="#156-xsaddruntimeevent" title="xsAddRuntimeEvent">xsAddRuntimeEvent</a>
+</div>
+
 ---
 
 ## 1. Rules
