@@ -31,12 +31,11 @@ nav:
     # - Tricks and Tips:                            "scenarios/tricks.md"
     # - Advanced:
     #   - File Byte Structure:                      "scenarios/advanced/byte_structure.md"
-    - Useful Tools:
+    # - Useful Tools:
       # - Advanced Genie Editor:
       #   - A.G.E. Uses:                            "scenarios/useful_tools/age/uses.md"
       #   - Unhiding Editor Units:                  "scenarios/useful_tools/age/unhide.md"
-      - AoE2ScenarioParser:
-        -                                           "scenarios/useful_tools/parser/index.md"
+    - Tools:                                        "scenarios/tools.md"
   - XS Scripting:
     -                                               "general/xs/index.md"
     - Tutorials:
@@ -94,6 +93,8 @@ nav:
 #        - Language:
 #          - File I/O:                               "general/xs/constants/file_io.md"
 #          - Constants:                              "general/xs/constants/language_constants.md"
+    - XS Libraries:                                    "general/xs/libraries.md"
+    - Tools:                                        "general/xs/tools.md"
     - Useful Resources:                             "general/xs/useful.md"
     - Known Bugs:
       -                                             "general/xs/bugs/index.md"
@@ -110,6 +111,7 @@ nav:
 #   - Data Mods
 #     - Advanced Genie Editor:
 #       - A.G.E. Basics:                            "mods/age/basics.md"
+    - Tools:                                        "mods/tools.md"
   - RMS:
     -                                               "rms/index.md"
 #     - RMS Basics:                                 "rms/basics.md"
@@ -117,6 +119,14 @@ nav:
     -                                               "ai/index.md"
   - Audio:
     -                                               "audio/index.md"
+  - Tools:
+    -                                               "tools/index.md"
+    - Custom Scenarios:                             "tools/scenarios/index.md"
+    - XS Scripting:                                 "tools/xs/index.md"
+    - Mods:                                         "tools/mods/index.md"
+#   - RMS:                                          "tools/rms/index.md"
+#   - AI:                                           "tools/ai/index.md"
+#   - Audio:                                        "tools/audio/index.md"
 
 markdown_extensions:
   - attr_list
@@ -129,7 +139,8 @@ markdown_extensions:
   - pymdownx.keys             # Add styling keyboard keys           https://facelessuser.github.io/pymdown-extensions/extensions/keys/
   - pymdownx.mark             # Highlighting of text                https://facelessuser.github.io/pymdown-extensions/extensions/mark/
   - pymdownx.smartsymbols     # Creating special characters         https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
-  - pymdownx.snippets         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.snippets:        #                                     https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+      base_path: ["docs/"]
   - pymdownx.superfences
   - pymdownx.tabbed           # Tabs                                https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
   - pymdownx.tasklist         #                                     https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/

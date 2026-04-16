@@ -162,6 +162,10 @@ table {
      font-size: 1em;
 }
 
+/* Force table with to be 100% */
+.md-typeset__table { min-width: 100%; }
+.md-typeset table:not([class]) { display: table; }
+
 /* XS function overview grid */
 .xs-func-category-header {
      font-size: 1.1rem;
