@@ -391,4 +391,4 @@ Some hotkeys that are useful to know and make the workflow of making and testing
     9. ++ctrl+c++ Switch to the Cinematics tab
     10. ++ctrl+v++ Switch to the Global Victory tab
     11. ++ctrl+m++ Switch to the Map tab
-13. ++ctrl+space++ Test Scenario (Currently bugged, causes a crash in the game D:)
+13. ++ctrl+space++ Test Scenario
