@@ -110,8 +110,8 @@ def main():
             catmd += body
             outmd_old += body
 
-        with open(f"./{filename}.md", "w") as file:
-            file.write(catmd)
+        # with open(f"./{filename}.md", "w") as file:
+        #     file.write(catmd)
 
     with open("./constants.md", "w") as file:
         file.write(outmd_old)
