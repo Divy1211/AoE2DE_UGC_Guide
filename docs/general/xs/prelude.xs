@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/04/14 06:21:34 |
+// | Generated on: 2026/04/27 22:12:03 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -3539,6 +3539,7 @@ bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
 * @param checkCollision If false, don't check for collision before creating the unit
 *
 * @returns int
+* @allow_discard
 */
 int xsCreateUnit(int objectId = -1, int playerId = -1, vector location = vector(-1, -1, -1), bool foundation = false, bool playCreatedSound = false, bool checkCollision = false) {}
 

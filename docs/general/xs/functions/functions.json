@@ -1645,6 +1645,7 @@
     "Units and Objects": [
         {
             "name": "xsCreateUnit",
+            "allow_discard": true,
             "return_type": "int",
             "params": [
                 {
