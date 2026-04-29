@@ -19,18 +19,23 @@ outmd = """*Written by: Alian713, Kramb*
 <div id="hide-toc-elements"></div>
 """
 
-def to_title(string):
-    string = string[1:]
-    string = string.replace("Attribute", "")
-    string = string.replace("DamageClass", "")
-    string = string.replace("TaskAttr", "")
-    string = string.replace("TaskType", "")
-    string = string.replace("TechState", "")
-    string = string.replace("ObjectType", "")
-    string = string.replace("PlayerType", "")
-    string = string.replace("Diplomacy", "")
-    string = string.replace("ColorMood", "")
-    string = string.replace("Difficulty", "")
+def to_title(string: str):
+    string = string.removeprefix("cAttribute")
+    string = string.removeprefix("cDamageClass")
+    string = string.removeprefix("cTaskAttr")
+    string = string.removeprefix("cTaskType")
+    string = string.removeprefix("cTechState")
+    string = string.removeprefix("cObjectType")
+    string = string.removeprefix("cPlayerType")
+    string = string.removeprefix("cDiplomacy")
+    string = string.removeprefix("cColorMood")
+    string = string.removeprefix("cDifficulty")
+    string = string.removeprefix("cPanel")
+    string = string.removeprefix("cLocale")
+    string = string.removeprefix("cTimerUnit")
+    string = string.removeprefix("cColor")
+    string = string.removeprefix("cTech")
+    string = string.removeprefix("c")
     i = 0
     while(i < len(string)):
         if string[i].isupper():

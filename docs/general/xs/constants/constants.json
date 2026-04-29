@@ -2341,6 +2341,20 @@
             "type": "int",
             "desc": "This is the attribute [Size Class](../../../attributes/attributes/#163-size-class).",
             "usage": null
+        },
+        {
+            "name": "cRemoveArmorType",
+            "value": 164,
+            "type": "int",
+            "desc": "This is the attribute [Add Armor Type](../../../attributes/attributes/#160-add-armor-type).",
+            "usage": null
+        },
+        {
+            "name": "cRemoveAttackType",
+            "value": 165,
+            "type": "int",
+            "desc": "This is the attribute [Add Attack Type](../../../attributes/attributes/#161-add-attack-type).",
+            "usage": null
         }
     ],
     "Object Class": [
@@ -6020,6 +6034,359 @@
             "type": "int",
             "value": 4,
             "desc": "Enum value for difficulty TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "Panel": [
+        {
+            "name": "cPanelTop",
+            "type": "int",
+            "value": 0,
+            "desc": "Enum value for Panel Position TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPanelMiddle",
+            "type": "int",
+            "value": 1,
+            "desc": "Enum value for Panel Position TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cPanelBottom",
+            "type": "int",
+            "value": 2,
+            "desc": "Enum value for Panel Position TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "Locale": [
+        {
+            "name": "cLocalePortugese",
+            "type": "int",
+            "value": 0,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleGerman",
+            "type": "int",
+            "value": 1,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleEnglish",
+            "type": "int",
+            "value": 2,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleSpanish",
+            "type": "int",
+            "value": 3,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleFrench",
+            "type": "int",
+            "value": 4,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleHindi",
+            "type": "int",
+            "value": 5,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleItalian",
+            "type": "int",
+            "value": 6,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleJapanese",
+            "type": "int",
+            "value": 7,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleKorean",
+            "type": "int",
+            "value": 8,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleMalay",
+            "type": "int",
+            "value": 9,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleSpanishLatinAmerican",
+            "type": "int",
+            "value": 10,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleRussian",
+            "type": "int",
+            "value": 11,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleTurkish",
+            "type": "int",
+            "value": 12,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleChineseTraditional",
+            "type": "int",
+            "value": 13,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleVietnamese",
+            "type": "int",
+            "value": 14,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocaleChineseSimplified",
+            "type": "int",
+            "value": 15,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cLocalePolish",
+            "type": "int",
+            "value": 16,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cNumLocales",
+            "type": "int",
+            "value": 17,
+            "desc": "Enum value for Locale TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "Timer Unit": [
+        {
+            "name": "cTimerUnitYears",
+            "type": "int",
+            "value": 0,
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTimerUnitMinutes",
+            "type": "int",
+            "value": 1,
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTimerUnitSeconds",
+            "type": "int",
+            "value": 2,
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTimerUnitMinutesAndSeconds",
+            "type": "int",
+            "value": 3,
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "Color": [
+        {
+            "name": "cColorBlue",
+            "type": "string",
+            "value": "\"<BLUE>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorRed",
+            "type": "string",
+            "value": "\"<RED>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorGreen",
+            "type": "string",
+            "value": "\"<GREEN>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorYellow",
+            "type": "string",
+            "value": "\"<YELLOW>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorAqua",
+            "type": "string",
+            "value": "\"<AQUA>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorPurple",
+            "type": "string",
+            "value": "\"<PURPLE>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorGray",
+            "type": "string",
+            "value": "\"<GRAY>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorOrange",
+            "type": "string",
+            "value": "\"<ORANGE>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorWhite",
+            "type": "string",
+            "value": "\"<WHITE>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorBlack",
+            "type": "string",
+            "value": "\"<BLACK>\"",
+            "desc": "Enum value for Timer Unit TYPE_NAME",
+            "usage": null
+        }
+    ],
+    "Tech Attribute": [
+        {
+            "name": "cTechState",
+            "type": "int",
+            "value": 0,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechCost",
+            "type": "int",
+            "value": 1,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechResearchTime",
+            "type": "int",
+            "value": 2,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechResearchLocation",
+            "type": "int",
+            "value": 3,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechButtonLocation",
+            "type": "int",
+            "value": 4,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechHotkeyId",
+            "type": "int",
+            "value": 5,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechIconId",
+            "type": "int",
+            "value": 6,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechEffectId",
+            "type": "int",
+            "value": 7,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechCurrentResearchLocation",
+            "type": "int",
+            "value": 8,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechTimesResearched",
+            "type": "int",
+            "value": 9,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechTimesQueued",
+            "type": "int",
+            "value": 10,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechStackingAllowed",
+            "type": "int",
+            "value": 11,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechStackingEnabled",
+            "type": "int",
+            "value": 12,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cTechStackingCap",
+            "type": "int",
+            "value": 13,
+            "desc": "Enum value for Tech Attribute TYPE_NAME",
             "usage": null
         }
     ]

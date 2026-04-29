@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/04/27 22:12:03 |
+// | Generated on: 2026/04/30 00:57:15 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -995,6 +995,12 @@ extern const int cChargeTarget = 162;
 /** This is the attribute [Size Class](https://ugc.aoe2.rocks/general/attributes/attributes/#163-size-class). */
 extern const int cSizeClass = 163;
 
+/** This is the attribute [Add Armor Type](https://ugc.aoe2.rocks/general/attributes/attributes/#160-add-armor-type). */
+extern const int cRemoveArmorType = 164;
+
+/** This is the attribute [Add Attack Type](https://ugc.aoe2.rocks/general/attributes/attributes/#161-add-attack-type). */
+extern const int cRemoveAttackType = 165;
+
 
 // 12. Object Class
 
@@ -1729,7 +1735,7 @@ extern const int cAttributeSpeedUpBuildingRange = 256;
 /** ID of the player resource [Speed Up Percentage](https://ugc.aoe2.rocks/general/resources/resources/#257-unused-resource-257) */
 extern const int cAttributeSpeedUpPercentage = 257;
 
-/** ID of the player resource [Speed Up](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
+/** ID of the player resource [Speed Up Object Type](https://ugc.aoe2.rocks/general/resources/resources/#258-unused-resource-258) */
 extern const int cAttributeSpeedUpObjectType = 258;
 
 /** ID of the player resource [Speed Up Effect Type](https://ugc.aoe2.rocks/general/resources/resources/#259-unused-resource-259) */
@@ -2150,7 +2156,7 @@ extern const int cDamageClassSkirmishers = 38;
 /** ID of the Damage Class Royal Heirs */
 extern const int cDamageClassRoyalHeirs = 39;
 
-/** ID of the Damage Class Numes */
+/** ID of the Damage Class Num Damage Classes */
 extern const int cNumDamageClasses = 39;
 
 
@@ -2241,7 +2247,7 @@ extern const int cTaskAttrEnableTargeting = 26;
 /** ID for the task amount Task Attribute Enabled */
 extern const int cTaskAttrEnabled = 27;
 
-/** ID for the task amount Task Attribute  */
+/** ID for the task amount Task Attribute Task Type */
 extern const int cTaskAttrTaskType = 28;
 
 /** ID for the task amount Task Attribute Object Id */
@@ -2565,7 +2571,7 @@ extern const int cColorMoodTwilight = 17;
 /** Enum value for color mood Darkness */
 extern const int cColorMoodDarkness = 18;
 
-/** Enum value for color mood Nums */
+/** Enum value for color mood Num Color Moods */
 extern const int cNumColorMoods = 19;
 
 
@@ -2589,6 +2595,173 @@ extern const int cDifficultyEasy = 3;
 
 /** Enum value for difficulty Easiest */
 extern const int cDifficultyEasiest = 4;
+
+
+// 23. Panel
+
+
+/** Enum value for Panel Position Top */
+extern const int cPanelTop = 0;
+
+/** Enum value for Panel Position Middle */
+extern const int cPanelMiddle = 1;
+
+/** Enum value for Panel Position Bottom */
+extern const int cPanelBottom = 2;
+
+
+// 24. Locale
+
+
+/** Enum value for Locale Portugese */
+extern const int cLocalePortugese = 0;
+
+/** Enum value for Locale German */
+extern const int cLocaleGerman = 1;
+
+/** Enum value for Locale English */
+extern const int cLocaleEnglish = 2;
+
+/** Enum value for Locale Spanish */
+extern const int cLocaleSpanish = 3;
+
+/** Enum value for Locale French */
+extern const int cLocaleFrench = 4;
+
+/** Enum value for Locale Hindi */
+extern const int cLocaleHindi = 5;
+
+/** Enum value for Locale Italian */
+extern const int cLocaleItalian = 6;
+
+/** Enum value for Locale Japanese */
+extern const int cLocaleJapanese = 7;
+
+/** Enum value for Locale Korean */
+extern const int cLocaleKorean = 8;
+
+/** Enum value for Locale Malay */
+extern const int cLocaleMalay = 9;
+
+/** Enum value for Locale Spanish Latin American */
+extern const int cLocaleSpanishLatinAmerican = 10;
+
+/** Enum value for Locale Russian */
+extern const int cLocaleRussian = 11;
+
+/** Enum value for Locale Turkish */
+extern const int cLocaleTurkish = 12;
+
+/** Enum value for Locale Chinese Traditional */
+extern const int cLocaleChineseTraditional = 13;
+
+/** Enum value for Locale Vietnamese */
+extern const int cLocaleVietnamese = 14;
+
+/** Enum value for Locale Chinese Simplified */
+extern const int cLocaleChineseSimplified = 15;
+
+/** Enum value for Locale Polish */
+extern const int cLocalePolish = 16;
+
+/** Enum value for Locale Num Locales */
+extern const int cNumLocales = 17;
+
+
+// 25. Timer Unit
+
+
+/** Enum value for Timer Unit Years */
+extern const int cTimerUnitYears = 0;
+
+/** Enum value for Timer Unit Minutes */
+extern const int cTimerUnitMinutes = 1;
+
+/** Enum value for Timer Unit Seconds */
+extern const int cTimerUnitSeconds = 2;
+
+/** Enum value for Timer Unit Minutes And Seconds */
+extern const int cTimerUnitMinutesAndSeconds = 3;
+
+
+// 26. Color
+
+
+/** Enum value for Timer Unit Blue */
+extern const string cColorBlue = "<BLUE>";
+
+/** Enum value for Timer Unit Red */
+extern const string cColorRed = "<RED>";
+
+/** Enum value for Timer Unit Green */
+extern const string cColorGreen = "<GREEN>";
+
+/** Enum value for Timer Unit Yellow */
+extern const string cColorYellow = "<YELLOW>";
+
+/** Enum value for Timer Unit Aqua */
+extern const string cColorAqua = "<AQUA>";
+
+/** Enum value for Timer Unit Purple */
+extern const string cColorPurple = "<PURPLE>";
+
+/** Enum value for Timer Unit Gray */
+extern const string cColorGray = "<GRAY>";
+
+/** Enum value for Timer Unit Orange */
+extern const string cColorOrange = "<ORANGE>";
+
+/** Enum value for Timer Unit White */
+extern const string cColorWhite = "<WHITE>";
+
+/** Enum value for Timer Unit Black */
+extern const string cColorBlack = "<BLACK>";
+
+
+// 27. Tech Attribute
+
+
+/** Enum value for Tech Attribute  */
+extern const int cTechState = 0;
+
+/** Enum value for Tech Attribute Cost */
+extern const int cTechCost = 1;
+
+/** Enum value for Tech Attribute Research Time */
+extern const int cTechResearchTime = 2;
+
+/** Enum value for Tech Attribute Research Location */
+extern const int cTechResearchLocation = 3;
+
+/** Enum value for Tech Attribute Button Location */
+extern const int cTechButtonLocation = 4;
+
+/** Enum value for Tech Attribute Hotkey Id */
+extern const int cTechHotkeyId = 5;
+
+/** Enum value for Tech Attribute Icon Id */
+extern const int cTechIconId = 6;
+
+/** Enum value for Tech Attribute Effect Id */
+extern const int cTechEffectId = 7;
+
+/** Enum value for Tech Attribute Current Research Location */
+extern const int cTechCurrentResearchLocation = 8;
+
+/** Enum value for Tech Attribute Times Researched */
+extern const int cTechTimesResearched = 9;
+
+/** Enum value for Tech Attribute Times Queued */
+extern const int cTechTimesQueued = 10;
+
+/** Enum value for Tech Attribute Stacking Allowed */
+extern const int cTechStackingAllowed = 11;
+
+/** Enum value for Tech Attribute Stacking Enabled */
+extern const int cTechStackingEnabled = 12;
+
+/** Enum value for Tech Attribute Stacking Cap */
+extern const int cTechStackingCap = 13;
 
 
 // 1. Rules
@@ -3091,6 +3264,16 @@ float atan2(float y = -1.0, float x = -1.0) {}
 float atan2v(vector v = vector(-1, -1, -1)) {}
 
 /**
+* Returns `x & y`
+*
+* @param x The first number
+* @param y The second number
+*
+* @returns int
+*/
+int bitAnd(int x = -1, int y = -1) {}
+
+/**
 * Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `#!rs std::mem::transmute::<i32, f32>(number)`
 *
 * @param number The value to `reinterpret/bit_cast` to `float`
@@ -3107,6 +3290,35 @@ float bitCastToFloat(int number = -1) {}
 * @returns int
 */
 int bitCastToInt(float number = -1.0) {}
+
+/**
+* Returns `~x`
+*
+* @param x The number to get the 1's compliment for
+*
+* @returns int
+*/
+int bitNot(int x = -1) {}
+
+/**
+* Returns `x | y`
+*
+* @param x The first number
+* @param y The second number
+*
+* @returns int
+*/
+int bitOr(int x = -1, int y = -1) {}
+
+/**
+* Returns `x ^ y`
+*
+* @param x The first number
+* @param y The second number
+*
+* @returns int
+*/
+int bitXor(int x = -1, int y = -1) {}
 
 /**
 * Returns $\left \lceil{x}\right \rceil$
@@ -3127,6 +3339,25 @@ float ceil(float x = -1.0) {}
 float cos(float x = -1.0) {}
 
 /**
+* Returns $\cfrac{180}{\pi} x$
+*
+* @param x The value to convert to degrees
+*
+* @returns float
+*/
+float degrees(float x = -1.0) {}
+
+/**
+* Returns the distance (norm-2) between the two vectors
+*
+* @param v1 The first vector
+* @param v2 The second vector
+*
+* @returns float
+*/
+float dist(vector v1 = vector(-1, -1, -1), vector v2 = vector(-1, -1, -1)) {}
+
+/**
 * Returns $e^x$
 *
 * @param x The value to find the exp of
@@ -3145,6 +3376,33 @@ float exp(float x = -1.0) {}
 float floor(float x = -1.0) {}
 
 /**
+* Returns the natural log
+*
+* @param x The value to find the natural log of
+*
+* @returns float
+*/
+float ln(float x = -1.0) {}
+
+/**
+* Returns the log base 10
+*
+* @param x The value to find the log base 10 of
+*
+* @returns float
+*/
+float log10(float x = -1.0) {}
+
+/**
+* Returns the log base 2
+*
+* @param x The value to find the log base 2 of
+*
+* @returns float
+*/
+float log2(float x = -1.0) {}
+
+/**
 * Returns x raised to the power y (x**y).
 *
 * @param x The base value
@@ -3153,6 +3411,25 @@ float floor(float x = -1.0) {}
 * @returns float
 */
 float pow(float x = -1.0, float y = -1.0) {}
+
+/**
+* Returns $\cfrac{\pi}{180} x$
+*
+* @param x The value to convert to radians
+*
+* @returns float
+*/
+float radians(float x = -1.0) {}
+
+/**
+* Returns the rounded value
+*
+* @param x The value to round
+* @param places The number of decimal places to round to. Capped between 0-8, defaults to 2.
+*
+* @returns float
+*/
+float round(float x = -1.0, int places = -1) {}
 
 /**
 * Returns the sine of the angle in radians.
@@ -3223,6 +3500,17 @@ int xsGetRandomNumberMax(int max = -1) {}
 // 6. Techs
 
 /**
+* Gets the specific tech attribute for the supplied tech for the given player.
+*
+* @param playerId The player to get the tech's attribute for
+* @param techId The tech to get the attribute for
+* @param techAttribute The tech attribute to get. See the [cTech constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#27-tech-attribute \"Jump To: XS > Constant Reference > 27. Tech Attribute\")
+*
+* @returns int
+*/
+int xsGetTechAttribute(int playerId = -1, int techId = -1, int techAttribute = -1) {}
+
+/**
 * Returns the current name of the given tech for the specified player.
 *
 * @param techId The tech to get the name for
@@ -3258,6 +3546,17 @@ bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailabl
 
 
 // 7. Player
+
+/**
+* Makes a player win or lose the game
+*
+* @param playerId The player to make win
+* @param victory If unset, defeat the player instead
+*
+* @returns void
+* @allow_discard
+*/
+void xsDeclareVictory(int playerId = -1, bool victory = false) {}
 
 /**
 * Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat).
@@ -3653,6 +3952,15 @@ string xsGetObjectName(int objectId = -1, int playerId = -1, bool internalName =
 int xsGetObjectType(int playerId = -1, int objectId = -1) {}
 
 /**
+* Returns the number of data objects for this player
+*
+* @param playerId The player to get the number of data objects for
+*
+* @returns bool
+*/
+bool xsGetPlayerNumberOfObjects(int playerId = -1) {}
+
+/**
 * Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
 *
 * @param unitId The unit to get the attribute for.
@@ -3811,6 +4119,16 @@ int xsGetUnitType(int unitId = -1) {}
 bool xsIsObjectAvailable(int objectId = -1, int playerId = -1) {}
 
 /**
+* Checks if the supplied object ID is valid for the given player (e.g. Gaia only units)
+*
+* @param objectId The object ID to check
+* @param playerId The player to check the ID for
+*
+* @returns bool
+*/
+bool xsIsObjectValid(int objectId = -1, int playerId = -1) {}
+
+/**
 * Checks and returns if any unit matching the set filters of the given player has the specified action.
 *
 * @param playerId The player to check unit actions for
@@ -3925,6 +4243,13 @@ int xsGetMapID() {}
 string xsGetMapName(bool showFileExtension = false) {}
 
 /**
+* Gets the current RMS seed or -1 in the editor.
+*
+* @returns int
+*/
+int xsGetMapSeed() {}
+
+/**
 * Returns the Width of the map.
 *
 * @returns int
@@ -3943,7 +4268,7 @@ int xsGetMapWidth() {}
 bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
 
 /**
-* Sets the value of the variable of the given variable ID to the provided value.
+* Sets the value of the variable of the given variable ID to the provided value. Note: This only works in a custom scenario
 *
 * @param variableId The ID of the variable to set the value of
 * @param value The value to set the variable to
@@ -3953,7 +4278,7 @@ bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
 void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
 
 /**
-* Returns the value of the variable of the given variable ID.
+* Returns the value of the variable of the given variable ID. Note: This only works in a custom scenario
 *
 * @param variableId The ID of the variable to get the value of
 *
@@ -4072,6 +4397,162 @@ int xsGetWorldTime() {}
 * @returns void
 */
 void xsChatData(string message = "", int value = -1) {}
+
+/**
+* Same as the Clear Instructions editor effect.
+*
+* @param panelPosition The location to clear the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#24-panel)
+* @param playerId If set to -1, clear for all players. Otherwise clear only for the specified player.
+*
+* @returns bool
+* @allow_discard
+*/
+bool xsClearInstructions(int panelPosition = -1, int playerId = -1) {}
+
+/**
+* Same as the Clear Timer editor effect.
+*
+* @param timerId The timer ID to clear
+* @param playerId If set to -1, clear for all players. Otherwise clear only for the specified player.
+*
+* @returns bool
+* @allow_discard
+*/
+bool xsClearTimer(int timerId = -1, int playerId = -1) {}
+
+/**
+* Same as the Display Instructions editor effect.
+*
+* @param msg The message to show
+* @param time The time to show the instructions for in seconds
+* @param sourcePlayer The player to use for the icon's civ and colour
+* @param iconObjectId If set, shows the icon of this object on the instruction panel
+* @param panelPosition The location to show the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#23-panel)
+* @param useTagColorForIcon If set, uses the `<TAG>` color used in `msg` for the icon as well.
+* @param playNotificationSound If unset, do not play the instruction notification sound.
+* @param soundFilename If `playSound` is enabled, plays this sound file.
+* @param playerId If set to -1, show for all players. Otherwise show only for the specified player.
+*
+* @returns bool
+* @allow_discard
+*/
+bool xsDisplayInstructions(string msg = "", int time = -1, int sourcePlayer = -1, int iconObjectId = -1, int panelPosition = -1, bool useTagColorForIcon = false, bool playNotificationSound = false, string soundFilename = "", int playerId = -1) {}
+
+/**
+* Same as the Display Timer editor effect.
+*
+* @param timerId The timer ID to use to show the instructions for in seconds
+* @param msg The message to show. You may use <TIMER> or %d to substitute a formatted timer value
+* @param time The timeout for the timer
+* @param timerUnit The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#25-timer-unit)
+* @param resetTimer If unset, duplicate the timer. Note: Do not unset this unless you know what you're doing.
+* @param playerId If set to -1, show for all players. Otherwise show only for the specified player.
+*
+* @returns bool
+* @allow_discard
+*/
+bool xsDisplayTimer(int timerId = -1, string msg = "", int time = -1, int timerUnit = -1, bool resetTimer = false, int playerId = -1) {}
+
+/**
+* 
+*
+* @param damageClassId The ID of the damage class to get the name for
+* @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+*
+* @returns string
+*/
+string xsGetDamageClassName(int damageClassId = -1, bool localized = false) {}
+
+/**
+* Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
+*
+* @returns int
+*/
+int xsGetLocalPlayerId() {}
+
+/**
+* Gets the locale of the current player. See the [cLocale constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#24-locale). Note: this function returns a unique value for every player, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+*
+* @returns int
+*/
+int xsGetLocale() {}
+
+/**
+* 
+*
+* @param attributeId The ID of the attribute to get the name for
+* @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+*
+* @returns string
+*/
+string xsGetObjectAttributeName(int attributeId = -1, bool localized = false) {}
+
+/**
+* 
+*
+* @param stringId The resource ID to get the editor name for
+* @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+*
+* @returns string
+*/
+string xsGetPlayerAttributeName(int stringId = -1, bool localized = false) {}
+
+/**
+* Gets the colour prefix (e.g. <RED>) for a given player. See the [cColor constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#26-color)
+*
+* @param playerId The player to get the colour prefix (<TAG>) for
+*
+* @returns string
+*/
+string xsGetPlayerColorTag(int playerId = -1) {}
+
+/**
+* Gets the string associated with a given string ID
+*
+* @param stringId The string ID to get
+* @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+*
+* @returns string
+*/
+string xsGetString(int stringId = -1, bool localized = false) {}
+
+/**
+* Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, this can possibly return different values for different players and will cause a desync! Use with caution!
+*
+* @param timerId The timer ID to clear
+* @param timerUnit The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#25-timer-unit)
+* @param playerId If set to -1, clear for all players. Otherwise clear only for the specified player.
+*
+* @returns float
+*/
+float xsGetTimerTimeRemaining(int timerId = -1, int timerUnit = -1, int playerId = -1) {}
+
+/**
+* 
+*
+* @param eventOrSoundFileName The sound event name to fire for the given `unitId` or the sound file name to play
+* @param playerId If set to -1, play for all players. Otherwise play only for the specified player.
+* @param position If set, play a local sound at this position.
+* @param angle If set, play a directional sound from the specified position.
+* @param unitId If set, play the sound from this unit.
+* @param global If set, play the sound on the whole map.
+*
+* @returns bool
+* @allow_discard
+*/
+bool xsPlaySound(string eventOrSoundFileName = "", int playerId = -1, vector position = vector(-1, -1, -1), float angle = -1.0, int unitId = -1, bool global = false) {}
+
+/**
+* Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!
+*
+* @param msg The msg to send
+* @param playerId If set to -1, send for all players. Otherwise send only for the specified player.
+* @param silent If set, do not play the chat notification sound.
+*
+* @returns bool
+* @allow_discard
+*/
+bool xsSendChat(string msg = "", int playerId = -1, bool silent = false) {}
 
 
 // 13. File Io

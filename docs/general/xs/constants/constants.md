@@ -2346,6 +2346,18 @@ Value: `#!xs int 163`
 
 This is the attribute [Size Class](../../../attributes/attributes/#163-size-class).
 
+### 11.154. cRemoveArmorType
+
+Value: `#!xs int 164`
+
+This is the attribute [Add Armor Type](../../../attributes/attributes/#160-add-armor-type).
+
+### 11.155. cRemoveAttackType
+
+Value: `#!xs int 165`
+
+This is the attribute [Add Attack Type](../../../attributes/attributes/#161-add-attack-type).
+
 ## 12. Object Class
 
 ### 12.1. cArcherClass
@@ -3806,7 +3818,7 @@ ID of the player resource Speed Up Percentage. Check [here](../../../resources/r
 
 Value: `#!xs int 258`
 
-ID of the player resource Speed Up. Check [here](../../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
+ID of the player resource Speed Up Object Type. Check [here](../../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
 
 ### 13.179. cAttributeSpeedUpEffectType
 
@@ -4642,7 +4654,7 @@ ID of the Damage Class Royal Heirs
 
 Value: `#!xs int 39`
 
-ID of the Damage Class Numes
+ID of the Damage Class Num Damage Classes
 
 ## 15. Task Attribute
 
@@ -4851,7 +4863,7 @@ ID for the task amount Task Attribute Enabled
 
 Value: `#!xs int 28`
 
-ID for the task amount Task Attribute 
+ID for the task amount Task Attribute Task Type
 
 ### 15.30. cTaskAttrObjectId
 
@@ -5463,7 +5475,7 @@ Enum value for color mood Darkness
 
 Value: `#!xs int 19`
 
-Enum value for color mood Nums
+Enum value for color mood Num Color Moods
 
 ## 22. Difficulty
 
@@ -5502,4 +5514,308 @@ Enum value for difficulty Easy
 Value: `#!xs int 4`
 
 Enum value for difficulty Easiest
+
+## 23. Panel
+
+### 23.1. cPanelTop
+
+Value: `#!xs int 0`
+
+Enum value for Panel Position Top
+
+### 23.2. cPanelMiddle
+
+Value: `#!xs int 1`
+
+Enum value for Panel Position Middle
+
+### 23.3. cPanelBottom
+
+Value: `#!xs int 2`
+
+Enum value for Panel Position Bottom
+
+## 24. Locale
+
+### 24.1. cLocalePortugese
+
+Value: `#!xs int 0`
+
+Enum value for Locale Portugese
+
+### 24.2. cLocaleGerman
+
+Value: `#!xs int 1`
+
+Enum value for Locale German
+
+### 24.3. cLocaleEnglish
+
+Value: `#!xs int 2`
+
+Enum value for Locale English
+
+### 24.4. cLocaleSpanish
+
+Value: `#!xs int 3`
+
+Enum value for Locale Spanish
+
+### 24.5. cLocaleFrench
+
+Value: `#!xs int 4`
+
+Enum value for Locale French
+
+### 24.6. cLocaleHindi
+
+Value: `#!xs int 5`
+
+Enum value for Locale Hindi
+
+### 24.7. cLocaleItalian
+
+Value: `#!xs int 6`
+
+Enum value for Locale Italian
+
+### 24.8. cLocaleJapanese
+
+Value: `#!xs int 7`
+
+Enum value for Locale Japanese
+
+### 24.9. cLocaleKorean
+
+Value: `#!xs int 8`
+
+Enum value for Locale Korean
+
+### 24.10. cLocaleMalay
+
+Value: `#!xs int 9`
+
+Enum value for Locale Malay
+
+### 24.11. cLocaleSpanishLatinAmerican
+
+Value: `#!xs int 10`
+
+Enum value for Locale Spanish Latin American
+
+### 24.12. cLocaleRussian
+
+Value: `#!xs int 11`
+
+Enum value for Locale Russian
+
+### 24.13. cLocaleTurkish
+
+Value: `#!xs int 12`
+
+Enum value for Locale Turkish
+
+### 24.14. cLocaleChineseTraditional
+
+Value: `#!xs int 13`
+
+Enum value for Locale Chinese Traditional
+
+### 24.15. cLocaleVietnamese
+
+Value: `#!xs int 14`
+
+Enum value for Locale Vietnamese
+
+### 24.16. cLocaleChineseSimplified
+
+Value: `#!xs int 15`
+
+Enum value for Locale Chinese Simplified
+
+### 24.17. cLocalePolish
+
+Value: `#!xs int 16`
+
+Enum value for Locale Polish
+
+### 24.18. cNumLocales
+
+Value: `#!xs int 17`
+
+Enum value for Locale Num Locales
+
+## 25. Timer Unit
+
+### 25.1. cTimerUnitYears
+
+Value: `#!xs int 0`
+
+Enum value for Timer Unit Years
+
+### 25.2. cTimerUnitMinutes
+
+Value: `#!xs int 1`
+
+Enum value for Timer Unit Minutes
+
+### 25.3. cTimerUnitSeconds
+
+Value: `#!xs int 2`
+
+Enum value for Timer Unit Seconds
+
+### 25.4. cTimerUnitMinutesAndSeconds
+
+Value: `#!xs int 3`
+
+Enum value for Timer Unit Minutes And Seconds
+
+## 26. Color
+
+### 26.1. cColorBlue
+
+Value: `#!xs string "<BLUE>"`
+
+Enum value for Timer Unit Blue
+
+### 26.2. cColorRed
+
+Value: `#!xs string "<RED>"`
+
+Enum value for Timer Unit Red
+
+### 26.3. cColorGreen
+
+Value: `#!xs string "<GREEN>"`
+
+Enum value for Timer Unit Green
+
+### 26.4. cColorYellow
+
+Value: `#!xs string "<YELLOW>"`
+
+Enum value for Timer Unit Yellow
+
+### 26.5. cColorAqua
+
+Value: `#!xs string "<AQUA>"`
+
+Enum value for Timer Unit Aqua
+
+### 26.6. cColorPurple
+
+Value: `#!xs string "<PURPLE>"`
+
+Enum value for Timer Unit Purple
+
+### 26.7. cColorGray
+
+Value: `#!xs string "<GRAY>"`
+
+Enum value for Timer Unit Gray
+
+### 26.8. cColorOrange
+
+Value: `#!xs string "<ORANGE>"`
+
+Enum value for Timer Unit Orange
+
+### 26.9. cColorWhite
+
+Value: `#!xs string "<WHITE>"`
+
+Enum value for Timer Unit White
+
+### 26.10. cColorBlack
+
+Value: `#!xs string "<BLACK>"`
+
+Enum value for Timer Unit Black
+
+## 27. Tech Attribute
+
+### 27.1. cTechState
+
+Value: `#!xs int 0`
+
+Enum value for Tech Attribute 
+
+### 27.2. cTechCost
+
+Value: `#!xs int 1`
+
+Enum value for Tech Attribute Cost
+
+### 27.3. cTechResearchTime
+
+Value: `#!xs int 2`
+
+Enum value for Tech Attribute Research Time
+
+### 27.4. cTechResearchLocation
+
+Value: `#!xs int 3`
+
+Enum value for Tech Attribute Research Location
+
+### 27.5. cTechButtonLocation
+
+Value: `#!xs int 4`
+
+Enum value for Tech Attribute Button Location
+
+### 27.6. cTechHotkeyId
+
+Value: `#!xs int 5`
+
+Enum value for Tech Attribute Hotkey Id
+
+### 27.7. cTechIconId
+
+Value: `#!xs int 6`
+
+Enum value for Tech Attribute Icon Id
+
+### 27.8. cTechEffectId
+
+Value: `#!xs int 7`
+
+Enum value for Tech Attribute Effect Id
+
+### 27.9. cTechCurrentResearchLocation
+
+Value: `#!xs int 8`
+
+Enum value for Tech Attribute Current Research Location
+
+### 27.10. cTechTimesResearched
+
+Value: `#!xs int 9`
+
+Enum value for Tech Attribute Times Researched
+
+### 27.11. cTechTimesQueued
+
+Value: `#!xs int 10`
+
+Enum value for Tech Attribute Times Queued
+
+### 27.12. cTechStackingAllowed
+
+Value: `#!xs int 11`
+
+Enum value for Tech Attribute Stacking Allowed
+
+### 27.13. cTechStackingEnabled
+
+Value: `#!xs int 12`
+
+Enum value for Tech Attribute Stacking Enabled
+
+### 27.14. cTechStackingCap
+
+Value: `#!xs int 13`
+
+Enum value for Tech Attribute Stacking Cap
 

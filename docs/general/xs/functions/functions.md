@@ -82,6 +82,17 @@
 <a href="#415-bitcasttofloat" title="bitCastToFloat">bitCastToFloat</a>
 <a href="#416-bitcasttoint" title="bitCastToInt">bitCastToInt</a>
 <a href="#417-xsceiltoint" title="xsCeilToInt">xsCeilToInt</a>
+<a href="#418-ln" title="ln">ln</a>
+<a href="#419-log2" title="log2">log2</a>
+<a href="#420-log10" title="log10">log10</a>
+<a href="#421-round" title="round">round</a>
+<a href="#422-radians" title="radians">radians</a>
+<a href="#423-degrees" title="degrees">degrees</a>
+<a href="#424-dist" title="dist">dist</a>
+<a href="#425-bitand" title="bitAnd">bitAnd</a>
+<a href="#426-bitor" title="bitOr">bitOr</a>
+<a href="#427-bitxor" title="bitXor">bitXor</a>
+<a href="#428-bitnot" title="bitNot">bitNot</a>
 </div>
 
 <p class="xs-func-category-header">Randomization</p>
@@ -98,6 +109,7 @@
 <a href="#61-xsresearchtechnology" title="xsResearchTechnology">xsResearchTechnology</a>
 <a href="#62-xsgettechname" title="xsGetTechName">xsGetTechName</a>
 <a href="#63-xsgettechstate" title="xsGetTechState">xsGetTechState</a>
+<a href="#64-xsgettechattribute" title="xsGetTechAttribute">xsGetTechAttribute</a>
 </div>
 
 <p class="xs-func-category-header">Player</p>
@@ -117,6 +129,7 @@
 <a href="#712-xsgetdiplomacy" title="xsGetDiplomacy">xsGetDiplomacy</a>
 <a href="#713-xssetdiplomacy" title="xsSetDiplomacy">xsSetDiplomacy</a>
 <a href="#714-xsgetdifficulty" title="xsGetDifficulty">xsGetDifficulty</a>
+<a href="#715-xsdeclarevictory" title="xsDeclareVictory">xsDeclareVictory</a>
 </div>
 
 <p class="xs-func-category-header">Tasks</p>
@@ -174,6 +187,8 @@
 <a href="#934-xsgetobjectcount" title="xsGetObjectCount">xsGetObjectCount</a>
 <a href="#935-xsgetobjectcounttotal" title="xsGetObjectCountTotal">xsGetObjectCountTotal</a>
 <a href="#936-xsobjecthasaction" title="xsObjectHasAction">xsObjectHasAction</a>
+<a href="#937-xsisobjectvalid" title="xsIsObjectValid">xsIsObjectValid</a>
+<a href="#938-xsgetplayernumberofobjects" title="xsGetPlayerNumberOfObjects">xsGetPlayerNumberOfObjects</a>
 </div>
 
 <p class="xs-func-category-header">Map</p>
@@ -185,8 +200,9 @@
 <a href="#104-xsgetmapwidth" title="xsGetMapWidth">xsGetMapWidth</a>
 <a href="#105-xsgetcolormood" title="xsGetColorMood">xsGetColorMood</a>
 <a href="#106-xssetcolormood" title="xsSetColorMood">xsSetColorMood</a>
-<a href="#107-xstriggervariable" title="xsTriggerVariable">xsTriggerVariable</a>
-<a href="#108-xssettriggervariable" title="xsSetTriggerVariable">xsSetTriggerVariable</a>
+<a href="#107-xsgetmapseed" title="xsGetMapSeed">xsGetMapSeed</a>
+<a href="#108-xstriggervariable" title="xsTriggerVariable">xsTriggerVariable</a>
+<a href="#109-xssettriggervariable" title="xsSetTriggerVariable">xsSetTriggerVariable</a>
 </div>
 
 <p class="xs-func-category-header">Game Info</p>
@@ -210,6 +226,20 @@
 
 <div class="xs-func-grid">
 <a href="#121-xschatdata" title="xsChatData">xsChatData</a>
+<a href="#122-xsgetlocale" title="xsGetLocale">xsGetLocale</a>
+<a href="#123-xsgetstring" title="xsGetString">xsGetString</a>
+<a href="#124-xsgetplayerattributename" title="xsGetPlayerAttributeName">xsGetPlayerAttributeName</a>
+<a href="#125-xsgetobjectattributename" title="xsGetObjectAttributeName">xsGetObjectAttributeName</a>
+<a href="#126-xsgetdamageclassname" title="xsGetDamageClassName">xsGetDamageClassName</a>
+<a href="#127-xsplaysound" title="xsPlaySound">xsPlaySound</a>
+<a href="#128-xsdisplayinstructions" title="xsDisplayInstructions">xsDisplayInstructions</a>
+<a href="#129-xsclearinstructions" title="xsClearInstructions">xsClearInstructions</a>
+<a href="#1210-xsdisplaytimer" title="xsDisplayTimer">xsDisplayTimer</a>
+<a href="#1211-xscleartimer" title="xsClearTimer">xsClearTimer</a>
+<a href="#1212-xsgettimertimeremaining" title="xsGetTimerTimeRemaining">xsGetTimerTimeRemaining</a>
+<a href="#1213-xssendchat" title="xsSendChat">xsSendChat</a>
+<a href="#1214-xsgetlocalplayerid" title="xsGetLocalPlayerId">xsGetLocalPlayerId</a>
+<a href="#1215-xsgetplayercolortag" title="xsGetPlayerColorTag">xsGetPlayerColorTag</a>
 </div>
 
 <p class="xs-func-category-header">File Io</p>
@@ -1020,6 +1050,143 @@ Parameters:
 
 Rounds the number **up** to the next integer
 
+### 4.18. ln
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float ln(float x)`
+
+Parameters:
+
+1.  `#!xs float x`: The value to find the natural log of
+
+Returns the natural log
+
+### 4.19. log2
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float log2(float x)`
+
+Parameters:
+
+1.  `#!xs float x`: The value to find the log base 2 of
+
+Returns the log base 2
+
+### 4.20. log10
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float log10(float x)`
+
+Parameters:
+
+1.  `#!xs float x`: The value to find the log base 10 of
+
+Returns the log base 10
+
+### 4.21. round
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float round(float x, int places)`
+
+Parameters:
+
+1.  `#!xs float x`: The value to round
+2. (Optional) `#!xs int places`: The number of decimal places to round to. Capped between 0-8, defaults to 2.
+
+Returns the rounded value
+
+### 4.22. radians
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float radians(float x)`
+
+Parameters:
+
+1.  `#!xs float x`: The value to convert to radians
+
+Returns $\cfrac{\pi}{180} x$
+
+### 4.23. degrees
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float degrees(float x)`
+
+Parameters:
+
+1.  `#!xs float x`: The value to convert to degrees
+
+Returns $\cfrac{180}{\pi} x$
+
+### 4.24. dist
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float dist(vector v1, vector v2)`
+
+Parameters:
+
+1.  `#!xs vector v1`: The first vector
+2.  `#!xs vector v2`: The second vector
+
+Returns the distance (norm-2) between the two vectors
+
+### 4.25. bitAnd
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bitAnd(int x, int y)`
+
+Parameters:
+
+1.  `#!xs int x`: The first number
+2.  `#!xs int y`: The second number
+
+Returns `x & y`
+
+### 4.26. bitOr
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bitOr(int x, int y)`
+
+Parameters:
+
+1.  `#!xs int x`: The first number
+2.  `#!xs int y`: The second number
+
+Returns `x | y`
+
+### 4.27. bitXor
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bitXor(int x, int y)`
+
+Parameters:
+
+1.  `#!xs int x`: The first number
+2.  `#!xs int y`: The second number
+
+Returns `x ^ y`
+
+### 4.28. bitNot
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bitNot(int x)`
+
+Parameters:
+
+1.  `#!xs int x`: The number to get the 1's compliment for
+
+Returns `~x`
+
 ## 5. Randomization
 
 ### 5.1. xsGetRandomNumber
@@ -1099,6 +1266,20 @@ Parameters:
 2.  `#!xs int playerId`: The player to get the tech's state for
 
 Returns one of the [cTechState constants](../../constants/constants/#17-tech-state "Jump To: XS > Constant Reference > 17. Tech State Constants") based on the tech's status
+
+### 6.4. xsGetTechAttribute
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetTechAttribute(int playerId, int techId, int techAttribute)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to get the tech's attribute for
+2.  `#!xs int techId`: The tech to get the attribute for
+3.  `#!xs int techAttribute`: The tech attribute to get. See the [cTech constants](../../constants/constants/#27-tech-attribute \"Jump To: XS > Constant Reference > 27. Tech Attribute\")
+
+Gets the specific tech attribute for the supplied tech for the given player.
 
 ## 7. Player
 
@@ -1279,6 +1460,19 @@ Prototype: `#!xs int xsGetDifficulty()`
 
 
 Returns the difficulty setting for the game. Refer to the [Constant Reference](../../constants/constants/#22-difficulty "Jump to: XS Scripting > Constant Reference > 22. Difficulty") for all the different difficulty IDs
+
+### 7.15. xsDeclareVictory
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsDeclareVictory(int playerId, bool victory)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to make win
+2. (Optional) `#!xs bool victory`: If unset, defeat the player instead
+
+Makes a player win or lose the game
 
 ## 8. Tasks
 
@@ -1901,6 +2095,31 @@ Parameters:
 
 Checks and returns if any unit matching the set filters of the given player has the specified action.
 
+### 9.37. xsIsObjectValid
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsIsObjectValid(int objectId, int playerId)`
+
+Parameters:
+
+1.  `#!xs int objectId`: The object ID to check
+2.  `#!xs int playerId`: The player to check the ID for
+
+Checks if the supplied object ID is valid for the given player (e.g. Gaia only units)
+
+### 9.38. xsGetPlayerNumberOfObjects
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsGetPlayerNumberOfObjects(int playerId)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to get the number of data objects for
+
+Returns the number of data objects for this player
+
 ## 10. Map
 
 ### 10.1. xsGetMapName
@@ -1964,7 +2183,16 @@ Parameters:
 
 Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../../constants/constants/#21-color-mood "Jump to: XS Scripting > Constant Reference > 21. Color Mood") for all the different color mood IDs
 
-### 10.7. xsTriggerVariable
+### 10.7. xsGetMapSeed
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetMapSeed()`
+
+
+Gets the current RMS seed or -1 in the editor.
+
+### 10.8. xsTriggerVariable
 
 Returning Type: `#!xs int`
 
@@ -1974,9 +2202,9 @@ Parameters:
 
 1.  `#!xs int variableId`: The ID of the variable to get the value of
 
-Returns the value of the variable of the given variable ID.
+Returns the value of the variable of the given variable ID. Note: This only works in a custom scenario
 
-### 10.8. xsSetTriggerVariable
+### 10.9. xsSetTriggerVariable
 
 Returning Type: `#!xs void`
 
@@ -1987,7 +2215,7 @@ Parameters:
 1.  `#!xs int variableId`: The ID of the variable to set the value of
 2.  `#!xs int value`: The value to set the variable to
 
-Sets the value of the variable of the given variable ID to the provided value.
+Sets the value of the variable of the given variable ID to the provided value. Note: This only works in a custom scenario
 
 ## 11. Game Info
 
@@ -2125,6 +2353,196 @@ Parameters:
 2. (Optional) `#!xs int value`: This value is inserted in place of any `%d` used in the message of the function
 
 Shows the given message in the game chat
+
+### 12.2. xsGetLocale
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetLocale()`
+
+
+Gets the locale of the current player. See the [cLocale constants](../../constants/constants/#24-locale "Jump To: XS > Constant Reference > 24. Locale"). Note: this function returns a unique value for every player, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+
+### 12.3. xsGetString
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetString(int stringId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int stringId`: The string ID to get
+2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+
+Gets the string associated with a given string ID
+
+### 12.4. xsGetPlayerAttributeName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetPlayerAttributeName(int stringId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int stringId`: The resource ID to get the editor name for
+2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+
+
+
+### 12.5. xsGetObjectAttributeName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetObjectAttributeName(int attributeId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int attributeId`: The ID of the attribute to get the name for
+2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+
+
+
+### 12.6. xsGetDamageClassName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetDamageClassName(int damageClassId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int damageClassId`: The ID of the damage class to get the name for
+2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+
+
+
+### 12.7. xsPlaySound
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsPlaySound(string eventOrSoundFileName, int playerId, vector position, float angle, int unitId, bool global)`
+
+Parameters:
+
+1.  `#!xs string eventOrSoundFileName`: The sound event name to fire for the given `unitId` or the sound file name to play
+2. (Optional) `#!xs int playerId`: If set to -1, play for all players. Otherwise play only for the specified player.
+3. (Optional) `#!xs vector position`: If set, play a local sound at this position.
+4. (Optional) `#!xs float angle`: If set, play a directional sound from the specified position.
+5. (Optional) `#!xs int unitId`: If set, play the sound from this unit.
+6. (Optional) `#!xs bool global`: If set, play the sound on the whole map.
+
+
+
+### 12.8. xsDisplayInstructions
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsDisplayInstructions(string msg, int time, int sourcePlayer, int iconObjectId, int panelPosition, bool useTagColorForIcon, bool playNotificationSound, string soundFilename, int playerId)`
+
+Parameters:
+
+1.  `#!xs string msg`: The message to show
+2.  `#!xs int time`: The time to show the instructions for in seconds
+3.  `#!xs int sourcePlayer`: The player to use for the icon's civ and colour
+4. (Optional) `#!xs int iconObjectId`: If set, shows the icon of this object on the instruction panel
+5. (Optional) `#!xs int panelPosition`: The location to show the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#23-panel "Jump To: XS > Constant Reference > 23. Panel")
+6. (Optional) `#!xs bool useTagColorForIcon`: If set, uses the `<TAG>` color used in `msg` for the icon as well.
+7. (Optional) `#!xs bool playNotificationSound`: If unset, do not play the instruction notification sound.
+8. (Optional) `#!xs string soundFilename`: If `playSound` is enabled, plays this sound file.
+9. (Optional) `#!xs int playerId`: If set to -1, show for all players. Otherwise show only for the specified player.
+
+Same as the Display Instructions editor effect.
+
+### 12.9. xsClearInstructions
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsClearInstructions(int panelPosition, int playerId)`
+
+Parameters:
+
+1. (Optional) `#!xs int panelPosition`: The location to clear the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#24-panel "Jump To: XS > Constant Reference > 24. Panel")
+2. (Optional) `#!xs int playerId`: If set to -1, clear for all players. Otherwise clear only for the specified player.
+
+Same as the Clear Instructions editor effect.
+
+### 12.10. xsDisplayTimer
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsDisplayTimer(int timerId, string msg, int time, int timerUnit, bool resetTimer, int playerId)`
+
+Parameters:
+
+1.  `#!xs int timerId`: The timer ID to use to show the instructions for in seconds
+2.  `#!xs string msg`: The message to show. You may use <TIMER> or %d to substitute a formatted timer value
+3.  `#!xs int time`: The timeout for the timer
+4. (Optional) `#!xs int timerUnit`: The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit "Jump To: XS > Constant Reference > 25. Timer Unit")
+5. (Optional) `#!xs bool resetTimer`: If unset, duplicate the timer. Note: Do not unset this unless you know what you're doing.
+6. (Optional) `#!xs int playerId`: If set to -1, show for all players. Otherwise show only for the specified player.
+
+Same as the Display Timer editor effect.
+
+### 12.11. xsClearTimer
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsClearTimer(int timerId, int playerId)`
+
+Parameters:
+
+1.  `#!xs int timerId`: The timer ID to clear
+2. (Optional) `#!xs int playerId`: If set to -1, clear for all players. Otherwise clear only for the specified player.
+
+Same as the Clear Timer editor effect.
+
+### 12.12. xsGetTimerTimeRemaining
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetTimerTimeRemaining(int timerId, int timerUnit, int playerId)`
+
+Parameters:
+
+1.  `#!xs int timerId`: The timer ID to clear
+2. (Optional) `#!xs int timerUnit`: The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit "Jump To: XS > Constant Reference > 25. Timer Unit")
+3. (Optional) `#!xs int playerId`: If set to -1, clear for all players. Otherwise clear only for the specified player.
+
+Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, this can possibly return different values for different players and will cause a desync! Use with caution!
+
+### 12.13. xsSendChat
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSendChat(string msg, int playerId, bool silent)`
+
+Parameters:
+
+1.  `#!xs string msg`: The msg to send
+2. (Optional) `#!xs int playerId`: If set to -1, send for all players. Otherwise send only for the specified player.
+3. (Optional) `#!xs bool silent`: If set, do not play the chat notification sound.
+
+Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!
+
+### 12.14. xsGetLocalPlayerId
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetLocalPlayerId()`
+
+
+Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
+
+### 12.15. xsGetPlayerColorTag
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetPlayerColorTag(int playerId)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to get the colour prefix (<TAG>) for
+
+Gets the colour prefix (e.g. <RED>) for a given player. See the [cColor constants](../../constants/constants/#26-color "Jump To: XS > Constant Reference > 26. Color")
 
 ## 13. File Io
 

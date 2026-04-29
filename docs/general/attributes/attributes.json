@@ -1179,5 +1179,17 @@
             "- 8: Unused"
         ],
         "flags": {}
+    },
+    "164": {
+        "name": "Remove Armor Type",
+        "desc": "Setting this removes an existing armor class in the targeted object/unit",
+        "notes": [],
+        "flags": {}
+    },
+    "165": {
+        "name": "Remove Attack Type",
+        "desc": "Setting this removes an existing attack class in the targeted object/unit",
+        "notes": [],
+        "flags": {}
     }
 }

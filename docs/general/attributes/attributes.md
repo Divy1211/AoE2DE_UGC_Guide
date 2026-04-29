@@ -1281,3 +1281,15 @@ This page is a list of all the unit attributes that can be modified in the scena
 
     - 8: Unused
 
+## 164. Remove Armor Type
+
+ - ID: 164
+
+ - Setting this removes an existing armor class in the targeted object/unit
+
+## 165. Remove Attack Type
+
+ - ID: 165
+
+ - Setting this removes an existing attack class in the targeted object/unit
+

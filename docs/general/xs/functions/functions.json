@@ -1028,6 +1028,179 @@
                 }
             ],
             "desc": "Rounds the number **up** to the next integer"
+        },
+        {
+            "name": "ln",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the natural log of"
+                }
+            ],
+            "desc": "Returns the natural log"
+        },
+        {
+            "name": "log2",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the log base 2 of"
+                }
+            ],
+            "desc": "Returns the log base 2"
+        },
+        {
+            "name": "log10",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to find the log base 10 of"
+                }
+            ],
+            "desc": "Returns the log base 10"
+        },
+        {
+            "name": "round",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to round"
+                },
+                {
+                    "name": "places",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The number of decimal places to round to. Capped between 0-8, defaults to 2."
+                }
+            ],
+            "desc": "Returns the rounded value"
+        },
+        {
+            "name": "radians",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to convert to radians"
+                }
+            ],
+            "desc": "Returns $\\cfrac{\\pi}{180} x$"
+        },
+        {
+            "name": "degrees",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to convert to degrees"
+                }
+            ],
+            "desc": "Returns $\\cfrac{180}{\\pi} x$"
+        },
+        {
+            "name": "dist",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "v1",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The first vector"
+                },
+                {
+                    "name": "v2",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The second vector"
+                }
+            ],
+            "desc": "Returns the distance (norm-2) between the two vectors"
+        },
+        {
+            "name": "bitAnd",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The first number"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The second number"
+                }
+            ],
+            "desc": "Returns `x & y`"
+        },
+        {
+            "name": "bitOr",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The first number"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The second number"
+                }
+            ],
+            "desc": "Returns `x | y`"
+        },
+        {
+            "name": "bitXor",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The first number"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The second number"
+                }
+            ],
+            "desc": "Returns `x ^ y`"
+        },
+        {
+            "name": "bitNot",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The number to get the 1's compliment for"
+                }
+            ],
+            "desc": "Returns `~x`"
         }
     ],
     "randomization": [
@@ -1146,6 +1319,31 @@
                 }
             ],
             "desc": "Returns one of the [cTechState constants](../../constants/constants/#17-tech-state \"Jump To: XS > Constant Reference > 17. Tech State Constants\") based on the tech's status"
+        },
+        {
+            "name": "xsGetTechAttribute",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the tech's attribute for"
+                },
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech to get the attribute for"
+                },
+                {
+                    "name": "techAttribute",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech attribute to get. See the [cTech constants](../../constants/constants/#27-tech-attribute \\\"Jump To: XS > Constant Reference > 27. Tech Attribute\\\")"
+                }
+            ],
+            "desc": "Gets the specific tech attribute for the supplied tech for the given player."
         }
     ],
     "player": [
@@ -1402,6 +1600,26 @@
             "return_type": "int",
             "params": [],
             "desc": "Returns the difficulty setting for the game. Refer to the [Constant Reference](../../constants/constants/#22-difficulty \"Jump to: XS Scripting > Constant Reference > 22. Difficulty\") for all the different difficulty IDs"
+        },
+        {
+            "name": "xsDeclareVictory",
+            "allow_discard": true,
+            "return_type": "void",
+            "params": [
+                 {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to make win"
+                },
+                {
+                    "name": "victory",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If unset, defeat the player instead"
+                }
+            ],
+            "desc": "Makes a player win or lose the game"
         }
     ],
     "tasks": [
@@ -2309,6 +2527,38 @@
                 }
             ],
             "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
+        },
+        {
+            "name": "xsIsObjectValid",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object ID to check"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to check the ID for"
+                }
+            ],
+            "desc": "Checks if the supplied object ID is valid for the given player (e.g. Gaia only units)"
+        },
+        {
+            "name": "xsGetPlayerNumberOfObjects",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the number of data objects for"
+                }
+            ],
+            "desc": "Returns the number of data objects for this player"
         }
     ],
     "map": [
@@ -2370,6 +2620,12 @@
             "desc": "Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../../constants/constants/#21-color-mood \"Jump to: XS Scripting > Constant Reference > 21. Color Mood\") for all the different color mood IDs"
         },
         {
+            "name": "xsGetMapSeed",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the current RMS seed or -1 in the editor."
+        },
+        {
             "name": "xsTriggerVariable",
             "return_type": "int",
             "params": [
@@ -2380,7 +2636,7 @@
                     "desc": "The ID of the variable to get the value of"
                 }
             ],
-            "desc": "Returns the value of the variable of the given variable ID."
+            "desc": "Returns the value of the variable of the given variable ID. Note: This only works in a custom scenario"
         },
         {
             "name": "xsSetTriggerVariable",
@@ -2399,7 +2655,7 @@
                     "desc": "The value to set the variable to"
                 }
             ],
-            "desc": "Sets the value of the variable of the given variable ID to the provided value."
+            "desc": "Sets the value of the variable of the given variable ID to the provided value. Note: This only works in a custom scenario"
         }
     ],
     "game info": [
@@ -2495,6 +2751,348 @@
                 }
             ],
             "desc": "Shows the given message in the game chat"
+        },
+        {
+            "return_type": "int",
+            "name": "xsGetLocale",
+            "params": [],
+            "desc": "Gets the locale of the current player. See the [cLocale constants](../../constants/constants/#24-locale \"Jump To: XS > Constant Reference > 24. Locale\"). Note: this function returns a unique value for every player, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync."
+        },
+        {
+            "return_type": "string",
+            "name": "xsGetString",
+            "params": [
+                {
+                    "name": "stringId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The string ID to get"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync."
+                }
+            ],
+            "desc": "Gets the string associated with a given string ID"
+        },
+        {
+            "return_type": "string",
+            "name": "xsGetPlayerAttributeName",
+            "params": [
+                {
+                    "name": "stringId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The resource ID to get the editor name for"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync."
+                }
+            ],
+            "desc": ""
+        },
+        {
+            "return_type": "string",
+            "name": "xsGetObjectAttributeName",
+            "params": [
+                {
+                    "name": "attributeId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the attribute to get the name for"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync."
+                }
+            ],
+            "desc": ""
+        },
+        {
+            "return_type": "string",
+            "name": "xsGetDamageClassName",
+            "params": [
+                {
+                    "name": "damageClassId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the damage class to get the name for"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync."
+                }
+            ],
+            "desc": ""
+        },
+        {
+            "return_type": "bool",
+            "allow_discard": true,
+            "name": "xsPlaySound",
+            "params": [
+                {
+                    "name": "eventOrSoundFileName",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The sound event name to fire for the given `unitId` or the sound file name to play"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, play for all players. Otherwise play only for the specified player."
+                },
+                {
+                    "name": "position",
+                    "type": "vector",
+                    "required": false,
+                    "desc": "If set, play a local sound at this position."
+                },
+                {
+                    "name": "angle",
+                    "type": "float",
+                    "required": false,
+                    "desc": "If set, play a directional sound from the specified position."
+                },
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set, play the sound from this unit."
+                },
+                {
+                    "name": "global",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If set, play the sound on the whole map."
+                }
+            ],
+            "desc": ""
+        },
+        {
+            "return_type": "bool",
+            "allow_discard": true,
+            "name": "xsDisplayInstructions",
+            "params": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The message to show"
+                },
+                {
+                    "name": "time",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The time to show the instructions for in seconds"
+                },
+                {
+                    "name": "sourcePlayer",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to use for the icon's civ and colour"
+                },
+                {
+                    "name": "iconObjectId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set, shows the icon of this object on the instruction panel"
+                },
+                {
+                    "name": "panelPosition",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The location to show the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#23-panel \"Jump To: XS > Constant Reference > 23. Panel\")"
+                },
+                {
+                    "name": "useTagColorForIcon",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If set, uses the `<TAG>` color used in `msg` for the icon as well."
+                },
+                {
+                    "name": "playNotificationSound",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If unset, do not play the instruction notification sound."
+                },
+                {
+                    "name": "soundFilename",
+                    "type": "string",
+                    "required": false,
+                    "desc": "If `playSound` is enabled, plays this sound file."
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, show for all players. Otherwise show only for the specified player."
+                }
+            ],
+            "desc": "Same as the Display Instructions editor effect."
+        },
+        {
+            "return_type": "bool",
+            "allow_discard": true,
+            "name": "xsClearInstructions",
+            "params": [
+                {
+                    "name": "panelPosition",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The location to clear the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#24-panel \"Jump To: XS > Constant Reference > 24. Panel\")"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, clear for all players. Otherwise clear only for the specified player."
+                }
+            ],
+            "desc": "Same as the Clear Instructions editor effect."
+        },
+        {
+            "return_type": "bool",
+            "allow_discard": true,
+            "name": "xsDisplayTimer",
+            "params": [
+                {
+                    "name": "timerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The timer ID to use to show the instructions for in seconds"
+                },
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The message to show. You may use <TIMER> or %d to substitute a formatted timer value"
+                },
+                {
+                    "name": "time",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The timeout for the timer"
+                },
+                {
+                    "name": "timerUnit",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit \"Jump To: XS > Constant Reference > 25. Timer Unit\")"
+                },
+                {
+                    "name": "resetTimer",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If unset, duplicate the timer. Note: Do not unset this unless you know what you're doing."
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, show for all players. Otherwise show only for the specified player."
+                }
+            ],
+            "desc": "Same as the Display Timer editor effect."
+        },
+        {
+            "return_type": "bool",
+            "allow_discard": true,
+            "name": "xsClearTimer",
+            "params": [
+                {
+                    "name": "timerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The timer ID to clear"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, clear for all players. Otherwise clear only for the specified player."
+                }
+            ],
+            "desc": "Same as the Clear Timer editor effect."
+        },
+        {
+            "return_type": "float",
+            "name": "xsGetTimerTimeRemaining",
+            "params": [
+                {
+                    "name": "timerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The timer ID to clear"
+                },
+                {
+                    "name": "timerUnit",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit \"Jump To: XS > Constant Reference > 25. Timer Unit\")"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, clear for all players. Otherwise clear only for the specified player."
+                }
+            ],
+            "desc": "Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, this can possibly return different values for different players and will cause a desync! Use with caution!"
+        },
+        {
+            "return_type": "bool",
+            "allow_discard": true,
+            "name": "xsSendChat",
+            "params": [
+                {
+                    "name": "msg",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The msg to send"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set to -1, send for all players. Otherwise send only for the specified player."
+                },
+                {
+                    "name": "silent",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If set, do not play the chat notification sound."
+                }
+            ],
+            "desc": "Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!"
+        },
+        {
+            "return_type": "int",
+            "name": "xsGetLocalPlayerId",
+            "params": [],
+            "desc": "Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!"
+        },
+        {
+            "return_type": "string",
+            "name": "xsGetPlayerColorTag",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the colour prefix (<TAG>) for"
+                }
+            ],
+            "desc": "Gets the colour prefix (e.g. <RED>) for a given player. See the [cColor constants](../../constants/constants/#26-color \"Jump To: XS > Constant Reference > 26. Color\")"
         }
     ],
     "File IO": [
