@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/04/30 00:57:15 |
+// | Generated on: 2026/05/15 15:28:29 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -3956,9 +3956,9 @@ int xsGetObjectType(int playerId = -1, int objectId = -1) {}
 *
 * @param playerId The player to get the number of data objects for
 *
-* @returns bool
+* @returns int
 */
-bool xsGetPlayerNumberOfObjects(int playerId = -1) {}
+int xsGetPlayerNumberOfObjects(int playerId = -1) {}
 
 /**
 * Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.

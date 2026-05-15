@@ -2549,7 +2549,7 @@
         },
         {
             "name": "xsGetPlayerNumberOfObjects",
-            "return_type": "bool",
+            "return_type": "int",
             "params": [
                 {
                     "name": "playerId",
