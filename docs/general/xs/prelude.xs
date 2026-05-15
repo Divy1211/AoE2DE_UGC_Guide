@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/05/15 15:28:29 |
+// | Generated on: 2026/05/15 15:47:57 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -3505,10 +3505,11 @@ int xsGetRandomNumberMax(int max = -1) {}
 * @param playerId The player to get the tech's attribute for
 * @param techId The tech to get the attribute for
 * @param techAttribute The tech attribute to get. See the [cTech constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#27-tech-attribute \"Jump To: XS > Constant Reference > 27. Tech Attribute\")
+* @param indexOrCostType The train location index when getting research location specific attributes or a resource ID when getting costs
 *
 * @returns int
 */
-int xsGetTechAttribute(int playerId = -1, int techId = -1, int techAttribute = -1) {}
+int xsGetTechAttribute(int playerId = -1, int techId = -1, int techAttribute = -1, int indexOrCostType = -1) {}
 
 /**
 * Returns the current name of the given tech for the specified player.

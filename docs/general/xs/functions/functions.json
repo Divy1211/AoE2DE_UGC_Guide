@@ -1341,6 +1341,12 @@
                     "type": "int",
                     "required": true,
                     "desc": "The tech attribute to get. See the [cTech constants](../../constants/constants/#27-tech-attribute \\\"Jump To: XS > Constant Reference > 27. Tech Attribute\\\")"
+                },
+                {
+                    "name": "indexOrCostType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The train location index when getting research location specific attributes or a resource ID when getting costs"
                 }
             ],
             "desc": "Gets the specific tech attribute for the supplied tech for the given player."
