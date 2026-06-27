@@ -60,6 +60,9 @@ def write_fns(functions, file: TextIO):
             file.write(f"* @returns {func['return_type']}\n")
             if func.get("allow_discard", False):
                 file.write(f"* @allow_discard\n")
+            if reason := func.get("deprecated", None) is not None:
+                file.write(f"* @deprecated {reason}\n")
+            file.write(f"* @allow_no_num_promo\n")
             file.write("*/\n")
             file.write(f"{func['return_type']} {func['name']}(")
             first = True

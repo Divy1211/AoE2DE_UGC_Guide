@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/05/15 15:47:57 |
+// | Generated on: 2026/06/27 20:47:02 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -2772,6 +2772,7 @@ extern const int cTechStackingCap = 13;
 * @param ruleName The name of the rule to disable
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsDisableRule(string ruleName = "") {}
 
@@ -2781,6 +2782,7 @@ void xsDisableRule(string ruleName = "") {}
 * @param ruleGroupName The name of the rule group to disable
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsDisableRuleGroup(string ruleGroupName = "") {}
 
@@ -2788,6 +2790,7 @@ void xsDisableRuleGroup(string ruleGroupName = "") {}
 * Disables the rule this function is called inside. Cannot be used outside of a rule's body!
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsDisableSelf() {}
 
@@ -2797,6 +2800,7 @@ void xsDisableSelf() {}
 * @param ruleName The name of the rule to enable
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsEnableRule(string ruleName = "") {}
 
@@ -2806,6 +2810,7 @@ void xsEnableRule(string ruleName = "") {}
 * @param ruleGroupName The name of the rule group to enable
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsEnableRuleGroup(string ruleGroupName = "") {}
 
@@ -2815,6 +2820,7 @@ void xsEnableRuleGroup(string ruleGroupName = "") {}
 * @param ruleName The name of the rule to check
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsIsRuleEnabled(string ruleName = "") {}
 
@@ -2824,6 +2830,7 @@ bool xsIsRuleEnabled(string ruleName = "") {}
 * @param ruleGroupName The name of the rule group to check
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsIsRuleGroupEnabled(string ruleGroupName = "") {}
 
@@ -2834,6 +2841,7 @@ bool xsIsRuleGroupEnabled(string ruleGroupName = "") {}
 * @param interval The new max interval of the rule
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetRuleMaxInterval(string ruleName = "", int interval = -1) {}
 
@@ -2843,6 +2851,7 @@ void xsSetRuleMaxInterval(string ruleName = "", int interval = -1) {}
 * @param interval The new max interval of the rule
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetRuleMaxIntervalSelf(int interval = -1) {}
 
@@ -2853,6 +2862,7 @@ void xsSetRuleMaxIntervalSelf(int interval = -1) {}
 * @param interval The new min interval of the rule
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetRuleMinInterval(string ruleName = "", int interval = -1) {}
 
@@ -2862,6 +2872,7 @@ void xsSetRuleMinInterval(string ruleName = "", int interval = -1) {}
 * @param interval The new min interval of the rule
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetRuleMinIntervalSelf(int interval = -1) {}
 
@@ -2872,6 +2883,7 @@ void xsSetRuleMinIntervalSelf(int interval = -1) {}
 * @param rulePriority The new priority of the rule
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetRulePriority(string ruleName = "", int rulePriority = -1) {}
 
@@ -2881,6 +2893,7 @@ void xsSetRulePriority(string ruleName = "", int rulePriority = -1) {}
 * @param rulePriority The new priority of the rule
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetRulePrioritySelf(int rulePriority = -1) {}
 
@@ -2893,6 +2906,7 @@ void xsSetRulePrioritySelf(int rulePriority = -1) {}
 * @param v The vector to get the X coordinate of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsVectorGetX(vector v = vector(-1, -1, -1)) {}
 
@@ -2902,6 +2916,7 @@ float xsVectorGetX(vector v = vector(-1, -1, -1)) {}
 * @param v The vector to get the Y coordinate of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsVectorGetY(vector v = vector(-1, -1, -1)) {}
 
@@ -2911,6 +2926,7 @@ float xsVectorGetY(vector v = vector(-1, -1, -1)) {}
 * @param v The vector to get the Z coordinate of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsVectorGetZ(vector v = vector(-1, -1, -1)) {}
 
@@ -2920,6 +2936,7 @@ float xsVectorGetZ(vector v = vector(-1, -1, -1)) {}
 * @param v The vector to calculate the length of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsVectorLength(vector v = vector(-1, -1, -1)) {}
 
@@ -2929,6 +2946,7 @@ float xsVectorLength(vector v = vector(-1, -1, -1)) {}
 * @param v The vector to normalise
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsVectorNormalize(vector v = vector(-1, -1, -1)) {}
 
@@ -2940,6 +2958,7 @@ vector xsVectorNormalize(vector v = vector(-1, -1, -1)) {}
 * @param z The value to set the Z coordinate to
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsVectorSet(float x = -1.0, float y = -1.0, float z = -1.0) {}
 
@@ -2950,6 +2969,7 @@ vector xsVectorSet(float x = -1.0, float y = -1.0, float z = -1.0) {}
 * @param x The value to set the X coordinate to
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsVectorSetX(vector v = vector(-1, -1, -1), float x = -1.0) {}
 
@@ -2960,6 +2980,7 @@ vector xsVectorSetX(vector v = vector(-1, -1, -1), float x = -1.0) {}
 * @param y The value to set the Y coordinate to
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsVectorSetY(vector v = vector(-1, -1, -1), float y = -1.0) {}
 
@@ -2970,6 +2991,7 @@ vector xsVectorSetY(vector v = vector(-1, -1, -1), float y = -1.0) {}
 * @param z The value to set the Z coordinate to
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsVectorSetZ(vector v = vector(-1, -1, -1), float z = -1.0) {}
 
@@ -2984,6 +3006,7 @@ vector xsVectorSetZ(vector v = vector(-1, -1, -1), float z = -1.0) {}
 * @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayCreateBool(int size = -1, bool defaultValue = false, string uniqueName = "") {}
 
@@ -2995,6 +3018,7 @@ int xsArrayCreateBool(int size = -1, bool defaultValue = false, string uniqueNam
 * @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayCreateFloat(int size = -1, float defaultValue = -1.0, string uniqueName = "") {}
 
@@ -3006,6 +3030,7 @@ int xsArrayCreateFloat(int size = -1, float defaultValue = -1.0, string uniqueNa
 * @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayCreateInt(int size = -1, int defaultValue = -1, string uniqueName = "") {}
 
@@ -3017,6 +3042,7 @@ int xsArrayCreateInt(int size = -1, int defaultValue = -1, string uniqueName = "
 * @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayCreateString(int size = -1, string defaultValue = "", string uniqueName = "") {}
 
@@ -3028,6 +3054,7 @@ int xsArrayCreateString(int size = -1, string defaultValue = "", string uniqueNa
 * @param uniqueName A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayCreateVector(int size = -1, vector defaultValue = vector(-1, -1, -1), string uniqueName = "") {}
 
@@ -3038,6 +3065,7 @@ int xsArrayCreateVector(int size = -1, vector defaultValue = vector(-1, -1, -1),
 * @param index The index to get the value of
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsArrayGetBool(int arrayId = -1, int index = -1) {}
 
@@ -3048,6 +3076,7 @@ bool xsArrayGetBool(int arrayId = -1, int index = -1) {}
 * @param index The index to get the value of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsArrayGetFloat(int arrayId = -1, int index = -1) {}
 
@@ -3058,6 +3087,7 @@ float xsArrayGetFloat(int arrayId = -1, int index = -1) {}
 * @param index The index to get the value of
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayGetInt(int arrayId = -1, int index = -1) {}
 
@@ -3067,6 +3097,7 @@ int xsArrayGetInt(int arrayId = -1, int index = -1) {}
 * @param arrayId The ID of the array to get the length of
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsArrayGetSize(int arrayId = -1) {}
 
@@ -3077,6 +3108,7 @@ int xsArrayGetSize(int arrayId = -1) {}
 * @param index The index to get the value of
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsArrayGetString(int arrayId = -1, int index = -1) {}
 
@@ -3087,6 +3119,7 @@ string xsArrayGetString(int arrayId = -1, int index = -1) {}
 * @param index The index to get the value of
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsArrayGetVector(int arrayId = -1, int index = -1) {}
 
@@ -3098,6 +3131,7 @@ vector xsArrayGetVector(int arrayId = -1, int index = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArrayResizeBool(int arrayId = -1, int newSize = -1) {}
 
@@ -3109,6 +3143,7 @@ bool xsArrayResizeBool(int arrayId = -1, int newSize = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArrayResizeFloat(int arrayId = -1, int newSize = -1) {}
 
@@ -3120,6 +3155,7 @@ bool xsArrayResizeFloat(int arrayId = -1, int newSize = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArrayResizeInt(int arrayId = -1, int newSize = -1) {}
 
@@ -3131,6 +3167,7 @@ bool xsArrayResizeInt(int arrayId = -1, int newSize = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArrayResizeString(int arrayId = -1, int newSize = -1) {}
 
@@ -3142,6 +3179,7 @@ bool xsArrayResizeString(int arrayId = -1, int newSize = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArrayResizeVector(int arrayId = -1, int newSize = -1) {}
 
@@ -3154,6 +3192,7 @@ bool xsArrayResizeVector(int arrayId = -1, int newSize = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArraySetBool(int arrayId = -1, int index = -1, bool value = false) {}
 
@@ -3166,6 +3205,7 @@ bool xsArraySetBool(int arrayId = -1, int index = -1, bool value = false) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArraySetFloat(int arrayId = -1, int index = -1, float value = -1.0) {}
 
@@ -3178,6 +3218,7 @@ bool xsArraySetFloat(int arrayId = -1, int index = -1, float value = -1.0) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArraySetInt(int arrayId = -1, int index = -1, int value = -1) {}
 
@@ -3190,6 +3231,7 @@ bool xsArraySetInt(int arrayId = -1, int index = -1, int value = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArraySetString(int arrayId = -1, int index = -1, string value = "") {}
 
@@ -3202,6 +3244,7 @@ bool xsArraySetString(int arrayId = -1, int index = -1, string value = "") {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsArraySetVector(int arrayId = -1, int index = -1, vector value = vector(-1, -1, -1)) {}
 
@@ -3214,6 +3257,7 @@ bool xsArraySetVector(int arrayId = -1, int index = -1, vector value = vector(-1
 * @param x The number to find the absolute value of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float abs(float x = -1.0) {}
 
@@ -3223,6 +3267,7 @@ float abs(float x = -1.0) {}
 * @param x The value to find the inverse cosine of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float acos(float x = -1.0) {}
 
@@ -3232,6 +3277,7 @@ float acos(float x = -1.0) {}
 * @param x The value to find the inverse sine of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float asin(float x = -1.0) {}
 
@@ -3241,6 +3287,7 @@ float asin(float x = -1.0) {}
 * @param x The value to find the inverse tangent of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float atan(float x = -1.0) {}
 
@@ -3251,6 +3298,7 @@ float atan(float x = -1.0) {}
 * @param x The X coordinate of the point to find the X+ angle of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float atan2(float y = -1.0, float x = -1.0) {}
 
@@ -3260,6 +3308,7 @@ float atan2(float y = -1.0, float x = -1.0) {}
 * @param v The vector to get the atan2 from
 *
 * @returns float
+* @allow_no_num_promo
 */
 float atan2v(vector v = vector(-1, -1, -1)) {}
 
@@ -3270,6 +3319,7 @@ float atan2v(vector v = vector(-1, -1, -1)) {}
 * @param y The second number
 *
 * @returns int
+* @allow_no_num_promo
 */
 int bitAnd(int x = -1, int y = -1) {}
 
@@ -3279,6 +3329,7 @@ int bitAnd(int x = -1, int y = -1) {}
 * @param number The value to `reinterpret/bit_cast` to `float`
 *
 * @returns float
+* @allow_no_num_promo
 */
 float bitCastToFloat(int number = -1) {}
 
@@ -3288,6 +3339,7 @@ float bitCastToFloat(int number = -1) {}
 * @param number The value to `reinterpret/bit_cast` to `int`
 *
 * @returns int
+* @allow_no_num_promo
 */
 int bitCastToInt(float number = -1.0) {}
 
@@ -3297,6 +3349,7 @@ int bitCastToInt(float number = -1.0) {}
 * @param x The number to get the 1's compliment for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int bitNot(int x = -1) {}
 
@@ -3307,6 +3360,7 @@ int bitNot(int x = -1) {}
 * @param y The second number
 *
 * @returns int
+* @allow_no_num_promo
 */
 int bitOr(int x = -1, int y = -1) {}
 
@@ -3317,6 +3371,7 @@ int bitOr(int x = -1, int y = -1) {}
 * @param y The second number
 *
 * @returns int
+* @allow_no_num_promo
 */
 int bitXor(int x = -1, int y = -1) {}
 
@@ -3326,6 +3381,7 @@ int bitXor(int x = -1, int y = -1) {}
 * @param x The value to find the ceil of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float ceil(float x = -1.0) {}
 
@@ -3335,6 +3391,7 @@ float ceil(float x = -1.0) {}
 * @param x The angle (in radians) to find the cosine of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float cos(float x = -1.0) {}
 
@@ -3344,6 +3401,7 @@ float cos(float x = -1.0) {}
 * @param x The value to convert to degrees
 *
 * @returns float
+* @allow_no_num_promo
 */
 float degrees(float x = -1.0) {}
 
@@ -3354,6 +3412,7 @@ float degrees(float x = -1.0) {}
 * @param v2 The second vector
 *
 * @returns float
+* @allow_no_num_promo
 */
 float dist(vector v1 = vector(-1, -1, -1), vector v2 = vector(-1, -1, -1)) {}
 
@@ -3363,6 +3422,7 @@ float dist(vector v1 = vector(-1, -1, -1), vector v2 = vector(-1, -1, -1)) {}
 * @param x The value to find the exp of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float exp(float x = -1.0) {}
 
@@ -3372,6 +3432,7 @@ float exp(float x = -1.0) {}
 * @param x The value to find the floor of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float floor(float x = -1.0) {}
 
@@ -3381,6 +3442,7 @@ float floor(float x = -1.0) {}
 * @param x The value to find the natural log of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float ln(float x = -1.0) {}
 
@@ -3390,6 +3452,7 @@ float ln(float x = -1.0) {}
 * @param x The value to find the log base 10 of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float log10(float x = -1.0) {}
 
@@ -3399,6 +3462,7 @@ float log10(float x = -1.0) {}
 * @param x The value to find the log base 2 of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float log2(float x = -1.0) {}
 
@@ -3409,6 +3473,7 @@ float log2(float x = -1.0) {}
 * @param y The exponent to raise the base value to
 *
 * @returns float
+* @allow_no_num_promo
 */
 float pow(float x = -1.0, float y = -1.0) {}
 
@@ -3418,6 +3483,7 @@ float pow(float x = -1.0, float y = -1.0) {}
 * @param x The value to convert to radians
 *
 * @returns float
+* @allow_no_num_promo
 */
 float radians(float x = -1.0) {}
 
@@ -3428,6 +3494,7 @@ float radians(float x = -1.0) {}
 * @param places The number of decimal places to round to. Capped between 0-8, defaults to 2.
 *
 * @returns float
+* @allow_no_num_promo
 */
 float round(float x = -1.0, int places = -1) {}
 
@@ -3437,6 +3504,7 @@ float round(float x = -1.0, int places = -1) {}
 * @param x The angle (in radians) to find the sine of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float sin(float x = -1.0) {}
 
@@ -3446,6 +3514,7 @@ float sin(float x = -1.0) {}
 * @param x The number to find the square root of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float sqrt(float x = -1.0) {}
 
@@ -3455,6 +3524,7 @@ float sqrt(float x = -1.0) {}
 * @param x The angle (in radians) to find the tangent of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float tan(float x = -1.0) {}
 
@@ -3464,6 +3534,7 @@ float tan(float x = -1.0) {}
 * @param value The value to determine the ceil of
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsCeilToInt(float value = -1.0) {}
 
@@ -3474,6 +3545,7 @@ int xsCeilToInt(float value = -1.0) {}
 * Returns a random number between 0 and 32767.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetRandomNumber() {}
 
@@ -3484,6 +3556,7 @@ int xsGetRandomNumber() {}
 * @param high The upper bound for the range for the random number returned (excluded)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetRandomNumberLH(int low = -1, int high = -1) {}
 
@@ -3493,6 +3566,7 @@ int xsGetRandomNumberLH(int low = -1, int high = -1) {}
 * @param max The upper bound for the range for the random number returned (excluded)
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetRandomNumberMax(int max = -1) {}
 
@@ -3508,6 +3582,7 @@ int xsGetRandomNumberMax(int max = -1) {}
 * @param indexOrCostType The train location index when getting research location specific attributes or a resource ID when getting costs
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetTechAttribute(int playerId = -1, int techId = -1, int techAttribute = -1, int indexOrCostType = -1) {}
 
@@ -3519,6 +3594,7 @@ int xsGetTechAttribute(int playerId = -1, int techId = -1, int techAttribute = -
 * @param internalName Returns the internal name of the tech if set. `!#xs false` by default.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetTechName(int techId = -1, int playerId = -1, bool internalName = false) {}
 
@@ -3529,6 +3605,7 @@ string xsGetTechName(int techId = -1, int playerId = -1, bool internalName = fal
 * @param playerId The player to get the tech's state for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetTechState(int techId = -1, int playerId = -1) {}
 
@@ -3542,6 +3619,7 @@ int xsGetTechState(int techId = -1, int playerId = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
 
@@ -3556,6 +3634,7 @@ bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailabl
 *
 * @returns void
 * @allow_discard
+* @allow_no_num_promo
 */
 void xsDeclareVictory(int playerId = -1, bool victory = false) {}
 
@@ -3569,6 +3648,7 @@ void xsDeclareVictory(int playerId = -1, bool victory = false) {}
 * @param playerNumber The player to apply the effect to. If unspecified, applies to all players except Gaia.
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
 
@@ -3576,6 +3656,7 @@ void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attrib
 * Returns the difficulty setting for the game. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#22-difficulty) for all the different difficulty IDs
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetDifficulty() {}
 
@@ -3586,6 +3667,7 @@ int xsGetDifficulty() {}
 * @param targetPlayerId The player to get the stance towards
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1) {}
 
@@ -3595,6 +3677,7 @@ int xsGetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1) {}
 * @param playerId The player to get the handicap for
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetHandicapMultiplier(int playerId = -1) {}
 
@@ -3604,6 +3687,7 @@ float xsGetHandicapMultiplier(int playerId = -1) {}
 * @param playerNumber The player to get the civilization of
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetPlayerCivilization(int playerNumber = -1) {}
 
@@ -3613,6 +3697,7 @@ int xsGetPlayerCivilization(int playerNumber = -1) {}
 * @param playerNumber Check if this player is still alive
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsGetPlayerInGame(int playerNumber = -1) {}
 
@@ -3622,6 +3707,7 @@ bool xsGetPlayerInGame(int playerNumber = -1) {}
 * @param playerId The lobby index of the player
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetPlayerName(int playerId = -1) {}
 
@@ -3631,6 +3717,7 @@ string xsGetPlayerName(int playerId = -1) {}
 * @param playerNumber The player whose technology count is being requested.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetPlayerNumberOfTechs(int playerNumber = -1) {}
 
@@ -3640,6 +3727,7 @@ int xsGetPlayerNumberOfTechs(int playerNumber = -1) {}
 * @param playerId The player to get the type for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetPlayerType(int playerId = -1) {}
 
@@ -3651,6 +3739,7 @@ int xsGetPlayerType(int playerId = -1) {}
 * @param arrayId Reuse an existing array to save memory
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetPlayerUnitIds(int playerId = -1, int objectOrClassId = -1, int arrayId = -1) {}
 
@@ -3660,6 +3749,7 @@ int xsGetPlayerUnitIds(int playerId = -1, int objectOrClassId = -1, int arrayId 
 * @param scxPlayerId The player to get the world index (lobby slot) for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetWorldPlayerId(int scxPlayerId = -1) {}
 
@@ -3670,6 +3760,7 @@ int xsGetWorldPlayerId(int scxPlayerId = -1) {}
 * @param resourceId The ID of the resource to get the amount of
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
 
@@ -3683,6 +3774,7 @@ float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploStance = -1, bool mirror = false) {}
 
@@ -3694,6 +3786,7 @@ bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploS
 * @param value The amount to set the resource to
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float value = -1.0) {}
 
@@ -3707,6 +3800,7 @@ void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float valu
 * @param playerId The player whose object to get the number of tasks for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetObjectTaskCount(int objectId = -1, int playerId = -1) {}
 
@@ -3716,6 +3810,7 @@ int xsGetObjectTaskCount(int objectId = -1, int playerId = -1) {}
 * @param taskFieldId The task field to ge the value for. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#15-task-attribute) for all the different task field IDs
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetTaskAmount(int taskFieldId = -1) {}
 
@@ -3725,6 +3820,7 @@ float xsGetTaskAmount(int taskFieldId = -1) {}
 * @param unitId The ID of the object to get the number of tasks for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitTaskCount(int unitId = -1) {}
 
@@ -3741,6 +3837,7 @@ int xsGetUnitTaskCount(int unitId = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, bool edit = false) {}
 
@@ -3756,6 +3853,7 @@ bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, 
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
 
@@ -3768,6 +3866,7 @@ bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {}
 
@@ -3780,6 +3879,7 @@ bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {
 * @param playerId The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
@@ -3787,6 +3887,7 @@ void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjec
 * Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#8-xsmodifyobjecttasks).
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsResetTaskAmount() {}
 
@@ -3801,6 +3902,7 @@ void xsResetTaskAmount() {}
 * @param playerId The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
@@ -3811,6 +3913,7 @@ void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrCla
 * @param value The value to set the task field to
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsTaskAmount(int taskFieldId = -1, float value = -1.0) {}
 
@@ -3822,6 +3925,7 @@ void xsTaskAmount(int taskFieldId = -1, float value = -1.0) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
 
@@ -3840,6 +3944,7 @@ bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
 *
 * @returns int
 * @allow_discard
+* @allow_no_num_promo
 */
 int xsCreateUnit(int objectId = -1, int playerId = -1, vector location = vector(-1, -1, -1), bool foundation = false, bool playCreatedSound = false, bool checkCollision = false) {}
 
@@ -3849,6 +3954,7 @@ int xsCreateUnit(int objectId = -1, int playerId = -1, vector location = vector(
 * @param unitId The unit ID to check
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsDoesUnitExist(int unitId = -1) {}
 
@@ -3858,6 +3964,7 @@ bool xsDoesUnitExist(int unitId = -1) {}
 * @param unitId The unit to get the garrisoned in
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetGarrisonedInUnitId(int unitId = -1) {}
 
@@ -3867,6 +3974,7 @@ int xsGetGarrisonedInUnitId(int unitId = -1) {}
 * @param unitId The unit to get the garrisoned objects for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetGarrisonedUnitIds(int unitId = -1) {}
 
@@ -3876,6 +3984,7 @@ int xsGetGarrisonedUnitIds(int unitId = -1) {}
 * @param groupId The group (formation) to get the movement target for
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsGetGroupMoveTarget(int groupId = -1) {}
 
@@ -3888,6 +3997,7 @@ vector xsGetGroupMoveTarget(int groupId = -1) {}
 * @param damageClass For use with armor/attack attributes - specifies which armor/attack class to get
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetObjectAttribute(int playerId = -1, int objectId = -1, int attribute = -1, int damageClass = -1) {}
 
@@ -3898,6 +4008,7 @@ float xsGetObjectAttribute(int playerId = -1, int objectId = -1, int attribute =
 * @param objectId The object to get the class for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetObjectClass(int playerId = -1, int objectId = -1) {}
 
@@ -3908,6 +4019,7 @@ int xsGetObjectClass(int playerId = -1, int objectId = -1) {}
 * @param objectId The object to get the copy ID for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetObjectCopyId(int playerId = -1, int objectId = -1) {}
 
@@ -3918,6 +4030,7 @@ int xsGetObjectCopyId(int playerId = -1, int objectId = -1) {}
 * @param objectOrClassId The ID of the object or class to get the count for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetObjectCount(int playerId = -1, int objectOrClassId = -1) {}
 
@@ -3928,6 +4041,7 @@ int xsGetObjectCount(int playerId = -1, int objectOrClassId = -1) {}
 * @param objectOrClassId The ID of the object or class to get the count for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetObjectCountTotal(int playerId = -1, int objectOrClassId = -1) {}
 
@@ -3939,6 +4053,7 @@ int xsGetObjectCountTotal(int playerId = -1, int objectOrClassId = -1) {}
 * @param internalName Returns the internal name of the object if set. `!#xs false` by default.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetObjectName(int objectId = -1, int playerId = -1, bool internalName = false) {}
 
@@ -3949,6 +4064,7 @@ string xsGetObjectName(int objectId = -1, int playerId = -1, bool internalName =
 * @param objectId The object to get the type for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetObjectType(int playerId = -1, int objectId = -1) {}
 
@@ -3958,6 +4074,7 @@ int xsGetObjectType(int playerId = -1, int objectId = -1) {}
 * @param playerId The player to get the number of data objects for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetPlayerNumberOfObjects(int playerId = -1) {}
 
@@ -3969,6 +4086,7 @@ int xsGetPlayerNumberOfObjects(int playerId = -1) {}
 * @param damageClass For use with armor/attack attributes - specifies which armor/attack class to get
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetUnitAttribute(int unitId = -1, int attribute = -1, int damageClass = -1) {}
 
@@ -3979,6 +4097,7 @@ float xsGetUnitAttribute(int unitId = -1, int attribute = -1, int damageClass = 
 * @param attributeId The ID of the resource to get. If unspecified, return the first resource which the unit holds
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetUnitAttributeHeld(int unitId = -1, int attributeId = -1) {}
 
@@ -3988,6 +4107,7 @@ float xsGetUnitAttributeHeld(int unitId = -1, int attributeId = -1) {}
 * @param unitId The unit to get the held resource types for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitAttributeTypesHeld(int unitId = -1) {}
 
@@ -3997,6 +4117,7 @@ int xsGetUnitAttributeTypesHeld(int unitId = -1) {}
 * @param unitId The unit to get the Build Points for
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetUnitBuildPoints(int unitId = -1) {}
 
@@ -4006,6 +4127,7 @@ float xsGetUnitBuildPoints(int unitId = -1) {}
 * @param unitId The unit to get the charge for
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetUnitCharge(int unitId = -1) {}
 
@@ -4015,6 +4137,7 @@ float xsGetUnitCharge(int unitId = -1) {}
 * @param unitId The unit to get the class for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitClass(int unitId = -1) {}
 
@@ -4024,6 +4147,7 @@ int xsGetUnitClass(int unitId = -1) {}
 * @param unitId The unit to get the copy ID for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitCopyId(int unitId = -1) {}
 
@@ -4033,6 +4157,7 @@ int xsGetUnitCopyId(int unitId = -1) {}
 * @param unitId The unit to get the group ID (formation) for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitGroupId(int unitId = -1) {}
 
@@ -4042,6 +4167,7 @@ int xsGetUnitGroupId(int unitId = -1) {}
 * @param unitId The unit to get the HP for
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetUnitHitpoints(int unitId = -1) {}
 
@@ -4051,6 +4177,7 @@ float xsGetUnitHitpoints(int unitId = -1) {}
 * @param unitId The unit to get the movement target for
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsGetUnitMoveTarget(int unitId = -1) {}
 
@@ -4061,6 +4188,7 @@ vector xsGetUnitMoveTarget(int unitId = -1) {}
 * @param internalName Returns the internal name of the unit if set. `!#xs false` by default.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetUnitName(int unitId = -1, bool internalName = false) {}
 
@@ -4070,6 +4198,7 @@ string xsGetUnitName(int unitId = -1, bool internalName = false) {}
 * @param unitId The unit to get the object ID for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitObjectId(int unitId = -1) {}
 
@@ -4079,6 +4208,7 @@ int xsGetUnitObjectId(int unitId = -1) {}
 * @param unitId The unit to get the owner ID for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitOwner(int unitId = -1) {}
 
@@ -4088,6 +4218,7 @@ int xsGetUnitOwner(int unitId = -1) {}
 * @param unitId The unit to get the position for
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsGetUnitPosition(int unitId = -1) {}
 
@@ -4097,6 +4228,7 @@ vector xsGetUnitPosition(int unitId = -1) {}
 * @param unitId The unit to get the target for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitTargetUnitId(int unitId = -1) {}
 
@@ -4106,6 +4238,7 @@ int xsGetUnitTargetUnitId(int unitId = -1) {}
 * @param unitId The unit to get the type for
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetUnitType(int unitId = -1) {}
 
@@ -4116,6 +4249,7 @@ int xsGetUnitType(int unitId = -1) {}
 * @param playerId The player to get the object's availability for
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsIsObjectAvailable(int objectId = -1, int playerId = -1) {}
 
@@ -4126,6 +4260,7 @@ bool xsIsObjectAvailable(int objectId = -1, int playerId = -1) {}
 * @param playerId The player to check the ID for
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsIsObjectValid(int objectId = -1, int playerId = -1) {}
 
@@ -4140,6 +4275,7 @@ bool xsIsObjectValid(int objectId = -1, int playerId = -1) {}
 * @param targetUnitLevel Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId = -1, int targetPlayerId = -1, int targetType = -1, int targetUnitLevel = -1) {}
 
@@ -4150,6 +4286,7 @@ bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsRemoveUnit(int unitId = -1) {}
 
@@ -4162,6 +4299,7 @@ bool xsRemoveUnit(int unitId = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId = -1) {}
 
@@ -4173,6 +4311,7 @@ bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
 
@@ -4184,6 +4323,7 @@ bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
 
@@ -4195,6 +4335,7 @@ bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 
@@ -4207,6 +4348,7 @@ bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetUnitPosition(int unitId = -1, vector position = vector(-1, -1, -1), bool checkCollision = false) {}
 
@@ -4217,6 +4359,7 @@ bool xsSetUnitPosition(int unitId = -1, vector position = vector(-1, -1, -1), bo
 * Returns the current color mood of the map. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#21-color-mood) for all the different color mood IDs
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetColorMood() {}
 
@@ -4224,6 +4367,7 @@ int xsGetColorMood() {}
 * Returns the Height of the map.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetMapHeight() {}
 
@@ -4231,6 +4375,7 @@ int xsGetMapHeight() {}
 * Returns the AI map type.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetMapID() {}
 
@@ -4240,6 +4385,7 @@ int xsGetMapID() {}
 * @param showFileExtension If this is set to true, then the returned name also contains the file extension
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetMapName(bool showFileExtension = false) {}
 
@@ -4247,6 +4393,7 @@ string xsGetMapName(bool showFileExtension = false) {}
 * Gets the current RMS seed or -1 in the editor.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetMapSeed() {}
 
@@ -4254,6 +4401,7 @@ int xsGetMapSeed() {}
 * Returns the Width of the map.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetMapWidth() {}
 
@@ -4265,6 +4413,7 @@ int xsGetMapWidth() {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
 
@@ -4275,6 +4424,7 @@ bool xsSetColorMood(int colorMood = -1, int interval = -1) {}
 * @param value The value to set the variable to
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
 
@@ -4284,6 +4434,7 @@ void xsSetTriggerVariable(int variableId = -1, int value = -1) {}
 * @param variableId The ID of the variable to get the value of
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsTriggerVariable(int variableId = -1) {}
 
@@ -4294,6 +4445,7 @@ int xsTriggerVariable(int variableId = -1) {}
 * Returns the current game time in seconds
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetGameTime() {}
 
@@ -4301,6 +4453,7 @@ int xsGetGameTime() {}
 * Returns the number of players in the game
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetNumPlayers() {}
 
@@ -4308,6 +4461,7 @@ int xsGetNumPlayers() {}
 * Returns the current game time - 1 in seconds
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetTime() {}
 
@@ -4315,6 +4469,7 @@ int xsGetTime() {}
 * Returns the current game tick (called turn). Note: ticks may differ in games and replays
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetTurn() {}
 
@@ -4322,6 +4477,7 @@ int xsGetTurn() {}
 * Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryCondition() {}
 
@@ -4329,6 +4485,7 @@ int xsGetVictoryCondition() {}
 * Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryConditionForSecondaryGameMode() {}
 
@@ -4336,6 +4493,7 @@ int xsGetVictoryConditionForSecondaryGameMode() {}
 * Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryPlayer() {}
 
@@ -4343,6 +4501,7 @@ int xsGetVictoryPlayer() {}
 * Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryPlayerForSecondaryGameMode() {}
 
@@ -4350,6 +4509,7 @@ int xsGetVictoryPlayerForSecondaryGameMode() {}
 * For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryTime() {}
 
@@ -4357,6 +4517,7 @@ int xsGetVictoryTime() {}
 * For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryTimeForSecondaryGameMode() {}
 
@@ -4376,6 +4537,7 @@ int xsGetVictoryTimeForSecondaryGameMode() {}
 * Last Man Standing returns 0 as well.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetVictoryType() {}
 
@@ -4383,6 +4545,7 @@ int xsGetVictoryType() {}
 * Returns the current game time in milliseconds
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetWorldTime() {}
 
@@ -4396,6 +4559,7 @@ int xsGetWorldTime() {}
 * @param value This value is inserted in place of any `%d` used in the message of the function
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsChatData(string message = "", int value = -1) {}
 
@@ -4407,6 +4571,7 @@ void xsChatData(string message = "", int value = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsClearInstructions(int panelPosition = -1, int playerId = -1) {}
 
@@ -4418,6 +4583,7 @@ bool xsClearInstructions(int panelPosition = -1, int playerId = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsClearTimer(int timerId = -1, int playerId = -1) {}
 
@@ -4436,6 +4602,7 @@ bool xsClearTimer(int timerId = -1, int playerId = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsDisplayInstructions(string msg = "", int time = -1, int sourcePlayer = -1, int iconObjectId = -1, int panelPosition = -1, bool useTagColorForIcon = false, bool playNotificationSound = false, string soundFilename = "", int playerId = -1) {}
 
@@ -4451,6 +4618,7 @@ bool xsDisplayInstructions(string msg = "", int time = -1, int sourcePlayer = -1
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsDisplayTimer(int timerId = -1, string msg = "", int time = -1, int timerUnit = -1, bool resetTimer = false, int playerId = -1) {}
 
@@ -4461,6 +4629,7 @@ bool xsDisplayTimer(int timerId = -1, string msg = "", int time = -1, int timerU
 * @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetDamageClassName(int damageClassId = -1, bool localized = false) {}
 
@@ -4468,6 +4637,7 @@ string xsGetDamageClassName(int damageClassId = -1, bool localized = false) {}
 * Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetLocalPlayerId() {}
 
@@ -4475,6 +4645,7 @@ int xsGetLocalPlayerId() {}
 * Gets the locale of the current player. See the [cLocale constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#24-locale). Note: this function returns a unique value for every player, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetLocale() {}
 
@@ -4485,6 +4656,7 @@ int xsGetLocale() {}
 * @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetObjectAttributeName(int attributeId = -1, bool localized = false) {}
 
@@ -4495,6 +4667,7 @@ string xsGetObjectAttributeName(int attributeId = -1, bool localized = false) {}
 * @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetPlayerAttributeName(int stringId = -1, bool localized = false) {}
 
@@ -4504,6 +4677,7 @@ string xsGetPlayerAttributeName(int stringId = -1, bool localized = false) {}
 * @param playerId The player to get the colour prefix (<TAG>) for
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetPlayerColorTag(int playerId = -1) {}
 
@@ -4514,6 +4688,7 @@ string xsGetPlayerColorTag(int playerId = -1) {}
 * @param localized If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsGetString(int stringId = -1, bool localized = false) {}
 
@@ -4525,6 +4700,7 @@ string xsGetString(int stringId = -1, bool localized = false) {}
 * @param playerId If set to -1, clear for all players. Otherwise clear only for the specified player.
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsGetTimerTimeRemaining(int timerId = -1, int timerUnit = -1, int playerId = -1) {}
 
@@ -4540,6 +4716,7 @@ float xsGetTimerTimeRemaining(int timerId = -1, int timerUnit = -1, int playerId
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsPlaySound(string eventOrSoundFileName = "", int playerId = -1, vector position = vector(-1, -1, -1), float angle = -1.0, int unitId = -1, bool global = false) {}
 
@@ -4552,6 +4729,7 @@ bool xsPlaySound(string eventOrSoundFileName = "", int playerId = -1, vector pos
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSendChat(string msg = "", int playerId = -1, bool silent = false) {}
 
@@ -4563,6 +4741,7 @@ bool xsSendChat(string msg = "", int playerId = -1, bool silent = false) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsCloseFile() {}
 
@@ -4573,6 +4752,7 @@ bool xsCloseFile() {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsCreateFile(bool append = false) {}
 
@@ -4582,6 +4762,7 @@ bool xsCreateFile(bool append = false) {}
 * @param type One of the `cOffsetXXX` constants may be used as a parameter
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetDataTypeSize(int type = -1) {}
 
@@ -4589,6 +4770,7 @@ int xsGetDataTypeSize(int type = -1) {}
 * Gets the byte (0-indexed) of the file that the next read function will start reading from.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetFilePosition() {}
 
@@ -4596,6 +4778,7 @@ int xsGetFilePosition() {}
 * Gets the size (in bytes) of the currently open file
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetFileSize() {}
 
@@ -4607,6 +4790,7 @@ int xsGetFileSize() {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsOffsetFilePosition(int dataType = -1, bool forward = false) {}
 
@@ -4616,6 +4800,7 @@ bool xsOffsetFilePosition(int dataType = -1, bool forward = false) {}
 * @param filename The name of the file to open, without the `.xsdat` extension
 *
 * @returns bool
+* @allow_no_num_promo
 */
 bool xsOpenFile(string filename = "") {}
 
@@ -4623,6 +4808,7 @@ bool xsOpenFile(string filename = "") {}
 * Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes
 *
 * @returns float
+* @allow_no_num_promo
 */
 float xsReadFloat() {}
 
@@ -4630,6 +4816,7 @@ float xsReadFloat() {}
 * Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsReadInt() {}
 
@@ -4637,6 +4824,7 @@ int xsReadInt() {}
 * Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string
 *
 * @returns string
+* @allow_no_num_promo
 */
 string xsReadString() {}
 
@@ -4644,6 +4832,7 @@ string xsReadString() {}
 * Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes
 *
 * @returns vector
+* @allow_no_num_promo
 */
 vector xsReadVector() {}
 
@@ -4654,6 +4843,7 @@ vector xsReadVector() {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsSetFilePosition(int byteOffset = -1) {}
 
@@ -4664,6 +4854,7 @@ bool xsSetFilePosition(int byteOffset = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsWriteFloat(float data = -1.0) {}
 
@@ -4674,6 +4865,7 @@ bool xsWriteFloat(float data = -1.0) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsWriteInt(int data = -1) {}
 
@@ -4684,6 +4876,7 @@ bool xsWriteInt(int data = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsWriteString(string data = "") {}
 
@@ -4694,6 +4887,7 @@ bool xsWriteString(string data = "") {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsWriteVector(vector data = vector(-1, -1, -1)) {}
 
@@ -4706,6 +4900,7 @@ bool xsWriteVector(vector data = vector(-1, -1, -1)) {}
 * @param id The goal id/number to get for the current AI
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetGoal(int id = -1) {}
 
@@ -4715,6 +4910,7 @@ int xsGetGoal(int id = -1) {}
 * @param id The SN to get for the current AI
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetStrategicNumber(int id = -1) {}
 
@@ -4725,6 +4921,7 @@ int xsGetStrategicNumber(int id = -1) {}
 * @param value The value to set the goal id/number to
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetGoal(int id = -1, int value = -1) {}
 
@@ -4735,6 +4932,7 @@ void xsSetGoal(int id = -1, int value = -1) {}
 * @param value The value to set the SN to
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetStrategicNumber(int id = -1, int value = -1) {}
 
@@ -4750,6 +4948,7 @@ void xsSetStrategicNumber(int id = -1, int value = -1) {}
 *
 * @returns bool
 * @allow_discard
+* @allow_no_num_promo
 */
 bool xsAddRuntimeEvent(string runtimeName = "", string functionName = "", int functionArgument = -1) {}
 
@@ -4757,6 +4956,7 @@ bool xsAddRuntimeEvent(string runtimeName = "", string functionName = "", int fu
 * This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE.
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsBreakPoint() {}
 
@@ -4764,6 +4964,7 @@ void xsBreakPoint() {}
 * This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing.
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsDumpArrays() {}
 
@@ -4771,6 +4972,7 @@ void xsDumpArrays() {}
 * Returns the current context player ID.
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetContextPlayer() {}
 
@@ -4780,6 +4982,7 @@ int xsGetContextPlayer() {}
 * @param functionName The name of the function to get the hash of
 *
 * @returns int
+* @allow_no_num_promo
 */
 int xsGetFunctionID(string functionName = "") {}
 
@@ -4789,6 +4992,7 @@ int xsGetFunctionID(string functionName = "") {}
 * @param playerNumber The player to set the context player to
 *
 * @returns void
+* @allow_no_num_promo
 */
 void xsSetContextPlayer(int playerNumber = -1) {}
 
