@@ -1,4 +1,4 @@
-*Written by: Alian713*
+*Written by: Alian713 & KSneijders*
 
 ---
 
@@ -16,144 +16,232 @@ Lets look at all the effects and their configurations one by one:
 ## 2. Common Terminology
 Feel free to skip these if you are already familiar with them
 
-### 2.1. Bug
-Anything in the map that is not working as intended is a bug.
-
-Historically, the term "bug" comes from physical bugs getting stuck in computers and causing them to malfunction back in the day when computers used to be the size of entire rooms.
-
-In today's context, a bug in anything just means that its malfunctioning and not working as intended.
-
-### 2.2. Debugging
-Attempting to find out the cause of the malfunction, and removing/fixing that cause is known as debugging.
-
-### 2.3. Execution
-Executing a trigger means that we carry out its effects.
+- **Bug**: Anything in the map that is not working as intended is a bug. Historically, the term "bug" comes from physical bugs getting stuck in computers and causing them to malfunction back in the day when computers used to be the size of entire rooms. In today's context, a bug in anything just means that its malfunctioning and not working as intended.
+- **Debugging**: Attempting to find out the cause of the malfunction, and removing/fixing that cause is known as debugging.
+- **Execution**: Executing a trigger means that we carry out its effects. 
 
 ## 3. Effects and How to Use Them
 
-### 3.1. AI Script Goal
+### AI Script Goal
 
-This effect is used to communicate with the AI. An AI Trigger NUMBER set with this effect can be detected in an AI script using `event-detected trigger NUMBER`. The configurations for this effect are as follows:
+This effect can be used to communicate with an AI player by setting an AI Trigger number. The AI Trigger number can be detected inside an AI script using: `event-detected trigger NUMBER`. The configurations for this effect are as follows:
 
-1. AI Script Goal: AI Trigger ID to set
+| Options | Description |
+| :------- | :---------- |
+| AI Script Goal | The AI Trigger number to set |
 
-### 3.2. Acknowledge AI Signal
+---
 
-When `set-signal` is used in an AI file, this effect is used to unset it so it can be reused. This only works in Single Player games. Refer to the [Acknowledge Multiplayer AI Signal](./#33-acknowledge-multiplayer-ai-signal "Jump to: Acknowledge Multiplayer AI Signal") effect for the multiplayer version of this effect. The configurations for this effect are as follows:
+### Acknowledge AI Signal
 
-1. AI Signal Value: The AI Signal ID to acknowledge
+!!! warning "Deprecated since version 1.40"
 
-### 3.3. Acknowledge Multiplayer AI Signal
+    This will cause a desync in multiplayer and recs, use the 'acknowledge_multiplayer_ai_signal' effect instead
 
-When `set-signal` is used in an AI file, this effect is used to unset it so it can be reused. This only works in Multiplayer games. Refer to the [Acknowledge AI Signal](./#32-acknowledge-ai-signal "Jump to: Acknowledge AI Signal") effect for the single player version of this effect.. The configurations for this effect are as follows:
+This effect can be used to acknowledge a pending AI signal. The configurations for this effect are as follows:
 
-1. AI Signal Value: The AI Signal ID to acknowledge
+| Options | Description |
+| :------- | :---------- |
+| AI Signal | The AI Signal ID to acknowledge |
 
-### 3.4. Activate Trigger
+---
 
-This effect can be used to activate a trigger. The configurations for this effect are as follows:
+### Acknowledge Multiplayer AI Signal
 
-1. Trigger List: The trigger to activate/deactivate
+This effect can be used to acknowledge a pending AI signal. The configurations for this effect are as follows:
 
-### 3.5. Attack Move
+| Options | Description |
+| :------- | :---------- |
+| AI Signal | The AI Signal ID to acknowledge |
 
-This effect can be used to command units of a given player to attack move to a location. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+### Activate Trigger
 
-### 3.6. Change Civilization Name
+This effect can be used to activate a specific trigger. The configurations for this effect are as follows:
 
-This effect can be used to change the name of the civilization of a player to any desired name. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Trigger | The trigger to be activated. |
 
-1. Source Player: The player that is affected by the effect
-2. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-3. Message: The name/message/instruction to show on screen or the script call to execute
+---
 
-### 3.7. Change Color Mood
+### Add Train Location
 
-This effect can change the colour mood of the map. The configurations for this effect are as follows:
+This effect can be used to add an additional building where a specific type of unit can be trained. The configurations for this effect are as follows:
 
-1. Color Mood: This is the new colour mood to set
-2. Quantity: The amount to modify by or a timer
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to add an additional train location for |
+| Source Player | The player for whom the additional train location will be added |
+| Secondary Object | The type of building where the unit can now be trained |
+| Button Location | The location of the button to use. This number is given by the following formula: (row - 1) * 5 + column + 1 |
+| Train Time | The train time used for the new train location |
+| Hotkey | The hotkey ID to use for the train location |
 
-### 3.8. Change Diplomacy
+---
 
-This effect can be used to change the diplomacy stance of the soruce players with the target player. The configurations for this effect are as follows:
+### Attack Move
 
-1. Diplomacy Stance: The new diplomacy state
-2. Source Player: The player that is affected by the effect
-3. Target Player: This is the second player that is affected by the effect
+This effect can be used to attack-move units. The configurations for this effect are as follows:
 
-### 3.9. Change Object Armor
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to attack-move |
+| Source Player | The player whose units will attack-move |
+| Location | The tile to attack-move to |
+| Location Unit Ref | The target unit (as if it was right clicked) |
+| Area | The area in which units will be attack-moved. When not set, units across the entire map are attack-moved |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to change the armour of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Quantity: The amount to modify by
-2. Armour or Attack Class: The Armour/Attack Class to Modify
-3. Unit List 1: This is the unit to affect
-4. Source Player: The player that is affected by the effect
-5. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-6. Object Group: This is the class of units to effect
-7. Object Type: This is the type of the unit to effect
-8. Operation: Add, Subtract, Multiply or Divide the given quantity
+### Change Civilization Name
+
+This effect can be used to change the civilization name displayed for the specified player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player whose civilization name will be changed |
+| String ID | The string ID to use as the new civilization name |
+| Message | The new civilization name to display for the player |
+
+---
+
+### Change Color Mood
+
+This effect can be used to change the overall color atmosphere of the map. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The time in seconds to fade to the new color mood |
+| Color Mood | The color mood to set |
+
+---
+
+### Change Diplomacy
+
+This effect can be used to change the diplomacy stance of the source players with the target player. It does NOT change the stance both ways. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Diplomacy State | The diplomacy stance to set. |
+| Source Player | The player for whom the stance will be changed. |
+| Target Player | The target player whose diplomacy stance will be changed for the source player. |
+
+---
+
+### Change Object Armor
+
+This effect can be used to modify the armor value of units for a specific armor class. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Armour Attack Quantity | The amount to modify the armor by |
+| Armour Attack Class | The armor class to modify |
+| Object | The type of unit to change armor |
+| Source Player | The player whose units will have their armor changed |
+| Area | The area in which units will have their armor changed. When not set, units across the entire map have their armor changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
 1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 
-### 3.10. Change Object Attack
+---
 
-This effect can be used to change the attack of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Change Object Attack
 
-1. Quantity: The amount to modify by
-2. Armour or Attack Class: The Armour/Attack Class to Modify
-3. Unit List 1: This is the unit to affect
-4. Source Player: The player that is affected by the effect
-5. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-6. Object Group: This is the class of units to effect
-7. Object Type: This is the type of the unit to effect
-8. Operation: Add, Subtract, Multiply or Divide the given quantity
+This effect can be used to modify the attack value of units for a specific attack class. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Armour Attack Quantity | The amount to modify the attack by |
+| Armour Attack Class | The attack class to modify |
+| Object | The type of unit to change attack |
+| Source Player | The player whose units will have their attack changed |
+| Area | The area in which units will have their attack changed. When not set, units across the entire map have their attack changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
 1. The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value
 
-### 3.11. Change Object Civilization Name
+---
 
-This effect can be used to change the civilization name of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Change Object Caption
 
-1. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-2. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+This effect can be used to change the caption displayed above units. The configurations for this effect are as follows:
 
-### 3.12. Change Object Cost
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change the caption for |
+| Source Player | The player whose units will have their caption changed |
+| String ID | The string ID to use as the new caption for the affected units |
+| Message | The new caption to display for the affected units |
+| Area | The area in which units will have their caption changed. When not set, units across the entire map have their caption changed |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
 
-This effect can be used to change the cost of a specifed unit for a particular player. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Food: The new food cost of the unit/technology
-4. Wood: The new wood cost of the unit/technology
-5. Stone: The new stone cost of the unit/technology
-6. Gold: The new Gold cost of the unit/technology
+### Change Object Civilization Name
+
+This effect can be used to change the civilization name displayed for units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player whose units will have their civilization name changed |
+| String ID | The string ID to use as the new civilization name for the affected units |
+| Area | The area in which units will have their civilization name changed. When not set, units across the entire map have their civilization name changed |
+| Message | The civilization name to display for the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Change Object Cost
+
+This effect can be used to change the cost of a specific type of unit. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change cost |
+| Source Player | The player for whom the cost will be changed |
+| Resource1 | The type of resource for the first cost |
+| Resource1 Quantity | The quantity for the first cost |
+| Resource2 | The type of resource for the second cost |
+| Resource2 Quantity | The quantity for the second cost |
+| Resource3 | The type of resource for the third cost |
+| Resource3 Quantity | The quantity for the third cost |
 
 Some useful tricks with this effect:
 
 1. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
 2. Units in the game can only have a maximum of 2 different resource of costs.
 
-### 3.13. Change Object Description
+---
 
-This effect can be used to change the description of a specifed unit for a particular player. The configurations for this effect are as follows:
+### Change Object Description
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-4. Message: The name/message/instruction to show on screen or the script call to execute
+This effect can be used to change the description of a specific type of unit for the specified player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit whose description will be changed |
+| Source Player | The player for whom the unit description will be changed |
+| String ID | The string ID to use as the new description for the type of unit |
+| Message | The new description for the type of unit |
 
 Some useful tricks with this effect:
 
@@ -167,142 +255,237 @@ Allows you to buy special perks
 ```
 3. Here, all the words in the angle brackets are replaced by those relevant statistics for the unit.
 
-### 3.14. Change Object HP
+---
 
-This effect can be used to change the max HP of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Change Object HP
 
-1. Quantity: The amount to modify by or a timer
-2. Unit List 1: This is the unit to affect
-3. Source Player: The player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
-7. Operation: Add, Subtract, Multiply or Divide the given quantity
+This effect can be used to modify the current HP of units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount to change the HP by |
+| Object | The type of unit to change HP |
+| Source Player | The player whose units will have their HP changed |
+| Area | The area in which units will have their HP changed. When not set, units across the entire map have their HP changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
 1. Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow.
 
-### 3.15. Change Object Icon
+---
 
-This effect can be used to change the icon of existing units of a given player to the 2nd unit's icon. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Change Object Icon
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Object Group: This is the class of units to effect
-5. Object Type: This is the type of the unit to effect
-6. Unit List 2: This is the second unit to affect
+This effect can be used to change the icon displayed for units. The configurations for this effect are as follows:
 
-### 3.16. Change Object Name
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change icon |
+| Source Player | The player whose units will have their icon changed |
+| Area | The area in which units will have their icon changed. When not set, units across the entire map have their icon changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Secondary Object | The type of unit whose icon will be used for the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to change the names of existing units of a given player to the specified name. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Message: The name/message/instruction to show on screen or the script call to execute
+### Change Object Name
+
+This effect can be used to change the display name of units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to rename |
+| Source Player | The player whose units will have their name changed |
+| String ID | The string ID to use as the new name for the affected units |
+| Area | The area in which units will have their name changed. When not set, units across the entire map have their name changed |
+| Message | The new name to display for the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
 1. This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map
 
-### 3.17. Change Object Player Color
+---
 
-This effect can be used to change the colour of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Change Object Player Color
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Player Color: The new colour of the unit
+This effect can be used to change the player color of units. The configurations for this effect are as follows:
 
-### 3.18. Change Object Player Name
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change player color |
+| Source Player | The player whose units will have their player color changed |
+| Area | The area in which units will have their player color changed. When not set, units across the entire map have their player color changed |
+| Player Color | The player color to use for the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to change the player name of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+### Change Object Player Name
 
-### 3.19. Change Object Range
+This effect can be used to change the player name displayed for units. The configurations for this effect are as follows:
 
-This effect can be used to change the range of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change player name |
+| Source Player | The player whose units will have their player name changed |
+| String ID | The string ID to use as the new player name for the affected units |
+| Area | The area in which units will have their player name changed. When not set, units across the entire map have their player name changed |
+| Message | The new player name to display for the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-1. Quantity: The amount to modify by or a timer
-2. Unit List 1: This is the unit to affect
-3. Source Player: The player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
-7. Operation: Add, Subtract, Multiply or Divide the given quantity
+---
 
-### 3.20. Change Object Speed
+### Change Object Range
 
-This effect can be used to change the speed of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+This effect can be used to modify the attack range of units. The configurations for this effect are as follows:
 
-1. Quantity: The amount to modify by or a timer
-2. Unit List 1: This is the unit to affect
-3. Source Player: The player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount to change the attack range by |
+| Object | The type of unit to change range |
+| Source Player | The player whose units will have their range changed |
+| Area | The area in which units will have their range changed. When not set, units across the entire map have their range changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-### 3.21. Change Object Stance
+---
 
-This effect can be used to change the stance of units of a given player to the given stance. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Change Object Speed
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Object Group: This is the class of units to effect
-5. Object Type: This is the type of the unit to effect
-6. Attack Stance: Set the new stance of the unit, aggressive, defensive, stand ground or no attack
+This effect can be used to modify the movement speed of units. The configurations for this effect are as follows:
 
-### 3.22. Change Ownership
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount to change the movement speed to. For legacy reasons, this is capped at 4.5 |
+| Object | The type of unit to change speed |
+| Source Player | The player whose units will have their speed changed |
+| Area | The area in which units will have their speed changed. When not set, units across the entire map have their speed changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to convert units of the source player to the target player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Target Player: This is the second player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
-7. Flash Object: When this is enabled if the source and target players are the same, the selected object(s) will be flashed
+### Change Object Stance
+
+This effect can be used to change the attack stance of units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change stance |
+| Source Player | The player whose units will have their stance changed |
+| Area | The area in which units will have their stance changed. When not set, units across the entire map have their stance changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Attack Stance | The attack stance to set on the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Change Object Visibility
+
+This effect can be used to change the visibility state of units for a specific player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player whose units' visibility will be changed for the target player |
+| Target Player | The player for whom the unit visibility will change |
+| Area | The area in which units will have their visibility changed. When not set, units across the entire map have their visibility changed |
+| Visibility State | The visibility state to use |
+| Max Units Affected | The maximum number of units affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+
+---
+
+### Change Ownership
+
+This effect can be used to change ownership of units from the source player to the target player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to change ownership |
+| Source Player | The player who currently owns the units |
+| Target Player | The player who will receive ownership of the units |
+| Area | The area in which units will have their ownership changed. When not set, units across the entire map have their ownership changed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Flash Unit | When enabled, flash the affected units when the source and target player are the same |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
 1. This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players
 
-### 3.23. Change Player Name
+---
 
-This effect can be used to change the name of a player to any desired name. The configurations for this effect are as follows:
+### Change Player Color
 
-1. Source Player: The player that is affected by the effect
-2. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-3. Message: The name/message/instruction to show on screen or the script call to execute
+This effect can be used to change the color associated with the specified player, affecting all units and buildings. The configurations for this effect are as follows:
 
-### 3.24. Change Research Location
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player whose color will be changed |
+| Player Color | The player color to use |
 
-This effect can be used to change the research location of a specifed technology for a particular player to another unit. The research location of Loom is the Town Centre. The configurations for this effect are as follows:
+---
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
-3. Unit List 2: This is the second unit to affect
-4. Button Location: The location of the button for a unit or technology. This number is given by $(row-1)\times5+column$. For example, the button location for the man at arms **research** in the barracks, which is in the 2nd row and 1st column, is given by $(2-1)\times5+1 = 6$
+### Change Player Name
 
-### 3.25. Change Technology Cost
+This effect can be used to change the name displayed for the specified player. The configurations for this effect are as follows:
 
-This effect can be used to change a technology's cost for a particular player. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player whose name will be changed |
+| String ID | The string ID to use as the new player name |
+| Message | The new player name to display |
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
-3. Food: The new food cost of the unit/technology
-4. Wood: The new wood cost of the unit/technology
-5. Stone: The new stone cost of the unit/technology
-6. Gold: The new Gold cost of the unit/technology
+---
+
+### Change Research Location
+
+This effect can be used to change the type of building where a specific technology can be researched. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the research location will be changed |
+| Technology | The technology whose research location will be changed |
+| Secondary Object | The type of building where the technology will now be researched |
+| Button Location | The location of the button to use. This number is given by the following formula: (row - 1) * 5 + column + 1 |
+
+---
+
+### Change Technology Cost
+
+This effect can be used to change the cost of a specific technology. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the cost will be changed |
+| Technology | The technology to change cost |
+| Resource1 | The type of resource for the first cost |
+| Resource1 Quantity | The quantity for the first cost |
+| Resource2 | The type of resource for the second cost |
+| Resource2 Quantity | The quantity for the second cost |
+| Resource3 | The type of resource for the third cost |
+| Resource3 Quantity | The quantity for the third cost |
 
 Some useful tricks with this effect:
 
@@ -310,164 +493,375 @@ Some useful tricks with this effect:
 2. Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.
 3. Techs in the game can only have a maximum of 3 different resource of costs.
 
-### 3.26. Change Technology Description
+---
 
-This effect can be used to change a technology's Description for a particular player. The configurations for this effect are as follows:
+### Change Technology Description
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
-3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-4. Message: The name/message/instruction to show on screen or the script call to execute
+This effect can be used to change the description of a specific technology for the specified player. The configurations for this effect are as follows:
 
-### 3.27. Change Technology Name
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the technology description will be changed |
+| Technology | The technology whose description will be changed |
+| String ID | The string ID to use as the new technology description |
+| Message | The new description for the technology |
 
-This effect can be used to change a technology's name for a particular player. The configurations for this effect are as follows:
+---
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
-3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-4. Message: The name/message/instruction to show on screen or the script call to execute
+### Change Technology Hotkey
 
-### 3.28. Change Technology Research Time
+This effect can be used to change the hotkey of a specific technology. The configurations for this effect are as follows:
 
-This effect can be used to change a technology's research time for a particular player. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Technology | The technology whose hotkey will be changed |
+| Source Player | The player for whom the technology hotkey will be changed |
+| Quantity | The hotkey ID to assign to the technology |
 
-1. Quantity: The amount to modify by or a timer
-2. Source Player: The player that is affected by the effect
-3. Technology: The technology to affect
+---
 
-### 3.29. Change Train Location
+### Change Technology Icon
 
-This effect can be used to change the train location of a specifed unit for a particular player to another unit. The train location of Archers is Archery Range. The configurations for this effect are as follows:
+This effect can be used to change the icon displayed of a specific technology. The configurations for this effect are as follows:
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Unit List 2: This is the second unit to affect
-4. Button Location: The location of the button for a unit or technology. This number is given by $(row-1)\times5+column$. For example, the button location for the man at arms **research** in the barracks, which is in the 2nd row and 1st column, is given by $(2-1)\times5+1 = 6$
+| Options | Description |
+| :------- | :---------- |
+| Technology | The technology whose icon will be changed |
+| Source Player | The player for whom the technology icon will be changed |
+| Quantity | The icon ID to set for the technology |
 
-### 3.30. Change Variable
+---
 
-This effect can be used to change the value of a variable.. The configurations for this effect are as follows:
+### Change Technology Name
 
-1. Quantity: The amount to modify by or a timer
-2. Operation: Add, Subtract, Multiply or Divide the given quantity
-3. Variable: The variable to modify
-4. Message: The name/message/instruction to show on screen or the script call to execute
+This effect can be used to change the display name of a specific technology for the specified player. The configurations for this effect are as follows:
 
-### 3.31. Change View
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the technology name will be changed |
+| Technology | The technology whose name will be changed |
+| String ID | The string ID to use as the new technology name |
+| Message | The new name to display for the technology |
 
-This effect can be used to move the camera of the player to a specified location. The configurations for this effect are as follows:
+---
 
-1. Source Player: The player that is affected by the effect
-2. Location: The location to create the unit on, or task a unit to
-3. Scroll: If this is enabled, changing the camera to a new position shows a scrolling animation from the position the player was previously on. If not enabled, the camera cuts to the new position wihout any animations.
+### Change Technology Research Time
+
+This effect can be used to change the research time of a specific technology. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The new research time to set |
+| Source Player | The player for whom the research time will be changed |
+| Technology | The technology whose research time will be changed |
+
+---
+
+### Change Train Location
+
+This effect can be used to change the type of building where a specific type of unit can be trained. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit whose change train location will be changed |
+| Source Player | The player for whom the train location will be changed |
+| Secondary Object | The type of building where the unit will now be trained |
+| Button Location | The location of the button to use. This number is given by the following formula: (row - 1) * 5 + column + 1 |
+
+---
+
+### Change Variable
+
+This effect can be used to change the value of a trigger variable. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The value to use in the operation on the variable |
+| Operation | The operation to apply to the variable using the quantity. |
+| Variable | The variable whose value will be changed |
+| Message | The display name of the variable in the scenario editor. Setting this via ASP has no effect. |
+
+---
+
+### Change View
+
+This effect can be used to move the camera view for the specified player to a specific tile. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The time in seconds it takes to scroll to the new camera position |
+| Source Player | The player whose camera view will be moved |
+| Location | The tile to move the camera to |
+| Scroll | When enabled, animate the camera transition. When disabled, the camera snaps to the new position without any animation (ignoring the quantity) |
 
 Some useful tricks with this effect:
 
 1. This effect can be used to bring attention of the player to a certain part of the map
 
-### 3.32. Clear Instructions
+---
 
-This effect can be used to clear instructions on the screen before the timer for that instruction is up.. The configurations for this effect are as follows:
+### Clear Instructions
 
-1. Panel Position: Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen
+This effect can be used to clear the message from an instruction panel. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Instruction Panel Position | The position of the instruction panel to clear |
 
 Some useful tricks with this effect:
 
 1. This effect is not used very often, since mostly you want your display instruction effects to display an instruction for the full length of time you specify
 
-### 3.33. Clear Timer
+---
 
-This effect can be used to remove a displayed timer from the screen. The configurations for this effect are as follows:
+### Clear Timer
 
-1. Timer: The time to display the message for
+This effect can be used to clear and hide a previously displayed timer. The configurations for this effect are as follows:
 
-### 3.34. Create Garrisoned Object
+| Options | Description |
+| :------- | :---------- |
+| Timer ID | The ID of the timer to clear and hide |
 
-This effect creates the unit chosen in the 2nd list inside the selected object or the unit chosen in the 1st list. The unit that the created unit is garrisoned inside does not need to be of the same player.. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Unit List 2: This is the second unit to affect
+### Counts Units Into Variable
+
+This effect can be used to count units and store the result in a variable. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to count |
+| Source Player | The player whose units will be counted |
+| Area | The area in which units will be counted. When not set, units across the entire map are counted |
+| Object Group | The units with this class will be affected by this effect |
+| Secondary Variable | The variable in which the unit count will be stored |
+
+---
+
+### Create Decision
+
+This effect can be used to display a decision dialog with two choices, storing the choice in the decision ID. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Decision ID | The decision ID to use |
+| String ID | The string ID to use as the decision prompt |
+| Message | The prompt to display in the decision dialog |
+| Decision Option1 String ID | The string ID to use for the first decision option |
+| Message Option1 | The message to use for the first decision option. Ignored when the string ID is set. |
+| Decision Option2 String ID | The string ID to use for the second decision option |
+| Message Option2 | The message to use for the second decision option. Ignored when the string ID is set. |
+
+---
+
+### Create Garrisoned Object
+
+This effect can be used to create a unit that is already garrisoned inside the specified units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to receive the new garrisoned unit |
+| Source Player | The player for whom the garrisoned unit will be created |
+| Area | The area in which to create the garrisoned unit. When not set, units across the entire map receive the garrisoned unit |
+| Secondary Object | The type of unit to create and garrison inside the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+| Disable Sound | When enabled, disable the sound during the creation of the object |
 
 Some useful tricks with this effect:
 
 1. The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability
 
-### 3.35. Create Object
+---
 
-This effect can be used to create a unit or building for the specified player. The configurations for this effect are as follows:
+### Create Object
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Facet: The rotation of the created unit
+This effect can be used to create a unit (including buildings, heroes etc.) for the specified player. The configurations for this effect are as follows:
 
-### 3.36. Damage Object
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to be created. |
+| Source Player | The player whose unit will be created |
+| Location | The tile where the unit will be created |
+| Item ID | The type of the unit that is selected in the dropdown |
+| Facet | The rotation of the created unit. This can be any integer between 0 and 15, with 0 looking towards the right of the screen and 8 looking towards the left of the screen. With increasing values moving counter clockwise. |
+| Disable Sound | When enabled, disable the creation sound of the object |
 
-This effect can be used to deal damage to units of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Quantity: The amount to modify by or a timer
-2. Unit List 1: This is the unit to affect
-3. Source Player: The player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+### Create Object Armor
+
+This effect can be used to add a new armor class to a type on unit. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Armour Attack Quantity | The amount to modify the armor class by |
+| Armour Attack Class | The armor class to modify |
+| Object | The type of unit to add the armor class to |
+| Source Player | The player whose units will have the armor class added |
+| Area | The area in which units will have the armor class added. When not set, units across the entire map have the armor class added |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Create Object Attack
+
+This effect can be used to add a new attack class to a type on unit. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Armour Attack Quantity | The amount to modify the attack class by |
+| Armour Attack Class | The attack class to modify |
+| Object | The type of unit to add the attack class to |
+| Source Player | The player whose units will have the attack class added |
+| Area | The area in which units will have the attack class added. When not set, units across the entire map have the attack class added |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Damage Object
+
+This effect can be used to deal a specified amount of damage to units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount of damage to deal to each affected unit |
+| Object | The type of unit to damage |
+| Source Player | The player whose units will be damaged |
+| Area | The area in which units will be damaged. When not set, units across the entire map are damaged |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
 1. Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.
 2. This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object.
 
-### 3.37. Deactivate Trigger
+---
 
-This effect can be used to activate a trigger. The configurations for this effect are as follows:
+### Deactivate Trigger
 
-1. Trigger List: The trigger to activate/deactivate
+This effect can be used to deactivate a specific trigger. The configurations for this effect are as follows:
 
-### 3.38. Declare Victory
+| Options | Description |
+| :------- | :---------- |
+| Trigger | The trigger to be deactivated. |
 
-This effect can be used to grant victory or defeat to a specifed player. The configurations for this effect are as follows:
+---
 
-1. Source Player: The player that is affected by the effect
-2. Victory: If this is selected, the chosen player will win the game. If it is not selected, then the chosen player is defeated
+### Declare Victory
 
-### 3.39. Disable Object Selection
+This effect can be used to declare victory or defeat for the specified player. The configurations for this effect are as follows:
 
-This effect makes specified units of the given player unselectable. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom victory or defeat will be declared |
+| Enabled | When enabled, victory is declared for the player. When disabled, defeat is declared |
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+---
 
-### 3.40. Disable Technology Stacking
+### Delete Key
 
-This effect disables 256x tech mode for the specified technology and player. Refer to the [Enable Technology Stacking](./#347-enable-technology-stacking "Jump to: Enable Technology Stacking") effect. The configurations for this effect are as follows:
+This effect can be used to delete a key and its associated value from the key-value store. The key-value store is persistent across scenarios in a campaign, but these effects only function when the scenario is played as part of a campaign. The configurations for this effect are as follows:
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
+| Options | Description |
+| :------- | :---------- |
+| Message | The name of the key to delete |
 
-### 3.41. Disable Unit Targeting
+---
 
-This effect makes it so that the specified units of the given player cannot be targeted (basically, you can't perform any right click actions from another unit on these units anymore) by other units. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Disable Object Deletion
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+This effect can be used to prevent the player from deleting units. The configurations for this effect are as follows:
 
-### 3.42. Display Instructions
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to disable deletion for |
+| Source Player | The player whose units will have deletion disabled |
+| Area | The area in which units will have deletion disabled. When not set, units across the entire map have deletion disabled |
+| Item ID | The type of the unit that is selected in the dropdown |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to display instructions on the screen. An icon of a unit may also be displayed along with the instructions. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-4. Display Time: The amount of time to display the instruction for
-5. Panel Position: Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen
-6. Play Sound: The sound to play
-7. Message: The name/message/instruction to show on screen or the script call to execute
-8. Sound Name: The name of the sound to play
+### Disable Object Selection
+
+This effect can be used to prevent the player from selecting units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to disable selection for |
+| Source Player | The player whose units will have selection disabled |
+| Area | The area in which units will have selection disabled. When not set, units across the entire map have selection disabled |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Disable Technology Stacking
+
+This effect can be used to disable stacking for a technology that was previously set to stack. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom technology stacking will be disabled |
+| Technology | The technology to disable stacking for |
+
+---
+
+### Disable Unit Attackable
+
+This effect can be used to prevent units from being auto- or right-click attacked. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to disable attackable |
+| Source Player | The player whose units will have attackable disabled |
+| Area | The area in which units will have attackable disabled. When not set, units across the entire map have attackable disabled |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Disable Unit Targeting
+
+This effect can be used to prevent units from being targeted by any right-click action or being auto-attacked by other units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to disable targeting for |
+| Source Player | The player whose units will have targeting disabled |
+| Area | The area in which units will have targeting disabled. When not set, units across the entire map have targeting disabled |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Display Instructions
+
+This effect can be used to display a message in a panel for all players. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The unit whose icon to the display in the panel |
+| Source Player | The player whose color to use in the icon |
+| String ID | The string ID to use as the instruction message instead of the message field |
+| Display Time | The number of real-life seconds to display the instructions panel for |
+| Instruction Panel Position | The position on the screen where the instruction panel will be displayed |
+| Play Sound | When enabled, plays the message notification |
+| Message | The instruction message to display in the panel |
+| Sound Name | The name of the sound to play when the instruction panel is shown |
 
 Some useful tricks with this effect:
 
@@ -483,15 +877,20 @@ Some useful tricks with this effect:
     7. <GREY\>
     8. <ORANGE\>
 
-### 3.43. Display Timer
+---
 
-This effect can be used to display a timer on screen. The configurations for this effect are as follows:
+### Display Timer
 
-1. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-2. Display Time: The amount of time to display the instruction for
-3. Time Unit: This specifies the unit of time used in the timer trigger. This can be seconds, minutes or years
-4. Timer: The time to display the message for
-5. Message: The name/message/instruction to show on screen or the script call to execute
+This effect can be used to display a countdown timer on the screen. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| String ID | The string ID to use as the timer label instead of the message field |
+| Display Time | The initial value of the timer |
+| Time Unit | The unit of time to use (In game seconds, minutes or years (One year being 5 seconds)) |
+| Timer ID | The ID of the timer to display (multiple timers can be shown simultaneously) |
+| Reset Timer | Removes the old timer if it exists, when disabled it will create multiple timers with the same ID, disable with caution |
+| Message | The message to display for the timer. Use '<TIMER>' to show the timer in your message |
 
 Some useful tricks with this effect:
 
@@ -506,171 +905,436 @@ Some useful tricks with this effect:
     7. <GREY\>
     8. <ORANGE\>
 
-### 3.44. Enable Disable Object
+---
 
-This effect can be used to enable/disable any unit for a specific player. Note that sometimes, simply enabling a unit wont allow you to train them, because if it is not a default unit, the game doesn't know which building to train the unit in. Thus, A train location and a train button ([Change Train Location](./#329-change-train-location "Jump to: Change Train Location")), a cost ([Change Object Cost](./#312-change-object-cost "Jump to: Change Object Cost")), and optionally a discription ([Change Object Description](./#313-change-object-description "Jump to: Change Object Description")), of the unit are needed to also be set using additional effects to allow training the enabled unit.. The configurations for this effect are as follows:
+### Enable Object Deletion
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Enabled: If this is selected, the units/technology is enabled if it is not already enabled
+This effect can be used to re-enable deletion for units that were previously made undeletable. The configurations for this effect are as follows:
 
-### 3.45. Enable Disable Technology
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to enable deletion for |
+| Source Player | The player whose units will have deletion re-enabled |
+| Area | The area in which units will have deletion enabled. When not set, units across the entire map have deletion enabled |
+| Item ID | The type of the unit that is selected in the dropdown |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to enable/disable any technology for a specific player. Similar to units, when a non default technology is enabled, its train location and button ([Change Research Location](./#324-change-research-location "Jump to: Change Research Location")), costs ([Change Technology Cost](./#325-change-technology-cost "Jump to: Change Technology Cost")), and optionally a description ([Change Technology Description](./#326-change-technology-description "Jump to: Change Technology Description")), must be set using additional effects for someone to research it.. The configurations for this effect are as follows:
+---
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
-3. Enabled: If this is selected, the units/technology is enabled if it is not already enabled
+### Enable Object Selection
 
-### 3.46. Enable Object Selection
+This effect can be used to re-enable selection for units that were previously made unselectable. The configurations for this effect are as follows:
 
-This effect makes specified units of the given player selectable. Refer to the [Disable Object Selection](./#339-disable-object-selection "Jump to: Disable Object Selection") effect. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to enable selection for |
+| Source Player | The player whose units will have selection re-enabled |
+| Area | The area in which units will have selection enabled. When not set, units across the entire map have selection enabled |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+---
 
-### 3.47. Enable Technology Stacking
+### Enable Technology Stacking
 
-This effect enables 256x tech mode for the specified technology and player. The configurations for this effect are as follows:
+This effect can be used to allow a technology to be researched multiple times, stacking its effects with each research. The configurations for this effect are as follows:
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The maximum number of times the technology can be researched |
+| Source Player | The player for whom technology stacking will be enabled |
+| Technology | The technology to enable stacking for |
 
-### 3.48. Enable Unit Targeting
+---
 
-This effect makes it so that the specified units of the given player can be targeted by other units. Refer to the [Disable Unit Targeting](./#341-disable-unit-targeting "Jump to: Disable Unit Targeting") effect. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Enable Unit Attackable
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+This effect can be used to re-enable attackability for units that were previously made unattackable. The configurations for this effect are as follows:
 
-### 3.49. Freeze Object
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to enable attackable |
+| Source Player | The player whose units will have attackable re-enabled |
+| Area | The area in which units will have attackable re-enabled. When not set, units across the entire map have attackable re-enabled |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect does not actually freeze the objects but sets them to a no attack stance. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Object Group: This is the class of units to effect
-5. Object Type: This is the type of the unit to effect
+### Enable Unit Targeting
 
-### 3.50. Heal Object
+This effect can be used to re-enable targeting for units that were previously made untargetable. The configurations for this effect are as follows:
 
-This effect can be used to heal existing units of a given player by the specifed HP amount. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to enable targeting for |
+| Source Player | The player whose units will have targeting re-enabled |
+| Area | The area in which units will have targeting enabled. When not set, units across the entire map have targeting enabled |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-1. Quantity: The amount to modify by or a timer
-2. Unit List 1: This is the unit to affect
-3. Source Player: The player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+---
+
+### Enable/Disable Object
+
+This effect can be used to enable or disable units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The unit to enable or disable |
+| Source Player | The player for whom the unit will be enabled or disabled |
+| Enabled | When enabled, the unit is available. When disabled, the unit is not available |
+| Item ID | The type of the unit that is selected in the dropdown |
+
+---
+
+### Enable/Disable Technology
+
+This effect can be used to enable or disable technologies. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the technology will be enabled or disabled |
+| Technology | The technology to enable or disable |
+| Enabled | When enabled, the technology is available. When disabled, the technology is not available |
+| Item ID | The type of the technology that is selected in the dropdown |
+
+---
+
+### Freeze Object
+
+This effect can be used to freeze units in place, preventing them from moving or taking any actions. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to freeze |
+| Source Player | The player whose units will be frozen |
+| Area | The area in which units will be frozen. When not set, units across the entire map are frozen |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Heal Object
+
+This effect can be used to restore HP to units. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount of HP to restore to each affected unit |
+| Object | The type of unit to heal |
+| Source Player | The player whose units will be healed |
+| Area | The area in which units will be healed. When not set, units across the entire map are healed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
-1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./#353-modify-attribute "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
+1. This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./<effect_id_ref 51> "Jump to: Modify Attribute"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate "Jump to: Game Mechanics > Attributes > Regeneration Rate") to the desired quantity), that does exactly this
 
-### 3.51. Kill Object
+---
 
-This effect can be used to kill certain units of the specified player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Initiate Research
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Object Group: This is the class of units to effect
-5. Object Type: This is the type of the unit to effect
+This effect can be used to queue a technology in a building. This effect requires the technology to be available and will deduct the cost of the technology from the player's resources. The configurations for this effect are as follows:
 
-### 3.52. Lock Gate
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player who will research the technology |
+| Technology | The technology to begin researching |
+| Selected Units | The building to be affected by this effect. |
 
-This effect can be used to lock an unlocked gate. The configurations for this effect are as follows:
+---
 
-1. Selected Objects: The units to apply the effect to
+### Kill Object
 
-### 3.53. Modify Attribute
+This effect can be used to kill units. The configurations for this effect are as follows:
 
-This effect can be used to modify any attribute of a specified unit. Note that this effects the unit itself, not just existing units. This means that even new units created will have the modified attribute. Refer to the [Attributes](../../../../general/attributes "Jump to: Game Mechanics > Attributes") section of the guide to see a list of modifiable attributes and what each of them does. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to kill |
+| Source Player | The player whose units will be killed |
+| Area | The area in which units will be killed. When not set, units across the entire map are killed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-1. Quantity: The amount to modify by or a timer
-2. Unit List 1: This is the unit to affect
-3. Source Player: The player that is affected by the effect
-4. Operation: Add, Subtract, Multiply or Divide the given quantity
-5. Attribute List: The attribute of a unit to modify
+---
+
+### Load Key Value
+
+This effect can be used to load a value from the key-value store into a variable. The key-value store is persistent across scenarios in a campaign, but these effects only function when the scenario is played as part of a campaign. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Variable | The variable in which the loaded value will be stored |
+| Message | The name of the key to load |
+| Quantity | The default value to use if the key is not found |
+
+---
+
+### Lock Gate
+
+This effect can be used to lock specific gates. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Selected Units | The gates to be locked. |
+
+---
+
+### Modify Attribute
+
+This effect can be used to modify an object attribute for a type of unit belonging to the specified player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount to modify the attribute by |
+| Armour Attack Quantity | The amount to modify the armor or attack by |
+| Armour Attack Class | The armor or attack class to modify |
+| Object | The type of unit whose attribute will be modified |
+| Source Player | The player whose units will have their attribute modified |
+| Item ID | The type of the unit that is selected in the dropdown |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Object Attribute | The unit attribute to modify |
+| Message | The string value to use when the selected object attribute accepts a string (e.g. Object Name ID) |
+| Quantity Float | The (decimal) amount to modify the attribute by |
 
 Some useful tricks with this effect:
 
 1. Changing the Amount of 1st Resource of a unit changes its population requirement
 2. Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10.
 
-### 3.54. Modify Resource
+---
 
-This effect can be used to modify the resource amounts of a particular player by specified amounts. Refer to the [Resources](../../../../general/resources/resources "Jump to: Game Mechanics > Resources") section of the guide to see all the resources that can be modified and their purposes. The configurations for this effect are as follows:
+### Modify Attribute By Variable
 
-1. Quantity: The amount to modify by or a timer
-2. Tribute List: The resource to tribute
-3. Source Player: The player that is affected by the effect
-4. Operation: Add, Subtract, Multiply or Divide the given quantity
+This effect can be used to modify an object attribute for a type of unit belonging to the specified player using the value stored in a variable. The configurations for this effect are as follows:
 
-### 3.55. Modify Resource By Variable
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit whose attribute will be modified |
+| Source Player | The player whose units will have their attribute modified |
+| Operation | The operation to apply to the attribute using the variable. |
+| Object Attribute | The unit attribute to modify using the variable |
+| Variable | The variable whose value will be used to modify the attribute |
+| Message | The string value to use when the selected object attribute accepts a string (e.g. Object Name ID) |
+| Armour Attack Class | The armor or attack class to modify |
 
-This effect can be used to modify the resource amounts of a particular player by the value of another variable. Refer to the [Resources](../../../../general/resources/resources "Jump to: Game Mechanics > Resources") section of the guide to see all the resources that can be modified and their purposes. The configurations for this effect are as follows:
+---
 
-1. Tribute List: The resource to tribute
-2. Source Player: The player that is affected by the effect
-3. Operation: Add, Subtract, Multiply or Divide the given quantity
-4. Variable: The variable to modify
+### Modify Attribute For Class
 
-### 3.56. Patrol
+This effect can be used to modify a specific object attribute for all units matching the specified class and type, globally for the specified player. The configurations for this effect are as follows:
 
-This effect can be used to make units of a specified player patrol from one location to another. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Object2 Group | The unit class to be affected by this effect |
+| Object2 Type | The type of unit to be affected by this effect |
+| Source Player | The player whose units will have their attribute modified |
+| Object Attribute | The object attribute to modify |
+| Message | The string value to use when the selected object attribute accepts a string (e.g. Object Name ID) |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Quantity | The amount to modify the attribute by |
+| Quantity Float | The (decimal) amount to modify the attribute by |
+| Armour Attack Quantity | The amount to modify the damage class by |
+| Armour Attack Class | The damage class to modify |
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+---
 
-### 3.57. Place Foundation
+### Modify Object Attribute
 
-This effect can be used to automatically place down a building foundation for a specific player. The configurations for this effect are as follows:
+This effect can be used to modify a specific attribute of units. The configurations for this effect are as follows:
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to modify the attribute for |
+| Source Player | The player whose units will have their attribute modified |
+| Object Attribute | The object attribute to modify |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Area | The area in which units will have their attribute modified. When not set, units across the entire map have their attribute modified |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Message | The string value to use when the selected object attribute accepts a string (e.g. Object Name ID) |
+| Quantity | The amount to modify the attribute by |
+| Quantity Float | The (decimal) amount to modify the attribute by |
+| Armour Attack Quantity | The amount to modify the ARMOR\|ATTACK by |
+| Armour Attack Class | The ARMOR\|ATTACK class to modify |
 
-### 3.58. Play Sound
+---
 
-This effect can be used to play a specified sound. The configurations for this effect are as follows:
+### Modify Object Attribute By Variable
 
-1. Source Player: The player that is affected by the effect
-2. Location: The location to create the unit on, or task a unit to
-3. Sound Name: The name of the sound to play
+This effect can be used to modify a specific attribute of units using a variable. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to modify the attribute for |
+| Source Player | The player whose units will have their attribute modified |
+| Object Attribute | The object attribute to modify using the variable |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Area | The area in which units will have their attribute modified. When not set, units across the entire map have their attribute modified |
+| Operation | The operation to apply to the attribute using the quantity. |
+| Message | The string value to use when the selected object attribute accepts a string (e.g. Object Name ID) |
+| Variable | The variable whose value will be used to modify the attribute |
+| Armour Attack Class | The damage class to modify |
+
+---
+
+### Modify Resource
+
+This effect can be used to modify the amount of a specific resource for the specified player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount to modify the resource by |
+| Resource | The resource to modify |
+| Source Player | The player whose resource will be modified |
+| Item ID | The type of the resource that is selected in the dropdown |
+| Operation | The operation to apply to the attribute using the quantity. |
+
+---
+
+### Modify Resource By Variable
+
+This effect can be used to modify the amount of a specific resource for the specified player using the value stored in a variable. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Resource | The resource to modify |
+| Source Player | The player whose resource will be modified |
+| Item ID | The type of the resource that is selected in the dropdown |
+| Operation | The operation to apply to the attribute using the variable. |
+| Variable | The variable whose value will be used to modify the resource |
+
+---
+
+### Modify Variable By Attribute
+
+This effect can be used to modify a variable using the value of a specific unit attribute. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to read the attribute value from |
+| Source Player | The player whose unit's attribute value will be used |
+| Operation | The operation to apply to the variable using the attribute's value. |
+| Object Attribute | The unit attribute whose value will be used to modify the variable |
+| Variable | The variable that will be modified |
+| Message | Unused - ThxDE |
+| Armour Attack Class | The damage class to retrieve |
+
+---
+
+### Modify Variable By Resource
+
+This effect can be used to modify a variable using the current value of a player's resource. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Resource | The resource whose current value will be used to modify the variable |
+| Source Player | The player whose resource value will be used |
+| Operation | The operation to apply to the variable using the resource value. |
+| Variable | The variable that will be modified |
+
+---
+
+### Modify Variable By Variable
+
+This effect can be used to modify a variable using the value of another variable. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Variable | The variable that will be modified |
+| Operation | The operation to apply to the variable using the second variable. |
+| Secondary Variable | The variable whose value will be used in the operation |
+
+---
+
+### Patrol
+
+This effect can be used to patrol units to a specific tile. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to patrol |
+| Source Player | The player whose units to patrol |
+| Location | The tile to patrol to |
+| Area | The area in which units will be patrolled. When not set, units across the entire map are patrolled |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Place Foundation
+
+This effect can be used to place a building foundation for the specified player at the specified location. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The building foundation to place |
+| Source Player | The player for whom the foundation will be placed |
+| Location | The tile where the building foundation will be placed |
+
+---
+
+### Play Sound
+
+This effect can be used to play a sound at a specific location or globally for the specified player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player who will hear the sound effect. |
+| Location | The tile to play the sound at. When not set, the sound will be played globally. |
+| Location Unit Ref | The unit whose position and rotation will be used to play the sound at. When not set, the sound will be played globally. |
+| Global Sound | When enabled, the sound will be played regardless if the target is on screen. This is useful for existing game sounds that are considered '3D'. '3D' sounds are game sounds based on coordinates. '2D' sounds are sounds like GUI, button click or notification sounds. |
+| Sound Name | The name of the sound to play. |
 
 Some useful tricks with this effect:
 
 1. This effect is useful for playing a notification sound
 
-### 3.59. Remove Object
+---
 
-This effect can be used to remove certain units of the specified player from the map. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Remove Object
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Object Group: This is the class of units to effect
-5. Object Type: This is the type of the unit to effect
+This effect can be used to instantly remove units from the map without triggering a death animation. The configurations for this effect are as follows:
 
-### 3.60. Replace Object
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to remove |
+| Source Player | The player whose units will be removed |
+| Area | The area in which units will be removed. When not set, units across the entire map are removed |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Unit State | The state units need to be in to be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to replace existing units of a given player with another unit. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Target Player: This is the second player that is affected by the effect
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
-7. Unit List 2: This is the second unit to affect
+### Replace Object
+
+This effect can be used to replace units with a different unit. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to replace |
+| Source Player | The player whose units will be replaced |
+| Target Player | The player to whom the replaced units will belong |
+| Area | The area in which units will be replaced. When not set, units across the entire map are replaced |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Secondary Object | The type of unit that the affected units will be replaced with |
+| Facet2 | The rotation of the replaced unit |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
 Some useful tricks with this effect:
 
@@ -678,29 +1342,55 @@ Some useful tricks with this effect:
 2. Researching Man at Arms replaces all Militia with Man at Arms on the map
 3. Researching Crossbowman replaces all Archers with Crossbowmen on the map
 
-### 3.61. Research Technology
+---
 
-This effect can automatically research a technology for the specified player.. The configurations for this effect are as follows:
+### Research Local Technology
 
-1. Source Player: The player that is affected by the effect
-2. Technology: The technology to affect
-3. Force: If this is enabled, then the technology is researched even if the player's civilization does not have access to it
+This effect can be used to research a local technology for a type of unit. The configurations for this effect are as follows:
 
-### 3.62. Script Call
+| Options | Description |
+| :------- | :---------- |
+| Local Technology | The local technology to research for the type of unit |
+| Source Player | The player for whom the local technology will be researched |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Area | The area in which units will research the local technology. When not set, units across the entire map research the local technology |
+| Secondary Object | The type of unit to research the local technology in |
 
-This effect allows us to write or call functions from an XS Script. While the script call effect can be used to both call functions and write small scripts, it is advised to always use a function call and never use this effect for writing scripts. Refer to the [XS Scripting](../../../../general/xs/beginner/ "Jump to: XS Scripting: A Beginner's Guide"). The configurations for this effect are as follows:
+---
 
-1. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-2. Message: The name/message/instruction to show on screen or the script call to execute
+### Research Technology
 
-### 3.63. Send Chat
+This effect can be used to automatically research a technology for the specified player. The configurations for this effect are as follows:
 
-This effect can be used to display messages in chat. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the technology will be researched. |
+| Technology | The technology which will be researched for the specified player. |
+| Force Technology | When enabled, force the selected technology to be researched, regardless if the civilization has access to it or not. |
 
-1. Source Player: The player that is affected by the effect
-2. String Id: This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id "Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID") section of the guide
-3. Message: The name/message/instruction to show on screen or the script call to execute
-4. Sound Name: The name of the sound to play
+---
+
+### Script Call
+
+This effect can be used to (define and) call an XS function. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| String ID | The string ID of the XS script function name to call |
+| Message | The name of the XS function to call or a function definition which will be called |
+
+---
+
+### Send Chat
+
+This effect can be used to send a chat message to the specified player. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player who will be receiving the message. |
+| String ID | The string ID to use instead of the message. |
+| Message | The message to send to the player. |
+| Sound Name | The name of the sound to play when the message is sent. |
 
 Some useful tricks with this effect:
 
@@ -718,85 +1408,189 @@ Some useful tricks with this effect:
     7. <GREY\>
     8. <ORANGE\>
 
-### 3.64. Set Building Gather Point
+---
 
-This effect can be used to set a gather point for specified buildings of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Set Building Gather Point
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
+This effect can be used to set the gather point (rally point) for buildings. The configurations for this effect are as follows:
 
-### 3.65. Set Player Visibility
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of building to set the gather point for |
+| Source Player | The player whose buildings will have their gather point set |
+| Location | The tile to set the gather point at |
+| Area | The area in which buildings will have their gather point set. When not set, buildings across the entire map are affected |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This trigger sets the visibility of the target player for the source player. The configurations for this effect are as follows:
+---
 
-1. Source Player: The player that is affected by the effect
-2. Target Player: This is the second player that is affected by the effect
-3. Visibility State: The new visibility state
+### Set Object Cost
 
-### 3.66. Stop Object
+!!! warning "Deprecated since version 1.54"
 
-This effect can be used to stop units of a given player. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+    Use the `change_object_cost` effect instead
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-4. Object Group: This is the class of units to effect
-5. Object Type: This is the type of the unit to effect
+This effect can be used to set the cost for a specific type of unit. The configurations for this effect are as follows:
 
-### 3.67. Task Object
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to set cost |
+| Source Player | The player for whom the cost will be set |
+| Quantity | The amount to set as the cost |
+| Resource | The type of resource for the cost |
 
-This effect can be used to task certain units of the specified player to (it basically simulates a right click at the specified location or unit) move to a specified locaiton, or perform an action on another unit. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+---
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+### Set Player Visibility
 
-### 3.68. Teleport Object
+This effect can be used to change the visibility relationship between two players, controlling what the source player can see of the target player. The configurations for this effect are as follows:
 
-This effect can be used to teleport units of a player from one area of the map to another location on the map. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+| Options | Description |
+| :------- | :---------- |
+| Source Player | The player for whom the visibility will be changed. |
+| Target Player | The target player whose visibility will be changed for the source player. |
+| Visibility State | The visibility state to use |
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+---
 
-### 3.69. Tribute
+### Stop Object
 
-This effect can be used to tribute resources from one player to another. The configurations for this effect are as follows:
+This effect can be used to stop the current action of units. The configurations for this effect are as follows:
 
-1. Quantity: The amount to modify by or a timer
-2. Tribute List: The resource to tribute
-3. Source Player: The player that is affected by the effect
-4. Target Player: This is the second player that is affected by the effect
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to stop |
+| Source Player | The player whose units will be stopped |
+| Area | The area in which units will be stopped. When not set, units across the entire map are stopped |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Store Key Value
+
+This effect can be used to store the value of a variable into the key-value store. The key-value store is persistent across scenarios in a campaign, but these effects only function when the scenario is played as part of a campaign. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Variable | The variable whose value will be stored |
+| Message | The name of the key to store the value in |
+
+---
+
+### Task Object
+
+This effect can be used to order units to perform a specific action at a target location or on a target object. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to task |
+| Source Player | The player whose units will be tasked |
+| Location | The tile to send the tasked units to |
+| Location Unit Ref | The target unit (as if it was right clicked) |
+| Area | The area in which units will be tasked. When not set, units across the entire map are tasked |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Action Type | The type of action to perform on the affected units |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Disable Garrison Unload Sound | When enabled, disables the sound that plays when unloading garrisoned units |
+| Max Units Affected | The maximum number of units affected by this effect |
+| Issue Group Command | When enabled, will issue a task as a group formation task, instead of every unit individually |
+| Queue Action | When enabled, the set task will be shift-queued |
+
+---
+
+### Teleport Object
+
+This effect can be used to teleport units to the specified tile. The game will check for collisions before teleporting, which means it will teleport only a single unit unless the units have no collision. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to teleport |
+| Source Player | The player whose units will be teleported |
+| Location | The tile to teleport units to |
+| Area | The area in which units will be teleported. When not set, units across the entire map are teleported |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Train Unit
+
+This effect can be used to queue specific units in a building. This effect requires the unit to be available and will deduct the cost of the unit from the player's resources. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The number of units to queue for training |
+| Object | The type of unit to train |
+| Source Player | The player who will train the unit |
+| Location | The tile to set the gather point at |
+| Area | The area in which buildings will queue the unit. When not set, buildings across the entire map are affected |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
+
+---
+
+### Tribute
+
+This effect can be used to send resources from one player to another. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Quantity | The amount of the specified resource to send. |
+| Resource | The resource that will be sent. |
+| Source Player | The player who will be sending the resources. |
+| Target Player | The player who will receive the resources. |
 
 Some useful tricks with this effect:
 
 1. Tributing negative resources actually gives the source player the resource and deducts that amount from the target player
 2. Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound.
 
-### 3.70. Unload
+---
 
-This effect can be used to ungarisson objects from a unit or building. The units affected by this effect are determined by the configurations of the effect. The configurations for this effect are as follows:
+### Unload
 
-1. Unit List 1: This is the unit to affect
-2. Source Player: The player that is affected by the effect
-3. Location: The location to create the unit on, or task a unit to
-4. Area: Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected.
-5. Object Group: This is the class of units to effect
-6. Object Type: This is the type of the unit to effect
+This effect can be used to unload units at a target location. The configurations for this effect are as follows:
 
-### 3.71. Unlock Gate
+| Options | Description |
+| :------- | :---------- |
+| Object | The type of unit to unload |
+| Source Player | The player whose garrisoned units will be ordered to unload |
+| Location | The tile where garrisoned units will be unloaded |
+| Location Unit Ref | The target unit to unload at (as if it was right clicked) |
+| Area | The area in which garrisoned units will be ordered to unload. When not set, units across the entire map are ordered to unload |
+| Object Group | The units with this class will be affected by this effect |
+| Object Type | The units of this type will be affected by this effect |
+| Selected Units | The units to be affected by this effect. When defined, overwrites all other unit filters, like area selection, type of unit, object type etc. |
+| Max Units Affected | The maximum number of units affected by this effect |
 
-This effect can be used to unlock a locked gate. The configurations for this effect are as follows:
+---
 
-1. Selected Objects: The units to apply the effect to
+### Unlock Gate
 
-### 3.72. Use Advanced Buttons
+This effect can be used to unlock specific gates. The configurations for this effect are as follows:
+
+| Options | Description |
+| :------- | :---------- |
+| Selected Units | The gates to be unlocked. |
+
+---
+
+### Use Advanced Buttons
+
+!!! warning "Deprecated since version 1.36"
+
+    This effect is no longer used. It was used to toggle the advanced buttons in the minimap interface before the Definitive Edition.
+
+This effect is used to toggle the advanced buttons in the minimap interface.
+
+Some useful tricks with this effect:
+
+1. If you can't see the buttons for aggressive stance, and unit groups use this effect to enable them for yourself. That is all that this effect does, its useless otherwise
 
