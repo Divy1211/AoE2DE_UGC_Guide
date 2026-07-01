@@ -2,25 +2,7 @@
 
 ---
 
-## 1. What are conditions?
-
-Conditions are one of the two basic elements of triggers (the other one being Effects). A condition is a check that has to be satisfied before a trigger is allowed to fire: a trigger only executes its effects once **all** of its conditions are met. Conditions let you react to the state of the game, such as whether a player owns a certain unit, whether a timer has elapsed, or whether a variable holds a particular value. To use conditions,
-
-1. Create a trigger
-2. Add a condition to it.
-3. Pick the condition you wish to use from the conditions list.
-4. Configure the settings of the condition as desired
-
-Lets look at all the conditions and their configurations one by one:
-
-## 2. Common Terminology
-Feel free to skip these if you are already familiar with them
-
-- **Bug**: Anything in the map that is not working as intended is a bug. Historically, the term "bug" comes from physical bugs getting stuck in computers and causing them to malfunction back in the day when computers used to be the size of entire rooms. In today's context, a bug in anything just means that its malfunctioning and not working as intended.
-- **Debugging**: Attempting to find out the cause of the malfunction, and removing/fixing that cause is known as debugging.
-- **Execution**: Executing a trigger means that we carry out its effects.
-
-## 3. Conditions and How to Use Them
+## Conditions
 
 ### AI Signal
 

@@ -57,36 +57,19 @@ out = """*Written by: Alian713 & KSneijders*
 
 ---
 
-## 1. What are effects?
-
-Effects are one of the two basic elements of triggers (the other one being Conditions). They are essentially "cheats" in some sense, that allow you to change information about the game as the game is being played. All technologies in the game utilise effects to do what they are meant to do. Usually, a technology almost always uses multiple effects in combination to achieve its purposes. Examples of technologies and the effects they use will be given when the appropriate effects for them are encountered. Some examples of basic effects that can be used in the scenario editor are: `Create Unit`, `Send Chat`, `Display Instructions` etc.. To use effects,\n
-1. Create a trigger
-2. Add an effect to it.
-3. Pick the effect you wish to use from the effects list.
-4. Configure the settings of the effect as desired
-
-Lets look at all the effects and their configurations one by one:
-
-## 2. Common Terminology
-Feel free to skip these if you are already familiar with them
-
-- **Bug**: Anything in the map that is not working as intended is a bug. Historically, the term "bug" comes from physical bugs getting stuck in computers and causing them to malfunction back in the day when computers used to be the size of entire rooms. In today's context, a bug in anything just means that its malfunctioning and not working as intended.
-- **Debugging**: Attempting to find out the cause of the malfunction, and removing/fixing that cause is known as debugging.
-- **Execution**: Executing a trigger means that we carry out its effects. 
-
-## 3. Effects and How to Use Them
-
 """
 
 for count, effect in enumerate(effects, 1):
     if count > 1:
         out += "---\n\n"
-    out += f"### {titleize(effect['name'])}\n\n"
-
     deprecated = effect.get("deprecated")
+
     if deprecated:
+        out += f"### ~~{titleize(effect['name'])}~~\n\n"
         out += f"!!! warning \"Deprecated since version {deprecated['version']}\"\n\n"
         out += f"    {deprecated['reason']}\n\n"
+    else:
+        out += f"### {titleize(effect['name'])}\n\n"
 
     description = join_description(effect["description"])
     attributes = effect["attributes"]
