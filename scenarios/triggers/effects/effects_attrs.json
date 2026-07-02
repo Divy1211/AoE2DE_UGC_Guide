@@ -1,0 +1,258 @@
+{
+    "aa_armor_or_attack_type": {
+        "display_name": "Armour or Attack Class",
+        "show": true,
+        "desc": "The Armour/Attack Class to Modify"
+    },
+    "aa_quantity": {
+        "display_name": "Quantity",
+        "show": true,
+        "desc": "The amount to modify by"
+    },
+    "ai_script_goal": {
+        "display_name": "AI Script Goal",
+        "show": true,
+        "desc": "AI Trigger ID to set"
+    },
+    "ai_signal_value": {
+        "display_name": "AI Signal Value",
+        "show": true,
+        "desc": "The AI Signal ID to acknowledge"
+    },
+    "area_1_x": {
+        "display_name": "Area",
+        "show": true,
+        "desc": "Only units on this selected area will be affected by the effect. If not set, units on the entire map are affected."
+    },
+    "area_1_y": {
+        "display_name": "Area 1 Y",
+        "show": false,
+        "desc": ""
+    },
+    "area_2_x": {
+        "display_name": "Area 2 X",
+        "show": false,
+        "desc": ""
+    },
+    "area_2_y": {
+        "display_name": "Area 2 Y",
+        "show": false,
+        "desc": ""
+    },
+    "attack_stance": {
+        "display_name": "Attack Stance",
+        "show": true,
+        "desc": "Set the new stance of the unit, aggressive, defensive, stand ground or no attack"
+    },
+    "button_location": {
+        "display_name": "Button Location",
+        "show": true,
+        "desc": "The location of the button for a unit or technology. This number is given by $(row-1)\\times5+column$. For example, the button location for the man at arms **research** in the barracks, which is in the 2nd row and 1st column, is given by $(2-1)\\times5+1 = 6$"
+    },
+    "diplomacy": {
+        "display_name": "Diplomacy Stance",
+        "show": true,
+        "desc": "The new diplomacy state"
+    },
+    "display_time": {
+        "display_name": "Display Time",
+        "show": true,
+        "desc": "The amount of time to display the instruction for"
+    },
+    "comment": "enabled and victory are the same attribute",
+    "enabled": {
+            "display_name": "Enabled",
+            "show": true,
+            "desc": "If this is selected, the units/technology is enabled if it is not already enabled"
+    },
+    "victory": {
+            "display_name": "Victory",
+            "show": true,
+            "desc": "If this is selected, the chosen player will win the game. If it is not selected, then the chosen player is defeated"
+    },
+    "facet": {
+        "display_name": "Facet",
+        "show": true,
+        "desc": "The rotation of the created unit"
+    },
+    "flash_object": {
+        "display_name": "Flash Object",
+        "show": true,
+        "desc": "When this is enabled if the source and target players are the same, the selected object(s) will be flashed"
+    },
+    "food": {
+        "display_name": "Food",
+        "show": true,
+        "desc": "The new food cost of the unit/technology"
+    },
+    "force_research_technology": {
+        "display_name": "Force",
+        "show": true,
+        "desc": "If this is enabled, then the technology is researched even if the player's civilization does not have access to it"
+    },
+    "from_variable": {
+        "display_name": "Variable",
+        "show": true,
+        "desc": "The variable to modify"
+    },
+    "gold": {
+        "display_name": "Gold",
+        "show": true,
+        "desc": "The new Gold cost of the unit/technology"
+    },
+    "instruction_panel_position": {
+        "display_name": "Panel Position",
+        "show": true,
+        "desc": "Position 0 displays the instruction at the top, Position 1 displays the instruction in the middle of the top half of the screen and Position 2 displays the instruction at the bottom of the top half of the screen"
+    },
+    "item_id": {
+        "display_name": "Item ID",
+        "show": false,
+        "desc": ""
+    },
+    "location_object_reference": {
+        "display_name": "Location Object Reference",
+        "show": false,
+        "desc": "In some effects like Task Object, when tasking a unit to do an action on another unit, location x, y is replaced by an object reference"
+    },
+    "location_x": {
+        "display_name": "Location",
+        "show": true,
+        "desc": "The location to create the unit on, or task a unit to"
+    },
+    "location_y": {
+        "display_name": "Location Y",
+        "show": false,
+        "desc": ""
+    },
+    "message": {
+        "display_name": "Message",
+        "show": true,
+        "desc": "The name/message/instruction to show on screen or the script call to execute"
+    },
+    "object_attributes": {
+        "display_name": "Attribute List",
+        "show": true,
+        "desc": "The attribute of a unit to modify"
+    },
+    "object_group": {
+        "display_name": "Object Group",
+        "show": true,
+        "desc": "This is the class of units to effect"
+    },
+    "object_list_unit_id": {
+        "display_name": "Unit List 1",
+        "show": true,
+        "desc": "This is the unit to affect"
+    },
+    "object_list_unit_id_2": {
+        "display_name": "Unit List 2",
+        "show": true,
+        "desc": "This is the second unit to affect"
+    },
+    "object_type": {
+        "display_name": "Object Type",
+        "show": true,
+        "desc": "This is the type of the unit to effect"
+    },
+    "operation": {
+        "display_name": "Operation",
+        "show": true,
+        "desc": "Add, Subtract, Multiply or Divide the given quantity"
+    },
+    "play_sound": {
+        "display_name": "Play Sound",
+        "show": true,
+        "desc": "The sound to play"
+    },
+    "player_color": {
+        "display_name": "Player Color",
+        "show": true,
+        "desc": "The new colour of the unit"
+    },
+    "quantity": {
+        "display_name": "Quantity",
+        "show": true,
+        "desc": "The amount to modify by or a timer"
+    },
+    "scroll": {
+        "display_name": "Scroll",
+        "show": true,
+        "desc": "If this is enabled, changing the camera to a new position shows a scrolling animation from the position the player was previously on. If not enabled, the camera cuts to the new position wihout any animations."
+    },
+    "selected_object": {
+        "display_name": "Selected Objects",
+        "show": true,
+        "desc": "The units to apply the effect to"
+    },
+    "selected_object_ids": {
+        "display_name": "Selected Object Ids",
+        "show": false,
+        "desc": ""
+    },
+    "sound_name": {
+        "display_name": "Sound Name",
+        "show": true,
+        "desc": "The name of the sound to play"
+    },
+    "source_player": {
+        "display_name": "Source Player",
+        "show": true,
+        "desc": "The player that is affected by the effect"
+    },
+    "stone": {
+        "display_name": "Stone",
+        "show": true,
+        "desc": "The new stone cost of the unit/technology"
+    },
+    "string_id": {
+        "display_name": "String Id",
+        "show": true,
+        "desc": "This is the same as the `Name String ID`. Refer to [Name String ID](../../../basics/#58-name-string-id \"Jump to: Custom Scenarios > Scenario Basics > #5.8 Name String ID\") section of the guide"
+    },
+    "target_player": {
+        "display_name": "Target Player",
+        "show": true,
+        "desc": "This is the second player that is affected by the effect"
+    },
+    "technology": {
+        "display_name": "Technology",
+        "show": true,
+        "desc": "The technology to affect"
+    },
+    "time_unit": {
+        "display_name": "Time Unit",
+        "show": true,
+        "desc": "This specifies the unit of time used in the timer trigger. This can be seconds, minutes or years"
+    },
+    "tribute_list": {
+        "display_name": "Tribute List",
+        "show": true,
+        "desc": "The resource to tribute"
+    },
+    "trigger_id": {
+        "display_name": "Trigger List",
+        "show": true,
+        "desc": "The trigger to activate/deactivate"
+    },
+    "timer": {
+            "display_name": "Timer",
+            "show": true,
+            "desc": "The time to display the message for"
+    },
+    "visibility_state": {
+        "display_name": "Visibility State",
+        "show": true,
+        "desc": "The new visibility state"
+    },
+    "wood": {
+        "display_name": "Wood",
+        "show": true,
+        "desc": "The new wood cost of the unit/technology"
+    },
+    "color_mood": {
+        "display_name": "Color Mood",
+        "show": true,
+        "desc": "This is the new colour mood to set"
+    }
+}

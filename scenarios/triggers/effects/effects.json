@@ -1,0 +1,990 @@
+{
+    "1": {
+        "name": "Change Diplomacy",
+        "desc": "This effect can be used to change the diplomacy stance of the soruce players with the target player",
+        "attrs": [
+            "diplomacy",
+            "source_player",
+            "target_player"
+        ],
+        "tricks": []
+    },
+    "2": {
+        "name": "Research Technology",
+        "desc": "This effect can automatically research a technology for the specified player.",
+        "attrs": [
+            "source_player",
+            "technology",
+            "force_research_technology"
+        ],
+        "tricks": []
+    },
+    "3": {
+        "name": "Send Chat",
+        "desc": "This effect can be used to display messages in chat",
+        "attrs": [
+            "source_player",
+            "string_id",
+            "message",
+            "sound_name"
+        ],
+        "tricks": [
+            "This effect is super useful for debugging. When you're unsure of which triggers in your map are executed at which point, adding one of these to that trigger will display a message on screen when it gets executed",
+            "This effect can also be used to simulate chat between two players",
+            "This effect should NOT be used to display instructions to players, because there is an effect that can be used specifically for that",
+            "Duplicate messages are not shown",
+            "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
+        ]
+    },
+    "4": {
+        "name": "Play Sound",
+        "desc": "This effect can be used to play a specified sound",
+        "attrs": [
+            "source_player",
+            "location_x",
+            "location_y",
+            "location_object_reference",
+            "sound_name"
+        ],
+        "tricks": [
+            "This effect is useful for playing a notification sound"
+        ]
+    },
+    "5": {
+        "name": "Tribute",
+        "desc": "This effect can be used to tribute resources from one player to another",
+        "attrs": [
+            "quantity",
+            "tribute_list",
+            "source_player",
+            "target_player"
+        ],
+        "tricks": [
+            "Tributing negative resources actually gives the source player the resource and deducts that amount from the target player",
+            "Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound."
+        ]
+    },
+    "6": {
+        "name": "Unlock Gate",
+        "desc": "This effect can be used to unlock a locked gate",
+        "attrs": [
+            "selected_object"
+        ],
+        "tricks": []
+    },
+    "7": {
+        "name": "Lock Gate",
+        "desc": "This effect can be used to lock an unlocked gate",
+        "attrs": [
+            "selected_object"
+        ],
+        "tricks": []
+    },
+    "8": {
+        "name": "Activate Trigger",
+        "desc": "This effect can be used to activate a trigger",
+        "attrs": [
+            "trigger_id"
+        ],
+        "tricks": []
+    },
+    "9": {
+        "name": "Deactivate Trigger",
+        "desc": "This effect can be used to activate a trigger",
+        "attrs": [
+            "trigger_id"
+        ],
+        "tricks": []
+    },
+    "10": {
+        "name": "AI Script Goal",
+        "desc": "This effect is used to communicate with the AI. An AI Trigger NUMBER set with this effect can be detected in an AI script using `event-detected trigger NUMBER`",
+        "attrs": [
+            "ai_script_goal"
+        ],
+        "tricks": []
+    },
+    "11": {
+        "name": "Create Object",
+        "desc": "This effect can be used to create a unit or building for the specified player",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "item_id",
+            "facet"
+        ],
+        "tricks": []
+    },
+    "12": {
+        "name": "Task Object",
+        "desc": "This effect can be used to task certain units of the specified player to (it basically simulates a right click at the specified location or unit) move to a specified locaiton, or perform an action on another unit. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "location_object_reference",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "13": {
+        "name": "Declare Victory",
+        "desc": "This effect can be used to grant victory or defeat to a specifed player",
+        "attrs": [
+            "source_player",
+            "victory"
+        ],
+        "tricks": []
+    },
+    "14": {
+        "name": "Kill Object",
+        "desc": "This effect can be used to kill certain units of the specified player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "15": {
+        "name": "Remove Object",
+        "desc": "This effect can be used to remove certain units of the specified player from the map. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "16": {
+        "name": "Change View",
+        "desc": "This effect can be used to move the camera of the player to a specified location",
+        "attrs": [
+            "source_player",
+            "location_x",
+            "location_y",
+            "scroll"
+        ],
+        "tricks": [
+            "This effect can be used to bring attention of the player to a certain part of the map"
+        ]
+    },
+    "17": {
+        "name": "Unload",
+        "desc": "This effect can be used to ungarisson objects from a unit or building. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "location_object_reference",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "18": {
+        "name": "Change Ownership",
+        "desc": "This effect can be used to convert units of the source player to the target player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "target_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "flash_object",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players"
+        ]
+    },
+    "19": {
+        "name": "Patrol",
+        "desc": "This effect can be used to make units of a specified player patrol from one location to another. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "location_object_reference",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "20": {
+        "name": "Display Instructions",
+        "desc": "This effect can be used to display instructions on the screen. An icon of a unit may also be displayed along with the instructions",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "string_id",
+            "display_time",
+            "instruction_panel_position",
+            "play_sound",
+            "message",
+            "sound_name"
+        ],
+        "tricks": [
+            "This effect is useful for making dialogue sequences",
+            "When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time",
+            "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
+        ]
+    },
+    "21": {
+        "name": "Clear Instructions",
+        "desc": "This effect can be used to clear instructions on the screen before the timer for that instruction is up.",
+        "attrs": [
+            "instruction_panel_position"
+        ],
+        "tricks": [
+            "This effect is not used very often, since mostly you want your display instruction effects to display an instruction for the full length of time you specify"
+        ]
+    },
+    "22": {
+        "name": "Freeze Object",
+        "desc": "This effect does not actually freeze the objects but sets them to a no attack stance. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "23": {
+        "name": "Use Advanced Buttons",
+        "desc": "Enables Advanced Buttons",
+        "attrs": [],
+        "tricks": [
+            "If you can't see the buttons for aggressive stance, and unit groups use this effect to enable them for yourself. That is all that this effect does, its useless otherwise"
+        ]
+    },
+    "24": {
+        "name": "Damage Object",
+        "desc": "This effect can be used to deal damage to units of a given player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "quantity",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.",
+            "This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object."
+        ]
+    },
+    "25": {
+        "name": "Place Foundation",
+        "desc": "This effect can be used to automatically place down a building foundation for a specific player",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y"
+        ],
+        "tricks": []
+    },
+    "26": {
+        "name": "Change Object Name",
+        "desc": "This effect can be used to change the names of existing units of a given player to the specified name. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "string_id",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "message",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map"
+        ]
+    },
+    "27": {
+        "name": "Change Object HP",
+        "desc": "This effect can be used to change the max HP of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "quantity",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "operation",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow."
+        ]
+    },
+    "28": {
+        "name": "Change Object Attack",
+        "desc": "This effect can be used to change the attack of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "aa_quantity",
+            "aa_armor_or_attack_type",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "operation",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value"
+        ]
+    },
+    "29": {
+        "name": "Stop Object",
+        "desc": "This effect can be used to stop units of a given player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "30": {
+        "name": "Attack Move",
+        "desc": "This effect can be used to command units of a given player to attack move to a location. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "location_object_reference",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "31": {
+        "name": "Change Object Armor",
+        "desc": "This effect can be used to change the armour of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "aa_quantity",
+            "aa_armor_or_attack_type",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "operation",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value"
+        ]
+    },
+    "32": {
+        "name": "Change Object Range",
+        "desc": "This effect can be used to change the range of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "quantity",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "operation",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "33": {
+        "name": "Change Object Speed",
+        "desc": "This effect can be used to change the speed of existing units of a given player to the specified value. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "quantity",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "34": {
+        "name": "Heal Object",
+        "desc": "This effect can be used to heal existing units of a given player by the specifed HP amount. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "quantity",
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./<effect_id_ref 51> \"Jump to: Modify Attribute\"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate \"Jump to: Game Mechanics > Attributes > Regeneration Rate\") to the desired quantity), that does exactly this"
+        ]
+    },
+    "35": {
+        "name": "Teleport Object",
+        "desc": "This effect can be used to teleport units of a player from one area of the map to another location on the map. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "36": {
+        "name": "Change Object Stance",
+        "desc": "This effect can be used to change the stance of units of a given player to the given stance. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "attack_stance",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "37": {
+        "name": "Display Timer",
+        "desc": "This effect can be used to display a timer on screen",
+        "attrs": [
+            "string_id",
+            "display_time",
+            "time_unit",
+            "timer",
+            "message"
+        ],
+        "tricks": [
+            "Use `%d` as a placeholder in the message field for remaining time in the time units that you chose.",
+            "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
+        ]
+    },
+    "38": {
+        "name": "Enable Disable Object",
+        "desc": "This effect can be used to enable/disable any unit for a specific player. Note that sometimes, simply enabling a unit wont allow you to train them, because if it is not a default unit, the game doesn't know which building to train the unit in. Thus, A train location and a train button ([Change Train Location](./<effect_id_ref 46> \"Jump to: Change Train Location\")), a cost ([Change Object Cost](./<effect_id_ref 40> \"Jump to: Change Object Cost\")), and optionally a discription ([Change Object Description](./<effect_id_ref 44> \"Jump to: Change Object Description\")), of the unit are needed to also be set using additional effects to allow training the enabled unit.",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "enabled",
+            "item_id"
+        ],
+        "tricks": []
+    },
+    "39": {
+        "name": "Enable Disable Technology",
+        "desc": "This effect can be used to enable/disable any technology for a specific player. Similar to units, when a non default technology is enabled, its train location and button ([Change Research Location](./<effect_id_ref 47> \"Jump to: Change Research Location\")), costs ([Change Technology Cost](./<effect_id_ref 63> \"Jump to: Change Technology Cost\")), and optionally a description ([Change Technology Description](./<effect_id_ref 66> \"Jump to: Change Technology Description\")), must be set using additional effects for someone to research it.",
+        "attrs": [
+            "source_player",
+            "technology",
+            "enabled",
+            "item_id"
+        ],
+        "tricks": []
+    },
+    "40": {
+        "name": "Change Object Cost",
+        "desc": "This effect can be used to change the cost of a specifed unit for a particular player",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "food",
+            "wood",
+            "stone",
+            "gold"
+        ],
+        "tricks": [
+            "Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.",
+            "Units in the game can only have a maximum of 2 different resource of costs."
+        ]
+    },
+    "41": {
+        "name": "Set Player Visibility",
+        "desc": "This trigger sets the visibility of the target player for the source player",
+        "attrs": [
+            "source_player",
+            "target_player",
+            "visibility_state"
+        ],
+        "tricks": []
+    },
+    "42": {
+        "name": "Change Object Icon",
+        "desc": "This effect can be used to change the icon of existing units of a given player to the 2nd unit's icon. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "object_list_unit_id_2",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "43": {
+        "name": "Replace Object",
+        "desc": "This effect can be used to replace existing units of a given player with another unit. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "target_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_group",
+            "object_type",
+            "object_list_unit_id_2",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "This effect is widely used by unit upgrade technologies.",
+            "Researching Man at Arms replaces all Militia with Man at Arms on the map",
+            "Researching Crossbowman replaces all Archers with Crossbowmen on the map"
+        ]
+    },
+    "44": {
+        "name": "Change Object Description",
+        "desc": "This effect can be used to change the description of a specifed unit for a particular player",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "string_id",
+            "message"
+        ],
+        "tricks": [
+            "There are special keywords that are used to display certain information about an object in its description",
+            "This is illustrated with the following example:\n```\nBuild Trade Workshop (<Cost>)\nAllows you to buy special perks\n\n<hp> <attack> <armor> <piercearmor> <garrison> LoS: 4\n```",
+            "Here, all the words in the angle brackets are replaced by those relevant statistics for the unit."
+        ]
+    },
+    "45": {
+        "name": "Change Player Name",
+        "desc": "This effect can be used to change the name of a player to any desired name",
+        "attrs": [
+            "source_player",
+            "string_id",
+            "message"
+        ],
+        "tricks": []
+    },
+    "46": {
+        "name": "Change Train Location",
+        "desc": "This effect can be used to change the train location of a specifed unit for a particular player to another unit. The train location of Archers is Archery Range",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "object_list_unit_id_2",
+            "button_location"
+        ],
+        "tricks": []
+    },
+    "47": {
+        "name": "Change Research Location",
+        "desc": "This effect can be used to change the research location of a specifed technology for a particular player to another unit. The research location of Loom is the Town Centre",
+        "attrs": [
+            "source_player",
+            "technology",
+            "object_list_unit_id_2",
+            "button_location"
+        ],
+        "tricks": []
+    },
+    "48": {
+        "name": "Change Civilization Name",
+        "desc": "This effect can be used to change the name of the civilization of a player to any desired name",
+        "attrs": [
+            "source_player",
+            "string_id",
+            "message"
+        ],
+        "tricks": []
+    },
+    "49": {
+        "name": "Create Garrisoned Object",
+        "desc": "This effect creates the unit chosen in the 2nd list inside the selected object or the unit chosen in the 1st list. The unit that the created unit is garrisoned inside does not need to be of the same player.",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "object_list_unit_id_2",
+            "selected_object_ids"
+        ],
+        "tricks": [
+            "The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability"
+        ]
+    },
+    "50": {
+        "name": "Acknowledge AI Signal",
+        "desc": "When `set-signal` is used in an AI file, this effect is used to unset it so it can be reused. This only works in Single Player games. Refer to the [Acknowledge Multiplayer AI Signal](./<effect_id_ref 69> \"Jump to: Acknowledge Multiplayer AI Signal\") effect for the multiplayer version of this effect",
+        "attrs": [
+            "ai_signal_value"
+        ],
+        "tricks": []
+    },
+    "51": {
+        "name": "Modify Attribute",
+        "desc": "This effect can be used to modify any attribute of a specified unit. Note that this effects the unit itself, not just existing units. This means that even new units created will have the modified attribute. Refer to the [Attributes](../../../../general/attributes \"Jump to: Game Mechanics > Attributes\") section of the guide to see a list of modifiable attributes and what each of them does",
+        "attrs": [
+            "quantity",
+            "object_list_unit_id",
+            "source_player",
+            "item_id",
+            "operation",
+            "object_attributes"
+        ],
+        "tricks": [
+            "Changing the Amount of 1st Resource of a unit changes its population requirement",
+            "Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10."
+        ]
+    },
+    "52": {
+        "name": "Modify Resource",
+        "desc": "This effect can be used to modify the resource amounts of a particular player by specified amounts. Refer to the [Resources](../../../../general/resources/resources \"Jump to: Game Mechanics > Resources\") section of the guide to see all the resources that can be modified and their purposes",
+        "attrs": [
+            "quantity",
+            "tribute_list",
+            "source_player",
+            "item_id",
+            "operation"
+        ],
+        "tricks": []
+    },
+    "53": {
+        "name": "Modify Resource By Variable",
+        "desc": "This effect can be used to modify the resource amounts of a particular player by the value of another variable. Refer to the [Resources](../../../../general/resources/resources \"Jump to: Game Mechanics > Resources\") section of the guide to see all the resources that can be modified and their purposes",
+        "attrs": [
+            "tribute_list",
+            "source_player",
+            "item_id",
+            "operation",
+            "from_variable"
+        ],
+        "tricks": []
+    },
+    "54": {
+        "name": "Set Building Gather Point",
+        "desc": "This effect can be used to set a gather point for specified buildings of a given player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "location_x",
+            "location_y",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "55": {
+        "name": "Script Call",
+        "desc": "This effect allows us to write or call functions from an XS Script. While the script call effect can be used to both call functions and write small scripts, it is advised to always use a function call and never use this effect for writing scripts. Refer to the [XS Scripting](../../../../general/xs/beginner/ \"Jump to: XS Scripting: A Beginner's Guide\")",
+        "attrs": [
+            "string_id",
+            "message"
+        ],
+        "tricks": []
+    },
+    "56": {
+        "name": "Change Variable",
+        "desc": "This effect can be used to change the value of a variable.",
+        "attrs": [
+            "quantity",
+            "operation",
+            "from_variable",
+            "message"
+        ],
+        "tricks": []
+    },
+    "57": {
+        "name": "Clear Timer",
+        "desc": "This effect can be used to remove a displayed timer from the screen",
+        "attrs": [
+            "timer"
+        ],
+        "tricks": []
+    },
+    "58": {
+        "name": "Change Object Player Color",
+        "desc": "This effect can be used to change the colour of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "player_color",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "59": {
+        "name": "Change Object Civilization Name",
+        "desc": "This effect can be used to change the civilization name of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "string_id",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "60": {
+        "name": "Change Object Player Name",
+        "desc": "This effect can be used to change the player name of specified objects of a given player. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "string_id",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "61": {
+        "name": "Disable Unit Targeting",
+        "desc": "This effect makes it so that the specified units of the given player cannot be targeted (basically, you can't perform any right click actions from another unit on these units anymore) by other units. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "62": {
+        "name": "Enable Unit Targeting",
+        "desc": "This effect makes it so that the specified units of the given player can be targeted by other units. Refer to the [Disable Unit Targeting](./<effect_id_ref 61> \"Jump to: Disable Unit Targeting\") effect. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "63": {
+        "name": "Change Technology Cost",
+        "desc": "This effect can be used to change a technology's cost for a particular player",
+        "attrs": [
+            "source_player",
+            "technology",
+            "food",
+            "wood",
+            "stone",
+            "gold"
+        ],
+        "tricks": [
+            "Due to a current bug in the game, this effect changes the cost of the tech for all players",
+            "Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.",
+            "Techs in the game can only have a maximum of 3 different resource of costs."
+        ]
+    },
+    "64": {
+        "name": "Change Technology Research Time",
+        "desc": "This effect can be used to change a technology's research time for a particular player",
+        "attrs": [
+            "quantity",
+            "source_player",
+            "technology"
+        ],
+        "tricks": []
+    },
+    "65": {
+        "name": "Change Technology Name",
+        "desc": "This effect can be used to change a technology's name for a particular player",
+        "attrs": [
+            "source_player",
+            "technology",
+            "string_id",
+            "message"
+        ],
+        "tricks": []
+    },
+    "66": {
+        "name": "Change Technology Description",
+        "desc": "This effect can be used to change a technology's Description for a particular player",
+        "attrs": [
+            "source_player",
+            "technology",
+            "string_id",
+            "message"
+        ],
+        "tricks": []
+    },
+    "67": {
+        "name": "Enable Technology Stacking",
+        "desc": "This effect enables 256x tech mode for the specified technology and player",
+        "attrs": [
+            "source_player",
+            "technology"
+        ],
+        "tricks": []
+    },
+    "68": {
+        "name": "Disable Technology Stacking",
+        "desc": "This effect disables 256x tech mode for the specified technology and player. Refer to the [Enable Technology Stacking](./<effect_id_ref 67> \"Jump to: Enable Technology Stacking\") effect",
+        "attrs": [
+            "source_player",
+            "technology"
+        ],
+        "tricks": []
+    },
+    "69": {
+        "name": "Acknowledge Multiplayer AI Signal",
+        "desc": "When `set-signal` is used in an AI file, this effect is used to unset it so it can be reused. This only works in Multiplayer games. Refer to the [Acknowledge AI Signal](./<effect_id_ref 50> \"Jump to: Acknowledge AI Signal\") effect for the single player version of this effect.",
+        "attrs": [
+            "ai_signal_value"
+        ],
+        "tricks": []
+    },
+    "70": {
+        "name": "Disable Object Selection",
+        "desc": "This effect makes specified units of the given player unselectable. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "71": {
+        "name": "Enable Object Selection",
+        "desc": "This effect makes specified units of the given player selectable. Refer to the [Disable Object Selection](./<effect_id_ref 70> \"Jump to: Disable Object Selection\") effect. The units affected by this effect are determined by the configurations of the effect",
+        "attrs": [
+            "object_list_unit_id",
+            "source_player",
+            "area_1_x",
+            "area_1_y",
+            "area_2_x",
+            "area_2_y",
+            "selected_object_ids"
+        ],
+        "tricks": []
+    },
+    "72": {
+        "name": "Change Color Mood",
+        "desc": "This effect can change the colour mood of the map",
+        "attrs": [
+            "color_mood",
+            "quantity"
+        ],
+        "tricks": []
+    }
+}
