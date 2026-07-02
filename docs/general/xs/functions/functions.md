@@ -1229,14 +1229,14 @@ Returns a random number between 0 and `max`.
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerNumber)`
+Prototype: `#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerId)`
 
 Parameters:
 
 1.  `#!xs int techId`: The technology ID to research.
 2.  `#!xs bool force`: Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
 3.  `#!xs bool techAvailable`: This flag determines if it is required to check if a tech is available before researching it
-4.  `#!xs int playerNumber`: The player to research the technology for
+4.  `#!xs int playerId`: The player to research the technology for
 
 Returns a boolean based on whether the technology was researched or not.
 
@@ -1271,13 +1271,14 @@ Returns one of the [cTechState constants](../../constants/constants/#17-tech-sta
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetTechAttribute(int playerId, int techId, int techAttribute)`
+Prototype: `#!xs int xsGetTechAttribute(int playerId, int techId, int techAttribute, int indexOrCostType)`
 
 Parameters:
 
 1.  `#!xs int playerId`: The player to get the tech's attribute for
 2.  `#!xs int techId`: The tech to get the attribute for
 3.  `#!xs int techAttribute`: The tech attribute to get. See the [cTech constants](../../constants/constants/#27-tech-attribute \"Jump To: XS > Constant Reference > 27. Tech Attribute\")
+4.  `#!xs int indexOrCostType`: The train location index when getting research location specific attributes or a resource ID when getting costs
 
 Gets the specific tech attribute for the supplied tech for the given player.
 
@@ -1287,7 +1288,7 @@ Gets the specific tech attribute for the supplied tech for the given player.
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int attributeOrOperation, float value, int playerNumber)`
+Prototype: `#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int attributeOrOperation, float value, int playerId)`
 
 Parameters:
 
@@ -1295,7 +1296,7 @@ Parameters:
 2.  `#!xs int objectOrTechnologyId`: The ID of the object, unit, or technology to effect
 3.  `#!xs int attributeOrOperation`: The attribute to modify or the operation to perform, See the [Effect Operation](../../constants/constants/#9-effectamount-effect-operations "Jump To: XS > Constant Reference > 9. Effect Amount Effect Operation") constants
 4.  `#!xs float value`: The value of the effect
-5. (Optional) `#!xs int playerNumber`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
+5. (Optional) `#!xs int playerId`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
 
 Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat).
 
@@ -1341,11 +1342,11 @@ Returns the lobby slot corresponding to the player number (usually the same as c
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetPlayerCivilization(int playerNumber)`
+Prototype: `#!xs int xsGetPlayerCivilization(int playerId)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: The player to get the civilization of
+1.  `#!xs int playerId`: The player to get the civilization of
 
 Returns the civilization ID of the given player. Refer to the [Constant Reference](../../constants/constants/#5-aoe2-civs "Jump to: XS Scripting > Constant Reference > 5. AoE2 Civs") for all the different civ IDs
 
@@ -1353,11 +1354,11 @@ Returns the civilization ID of the given player. Refer to the [Constant Referenc
 
 Returning Type: `#!xs bool`
 
-Prototype: `#!xs bool xsGetPlayerInGame(int playerNumber)`
+Prototype: `#!xs bool xsGetPlayerInGame(int playerId)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: Check if this player is still alive
+1.  `#!xs int playerId`: Check if this player is still alive
 
 Returns true if the player given is still alive, and false otherwise.
 
@@ -1365,11 +1366,11 @@ Returns true if the player given is still alive, and false otherwise.
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetPlayerNumberOfTechs(int playerNumber)`
+Prototype: `#!xs int xsGetPlayerNumberOfTechs(int playerId)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: The player whose technology count is being requested.
+1.  `#!xs int playerId`: The player whose technology count is being requested.
 
 Returns the number of technologies available to the player in the entire game.
 
@@ -1377,11 +1378,11 @@ Returns the number of technologies available to the player in the entire game.
 
 Returning Type: `#!xs float`
 
-Prototype: `#!xs float xsPlayerAttribute(int playerNumber, int resourceId)`
+Prototype: `#!xs float xsPlayerAttribute(int playerId, int resourceId)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: The player to get the resource of (0 for Gaia)
+1.  `#!xs int playerId`: The player to get the resource of (0 for Gaia)
 2.  `#!xs int resourceId`: The ID of the resource to get the amount of
 
 Returns the amount the specified resource of the given player.
@@ -1390,11 +1391,11 @@ Returns the amount the specified resource of the given player.
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsSetPlayerAttribute(int playerNumber, int resourceId, float value)`
+Prototype: `#!xs void xsSetPlayerAttribute(int playerId, int resourceId, float value)`
 
 Parameters:
 
-1.  `#!xs int playerNumber`: The player to set the resource of (0 for Gaia)
+1.  `#!xs int playerId`: The player to set the resource of (0 for Gaia)
 2.  `#!xs int resourceId`: The ID of the resource to set the amount of
 3.  `#!xs float value`: The amount to set the resource to
 
@@ -2110,9 +2111,9 @@ Checks if the supplied object ID is valid for the given player (e.g. Gaia only u
 
 ### 9.38. xsGetPlayerNumberOfObjects
 
-Returning Type: `#!xs bool`
+Returning Type: `#!xs int`
 
-Prototype: `#!xs bool xsGetPlayerNumberOfObjects(int playerId)`
+Prototype: `#!xs int xsGetPlayerNumberOfObjects(int playerId)`
 
 Parameters:
 

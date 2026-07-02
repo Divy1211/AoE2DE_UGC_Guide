@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/06/27 20:47:02 |
+// | Generated on: 2026/07/02 11:41:18 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -3615,13 +3615,13 @@ int xsGetTechState(int techId = -1, int playerId = -1) {}
 * @param techId The technology ID to research.
 * @param force Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
 * @param techAvailable This flag determines if it is required to check if a tech is available before researching it
-* @param playerNumber The player to research the technology for
+* @param playerId The player to research the technology for
 *
 * @returns bool
 * @allow_discard
 * @allow_no_num_promo
 */
-bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerNumber = -1) {}
+bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerId = -1) {}
 
 
 // 7. Player
@@ -3645,12 +3645,12 @@ void xsDeclareVictory(int playerId = -1, bool victory = false) {}
 * @param objectOrTechnologyId The ID of the object, unit, or technology to effect
 * @param attributeOrOperation The attribute to modify or the operation to perform, See the [Effect Operation](https://ugc.aoe2.rocks/general/xs/constants/constants/#9-effectamount-effect-operations) constants
 * @param value The value of the effect
-* @param playerNumber The player to apply the effect to. If unspecified, applies to all players except Gaia.
+* @param playerId The player to apply the effect to. If unspecified, applies to all players except Gaia.
 *
 * @returns void
 * @allow_no_num_promo
 */
-void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerNumber = -1) {}
+void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerId = -1) {}
 
 /**
 * Returns the difficulty setting for the game. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#22-difficulty) for all the different difficulty IDs
@@ -3684,22 +3684,22 @@ float xsGetHandicapMultiplier(int playerId = -1) {}
 /**
 * Returns the civilization ID of the given player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#5-aoe2-civs) for all the different civ IDs
 *
-* @param playerNumber The player to get the civilization of
+* @param playerId The player to get the civilization of
 *
 * @returns int
 * @allow_no_num_promo
 */
-int xsGetPlayerCivilization(int playerNumber = -1) {}
+int xsGetPlayerCivilization(int playerId = -1) {}
 
 /**
 * Returns true if the player given is still alive, and false otherwise.
 *
-* @param playerNumber Check if this player is still alive
+* @param playerId Check if this player is still alive
 *
 * @returns bool
 * @allow_no_num_promo
 */
-bool xsGetPlayerInGame(int playerNumber = -1) {}
+bool xsGetPlayerInGame(int playerId = -1) {}
 
 /**
 * Returns the given player's name.
@@ -3714,12 +3714,12 @@ string xsGetPlayerName(int playerId = -1) {}
 /**
 * Returns the number of technologies available to the player in the entire game.
 *
-* @param playerNumber The player whose technology count is being requested.
+* @param playerId The player whose technology count is being requested.
 *
 * @returns int
 * @allow_no_num_promo
 */
-int xsGetPlayerNumberOfTechs(int playerNumber = -1) {}
+int xsGetPlayerNumberOfTechs(int playerId = -1) {}
 
 /**
 * Returns the type of player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#19-player-type) for all the different player types
@@ -3756,13 +3756,13 @@ int xsGetWorldPlayerId(int scxPlayerId = -1) {}
 /**
 * Returns the amount the specified resource of the given player.
 *
-* @param playerNumber The player to get the resource of (0 for Gaia)
+* @param playerId The player to get the resource of (0 for Gaia)
 * @param resourceId The ID of the resource to get the amount of
 *
 * @returns float
 * @allow_no_num_promo
 */
-float xsPlayerAttribute(int playerNumber = -1, int resourceId = -1) {}
+float xsPlayerAttribute(int playerId = -1, int resourceId = -1) {}
 
 /**
 * Sets the diplomacy of source player towards the target player
@@ -3781,14 +3781,14 @@ bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploS
 /**
 * Sets the amount of the specified resource of the given player to the provided value.
 *
-* @param playerNumber The player to set the resource of (0 for Gaia)
+* @param playerId The player to set the resource of (0 for Gaia)
 * @param resourceId The ID of the resource to set the amount of
 * @param value The amount to set the resource to
 *
 * @returns void
 * @allow_no_num_promo
 */
-void xsSetPlayerAttribute(int playerNumber = -1, int resourceId = -1, float value = -1.0) {}
+void xsSetPlayerAttribute(int playerId = -1, int resourceId = -1, float value = -1.0) {}
 
 
 // 8. Tasks

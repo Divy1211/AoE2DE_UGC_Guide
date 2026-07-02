@@ -1268,7 +1268,7 @@
                     "desc": "This flag determines if it is required to check if a tech is available before researching it"
                 },
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
                     "desc": "The player to research the technology for"
@@ -1382,7 +1382,7 @@
                     "desc": "The value of the effect"
                 },
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": false,
                     "desc": "The player to apply the effect to. If unspecified, applies to all players except Gaia."
@@ -1446,7 +1446,7 @@
             "return_type": "int",
             "params": [
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
                     "desc": "The player to get the civilization of"
@@ -1459,7 +1459,7 @@
             "return_type": "bool",
             "params": [
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
                     "desc": "Check if this player is still alive"
@@ -1472,7 +1472,7 @@
             "return_type": "int",
             "params": [
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
                     "desc": "The player whose technology count is being requested."
@@ -1485,7 +1485,7 @@
             "return_type": "float",
             "params": [
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
                     "desc": "The player to get the resource of (0 for Gaia)"
@@ -1504,7 +1504,7 @@
             "return_type": "void",
             "params": [
                 {
-                    "name": "playerNumber",
+                    "name": "playerId",
                     "type": "int",
                     "required": true,
                     "desc": "The player to set the resource of (0 for Gaia)"
