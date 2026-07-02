@@ -256,7 +256,7 @@ This condition can be used to check if the first unit's target is the second uni
 
 ---
 
-### Object Not Visible
+### ~~Object Not Visible~~
 
 !!! warning "Deprecated since version 1.36"
 
@@ -270,7 +270,7 @@ This condition can be used to check if the specified object is currently NOT vis
 
 ---
 
-### Object Selected
+### ~~Object Selected~~
 
 !!! warning "Deprecated since version 1.36"
 
@@ -297,7 +297,7 @@ This condition can be used to check if the specified unit is currently selected 
 
 ---
 
-### Object Visible
+### ~~Object Visible~~
 
 !!! warning "Deprecated since version 1.36"
 

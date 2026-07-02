@@ -64,12 +64,14 @@ out = """*Written by: Alian713 & KSneijders*
 for count, condition in enumerate(conditions, 1):
     if count > 1:
         out += "---\n\n"
-    out += f"### {titleize(condition['name'])}\n\n"
 
     deprecated = condition.get("deprecated")
     if deprecated:
+        out += f"### ~~{titleize(condition['name'])}~~\n\n"
         out += f"!!! warning \"Deprecated since version {deprecated['version']}\"\n\n"
         out += f"    {deprecated['reason']}\n\n"
+    else:
+        out += f"### {titleize(condition['name'])}\n\n"
 
     description = join_description(condition["description"])
     attributes = condition["attributes"]
