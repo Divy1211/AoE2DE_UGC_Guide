@@ -1,0 +1,145 @@
+[
+  {
+    "id": 3,
+    "tricks": [
+      "This effect is super useful for debugging. When you're unsure of which triggers in your map are executed at which point, adding one of these to that trigger will display a message on screen when it gets executed",
+      "This effect can also be used to simulate chat between two players",
+      "This effect should NOT be used to display instructions to players, because there is an effect that can be used specifically for that",
+      "Duplicate messages are not shown",
+      "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
+    ]
+  },
+  {
+    "id": 4,
+    "tricks": [
+      "This effect is useful for playing a notification sound"
+    ]
+  },
+  {
+    "id": 5,
+    "tricks": [
+      "Tributing negative resources actually gives the source player the resource and deducts that amount from the target player",
+      "Tributing negative resources from a player to gaia is a way to make silent resource trickles that do not make the tribute sound."
+    ]
+  },
+  {
+    "id": 16,
+    "tricks": [
+      "This effect can be used to bring attention of the player to a certain part of the map"
+    ]
+  },
+  {
+    "id": 18,
+    "tricks": [
+      "This effect can be used to make unconvertable gaia units. If a unit is originally owned by a different player, but is then converted to gaia using this effect, then that unit can no longer be converted by other players"
+    ]
+  },
+  {
+    "id": 20,
+    "tricks": [
+      "This effect is useful for making dialogue sequences",
+      "When you do multiple display instruction effects on the same panel position at the same time, only the last instruction is shown. One panel position can only show one instruction at a time",
+      "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
+    ]
+  },
+  {
+    "id": 21,
+    "tricks": [
+      "This effect is not used very often, since mostly you want your display instruction effects to display an instruction for the full length of time you specify"
+    ]
+  },
+  {
+    "id": 23,
+    "tricks": [
+      "If you can't see the buttons for aggressive stance, and unit groups use this effect to enable them for yourself. That is all that this effect does, its useless otherwise"
+    ]
+  },
+  {
+    "id": 24,
+    "tricks": [
+      "Dealing negative damage to an object will actually increase their HP beyond their max HP. Using this, a unit's HP can go over 32768.",
+      "This is used in Tower Defence maps like ATD where units have over a million HP, since directly setting an object's HP to over 32768 using the change object HP effect would kill the object."
+    ]
+  },
+  {
+    "id": 26,
+    "tricks": [
+      "This effect is mostly used to make markers, signs and waypoints which the player can select and read using units on the map"
+    ]
+  },
+  {
+    "id": 27,
+    "tricks": [
+      "Unit Max HP is capped at 32768. If you try to set it to a value above 32768, the unit will die because of an overflow."
+    ]
+  },
+  {
+    "id": 28,
+    "tricks": [
+      "The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value"
+    ]
+  },
+  {
+    "id": 31,
+    "tricks": [
+      "The quantity field on this effect has a maximum limit of 255, use multiple of these effects/addition or multiplication operations to get a higher value"
+    ]
+  },
+  {
+    "id": 34,
+    "tricks": [
+      "This effect should not be used to simulate regeneration of HP of a unit similar to heroes, because there is another effect ([Modify Attribute](./<effect_id_ref 51> \"Jump to: Modify Attribute\"), change attribute [regeneration rate](../../../../general/attributes/#50-regeneration-rate \"Jump to: Game Mechanics > Attributes > Regeneration Rate\") to the desired quantity), that does exactly this"
+    ]
+  },
+  {
+    "id": 37,
+    "tricks": [
+      "Use `%d` as a placeholder in the message field for remaining time in the time units that you chose.",
+      "Adding a colour prefix to a messages will colour the message in chat. The message must begin with the colour prefix for it to work, and the colour prefix is not shown in the real message shown in chat. The following colour prefixes may be used:\n    1. <BLUE\\>\n    2. <RED\\>\n    3. <GREEN\\>\n    4. <YELLOW\\>\n    5. <AQUA\\>\n    6. <PURPLE\\>\n    7. <GREY\\>\n    8. <ORANGE\\>"
+    ]
+  },
+  {
+    "id": 40,
+    "tricks": [
+      "Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.",
+      "Units in the game can only have a maximum of 2 different resource of costs."
+    ]
+  },
+  {
+    "id": 43,
+    "tricks": [
+      "This effect is widely used by unit upgrade technologies.",
+      "Researching Man at Arms replaces all Militia with Man at Arms on the map",
+      "Researching Crossbowman replaces all Archers with Crossbowmen on the map"
+    ]
+  },
+  {
+    "id": 44,
+    "tricks": [
+      "There are special keywords that are used to display certain information about an object in its description",
+      "This is illustrated with the following example:\n```\nBuild Trade Workshop (<Cost>)\nAllows you to buy special perks\n\n<hp> <attack> <armor> <piercearmor> <garrison> LoS: 4\n```",
+      "Here, all the words in the angle brackets are replaced by those relevant statistics for the unit."
+    ]
+  },
+  {
+    "id": 49,
+    "tricks": [
+      "The object you are creating garrisoned objects inside must have at least 1 garrison capacity and it must have the garrison ability"
+    ]
+  },
+  {
+    "id": 51,
+    "tricks": [
+      "Changing the Amount of 1st Resource of a unit changes its population requirement",
+      "Since the quantity field cannot take in fractional values, to modify an attribute by a fractional amount, use the division operation to your advantage. for example setting a value to `0.1` is the same as first setting it to 1 and then dividing by 10. Similarly, adding a value of 0.5 is the same as first multiplying the initial value by 10, adding 5 and then dividing by 10."
+    ]
+  },
+  {
+    "id": 63,
+    "tricks": [
+      "Due to a current bug in the game, this effect changes the cost of the tech for all players",
+      "Due to a current bug in the game, to properly set costs, you need to first set all the different wood, food, stone and gold costs of the tech to -1. Now using a 2nd effect you can set them to anything you like.",
+      "Techs in the game can only have a maximum of 3 different resource of costs."
+    ]
+  }
+]
