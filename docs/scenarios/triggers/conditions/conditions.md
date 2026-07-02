@@ -2,8 +2,6 @@
 
 ---
 
-## Conditions
-
 ### AI Signal
 
 This condition can be used to check if an AI signal with the specified ID has been sent by an AI script using the `sn-trigger-signal` strategy number. The configurations for this condition are as follows:
