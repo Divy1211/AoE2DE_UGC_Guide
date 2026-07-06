@@ -12,8 +12,11 @@ This effect can be used to communicate with an AI player by setting an AI Trigge
 
 ---
 
+<details class="deprecated" markdown="1">
+<summary markdown="block">
 ### ~~Acknowledge AI Signal~~
 
+</summary>
 !!! warning "Deprecated since version 1.40"
 
     This will cause a desync in multiplayer and recs, use the 'acknowledge_multiplayer_ai_signal' effect instead
@@ -24,6 +27,7 @@ This effect can be used to acknowledge a pending AI signal. The configurations f
 | :------- | :---------- |
 | AI Signal | The AI Signal ID to acknowledge |
 
+</details>
 ---
 
 ### Acknowledge Multiplayer AI Signal
@@ -69,8 +73,7 @@ This effect can be used to attack-move units. The configurations for this effect
 | :------- | :---------- |
 | Object | The type of unit to attack-move |
 | Source Player | The player whose units will attack-move |
-| Location | The tile to attack-move to |
-| Location Unit Ref | The target unit (as if it was right clicked) |
+| Location | The tile or unit to attack-move to |
 | Area | The area in which units will be attack-moved. When not set, units across the entire map are attack-moved |
 | Object Group | The units with this class will be affected by this effect |
 | Object Type | The units of this type will be affected by this effect |
@@ -1271,8 +1274,7 @@ This effect can be used to play a sound at a specific location or globally for t
 | Options | Description |
 | :------- | :---------- |
 | Source Player | The player who will hear the sound effect. |
-| Location | The tile to play the sound at. When not set, the sound will be played globally. |
-| Location Unit Ref | The unit whose position and rotation will be used to play the sound at. When not set, the sound will be played globally. |
+| Location | The tile or unit to play the sound at. When not set, the sound will be played globally. |
 | Global Sound | When enabled, the sound will be played regardless if the target is on screen. This is useful for existing game sounds that are considered '3D'. '3D' sounds are game sounds based on coordinates. '2D' sounds are sounds like GUI, button click or notification sounds. |
 | Sound Name | The name of the sound to play. |
 
@@ -1405,8 +1407,11 @@ This effect can be used to set the gather point (rally point) for buildings. The
 
 ---
 
+<details class="deprecated" markdown="1">
+<summary markdown="block">
 ### ~~Set Object Cost~~
 
+</summary>
 !!! warning "Deprecated since version 1.54"
 
     Use the `change_object_cost` effect instead
@@ -1420,6 +1425,7 @@ This effect can be used to set the cost for a specific type of unit. The configu
 | Quantity | The amount to set as the cost |
 | Resource | The type of resource for the cost |
 
+</details>
 ---
 
 ### Set Player Visibility
@@ -1469,8 +1475,7 @@ This effect can be used to order units to perform a specific action at a target 
 | :------- | :---------- |
 | Object | The type of unit to task |
 | Source Player | The player whose units will be tasked |
-| Location | The tile to send the tasked units to |
-| Location Unit Ref | The target unit (as if it was right clicked) |
+| Location | The tile or unit to send the tasked units to |
 | Area | The area in which units will be tasked. When not set, units across the entire map are tasked |
 | Object Group | The units with this class will be affected by this effect |
 | Object Type | The units of this type will be affected by this effect |
@@ -1542,8 +1547,7 @@ This effect can be used to unload units at a target location. The configurations
 | :------- | :---------- |
 | Object | The type of unit to unload |
 | Source Player | The player whose garrisoned units will be ordered to unload |
-| Location | The tile where garrisoned units will be unloaded |
-| Location Unit Ref | The target unit to unload at (as if it was right clicked) |
+| Location | The tile or unit where garrisoned units will be unloaded |
 | Area | The area in which garrisoned units will be ordered to unload. When not set, units across the entire map are ordered to unload |
 | Object Group | The units with this class will be affected by this effect |
 | Object Type | The units of this type will be affected by this effect |
@@ -1562,8 +1566,11 @@ This effect can be used to unlock specific gates. The configurations for this ef
 
 ---
 
+<details class="deprecated" markdown="1">
+<summary markdown="block">
 ### ~~Use Advanced Buttons~~
 
+</summary>
 !!! warning "Deprecated since version 1.36"
 
     This effect is no longer used. It was used to toggle the advanced buttons in the minimap interface before the Definitive Edition.
@@ -1574,3 +1581,4 @@ Some useful tricks with this effect:
 
 1. If you can't see the buttons for aggressive stance, and unit groups use this effect to enable them for yourself. That is all that this effect does, its useless otherwise
 
+</details>

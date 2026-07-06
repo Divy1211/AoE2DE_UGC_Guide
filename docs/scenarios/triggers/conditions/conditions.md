@@ -39,7 +39,7 @@ This condition can be used to check if the source player has at least the specif
 
 ### And
 
-This condition acts as a logical AND combining the condition directly above and directly below. The operator precedence is AND > OR > no separator. For example, "A B OR C D" is interpreted as A and (B or C) and D. "A AND B OR C D" would be interpreted as ((A and B) or C) and D
+This condition acts as a logical AND combining the condition directly above and directly below. The operator precedence is AND > OR > no separator. For example, "A B OR C D" is interpreted as A and (B or C) and D. "A AND B OR C D" would be interpreted as ((A and B) or C) and D.
 
 ---
 
@@ -256,8 +256,11 @@ This condition can be used to check if the first unit's target is the second uni
 
 ---
 
+<details class="deprecated" markdown="1">
+<summary markdown="block">
 ### ~~Object Not Visible~~
 
+</summary>
 !!! warning "Deprecated since version 1.36"
 
     This condition should no longer be used. It does not work consistently (Even in Single Player). Use Object Visible (Multiplayer) with inverted checked instead.
@@ -268,10 +271,14 @@ This condition can be used to check if the specified object is currently NOT vis
 | :------- | :---------- |
 | Unit | The unit that must be currently not visible. |
 
+</details>
 ---
 
+<details class="deprecated" markdown="1">
+<summary markdown="block">
 ### ~~Object Selected~~
 
+</summary>
 !!! warning "Deprecated since version 1.36"
 
     This condition should no longer be used. It will cause desyncs in multiplayer games. Use Object Selected (Multiplayer) instead.
@@ -283,6 +290,7 @@ This condition can be used to check if the specified unit is currently selected 
 | Unit | The unit that must be currently selected. |
 | Inverted | When enabled, inverts the result of the condition |
 
+</details>
 ---
 
 ### Object Selected Multiplayer
@@ -297,8 +305,11 @@ This condition can be used to check if the specified unit is currently selected 
 
 ---
 
+<details class="deprecated" markdown="1">
+<summary markdown="block">
 ### ~~Object Visible~~
 
+</summary>
 !!! warning "Deprecated since version 1.36"
 
     This condition should no longer be used. It does not work consistently (Even in Single Player). Use Object Visible (Multiplayer) instead.
@@ -309,6 +320,7 @@ This condition can be used to check if the specified object is currently visible
 | :------- | :---------- |
 | Unit | The unit that must be currently visible. |
 
+</details>
 ---
 
 ### Object Visible Multiplayer
@@ -343,7 +355,7 @@ This condition can be used to check if the source player owns at least the speci
 
 ### Or
 
-This condition acts as a logical OR between the condition directly above and directly below. The operator precedence is AND > OR > no separator. For example, "A B OR C D" is interpreted as A and (B or C) and D. "A AND B OR C D" would be interpreted as ((A and B) or C) and D
+This condition acts as a logical OR between the condition directly above and directly below. The operator precedence is AND > OR > no separator. For example, "A B OR C D" is interpreted as A and (B or C) and D. "A AND B OR C D" would be interpreted as ((A and B) or C) and D.
 
 ---
 
