@@ -325,7 +325,7 @@ This condition can be used to check if the specified object is currently visible
 
 ### Object Visible Multiplayer
 
-This condition can be used to check if the specified object is currently visible to the specified player (within their line of sight or a revealed area). The configurations for this condition are as follows:
+This condition can be used to check if the specified object is currently within the specified player's active line of sight, using their maximum view distance regardless of the current zoom level. The configurations for this condition are as follows:
 
 | Options | Description |
 | :------- | :---------- |
