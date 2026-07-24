@@ -68,8 +68,11 @@ linkso = """: https://youtu.be/-qRUaOHpbwI?t=870
 
 md = md.replace(">=", r"$\geq$")
 md = md.replace("<=", r"$\leq$")
-md = md.replace(">", "$>$")
-md = md.replace("<", "$<$")
+# Skip backslash-escaped angle brackets (e.g. \< ) so they aren't turned into
+# MathJax, then drop the backslash so a literal < / > is rendered.
+md = regex.sub(r"(?<!\\)>", "$>$", md)
+md = regex.sub(r"(?<!\\)<", "$<$", md)
+md = md.replace(r"\>", ">").replace(r"\<", "<")
 
 for i in range(1, 9):
     md = md.replace(f"player{i}", f"player {i}")

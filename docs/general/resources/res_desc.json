@@ -1946,13 +1946,13 @@
     },
     "285": {
         "name": "Shared Visibility",
-        "desc": "Lower bits 1 to 9 control LoS with players 0 to 8 with 0 being gaia.",
+        "desc": "This is a bitfield where the lowest 9 bits toggle sharing LoS with a specific player. The lowest bit represents gaia (player 0), and each higher bit represents the next player, so the bit for a given player is `1 \\<\\< player` (`pow(2, player)`).",
         "defaults": {},
         "note": "This does not change LoS for allies if the shared exploration setting in the lobby is enabled. Since this resource is a bitfield, when reading it with [xsPlayerAttribute](../../xs/functions/functions/#78-xsplayerattribute) or setting it with [xsSetPlayerAttribute](../../xs/functions/functions/#79-xssetplayerattribute), the value requires to be converted using [bitCastToInt](../../xs/functions/functions/#416-bitcasttoint) and [bitCastToFloat](../../xs/functions/functions/#415-bitcasttofloat) respectively, so that the individual bits can be read and set correctly."
     },
     "286": {
         "name": "Shared Exploration",
-        "desc": "Lower bits 1 to 9 control map exploration with players 0 to 8 with 0 being gaia.",
+        "desc": "This is a bitfield where the lowest 9 bits toggle sharing map exploration with a specific player. The lowest bit represents gaia (player 0), and each higher bit represents the next player, so the bit for a given player is `1 \\<\\< player` (`pow(2, player)`).",
         "defaults": {},
         "note": "This does not change exploration for allies if the shared exploration setting in the lobby is enabled. Since this resource is a bitfield, when reading it with [xsPlayerAttribute](../../xs/functions/functions/#78-xsplayerattribute) or setting it with [xsSetPlayerAttribute](../../xs/functions/functions/#79-xssetplayerattribute), the value requires to be converted using [bitCastToInt](../../xs/functions/functions/#416-bitcasttoint) and [bitCastToFloat](../../xs/functions/functions/#415-bitcasttofloat) respectively, so that the individual bits can be read and set correctly."
     },
