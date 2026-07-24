@@ -291,3 +291,4 @@ cython_debug/
 .vscode
 push_from_dev_alian.bat
 venv
+.idea/pyProjectModel.xml

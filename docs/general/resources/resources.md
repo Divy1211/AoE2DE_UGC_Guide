@@ -2264,7 +2264,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Lower bits 1 to 9 control LoS with players 0 to 8 with 0 being gaia.
 
-- Note: This does not change LoS for allies if the shared exploration setting in the lobby is enabled
+- Note: This does not change LoS for allies if the shared exploration setting in the lobby is enabled. Since this resource is a bitfield, when reading it with [xsPlayerAttribute](../../xs/functions/functions/#78-xsplayerattribute) or setting it with [xsSetPlayerAttribute](../../xs/functions/functions/#79-xssetplayerattribute), the value requires to be converted using [bitCastToInt](../../xs/functions/functions/#416-bitcasttoint) and [bitCastToFloat](../../xs/functions/functions/#415-bitcasttofloat) respectively, so that the individual bits can be read and set correctly.
 
 ## 286. Shared Exploration
 
@@ -2272,7 +2272,7 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Lower bits 1 to 9 control map exploration with players 0 to 8 with 0 being gaia.
 
-- Note: This does not change exploration for allies if the shared exploration setting in the lobby is enabled
+- Note: This does not change exploration for allies if the shared exploration setting in the lobby is enabled. Since this resource is a bitfield, when reading it with [xsPlayerAttribute](../../xs/functions/functions/#78-xsplayerattribute) or setting it with [xsSetPlayerAttribute](../../xs/functions/functions/#79-xssetplayerattribute), the value requires to be converted using [bitCastToInt](../../xs/functions/functions/#416-bitcasttoint) and [bitCastToFloat](../../xs/functions/functions/#415-bitcasttofloat) respectively, so that the individual bits can be read and set correctly.
 
 ## 287. Military Food Productivity
 
