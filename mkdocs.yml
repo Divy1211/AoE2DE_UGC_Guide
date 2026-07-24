@@ -21,6 +21,7 @@ nav:
     - References:
       - Attributes:                                 "general/attributes/attributes.md"
       - Resources:                                  "general/resources/resources.md"
+      - Tasks:                                      "general/tasks/tasks.md"
   - Custom Scenarios:
     -                                               "scenarios/index.md"
     - Triggers:
