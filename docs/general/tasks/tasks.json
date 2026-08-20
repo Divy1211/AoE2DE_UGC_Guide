@@ -87,15 +87,122 @@
     "5": {
         "name": "Gather/rebuild",
         "xs_constant": "cTaskTypeGatherRebuild",
-        "description": "Unknown.",
-        "object_attributes": [],
-        "task_attributes": [],
+        "description": "Ability to gather resources from map objects. By default only villagers and fishing ships have it. It can be added to other units, but since drop sites can't be changed with triggers, those units have nowhere to deposit. Theoretically this could be worked around by gathering into a different resource the game does not otherwise use and moving that amount into a real resource bank. But no working setup is known so far.",
+        "object_attributes": [
+            {
+                "name": "Work rate",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cWorkRate",
+                "description": "Rate at which the unit gathers resources. Must be greater than 0 for the task to work."
+            },
+            {
+                "name": "Carry capacity",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cCarryCapacity",
+                "description": "Amount the unit can gather before it has to deposit its load at a drop site."
+            },
+            {
+                "name": "Drop sites",
+                "id": null,
+                "available": false,
+                "xs_constant": null,
+                "description": "Objects at which gathered resources are deposited."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "The object to gather from."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "The object to gather from."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Multiplier for **Work rate (13)**."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Gather range."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Unknown."
+            },
+            {
+                "name": "Owner type",
+                "id": 6,
+                "available": true,
+                "xs_constant": "cTaskAttrOwnerType",
+                "description": "Controls which objects the task can target based on ownership."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "Resource to take from the gathered object."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "Secondary resource that is added continuously while the task is executed, independent from the main resource."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "ID of the graphic used while the unit is gathering."
+            },
+            {
+                "name": "Carrying graphic",
+                "id": 15,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryingGraphic",
+                "description": "ID of the graphic used while the unit is carrying resources."
+            },
+            {
+                "name": "Auto search",
+                "id": 22,
+                "available": true,
+                "xs_constant": "cTaskAttrAutoSearch",
+                "description": "If set to 1 unit searches for nearby objects to continuously gather from."
+            },
+            {
+                "name": "Carry check",
+                "id": 23,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryCheck",
+                "description": "If set to 1 check if target object has resource before gathering, if set to 0 use Target Diplomacy (6) instead."
+            }
+        ],
         "xs_examples": []
     },
     "6": {
         "name": "Graze",
         "xs_constant": "cTaskTypeGraze",
-        "description": "Unknown.",
+        "description": "Unknown. All animals have it, including livestock, predators and prey. Marked as **Deleted (Graze)** in A.G.E., probably related to their occasional grazing animation.",
         "object_attributes": [],
         "task_attributes": [],
         "xs_examples": []
@@ -103,7 +210,7 @@
     "7": {
         "name": "Combat",
         "xs_constant": "cTaskTypeCombat",
-        "description": "Unknown.",
+        "description": "Ability to attack other objects. Virtually all units have it.",
         "object_attributes": [],
         "task_attributes": [],
         "xs_examples": []
@@ -111,7 +218,7 @@
     "8": {
         "name": "Shoot",
         "xs_constant": "cTaskTypeShoot",
-        "description": "Unknown.",
+        "description": "Unknown. Ranged attacks are handled by the combat task (task 7) instead.",
         "object_attributes": [],
         "task_attributes": [],
         "xs_examples": []
@@ -127,21 +234,21 @@
     "10": {
         "name": "Fly",
         "xs_constant": "cTaskTypeFly",
-        "description": "Unknown.",
+        "description": "Ability to roam around aimlessly, ignoring water and often other obstacles. The unit walks in a random direction, pauses for a while and then picks a new one. Used by birds and snakes.",
         "object_attributes": [
             {
                 "name": "Standing Graphic 2",
                 "id": 72,
                 "available": true,
                 "xs_constant": "cStanding2Graphic",
-                "description": "Used instead of the task's **Working graphic (14)**. Graphic while moving, if not set uses moving graphic."
+                "description": "Graphic used while the unit is roaming, in place of the task's **Working graphic (14)**, which is currently unused. If it is not set, the task's **Moving graphic (12)** is used."
             },
             {
                 "name": "Walking graphic",
                 "id": 75,
                 "available": true,
                 "xs_constant": "cWalkingGraphic",
-                "description": "Used if **Standing Graphic 2 (72)** or the task's **Working graphic (14)** is not set."
+                "description": "Used if neither **Standing Graphic 2 (72)** nor any of the task's graphics are set."
             }
         ],
         "task_attributes": [
@@ -157,14 +264,14 @@
                 "id": 1,
                 "available": true,
                 "xs_constant": "cTaskAttrWorkValue2",
-                "description": "Unit ID to avoid."
+                "description": "The id of the unit to avoid while roaming."
             },
             {
                 "name": "Work range",
                 "id": 2,
                 "available": true,
                 "xs_constant": "cTaskAttrWorkRange",
-                "description": "Minimum distance to the unit to avoid that will be maintained while roaming."
+                "description": "Minimum distance to the avoided unit that is kept while roaming."
             },
             {
                 "name": "Search wait time",
@@ -178,42 +285,42 @@
                 "id": 5,
                 "available": true,
                 "xs_constant": "cTaskAttrCombatLevelFlag",
-                "description": "If set to 1, only roam around if the unit is owned by Gaia."
+                "description": "If set to 1, the unit only roams around while it is owned by Gaia."
             },
             {
                 "name": "Terrain",
                 "id": 7,
                 "available": true,
                 "xs_constant": "cTaskAttrTerrain",
-                "description": "Terrain Table that the unit will be allowed to roam on. If -1, use the unit's terrain table."
+                "description": "Terrain table that the unit is allowed to roam on. If -1, the unit's own terrain table is used."
             },
             {
                 "name": "Moving graphic",
                 "id": 12,
                 "available": true,
                 "xs_constant": "cTaskAttrMovingGraphic",
-                "description": "Graphics used for the unit moving around, randomly alternates between them."
+                "description": "One of the graphics used while the unit moves around, randomly alternated with the other two. If none of the three is set, the unit's **Walking Graphic (75)** is used."
             },
             {
                 "name": "Proceeding graphic",
                 "id": 13,
                 "available": true,
                 "xs_constant": "cTaskAttrProceedingGraphic",
-                "description": "Graphics used for the unit moving around, randomly alternates between them."
+                "description": "One of the graphics used while the unit moves around, randomly alternated with the other two. If none of the three is set, the unit's **Walking Graphic (75)** is used."
             },
             {
                 "name": "Working graphic",
                 "id": 14,
                 "available": true,
                 "xs_constant": "cTaskAttrWorkingGraphic",
-                "description": "Graphics used for the unit moving around, randomly alternates between them."
+                "description": "Currently unused, **Standing Graphic 2 (72)** is used instead."
             },
             {
                 "name": "Carry check",
                 "id": 23,
                 "available": true,
                 "xs_constant": "cTaskAttrCarryCheck",
-                "description": "Distance the unit is allowed to move from its starting position before picking a new direction to return closer. If 0, no limit."
+                "description": "Distance the unit is allowed to move away from its starting position before picking a new direction that brings it back closer. If 0, there is no limit."
             }
         ],
         "xs_examples": []
@@ -221,7 +328,7 @@
     "11": {
         "name": "Scare/hunt",
         "xs_constant": "11",
-        "description": "Unknown.",
+        "description": "Unknown. All predators have it and the target unit is always 65 - DEERX. Marked as **Deleted (Scare/hunt)** in A.G.E., so this is likely a completely removed feature.",
         "object_attributes": [],
         "task_attributes": [],
         "xs_examples": []
@@ -254,7 +361,7 @@
     "13": {
         "name": "Guard",
         "xs_constant": "cTaskTypeGuard",
-        "description": "Unknown.",
+        "description": "Ability to guard another unit. Virtually all military units have it.",
         "object_attributes": [],
         "task_attributes": [],
         "xs_examples": []
@@ -313,7 +420,7 @@
     "21": {
         "name": "Make",
         "xs_constant": "cTaskTypeMake",
-        "description": "Unknown. Related to farms, fishing traps and similar. Maybe the ability to remake them?",
+        "description": "Unknown. Related to farms and fish traps. Possibly the passive generation of the internal resource that is then gathered from them.",
         "object_attributes": [],
         "task_attributes": [
             {
@@ -343,7 +450,7 @@
     "101": {
         "name": "Build",
         "xs_constant": "cTaskTypeBuild",
-        "description": "Ability for units to build buildings. Building seems hardcoded for villagers and fishing ships. Military units can use this task to build 1 building.",
+        "description": "Ability for units to build buildings. Building seems hardcoded for villagers and fishing ships. Military units can use this task to build 1 building, for example Donjons by Serjeants and Outposts by Champi Scouts.",
         "object_attributes": [
             {
                 "name": "Work rate",
@@ -454,9 +561,17 @@
     "103": {
         "name": "Make tech",
         "xs_constant": "cTaskTypeMakeTech",
-        "description": "Unknown.",
+        "description": "Adds a technology button to the unit. Currently only used by trade ships to select the resource that is traded.",
         "object_attributes": [],
-        "task_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Id of the technology to research."
+            }
+        ],
         "xs_examples": []
     },
     "104": {
@@ -751,7 +866,7 @@
     "110": {
         "name": "Hunt",
         "xs_constant": "cTaskTypeHunt",
-        "description": "Gives the ability to gather resources from map objects and place it into player resources. Since drop sites can't be changed with triggers this task can't be added.",
+        "description": "Gives the ability to gather resources from map objects and place them into player resources. Since drop sites can't be changed with triggers, this task is useless to add to military units. Similar to task 5 (Gather/rebuild).",
         "object_attributes": [
             {
                 "name": "Work rate",
@@ -830,7 +945,7 @@
                 "id": 10,
                 "available": true,
                 "xs_constant": "cTaskAttrResourceOut",
-                "description": "Associated resource to deposit gathered resource into."
+                "description": "Secondary resource that is added continuously while the task is executed, independent from the main resource."
             },
             {
                 "name": "Unused resource",
@@ -961,7 +1076,7 @@
     "121": {
         "name": "Deselect when tasked",
         "xs_constant": "cTaskTypeDeselectWhenTasked",
-        "description": "Unknown. Related to farms finishing traps and similar.",
+        "description": "Unknown. Related to farms and fish traps, similar to task 21 (Make).",
         "object_attributes": [],
         "task_attributes": [
             {
@@ -984,7 +1099,7 @@
     "122": {
         "name": "Loot gather",
         "xs_constant": "cTaskTypeLootGather",
-        "description": "Unknown.",
+        "description": "Ability to gather resources from map objects, similar to tasks 5 (Gather/rebuild) and 110 (Hunt). By default only used to gather from the Salvage Pile.",
         "object_attributes": [],
         "task_attributes": [],
         "xs_examples": []
@@ -1247,7 +1362,7 @@
     "151": {
         "name": "Generate resources",
         "xs_constant": "cTaskTypeGenerateResources",
-        "description": "Ability of an object to gain resources when attacking or idling.",
+        "description": "Ability of an object to gain resources by attacking or passively over time.",
         "object_attributes": [],
         "task_attributes": [
             {
@@ -1332,7 +1447,7 @@
     "153": {
         "name": "Movable dropsite",
         "xs_constant": "cTaskTypeMovableDropsite",
-        "description": "Ability for a unit to be a movable dropsite. For this task to work this unit needs to be added for the worker unit as a dropsite (currently not possible with triggers or XS).",
+        "description": "Ability for a unit to be a movable dropsite. For this task to work this unit needs to be added for the worker unit as a dropsite (currently not possible with triggers or XS). By default only Mule Carts have it.",
         "object_attributes": [],
         "task_attributes": [
             {
@@ -1632,7 +1747,7 @@
     "156": {
         "name": "Additional spawn",
         "xs_constant": "cTaskTypeExtraSpawn",
-        "description": "Spawns additional units when the unit is trained.",
+        "description": "Spawns additional units when the unit is trained. By default only Blackwood Archers have it.",
         "object_attributes": [],
         "task_attributes": [
             {
@@ -1671,7 +1786,7 @@
     "157": {
         "name": "Stinger",
         "xs_constant": "cTaskTypeStinger",
-        "description": "Stingers are stat modifiers applied on a unit being attacked or the attacking unit.",
+        "description": "Stingers are stat modifiers applied on a unit being attacked or the attacking unit, such as poison.",
         "object_attributes": [
             {
                 "name": "Combat ability",

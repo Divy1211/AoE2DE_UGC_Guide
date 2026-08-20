@@ -78,25 +78,50 @@ xsModifyObjectTasks(scorpion, player);
 
 - XS constant: [cTaskTypeGatherRebuild](../../xs/constants/constants/#165-ctasktypegatherrebuild)
 
-- Unknown.
+- Ability to gather resources from map objects. By default only villagers and fishing ships have it. It can be added to other units, but since drop sites can't be changed with triggers, those units have nowhere to deposit. Theoretically this could be worked around by gathering into a different resource the game does not otherwise use and moving that amount into a real resource bank. But no working setup is known so far.
+
+<h3>Object attributes</h3>
+
+| XS constant | Description |
+| :-- | :-- |
+| [cWorkRate](../../xs/constants/constants/#1113-cworkrate) | Rate at which the unit gathers resources. Must be greater than 0 for the task to work. |
+| [cCarryCapacity](../../xs/constants/constants/#1114-ccarrycapacity) | Amount the unit can gather before it has to deposit its load at a drop site. |
+| **Unavailable** — Drop sites | Objects at which gathered resources are deposited. |
+
+<h3>Task attributes</h3>
+
+| XS constant | Description |
+| :-- | :-- |
+| [cTaskAttrWorkValue1](../../xs/constants/constants/#151-ctaskattrworkvalue1) | Multiplier for **[Work rate (13)](../../attributes/attributes/#13-work-rate)**. |
+| [cTaskAttrWorkRange](../../xs/constants/constants/#153-ctaskattrworkrange) | Gather range. |
+| [cTaskAttrSearchWaitTime](../../xs/constants/constants/#155-ctaskattrsearchwaittime) | Unknown. |
+| [cTaskAttrOwnerType](../../xs/constants/constants/#157-ctaskattrownertype) | Controls which objects the task can target based on ownership. Values: **0** — All objects; **1** — Your objects only; **2** — Neutral and enemy objects only; **3** — Gaia only; **4** — Gaia, your and ally objects only; **5** — Gaia, neutral and enemy objects only; **6** — All but your objects. |
+| [cTaskAttrResourceIn](../../xs/constants/constants/#159-ctaskattrresourcein) | Resource to take from the gathered object. |
+| [cTaskAttrResourceOut](../../xs/constants/constants/#1511-ctaskattrresourceout) | Secondary resource that is added continuously while the task is executed, independent from the main resource. |
+| [cTaskAttrWorkingGraphic](../../xs/constants/constants/#1515-ctaskattrworkinggraphic) | ID of the graphic used while the unit is gathering. |
+| [cTaskAttrCarryingGraphic](../../xs/constants/constants/#1516-ctaskattrcarryinggraphic) | ID of the graphic used while the unit is carrying resources. |
+| [cTaskAttrAutoSearch](../../xs/constants/constants/#1523-ctaskattrautosearch) | If set to 1 unit searches for nearby objects to continuously gather from. |
+| [cTaskAttrCarryCheck](../../xs/constants/constants/#1524-ctaskattrcarrycheck) | If set to 1 check if target object has resource before gathering, if set to 0 use Target Diplomacy (6) instead. |
+| [cTaskAttrObjectId](../../xs/constants/constants/#1530-ctaskattrobjectid) | The object to gather from. |
+| [cTaskAttrObjectClass](../../xs/constants/constants/#1531-ctaskattrobjectclass) | The object to gather from. |
 
 ## 6. Graze
 
 - XS constant: [cTaskTypeGraze](../../xs/constants/constants/#166-ctasktypegraze)
 
-- Unknown.
+- Unknown. All animals have it, including livestock, predators and prey. Marked as **Deleted (Graze)** in A.G.E., probably related to their occasional grazing animation.
 
 ## 7. Combat
 
 - XS constant: [cTaskTypeCombat](../../xs/constants/constants/#167-ctasktypecombat)
 
-- Unknown.
+- Ability to attack other objects. Virtually all units have it.
 
 ## 8. Shoot
 
 - XS constant: [cTaskTypeShoot](../../xs/constants/constants/#168-ctasktypeshoot)
 
-- Unknown.
+- Unknown. Ranged attacks are handled by the combat task (task 7) instead.
 
 ## 9. Attack
 
@@ -108,35 +133,35 @@ xsModifyObjectTasks(scorpion, player);
 
 - XS constant: [cTaskTypeFly](../../xs/constants/constants/#1610-ctasktypefly)
 
-- Unknown.
+- Ability to roam around aimlessly, ignoring water and often other obstacles. The unit walks in a random direction, pauses for a while and then picks a new one. Used by birds and snakes.
 
 <h3>Object attributes</h3>
 
 | XS constant | Description |
 | :-- | :-- |
-| [cStanding2Graphic](../../xs/constants/constants/#1164-cstanding2graphic) | Used instead of the task's **Working graphic (14)**. Graphic while moving, if not set uses moving graphic. |
-| [cWalkingGraphic](../../xs/constants/constants/#1167-cwalkinggraphic) | Used if **[Standing Graphic 2 (72)](../../attributes/attributes/#72-standing-graphic-2)** or the task's **Working graphic (14)** is not set. |
+| [cStanding2Graphic](../../xs/constants/constants/#1164-cstanding2graphic) | Graphic used while the unit is roaming, in place of the task's **Working graphic (14)**, which is currently unused. If it is not set, the task's **Moving graphic (12)** is used. |
+| [cWalkingGraphic](../../xs/constants/constants/#1167-cwalkinggraphic) | Used if neither **[Standing Graphic 2 (72)](../../attributes/attributes/#72-standing-graphic-2)** nor any of the task's graphics are set. |
 
 <h3>Task attributes</h3>
 
 | XS constant | Description |
 | :-- | :-- |
 | [cTaskAttrWorkValue1](../../xs/constants/constants/#151-ctaskattrworkvalue1) | Unit speed multiplier while roaming. |
-| [cTaskAttrWorkValue2](../../xs/constants/constants/#152-ctaskattrworkvalue2) | Unit ID to avoid. |
-| [cTaskAttrWorkRange](../../xs/constants/constants/#153-ctaskattrworkrange) | Minimum distance to the unit to avoid that will be maintained while roaming. |
+| [cTaskAttrWorkValue2](../../xs/constants/constants/#152-ctaskattrworkvalue2) | The id of the unit to avoid while roaming. |
+| [cTaskAttrWorkRange](../../xs/constants/constants/#153-ctaskattrworkrange) | Minimum distance to the avoided unit that is kept while roaming. |
 | [cTaskAttrSearchWaitTime](../../xs/constants/constants/#155-ctaskattrsearchwaittime) | Time in seconds that the unit pauses, playing the idle animations, when changing direction. |
-| [cTaskAttrCombatLevelFlag](../../xs/constants/constants/#156-ctaskattrcombatlevelflag) | If set to 1, only roam around if the unit is owned by Gaia. |
-| [cTaskAttrTerrain](../../xs/constants/constants/#158-ctaskattrterrain) | Terrain Table that the unit will be allowed to roam on. If -1, use the unit's terrain table. |
-| [cTaskAttrMovingGraphic](../../xs/constants/constants/#1513-ctaskattrmovinggraphic) | Graphics used for the unit moving around, randomly alternates between them. |
-| [cTaskAttrProceedingGraphic](../../xs/constants/constants/#1514-ctaskattrproceedinggraphic) | Graphics used for the unit moving around, randomly alternates between them. |
-| [cTaskAttrWorkingGraphic](../../xs/constants/constants/#1515-ctaskattrworkinggraphic) | Graphics used for the unit moving around, randomly alternates between them. |
-| [cTaskAttrCarryCheck](../../xs/constants/constants/#1524-ctaskattrcarrycheck) | Distance the unit is allowed to move from its starting position before picking a new direction to return closer. If 0, no limit. |
+| [cTaskAttrCombatLevelFlag](../../xs/constants/constants/#156-ctaskattrcombatlevelflag) | If set to 1, the unit only roams around while it is owned by Gaia. |
+| [cTaskAttrTerrain](../../xs/constants/constants/#158-ctaskattrterrain) | Terrain table that the unit is allowed to roam on. If -1, the unit's own terrain table is used. |
+| [cTaskAttrMovingGraphic](../../xs/constants/constants/#1513-ctaskattrmovinggraphic) | One of the graphics used while the unit moves around, randomly alternated with the other two. If none of the three is set, the unit's **[Walking Graphic (75)](../../attributes/attributes/#75-walking-graphic)** is used. |
+| [cTaskAttrProceedingGraphic](../../xs/constants/constants/#1514-ctaskattrproceedinggraphic) | One of the graphics used while the unit moves around, randomly alternated with the other two. If none of the three is set, the unit's **[Walking Graphic (75)](../../attributes/attributes/#75-walking-graphic)** is used. |
+| [cTaskAttrWorkingGraphic](../../xs/constants/constants/#1515-ctaskattrworkinggraphic) | Currently unused, **[Standing Graphic 2 (72)](../../attributes/attributes/#72-standing-graphic-2)** is used instead. |
+| [cTaskAttrCarryCheck](../../xs/constants/constants/#1524-ctaskattrcarrycheck) | Distance the unit is allowed to move away from its starting position before picking a new direction that brings it back closer. If 0, there is no limit. |
 
 ## 11. Scare/hunt
 
 - XS constant: 11
 
-- Unknown.
+- Unknown. All predators have it and the target unit is always 65 - DEERX. Marked as **Deleted (Scare/hunt)** in A.G.E., so this is likely a completely removed feature.
 
 ## 12. Unload boat like
 
@@ -183,7 +208,7 @@ xsTask(berserk, cTaskTypeGarrison, cWarshipClass, player);
 
 - XS constant: [cTaskTypeGuard](../../xs/constants/constants/#1612-ctasktypeguard)
 
-- Unknown.
+- Ability to guard another unit. Virtually all military units have it.
 
 ## 14. Unload over wall
 
@@ -206,7 +231,7 @@ xsTask(berserk, cTaskTypeGarrison, cWarshipClass, player);
 
 - XS constant: [cTaskTypeMake](../../xs/constants/constants/#1614-ctasktypemake)
 
-- Unknown. Related to farms, fishing traps and similar. Maybe the ability to remake them?
+- Unknown. Related to farms and fish traps. Possibly the passive generation of the internal resource that is then gathered from them.
 
 <h3>Task attributes</h3>
 
@@ -220,7 +245,7 @@ xsTask(berserk, cTaskTypeGarrison, cWarshipClass, player);
 
 - XS constant: [cTaskTypeBuild](../../xs/constants/constants/#1615-ctasktypebuild)
 
-- Ability for units to build buildings. Building seems hardcoded for villagers and fishing ships. Military units can use this task to build 1 building.
+- Ability for units to build buildings. Building seems hardcoded for villagers and fishing ships. Military units can use this task to build 1 building, for example Donjons by Serjeants and Outposts by Champi Scouts.
 
 <h3>Object attributes</h3>
 
@@ -283,7 +308,13 @@ xsModifyObjectTasks(obuch, player);
 
 - XS constant: [cTaskTypeMakeTech](../../xs/constants/constants/#1617-ctasktypemaketech)
 
-- Unknown.
+- Adds a technology button to the unit. Currently only used by trade ships to select the resource that is traded.
+
+<h3>Task attributes</h3>
+
+| XS constant | Description |
+| :-- | :-- |
+| [cTaskAttrWorkValue1](../../xs/constants/constants/#151-ctaskattrworkvalue1) | Id of the technology to research. |
 
 ## 104. Convert
 
@@ -424,7 +455,7 @@ xsTask(obuch, cTaskTypeRepair, -1, player);
 
 - XS constant: [cTaskTypeHunt](../../xs/constants/constants/#1623-ctasktypehunt)
 
-- Gives the ability to gather resources from map objects and place it into player resources. Since drop sites can't be changed with triggers this task can't be added.
+- Gives the ability to gather resources from map objects and place them into player resources. Since drop sites can't be changed with triggers, this task is useless to add to military units. Similar to task 5 (Gather/rebuild).
 
 <h3>Object attributes</h3>
 
@@ -443,7 +474,7 @@ xsTask(obuch, cTaskTypeRepair, -1, player);
 | [cTaskAttrCombatLevelFlag](../../xs/constants/constants/#156-ctaskattrcombatlevelflag) | Unknown. |
 | [cTaskAttrOwnerType](../../xs/constants/constants/#157-ctaskattrownertype) | Controls which objects the task can target based on ownership. Values: **0** — All objects; **1** — Your objects only; **2** — Neutral and enemy objects only; **3** — Gaia only; **4** — Gaia, your and ally objects only; **5** — Gaia, neutral and enemy objects only; **6** — All but your objects. |
 | [cTaskAttrResourceIn](../../xs/constants/constants/#159-ctaskattrresourcein) | Resource to take from the hunted animal. |
-| [cTaskAttrResourceOut](../../xs/constants/constants/#1511-ctaskattrresourceout) | Associated resource to deposit gathered resource into. |
+| [cTaskAttrResourceOut](../../xs/constants/constants/#1511-ctaskattrresourceout) | Secondary resource that is added continuously while the task is executed, independent from the main resource. |
 | [cTaskAttrUnusedResource](../../xs/constants/constants/#1512-ctaskattrunusedresource) | If the associated resource value is 1, the hunted corpse does not decay. |
 | [cTaskAttrProceedingGraphic](../../xs/constants/constants/#1514-ctaskattrproceedinggraphic) | ID of the graphic used while the unit is attacking. |
 | [cTaskAttrWorkingGraphic](../../xs/constants/constants/#1515-ctaskattrworkinggraphic) | ID of the graphic used while the unit is gathering. |
@@ -488,7 +519,7 @@ xsTask(obuch, cTaskTypeRepair, -1, player);
 
 - XS constant: [cTaskTypeDeselectWhenTasked](../../xs/constants/constants/#1626-ctasktypedeselectwhentasked)
 
-- Unknown. Related to farms finishing traps and similar.
+- Unknown. Related to farms and fish traps, similar to task 21 (Make).
 
 <h3>Task attributes</h3>
 
@@ -501,7 +532,7 @@ xsTask(obuch, cTaskTypeRepair, -1, player);
 
 - XS constant: [cTaskTypeLootGather](../../xs/constants/constants/#1627-ctasktypelootgather)
 
-- Unknown.
+- Ability to gather resources from map objects, similar to tasks 5 (Gather/rebuild) and 110 (Hunt). By default only used to gather from the Salvage Pile.
 
 ## 123. Housing
 
@@ -704,7 +735,7 @@ xsModifyObjectTasks(scout, player);
 
 - XS constant: [cTaskTypeGenerateResources](../../xs/constants/constants/#1638-ctasktypegenerateresources)
 
-- Ability of an object to gain resources when attacking or idling.
+- Ability of an object to gain resources by attacking or passively over time.
 
 <h3>Task attributes</h3>
 
@@ -787,7 +818,7 @@ xsTask(elephant, cTaskTypeMovementDamage, -1, player);
 
 - XS constant: [cTaskTypeMovableDropsite](../../xs/constants/constants/#1640-ctasktypemovabledropsite)
 
-- Ability for a unit to be a movable dropsite. For this task to work this unit needs to be added for the worker unit as a dropsite (currently not possible with triggers or XS).
+- Ability for a unit to be a movable dropsite. For this task to work this unit needs to be added for the worker unit as a dropsite (currently not possible with triggers or XS). By default only Mule Carts have it.
 
 <h3>Task attributes</h3>
 
@@ -1010,7 +1041,7 @@ xsModifyObjectTasks(joanOfArc, player);
 
 - XS constant: [cTaskTypeExtraSpawn](../../xs/constants/constants/#1643-ctasktypeextraspawn)
 
-- Spawns additional units when the unit is trained.
+- Spawns additional units when the unit is trained. By default only Blackwood Archers have it.
 
 <h3>Task attributes</h3>
 
@@ -1043,7 +1074,7 @@ xsTask(huskarl, cTaskTypeExtraSpawn, -1, player);
 
 - XS constant: [cTaskTypeStinger](../../xs/constants/constants/#1644-ctasktypestinger)
 
-- Stingers are stat modifiers applied on a unit being attacked or the attacking unit.
+- Stingers are stat modifiers applied on a unit being attacked or the attacking unit, such as poison.
 
 <h3>Object attributes</h3>
 
