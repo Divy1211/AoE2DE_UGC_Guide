@@ -1811,9 +1811,10 @@ Parameters:
 4. (Optional) `#!xs bool edit`: If true, edit the task at the given index instead of inserting (ignored with negative indices)
 
 A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.
-    - ID N will insert the task at index N
-    - When `#!xs edit = true`, edit an existing task instead of inserting one.
-    - ID -(N+1) will remove the task at index N
+
+- ID `N` will insert the task at index N
+- When `#!xs edit = true`, edit an existing task instead of inserting one.
+- ID `-(N+1)` will remove the task at index N
 
 ### 8.9. xsModifyUnitTasks
 
@@ -1828,9 +1829,10 @@ Parameters:
 3. (Optional) `#!xs bool edit`: If true, edit the task at the given index instead of inserting (ignored with negative indices)
 
 A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.
-    - ID N will insert the task at index N
-    - When `#!xs edit = true`, edit an existing task instead of inserting one.
-    - ID -(N+1) will remove the task at index N
+
+- ID `N` will insert the task at index N
+- When `#!xs edit = true`, edit an existing task instead of inserting one.
+- ID `-(N+1)` will remove the task at index N
 
 ### 8.10. xsTask
 

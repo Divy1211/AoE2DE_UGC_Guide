@@ -1,8 +1,16 @@
 # Basics of Triggers
 
-*Written by: Alian713*
+*Written by: Alian713 & KSneijders*
 
 ---
+
+## Common Terminology
+
+Feel free to skip this if you are already familiar with these terms.
+
+- **Bug**: Anything in the map that is not working as intended is a bug. Historically, the term "bug" comes from physical bugs getting stuck in computers and causing them to malfunction back in the day when computers used to be the size of entire rooms. In today's context, a bug in anything just means that it's malfunctioning and not working as intended.
+- **Debugging**: Attempting to find out the cause of the malfunction, and removing/fixing that cause is known as debugging.
+- **Execution**: Executing a trigger means that we carry out its effects.
 
 ## What are Triggers
 
@@ -12,7 +20,21 @@ If you have ever played CBA (or sighed at people who play CBA) or played any of 
 
 Triggers introduce dynamics into a game and allow us to make interesting game modes as described above. Learning how to use triggers is simple and every map maker should be familiar with them to be able to make the best use of a scenario!
 
-## 1. Getting Started: The UI
+Every trigger is built from two basic elements: **Effects** and **Conditions**. A condition is something that must be fulfilled, and an effect is the action the trigger takes once its conditions are met. The next two sections introduce each of them in turn.
+
+## What are Effects
+
+Effects are the actions a trigger performs. They are essentially "cheats" in some sense, letting you change information about the game while the game is being played. Every technology in the game relies on effects to do what it is meant to do, usually combining several of them to achieve its purpose. Some basic effects available in the scenario editor are `Create Unit`, `Send Chat`, and `Display Instructions`.
+
+A detailed explanation of each effect and its customization options can be found [here](effects/effects.md "Jump to: Triggers > Effects").
+
+## What are Conditions
+
+Conditions are the checks that decide whether a trigger is allowed to fire: a trigger only executes its effects once **all** of its conditions are met. They let you react to the state of the game, such as whether a player owns a certain unit, whether a timer has elapsed, or whether a variable holds a particular value.
+
+A detailed explanation of each condition and its customization options can be found [here](conditions/conditions.md "Jump to: Triggers > Conditions").
+
+## Getting Started with Triggers: The UI
 
 To work with triggers in your scenario, you need to go to the `Triggers` tab in the editor. Here, you will see two boxes to the left. The box at the top lists all the existing triggers in a scenario. When a trigger is selected, the box at the bottom displays the list of conditions and effects for that trigger. 
 
@@ -32,11 +54,9 @@ What do the buttons under the boxes do?
     3. `Delete`: delete the selected condition or effect. This cannot be undone!
     4. `Copy`: copy the selected condition or effect.
 
-But wait, what are effects and conditions? Effects and Conditions are the basic elements of triggers that allow us to take certain actions, make decisions and do a lot more cool stuff. They are covered in more detail in the [Effects](../effects/effects "Jump to: Triggers > Effects") and [Conditions]("Jump to: Triggers > Conditions NONEXISTENT") sections of the guide
+Effects and Conditions are covered in more detail in the [Effects](effects/effects.md "Jump to: Triggers > Effects") and [Conditions](conditions/conditions.md "Jump to: Triggers > Conditions") sections of the guide.
 
-For now, simply put, an effect is the action that the trigger has to take and a condition is literally the thing which must be fulfilled before the action is allowed to be taken.
-
-## 2. Trigger Settings
+## Trigger Settings
 
 When a trigger is selected, the settings related to it are displayed. The following is a description of all the settings and what they do:
 
@@ -52,7 +72,7 @@ When a trigger is selected, the settings related to it are displayed. The follow
 10. `Display Order`: The objectives are displayed in descending order of priority.
 11. `Short Description String Table ID`: This field is the same as the `5. Description String Table ID`.
 
-## 3. General Information About Triggers
+## General Information About Triggers
 
 1. When the conditions inside a trigger which is displayed as an objective are fulfilled, then the objective is marked as completed. A completed objective is strikethrough-ed in the `Objectives` panel and checked when displayed on screen. Disabling the trigger related to that objective will remove the objective from screen or the `Objectives` panel completely.
 
@@ -60,6 +80,6 @@ When a trigger is selected, the settings related to it are displayed. The follow
 
 3. There is a theoretical limit of `4294967295` triggers in a scenario. Roll The Dice in older versions of the game is known to use about `16000` triggers. There is a theoretical limit of `2147483647` effects and `2147483647` conditions inside one trigger. Perk Pandemonium is known to use up to `250` effects inside one trigger.
 
-4. Triggers are executed in the order that they were created in, and not the order of their appearence from top to bottom. The effects inside one trigger are also executed in the order that they were created in, and not the order of their appearence from top to bottom. The conditions inside a trigger are checked according to the order that they were created in as well.
+4. The order in which triggers and effects are executed depends on the `Options > Run triggers and effects in display order` setting, which is enabled by default. When this option is enabled, triggers and effects are executed in the order of their appearance from top to bottom (their display order). When it is disabled, triggers and effects are executed in the order that they were created in, which is not necessarily the same as their appearance from top to bottom. The conditions inside a trigger are always checked according to the order that they were created in.
 
-5. For the effects of a trigger to execute, all the conditions of the trigger must be fulfilled except in one case (when an OR condition is used). A trigger will give up on checking the rest of its conditions as soon as a condition that is false is encountered except in one case (when an OR condition is used). These rules are discussed in greater detail in the [Conditions]("Jump to: Triggers > Conditions NONEXISTENT") section of the guide.
+5. For the effects of a trigger to execute, all the conditions of the trigger must be fulfilled except in one case (when an OR condition is used). A trigger will give up on checking the rest of its conditions as soon as a condition that is false is encountered except in one case (when an OR condition is used). These rules are discussed in greater detail in the [Conditions](conditions/conditions.md "Jump to: Triggers > Conditions") section of the guide.

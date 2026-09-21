@@ -43,13 +43,13 @@
     },
     "8": {
         "name": "Armor",
-        "desc": "This is the quantity of armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the armour through this option will show it as being added to the base armour amount. (for example: 4+4)",
+        "desc": "This is the quantity of armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation.md \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the armour through this option will show it as being added to the base armour amount. (for example: 4+4)",
         "notes": [],
         "flags": {}
     },
     "9": {
         "name": "Attack",
-        "desc": "This is the quantity of attack a unit has on any of its `Attack Classes`. If you do not know what an `Attack Class` is, refer to the [Damage Calculation](../damage_calculation \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the attack through this option will show it as being added to the base attack amount. (for example: 6+2)",
+        "desc": "This is the quantity of attack a unit has on any of its `Attack Classes`. If you do not know what an `Attack Class` is, refer to the [Damage Calculation](../damage_calculation.md \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the attack through this option will show it as being added to the base attack amount. (for example: 6+2)",
         "notes": [],
         "flags": {}
     },
@@ -96,7 +96,7 @@
     },
     "15": {
         "name": "Base Armor",
-        "desc": "This is the quantity of base armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the armour through this option will show it as the base armour itself, and it will not be added to the regular amount",
+        "desc": "This is the quantity of base armour a unit has on any of its `Armour Classes`. If you do not know what an `Armour Class` is, refer to the [Damage Calculation](../damage_calculation.md \"Jump to: Game Mechanics > Damage Calculation\") section of this guide. Note that changing the armour through this option will show it as the base armour itself, and it will not be added to the regular amount",
         "notes": [],
         "flags": {}
     },

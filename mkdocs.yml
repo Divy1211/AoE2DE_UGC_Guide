@@ -21,12 +21,13 @@ nav:
     - References:
       - Attributes:                                 "general/attributes/attributes.md"
       - Resources:                                  "general/resources/resources.md"
+      - Tasks:                                      "general/tasks/tasks.md"
   - Custom Scenarios:
     -                                               "scenarios/index.md"
     - Triggers:
       -                                             "scenarios/triggers/index.md"
       - Effects:                                    "scenarios/triggers/effects/effects.md"
-    #   - Conditions:                               "scenarios/triggers/conditions/conditions.md"
+      - Conditions:                                 "scenarios/triggers/conditions/conditions.md"
     #   - Variables:                                "scenarios/triggers/variables.md"
     # - Tricks and Tips:                            "scenarios/tricks.md"
     # - Advanced:

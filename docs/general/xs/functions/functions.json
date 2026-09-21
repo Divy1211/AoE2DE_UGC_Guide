@@ -2027,7 +2027,7 @@
                     "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
                 }
             ],
-            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.\n    - ID N will insert the task at index N\n    - When `#!xs edit = true`, edit an existing task instead of inserting one.\n    - ID -(N+1) will remove the task at index N"
+            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.\n\n- ID `N` will insert the task at index N\n- When `#!xs edit = true`, edit an existing task instead of inserting one.\n- ID `-(N+1)` will remove the task at index N"
         },
         {
             "name": "xsModifyUnitTasks",
@@ -2053,7 +2053,7 @@
                     "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
                 }
             ],
-            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.\n    - ID N will insert the task at index N\n    - When `#!xs edit = true`, edit an existing task instead of inserting one.\n    - ID -(N+1) will remove the task at index N"
+            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.\n\n- ID `N` will insert the task at index N\n- When `#!xs edit = true`, edit an existing task instead of inserting one.\n- ID `-(N+1)` will remove the task at index N"
         },
         {
             "name": "xsTask",

@@ -108,6 +108,57 @@ h3, h4 {
      box-shadow: 3px 3px 5px 0px #111111;
 }
 
+/* Deprecated entries: no admonition box, click the heading to expand */
+.md-typeset details.deprecated {
+     margin: 0;
+     padding: 0;
+     border: none;
+     border-radius: 0;
+     box-shadow: none;
+     background: transparent;
+     font-size: inherit;
+}
+.md-typeset details.deprecated > summary {
+     position: relative;         /* anchor the chevron to the summary, not the whole details */
+     margin: 0;
+     padding: 0 1.4rem 0 0;      /* room for the chevron on the right */
+     background: transparent;
+     border: none;
+     font-weight: inherit;
+     cursor: pointer;
+     list-style: none;
+}
+.md-typeset details.deprecated > summary::-webkit-details-marker {
+     display: none;
+}
+.md-typeset details.deprecated > summary::before {   /* drop the admonition icon */
+     display: none;
+}
+.md-typeset details.deprecated > summary::after {    /* keep the expand chevron, vertically centred on the heading */
+     top: 0;
+     bottom: 0;
+     right: 0;
+     margin: auto 0;
+}
+.md-typeset details.deprecated > summary > :first-child {
+     margin: 0;   /* collapse the heading to its text height so the chevron centres on it */
+}
+.md-typeset details.deprecated > summary > :first-child::after {   /* "Deprecated" badge next to the title */
+     content: "Deprecated";
+     display: inline-block;
+     margin-left: 0.5em;
+     padding: 0.05em 0.45em;
+     border: 1px solid #ff9100;
+     border-radius: 0.6em;
+     font-size: 0.55em;
+     font-weight: 700;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+     color: #ff9100;
+     vertical-align: middle;
+     white-space: nowrap;
+}
+
 tr td, table {
      border-width: 0 !important;
 }
