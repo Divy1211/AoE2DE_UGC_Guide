@@ -1054,7 +1054,7 @@ By default, two functions cannot share the same name. Adding the word `#!xs muta
 
 Every overload must use the same return type, the same number of arguments and the same argument types. If they do not match, an error is thrown.
 
-The last overload written before a call is the one that runs. In this example `#!xs foo(1)` prints `#!xs 4`, not `#!xs 3` or `#!xs 2`:
+The last defined overload wins, even if it appears after the call. In this example `#!xs foo(1)` prints `#!xs 4`, not `#!xs 3` or `#!xs 2`:
 
 ```xs
 mutable int foo(int a = 0) {

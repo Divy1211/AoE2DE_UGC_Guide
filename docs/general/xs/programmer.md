@@ -285,7 +285,7 @@ void main() {
 
 Prefixing a function with `#!xs mutable` makes it overloadable. The first definition must be marked `#!xs mutable`; later overloads may omit it. There is no limit on how many times a mutable function can be overloaded. Overloads must match the original return type, argument count and argument types, otherwise an error is thrown.
 
-The last overload defined before a call is the one that runs:
+The last defined overload wins, even if it appears after the call:
 
 ```xs
 mutable int foo(int a = 0) {
