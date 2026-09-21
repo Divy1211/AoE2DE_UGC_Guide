@@ -17,6 +17,7 @@ def resolve_links(string: str, is_funcs: bool = False) -> str:
             .replace('(../../../resources/resources/', '(https://ugc.aoe2.rocks/general/resources/resources/')
             .replace('(../../../attributes/attributes/', '(https://ugc.aoe2.rocks/general/attributes/attributes/')
             .replace(f'(../', f'(https://ugc.aoe2.rocks/general/xs/{keyword}/')
+            .replace(f'(./', f'(https://ugc.aoe2.rocks/general/xs/{keyword}/{keyword}/')
             .replace(' for more info about what this resource does.', '')
             .replace('. Check [here]', ']')
             .replace('RES_NAME', '[RES_NAME')

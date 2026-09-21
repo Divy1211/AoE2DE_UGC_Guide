@@ -1190,6 +1190,44 @@
             "desc": "Returns `x ^ y`"
         },
         {
+            "name": "bitLsh",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The first number"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The second number"
+                }
+            ],
+            "desc": "Returns `x << y`"
+        },
+        {
+            "name": "bitRsh",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The first number"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The second number"
+                }
+            ],
+            "desc": "Returns `x >> y`"
+        },
+        {
             "name": "bitNot",
             "return_type": "int",
             "params": [
@@ -1350,6 +1388,116 @@
                 }
             ],
             "desc": "Gets the specific tech attribute for the supplied tech for the given player."
+        },
+        {
+            "name": "xsSetTechName",
+            "allow_discard": true,
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech to set the name for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the tech name for"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name to set to"
+                }
+            ],
+            "desc": "Sets the tech name for the supplied tech for the given player."
+        },
+        {
+            "name": "xsSetTechDescription",
+            "allow_discard": true,
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech to set the description for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the tech description for"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The description to set to"
+                }
+            ],
+            "desc": "Sets the tech description for the supplied tech for the given player."
+        },
+        {
+            "name": "xsInitiateResearch",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The building to initiate the research at"
+                },
+                {
+                    "name": "techId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The tech to research"
+                }
+            ],
+            "desc": "Same as the editor effect. Starts researching a technology at a specific building. The tech must be available/the player must have sufficient resources to research the tech. The resources are deducted from the player's stockpile on research."
+        },
+        {
+            "name": "xsHasResearchedLocalTechnology",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The building to check local techs at"
+                },
+                {
+                    "name": "localTechId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The local tech to check"
+                }
+            ],
+            "desc": "Checks if a local tech has been researched at the given building."
+        },
+        {
+            "name": "xsResearchLocalTechnology",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The building to research a local tech at"
+                },
+                {
+                    "name": "localTechId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The local tech to research"
+                }
+            ],
+            "desc": "Researches the given local tech at the specified building if it is available. Same as the editor effect."
         }
     ],
     "player": [
@@ -1386,6 +1534,12 @@
                     "type": "int",
                     "required": false,
                     "desc": "The player to apply the effect to. If unspecified, applies to all players except Gaia."
+                },
+                {
+                    "name": "trainLocationIndex",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself"
                 }
             ],
             "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat)."
@@ -1626,6 +1780,104 @@
                 }
             ],
             "desc": "Makes a player win or lose the game"
+        },
+        {
+            "name": "xsGetPlayerCivName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the civ name for"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the civ name"
+                }
+            ],
+            "desc": "Gets the given player's civ name"
+        },
+        {
+            "name": "xsSetPlayerCivName",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the civ name for"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The civ name to set to"
+                }
+            ],
+            "desc": "Sets the given player's civ name to the specified value."
+        },
+        {
+            "name": "xsSetPlayerName",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the name for"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name to set to"
+                }
+            ],
+            "desc": "Sets the given player's name for the remainder of this game to the specified value"
+        },
+        {
+            "name": "xsSetPlayerColor",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the color for"
+                },
+                {
+                    "name": "colorId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The color to set to"
+                }
+            ],
+            "desc": "Sets the given player's color to the specified value"
+        },
+        {
+            "name": "xsSetChatToPlayer",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "targetPlayer",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the chat setting for"
+                },
+                {
+                    "name": "enabled",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "The value to set the chat setting to"
+                }
+            ],
+            "desc": "Sets the local player's chat setting towards the given player. To be used along with diplomacy-related effects"
         }
     ],
     "tasks": [
@@ -1805,6 +2057,7 @@
         },
         {
             "name": "xsTask",
+            "deprecated": "Use `xsModifyObjectTasks` instead.",
             "return_type": "void",
             "params": [
                 {
@@ -1836,6 +2089,7 @@
         },
         {
             "name": "xsRemoveTask",
+            "deprecated": "Use `xsModifyObjectTasks` instead.",
             "return_type": "void",
             "params": [
                 {
@@ -1951,7 +2205,7 @@
                     "name": "damageClass",
                     "type": "int",
                     "required": true,
-                    "desc": "For use with armor/attack attributes - specifies which armor/attack class to get"
+                    "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
                 }
             ],
             "desc": "Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned."
@@ -1973,10 +2227,10 @@
                     "desc": "The attribute to get"
                 },
                 {
-                    "name": "damageClass",
+                    "name": "damageClassOrEntryMod",
                     "type": "int",
                     "required": true,
-                    "desc": "For use with armor/attack attributes - specifies which armor/attack class to get"
+                    "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
                 }
             ],
             "desc": "Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned."
@@ -2565,6 +2819,445 @@
                 }
             ],
             "desc": "Returns the number of data objects for this player"
+        },
+        {
+            "name": "xsTrainObject",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The building to train the objects at"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to train"
+                },
+                {
+                    "name": "count",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The number of objects to queue"
+                }
+            ],
+            "desc": "Queues the given number of objects at the specified building. The object must be available at the building and the player must have sufficient resources to queue all the units. If resources are insufficient to cover all of the units, only units which can be afforded are queued. Resources are deducted from the player for this. **Note**: The base ID of upgraded units must be used, i.e. to train an Arbalest at the Archery Range, the `objectId` specified needs to be of the Archer itself. Same as the editor effect."
+        },
+        {
+            "name": "xsSetUnitGatherPoint",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The building to set the gather point of"
+                },
+                {
+                    "name": "position",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The position at which the gather point should be set"
+                },
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If specified, set the gather point on this unit. Takes priority over `position`"
+                }
+            ],
+            "desc": "Sets the gather point of the given building to the specified location/unit"
+        },
+        {
+            "name": "xsGetUnitGatherPoint",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The building to get the gather point for"
+                }
+            ],
+            "desc": "Gets the gather point of the specified building. If the gather point is set on an object, the Z value of the vector contains the unit ID. In that case, the X and Y values should be ignored."
+        },
+        {
+            "name": "xsGetUnitCaption",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the caption for"
+                }
+            ],
+            "desc": "Gets the specified unit's caption string."
+        },
+        {
+            "name": "xsSetUnitCaption",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the caption for."
+                },
+                {
+                    "name": "caption",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The caption string to set to"
+                }
+            ],
+            "desc": "Sets the specified unit's caption to the given string."
+        },
+        {
+            "name": "xsSetUnitName",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the name for"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name to set to"
+                }
+            ],
+            "desc": "Sets the given unit's name."
+        },
+        {
+            "name": "xsGetUnitCivName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the civ name for"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the civ name"
+                }
+            ],
+            "desc": "Gets the given unit's civ name."
+        },
+        {
+            "name": "xsSetUnitCivName",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the civ name for"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name to set as the civ name"
+                }
+            ],
+            "desc": "Sets the given unit's civ name to the specified value."
+        },
+        {
+            "name": "xsGetUnitPlayerName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the player name for"
+                }
+            ],
+            "desc": "Gets the given unit's player name."
+        },
+        {
+            "name": "xsSetUnitPlayerName",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the player name for"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name to set the player name to"
+                }
+            ],
+            "desc": "Sets the given unit's player name to the specified value."
+        },
+        {
+            "name": "xsSetObjectDescription",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the object description for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to set the description for"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The description to set"
+                }
+            ],
+            "desc": "Sets the given object's description to the specified value for the provided player."
+        },
+        {
+            "name": "xsGetUnitProperty",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to get the property for"
+                },
+                {
+                    "name": "property",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The property to get. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants)"
+                },
+                {
+                    "name": "typeOrPlayer",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Resource ID when getting attributes held or player when getting unit visibility"
+                }
+            ],
+            "desc": "Gets the specified property for the given unit."
+        },
+        {
+            "name": "xsSetUnitProperty",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the property for"
+                },
+                {
+                    "name": "property",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The property to set. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants)"
+                },
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to set the property to"
+                },
+                {
+                    "name": "typeOrForce",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Resource ID when setting attributes held or force when setting garrisoned in ID or unit visibility"
+                }
+            ],
+            "desc": "Sets the specified property for the given unit to the provided value."
+        },
+        {
+            "name": "xsSetUnitOwner",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to set the owner for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The new owner"
+                },
+                {
+                    "name": "flashObject",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If false, do not flash the object on ownership change"
+                }
+            ],
+            "desc": "Changes the owner of the given unit to the specified player. Same as the editor effect."
+        },
+        {
+            "name": "xsFlashUnit",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to flash"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set, flash only for this player. Otherwise flash for all players (Default: `#!xs -1`)"
+                },
+                {
+                    "name": "soundName",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Defaults to \"?capture_complete\""
+                }
+            ],
+            "desc": "Flashes the given unit. Same as the editor effect."
+        },
+        {
+            "name": "xsStopUnit",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to stop"
+                }
+            ],
+            "desc": "Stops the unit. Same as the editor effect."
+        },
+        {
+            "name": "xsBuildUnit",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitIds",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The units to task"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to build"
+                },
+                {
+                    "name": "location1",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The location to build at"
+                },
+                {
+                    "name": "location2",
+                    "type": "vector",
+                    "required": false,
+                    "desc": "When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`)"
+                },
+                {
+                    "name": "isShiftQueue",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, shift queue the units"
+                },
+                {
+                    "name": "isFormationCommand",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, issue a formation command to the units"
+                }
+            ],
+            "desc": "Tasks the selected units to build the given object at the specified location. The target location must be visible, the building must be available to the selected units, and the player must have sufficient resources to construct the building. Resources are deducted upon building. Same as the editor effect"
+        },
+        {
+            "name": "xsTaskUnits",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitIds",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The units to task"
+                },
+                {
+                    "name": "actionType",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The action to issue. See [cActionType Constants](../../constants/constants/#38-action-type-constants \"Jump to: XS Scripting > Constant Reference > 38. Action Type Constants\")"
+                },
+                {
+                    "name": "location",
+                    "type": "vector",
+                    "required": false,
+                    "desc": "The location at which to task the units"
+                },
+                {
+                    "name": "locationUnitId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The unit to task the selected units to"
+                },
+                {
+                    "name": "isShiftQueue",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, shift queue the units"
+                },
+                {
+                    "name": "isFormationCommand",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, issue a formation command to the units"
+                },
+                {
+                    "name": "shouldPlayUnloadSound",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, play the unload sound when ungarrisoning units"
+                },
+                {
+                    "name": "patrolPoints",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Array of vectors. When tasking units to patrol, use this if multiple patrol points are desired. `isShiftQueue` must be set to `#!xs false` when using this."
+                }
+            ],
+            "desc": "Tasks the selected units to perform the given action. Same as the editor effect."
         }
     ],
     "map": [
@@ -2662,6 +3355,31 @@
                 }
             ],
             "desc": "Sets the value of the variable of the given variable ID to the provided value. Note: This only works in a custom scenario"
+        },
+        {
+            "name": "xsGetMapTileAttribute",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The X value of the tile to get the attribute of"
+                },
+                {
+                    "name": "y",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The Y value fo the tile to get the attribute of"
+                },
+                {
+                    "name": "attributeId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The attribute to get. See [cTile constants](../../constants/constants/#30-map-tile-constants \"Jump To: XS > Constant Reference > 30. Map Tile Constants\")"
+                }
+            ],
+            "desc": "Gets the specified attribute for the given tile."
         }
     ],
     "game info": [
@@ -2736,6 +3454,25 @@
             "return_type": "int",
             "params": [],
             "desc": "Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`"
+        },
+        {
+            "name": "xsGetCivName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "civId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The"
+                },
+                {
+                    "name": "localized",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, localize the civ name"
+                }
+            ],
+            "desc": "Gets the given civ's name"
         }
     ],
     "ui": [
@@ -3032,7 +3769,7 @@
         },
         {
             "return_type": "float",
-            "name": "xsGetTimerTimeRemaining",
+            "name": "xsUnsyncGetTimerTimeRemaining",
             "params": [
                 {
                     "name": "timerId",
@@ -3083,7 +3820,7 @@
         },
         {
             "return_type": "int",
-            "name": "xsGetLocalPlayerId",
+            "name": "xsUnsyncGetLocalPlayerId",
             "params": [],
             "desc": "Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!"
         },
@@ -3099,6 +3836,128 @@
                 }
             ],
             "desc": "Gets the colour prefix (e.g. <RED>) for a given player. See the [cColor constants](../../constants/constants/#26-color \"Jump To: XS > Constant Reference > 26. Color\")"
+        },
+        {
+            "name": "xsSetViewPosition",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the view position for. Can be set to `#!xs -1` to apply to all players"
+                },
+                {
+                    "name": "position",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The position to set the view to"
+                },
+                {
+                    "name": "duration",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set, scroll to the destination in this amount of time"
+                }
+            ],
+            "desc": "Sets the given player's camera to the specified position. Same as the editor effect."
+        },
+        {
+            "name": "xsUnsyncGetViewPosition",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "When specified, only returns a valid vector if the local player matches this"
+                }
+            ],
+            "desc": "Gets the local player's view position. Note that this is an unsync function and cannot be used raw in MP."
+        },
+        {
+            "name": "xsSetZoom",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the zoom for. Can be set to `#!xs -1` to apply to all players"
+                },
+                {
+                    "name": "zoom",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The zoom level to set to. Clamped between `#!xs 0.75` (Fully zoomed out) and `#!xs 1.25` (Fully zoomed in)"
+                },
+                {
+                    "name": "duration",
+                    "type": "float",
+                    "required": false,
+                    "desc": "If specified, change the zoom to the target value in this amount of time."
+                }
+            ],
+            "desc": "Sets the given player's zoom to the specified value."
+        },
+        {
+            "name": "xsUnsyncGetZoom",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "When specified, only returns a valid value if the local player matches this"
+                }
+            ],
+            "desc": "Gets the local player's zoom. Note that this is an unsync function and cannot be used raw in MP."
+        },
+                {
+            "name": "xsUnsyncGetPlayerSelectedUnitIds",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "arrayId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "The array to use"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "When specified, only returns a valid value if the local player matches this"
+                }
+            ],
+            "desc": "Returns an int array with the currently selected unit IDs for the local player. Note that this is an unsync function and cannot be used raw in MP."
+        },
+        {
+            "name": "xsUnsyncIsUnitVisible",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit to check visibility for"
+                },
+                {
+                    "name": "allowInFog",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, allow check to pass even if the unit is only seen in the fog and not in the LoS."
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "When specified, only returns a valid value if the local player matches this"
+                }
+            ],
+            "desc": "Checks if the specified unit is visible to the local player. Note that this is an unsync function and cannot be used raw in MP."
         }
     ],
     "File IO": [
@@ -3340,6 +4199,83 @@
                 }
             ],
             "desc": "Sets the SN of the current AI"
+        },
+        {
+            "name": "xsGetAiSignal",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "signalId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The signal to get the value of"
+                },
+                {
+                    "name": "useLegacyAi",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, use the legacy signal"
+                }
+            ],
+            "desc": "Gets the given AI signal value."
+        },
+        {
+            "name": "xsSetAiSignal",
+            "return_type": "void",
+            "params": [
+                {
+                    "name": "signalId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The signal to set the value of"
+                },
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to set to"
+                },
+                {
+                    "name": "useLegacyAi",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, use the legacy signal"
+                }
+            ],
+            "desc": "Sets the given AI signal value."
+        },
+        {
+            "name": "xsGetAiScriptGoal",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "goalId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The goal to check"
+                }
+            ],
+            "desc": "Checks if the given AI goal is set"
+        },
+        {
+            "name": "xsSetAiScriptGoal",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "goalId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The goal to set"
+                },
+                {
+                    "name": "value",
+                    "type": "bool",
+                    "required": true,
+                    "desc": "The value to set the goal to"
+                }
+            ],
+            "desc": "Sets the given AI goal to the specified value"
         }
     ],
     "misc": [
@@ -3412,6 +4348,534 @@
                 }
             ],
             "desc": "A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins"
+        }
+    ],
+    "strings": [
+        {
+            "name": "ord",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "character",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The character to get the ASCII ord value for"
+                }
+            ],
+            "desc": "Returns the ASCII ord value for the given character. Same as Python's `ord`"
+        },
+        {
+            "name": "chr",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "code",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ASCII code to get the character for."
+                }
+            ],
+            "desc": "Returns the ASCII character for the given code. Same as Python's `chr`"
+        },
+        {
+            "name": "strLen",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to get the length for"
+                }
+            ],
+            "desc": "Returns the length of the given string"
+        },
+        {
+            "name": "strCharAt",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to index"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to get. Can be in the range `[-length, length)`"
+                }
+            ],
+            "desc": "Returns the `str[index]` as in Python or `\"\"` if the index is out of bounds."
+        },
+        {
+            "name": "strSubstring",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to substring"
+                },
+                {
+                    "name": "start",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The start index. Can be in the range `[-length, length)`"
+                },
+                {
+                    "name": "end",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The end index. Can be in the range `[-length, length)`"
+                }
+            ],
+            "desc": "Returns the `str[start:end]` as in Python or `\"\"` if the indices are out of bounds."
+        },
+        {
+            "name": "strContains",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to check"
+                },
+                {
+                    "name": "substring",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The sub string to check"
+                }
+            ],
+            "desc": "Checks if the given substring is contained in the provided string."
+        },
+        {
+            "name": "strStartsWith",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to check"
+                },
+                {
+                    "name": "prefix",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The prefix to check"
+                }
+            ],
+            "desc": "Checks if the given string starts with the provided prefix."
+        },
+        {
+            "name": "strEndsWith",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to check"
+                },
+                {
+                    "name": "suffix",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The suffix to check"
+                }
+            ],
+            "desc": "Checks if the given string ends with the provided suffix."
+        },
+        {
+            "name": "strRemovePrefix",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to remove the prefix from"
+                },
+                {
+                    "name": "prefix",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The prefix to remove"
+                }
+            ],
+            "desc": "Removes the prefix from the given string if present and returns a new string. Returns the original string otherwise."
+        },
+        {
+            "name": "strRemoveSuffix",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to remove the suffix from"
+                },
+                {
+                    "name": "suffix",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The suffix to remove"
+                }
+            ],
+            "desc": "Removes the suffix from the given string if present and returns a new string. Returns the original string otherwise."
+        },
+        {
+            "name": "strIndexOf",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to check in"
+                },
+                {
+                    "name": "substring",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The substring to find the index of"
+                },
+                {
+                    "name": "fromIndex",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set, check starting from this index"
+                }
+            ],
+            "desc": "Finds the index of the given substring in the provided string. Returns -1 if not found"
+        },
+        {
+            "name": "strLastIndexOf",
+            "return_type": "int",
+            "params": [
+                                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to check in"
+                },
+                {
+                    "name": "substring",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The substring to find the index of"
+                },
+                {
+                    "name": "fromIndex",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If set, check backwards starting from this index"
+                }
+            ],
+            "desc": "Finds the index of the given substring in the provided string backwards. Returns -1 if not found"
+        },
+        {
+            "name": "strReplace",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to replace in"
+                },
+                {
+                    "name": "target",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The substring to replace"
+                },
+                {
+                    "name": "replacement",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The replacement for the target"
+                },
+                {
+                    "name": "max",
+                    "type": "int",
+                    "required": false,
+                    "desc": "If specified, only replace a max of these instances of the target string"
+                }
+            ],
+            "desc": "Replaces the occurrences of the target in the given string with the replacement and returns it as a new string."
+        },
+        {
+            "name": "strInsert",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to insert into"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to insert at"
+                },
+                {
+                    "name": "target",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The substring to insert"
+                }
+            ],
+            "desc": "Inserts the given substring at the provided index in the specified string and returns a new string."
+        },
+        {
+            "name": "strRemove",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to remove from"
+                },
+                {
+                    "name": "index",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The index to remove from"
+                },
+                {
+                    "name": "length",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The number of characters to remove"
+                }
+            ],
+            "desc": "Removes the specified number of characters at the provided index in the given string and returns a new string."
+        },
+        {
+            "name": "strSplit",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to split"
+                },
+                {
+                    "name": "delimiter",
+                    "type": "string",
+                    "required": false,
+                    "desc": "The string to split by. If unspecified, split at all characters."
+                },
+                {
+                    "name": "max",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The maximum number of splits to make."
+                }
+            ],
+            "desc": "Returns an int ID for an array of strings."
+        },
+        {
+            "name": "strJoin",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "arrayId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "An int ID for an array of strings"
+                },
+                {
+                    "name": "delimiter",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to join the array with"
+                }
+            ],
+            "desc": "Returns a joined string of the provided array interspaced with the given delimiter."
+        },
+        {
+            "name": "strTrim",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to trim"
+                }
+            ],
+            "desc": "Removes whitespaces on both sides of the given string and returns a new string."
+        },
+        {
+            "name": "strTrimStart",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to trim"
+                }
+            ],
+            "desc": "Removes whitespaces at the start of the given string and returns a new string."
+        },
+        {
+            "name": "strTrimEnd",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to trim"
+                }
+            ],
+            "desc": "Removes whitespaces at the end of the given string and returns a new string."
+        },
+        {
+            "name": "strToUpper",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to convert to uppercase"
+                }
+            ],
+            "desc": "Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected."
+        },
+        {
+            "name": "strToLower",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to convert to lowercase"
+                }
+            ],
+            "desc": "Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected."
+        },
+        {
+            "name": "strReverse",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to reverse"
+                }
+            ],
+            "desc": "Returns a new string that is the original string backwards."
+        },
+        {
+            "name": "strToInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to parse as an `#!xs int`"
+                },
+                {
+                    "name": "base",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Defaults to `#!xs 10`"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Defaults to `#!xs -1`"
+                }
+            ],
+            "desc": "Returns the string parsed as an `#!xs int` and returns the default value if it fails"
+        },
+        {
+            "name": "strToFloat",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to parse as a `#!xs float`"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "float",
+                    "required": false,
+                    "desc": "Defaults to `#!xs -1.0`"
+                }
+            ],
+            "desc": "Returns the string parsed as a `#!xs float` and returns the default value if it fails"
+        },
+        {
+            "name": "hex",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The hex string to parse. Digits may be separated by `'`"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Defaults to `#!xs -1`"
+                }
+            ],
+            "desc": "Returns the signed 32-bit base-10 value for the given hex string and returns the default value if it fails"
+        },
+        {
+            "name": "bin",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The bin string to parse. Digits may be separated by `'`"
+                },
+                {
+                    "name": "defaultValue",
+                    "type": "int",
+                    "required": true,
+                    "desc": "Defaults to `#!xs -1`"
+                }
+            ],
+            "desc": "Returns the signed 32-bit base-10 value for the given binary string and returns the default value if it fails"
+        },
+        {
+            "name": "fstr",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "str",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The string to format"
+                }
+            ],
+            "desc": "Formats the given string like a Python f-string. Note that Expressions are not allowed, and it is limited to variable names only.\n\nExample:\n```xs\nxsChatData(fstr(\"{colourTag}{player}: {msg}\")); // assuming that colourTag, player, and msg are valid variables here.\n```\n\nSimilar to Python, you may use `{{` and `}}` to escape the brackets themselves when passing a string to `fstr` when interpolation is not desired.\n\nThe strings passed to `fstr` do not need to be literal strings. This allows creating multi-language template strings in language files that can be fetched via `xsGetString` and then passed to `fstr` for interpretation.\n\nThe variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output."
         }
     ]
 }

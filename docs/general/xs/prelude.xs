@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/07/02 11:41:18 |
+// | Generated on: 2026/09/22 04:10:40 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -248,8 +248,17 @@ extern const int cMapuche = 58;
 /** This is the civilization ID of Tupi */
 extern const int cTupi = 59;
 
+/** This is the civilization ID of Saxons */
+extern const int cSaxons = 60;
+
+/** This is the civilization ID of Varangians */
+extern const int cVarangians = 61;
+
+/** This is the civilization ID of Danes */
+extern const int cDanes = 62;
+
 /** The number of civilizations for AoE2 */
-extern const int cNumCivs = 60;
+extern const int cNumCivs = 63;
 
 
 // 6. Chronicles Civs
@@ -432,16 +441,16 @@ extern const int cGaiaModTechTime = -104;
 // 9. EffectAmount Effect Operations
 
 
-/** This is the ID of the `Attribute Disbale` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+/** This is the ID of the `Attribute Disable` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function. Use these with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate) */
 extern const int cAttributeDisable = 0;
 
-/** This is the ID of the `Attribute Enable` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+/** This is the ID of the `Attribute Enable` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function. Use these with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate) */
 extern const int cAttributeEnable = 1;
 
-/** This is the ID of the `Attribute Force` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+/** This is the ID of the `Attribute Force` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function. Use these with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate) */
 extern const int cAttributeForce = 2;
 
-/** This is the ID of the `Attribute Research` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+/** This is the ID of the `Attribute Research` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function. Use these with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate) */
 extern const int cAttributeResearch = 2;
 
 /** This is the ID of the `Attribute Set` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
@@ -532,6 +541,36 @@ extern const int cAttrSetHotkey = 11;
 /** This is the ID of the `Attribute Set State` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
 extern const int cAttrSetState = 12;
 
+/** This is the ID of the `Attribute Set Extended Description` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrSetExtendedDescription = 19;
+
+/** This is the ID of the `Attribute Set First Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrAmountFirstCost = 20;
+
+/** This is the ID of the `Attribute Set Second Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrAmountSecondCost = 21;
+
+/** This is the ID of the `Attribute Set Third Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrAmountThirdCost = 22;
+
+/** This is the ID of the `Attribute Resource ID of the First Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrTypeFirstCost = 23;
+
+/** This is the ID of the `Attribute Resource ID of the Second Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrTypeSecondCost = 24;
+
+/** This is the ID of the `Attribute Resource ID of the Third Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrTypeThirdCost = 25;
+
+/** This is the ID of the `Attribute Deduct Flag of the First Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrDeductFlagFirstCost = 26;
+
+/** This is the ID of the `Attribute Deduct Flag of the Second Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrDeductFlagSecondCost = 27;
+
+/** This is the ID of the `Attribute Deduct Flag of the Third Cost` modifier for the [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) function */
+extern const int cAttrDeductFlagThirdCost = 28;
+
 
 // 11. Object Attribute
 
@@ -617,7 +656,7 @@ extern const int cAmountSecondStorage = 26;
 /** This is the attribute [Amount of 3rd Resource Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#27-amount-of-3rd-resource-storage) */
 extern const int cAmountThirdStorage = 27;
 
-/** This is the attribute [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility) */
+/** This is the attribute [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility). See [cFogFlag Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#41-fog-flag-constants) */
 extern const int cFogFlag = 28;
 
 /** This is the attribute [Occlusion Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#29-occlusion-mode) */
@@ -923,7 +962,7 @@ extern const int cTransformSound = 138;
 /** This is the attribute [Transform Sound Event](https://ugc.aoe2.rocks/general/attributes/attributes/#139-transform-sound-event). Note: When using with [xsEffectAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#71-xseffectamount) or one of [xsGetObjectAttribute](https://ugc.aoe2.rocks/general/xs/functions/functions/#93-xsgetobjectattribute) or [xsGetUnitAttribute](https://ugc.aoe2.rocks/general/xs/functions/functions/#94-xsgetunitattribute), values require to be converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/functions/functions/maths/#15-bitcasttofloat) and [bitCastToInt](https://ugc.aoe2.rocks/general/xs/functions/functions/maths/#16-bitcasttoint) respectively. */
 extern const int cTransformSoundEvent = 139;
 
-/** This is the attribute [Run Pattern](https://ugc.aoe2.rocks/general/attributes/attributes/#140-run-pattern). */
+/** This is the attribute [Run Pattern](https://ugc.aoe2.rocks/general/attributes/attributes/#140-run-pattern). See [Run Pattern Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#44-run-pattern-constants) */
 extern const int cRunPattern = 140;
 
 /** This is the attribute [Interface Kind](https://ugc.aoe2.rocks/general/attributes/attributes/#141-interface-kind). */
@@ -935,7 +974,7 @@ extern const int cCombatLevel = 142;
 /** This is the attribute [Interaction Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#143-interaction-mode). */
 extern const int cInteractionMode = 143;
 
-/** This is the attribute [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode). */
+/** This is the attribute [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode). See [cMinimapMode Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#40-minimap-mode-constants) */
 extern const int cMinimapMode = 144;
 
 /** This is the attribute [Trailing Unit](https://ugc.aoe2.rocks/general/attributes/attributes/#145-trailing-unit). */
@@ -1000,6 +1039,174 @@ extern const int cRemoveArmorType = 164;
 
 /** This is the attribute [Add Attack Type](https://ugc.aoe2.rocks/general/attributes/attributes/#161-add-attack-type). */
 extern const int cRemoveAttackType = 165;
+
+/** This is the attribute [Undead Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#166-undead-flag). See [cUndeadFlag Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#28-undead-flag-constants). */
+extern const int cUndeadFlag = 166;
+
+/** This is the attribute [Build And Go Away](https://ugc.aoe2.rocks/general/attributes/attributes/#167-build-and-go-away) */
+extern const int cBuildAndGoAway = 167;
+
+/** This is the attribute [Type First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#168-type-first-storage) */
+extern const int cTypeFirstStorage = 168;
+
+/** This is the attribute [Type Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#169-type-second-storage) */
+extern const int cTypeSecondStorage = 169;
+
+/** This is the attribute [Type Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#170-type-third-storage) */
+extern const int cTypeThirdStorage = 170;
+
+/** This is the attribute [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage). See [cStoreFlag Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#39-store-flag-constants) */
+extern const int cStoreFlagFirstStorage = 171;
+
+/** This is the attribute [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#172-store-flag-second-storage). See [cStoreFlag Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#39-store-flag-constants) */
+extern const int cStoreFlagSecondStorage = 172;
+
+/** This is the attribute [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#173-store-flag-third-storage). See [cStoreFlag Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#39-store-flag-constants) */
+extern const int cStoreFlagThirdStorage = 173;
+
+/** This is the attribute [Amount First Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#174-amount-first-cost) */
+extern const int cAmountFirstCost = 174;
+
+/** This is the attribute [Amount Second Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#175-amount-second-cost) */
+extern const int cAmountSecondCost = 175;
+
+/** This is the attribute [Amount Third Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#176-amount-third-cost) */
+extern const int cAmountThirdCost = 176;
+
+/** This is the attribute [Type First Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#177-type-first-cost) */
+extern const int cTypeFirstCost = 177;
+
+/** This is the attribute [Type Second Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#178-type-second-cost) */
+extern const int cTypeSecondCost = 178;
+
+/** This is the attribute [Type Third Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#179-type-third-cost) */
+extern const int cTypeThirdCost = 179;
+
+/** This is the attribute [Deduct Flag First Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#180-deduct-flag-first-cost) */
+extern const int cDeductFlagFirstCost = 180;
+
+/** This is the attribute [Deduct Flag Second Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#181-deduct-flag-second-cost) */
+extern const int cDeductFlagSecondCost = 181;
+
+/** This is the attribute [Deduct Flag Third Cost](https://ugc.aoe2.rocks/general/attributes/attributes/#182-deduct-flag-third-cost) */
+extern const int cDeductFlagThirdCost = 182;
+
+/** This is the attribute [Spawning Graphic](https://ugc.aoe2.rocks/general/attributes/attributes/#183-spawning-graphic) */
+extern const int cSpawningGraphic = 183;
+
+/** This is the attribute [Upgrade Graphic](https://ugc.aoe2.rocks/general/attributes/attributes/#184-upgrade-graphic) */
+extern const int cUpgradeGraphic = 184;
+
+/** This is the attribute [Fly Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#185-fly-mode) */
+extern const int cFlyMode = 185;
+
+/** This is the attribute [Can Be Gathered](https://ugc.aoe2.rocks/general/attributes/attributes/#186-can-be-gathered) */
+extern const int cCanBeGathered = 186;
+
+/** This is the attribute [Hill Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#187-hill-mode). See [cHillMode Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#42-hill-mode-constants) */
+extern const int cHillMode = 187;
+
+/** This is the attribute [Doppelganger](https://ugc.aoe2.rocks/general/attributes/attributes/#188-doppelganger) */
+extern const int cDoppelganger = 188;
+
+/** This is the attribute [Gather Group](https://ugc.aoe2.rocks/general/attributes/attributes/#189-gather-group) */
+extern const int cGatherGroup = 189;
+
+/** This is the attribute [Task Swap Group](https://ugc.aoe2.rocks/general/attributes/attributes/#190-task-swap-group) */
+extern const int cTaskSwapGroup = 190;
+
+/** This is the attribute [Placement Terrain1](https://ugc.aoe2.rocks/general/attributes/attributes/#191-placement-terrain1) */
+extern const int cPlacementTerrain1 = 191;
+
+/** This is the attribute [Placement Terrain2](https://ugc.aoe2.rocks/general/attributes/attributes/#192-placement-terrain2) */
+extern const int cPlacementTerrain2 = 192;
+
+/** This is the attribute [Placement Center Terrain 1](https://ugc.aoe2.rocks/general/attributes/attributes/#193-placement-center-terrain-1) */
+extern const int cPlacementCenterTerrain1 = 193;
+
+/** This is the attribute [Placement Center Terrain 2](https://ugc.aoe2.rocks/general/attributes/attributes/#194-placement-center-terrain-2) */
+extern const int cPlacementCenterTerrain2 = 194;
+
+/** This is the attribute [Initiated Tech Id](https://ugc.aoe2.rocks/general/attributes/attributes/#195-initiated-tech-id) */
+extern const int cInitiatedTechId = 195;
+
+/** This is the attribute [Min Size Multiplier](https://ugc.aoe2.rocks/general/attributes/attributes/#196-min-size-multiplier) */
+extern const int cMinSizeMultiplier = 196;
+
+/** This is the attribute [Selection Outline Size X](https://ugc.aoe2.rocks/general/attributes/attributes/#197-selection-outline-size-x) */
+extern const int cSelectionOutlineSizeX = 197;
+
+/** This is the attribute [Selection Outline Size Y](https://ugc.aoe2.rocks/general/attributes/attributes/#198-selection-outline-size-y) */
+extern const int cSelectionOutlineSizeY = 198;
+
+/** This is the attribute [Selection Outline Size Z](https://ugc.aoe2.rocks/general/attributes/attributes/#199-selection-outline-size-z) */
+extern const int cSelectionOutlineSizeZ = 199;
+
+/** This is the attribute [Clearance Size X](https://ugc.aoe2.rocks/general/attributes/attributes/#200-clearance-size-x) */
+extern const int cClearanceSizeX = 200;
+
+/** This is the attribute [Clearance Size Y](https://ugc.aoe2.rocks/general/attributes/attributes/#201-clearance-size-y) */
+extern const int cClearanceSizeY = 201;
+
+/** This is the attribute [Stack Unit](https://ugc.aoe2.rocks/general/attributes/attributes/#202-stack-unit) */
+extern const int cStackUnit = 202;
+
+/** This is the attribute [Head Unit](https://ugc.aoe2.rocks/general/attributes/attributes/#203-head-unit) */
+extern const int cHeadUnit = 203;
+
+/** This is the attribute [Transform Unit](https://ugc.aoe2.rocks/general/attributes/attributes/#204-transform-unit) */
+extern const int cTransformUnit = 204;
+
+/** This is the attribute [Pile Unit](https://ugc.aoe2.rocks/general/attributes/attributes/#205-pile-unit) */
+extern const int cPileUnit = 205;
+
+/** This is the attribute [Annex Unit 1](https://ugc.aoe2.rocks/general/attributes/attributes/#206-annex-unit-1) */
+extern const int cAnnexUnit1 = 206;
+
+/** This is the attribute [Annex Unit 2](https://ugc.aoe2.rocks/general/attributes/attributes/#207-annex-unit-2) */
+extern const int cAnnexUnit2 = 207;
+
+/** This is the attribute [Annex Unit 3](https://ugc.aoe2.rocks/general/attributes/attributes/#208-annex-unit-3) */
+extern const int cAnnexUnit3 = 208;
+
+/** This is the attribute [Annex Unit 4](https://ugc.aoe2.rocks/general/attributes/attributes/#209-annex-unit-4) */
+extern const int cAnnexUnit4 = 209;
+
+/** This is the attribute [Annex Unit 1 Offset X](https://ugc.aoe2.rocks/general/attributes/attributes/#210-annex-unit-1-offset-x) */
+extern const int cAnnexUnit1OffsetX = 210;
+
+/** This is the attribute [Annex Unit 1 Offset Y](https://ugc.aoe2.rocks/general/attributes/attributes/#211-annex-unit-1-offset-y) */
+extern const int cAnnexUnit1OffsetY = 211;
+
+/** This is the attribute [Annex Unit 2 Offset X](https://ugc.aoe2.rocks/general/attributes/attributes/#212-annex-unit-2-offset-x) */
+extern const int cAnnexUnit2OffsetX = 212;
+
+/** This is the attribute [Annex Unit 2 Offset Y](https://ugc.aoe2.rocks/general/attributes/attributes/#213-annex-unit-2-offset-y) */
+extern const int cAnnexUnit2OffsetY = 213;
+
+/** This is the attribute [Annex Unit 3 Offset X](https://ugc.aoe2.rocks/general/attributes/attributes/#214-annex-unit-3-offset-x) */
+extern const int cAnnexUnit3OffsetX = 214;
+
+/** This is the attribute [Annex Unit 3 Offset Y](https://ugc.aoe2.rocks/general/attributes/attributes/#215-annex-unit-3-offset-y) */
+extern const int cAnnexUnit3OffsetY = 215;
+
+/** This is the attribute [Annex Unit 4 Offset X](https://ugc.aoe2.rocks/general/attributes/attributes/#216-annex-unit-4-offset-x) */
+extern const int cAnnexUnit4OffsetX = 216;
+
+/** This is the attribute [Annex Unit 4 Offset Y](https://ugc.aoe2.rocks/general/attributes/attributes/#217-annex-unit-4-offset-y) */
+extern const int cAnnexUnit4OffsetY = 217;
+
+/** This is the attribute [Move Algorithm](https://ugc.aoe2.rocks/general/attributes/attributes/#218-move-algorithm). See [cMoveAlgorithm Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#43-move-algorithm-constants) */
+extern const int cMoveAlgorithm = 218;
+
+/** This is the attribute [Spacing Modifier](https://ugc.aoe2.rocks/general/attributes/attributes/#219-spacing-modifier) */
+extern const int cSpacingModifier = 219;
+
+/** This is the attribute [Can Burn](https://ugc.aoe2.rocks/general/attributes/attributes/#220-can-burn) */
+extern const int cCanBurn = 220;
+
+/** This is the attribute [Gather Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#221-gather-flag) */
+extern const int cGatherFlag = 221;
 
 
 // 12. Object Class
@@ -1095,7 +1302,7 @@ extern const int cPhalanxClass = 928;
 /** This is the ID used to target the Domestic Animal Class */
 extern const int cDomesticAnimalClass = 929;
 
-/** This is the ID used to target the Flag Class */
+/** This is the ID used to target the  */
 extern const int cFlagClass = 930;
 
 /** This is the ID used to target the Deep Sea Fish Class */
@@ -1573,11 +1780,14 @@ extern const int cAttributeCrenellations = 194;
 /** ID of the player resource [Construction Rate Mod](https://ugc.aoe2.rocks/general/resources/resources/#195-construction-rate-modifier) */
 extern const int cAttributeConstructionRateMod = 195;
 
-/** ID of the player resource [Hun Wonder Bonus](https://ugc.aoe2.rocks/general/resources/resources/#196-hun-wonder-discount) */
+/** ID of the player resource [Hun Wonder Bonus](https://ugc.aoe2.rocks/general/resources/resources/#196-wonder-time-modifier) */
 extern const int cAttributeHunWonderBonus = 196;
 
 /** ID of the player resource [Spies Discount](https://ugc.aoe2.rocks/general/resources/resources/#197-spies-discount) */
 extern const int cAttributeSpiesDiscount = 197;
+
+/** ID of the player resource [Hun Relic Bonus](https://ugc.aoe2.rocks/general/resources/resources/#198-relic-time-modifier) */
+extern const int cAttributeHunRelicBonus = 198;
 
 /** ID of the player resource [Map Reveal](https://ugc.aoe2.rocks/general/resources/resources/#203-map-reveal) */
 extern const int cAttributeMapReveal = 203;
@@ -1608,6 +1818,9 @@ extern const int cAttributeElevationBonusHigher = 211;
 
 /** ID of the player resource [Elevation Bonus Lower](https://ugc.aoe2.rocks/general/resources/resources/#212-elevation-lower-bonus) */
 extern const int cAttributeElevationBonusLower = 212;
+
+/** ID of the player resource [Extra Forage Productivity](https://ugc.aoe2.rocks/general/resources/resources/#215-bonus-forager-food) */
+extern const int cAttributeExtraForageProductivity = 215;
 
 /** ID of the player resource [Shepherding Productivity](https://ugc.aoe2.rocks/general/resources/resources/#216-shepherd-productivity) */
 extern const int cAttributeShepherdingProductivity = 216;
@@ -1786,6 +1999,18 @@ extern const int cAttributeElevationDamageLower = 273;
 /** ID of the player resource [Infantry Kill Reward](https://ugc.aoe2.rocks/general/resources/resources/#274-infantry-kill-reward) */
 extern const int cAttributeInfantryKillReward = 274;
 
+/** ID of the player resource [Infantry Fyrd Level](https://ugc.aoe2.rocks/general/resources/resources/#275-fyrd-discount-level) */
+extern const int cAttributeInfantryFyrdLevel = 275;
+
+/** ID of the player resource [Extra Gold Productivity](https://ugc.aoe2.rocks/general/resources/resources/#276-bonus-gold-productivity) */
+extern const int cAttributeExtraGoldProductivity = 276;
+
+/** ID of the player resource [Red Cliff Tactics](https://ugc.aoe2.rocks/general/resources/resources/#277-red-cliffs-tactics-damage) */
+extern const int cAttributeRedCliffTactics = 277;
+
+/** ID of the player resource [Razing Bounty](https://ugc.aoe2.rocks/general/resources/resources/#278-razing-bounty) */
+extern const int cAttributeRazingBounty = 278;
+
 /** ID of the player resource [Military Can Convert](https://ugc.aoe2.rocks/general/resources/resources/#279-military-can-convert) */
 extern const int cAttributeMilitaryCanConvert = 279;
 
@@ -1822,6 +2047,9 @@ extern const int cAttributePastureAnimalCount = 289;
 /** ID of the player resource [Pasture Herder Count](https://ugc.aoe2.rocks/general/resources/resources/#290-pasture-herder-count) */
 extern const int cAttributePastureHerderCount = 290;
 
+/** ID of the player resource [Razing Pillage](https://ugc.aoe2.rocks/general/resources/resources/#291-razing-pillage) */
+extern const int cAttributeRazingPillage = 291;
+
 /** ID of the player resource [Disable Animal Decay](https://ugc.aoe2.rocks/general/resources/resources/#292-animal-decay-prevention) */
 extern const int cAttributeDisableAnimalDecay = 292;
 
@@ -1831,11 +2059,20 @@ extern const int cAttributeHerdingFoodProductivity = 293;
 /** ID of the player resource [Shepherding Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#294-shepherd-food-productivity) */
 extern const int cAttributeShepherdingFoodProductivity = 294;
 
-/** ID of the player resource [Unit Cost Refund](https://ugc.aoe2.rocks/general/resources/resources/#295-unused-resource-295) */
+/** ID of the player resource [Unit Cost Refund](https://ugc.aoe2.rocks/general/resources/resources/#295-unit-refund) */
 extern const int cAttributeUnitCostRefund = 295;
 
 /** ID of the player resource [Foraging Productivity](https://ugc.aoe2.rocks/general/resources/resources/#296-forager-productivity) */
 extern const int cAttributeForagingProductivity = 296;
+
+/** ID of the player resource [Varangian Gold](https://ugc.aoe2.rocks/general/resources/resources/#297-varangian-gold-generation) */
+extern const int cAttributeVarangianGold = 297;
+
+/** ID of the player resource [Butcher Gold Productivity](https://ugc.aoe2.rocks/general/resources/resources/#298-butcher-gold-productivity) */
+extern const int cAttributeButcherGoldProductivity = 298;
+
+/** ID of the player resource [Extra Food Productivity](https://ugc.aoe2.rocks/general/resources/resources/#299-bonus-food-productivity) */
+extern const int cAttributeExtraFoodProductivity = 299;
 
 /** ID of the player resource [Gaia Kills](https://ugc.aoe2.rocks/general/resources/resources/#300-killed-gaia) */
 extern const int cAttributeGaiaKills = 300;
@@ -2407,29 +2644,32 @@ extern const int cTaskTypeHPModifier = 160;
 /** ID for the task Refund */
 extern const int cTaskTypeRefund = 161;
 
+/** ID for the task Additional Resource */
+extern const int cTaskTypeAdditionalResource = 164;
+
 
 // 17. Tech State
 
 
-/** Enum value for the tech state Not Ready */
+/** Enum value for the tech state Not Ready. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateNotReady = 0;
 
-/** Enum value for the tech state Ready */
+/** Enum value for the tech state Ready. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateReady = 1;
 
-/** Enum value for the tech state Queued */
+/** Enum value for the tech state Queued. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateQueued = 4;
 
-/** Enum value for the tech state Researching */
+/** Enum value for the tech state Researching. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateResearching = 2;
 
-/** Enum value for the tech state Done */
+/** Enum value for the tech state Done. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateDone = 3;
 
-/** Enum value for the tech state Disabled */
+/** Enum value for the tech state Disabled. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateDisabled = -1;
 
-/** Enum value for the tech state Invalid */
+/** Enum value for the tech state Invalid. Note, these constants cannot be used with [cModifyTech](https://ugc.aoe2.rocks/general/xs/constants/constants/#89-cmodifytech) and [cAttrSetState](https://ugc.aoe2.rocks/general/xs/constants/constants/#1026-cattrsetstate). */
 extern const int cTechStateInvalid = -2;
 
 
@@ -2721,7 +2961,7 @@ extern const string cColorBlack = "<BLACK>";
 // 27. Tech Attribute
 
 
-/** Enum value for Tech Attribute  */
+/** Enum value for Tech Attribute State */
 extern const int cTechState = 0;
 
 /** Enum value for Tech Attribute Cost */
@@ -2762,6 +3002,668 @@ extern const int cTechStackingEnabled = 12;
 
 /** Enum value for Tech Attribute Stacking Cap */
 extern const int cTechStackingCap = 13;
+
+/** Enum value for Tech Attribute Num Research Locations */
+extern const int cTechNumResearchLocations = 14;
+
+/** Enum value for Tech Attribute Cost Type */
+extern const int cTechCostType = 15;
+
+/** Enum value for Tech Attribute Deduct Flag */
+extern const int cTechDeductFlag = 16;
+
+
+// 28. Undead Flag Constants
+
+
+/** Enum value for the [Undead Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#166-undead-flag) attribute. */
+extern const int cUndeadFlagShowUndeadGraphic = 1;
+
+/** Enum value for the [Undead Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#166-undead-flag) attribute. */
+extern const int cUndeadFlagIgnoreInKillStats = 2;
+
+/** Enum value for the [Undead Flag](https://ugc.aoe2.rocks/general/attributes/attributes/#166-undead-flag) attribute. */
+extern const int cUndeadFlagGarrisonInvincibility = 4;
+
+
+// 29. Class Flags
+
+
+/**  */
+extern const int cFlagClassRemoval = -1;
+
+/**  */
+extern const int cFlagClassOffset = 1000;
+
+/** Includes the following classes: `cInfantryClass` */
+extern const int cFlagClassInfantry = 1;
+
+/** Includes the following classes: `cCavalryClass, cScoutCavalryClass` */
+extern const int cFlagClassCavalry = 2;
+
+/** Includes the following classes: `cArcherClass, cHandCannoneerClass` */
+extern const int cFlagClassArchers = 4;
+
+/** Includes the following classes: `cCavalryArcherClass`, `cConquistadorClass` */
+extern const int cFlagClassCavalryArchers = 8;
+
+/** Includes the following classes: `cMonkClass`, `cMonkWithRelicClass` */
+extern const int cFlagClassMonk = 16;
+
+/** Includes the following classes: `cVillagerClass`, `cTradeCartClass`, `cKingClass` */
+extern const int cFlagClassCivilian = 32;
+
+/** Includes the following classes: `cWarshipClass`, `cTransportShipClass`, `cFishingBoatClass`, `cTradeBoatClass`, `cBoardingShipClass` */
+extern const int cFlagClassShip = 64;
+
+/** Includes the following classes: `cSiegeWeaponClass`, `cScorpionClass`, `cPackedUnitClass`, `cUnpackedSiegeUnitClass`, `cPetardClass` */
+extern const int cFlagClassSiege = 128;
+
+/** Includes the following classes: `cBuildingClass`, `cFarmClass`, `cWallClass`, `cGateClass`, `cTowerClass`, `cMiscBuildingClass` */
+extern const int cFlagClassBuilding = 256;
+
+
+// 30. Map Tile Constants
+
+
+/** Enum value for Map Tile Attribute Terrain Id */
+extern const int cTileTerrainId = 0;
+
+/** Enum value for Map Tile Attribute Elevation */
+extern const int cTileElevation = 1;
+
+/** Enum value for Map Tile Attribute Mask Id */
+extern const int cTileMaskId = 2;
+
+/** Enum value for Map Tile Attribute Layer Id */
+extern const int cTileLayerId = 3;
+
+
+// 31. Capture Flag Constants
+
+
+/** Enum value for Unit Capture Flag Never. Units with this capture flag cannot be converted */
+extern const int cCaptureFlagNever = 0;
+
+/** Enum value for Unit Capture Flag Once. Units with this capture flag will convert once (Gaia units by default) */
+extern const int cCaptureFlagOnce = 1;
+
+/** Enum value for Unit Capture Flag Multiple Times. Units with this capture flag will convert multiple times (sheep/monuments) */
+extern const int cCaptureFlagMultipleTimes = 2;
+
+/** Enum value for Unit Capture Flag Never Gaia Aggressive. Units with this capture flag cannot be converted. Gaia units with this flag will behave aggressively towards player units. */
+extern const int cCaptureFlagNeverGaiaAggressive = 3;
+
+
+// 32. Unit Property Constants
+
+
+/** Enum value for Unit Property Hitpoints. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitHitpoints = 0;
+
+/** Enum value for Unit Property Buildpoints. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitBuildpoints = 1;
+
+/** Enum value for Unit Property Charge. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitCharge = 2;
+
+/** Enum value for Unit Property Caption String Id. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitCaptionStringId = 3;
+
+/** Enum value for Unit Property Attribute Held. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitAttributeHeld = 4;
+
+/** Enum value for Unit Property Garrisoned In Id. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitGarrisonedInId = 5;
+
+/** Enum value for Unit Property Capture Flag. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitCaptureFlag = 6;
+
+/** Enum value for Unit Property Deletable. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitDeletable = 7;
+
+/** Enum value for Unit Property Targetable. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitTargetable = 8;
+
+/** Enum value for Unit Property Attackable. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitAttackable = 9;
+
+/** Enum value for Unit Property Selectable. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitSelectable = 10;
+
+/** Enum value for Unit Property Stance. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitStance = 11;
+
+/** Enum value for Unit Property Visibility. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitVisibility = 12;
+
+/** Enum value for Unit Property Color Id. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitColorId = 13;
+
+/** Enum value for Unit Property Locked. This can be both get and set. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#951-xssetunitproperty) */
+extern const int cUnitLocked = 14;
+
+/** Enum value for the Unit Property Group Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitGroupId = 10000;
+
+/** Enum value for the Unit Property Object Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitObjectId = 10001;
+
+/** Enum value for the Unit Property Copy Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitCopyId = 10002;
+
+/** Enum value for the Unit Property Class Type. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitClassType = 10003;
+
+/** Enum value for the Unit Property Object Type. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitObjectType = 10004;
+
+/** Enum value for the Unit Property Attribute Types Held. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitAttributeTypesHeld = 10005;
+
+/** Enum value for the Unit Property Garrisoned Unit Ids. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitGarrisonedUnitIds = 10006;
+
+/** Enum value for the Unit Property Target Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitTargetId = 10007;
+
+/** Enum value for the Unit Property Target2 Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitTarget2Id = 10008;
+
+/** Enum value for the Unit Property Action Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitActionId = 10009;
+
+/** Enum value for the Unit Property Order Id. This can only be get. See [xsGetUnitProperty](https://ugc.aoe2.rocks/general/xs/functions/functions/#950-xsgetunitproperty) */
+extern const int cUnitOrderId = 10010;
+
+
+// 33. Unit Stance Constants
+
+
+/** Enum value for Unit Stance Aggressive */
+extern const int cStanceAggressive = 0;
+
+/** Enum value for Unit Stance Defensive */
+extern const int cStanceDefensive = 1;
+
+/** Enum value for Unit Stance Stand Ground */
+extern const int cStanceStandGround = 2;
+
+/** Enum value for Unit Stance No Attack */
+extern const int cStanceNoAttack = 3;
+
+
+// 34. Unit Los Constants
+
+
+/** Enum value for Unit LoS Visible */
+extern const int cLosVisible = 0;
+
+/** Enum value for Unit LoS Explored */
+extern const int cLosExplored = 1;
+
+/** Enum value for Unit LoS Invisible */
+extern const int cLosInvisible = 2;
+
+
+// 35. Unit Action Constants
+
+
+/** Enum value for Unit Action Action Attack */
+extern const int cUnitActionAttack = 600;
+
+/** Enum value for Unit Action Action Defend */
+extern const int cUnitActionDefend = 601;
+
+/** Enum value for Unit Action Action Build */
+extern const int cUnitActionBuild = 602;
+
+/** Enum value for Unit Action Action Heal */
+extern const int cUnitActionHeal = 603;
+
+/** Enum value for Unit Action Action Convert */
+extern const int cUnitActionConvert = 604;
+
+/** Enum value for Unit Action Action Explore */
+extern const int cUnitActionExplore = 605;
+
+/** Enum value for Unit Action Action Stop */
+extern const int cUnitActionStop = 606;
+
+/** Enum value for Unit Action Action Run Away */
+extern const int cUnitActionRunAway = 607;
+
+/** Enum value for Unit Action Action Retreat */
+extern const int cUnitActionRetreat = 608;
+
+/** Enum value for Unit Action Action Gather */
+extern const int cUnitActionGather = 609;
+
+/** Enum value for Unit Action Action Move */
+extern const int cUnitActionMove = 610;
+
+/** Enum value for Unit Action Action Patrol */
+extern const int cUnitActionPatrol = 611;
+
+/** Enum value for Unit Action Action Follow */
+extern const int cUnitActionFollow = 612;
+
+/** Enum value for Unit Action Action Hunt */
+extern const int cUnitActionHunt = 613;
+
+/** Enum value for Unit Action Action Transport */
+extern const int cUnitActionTransport = 614;
+
+/** Enum value for Unit Action Action Trade */
+extern const int cUnitActionTrade = 615;
+
+/** Enum value for Unit Action Action Evasive Move */
+extern const int cUnitActionEvasiveMove = 616;
+
+/** Enum value for Unit Action Action Enter */
+extern const int cUnitActionEnter = 617;
+
+/** Enum value for Unit Action Action Repair */
+extern const int cUnitActionRepair = 618;
+
+/** Enum value for Unit Action Action Train */
+extern const int cUnitActionTrain = 619;
+
+/** Enum value for Unit Action Action Research */
+extern const int cUnitActionResearch = 620;
+
+/** Enum value for Unit Action Action Unload */
+extern const int cUnitActionUnload = 621;
+
+/** Enum value for Unit Action Action Seek And Destroy */
+extern const int cUnitActionSeekAndDestroy = 622;
+
+/** Enum value for Unit Action Action Explore And Destroy */
+extern const int cUnitActionExploreAndDestroy = 623;
+
+/** Enum value for Unit Action Action Group Gather */
+extern const int cUnitActionGroupGather = 624;
+
+/** Enum value for Unit Action Action Wait */
+extern const int cUnitActionWait = 628;
+
+/** Enum value for Unit Action Action Attack Roundup */
+extern const int cUnitActionAttackRoundup = 629;
+
+/** Enum value for Unit Action Action Scout */
+extern const int cUnitActionScout = 630;
+
+/** Enum value for Unit Action Action Control */
+extern const int cUnitActionControl = 631;
+
+/** Enum value for Unit Action Action Shepherd */
+extern const int cUnitActionShepherd = 632;
+
+/** Enum value for Unit Action Action Attack Move */
+extern const int cUnitActionAttackMove = 633;
+
+/** Enum value for Unit Action Action Wait For Solidify */
+extern const int cUnitActionWaitForSolidify = 634;
+
+/** Enum value for Unit Action Action Released */
+extern const int cUnitActionReleased = 699;
+
+/** Enum value for Unit Action Action Unload Over Wall */
+extern const int cUnitActionUnloadOverWall = 700;
+
+/** Enum value for Unit Action Action Auto Scout */
+extern const int cUnitActionAutoScout = 701;
+
+/** Enum value for Unit Action Action Auto Boar Lure */
+extern const int cUnitActionAutoBoarLure = 702;
+
+/** Enum value for Unit Action Action Evacuate */
+extern const int cUnitActionEvacuate = 703;
+
+/** Enum value for Unit Action Action Evacuate In Group */
+extern const int cUnitActionEvacuateInGroup = 704;
+
+/** Enum value for Unit Action Action Back To Work */
+extern const int cUnitActionBackToWork = 705;
+
+/** Enum value for Unit Action Action Hero Power */
+extern const int cUnitActionHeroPower = 706;
+
+
+// 36. Unit Order Constants
+
+
+/** Enum value for Unit Order Order Attack */
+extern const int cUnitOrderAttack = 700;
+
+/** Enum value for Unit Order Order Defend */
+extern const int cUnitOrderDefend = 701;
+
+/** Enum value for Unit Order Order Build */
+extern const int cUnitOrderBuild = 702;
+
+/** Enum value for Unit Order Order Heal */
+extern const int cUnitOrderHeal = 703;
+
+/** Enum value for Unit Order Order Convert */
+extern const int cUnitOrderConvert = 704;
+
+/** Enum value for Unit Order Order Explore */
+extern const int cUnitOrderExplore = 705;
+
+/** Enum value for Unit Order Order Stop */
+extern const int cUnitOrderStop = 706;
+
+/** Enum value for Unit Order Order Run Away */
+extern const int cUnitOrderRunAway = 707;
+
+/** Enum value for Unit Order Order Retreat */
+extern const int cUnitOrderRetreat = 708;
+
+/** Enum value for Unit Order Order Gather */
+extern const int cUnitOrderGather = 709;
+
+/** Enum value for Unit Order Order Move */
+extern const int cUnitOrderMove = 710;
+
+/** Enum value for Unit Order Order Patrol */
+extern const int cUnitOrderPatrol = 711;
+
+/** Enum value for Unit Order Order Follow */
+extern const int cUnitOrderFollow = 712;
+
+/** Enum value for Unit Order Order Hunt */
+extern const int cUnitOrderHunt = 713;
+
+/** Enum value for Unit Order Order Transport */
+extern const int cUnitOrderTransport = 714;
+
+/** Enum value for Unit Order Order Trade */
+extern const int cUnitOrderTrade = 715;
+
+/** Enum value for Unit Order Order Evasive Move */
+extern const int cUnitOrderEvasiveMove = 716;
+
+/** Enum value for Unit Order Order Enter */
+extern const int cUnitOrderEnter = 717;
+
+/** Enum value for Unit Order Order Repair */
+extern const int cUnitOrderRepair = 718;
+
+/** Enum value for Unit Order Order Train */
+extern const int cUnitOrderTrain = 719;
+
+/** Enum value for Unit Order Order Research */
+extern const int cUnitOrderResearch = 720;
+
+/** Enum value for Unit Order Order Unload */
+extern const int cUnitOrderUnload = 721;
+
+/** Enum value for Unit Order Order Unload Over Wall */
+extern const int cUnitOrderUnloadOverWall = 800;
+
+/** Enum value for Unit Order Order Seek And Destroy */
+extern const int cUnitOrderSeekAndDestroy = 722;
+
+/** Enum value for Unit Order Order Group Gather */
+extern const int cUnitOrderGroupGather = 724;
+
+/** Enum value for Unit Order Order Explore And Destroy */
+extern const int cUnitOrderExploreAndDestroy = 723;
+
+/** Enum value for Unit Order Order Wait */
+extern const int cUnitOrderWait = 728;
+
+/** Enum value for Unit Order Order Attack Roundup */
+extern const int cUnitOrderAttackRoundup = 729;
+
+/** Enum value for Unit Order Order Scout */
+extern const int cUnitOrderScout = 730;
+
+/** Enum value for Unit Order Order Action Control */
+extern const int cUnitOrderActionControl = 731;
+
+/** Enum value for Unit Order Order Shepherd */
+extern const int cUnitOrderShepherd = 732;
+
+/** Enum value for Unit Order Order Attack Move */
+extern const int cUnitOrderAttackMove = 733;
+
+/** Enum value for Unit Order Order Auto Scout */
+extern const int cUnitOrderAutoScout = 801;
+
+/** Enum value for Unit Order Order Wait For Solidify */
+extern const int cUnitOrderWaitForSolidify = 734;
+
+/** Enum value for Unit Order Order Auto Boar Lure */
+extern const int cUnitOrderAutoBoarLure = 802;
+
+/** Enum value for Unit Order Order Evacuate */
+extern const int cUnitOrderEvacuate = 803;
+
+/** Enum value for Unit Order Order Evacuate In Group */
+extern const int cUnitOrderEvacuateInGroup = 804;
+
+/** Enum value for Unit Order Order Back To Work */
+extern const int cUnitOrderBackToWork = 805;
+
+/** Enum value for Unit Order Order Hero Power */
+extern const int cUnitOrderHeroPower = 806;
+
+
+// 37. Unit Formation Constants
+
+
+/**  */
+extern const int cFormationLine = 2;
+
+/**  */
+extern const int cFormationBox = 4;
+
+/**  */
+extern const int cFormationStaggered = 7;
+
+/**  */
+extern const int cFormationFlank = 8;
+
+
+// 38. Action Type Constants
+
+
+/** Enum value for Unit Task/Action Type Default. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeDefault = 0;
+
+/** Enum value for Unit Task/Action Type Move. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeMove = 1;
+
+/** Enum value for Unit Task/Action Type Patrol. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypePatrol = 2;
+
+/** Enum value for Unit Task/Action Type Guard. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeGuard = 3;
+
+/** Enum value for Unit Task/Action Type Follow. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeFollow = 4;
+
+/** Enum value for Unit Task/Action Type Stop. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeStop = 5;
+
+/** Enum value for Unit Task/Action Type Attack Ground. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeAttackGround = 6;
+
+/** Enum value for Unit Task/Action Type Garrison. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeGarrison = 7;
+
+/** Enum value for Unit Task/Action Type Kill. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeKill = 8;
+
+/** Enum value for Unit Task/Action Type ction Type Unload. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cctionTypeUnload = 9;
+
+/** Enum value for Unit Task/Action Type ction Type Gather Point. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cctionTypeGatherPoint = 10;
+
+/** Enum value for Unit Task/Action Type Lock. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeLock = 11;
+
+/** Enum value for Unit Task/Action Type Work. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeWork = 12;
+
+/** Enum value for Unit Task/Action Type Ungarrison. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeUngarrison = 13;
+
+/** Enum value for Unit Task/Action Type Drop Relic. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeDropRelic = 14;
+
+/** Enum value for Unit Task/Action Type Pack. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypePack = 15;
+
+/** Enum value for Unit Task/Action Type Unpack. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeUnpack = 16;
+
+/** Enum value for Unit Task/Action Type Attack Move. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeAttackMove = 17;
+
+/** Enum value for Unit Task/Action Type Formation Line. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeFormationLine = 18;
+
+/** Enum value for Unit Task/Action Type Formation Box. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeFormationBox = 19;
+
+/** Enum value for Unit Task/Action Type Formation Staggered. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeFormationStaggered = 20;
+
+/** Enum value for Unit Task/Action Type Formation Flank. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeFormationFlank = 21;
+
+/** Enum value for Unit Task/Action Type Transform. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeTransform = 22;
+
+/** Enum value for Unit Task/Action Type Sell Food. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeSellFood = 23;
+
+/** Enum value for Unit Task/Action Type Sell Wood. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeSellWood = 24;
+
+/** Enum value for Unit Task/Action Type Sell Stone. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeSellStone = 25;
+
+/** Enum value for Unit Task/Action Type Buy Food. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeBuyFood = 26;
+
+/** Enum value for Unit Task/Action Type Buy Wood. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeBuyWood = 27;
+
+/** Enum value for Unit Task/Action Type Buy Stone. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeBuyStone = 28;
+
+/** Enum value for Unit Task/Action Type Ring Town Bell. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeRingTownBell = 29;
+
+/** Enum value for Unit Task/Action Type Back To Work. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeBackToWork = 30;
+
+/** Enum value for Unit Task/Action Type All Back To Work. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeAllBackToWork = 31;
+
+/** Enum value for Unit Task/Action Type Force Drop Off. See [xsTaskUnits](https://ugc.aoe2.rocks/general/xs/functions/functions/#956-xstaskunits) */
+extern const int cActionTypeForceDropOff = 32;
+
+
+// 39. Store Flag Constants
+
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagKeep = 0;
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagGive = 1;
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagGiveAndTakeOnDeath = 2;
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagGiveOnCompletionAndTakeOnDeath = 4;
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagGiveOnCompletion = 8;
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagTake = 16;
+
+/** Enum value for the [Store Flag First Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](https://ugc.aoe2.rocks/general/attributes/attributes/#171-store-flag-third-storage) attributes. */
+extern const int cStoreFlagGiveAndTakeOnDeathAfterAnimation = 32;
+
+
+// 40. Minimap Mode Constants
+
+
+/** Enum value for the [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode) attribute */
+extern const int cMinimapModeNone = 0;
+
+/** Enum value for the [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode) attribute */
+extern const int cMinimapModeUnit = 1;
+
+/** Enum value for the [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode) attribute */
+extern const int cMinimapModeBuilding = 2;
+
+/** Enum value for the [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode) attribute */
+extern const int cMinimapModeTerrain = 3;
+
+/** Enum value for the [Minimap Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#144-minimap-mode) attribute */
+extern const int cMinimapModeTerrainBig = 4;
+
+
+// 41. Fog Flag Constants
+
+
+/** Enum value for the [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility) attribute. */
+extern const int cFogFlagNotInFog = 0;
+
+/** Enum value for the [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility) attribute. */
+extern const int cFogFlagAlways = 1;
+
+/** Enum value for the [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility) attribute. */
+extern const int cFogFlagOnlyIfAlive = 2;
+
+/** Enum value for the [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility) attribute. */
+extern const int cFogFlagDoppelganger = 3;
+
+/** Enum value for the [Fog Visibility](https://ugc.aoe2.rocks/general/attributes/attributes/#28-fog-visibility) attribute. */
+extern const int cFogFlagCheckDoppel = 4;
+
+
+// 42. Hill Mode Constants
+
+
+/** Enum value for the [Hill Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#187-hill-mode) attribute. */
+extern const int cHillModeNoRestriction = 0;
+
+/** Enum value for the [Hill Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#187-hill-mode) attribute. */
+extern const int cHillModeNoCornersOfHills = 1;
+
+/** Enum value for the [Hill Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#187-hill-mode) attribute. */
+extern const int cHillModeFlatOnly = 2;
+
+/** Enum value for the [Hill Mode](https://ugc.aoe2.rocks/general/attributes/attributes/#187-hill-mode) attribute. */
+extern const int cHillModeOneElevationDifference = 3;
+
+
+// 43. Move Algorithm Constants
+
+
+/** Enum value for the [Move Algorithm](https://ugc.aoe2.rocks/general/attributes/attributes/#218-move-algorithm) attribute. */
+extern const int cMoveAlgorithmNone = 0;
+
+/** Enum value for the [Move Algorithm](https://ugc.aoe2.rocks/general/attributes/attributes/#218-move-algorithm) attribute. */
+extern const int cMoveAlgorithmUseStopSprite = 1;
+
+
+// 44. Run Pattern Constants
+
+
+/** Enum value for the [Run Pattern](https://ugc.aoe2.rocks/general/attributes/attributes/#140-run-pattern) attribute. */
+extern const int cDoubleClickSelectById = 255;
 
 
 // 1. Rules
@@ -3344,6 +4246,17 @@ float bitCastToFloat(int number = -1) {}
 int bitCastToInt(float number = -1.0) {}
 
 /**
+* Returns `x << y`
+*
+* @param x The first number
+* @param y The second number
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int bitLsh(int x = -1, int y = -1) {}
+
+/**
 * Returns `~x`
 *
 * @param x The number to get the 1's compliment for
@@ -3363,6 +4276,17 @@ int bitNot(int x = -1) {}
 * @allow_no_num_promo
 */
 int bitOr(int x = -1, int y = -1) {}
+
+/**
+* Returns `x >> y`
+*
+* @param x The first number
+* @param y The second number
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int bitRsh(int x = -1, int y = -1) {}
 
 /**
 * Returns `x ^ y`
@@ -3610,6 +4534,40 @@ string xsGetTechName(int techId = -1, int playerId = -1, bool internalName = fal
 int xsGetTechState(int techId = -1, int playerId = -1) {}
 
 /**
+* Checks if a local tech has been researched at the given building.
+*
+* @param buildingId The building to check local techs at
+* @param localTechId The local tech to check
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsHasResearchedLocalTechnology(int buildingId = -1, int localTechId = -1) {}
+
+/**
+* Same as the editor effect. Starts researching a technology at a specific building. The tech must be available/the player must have sufficient resources to research the tech. The resources are deducted from the player's stockpile on research.
+*
+* @param buildingId The building to initiate the research at
+* @param techId The tech to research
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsInitiateResearch(int buildingId = -1, int techId = -1) {}
+
+/**
+* Researches the given local tech at the specified building if it is available. Same as the editor effect.
+*
+* @param buildingId The building to research a local tech at
+* @param localTechId The local tech to research
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsResearchLocalTechnology(int buildingId = -1, int localTechId = -1) {}
+
+/**
 * Returns a boolean based on whether the technology was researched or not.
 *
 * @param techId The technology ID to research.
@@ -3622,6 +4580,32 @@ int xsGetTechState(int techId = -1, int playerId = -1) {}
 * @allow_no_num_promo
 */
 bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailable = false, int playerId = -1) {}
+
+/**
+* Sets the tech description for the supplied tech for the given player.
+*
+* @param techId The tech to set the description for
+* @param playerId The player to set the tech description for
+* @param description The description to set to
+*
+* @returns void
+* @allow_discard
+* @allow_no_num_promo
+*/
+void xsSetTechDescription(int techId = -1, int playerId = -1, string description = "") {}
+
+/**
+* Sets the tech name for the supplied tech for the given player.
+*
+* @param techId The tech to set the name for
+* @param playerId The player to set the tech name for
+* @param description The name to set to
+*
+* @returns void
+* @allow_discard
+* @allow_no_num_promo
+*/
+void xsSetTechName(int techId = -1, int playerId = -1, string description = "") {}
 
 
 // 7. Player
@@ -3639,18 +4623,19 @@ bool xsResearchTechnology(int techId = -1, bool force = false, bool techAvailabl
 void xsDeclareVictory(int playerId = -1, bool victory = false) {}
 
 /**
-* Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat).
+* Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](https://ugc.aoe2.rocks/general/xs/functions/functions/#415-bitcasttofloat).
 *
 * @param effectId The ID of the effect to use. See the [Effect Type](https://ugc.aoe2.rocks/general/xs/constants/constants/#8-effect-amount-effect-type) and [Technology Attribute](https://ugc.aoe2.rocks/general/xs/constants/constants/#10-effect-amount-technology-attribute) constants
 * @param objectOrTechnologyId The ID of the object, unit, or technology to effect
 * @param attributeOrOperation The attribute to modify or the operation to perform, See the [Effect Operation](https://ugc.aoe2.rocks/general/xs/constants/constants/#9-effectamount-effect-operations) constants
 * @param value The value of the effect
 * @param playerId The player to apply the effect to. If unspecified, applies to all players except Gaia.
+* @param trainLocationIndex Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself
 *
 * @returns void
 * @allow_no_num_promo
 */
-void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerId = -1) {}
+void xsEffectAmount(int effectId = -1, int objectOrTechnologyId = -1, int attributeOrOperation = -1, float value = -1.0, int playerId = -1, int trainLocationIndex = -1) {}
 
 /**
 * Returns the difficulty setting for the game. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#22-difficulty) for all the different difficulty IDs
@@ -3680,6 +4665,17 @@ int xsGetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1) {}
 * @allow_no_num_promo
 */
 float xsGetHandicapMultiplier(int playerId = -1) {}
+
+/**
+* Gets the given player's civ name
+*
+* @param playerId The player to get the civ name for
+* @param localized If true, localize the civ name
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string xsGetPlayerCivName(int playerId = -1, bool localized = false) {}
 
 /**
 * Returns the civilization ID of the given player. Refer to the [Constant Reference](https://ugc.aoe2.rocks/general/xs/constants/constants/#5-aoe2-civs) for all the different civ IDs
@@ -3765,6 +4761,17 @@ int xsGetWorldPlayerId(int scxPlayerId = -1) {}
 float xsPlayerAttribute(int playerId = -1, int resourceId = -1) {}
 
 /**
+* Sets the local player's chat setting towards the given player. To be used along with diplomacy-related effects
+*
+* @param targetPlayer The player to set the chat setting for
+* @param enabled The value to set the chat setting to
+*
+* @returns void
+* @allow_no_num_promo
+*/
+void xsSetChatToPlayer(int targetPlayer = -1, bool enabled = false) {}
+
+/**
 * Sets the diplomacy of source player towards the target player
 *
 * @param sourcePlayerId The player to set the stance for
@@ -3789,6 +4796,42 @@ bool xsSetDiplomacy(int sourcePlayerId = -1, int targetPlayerId = -1, int diploS
 * @allow_no_num_promo
 */
 void xsSetPlayerAttribute(int playerId = -1, int resourceId = -1, float value = -1.0) {}
+
+/**
+* Sets the given player's civ name to the specified value.
+*
+* @param playerId The player to set the civ name for
+* @param name The civ name to set to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetPlayerCivName(int playerId = -1, string name = "") {}
+
+/**
+* Sets the given player's color to the specified value
+*
+* @param playerId The player to set the color for
+* @param colorId The color to set to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetPlayerColor(int playerId = -1, int colorId = -1) {}
+
+/**
+* Sets the given player's name for the remainder of this game to the specified value
+*
+* @param playerId The player to set the name for
+* @param name The name to set to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetPlayerName(int playerId = -1, string name = "") {}
 
 
 // 8. Tasks
@@ -3871,7 +4914,7 @@ bool xsModifyUnitTasks(int unitId = -1, int taskId = -1, bool edit = false) {}
 bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {}
 
 /**
-* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#1-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#1-xstask) edits instead of adding a new task)
+* Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#1-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](https://ugc.aoe2.rocks/general/xs/functions/functions/#1-xstask) edits instead of adding a new task)
 *
 * @param objectOrClassId The object or class ID to remove the task from.
 * @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#16-task-type)
@@ -3879,12 +4922,13 @@ bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {
 * @param playerId The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
+* @deprecated True
 * @allow_no_num_promo
 */
 void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
 /**
-* Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#8-xsmodifyobjecttasks).
+* Resets all the values of the global XS task struct to their defaults. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/functions/#8-xsmodifyobjecttasks).
 *
 * @returns void
 * @allow_no_num_promo
@@ -3892,9 +4936,9 @@ void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjec
 void xsResetTaskAmount() {}
 
 /**
-* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#1-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
+* Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#1-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 * 
-* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#1-xstaskamount)) and then submitting multiple copies of it for different people)
+* Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](https://ugc.aoe2.rocks/general/xs/functions/functions/#1-xstaskamount)) and then submitting multiple copies of it for different people)
 *
 * @param objectOrClassId The object or class ID to add the task to
 * @param actionType Task type. Refer to [cTaskType constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#16-task-type)
@@ -3902,12 +4946,13 @@ void xsResetTaskAmount() {}
 * @param playerId The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
+* @deprecated True
 * @allow_no_num_promo
 */
 void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
 
 /**
-* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#8-xsmodifyobjecttasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
+* Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](https://ugc.aoe2.rocks/general/xs/functions/functions/#8-xsmodifyobjecttasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 *
 * @param taskFieldId Specifies which property of the task to change. Refer to [cTaskAttr constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#15-task-attribute)
 * @param value The value to set the task field to
@@ -3931,6 +4976,22 @@ bool xsUnitTaskAmount(int unitId = -1, int taskId = -1) {}
 
 
 // 9. Units And Objects
+
+/**
+* Tasks the selected units to build the given object at the specified location. The target location must be visible, the building must be available to the selected units, and the player must have sufficient resources to construct the building. Resources are deducted upon building. Same as the editor effect
+*
+* @param unitIds The units to task
+* @param objectId The object to build
+* @param location1 The location to build at
+* @param location2 When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`)
+* @param isShiftQueue If true, shift queue the units
+* @param isFormationCommand If true, issue a formation command to the units
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsBuildUnit(int unitIds = -1, int objectId = -1, vector location1 = vector(-1, -1, -1), vector location2 = vector(-1, -1, -1), bool isShiftQueue = false, bool isFormationCommand = false) {}
 
 /**
 * Creates a unit on the map and returns its ID, or -1 if creation failed
@@ -3957,6 +5018,19 @@ int xsCreateUnit(int objectId = -1, int playerId = -1, vector location = vector(
 * @allow_no_num_promo
 */
 bool xsDoesUnitExist(int unitId = -1) {}
+
+/**
+* Flashes the given unit. Same as the editor effect.
+*
+* @param unitId The unit to flash
+* @param playerId If set, flash only for this player. Otherwise flash for all players (Default: `#!xs -1`)
+* @param soundName Defaults to "?capture_complete"
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsFlashUnit(int unitId = -1, int playerId = -1, int soundName = -1) {}
 
 /**
 * Returns the ID of the unit in which this unit is garrisoned in
@@ -3989,12 +5063,12 @@ int xsGetGarrisonedUnitIds(int unitId = -1) {}
 vector xsGetGroupMoveTarget(int groupId = -1) {}
 
 /**
-* Returns the attribute value for an object. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
+* Returns the attribute value for an object. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](https://ugc.aoe2.rocks/general/xs/functions/functions/#416-bitcasttoint) after being returned.
 *
 * @param playerId The player whose object to get the attribute for
 * @param objectId The object to get the attribute for
 * @param attribute The attribute to get
-* @param damageClass For use with armor/attack attributes - specifies which armor/attack class to get
+* @param damageClass For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself
 *
 * @returns float
 * @allow_no_num_promo
@@ -4079,16 +5153,16 @@ int xsGetObjectType(int playerId = -1, int objectId = -1) {}
 int xsGetPlayerNumberOfObjects(int playerId = -1) {}
 
 /**
-* Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
+* Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](https://ugc.aoe2.rocks/general/xs/constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](https://ugc.aoe2.rocks/general/xs/functions/functions/#416-bitcasttoint) after being returned.
 *
 * @param unitId The unit to get the attribute for.
 * @param attribute The attribute to get
-* @param damageClass For use with armor/attack attributes - specifies which armor/attack class to get
+* @param damageClassOrEntryMod For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself
 *
 * @returns float
 * @allow_no_num_promo
 */
-float xsGetUnitAttribute(int unitId = -1, int attribute = -1, int damageClass = -1) {}
+float xsGetUnitAttribute(int unitId = -1, int attribute = -1, int damageClassOrEntryMod = -1) {}
 
 /**
 * Returns the given unit's amount of the specified resource held.
@@ -4122,6 +5196,16 @@ int xsGetUnitAttributeTypesHeld(int unitId = -1) {}
 float xsGetUnitBuildPoints(int unitId = -1) {}
 
 /**
+* Gets the specified unit's caption string.
+*
+* @param unitId The unit to get the caption for
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string xsGetUnitCaption(int unitId = -1) {}
+
+/**
 * Returns the given unit's charge
 *
 * @param unitId The unit to get the charge for
@@ -4130,6 +5214,17 @@ float xsGetUnitBuildPoints(int unitId = -1) {}
 * @allow_no_num_promo
 */
 float xsGetUnitCharge(int unitId = -1) {}
+
+/**
+* Gets the given unit's civ name.
+*
+* @param unitId The unit to get the civ name for
+* @param localized If true, localize the civ name
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string xsGetUnitCivName(int unitId = -1, bool localized = false) {}
 
 /**
 * Returns the given unit's class See [cClass constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#12-object-class)
@@ -4150,6 +5245,16 @@ int xsGetUnitClass(int unitId = -1) {}
 * @allow_no_num_promo
 */
 int xsGetUnitCopyId(int unitId = -1) {}
+
+/**
+* Gets the gather point of the specified building. If the gather point is set on an object, the Z value of the vector contains the unit ID. In that case, the X and Y values should be ignored.
+*
+* @param buildingId The building to get the gather point for
+*
+* @returns vector
+* @allow_no_num_promo
+*/
+vector xsGetUnitGatherPoint(int buildingId = -1) {}
 
 /**
 * Returns the ID of the group (formation) for this unit
@@ -4213,6 +5318,16 @@ int xsGetUnitObjectId(int unitId = -1) {}
 int xsGetUnitOwner(int unitId = -1) {}
 
 /**
+* Gets the given unit's player name.
+*
+* @param unitId The unit to get the player name for
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string xsGetUnitPlayerName(int unitId = -1) {}
+
+/**
 * Returns the current position of a unit.
 *
 * @param unitId The unit to get the position for
@@ -4221,6 +5336,18 @@ int xsGetUnitOwner(int unitId = -1) {}
 * @allow_no_num_promo
 */
 vector xsGetUnitPosition(int unitId = -1) {}
+
+/**
+* Gets the specified property for the given unit.
+*
+* @param unitId The unit to get the property for
+* @param property The property to get. See [cUnit Property Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#32-unit-property-constants)
+* @param typeOrPlayer Resource ID when getting attributes held or player when getting unit visibility
+*
+* @returns float
+* @allow_no_num_promo
+*/
+float xsGetUnitProperty(int unitId = -1, int property = -1, int typeOrPlayer = -1) {}
 
 /**
 * Returns the ID of the currently targeted unit for this unit
@@ -4291,6 +5418,19 @@ bool xsObjectHasAction(int playerId = -1, int objectOrClassId = -1, int actionId
 bool xsRemoveUnit(int unitId = -1) {}
 
 /**
+* Sets the given object's description to the specified value for the provided player.
+*
+* @param playerId The player to set the object description for
+* @param objectId The ID of the object to set the description for
+* @param description The description to set
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetObjectDescription(int playerId = -1, int objectId = -1, string description = "") {}
+
+/**
 * Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
 *
 * @param unitId The unit to set the resource held for
@@ -4316,6 +5456,18 @@ bool xsSetUnitAttributeHeld(int unitId = -1, float value = -1.0, int attributeId
 bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
 
 /**
+* Sets the specified unit's caption to the given string.
+*
+* @param unitId The unit to set the caption for.
+* @param caption The caption string to set to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitCaption(int unitId = -1, string caption = "") {}
+
+/**
 * Sets the given unit's charge
 *
 * @param unitId The unit to set the charge for
@@ -4326,6 +5478,31 @@ bool xsSetUnitBuildPoints(int unitId = -1, float value = -1.0) {}
 * @allow_no_num_promo
 */
 bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
+
+/**
+* Sets the given unit's civ name to the specified value.
+*
+* @param unitId The unit to set the civ name for
+* @param name The name to set as the civ name
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitCivName(int unitId = -1, string name = "") {}
+
+/**
+* Sets the gather point of the given building to the specified location/unit
+*
+* @param buildingId The building to set the gather point of
+* @param position The position at which the gather point should be set
+* @param unitId If specified, set the gather point on this unit. Takes priority over `position`
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitGatherPoint(int buildingId = -1, vector position = vector(-1, -1, -1), int unitId = -1) {}
 
 /**
 * Sets the given unit's HP
@@ -4340,6 +5517,43 @@ bool xsSetUnitCharge(int unitId = -1, float value = -1.0) {}
 bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 
 /**
+* Sets the given unit's name.
+*
+* @param unitId The unit to set the name for
+* @param name The name to set to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitName(int unitId = -1, string name = "") {}
+
+/**
+* Changes the owner of the given unit to the specified player. Same as the editor effect.
+*
+* @param unitId The unit to set the owner for
+* @param playerId The new owner
+* @param flashObject If false, do not flash the object on ownership change
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitOwner(int unitId = -1, int playerId = -1, bool flashObject = false) {}
+
+/**
+* Sets the given unit's player name to the specified value.
+*
+* @param unitId The unit to set the player name for
+* @param name The name to set the player name to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitPlayerName(int unitId = -1, string name = "") {}
+
+/**
 * Sets the given unit's position.
 *
 * @param unitId The unit to set the position for
@@ -4351,6 +5565,62 @@ bool xsSetUnitHitpoints(int unitId = -1, float value = -1.0) {}
 * @allow_no_num_promo
 */
 bool xsSetUnitPosition(int unitId = -1, vector position = vector(-1, -1, -1), bool checkCollision = false) {}
+
+/**
+* Sets the specified property for the given unit to the provided value.
+*
+* @param unitId The unit to set the property for
+* @param property The property to set. See [cUnit Property Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#32-unit-property-constants)
+* @param value The value to set the property to
+* @param typeOrForce Resource ID when setting attributes held or force when setting garrisoned in ID or unit visibility
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetUnitProperty(int unitId = -1, int property = -1, float value = -1.0, int typeOrForce = -1) {}
+
+/**
+* Stops the unit. Same as the editor effect.
+*
+* @param unitId The unit to stop
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsStopUnit(int unitId = -1) {}
+
+/**
+* Tasks the selected units to perform the given action. Same as the editor effect.
+*
+* @param unitIds The units to task
+* @param actionType The action to issue. See [cActionType Constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#38-action-type-constants)
+* @param location The location at which to task the units
+* @param locationUnitId The unit to task the selected units to
+* @param isShiftQueue If true, shift queue the units
+* @param isFormationCommand If true, issue a formation command to the units
+* @param shouldPlayUnloadSound If true, play the unload sound when ungarrisoning units
+* @param patrolPoints Array of vectors. When tasking units to patrol, use this if multiple patrol points are desired. `isShiftQueue` must be set to `#!xs false` when using this.
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsTaskUnits(int unitIds = -1, int actionType = -1, vector location = vector(-1, -1, -1), int locationUnitId = -1, bool isShiftQueue = false, bool isFormationCommand = false, bool shouldPlayUnloadSound = false, int patrolPoints = -1) {}
+
+/**
+* Queues the given number of objects at the specified building. The object must be available at the building and the player must have sufficient resources to queue all the units. If resources are insufficient to cover all of the units, only units which can be afforded are queued. Resources are deducted from the player for this. **Note**: The base ID of upgraded units must be used, i.e. to train an Arbalest at the Archery Range, the `objectId` specified needs to be of the Archer itself. Same as the editor effect.
+*
+* @param buildingId The building to train the objects at
+* @param objectId The ID of the object to train
+* @param count The number of objects to queue
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsTrainObject(int buildingId = -1, int objectId = -1, int count = -1) {}
 
 
 // 10. Map
@@ -4398,6 +5668,18 @@ string xsGetMapName(bool showFileExtension = false) {}
 int xsGetMapSeed() {}
 
 /**
+* Gets the specified attribute for the given tile.
+*
+* @param x The X value of the tile to get the attribute of
+* @param y The Y value fo the tile to get the attribute of
+* @param attributeId The attribute to get. See [cTile constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#30-map-tile-constants)
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsGetMapTileAttribute(int x = -1, int y = -1, int attributeId = -1) {}
+
+/**
 * Returns the Width of the map.
 *
 * @returns int
@@ -4440,6 +5722,17 @@ int xsTriggerVariable(int variableId = -1) {}
 
 
 // 11. Game Info
+
+/**
+* Gets the given civ's name
+*
+* @param civId The
+* @param localized If true, localize the civ name
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string xsGetCivName(int civId = -1, bool localized = false) {}
 
 /**
 * Returns the current game time in seconds
@@ -4634,14 +5927,6 @@ bool xsDisplayTimer(int timerId = -1, string msg = "", int time = -1, int timerU
 string xsGetDamageClassName(int damageClassId = -1, bool localized = false) {}
 
 /**
-* Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
-*
-* @returns int
-* @allow_no_num_promo
-*/
-int xsGetLocalPlayerId() {}
-
-/**
 * Gets the locale of the current player. See the [cLocale constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#24-locale). Note: this function returns a unique value for every player, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 *
 * @returns int
@@ -4693,18 +5978,6 @@ string xsGetPlayerColorTag(int playerId = -1) {}
 string xsGetString(int stringId = -1, bool localized = false) {}
 
 /**
-* Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, this can possibly return different values for different players and will cause a desync! Use with caution!
-*
-* @param timerId The timer ID to clear
-* @param timerUnit The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#25-timer-unit)
-* @param playerId If set to -1, clear for all players. Otherwise clear only for the specified player.
-*
-* @returns float
-* @allow_no_num_promo
-*/
-float xsGetTimerTimeRemaining(int timerId = -1, int timerUnit = -1, int playerId = -1) {}
-
-/**
 * 
 *
 * @param eventOrSoundFileName The sound event name to fire for the given `unitId` or the sound file name to play
@@ -4732,6 +6005,95 @@ bool xsPlaySound(string eventOrSoundFileName = "", int playerId = -1, vector pos
 * @allow_no_num_promo
 */
 bool xsSendChat(string msg = "", int playerId = -1, bool silent = false) {}
+
+/**
+* Sets the given player's camera to the specified position. Same as the editor effect.
+*
+* @param playerId The player to set the view position for. Can be set to `#!xs -1` to apply to all players
+* @param position The position to set the view to
+* @param duration If set, scroll to the destination in this amount of time
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetViewPosition(int playerId = -1, vector position = vector(-1, -1, -1), int duration = -1) {}
+
+/**
+* Sets the given player's zoom to the specified value.
+*
+* @param playerId The player to set the zoom for. Can be set to `#!xs -1` to apply to all players
+* @param zoom The zoom level to set to. Clamped between `#!xs 0.75` (Fully zoomed out) and `#!xs 1.25` (Fully zoomed in)
+* @param duration If specified, change the zoom to the target value in this amount of time.
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetZoom(int playerId = -1, float zoom = -1.0, float duration = -1.0) {}
+
+/**
+* Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsUnsyncGetLocalPlayerId() {}
+
+/**
+* Returns an int array with the currently selected unit IDs for the local player. Note that this is an unsync function and cannot be used raw in MP.
+*
+* @param arrayId The array to use
+* @param playerId When specified, only returns a valid value if the local player matches this
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsUnsyncGetPlayerSelectedUnitIds(int arrayId = -1, int playerId = -1) {}
+
+/**
+* Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, this can possibly return different values for different players and will cause a desync! Use with caution!
+*
+* @param timerId The timer ID to clear
+* @param timerUnit The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](https://ugc.aoe2.rocks/general/xs/constants/constants/#25-timer-unit)
+* @param playerId If set to -1, clear for all players. Otherwise clear only for the specified player.
+*
+* @returns float
+* @allow_no_num_promo
+*/
+float xsUnsyncGetTimerTimeRemaining(int timerId = -1, int timerUnit = -1, int playerId = -1) {}
+
+/**
+* Gets the local player's view position. Note that this is an unsync function and cannot be used raw in MP.
+*
+* @param playerId When specified, only returns a valid vector if the local player matches this
+*
+* @returns vector
+* @allow_no_num_promo
+*/
+vector xsUnsyncGetViewPosition(int playerId = -1) {}
+
+/**
+* Gets the local player's zoom. Note that this is an unsync function and cannot be used raw in MP.
+*
+* @param playerId When specified, only returns a valid value if the local player matches this
+*
+* @returns float
+* @allow_no_num_promo
+*/
+float xsUnsyncGetZoom(int playerId = -1) {}
+
+/**
+* Checks if the specified unit is visible to the local player. Note that this is an unsync function and cannot be used raw in MP.
+*
+* @param unitId The unit to check visibility for
+* @param allowInFog If true, allow check to pass even if the unit is only seen in the fog and not in the LoS.
+* @param playerId When specified, only returns a valid value if the local player matches this
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsUnsyncIsUnitVisible(int unitId = -1, bool allowInFog = false, int playerId = -1) {}
 
 
 // 13. File Io
@@ -4895,6 +6257,27 @@ bool xsWriteVector(vector data = vector(-1, -1, -1)) {}
 // 14. Ai Scripting
 
 /**
+* Checks if the given AI goal is set
+*
+* @param goalId The goal to check
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsGetAiScriptGoal(int goalId = -1) {}
+
+/**
+* Gets the given AI signal value.
+*
+* @param signalId The signal to get the value of
+* @param useLegacyAi If true, use the legacy signal
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsGetAiSignal(int signalId = -1, bool useLegacyAi = false) {}
+
+/**
 * Gets the goal id/number of the current AI
 *
 * @param id The goal id/number to get for the current AI
@@ -4913,6 +6296,30 @@ int xsGetGoal(int id = -1) {}
 * @allow_no_num_promo
 */
 int xsGetStrategicNumber(int id = -1) {}
+
+/**
+* Sets the given AI goal to the specified value
+*
+* @param goalId The goal to set
+* @param value The value to set the goal to
+*
+* @returns bool
+* @allow_discard
+* @allow_no_num_promo
+*/
+bool xsSetAiScriptGoal(int goalId = -1, bool value = false) {}
+
+/**
+* Sets the given AI signal value.
+*
+* @param signalId The signal to set the value of
+* @param value The value to set to
+* @param useLegacyAi If true, use the legacy signal
+*
+* @returns void
+* @allow_no_num_promo
+*/
+void xsSetAiSignal(int signalId = -1, int value = -1, bool useLegacyAi = false) {}
 
 /**
 * Sets the goal id/number of the current AI
@@ -4942,7 +6349,7 @@ void xsSetStrategicNumber(int id = -1, int value = -1) {}
 /**
 * A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
 *
-* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#101-xsgetmapname) and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
+* @param runtimeName This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](https://ugc.aoe2.rocks/general/xs/functions/functions/#101-xsgetmapname) and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
 * @param functionName This is the name of a user defined function that takes a single integer argument
 * @param functionArgument This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 *
@@ -4995,4 +6402,325 @@ int xsGetFunctionID(string functionName = "") {}
 * @allow_no_num_promo
 */
 void xsSetContextPlayer(int playerNumber = -1) {}
+
+
+// 16. Strings
+
+/**
+* Returns the signed 32-bit base-10 value for the given binary string and returns the default value if it fails
+*
+* @param str The bin string to parse. Digits may be separated by `'`
+* @param defaultValue Defaults to `#!xs -1`
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int bin(string str = "", int defaultValue = -1) {}
+
+/**
+* Returns the ASCII character for the given code. Same as Python's `chr`
+*
+* @param code The ASCII code to get the character for.
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string chr(int code = -1) {}
+
+/**
+* Formats the given string like a Python f-string. Note that Expressions are not allowed, and it is limited to variable names only.
+* 
+* Example:
+* ```xs
+* xsChatData(fstr("{colourTag}{player}: {msg}")); // assuming that colourTag, player, and msg are valid variables here.
+* ```
+* 
+* Similar to Python, you may use `{{` and `}}` to escape the brackets themselves when passing a string to `fstr` when interpolation is not desired.
+* 
+* The strings passed to `fstr` do not need to be literal strings. This allows creating multi-language template strings in language files that can be fetched via `xsGetString` and then passed to `fstr` for interpretation.
+* 
+* The variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output.
+*
+* @param str The string to format
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string fstr(string str = "") {}
+
+/**
+* Returns the signed 32-bit base-10 value for the given hex string and returns the default value if it fails
+*
+* @param str The hex string to parse. Digits may be separated by `'`
+* @param defaultValue Defaults to `#!xs -1`
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int hex(string str = "", int defaultValue = -1) {}
+
+/**
+* Returns the ASCII ord value for the given character. Same as Python's `ord`
+*
+* @param character The character to get the ASCII ord value for
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int ord(string character = "") {}
+
+/**
+* Returns the `str[index]` as in Python or `""` if the index is out of bounds.
+*
+* @param str The string to index
+* @param index The index to get. Can be in the range `[-length, length)`
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strCharAt(string str = "", int index = -1) {}
+
+/**
+* Checks if the given substring is contained in the provided string.
+*
+* @param str The string to check
+* @param substring The sub string to check
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool strContains(string str = "", string substring = "") {}
+
+/**
+* Checks if the given string ends with the provided suffix.
+*
+* @param str The string to check
+* @param suffix The suffix to check
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool strEndsWith(string str = "", string suffix = "") {}
+
+/**
+* Finds the index of the given substring in the provided string. Returns -1 if not found
+*
+* @param str The string to check in
+* @param substring The substring to find the index of
+* @param fromIndex If set, check starting from this index
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int strIndexOf(string str = "", string substring = "", int fromIndex = -1) {}
+
+/**
+* Inserts the given substring at the provided index in the specified string and returns a new string.
+*
+* @param str The string to insert into
+* @param index The index to insert at
+* @param target The substring to insert
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strInsert(string str = "", int index = -1, string target = "") {}
+
+/**
+* Returns a joined string of the provided array interspaced with the given delimiter.
+*
+* @param arrayId An int ID for an array of strings
+* @param delimiter The string to join the array with
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strJoin(int arrayId = -1, string delimiter = "") {}
+
+/**
+* Finds the index of the given substring in the provided string backwards. Returns -1 if not found
+*
+* @param str The string to check in
+* @param substring The substring to find the index of
+* @param fromIndex If set, check backwards starting from this index
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int strLastIndexOf(string str = "", string substring = "", int fromIndex = -1) {}
+
+/**
+* Returns the length of the given string
+*
+* @param str The string to get the length for
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int strLen(string str = "") {}
+
+/**
+* Removes the specified number of characters at the provided index in the given string and returns a new string.
+*
+* @param str The string to remove from
+* @param index The index to remove from
+* @param length The number of characters to remove
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strRemove(string str = "", int index = -1, int length = -1) {}
+
+/**
+* Removes the prefix from the given string if present and returns a new string. Returns the original string otherwise.
+*
+* @param str The string to remove the prefix from
+* @param prefix The prefix to remove
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strRemovePrefix(string str = "", string prefix = "") {}
+
+/**
+* Removes the suffix from the given string if present and returns a new string. Returns the original string otherwise.
+*
+* @param str The string to remove the suffix from
+* @param suffix The suffix to remove
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strRemoveSuffix(string str = "", string suffix = "") {}
+
+/**
+* Replaces the occurrences of the target in the given string with the replacement and returns it as a new string.
+*
+* @param str The string to replace in
+* @param target The substring to replace
+* @param replacement The replacement for the target
+* @param max If specified, only replace a max of these instances of the target string
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strReplace(string str = "", string target = "", string replacement = "", int max = -1) {}
+
+/**
+* Returns a new string that is the original string backwards.
+*
+* @param str The string to reverse
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strReverse(string str = "") {}
+
+/**
+* Returns an int ID for an array of strings.
+*
+* @param str The string to split
+* @param delimiter The string to split by. If unspecified, split at all characters.
+* @param max The maximum number of splits to make.
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int strSplit(string str = "", string delimiter = "", int max = -1) {}
+
+/**
+* Checks if the given string starts with the provided prefix.
+*
+* @param str The string to check
+* @param prefix The prefix to check
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool strStartsWith(string str = "", string prefix = "") {}
+
+/**
+* Returns the `str[start:end]` as in Python or `""` if the indices are out of bounds.
+*
+* @param str The string to substring
+* @param start The start index. Can be in the range `[-length, length)`
+* @param end The end index. Can be in the range `[-length, length)`
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strSubstring(string str = "", int start = -1, int end = -1) {}
+
+/**
+* Returns the string parsed as a `#!xs float` and returns the default value if it fails
+*
+* @param str The string to parse as a `#!xs float`
+* @param defaultValue Defaults to `#!xs -1.0`
+*
+* @returns float
+* @allow_no_num_promo
+*/
+float strToFloat(string str = "", float defaultValue = -1.0) {}
+
+/**
+* Returns the string parsed as an `#!xs int` and returns the default value if it fails
+*
+* @param str The string to parse as an `#!xs int`
+* @param base Defaults to `#!xs 10`
+* @param defaultValue Defaults to `#!xs -1`
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int strToInt(string str = "", int base = -1, int defaultValue = -1) {}
+
+/**
+* Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
+*
+* @param str The string to convert to lowercase
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strToLower(string str = "") {}
+
+/**
+* Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
+*
+* @param str The string to convert to uppercase
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strToUpper(string str = "") {}
+
+/**
+* Removes whitespaces on both sides of the given string and returns a new string.
+*
+* @param str The string to trim
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strTrim(string str = "") {}
+
+/**
+* Removes whitespaces at the end of the given string and returns a new string.
+*
+* @param str The string to trim
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strTrimEnd(string str = "") {}
+
+/**
+* Removes whitespaces at the start of the given string and returns a new string.
+*
+* @param str The string to trim
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string strTrimStart(string str = "") {}
 

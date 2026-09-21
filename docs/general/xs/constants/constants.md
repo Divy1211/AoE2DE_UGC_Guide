@@ -450,9 +450,27 @@ Value: `#!xs int 59`
 
 This is the civilization ID of Tupi
 
-### 5.55. cNumCivs
+### 5.55. cSaxons
 
 Value: `#!xs int 60`
+
+This is the civilization ID of Saxons
+
+### 5.56. cVarangians
+
+Value: `#!xs int 61`
+
+This is the civilization ID of Varangians
+
+### 5.57. cDanes
+
+Value: `#!xs int 62`
+
+This is the civilization ID of Danes
+
+### 5.58. cNumCivs
+
+Value: `#!xs int 63`
 
 The number of civilizations for AoE2
 
@@ -1236,25 +1254,25 @@ This sets the research time of tech 22 (loom) to 10s (the value). Alternatively,
 
 Value: `#!xs int 0`
 
-This is the ID of the `Attribute Disbale` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+This is the ID of the `Attribute Disable` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. Use these with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate)
 
 ### 9.2. cAttributeEnable
 
 Value: `#!xs int 1`
 
-This is the ID of the `Attribute Enable` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+This is the ID of the `Attribute Enable` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. Use these with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate)
 
 ### 9.3. cAttributeForce
 
 Value: `#!xs int 2`
 
-This is the ID of the `Attribute Force` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+This is the ID of the `Attribute Force` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. Use these with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate)
 
 ### 9.4. cAttributeResearch
 
 Value: `#!xs int 2`
 
-This is the ID of the `Attribute Research` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+This is the ID of the `Attribute Research` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function. Use these with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate)
 
 ### 9.5. cAttributeSet
 
@@ -1426,6 +1444,66 @@ Value: `#!xs int 12`
 
 This is the ID of the `Attribute Set State` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
 
+### 10.27. cAttrSetExtendedDescription
+
+Value: `#!xs int 19`
+
+This is the ID of the `Attribute Set Extended Description` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.28. cAttrAmountFirstCost
+
+Value: `#!xs int 20`
+
+This is the ID of the `Attribute Set First Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.29. cAttrAmountSecondCost
+
+Value: `#!xs int 21`
+
+This is the ID of the `Attribute Set Second Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.30. cAttrAmountThirdCost
+
+Value: `#!xs int 22`
+
+This is the ID of the `Attribute Set Third Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.31. cAttrTypeFirstCost
+
+Value: `#!xs int 23`
+
+This is the ID of the `Attribute Resource ID of the First Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.32. cAttrTypeSecondCost
+
+Value: `#!xs int 24`
+
+This is the ID of the `Attribute Resource ID of the Second Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.33. cAttrTypeThirdCost
+
+Value: `#!xs int 25`
+
+This is the ID of the `Attribute Resource ID of the Third Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.34. cAttrDeductFlagFirstCost
+
+Value: `#!xs int 26`
+
+This is the ID of the `Attribute Deduct Flag of the First Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.35. cAttrDeductFlagSecondCost
+
+Value: `#!xs int 27`
+
+This is the ID of the `Attribute Deduct Flag of the Second Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
+### 10.36. cAttrDeductFlagThirdCost
+
+Value: `#!xs int 28`
+
+This is the ID of the `Attribute Deduct Flag of the Third Cost` modifier for the [xsEffectAmount](../../functions/functions/#71-xseffectamount "Jump To: XS > Functions > xsEffectAmount") function
+
 ## 11. Object Attribute
 
 ### 11.1. cHitpoints
@@ -1594,7 +1672,7 @@ This is the attribute [Amount of 3rd Resource Storage](../../../attributes/attri
 
 Value: `#!xs int 28`
 
-This is the attribute [Fog Visibility](../../../attributes/attributes/#28-fog-visibility)
+This is the attribute [Fog Visibility](../../../attributes/attributes/#28-fog-visibility). See [cFogFlag Constants](./#41-fog-flag-constants)
 
 ### 11.29. cOcclusionMode
 
@@ -2206,7 +2284,7 @@ This is the attribute [Transform Sound Event](../../../attributes/attributes/#13
 
 Value: `#!xs int 140`
 
-This is the attribute [Run Pattern](../../../attributes/attributes/#140-run-pattern).
+This is the attribute [Run Pattern](../../../attributes/attributes/#140-run-pattern). See [Run Pattern Constants](./#44-run-pattern-constants)
 
 ### 11.131. cInterfaceKind
 
@@ -2230,7 +2308,7 @@ This is the attribute [Interaction Mode](../../../attributes/attributes/#143-int
 
 Value: `#!xs int 144`
 
-This is the attribute [Minimap Mode](../../../attributes/attributes/#144-minimap-mode).
+This is the attribute [Minimap Mode](../../../attributes/attributes/#144-minimap-mode). See [cMinimapMode Constants](./#40-minimap-mode-constants)
 
 ### 11.135. cTrailingUnit
 
@@ -2357,6 +2435,342 @@ This is the attribute [Add Armor Type](../../../attributes/attributes/#160-add-a
 Value: `#!xs int 165`
 
 This is the attribute [Add Attack Type](../../../attributes/attributes/#161-add-attack-type).
+
+### 11.156. cUndeadFlag
+
+Value: `#!xs int 166`
+
+This is the attribute [Undead Flag](../../../attributes/attributes/#166-undead-flag). See [cUndeadFlag Constants](./#28-undead-flag-constants).
+
+### 11.157. cBuildAndGoAway
+
+Value: `#!xs int 167`
+
+This is the attribute [Build And Go Away](../../../attributes/attributes/#167-build-and-go-away)
+
+### 11.158. cTypeFirstStorage
+
+Value: `#!xs int 168`
+
+This is the attribute [Type First Storage](../../../attributes/attributes/#168-type-first-storage)
+
+### 11.159. cTypeSecondStorage
+
+Value: `#!xs int 169`
+
+This is the attribute [Type Second Storage](../../../attributes/attributes/#169-type-second-storage)
+
+### 11.160. cTypeThirdStorage
+
+Value: `#!xs int 170`
+
+This is the attribute [Type Third Storage](../../../attributes/attributes/#170-type-third-storage)
+
+### 11.161. cStoreFlagFirstStorage
+
+Value: `#!xs int 171`
+
+This is the attribute [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage). See [cStoreFlag Constants](./#39-store-flag-constants)
+
+### 11.162. cStoreFlagSecondStorage
+
+Value: `#!xs int 172`
+
+This is the attribute [Store Flag Second Storage](../../../attributes/attributes/#172-store-flag-second-storage). See [cStoreFlag Constants](./#39-store-flag-constants)
+
+### 11.163. cStoreFlagThirdStorage
+
+Value: `#!xs int 173`
+
+This is the attribute [Store Flag Third Storage](../../../attributes/attributes/#173-store-flag-third-storage). See [cStoreFlag Constants](./#39-store-flag-constants)
+
+### 11.164. cAmountFirstCost
+
+Value: `#!xs int 174`
+
+This is the attribute [Amount First Cost](../../../attributes/attributes/#174-amount-first-cost)
+
+### 11.165. cAmountSecondCost
+
+Value: `#!xs int 175`
+
+This is the attribute [Amount Second Cost](../../../attributes/attributes/#175-amount-second-cost)
+
+### 11.166. cAmountThirdCost
+
+Value: `#!xs int 176`
+
+This is the attribute [Amount Third Cost](../../../attributes/attributes/#176-amount-third-cost)
+
+### 11.167. cTypeFirstCost
+
+Value: `#!xs int 177`
+
+This is the attribute [Type First Cost](../../../attributes/attributes/#177-type-first-cost)
+
+### 11.168. cTypeSecondCost
+
+Value: `#!xs int 178`
+
+This is the attribute [Type Second Cost](../../../attributes/attributes/#178-type-second-cost)
+
+### 11.169. cTypeThirdCost
+
+Value: `#!xs int 179`
+
+This is the attribute [Type Third Cost](../../../attributes/attributes/#179-type-third-cost)
+
+### 11.170. cDeductFlagFirstCost
+
+Value: `#!xs int 180`
+
+This is the attribute [Deduct Flag First Cost](../../../attributes/attributes/#180-deduct-flag-first-cost)
+
+### 11.171. cDeductFlagSecondCost
+
+Value: `#!xs int 181`
+
+This is the attribute [Deduct Flag Second Cost](../../../attributes/attributes/#181-deduct-flag-second-cost)
+
+### 11.172. cDeductFlagThirdCost
+
+Value: `#!xs int 182`
+
+This is the attribute [Deduct Flag Third Cost](../../../attributes/attributes/#182-deduct-flag-third-cost)
+
+### 11.173. cSpawningGraphic
+
+Value: `#!xs int 183`
+
+This is the attribute [Spawning Graphic](../../../attributes/attributes/#183-spawning-graphic)
+
+### 11.174. cUpgradeGraphic
+
+Value: `#!xs int 184`
+
+This is the attribute [Upgrade Graphic](../../../attributes/attributes/#184-upgrade-graphic)
+
+### 11.175. cFlyMode
+
+Value: `#!xs int 185`
+
+This is the attribute [Fly Mode](../../../attributes/attributes/#185-fly-mode)
+
+### 11.176. cCanBeGathered
+
+Value: `#!xs int 186`
+
+This is the attribute [Can Be Gathered](../../../attributes/attributes/#186-can-be-gathered)
+
+### 11.177. cHillMode
+
+Value: `#!xs int 187`
+
+This is the attribute [Hill Mode](../../../attributes/attributes/#187-hill-mode). See [cHillMode Constants](./#42-hill-mode-constants)
+
+### 11.178. cDoppelganger
+
+Value: `#!xs int 188`
+
+This is the attribute [Doppelganger](../../../attributes/attributes/#188-doppelganger)
+
+### 11.179. cGatherGroup
+
+Value: `#!xs int 189`
+
+This is the attribute [Gather Group](../../../attributes/attributes/#189-gather-group)
+
+### 11.180. cTaskSwapGroup
+
+Value: `#!xs int 190`
+
+This is the attribute [Task Swap Group](../../../attributes/attributes/#190-task-swap-group)
+
+### 11.181. cPlacementTerrain1
+
+Value: `#!xs int 191`
+
+This is the attribute [Placement Terrain1](../../../attributes/attributes/#191-placement-terrain1)
+
+### 11.182. cPlacementTerrain2
+
+Value: `#!xs int 192`
+
+This is the attribute [Placement Terrain2](../../../attributes/attributes/#192-placement-terrain2)
+
+### 11.183. cPlacementCenterTerrain1
+
+Value: `#!xs int 193`
+
+This is the attribute [Placement Center Terrain 1](../../../attributes/attributes/#193-placement-center-terrain-1)
+
+### 11.184. cPlacementCenterTerrain2
+
+Value: `#!xs int 194`
+
+This is the attribute [Placement Center Terrain 2](../../../attributes/attributes/#194-placement-center-terrain-2)
+
+### 11.185. cInitiatedTechId
+
+Value: `#!xs int 195`
+
+This is the attribute [Initiated Tech Id](../../../attributes/attributes/#195-initiated-tech-id)
+
+### 11.186. cMinSizeMultiplier
+
+Value: `#!xs int 196`
+
+This is the attribute [Min Size Multiplier](../../../attributes/attributes/#196-min-size-multiplier)
+
+### 11.187. cSelectionOutlineSizeX
+
+Value: `#!xs int 197`
+
+This is the attribute [Selection Outline Size X](../../../attributes/attributes/#197-selection-outline-size-x)
+
+### 11.188. cSelectionOutlineSizeY
+
+Value: `#!xs int 198`
+
+This is the attribute [Selection Outline Size Y](../../../attributes/attributes/#198-selection-outline-size-y)
+
+### 11.189. cSelectionOutlineSizeZ
+
+Value: `#!xs int 199`
+
+This is the attribute [Selection Outline Size Z](../../../attributes/attributes/#199-selection-outline-size-z)
+
+### 11.190. cClearanceSizeX
+
+Value: `#!xs int 200`
+
+This is the attribute [Clearance Size X](../../../attributes/attributes/#200-clearance-size-x)
+
+### 11.191. cClearanceSizeY
+
+Value: `#!xs int 201`
+
+This is the attribute [Clearance Size Y](../../../attributes/attributes/#201-clearance-size-y)
+
+### 11.192. cStackUnit
+
+Value: `#!xs int 202`
+
+This is the attribute [Stack Unit](../../../attributes/attributes/#202-stack-unit)
+
+### 11.193. cHeadUnit
+
+Value: `#!xs int 203`
+
+This is the attribute [Head Unit](../../../attributes/attributes/#203-head-unit)
+
+### 11.194. cTransformUnit
+
+Value: `#!xs int 204`
+
+This is the attribute [Transform Unit](../../../attributes/attributes/#204-transform-unit)
+
+### 11.195. cPileUnit
+
+Value: `#!xs int 205`
+
+This is the attribute [Pile Unit](../../../attributes/attributes/#205-pile-unit)
+
+### 11.196. cAnnexUnit1
+
+Value: `#!xs int 206`
+
+This is the attribute [Annex Unit 1](../../../attributes/attributes/#206-annex-unit-1)
+
+### 11.197. cAnnexUnit2
+
+Value: `#!xs int 207`
+
+This is the attribute [Annex Unit 2](../../../attributes/attributes/#207-annex-unit-2)
+
+### 11.198. cAnnexUnit3
+
+Value: `#!xs int 208`
+
+This is the attribute [Annex Unit 3](../../../attributes/attributes/#208-annex-unit-3)
+
+### 11.199. cAnnexUnit4
+
+Value: `#!xs int 209`
+
+This is the attribute [Annex Unit 4](../../../attributes/attributes/#209-annex-unit-4)
+
+### 11.200. cAnnexUnit1OffsetX
+
+Value: `#!xs int 210`
+
+This is the attribute [Annex Unit 1 Offset X](../../../attributes/attributes/#210-annex-unit-1-offset-x)
+
+### 11.201. cAnnexUnit1OffsetY
+
+Value: `#!xs int 211`
+
+This is the attribute [Annex Unit 1 Offset Y](../../../attributes/attributes/#211-annex-unit-1-offset-y)
+
+### 11.202. cAnnexUnit2OffsetX
+
+Value: `#!xs int 212`
+
+This is the attribute [Annex Unit 2 Offset X](../../../attributes/attributes/#212-annex-unit-2-offset-x)
+
+### 11.203. cAnnexUnit2OffsetY
+
+Value: `#!xs int 213`
+
+This is the attribute [Annex Unit 2 Offset Y](../../../attributes/attributes/#213-annex-unit-2-offset-y)
+
+### 11.204. cAnnexUnit3OffsetX
+
+Value: `#!xs int 214`
+
+This is the attribute [Annex Unit 3 Offset X](../../../attributes/attributes/#214-annex-unit-3-offset-x)
+
+### 11.205. cAnnexUnit3OffsetY
+
+Value: `#!xs int 215`
+
+This is the attribute [Annex Unit 3 Offset Y](../../../attributes/attributes/#215-annex-unit-3-offset-y)
+
+### 11.206. cAnnexUnit4OffsetX
+
+Value: `#!xs int 216`
+
+This is the attribute [Annex Unit 4 Offset X](../../../attributes/attributes/#216-annex-unit-4-offset-x)
+
+### 11.207. cAnnexUnit4OffsetY
+
+Value: `#!xs int 217`
+
+This is the attribute [Annex Unit 4 Offset Y](../../../attributes/attributes/#217-annex-unit-4-offset-y)
+
+### 11.208. cMoveAlgorithm
+
+Value: `#!xs int 218`
+
+This is the attribute [Move Algorithm](../../../attributes/attributes/#218-move-algorithm). See [cMoveAlgorithm Constants](./#43-move-algorithm-constants)
+
+### 11.209. cSpacingModifier
+
+Value: `#!xs int 219`
+
+This is the attribute [Spacing Modifier](../../../attributes/attributes/#219-spacing-modifier)
+
+### 11.210. cCanBurn
+
+Value: `#!xs int 220`
+
+This is the attribute [Can Burn](../../../attributes/attributes/#220-can-burn)
+
+### 11.211. cGatherFlag
+
+Value: `#!xs int 221`
+
+This is the attribute [Gather Flag](../../../attributes/attributes/#221-gather-flag)
 
 ## 12. Object Class
 
@@ -2544,7 +2958,7 @@ This is the ID used to target the Domestic Animal Class
 
 Value: `#!xs int 930`
 
-This is the ID used to target the Flag Class
+This is the ID used to target the 
 
 ### 12.32. cDeepSeaFishClass
 
@@ -3494,7 +3908,7 @@ ID of the player resource Construction Rate Mod. Check [here](../../../resources
 
 Value: `#!xs int 196`
 
-ID of the player resource Hun Wonder Bonus. Check [here](../../../resources/resources/#196-hun-wonder-discount "Jump to: Game Mecahnicsc > Resources > #196-hun-wonder-discount") for more info about what this resource does.
+ID of the player resource Hun Wonder Bonus. Check [here](../../../resources/resources/#196-wonder-time-modifier "Jump to: Game Mecahnicsc > Resources > #196-wonder-time-modifier") for more info about what this resource does.
 
 ### 13.125. cAttributeSpiesDiscount
 
@@ -3502,955 +3916,1015 @@ Value: `#!xs int 197`
 
 ID of the player resource Spies Discount. Check [here](../../../resources/resources/#197-spies-discount "Jump to: Game Mecahnicsc > Resources > #197-spies-discount") for more info about what this resource does.
 
-### 13.126. cAttributeMapReveal
+### 13.126. cAttributeHunRelicBonus
+
+Value: `#!xs int 198`
+
+ID of the player resource Hun Relic Bonus. Check [here](../../../resources/resources/#198-relic-time-modifier "Jump to: Game Mecahnicsc > Resources > #198-relic-time-modifier") for more info about what this resource does.
+
+### 13.127. cAttributeMapReveal
 
 Value: `#!xs int 203`
 
 ID of the player resource Map Reveal. Check [here](../../../resources/resources/#203-map-reveal "Jump to: Game Mecahnicsc > Resources > #203-map-reveal") for more info about what this resource does.
 
-### 13.127. cAttributeUnitReveal
+### 13.128. cAttributeUnitReveal
 
 Value: `#!xs int 204`
 
 ID of the player resource Unit Reveal. Check [here](../../../resources/resources/#204-unit-reveal "Jump to: Game Mecahnicsc > Resources > #204-unit-reveal") for more info about what this resource does.
 
-### 13.128. cAttributeFeitoriaFoodProductivity
+### 13.129. cAttributeFeitoriaFoodProductivity
 
 Value: `#!xs int 205`
 
 ID of the player resource Feitoria Food Productivity. Check [here](../../../resources/resources/#205-feitoria-food-productivity "Jump to: Game Mecahnicsc > Resources > #205-feitoria-food-productivity") for more info about what this resource does.
 
-### 13.129. cAttributeFeitoriaWoodProductivity
+### 13.130. cAttributeFeitoriaWoodProductivity
 
 Value: `#!xs int 206`
 
 ID of the player resource Feitoria Wood Productivity. Check [here](../../../resources/resources/#206-feitoria-wood-productivity "Jump to: Game Mecahnicsc > Resources > #206-feitoria-wood-productivity") for more info about what this resource does.
 
-### 13.130. cAttributeFeitoriaStoneProductivity
+### 13.131. cAttributeFeitoriaStoneProductivity
 
 Value: `#!xs int 207`
 
 ID of the player resource Feitoria Stone Productivity. Check [here](../../../resources/resources/#207-feitoria-stone-productivity "Jump to: Game Mecahnicsc > Resources > #207-feitoria-stone-productivity") for more info about what this resource does.
 
-### 13.131. cAttributeFeitoriaGoldProductivity
+### 13.132. cAttributeFeitoriaGoldProductivity
 
 Value: `#!xs int 208`
 
 ID of the player resource Feitoria Gold Productivity. Check [here](../../../resources/resources/#208-feitoria-gold-productivity "Jump to: Game Mecahnicsc > Resources > #208-feitoria-gold-productivity") for more info about what this resource does.
 
-### 13.132. cAttributeTemporaryMapReveal
+### 13.133. cAttributeTemporaryMapReveal
 
 Value: `#!xs int 209`
 
 ID of the player resource Temporary Map Reveal. Check [here](../../../resources/resources/#209-reveal-enemy-town-centers "Jump to: Game Mecahnicsc > Resources > #209-reveal-enemy-town-centers") for more info about what this resource does.
 
-### 13.133. cAttributeRevealInitialType
+### 13.134. cAttributeRevealInitialType
 
 Value: `#!xs int 210`
 
 ID of the player resource Reveal Initial Type. Check [here](../../../resources/resources/#210-relics-visible-on-map "Jump to: Game Mecahnicsc > Resources > #210-relics-visible-on-map") for more info about what this resource does.
 
-### 13.134. cAttributeElevationBonusHigher
+### 13.135. cAttributeElevationBonusHigher
 
 Value: `#!xs int 211`
 
 ID of the player resource Elevation Bonus Higher. Check [here](../../../resources/resources/#211-elevation-higher-bonus "Jump to: Game Mecahnicsc > Resources > #211-elevation-higher-bonus") for more info about what this resource does.
 
-### 13.135. cAttributeElevationBonusLower
+### 13.136. cAttributeElevationBonusLower
 
 Value: `#!xs int 212`
 
 ID of the player resource Elevation Bonus Lower. Check [here](../../../resources/resources/#212-elevation-lower-bonus "Jump to: Game Mecahnicsc > Resources > #212-elevation-lower-bonus") for more info about what this resource does.
 
-### 13.136. cAttributeShepherdingProductivity
+### 13.137. cAttributeExtraForageProductivity
+
+Value: `#!xs int 215`
+
+ID of the player resource Extra Forage Productivity. Check [here](../../../resources/resources/#215-bonus-forager-food "Jump to: Game Mecahnicsc > Resources > #215-bonus-forager-food") for more info about what this resource does.
+
+### 13.138. cAttributeShepherdingProductivity
 
 Value: `#!xs int 216`
 
 ID of the player resource Shepherding Productivity. Check [here](../../../resources/resources/#216-shepherd-productivity "Jump to: Game Mecahnicsc > Resources > #216-shepherd-productivity") for more info about what this resource does.
 
-### 13.137. cAttributeTriggerSharedLOS
+### 13.139. cAttributeTriggerSharedLOS
 
 Value: `#!xs int 217`
 
 ID of the player resource Trigger Shared L O S. Check [here](../../../resources/resources/#217-shared-line-of-sight "Jump to: Game Mecahnicsc > Resources > #217-shared-line-of-sight") for more info about what this resource does.
 
-### 13.138. cAttributeFeudalTownCenterLimit
+### 13.140. cAttributeFeudalTownCenterLimit
 
 Value: `#!xs int 218`
 
 ID of the player resource Feudal Town Center Limit. Check [here](../../../resources/resources/#218-early-town-center-limit "Jump to: Game Mecahnicsc > Resources > #218-early-town-center-limit") for more info about what this resource does.
 
-### 13.139. cAttributeFishingProductivity
+### 13.141. cAttributeFishingProductivity
 
 Value: `#!xs int 219`
 
 ID of the player resource Fishing Productivity. Check [here](../../../resources/resources/#219-fishing-productivity "Jump to: Game Mecahnicsc > Resources > #219-fishing-productivity") for more info about what this resource does.
 
-### 13.140. cAttributeUnused220
+### 13.142. cAttributeUnused220
 
 Value: `#!xs int 220`
 
 ID of the player resource Unused220. Check [here](../../../resources/resources/#220-enable-certain-hero-level-up-unused-resource-220 "Jump to: Game Mecahnicsc > Resources > #220-enable-certain-hero-level-up-unused-resource-220") for more info about what this resource does.
 
-### 13.141. cAttributeMonumentFoodTrickle
+### 13.143. cAttributeMonumentFoodTrickle
 
 Value: `#!xs int 221`
 
 ID of the player resource Monument Food Trickle. Check [here](../../../resources/resources/#221-monument-food-productivity "Jump to: Game Mecahnicsc > Resources > #221-monument-food-productivity") for more info about what this resource does.
 
-### 13.142. cAttributeMonumentWoodTrickle
+### 13.144. cAttributeMonumentWoodTrickle
 
 Value: `#!xs int 222`
 
 ID of the player resource Monument Wood Trickle. Check [here](../../../resources/resources/#222-monument-wood-productivity "Jump to: Game Mecahnicsc > Resources > #222-monument-wood-productivity") for more info about what this resource does.
 
-### 13.143. cAttributeMonumentStoneTrickle
+### 13.145. cAttributeMonumentStoneTrickle
 
 Value: `#!xs int 223`
 
 ID of the player resource Monument Stone Trickle. Check [here](../../../resources/resources/#223-monument-stone-productivity "Jump to: Game Mecahnicsc > Resources > #223-monument-stone-productivity") for more info about what this resource does.
 
-### 13.144. cAttributeMonumentGoldTrickle
+### 13.146. cAttributeMonumentGoldTrickle
 
 Value: `#!xs int 224`
 
 ID of the player resource Monument Gold Trickle. Check [here](../../../resources/resources/#224-monument-gold-productivity "Jump to: Game Mecahnicsc > Resources > #224-monument-gold-productivity") for more info about what this resource does.
 
-### 13.145. cAttributeRelicFoodRate
+### 13.147. cAttributeRelicFoodRate
 
 Value: `#!xs int 225`
 
 ID of the player resource Relic Food Rate. Check [here](../../../resources/resources/#225-relic-food-production-rate "Jump to: Game Mecahnicsc > Resources > #225-relic-food-production-rate") for more info about what this resource does.
 
-### 13.146. cAttributeVillagersKilledByGaia
+### 13.148. cAttributeVillagersKilledByGaia
 
 Value: `#!xs int 226`
 
 ID of the player resource Villagers Killed By Gaia. Check [here](../../../resources/resources/#226-villagers-killed-by-gaia "Jump to: Game Mecahnicsc > Resources > #226-villagers-killed-by-gaia") for more info about what this resource does.
 
-### 13.147. cAttributeVillgaersKilledByAnimal
+### 13.149. cAttributeVillgaersKilledByAnimal
 
 Value: `#!xs int 227`
 
 ID of the player resource Villgaers Killed By Animal. Check [here](../../../resources/resources/#227-villagers-killed-by-animals "Jump to: Game Mecahnicsc > Resources > #227-villagers-killed-by-animals") for more info about what this resource does.
 
-### 13.148. cAttributeVillagersKilledByAIPlayer
+### 13.150. cAttributeVillagersKilledByAIPlayer
 
 Value: `#!xs int 228`
 
 ID of the player resource Villagers Killed By A I Player. Check [here](../../../resources/resources/#228-villagers-killed-by-ai-player "Jump to: Game Mecahnicsc > Resources > #228-villagers-killed-by-ai-player") for more info about what this resource does.
 
-### 13.149. cAttributeVillagersKilledByHumanPlayer
+### 13.151. cAttributeVillagersKilledByHumanPlayer
 
 Value: `#!xs int 229`
 
 ID of the player resource Villagers Killed By Human Player. Check [here](../../../resources/resources/#229-villagers-killed-by-human-player "Jump to: Game Mecahnicsc > Resources > #229-villagers-killed-by-human-player") for more info about what this resource does.
 
-### 13.150. cAttributeFoodGeneration
+### 13.152. cAttributeFoodGeneration
 
 Value: `#!xs int 230`
 
 ID of the player resource Food Generation. Check [here](../../../resources/resources/#230-food-generation-rate "Jump to: Game Mecahnicsc > Resources > #230-food-generation-rate") for more info about what this resource does.
 
-### 13.151. cAttributeWoodGeneration
+### 13.153. cAttributeWoodGeneration
 
 Value: `#!xs int 231`
 
 ID of the player resource Wood Generation. Check [here](../../../resources/resources/#231-wood-generation-rate "Jump to: Game Mecahnicsc > Resources > #231-wood-generation-rate") for more info about what this resource does.
 
-### 13.152. cAttributeStoneGeneration
+### 13.154. cAttributeStoneGeneration
 
 Value: `#!xs int 232`
 
 ID of the player resource Stone Generation. Check [here](../../../resources/resources/#232-stone-generation-rate "Jump to: Game Mecahnicsc > Resources > #232-stone-generation-rate") for more info about what this resource does.
 
-### 13.153. cAttributeGoldGeneration
+### 13.155. cAttributeGoldGeneration
 
 Value: `#!xs int 233`
 
 ID of the player resource Gold Generation. Check [here](../../../resources/resources/#233-gold-generation-rate "Jump to: Game Mecahnicsc > Resources > #233-gold-generation-rate") for more info about what this resource does.
 
-### 13.154. cAttributeSpawnCap
+### 13.156. cAttributeSpawnCap
 
 Value: `#!xs int 234`
 
 ID of the player resource Spawn Cap. Check [here](../../../resources/resources/#234-spawn-limit "Jump to: Game Mecahnicsc > Resources > #234-spawn-limit") for more info about what this resource does.
 
-### 13.155. cAttributeFlemishMilitiaPop
+### 13.157. cAttributeFlemishMilitiaPop
 
 Value: `#!xs int 235`
 
 ID of the player resource Flemish Militia Pop. Check [here](../../../resources/resources/#235-flemish-militia-population "Jump to: Game Mecahnicsc > Resources > #235-flemish-militia-population") for more info about what this resource does.
 
-### 13.156. cAttributeGoldFarmingProductivity
+### 13.158. cAttributeGoldFarmingProductivity
 
 Value: `#!xs int 236`
 
 ID of the player resource Gold Farming Productivity. Check [here](../../../resources/resources/#236-farming-gold-productivity "Jump to: Game Mecahnicsc > Resources > #236-farming-gold-productivity") for more info about what this resource does.
 
-### 13.157. cAttributeFolwarkCollectionAmount
+### 13.159. cAttributeFolwarkCollectionAmount
 
 Value: `#!xs int 237`
 
 ID of the player resource Folwark Collection Amount. Check [here](../../../resources/resources/#237-folwark-collection-amount "Jump to: Game Mecahnicsc > Resources > #237-folwark-collection-amount") for more info about what this resource does.
 
-### 13.158. cAttributeFolwarkCollectionType
+### 13.160. cAttributeFolwarkCollectionType
 
 Value: `#!xs int 238`
 
 ID of the player resource Folwark Collection Type. Check [here](../../../resources/resources/#238-folwark-attribute-type "Jump to: Game Mecahnicsc > Resources > #238-folwark-attribute-type") for more info about what this resource does.
 
-### 13.159. cAttributeBuildingId
+### 13.161. cAttributeBuildingId
 
 Value: `#!xs int 239`
 
 ID of the player resource Building Id. Check [here](../../../resources/resources/#239-folwark-building-type "Jump to: Game Mecahnicsc > Resources > #239-folwark-building-type") for more info about what this resource does.
 
-### 13.160. cAttributeUnitsConverted
+### 13.162. cAttributeUnitsConverted
 
 Value: `#!xs int 240`
 
 ID of the player resource Units Converted. Check [here](../../../resources/resources/#240-units-converted "Jump to: Game Mecahnicsc > Resources > #240-units-converted") for more info about what this resource does.
 
-### 13.161. cAttributeStoneGoldMiningProductivity
+### 13.163. cAttributeStoneGoldMiningProductivity
 
 Value: `#!xs int 241`
 
 ID of the player resource Stone Gold Mining Productivity. Check [here](../../../resources/resources/#241-stone-mining-gold-productivity "Jump to: Game Mecahnicsc > Resources > #241-stone-mining-gold-productivity") for more info about what this resource does.
 
-### 13.162. cAttributeWorkshopFoodTrickle
+### 13.164. cAttributeWorkshopFoodTrickle
 
 Value: `#!xs int 242`
 
 ID of the player resource Workshop Food Trickle. Check [here](../../../resources/resources/#242-trade-workshop-food-productivity "Jump to: Game Mecahnicsc > Resources > #242-trade-workshop-food-productivity") for more info about what this resource does.
 
-### 13.163. cAttributeWorkshopWoodTrickle
+### 13.165. cAttributeWorkshopWoodTrickle
 
 Value: `#!xs int 243`
 
 ID of the player resource Workshop Wood Trickle. Check [here](../../../resources/resources/#243-trade-workshop-wood-productivity "Jump to: Game Mecahnicsc > Resources > #243-trade-workshop-wood-productivity") for more info about what this resource does.
 
-### 13.164. cAttributeWorkshopStoneTrickle
+### 13.166. cAttributeWorkshopStoneTrickle
 
 Value: `#!xs int 244`
 
 ID of the player resource Workshop Stone Trickle. Check [here](../../../resources/resources/#244-trade-workshop-stone-productivity "Jump to: Game Mecahnicsc > Resources > #244-trade-workshop-stone-productivity") for more info about what this resource does.
 
-### 13.165. cAttributeWorkshopGoldTrickle
+### 13.167. cAttributeWorkshopGoldTrickle
 
 Value: `#!xs int 245`
 
 ID of the player resource Workshop Gold Trickle. Check [here](../../../resources/resources/#245-trade-workshop-gold-productivity "Jump to: Game Mecahnicsc > Resources > #245-trade-workshop-gold-productivity") for more info about what this resource does.
 
-### 13.166. cAttributeUnitsValueTotal
+### 13.168. cAttributeUnitsValueTotal
 
 Value: `#!xs int 246`
 
 ID of the player resource Units Value Total. Check [here](../../../resources/resources/#246-units-value-total "Jump to: Game Mecahnicsc > Resources > #246-units-value-total") for more info about what this resource does.
 
-### 13.167. cAttributeBuildingsValueTotal
+### 13.169. cAttributeBuildingsValueTotal
 
 Value: `#!xs int 247`
 
 ID of the player resource Buildings Value Total. Check [here](../../../resources/resources/#247-buildings-value-total "Jump to: Game Mecahnicsc > Resources > #247-buildings-value-total") for more info about what this resource does.
 
-### 13.168. cAttributeVillagersCreatedTotal
+### 13.170. cAttributeVillagersCreatedTotal
 
 Value: `#!xs int 248`
 
 ID of the player resource Villagers Created Total. Check [here](../../../resources/resources/#248-villagers-created-total "Jump to: Game Mecahnicsc > Resources > #248-villagers-created-total") for more info about what this resource does.
 
-### 13.169. cAttributeVillagersIdlePeriodsTotal
+### 13.171. cAttributeVillagersIdlePeriodsTotal
 
 Value: `#!xs int 249`
 
 ID of the player resource Villagers Idle Periods Total. Check [here](../../../resources/resources/#249-villagers-idle-periods-total "Jump to: Game Mecahnicsc > Resources > #249-villagers-idle-periods-total") for more info about what this resource does.
 
-### 13.170. cAttributeVillagersIdleSecondsTotal
+### 13.172. cAttributeVillagersIdleSecondsTotal
 
 Value: `#!xs int 250`
 
 ID of the player resource Villagers Idle Seconds Total. Check [here](../../../resources/resources/#250-villagers-idle-seconds-total "Jump to: Game Mecahnicsc > Resources > #250-villagers-idle-seconds-total") for more info about what this resource does.
 
-### 13.171. cAttributeTradeFoodPercent
+### 13.173. cAttributeTradeFoodPercent
 
 Value: `#!xs int 251`
 
 ID of the player resource Trade Food Percent. Check [here](../../../resources/resources/#251-trade-food-percent "Jump to: Game Mecahnicsc > Resources > #251-trade-food-percent") for more info about what this resource does.
 
-### 13.172. cAttributeTradeWoodPercent
+### 13.174. cAttributeTradeWoodPercent
 
 Value: `#!xs int 252`
 
 ID of the player resource Trade Wood Percent. Check [here](../../../resources/resources/#252-trade-wood-percent "Jump to: Game Mecahnicsc > Resources > #252-trade-wood-percent") for more info about what this resource does.
 
-### 13.173. cAttributeTradeStonePercent
+### 13.175. cAttributeTradeStonePercent
 
 Value: `#!xs int 253`
 
 ID of the player resource Trade Stone Percent. Check [here](../../../resources/resources/#253-trade-stone-percent "Jump to: Game Mecahnicsc > Resources > #253-trade-stone-percent") for more info about what this resource does.
 
-### 13.174. cAttributeLivestockFoodProductivity
+### 13.176. cAttributeLivestockFoodProductivity
 
 Value: `#!xs int 254`
 
 ID of the player resource Livestock Food Productivity. Check [here](../../../resources/resources/#254-livestock-food-productivity "Jump to: Game Mecahnicsc > Resources > #254-livestock-food-productivity") for more info about what this resource does.
 
-### 13.175. cAttributeSpeedUpBuildingType
+### 13.177. cAttributeSpeedUpBuildingType
 
 Value: `#!xs int 255`
 
 ID of the player resource Speed Up Building Type. Check [here](../../../resources/resources/#255-unused-resource-255 "Jump to: Game Mecahnicsc > Resources > #255-unused-resource-255") for more info about what this resource does.
 
-### 13.176. cAttributeSpeedUpBuildingRange
+### 13.178. cAttributeSpeedUpBuildingRange
 
 Value: `#!xs int 256`
 
 ID of the player resource Speed Up Building Range. Check [here](../../../resources/resources/#256-unused-resource-256 "Jump to: Game Mecahnicsc > Resources > #256-unused-resource-256") for more info about what this resource does.
 
-### 13.177. cAttributeSpeedUpPercentage
+### 13.179. cAttributeSpeedUpPercentage
 
 Value: `#!xs int 257`
 
 ID of the player resource Speed Up Percentage. Check [here](../../../resources/resources/#257-unused-resource-257 "Jump to: Game Mecahnicsc > Resources > #257-unused-resource-257") for more info about what this resource does.
 
-### 13.178. cAttributeSpeedUpObjectType
+### 13.180. cAttributeSpeedUpObjectType
 
 Value: `#!xs int 258`
 
 ID of the player resource Speed Up Object Type. Check [here](../../../resources/resources/#258-unused-resource-258 "Jump to: Game Mecahnicsc > Resources > #258-unused-resource-258") for more info about what this resource does.
 
-### 13.179. cAttributeSpeedUpEffectType
+### 13.181. cAttributeSpeedUpEffectType
 
 Value: `#!xs int 259`
 
 ID of the player resource Speed Up Effect Type. Check [here](../../../resources/resources/#259-unused-resource-259 "Jump to: Game Mecahnicsc > Resources > #259-unused-resource-259") for more info about what this resource does.
 
-### 13.180. cAttributeSpeedUpSecondaryEffectType
+### 13.182. cAttributeSpeedUpSecondaryEffectType
 
 Value: `#!xs int 260`
 
 ID of the player resource Speed Up Secondary Effect Type. Check [here](../../../resources/resources/#260-unused-resource-260 "Jump to: Game Mecahnicsc > Resources > #260-unused-resource-260") for more info about what this resource does.
 
-### 13.181. cAttributeSpeedUpSecondaryPercentage
+### 13.183. cAttributeSpeedUpSecondaryPercentage
 
 Value: `#!xs int 261`
 
 ID of the player resource Speed Up Secondary Percentage. Check [here](../../../resources/resources/#261-unused-resource-261 "Jump to: Game Mecahnicsc > Resources > #261-unused-resource-261") for more info about what this resource does.
 
-### 13.182. cAttributeCivNameOverride
+### 13.184. cAttributeCivNameOverride
 
 Value: `#!xs int 262`
 
 ID of the player resource Civ Name Override. Check [here](../../../resources/resources/#262-civilization-name-override "Jump to: Game Mecahnicsc > Resources > #262-civilization-name-override") for more info about what this resource does.
 
-### 13.183. cAttributeStartingScoutID
+### 13.185. cAttributeStartingScoutID
 
 Value: `#!xs int 263`
 
 ID of the player resource Starting Scout I D. Check [here](../../../resources/resources/#263-starting-scout-id "Jump to: Game Mecahnicsc > Resources > #263-starting-scout-id") for more info about what this resource does.
 
-### 13.184. cAttributeRelicWoodRate
+### 13.186. cAttributeRelicWoodRate
 
 Value: `#!xs int 264`
 
 ID of the player resource Relic Wood Rate. Check [here](../../../resources/resources/#264-relic-wood-production-rate "Jump to: Game Mecahnicsc > Resources > #264-relic-wood-production-rate") for more info about what this resource does.
 
-### 13.185. cAttributeRelicStoneRate
+### 13.187. cAttributeRelicStoneRate
 
 Value: `#!xs int 265`
 
 ID of the player resource Relic Stone Rate. Check [here](../../../resources/resources/#265-relic-stone-production-rate "Jump to: Game Mecahnicsc > Resources > #265-relic-stone-production-rate") for more info about what this resource does.
 
-### 13.186. cAttributeChoppingGoldProductivity
+### 13.188. cAttributeChoppingGoldProductivity
 
 Value: `#!xs int 266`
 
 ID of the player resource Chopping Gold Productivity. Check [here](../../../resources/resources/#266-chopping-gold-productivity "Jump to: Game Mecahnicsc > Resources > #266-chopping-gold-productivity") for more info about what this resource does.
 
-### 13.187. cAttributeForagingWoodProductivity
+### 13.189. cAttributeForagingWoodProductivity
 
 Value: `#!xs int 267`
 
 ID of the player resource Foraging Wood Productivity. Check [here](../../../resources/resources/#267-foraging-wood-productivity "Jump to: Game Mecahnicsc > Resources > #267-foraging-wood-productivity") for more info about what this resource does.
 
-### 13.188. cAttributeHuntingProductivity
+### 13.190. cAttributeHuntingProductivity
 
 Value: `#!xs int 268`
 
 ID of the player resource Hunting Productivity. Check [here](../../../resources/resources/#268-hunter-productivity "Jump to: Game Mecahnicsc > Resources > #268-hunter-productivity") for more info about what this resource does.
 
-### 13.189. cAttributeTechnologyRewardEffect
+### 13.191. cAttributeTechnologyRewardEffect
 
 Value: `#!xs int 269`
 
 ID of the player resource Technology Reward Effect. Check [here](../../../resources/resources/#269-technology-reward-effect "Jump to: Game Mecahnicsc > Resources > #269-technology-reward-effect") for more info about what this resource does.
 
-### 13.190. cAttributeUnitRepairCost
+### 13.192. cAttributeUnitRepairCost
 
 Value: `#!xs int 270`
 
 ID of the player resource Unit Repair Cost. Check [here](../../../resources/resources/#270-unit-repair-cost "Jump to: Game Mecahnicsc > Resources > #270-unit-repair-cost") for more info about what this resource does.
 
-### 13.191. cAttributeBuildingRepairCost
+### 13.193. cAttributeBuildingRepairCost
 
 Value: `#!xs int 271`
 
 ID of the player resource Building Repair Cost. Check [here](../../../resources/resources/#271-building-repair-cost "Jump to: Game Mecahnicsc > Resources > #271-building-repair-cost") for more info about what this resource does.
 
-### 13.192. cAttributeElevationDamageHigher
+### 13.194. cAttributeElevationDamageHigher
 
 Value: `#!xs int 272`
 
 ID of the player resource Elevation Damage Higher. Check [here](../../../resources/resources/#272-elevation-higher-damage "Jump to: Game Mecahnicsc > Resources > #272-elevation-higher-damage") for more info about what this resource does.
 
-### 13.193. cAttributeElevationDamageLower
+### 13.195. cAttributeElevationDamageLower
 
 Value: `#!xs int 273`
 
 ID of the player resource Elevation Damage Lower. Check [here](../../../resources/resources/#273-elevation-lower-damage "Jump to: Game Mecahnicsc > Resources > #273-elevation-lower-damage") for more info about what this resource does.
 
-### 13.194. cAttributeInfantryKillReward
+### 13.196. cAttributeInfantryKillReward
 
 Value: `#!xs int 274`
 
 ID of the player resource Infantry Kill Reward. Check [here](../../../resources/resources/#274-infantry-kill-reward "Jump to: Game Mecahnicsc > Resources > #274-infantry-kill-reward") for more info about what this resource does.
 
-### 13.195. cAttributeMilitaryCanConvert
+### 13.197. cAttributeInfantryFyrdLevel
+
+Value: `#!xs int 275`
+
+ID of the player resource Infantry Fyrd Level. Check [here](../../../resources/resources/#275-fyrd-discount-level "Jump to: Game Mecahnicsc > Resources > #275-fyrd-discount-level") for more info about what this resource does.
+
+### 13.198. cAttributeExtraGoldProductivity
+
+Value: `#!xs int 276`
+
+ID of the player resource Extra Gold Productivity. Check [here](../../../resources/resources/#276-bonus-gold-productivity "Jump to: Game Mecahnicsc > Resources > #276-bonus-gold-productivity") for more info about what this resource does.
+
+### 13.199. cAttributeRedCliffTactics
+
+Value: `#!xs int 277`
+
+ID of the player resource Red Cliff Tactics. Check [here](../../../resources/resources/#277-red-cliffs-tactics-damage "Jump to: Game Mecahnicsc > Resources > #277-red-cliffs-tactics-damage") for more info about what this resource does.
+
+### 13.200. cAttributeRazingBounty
+
+Value: `#!xs int 278`
+
+ID of the player resource Razing Bounty. Check [here](../../../resources/resources/#278-razing-bounty "Jump to: Game Mecahnicsc > Resources > #278-razing-bounty") for more info about what this resource does.
+
+### 13.201. cAttributeMilitaryCanConvert
 
 Value: `#!xs int 279`
 
 ID of the player resource Military Can Convert. Check [here](../../../resources/resources/#279-military-can-convert "Jump to: Game Mecahnicsc > Resources > #279-military-can-convert") for more info about what this resource does.
 
-### 13.196. cAttributeMilitaryConversionRangeAdj
+### 13.202. cAttributeMilitaryConversionRangeAdj
 
 Value: `#!xs int 280`
 
 ID of the player resource Military Conversion Range Adj. Check [here](../../../resources/resources/#280-military-convert-range "Jump to: Game Mecahnicsc > Resources > #280-military-convert-range") for more info about what this resource does.
 
-### 13.197. cAttributeMilitaryConversionChance
+### 13.203. cAttributeMilitaryConversionChance
 
 Value: `#!xs int 281`
 
 ID of the player resource Military Conversion Chance. Check [here](../../../resources/resources/#281-military-convert-chance "Jump to: Game Mecahnicsc > Resources > #281-military-convert-chance") for more info about what this resource does.
 
-### 13.198. cAttributeMilitaryConversionRechargeRate
+### 13.204. cAttributeMilitaryConversionRechargeRate
 
 Value: `#!xs int 282`
 
 ID of the player resource Military Conversion Recharge Rate. Check [here](../../../resources/resources/#282-military-convert-recharge "Jump to: Game Mecahnicsc > Resources > #282-military-convert-recharge") for more info about what this resource does.
 
-### 13.199. cAttributeSpawnStayInside
+### 13.205. cAttributeSpawnStayInside
 
 Value: `#!xs int 283`
 
 ID of the player resource Spawn Stay Inside. Check [here](../../../resources/resources/#283-spawn-inside "Jump to: Game Mecahnicsc > Resources > #283-spawn-inside") for more info about what this resource does.
 
-### 13.200. cAttributeCavalryKillReward
+### 13.206. cAttributeCavalryKillReward
 
 Value: `#!xs int 284`
 
 ID of the player resource Cavalry Kill Reward. Check [here](../../../resources/resources/#284-cavalry-kill-reward "Jump to: Game Mecahnicsc > Resources > #284-cavalry-kill-reward") for more info about what this resource does.
 
-### 13.201. cAttributeTriggerSharedVisibility
+### 13.207. cAttributeTriggerSharedVisibility
 
 Value: `#!xs int 285`
 
 ID of the player resource Trigger Shared Visibility. Check [here](../../../resources/resources/#285-shared-visibility "Jump to: Game Mecahnicsc > Resources > #285-shared-visibility") for more info about what this resource does.
 
-### 13.202. cAttributeTriggerSharedExploration
+### 13.208. cAttributeTriggerSharedExploration
 
 Value: `#!xs int 286`
 
 ID of the player resource Trigger Shared Exploration. Check [here](../../../resources/resources/#286-shared-exploration "Jump to: Game Mecahnicsc > Resources > #286-shared-exploration") for more info about what this resource does.
 
-### 13.203. cAttributeMilitaryFoodTrickle
+### 13.209. cAttributeMilitaryFoodTrickle
 
 Value: `#!xs int 287`
 
 ID of the player resource Military Food Trickle. Check [here](../../../resources/resources/#287-military-food-productivity "Jump to: Game Mecahnicsc > Resources > #287-military-food-productivity") for more info about what this resource does.
 
-### 13.204. cAttributePastureFoodAmount
+### 13.210. cAttributePastureFoodAmount
 
 Value: `#!xs int 288`
 
 ID of the player resource Pasture Food Amount. Check [here](../../../resources/resources/#288-pasture-food-amount "Jump to: Game Mecahnicsc > Resources > #288-pasture-food-amount") for more info about what this resource does.
 
-### 13.205. cAttributePastureAnimalCount
+### 13.211. cAttributePastureAnimalCount
 
 Value: `#!xs int 289`
 
 ID of the player resource Pasture Animal Count. Check [here](../../../resources/resources/#289-pasture-animal-count "Jump to: Game Mecahnicsc > Resources > #289-pasture-animal-count") for more info about what this resource does.
 
-### 13.206. cAttributePastureHerderCount
+### 13.212. cAttributePastureHerderCount
 
 Value: `#!xs int 290`
 
 ID of the player resource Pasture Herder Count. Check [here](../../../resources/resources/#290-pasture-herder-count "Jump to: Game Mecahnicsc > Resources > #290-pasture-herder-count") for more info about what this resource does.
 
-### 13.207. cAttributeDisableAnimalDecay
+### 13.213. cAttributeRazingPillage
+
+Value: `#!xs int 291`
+
+ID of the player resource Razing Pillage. Check [here](../../../resources/resources/#291-razing-pillage "Jump to: Game Mecahnicsc > Resources > #291-razing-pillage") for more info about what this resource does.
+
+### 13.214. cAttributeDisableAnimalDecay
 
 Value: `#!xs int 292`
 
 ID of the player resource Disable Animal Decay. Check [here](../../../resources/resources/#292-animal-decay-prevention "Jump to: Game Mecahnicsc > Resources > #292-animal-decay-prevention") for more info about what this resource does.
 
-### 13.208. cAttributeHerdingFoodProductivity
+### 13.215. cAttributeHerdingFoodProductivity
 
 Value: `#!xs int 293`
 
 ID of the player resource Herding Food Productivity. Check [here](../../../resources/resources/#293-herder-food-productivity "Jump to: Game Mecahnicsc > Resources > #293-herder-food-productivity") for more info about what this resource does.
 
-### 13.209. cAttributeShepherdingFoodProductivity
+### 13.216. cAttributeShepherdingFoodProductivity
 
 Value: `#!xs int 294`
 
 ID of the player resource Shepherding Food Productivity. Check [here](../../../resources/resources/#294-shepherd-food-productivity "Jump to: Game Mecahnicsc > Resources > #294-shepherd-food-productivity") for more info about what this resource does.
 
-### 13.210. cAttributeUnitCostRefund
+### 13.217. cAttributeUnitCostRefund
 
 Value: `#!xs int 295`
 
-ID of the player resource Unit Cost Refund. Check [here](../../../resources/resources/#295-unused-resource-295 "Jump to: Game Mecahnicsc > Resources > #295-unused-resource-295") for more info about what this resource does.
+ID of the player resource Unit Cost Refund. Check [here](../../../resources/resources/#295-unit-refund "Jump to: Game Mecahnicsc > Resources > #295-unit-refund") for more info about what this resource does.
 
-### 13.211. cAttributeForagingProductivity
+### 13.218. cAttributeForagingProductivity
 
 Value: `#!xs int 296`
 
 ID of the player resource Foraging Productivity. Check [here](../../../resources/resources/#296-forager-productivity "Jump to: Game Mecahnicsc > Resources > #296-forager-productivity") for more info about what this resource does.
 
-### 13.212. cAttributeGaiaKills
+### 13.219. cAttributeVarangianGold
+
+Value: `#!xs int 297`
+
+ID of the player resource Varangian Gold. Check [here](../../../resources/resources/#297-varangian-gold-generation "Jump to: Game Mecahnicsc > Resources > #297-varangian-gold-generation") for more info about what this resource does.
+
+### 13.220. cAttributeButcherGoldProductivity
+
+Value: `#!xs int 298`
+
+ID of the player resource Butcher Gold Productivity. Check [here](../../../resources/resources/#298-butcher-gold-productivity "Jump to: Game Mecahnicsc > Resources > #298-butcher-gold-productivity") for more info about what this resource does.
+
+### 13.221. cAttributeExtraFoodProductivity
+
+Value: `#!xs int 299`
+
+ID of the player resource Extra Food Productivity. Check [here](../../../resources/resources/#299-bonus-food-productivity "Jump to: Game Mecahnicsc > Resources > #299-bonus-food-productivity") for more info about what this resource does.
+
+### 13.222. cAttributeGaiaKills
 
 Value: `#!xs int 300`
 
 ID of the player resource Gaia Kills. Check [here](../../../resources/resources/#300-killed-gaia "Jump to: Game Mecahnicsc > Resources > #300-killed-gaia") for more info about what this resource does.
 
-### 13.213. cAttributePlayer1Kills
+### 13.223. cAttributePlayer1Kills
 
 Value: `#!xs int 301`
 
 ID of the player resource Player1 Kills. Check [here](../../../resources/resources/#301-killed-p1 "Jump to: Game Mecahnicsc > Resources > #301-killed-p1") for more info about what this resource does.
 
-### 13.214. cAttributePlayer2Kills
+### 13.224. cAttributePlayer2Kills
 
 Value: `#!xs int 302`
 
 ID of the player resource Player2 Kills. Check [here](../../../resources/resources/#302-killed-p2 "Jump to: Game Mecahnicsc > Resources > #302-killed-p2") for more info about what this resource does.
 
-### 13.215. cAttributePlayer3Kills
+### 13.225. cAttributePlayer3Kills
 
 Value: `#!xs int 303`
 
 ID of the player resource Player3 Kills. Check [here](../../../resources/resources/#303-killed-p3 "Jump to: Game Mecahnicsc > Resources > #303-killed-p3") for more info about what this resource does.
 
-### 13.216. cAttributePlayer4Kills
+### 13.226. cAttributePlayer4Kills
 
 Value: `#!xs int 304`
 
 ID of the player resource Player4 Kills. Check [here](../../../resources/resources/#304-killed-p4 "Jump to: Game Mecahnicsc > Resources > #304-killed-p4") for more info about what this resource does.
 
-### 13.217. cAttributePlayer5Kills
+### 13.227. cAttributePlayer5Kills
 
 Value: `#!xs int 305`
 
 ID of the player resource Player5 Kills. Check [here](../../../resources/resources/#305-killed-p5 "Jump to: Game Mecahnicsc > Resources > #305-killed-p5") for more info about what this resource does.
 
-### 13.218. cAttributePlayer6Kills
+### 13.228. cAttributePlayer6Kills
 
 Value: `#!xs int 306`
 
 ID of the player resource Player6 Kills. Check [here](../../../resources/resources/#306-killed-p6 "Jump to: Game Mecahnicsc > Resources > #306-killed-p6") for more info about what this resource does.
 
-### 13.219. cAttributePlayer7Kills
+### 13.229. cAttributePlayer7Kills
 
 Value: `#!xs int 307`
 
 ID of the player resource Player7 Kills. Check [here](../../../resources/resources/#307-killed-p7 "Jump to: Game Mecahnicsc > Resources > #307-killed-p7") for more info about what this resource does.
 
-### 13.220. cAttributePlayer8Kills
+### 13.230. cAttributePlayer8Kills
 
 Value: `#!xs int 308`
 
 ID of the player resource Player8 Kills. Check [here](../../../resources/resources/#308-killed-p8 "Jump to: Game Mecahnicsc > Resources > #308-killed-p8") for more info about what this resource does.
 
-### 13.221. cAttributeKillsByGaia
+### 13.231. cAttributeKillsByGaia
 
 Value: `#!xs int 325`
 
 ID of the player resource Kills By Gaia. Check [here](../../../resources/resources/#325-kills-by-gaia "Jump to: Game Mecahnicsc > Resources > #325-kills-by-gaia") for more info about what this resource does.
 
-### 13.222. cAttributeKillsByPlayer1
+### 13.232. cAttributeKillsByPlayer1
 
 Value: `#!xs int 326`
 
 ID of the player resource Kills By Player1. Check [here](../../../resources/resources/#326-kills-by-p1 "Jump to: Game Mecahnicsc > Resources > #326-kills-by-p1") for more info about what this resource does.
 
-### 13.223. cAttributeKillsByPlayer2
+### 13.233. cAttributeKillsByPlayer2
 
 Value: `#!xs int 327`
 
 ID of the player resource Kills By Player2. Check [here](../../../resources/resources/#327-kills-by-p2 "Jump to: Game Mecahnicsc > Resources > #327-kills-by-p2") for more info about what this resource does.
 
-### 13.224. cAttributeKillsByPlayer3
+### 13.234. cAttributeKillsByPlayer3
 
 Value: `#!xs int 328`
 
 ID of the player resource Kills By Player3. Check [here](../../../resources/resources/#328-kills-by-p3 "Jump to: Game Mecahnicsc > Resources > #328-kills-by-p3") for more info about what this resource does.
 
-### 13.225. cAttributeKillsByPlayer4
+### 13.235. cAttributeKillsByPlayer4
 
 Value: `#!xs int 329`
 
 ID of the player resource Kills By Player4. Check [here](../../../resources/resources/#329-kills-by-p4 "Jump to: Game Mecahnicsc > Resources > #329-kills-by-p4") for more info about what this resource does.
 
-### 13.226. cAttributeKillsByPlayer5
+### 13.236. cAttributeKillsByPlayer5
 
 Value: `#!xs int 330`
 
 ID of the player resource Kills By Player5. Check [here](../../../resources/resources/#330-kills-by-p5 "Jump to: Game Mecahnicsc > Resources > #330-kills-by-p5") for more info about what this resource does.
 
-### 13.227. cAttributeKillsByPlayer6
+### 13.237. cAttributeKillsByPlayer6
 
 Value: `#!xs int 331`
 
 ID of the player resource Kills By Player6. Check [here](../../../resources/resources/#331-kills-by-p6 "Jump to: Game Mecahnicsc > Resources > #331-kills-by-p6") for more info about what this resource does.
 
-### 13.228. cAttributeKillsByPlayer7
+### 13.238. cAttributeKillsByPlayer7
 
 Value: `#!xs int 332`
 
 ID of the player resource Kills By Player7. Check [here](../../../resources/resources/#332-kills-by-p7 "Jump to: Game Mecahnicsc > Resources > #332-kills-by-p7") for more info about what this resource does.
 
-### 13.229. cAttributeKillsByPlayer8
+### 13.239. cAttributeKillsByPlayer8
 
 Value: `#!xs int 333`
 
 ID of the player resource Kills By Player8. Check [here](../../../resources/resources/#333-kills-by-p8 "Jump to: Game Mecahnicsc > Resources > #333-kills-by-p8") for more info about what this resource does.
 
-### 13.230. cAttributeGaiaRazings
+### 13.240. cAttributeGaiaRazings
 
 Value: `#!xs int 350`
 
 ID of the player resource Gaia Razings. Check [here](../../../resources/resources/#350-gaia-razings "Jump to: Game Mecahnicsc > Resources > #350-gaia-razings") for more info about what this resource does.
 
-### 13.231. cAttributePlayer1Razings
+### 13.241. cAttributePlayer1Razings
 
 Value: `#!xs int 351`
 
 ID of the player resource Player1 Razings. Check [here](../../../resources/resources/#351-p1-razings "Jump to: Game Mecahnicsc > Resources > #351-p1-razings") for more info about what this resource does.
 
-### 13.232. cAttributePlayer2Razings
+### 13.242. cAttributePlayer2Razings
 
 Value: `#!xs int 352`
 
 ID of the player resource Player2 Razings. Check [here](../../../resources/resources/#352-p2-razings "Jump to: Game Mecahnicsc > Resources > #352-p2-razings") for more info about what this resource does.
 
-### 13.233. cAttributePlayer3Razings
+### 13.243. cAttributePlayer3Razings
 
 Value: `#!xs int 353`
 
 ID of the player resource Player3 Razings. Check [here](../../../resources/resources/#353-p3-razings "Jump to: Game Mecahnicsc > Resources > #353-p3-razings") for more info about what this resource does.
 
-### 13.234. cAttributePlayer4Razings
+### 13.244. cAttributePlayer4Razings
 
 Value: `#!xs int 354`
 
 ID of the player resource Player4 Razings. Check [here](../../../resources/resources/#354-p4-razings "Jump to: Game Mecahnicsc > Resources > #354-p4-razings") for more info about what this resource does.
 
-### 13.235. cAttributePlayer5Razings
+### 13.245. cAttributePlayer5Razings
 
 Value: `#!xs int 355`
 
 ID of the player resource Player5 Razings. Check [here](../../../resources/resources/#355-p5-razings "Jump to: Game Mecahnicsc > Resources > #355-p5-razings") for more info about what this resource does.
 
-### 13.236. cAttributePlayer6Razings
+### 13.246. cAttributePlayer6Razings
 
 Value: `#!xs int 356`
 
 ID of the player resource Player6 Razings. Check [here](../../../resources/resources/#356-p6-razings "Jump to: Game Mecahnicsc > Resources > #356-p6-razings") for more info about what this resource does.
 
-### 13.237. cAttributePlayer7Razings
+### 13.247. cAttributePlayer7Razings
 
 Value: `#!xs int 357`
 
 ID of the player resource Player7 Razings. Check [here](../../../resources/resources/#357-p7-razings "Jump to: Game Mecahnicsc > Resources > #357-p7-razings") for more info about what this resource does.
 
-### 13.238. cAttributePlayer8Razings
+### 13.248. cAttributePlayer8Razings
 
 Value: `#!xs int 358`
 
 ID of the player resource Player8 Razings. Check [here](../../../resources/resources/#358-p8-razings "Jump to: Game Mecahnicsc > Resources > #358-p8-razings") for more info about what this resource does.
 
-### 13.239. cAttributeRazingsByGaia
+### 13.249. cAttributeRazingsByGaia
 
 Value: `#!xs int 375`
 
 ID of the player resource Razings By Gaia. Check [here](../../../resources/resources/#375-razings-by-gaia "Jump to: Game Mecahnicsc > Resources > #375-razings-by-gaia") for more info about what this resource does.
 
-### 13.240. cAttributeRazingsByPlayer1
+### 13.250. cAttributeRazingsByPlayer1
 
 Value: `#!xs int 376`
 
 ID of the player resource Razings By Player1. Check [here](../../../resources/resources/#376-razings-by-p1 "Jump to: Game Mecahnicsc > Resources > #376-razings-by-p1") for more info about what this resource does.
 
-### 13.241. cAttributeRazingsByPlayer2
+### 13.251. cAttributeRazingsByPlayer2
 
 Value: `#!xs int 377`
 
 ID of the player resource Razings By Player2. Check [here](../../../resources/resources/#377-razings-by-p2 "Jump to: Game Mecahnicsc > Resources > #377-razings-by-p2") for more info about what this resource does.
 
-### 13.242. cAttributeRazingsByPlayer3
+### 13.252. cAttributeRazingsByPlayer3
 
 Value: `#!xs int 378`
 
 ID of the player resource Razings By Player3. Check [here](../../../resources/resources/#378-razings-by-p3 "Jump to: Game Mecahnicsc > Resources > #378-razings-by-p3") for more info about what this resource does.
 
-### 13.243. cAttributeRazingsByPlayer4
+### 13.253. cAttributeRazingsByPlayer4
 
 Value: `#!xs int 379`
 
 ID of the player resource Razings By Player4. Check [here](../../../resources/resources/#379-razings-by-p4 "Jump to: Game Mecahnicsc > Resources > #379-razings-by-p4") for more info about what this resource does.
 
-### 13.244. cAttributeRazingsByPlayer5
+### 13.254. cAttributeRazingsByPlayer5
 
 Value: `#!xs int 380`
 
 ID of the player resource Razings By Player5. Check [here](../../../resources/resources/#380-razings-by-p5 "Jump to: Game Mecahnicsc > Resources > #380-razings-by-p5") for more info about what this resource does.
 
-### 13.245. cAttributeRazingsByPlayer6
+### 13.255. cAttributeRazingsByPlayer6
 
 Value: `#!xs int 381`
 
 ID of the player resource Razings By Player6. Check [here](../../../resources/resources/#381-razings-by-p6 "Jump to: Game Mecahnicsc > Resources > #381-razings-by-p6") for more info about what this resource does.
 
-### 13.246. cAttributeRazingsByPlayer7
+### 13.256. cAttributeRazingsByPlayer7
 
 Value: `#!xs int 382`
 
 ID of the player resource Razings By Player7. Check [here](../../../resources/resources/#382-razings-by-p7 "Jump to: Game Mecahnicsc > Resources > #382-razings-by-p7") for more info about what this resource does.
 
-### 13.247. cAttributeRazingsByPlayer8
+### 13.257. cAttributeRazingsByPlayer8
 
 Value: `#!xs int 383`
 
 ID of the player resource Razings By Player8. Check [here](../../../resources/resources/#383-razings-by-p8 "Jump to: Game Mecahnicsc > Resources > #383-razings-by-p8") for more info about what this resource does.
 
-### 13.248. cAttributeGaiaKillValue
+### 13.258. cAttributeGaiaKillValue
 
 Value: `#!xs int 400`
 
 ID of the player resource Gaia Kill Value. Check [here](../../../resources/resources/#400-gaia-kill-value "Jump to: Game Mecahnicsc > Resources > #400-gaia-kill-value") for more info about what this resource does.
 
-### 13.249. cAttributePlayer1KillValue
+### 13.259. cAttributePlayer1KillValue
 
 Value: `#!xs int 401`
 
 ID of the player resource Player1 Kill Value. Check [here](../../../resources/resources/#401-p1-kill-value "Jump to: Game Mecahnicsc > Resources > #401-p1-kill-value") for more info about what this resource does.
 
-### 13.250. cAttributePlayer2KillValue
+### 13.260. cAttributePlayer2KillValue
 
 Value: `#!xs int 402`
 
 ID of the player resource Player2 Kill Value. Check [here](../../../resources/resources/#402-p2-kill-value "Jump to: Game Mecahnicsc > Resources > #402-p2-kill-value") for more info about what this resource does.
 
-### 13.251. cAttributePlayer3KillValue
+### 13.261. cAttributePlayer3KillValue
 
 Value: `#!xs int 403`
 
 ID of the player resource Player3 Kill Value. Check [here](../../../resources/resources/#403-p3-kill-value "Jump to: Game Mecahnicsc > Resources > #403-p3-kill-value") for more info about what this resource does.
 
-### 13.252. cAttributePlayer4KillValue
+### 13.262. cAttributePlayer4KillValue
 
 Value: `#!xs int 404`
 
 ID of the player resource Player4 Kill Value. Check [here](../../../resources/resources/#404-p4-kill-value "Jump to: Game Mecahnicsc > Resources > #404-p4-kill-value") for more info about what this resource does.
 
-### 13.253. cAttributePlayer5KillValue
+### 13.263. cAttributePlayer5KillValue
 
 Value: `#!xs int 405`
 
 ID of the player resource Player5 Kill Value. Check [here](../../../resources/resources/#405-p5-kill-value "Jump to: Game Mecahnicsc > Resources > #405-p5-kill-value") for more info about what this resource does.
 
-### 13.254. cAttributePlayer6KillValue
+### 13.264. cAttributePlayer6KillValue
 
 Value: `#!xs int 406`
 
 ID of the player resource Player6 Kill Value. Check [here](../../../resources/resources/#406-p6-kill-value "Jump to: Game Mecahnicsc > Resources > #406-p6-kill-value") for more info about what this resource does.
 
-### 13.255. cAttributePlayer7KillValue
+### 13.265. cAttributePlayer7KillValue
 
 Value: `#!xs int 407`
 
 ID of the player resource Player7 Kill Value. Check [here](../../../resources/resources/#407-p7-kill-value "Jump to: Game Mecahnicsc > Resources > #407-p7-kill-value") for more info about what this resource does.
 
-### 13.256. cAttributePlayer8KillValue
+### 13.266. cAttributePlayer8KillValue
 
 Value: `#!xs int 408`
 
 ID of the player resource Player8 Kill Value. Check [here](../../../resources/resources/#408-p8-kill-value "Jump to: Game Mecahnicsc > Resources > #408-p8-kill-value") for more info about what this resource does.
 
-### 13.257. cAttributeGaiaRazingValue
+### 13.267. cAttributeGaiaRazingValue
 
 Value: `#!xs int 425`
 
 ID of the player resource Gaia Razing Value. Check [here](../../../resources/resources/#425-gaia-razing-value "Jump to: Game Mecahnicsc > Resources > #425-gaia-razing-value") for more info about what this resource does.
 
-### 13.258. cAttributePlayer1RazingValue
+### 13.268. cAttributePlayer1RazingValue
 
 Value: `#!xs int 426`
 
 ID of the player resource Player1 Razing Value. Check [here](../../../resources/resources/#426-p1-razing-value "Jump to: Game Mecahnicsc > Resources > #426-p1-razing-value") for more info about what this resource does.
 
-### 13.259. cAttributePlayer2RazingValue
+### 13.269. cAttributePlayer2RazingValue
 
 Value: `#!xs int 427`
 
 ID of the player resource Player2 Razing Value. Check [here](../../../resources/resources/#427-p2-razing-value "Jump to: Game Mecahnicsc > Resources > #427-p2-razing-value") for more info about what this resource does.
 
-### 13.260. cAttributePlayer3RazingValue
+### 13.270. cAttributePlayer3RazingValue
 
 Value: `#!xs int 428`
 
 ID of the player resource Player3 Razing Value. Check [here](../../../resources/resources/#428-p3-razing-value "Jump to: Game Mecahnicsc > Resources > #428-p3-razing-value") for more info about what this resource does.
 
-### 13.261. cAttributePlayer4RazingValue
+### 13.271. cAttributePlayer4RazingValue
 
 Value: `#!xs int 429`
 
 ID of the player resource Player4 Razing Value. Check [here](../../../resources/resources/#429-p4-razing-value "Jump to: Game Mecahnicsc > Resources > #429-p4-razing-value") for more info about what this resource does.
 
-### 13.262. cAttributePlayer5RazingValue
+### 13.272. cAttributePlayer5RazingValue
 
 Value: `#!xs int 430`
 
 ID of the player resource Player5 Razing Value. Check [here](../../../resources/resources/#430-p5-razing-value "Jump to: Game Mecahnicsc > Resources > #430-p5-razing-value") for more info about what this resource does.
 
-### 13.263. cAttributePlayer6RazingValue
+### 13.273. cAttributePlayer6RazingValue
 
 Value: `#!xs int 431`
 
 ID of the player resource Player6 Razing Value. Check [here](../../../resources/resources/#431-p6-razing-value "Jump to: Game Mecahnicsc > Resources > #431-p6-razing-value") for more info about what this resource does.
 
-### 13.264. cAttributePlayer7RazingValue
+### 13.274. cAttributePlayer7RazingValue
 
 Value: `#!xs int 432`
 
 ID of the player resource Player7 Razing Value. Check [here](../../../resources/resources/#432-p7-razing-value "Jump to: Game Mecahnicsc > Resources > #432-p7-razing-value") for more info about what this resource does.
 
-### 13.265. cAttributePlayer8RazingValue
+### 13.275. cAttributePlayer8RazingValue
 
 Value: `#!xs int 433`
 
 ID of the player resource Player8 Razing Value. Check [here](../../../resources/resources/#433-p8-razing-value "Jump to: Game Mecahnicsc > Resources > #433-p8-razing-value") for more info about what this resource does.
 
-### 13.266. cAttributeGaiaTribute
+### 13.276. cAttributeGaiaTribute
 
 Value: `#!xs int 450`
 
 ID of the player resource Gaia Tribute. Check [here](../../../resources/resources/#450-gaia-tribute "Jump to: Game Mecahnicsc > Resources > #450-gaia-tribute") for more info about what this resource does.
 
-### 13.267. cAttributePlayer1Tribute
+### 13.277. cAttributePlayer1Tribute
 
 Value: `#!xs int 451`
 
 ID of the player resource Player1 Tribute. Check [here](../../../resources/resources/#451-p1-tribute "Jump to: Game Mecahnicsc > Resources > #451-p1-tribute") for more info about what this resource does.
 
-### 13.268. cAttributePlayer2Tribute
+### 13.278. cAttributePlayer2Tribute
 
 Value: `#!xs int 452`
 
 ID of the player resource Player2 Tribute. Check [here](../../../resources/resources/#452-p2-tribute "Jump to: Game Mecahnicsc > Resources > #452-p2-tribute") for more info about what this resource does.
 
-### 13.269. cAttributePlayer3Tribute
+### 13.279. cAttributePlayer3Tribute
 
 Value: `#!xs int 453`
 
 ID of the player resource Player3 Tribute. Check [here](../../../resources/resources/#453-p3-tribute "Jump to: Game Mecahnicsc > Resources > #453-p3-tribute") for more info about what this resource does.
 
-### 13.270. cAttributePlayer4Tribute
+### 13.280. cAttributePlayer4Tribute
 
 Value: `#!xs int 454`
 
 ID of the player resource Player4 Tribute. Check [here](../../../resources/resources/#454-p4-tribute "Jump to: Game Mecahnicsc > Resources > #454-p4-tribute") for more info about what this resource does.
 
-### 13.271. cAttributePlayer5Tribute
+### 13.281. cAttributePlayer5Tribute
 
 Value: `#!xs int 455`
 
 ID of the player resource Player5 Tribute. Check [here](../../../resources/resources/#455-p5-tribute "Jump to: Game Mecahnicsc > Resources > #455-p5-tribute") for more info about what this resource does.
 
-### 13.272. cAttributePlayer6Tribute
+### 13.282. cAttributePlayer6Tribute
 
 Value: `#!xs int 456`
 
 ID of the player resource Player6 Tribute. Check [here](../../../resources/resources/#456-p6-tribute "Jump to: Game Mecahnicsc > Resources > #456-p6-tribute") for more info about what this resource does.
 
-### 13.273. cAttributePlayer7Tribute
+### 13.283. cAttributePlayer7Tribute
 
 Value: `#!xs int 457`
 
 ID of the player resource Player7 Tribute. Check [here](../../../resources/resources/#457-p7-tribute "Jump to: Game Mecahnicsc > Resources > #457-p7-tribute") for more info about what this resource does.
 
-### 13.274. cAttributePlayer8Tribute
+### 13.284. cAttributePlayer8Tribute
 
 Value: `#!xs int 458`
 
 ID of the player resource Player8 Tribute. Check [here](../../../resources/resources/#458-p8-tribute "Jump to: Game Mecahnicsc > Resources > #458-p8-tribute") for more info about what this resource does.
 
-### 13.275. cAttributeTributeFromGaia
+### 13.285. cAttributeTributeFromGaia
 
 Value: `#!xs int 475`
 
 ID of the player resource Tribute From Gaia. Check [here](../../../resources/resources/#475-tribute-from-gaia "Jump to: Game Mecahnicsc > Resources > #475-tribute-from-gaia") for more info about what this resource does.
 
-### 13.276. cAttributeTributeFromPlayer1
+### 13.286. cAttributeTributeFromPlayer1
 
 Value: `#!xs int 476`
 
 ID of the player resource Tribute From Player1. Check [here](../../../resources/resources/#476-tribute-from-p1 "Jump to: Game Mecahnicsc > Resources > #476-tribute-from-p1") for more info about what this resource does.
 
-### 13.277. cAttributeTributeFromPlayer2
+### 13.287. cAttributeTributeFromPlayer2
 
 Value: `#!xs int 477`
 
 ID of the player resource Tribute From Player2. Check [here](../../../resources/resources/#477-tribute-from-p2 "Jump to: Game Mecahnicsc > Resources > #477-tribute-from-p2") for more info about what this resource does.
 
-### 13.278. cAttributeTributeFromPlayer3
+### 13.288. cAttributeTributeFromPlayer3
 
 Value: `#!xs int 478`
 
 ID of the player resource Tribute From Player3. Check [here](../../../resources/resources/#478-tribute-from-p3 "Jump to: Game Mecahnicsc > Resources > #478-tribute-from-p3") for more info about what this resource does.
 
-### 13.279. cAttributeTributeFromPlayer4
+### 13.289. cAttributeTributeFromPlayer4
 
 Value: `#!xs int 479`
 
 ID of the player resource Tribute From Player4. Check [here](../../../resources/resources/#479-tribute-from-p4 "Jump to: Game Mecahnicsc > Resources > #479-tribute-from-p4") for more info about what this resource does.
 
-### 13.280. cAttributeTributeFromPlayer5
+### 13.290. cAttributeTributeFromPlayer5
 
 Value: `#!xs int 480`
 
 ID of the player resource Tribute From Player5. Check [here](../../../resources/resources/#480-tribute-from-p5 "Jump to: Game Mecahnicsc > Resources > #480-tribute-from-p5") for more info about what this resource does.
 
-### 13.281. cAttributeTributeFromPlayer6
+### 13.291. cAttributeTributeFromPlayer6
 
 Value: `#!xs int 481`
 
 ID of the player resource Tribute From Player6. Check [here](../../../resources/resources/#481-tribute-from-p6 "Jump to: Game Mecahnicsc > Resources > #481-tribute-from-p6") for more info about what this resource does.
 
-### 13.282. cAttributeTributeFromPlayer7
+### 13.292. cAttributeTributeFromPlayer7
 
 Value: `#!xs int 482`
 
 ID of the player resource Tribute From Player7. Check [here](../../../resources/resources/#482-tribute-from-p7 "Jump to: Game Mecahnicsc > Resources > #482-tribute-from-p7") for more info about what this resource does.
 
-### 13.283. cAttributeTributeFromPlayer8
+### 13.293. cAttributeTributeFromPlayer8
 
 Value: `#!xs int 483`
 
 ID of the player resource Tribute From Player8. Check [here](../../../resources/resources/#483-tribute-from-p8 "Jump to: Game Mecahnicsc > Resources > #483-tribute-from-p8") for more info about what this resource does.
 
-### 13.284. cAttributeChoppingFoodProductivity
+### 13.294. cAttributeChoppingFoodProductivity
 
 Value: `#!xs int 502`
 
@@ -5173,49 +5647,55 @@ Value: `#!xs int 161`
 
 ID for the task Refund
 
+### 16.49. cTaskTypeAdditionalResource
+
+Value: `#!xs int 164`
+
+ID for the task Additional Resource
+
 ## 17. Tech State
 
 ### 17.1. cTechStateNotReady
 
 Value: `#!xs int 0`
 
-Enum value for the tech state Not Ready
+Enum value for the tech state Not Ready. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ### 17.2. cTechStateReady
 
 Value: `#!xs int 1`
 
-Enum value for the tech state Ready
+Enum value for the tech state Ready. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ### 17.3. cTechStateQueued
 
 Value: `#!xs int 4`
 
-Enum value for the tech state Queued
+Enum value for the tech state Queued. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ### 17.4. cTechStateResearching
 
 Value: `#!xs int 2`
 
-Enum value for the tech state Researching
+Enum value for the tech state Researching. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ### 17.5. cTechStateDone
 
 Value: `#!xs int 3`
 
-Enum value for the tech state Done
+Enum value for the tech state Done. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ### 17.6. cTechStateDisabled
 
 Value: `#!xs int -1`
 
-Enum value for the tech state Disabled
+Enum value for the tech state Disabled. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ### 17.7. cTechStateInvalid
 
 Value: `#!xs int -2`
 
-Enum value for the tech state Invalid
+Enum value for the tech state Invalid. Note, these constants cannot be used with [cModifyTech](./#89-cmodifytech) and [cAttrSetState](./#1026-cattrsetstate).
 
 ## 18. Object Type
 
@@ -5739,7 +6219,7 @@ Enum value for Timer Unit Black
 
 Value: `#!xs int 0`
 
-Enum value for Tech Attribute 
+Enum value for Tech Attribute State
 
 ### 27.2. cTechCost
 
@@ -5818,4 +6298,1226 @@ Enum value for Tech Attribute Stacking Enabled
 Value: `#!xs int 13`
 
 Enum value for Tech Attribute Stacking Cap
+
+### 27.15. cTechNumResearchLocations
+
+Value: `#!xs int 14`
+
+Enum value for Tech Attribute Num Research Locations
+
+### 27.16. cTechCostType
+
+Value: `#!xs int 15`
+
+Enum value for Tech Attribute Cost Type
+
+### 27.17. cTechDeductFlag
+
+Value: `#!xs int 16`
+
+Enum value for Tech Attribute Deduct Flag
+
+## 28. Undead Flag Constants
+
+### 28.1. cUndeadFlagShowUndeadGraphic
+
+Value: `#!xs int 1`
+
+Enum value for the [Undead Flag](../../../attributes/attributes/#166-undead-flag) attribute.
+
+### 28.2. cUndeadFlagIgnoreInKillStats
+
+Value: `#!xs int 2`
+
+Enum value for the [Undead Flag](../../../attributes/attributes/#166-undead-flag) attribute.
+
+### 28.3. cUndeadFlagGarrisonInvincibility
+
+Value: `#!xs int 4`
+
+Enum value for the [Undead Flag](../../../attributes/attributes/#166-undead-flag) attribute.
+
+## 29. Class Flags
+
+### 29.1. cFlagClassRemoval
+
+Value: `#!xs int -1`
+
+
+
+### 29.2. cFlagClassOffset
+
+Value: `#!xs int 1000`
+
+
+
+### 29.3. cFlagClassInfantry
+
+Value: `#!xs int 1`
+
+Includes the following classes: `cInfantryClass`
+
+### 29.4. cFlagClassCavalry
+
+Value: `#!xs int 2`
+
+Includes the following classes: `cCavalryClass, cScoutCavalryClass`
+
+### 29.5. cFlagClassArchers
+
+Value: `#!xs int 4`
+
+Includes the following classes: `cArcherClass, cHandCannoneerClass`
+
+### 29.6. cFlagClassCavalryArchers
+
+Value: `#!xs int 8`
+
+Includes the following classes: `cCavalryArcherClass`, `cConquistadorClass`
+
+### 29.7. cFlagClassMonk
+
+Value: `#!xs int 16`
+
+Includes the following classes: `cMonkClass`, `cMonkWithRelicClass`
+
+### 29.8. cFlagClassCivilian
+
+Value: `#!xs int 32`
+
+Includes the following classes: `cVillagerClass`, `cTradeCartClass`, `cKingClass`
+
+### 29.9. cFlagClassShip
+
+Value: `#!xs int 64`
+
+Includes the following classes: `cWarshipClass`, `cTransportShipClass`, `cFishingBoatClass`, `cTradeBoatClass`, `cBoardingShipClass`
+
+### 29.10. cFlagClassSiege
+
+Value: `#!xs int 128`
+
+Includes the following classes: `cSiegeWeaponClass`, `cScorpionClass`, `cPackedUnitClass`, `cUnpackedSiegeUnitClass`, `cPetardClass`
+
+### 29.11. cFlagClassBuilding
+
+Value: `#!xs int 256`
+
+Includes the following classes: `cBuildingClass`, `cFarmClass`, `cWallClass`, `cGateClass`, `cTowerClass`, `cMiscBuildingClass`
+
+## 30. Map Tile Constants
+
+### 30.1. cTileTerrainId
+
+Value: `#!xs int 0`
+
+Enum value for Map Tile Attribute Terrain Id
+
+### 30.2. cTileElevation
+
+Value: `#!xs int 1`
+
+Enum value for Map Tile Attribute Elevation
+
+### 30.3. cTileMaskId
+
+Value: `#!xs int 2`
+
+Enum value for Map Tile Attribute Mask Id
+
+### 30.4. cTileLayerId
+
+Value: `#!xs int 3`
+
+Enum value for Map Tile Attribute Layer Id
+
+## 31. Capture Flag Constants
+
+### 31.1. cCaptureFlagNever
+
+Value: `#!xs int 0`
+
+Enum value for Unit Capture Flag Never. Units with this capture flag cannot be converted
+
+### 31.2. cCaptureFlagOnce
+
+Value: `#!xs int 1`
+
+Enum value for Unit Capture Flag Once. Units with this capture flag will convert once (Gaia units by default)
+
+### 31.3. cCaptureFlagMultipleTimes
+
+Value: `#!xs int 2`
+
+Enum value for Unit Capture Flag Multiple Times. Units with this capture flag will convert multiple times (sheep/monuments)
+
+### 31.4. cCaptureFlagNeverGaiaAggressive
+
+Value: `#!xs int 3`
+
+Enum value for Unit Capture Flag Never Gaia Aggressive. Units with this capture flag cannot be converted. Gaia units with this flag will behave aggressively towards player units.
+
+## 32. Unit Property Constants
+
+### 32.1. cUnitHitpoints
+
+Value: `#!xs int 0`
+
+Enum value for Unit Property Hitpoints. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.2. cUnitBuildpoints
+
+Value: `#!xs int 1`
+
+Enum value for Unit Property Buildpoints. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.3. cUnitCharge
+
+Value: `#!xs int 2`
+
+Enum value for Unit Property Charge. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.4. cUnitCaptionStringId
+
+Value: `#!xs int 3`
+
+Enum value for Unit Property Caption String Id. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.5. cUnitAttributeHeld
+
+Value: `#!xs int 4`
+
+Enum value for Unit Property Attribute Held. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.6. cUnitGarrisonedInId
+
+Value: `#!xs int 5`
+
+Enum value for Unit Property Garrisoned In Id. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.7. cUnitCaptureFlag
+
+Value: `#!xs int 6`
+
+Enum value for Unit Property Capture Flag. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.8. cUnitDeletable
+
+Value: `#!xs int 7`
+
+Enum value for Unit Property Deletable. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.9. cUnitTargetable
+
+Value: `#!xs int 8`
+
+Enum value for Unit Property Targetable. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.10. cUnitAttackable
+
+Value: `#!xs int 9`
+
+Enum value for Unit Property Attackable. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.11. cUnitSelectable
+
+Value: `#!xs int 10`
+
+Enum value for Unit Property Selectable. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.12. cUnitStance
+
+Value: `#!xs int 11`
+
+Enum value for Unit Property Stance. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.13. cUnitVisibility
+
+Value: `#!xs int 12`
+
+Enum value for Unit Property Visibility. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.14. cUnitColorId
+
+Value: `#!xs int 13`
+
+Enum value for Unit Property Color Id. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.15. cUnitLocked
+
+Value: `#!xs int 14`
+
+Enum value for Unit Property Locked. This can be both get and set. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty) and [xsSetUnitProperty](../../functions/functions/#951-xssetunitproperty)
+
+### 32.16. cUnitGroupId
+
+Value: `#!xs int 10000`
+
+Enum value for the Unit Property Group Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.17. cUnitObjectId
+
+Value: `#!xs int 10001`
+
+Enum value for the Unit Property Object Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.18. cUnitCopyId
+
+Value: `#!xs int 10002`
+
+Enum value for the Unit Property Copy Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.19. cUnitClassType
+
+Value: `#!xs int 10003`
+
+Enum value for the Unit Property Class Type. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.20. cUnitObjectType
+
+Value: `#!xs int 10004`
+
+Enum value for the Unit Property Object Type. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.21. cUnitAttributeTypesHeld
+
+Value: `#!xs int 10005`
+
+Enum value for the Unit Property Attribute Types Held. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.22. cUnitGarrisonedUnitIds
+
+Value: `#!xs int 10006`
+
+Enum value for the Unit Property Garrisoned Unit Ids. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.23. cUnitTargetId
+
+Value: `#!xs int 10007`
+
+Enum value for the Unit Property Target Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.24. cUnitTarget2Id
+
+Value: `#!xs int 10008`
+
+Enum value for the Unit Property Target2 Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.25. cUnitActionId
+
+Value: `#!xs int 10009`
+
+Enum value for the Unit Property Action Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+### 32.26. cUnitOrderId
+
+Value: `#!xs int 10010`
+
+Enum value for the Unit Property Order Id. This can only be get. See [xsGetUnitProperty](../../functions/functions/#950-xsgetunitproperty)
+
+## 33. Unit Stance Constants
+
+### 33.1. cStanceAggressive
+
+Value: `#!xs int 0`
+
+Enum value for Unit Stance Aggressive
+
+### 33.2. cStanceDefensive
+
+Value: `#!xs int 1`
+
+Enum value for Unit Stance Defensive
+
+### 33.3. cStanceStandGround
+
+Value: `#!xs int 2`
+
+Enum value for Unit Stance Stand Ground
+
+### 33.4. cStanceNoAttack
+
+Value: `#!xs int 3`
+
+Enum value for Unit Stance No Attack
+
+## 34. Unit Los Constants
+
+### 34.1. cLosVisible
+
+Value: `#!xs int 0`
+
+Enum value for Unit LoS Visible
+
+### 34.2. cLosExplored
+
+Value: `#!xs int 1`
+
+Enum value for Unit LoS Explored
+
+### 34.3. cLosInvisible
+
+Value: `#!xs int 2`
+
+Enum value for Unit LoS Invisible
+
+## 35. Unit Action Constants
+
+### 35.1. cUnitActionAttack
+
+Value: `#!xs int 600`
+
+Enum value for Unit Action Action Attack
+
+### 35.2. cUnitActionDefend
+
+Value: `#!xs int 601`
+
+Enum value for Unit Action Action Defend
+
+### 35.3. cUnitActionBuild
+
+Value: `#!xs int 602`
+
+Enum value for Unit Action Action Build
+
+### 35.4. cUnitActionHeal
+
+Value: `#!xs int 603`
+
+Enum value for Unit Action Action Heal
+
+### 35.5. cUnitActionConvert
+
+Value: `#!xs int 604`
+
+Enum value for Unit Action Action Convert
+
+### 35.6. cUnitActionExplore
+
+Value: `#!xs int 605`
+
+Enum value for Unit Action Action Explore
+
+### 35.7. cUnitActionStop
+
+Value: `#!xs int 606`
+
+Enum value for Unit Action Action Stop
+
+### 35.8. cUnitActionRunAway
+
+Value: `#!xs int 607`
+
+Enum value for Unit Action Action Run Away
+
+### 35.9. cUnitActionRetreat
+
+Value: `#!xs int 608`
+
+Enum value for Unit Action Action Retreat
+
+### 35.10. cUnitActionGather
+
+Value: `#!xs int 609`
+
+Enum value for Unit Action Action Gather
+
+### 35.11. cUnitActionMove
+
+Value: `#!xs int 610`
+
+Enum value for Unit Action Action Move
+
+### 35.12. cUnitActionPatrol
+
+Value: `#!xs int 611`
+
+Enum value for Unit Action Action Patrol
+
+### 35.13. cUnitActionFollow
+
+Value: `#!xs int 612`
+
+Enum value for Unit Action Action Follow
+
+### 35.14. cUnitActionHunt
+
+Value: `#!xs int 613`
+
+Enum value for Unit Action Action Hunt
+
+### 35.15. cUnitActionTransport
+
+Value: `#!xs int 614`
+
+Enum value for Unit Action Action Transport
+
+### 35.16. cUnitActionTrade
+
+Value: `#!xs int 615`
+
+Enum value for Unit Action Action Trade
+
+### 35.17. cUnitActionEvasiveMove
+
+Value: `#!xs int 616`
+
+Enum value for Unit Action Action Evasive Move
+
+### 35.18. cUnitActionEnter
+
+Value: `#!xs int 617`
+
+Enum value for Unit Action Action Enter
+
+### 35.19. cUnitActionRepair
+
+Value: `#!xs int 618`
+
+Enum value for Unit Action Action Repair
+
+### 35.20. cUnitActionTrain
+
+Value: `#!xs int 619`
+
+Enum value for Unit Action Action Train
+
+### 35.21. cUnitActionResearch
+
+Value: `#!xs int 620`
+
+Enum value for Unit Action Action Research
+
+### 35.22. cUnitActionUnload
+
+Value: `#!xs int 621`
+
+Enum value for Unit Action Action Unload
+
+### 35.23. cUnitActionSeekAndDestroy
+
+Value: `#!xs int 622`
+
+Enum value for Unit Action Action Seek And Destroy
+
+### 35.24. cUnitActionExploreAndDestroy
+
+Value: `#!xs int 623`
+
+Enum value for Unit Action Action Explore And Destroy
+
+### 35.25. cUnitActionGroupGather
+
+Value: `#!xs int 624`
+
+Enum value for Unit Action Action Group Gather
+
+### 35.26. cUnitActionWait
+
+Value: `#!xs int 628`
+
+Enum value for Unit Action Action Wait
+
+### 35.27. cUnitActionAttackRoundup
+
+Value: `#!xs int 629`
+
+Enum value for Unit Action Action Attack Roundup
+
+### 35.28. cUnitActionScout
+
+Value: `#!xs int 630`
+
+Enum value for Unit Action Action Scout
+
+### 35.29. cUnitActionControl
+
+Value: `#!xs int 631`
+
+Enum value for Unit Action Action Control
+
+### 35.30. cUnitActionShepherd
+
+Value: `#!xs int 632`
+
+Enum value for Unit Action Action Shepherd
+
+### 35.31. cUnitActionAttackMove
+
+Value: `#!xs int 633`
+
+Enum value for Unit Action Action Attack Move
+
+### 35.32. cUnitActionWaitForSolidify
+
+Value: `#!xs int 634`
+
+Enum value for Unit Action Action Wait For Solidify
+
+### 35.33. cUnitActionReleased
+
+Value: `#!xs int 699`
+
+Enum value for Unit Action Action Released
+
+### 35.34. cUnitActionUnloadOverWall
+
+Value: `#!xs int 700`
+
+Enum value for Unit Action Action Unload Over Wall
+
+### 35.35. cUnitActionAutoScout
+
+Value: `#!xs int 701`
+
+Enum value for Unit Action Action Auto Scout
+
+### 35.36. cUnitActionAutoBoarLure
+
+Value: `#!xs int 702`
+
+Enum value for Unit Action Action Auto Boar Lure
+
+### 35.37. cUnitActionEvacuate
+
+Value: `#!xs int 703`
+
+Enum value for Unit Action Action Evacuate
+
+### 35.38. cUnitActionEvacuateInGroup
+
+Value: `#!xs int 704`
+
+Enum value for Unit Action Action Evacuate In Group
+
+### 35.39. cUnitActionBackToWork
+
+Value: `#!xs int 705`
+
+Enum value for Unit Action Action Back To Work
+
+### 35.40. cUnitActionHeroPower
+
+Value: `#!xs int 706`
+
+Enum value for Unit Action Action Hero Power
+
+## 36. Unit Order Constants
+
+### 36.1. cUnitOrderAttack
+
+Value: `#!xs int 700`
+
+Enum value for Unit Order Order Attack
+
+### 36.2. cUnitOrderDefend
+
+Value: `#!xs int 701`
+
+Enum value for Unit Order Order Defend
+
+### 36.3. cUnitOrderBuild
+
+Value: `#!xs int 702`
+
+Enum value for Unit Order Order Build
+
+### 36.4. cUnitOrderHeal
+
+Value: `#!xs int 703`
+
+Enum value for Unit Order Order Heal
+
+### 36.5. cUnitOrderConvert
+
+Value: `#!xs int 704`
+
+Enum value for Unit Order Order Convert
+
+### 36.6. cUnitOrderExplore
+
+Value: `#!xs int 705`
+
+Enum value for Unit Order Order Explore
+
+### 36.7. cUnitOrderStop
+
+Value: `#!xs int 706`
+
+Enum value for Unit Order Order Stop
+
+### 36.8. cUnitOrderRunAway
+
+Value: `#!xs int 707`
+
+Enum value for Unit Order Order Run Away
+
+### 36.9. cUnitOrderRetreat
+
+Value: `#!xs int 708`
+
+Enum value for Unit Order Order Retreat
+
+### 36.10. cUnitOrderGather
+
+Value: `#!xs int 709`
+
+Enum value for Unit Order Order Gather
+
+### 36.11. cUnitOrderMove
+
+Value: `#!xs int 710`
+
+Enum value for Unit Order Order Move
+
+### 36.12. cUnitOrderPatrol
+
+Value: `#!xs int 711`
+
+Enum value for Unit Order Order Patrol
+
+### 36.13. cUnitOrderFollow
+
+Value: `#!xs int 712`
+
+Enum value for Unit Order Order Follow
+
+### 36.14. cUnitOrderHunt
+
+Value: `#!xs int 713`
+
+Enum value for Unit Order Order Hunt
+
+### 36.15. cUnitOrderTransport
+
+Value: `#!xs int 714`
+
+Enum value for Unit Order Order Transport
+
+### 36.16. cUnitOrderTrade
+
+Value: `#!xs int 715`
+
+Enum value for Unit Order Order Trade
+
+### 36.17. cUnitOrderEvasiveMove
+
+Value: `#!xs int 716`
+
+Enum value for Unit Order Order Evasive Move
+
+### 36.18. cUnitOrderEnter
+
+Value: `#!xs int 717`
+
+Enum value for Unit Order Order Enter
+
+### 36.19. cUnitOrderRepair
+
+Value: `#!xs int 718`
+
+Enum value for Unit Order Order Repair
+
+### 36.20. cUnitOrderTrain
+
+Value: `#!xs int 719`
+
+Enum value for Unit Order Order Train
+
+### 36.21. cUnitOrderResearch
+
+Value: `#!xs int 720`
+
+Enum value for Unit Order Order Research
+
+### 36.22. cUnitOrderUnload
+
+Value: `#!xs int 721`
+
+Enum value for Unit Order Order Unload
+
+### 36.23. cUnitOrderUnloadOverWall
+
+Value: `#!xs int 800`
+
+Enum value for Unit Order Order Unload Over Wall
+
+### 36.24. cUnitOrderSeekAndDestroy
+
+Value: `#!xs int 722`
+
+Enum value for Unit Order Order Seek And Destroy
+
+### 36.25. cUnitOrderGroupGather
+
+Value: `#!xs int 724`
+
+Enum value for Unit Order Order Group Gather
+
+### 36.26. cUnitOrderExploreAndDestroy
+
+Value: `#!xs int 723`
+
+Enum value for Unit Order Order Explore And Destroy
+
+### 36.27. cUnitOrderWait
+
+Value: `#!xs int 728`
+
+Enum value for Unit Order Order Wait
+
+### 36.28. cUnitOrderAttackRoundup
+
+Value: `#!xs int 729`
+
+Enum value for Unit Order Order Attack Roundup
+
+### 36.29. cUnitOrderScout
+
+Value: `#!xs int 730`
+
+Enum value for Unit Order Order Scout
+
+### 36.30. cUnitOrderActionControl
+
+Value: `#!xs int 731`
+
+Enum value for Unit Order Order Action Control
+
+### 36.31. cUnitOrderShepherd
+
+Value: `#!xs int 732`
+
+Enum value for Unit Order Order Shepherd
+
+### 36.32. cUnitOrderAttackMove
+
+Value: `#!xs int 733`
+
+Enum value for Unit Order Order Attack Move
+
+### 36.33. cUnitOrderAutoScout
+
+Value: `#!xs int 801`
+
+Enum value for Unit Order Order Auto Scout
+
+### 36.34. cUnitOrderWaitForSolidify
+
+Value: `#!xs int 734`
+
+Enum value for Unit Order Order Wait For Solidify
+
+### 36.35. cUnitOrderAutoBoarLure
+
+Value: `#!xs int 802`
+
+Enum value for Unit Order Order Auto Boar Lure
+
+### 36.36. cUnitOrderEvacuate
+
+Value: `#!xs int 803`
+
+Enum value for Unit Order Order Evacuate
+
+### 36.37. cUnitOrderEvacuateInGroup
+
+Value: `#!xs int 804`
+
+Enum value for Unit Order Order Evacuate In Group
+
+### 36.38. cUnitOrderBackToWork
+
+Value: `#!xs int 805`
+
+Enum value for Unit Order Order Back To Work
+
+### 36.39. cUnitOrderHeroPower
+
+Value: `#!xs int 806`
+
+Enum value for Unit Order Order Hero Power
+
+## 37. Unit Formation Constants
+
+### 37.1. cFormationLine
+
+Value: `#!xs int 2`
+
+
+
+### 37.2. cFormationBox
+
+Value: `#!xs int 4`
+
+
+
+### 37.3. cFormationStaggered
+
+Value: `#!xs int 7`
+
+
+
+### 37.4. cFormationFlank
+
+Value: `#!xs int 8`
+
+
+
+## 38. Action Type Constants
+
+### 38.1. cActionTypeDefault
+
+Value: `#!xs int 0`
+
+Enum value for Unit Task/Action Type Default. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.2. cActionTypeMove
+
+Value: `#!xs int 1`
+
+Enum value for Unit Task/Action Type Move. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.3. cActionTypePatrol
+
+Value: `#!xs int 2`
+
+Enum value for Unit Task/Action Type Patrol. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.4. cActionTypeGuard
+
+Value: `#!xs int 3`
+
+Enum value for Unit Task/Action Type Guard. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.5. cActionTypeFollow
+
+Value: `#!xs int 4`
+
+Enum value for Unit Task/Action Type Follow. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.6. cActionTypeStop
+
+Value: `#!xs int 5`
+
+Enum value for Unit Task/Action Type Stop. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.7. cActionTypeAttackGround
+
+Value: `#!xs int 6`
+
+Enum value for Unit Task/Action Type Attack Ground. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.8. cActionTypeGarrison
+
+Value: `#!xs int 7`
+
+Enum value for Unit Task/Action Type Garrison. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.9. cActionTypeKill
+
+Value: `#!xs int 8`
+
+Enum value for Unit Task/Action Type Kill. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.10. cctionTypeUnload
+
+Value: `#!xs int 9`
+
+Enum value for Unit Task/Action Type ction Type Unload. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.11. cctionTypeGatherPoint
+
+Value: `#!xs int 10`
+
+Enum value for Unit Task/Action Type ction Type Gather Point. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.12. cActionTypeLock
+
+Value: `#!xs int 11`
+
+Enum value for Unit Task/Action Type Lock. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.13. cActionTypeWork
+
+Value: `#!xs int 12`
+
+Enum value for Unit Task/Action Type Work. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.14. cActionTypeUngarrison
+
+Value: `#!xs int 13`
+
+Enum value for Unit Task/Action Type Ungarrison. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.15. cActionTypeDropRelic
+
+Value: `#!xs int 14`
+
+Enum value for Unit Task/Action Type Drop Relic. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.16. cActionTypePack
+
+Value: `#!xs int 15`
+
+Enum value for Unit Task/Action Type Pack. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.17. cActionTypeUnpack
+
+Value: `#!xs int 16`
+
+Enum value for Unit Task/Action Type Unpack. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.18. cActionTypeAttackMove
+
+Value: `#!xs int 17`
+
+Enum value for Unit Task/Action Type Attack Move. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.19. cActionTypeFormationLine
+
+Value: `#!xs int 18`
+
+Enum value for Unit Task/Action Type Formation Line. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.20. cActionTypeFormationBox
+
+Value: `#!xs int 19`
+
+Enum value for Unit Task/Action Type Formation Box. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.21. cActionTypeFormationStaggered
+
+Value: `#!xs int 20`
+
+Enum value for Unit Task/Action Type Formation Staggered. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.22. cActionTypeFormationFlank
+
+Value: `#!xs int 21`
+
+Enum value for Unit Task/Action Type Formation Flank. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.23. cActionTypeTransform
+
+Value: `#!xs int 22`
+
+Enum value for Unit Task/Action Type Transform. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.24. cActionTypeSellFood
+
+Value: `#!xs int 23`
+
+Enum value for Unit Task/Action Type Sell Food. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.25. cActionTypeSellWood
+
+Value: `#!xs int 24`
+
+Enum value for Unit Task/Action Type Sell Wood. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.26. cActionTypeSellStone
+
+Value: `#!xs int 25`
+
+Enum value for Unit Task/Action Type Sell Stone. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.27. cActionTypeBuyFood
+
+Value: `#!xs int 26`
+
+Enum value for Unit Task/Action Type Buy Food. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.28. cActionTypeBuyWood
+
+Value: `#!xs int 27`
+
+Enum value for Unit Task/Action Type Buy Wood. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.29. cActionTypeBuyStone
+
+Value: `#!xs int 28`
+
+Enum value for Unit Task/Action Type Buy Stone. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.30. cActionTypeRingTownBell
+
+Value: `#!xs int 29`
+
+Enum value for Unit Task/Action Type Ring Town Bell. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.31. cActionTypeBackToWork
+
+Value: `#!xs int 30`
+
+Enum value for Unit Task/Action Type Back To Work. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.32. cActionTypeAllBackToWork
+
+Value: `#!xs int 31`
+
+Enum value for Unit Task/Action Type All Back To Work. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+### 38.33. cActionTypeForceDropOff
+
+Value: `#!xs int 32`
+
+Enum value for Unit Task/Action Type Force Drop Off. See [xsTaskUnits](../../functions/functions/#956-xstaskunits)
+
+## 39. Store Flag Constants
+
+### 39.1. cStoreFlagKeep
+
+Value: `#!xs int 0`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+### 39.2. cStoreFlagGive
+
+Value: `#!xs int 1`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+### 39.3. cStoreFlagGiveAndTakeOnDeath
+
+Value: `#!xs int 2`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+### 39.4. cStoreFlagGiveOnCompletionAndTakeOnDeath
+
+Value: `#!xs int 4`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+### 39.5. cStoreFlagGiveOnCompletion
+
+Value: `#!xs int 8`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+### 39.6. cStoreFlagTake
+
+Value: `#!xs int 16`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+### 39.7. cStoreFlagGiveAndTakeOnDeathAfterAnimation
+
+Value: `#!xs int 32`
+
+Enum value for the [Store Flag First Storage](../../../attributes/attributes/#171-store-flag-first-storage), [Store Flag Second Storage](../../../attributes/attributes/#171-store-flag-second-storage), and [Store Flag Third Storage](../../../attributes/attributes/#171-store-flag-third-storage) attributes.
+
+## 40. Minimap Mode Constants
+
+### 40.1. cMinimapModeNone
+
+Value: `#!xs int 0`
+
+Enum value for the [Minimap Mode](../../../attributes/attributes/#144-minimap-mode) attribute
+
+### 40.2. cMinimapModeUnit
+
+Value: `#!xs int 1`
+
+Enum value for the [Minimap Mode](../../../attributes/attributes/#144-minimap-mode) attribute
+
+### 40.3. cMinimapModeBuilding
+
+Value: `#!xs int 2`
+
+Enum value for the [Minimap Mode](../../../attributes/attributes/#144-minimap-mode) attribute
+
+### 40.4. cMinimapModeTerrain
+
+Value: `#!xs int 3`
+
+Enum value for the [Minimap Mode](../../../attributes/attributes/#144-minimap-mode) attribute
+
+### 40.5. cMinimapModeTerrainBig
+
+Value: `#!xs int 4`
+
+Enum value for the [Minimap Mode](../../../attributes/attributes/#144-minimap-mode) attribute
+
+## 41. Fog Flag Constants
+
+### 41.1. cFogFlagNotInFog
+
+Value: `#!xs int 0`
+
+Enum value for the [Fog Visibility](../../../attributes/attributes/#28-fog-visibility) attribute.
+
+### 41.2. cFogFlagAlways
+
+Value: `#!xs int 1`
+
+Enum value for the [Fog Visibility](../../../attributes/attributes/#28-fog-visibility) attribute.
+
+### 41.3. cFogFlagOnlyIfAlive
+
+Value: `#!xs int 2`
+
+Enum value for the [Fog Visibility](../../../attributes/attributes/#28-fog-visibility) attribute.
+
+### 41.4. cFogFlagDoppelganger
+
+Value: `#!xs int 3`
+
+Enum value for the [Fog Visibility](../../../attributes/attributes/#28-fog-visibility) attribute.
+
+### 41.5. cFogFlagCheckDoppel
+
+Value: `#!xs int 4`
+
+Enum value for the [Fog Visibility](../../../attributes/attributes/#28-fog-visibility) attribute.
+
+## 42. Hill Mode Constants
+
+### 42.1. cHillModeNoRestriction
+
+Value: `#!xs int 0`
+
+Enum value for the [Hill Mode](../../../attributes/attributes/#187-hill-mode) attribute.
+
+### 42.2. cHillModeNoCornersOfHills
+
+Value: `#!xs int 1`
+
+Enum value for the [Hill Mode](../../../attributes/attributes/#187-hill-mode) attribute.
+
+### 42.3. cHillModeFlatOnly
+
+Value: `#!xs int 2`
+
+Enum value for the [Hill Mode](../../../attributes/attributes/#187-hill-mode) attribute.
+
+### 42.4. cHillModeOneElevationDifference
+
+Value: `#!xs int 3`
+
+Enum value for the [Hill Mode](../../../attributes/attributes/#187-hill-mode) attribute.
+
+## 43. Move Algorithm Constants
+
+### 43.1. cMoveAlgorithmNone
+
+Value: `#!xs int 0`
+
+Enum value for the [Move Algorithm](../../../attributes/attributes/#218-move-algorithm) attribute.
+
+### 43.2. cMoveAlgorithmUseStopSprite
+
+Value: `#!xs int 1`
+
+Enum value for the [Move Algorithm](../../../attributes/attributes/#218-move-algorithm) attribute.
+
+## 44. Run Pattern Constants
+
+### 44.1. cDoubleClickSelectById
+
+Value: `#!xs int 255`
+
+Enum value for the [Run Pattern](../../../attributes/attributes/#140-run-pattern) attribute.
 

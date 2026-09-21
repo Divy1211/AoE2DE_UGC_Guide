@@ -1008,9 +1008,11 @@
     },
     "140": {
         "name": "Run Pattern",
-        "desc": "TODO",
+        "desc": "Double-click selection will select all units which have the same value for this",
         "notes": [],
-        "flags": {}
+        "flags": {
+            "255": "Special value that defaults double-click selection to select by unit ID."
+        }
     },
     "141": {
         "name": "Interface Kind",
@@ -1189,6 +1191,363 @@
     "165": {
         "name": "Remove Attack Type",
         "desc": "Setting this removes an existing attack class in the targeted object/unit",
+        "notes": [],
+        "flags": {}
+    },
+    "166": {
+        "name": "Undead Flag",
+        "desc": "Changes behaviour related to death of an object",
+        "notes": [],
+        "flags": {
+            "0": "Default",
+            "1": "Show Undead Graphic",
+            "2": "Ignore In Kill Stats",
+            "4": "Garrison Invincibility"
+        }
+    },
+    "167": {
+        "name": "Build And Go Away",
+        "desc": "When set, removes this building after it is built",
+        "notes": [],
+        "flags": {}
+    },
+    "168": {
+        "name": "Type First Storage",
+        "desc": "The resource ID of the first attribute storage",
+        "notes": [],
+        "flags": {}
+    },
+    "169": {
+        "name": "Type Second Storage",
+        "desc": "The resource ID of the second attribute storage",
+        "notes": [],
+        "flags": {}
+    },
+    "170": {
+        "name": "Type Third Storage",
+        "desc": "The resource ID of the third attribute storage",
+        "notes": [],
+        "flags": {}
+    },
+    "171": {
+        "name": "Store Flag First Storage",
+        "desc": "The store flag of the first attribute storage",
+        "notes": [],
+        "flags": {}
+    },
+    "172": {
+        "name": "Store Flag Second Storage",
+        "desc": "The store flag of the second attribute storage",
+        "notes": [],
+        "flags": {}
+    },
+    "173": {
+        "name": "Store Flag Third Storage",
+        "desc": "The store flag of the third attribute storage",
+        "notes": [],
+        "flags": {}
+    },
+    "174": {
+        "name": "Amount First Cost",
+        "desc": "The amount for the first cost",
+        "notes": [],
+        "flags": {}
+    },
+    "175": {
+        "name": "Amount Second Cost",
+        "desc": "The amount for the second cost",
+        "notes": [],
+        "flags": {}
+    },
+    "176": {
+        "name": "Amount Third Cost",
+        "desc": "The amount for the third cost",
+        "notes": [],
+        "flags": {}
+    },
+    "177": {
+        "name": "Type First Cost",
+        "desc": "The type of first cost",
+        "notes": [],
+        "flags": {}
+    },
+    "178": {
+        "name": "Type Second Cost",
+        "desc": "The type of second cost",
+        "notes": [],
+        "flags": {}
+    },
+    "179": {
+        "name": "Type Third Cost",
+        "desc": "The type of third cost",
+        "notes": [],
+        "flags": {}
+    },
+    "180": {
+        "name": "Deduct Flag First Cost",
+        "desc": "The deduct flag for the first cost",
+        "notes": [],
+        "flags": {}
+    },
+    "181": {
+        "name": "Deduct Flag Second Cost",
+        "desc": "The deduct flag for the second cost",
+        "notes": [],
+        "flags": {}
+    },
+    "182": {
+        "name": "Deduct Flag Third Cost",
+        "desc": "The deduct flag for the third cost",
+        "notes": [],
+        "flags": {}
+    },
+    "183": {
+        "name": "Spawning Graphic",
+        "desc": "The graphic shown when a unit spawns",
+        "notes": [],
+        "flags": {}
+    },
+    "184": {
+        "name": "Upgrade Graphic",
+        "desc": "The graphic shown when a unit upgrades",
+        "notes": [],
+        "flags": {}
+    },
+    "185": {
+        "name": "Fly Mode",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {
+            "0": "All units",
+            "1": "All projectiles"
+        }
+    },
+    "186": {
+        "name": "Can Be Gathered",
+        "desc": "For tracking gatherable resources. Unknown",
+        "notes": [],
+        "flags": {
+            "0": "All units",
+            "1": "Resources like gold/stone etc."
+        }
+    },
+    "187": {
+        "name": "Hill Mode",
+        "desc": "Building placement restrictions around hills",
+        "notes": [],
+        "flags": {
+            "0": "No Restriction (Farms)",
+            "1": "No Corners of Hills (Unused)",
+            "2": "Flat Only (TCs)",
+            "3": "Allows One Elevation Difference (Most Buildings)"
+        }
+    },
+    "188": {
+        "name": "Doppelganger",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "189": {
+        "name": "Gather Group",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "190": {
+        "name": "Task Swap Group",
+        "desc": "Controls which units can swap with each other when attempting to find a valid task from all their task lists",
+        "notes": [],
+        "flags": {
+            "0": "None",
+            "1": "Male Villagers",
+            "2": "Female Villagers",
+            "3": "Fishing Ships"
+        }
+    },
+    "191": {
+        "name": "Placement Terrain1",
+        "desc": "Restricts placement on one of these two terrains",
+        "notes": [],
+        "flags": {}
+    },
+    "192": {
+        "name": "Placement Terrain2",
+        "desc": "Restricts placement on one of these two terrains",
+        "notes": [],
+        "flags": {}
+    },
+    "193": {
+        "name": "Placement Center Terrain 1",
+        "desc": "Restricts placement such that the anchor tile of the unit must be on one of these two terrains",
+        "notes": [],
+        "flags": {}
+    },
+    "194": {
+        "name": "Placement Center Terrain 2",
+        "desc": "Restricts placement such that the anchor tile of the unit must be on one of these two terrains",
+        "notes": [],
+        "flags": {}
+    },
+    "195": {
+        "name": "Initiated Tech Id",
+        "desc": "Initiates this technology on being built",
+        "notes": [],
+        "flags": {}
+    },
+    "196": {
+        "name": "Min Size Multiplier",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "197": {
+        "name": "Selection Outline Size X",
+        "desc": "The size of the selection outline along X",
+        "notes": [],
+        "flags": {}
+    },
+    "198": {
+        "name": "Selection Outline Size Y",
+        "desc": "The size of the selection outline along Y",
+        "notes": [],
+        "flags": {}
+    },
+    "199": {
+        "name": "Selection Outline Size Z",
+        "desc": "The size of the selection outline along Z.",
+        "notes": [],
+        "flags": {}
+    },
+    "200": {
+        "name": "Clearance Size X",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "201": {
+        "name": "Clearance Size Y",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "202": {
+        "name": "Stack Unit",
+        "desc": "Additional unit placed directly on top of this unit",
+        "notes": [],
+        "flags": {}
+    },
+    "203": {
+        "name": "Head Unit",
+        "desc": "The unit that annexes get attached to",
+        "notes": [],
+        "flags": {}
+    },
+    "204": {
+        "name": "Transform Unit",
+        "desc": "Unpacks into this unit",
+        "notes": [],
+        "flags": {}
+    },
+    "205": {
+        "name": "Pile Unit",
+        "desc": "Additional blood unit that only appears when a building is destroyed but not when deleted",
+        "notes": [],
+        "flags": {}
+    },
+    "206": {
+        "name": "Annex Unit 1",
+        "desc": "First annex unit",
+        "notes": [],
+        "flags": {}
+    },
+    "207": {
+        "name": "Annex Unit 2",
+        "desc": "Second annex unit",
+        "notes": [],
+        "flags": {}
+    },
+    "208": {
+        "name": "Annex Unit 3",
+        "desc": "Third annex unit",
+        "notes": [],
+        "flags": {}
+    },
+    "209": {
+        "name": "Annex Unit 4",
+        "desc": "Fourth annex unit",
+        "notes": [],
+        "flags": {}
+    },
+    "210": {
+        "name": "Annex Unit 1 Offset X",
+        "desc": "Offset for the first annex unit from the main unit along the X direction",
+        "notes": [],
+        "flags": {}
+    },
+    "211": {
+        "name": "Annex Unit 1 Offset Y",
+        "desc": "Offset for the first annex unit from the main unit along the Y direction",
+        "notes": [],
+        "flags": {}
+    },
+    "212": {
+        "name": "Annex Unit 2 Offset X",
+        "desc": "Offset for the second annex unit from the main unit along the X direction",
+        "notes": [],
+        "flags": {}
+    },
+    "213": {
+        "name": "Annex Unit 2 Offset Y",
+        "desc": "Offset for the second annex unit from the main unit along the Y direction",
+        "notes": [],
+        "flags": {}
+    },
+    "214": {
+        "name": "Annex Unit 3 Offset X",
+        "desc": "Offset for the third annex unit from the main unit along the X direction",
+        "notes": [],
+        "flags": {}
+    },
+    "215": {
+        "name": "Annex Unit 3 Offset Y",
+        "desc": "Offset for the third annex unit from the main unit along the Y direction",
+        "notes": [],
+        "flags": {}
+    },
+    "216": {
+        "name": "Annex Unit 4 Offset X",
+        "desc": "Offset for the fourth annex unit from the main unit along the X direction",
+        "notes": [],
+        "flags": {}
+    },
+    "217": {
+        "name": "Annex Unit 4 Offset Y",
+        "desc": "Offset for the fourth annex unit from the main unit along the Y direction",
+        "notes": [],
+        "flags": {}
+    },
+    "218": {
+        "name": "Move Algorithm",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "219": {
+        "name": "Spacing Modifier",
+        "desc": "Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "220": {
+        "name": "Can Burn",
+        "desc": "Gives flames to buildings when set to 1 when damaged. Unknown",
+        "notes": [],
+        "flags": {}
+    },
+    "221": {
+        "name": "Gather Flag",
+        "desc": "For resources, similar to Can Be Gathered. Unknown",
         "notes": [],
         "flags": {}
     }

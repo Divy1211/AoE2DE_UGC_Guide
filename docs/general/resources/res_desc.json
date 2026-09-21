@@ -117,8 +117,8 @@
         "note": ""
     },
     "18": {
-        "name": "Unused Resource 018",
-        "desc": "Unused",
+        "name": "Civilization Voice Override",
+        "desc": "Allows overriding a civilization's voice lines with another civ",
         "defaults": {},
         "note": ""
     },
@@ -1288,13 +1288,13 @@
         "note": "The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`"
     },
     "196": {
-        "name": "Hun Wonder Discount",
-        "desc": "Additional time required for relic/wonder victories in one tenth of a year",
+        "name": "Wonder Time Modifier",
+        "desc": "Additional time required for wonder victories in one tenth of a year",
         "defaults": {
             "0": " default",
-            "1000": " (100 years) for the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic/wonder victories, i.e. it adds up if multiple hun players get the tech"
+            "1000": " (100 years) for all neutral/enemies of the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for wonder victories, i.e. it adds up if multiple hun players get the tech"
         },
-        "note": "Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame"
+        "note": "Internally, wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame"
     },
     "197": {
         "name": "Spies Discount",
@@ -1305,10 +1305,13 @@
         "note": ""
     },
     "198": {
-        "name": "Unused Resource 198",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Relic Time Modifier",
+        "desc": "Additional time required for relic victories in one tenth of a year",
+        "defaults": {
+            "0": " default",
+            "1000": " (100 years) for all neutral/enemies of the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic victories, i.e. it adds up if multiple hun players get the tech"
+        },
+        "note": "Internally, wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame"
     },
     "199": {
         "name": "Unused Resource 199",
@@ -1433,10 +1436,13 @@
         "note": "Researching Cuman Mercenaries gives 5 of this resource per castle. Making mercenary Kipchaks costs one unit of this resource. Each newly constructed castle gives +5"
     },
     "215": {
-        "name": "Unused Resource 215",
-        "desc": "Unused but some units use it as part of their cost as a leftover: `Urus Khan`, `CUMANDISABLED` and `CUMANPLACEHOLDER`",
-        "defaults": {},
-        "note": ""
+        "name": "Bonus Forager Food",
+        "desc": "Bonus forager food gathering percent of main work rate",
+        "defaults": {
+            "0": " Default",
+            "25": " Mapuche"
+        },
+        "note": "`EffectFunction29` must be called in order for this resource to work"
     },
     "216": {
         "name": "Shepherd Productivity",
@@ -1582,12 +1588,12 @@
     },
     "236": {
         "name": "Farming Gold Productivity",
-        "desc": "Farming gold generation rate per 100 seconds",
+        "desc": "Farmer gold generation percent of main work rate",
         "defaults": {
             "0": " Default",
-            "2": " (0.02 g/s per farmer) after Burgundian Vineyards"
+            "2": " Burgundian Vineyards"
         },
-        "note": "Only generates gold while collecting food from farms, and not when walking on them down"
+        "note": "`EffectFunction14` must be called for this resource to work. Only generates gold while collecting food from farms, and not when walking on them down"
     },
     "237": {
         "name": "Folwark Collection Amount",
@@ -1631,14 +1637,12 @@
     },
     "241": {
         "name": "Stone Mining Gold Productivity",
-        "desc": "Stone mining gold generation rate per 100 seconds",
+        "desc": "Bonus stone miner gold gathering percent of main work rate",
         "defaults": {
             "0": " Default",
-            "18": " Poles",
-            "20.7": " Poles with Stone Mining",
-            "23.805": " Poles with Stone Shaft Mining"
+            "33.33": " Poles"
         },
-        "note": ""
+        "note": "`EffectFunction13` must be called for this resource to work"
     },
     "242": {
         "name": "Trade Workshop Food Productivity",
@@ -1810,24 +1814,21 @@
     },
     "266": {
         "name": "Chopping Gold Productivity",
-        "desc": "Lumberjack chopping gold generation rate per 100 seconds",
+        "desc": "Lumberjack chopping gold gathering percent of main work rate",
         "defaults": {
-            "0":     " Default",
-            "1.5":   " (0.015 g/s per lumberjack) Vietnamese with paper money",
-            "1.8":   " (0.018 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe",
-            "2.16":  " (0.0216 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw",
-            "2.376": " (0.02376 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw & Two-Man Saw"
+            "0": " Default",
+            "1.5": " Paper Money"
         },
-        "note": "Only generates gold while collecting wood from trees, and not when cutting them down"
+        "note": "`EffectFunction15` must be called for this resource to work. Only generates gold while collecting wood from trees, and not when cutting them down"
     },
     "267": {
         "name": "Foraging Wood Productivity",
-        "desc": "Forager foraging wood generation rate per 100 seconds",
+        "desc": "Bonus forager wood gathering percent of main work rate",
         "defaults": {
             "0":       " Default",
-            "10.4753": " (0.104753 w/s per forager) Portuguese"
+            "33.33": " Portuguese"
         },
-        "note": ""
+        "note": "`EffectFunction12` must be called for this resource to work"
     },
     "268": {
         "name": "Hunter Productivity",
@@ -1877,16 +1878,19 @@
         "note": "Technically, this resource is used as a multiplier for the resource generated by task 154 currently on infantry units. Task 154 can change which resource does this, and it is what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is set to the different rates for different types of targets for infantry"
     },
     "275": {
-        "name": "Unused Resource 275",
-        "desc": "Unused",
+        "name": "Fyrd Discount Level",
+        "desc": "The number of standing castles + TCs",
         "defaults": {},
-        "note": ""
+        "note": "This value only changes when a player is playing as the Saxons."
     },
     "276": {
-        "name": "Unused Resource 276",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Bonus Gold Productivity",
+        "desc": "Bonus gold miner gold gathering percent of main work rate",
+        "defaults": {
+            "0": " Default",
+            "10": " Malians"
+        },
+        "note": "`EffectFunction11` must be called in order for this resource to work"
     },
     "277": {
         "name": "Red Cliffs Tactics Damage",
@@ -1898,8 +1902,8 @@
         "note": "This implies that converted units that are affected by the tech won't do fire damage after being converted"
     },
     "278": {
-        "name": "Unused Resource 278",
-        "desc": "Unused",
+        "name": "Razing Bounty",
+        "desc": "Currently Unused",
         "defaults": {},
         "note": ""
     },
@@ -1981,10 +1985,13 @@
         "note": ""
     },
     "291": {
-        "name": "Unused Resource 291",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Razing Pillage",
+        "desc": "The percent * 10 of the cost that should be looted when destroying buildings.",
+        "defaults": {
+            "0": " Default",
+            "250": " Danes"
+        },
+        "note": "`EffectFunction36` must be called for all players in the game for this resource to work."
     },
     "292": {
         "name": "Animal Decay Prevention",
@@ -2005,37 +2012,48 @@
         "note": ""
     },
     "295": {
-        "name": "Unused Resource 295",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Unit Refund",
+        "desc": "Fraction of the cost to refund for lost units for the player",
+        "defaults": {
+            "0": " Default",
+            "0.15": " Tupi"
+        },
+        "note": "`EffectFunction27` must be called for this resource to work."
     },
     "296": {
         "name": "Forager Productivity",
         "desc": "Multiplier for food collected by foragers",
         "defaults": {
-            "1": " Default",
-            "1.20": " Mapuche"
+            "1": " Default"
         },
         "note": ""
     },
     "297": {
-        "name": "Curare Poison",
-        "desc": "Unused",
-        "defaults": {},
+        "name": "Varangian Gold Generation",
+        "desc": "Varangian Guard gold generation multiplier",
+        "defaults": {
+            "1": " Default",
+            "1.33": " Varangians"
+        },
         "note": ""
     },
     "298": {
-        "name": "Unused Resource 298",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Butcher Gold Productivity",
+        "desc": "Varangians Shepherd/Hunter/Fisher/Fishing Ship additional gold gathering percent of main work rate",
+        "defaults": {
+            "0": " Default",
+            "10.01": " Varangians"
+        },
+        "note": "`EffectFunction34` must be called for this resource to work."
     },
     "299": {
-        "name": "Unused Resource 299",
-        "desc": "Unused",
-        "defaults": {},
-        "note": ""
+        "name": "Bonus Food Productivity",
+        "desc": "All food gatherers additional food gathering percent of main work rate",
+        "defaults": {
+            "0": " Default",
+            "5.01": " Danes"
+        },
+        "note": "`EffectFunction35` must be called for this resource to work."
     },
     "300": {
         "name": "Killed Gaia",
@@ -3253,12 +3271,13 @@
     },
     "502": {
         "name": "Athenian Chopping Food Productivity",
-        "desc": "Chopping food generation rate per 100 seconds.",
+        "desc": "Chopping food gathering percent of main work rate",
         "defaults": {
             "0": " Default",
-            "4": " Athenians"
+            "4": " Athenians",
+            "7": " Shu"
         },
-        "note": ""
+        "note": "`EffectFunction16` must be called for this resource to work. While the name only contains Athenians, this resource is also used for Shu."
     },
     "503": {
         "name": "Wood Trade Ratio",

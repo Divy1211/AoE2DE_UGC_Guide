@@ -1293,3 +1293,370 @@ This page is a list of all the unit attributes that can be modified in the scena
 
  - Setting this removes an existing attack class in the targeted object/unit
 
+## 166. Undead Flag
+
+ - ID: 166
+
+ - Changes behaviour related to death of an object
+
+    | Property | Flag Value |
+    | :- | -: |
+    | Default | 0 | 
+    | Show Undead Graphic | 1 | 
+    | Ignore In Kill Stats | 2 | 
+    | Garrison Invincibility | 4 | 
+
+## 167. Build And Go Away
+
+ - ID: 167
+
+ - When set, removes this building after it is built
+
+## 168. Type First Storage
+
+ - ID: 168
+
+ - The resource ID of the first attribute storage
+
+## 169. Type Second Storage
+
+ - ID: 169
+
+ - The resource ID of the second attribute storage
+
+## 170. Type Third Storage
+
+ - ID: 170
+
+ - The resource ID of the third attribute storage
+
+## 171. Store Flag First Storage
+
+ - ID: 171
+
+ - The store flag of the first attribute storage
+
+## 172. Store Flag Second Storage
+
+ - ID: 172
+
+ - The store flag of the second attribute storage
+
+## 173. Store Flag Third Storage
+
+ - ID: 173
+
+ - The store flag of the third attribute storage
+
+## 174. Amount First Cost
+
+ - ID: 174
+
+ - The amount for the first cost
+
+## 175. Amount Second Cost
+
+ - ID: 175
+
+ - The amount for the second cost
+
+## 176. Amount Third Cost
+
+ - ID: 176
+
+ - The amount for the third cost
+
+## 177. Type First Cost
+
+ - ID: 177
+
+ - The type of first cost
+
+## 178. Type Second Cost
+
+ - ID: 178
+
+ - The type of second cost
+
+## 179. Type Third Cost
+
+ - ID: 179
+
+ - The type of third cost
+
+## 180. Deduct Flag First Cost
+
+ - ID: 180
+
+ - The deduct flag for the first cost
+
+## 181. Deduct Flag Second Cost
+
+ - ID: 181
+
+ - The deduct flag for the second cost
+
+## 182. Deduct Flag Third Cost
+
+ - ID: 182
+
+ - The deduct flag for the third cost
+
+## 183. Spawning Graphic
+
+ - ID: 183
+
+ - The graphic shown when a unit spawns
+
+## 184. Upgrade Graphic
+
+ - ID: 184
+
+ - The graphic shown when a unit upgrades
+
+## 185. Fly Mode
+
+ - ID: 185
+
+ - Unknown
+
+    | Property | Flag Value |
+    | :- | -: |
+    | All units | 0 | 
+    | All projectiles | 1 | 
+
+## 186. Can Be Gathered
+
+ - ID: 186
+
+ - For tracking gatherable resources. Unknown
+
+    | Property | Flag Value |
+    | :- | -: |
+    | All units | 0 | 
+    | Resources like gold/stone etc. | 1 | 
+
+## 187. Hill Mode
+
+ - ID: 187
+
+ - Building placement restrictions around hills
+
+    | Property | Flag Value |
+    | :- | -: |
+    | No Restriction (Farms) | 0 | 
+    | No Corners of Hills (Unused) | 1 | 
+    | Flat Only (TCs) | 2 | 
+    | Allows One Elevation Difference (Most Buildings) | 3 | 
+
+## 188. Doppelganger
+
+ - ID: 188
+
+ - Unknown
+
+## 189. Gather Group
+
+ - ID: 189
+
+ - Unknown
+
+## 190. Task Swap Group
+
+ - ID: 190
+
+ - Controls which units can swap with each other when attempting to find a valid task from all their task lists
+
+    | Property | Flag Value |
+    | :- | -: |
+    | None | 0 | 
+    | Male Villagers | 1 | 
+    | Female Villagers | 2 | 
+    | Fishing Ships | 3 | 
+
+## 191. Placement Terrain1
+
+ - ID: 191
+
+ - Restricts placement on one of these two terrains
+
+## 192. Placement Terrain2
+
+ - ID: 192
+
+ - Restricts placement on one of these two terrains
+
+## 193. Placement Center Terrain 1
+
+ - ID: 193
+
+ - Restricts placement such that the anchor tile of the unit must be on one of these two terrains
+
+## 194. Placement Center Terrain 2
+
+ - ID: 194
+
+ - Restricts placement such that the anchor tile of the unit must be on one of these two terrains
+
+## 195. Initiated Tech Id
+
+ - ID: 195
+
+ - Initiates this technology on being built
+
+## 196. Min Size Multiplier
+
+ - ID: 196
+
+ - Unknown
+
+## 197. Selection Outline Size X
+
+ - ID: 197
+
+ - The size of the selection outline along X
+
+## 198. Selection Outline Size Y
+
+ - ID: 198
+
+ - The size of the selection outline along Y
+
+## 199. Selection Outline Size Z
+
+ - ID: 199
+
+ - The size of the selection outline along Z.
+
+## 200. Clearance Size X
+
+ - ID: 200
+
+ - Unknown
+
+## 201. Clearance Size Y
+
+ - ID: 201
+
+ - Unknown
+
+## 202. Stack Unit
+
+ - ID: 202
+
+ - Additional unit placed directly on top of this unit
+
+## 203. Head Unit
+
+ - ID: 203
+
+ - The unit that annexes get attached to
+
+## 204. Transform Unit
+
+ - ID: 204
+
+ - Unpacks into this unit
+
+## 205. Pile Unit
+
+ - ID: 205
+
+ - Additional blood unit that only appears when a building is destroyed but not when deleted
+
+## 206. Annex Unit 1
+
+ - ID: 206
+
+ - First annex unit
+
+## 207. Annex Unit 2
+
+ - ID: 207
+
+ - Second annex unit
+
+## 208. Annex Unit 3
+
+ - ID: 208
+
+ - Third annex unit
+
+## 209. Annex Unit 4
+
+ - ID: 209
+
+ - Fourth annex unit
+
+## 210. Annex Unit 1 Offset X
+
+ - ID: 210
+
+ - Offset for the first annex unit from the main unit along the X direction
+
+## 211. Annex Unit 1 Offset Y
+
+ - ID: 211
+
+ - Offset for the first annex unit from the main unit along the Y direction
+
+## 212. Annex Unit 2 Offset X
+
+ - ID: 212
+
+ - Offset for the second annex unit from the main unit along the X direction
+
+## 213. Annex Unit 2 Offset Y
+
+ - ID: 213
+
+ - Offset for the second annex unit from the main unit along the Y direction
+
+## 214. Annex Unit 3 Offset X
+
+ - ID: 214
+
+ - Offset for the third annex unit from the main unit along the X direction
+
+## 215. Annex Unit 3 Offset Y
+
+ - ID: 215
+
+ - Offset for the third annex unit from the main unit along the Y direction
+
+## 216. Annex Unit 4 Offset X
+
+ - ID: 216
+
+ - Offset for the fourth annex unit from the main unit along the X direction
+
+## 217. Annex Unit 4 Offset Y
+
+ - ID: 217
+
+ - Offset for the fourth annex unit from the main unit along the Y direction
+
+## 218. Move Algorithm
+
+ - ID: 218
+
+ - Unknown
+
+## 219. Spacing Modifier
+
+ - ID: 219
+
+ - Unknown
+
+## 220. Can Burn
+
+ - ID: 220
+
+ - Gives flames to buildings when set to 1 when damaged. Unknown
+
+## 221. Gather Flag
+
+ - ID: 221
+
+ - For resources, similar to Can Be Gathered. Unknown
+

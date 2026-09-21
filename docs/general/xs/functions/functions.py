@@ -33,7 +33,12 @@ def main():
             catmd += f"## {f_index}. {func['name']}\n\n"
             outmd_old += f"### {index}.{f_index}. {func['name']}\n\n"
 
-            body = f"Returning Type: `#!xs {func['return_type']}`\n\n"
+            body = ""
+
+            if reason := func.get("deprecated", None) is not None:
+                body += f"Deprecated: {reason}\n\n"
+
+            body += f"Returning Type: `#!xs {func['return_type']}`\n\n"
 
             body += f"Prototype: `#!xs {func['return_type']} {func['name']}("
             for param in func['params']:

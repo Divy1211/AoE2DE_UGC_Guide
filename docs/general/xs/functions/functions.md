@@ -92,7 +92,9 @@
 <a href="#425-bitand" title="bitAnd">bitAnd</a>
 <a href="#426-bitor" title="bitOr">bitOr</a>
 <a href="#427-bitxor" title="bitXor">bitXor</a>
-<a href="#428-bitnot" title="bitNot">bitNot</a>
+<a href="#428-bitlsh" title="bitLsh">bitLsh</a>
+<a href="#429-bitrsh" title="bitRsh">bitRsh</a>
+<a href="#430-bitnot" title="bitNot">bitNot</a>
 </div>
 
 <p class="xs-func-category-header">Randomization</p>
@@ -110,6 +112,11 @@
 <a href="#62-xsgettechname" title="xsGetTechName">xsGetTechName</a>
 <a href="#63-xsgettechstate" title="xsGetTechState">xsGetTechState</a>
 <a href="#64-xsgettechattribute" title="xsGetTechAttribute">xsGetTechAttribute</a>
+<a href="#65-xssettechname" title="xsSetTechName">xsSetTechName</a>
+<a href="#66-xssettechdescription" title="xsSetTechDescription">xsSetTechDescription</a>
+<a href="#67-xsinitiateresearch" title="xsInitiateResearch">xsInitiateResearch</a>
+<a href="#68-xshasresearchedlocaltechnology" title="xsHasResearchedLocalTechnology">xsHasResearchedLocalTechnology</a>
+<a href="#69-xsresearchlocaltechnology" title="xsResearchLocalTechnology">xsResearchLocalTechnology</a>
 </div>
 
 <p class="xs-func-category-header">Player</p>
@@ -130,6 +137,11 @@
 <a href="#713-xssetdiplomacy" title="xsSetDiplomacy">xsSetDiplomacy</a>
 <a href="#714-xsgetdifficulty" title="xsGetDifficulty">xsGetDifficulty</a>
 <a href="#715-xsdeclarevictory" title="xsDeclareVictory">xsDeclareVictory</a>
+<a href="#716-xsgetplayercivname" title="xsGetPlayerCivName">xsGetPlayerCivName</a>
+<a href="#717-xssetplayercivname" title="xsSetPlayerCivName">xsSetPlayerCivName</a>
+<a href="#718-xssetplayername" title="xsSetPlayerName">xsSetPlayerName</a>
+<a href="#719-xssetplayercolor" title="xsSetPlayerColor">xsSetPlayerColor</a>
+<a href="#720-xssetchattoplayer" title="xsSetChatToPlayer">xsSetChatToPlayer</a>
 </div>
 
 <p class="xs-func-category-header">Tasks</p>
@@ -189,6 +201,24 @@
 <a href="#936-xsobjecthasaction" title="xsObjectHasAction">xsObjectHasAction</a>
 <a href="#937-xsisobjectvalid" title="xsIsObjectValid">xsIsObjectValid</a>
 <a href="#938-xsgetplayernumberofobjects" title="xsGetPlayerNumberOfObjects">xsGetPlayerNumberOfObjects</a>
+<a href="#939-xstrainobject" title="xsTrainObject">xsTrainObject</a>
+<a href="#940-xssetunitgatherpoint" title="xsSetUnitGatherPoint">xsSetUnitGatherPoint</a>
+<a href="#941-xsgetunitgatherpoint" title="xsGetUnitGatherPoint">xsGetUnitGatherPoint</a>
+<a href="#942-xsgetunitcaption" title="xsGetUnitCaption">xsGetUnitCaption</a>
+<a href="#943-xssetunitcaption" title="xsSetUnitCaption">xsSetUnitCaption</a>
+<a href="#944-xssetunitname" title="xsSetUnitName">xsSetUnitName</a>
+<a href="#945-xsgetunitcivname" title="xsGetUnitCivName">xsGetUnitCivName</a>
+<a href="#946-xssetunitcivname" title="xsSetUnitCivName">xsSetUnitCivName</a>
+<a href="#947-xsgetunitplayername" title="xsGetUnitPlayerName">xsGetUnitPlayerName</a>
+<a href="#948-xssetunitplayername" title="xsSetUnitPlayerName">xsSetUnitPlayerName</a>
+<a href="#949-xssetobjectdescription" title="xsSetObjectDescription">xsSetObjectDescription</a>
+<a href="#950-xsgetunitproperty" title="xsGetUnitProperty">xsGetUnitProperty</a>
+<a href="#951-xssetunitproperty" title="xsSetUnitProperty">xsSetUnitProperty</a>
+<a href="#952-xssetunitowner" title="xsSetUnitOwner">xsSetUnitOwner</a>
+<a href="#953-xsflashunit" title="xsFlashUnit">xsFlashUnit</a>
+<a href="#954-xsstopunit" title="xsStopUnit">xsStopUnit</a>
+<a href="#955-xsbuildunit" title="xsBuildUnit">xsBuildUnit</a>
+<a href="#956-xstaskunits" title="xsTaskUnits">xsTaskUnits</a>
 </div>
 
 <p class="xs-func-category-header">Map</p>
@@ -203,6 +233,7 @@
 <a href="#107-xsgetmapseed" title="xsGetMapSeed">xsGetMapSeed</a>
 <a href="#108-xstriggervariable" title="xsTriggerVariable">xsTriggerVariable</a>
 <a href="#109-xssettriggervariable" title="xsSetTriggerVariable">xsSetTriggerVariable</a>
+<a href="#1010-xsgetmaptileattribute" title="xsGetMapTileAttribute">xsGetMapTileAttribute</a>
 </div>
 
 <p class="xs-func-category-header">Game Info</p>
@@ -220,6 +251,7 @@
 <a href="#1110-xsgetvictorytimeforsecondarygamemode" title="xsGetVictoryTimeForSecondaryGameMode">xsGetVictoryTimeForSecondaryGameMode</a>
 <a href="#1111-xsgetvictorycondition" title="xsGetVictoryCondition">xsGetVictoryCondition</a>
 <a href="#1112-xsgetvictoryconditionforsecondarygamemode" title="xsGetVictoryConditionForSecondaryGameMode">xsGetVictoryConditionForSecondaryGameMode</a>
+<a href="#1113-xsgetcivname" title="xsGetCivName">xsGetCivName</a>
 </div>
 
 <p class="xs-func-category-header">Ui</p>
@@ -236,10 +268,16 @@
 <a href="#129-xsclearinstructions" title="xsClearInstructions">xsClearInstructions</a>
 <a href="#1210-xsdisplaytimer" title="xsDisplayTimer">xsDisplayTimer</a>
 <a href="#1211-xscleartimer" title="xsClearTimer">xsClearTimer</a>
-<a href="#1212-xsgettimertimeremaining" title="xsGetTimerTimeRemaining">xsGetTimerTimeRemaining</a>
+<a href="#1212-xsunsyncgettimertimeremaining" title="xsUnsyncGetTimerTimeRemaining">xsUnsyncGetTimerTimeRemaining</a>
 <a href="#1213-xssendchat" title="xsSendChat">xsSendChat</a>
-<a href="#1214-xsgetlocalplayerid" title="xsGetLocalPlayerId">xsGetLocalPlayerId</a>
+<a href="#1214-xsunsyncgetlocalplayerid" title="xsUnsyncGetLocalPlayerId">xsUnsyncGetLocalPlayerId</a>
 <a href="#1215-xsgetplayercolortag" title="xsGetPlayerColorTag">xsGetPlayerColorTag</a>
+<a href="#1216-xssetviewposition" title="xsSetViewPosition">xsSetViewPosition</a>
+<a href="#1217-xsunsyncgetviewposition" title="xsUnsyncGetViewPosition">xsUnsyncGetViewPosition</a>
+<a href="#1218-xssetzoom" title="xsSetZoom">xsSetZoom</a>
+<a href="#1219-xsunsyncgetzoom" title="xsUnsyncGetZoom">xsUnsyncGetZoom</a>
+<a href="#1220-xsunsyncgetplayerselectedunitids" title="xsUnsyncGetPlayerSelectedUnitIds">xsUnsyncGetPlayerSelectedUnitIds</a>
+<a href="#1221-xsunsyncisunitvisible" title="xsUnsyncIsUnitVisible">xsUnsyncIsUnitVisible</a>
 </div>
 
 <p class="xs-func-category-header">File Io</p>
@@ -270,6 +308,10 @@
 <a href="#142-xsgetstrategicnumber" title="xsGetStrategicNumber">xsGetStrategicNumber</a>
 <a href="#143-xssetgoal" title="xsSetGoal">xsSetGoal</a>
 <a href="#144-xssetstrategicnumber" title="xsSetStrategicNumber">xsSetStrategicNumber</a>
+<a href="#145-xsgetaisignal" title="xsGetAiSignal">xsGetAiSignal</a>
+<a href="#146-xssetaisignal" title="xsSetAiSignal">xsSetAiSignal</a>
+<a href="#147-xsgetaiscriptgoal" title="xsGetAiScriptGoal">xsGetAiScriptGoal</a>
+<a href="#148-xssetaiscriptgoal" title="xsSetAiScriptGoal">xsSetAiScriptGoal</a>
 </div>
 
 <p class="xs-func-category-header">Misc</p>
@@ -281,6 +323,39 @@
 <a href="#154-xsgetfunctionid" title="xsGetFunctionID">xsGetFunctionID</a>
 <a href="#155-xsbreakpoint" title="xsBreakPoint">xsBreakPoint</a>
 <a href="#156-xsaddruntimeevent" title="xsAddRuntimeEvent">xsAddRuntimeEvent</a>
+</div>
+
+<p class="xs-func-category-header">Strings</p>
+
+<div class="xs-func-grid">
+<a href="#161-ord" title="ord">ord</a>
+<a href="#162-chr" title="chr">chr</a>
+<a href="#163-strlen" title="strLen">strLen</a>
+<a href="#164-strcharat" title="strCharAt">strCharAt</a>
+<a href="#165-strsubstring" title="strSubstring">strSubstring</a>
+<a href="#166-strcontains" title="strContains">strContains</a>
+<a href="#167-strstartswith" title="strStartsWith">strStartsWith</a>
+<a href="#168-strendswith" title="strEndsWith">strEndsWith</a>
+<a href="#169-strremoveprefix" title="strRemovePrefix">strRemovePrefix</a>
+<a href="#1610-strremovesuffix" title="strRemoveSuffix">strRemoveSuffix</a>
+<a href="#1611-strindexof" title="strIndexOf">strIndexOf</a>
+<a href="#1612-strlastindexof" title="strLastIndexOf">strLastIndexOf</a>
+<a href="#1613-strreplace" title="strReplace">strReplace</a>
+<a href="#1614-strinsert" title="strInsert">strInsert</a>
+<a href="#1615-strremove" title="strRemove">strRemove</a>
+<a href="#1616-strsplit" title="strSplit">strSplit</a>
+<a href="#1617-strjoin" title="strJoin">strJoin</a>
+<a href="#1618-strtrim" title="strTrim">strTrim</a>
+<a href="#1619-strtrimstart" title="strTrimStart">strTrimStart</a>
+<a href="#1620-strtrimend" title="strTrimEnd">strTrimEnd</a>
+<a href="#1621-strtoupper" title="strToUpper">strToUpper</a>
+<a href="#1622-strtolower" title="strToLower">strToLower</a>
+<a href="#1623-strreverse" title="strReverse">strReverse</a>
+<a href="#1624-strtoint" title="strToInt">strToInt</a>
+<a href="#1625-strtofloat" title="strToFloat">strToFloat</a>
+<a href="#1626-hex" title="hex">hex</a>
+<a href="#1627-bin" title="bin">bin</a>
+<a href="#1628-fstr" title="fstr">fstr</a>
 </div>
 
 ---
@@ -1175,7 +1250,33 @@ Parameters:
 
 Returns `x ^ y`
 
-### 4.28. bitNot
+### 4.28. bitLsh
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bitLsh(int x, int y)`
+
+Parameters:
+
+1.  `#!xs int x`: The first number
+2.  `#!xs int y`: The second number
+
+Returns `x << y`
+
+### 4.29. bitRsh
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bitRsh(int x, int y)`
+
+Parameters:
+
+1.  `#!xs int x`: The first number
+2.  `#!xs int y`: The second number
+
+Returns `x >> y`
+
+### 4.30. bitNot
 
 Returning Type: `#!xs int`
 
@@ -1282,13 +1383,80 @@ Parameters:
 
 Gets the specific tech attribute for the supplied tech for the given player.
 
+### 6.5. xsSetTechName
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsSetTechName(int techId, int playerId, string description)`
+
+Parameters:
+
+1.  `#!xs int techId`: The tech to set the name for
+2.  `#!xs int playerId`: The player to set the tech name for
+3.  `#!xs string description`: The name to set to
+
+Sets the tech name for the supplied tech for the given player.
+
+### 6.6. xsSetTechDescription
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsSetTechDescription(int techId, int playerId, string description)`
+
+Parameters:
+
+1.  `#!xs int techId`: The tech to set the description for
+2.  `#!xs int playerId`: The player to set the tech description for
+3.  `#!xs string description`: The description to set to
+
+Sets the tech description for the supplied tech for the given player.
+
+### 6.7. xsInitiateResearch
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsInitiateResearch(int buildingId, int techId)`
+
+Parameters:
+
+1.  `#!xs int buildingId`: The building to initiate the research at
+2.  `#!xs int techId`: The tech to research
+
+Same as the editor effect. Starts researching a technology at a specific building. The tech must be available/the player must have sufficient resources to research the tech. The resources are deducted from the player's stockpile on research.
+
+### 6.8. xsHasResearchedLocalTechnology
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsHasResearchedLocalTechnology(int buildingId, int localTechId)`
+
+Parameters:
+
+1.  `#!xs int buildingId`: The building to check local techs at
+2.  `#!xs int localTechId`: The local tech to check
+
+Checks if a local tech has been researched at the given building.
+
+### 6.9. xsResearchLocalTechnology
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsResearchLocalTechnology(int buildingId, int localTechId)`
+
+Parameters:
+
+1.  `#!xs int buildingId`: The building to research a local tech at
+2.  `#!xs int localTechId`: The local tech to research
+
+Researches the given local tech at the specified building if it is available. Same as the editor effect.
+
 ## 7. Player
 
 ### 7.1. xsEffectAmount
 
 Returning Type: `#!xs void`
 
-Prototype: `#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int attributeOrOperation, float value, int playerId)`
+Prototype: `#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int attributeOrOperation, float value, int playerId, int trainLocationIndex)`
 
 Parameters:
 
@@ -1297,6 +1465,7 @@ Parameters:
 3.  `#!xs int attributeOrOperation`: The attribute to modify or the operation to perform, See the [Effect Operation](../../constants/constants/#9-effectamount-effect-operations "Jump To: XS > Constant Reference > 9. Effect Amount Effect Operation") constants
 4.  `#!xs float value`: The value of the effect
 5. (Optional) `#!xs int playerId`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
+6. (Optional) `#!xs int trainLocationIndex`: Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself
 
 Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat).
 
@@ -1475,6 +1644,71 @@ Parameters:
 
 Makes a player win or lose the game
 
+### 7.16. xsGetPlayerCivName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetPlayerCivName(int playerId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to get the civ name for
+2. (Optional) `#!xs bool localized`: If true, localize the civ name
+
+Gets the given player's civ name
+
+### 7.17. xsSetPlayerCivName
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetPlayerCivName(int playerId, string name)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to set the civ name for
+2.  `#!xs string name`: The civ name to set to
+
+Sets the given player's civ name to the specified value.
+
+### 7.18. xsSetPlayerName
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetPlayerName(int playerId, string name)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to set the name for
+2.  `#!xs string name`: The name to set to
+
+Sets the given player's name for the remainder of this game to the specified value
+
+### 7.19. xsSetPlayerColor
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetPlayerColor(int playerId, int colorId)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to set the color for
+2.  `#!xs int colorId`: The color to set to
+
+Sets the given player's color to the specified value
+
+### 7.20. xsSetChatToPlayer
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsSetChatToPlayer(int targetPlayer, bool enabled)`
+
+Parameters:
+
+1.  `#!xs int targetPlayer`: The player to set the chat setting for
+2.  `#!xs bool enabled`: The value to set the chat setting to
+
+Sets the local player's chat setting towards the given player. To be used along with diplomacy-related effects
+
 ## 8. Tasks
 
 ### 8.1. xsTaskAmount
@@ -1600,6 +1834,8 @@ A copy of the global XS task struct is inserted at the provided index in the tas
 
 ### 8.10. xsTask
 
+Deprecated: True
+
 Returning Type: `#!xs void`
 
 Prototype: `#!xs void xsTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
@@ -1616,6 +1852,8 @@ Adds a new (or edits an existing) task with the fields previously defined by cal
 Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#1-xstaskamount)) and then submitting multiple copies of it for different people)
 
 ### 8.11. xsRemoveTask
+
+Deprecated: True
 
 Returning Type: `#!xs void`
 
@@ -1672,7 +1910,7 @@ Parameters:
 1.  `#!xs int playerId`: The player whose object to get the attribute for
 2.  `#!xs int objectId`: The object to get the attribute for
 3.  `#!xs int attribute`: The attribute to get
-4.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
+4.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself
 
 Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
 
@@ -1680,13 +1918,13 @@ Returns the attribute value for an object. Note that values for certain attribut
 
 Returning Type: `#!xs float`
 
-Prototype: `#!xs float xsGetUnitAttribute(int unitId, int attribute, int damageClass)`
+Prototype: `#!xs float xsGetUnitAttribute(int unitId, int attribute, int damageClassOrEntryMod)`
 
 Parameters:
 
 1.  `#!xs int unitId`: The unit to get the attribute for.
 2.  `#!xs int attribute`: The attribute to get
-3.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get
+3.  `#!xs int damageClassOrEntryMod`: For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself
 
 Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
 
@@ -2121,6 +2359,254 @@ Parameters:
 
 Returns the number of data objects for this player
 
+### 9.39. xsTrainObject
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsTrainObject(int buildingId, int objectId, int count)`
+
+Parameters:
+
+1.  `#!xs int buildingId`: The building to train the objects at
+2.  `#!xs int objectId`: The ID of the object to train
+3.  `#!xs int count`: The number of objects to queue
+
+Queues the given number of objects at the specified building. The object must be available at the building and the player must have sufficient resources to queue all the units. If resources are insufficient to cover all of the units, only units which can be afforded are queued. Resources are deducted from the player for this. **Note**: The base ID of upgraded units must be used, i.e. to train an Arbalest at the Archery Range, the `objectId` specified needs to be of the Archer itself. Same as the editor effect.
+
+### 9.40. xsSetUnitGatherPoint
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitGatherPoint(int buildingId, vector position, int unitId)`
+
+Parameters:
+
+1.  `#!xs int buildingId`: The building to set the gather point of
+2.  `#!xs vector position`: The position at which the gather point should be set
+3. (Optional) `#!xs int unitId`: If specified, set the gather point on this unit. Takes priority over `position`
+
+Sets the gather point of the given building to the specified location/unit
+
+### 9.41. xsGetUnitGatherPoint
+
+Returning Type: `#!xs vector`
+
+Prototype: `#!xs vector xsGetUnitGatherPoint(int buildingId)`
+
+Parameters:
+
+1.  `#!xs int buildingId`: The building to get the gather point for
+
+Gets the gather point of the specified building. If the gather point is set on an object, the Z value of the vector contains the unit ID. In that case, the X and Y values should be ignored.
+
+### 9.42. xsGetUnitCaption
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetUnitCaption(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the caption for
+
+Gets the specified unit's caption string.
+
+### 9.43. xsSetUnitCaption
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitCaption(int unitId, string caption)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the caption for.
+2.  `#!xs string caption`: The caption string to set to
+
+Sets the specified unit's caption to the given string.
+
+### 9.44. xsSetUnitName
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitName(int unitId, string name)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the name for
+2.  `#!xs string name`: The name to set to
+
+Sets the given unit's name.
+
+### 9.45. xsGetUnitCivName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetUnitCivName(int unitId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the civ name for
+2. (Optional) `#!xs bool localized`: If true, localize the civ name
+
+Gets the given unit's civ name.
+
+### 9.46. xsSetUnitCivName
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitCivName(int unitId, string name)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the civ name for
+2.  `#!xs string name`: The name to set as the civ name
+
+Sets the given unit's civ name to the specified value.
+
+### 9.47. xsGetUnitPlayerName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetUnitPlayerName(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the player name for
+
+Gets the given unit's player name.
+
+### 9.48. xsSetUnitPlayerName
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitPlayerName(int unitId, string name)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the player name for
+2.  `#!xs string name`: The name to set the player name to
+
+Sets the given unit's player name to the specified value.
+
+### 9.49. xsSetObjectDescription
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetObjectDescription(int playerId, int objectId, string description)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to set the object description for
+2.  `#!xs int objectId`: The ID of the object to set the description for
+3.  `#!xs string description`: The description to set
+
+Sets the given object's description to the specified value for the provided player.
+
+### 9.50. xsGetUnitProperty
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsGetUnitProperty(int unitId, int property, int typeOrPlayer)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to get the property for
+2.  `#!xs int property`: The property to get. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants)
+3. (Optional) `#!xs int typeOrPlayer`: Resource ID when getting attributes held or player when getting unit visibility
+
+Gets the specified property for the given unit.
+
+### 9.51. xsSetUnitProperty
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitProperty(int unitId, int property, float value, int typeOrForce)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the property for
+2.  `#!xs int property`: The property to set. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants)
+3.  `#!xs float value`: The value to set the property to
+4. (Optional) `#!xs int typeOrForce`: Resource ID when setting attributes held or force when setting garrisoned in ID or unit visibility
+
+Sets the specified property for the given unit to the provided value.
+
+### 9.52. xsSetUnitOwner
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetUnitOwner(int unitId, int playerId, bool flashObject)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to set the owner for
+2.  `#!xs int playerId`: The new owner
+3. (Optional) `#!xs bool flashObject`: If false, do not flash the object on ownership change
+
+Changes the owner of the given unit to the specified player. Same as the editor effect.
+
+### 9.53. xsFlashUnit
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsFlashUnit(int unitId, int playerId, int soundName)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to flash
+2. (Optional) `#!xs int playerId`: If set, flash only for this player. Otherwise flash for all players (Default: `#!xs -1`)
+3. (Optional) `#!xs int soundName`: Defaults to "?capture_complete"
+
+Flashes the given unit. Same as the editor effect.
+
+### 9.54. xsStopUnit
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsStopUnit(int unitId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to stop
+
+Stops the unit. Same as the editor effect.
+
+### 9.55. xsBuildUnit
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsBuildUnit(int unitIds, int objectId, vector location1, vector location2, bool isShiftQueue, bool isFormationCommand)`
+
+Parameters:
+
+1.  `#!xs int unitIds`: The units to task
+2.  `#!xs int objectId`: The object to build
+3.  `#!xs vector location1`: The location to build at
+4. (Optional) `#!xs vector location2`: When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`)
+5. (Optional) `#!xs bool isShiftQueue`: If true, shift queue the units
+6. (Optional) `#!xs bool isFormationCommand`: If true, issue a formation command to the units
+
+Tasks the selected units to build the given object at the specified location. The target location must be visible, the building must be available to the selected units, and the player must have sufficient resources to construct the building. Resources are deducted upon building. Same as the editor effect
+
+### 9.56. xsTaskUnits
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsTaskUnits(int unitIds, int actionType, vector location, int locationUnitId, bool isShiftQueue, bool isFormationCommand, bool shouldPlayUnloadSound, int patrolPoints)`
+
+Parameters:
+
+1.  `#!xs int unitIds`: The units to task
+2.  `#!xs int actionType`: The action to issue. See [cActionType Constants](../../constants/constants/#38-action-type-constants "Jump to: XS Scripting > Constant Reference > 38. Action Type Constants")
+3. (Optional) `#!xs vector location`: The location at which to task the units
+4. (Optional) `#!xs int locationUnitId`: The unit to task the selected units to
+5. (Optional) `#!xs bool isShiftQueue`: If true, shift queue the units
+6. (Optional) `#!xs bool isFormationCommand`: If true, issue a formation command to the units
+7. (Optional) `#!xs bool shouldPlayUnloadSound`: If true, play the unload sound when ungarrisoning units
+8. (Optional) `#!xs int patrolPoints`: Array of vectors. When tasking units to patrol, use this if multiple patrol points are desired. `isShiftQueue` must be set to `#!xs false` when using this.
+
+Tasks the selected units to perform the given action. Same as the editor effect.
+
 ## 10. Map
 
 ### 10.1. xsGetMapName
@@ -2217,6 +2703,20 @@ Parameters:
 2.  `#!xs int value`: The value to set the variable to
 
 Sets the value of the variable of the given variable ID to the provided value. Note: This only works in a custom scenario
+
+### 10.10. xsGetMapTileAttribute
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetMapTileAttribute(int x, int y, int attributeId)`
+
+Parameters:
+
+1.  `#!xs int x`: The X value of the tile to get the attribute of
+2.  `#!xs int y`: The Y value fo the tile to get the attribute of
+3.  `#!xs int attributeId`: The attribute to get. See [cTile constants](../../constants/constants/#30-map-tile-constants "Jump To: XS > Constant Reference > 30. Map Tile Constants")
+
+Gets the specified attribute for the given tile.
 
 ## 11. Game Info
 
@@ -2339,6 +2839,19 @@ Prototype: `#!xs int xsGetVictoryConditionForSecondaryGameMode()`
 
 
 Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
+
+### 11.13. xsGetCivName
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsGetCivName(int civId, bool localized)`
+
+Parameters:
+
+1.  `#!xs int civId`: The
+2. (Optional) `#!xs bool localized`: If true, localize the civ name
+
+Gets the given civ's name
 
 ## 12. Ui
 
@@ -2496,11 +3009,11 @@ Parameters:
 
 Same as the Clear Timer editor effect.
 
-### 12.12. xsGetTimerTimeRemaining
+### 12.12. xsUnsyncGetTimerTimeRemaining
 
 Returning Type: `#!xs float`
 
-Prototype: `#!xs float xsGetTimerTimeRemaining(int timerId, int timerUnit, int playerId)`
+Prototype: `#!xs float xsUnsyncGetTimerTimeRemaining(int timerId, int timerUnit, int playerId)`
 
 Parameters:
 
@@ -2524,11 +3037,11 @@ Parameters:
 
 Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!
 
-### 12.14. xsGetLocalPlayerId
+### 12.14. xsUnsyncGetLocalPlayerId
 
 Returning Type: `#!xs int`
 
-Prototype: `#!xs int xsGetLocalPlayerId()`
+Prototype: `#!xs int xsUnsyncGetLocalPlayerId()`
 
 
 Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
@@ -2544,6 +3057,85 @@ Parameters:
 1.  `#!xs int playerId`: The player to get the colour prefix (<TAG>) for
 
 Gets the colour prefix (e.g. <RED>) for a given player. See the [cColor constants](../../constants/constants/#26-color "Jump To: XS > Constant Reference > 26. Color")
+
+### 12.16. xsSetViewPosition
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetViewPosition(int playerId, vector position, int duration)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to set the view position for. Can be set to `#!xs -1` to apply to all players
+2.  `#!xs vector position`: The position to set the view to
+3. (Optional) `#!xs int duration`: If set, scroll to the destination in this amount of time
+
+Sets the given player's camera to the specified position. Same as the editor effect.
+
+### 12.17. xsUnsyncGetViewPosition
+
+Returning Type: `#!xs vector`
+
+Prototype: `#!xs vector xsUnsyncGetViewPosition(int playerId)`
+
+Parameters:
+
+1. (Optional) `#!xs int playerId`: When specified, only returns a valid vector if the local player matches this
+
+Gets the local player's view position. Note that this is an unsync function and cannot be used raw in MP.
+
+### 12.18. xsSetZoom
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetZoom(int playerId, float zoom, float duration)`
+
+Parameters:
+
+1.  `#!xs int playerId`: The player to set the zoom for. Can be set to `#!xs -1` to apply to all players
+2.  `#!xs float zoom`: The zoom level to set to. Clamped between `#!xs 0.75` (Fully zoomed out) and `#!xs 1.25` (Fully zoomed in)
+3. (Optional) `#!xs float duration`: If specified, change the zoom to the target value in this amount of time.
+
+Sets the given player's zoom to the specified value.
+
+### 12.19. xsUnsyncGetZoom
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsUnsyncGetZoom(int playerId)`
+
+Parameters:
+
+1. (Optional) `#!xs int playerId`: When specified, only returns a valid value if the local player matches this
+
+Gets the local player's zoom. Note that this is an unsync function and cannot be used raw in MP.
+
+### 12.20. xsUnsyncGetPlayerSelectedUnitIds
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsUnsyncGetPlayerSelectedUnitIds(int arrayId, int playerId)`
+
+Parameters:
+
+1. (Optional) `#!xs int arrayId`: The array to use
+2. (Optional) `#!xs int playerId`: When specified, only returns a valid value if the local player matches this
+
+Returns an int array with the currently selected unit IDs for the local player. Note that this is an unsync function and cannot be used raw in MP.
+
+### 12.21. xsUnsyncIsUnitVisible
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsUnsyncIsUnitVisible(int unitId, bool allowInFog, int playerId)`
+
+Parameters:
+
+1.  `#!xs int unitId`: The unit to check visibility for
+2. (Optional) `#!xs bool allowInFog`: If true, allow check to pass even if the unit is only seen in the fog and not in the LoS.
+3. (Optional) `#!xs int playerId`: When specified, only returns a valid value if the local player matches this
+
+Checks if the specified unit is visible to the local player. Note that this is an unsync function and cannot be used raw in MP.
 
 ## 13. File Io
 
@@ -2771,6 +3363,58 @@ Parameters:
 
 Sets the SN of the current AI
 
+### 14.5. xsGetAiSignal
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetAiSignal(int signalId, bool useLegacyAi)`
+
+Parameters:
+
+1.  `#!xs int signalId`: The signal to get the value of
+2. (Optional) `#!xs bool useLegacyAi`: If true, use the legacy signal
+
+Gets the given AI signal value.
+
+### 14.6. xsSetAiSignal
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsSetAiSignal(int signalId, int value, bool useLegacyAi)`
+
+Parameters:
+
+1.  `#!xs int signalId`: The signal to set the value of
+2.  `#!xs int value`: The value to set to
+3. (Optional) `#!xs bool useLegacyAi`: If true, use the legacy signal
+
+Sets the given AI signal value.
+
+### 14.7. xsGetAiScriptGoal
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsGetAiScriptGoal(int goalId)`
+
+Parameters:
+
+1.  `#!xs int goalId`: The goal to check
+
+Checks if the given AI goal is set
+
+### 14.8. xsSetAiScriptGoal
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetAiScriptGoal(int goalId, bool value)`
+
+Parameters:
+
+1.  `#!xs int goalId`: The goal to set
+2.  `#!xs bool value`: The value to set the goal to
+
+Sets the given AI goal to the specified value
+
 ## 15. Misc
 
 ### 15.1. xsDumpArrays
@@ -2837,4 +3481,380 @@ Parameters:
 3.  `#!xs int functionArgument`: This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
 
 A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
+
+## 16. Strings
+
+### 16.1. ord
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int ord(string character)`
+
+Parameters:
+
+1.  `#!xs string character`: The character to get the ASCII ord value for
+
+Returns the ASCII ord value for the given character. Same as Python's `ord`
+
+### 16.2. chr
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string chr(int code)`
+
+Parameters:
+
+1.  `#!xs int code`: The ASCII code to get the character for.
+
+Returns the ASCII character for the given code. Same as Python's `chr`
+
+### 16.3. strLen
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int strLen(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to get the length for
+
+Returns the length of the given string
+
+### 16.4. strCharAt
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strCharAt(string str, int index)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to index
+2.  `#!xs int index`: The index to get. Can be in the range `[-length, length)`
+
+Returns the `str[index]` as in Python or `""` if the index is out of bounds.
+
+### 16.5. strSubstring
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strSubstring(string str, int start, int end)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to substring
+2.  `#!xs int start`: The start index. Can be in the range `[-length, length)`
+3.  `#!xs int end`: The end index. Can be in the range `[-length, length)`
+
+Returns the `str[start:end]` as in Python or `""` if the indices are out of bounds.
+
+### 16.6. strContains
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool strContains(string str, string substring)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to check
+2.  `#!xs string substring`: The sub string to check
+
+Checks if the given substring is contained in the provided string.
+
+### 16.7. strStartsWith
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool strStartsWith(string str, string prefix)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to check
+2.  `#!xs string prefix`: The prefix to check
+
+Checks if the given string starts with the provided prefix.
+
+### 16.8. strEndsWith
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool strEndsWith(string str, string suffix)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to check
+2.  `#!xs string suffix`: The suffix to check
+
+Checks if the given string ends with the provided suffix.
+
+### 16.9. strRemovePrefix
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strRemovePrefix(string str, string prefix)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to remove the prefix from
+2.  `#!xs string prefix`: The prefix to remove
+
+Removes the prefix from the given string if present and returns a new string. Returns the original string otherwise.
+
+### 16.10. strRemoveSuffix
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strRemoveSuffix(string str, string suffix)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to remove the suffix from
+2.  `#!xs string suffix`: The suffix to remove
+
+Removes the suffix from the given string if present and returns a new string. Returns the original string otherwise.
+
+### 16.11. strIndexOf
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int strIndexOf(string str, string substring, int fromIndex)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to check in
+2.  `#!xs string substring`: The substring to find the index of
+3. (Optional) `#!xs int fromIndex`: If set, check starting from this index
+
+Finds the index of the given substring in the provided string. Returns -1 if not found
+
+### 16.12. strLastIndexOf
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int strLastIndexOf(string str, string substring, int fromIndex)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to check in
+2.  `#!xs string substring`: The substring to find the index of
+3. (Optional) `#!xs int fromIndex`: If set, check backwards starting from this index
+
+Finds the index of the given substring in the provided string backwards. Returns -1 if not found
+
+### 16.13. strReplace
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strReplace(string str, string target, string replacement, int max)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to replace in
+2.  `#!xs string target`: The substring to replace
+3.  `#!xs string replacement`: The replacement for the target
+4. (Optional) `#!xs int max`: If specified, only replace a max of these instances of the target string
+
+Replaces the occurrences of the target in the given string with the replacement and returns it as a new string.
+
+### 16.14. strInsert
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strInsert(string str, int index, string target)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to insert into
+2.  `#!xs int index`: The index to insert at
+3.  `#!xs string target`: The substring to insert
+
+Inserts the given substring at the provided index in the specified string and returns a new string.
+
+### 16.15. strRemove
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strRemove(string str, int index, int length)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to remove from
+2.  `#!xs int index`: The index to remove from
+3.  `#!xs int length`: The number of characters to remove
+
+Removes the specified number of characters at the provided index in the given string and returns a new string.
+
+### 16.16. strSplit
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int strSplit(string str, string delimiter, int max)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to split
+2. (Optional) `#!xs string delimiter`: The string to split by. If unspecified, split at all characters.
+3.  `#!xs int max`: The maximum number of splits to make.
+
+Returns an int ID for an array of strings.
+
+### 16.17. strJoin
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strJoin(int arrayId, string delimiter)`
+
+Parameters:
+
+1.  `#!xs int arrayId`: An int ID for an array of strings
+2.  `#!xs string delimiter`: The string to join the array with
+
+Returns a joined string of the provided array interspaced with the given delimiter.
+
+### 16.18. strTrim
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strTrim(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to trim
+
+Removes whitespaces on both sides of the given string and returns a new string.
+
+### 16.19. strTrimStart
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strTrimStart(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to trim
+
+Removes whitespaces at the start of the given string and returns a new string.
+
+### 16.20. strTrimEnd
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strTrimEnd(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to trim
+
+Removes whitespaces at the end of the given string and returns a new string.
+
+### 16.21. strToUpper
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strToUpper(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to convert to uppercase
+
+Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
+
+### 16.22. strToLower
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strToLower(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to convert to lowercase
+
+Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
+
+### 16.23. strReverse
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string strReverse(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to reverse
+
+Returns a new string that is the original string backwards.
+
+### 16.24. strToInt
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int strToInt(string str, int base, int defaultValue)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to parse as an `#!xs int`
+2. (Optional) `#!xs int base`: Defaults to `#!xs 10`
+3. (Optional) `#!xs int defaultValue`: Defaults to `#!xs -1`
+
+Returns the string parsed as an `#!xs int` and returns the default value if it fails
+
+### 16.25. strToFloat
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float strToFloat(string str, float defaultValue)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to parse as a `#!xs float`
+2. (Optional) `#!xs float defaultValue`: Defaults to `#!xs -1.0`
+
+Returns the string parsed as a `#!xs float` and returns the default value if it fails
+
+### 16.26. hex
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int hex(string str, int defaultValue)`
+
+Parameters:
+
+1.  `#!xs string str`: The hex string to parse. Digits may be separated by `'`
+2. (Optional) `#!xs int defaultValue`: Defaults to `#!xs -1`
+
+Returns the signed 32-bit base-10 value for the given hex string and returns the default value if it fails
+
+### 16.27. bin
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int bin(string str, int defaultValue)`
+
+Parameters:
+
+1.  `#!xs string str`: The bin string to parse. Digits may be separated by `'`
+2.  `#!xs int defaultValue`: Defaults to `#!xs -1`
+
+Returns the signed 32-bit base-10 value for the given binary string and returns the default value if it fails
+
+### 16.28. fstr
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string fstr(string str)`
+
+Parameters:
+
+1.  `#!xs string str`: The string to format
+
+Formats the given string like a Python f-string. Note that Expressions are not allowed, and it is limited to variable names only.
+
+Example:
+```xs
+xsChatData(fstr("{colourTag}{player}: {msg}")); // assuming that colourTag, player, and msg are valid variables here.
+```
+
+Similar to Python, you may use `{{` and `}}` to escape the brackets themselves when passing a string to `fstr` when interpolation is not desired.
+
+The strings passed to `fstr` do not need to be literal strings. This allows creating multi-language template strings in language files that can be fetched via `xsGetString` and then passed to `fstr` for interpretation.
+
+The variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output.
 

@@ -131,11 +131,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Unknown... What does this resource do?
 
-## 18. Unused Resource 018
+## 18. Civilization Voice Override
 
 - ID: 18
 
-- Purpose: Unused
+- Purpose: Allows overriding a civilization's voice lines with another civ
 
 ## 19. Total Units Owned
 
@@ -1434,18 +1434,18 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: The actual work rate for builders is given by `construction_rate_mod * builder.default_work_rate`
 
-## 196. Hun Wonder Discount
+## 196. Wonder Time Modifier
 
 - ID: 196
 
-- Purpose: Additional time required for relic/wonder victories in one tenth of a year
+- Purpose: Additional time required for wonder victories in one tenth of a year
 
 - Default Values:
 
     - 0:  default
-    - 1000:  (100 years) for the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic/wonder victories, i.e. it adds up if multiple hun players get the tech
+    - 1000:  (100 years) for all neutral/enemies of the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for wonder victories, i.e. it adds up if multiple hun players get the tech
 
-- Note: Internally, relic and wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame
+- Note: Internally, wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame
 
 ## 197. Spies Discount
 
@@ -1457,11 +1457,18 @@ This page is a list of all the player resources in the scenario editor and their
 
     - 0:  Default
 
-## 198. Unused Resource 198
+## 198. Relic Time Modifier
 
 - ID: 198
 
-- Purpose: Unused
+- Purpose: Additional time required for relic victories in one tenth of a year
+
+- Default Values:
+
+    - 0:  default
+    - 1000:  (100 years) for all neutral/enemies of the Hun player, after researching atheism. The value of this resource of each player is added to determine the total extra time for relic victories, i.e. it adds up if multiple hun players get the tech
+
+- Note: Internally, wonder victory countdowns are measured in one tenths of an year, the fractional part is just not shown ingame
 
 ## 199. Unused Resource 199
 
@@ -1627,11 +1634,18 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Researching Cuman Mercenaries gives 5 of this resource per castle. Making mercenary Kipchaks costs one unit of this resource. Each newly constructed castle gives +5
 
-## 215. Unused Resource 215
+## 215. Bonus Forager Food
 
 - ID: 215
 
-- Purpose: Unused but some units use it as part of their cost as a leftover: `Urus Khan`, `CUMANDISABLED` and `CUMANPLACEHOLDER`
+- Purpose: Bonus forager food gathering percent of main work rate
+
+- Default Values:
+
+    - 0:  Default
+    - 25:  Mapuche
+
+- Note: `EffectFunction29` must be called in order for this resource to work
 
 ## 216. Shepherd Productivity
 
@@ -1816,14 +1830,14 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 236
 
-- Purpose: Farming gold generation rate per 100 seconds
+- Purpose: Farmer gold generation percent of main work rate
 
 - Default Values:
 
     - 0:  Default
-    - 2:  (0.02 g/s per farmer) after Burgundian Vineyards
+    - 2:  Burgundian Vineyards
 
-- Note: Only generates gold while collecting food from farms, and not when walking on them down
+- Note: `EffectFunction14` must be called for this resource to work. Only generates gold while collecting food from farms, and not when walking on them down
 
 ## 237. Folwark Collection Amount
 
@@ -1875,14 +1889,14 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 241
 
-- Purpose: Stone mining gold generation rate per 100 seconds
+- Purpose: Bonus stone miner gold gathering percent of main work rate
 
 - Default Values:
 
     - 0:  Default
-    - 18:  Poles
-    - 20.7:  Poles with Stone Mining
-    - 23.805:  Poles with Stone Shaft Mining
+    - 33.33:  Poles
+
+- Note: `EffectFunction13` must be called for this resource to work
 
 ## 242. Trade Workshop Food Productivity
 
@@ -2102,28 +2116,27 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 266
 
-- Purpose: Lumberjack chopping gold generation rate per 100 seconds
+- Purpose: Lumberjack chopping gold gathering percent of main work rate
 
 - Default Values:
 
     - 0:  Default
-    - 1.5:  (0.015 g/s per lumberjack) Vietnamese with paper money
-    - 1.8:  (0.018 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe
-    - 2.16:  (0.0216 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw
-    - 2.376:  (0.02376 g/s per lumberjack) Vietnamese with paper money & Double Bit Axe & Bow Saw & Two-Man Saw
+    - 1.5:  Paper Money
 
-- Note: Only generates gold while collecting wood from trees, and not when cutting them down
+- Note: `EffectFunction15` must be called for this resource to work. Only generates gold while collecting wood from trees, and not when cutting them down
 
 ## 267. Foraging Wood Productivity
 
 - ID: 267
 
-- Purpose: Forager foraging wood generation rate per 100 seconds
+- Purpose: Bonus forager wood gathering percent of main work rate
 
 - Default Values:
 
     - 0:  Default
-    - 10.4753:  (0.104753 w/s per forager) Portuguese
+    - 33.33:  Portuguese
+
+- Note: `EffectFunction12` must be called for this resource to work
 
 ## 268. Hunter Productivity
 
@@ -2178,17 +2191,26 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: Technically, this resource is used as a multiplier for the resource generated by task 154 currently on infantry units. Task 154 can change which resource does this, and it is what really controls which resource is generated (Resource Out) and the rate of generation (Work Value 1) which is set to the different rates for different types of targets for infantry
 
-## 275. Unused Resource 275
+## 275. Fyrd Discount Level
 
 - ID: 275
 
-- Purpose: Unused
+- Purpose: The number of standing castles + TCs
 
-## 276. Unused Resource 276
+- Note: This value only changes when a player is playing as the Saxons.
+
+## 276. Bonus Gold Productivity
 
 - ID: 276
 
-- Purpose: Unused
+- Purpose: Bonus gold miner gold gathering percent of main work rate
+
+- Default Values:
+
+    - 0:  Default
+    - 10:  Malians
+
+- Note: `EffectFunction11` must be called in order for this resource to work
 
 ## 277. Red Cliffs Tactics Damage
 
@@ -2203,11 +2225,11 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Note: This implies that converted units that are affected by the tech won't do fire damage after being converted
 
-## 278. Unused Resource 278
+## 278. Razing Bounty
 
 - ID: 278
 
-- Purpose: Unused
+- Purpose: Currently Unused
 
 ## 279. Military Can Convert
 
@@ -2298,11 +2320,18 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Determines the maximum amount of villagers that can work at once on a pasture
 
-## 291. Unused Resource 291
+## 291. Razing Pillage
 
 - ID: 291
 
-- Purpose: Unused
+- Purpose: The percent * 10 of the cost that should be looted when destroying buildings.
+
+- Default Values:
+
+    - 0:  Default
+    - 250:  Danes
+
+- Note: `EffectFunction36` must be called for all players in the game for this resource to work.
 
 ## 292. Animal Decay Prevention
 
@@ -2322,11 +2351,18 @@ This page is a list of all the player resources in the scenario editor and their
 
 - Purpose: Percent extra food generated by herders and shepherds
 
-## 295. Unused Resource 295
+## 295. Unit Refund
 
 - ID: 295
 
-- Purpose: Unused
+- Purpose: Fraction of the cost to refund for lost units for the player
+
+- Default Values:
+
+    - 0:  Default
+    - 0.15:  Tupi
+
+- Note: `EffectFunction27` must be called for this resource to work.
 
 ## 296. Forager Productivity
 
@@ -2337,25 +2373,43 @@ This page is a list of all the player resources in the scenario editor and their
 - Default Values:
 
     - 1:  Default
-    - 1.20:  Mapuche
 
-## 297. Curare Poison
+## 297. Varangian Gold Generation
 
 - ID: 297
 
-- Purpose: Unused
+- Purpose: Varangian Guard gold generation multiplier
 
-## 298. Unused Resource 298
+- Default Values:
+
+    - 1:  Default
+    - 1.33:  Varangians
+
+## 298. Butcher Gold Productivity
 
 - ID: 298
 
-- Purpose: Unused
+- Purpose: Varangians Shepherd/Hunter/Fisher/Fishing Ship additional gold gathering percent of main work rate
 
-## 299. Unused Resource 299
+- Default Values:
+
+    - 0:  Default
+    - 10.01:  Varangians
+
+- Note: `EffectFunction34` must be called for this resource to work.
+
+## 299. Bonus Food Productivity
 
 - ID: 299
 
-- Purpose: Unused
+- Purpose: All food gatherers additional food gathering percent of main work rate
+
+- Default Values:
+
+    - 0:  Default
+    - 5.01:  Danes
+
+- Note: `EffectFunction35` must be called for this resource to work.
 
 ## 300. Killed Gaia
 
@@ -3705,12 +3759,15 @@ This page is a list of all the player resources in the scenario editor and their
 
 - ID: 502
 
-- Purpose: Chopping food generation rate per 100 seconds.
+- Purpose: Chopping food gathering percent of main work rate
 
 - Default Values:
 
     - 0:  Default
     - 4:  Athenians
+    - 7:  Shu
+
+- Note: `EffectFunction16` must be called for this resource to work. While the name only contains Athenians, this resource is also used for Shu.
 
 ## 503. Wood Trade Ratio
 
