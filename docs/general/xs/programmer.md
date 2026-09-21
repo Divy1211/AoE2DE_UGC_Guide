@@ -281,6 +281,35 @@ void main() {
 
 ```
 
+### 5.1. Mutable Functions
+
+Prefixing a function with `#!xs mutable` makes it overloadable. The first definition must be marked `#!xs mutable`; later overloads may omit it. There is no limit on how many times a mutable function can be overloaded. Overloads must match the original return type, argument count and argument types, otherwise an error is thrown.
+
+The last overload defined before a call is the one that runs:
+
+```xs
+mutable int foo(int a = 0) {
+    return (a + 1);
+}
+
+int foo(int a = 0) {
+    return (a + 2);
+}
+
+void main() {
+    xsChatData("result: " + foo(1)); // prints 4, not 3 or 2
+}
+
+int foo(int a = 0) {
+    return (a + 3);
+}
+```
+
+This can be used to forward-declare functions (so they can be called before their real body), to write recursive functions, or to let libraries expose functions that users can redefine.
+
+!!! warning "Default values on overloads"
+    Overloads may specify different default values, but they are not bound to the overload's body. Defaults appear to be initialised separately, so a call can use defaults from an earlier definition with the body of a later one.
+
 An XS Script can import other XS Scripts using the following syntax:
 
 ```xs
