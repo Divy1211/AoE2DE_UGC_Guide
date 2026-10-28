@@ -1048,6 +1048,36 @@ Function names follow the same laws and conventions that variable names do.
 
 A list of all inbuilt XS functions and their descriptions are provided in the [Fucntion Reference](../functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
 
+**Mutable Functions**
+
+By default, two functions cannot share the same name. Adding the word `#!xs mutable` in front of a function's return type makes that function overloadable: you can define it again later and the new body replaces the old one. The first definition must be marked `#!xs mutable`; later overloads may keep or drop it, it makes no difference. You can overload the same function as many times as you want.
+
+Every overload must use the same return type, the same number of arguments and the same argument types. If they do not match, an error is thrown.
+
+The last defined overload wins, even if it appears after the call. In this example `#!xs foo(1)` prints `#!xs 4`, not `#!xs 3` or `#!xs 2`:
+
+```xs
+mutable int foo(int a = 0) {
+    return (a + 1);
+}
+
+int foo(int a = 0) {
+    return (a + 2);
+}
+
+void main() {
+    xsChatData("result: " + foo(1));
+}
+
+int foo(int a = 0) {
+    return (a + 3);
+}
+```
+
+This is useful to forward-declare a function so it can be used before its real body is written (including for recursion), and so that libraries can let you redefine what a function does.
+
+Overloads can specify different default values, but those defaults do not work as you might expect. Defaults seem to be initialised separately from the function body, so you can end up with a default from the original function and the body from a later overload.
+
 #### 2.6.2. File Structure
 
 When you write an XS Script, it is a good idea to group your functions and put them into an appropriately named file.
