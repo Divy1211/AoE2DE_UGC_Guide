@@ -4877,5 +4877,146 @@
             ],
             "desc": "Formats the given string like a Python f-string. Note that Expressions are not allowed, and it is limited to variable names only.\n\nExample:\n```xs\nxsChatData(fstr(\"{colourTag}{player}: {msg}\")); // assuming that colourTag, player, and msg are valid variables here.\n```\n\nSimilar to Python, you may use `{{` and `}}` to escape the brackets themselves when passing a string to `fstr` when interpolation is not desired.\n\nThe strings passed to `fstr` do not need to be literal strings. This allows creating multi-language template strings in language files that can be fetched via `xsGetString` and then passed to `fstr` for interpretation.\n\nThe variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output."
         }
+    ],
+    "network":  [
+        {
+            "name": "xsResetNetData",
+            "return_type": "void",
+            "params": [],
+            "desc": "Resets the network data buffer"
+        },
+        {
+            "name": "xsWriteNetInt",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "value",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The value to write"
+                }
+            ],
+            "desc": "Writes a int value in the network data buffer."
+        },
+        {
+            "name": "xsWriteNetFloat",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "value",
+                    "type": "float",
+                    "required": true,
+                    "desc": "The value to write"
+                }
+            ],
+            "desc": "Writes a float value in the network data buffer."
+        },
+        {
+            "name": "xsWriteNetVector",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "value",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The value to write"
+                }
+            ],
+            "desc": "Writes a vector value in the network data buffer."
+        },
+        {
+            "name": "xsWriteNetString",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "value",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The value to write"
+                }
+            ],
+            "desc": "Writes a string value in the network data buffer."
+        },
+        {
+            "name": "xsSendNetData",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "callback",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The name of the function to call. The signature of this callback must be `#!xs void(int)`"
+                }
+            ],
+            "desc": "Calls the given function with the current network data buffer, and passes the ID of the local player issuing this command as an argument. Note that the data that can be sent at once is limited to 256B, and up to a maximum of 4 times per second per player. Note that this function should be used even in single player contexts where unsync XS functions are used, such as `#!xs xsReadInt();`. Unsync functions will otherwise desync replays!"
+        },
+        {
+            "name": "xsReadNetString",
+            "return_type": "string",
+            "params": [],
+            "desc": "Reads a string value from the network data buffer."
+        },
+        {
+            "name": "xsReadNetInt",
+            "return_type": "int",
+            "params": [],
+            "desc": "Reads a int value from the network data buffer."
+        },
+        {
+            "name": "xsReadNetFloat",
+            "return_type": "float",
+            "params": [],
+            "desc": "Reads a float value from the network data buffer."
+        },
+        {
+            "name": "xsReadNetVector",
+            "return_type": "vector",
+            "params": [],
+            "desc": "Reads a vector value from the network data buffer."
+        },
+        {
+            "name": "xsSetWriteNetDataPosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "position",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The position to set to"
+                }
+            ],
+            "desc": "Sets the write position in the network data buffer"
+        },
+        {
+            "name": "xsSetReadNetDataPosition",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "position",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The position to set to"
+                }
+            ],
+            "desc": "Sets the read position in the network data buffer"
+        },
+        {
+            "name": "xsGetWriteNetDataPosition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the write position in the network data buffer"
+        },
+        {
+            "name": "xsGetReadNetDataPosition",
+            "return_type": "int",
+            "params": [],
+            "desc": "Gets the read position in the network data buffer"
+        },
+        {
+            "name": "xsUnsyncIsSandboxMode",
+            "return_type": "bool",
+            "params": [],
+            "desc": "Returns true in replays and in campaigns where the user chooses sandbox mode"
+        }
     ]
 }

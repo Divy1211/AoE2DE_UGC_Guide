@@ -358,6 +358,26 @@
 <a href="#1628-fstr" title="fstr">fstr</a>
 </div>
 
+<p class="xs-func-category-header">Network</p>
+
+<div class="xs-func-grid">
+<a href="#171-xsresetnetdata" title="xsResetNetData">xsResetNetData</a>
+<a href="#172-xswritenetint" title="xsWriteNetInt">xsWriteNetInt</a>
+<a href="#173-xswritenetfloat" title="xsWriteNetFloat">xsWriteNetFloat</a>
+<a href="#174-xswritenetvector" title="xsWriteNetVector">xsWriteNetVector</a>
+<a href="#175-xswritenetstring" title="xsWriteNetString">xsWriteNetString</a>
+<a href="#176-xssendnetdata" title="xsSendNetData">xsSendNetData</a>
+<a href="#177-xsreadnetstring" title="xsReadNetString">xsReadNetString</a>
+<a href="#178-xsreadnetint" title="xsReadNetInt">xsReadNetInt</a>
+<a href="#179-xsreadnetfloat" title="xsReadNetFloat">xsReadNetFloat</a>
+<a href="#1710-xsreadnetvector" title="xsReadNetVector">xsReadNetVector</a>
+<a href="#1711-xssetwritenetdataposition" title="xsSetWriteNetDataPosition">xsSetWriteNetDataPosition</a>
+<a href="#1712-xssetreadnetdataposition" title="xsSetReadNetDataPosition">xsSetReadNetDataPosition</a>
+<a href="#1713-xsgetwritenetdataposition" title="xsGetWriteNetDataPosition">xsGetWriteNetDataPosition</a>
+<a href="#1714-xsgetreadnetdataposition" title="xsGetReadNetDataPosition">xsGetReadNetDataPosition</a>
+<a href="#1715-xsunsyncissandboxmode" title="xsUnsyncIsSandboxMode">xsUnsyncIsSandboxMode</a>
+</div>
+
 ---
 
 ## 1. Rules
@@ -3859,4 +3879,162 @@ Similar to Python, you may use `{{` and `}}` to escape the brackets themselves w
 The strings passed to `fstr` do not need to be literal strings. This allows creating multi-language template strings in language files that can be fetched via `xsGetString` and then passed to `fstr` for interpretation.
 
 The variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output.
+
+## 17. Network
+
+### 17.1. xsResetNetData
+
+Returning Type: `#!xs void`
+
+Prototype: `#!xs void xsResetNetData()`
+
+
+Resets the network data buffer
+
+### 17.2. xsWriteNetInt
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsWriteNetInt(int value)`
+
+Parameters:
+
+1.  `#!xs int value`: The value to write
+
+Writes a int value in the network data buffer.
+
+### 17.3. xsWriteNetFloat
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsWriteNetFloat(float value)`
+
+Parameters:
+
+1.  `#!xs float value`: The value to write
+
+Writes a float value in the network data buffer.
+
+### 17.4. xsWriteNetVector
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsWriteNetVector(vector value)`
+
+Parameters:
+
+1.  `#!xs vector value`: The value to write
+
+Writes a vector value in the network data buffer.
+
+### 17.5. xsWriteNetString
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsWriteNetString(string value)`
+
+Parameters:
+
+1.  `#!xs string value`: The value to write
+
+Writes a string value in the network data buffer.
+
+### 17.6. xsSendNetData
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSendNetData(string callback)`
+
+Parameters:
+
+1.  `#!xs string callback`: The name of the function to call. The signature of this callback must be `#!xs void(int)`
+
+Calls the given function with the current network data buffer, and passes the ID of the local player issuing this command as an argument. Note that the data that can be sent at once is limited to 256B, and up to a maximum of 4 times per second per player. Note that this function should be used even in single player contexts where unsync XS functions are used, such as `#!xs xsReadInt();`. Unsync functions will otherwise desync replays!
+
+### 17.7. xsReadNetString
+
+Returning Type: `#!xs string`
+
+Prototype: `#!xs string xsReadNetString()`
+
+
+Reads a string value from the network data buffer.
+
+### 17.8. xsReadNetInt
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsReadNetInt()`
+
+
+Reads a int value from the network data buffer.
+
+### 17.9. xsReadNetFloat
+
+Returning Type: `#!xs float`
+
+Prototype: `#!xs float xsReadNetFloat()`
+
+
+Reads a float value from the network data buffer.
+
+### 17.10. xsReadNetVector
+
+Returning Type: `#!xs vector`
+
+Prototype: `#!xs vector xsReadNetVector()`
+
+
+Reads a vector value from the network data buffer.
+
+### 17.11. xsSetWriteNetDataPosition
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetWriteNetDataPosition(int position)`
+
+Parameters:
+
+1.  `#!xs int position`: The position to set to
+
+Sets the write position in the network data buffer
+
+### 17.12. xsSetReadNetDataPosition
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsSetReadNetDataPosition(int position)`
+
+Parameters:
+
+1.  `#!xs int position`: The position to set to
+
+Sets the read position in the network data buffer
+
+### 17.13. xsGetWriteNetDataPosition
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetWriteNetDataPosition()`
+
+
+Gets the write position in the network data buffer
+
+### 17.14. xsGetReadNetDataPosition
+
+Returning Type: `#!xs int`
+
+Prototype: `#!xs int xsGetReadNetDataPosition()`
+
+
+Gets the read position in the network data buffer
+
+### 17.15. xsUnsyncIsSandboxMode
+
+Returning Type: `#!xs bool`
+
+Prototype: `#!xs bool xsUnsyncIsSandboxMode()`
+
+
+Returns true in replays and in campaigns where the user chooses sandbox mode
 

@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/09/22 04:10:40 |
+// | Generated on: 2026/10/28 12:34:03 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -4869,9 +4869,10 @@ int xsGetUnitTaskCount(int unitId = -1) {}
 
 /**
 * A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.
-*     - ID N will insert the task at index N
-*     - When `#!xs edit = true`, edit an existing task instead of inserting one.
-*     - ID -(N+1) will remove the task at index N
+* 
+* - ID `N` will insert the task at index N
+* - When `#!xs edit = true`, edit an existing task instead of inserting one.
+* - ID `-(N+1)` will remove the task at index N
 *
 * @param objectId The ID of the object to modify the task for
 * @param playerId The player whose object to modify the task for
@@ -4886,9 +4887,10 @@ bool xsModifyObjectTasks(int objectId = -1, int playerId = -1, int taskId = -1, 
 
 /**
 * A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.
-*     - ID N will insert the task at index N
-*     - When `#!xs edit = true`, edit an existing task instead of inserting one.
-*     - ID -(N+1) will remove the task at index N
+* 
+* - ID `N` will insert the task at index N
+* - When `#!xs edit = true`, edit an existing task instead of inserting one.
+* - ID `-(N+1)` will remove the task at index N
 *
 * @param unitId The ID of the unit on the map to modify the task for
 * @param taskId The index to insert the task at
@@ -6723,4 +6725,141 @@ string strTrimEnd(string str = "") {}
 * @allow_no_num_promo
 */
 string strTrimStart(string str = "") {}
+
+
+// 17. Network
+
+/**
+* Gets the read position in the network data buffer
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsGetReadNetDataPosition() {}
+
+/**
+* Gets the write position in the network data buffer
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsGetWriteNetDataPosition() {}
+
+/**
+* Reads a float value from the network data buffer.
+*
+* @returns float
+* @allow_no_num_promo
+*/
+float xsReadNetFloat() {}
+
+/**
+* Reads a int value from the network data buffer.
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsReadNetInt() {}
+
+/**
+* Reads a string value from the network data buffer.
+*
+* @returns string
+* @allow_no_num_promo
+*/
+string xsReadNetString() {}
+
+/**
+* Reads a vector value from the network data buffer.
+*
+* @returns vector
+* @allow_no_num_promo
+*/
+vector xsReadNetVector() {}
+
+/**
+* Resets the network data buffer
+*
+* @returns void
+* @allow_no_num_promo
+*/
+void xsResetNetData() {}
+
+/**
+* Calls the given function with the current network data buffer, and passes the ID of the local player issuing this command as an argument. Note that the data that can be sent at once is limited to 256B, and up to a maximum of 4 times per second per player. Note that this function should be used even in single player contexts where unsync XS functions are used, such as `#!xs xsReadInt();`. Unsync functions will otherwise desync replays!
+*
+* @param callback The name of the function to call. The signature of this callback must be `#!xs void(int)`
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsSendNetData(string callback = "") {}
+
+/**
+* Sets the read position in the network data buffer
+*
+* @param position The position to set to
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsSetReadNetDataPosition(int position = -1) {}
+
+/**
+* Sets the write position in the network data buffer
+*
+* @param position The position to set to
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsSetWriteNetDataPosition(int position = -1) {}
+
+/**
+* Returns true in replays and in campaigns where the user chooses sandbox mode
+*
+* @returns bool
+* @allow_no_num_promo
+*/
+bool xsUnsyncIsSandboxMode() {}
+
+/**
+* Writes a float value in the network data buffer.
+*
+* @param value The value to write
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsWriteNetFloat(float value = -1.0) {}
+
+/**
+* Writes a int value in the network data buffer.
+*
+* @param value The value to write
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsWriteNetInt(int value = -1) {}
+
+/**
+* Writes a string value in the network data buffer.
+*
+* @param value The value to write
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsWriteNetString(string value = "") {}
+
+/**
+* Writes a vector value in the network data buffer.
+*
+* @param value The value to write
+*
+* @returns int
+* @allow_no_num_promo
+*/
+int xsWriteNetVector(vector value = vector(-1, -1, -1)) {}
 
