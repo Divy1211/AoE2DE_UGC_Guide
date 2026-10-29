@@ -7145,25 +7145,25 @@ Enum value for Unit Order Order Hero Power
 
 Value: `#!xs int 2`
 
-
+Enum value for Unit Formation Line
 
 ### 37.2. cFormationBox
 
 Value: `#!xs int 4`
 
-
+Enum value for Unit Formation Box
 
 ### 37.3. cFormationStaggered
 
 Value: `#!xs int 7`
 
-
+Enum value for Unit Formation Staggered
 
 ### 37.4. cFormationFlank
 
 Value: `#!xs int 8`
 
-
+Enum value for Unit Formation Flank
 
 ## 38. Action Type Constants
 
@@ -7520,4 +7520,66 @@ Enum value for the [Move Algorithm](../../../attributes/attributes/#218-move-alg
 Value: `#!xs int 255`
 
 Enum value for the [Run Pattern](../../../attributes/attributes/#140-run-pattern) attribute.
+
+## 45. Color Id Constants
+
+### 45.1. cColorIdBlue
+
+Value: `#!xs int 0`
+
+Enum value for the Color ID Blue
+
+### 45.2. cColorIdRed
+
+Value: `#!xs int 1`
+
+Enum value for the Color ID Red
+
+### 45.3. cColorIdGreen
+
+Value: `#!xs int 2`
+
+Enum value for the Color ID Green
+
+### 45.4. cColorIdYellow
+
+Value: `#!xs int 3`
+
+Enum value for the Color ID Yellow
+
+### 45.5. cColorIdAqua
+
+Value: `#!xs int 4`
+
+Enum value for the Color ID Aqua
+
+### 45.6. cColorIdPurple
+
+Value: `#!xs int 5`
+
+Enum value for the Color ID Purple
+
+### 45.7. cColorIdGray
+
+Value: `#!xs int 6`
+
+Enum value for the Color ID Gray
+
+### 45.8. cColorIdOrange
+
+Value: `#!xs int 7`
+
+Enum value for the Color ID Orange
+
+### 45.9. cColorIdWhite
+
+Value: `#!xs int 8`
+
+Enum value for the Color ID White
+
+### 45.10. cColorIdBlack
+
+Value: `#!xs int 9`
+
+Enum value for the Color ID Black
 

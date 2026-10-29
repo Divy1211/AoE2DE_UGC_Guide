@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/10/28 12:34:03 |
+// | Generated on: 2026/10/29 22:44:15 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -3454,16 +3454,16 @@ extern const int cUnitOrderHeroPower = 806;
 // 37. Unit Formation Constants
 
 
-/**  */
+/** Enum value for Unit Formation Line */
 extern const int cFormationLine = 2;
 
-/**  */
+/** Enum value for Unit Formation Box */
 extern const int cFormationBox = 4;
 
-/**  */
+/** Enum value for Unit Formation Staggered */
 extern const int cFormationStaggered = 7;
 
-/**  */
+/** Enum value for Unit Formation Flank */
 extern const int cFormationFlank = 8;
 
 
@@ -3664,6 +3664,40 @@ extern const int cMoveAlgorithmUseStopSprite = 1;
 
 /** Enum value for the [Run Pattern](https://ugc.aoe2.rocks/general/attributes/attributes/#140-run-pattern) attribute. */
 extern const int cDoubleClickSelectById = 255;
+
+
+// 45. Color Id Constants
+
+
+/** Enum value for the Color ID Blue */
+extern const int cColorIdBlue = 0;
+
+/** Enum value for the Color ID Red */
+extern const int cColorIdRed = 1;
+
+/** Enum value for the Color ID Green */
+extern const int cColorIdGreen = 2;
+
+/** Enum value for the Color ID Yellow */
+extern const int cColorIdYellow = 3;
+
+/** Enum value for the Color ID Aqua */
+extern const int cColorIdAqua = 4;
+
+/** Enum value for the Color ID Purple */
+extern const int cColorIdPurple = 5;
+
+/** Enum value for the Color ID Gray */
+extern const int cColorIdGray = 6;
+
+/** Enum value for the Color ID Orange */
+extern const int cColorIdOrange = 7;
+
+/** Enum value for the Color ID White */
+extern const int cColorIdWhite = 8;
+
+/** Enum value for the Color ID Black */
+extern const int cColorIdBlack = 9;
 
 
 // 1. Rules

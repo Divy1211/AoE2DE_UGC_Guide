@@ -34,6 +34,7 @@ def to_title(string: str):
     string = string.removeprefix("cPanel")
     string = string.removeprefix("cLocale")
     string = string.removeprefix("cTimerUnit")
+    string = string.removeprefix("cColorId")
     string = string.removeprefix("cColor")
     string = string.removeprefix("cTech")
     string = string.removeprefix("cUndeadFlag")

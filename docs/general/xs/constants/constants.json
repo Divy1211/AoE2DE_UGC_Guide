@@ -7932,28 +7932,28 @@
             "name": "cFormationLine",
             "type": "int",
             "value": "2",
-            "desc": "",
+            "desc": "Enum value for Unit Formation TYPE_NAME",
             "usage": null
         },
         {
             "name": "cFormationBox",
             "type": "int",
             "value": "4",
-            "desc": "",
+            "desc": "Enum value for Unit Formation TYPE_NAME",
             "usage": null
         },
         {
             "name": "cFormationStaggered",
             "type": "int",
             "value": "7",
-            "desc": "",
+            "desc": "Enum value for Unit Formation TYPE_NAME",
             "usage": null
         },
         {
             "name": "cFormationFlank",
             "type": "int",
             "value": "8",
-            "desc": "",
+            "desc": "Enum value for Unit Formation TYPE_NAME",
             "usage": null
         }
     ],
@@ -8367,6 +8367,78 @@
             "type": "int",
             "value": "255",
             "desc": "Enum value for the [Run Pattern](../../../attributes/attributes/#140-run-pattern) attribute.",
+            "usage": null
+        }
+    ],
+    "Color ID Constants": [
+        {
+            "name": "cColorIdBlue",
+            "type": "int",
+            "value": "0",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdRed",
+            "type": "int",
+            "value": "1",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdGreen",
+            "type": "int",
+            "value": "2",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdYellow",
+            "type": "int",
+            "value": "3",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdAqua",
+            "type": "int",
+            "value": "4",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdPurple",
+            "type": "int",
+            "value": "5",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdGray",
+            "type": "int",
+            "value": "6",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdOrange",
+            "type": "int",
+            "value": "7",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdWhite",
+            "type": "int",
+            "value": "8",
+            "desc": "Enum value for the Color ID TYPE_NAME",
+            "usage": null
+        },
+        {
+            "name": "cColorIdBlack",
+            "type": "int",
+            "value": "9",
+            "desc": "Enum value for the Color ID TYPE_NAME",
             "usage": null
         }
     ]
