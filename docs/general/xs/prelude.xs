@@ -1,5 +1,5 @@
 // + --------------------------------- +
-// | Generated on: 2026/10/29 22:44:15 |
+// | Generated on: 2026/10/30 03:26:42 |
 // | Made by:      Alian713            |
 // + --------------------------------- +
 
@@ -4958,7 +4958,7 @@ bool xsObjectTaskAmount(int objectId = -1, int playerId = -1, int taskId = -1) {
 * @param playerId The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
-* @deprecated True
+* @deprecated Use `xsModifyObjectTasks` instead.
 * @allow_no_num_promo
 */
 void xsRemoveTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
@@ -4982,7 +4982,7 @@ void xsResetTaskAmount() {}
 * @param playerId The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
 *
 * @returns void
-* @deprecated True
+* @deprecated Use `xsModifyObjectTasks` instead.
 * @allow_no_num_promo
 */
 void xsTask(int objectOrClassId = -1, int actionType = -1, int targetObjectOrClassId = -1, int playerId = -1) {}
