@@ -1,0 +1,1977 @@
+{
+    "1": {
+        "name": "Move to",
+        "xs_constant": "cTaskTypeMoveTo",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "2": {
+        "name": "Follow",
+        "xs_constant": "cTaskTypeFollow",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "3": {
+        "name": "Garrison",
+        "xs_constant": "cTaskTypeGarrison",
+        "description": "Ability to garrison a unit into another unit or building.",
+        "object_attributes": [
+            {
+                "name": "Garrison capacity",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cGarrisonCapacity",
+                "description": "Target object must have some capacity for the current unit to garrison to."
+            },
+            {
+                "name": "Garrison type",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cGarrisonType",
+                "description": "If target object is a building, it must have a garrison type that matches current unit's type."
+            },
+            {
+                "name": "Traits",
+                "id": 54,
+                "available": true,
+                "xs_constant": "cTraits",
+                "description": "If target object is a unit, it must have this bitfield 1st bit (1) set for garrison unit."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Object in which a unit can garrison."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Object in which a unit can garrison."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Range at which a unit can garrison."
+            },
+            {
+                "name": "Owner type",
+                "id": 6,
+                "available": true,
+                "xs_constant": "cTaskAttrOwnerType",
+                "description": "Controls which objects the task can target based on ownership."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 scorpion an ability to garrison into friendly castles at a range of 5 */\n\nconst int player = 1;\nconst int scorpion = 279;\nconst int castle = 82;\nconst float range = 5.0;\nconst int garrisonSiegeType = 32;\nconst int gaiaYouAndAlly = 4;\n\nint currentGarrisonType = xsGetObjectAttribute(player, castle, cGarrisonType);\nxsEffectAmount(cSetAttribute, castle, cGarrisonType, currentGarrisonType + garrisonSiegeType, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkRange, range);\nxsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeGarrison);\nxsTaskAmount(cTaskAttrObjectClass, cBuildingClass);\n\nxsModifyObjectTasks(scorpion, player);"
+        ]
+    },
+    "4": {
+        "name": "Explore",
+        "xs_constant": "cTaskTypeExplore",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "5": {
+        "name": "Gather/rebuild",
+        "xs_constant": "cTaskTypeGatherRebuild",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "6": {
+        "name": "Graze",
+        "xs_constant": "cTaskTypeGraze",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "7": {
+        "name": "Combat",
+        "xs_constant": "cTaskTypeCombat",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "8": {
+        "name": "Shoot",
+        "xs_constant": "cTaskTypeShoot",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "9": {
+        "name": "Attack",
+        "xs_constant": "cTaskTypeAttack",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "10": {
+        "name": "Fly",
+        "xs_constant": "cTaskTypeFly",
+        "description": "Unknown.",
+        "object_attributes": [
+            {
+                "name": "Standing Graphic 2",
+                "id": 72,
+                "available": true,
+                "xs_constant": "cStanding2Graphic",
+                "description": "Used instead of the task's **Working graphic (14)**. Graphic while moving, if not set uses moving graphic."
+            },
+            {
+                "name": "Walking graphic",
+                "id": 75,
+                "available": true,
+                "xs_constant": "cWalkingGraphic",
+                "description": "Used if **Standing Graphic 2 (72)** or the task's **Working graphic (14)** is not set."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Unit speed multiplier while roaming."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Unit ID to avoid."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Minimum distance to the unit to avoid that will be maintained while roaming."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Time in seconds that the unit pauses, playing the idle animations, when changing direction."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "If set to 1, only roam around if the unit is owned by Gaia."
+            },
+            {
+                "name": "Terrain",
+                "id": 7,
+                "available": true,
+                "xs_constant": "cTaskAttrTerrain",
+                "description": "Terrain Table that the unit will be allowed to roam on. If -1, use the unit's terrain table."
+            },
+            {
+                "name": "Moving graphic",
+                "id": 12,
+                "available": true,
+                "xs_constant": "cTaskAttrMovingGraphic",
+                "description": "Graphics used for the unit moving around, randomly alternates between them."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphics used for the unit moving around, randomly alternates between them."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "Graphics used for the unit moving around, randomly alternates between them."
+            },
+            {
+                "name": "Carry check",
+                "id": 23,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryCheck",
+                "description": "Distance the unit is allowed to move from its starting position before picking a new direction to return closer. If 0, no limit."
+            }
+        ],
+        "xs_examples": []
+    },
+    "11": {
+        "name": "Scare/hunt",
+        "xs_constant": "11",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "12": {
+        "name": "Unload boat like",
+        "xs_constant": "cTaskTypeUnloadBoatLike",
+        "description": "Ability for a unit to unload when reaching certain terrain.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Unknown."
+            },
+            {
+                "name": "Terrain",
+                "id": 7,
+                "available": true,
+                "xs_constant": "cTaskAttrTerrain",
+                "description": "Terrain on which unit can unload."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 longboats an ability to load and unload friendly berserkers as a transport ship with a capacity of 20. */\n\nconst int player = 1;\nconst int berserk = 692;\nconst int longboat = 250;\nconst float range = 1.0;\nconst int capacity = 20;\nconst int garrisonUnitTrait = 1;\nconst int shipUnitTrait = 2;\nconst int beachTerrain = 2;\nconst int gaiaYouAndAlly = 4;\n\nxsEffectAmount(cSetAttribute, longboat, cGarrisonCapacity, capacity, player);\nxsEffectAmount(cSetAttribute, longboat, cTraits, garrisonUnitTrait + shipUnitTrait, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrTerrain, beachTerrain);\nxsTask(longboat, cTaskTypeUnloadBoatLike, -1, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrWorkRange, range);\nxsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);\nxsTask(berserk, cTaskTypeGarrison, cWarshipClass, player);"
+        ]
+    },
+    "13": {
+        "name": "Guard",
+        "xs_constant": "cTaskTypeGuard",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "14": {
+        "name": "Unload over wall",
+        "xs_constant": "cTaskTypeUnloadOverWall",
+        "description": "Ability for units to unload units over buildings. Only works for walls. For other buildings unit is unloaded on the same side as the task containing unit.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Building id or class over which to unload units."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Building id or class over which to unload units."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Unknown."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Unknown."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "Graphic of the unit when unloading."
+            },
+            {
+                "name": "Carry check",
+                "id": 23,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryCheck",
+                "description": "Unknown."
+            }
+        ],
+        "xs_examples": []
+    },
+    "21": {
+        "name": "Make",
+        "xs_constant": "cTaskTypeMake",
+        "description": "Unknown. Related to farms, fishing traps and similar. Maybe the ability to remake them?",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Unknown."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "Unknown; resource being collected."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "Unknown, sometimes resource being deposited to."
+            }
+        ],
+        "xs_examples": []
+    },
+    "101": {
+        "name": "Build",
+        "xs_constant": "cTaskTypeBuild",
+        "description": "Ability for units to build buildings. Building seems hardcoded for villagers and fishing ships. Military units can use this task to build 1 building.",
+        "object_attributes": [
+            {
+                "name": "Work rate",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cWorkRate",
+                "description": "Rate at which the unit builds."
+            },
+            {
+                "name": "Traits",
+                "id": 54,
+                "available": true,
+                "xs_constant": "cTraits",
+                "description": "Set this bitfield 3rd bit (4) to enable military units to build 1 building."
+            },
+            {
+                "name": "Trait piece",
+                "id": 56,
+                "available": true,
+                "xs_constant": "cTraitPiece",
+                "description": "Building id to build."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "For units building 1 building must be the id of the building and match the **Trait piece (56)** field, for villagers this value is -1."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "For units building 1 building must be the id of the building and match the **Trait piece (56)** field, for villagers this value is -1."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Multiplier for **Work rate (13)**."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Build range."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Unknown."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphic used while the unit is building."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "Graphic of the unit building a secondary building."
+            },
+            {
+                "name": "Deposit sound",
+                "id": 19,
+                "available": true,
+                "xs_constant": "cTaskAttrDepositSound",
+                "description": "Sound id of the unit building."
+            },
+            {
+                "name": "Auto search",
+                "id": 22,
+                "available": true,
+                "xs_constant": "cTaskAttrAutoSearch",
+                "description": "Unknown."
+            },
+            {
+                "name": "Building pick",
+                "id": 24,
+                "available": true,
+                "xs_constant": "cTaskAttrBuildingPick",
+                "description": "Unknown."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 obuch an ability to build fortresses. The unit can build it from a range of 2 and the build rate is its work rate multiplied by 3 */\n\nconst int player = 1;\nconst int obuch = 1701;\nconst int fortress = 33;\nconst float workRateMultiplier = 3.0;\nconst float buildRange = 2.0;\nconst int obuchAttackGraphic = 12311;\nconst int enableMilitaryUnitBuilding = 4;\n\nxsEffectAmount(cEnableObject, fortress, cAttributeEnable, 1, player);\nxsEffectAmount(cSetAttribute, obuch, cTraits, enableMilitaryUnitBuilding, player);\nxsEffectAmount(cSetAttribute, obuch, cTraitPiece, fortress, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrWorkRange, buildRange);\nxsTaskAmount(cTaskAttrProceedingGraphic, obuchAttackGraphic);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeBuild);\nxsTaskAmount(cTaskAttrObjectId, fortress);\n\nxsModifyObjectTasks(obuch, player);"
+        ]
+    },
+    "102": {
+        "name": "Make unit",
+        "xs_constant": "cTaskTypeMakeUnit",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "103": {
+        "name": "Make tech",
+        "xs_constant": "cTaskTypeMakeTech",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "104": {
+        "name": "Convert",
+        "xs_constant": "cTaskTypeConvert",
+        "description": "Ability for units to convert other units. Monks use task attributes, non-monks use object and task attributes. For non-monk units this ability does not work if the unit does not have an attack or similar task already. When adding this task to regular units, existing units will have empty faith bar and will not regenerate, newly created ones will work fine. In addition I did not find a way to add targeting limitations, it seems whatever values are set you can always convert all units and buildings.",
+        "object_attributes": [
+            {
+                "name": "Maximum Charge",
+                "id": 59,
+                "available": true,
+                "xs_constant": "cMaxCharge",
+                "description": "Amount of value to regenerate to regain conversion ability, usually set to 1."
+            },
+            {
+                "name": "Recharge rate",
+                "id": 60,
+                "available": true,
+                "xs_constant": "cRechargeRate",
+                "description": "Amount of charge regenerated per second."
+            },
+            {
+                "name": "Charge event",
+                "id": 61,
+                "available": true,
+                "xs_constant": "cChargeEvent",
+                "description": "Conversion range for non-monks."
+            },
+            {
+                "name": "Charge type",
+                "id": 62,
+                "available": true,
+                "xs_constant": "cChargeType",
+                "description": "Set to -4 to enable conversion for non-monks."
+            },
+            {
+                "name": "Charge target",
+                "id": 162,
+                "available": true,
+                "xs_constant": "cChargeTarget",
+                "description": "Conversion percent chance. For example, for 50% set to 50. Not changeable with triggers yet, use task attributes instead."
+            },
+            {
+                "name": "Button icon id",
+                "id": 121,
+                "available": true,
+                "xs_constant": "cButtonIconId",
+                "description": "Icon for the conversion button."
+            },
+            {
+                "name": "Short tooltip id",
+                "id": 122,
+                "available": true,
+                "xs_constant": "cShortTooltipId",
+                "description": "String ID for the conversion button's short tooltip."
+            },
+            {
+                "name": "Extended tooltip id",
+                "id": 123,
+                "available": true,
+                "xs_constant": "cExtendedTooltipId",
+                "description": "String ID for the conversion button's extended tooltip."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Target object or object class to be an eligible target for conversion."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Target object or object class to be an eligible target for conversion."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Minimum conversion time in seconds."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Maximum conversion time in seconds."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Conversion range, if positive takes precedence over object attribute."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Unknown, for monks it's set to 3091, for buildings 3049, for siege 3093 and for units to 0. Probably somehow related to these abilities being unlocked by research. Maybe unused."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "Unknown."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "If set associated resource value is a modifier to conversion chance."
+            },
+            {
+                "name": "Unused resource",
+                "id": 11,
+                "available": true,
+                "xs_constant": "cTaskAttrUnusedResource",
+                "description": "If set enable conversion and apply to the conversion range if the associated resource value is greater than 0."
+            },
+            {
+                "name": "Enable targeting",
+                "id": 26,
+                "available": true,
+                "xs_constant": "cTaskAttrEnableTargeting",
+                "description": "Unknown."
+            }
+        ],
+        "xs_examples": []
+    },
+    "105": {
+        "name": "Heal",
+        "xs_constant": "cTaskTypeHeal",
+        "description": "Ability of a unit to heal other units.",
+        "object_attributes": [
+            {
+                "name": "Work rate",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cWorkRate",
+                "description": "Rate at which the unit heals."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Multiplier for **Work rate (13)**."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphic used while the unit is healing."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 teutonic knight an ability to heal units. The healing work rate multiplied was set to 5x. */\n\nconst int player = 1;\nconst int teutonicKnight = 25;\nconst float workRateMultiplier = 5.0;\nconst float conversionRange = 10.0;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrProceedingGraphic, 1160);\n\nxsTask(teutonicKnight, cTaskTypeHeal, -1, player);"
+        ]
+    },
+    "106": {
+        "name": "Repair",
+        "xs_constant": "cTaskTypeRepair",
+        "description": "Ability for unit to repair buildings or units.",
+        "object_attributes": [
+            {
+                "name": "Work rate",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cWorkRate",
+                "description": "Rate at which the unit repairs."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "If -1 repairs everything that is repairable, if set repairs that specific object or objects of a class."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "If -1 repairs everything that is repairable, if set repairs that specific object or objects of a class."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Multiplier for **Work rate (13)**."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Unknown."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphic used while the unit is repairing."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "Graphic of a unit repairing, seems to be not needed."
+            },
+            {
+                "name": "Deposit sound",
+                "id": 19,
+                "available": true,
+                "xs_constant": "cTaskAttrDepositSound",
+                "description": "Sound id of the unit repairing."
+            },
+            {
+                "name": "Auto search",
+                "id": 22,
+                "available": true,
+                "xs_constant": "cTaskAttrAutoSearch",
+                "description": "Unknown."
+            },
+            {
+                "name": "Building pick",
+                "id": 24,
+                "available": true,
+                "xs_constant": "cTaskAttrBuildingPick",
+                "description": "Unknown."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 obuch an ability to repair buildings and repairable units. the repair rate is 3 times the work rate. */\n\nconst int player = 1;\nconst int obuch = 1701;\nconst float workRateMultiplier = 3.0;\nconst int obuchAttackGraphic = 12311;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrProceedingGraphic, obuchAttackGraphic);\n\nxsTask(obuch, cTaskTypeRepair, -1, player);"
+        ]
+    },
+    "107": {
+        "name": "Get auto-converted",
+        "xs_constant": "cTaskTypeGetAutoConverted",
+        "description": "Ability to be auto-converted to the player based on that player's other nearby units (e.g., sheep). Does not seem to work on normal units and buildings.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Always -1."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Always -1."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "String ID of a text to display when the unit is converted."
+            }
+        ],
+        "xs_examples": []
+    },
+    "108": {
+        "name": "Discovery artifact",
+        "xs_constant": "cTaskTypeDiscoveryArtifact",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "110": {
+        "name": "Hunt",
+        "xs_constant": "cTaskTypeHunt",
+        "description": "Gives the ability to gather resources from map objects and place it into player resources. Since drop sites can't be changed with triggers this task can't be added.",
+        "object_attributes": [
+            {
+                "name": "Work rate",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cWorkRate",
+                "description": "Rate at which the unit gathers resources."
+            },
+            {
+                "name": "Drop sites",
+                "id": null,
+                "available": false,
+                "xs_constant": null,
+                "description": "Object at which gathered resources are deposited."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "The object to gather from."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "The object to gather from."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Multiplier for **Work rate (13)**."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Gather range."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Unknown."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "Unknown."
+            },
+            {
+                "name": "Owner type",
+                "id": 6,
+                "available": true,
+                "xs_constant": "cTaskAttrOwnerType",
+                "description": "Controls which objects the task can target based on ownership."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "Resource to take from the hunted animal."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "Associated resource to deposit gathered resource into."
+            },
+            {
+                "name": "Unused resource",
+                "id": 11,
+                "available": true,
+                "xs_constant": "cTaskAttrUnusedResource",
+                "description": "If the associated resource value is 1, the hunted corpse does not decay."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "ID of the graphic used while the unit is attacking."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "ID of the graphic used while the unit is gathering."
+            },
+            {
+                "name": "Carrying graphic",
+                "id": 15,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryingGraphic",
+                "description": "ID of the graphic used while the unit is carrying resources."
+            },
+            {
+                "name": "Auto search",
+                "id": 22,
+                "available": true,
+                "xs_constant": "cTaskAttrAutoSearch",
+                "description": "If set to 1 unit searches for nearby objects to continuously gather from."
+            },
+            {
+                "name": "Carry check",
+                "id": 23,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryCheck",
+                "description": "If set to 1 check if target object has resource before gathering, if set to 0 use Target Diplomacy (6) instead."
+            }
+        ],
+        "xs_examples": []
+    },
+    "111": {
+        "name": "Trade",
+        "xs_constant": "cTaskTypeTrade",
+        "description": "Adds the ability of the unit to trade for gold with other buildings. Since drop sites can't be changed with triggers this task can't be added.",
+        "object_attributes": [
+            {
+                "name": "Work rate",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cWorkRate",
+                "description": "Rate at which the unit trades resources."
+            },
+            {
+                "name": "Drop sites",
+                "id": null,
+                "available": false,
+                "xs_constant": null,
+                "description": "Object to which trade resources are returned."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Building to trade with."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Building to trade with."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Multiplier for **Work rate (13)**."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "Unknown."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "Productivity for secondary trade resource."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "Secondary resource to trade for other than gold when is enabled."
+            },
+            {
+                "name": "Carrying graphic",
+                "id": 15,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryingGraphic",
+                "description": "ID of the graphic used while the unit is carrying trade resources."
+            }
+        ],
+        "xs_examples": []
+    },
+    "120": {
+        "name": "Generate wonder victory",
+        "xs_constant": "cTaskTypeGenerateWonderVictory",
+        "description": "Ability for the object to start a wonder victory timer. Adding it to another object does not seem to work.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "121": {
+        "name": "Deselect when tasked",
+        "xs_constant": "cTaskTypeDeselectWhenTasked",
+        "description": "Unknown. Related to farms finishing traps and similar.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Unknown."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "Unknown; resource being collected."
+            }
+        ],
+        "xs_examples": []
+    },
+    "122": {
+        "name": "Loot gather",
+        "xs_constant": "cTaskTypeLootGather",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "123": {
+        "name": "Housing",
+        "xs_constant": "cTaskTypeHousing",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "124": {
+        "name": "Pack",
+        "xs_constant": "cTaskTypePack",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "125": {
+        "name": "Unpack and attack",
+        "xs_constant": "cTaskTypeUnpackAndAttack",
+        "description": "Ability to unpack from one unit to another and attack. Not possible to add this task with triggers currently.",
+        "object_attributes": [
+            {
+                "name": "Transform unit",
+                "id": null,
+                "available": false,
+                "xs_constant": null,
+                "description": "Unit id to transform to."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "Unknown."
+            },
+            {
+                "name": "Enable targeting",
+                "id": 26,
+                "available": true,
+                "xs_constant": "cTaskAttrEnableTargeting",
+                "description": "Unknown."
+            }
+        ],
+        "xs_examples": []
+    },
+    "131": {
+        "name": "Off map trade",
+        "xs_constant": "cTaskTypeOffMapTrade",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "132": {
+        "name": "Pickup unit",
+        "xs_constant": "cTaskTypePickupUnit",
+        "description": "Ability to pick up targeted objects and turn into a different unit when done. Seems to only work on relics.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Object id to pick up. Seems to ignore this value and only works on relics."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Object id to pick up. Seems to ignore this value and only works on relics."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Unit id to change into when picking up an object."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 mangudai an ability to pick up relics and turn into Genghis Khan. Relics are consumed in the process. */\n\nconst int player = 1;\nconst int mangudai = 11;\nconst int genghis = 731;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, genghis);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypePickupUnit);\nxsTaskAmount(cTaskAttrObjectClass, cRelicClass);\nxsModifyObjectTasks(mangudai, player);"
+        ]
+    },
+    "133": {
+        "name": "Charge attack",
+        "xs_constant": "cTaskTypeChargeAttack",
+        "description": "Ability to increase the object's speed when closing the distance for an attack.",
+        "object_attributes": [
+            {
+                "name": "Maximum Charge",
+                "id": 59,
+                "available": true,
+                "xs_constant": "cMaxCharge",
+                "description": "Value added to the attack while charging. Must be at least 1 for the charge to work."
+            },
+            {
+                "name": "Recharge rate",
+                "id": 60,
+                "available": true,
+                "xs_constant": "cRechargeRate",
+                "description": "Amount of charge regenerated per second. The charge can be used again when it reaches **Maximum Charge (59)**."
+            },
+            {
+                "name": "Charge event",
+                "id": 61,
+                "available": true,
+                "xs_constant": "cChargeEvent",
+                "description": "Must be 0 or 1 for the task to work."
+            },
+            {
+                "name": "Charge type",
+                "id": 62,
+                "available": true,
+                "xs_constant": "cChargeType",
+                "description": "Must be 1 for the task to work."
+            },
+            {
+                "name": "Special ability",
+                "id": 81,
+                "available": true,
+                "xs_constant": "cSpecialAbility",
+                "description": "Must be 3 for the task to work."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Minimum distance from the target for the speed up to start."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Maximum distance from the target for the speed to start."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Multiplier on the unit speed while charging."
+            },
+            {
+                "name": "Work flag 2",
+                "id": 3,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkFlag2",
+                "description": "Must be 2001 for the task to work."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 knights an ability to charge enemy units, during which they increase their speed by 2.5 times and their attack by 5. This ability has a minimum range of 2, a max range of 7 and a cooldown of 30 seconds. */\n\nconst int player = 1;\nconst int knight = 38;\nconst float minDistance = 2;\nconst float maxDistance = 7;\nconst float speedMultiplier = 2.5;\nconst int taskEnableFlag = 2001;\nconst int chargeAbility = 3;\nconst int chargeEvent = 0;\nconst int chargeType = 1;\nconst float chargeAttackBonus = 5.0;\nconst float cooldownDuration = 30.0;\n\nxsEffectAmount(cSetAttribute, knight, cSpecialAbility, chargeAbility, player);\nxsEffectAmount(cSetAttribute, knight, cChargeType, chargeType);\nxsEffectAmount(cSetAttribute, knight, cChargeEvent, chargeEvent);\nxsEffectAmount(cSetAttribute, knight, cMaxCharge, chargeAttackBonus, player);\nxsEffectAmount(cSetAttribute, knight, cRechargeRate, chargeAttackBonus / cooldownDuration, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, minDistance);\nxsTaskAmount(cTaskAttrWorkValue2, maxDistance);\nxsTaskAmount(cTaskAttrWorkRange, speedMultiplier);\nxsTaskAmount(cTaskAttrWorkFlag2, taskEnableFlag);\n\nxsTask(knight, cTaskTypeChargeAttack, -1, player);"
+        ]
+    },
+    "134": {
+        "name": "Transform unit",
+        "xs_constant": "cTaskTypeTransformUnit",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "135": {
+        "name": "Kidnap unit",
+        "xs_constant": "cTaskTypeKidnapUnit",
+        "description": "Ability to take an enemy unit and when returning to a town center convert it to your own. Attacking another unit while having a kidnapped unit will release that unit. If a unit has another task that can be performed on a target - this task will not work. Units can be kidnapped on their dying animations but will be returned as corpses.",
+        "object_attributes": [
+            {
+                "name": "Garrison capacity",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cGarrisonCapacity",
+                "description": "Unit must have some capacity to hold a kidnapped unit."
+            },
+            {
+                "name": "Task swap group",
+                "id": null,
+                "available": false,
+                "xs_constant": null,
+                "description": "Will swap the kidnapper into a different unit that also has the same value in this attribute after the kidnapping."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Unit id or class id that can be kidnapped."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Unit id or class id that can be kidnapped."
+            },
+            {
+                "name": "Owner type",
+                "id": 6,
+                "available": true,
+                "xs_constant": "cTaskAttrOwnerType",
+                "description": "Controls which objects the task can target based on ownership."
+            }
+        ],
+        "xs_examples": [
+            "/* This code removes scout attack ability, but gives it an ability to kidnap enemy villagers, and convert them to player 1 when visiting the town center */\n\nconst int player = 1;\nconst int scout = 448;\nconst int garrisonCapacity = 1;\nconst int neutralAndEnemy = 2;\nconst int previousCombatSearchWaitTime = 3;\n\nxsEffectAmount(cSetAttribute, scout, cGarrisonCapacity, garrisonCapacity, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrSearchWaitTime, previousCombatSearchWaitTime);\nxsRemoveTask(scout, cTaskTypeCombat, -1, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrOwnerType, neutralAndEnemy);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeKidnapUnit);\nxsTaskAmount(cTaskAttrObjectClass, cVillagerClass);\nxsModifyObjectTasks(scout, player);"
+        ]
+    },
+    "136": {
+        "name": "Deposit unit",
+        "xs_constant": "cTaskTypeDepositUnit",
+        "description": "Ability to deposit picked up objects (task 132) into a building and change to a different unit when done. Seems to only work on relics.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Building id to deposit the picked up object to, does not seem to work with custom units."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Building id to deposit the picked up object to, does not seem to work with custom units."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Unit id to change into when depositing an object."
+            }
+        ],
+        "xs_examples": []
+    },
+    "149": {
+        "name": "Shear",
+        "xs_constant": "cTaskTypeShear",
+        "description": "Unknown.",
+        "object_attributes": [],
+        "task_attributes": [],
+        "xs_examples": []
+    },
+    "151": {
+        "name": "Generate resources",
+        "xs_constant": "cTaskTypeGenerateResources",
+        "description": "Ability of an object to gain resources when attacking or idling.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Object which if attacked by a unit will generate resource."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Object which if attacked by a unit will generate resource."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Amount of resources received."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "For units, set to 2 to generate resources passively. Buildings always generate resources passively."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "The value of this resource is used as a multiplier of the amount received. Must be set to some resource containing a positive value for the task to work."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "Resource type to receive."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes player 1 Attila the Hun gain gold when attacking enemy infantry, archer or cavalry units */\n\nconst int player = 1;\nconst int attila = 777;\nconst float resourceGainRate = 1.0;\nconst int resourceToGain = cAttributeGold;\nconst int productivityResource = 600;\nconst float productivity = 1.0;\n\nxsSetPlayerAttribute(player, productivityResource, productivity);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, resourceGainRate);\nxsTaskAmount(cTaskAttrProductivityResource, productivityResource);\nxsTaskAmount(cTaskAttrResourceOut, resourceToGain);\n\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeGenerateResources);\n\nxsTaskAmount(cTaskAttrObjectClass, cInfantryClass);\nxsModifyObjectTasks(attila, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cArcherClass);\nxsModifyObjectTasks(attila, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cCavalryClass);\nxsModifyObjectTasks(attila, player);"
+        ]
+    },
+    "152": {
+        "name": "Movement damage",
+        "xs_constant": "cTaskTypeMovementDamage",
+        "description": "Ability for a unit to damage surrounding enemy units while moving.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Amount of damage to deal per tick. If negative will increase the current HP instead. Will go over max HP."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "How often the unit damages surrounding units in fraction of seconds."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Range of this damage surrounding the current unit."
+            }
+        ],
+        "xs_examples": [
+            "/* This code gives player 1 war elephant an ability to damage enemy units while moving in a 0.75 range twice per second for 2.5 damage */\n\nconst int player = 1;\nconst int elephant = 239;\nconst float damage = 2.5;\nconst float time = 0.5;\nconst float range = 0.75;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, damage);\nxsTaskAmount(cTaskAttrWorkValue2, time);\nxsTaskAmount(cTaskAttrWorkRange, range);\n\nxsTask(elephant, cTaskTypeMovementDamage, -1, player);"
+        ]
+    },
+    "153": {
+        "name": "Movable dropsite",
+        "xs_constant": "cTaskTypeMovableDropsite",
+        "description": "Ability for a unit to be a movable dropsite. For this task to work this unit needs to be added for the worker unit as a dropsite (currently not possible with triggers or XS).",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Resources containing object for which this unit exists as a dropsite."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Resources containing object for which this unit exists as a dropsite."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "Unknown."
+            },
+            {
+                "name": "Carry check",
+                "id": 23,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryCheck",
+                "description": "Unknown."
+            }
+        ],
+        "xs_examples": []
+    },
+    "154": {
+        "name": "Loot",
+        "xs_constant": "cTaskTypeLoot",
+        "description": "Ability of an object to gain resources and attributes after killing or converting an object.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Object which if killed by this unit will trigger resource/attribute gain. If -1 affects all units. Has to be an object that can increase the kill/razing/conversions stats."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Object which if killed by this unit will trigger resource/attribute gain. If -1 affects all units. Has to be an object that can increase the kill/razing/conversions stats."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Amount of resources received."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "If set to 0 applies to all units. If set to >0 then it applies to only units whose player matches this value."
+            },
+            {
+                "name": "Work flag 2",
+                "id": 3,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkFlag2",
+                "description": "If set, maximum number of times this unit can trigger the task."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "ID of the object attribute modified by this task. Attributes known to be supported include: **Hit points (0),** **Attack (9)**."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "If set to 1, unit will gain attributes."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "If set the tech of the associated resources value id will be researched."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "If positive, the associated resource value must be greater than 0 for this task to activate. The positive value multiplies the resources gained. If negative, its absolute value is treated as a technology ID, and that technology must be researched for this task to activate."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "Resource type to receive."
+            },
+            {
+                "name": "Unused resource",
+                "id": 11,
+                "available": true,
+                "xs_constant": "cTaskAttrUnusedResource",
+                "description": "If set the tech of the associated resources value id will be researched."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphic that plays when the unit gains an attribute via the task."
+            },
+            {
+                "name": "Carry check",
+                "id": 23,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryCheck",
+                "description": "If set, all Tasks 154 with the same Carry Check ID will count towards the same cap."
+            },
+            {
+                "name": "Gather type",
+                "id": 25,
+                "available": true,
+                "xs_constant": "cTaskAttrGatherType",
+                "description": "If unit gains attributes this attribute stores the amount of attribute the unit gains."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes player 1 Attila the Hun gain 2 gold when killing enemy unit or destroying an enemy building */\n\nconst int player = 1;\nconst int attila = 777;\nconst float resourceGainRate = 2.0;\nconst int resourceToGain = cAttributeGold;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, resourceGainRate);\nxsTaskAmount(cTaskAttrResourceOut, resourceToGain);\n\nxsTask(attila, cTaskTypeLoot, -1, player);",
+            "/* This code makes player 1 mangudai gain 1 attack every time they kill an infantry, archer, cavalry or siege unit to a maximum of 5 */\n\nconst int player = 1;\nconst int mangudai = 11;\nconst int maxNumberOfStatGains = 5;\nconst int gainAttributesFlag = 1;\nconst int attribute = cAttack;\nconst float amountToGain = 1.0;\nconst int levelUpGraphic = 12263;\nconst int statGainId = 1;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);\nxsTaskAmount(cTaskAttrWorkFlag2, maxNumberOfStatGains);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\nxsTaskAmount(cTaskAttrCombatLevelFlag, gainAttributesFlag);\nxsTaskAmount(cTaskAttrProceedingGraphic, levelUpGraphic);\nxsTaskAmount(cTaskAttrCarryCheck, statGainId);\nxsTaskAmount(cTaskAttrGatherType, amountToGain);\n\nxsTaskAmount(cTaskAttrObjectClass, cInfantryClass);\nxsModifyObjectTasks(mangudai, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cArcherClass);\nxsModifyObjectTasks(mangudai, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cCavalryClass);\nxsModifyObjectTasks(mangudai, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cSiegeWeaponClass);\nxsModifyObjectTasks(mangudai, player);"
+        ]
+    },
+    "155": {
+        "name": "Aura",
+        "xs_constant": "cTaskTypeAura",
+        "description": "Auras are stat modifiers that affect all objects surrounding the aura object (or the aura object itself).",
+        "object_attributes": [
+            {
+                "name": "Combat ability",
+                "id": 63,
+                "available": true,
+                "xs_constant": "cCombatAbility",
+                "description": "Attribute bitfield 6th bit (32) needs to be set for the aura to activate. If 7th bit is set (64) the aura will affect the unit itself instead of the units in range (aura prerequisites still need to be met on other units)."
+            },
+            {
+                "name": "Charge type",
+                "id": 62,
+                "available": true,
+                "xs_constant": "cChargeType",
+                "description": "Set to -3 to enable temporary auras."
+            },
+            {
+                "name": "Charge event",
+                "id": 61,
+                "available": true,
+                "xs_constant": "cChargeEvent",
+                "description": "For temporary auras stores aura duration when activated."
+            },
+            {
+                "name": "Recharge rate",
+                "id": 60,
+                "available": true,
+                "xs_constant": "cRechargeRate",
+                "description": "Amount of charge regenerated per second. Together with **Maximum Charge (59)**, this controls the temporary aura's cooldown. The cooldown ends when the charge reaches **Maximum Charge (59)**. For a 60-second cooldown, set **Maximum Charge (59)** to 1 and **Recharge rate (60)** to 0.01666667 (1.0 / 60.0)."
+            },
+            {
+                "name": "Button icon id",
+                "id": 121,
+                "available": true,
+                "xs_constant": "cButtonIconId",
+                "description": "Icon for the temporary aura button."
+            },
+            {
+                "name": "Short tooltip id",
+                "id": 122,
+                "available": true,
+                "xs_constant": "cShortTooltipId",
+                "description": "String ID for the temporary aura button's short tooltip."
+            },
+            {
+                "name": "Extended tooltip id",
+                "id": 123,
+                "available": true,
+                "xs_constant": "cExtendedTooltipId",
+                "description": "String ID for the temporary aura button's extended tooltip."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Object targeted by the aura."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Object targeted by the aura."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Aura attribute value to add or multiply."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Minimum amount of units to be in range for the aura to activate."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "Aura range. If aura targets enemies the targeted enemy units must be in range of aura units sight range."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "ID of the object attribute modified by this task. Attributes known to be supported include: Hit points (0), Line of sight (1), Movement speed (5), Attack (9), Attack reload time (10), Maximum Range (12) (visual only), Work rate (13), Regeneration rate (109), Conversion chance modifier (113), Melee armor (116), Pierce armor (117), Regeneration HP percent (120)."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "Bit field of aura settings: **multiply (1)** multiplies attribute value instead of adds it, **circular (2)** makes aura range circular instead of square, **visible (4)** shows range indicator (is affected by ui settings), **temporary (8)** makes aura effect temporary, **activated (16)** the temporary effect is only applied on the moment of aura activation, and remains if target units leave the aura, **translucent (32)** make aura indicator translucent, unsure how it works as its overwritten by ui settings."
+            },
+            {
+                "name": "Owner type",
+                "id": 6,
+                "available": true,
+                "xs_constant": "cTaskAttrOwnerType",
+                "description": "Controls which objects the task can target based on ownership."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphic displayed over the units receiving the aura."
+            },
+            {
+                "name": "Gathering sound",
+                "id": 16,
+                "available": true,
+                "xs_constant": "cTaskAttrGatheringSound",
+                "description": "Short Tooltip for UI indicator."
+            },
+            {
+                "name": "Deposit sound",
+                "id": 19,
+                "available": true,
+                "xs_constant": "cTaskAttrDepositSound",
+                "description": "Long Tooltip for UI indicator."
+            },
+            {
+                "name": "Gather type",
+                "id": 25,
+                "available": true,
+                "xs_constant": "cTaskAttrGatherType",
+                "description": "UI indicator icon displayed (per icons.json)."
+            },
+            {
+                "name": "Enabled",
+                "id": 27,
+                "available": true,
+                "xs_constant": "cTaskAttrEnabled",
+                "description": "If set, the associated resource value needs to be set to >0 for the aura to activate."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes player 1 Joan of Arc give friendly infantry, archer and cavalry units within 10 range +5 to their attack */\n\nconst int player = 1;\nconst int joanOfArc = 629;\nconst int unitsInRangeToActivate = 1;\nconst float auraRange = 10.0;\nconst int attribute = cAttack;\nconst int value = 5;\nconst int gaiaYouAndAlly = 4;\nconst int circularFlag = 2;\nconst int visibleFlag = 4;\nconst int translucentFlag = 32;\nconst int auraAbility = 32;\n\nxsEffectAmount(cSetAttribute, joanOfArc, cCombatAbility, auraAbility, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkValue2, unitsInRangeToActivate);\nxsTaskAmount(cTaskAttrWorkRange, auraRange);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\nxsTaskAmount(cTaskAttrCombatLevelFlag, circularFlag + visibleFlag + translucentFlag);\nxsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);\n\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeAura);\n\nxsTaskAmount(cTaskAttrObjectClass, cInfantryClass);\nxsModifyObjectTasks(joanOfArc, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cArcherClass);\nxsModifyObjectTasks(joanOfArc, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cCavalryClass);\nxsModifyObjectTasks(joanOfArc, player);",
+            "/* This code makes player 1 Joan of Arc double the movement speed of friendly infantry, archers and cavalry units in range of 10 for 30 seconds, with a 60 second cooldown. Units can leave the aura range and still have the speed increase. */\n\nconst int player = 1;\nconst int joanOfArc = 629;\nconst int unitsInRangeToActivate = 1;\nconst float auraRange = 10.0;\nconst int attribute = cMovementSpeed;\nconst float value = 2.0;\nconst int gaiaYouAndAlly = 4;\nconst int multiplyFlag = 1;\nconst int circularFlag = 2;\nconst int temporaryAuraFlag = 8;\nconst int remainsWhenLeavingRangeFlag = 16;\nconst int auraAbility = 32;\nconst int enableTempAuraType = -3;\nconst float tempAuraDuration = 30.0;\nconst float tempAuraCooldown = 60.0;\nconst float maximumCharge = 1.0;\nconst int buttonIcon = 98;\n\nxsEffectAmount(cSetAttribute, joanOfArc, cCombatAbility, auraAbility, player);\n\nxsEffectAmount(cSetAttribute, joanOfArc, cChargeType, enableTempAuraType, player);\nxsEffectAmount(cSetAttribute, joanOfArc, cChargeEvent, tempAuraDuration, player);\nxsEffectAmount(cSetAttribute, joanOfArc, cMaxCharge, maximumCharge, player);\nxsEffectAmount(cSetAttribute, joanOfArc, cRechargeRate, maximumCharge / tempAuraCooldown, player);\nxsEffectAmount(cSetAttribute, joanOfArc, cButtonIconId, buttonIcon, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkValue2, unitsInRangeToActivate);\nxsTaskAmount(cTaskAttrWorkRange, auraRange);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\nxsTaskAmount(cTaskAttrCombatLevelFlag, multiplyFlag + circularFlag + temporaryAuraFlag + remainsWhenLeavingRangeFlag);\nxsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);\n\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeAura);\n\nxsTaskAmount(cTaskAttrObjectClass, cInfantryClass);\nxsModifyObjectTasks(joanOfArc, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cArcherClass);\nxsModifyObjectTasks(joanOfArc, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cCavalryClass);\nxsModifyObjectTasks(joanOfArc, player);"
+        ]
+    },
+    "156": {
+        "name": "Additional spawn",
+        "xs_constant": "cTaskTypeExtraSpawn",
+        "description": "Spawns additional units when the unit is trained.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Id of an additional unit to spawn."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Number of units to spawn."
+            },
+            {
+                "name": "Resource in",
+                "id": 8,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceIn",
+                "description": "If set, the value of the corresponding resource needs to be >0 for the Task to trigger."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "If set, the associated resource value is added to the number of units to spawn."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes that every time a huskarl unit is spawned for player 1, 2 additional spearline units are also spawned from the same source. */\n\nconst int player = 1;\nconst int huskarl = 41;\nconst int spearman = 93;\nconst int amount = 2;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, spearman);\nxsTaskAmount(cTaskAttrWorkValue2, amount);\n\nxsTask(huskarl, cTaskTypeExtraSpawn, -1, player);"
+        ]
+    },
+    "157": {
+        "name": "Stinger",
+        "xs_constant": "cTaskTypeStinger",
+        "description": "Stingers are stat modifiers applied on a unit being attacked or the attacking unit.",
+        "object_attributes": [
+            {
+                "name": "Combat ability",
+                "id": 63,
+                "available": true,
+                "xs_constant": "cCombatAbility",
+                "description": "Attribute bitfield 8th bit (128) needs to be set for stingers to activate."
+            }
+        ],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Object targeted by the stinger."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Object targeted by the stinger."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Stingers attribute value to add or multiply."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Effect duration in seconds, if negative it's permanent."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "If 0 apply to the attacker, if 1 apply to the target of the attack (including splash damage targets)."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "ID of the object attribute modified by this task. Attributes known to be supported include: **Hit points (0), Movement speed (5), Attack (9), Attack reload time (10), Regeneration rate (109), Melee armor (116), Pierce armor (117), Regeneration HP percent (120)**."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "Bit field of stingers settings: **Multiply (1)** multiplies attribute value instead of adds it, **Not stack (2)** does not allow other stinger tasks that modify same attribute to stack."
+            },
+            {
+                "name": "Owner type",
+                "id": 6,
+                "available": true,
+                "xs_constant": "cTaskAttrOwnerType",
+                "description": "Controls which objects the task can target based on ownership."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "If positive, the associated resource value must be greater than 0 for this task to activate."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes player 1 Joan of Arc slow infantry, archer and \ncavalry units she attacks to 20% of their speed for 5 seconds */\n\nconst int player = 1;\nconst int joanOfArc = 629;\nconst float value = -0.8;\nconst float duration = 5.0;\nconst int affectTarget = 1;\nconst int attribute = cMovementSpeed;\nconst int multiplyFlag = 1;\nconst int dontStackFlag = 2;\nconst int stingerAbility = 128;\n\nxsEffectAmount(cSetAttribute, joanOfArc, cCombatAbility, stingerAbility, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkValue2, duration);\nxsTaskAmount(cTaskAttrWorkRange, affectTarget);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\nxsTaskAmount(cTaskAttrCombatLevelFlag, multiplyFlag + dontStackFlag);\n\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeStinger);\n\nxsTaskAmount(cTaskAttrObjectClass, cInfantryClass);\nxsModifyObjectTasks(joanOfArc, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cArcherClass);\nxsModifyObjectTasks(joanOfArc, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cCavalryClass);\nxsModifyObjectTasks(joanOfArc, player);"
+        ]
+    },
+    "158": {
+        "name": "HP transformation",
+        "xs_constant": "cTaskTypeHPTransform",
+        "description": "Transform into another unit based on current HP.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Object id",
+                "id": 29,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectId",
+                "description": "Always -1."
+            },
+            {
+                "name": "Object class",
+                "id": 30,
+                "available": true,
+                "xs_constant": "cTaskAttrObjectClass",
+                "description": "Always -1."
+            },
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "ID of the unit to transform to."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "HP to trigger the transformation. If >0 transforms when the unit's current HP is higher than the value. If <0 transforms when the unit's current HP is lower than the value made positive (currHp < (workVal * -1))."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "Bit field of HP transformation settings: **Multiply (1)** will use the Work value 2 (1) as a multiplier of current HP instead of exact value."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "If positive, the associated resource value must be greater than 0 for this task to activate. If negative, its absolute value is treated as a technology ID, and that technology must be researched for this task to activate."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "If set, will add its associated resource value to the Work value 2 (1)."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Graphic that plays when units transform."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes player 1 karambit warrior transform into a berserk when under 40% hp, and transform back when above 60% using level up graphic */\n\nconst int player = 1;\nconst int karambit = 1123;\nconst int berserk = 692;\nconst float transformAtPercent = -0.4;\nconst float transformBackPercent = 0.6;\nconst int multiplyFlag = 1;\nconst int levelUpGraphic = 12263;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, berserk);\nxsTaskAmount(cTaskAttrWorkValue2, transformAtPercent);\nxsTaskAmount(cTaskAttrCombatLevelFlag, multiplyFlag);\nxsTaskAmount(cTaskAttrProceedingGraphic, levelUpGraphic);\n\nxsTask(karambit, cTaskTypeHPTransform, -1, player);\n\nxsTaskAmount(cTaskAttrWorkValue1, karambit);\nxsTaskAmount(cTaskAttrWorkValue2, transformBackPercent);\n\nxsTask(berserk, cTaskTypeHPTransform, -1, player);"
+        ]
+    },
+    "159": {
+        "name": "Amphibious",
+        "xs_constant": "cTaskTypeAmphibious",
+        "description": "Unit changes graphics based on current terrain.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Movement Speed multiplier."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Attack Speed multiplier."
+            },
+            {
+                "name": "Terrain",
+                "id": 7,
+                "available": true,
+                "xs_constant": "cTaskAttrTerrain",
+                "description": "Terrain (or Terrain Type) on which the unit will use the task. If >= 0: Terrain ID. If <0: Terrain Type (can combine multiple bits)."
+            },
+            {
+                "name": "Moving graphic",
+                "id": 12,
+                "available": true,
+                "xs_constant": "cTaskAttrMovingGraphic",
+                "description": "Walking Graphic."
+            },
+            {
+                "name": "Proceeding graphic",
+                "id": 13,
+                "available": true,
+                "xs_constant": "cTaskAttrProceedingGraphic",
+                "description": "Attack Graphic."
+            },
+            {
+                "name": "Working graphic",
+                "id": 14,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkingGraphic",
+                "description": "Running Graphic."
+            },
+            {
+                "name": "Carrying graphic",
+                "id": 15,
+                "available": true,
+                "xs_constant": "cTaskAttrCarryingGraphic",
+                "description": "Idle Graphic."
+            },
+            {
+                "name": "Gathering sound",
+                "id": 16,
+                "available": true,
+                "xs_constant": "cTaskAttrGatheringSound",
+                "description": "Dying Graphic."
+            },
+            {
+                "name": "Deposit sound",
+                "id": 19,
+                "available": true,
+                "xs_constant": "cTaskAttrDepositSound",
+                "description": "Undead Graphic."
+            }
+        ],
+        "xs_examples": []
+    },
+    "160": {
+        "name": "HP damage modifier",
+        "xs_constant": "cTaskTypeHPModifier",
+        "description": "Unit has attribute modified based on percentage of missing HP.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Value to add."
+            },
+            {
+                "name": "Work value 2",
+                "id": 1,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue2",
+                "description": "Threshold of HP percentage to apply the modifier."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "If 0, check the unit's own HP. If > 0, compare the current target's HP."
+            },
+            {
+                "name": "Search wait time",
+                "id": 4,
+                "available": true,
+                "xs_constant": "cTaskAttrSearchWaitTime",
+                "description": "ID of the object attribute modified by this task. Attributes known to be supported include: **Attack (9)**."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes player 1 throwing axeman unit gain +2 attack for each 20% of hp that it lost */\n\nconst int player = 1;\nconst int throwingAxeman = 281;\nconst int value = 2;\nconst float hpPercent = 0.2;\nconst int compareToTargetHp = 0;\nconst int attribute = cAttack;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkValue2, hpPercent);\nxsTaskAmount(cTaskAttrWorkRange, compareToTargetHp);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\n\nxsTask(throwingAxeman, cTaskTypeHPModifier, -1, player);"
+        ]
+    },
+    "161": {
+        "name": "Unit refund",
+        "xs_constant": "cTaskTypeRefund",
+        "description": "Resource to grant on death.",
+        "object_attributes": [],
+        "task_attributes": [
+            {
+                "name": "Work value 1",
+                "id": 0,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkValue1",
+                "description": "Value to refund."
+            },
+            {
+                "name": "Work range",
+                "id": 2,
+                "available": true,
+                "xs_constant": "cTaskAttrWorkRange",
+                "description": "If 0, grant the resources to the player who owned the unit. If > 0, grant to the player who killed the unit."
+            },
+            {
+                "name": "Combat level flag",
+                "id": 5,
+                "available": true,
+                "xs_constant": "cTaskAttrCombatLevelFlag",
+                "description": "If 0, use Work Value 1 as a flat value to grant. If 1, use Work Value 1 as a fraction of the unit's associated resource cost."
+            },
+            {
+                "name": "Productivity resource",
+                "id": 9,
+                "available": true,
+                "xs_constant": "cTaskAttrProductivityResource",
+                "description": "If set, multiply Work Value 1 by the value of this resource."
+            },
+            {
+                "name": "Resource out",
+                "id": 10,
+                "available": true,
+                "xs_constant": "cTaskAttrResourceOut",
+                "description": "Resource to refund."
+            }
+        ],
+        "xs_examples": [
+            "/* This code makes 10 gold be refunded to player 1 when a monk unit is killed */\n\nconst int player = 1;\nconst int monk = 125;\nconst int monkWithRelic = 286;\nconst int value = 10;\nconst int grantToKiller = 0;\nconst int valueIsFractionOfCost = 0;\nconst int resource = cAttributeGold;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkRange, grantToKiller);\nxsTaskAmount(cTaskAttrCombatLevelFlag, valueIsFractionOfCost);\nxsTaskAmount(cTaskAttrResourceOut, resource);\n\nxsTask(monk, cTaskTypeRefund, -1, player);\nxsTask(monkWithRelic, cTaskTypeRefund, -1, player);"
+        ]
+    }
+}
