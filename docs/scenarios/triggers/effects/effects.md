@@ -987,7 +987,7 @@ This effect can be used to enable or disable technologies. The configurations fo
 
 ### Freeze Object
 
-This effect can be used to freeze units in place, preventing them from moving or taking any actions. The configurations for this effect are as follows:
+This effect can be used to freeze units. Freezing a unit here means that it is stopped (just like the [Stop Object](#stop-object) effect) and its stance is set to No Attack (just like the [Change Object Stance](#change-object-stance) effect). The configurations for this effect are as follows:
 
 | Options | Description |
 | :------- | :---------- |
