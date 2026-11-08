@@ -118,6 +118,9 @@ h3, h4 {
      background: transparent;
      font-size: inherit;
 }
+.md-typeset details.deprecated {
+     margin-top: 2em;   /* replace the h3 top margin (1.6em × 1.25em) that the summary zeroes out */
+}
 .md-typeset details.deprecated > summary {
      position: relative;         /* anchor the chevron to the summary, not the whole details */
      margin: 0;
