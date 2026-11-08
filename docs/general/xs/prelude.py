@@ -5,7 +5,7 @@ from typing import TextIO
 
 import regex
 
-from docs.general.xs.constants.constants import replace_placeholders, format_name
+from scripts.doc_gen.pages.constants import replace_placeholders, format_name
 
 
 def resolve_links(string: str, is_funcs: bool = False) -> str:

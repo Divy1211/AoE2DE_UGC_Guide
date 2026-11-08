@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from scripts.doc_gen.linking import inject_links
+from scripts.doc_gen.markdown_warning import markdown_edit_warning
 
 
 def _build_function_grid(function_docs) -> list[str]:
@@ -50,7 +51,7 @@ def generate():
 
     function_docs = json.loads(input_file.read_text(encoding="utf-8"))
 
-    top = [
+    top = markdown_edit_warning() + [
         '*Written by: Alian713, Kramb, KSneijders*',
         '<div id="hide-toc-elements"></div>',
         '---',
@@ -117,4 +118,4 @@ def generate():
 
 
 if __name__ == "__main__":
-    raise Exception("This file should not be ran directly. Please use: docs/py/global_regeneration.py instead!")
+    raise Exception("This file should not be ran directly. Please use: scripts/doc_gen/generate_docs.py instead!")
