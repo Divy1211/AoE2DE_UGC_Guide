@@ -3,7 +3,6 @@
 ---
 
 ## All Available Functions
-
 <p class="xs-func-category-header">Rules</p>
 
 <div class="xs-func-grid">
@@ -378,1457 +377,2109 @@
 <a href="#1715-xsunsyncissandboxmode" title="xsUnsyncIsSandboxMode">xsUnsyncIsSandboxMode</a>
 </div>
 
+
 ---
 
 ## 1. Rules
 
 ### 1.1. xsDisableRule
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsDisableRule(string ruleName)`
-
-Parameters:
-
-1.  `#!xs string ruleName`: The name of the rule to disable
+`#!xs void xsDisableRule(string ruleName)`
 
 Disables the given rule.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleName | The name of the rule to disable | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.2. xsDisableSelf
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsDisableSelf()`
-
+`#!xs void xsDisableSelf()`
 
 Disables the rule this function is called inside. Cannot be used outside of a rule's body!
 
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.3. xsEnableRule
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsEnableRule(string ruleName)`
-
-Parameters:
-
-1.  `#!xs string ruleName`: The name of the rule to enable
+`#!xs void xsEnableRule(string ruleName)`
 
 Enables the given rule.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleName | The name of the rule to enable | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.4. xsIsRuleEnabled
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsIsRuleEnabled(string ruleName)`
-
-Parameters:
-
-1.  `#!xs string ruleName`: The name of the rule to check
+`#!xs bool xsIsRuleEnabled(string ruleName)`
 
 Returns true if the rule is enabled, else returns false.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleName | The name of the rule to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 1.5. xsSetRulePriority
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetRulePriority(string ruleName, int rulePriority)`
-
-Parameters:
-
-1.  `#!xs string ruleName`: The name of the rule to set the priority of
-2.  `#!xs int rulePriority`: The new priority of the rule
+`#!xs void xsSetRulePriority(string ruleName, int rulePriority)`
 
 Sets the priority of the given rule.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleName | The name of the rule to set the priority of | _Required_ |
+| `#!xs int` | rulePriority | The new priority of the rule | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.6. xsSetRulePrioritySelf
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetRulePrioritySelf(int rulePriority)`
-
-Parameters:
-
-1.  `#!xs int rulePriority`: The new priority of the rule
+`#!xs void xsSetRulePrioritySelf(int rulePriority)`
 
 Sets the priority of the rule this function is called inside. Cannot be used outside of a rule's body!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | rulePriority | The new priority of the rule | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.7. xsSetRuleMinInterval
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetRuleMinInterval(string ruleName, int interval)`
-
-Parameters:
-
-1.  `#!xs string ruleName`: The name of the rule to set the min interval of
-2.  `#!xs int interval`: The new min interval of the rule
+`#!xs void xsSetRuleMinInterval(string ruleName, int interval)`
 
 Sets the min interval of the given rule.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleName | The name of the rule to set the min interval of | _Required_ |
+| `#!xs int` | interval | The new min interval of the rule | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.8. xsSetRuleMinIntervalSelf
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetRuleMinIntervalSelf(int interval)`
-
-Parameters:
-
-1.  `#!xs int interval`: The new min interval of the rule
+`#!xs void xsSetRuleMinIntervalSelf(int interval)`
 
 Sets the min interval of the rule this function is called inside. Cannot be used outside of a rule's body!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | interval | The new min interval of the rule | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.9. xsSetRuleMaxInterval
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetRuleMaxInterval(string ruleName, int interval)`
-
-Parameters:
-
-1.  `#!xs string ruleName`: The name of the rule to set the max interval of
-2.  `#!xs int interval`: The new max interval of the rule
+`#!xs void xsSetRuleMaxInterval(string ruleName, int interval)`
 
 Sets the max interval of the given rule.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleName | The name of the rule to set the max interval of | _Required_ |
+| `#!xs int` | interval | The new max interval of the rule | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.10. xsSetRuleMaxIntervalSelf
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetRuleMaxIntervalSelf(int interval)`
-
-Parameters:
-
-1.  `#!xs int interval`: The new max interval of the rule
+`#!xs void xsSetRuleMaxIntervalSelf(int interval)`
 
 Sets the max interval of the rule this function is called inside. Cannot be used outside of a rule's body!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | interval | The new max interval of the rule | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.11. xsEnableRuleGroup
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsEnableRuleGroup(string ruleGroupName)`
-
-Parameters:
-
-1.  `#!xs string ruleGroupName`: The name of the rule group to enable
+`#!xs void xsEnableRuleGroup(string ruleGroupName)`
 
 Enables all the rules in the given rule group
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleGroupName | The name of the rule group to enable | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.12. xsDisableRuleGroup
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsDisableRuleGroup(string ruleGroupName)`
-
-Parameters:
-
-1.  `#!xs string ruleGroupName`: The name of the rule group to disable
+`#!xs void xsDisableRuleGroup(string ruleGroupName)`
 
 Disables all the rules in the given rule group
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleGroupName | The name of the rule group to disable | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 1.13. xsIsRuleGroupEnabled
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsIsRuleGroupEnabled(string ruleGroupName)`
-
-Parameters:
-
-1.  `#!xs string ruleGroupName`: The name of the rule group to check
+`#!xs bool xsIsRuleGroupEnabled(string ruleGroupName)`
 
 Returns true, if all the rules in the given rule group are enabled
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | ruleGroupName | The name of the rule group to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ## 2. Vectors
 
 ### 2.1. xsVectorGetX
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsVectorGetX(vector v)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to get the X coordinate of
+`#!xs float xsVectorGetX(vector v)`
 
 The X coordinate of the vector given.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to get the X coordinate of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 2.2. xsVectorGetY
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsVectorGetY(vector v)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to get the Y coordinate of
+`#!xs float xsVectorGetY(vector v)`
 
 The Y coordinate of the vector given.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to get the Y coordinate of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 2.3. xsVectorGetZ
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsVectorGetZ(vector v)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to get the Z coordinate of
+`#!xs float xsVectorGetZ(vector v)`
 
 The Z coordinate of the vector given.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to get the Z coordinate of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 2.4. xsVectorSetX
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsVectorSetX(vector v, float x)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to modify the X coordinate of
-2.  `#!xs float x`: The value to set the X coordinate to
+`#!xs vector xsVectorSetX(vector v, float x)`
 
 Returns a new vector with the X component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to modify the X coordinate of | _Required_ |
+| `#!xs float` | x | The value to set the X coordinate to | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 2.5. xsVectorSetY
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsVectorSetY(vector v, float y)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to modify the Y coordinate of
-2.  `#!xs float y`: The value to set the Y coordinate to
+`#!xs vector xsVectorSetY(vector v, float y)`
 
 Returns a new vector with the Y component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to modify the Y coordinate of | _Required_ |
+| `#!xs float` | y | The value to set the Y coordinate to | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 2.6. xsVectorSetZ
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsVectorSetZ(vector v, float z)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to modify the Z coordinate of
-2.  `#!xs float z`: The value to set the Z coordinate to
+`#!xs vector xsVectorSetZ(vector v, float z)`
 
 Returns a new vector with the Z component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to modify the Z coordinate of | _Required_ |
+| `#!xs float` | z | The value to set the Z coordinate to | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 2.7. xsVectorSet
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsVectorSet(float x, float y, float z)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to set the X coordinate to
-2.  `#!xs float y`: The value to set the Y coordinate to
-3.  `#!xs float z`: The value to set the Z coordinate to
+`#!xs vector xsVectorSet(float x, float y, float z)`
 
 Returns a vector with the given X, Y and Z components.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to set the X coordinate to | _Required_ |
+| `#!xs float` | y | The value to set the Y coordinate to | _Required_ |
+| `#!xs float` | z | The value to set the Z coordinate to | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 2.8. xsVectorLength
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsVectorLength(vector v)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to calculate the length of
+`#!xs float xsVectorLength(vector v)`
 
 Returns the length of the given vector.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to calculate the length of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 2.9. xsVectorNormalize
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsVectorNormalize(vector v)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to normalise
+`#!xs vector xsVectorNormalize(vector v)`
 
 Returns the normalised vector in the direction of the given vector.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to normalise | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
 
 ## 3. Arrays
 
 ### 3.1. xsArrayCreateInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayCreateInt(int size, int defaultValue, string uniqueName)`
-
-Parameters:
-
-1.  `#!xs int size`: The length of the array to create
-2. (Optional) `#!xs int defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be 0
-3. (Optional) `#!xs string uniqueName`: A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
+`#!xs int xsArrayCreateInt(int size, int defaultValue, string uniqueName)`
 
 Creates an array of type int and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | size | The length of the array to create | _Required_ |
+| `#!xs int` | defaultValue | The default value to initialise all the values in the array to. If not set all array values will be 0 | _Optional_ |
+| `#!xs string` | uniqueName | A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops) | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 3.2. xsArrayCreateFloat
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayCreateFloat(int size, float defaultValue, string uniqueName)`
-
-Parameters:
-
-1.  `#!xs int size`: The length of the array to create
-2. (Optional) `#!xs float defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be 0.0
-3. (Optional) `#!xs string uniqueName`: A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
+`#!xs int xsArrayCreateFloat(int size, float defaultValue, string uniqueName)`
 
 Creates an array of type float and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | size | The length of the array to create | _Required_ |
+| `#!xs float` | defaultValue | The default value to initialise all the values in the array to. If not set all array values will be 0.0 | _Optional_ |
+| `#!xs string` | uniqueName | A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops) | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 3.3. xsArrayCreateBool
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayCreateBool(int size, bool defaultValue, string uniqueName)`
-
-Parameters:
-
-1.  `#!xs int size`: The length of the array to create
-2. (Optional) `#!xs bool defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be false
-3. (Optional) `#!xs string uniqueName`: A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
+`#!xs int xsArrayCreateBool(int size, bool defaultValue, string uniqueName)`
 
 Creates an array of type bool and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | size | The length of the array to create | _Required_ |
+| `#!xs bool` | defaultValue | The default value to initialise all the values in the array to. If not set all array values will be false | _Optional_ |
+| `#!xs string` | uniqueName | A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops) | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 3.4. xsArrayCreateString
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayCreateString(int size, string defaultValue, string uniqueName)`
-
-Parameters:
-
-1.  `#!xs int size`: The length of the array to create
-2. (Optional) `#!xs string defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be "<default string>"
-3. (Optional) `#!xs string uniqueName`: A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
+`#!xs int xsArrayCreateString(int size, string defaultValue, string uniqueName)`
 
 Creates an array of type String and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | size | The length of the array to create | _Required_ |
+| `#!xs string` | defaultValue | The default value to initialise all the values in the array to. If not set all array values will be "<default string>" | _Optional_ |
+| `#!xs string` | uniqueName | A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops) | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 3.5. xsArrayCreateVector
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayCreateVector(int size, vector defaultValue, string uniqueName)`
-
-Parameters:
-
-1.  `#!xs int size`: The length of the array to create
-2. (Optional) `#!xs vector defaultValue`: The default value to initialise all the values in the array to. If not set all array values will be vector(-1.0, -1.0, -1.0)
-3. (Optional) `#!xs string uniqueName`: A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops)
+`#!xs int xsArrayCreateVector(int size, vector defaultValue, string uniqueName)`
 
 Creates an array of type Vector and returns its ID. Created arrays never go out of scope so be careful when creating them inside repeated code patterns as that can introduce memory leaks.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | size | The length of the array to create | _Required_ |
+| `#!xs vector` | defaultValue | The default value to initialise all the values in the array to. If not set all array values will be vector(-1.0, -1.0, -1.0) | _Optional_ |
+| `#!xs string` | uniqueName | A unique name of the created array. Note that when set, this name cannot be reused, and subsequent array creation attempts with the same name will fail (e.g. in loops) | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 3.6. xsArraySetInt
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArraySetInt(int arrayId, int index, int value)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to set the value in
-2.  `#!xs int index`: The index to set the value of
-3.  `#!xs int value`: The new value to set
+`#!xs bool xsArraySetInt(int arrayId, int index, int value)`
 
 Sets the value at the specified index of the given int array to the provided value and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to set the value in | _Required_ |
+| `#!xs int` | index | The index to set the value of | _Required_ |
+| `#!xs int` | value | The new value to set | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.7. xsArraySetFloat
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArraySetFloat(int arrayId, int index, float value)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to set the value in
-2.  `#!xs int index`: The index to set the value of
-3.  `#!xs float value`: The new value to set
+`#!xs bool xsArraySetFloat(int arrayId, int index, float value)`
 
 Sets the value at the specified index of the given float array to the provided value and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to set the value in | _Required_ |
+| `#!xs int` | index | The index to set the value of | _Required_ |
+| `#!xs float` | value | The new value to set | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.8. xsArraySetBool
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArraySetBool(int arrayId, int index, bool value)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to set the value in
-2.  `#!xs int index`: The index to set the value of
-3.  `#!xs bool value`: The new value to set
+`#!xs bool xsArraySetBool(int arrayId, int index, bool value)`
 
 Sets the value at the specified index of the given bool array to the provided value and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to set the value in | _Required_ |
+| `#!xs int` | index | The index to set the value of | _Required_ |
+| `#!xs bool` | value | The new value to set | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.9. xsArraySetString
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArraySetString(int arrayId, int index, string value)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to set the value in
-2.  `#!xs int index`: The index to set the value of
-3.  `#!xs string value`: The new value to set
+`#!xs bool xsArraySetString(int arrayId, int index, string value)`
 
 Sets the value at the specified index of the given string array to the provided value and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to set the value in | _Required_ |
+| `#!xs int` | index | The index to set the value of | _Required_ |
+| `#!xs string` | value | The new value to set | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.10. xsArraySetVector
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArraySetVector(int arrayId, int index, vector value)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to set the value in
-2.  `#!xs int index`: The index to set the value of
-3.  `#!xs vector value`: The new value to set
+`#!xs bool xsArraySetVector(int arrayId, int index, vector value)`
 
 Sets the value at the specified index of the given vector array to the provided value and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to set the value in | _Required_ |
+| `#!xs int` | index | The index to set the value of | _Required_ |
+| `#!xs vector` | value | The new value to set | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.11. xsArrayGetInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayGetInt(int arrayId, int index)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to get the value from
-2.  `#!xs int index`: The index to get the value of
+`#!xs int xsArrayGetInt(int arrayId, int index)`
 
 Gets and returns the value of the given int array at the specified index.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to get the value from | _Required_ |
+| `#!xs int` | index | The index to get the value of | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 3.12. xsArrayGetFloat
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsArrayGetFloat(int arrayId, int index)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to get the value from
-2.  `#!xs int index`: The index to get the value of
+`#!xs float xsArrayGetFloat(int arrayId, int index)`
 
 Gets and returns the value of the given float array at the specified index.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to get the value from | _Required_ |
+| `#!xs int` | index | The index to get the value of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 3.13. xsArrayGetBool
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArrayGetBool(int arrayId, int index)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to get the value from
-2.  `#!xs int index`: The index to get the value of
+`#!xs bool xsArrayGetBool(int arrayId, int index)`
 
 Gets and returns the value of the given bool array at the specified index.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to get the value from | _Required_ |
+| `#!xs int` | index | The index to get the value of | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.14. xsArrayGetString
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsArrayGetString(int arrayId, int index)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to get the value from
-2.  `#!xs int index`: The index to get the value of
+`#!xs string xsArrayGetString(int arrayId, int index)`
 
 Gets and returns the value of the given string array at the specified index.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to get the value from | _Required_ |
+| `#!xs int` | index | The index to get the value of | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 3.15. xsArrayGetVector
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsArrayGetVector(int arrayId, int index)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to get the value from
-2.  `#!xs int index`: The index to get the value of
+`#!xs vector xsArrayGetVector(int arrayId, int index)`
 
 Gets and returns the value of the given vector array at the specified index.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to get the value from | _Required_ |
+| `#!xs int` | index | The index to get the value of | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 3.16. xsArrayResizeInt
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArrayResizeInt(int arrayId, int newSize)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to resize
-2.  `#!xs int newSize`: The new size of the array
+`#!xs bool xsArrayResizeInt(int arrayId, int newSize)`
 
 Resizes the the given int array to the specified size and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to resize | _Required_ |
+| `#!xs int` | newSize | The new size of the array | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.17. xsArrayResizeFloat
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArrayResizeFloat(int arrayId, int newSize)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to resize
-2.  `#!xs int newSize`: The new size of the array
+`#!xs bool xsArrayResizeFloat(int arrayId, int newSize)`
 
 Resizes the the given float array to the specified size and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to resize | _Required_ |
+| `#!xs int` | newSize | The new size of the array | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.18. xsArrayResizeBool
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArrayResizeBool(int arrayId, int newSize)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to resize
-2.  `#!xs int newSize`: The new size of the array
+`#!xs bool xsArrayResizeBool(int arrayId, int newSize)`
 
 Resizes the the given bool array to the specified size and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to resize | _Required_ |
+| `#!xs int` | newSize | The new size of the array | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.19. xsArrayResizeString
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArrayResizeString(int arrayId, int newSize)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to resize
-2.  `#!xs int newSize`: The new size of the array
+`#!xs bool xsArrayResizeString(int arrayId, int newSize)`
 
 Resizes the the given string array to the specified size and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to resize | _Required_ |
+| `#!xs int` | newSize | The new size of the array | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.20. xsArrayResizeVector
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsArrayResizeVector(int arrayId, int newSize)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to resize
-2.  `#!xs int newSize`: The new size of the array
+`#!xs bool xsArrayResizeVector(int arrayId, int newSize)`
 
 Resizes the the given vector array to the specified size and returns 1.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to resize | _Required_ |
+| `#!xs int` | newSize | The new size of the array | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 3.21. xsArrayGetSize
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsArrayGetSize(int arrayId)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: The ID of the array to get the length of
+`#!xs int xsArrayGetSize(int arrayId)`
 
 Returns the length of the given array.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The ID of the array to get the length of | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ## 4. Maths
 
 ### 4.1. abs
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float abs(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The number to find the absolute value of
+`#!xs float abs(float x)`
 
 Returns the absolute value (magnitude) of the given number.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The number to find the absolute value of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.2. sqrt
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float sqrt(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The number to find the square root of
+`#!xs float sqrt(float x)`
 
 Returns the square root of the given number.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The number to find the square root of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.3. pow
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float pow(float x, float y)`
-
-Parameters:
-
-1.  `#!xs float x`: The base value
-2.  `#!xs float y`: The exponent to raise the base value to
+`#!xs float pow(float x, float y)`
 
 Returns x raised to the power y (x**y).
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The base value | _Required_ |
+| `#!xs float` | y | The exponent to raise the base value to | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.4. sin
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float sin(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The angle (in radians) to find the sine of
+`#!xs float sin(float x)`
 
 Returns the sine of the angle in radians.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The angle (in radians) to find the sine of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.5. cos
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float cos(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The angle (in radians) to find the cosine of
+`#!xs float cos(float x)`
 
 Returns the cosine of the angle in radians
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The angle (in radians) to find the cosine of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.6. tan
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float tan(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The angle (in radians) to find the tangent of
+`#!xs float tan(float x)`
 
 Returns the tangent of the angle in radians
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The angle (in radians) to find the tangent of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.7. asin
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float asin(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the inverse sine of
+`#!xs float asin(float x)`
 
 Returns the inverse sine (arcsin) of the given value
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the inverse sine of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.8. acos
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float acos(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the inverse cosine of
+`#!xs float acos(float x)`
 
 Returns the inverse cosine (arccos) of the given value
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the inverse cosine of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.9. atan
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float atan(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the inverse tangent of
+`#!xs float atan(float x)`
 
 Returns the inverse tangent (arctan) of the given value
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the inverse tangent of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.10. atan2
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float atan2(float y, float x)`
-
-Parameters:
-
-1.  `#!xs float y`: The Y coordinate of the point to find the X+ angle of
-2.  `#!xs float x`: The X coordinate of the point to find the X+ angle of
+`#!xs float atan2(float y, float x)`
 
 Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\pi, \pi]$
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | y | The Y coordinate of the point to find the X+ angle of | _Required_ |
+| `#!xs float` | x | The X coordinate of the point to find the X+ angle of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.11. atan2v
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float atan2v(vector v)`
-
-Parameters:
-
-1.  `#!xs vector v`: The vector to get the atan2 from
+`#!xs float atan2v(vector v)`
 
 Returns the angle of the given vector from the X+ axis, in the range $[-\pi, \pi]$. Ignores the Z component
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v | The vector to get the atan2 from | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.12. exp
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float exp(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the exp of
+`#!xs float exp(float x)`
 
 Returns $e^x$
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the exp of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.13. ceil
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float ceil(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the ceil of
+`#!xs float ceil(float x)`
 
 Returns $\left \lceil{x}\right \rceil$
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the ceil of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.14. floor
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float floor(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the floor of
+`#!xs float floor(float x)`
 
 Returns $\left \lfloor{x}\right \rfloor$
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the floor of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.15. bitCastToFloat
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float bitCastToFloat(int number)`
-
-Parameters:
-
-1.  `#!xs int number`: The value to `reinterpret/bit_cast` to `float`
+`#!xs float bitCastToFloat(int number)`
 
 Reinterprets/Bit casts the given `int` value to `float`. Equivalent to `#!rs std::mem::transmute::<i32, f32>(number)`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | number | The value to `reinterpret/bit_cast` to `float` | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.16. bitCastToInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitCastToInt(float number)`
-
-Parameters:
-
-1.  `#!xs float number`: The value to `reinterpret/bit_cast` to `int`
+`#!xs int bitCastToInt(float number)`
 
 Reinterprets/Bit casts the given `float` value to `int`. Equivalent to `#!rs std::mem::transmute::<f32, i32>(number)`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | number | The value to `reinterpret/bit_cast` to `int` | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.17. xsCeilToInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsCeilToInt(float value)`
-
-Parameters:
-
-1.  `#!xs float value`: The value to determine the ceil of
+`#!xs int xsCeilToInt(float value)`
 
 Rounds the number **up** to the next integer
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | value | The value to determine the ceil of | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.18. ln
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float ln(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the natural log of
+`#!xs float ln(float x)`
 
 Returns the natural log
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the natural log of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.19. log2
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float log2(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the log base 2 of
+`#!xs float log2(float x)`
 
 Returns the log base 2
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the log base 2 of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.20. log10
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float log10(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to find the log base 10 of
+`#!xs float log10(float x)`
 
 Returns the log base 10
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to find the log base 10 of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.21. round
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float round(float x, int places)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to round
-2. (Optional) `#!xs int places`: The number of decimal places to round to. Capped between 0-8, defaults to 2.
+`#!xs float round(float x, int places)`
 
 Returns the rounded value
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to round | _Required_ |
+| `#!xs int` | places | The number of decimal places to round to. Capped between 0-8, defaults to 2. | _Optional_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.22. radians
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float radians(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to convert to radians
+`#!xs float radians(float x)`
 
 Returns $\cfrac{\pi}{180} x$
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to convert to radians | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.23. degrees
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float degrees(float x)`
-
-Parameters:
-
-1.  `#!xs float x`: The value to convert to degrees
+`#!xs float degrees(float x)`
 
 Returns $\cfrac{180}{\pi} x$
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | x | The value to convert to degrees | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.24. dist
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float dist(vector v1, vector v2)`
-
-Parameters:
-
-1.  `#!xs vector v1`: The first vector
-2.  `#!xs vector v2`: The second vector
+`#!xs float dist(vector v1, vector v2)`
 
 Returns the distance (norm-2) between the two vectors
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | v1 | The first vector | _Required_ |
+| `#!xs vector` | v2 | The second vector | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 4.25. bitAnd
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitAnd(int x, int y)`
-
-Parameters:
-
-1.  `#!xs int x`: The first number
-2.  `#!xs int y`: The second number
+`#!xs int bitAnd(int x, int y)`
 
 Returns `x & y`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The first number | _Required_ |
+| `#!xs int` | y | The second number | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.26. bitOr
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitOr(int x, int y)`
-
-Parameters:
-
-1.  `#!xs int x`: The first number
-2.  `#!xs int y`: The second number
+`#!xs int bitOr(int x, int y)`
 
 Returns `x | y`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The first number | _Required_ |
+| `#!xs int` | y | The second number | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.27. bitXor
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitXor(int x, int y)`
-
-Parameters:
-
-1.  `#!xs int x`: The first number
-2.  `#!xs int y`: The second number
+`#!xs int bitXor(int x, int y)`
 
 Returns `x ^ y`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The first number | _Required_ |
+| `#!xs int` | y | The second number | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.28. bitLsh
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitLsh(int x, int y)`
-
-Parameters:
-
-1.  `#!xs int x`: The first number
-2.  `#!xs int y`: The second number
+`#!xs int bitLsh(int x, int y)`
 
 Returns `x << y`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The first number | _Required_ |
+| `#!xs int` | y | The second number | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.29. bitRsh
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitRsh(int x, int y)`
-
-Parameters:
-
-1.  `#!xs int x`: The first number
-2.  `#!xs int y`: The second number
+`#!xs int bitRsh(int x, int y)`
 
 Returns `x >> y`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The first number | _Required_ |
+| `#!xs int` | y | The second number | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 4.30. bitNot
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bitNot(int x)`
-
-Parameters:
-
-1.  `#!xs int x`: The number to get the 1's compliment for
+`#!xs int bitNot(int x)`
 
 Returns `~x`
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The number to get the 1's compliment for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ## 5. Randomization
 
 ### 5.1. xsGetRandomNumber
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetRandomNumber()`
-
+`#!xs int xsGetRandomNumber()`
 
 Returns a random number between 0 and 32767.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 5.2. xsGetRandomNumberLH
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetRandomNumberLH(int low, int high)`
-
-Parameters:
-
-1.  `#!xs int low`: The lower bound for the range for the random number returned (included)
-2.  `#!xs int high`: The upper bound for the range for the random number returned (excluded)
+`#!xs int xsGetRandomNumberLH(int low, int high)`
 
 Returns a random number between `low` and `high`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | low | The lower bound for the range for the random number returned (included) | _Required_ |
+| `#!xs int` | high | The upper bound for the range for the random number returned (excluded) | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 5.3. xsGetRandomNumberMax
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetRandomNumberMax(int max)`
-
-Parameters:
-
-1.  `#!xs int max`: The upper bound for the range for the random number returned (excluded)
+`#!xs int xsGetRandomNumberMax(int max)`
 
 Returns a random number between 0 and `max`.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | max | The upper bound for the range for the random number returned (excluded) | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ## 6. Techs
 
 ### 6.1. xsResearchTechnology
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerId)`
-
-Parameters:
-
-1.  `#!xs int techId`: The technology ID to research.
-2.  `#!xs bool force`: Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false
-3.  `#!xs bool techAvailable`: This flag determines if it is required to check if a tech is available before researching it
-4.  `#!xs int playerId`: The player to research the technology for
+`#!xs bool xsResearchTechnology(int techId, bool force, bool techAvailable, int playerId)`
 
 Returns a boolean based on whether the technology was researched or not.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | techId | The technology ID to research. | _Required_ |
+| `#!xs bool` | force | Force researching the tech even if it is not enabled. To force an unavailable tech, the argument `techAvailable` must be set to false | _Required_ |
+| `#!xs bool` | techAvailable | This flag determines if it is required to check if a tech is available before researching it | _Required_ |
+| `#!xs int` | playerId | The player to research the technology for | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 6.2. xsGetTechName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetTechName(int techId, int playerId, bool internalName)`
-
-Parameters:
-
-1.  `#!xs int techId`: The tech to get the name for
-2.  `#!xs int playerId`: The player to get the tech's name for
-3. (Optional) `#!xs bool internalName`: Returns the internal name of the tech if set. `!#xs false` by default.
+`#!xs string xsGetTechName(int techId, int playerId, bool internalName)`
 
 Returns the current name of the given tech for the specified player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | techId | The tech to get the name for | _Required_ |
+| `#!xs int` | playerId | The player to get the tech's name for | _Required_ |
+| `#!xs bool` | internalName | Returns the internal name of the tech if set. `!#xs false` by default. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 6.3. xsGetTechState
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetTechState(int techId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int techId`: The tech to get the state for
-2.  `#!xs int playerId`: The player to get the tech's state for
+`#!xs int xsGetTechState(int techId, int playerId)`
 
 Returns one of the [cTechState constants](../../constants/constants/#17-tech-state "Jump To: XS > Constant Reference > 17. Tech State Constants") based on the tech's status
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | techId | The tech to get the state for | _Required_ |
+| `#!xs int` | playerId | The player to get the tech's state for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 6.4. xsGetTechAttribute
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetTechAttribute(int playerId, int techId, int techAttribute, int indexOrCostType)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the tech's attribute for
-2.  `#!xs int techId`: The tech to get the attribute for
-3.  `#!xs int techAttribute`: The tech attribute to get. See the [cTech constants](../../constants/constants/#27-tech-attribute \"Jump To: XS > Constant Reference > 27. Tech Attribute\")
-4.  `#!xs int indexOrCostType`: The train location index when getting research location specific attributes or a resource ID when getting costs
+`#!xs int xsGetTechAttribute(int playerId, int techId, int techAttribute, int indexOrCostType)`
 
 Gets the specific tech attribute for the supplied tech for the given player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the tech's attribute for | _Required_ |
+| `#!xs int` | techId | The tech to get the attribute for | _Required_ |
+| `#!xs int` | techAttribute | The tech attribute to get. See the [cTech constants](../../constants/constants/#27-tech-attribute \"Jump To: XS > Constant Reference > 27. Tech Attribute\") | _Required_ |
+| `#!xs int` | indexOrCostType | The train location index when getting research location specific attributes or a resource ID when getting costs | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 6.5. xsSetTechName
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetTechName(int techId, int playerId, string description)`
-
-Parameters:
-
-1.  `#!xs int techId`: The tech to set the name for
-2.  `#!xs int playerId`: The player to set the tech name for
-3.  `#!xs string description`: The name to set to
+`#!xs void xsSetTechName(int techId, int playerId, string description)`
 
 Sets the tech name for the supplied tech for the given player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | techId | The tech to set the name for | _Required_ |
+| `#!xs int` | playerId | The player to set the tech name for | _Required_ |
+| `#!xs string` | description | The name to set to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 6.6. xsSetTechDescription
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetTechDescription(int techId, int playerId, string description)`
-
-Parameters:
-
-1.  `#!xs int techId`: The tech to set the description for
-2.  `#!xs int playerId`: The player to set the tech description for
-3.  `#!xs string description`: The description to set to
+`#!xs void xsSetTechDescription(int techId, int playerId, string description)`
 
 Sets the tech description for the supplied tech for the given player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | techId | The tech to set the description for | _Required_ |
+| `#!xs int` | playerId | The player to set the tech description for | _Required_ |
+| `#!xs string` | description | The description to set to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 6.7. xsInitiateResearch
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsInitiateResearch(int buildingId, int techId)`
-
-Parameters:
-
-1.  `#!xs int buildingId`: The building to initiate the research at
-2.  `#!xs int techId`: The tech to research
+`#!xs bool xsInitiateResearch(int buildingId, int techId)`
 
 Same as the editor effect. Starts researching a technology at a specific building. The tech must be available/the player must have sufficient resources to research the tech. The resources are deducted from the player's stockpile on research.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | buildingId | The building to initiate the research at | _Required_ |
+| `#!xs int` | techId | The tech to research | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 6.8. xsHasResearchedLocalTechnology
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsHasResearchedLocalTechnology(int buildingId, int localTechId)`
-
-Parameters:
-
-1.  `#!xs int buildingId`: The building to check local techs at
-2.  `#!xs int localTechId`: The local tech to check
+`#!xs bool xsHasResearchedLocalTechnology(int buildingId, int localTechId)`
 
 Checks if a local tech has been researched at the given building.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | buildingId | The building to check local techs at | _Required_ |
+| `#!xs int` | localTechId | The local tech to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 6.9. xsResearchLocalTechnology
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsResearchLocalTechnology(int buildingId, int localTechId)`
-
-Parameters:
-
-1.  `#!xs int buildingId`: The building to research a local tech at
-2.  `#!xs int localTechId`: The local tech to research
+`#!xs bool xsResearchLocalTechnology(int buildingId, int localTechId)`
 
 Researches the given local tech at the specified building if it is available. Same as the editor effect.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | buildingId | The building to research a local tech at | _Required_ |
+| `#!xs int` | localTechId | The local tech to research | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ## 7. Player
 
 ### 7.1. xsEffectAmount
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int attributeOrOperation, float value, int playerId, int trainLocationIndex)`
-
-Parameters:
-
-1.  `#!xs int effectId`: The ID of the effect to use. See the [Effect Type](../../constants/constants/#8-effect-amount-effect-type "Jump To: XS > Constant Reference > 8. Effect Amount Effect Type") and [Technology Attribute](../../constants/constants/#10-effect-amount-technology-attribute "Jump To: XS > Constant Reference > 10. Effect Amount Tech Attribute") constants
-2.  `#!xs int objectOrTechnologyId`: The ID of the object, unit, or technology to effect
-3.  `#!xs int attributeOrOperation`: The attribute to modify or the operation to perform, See the [Effect Operation](../../constants/constants/#9-effectamount-effect-operations "Jump To: XS > Constant Reference > 9. Effect Amount Effect Operation") constants
-4.  `#!xs float value`: The value of the effect
-5. (Optional) `#!xs int playerId`: The player to apply the effect to. If unspecified, applies to all players except Gaia.
-6. (Optional) `#!xs int trainLocationIndex`: Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself
+`#!xs void xsEffectAmount(int effectId, int objectOrTechnologyId, int attributeOrOperation, float value, int playerId, int trainLocationIndex)`
 
 Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat).
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | effectId | The ID of the effect to use. See the [Effect Type](../../constants/constants/#8-effect-amount-effect-type "Jump To: XS > Constant Reference > 8. Effect Amount Effect Type") and [Technology Attribute](../../constants/constants/#10-effect-amount-technology-attribute "Jump To: XS > Constant Reference > 10. Effect Amount Tech Attribute") constants | _Required_ |
+| `#!xs int` | objectOrTechnologyId | The ID of the object, unit, or technology to effect | _Required_ |
+| `#!xs int` | attributeOrOperation | The attribute to modify or the operation to perform, See the [Effect Operation](../../constants/constants/#9-effectamount-effect-operations "Jump To: XS > Constant Reference > 9. Effect Amount Effect Operation") constants | _Required_ |
+| `#!xs float` | value | The value of the effect | _Required_ |
+| `#!xs int` | playerId | The player to apply the effect to. If unspecified, applies to all players except Gaia. | _Optional_ |
+| `#!xs int` | trainLocationIndex | Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself | _Optional_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 7.2. xsGetPlayerUnitIds
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerUnitIds(int playerId, int objectOrClassId, int arrayId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the unit IDs for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to get the unit reference IDs for
-3. (Optional) `#!xs int arrayId`: Reuse an existing array to save memory
+`#!xs int xsGetPlayerUnitIds(int playerId, int objectOrClassId, int arrayId)`
 
 Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the unit IDs for | _Required_ |
+| `#!xs int` | objectOrClassId | The ID of the object or class to get the unit reference IDs for | _Required_ |
+| `#!xs int` | arrayId | Reuse an existing array to save memory | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.3. xsGetHandicapMultiplier
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetHandicapMultiplier(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the handicap for
+`#!xs float xsGetHandicapMultiplier(int playerId)`
 
 Returns the handicap multiplier for the given player (a float between 1 and 2)
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the handicap for | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 7.4. xsGetWorldPlayerId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetWorldPlayerId(int scxPlayerId)`
-
-Parameters:
-
-1.  `#!xs int scxPlayerId`: The player to get the world index (lobby slot) for
+`#!xs int xsGetWorldPlayerId(int scxPlayerId)`
 
 Returns the lobby slot corresponding to the player number (usually the same as color) in the scenario.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | scxPlayerId | The player to get the world index (lobby slot) for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.5. xsGetPlayerCivilization
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerCivilization(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the civilization of
+`#!xs int xsGetPlayerCivilization(int playerId)`
 
 Returns the civilization ID of the given player. Refer to the [Constant Reference](../../constants/constants/#5-aoe2-civs "Jump to: XS Scripting > Constant Reference > 5. AoE2 Civs") for all the different civ IDs
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the civilization of | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.6. xsGetPlayerInGame
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsGetPlayerInGame(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: Check if this player is still alive
+`#!xs bool xsGetPlayerInGame(int playerId)`
 
 Returns true if the player given is still alive, and false otherwise.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | Check if this player is still alive | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 7.7. xsGetPlayerNumberOfTechs
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerNumberOfTechs(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player whose technology count is being requested.
+`#!xs int xsGetPlayerNumberOfTechs(int playerId)`
 
 Returns the number of technologies available to the player in the entire game.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player whose technology count is being requested. | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.8. xsPlayerAttribute
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsPlayerAttribute(int playerId, int resourceId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the resource of (0 for Gaia)
-2.  `#!xs int resourceId`: The ID of the resource to get the amount of
+`#!xs float xsPlayerAttribute(int playerId, int resourceId)`
 
 Returns the amount the specified resource of the given player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the resource of (0 for Gaia) | _Required_ |
+| `#!xs int` | resourceId | The ID of the resource to get the amount of | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 7.9. xsSetPlayerAttribute
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetPlayerAttribute(int playerId, int resourceId, float value)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the resource of (0 for Gaia)
-2.  `#!xs int resourceId`: The ID of the resource to set the amount of
-3.  `#!xs float value`: The amount to set the resource to
+`#!xs void xsSetPlayerAttribute(int playerId, int resourceId, float value)`
 
 Sets the amount of the specified resource of the given player to the provided value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the resource of (0 for Gaia) | _Required_ |
+| `#!xs int` | resourceId | The ID of the resource to set the amount of | _Required_ |
+| `#!xs float` | value | The amount to set the resource to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 7.10. xsGetPlayerName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetPlayerName(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The lobby index of the player
+`#!xs string xsGetPlayerName(int playerId)`
 
 Returns the given player's name.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The lobby index of the player | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 7.11. xsGetPlayerType
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerType(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the type for
+`#!xs int xsGetPlayerType(int playerId)`
 
 Returns the type of player. Refer to the [Constant Reference](../../constants/constants/#19-player-type "Jump to: XS Scripting > Constant Reference > 19. Player Type") for all the different player types
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the type for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.12. xsGetDiplomacy
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetDiplomacy(int sourcePlayerId, int targetPlayerId)`
-
-Parameters:
-
-1.  `#!xs int sourcePlayerId`: The player to get the stance for
-2.  `#!xs int targetPlayerId`: The player to get the stance towards
+`#!xs int xsGetDiplomacy(int sourcePlayerId, int targetPlayerId)`
 
 Returns the source player's stance towards the target player
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | sourcePlayerId | The player to get the stance for | _Required_ |
+| `#!xs int` | targetPlayerId | The player to get the stance towards | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.13. xsSetDiplomacy
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetDiplomacy(int sourcePlayerId, int targetPlayerId, int diploStance, bool mirror)`
-
-Parameters:
-
-1.  `#!xs int sourcePlayerId`: The player to set the stance for
-2.  `#!xs int targetPlayerId`: The player to set the stance towards
-3.  `#!xs int diploStance`: The stance to set
-4. (Optional) `#!xs bool mirror`: If true, make the target player set their stance towards the source player to the same.
+`#!xs bool xsSetDiplomacy(int sourcePlayerId, int targetPlayerId, int diploStance, bool mirror)`
 
 Sets the diplomacy of source player towards the target player
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | sourcePlayerId | The player to set the stance for | _Required_ |
+| `#!xs int` | targetPlayerId | The player to set the stance towards | _Required_ |
+| `#!xs int` | diploStance | The stance to set | _Required_ |
+| `#!xs bool` | mirror | If true, make the target player set their stance towards the source player to the same. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 7.14. xsGetDifficulty
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetDifficulty()`
-
+`#!xs int xsGetDifficulty()`
 
 Returns the difficulty setting for the game. Refer to the [Constant Reference](../../constants/constants/#22-difficulty "Jump to: XS Scripting > Constant Reference > 22. Difficulty") for all the different difficulty IDs
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 7.15. xsDeclareVictory
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsDeclareVictory(int playerId, bool victory)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to make win
-2. (Optional) `#!xs bool victory`: If unset, defeat the player instead
+`#!xs void xsDeclareVictory(int playerId, bool victory)`
 
 Makes a player win or lose the game
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to make win | _Required_ |
+| `#!xs bool` | victory | If unset, defeat the player instead | _Optional_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 7.16. xsGetPlayerCivName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetPlayerCivName(int playerId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the civ name for
-2. (Optional) `#!xs bool localized`: If true, localize the civ name
+`#!xs string xsGetPlayerCivName(int playerId, bool localized)`
 
 Gets the given player's civ name
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the civ name for | _Required_ |
+| `#!xs bool` | localized | If true, localize the civ name | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 7.17. xsSetPlayerCivName
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetPlayerCivName(int playerId, string name)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the civ name for
-2.  `#!xs string name`: The civ name to set to
+`#!xs bool xsSetPlayerCivName(int playerId, string name)`
 
 Sets the given player's civ name to the specified value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the civ name for | _Required_ |
+| `#!xs string` | name | The civ name to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 7.18. xsSetPlayerName
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetPlayerName(int playerId, string name)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the name for
-2.  `#!xs string name`: The name to set to
+`#!xs bool xsSetPlayerName(int playerId, string name)`
 
 Sets the given player's name for the remainder of this game to the specified value
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the name for | _Required_ |
+| `#!xs string` | name | The name to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 7.19. xsSetPlayerColor
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetPlayerColor(int playerId, int colorId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the color for
-2.  `#!xs int colorId`: The color to set to
+`#!xs bool xsSetPlayerColor(int playerId, int colorId)`
 
 Sets the given player's color to the specified value
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the color for | _Required_ |
+| `#!xs int` | colorId | The color to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 7.20. xsSetChatToPlayer
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetChatToPlayer(int targetPlayer, bool enabled)`
-
-Parameters:
-
-1.  `#!xs int targetPlayer`: The player to set the chat setting for
-2.  `#!xs bool enabled`: The value to set the chat setting to
+`#!xs void xsSetChatToPlayer(int targetPlayer, bool enabled)`
 
 Sets the local player's chat setting towards the given player. To be used along with diplomacy-related effects
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | targetPlayer | The player to set the chat setting for | _Required_ |
+| `#!xs bool` | enabled | The value to set the chat setting to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
 
 ## 8. Tasks
 
 ### 8.1. xsTaskAmount
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsTaskAmount(int taskFieldId, float value)`
-
-Parameters:
-
-1.  `#!xs int taskFieldId`: Specifies which property of the task to change. Refer to [cTaskAttr constants](../../constants/constants/#15-task-attribute "Jump To: XS > Constant Reference > 15. Task Type Constants")
-2.  `#!xs float value`: The value to set the task field to
+`#!xs void xsTaskAmount(int taskFieldId, float value)`
 
 Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#8-xsmodifyobjecttasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | taskFieldId | Specifies which property of the task to change. Refer to [cTaskAttr constants](../../constants/constants/#15-task-attribute "Jump To: XS > Constant Reference > 15. Task Type Constants") | _Required_ |
+| `#!xs float` | value | The value to set the task field to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 8.2. xsResetTaskAmount
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsResetTaskAmount()`
-
+`#!xs void xsResetTaskAmount()`
 
 Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#8-xsmodifyobjecttasks).
 
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 8.3. xsGetObjectTaskCount
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectTaskCount(int objectId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The ID of the object to get the number of tasks for
-2.  `#!xs int playerId`: The player whose object to get the number of tasks for
+`#!xs int xsGetObjectTaskCount(int objectId, int playerId)`
 
 Returns the number of tasks the specific object for the given player has
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The ID of the object to get the number of tasks for | _Required_ |
+| `#!xs int` | playerId | The player whose object to get the number of tasks for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 8.4. xsGetUnitTaskCount
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitTaskCount(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The ID of the object to get the number of tasks for
+`#!xs int xsGetUnitTaskCount(int unitId)`
 
 Returns the number of tasks the given unit has
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The ID of the object to get the number of tasks for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 8.5. xsObjectTaskAmount
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsObjectTaskAmount(int objectId, int playerId, int taskId)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The ID of the object to get the task for
-2.  `#!xs int playerId`: The player whose object to get the task for
-3.  `#!xs int taskId`: The ID (index) of the task to get
+`#!xs bool xsObjectTaskAmount(int objectId, int playerId, int taskId)`
 
 Copies the provided task of the specific object from the given player into XS' global task struct
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The ID of the object to get the task for | _Required_ |
+| `#!xs int` | playerId | The player whose object to get the task for | _Required_ |
+| `#!xs int` | taskId | The ID (index) of the task to get | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 8.6. xsUnitTaskAmount
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsUnitTaskAmount(int unitId, int taskId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The ID of the unit to get the task for
-2.  `#!xs int taskId`: The ID (index) of the task to get
+`#!xs bool xsUnitTaskAmount(int unitId, int taskId)`
 
 Copies the provided task of the specific unit into XS' global task struct
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The ID of the unit to get the task for | _Required_ |
+| `#!xs int` | taskId | The ID (index) of the task to get | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 8.7. xsGetTaskAmount
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetTaskAmount(int taskFieldId)`
-
-Parameters:
-
-1.  `#!xs int taskFieldId`: The task field to ge the value for. Refer to the [Constant Reference](../../constants/constants/#15-task-attribute "Jump to: XS Scripting > Constant Reference > 15. Task Attribute") for all the different task field IDs
+`#!xs float xsGetTaskAmount(int taskFieldId)`
 
 Returns the given task field from XS' global task struct.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | taskFieldId | The task field to ge the value for. Refer to the [Constant Reference](../../constants/constants/#15-task-attribute "Jump to: XS Scripting > Constant Reference > 15. Task Attribute") for all the different task field IDs | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 8.8. xsModifyObjectTasks
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsModifyObjectTasks(int objectId, int playerId, int taskId, bool edit)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The ID of the object to modify the task for
-2.  `#!xs int playerId`: The player whose object to modify the task for
-3.  `#!xs int taskId`: The index to insert the task at
-4. (Optional) `#!xs bool edit`: If true, edit the task at the given index instead of inserting (ignored with negative indices)
+`#!xs bool xsModifyObjectTasks(int objectId, int playerId, int taskId, bool edit)`
 
 A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.
 
@@ -1836,17 +2487,24 @@ A copy of the global XS task struct is inserted at the provided index in the tas
 - When `#!xs edit = true`, edit an existing task instead of inserting one.
 - ID `-(N+1)` will remove the task at index N
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The ID of the object to modify the task for | _Required_ |
+| `#!xs int` | playerId | The player whose object to modify the task for | _Required_ |
+| `#!xs int` | taskId | The index to insert the task at | _Required_ |
+| `#!xs bool` | edit | If true, edit the task at the given index instead of inserting (ignored with negative indices) | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 8.9. xsModifyUnitTasks
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsModifyUnitTasks(int unitId, int taskId, bool edit)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The ID of the unit on the map to modify the task for
-2.  `#!xs int taskId`: The index to insert the task at
-3. (Optional) `#!xs bool edit`: If true, edit the task at the given index instead of inserting (ignored with negative indices)
+`#!xs bool xsModifyUnitTasks(int unitId, int taskId, bool edit)`
 
 A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.
 
@@ -1854,945 +2512,1378 @@ A copy of the global XS task struct is inserted at the provided index in the tas
 - When `#!xs edit = true`, edit an existing task instead of inserting one.
 - ID `-(N+1)` will remove the task at index N
 
-### 8.10. xsTask
+#### Parameters
 
-Deprecated: True
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The ID of the unit on the map to modify the task for | _Required_ |
+| `#!xs int` | taskId | The index to insert the task at | _Required_ |
+| `#!xs bool` | edit | If true, edit the task at the given index instead of inserting (ignored with negative indices) | _Optional_ |
 
-Returning Type: `#!xs void`
+#### Return value
+`#!xs bool`
 
-Prototype: `#!xs void xsTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
 
-Parameters:
+---
 
-1.  `#!xs int objectOrClassId`: The object or class ID to add the task to
-2.  `#!xs int actionType`: Task type. Refer to [cTaskType constants](../../constants/constants/#16-task-type "Jump To: XS > Constant Reference > 16. Task Type Constants")
-3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
-4. (Optional) `#!xs int playerId`: The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia.
+<details class="deprecated" markdown="1">
+<summary markdown="block">
+### 8.10. ~~xsTask~~
+
+</summary>
+!!! warning "Deprecated"
+
+    Use `xsModifyObjectTasks` instead.
+
+`#!xs void xsTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
 
 Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#1-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.
 
 Note that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#1-xstaskamount)) and then submitting multiple copies of it for different people)
 
-### 8.11. xsRemoveTask
+#### Parameters
 
-Deprecated: True
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectOrClassId | The object or class ID to add the task to | _Required_ |
+| `#!xs int` | actionType | Task type. Refer to [cTaskType constants](../../constants/constants/#16-task-type "Jump To: XS > Constant Reference > 16. Task Type Constants") | _Required_ |
+| `#!xs int` | targetObjectOrClassId | Target object or class ID for the task to filter by. | _Optional_ |
+| `#!xs int` | playerId | The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia. | _Optional_ |
 
-Returning Type: `#!xs void`
+#### Return value
+`#!xs void`
 
-Prototype: `#!xs void xsRemoveTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
+</details>
 
-Parameters:
 
-1.  `#!xs int objectOrClassId`: The object or class ID to remove the task from.
-2.  `#!xs int actionType`: Task type. Refer to [cTaskType constants](../../constants/constants/#16-task-type "Jump To: XS > Constant Reference > 16. Task Type Constants")
-3. (Optional) `#!xs int targetObjectOrClassId`: Target object or class ID for the task to filter by.
-4. (Optional) `#!xs int playerId`: The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia.
+---
+
+<details class="deprecated" markdown="1">
+<summary markdown="block">
+### 8.11. ~~xsRemoveTask~~
+
+</summary>
+!!! warning "Deprecated"
+
+    Use `xsModifyObjectTasks` instead.
+
+`#!xs void xsRemoveTask(int objectOrClassId, int actionType, int targetObjectOrClassId, int playerId)`
 
 Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#1-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#1-xstask) edits instead of adding a new task)
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectOrClassId | The object or class ID to remove the task from. | _Required_ |
+| `#!xs int` | actionType | Task type. Refer to [cTaskType constants](../../constants/constants/#16-task-type "Jump To: XS > Constant Reference > 16. Task Type Constants") | _Required_ |
+| `#!xs int` | targetObjectOrClassId | Target object or class ID for the task to filter by. | _Optional_ |
+| `#!xs int` | playerId | The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia. | _Optional_ |
+
+#### Return value
+`#!xs void`
+
+</details>
+
+
+---
 
 ## 9. Units And Objects
 
 ### 9.1. xsCreateUnit
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsCreateUnit(int objectId, int playerId, vector location, bool foundation, bool playCreatedSound, bool checkCollision)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The ID of the object to create
-2.  `#!xs int playerId`: The player to create the unit for
-3.  `#!xs vector location`: The location to create the unit at
-4. (Optional) `#!xs bool foundation`: If true, create a foundation (ignored for non buildings)
-5. (Optional) `#!xs bool playCreatedSound`: If false, don't play the unit creation sound
-6. (Optional) `#!xs bool checkCollision`: If false, don't check for collision before creating the unit
+`#!xs int xsCreateUnit(int objectId, int playerId, vector location, bool foundation, bool playCreatedSound, bool checkCollision)`
 
 Creates a unit on the map and returns its ID, or -1 if creation failed
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The ID of the object to create | _Required_ |
+| `#!xs int` | playerId | The player to create the unit for | _Required_ |
+| `#!xs vector` | location | The location to create the unit at | _Required_ |
+| `#!xs bool` | foundation | If true, create a foundation (ignored for non buildings) | _Optional_ |
+| `#!xs bool` | playCreatedSound | If false, don't play the unit creation sound | _Optional_ |
+| `#!xs bool` | checkCollision | If false, don't check for collision before creating the unit | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.2. xsRemoveUnit
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsRemoveUnit(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to remove
+`#!xs bool xsRemoveUnit(int unitId)`
 
 Removes the given unit from the map
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to remove | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.3. xsGetObjectAttribute
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetObjectAttribute(int playerId, int objectId, int attribute, int damageClass)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player whose object to get the attribute for
-2.  `#!xs int objectId`: The object to get the attribute for
-3.  `#!xs int attribute`: The attribute to get
-4.  `#!xs int damageClass`: For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself
+`#!xs float xsGetObjectAttribute(int playerId, int objectId, int attribute, int damageClass)`
 
 Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player whose object to get the attribute for | _Required_ |
+| `#!xs int` | objectId | The object to get the attribute for | _Required_ |
+| `#!xs int` | attribute | The attribute to get | _Required_ |
+| `#!xs int` | damageClass | For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.4. xsGetUnitAttribute
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitAttribute(int unitId, int attribute, int damageClassOrEntryMod)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the attribute for.
-2.  `#!xs int attribute`: The attribute to get
-3.  `#!xs int damageClassOrEntryMod`: For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself
+`#!xs float xsGetUnitAttribute(int unitId, int attribute, int damageClassOrEntryMod)`
 
 Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the attribute for. | _Required_ |
+| `#!xs int` | attribute | The attribute to get | _Required_ |
+| `#!xs int` | damageClassOrEntryMod | For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.5. xsDoesUnitExist
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsDoesUnitExist(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit ID to check
+`#!xs bool xsDoesUnitExist(int unitId)`
 
 Returns true if a unit with the given ID exists on the map.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit ID to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.6. xsGetUnitOwner
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitOwner(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the owner ID for
+`#!xs int xsGetUnitOwner(int unitId)`
 
 Returns the lobby index of the player owning this unit.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the owner ID for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.7. xsGetUnitPosition
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetUnitPosition(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the position for
+`#!xs vector xsGetUnitPosition(int unitId)`
 
 Returns the current position of a unit.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the position for | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 9.8. xsSetUnitPosition
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitPosition(int unitId, vector position, bool checkCollision)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the position for
-2.  `#!xs vector position`: The position to set
-3. (Optional) `#!xs bool checkCollision`: If false, don't check for collision before moving the unit
+`#!xs bool xsSetUnitPosition(int unitId, vector position, bool checkCollision)`
 
 Sets the given unit's position.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the position for | _Required_ |
+| `#!xs vector` | position | The position to set | _Required_ |
+| `#!xs bool` | checkCollision | If false, don't check for collision before moving the unit | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.9. xsGetUnitName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetUnitName(int unitId, bool internalName)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit ID to check
-2. (Optional) `#!xs bool internalName`: Returns the internal name of the unit if set. `!#xs false` by default.
+`#!xs string xsGetUnitName(int unitId, bool internalName)`
 
 Returns the current name of a given unit
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit ID to check | _Required_ |
+| `#!xs bool` | internalName | Returns the internal name of the unit if set. `!#xs false` by default. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 9.10. xsGetObjectName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetObjectName(int objectId, int playerId, bool internalName)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The object to get the name for
-2.  `#!xs int playerId`: The player to get the object's name for
-3. (Optional) `#!xs bool internalName`: Returns the internal name of the object if set. `!#xs false` by default.
+`#!xs string xsGetObjectName(int objectId, int playerId, bool internalName)`
 
 Returns the current name of the given object for the specified player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The object to get the name for | _Required_ |
+| `#!xs int` | playerId | The player to get the object's name for | _Required_ |
+| `#!xs bool` | internalName | Returns the internal name of the object if set. `!#xs false` by default. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 9.11. xsGetUnitTargetUnitId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitTargetUnitId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the target for
+`#!xs int xsGetUnitTargetUnitId(int unitId)`
 
 Returns the ID of the currently targeted unit for this unit
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the target for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.12. xsGetUnitMoveTarget
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetUnitMoveTarget(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the movement target for
+`#!xs vector xsGetUnitMoveTarget(int unitId)`
 
 Returns the location this unit is currently moving to
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the movement target for | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 9.13. xsGetUnitGroupId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitGroupId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the group ID (formation) for
+`#!xs int xsGetUnitGroupId(int unitId)`
 
 Returns the ID of the group (formation) for this unit
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the group ID (formation) for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.14. xsGetGroupMoveTarget
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetGroupMoveTarget(int groupId)`
-
-Parameters:
-
-1.  `#!xs int groupId`: The group (formation) to get the movement target for
+`#!xs vector xsGetGroupMoveTarget(int groupId)`
 
 Returns the location this group (formation) is currently moving to
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | groupId | The group (formation) to get the movement target for | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 9.15. xsIsObjectAvailable
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsIsObjectAvailable(int objectId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The object to check the availability for
-2.  `#!xs int playerId`: The player to get the object's availability for
+`#!xs bool xsIsObjectAvailable(int objectId, int playerId)`
 
 Returns true if this object can currently be trained or built.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The object to check the availability for | _Required_ |
+| `#!xs int` | playerId | The player to get the object's availability for | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.16. xsGetUnitHitpoints
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitHitpoints(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the HP for
+`#!xs float xsGetUnitHitpoints(int unitId)`
 
 Returns the given unit's HP
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the HP for | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.17. xsSetUnitHitpoints
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitHitpoints(int unitId, float value)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the HP for
-2.  `#!xs float value`: The value to set the HP to
+`#!xs bool xsSetUnitHitpoints(int unitId, float value)`
 
 Sets the given unit's HP
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the HP for | _Required_ |
+| `#!xs float` | value | The value to set the HP to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.18. xsGetUnitBuildPoints
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitBuildPoints(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the Build Points for
+`#!xs float xsGetUnitBuildPoints(int unitId)`
 
 Returns the given unit's Built Points
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the Build Points for | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.19. xsSetUnitBuildPoints
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitBuildPoints(int unitId, float value)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the build points for
-2.  `#!xs float value`: The value to set the build points to
+`#!xs bool xsSetUnitBuildPoints(int unitId, float value)`
 
 Sets the given unit's Build Points
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the build points for | _Required_ |
+| `#!xs float` | value | The value to set the build points to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.20. xsGetUnitObjectId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitObjectId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the object ID for
+`#!xs int xsGetUnitObjectId(int unitId)`
 
 Returns the given unit's ID in data
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the object ID for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.21. xsGetUnitCopyId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitCopyId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the copy ID for
+`#!xs int xsGetUnitCopyId(int unitId)`
 
 Returns the given unit's copy ID in data
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the copy ID for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.22. xsGetObjectCopyId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectCopyId(int playerId, int objectId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object's copy ID for
-2.  `#!xs int objectId`: The object to get the copy ID for
+`#!xs int xsGetObjectCopyId(int playerId, int objectId)`
 
 Returns the given object's copy ID in data for the specified player
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the object's copy ID for | _Required_ |
+| `#!xs int` | objectId | The object to get the copy ID for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.23. xsGetUnitClass
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitClass(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the class for
+`#!xs int xsGetUnitClass(int unitId)`
 
 Returns the given unit's class See [cClass constants](../../constants/constants/#12-object-class "Jump To: XS > Constant Reference > 12. Object Class")
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the class for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.24. xsGetObjectClass
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectClass(int playerId, int objectId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object's class for
-2.  `#!xs int objectId`: The object to get the class for
+`#!xs int xsGetObjectClass(int playerId, int objectId)`
 
 Returns the given object's class for the specified player. See [cClass constants](../../constants/constants/#12-object-class "Jump To: XS > Constant Reference > 12. Object Class")
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the object's class for | _Required_ |
+| `#!xs int` | objectId | The object to get the class for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.25. xsGetUnitType
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitType(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the type for
+`#!xs int xsGetUnitType(int unitId)`
 
 Returns the given unit's type. See [cObjectType constants](../../constants/constants/#18-object-type "Jump To: XS > Constant Reference > 18. Object Type")
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the type for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.26. xsGetObjectType
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectType(int playerId, int objectId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object's type for
-2.  `#!xs int objectId`: The object to get the type for
+`#!xs int xsGetObjectType(int playerId, int objectId)`
 
 Returns the given object's type for the specified player. See [cObjectType constants](../../constants/constants/#18-object-type "Jump To: XS > Constant Reference > 18. Object Type")
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the object's type for | _Required_ |
+| `#!xs int` | objectId | The object to get the type for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.27. xsGetUnitAttributeTypesHeld
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetUnitAttributeTypesHeld(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the held resource types for
+`#!xs int xsGetUnitAttributeTypesHeld(int unitId)`
 
 Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the held resource types for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.28. xsGetUnitAttributeHeld
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitAttributeHeld(int unitId, int attributeId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the resource held for
-2. (Optional) `#!xs int attributeId`: The ID of the resource to get. If unspecified, return the first resource which the unit holds
+`#!xs float xsGetUnitAttributeHeld(int unitId, int attributeId)`
 
 Returns the given unit's amount of the specified resource held.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the resource held for | _Required_ |
+| `#!xs int` | attributeId | The ID of the resource to get. If unspecified, return the first resource which the unit holds | _Optional_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.29. xsSetUnitAttributeHeld
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitAttributeHeld(int unitId, float value, int attributeId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the resource held for
-2.  `#!xs float value`: The amount to set the held resource to
-3. (Optional) `#!xs int attributeId`: The ID of the resource to set. If unspecified, sets the first resource which the unit holds
+`#!xs bool xsSetUnitAttributeHeld(int unitId, float value, int attributeId)`
 
 Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the resource held for | _Required_ |
+| `#!xs float` | value | The amount to set the held resource to | _Required_ |
+| `#!xs int` | attributeId | The ID of the resource to set. If unspecified, sets the first resource which the unit holds | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.30. xsGetUnitCharge
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitCharge(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the charge for
+`#!xs float xsGetUnitCharge(int unitId)`
 
 Returns the given unit's charge
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the charge for | _Required_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.31. xsSetUnitCharge
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitCharge(int unitId, float value)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the charge for
-2.  `#!xs float value`: The value to set the charge to
+`#!xs bool xsSetUnitCharge(int unitId, float value)`
 
 Sets the given unit's charge
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the charge for | _Required_ |
+| `#!xs float` | value | The value to set the charge to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.32. xsGetGarrisonedInUnitId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetGarrisonedInUnitId(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the garrisoned in
+`#!xs int xsGetGarrisonedInUnitId(int unitId)`
 
 Returns the ID of the unit in which this unit is garrisoned in
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the garrisoned in | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.33. xsGetGarrisonedUnitIds
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetGarrisonedUnitIds(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the garrisoned objects for
+`#!xs int xsGetGarrisonedUnitIds(int unitId)`
 
 Returns an int array which contains the IDs of all the units garrisoned inside this unit
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the garrisoned objects for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.34. xsGetObjectCount
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectCount(int playerId, int objectOrClassId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object count for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to get the count for
+`#!xs int xsGetObjectCount(int playerId, int objectOrClassId)`
 
 Returns the number of currently alive objects with the given ID of the specified player
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the object count for | _Required_ |
+| `#!xs int` | objectOrClassId | The ID of the object or class to get the count for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.35. xsGetObjectCountTotal
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetObjectCountTotal(int playerId, int objectOrClassId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the object count for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to get the count for
+`#!xs int xsGetObjectCountTotal(int playerId, int objectOrClassId)`
 
 Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the object count for | _Required_ |
+| `#!xs int` | objectOrClassId | The ID of the object or class to get the count for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.36. xsObjectHasAction
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsObjectHasAction(int playerId, int objectOrClassId, int actionId, int targetPlayerId, int targetType, int targetUnitLevel)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to check unit actions for
-2.  `#!xs int objectOrClassId`: The ID of the object or class to check actions for
-3.  `#!xs int actionId`: The type of action to check for
-4. (Optional) `#!xs int targetPlayerId`: Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter.
-5. (Optional) `#!xs int targetType`: Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter.
-6. (Optional) `#!xs int targetUnitLevel`: Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter.
+`#!xs bool xsObjectHasAction(int playerId, int objectOrClassId, int actionId, int targetPlayerId, int targetType, int targetUnitLevel)`
 
 Checks and returns if any unit matching the set filters of the given player has the specified action.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to check unit actions for | _Required_ |
+| `#!xs int` | objectOrClassId | The ID of the object or class to check actions for | _Required_ |
+| `#!xs int` | actionId | The type of action to check for | _Required_ |
+| `#!xs int` | targetPlayerId | Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter. | _Optional_ |
+| `#!xs int` | targetType | Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter. | _Optional_ |
+| `#!xs int` | targetUnitLevel | Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.37. xsIsObjectValid
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsIsObjectValid(int objectId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int objectId`: The object ID to check
-2.  `#!xs int playerId`: The player to check the ID for
+`#!xs bool xsIsObjectValid(int objectId, int playerId)`
 
 Checks if the supplied object ID is valid for the given player (e.g. Gaia only units)
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | objectId | The object ID to check | _Required_ |
+| `#!xs int` | playerId | The player to check the ID for | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.38. xsGetPlayerNumberOfObjects
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetPlayerNumberOfObjects(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the number of data objects for
+`#!xs int xsGetPlayerNumberOfObjects(int playerId)`
 
 Returns the number of data objects for this player
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the number of data objects for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 9.39. xsTrainObject
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsTrainObject(int buildingId, int objectId, int count)`
-
-Parameters:
-
-1.  `#!xs int buildingId`: The building to train the objects at
-2.  `#!xs int objectId`: The ID of the object to train
-3.  `#!xs int count`: The number of objects to queue
+`#!xs bool xsTrainObject(int buildingId, int objectId, int count)`
 
 Queues the given number of objects at the specified building. The object must be available at the building and the player must have sufficient resources to queue all the units. If resources are insufficient to cover all of the units, only units which can be afforded are queued. Resources are deducted from the player for this. **Note**: The base ID of upgraded units must be used, i.e. to train an Arbalest at the Archery Range, the `objectId` specified needs to be of the Archer itself. Same as the editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | buildingId | The building to train the objects at | _Required_ |
+| `#!xs int` | objectId | The ID of the object to train | _Required_ |
+| `#!xs int` | count | The number of objects to queue | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.40. xsSetUnitGatherPoint
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitGatherPoint(int buildingId, vector position, int unitId)`
-
-Parameters:
-
-1.  `#!xs int buildingId`: The building to set the gather point of
-2.  `#!xs vector position`: The position at which the gather point should be set
-3. (Optional) `#!xs int unitId`: If specified, set the gather point on this unit. Takes priority over `position`
+`#!xs bool xsSetUnitGatherPoint(int buildingId, vector position, int unitId)`
 
 Sets the gather point of the given building to the specified location/unit
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | buildingId | The building to set the gather point of | _Required_ |
+| `#!xs vector` | position | The position at which the gather point should be set | _Required_ |
+| `#!xs int` | unitId | If specified, set the gather point on this unit. Takes priority over `position` | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.41. xsGetUnitGatherPoint
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsGetUnitGatherPoint(int buildingId)`
-
-Parameters:
-
-1.  `#!xs int buildingId`: The building to get the gather point for
+`#!xs vector xsGetUnitGatherPoint(int buildingId)`
 
 Gets the gather point of the specified building. If the gather point is set on an object, the Z value of the vector contains the unit ID. In that case, the X and Y values should be ignored.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | buildingId | The building to get the gather point for | _Required_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 9.42. xsGetUnitCaption
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetUnitCaption(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the caption for
+`#!xs string xsGetUnitCaption(int unitId)`
 
 Gets the specified unit's caption string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the caption for | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 9.43. xsSetUnitCaption
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitCaption(int unitId, string caption)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the caption for.
-2.  `#!xs string caption`: The caption string to set to
+`#!xs bool xsSetUnitCaption(int unitId, string caption)`
 
 Sets the specified unit's caption to the given string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the caption for. | _Required_ |
+| `#!xs string` | caption | The caption string to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.44. xsSetUnitName
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitName(int unitId, string name)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the name for
-2.  `#!xs string name`: The name to set to
+`#!xs bool xsSetUnitName(int unitId, string name)`
 
 Sets the given unit's name.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the name for | _Required_ |
+| `#!xs string` | name | The name to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.45. xsGetUnitCivName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetUnitCivName(int unitId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the civ name for
-2. (Optional) `#!xs bool localized`: If true, localize the civ name
+`#!xs string xsGetUnitCivName(int unitId, bool localized)`
 
 Gets the given unit's civ name.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the civ name for | _Required_ |
+| `#!xs bool` | localized | If true, localize the civ name | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 9.46. xsSetUnitCivName
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitCivName(int unitId, string name)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the civ name for
-2.  `#!xs string name`: The name to set as the civ name
+`#!xs bool xsSetUnitCivName(int unitId, string name)`
 
 Sets the given unit's civ name to the specified value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the civ name for | _Required_ |
+| `#!xs string` | name | The name to set as the civ name | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.47. xsGetUnitPlayerName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetUnitPlayerName(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the player name for
+`#!xs string xsGetUnitPlayerName(int unitId)`
 
 Gets the given unit's player name.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the player name for | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 9.48. xsSetUnitPlayerName
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitPlayerName(int unitId, string name)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the player name for
-2.  `#!xs string name`: The name to set the player name to
+`#!xs bool xsSetUnitPlayerName(int unitId, string name)`
 
 Sets the given unit's player name to the specified value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the player name for | _Required_ |
+| `#!xs string` | name | The name to set the player name to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.49. xsSetObjectDescription
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetObjectDescription(int playerId, int objectId, string description)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the object description for
-2.  `#!xs int objectId`: The ID of the object to set the description for
-3.  `#!xs string description`: The description to set
+`#!xs bool xsSetObjectDescription(int playerId, int objectId, string description)`
 
 Sets the given object's description to the specified value for the provided player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the object description for | _Required_ |
+| `#!xs int` | objectId | The ID of the object to set the description for | _Required_ |
+| `#!xs string` | description | The description to set | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.50. xsGetUnitProperty
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsGetUnitProperty(int unitId, int property, int typeOrPlayer)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to get the property for
-2.  `#!xs int property`: The property to get. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants)
-3. (Optional) `#!xs int typeOrPlayer`: Resource ID when getting attributes held or player when getting unit visibility
+`#!xs float xsGetUnitProperty(int unitId, int property, int typeOrPlayer)`
 
 Gets the specified property for the given unit.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to get the property for | _Required_ |
+| `#!xs int` | property | The property to get. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants) | _Required_ |
+| `#!xs int` | typeOrPlayer | Resource ID when getting attributes held or player when getting unit visibility | _Optional_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 9.51. xsSetUnitProperty
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitProperty(int unitId, int property, float value, int typeOrForce)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the property for
-2.  `#!xs int property`: The property to set. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants)
-3.  `#!xs float value`: The value to set the property to
-4. (Optional) `#!xs int typeOrForce`: Resource ID when setting attributes held or force when setting garrisoned in ID or unit visibility
+`#!xs bool xsSetUnitProperty(int unitId, int property, float value, int typeOrForce)`
 
 Sets the specified property for the given unit to the provided value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the property for | _Required_ |
+| `#!xs int` | property | The property to set. See [cUnit Property Constants](../../constants/constants/#32-unit-property-constants) | _Required_ |
+| `#!xs float` | value | The value to set the property to | _Required_ |
+| `#!xs int` | typeOrForce | Resource ID when setting attributes held or force when setting garrisoned in ID or unit visibility | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.52. xsSetUnitOwner
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetUnitOwner(int unitId, int playerId, bool flashObject)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to set the owner for
-2.  `#!xs int playerId`: The new owner
-3. (Optional) `#!xs bool flashObject`: If false, do not flash the object on ownership change
+`#!xs bool xsSetUnitOwner(int unitId, int playerId, bool flashObject)`
 
 Changes the owner of the given unit to the specified player. Same as the editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to set the owner for | _Required_ |
+| `#!xs int` | playerId | The new owner | _Required_ |
+| `#!xs bool` | flashObject | If false, do not flash the object on ownership change | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.53. xsFlashUnit
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsFlashUnit(int unitId, int playerId, int soundName)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to flash
-2. (Optional) `#!xs int playerId`: If set, flash only for this player. Otherwise flash for all players (Default: `#!xs -1`)
-3. (Optional) `#!xs int soundName`: Defaults to "?capture_complete"
+`#!xs bool xsFlashUnit(int unitId, int playerId, int soundName)`
 
 Flashes the given unit. Same as the editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to flash | _Required_ |
+| `#!xs int` | playerId | If set, flash only for this player. Otherwise flash for all players (Default: `#!xs -1`) | _Optional_ |
+| `#!xs int` | soundName | Defaults to "?capture_complete" | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.54. xsStopUnit
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsStopUnit(int unitId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to stop
+`#!xs bool xsStopUnit(int unitId)`
 
 Stops the unit. Same as the editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to stop | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.55. xsBuildUnit
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsBuildUnit(int unitIds, int objectId, vector location1, vector location2, bool isShiftQueue, bool isFormationCommand)`
-
-Parameters:
-
-1.  `#!xs int unitIds`: The units to task
-2.  `#!xs int objectId`: The object to build
-3.  `#!xs vector location1`: The location to build at
-4. (Optional) `#!xs vector location2`: When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`)
-5. (Optional) `#!xs bool isShiftQueue`: If true, shift queue the units
-6. (Optional) `#!xs bool isFormationCommand`: If true, issue a formation command to the units
+`#!xs bool xsBuildUnit(int unitIds, int objectId, vector location1, vector location2, bool isShiftQueue, bool isFormationCommand)`
 
 Tasks the selected units to build the given object at the specified location. The target location must be visible, the building must be available to the selected units, and the player must have sufficient resources to construct the building. Resources are deducted upon building. Same as the editor effect
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitIds | The units to task | _Required_ |
+| `#!xs int` | objectId | The object to build | _Required_ |
+| `#!xs vector` | location1 | The location to build at | _Required_ |
+| `#!xs vector` | location2 | When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`) | _Optional_ |
+| `#!xs bool` | isShiftQueue | If true, shift queue the units | _Optional_ |
+| `#!xs bool` | isFormationCommand | If true, issue a formation command to the units | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 9.56. xsTaskUnits
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsTaskUnits(int unitIds, int actionType, vector location, int locationUnitId, bool isShiftQueue, bool isFormationCommand, bool shouldPlayUnloadSound, int patrolPoints)`
-
-Parameters:
-
-1.  `#!xs int unitIds`: The units to task
-2.  `#!xs int actionType`: The action to issue. See [cActionType Constants](../../constants/constants/#38-action-type-constants "Jump to: XS Scripting > Constant Reference > 38. Action Type Constants")
-3. (Optional) `#!xs vector location`: The location at which to task the units
-4. (Optional) `#!xs int locationUnitId`: The unit to task the selected units to
-5. (Optional) `#!xs bool isShiftQueue`: If true, shift queue the units
-6. (Optional) `#!xs bool isFormationCommand`: If true, issue a formation command to the units
-7. (Optional) `#!xs bool shouldPlayUnloadSound`: If true, play the unload sound when ungarrisoning units
-8. (Optional) `#!xs int patrolPoints`: Array of vectors. When tasking units to patrol, use this if multiple patrol points are desired. `isShiftQueue` must be set to `#!xs false` when using this.
+`#!xs bool xsTaskUnits(int unitIds, int actionType, vector location, int locationUnitId, bool isShiftQueue, bool isFormationCommand, bool shouldPlayUnloadSound, int patrolPoints)`
 
 Tasks the selected units to perform the given action. Same as the editor effect.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitIds | The units to task | _Required_ |
+| `#!xs int` | actionType | The action to issue. See [cActionType Constants](../../constants/constants/#38-action-type-constants "Jump to: XS Scripting > Constant Reference > 38. Action Type Constants") | _Required_ |
+| `#!xs vector` | location | The location at which to task the units | _Optional_ |
+| `#!xs int` | locationUnitId | The unit to task the selected units to | _Optional_ |
+| `#!xs bool` | isShiftQueue | If true, shift queue the units | _Optional_ |
+| `#!xs bool` | isFormationCommand | If true, issue a formation command to the units | _Optional_ |
+| `#!xs bool` | shouldPlayUnloadSound | If true, play the unload sound when ungarrisoning units | _Optional_ |
+| `#!xs int` | patrolPoints | Array of vectors. When tasking units to patrol, use this if multiple patrol points are desired. `isShiftQueue` must be set to `#!xs false` when using this. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ## 10. Map
 
 ### 10.1. xsGetMapName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetMapName(bool showFileExtension)`
-
-Parameters:
-
-1.  `#!xs bool showFileExtension`: If this is set to true, then the returned name also contains the file extension
+`#!xs string xsGetMapName(bool showFileExtension)`
 
 Returns the name of the map currently being played.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs bool` | showFileExtension | If this is set to true, then the returned name also contains the file extension | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 10.2. xsGetMapID
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapID()`
-
+`#!xs int xsGetMapID()`
 
 Returns the AI map type.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 10.3. xsGetMapHeight
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapHeight()`
-
+`#!xs int xsGetMapHeight()`
 
 Returns the Height of the map.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 10.4. xsGetMapWidth
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapWidth()`
-
+`#!xs int xsGetMapWidth()`
 
 Returns the Width of the map.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 10.5. xsGetColorMood
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetColorMood()`
-
+`#!xs int xsGetColorMood()`
 
 Returns the current color mood of the map. Refer to the [Constant Reference](../../constants/constants/#21-color-mood "Jump to: XS Scripting > Constant Reference > 21. Color Mood") for all the different color mood IDs
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 10.6. xsSetColorMood
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetColorMood(int colorMood, int interval)`
-
-Parameters:
-
-1.  `#!xs int colorMood`: The color mood to set
-2. (Optional) `#!xs int interval`: The transition duration in seconds
+`#!xs bool xsSetColorMood(int colorMood, int interval)`
 
 Sets the color mood of the map with a transition time. Refer to the [Constant Reference](../../constants/constants/#21-color-mood "Jump to: XS Scripting > Constant Reference > 21. Color Mood") for all the different color mood IDs
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | colorMood | The color mood to set | _Required_ |
+| `#!xs int` | interval | The transition duration in seconds | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 10.7. xsGetMapSeed
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapSeed()`
-
+`#!xs int xsGetMapSeed()`
 
 Gets the current RMS seed or -1 in the editor.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 10.8. xsTriggerVariable
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsTriggerVariable(int variableId)`
-
-Parameters:
-
-1.  `#!xs int variableId`: The ID of the variable to get the value of
+`#!xs int xsTriggerVariable(int variableId)`
 
 Returns the value of the variable of the given variable ID. Note: This only works in a custom scenario
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | variableId | The ID of the variable to get the value of | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 10.9. xsSetTriggerVariable
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetTriggerVariable(int variableId, int value)`
-
-Parameters:
-
-1.  `#!xs int variableId`: The ID of the variable to set the value of
-2.  `#!xs int value`: The value to set the variable to
+`#!xs void xsSetTriggerVariable(int variableId, int value)`
 
 Sets the value of the variable of the given variable ID to the provided value. Note: This only works in a custom scenario
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | variableId | The ID of the variable to set the value of | _Required_ |
+| `#!xs int` | value | The value to set the variable to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 10.10. xsGetMapTileAttribute
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetMapTileAttribute(int x, int y, int attributeId)`
-
-Parameters:
-
-1.  `#!xs int x`: The X value of the tile to get the attribute of
-2.  `#!xs int y`: The Y value fo the tile to get the attribute of
-3.  `#!xs int attributeId`: The attribute to get. See [cTile constants](../../constants/constants/#30-map-tile-constants "Jump To: XS > Constant Reference > 30. Map Tile Constants")
+`#!xs int xsGetMapTileAttribute(int x, int y, int attributeId)`
 
 Gets the specified attribute for the given tile.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | x | The X value of the tile to get the attribute of | _Required_ |
+| `#!xs int` | y | The Y value fo the tile to get the attribute of | _Required_ |
+| `#!xs int` | attributeId | The attribute to get. See [cTile constants](../../constants/constants/#30-map-tile-constants "Jump To: XS > Constant Reference > 30. Map Tile Constants") | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ## 11. Game Info
 
 ### 11.1. xsGetNumPlayers
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetNumPlayers()`
-
+`#!xs int xsGetNumPlayers()`
 
 Returns the number of players in the game
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.2. xsGetTime
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetTime()`
-
+`#!xs int xsGetTime()`
 
 Returns the current game time - 1 in seconds
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.3. xsGetGameTime
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetGameTime()`
-
+`#!xs int xsGetGameTime()`
 
 Returns the current game time in seconds
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.4. xsGetWorldTime
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetWorldTime()`
-
+`#!xs int xsGetWorldTime()`
 
 Returns the current game time in milliseconds
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.5. xsGetTurn
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetTurn()`
-
+`#!xs int xsGetTurn()`
 
 Returns the current game tick (called turn). Note: ticks may differ in games and replays
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.6. xsGetVictoryType
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryType()`
-
+`#!xs int xsGetVictoryType()`
 
 Returns an integer corresponding to different victory settings in game. These are:
 
@@ -2808,1064 +3899,1520 @@ Returns an integer corresponding to different victory settings in game. These ar
 
 Last Man Standing returns 0 as well.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.7. xsGetVictoryPlayer
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryPlayer()`
-
+`#!xs int xsGetVictoryPlayer()`
 
 Returns the number of the player with the highest score in a normal game. Returns the number of the player who owns 5 relics or has a wonder if standard victory is enabled. In a game like KoTH, returns the number of the player who owns the monument.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.8. xsGetVictoryPlayerForSecondaryGameMode
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryPlayerForSecondaryGameMode()`
-
+`#!xs int xsGetVictoryPlayerForSecondaryGameMode()`
 
 Returns `1` when no secondary game mode is set. Returns the number of the player who owns the monument in game modes like KotH
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.9. xsGetVictoryTime
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryTime()`
-
+`#!xs int xsGetVictoryTime()`
 
 For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ### 11.10. xsGetVictoryTimeForSecondaryGameMode
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryTimeForSecondaryGameMode()`
-
+`#!xs int xsGetVictoryTimeForSecondaryGameMode()`
 
 For game modes like KoTH and other game modes where there is a timer on the screen, it returns the amount of time left in half seconds. meaning if the value returned is 799, it means there are 399.5s remaining. Returns `-1` otherwise
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.11. xsGetVictoryCondition
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryCondition()`
-
+`#!xs int xsGetVictoryCondition()`
 
 Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ### 11.12. xsGetVictoryConditionForSecondaryGameMode
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetVictoryConditionForSecondaryGameMode()`
-
+`#!xs int xsGetVictoryConditionForSecondaryGameMode()`
 
 Returns one of these constants: `cStandardVictory` `cWonderVictory` `cRelicVictory` `cKingOfTheHillVictory`
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 11.13. xsGetCivName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetCivName(int civId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int civId`: The
-2. (Optional) `#!xs bool localized`: If true, localize the civ name
+`#!xs string xsGetCivName(int civId, bool localized)`
 
 Gets the given civ's name
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | civId | The | _Required_ |
+| `#!xs bool` | localized | If true, localize the civ name | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
 
 ## 12. Ui
 
 ### 12.1. xsChatData
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsChatData(string message, int value)`
-
-Parameters:
-
-1.  `#!xs string message`: The message to display in chat
-2. (Optional) `#!xs int value`: This value is inserted in place of any `%d` used in the message of the function
+`#!xs void xsChatData(string message, int value)`
 
 Shows the given message in the game chat
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | message | The message to display in chat | _Required_ |
+| `#!xs int` | value | This value is inserted in place of any `%d` used in the message of the function | _Optional_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 12.2. xsGetLocale
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetLocale()`
-
+`#!xs int xsGetLocale()`
 
 Gets the locale of the current player. See the [cLocale constants](../../constants/constants/#24-locale "Jump To: XS > Constant Reference > 24. Locale"). Note: this function returns a unique value for every player, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 12.3. xsGetString
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetString(int stringId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int stringId`: The string ID to get
-2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+`#!xs string xsGetString(int stringId, bool localized)`
 
 Gets the string associated with a given string ID
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | stringId | The string ID to get | _Required_ |
+| `#!xs bool` | localized | If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 12.4. xsGetPlayerAttributeName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetPlayerAttributeName(int stringId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int stringId`: The resource ID to get the editor name for
-2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+`#!xs string xsGetPlayerAttributeName(int stringId, bool localized)`
 
 
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | stringId | The resource ID to get the editor name for | _Required_ |
+| `#!xs bool` | localized | If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
 
 ### 12.5. xsGetObjectAttributeName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetObjectAttributeName(int attributeId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int attributeId`: The ID of the attribute to get the name for
-2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+`#!xs string xsGetObjectAttributeName(int attributeId, bool localized)`
 
 
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | attributeId | The ID of the attribute to get the name for | _Required_ |
+| `#!xs bool` | localized | If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
 
 ### 12.6. xsGetDamageClassName
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetDamageClassName(int damageClassId, bool localized)`
-
-Parameters:
-
-1.  `#!xs int damageClassId`: The ID of the damage class to get the name for
-2. (Optional) `#!xs bool localized`: If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync.
+`#!xs string xsGetDamageClassName(int damageClassId, bool localized)`
 
 
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | damageClassId | The ID of the damage class to get the name for | _Required_ |
+| `#!xs bool` | localized | If true, localize the returned string based on the current langauge of the player. Note: Using this parameter will make this function possibly return a unique value for different players, and should only be used for strings/chat/UI related functionality, otherwise it will cause a desync. | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
 
 ### 12.7. xsPlaySound
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsPlaySound(string eventOrSoundFileName, int playerId, vector position, float angle, int unitId, bool global)`
-
-Parameters:
-
-1.  `#!xs string eventOrSoundFileName`: The sound event name to fire for the given `unitId` or the sound file name to play
-2. (Optional) `#!xs int playerId`: If set to -1, play for all players. Otherwise play only for the specified player.
-3. (Optional) `#!xs vector position`: If set, play a local sound at this position.
-4. (Optional) `#!xs float angle`: If set, play a directional sound from the specified position.
-5. (Optional) `#!xs int unitId`: If set, play the sound from this unit.
-6. (Optional) `#!xs bool global`: If set, play the sound on the whole map.
+`#!xs bool xsPlaySound(string eventOrSoundFileName, int playerId, vector position, float angle, int unitId, bool global)`
 
 
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | eventOrSoundFileName | The sound event name to fire for the given `unitId` or the sound file name to play | _Required_ |
+| `#!xs int` | playerId | If set to -1, play for all players. Otherwise play only for the specified player. | _Optional_ |
+| `#!xs vector` | position | If set, play a local sound at this position. | _Optional_ |
+| `#!xs float` | angle | If set, play a directional sound from the specified position. | _Optional_ |
+| `#!xs int` | unitId | If set, play the sound from this unit. | _Optional_ |
+| `#!xs bool` | global | If set, play the sound on the whole map. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ### 12.8. xsDisplayInstructions
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsDisplayInstructions(string msg, int time, int sourcePlayer, int iconObjectId, int panelPosition, bool useTagColorForIcon, bool playNotificationSound, string soundFilename, int playerId)`
-
-Parameters:
-
-1.  `#!xs string msg`: The message to show
-2.  `#!xs int time`: The time to show the instructions for in seconds
-3.  `#!xs int sourcePlayer`: The player to use for the icon's civ and colour
-4. (Optional) `#!xs int iconObjectId`: If set, shows the icon of this object on the instruction panel
-5. (Optional) `#!xs int panelPosition`: The location to show the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#23-panel "Jump To: XS > Constant Reference > 23. Panel")
-6. (Optional) `#!xs bool useTagColorForIcon`: If set, uses the `<TAG>` color used in `msg` for the icon as well.
-7. (Optional) `#!xs bool playNotificationSound`: If unset, do not play the instruction notification sound.
-8. (Optional) `#!xs string soundFilename`: If `playSound` is enabled, plays this sound file.
-9. (Optional) `#!xs int playerId`: If set to -1, show for all players. Otherwise show only for the specified player.
+`#!xs bool xsDisplayInstructions(string msg, int time, int sourcePlayer, int iconObjectId, int panelPosition, bool useTagColorForIcon, bool playNotificationSound, string soundFilename, int playerId)`
 
 Same as the Display Instructions editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | msg | The message to show | _Required_ |
+| `#!xs int` | time | The time to show the instructions for in seconds | _Required_ |
+| `#!xs int` | sourcePlayer | The player to use for the icon's civ and colour | _Required_ |
+| `#!xs int` | iconObjectId | If set, shows the icon of this object on the instruction panel | _Optional_ |
+| `#!xs int` | panelPosition | The location to show the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#23-panel "Jump To: XS > Constant Reference > 23. Panel") | _Optional_ |
+| `#!xs bool` | useTagColorForIcon | If set, uses the `<TAG>` color used in `msg` for the icon as well. | _Optional_ |
+| `#!xs bool` | playNotificationSound | If unset, do not play the instruction notification sound. | _Optional_ |
+| `#!xs string` | soundFilename | If `playSound` is enabled, plays this sound file. | _Optional_ |
+| `#!xs int` | playerId | If set to -1, show for all players. Otherwise show only for the specified player. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.9. xsClearInstructions
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsClearInstructions(int panelPosition, int playerId)`
-
-Parameters:
-
-1. (Optional) `#!xs int panelPosition`: The location to clear the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#24-panel "Jump To: XS > Constant Reference > 24. Panel")
-2. (Optional) `#!xs int playerId`: If set to -1, clear for all players. Otherwise clear only for the specified player.
+`#!xs bool xsClearInstructions(int panelPosition, int playerId)`
 
 Same as the Clear Instructions editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | panelPosition | The location to clear the instructions panel in. Default: `cPanelTop`. See the [cPanel constants](../../constants/constants/#24-panel "Jump To: XS > Constant Reference > 24. Panel") | _Optional_ |
+| `#!xs int` | playerId | If set to -1, clear for all players. Otherwise clear only for the specified player. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.10. xsDisplayTimer
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsDisplayTimer(int timerId, string msg, int time, int timerUnit, bool resetTimer, int playerId)`
-
-Parameters:
-
-1.  `#!xs int timerId`: The timer ID to use to show the instructions for in seconds
-2.  `#!xs string msg`: The message to show. You may use <TIMER> or %d to substitute a formatted timer value
-3.  `#!xs int time`: The timeout for the timer
-4. (Optional) `#!xs int timerUnit`: The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit "Jump To: XS > Constant Reference > 25. Timer Unit")
-5. (Optional) `#!xs bool resetTimer`: If unset, duplicate the timer. Note: Do not unset this unless you know what you're doing.
-6. (Optional) `#!xs int playerId`: If set to -1, show for all players. Otherwise show only for the specified player.
+`#!xs bool xsDisplayTimer(int timerId, string msg, int time, int timerUnit, bool resetTimer, int playerId)`
 
 Same as the Display Timer editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | timerId | The timer ID to use to show the instructions for in seconds | _Required_ |
+| `#!xs string` | msg | The message to show. You may use <TIMER> or %d to substitute a formatted timer value | _Required_ |
+| `#!xs int` | time | The timeout for the timer | _Required_ |
+| `#!xs int` | timerUnit | The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit "Jump To: XS > Constant Reference > 25. Timer Unit") | _Optional_ |
+| `#!xs bool` | resetTimer | If unset, duplicate the timer. Note: Do not unset this unless you know what you're doing. | _Optional_ |
+| `#!xs int` | playerId | If set to -1, show for all players. Otherwise show only for the specified player. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.11. xsClearTimer
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsClearTimer(int timerId, int playerId)`
-
-Parameters:
-
-1.  `#!xs int timerId`: The timer ID to clear
-2. (Optional) `#!xs int playerId`: If set to -1, clear for all players. Otherwise clear only for the specified player.
+`#!xs bool xsClearTimer(int timerId, int playerId)`
 
 Same as the Clear Timer editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | timerId | The timer ID to clear | _Required_ |
+| `#!xs int` | playerId | If set to -1, clear for all players. Otherwise clear only for the specified player. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.12. xsUnsyncGetTimerTimeRemaining
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsUnsyncGetTimerTimeRemaining(int timerId, int timerUnit, int playerId)`
-
-Parameters:
-
-1.  `#!xs int timerId`: The timer ID to clear
-2. (Optional) `#!xs int timerUnit`: The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit "Jump To: XS > Constant Reference > 25. Timer Unit")
-3. (Optional) `#!xs int playerId`: If set to -1, clear for all players. Otherwise clear only for the specified player.
+`#!xs float xsUnsyncGetTimerTimeRemaining(int timerId, int timerUnit, int playerId)`
 
 Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, this can possibly return different values for different players and will cause a desync! Use with caution!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | timerId | The timer ID to clear | _Required_ |
+| `#!xs int` | timerUnit | The unit for the timer. Default: `cTimerUnitSeconds`, see the [cTimerUnit constants](../../constants/constants/#25-timer-unit "Jump To: XS > Constant Reference > 25. Timer Unit") | _Optional_ |
+| `#!xs int` | playerId | If set to -1, clear for all players. Otherwise clear only for the specified player. | _Optional_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 12.13. xsSendChat
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSendChat(string msg, int playerId, bool silent)`
-
-Parameters:
-
-1.  `#!xs string msg`: The msg to send
-2. (Optional) `#!xs int playerId`: If set to -1, send for all players. Otherwise send only for the specified player.
-3. (Optional) `#!xs bool silent`: If set, do not play the chat notification sound.
+`#!xs bool xsSendChat(string msg, int playerId, bool silent)`
 
 Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | msg | The msg to send | _Required_ |
+| `#!xs int` | playerId | If set to -1, send for all players. Otherwise send only for the specified player. | _Optional_ |
+| `#!xs bool` | silent | If set, do not play the chat notification sound. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.14. xsUnsyncGetLocalPlayerId
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsUnsyncGetLocalPlayerId()`
-
+`#!xs int xsUnsyncGetLocalPlayerId()`
 
 Gets the ID of the local player. The local player is the ID of the _current_ player, and it is different for every player. Do not use this for anything other than chat/UI things, as it will cause a desync!
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 12.15. xsGetPlayerColorTag
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsGetPlayerColorTag(int playerId)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to get the colour prefix (<TAG>) for
+`#!xs string xsGetPlayerColorTag(int playerId)`
 
 Gets the colour prefix (e.g. <RED>) for a given player. See the [cColor constants](../../constants/constants/#26-color "Jump To: XS > Constant Reference > 26. Color")
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to get the colour prefix (<TAG>) for | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 12.16. xsSetViewPosition
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetViewPosition(int playerId, vector position, int duration)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the view position for. Can be set to `#!xs -1` to apply to all players
-2.  `#!xs vector position`: The position to set the view to
-3. (Optional) `#!xs int duration`: If set, scroll to the destination in this amount of time
+`#!xs bool xsSetViewPosition(int playerId, vector position, int duration)`
 
 Sets the given player's camera to the specified position. Same as the editor effect.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the view position for. Can be set to `#!xs -1` to apply to all players | _Required_ |
+| `#!xs vector` | position | The position to set the view to | _Required_ |
+| `#!xs int` | duration | If set, scroll to the destination in this amount of time | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.17. xsUnsyncGetViewPosition
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsUnsyncGetViewPosition(int playerId)`
-
-Parameters:
-
-1. (Optional) `#!xs int playerId`: When specified, only returns a valid vector if the local player matches this
+`#!xs vector xsUnsyncGetViewPosition(int playerId)`
 
 Gets the local player's view position. Note that this is an unsync function and cannot be used raw in MP.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | When specified, only returns a valid vector if the local player matches this | _Optional_ |
+
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 12.18. xsSetZoom
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetZoom(int playerId, float zoom, float duration)`
-
-Parameters:
-
-1.  `#!xs int playerId`: The player to set the zoom for. Can be set to `#!xs -1` to apply to all players
-2.  `#!xs float zoom`: The zoom level to set to. Clamped between `#!xs 0.75` (Fully zoomed out) and `#!xs 1.25` (Fully zoomed in)
-3. (Optional) `#!xs float duration`: If specified, change the zoom to the target value in this amount of time.
+`#!xs bool xsSetZoom(int playerId, float zoom, float duration)`
 
 Sets the given player's zoom to the specified value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | The player to set the zoom for. Can be set to `#!xs -1` to apply to all players | _Required_ |
+| `#!xs float` | zoom | The zoom level to set to. Clamped between `#!xs 0.75` (Fully zoomed out) and `#!xs 1.25` (Fully zoomed in) | _Required_ |
+| `#!xs float` | duration | If specified, change the zoom to the target value in this amount of time. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 12.19. xsUnsyncGetZoom
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsUnsyncGetZoom(int playerId)`
-
-Parameters:
-
-1. (Optional) `#!xs int playerId`: When specified, only returns a valid value if the local player matches this
+`#!xs float xsUnsyncGetZoom(int playerId)`
 
 Gets the local player's zoom. Note that this is an unsync function and cannot be used raw in MP.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerId | When specified, only returns a valid value if the local player matches this | _Optional_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 12.20. xsUnsyncGetPlayerSelectedUnitIds
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsUnsyncGetPlayerSelectedUnitIds(int arrayId, int playerId)`
-
-Parameters:
-
-1. (Optional) `#!xs int arrayId`: The array to use
-2. (Optional) `#!xs int playerId`: When specified, only returns a valid value if the local player matches this
+`#!xs int xsUnsyncGetPlayerSelectedUnitIds(int arrayId, int playerId)`
 
 Returns an int array with the currently selected unit IDs for the local player. Note that this is an unsync function and cannot be used raw in MP.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | The array to use | _Optional_ |
+| `#!xs int` | playerId | When specified, only returns a valid value if the local player matches this | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 12.21. xsUnsyncIsUnitVisible
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsUnsyncIsUnitVisible(int unitId, bool allowInFog, int playerId)`
-
-Parameters:
-
-1.  `#!xs int unitId`: The unit to check visibility for
-2. (Optional) `#!xs bool allowInFog`: If true, allow check to pass even if the unit is only seen in the fog and not in the LoS.
-3. (Optional) `#!xs int playerId`: When specified, only returns a valid value if the local player matches this
+`#!xs bool xsUnsyncIsUnitVisible(int unitId, bool allowInFog, int playerId)`
 
 Checks if the specified unit is visible to the local player. Note that this is an unsync function and cannot be used raw in MP.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | unitId | The unit to check visibility for | _Required_ |
+| `#!xs bool` | allowInFog | If true, allow check to pass even if the unit is only seen in the fog and not in the LoS. | _Optional_ |
+| `#!xs int` | playerId | When specified, only returns a valid value if the local player matches this | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ## 13. File Io
 
 ### 13.1. xsCreateFile
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsCreateFile(bool append)`
-
-Parameters:
-
-1. (Optional) `#!xs bool append`: Default: `#!xs true`. If set to `#!xs false`, this will overwrite any existing file with the same name.
+`#!xs bool xsCreateFile(bool append)`
 
 Creates a new (or appends to an existing) `.xsdat` file with the same name as the RMS/scenario being played. After invoking this function, the writing functions can be used to write data to the file. Returns `#!xs true` if the file was successfully created. In a multiplayer game a file is created for each player, and subsequent writes will be duplicated to each player.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs bool` | append | Default: `#!xs true`. If set to `#!xs false`, this will overwrite any existing file with the same name. | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.2. xsOpenFile
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsOpenFile(string filename)`
-
-Parameters:
-
-1.  `#!xs string filename`: The name of the file to open, without the `.xsdat` extension
+`#!xs bool xsOpenFile(string filename)`
 
 Opens an existing `.xsdat`file in read only mode. After invoking this function, the reading functions can be used to read data from the file. Returns `#!xs true` if the file was successfully opened. In a multiplayer game, the file being read must exist for all players and contain the same data to avoid an out of sync error
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | filename | The name of the file to open, without the `.xsdat` extension | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.3. xsWriteString
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsWriteString(string data)`
-
-Parameters:
-
-1.  `#!xs string data`: The string to write
+`#!xs bool xsWriteString(string data)`
 
 Writes a string to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the string was successfully written. A string is written to the file in two parts, an unsigned 32 bit integer (indicates the length of the string) followed by that many bytes making up the actual characters of the string
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | data | The string to write | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.4. xsWriteInt
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsWriteInt(int data)`
-
-Parameters:
-
-1.  `#!xs int data`: The integer to write
+`#!xs bool xsWriteInt(int data)`
 
 Writes an integer to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the integer was successfully written. Integers are written as signed 32 bit numbers
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | data | The integer to write | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.5. xsWriteFloat
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsWriteFloat(float data)`
-
-Parameters:
-
-1.  `#!xs float data`: The float value to write
+`#!xs bool xsWriteFloat(float data)`
 
 Writes a floating point number to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the floating point number was successfully written. Floats are written in the 32 bit IEEE 754 format
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | data | The float value to write | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.6. xsWriteVector
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsWriteVector(vector data)`
-
-Parameters:
-
-1.  `#!xs vector data`: The vector to write
+`#!xs bool xsWriteVector(vector data)`
 
 Writes a vector to the previously created `.xsdat` file. Causes an error if a file hasn't been opened before using. Returns `#!xs true` if the vector was successfully written. Vectors are written as 3 consecutive floating point numbers, one for each coordinate.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | data | The vector to write | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.7. xsReadString
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsReadString()`
-
+`#!xs string xsReadString()`
 
 Reads and returns a string from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a string, which means the value being read is bit casted into a string regardless of what it originally was. This function also moves the file position forward by 4 bytes + the amount of bytes in the length of the string
 
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 13.8. xsReadInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsReadInt()`
-
+`#!xs int xsReadInt()`
 
 Reads and returns an integer from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be an integer, which means the value being read is bit casted into an integer regardless of what it originally was. This function also moves the file position forward by 4 bytes
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 13.9. xsReadFloat
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsReadFloat()`
-
+`#!xs float xsReadFloat()`
 
 Reads and returns a float from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a float, which means the value being read is bit casted into a float regardless of what it originally was. This function also moves the file position forward by 4 bytes
 
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 13.10. xsReadVector
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsReadVector()`
-
+`#!xs vector xsReadVector()`
 
 Reads and returns a vector from the previously opened `.xsdat` file. Note that this function does not check if the value being read is actually meant to be a vector, which means the value being read is bit casted into a vector regardless of what it originally was. This function also moves the file position forward by 12 bytes
 
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 13.11. xsSetFilePosition
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetFilePosition(int byteOffset)`
-
-Parameters:
-
-1.  `#!xs int byteOffset`: 0 indexed byte offset to determine which byte to read and return from the file
+`#!xs bool xsSetFilePosition(int byteOffset)`
 
 Sets the byte (0-indexed) of the file that the next read function will start reading from.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | byteOffset | 0 indexed byte offset to determine which byte to read and return from the file | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.12. xsOffsetFilePosition
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsOffsetFilePosition(int dataType, bool forward)`
-
-Parameters:
-
-1.  `#!xs int dataType`: The [cOffset constants](../../constants/constants/#1-file-io "Jump To: XS > Constant Reference > 1. File I/O") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string)
-2. (Optional) `#!xs bool forward`: Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back
+`#!xs bool xsOffsetFilePosition(int dataType, bool forward)`
 
 Moves the file position forward (or backward) relative to the current file position, and by an amount of bytes equivalent to reading the given data type
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | dataType | The [cOffset constants](../../constants/constants/#1-file-io "Jump To: XS > Constant Reference > 1. File I/O") can be used to specify the datatype used for the offset. Integers and floats are 4 bytes long, vectors are 12 bytes long and strings can be of variable length (specified by the 32 bit int preceding the chars of the string) | _Required_ |
+| `#!xs bool` | forward | Default: `#!xs true`. Setting this to `#!xs false` will make the file position move back | _Optional_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.13. xsCloseFile
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsCloseFile()`
-
+`#!xs bool xsCloseFile()`
 
 Close the currently opened or created file. Returns `#!xs true` if the file was successfully closed
 
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 13.14. xsGetFilePosition
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetFilePosition()`
-
+`#!xs int xsGetFilePosition()`
 
 Gets the byte (0-indexed) of the file that the next read function will start reading from.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 13.15. xsGetDataTypeSize
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetDataTypeSize(int type)`
-
-Parameters:
-
-1.  `#!xs int type`: One of the `cOffsetXXX` constants may be used as a parameter
+`#!xs int xsGetDataTypeSize(int type)`
 
 Returns the number of bytes used to store a given type value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | type | One of the `cOffsetXXX` constants may be used as a parameter | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 13.16. xsGetFileSize
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetFileSize()`
-
+`#!xs int xsGetFileSize()`
 
 Gets the size (in bytes) of the currently open file
+
+#### Return value
+`#!xs int`
+
+
+---
 
 ## 14. Ai Scripting
 
 ### 14.1. xsGetGoal
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetGoal(int id)`
-
-Parameters:
-
-1.  `#!xs int id`: The goal id/number to get for the current AI
+`#!xs int xsGetGoal(int id)`
 
 Gets the goal id/number of the current AI
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | id | The goal id/number to get for the current AI | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 14.2. xsGetStrategicNumber
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetStrategicNumber(int id)`
-
-Parameters:
-
-1.  `#!xs int id`: The SN to get for the current AI
+`#!xs int xsGetStrategicNumber(int id)`
 
 Gets the SN of the current AI
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | id | The SN to get for the current AI | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 14.3. xsSetGoal
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetGoal(int id, int value)`
-
-Parameters:
-
-1.  `#!xs int id`: The goal id/number to get for the current AI
-2.  `#!xs int value`: The value to set the goal id/number to
+`#!xs void xsSetGoal(int id, int value)`
 
 Sets the goal id/number of the current AI
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | id | The goal id/number to get for the current AI | _Required_ |
+| `#!xs int` | value | The value to set the goal id/number to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 14.4. xsSetStrategicNumber
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetStrategicNumber(int id, int value)`
-
-Parameters:
-
-1.  `#!xs int id`: The SN to get for the current AI
-2.  `#!xs int value`: The value to set the SN to
+`#!xs void xsSetStrategicNumber(int id, int value)`
 
 Sets the SN of the current AI
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | id | The SN to get for the current AI | _Required_ |
+| `#!xs int` | value | The value to set the SN to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 14.5. xsGetAiSignal
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetAiSignal(int signalId, bool useLegacyAi)`
-
-Parameters:
-
-1.  `#!xs int signalId`: The signal to get the value of
-2. (Optional) `#!xs bool useLegacyAi`: If true, use the legacy signal
+`#!xs int xsGetAiSignal(int signalId, bool useLegacyAi)`
 
 Gets the given AI signal value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | signalId | The signal to get the value of | _Required_ |
+| `#!xs bool` | useLegacyAi | If true, use the legacy signal | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 14.6. xsSetAiSignal
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetAiSignal(int signalId, int value, bool useLegacyAi)`
-
-Parameters:
-
-1.  `#!xs int signalId`: The signal to set the value of
-2.  `#!xs int value`: The value to set to
-3. (Optional) `#!xs bool useLegacyAi`: If true, use the legacy signal
+`#!xs void xsSetAiSignal(int signalId, int value, bool useLegacyAi)`
 
 Sets the given AI signal value.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | signalId | The signal to set the value of | _Required_ |
+| `#!xs int` | value | The value to set to | _Required_ |
+| `#!xs bool` | useLegacyAi | If true, use the legacy signal | _Optional_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 14.7. xsGetAiScriptGoal
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsGetAiScriptGoal(int goalId)`
-
-Parameters:
-
-1.  `#!xs int goalId`: The goal to check
+`#!xs bool xsGetAiScriptGoal(int goalId)`
 
 Checks if the given AI goal is set
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | goalId | The goal to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 14.8. xsSetAiScriptGoal
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetAiScriptGoal(int goalId, bool value)`
-
-Parameters:
-
-1.  `#!xs int goalId`: The goal to set
-2.  `#!xs bool value`: The value to set the goal to
+`#!xs bool xsSetAiScriptGoal(int goalId, bool value)`
 
 Sets the given AI goal to the specified value
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | goalId | The goal to set | _Required_ |
+| `#!xs bool` | value | The value to set the goal to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ## 15. Misc
 
 ### 15.1. xsDumpArrays
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsDumpArrays()`
-
+`#!xs void xsDumpArrays()`
 
 This function is supposed to blogs out all XS arrays. Currently, it does absolutely nothing.
 
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 15.2. xsGetContextPlayer
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetContextPlayer()`
-
+`#!xs int xsGetContextPlayer()`
 
 Returns the current context player ID.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 15.3. xsSetContextPlayer
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsSetContextPlayer(int playerNumber)`
-
-Parameters:
-
-1.  `#!xs int playerNumber`: The player to set the context player to
+`#!xs void xsSetContextPlayer(int playerNumber)`
 
 In other functions involving a `playerNumber` argument, the value of the context player is used if `-1` is passed as `playerNumber` to them. `xsEffectAmount` will use the value of the context player as its player if `-2` is passed to it as the player argument.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | playerNumber | The player to set the context player to | _Required_ |
+
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 15.4. xsGetFunctionID
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetFunctionID(string functionName)`
-
-Parameters:
-
-1.  `#!xs string functionName`: The name of the function to get the hash of
+`#!xs int xsGetFunctionID(string functionName)`
 
 Returns the hash of a given function. This function has no practical application and is probably for internal usage only.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | functionName | The name of the function to get the hash of | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 15.5. xsBreakPoint
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsBreakPoint()`
-
+`#!xs void xsBreakPoint()`
 
 This function is meant to add a break point to the execution of XS code for debugging. This used to cause a crash in crash earlier versions of DE.
 
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 15.6. xsAddRuntimeEvent
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsAddRuntimeEvent(string runtimeName, string functionName, int functionArgument)`
-
-Parameters:
-
-1.  `#!xs string runtimeName`: This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#101-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg
-2.  `#!xs string functionName`: This is the name of a user defined function that takes a single integer argument
-3.  `#!xs int functionArgument`: This is an integer argument that is passed to the function given to the argument `functionName` when this event runs.
+`#!xs bool xsAddRuntimeEvent(string runtimeName, string functionName, int functionArgument)`
 
 A runtime event is called after all the XS code has finished executing but before rules start executing. It calls the function `functionName` given to it with the `functionArgument` passed to it as a parameter. For programmers familiar with the terminology, this is basically a way to set a callback. It also returns true if the function name given to it exists, otherwise it returns false. Does not work with built-ins
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | runtimeName | This is the name of the runtime to create the event in. This should be `"Random Map"` for RMS and `"Scenario Triggers"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#101-xsgetmapname "Jump To: Function Reference > xsGetMapName") and checking the extension. To use with an AI, set the runtime name to "Expert" and pass the player number as the arg | _Required_ |
+| `#!xs string` | functionName | This is the name of a user defined function that takes a single integer argument | _Required_ |
+| `#!xs int` | functionArgument | This is an integer argument that is passed to the function given to the argument `functionName` when this event runs. | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
 
 ## 16. Strings
 
 ### 16.1. ord
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int ord(string character)`
-
-Parameters:
-
-1.  `#!xs string character`: The character to get the ASCII ord value for
+`#!xs int ord(string character)`
 
 Returns the ASCII ord value for the given character. Same as Python's `ord`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | character | The character to get the ASCII ord value for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.2. chr
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string chr(int code)`
-
-Parameters:
-
-1.  `#!xs int code`: The ASCII code to get the character for.
+`#!xs string chr(int code)`
 
 Returns the ASCII character for the given code. Same as Python's `chr`
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | code | The ASCII code to get the character for. | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.3. strLen
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int strLen(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to get the length for
+`#!xs int strLen(string str)`
 
 Returns the length of the given string
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to get the length for | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.4. strCharAt
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strCharAt(string str, int index)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to index
-2.  `#!xs int index`: The index to get. Can be in the range `[-length, length)`
+`#!xs string strCharAt(string str, int index)`
 
 Returns the `str[index]` as in Python or `""` if the index is out of bounds.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to index | _Required_ |
+| `#!xs int` | index | The index to get. Can be in the range `[-length, length)` | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.5. strSubstring
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strSubstring(string str, int start, int end)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to substring
-2.  `#!xs int start`: The start index. Can be in the range `[-length, length)`
-3.  `#!xs int end`: The end index. Can be in the range `[-length, length)`
+`#!xs string strSubstring(string str, int start, int end)`
 
 Returns the `str[start:end]` as in Python or `""` if the indices are out of bounds.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to substring | _Required_ |
+| `#!xs int` | start | The start index. Can be in the range `[-length, length)` | _Required_ |
+| `#!xs int` | end | The end index. Can be in the range `[-length, length)` | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.6. strContains
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool strContains(string str, string substring)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to check
-2.  `#!xs string substring`: The sub string to check
+`#!xs bool strContains(string str, string substring)`
 
 Checks if the given substring is contained in the provided string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to check | _Required_ |
+| `#!xs string` | substring | The sub string to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 16.7. strStartsWith
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool strStartsWith(string str, string prefix)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to check
-2.  `#!xs string prefix`: The prefix to check
+`#!xs bool strStartsWith(string str, string prefix)`
 
 Checks if the given string starts with the provided prefix.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to check | _Required_ |
+| `#!xs string` | prefix | The prefix to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 16.8. strEndsWith
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool strEndsWith(string str, string suffix)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to check
-2.  `#!xs string suffix`: The suffix to check
+`#!xs bool strEndsWith(string str, string suffix)`
 
 Checks if the given string ends with the provided suffix.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to check | _Required_ |
+| `#!xs string` | suffix | The suffix to check | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 16.9. strRemovePrefix
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strRemovePrefix(string str, string prefix)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to remove the prefix from
-2.  `#!xs string prefix`: The prefix to remove
+`#!xs string strRemovePrefix(string str, string prefix)`
 
 Removes the prefix from the given string if present and returns a new string. Returns the original string otherwise.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to remove the prefix from | _Required_ |
+| `#!xs string` | prefix | The prefix to remove | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.10. strRemoveSuffix
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strRemoveSuffix(string str, string suffix)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to remove the suffix from
-2.  `#!xs string suffix`: The suffix to remove
+`#!xs string strRemoveSuffix(string str, string suffix)`
 
 Removes the suffix from the given string if present and returns a new string. Returns the original string otherwise.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to remove the suffix from | _Required_ |
+| `#!xs string` | suffix | The suffix to remove | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.11. strIndexOf
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int strIndexOf(string str, string substring, int fromIndex)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to check in
-2.  `#!xs string substring`: The substring to find the index of
-3. (Optional) `#!xs int fromIndex`: If set, check starting from this index
+`#!xs int strIndexOf(string str, string substring, int fromIndex)`
 
 Finds the index of the given substring in the provided string. Returns -1 if not found
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to check in | _Required_ |
+| `#!xs string` | substring | The substring to find the index of | _Required_ |
+| `#!xs int` | fromIndex | If set, check starting from this index | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.12. strLastIndexOf
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int strLastIndexOf(string str, string substring, int fromIndex)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to check in
-2.  `#!xs string substring`: The substring to find the index of
-3. (Optional) `#!xs int fromIndex`: If set, check backwards starting from this index
+`#!xs int strLastIndexOf(string str, string substring, int fromIndex)`
 
 Finds the index of the given substring in the provided string backwards. Returns -1 if not found
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to check in | _Required_ |
+| `#!xs string` | substring | The substring to find the index of | _Required_ |
+| `#!xs int` | fromIndex | If set, check backwards starting from this index | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.13. strReplace
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strReplace(string str, string target, string replacement, int max)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to replace in
-2.  `#!xs string target`: The substring to replace
-3.  `#!xs string replacement`: The replacement for the target
-4. (Optional) `#!xs int max`: If specified, only replace a max of these instances of the target string
+`#!xs string strReplace(string str, string target, string replacement, int max)`
 
 Replaces the occurrences of the target in the given string with the replacement and returns it as a new string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to replace in | _Required_ |
+| `#!xs string` | target | The substring to replace | _Required_ |
+| `#!xs string` | replacement | The replacement for the target | _Required_ |
+| `#!xs int` | max | If specified, only replace a max of these instances of the target string | _Optional_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.14. strInsert
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strInsert(string str, int index, string target)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to insert into
-2.  `#!xs int index`: The index to insert at
-3.  `#!xs string target`: The substring to insert
+`#!xs string strInsert(string str, int index, string target)`
 
 Inserts the given substring at the provided index in the specified string and returns a new string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to insert into | _Required_ |
+| `#!xs int` | index | The index to insert at | _Required_ |
+| `#!xs string` | target | The substring to insert | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.15. strRemove
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strRemove(string str, int index, int length)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to remove from
-2.  `#!xs int index`: The index to remove from
-3.  `#!xs int length`: The number of characters to remove
+`#!xs string strRemove(string str, int index, int length)`
 
 Removes the specified number of characters at the provided index in the given string and returns a new string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to remove from | _Required_ |
+| `#!xs int` | index | The index to remove from | _Required_ |
+| `#!xs int` | length | The number of characters to remove | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.16. strSplit
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int strSplit(string str, string delimiter, int max)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to split
-2. (Optional) `#!xs string delimiter`: The string to split by. If unspecified, split at all characters.
-3.  `#!xs int max`: The maximum number of splits to make.
+`#!xs int strSplit(string str, string delimiter, int max)`
 
 Returns an int ID for an array of strings.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to split | _Required_ |
+| `#!xs string` | delimiter | The string to split by. If unspecified, split at all characters. | _Optional_ |
+| `#!xs int` | max | The maximum number of splits to make. | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.17. strJoin
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strJoin(int arrayId, string delimiter)`
-
-Parameters:
-
-1.  `#!xs int arrayId`: An int ID for an array of strings
-2.  `#!xs string delimiter`: The string to join the array with
+`#!xs string strJoin(int arrayId, string delimiter)`
 
 Returns a joined string of the provided array interspaced with the given delimiter.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | arrayId | An int ID for an array of strings | _Required_ |
+| `#!xs string` | delimiter | The string to join the array with | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.18. strTrim
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strTrim(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to trim
+`#!xs string strTrim(string str)`
 
 Removes whitespaces on both sides of the given string and returns a new string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to trim | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.19. strTrimStart
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strTrimStart(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to trim
+`#!xs string strTrimStart(string str)`
 
 Removes whitespaces at the start of the given string and returns a new string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to trim | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.20. strTrimEnd
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strTrimEnd(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to trim
+`#!xs string strTrimEnd(string str)`
 
 Removes whitespaces at the end of the given string and returns a new string.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to trim | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.21. strToUpper
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strToUpper(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to convert to uppercase
+`#!xs string strToUpper(string str)`
 
 Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
+
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to convert to uppercase | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
 
 ### 16.22. strToLower
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strToLower(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to convert to lowercase
+`#!xs string strToLower(string str)`
 
 Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to convert to lowercase | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.23. strReverse
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string strReverse(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to reverse
+`#!xs string strReverse(string str)`
 
 Returns a new string that is the original string backwards.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to reverse | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 16.24. strToInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int strToInt(string str, int base, int defaultValue)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to parse as an `#!xs int`
-2. (Optional) `#!xs int base`: Defaults to `#!xs 10`
-3. (Optional) `#!xs int defaultValue`: Defaults to `#!xs -1`
+`#!xs int strToInt(string str, int base, int defaultValue)`
 
 Returns the string parsed as an `#!xs int` and returns the default value if it fails
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to parse as an `#!xs int` | _Required_ |
+| `#!xs int` | base | Defaults to `#!xs 10` | _Optional_ |
+| `#!xs int` | defaultValue | Defaults to `#!xs -1` | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.25. strToFloat
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float strToFloat(string str, float defaultValue)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to parse as a `#!xs float`
-2. (Optional) `#!xs float defaultValue`: Defaults to `#!xs -1.0`
+`#!xs float strToFloat(string str, float defaultValue)`
 
 Returns the string parsed as a `#!xs float` and returns the default value if it fails
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to parse as a `#!xs float` | _Required_ |
+| `#!xs float` | defaultValue | Defaults to `#!xs -1.0` | _Optional_ |
+
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 16.26. hex
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int hex(string str, int defaultValue)`
-
-Parameters:
-
-1.  `#!xs string str`: The hex string to parse. Digits may be separated by `'`
-2. (Optional) `#!xs int defaultValue`: Defaults to `#!xs -1`
+`#!xs int hex(string str, int defaultValue)`
 
 Returns the signed 32-bit base-10 value for the given hex string and returns the default value if it fails
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The hex string to parse. Digits may be separated by `'` | _Required_ |
+| `#!xs int` | defaultValue | Defaults to `#!xs -1` | _Optional_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.27. bin
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int bin(string str, int defaultValue)`
-
-Parameters:
-
-1.  `#!xs string str`: The bin string to parse. Digits may be separated by `'`
-2.  `#!xs int defaultValue`: Defaults to `#!xs -1`
+`#!xs int bin(string str, int defaultValue)`
 
 Returns the signed 32-bit base-10 value for the given binary string and returns the default value if it fails
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The bin string to parse. Digits may be separated by `'` | _Required_ |
+| `#!xs int` | defaultValue | Defaults to `#!xs -1` | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 16.28. fstr
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string fstr(string str)`
-
-Parameters:
-
-1.  `#!xs string str`: The string to format
+`#!xs string fstr(string str)`
 
 Formats the given string like a Python f-string. Note that Expressions are not allowed, and it is limited to variable names only.
 
@@ -3880,161 +5427,238 @@ The strings passed to `fstr` do not need to be literal strings. This allows crea
 
 The variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | str | The string to format | _Required_ |
+
+#### Return value
+`#!xs string`
+
+
+---
+
 ## 17. Network
 
 ### 17.1. xsResetNetData
 
-Returning Type: `#!xs void`
-
-Prototype: `#!xs void xsResetNetData()`
-
+`#!xs void xsResetNetData()`
 
 Resets the network data buffer
 
+#### Return value
+`#!xs void`
+
+
+---
+
 ### 17.2. xsWriteNetInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsWriteNetInt(int value)`
-
-Parameters:
-
-1.  `#!xs int value`: The value to write
+`#!xs int xsWriteNetInt(int value)`
 
 Writes a int value in the network data buffer.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | value | The value to write | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.3. xsWriteNetFloat
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsWriteNetFloat(float value)`
-
-Parameters:
-
-1.  `#!xs float value`: The value to write
+`#!xs int xsWriteNetFloat(float value)`
 
 Writes a float value in the network data buffer.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs float` | value | The value to write | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.4. xsWriteNetVector
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsWriteNetVector(vector value)`
-
-Parameters:
-
-1.  `#!xs vector value`: The value to write
+`#!xs int xsWriteNetVector(vector value)`
 
 Writes a vector value in the network data buffer.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs vector` | value | The value to write | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.5. xsWriteNetString
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsWriteNetString(string value)`
-
-Parameters:
-
-1.  `#!xs string value`: The value to write
+`#!xs int xsWriteNetString(string value)`
 
 Writes a string value in the network data buffer.
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | value | The value to write | _Required_ |
+
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.6. xsSendNetData
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSendNetData(string callback)`
-
-Parameters:
-
-1.  `#!xs string callback`: The name of the function to call. The signature of this callback must be `#!xs void(int)`
+`#!xs bool xsSendNetData(string callback)`
 
 Calls the given function with the current network data buffer, and passes the ID of the local player issuing this command as an argument. Note that the data that can be sent at once is limited to 256B, and up to a maximum of 4 times per second per player. Note that this function should be used even in single player contexts where unsync XS functions are used, such as `#!xs xsReadInt();`. Unsync functions will otherwise desync replays!
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs string` | callback | The name of the function to call. The signature of this callback must be `#!xs void(int)` | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 17.7. xsReadNetString
 
-Returning Type: `#!xs string`
-
-Prototype: `#!xs string xsReadNetString()`
-
+`#!xs string xsReadNetString()`
 
 Reads a string value from the network data buffer.
 
+#### Return value
+`#!xs string`
+
+
+---
+
 ### 17.8. xsReadNetInt
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsReadNetInt()`
-
+`#!xs int xsReadNetInt()`
 
 Reads a int value from the network data buffer.
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.9. xsReadNetFloat
 
-Returning Type: `#!xs float`
-
-Prototype: `#!xs float xsReadNetFloat()`
-
+`#!xs float xsReadNetFloat()`
 
 Reads a float value from the network data buffer.
 
+#### Return value
+`#!xs float`
+
+
+---
+
 ### 17.10. xsReadNetVector
 
-Returning Type: `#!xs vector`
-
-Prototype: `#!xs vector xsReadNetVector()`
-
+`#!xs vector xsReadNetVector()`
 
 Reads a vector value from the network data buffer.
 
+#### Return value
+`#!xs vector`
+
+
+---
+
 ### 17.11. xsSetWriteNetDataPosition
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetWriteNetDataPosition(int position)`
-
-Parameters:
-
-1.  `#!xs int position`: The position to set to
+`#!xs bool xsSetWriteNetDataPosition(int position)`
 
 Sets the write position in the network data buffer
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | position | The position to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 17.12. xsSetReadNetDataPosition
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsSetReadNetDataPosition(int position)`
-
-Parameters:
-
-1.  `#!xs int position`: The position to set to
+`#!xs bool xsSetReadNetDataPosition(int position)`
 
 Sets the read position in the network data buffer
 
+#### Parameters
+
+| Type | Name | Description | Required |
+| :--- | :--- | :---------- | :------- |
+| `#!xs int` | position | The position to set to | _Required_ |
+
+#### Return value
+`#!xs bool`
+
+
+---
+
 ### 17.13. xsGetWriteNetDataPosition
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetWriteNetDataPosition()`
-
+`#!xs int xsGetWriteNetDataPosition()`
 
 Gets the write position in the network data buffer
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.14. xsGetReadNetDataPosition
 
-Returning Type: `#!xs int`
-
-Prototype: `#!xs int xsGetReadNetDataPosition()`
-
+`#!xs int xsGetReadNetDataPosition()`
 
 Gets the read position in the network data buffer
 
+#### Return value
+`#!xs int`
+
+
+---
+
 ### 17.15. xsUnsyncIsSandboxMode
 
-Returning Type: `#!xs bool`
-
-Prototype: `#!xs bool xsUnsyncIsSandboxMode()`
-
+`#!xs bool xsUnsyncIsSandboxMode()`
 
 Returns true in replays and in campaigns where the user chooses sandbox mode
 
+#### Return value
+`#!xs bool`
+
+
+---

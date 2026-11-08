@@ -1,70 +1,114 @@
 import json
 
+
+def build_function_grid(function_docs) -> list[str]:
+    lines: list[str] = ["## All Available Functions"]
+
+    for cat_index, (category, functions) in enumerate(function_docs.items(), 1):
+        lines += [
+            f'<p class="xs-func-category-header">{category.title()}</p>',
+            '',
+            f'<div class="xs-func-grid">'
+        ]
+        for f_index, func in enumerate(functions, 1):
+            anchor = f"#{cat_index}{f_index}-{func['name'].lower()}"
+            lines.append(f'<a href="{anchor}" title="{func["name"]}">{func["name"]}</a>')
+
+        lines += ['</div>', '']
+    lines += ['', '---', '']
+
+    return lines
+
+
+def build_param_table(params: list) -> list[str]:
+    if not params:
+        return []
+
+    lines = [
+        '#### Parameters',
+        '',
+        '| Type | Name | Description | Required |',
+        '| :--- | :--- | :---------- | :------- |',
+    ]
+
+    for p_index, param in enumerate(params, 1):
+        required = "Required" if param['required'] else "Optional"
+
+        lines.append(f"| `#!xs {param['type']}` | {param['name']} | {param['desc']} | _{required}_ |")
+
+    return lines + ['']
+
+
 def main():
     with open("./functions.json") as file:
         function_docs = json.load(file)
 
-    outmd = """*Written by: Alian713, Kramb, KSneijders*
-<div id="hide-toc-elements"></div>
----
+    top = [
+        '*Written by: Alian713, Kramb, KSneijders*',
+        '<div id="hide-toc-elements"></div>',
+        '---',
+        ''
+    ]
 
-"""
+    md: list[str] = top + build_function_grid(function_docs)
 
-    # Build the funcs grid section
-    funcs = "## All Available Functions\n\n"
-    for cat_index, (category, functions) in enumerate(function_docs.items(), 1):
-        funcs += f'<p class="xs-func-category-header">{category.title()}</p>\n\n'
-        funcs += '<div class="xs-func-grid">\n'
-        for f_index, func in enumerate(functions, 1):
-            anchor = f"#{cat_index}{f_index}-{func['name'].lower()}"
-            funcs += f'<a href="{anchor}" title="{func["name"]}">{func["name"]}</a>\n'
-        funcs += "</div>\n\n"
-    funcs += "---\n\n"
-
-    outmd_old = outmd + funcs
     for index, (category, functions) in enumerate(function_docs.items(), 1):
-        # functions = sorted(functions, key = lambda x: x["name"])
-        catmd = outmd[:]
-        filename = category.replace(" ", "_").replace("/", "_").lower()
 
-        outmd_old += f"## {index}. {category.title()}\n\n"
+        md += [
+            f"## {index}. {category.title()}",
+            '',
+        ]
 
         for f_index, func in enumerate(functions, 1):
-            catmd += f"## {f_index}. {func['name']}\n\n"
-            outmd_old += f"### {index}.{f_index}. {func['name']}\n\n"
+            is_deprecated: bool = func.get("deprecated", None) is not None
 
-            body = ""
+            args = ', '.join(f"{param['type']} {param['name']}" for param in func['params'])
+            definition = f"`#!xs {func['return_type']} {func['name']}({args})`"
 
-            if reason := func.get("deprecated", None) is not None:
-                body += f"Deprecated: {reason}\n\n"
+            if not is_deprecated:
+                md += [
+                    f"### {index}.{f_index}. {func['name']}",
+                    '',
+                ]
+            else:
+                md += [
+                    f'<details class="deprecated" markdown="1">',
+                    f'<summary markdown="block">',
+                    f"### {index}.{f_index}. ~~{func['name']}~~",
+                    '',
+                    f"</summary>",
+                    f'!!! warning "Deprecated"',
+                    '',
+                    f"    {func['deprecated']}",
+                    '',
+                ]
 
-            body += f"Returning Type: `#!xs {func['return_type']}`\n\n"
+            body = [
+                definition,
+                '',
+                func['desc'],
+                '',
+            ]
 
-            body += f"Prototype: `#!xs {func['return_type']} {func['name']}("
-            for param in func['params']:
-                body += f"{param['type']} {param['name']}, "
-            if len(func['params']) != 0:
-                body = body[:-2]
-            body += ")`\n\n"
+            # Add function parameter table
+            body += build_param_table(func['params'])
 
-            if len(func['params']) != 0:
-                body += "Parameters:\n\n"
+            body += [
+                f'#### Return value',
+                f"`#!xs {func['return_type']}`",
+                '',
+            ]
 
-            for p_index, param in enumerate(func['params'], 1):
-                optional = "" if param['required'] else "(Optional)"
-                body += f"{p_index}. {optional} `#!xs {param['type']} {param['name']}`: {param['desc']}\n"
+            md += body
 
-            body += "\n"
-            body += f"{func['desc']}\n\n"
+            if is_deprecated:
+                md += ["</details>\n"]
 
-            catmd += body
-            outmd_old += body
-
-        # with open(f"./{filename}.md", "w") as file:
-        #     file.write(catmd)
+            md += ['', '---', '']
 
     with open("./functions.md", "w") as file:
-        file.write(outmd_old)
+        file.write('\n'.join(md))
+
 
 if __name__ == "__main__":
     main()
