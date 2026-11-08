@@ -16,7 +16,6 @@ def _inject_function_links(text: str) -> str:
     into:
         [xsTaskAmount](/general/xs/functions/functions.md#81-xstaskamount "Jump To: XS → Functions → xsTaskAmount")
     """
-    # language=regexp
     findings = re.findall(r"(\[[a-zA-Z0-9- ]+])\(xsfn:([a-zA-Z]+)\)", text)
     if not findings:
         return text
