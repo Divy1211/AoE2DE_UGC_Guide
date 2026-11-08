@@ -173,6 +173,8 @@ validation:
     not_found: ignore
     absolute_links: ignore
     unrecognized_links: ignore
+    absolute_links: relative_to_docs
+    anchors: warn
 theme:
   # favicon:
   language: en

@@ -458,7 +458,7 @@
         },
         {
             "name": "xsArraySetInt",
-            "allow_discard":true,
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -683,7 +683,7 @@
         },
         {
             "name": "xsArrayResizeInt",
-            "allow_discard":true,
+            "allow_discard": true,
             "return_type": "bool",
             "params": [
                 {
@@ -1542,32 +1542,7 @@
                     "desc": "Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself"
                 }
             ],
-            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](./#415-bitcasttofloat)."
-        },
-        {
-            "name": "xsGetPlayerUnitIds",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the unit IDs for"
-                },
-                {
-                    "name": "objectOrClassId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or class to get the unit reference IDs for"
-                },
-                {
-                    "name": "arrayId",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Reuse an existing array to save memory"
-                }
-            ],
-            "desc": "Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor"
+            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](xsfn:bitCastToFloat)."
         },
         {
             "name": "xsGetHandicapMultiplier",
@@ -1708,7 +1683,7 @@
             "name": "xsGetDiplomacy",
             "return_type": "int",
             "params": [
-                 {
+                {
                     "name": "sourcePlayerId",
                     "type": "int",
                     "required": true,
@@ -1728,7 +1703,7 @@
             "allow_discard": true,
             "return_type": "bool",
             "params": [
-                 {
+                {
                     "name": "sourcePlayerId",
                     "type": "int",
                     "required": true,
@@ -1766,7 +1741,7 @@
             "allow_discard": true,
             "return_type": "void",
             "params": [
-                 {
+                {
                     "name": "playerId",
                     "type": "int",
                     "required": true,
@@ -1898,13 +1873,13 @@
                     "desc": "The value to set the task field to"
                 }
             ],
-            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [xsTask](./#8-xsmodifyobjecttasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail."
+            "desc": "Sets the value of the given field of the global XS task struct to the provided value. See also [xsModifyObjectTasks](xsfn:xsModifyObjectTasks). It is recommended to always set all values before inserting or updating a task otherwise the insert/update might fail."
         },
         {
             "name": "xsResetTaskAmount",
             "return_type": "void",
             "params": [],
-            "desc": "Resets all the values of the global XS task struct to their defaults. See also [xsTask](./#8-xsmodifyobjecttasks)."
+            "desc": "Resets all the values of the global XS task struct to their defaults. See also [xsModifyObjectTasks](xsfn:xsModifyObjectTasks)."
         },
         {
             "name": "xsGetObjectTaskCount",
@@ -2085,7 +2060,7 @@
                     "desc": "The player to whose objects the task will be inserted. If unspecified or -1, applies to all players except Gaia."
                 }
             ],
-            "desc": "Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](./#1-xstaskamount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.\n\nNote that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](./#1-xstaskamount)) and then submitting multiple copies of it for different people)"
+            "desc": "Adds a new (or edits an existing) task with the fields previously defined by calls to [xsTaskAmount](xsfn:xsTaskAmount) for the specified object at the end of the task list (see A.G.E.). If a task with the specified `actionType`, `objectId`, and `Search Wait Time` (set by `xsTaskAmount`) already exists, it is edited instead of a new one being added.\n\nNote that `xsTaskAmount` modifies a global task struct which is re-used every time `#!xs xsTask` is called (For non programmers, this is similar to filling out a form once (the calls to [xsTaskAmount](xsfn:xsTaskAmount)) and then submitting multiple copies of it for different people)"
         },
         {
             "name": "xsRemoveTask",
@@ -2117,10 +2092,35 @@
                     "desc": "The player from whose objects the task will be removed. If unspecified or -1, applies to all players except Gaia."
                 }
             ],
-            "desc": "Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](./#1-xstaskamount)) match an existing task in a object. No other fields are used for filtering (same as when [xsTask](./#1-xstask) edits instead of adding a new task)"
+            "desc": "Removes a task from a object if the specified `actionType`, `objectId`, and `Search Wait Time` (set by [xsTaskAmount](xsfn:xsTaskAmount)) match an existing task in a object. No other fields are used for filtering (same as when [xsModifyObjectTasks ](xsfn:xsModifyObjectTasks) edits instead of adding a new task)"
         }
     ],
-    "Units and Objects": [
+    "Units": [
+        {
+            "name": "xsGetPlayerUnitIds",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the unit IDs for"
+                },
+                {
+                    "name": "objectOrClassId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object or class to get the unit reference IDs for"
+                },
+                {
+                    "name": "arrayId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Reuse an existing array to save memory"
+                }
+            ],
+            "desc": "Returns an array of unit IDs on the map for the given player and the specified object ID or class. The IDs here are the same as the `reference_id` used by the scenario editor"
+        },
         {
             "name": "xsCreateUnit",
             "allow_discard": true,
@@ -2180,37 +2180,6 @@
             "desc": "Removes the given unit from the map"
         },
         {
-            "name": "xsGetObjectAttribute",
-            "return_type": "float",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player whose object to get the attribute for"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to get the attribute for"
-                },
-                {
-                    "name": "attribute",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The attribute to get"
-                },
-                {
-                    "name": "damageClass",
-                    "type": "int",
-                    "required": true,
-                    "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
-                }
-            ],
-            "desc": "Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned."
-        },
-        {
             "name": "xsGetUnitAttribute",
             "return_type": "float",
             "params": [
@@ -2233,7 +2202,7 @@
                     "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
                 }
             ],
-            "desc": "Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](./#416-bitcasttoint) after being returned."
+            "desc": "Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](xsfn:bitCastToInt) after being returned."
         },
         {
             "name": "xsDoesUnitExist",
@@ -2320,31 +2289,6 @@
             "desc": "Returns the current name of a given unit"
         },
         {
-            "name": "xsGetObjectName",
-            "return_type": "string",
-            "params": [
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to get the name for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object's name for"
-                },
-                {
-                    "name": "internalName",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "Returns the internal name of the object if set. `!#xs false` by default."
-                }
-            ],
-            "desc": "Returns the current name of the given object for the specified player."
-        },
-        {
             "name": "xsGetUnitTargetUnitId",
             "return_type": "int",
             "params": [
@@ -2384,38 +2328,6 @@
             "desc": "Returns the ID of the group (formation) for this unit"
         },
         {
-            "name": "xsGetGroupMoveTarget",
-            "return_type": "vector",
-            "params": [
-                {
-                    "name": "groupId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The group (formation) to get the movement target for"
-                }
-            ],
-            "desc": "Returns the location this group (formation) is currently moving to"
-        },
-        {
-            "name": "xsIsObjectAvailable",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to check the availability for"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object's availability for"
-                }
-            ],
-            "desc": "Returns true if this object can currently be trained or built."
-        },
-                {
             "name": "xsGetUnitHitpoints",
             "return_type": "float",
             "params": [
@@ -2427,6 +2339,19 @@
                 }
             ],
             "desc": "Returns the given unit's HP"
+        },
+        {
+            "name": "xsGetGroupMoveTarget",
+            "return_type": "vector",
+            "params": [
+                {
+                    "name": "groupId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The group (formation) to get the movement target for"
+                }
+            ],
+            "desc": "Returns the location this group (formation) is currently moving to"
         },
         {
             "name": "xsSetUnitHitpoints",
@@ -2508,25 +2433,6 @@
             "desc": "Returns the given unit's copy ID in data"
         },
         {
-            "name": "xsGetObjectCopyId",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object's copy ID for"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to get the copy ID for"
-                }
-            ],
-            "desc": "Returns the given object's copy ID in data for the specified player"
-        },
-        {
             "name": "xsGetUnitClass",
             "return_type": "int",
             "params": [
@@ -2540,25 +2446,6 @@
             "desc": "Returns the given unit's class See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")"
         },
         {
-            "name": "xsGetObjectClass",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object's class for"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to get the class for"
-                }
-            ],
-            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")"
-        },
-        {
             "name": "xsGetUnitType",
             "return_type": "int",
             "params": [
@@ -2570,25 +2457,6 @@
                 }
             ],
             "desc": "Returns the given unit's type. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")"
-        },
-        {
-            "name": "xsGetObjectType",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the object's type for"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to get the type for"
-                }
-            ],
-            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")"
         },
         {
             "name": "xsGetUnitAttributeTypesHeld",
@@ -2646,7 +2514,7 @@
                     "desc": "The ID of the resource to set. If unspecified, sets the first resource which the unit holds"
                 }
             ],
-            "desc": "Sets the given unit's amount of the specified resource. The only unit this can currently add extra resources to is the trade cart/cog."
+            "desc": "Sets the given unit's amount of the specified resource."
         },
         {
             "name": "xsGetUnitCharge",
@@ -2744,107 +2612,6 @@
                 }
             ],
             "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
-        },
-        {
-            "name": "xsObjectHasAction",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to check unit actions for"
-                },
-                {
-                    "name": "objectOrClassId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object or class to check actions for"
-                },
-                {
-                    "name": "actionId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The type of action to check for"
-                },
-                {
-                    "name": "targetPlayerId",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter."
-                },
-                {
-                    "name": "targetType",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter."
-                },
-                {
-                    "name": "targetUnitLevel",
-                    "type": "int",
-                    "required": false,
-                    "desc": "Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter."
-                }
-            ],
-            "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
-        },
-        {
-            "name": "xsIsObjectValid",
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object ID to check"
-                },
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to check the ID for"
-                }
-            ],
-            "desc": "Checks if the supplied object ID is valid for the given player (e.g. Gaia only units)"
-        },
-        {
-            "name": "xsGetPlayerNumberOfObjects",
-            "return_type": "int",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to get the number of data objects for"
-                }
-            ],
-            "desc": "Returns the number of data objects for this player"
-        },
-        {
-            "name": "xsTrainObject",
-            "allow_discard": true,
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "buildingId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The building to train the objects at"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object to train"
-                },
-                {
-                    "name": "count",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The number of objects to queue"
-                }
-            ],
-            "desc": "Queues the given number of objects at the specified building. The object must be available at the building and the player must have sufficient resources to queue all the units. If resources are insufficient to cover all of the units, only units which can be afforded are queued. Resources are deducted from the player for this. **Note**: The base ID of upgraded units must be used, i.e. to train an Arbalest at the Archery Range, the `objectId` specified needs to be of the Archer itself. Same as the editor effect."
         },
         {
             "name": "xsSetUnitGatherPoint",
@@ -3011,32 +2778,6 @@
             "desc": "Sets the given unit's player name to the specified value."
         },
         {
-            "name": "xsSetObjectDescription",
-            "allow_discard": true,
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "playerId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The player to set the object description for"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The ID of the object to set the description for"
-                },
-                {
-                    "name": "description",
-                    "type": "string",
-                    "required": true,
-                    "desc": "The description to set"
-                }
-            ],
-            "desc": "Sets the given object's description to the specified value for the provided player."
-        },
-        {
             "name": "xsGetUnitProperty",
             "return_type": "float",
             "params": [
@@ -3160,50 +2901,6 @@
             "desc": "Stops the unit. Same as the editor effect."
         },
         {
-            "name": "xsBuildUnit",
-            "allow_discard": true,
-            "return_type": "bool",
-            "params": [
-                {
-                    "name": "unitIds",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The units to task"
-                },
-                {
-                    "name": "objectId",
-                    "type": "int",
-                    "required": true,
-                    "desc": "The object to build"
-                },
-                {
-                    "name": "location1",
-                    "type": "vector",
-                    "required": true,
-                    "desc": "The location to build at"
-                },
-                {
-                    "name": "location2",
-                    "type": "vector",
-                    "required": false,
-                    "desc": "When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`)"
-                },
-                {
-                    "name": "isShiftQueue",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If true, shift queue the units"
-                },
-                {
-                    "name": "isFormationCommand",
-                    "type": "bool",
-                    "required": false,
-                    "desc": "If true, issue a formation command to the units"
-                }
-            ],
-            "desc": "Tasks the selected units to build the given object at the specified location. The target location must be visible, the building must be available to the selected units, and the player must have sufficient resources to construct the building. Resources are deducted upon building. Same as the editor effect"
-        },
-        {
             "name": "xsTaskUnits",
             "allow_discard": true,
             "return_type": "bool",
@@ -3258,6 +2955,311 @@
                 }
             ],
             "desc": "Tasks the selected units to perform the given action. Same as the editor effect."
+        },
+        {
+            "name": "xsBuildUnit",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "unitIds",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The units to task"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to build"
+                },
+                {
+                    "name": "location1",
+                    "type": "vector",
+                    "required": true,
+                    "desc": "The location to build at"
+                },
+                {
+                    "name": "location2",
+                    "type": "vector",
+                    "required": false,
+                    "desc": "When building a wall, the second location to finish the wall at. (Default: `#!xs cInvalidVector`)"
+                },
+                {
+                    "name": "isShiftQueue",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, shift queue the units"
+                },
+                {
+                    "name": "isFormationCommand",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "If true, issue a formation command to the units"
+                }
+            ],
+            "desc": "Tasks the selected units to build the given object at the specified location. The target location must be visible, the building must be available to the selected units, and the player must have sufficient resources to construct the building. Resources are deducted upon building. Same as the editor effect"
+        },
+        {
+            "name": "xsTrainObject",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "buildingId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The unit ID of a building to train the objects at"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to train"
+                },
+                {
+                    "name": "count",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The number of objects to queue"
+                }
+            ],
+            "desc": "Queues the given number of objects at the specified building. The object must be available at the building and the player must have sufficient resources to queue all the units. If resources are insufficient to cover all of the units, only units which can be afforded are queued. Resources are deducted from the player for this. **Note**: The base ID of upgraded units must be used, i.e. to train an Arbalest at the Archery Range, the `objectId` specified needs to be of the Archer itself. Same as the editor effect."
+        }
+    ],
+    "Objects": [
+        {
+            "name": "xsGetObjectAttribute",
+            "return_type": "float",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player whose object to get the attribute for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the attribute for"
+                },
+                {
+                    "name": "attribute",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The attribute to get"
+                },
+                {
+                    "name": "damageClass",
+                    "type": "int",
+                    "required": true,
+                    "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
+                }
+            ],
+            "desc": "Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](xsfn:bitCastToInt) after being returned."
+        },
+        {
+            "name": "xsGetObjectName",
+            "return_type": "string",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the name for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's name for"
+                },
+                {
+                    "name": "internalName",
+                    "type": "bool",
+                    "required": false,
+                    "desc": "Returns the internal name of the object if set. `!#xs false` by default."
+                }
+            ],
+            "desc": "Returns the current name of the given object for the specified player."
+        },
+        {
+            "name": "xsIsObjectAvailable",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to check the availability for"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's availability for"
+                }
+            ],
+            "desc": "Returns true if this object can currently be trained or built."
+        },
+        {
+            "name": "xsGetObjectCopyId",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's copy ID for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the copy ID for"
+                }
+            ],
+            "desc": "Returns the given object's copy ID in data for the specified player"
+        },
+        {
+            "name": "xsGetObjectClass",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's class for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the class for"
+                }
+            ],
+            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")"
+        },
+        {
+            "name": "xsGetObjectType",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the object's type for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object to get the type for"
+                }
+            ],
+            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")"
+        },
+        {
+            "name": "xsObjectHasAction",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to check unit actions for"
+                },
+                {
+                    "name": "objectOrClassId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object or class to check actions for"
+                },
+                {
+                    "name": "actionId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The type of action to check for"
+                },
+                {
+                    "name": "targetPlayerId",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit (eg. attacking) of this player. Can use -1 to ignore this filter."
+                },
+                {
+                    "name": "targetType",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit of this type. Values 9xx refer to classes. Can use -1 to ignore this filter."
+                },
+                {
+                    "name": "targetUnitLevel",
+                    "type": "int",
+                    "required": false,
+                    "desc": "Check if the action is being performed on a unit with this `Interface Kind` (look in the A.G.E.), eg: 3 - villagers, 4 - most military units. Can be used as an alternative to `targetType`. If both are used, will pick units that match either. Can use -1 to ignore this filter."
+                }
+            ],
+            "desc": "Checks and returns if any unit matching the set filters of the given player has the specified action."
+        },
+        {
+            "name": "xsIsObjectValid",
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The object ID to check"
+                },
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to check the ID for"
+                }
+            ],
+            "desc": "Checks if the supplied object ID is valid for the given player (e.g. Gaia only units)"
+        },
+        {
+            "name": "xsGetPlayerNumberOfObjects",
+            "return_type": "int",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to get the number of data objects for"
+                }
+            ],
+            "desc": "Returns the number of data objects for this player"
+        },
+        {
+            "name": "xsSetObjectDescription",
+            "allow_discard": true,
+            "return_type": "bool",
+            "params": [
+                {
+                    "name": "playerId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The player to set the object description for"
+                },
+                {
+                    "name": "objectId",
+                    "type": "int",
+                    "required": true,
+                    "desc": "The ID of the object to set the description for"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "required": true,
+                    "desc": "The description to set"
+                }
+            ],
+            "desc": "Sets the given object's description to the specified value for the provided player."
         }
     ],
     "map": [
@@ -3915,7 +3917,7 @@
             ],
             "desc": "Gets the local player's zoom. Note that this is an unsync function and cannot be used raw in MP."
         },
-                {
+        {
             "name": "xsUnsyncGetPlayerSelectedUnitIds",
             "return_type": "int",
             "params": [
@@ -4332,7 +4334,7 @@
                     "name": "runtimeName",
                     "type": "string",
                     "required": true,
-                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](./#101-xsgetmapname \"Jump To: Function Reference > xsGetMapName\") and checking the extension. To use with an AI, set the runtime name to \"Expert\" and pass the player number as the arg"
+                    "desc": "This is the name of the runtime to create the event in. This should be `\"Random Map\"` for RMS and `\"Scenario Triggers\"` for scenarios. Find which one to use in a general script by using the `#!xs xsGetMapName(true)` [function](xsfn:xsGetMapName) and checking the extension. To use with an AI, set the runtime name to \"Expert\" and pass the player number as the arg"
                 },
                 {
                     "name": "functionName",
@@ -4558,7 +4560,7 @@
             "name": "strLastIndexOf",
             "return_type": "int",
             "params": [
-                                {
+                {
                     "name": "str",
                     "type": "string",
                     "required": true,
@@ -4878,7 +4880,7 @@
             "desc": "Formats the given string like a Python f-string. Note that Expressions are not allowed, and it is limited to variable names only.\n\nExample:\n```xs\nxsChatData(fstr(\"{colourTag}{player}: {msg}\")); // assuming that colourTag, player, and msg are valid variables here.\n```\n\nSimilar to Python, you may use `{{` and `}}` to escape the brackets themselves when passing a string to `fstr` when interpolation is not desired.\n\nThe strings passed to `fstr` do not need to be literal strings. This allows creating multi-language template strings in language files that can be fetched via `xsGetString` and then passed to `fstr` for interpretation.\n\nThe variable names used inside the `{}` must be valid identifiers and in scope, or the `{}` will be left unmodified in the output."
         }
     ],
-    "network":  [
+    "network": [
         {
             "name": "xsResetNetData",
             "return_type": "void",
