@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from scripts.doc_gen.linking import inject_links
+from scripts.doc_gen.linking_logic.xs_function_linking import XsFunctionLinking
 from scripts.doc_gen.markdown_warning import markdown_edit_warning
 
 
@@ -42,6 +43,22 @@ def _build_param_table(params: list) -> list[str]:
         lines.append(f"| `#!xs {param['type']}` | {param['name']} | {desc} | _{required}_ |")
 
     return lines + ['']
+
+
+def _build_related_list(related: dict[str, str]) -> list[str]:
+    if not related:
+        return []
+
+    lines: list[str] = [
+        '#### Related functions',
+        '',
+    ]
+
+    lines += [
+        f'- ' + XsFunctionLinking.get_function_link_block(func) + ': ' + desc for func, desc in related.items()
+    ]
+
+    return lines
 
 
 def generate():
@@ -106,6 +123,8 @@ def generate():
                 f"`#!xs {func['return_type']}`",
                 '',
             ]
+
+            body += _build_related_list(func.get('related', {}))
 
             md += body
 

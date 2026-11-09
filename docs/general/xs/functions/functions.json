@@ -3120,7 +3120,10 @@
                     "desc": "The object to get the copy ID for"
                 }
             ],
-            "desc": "Returns the given object's copy ID in data for the specified player"
+            "desc": "Returns the given object's copy ID in data for the specified player",
+            "related": {
+                "xsGetUnitCopyId": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsGetObjectClass",

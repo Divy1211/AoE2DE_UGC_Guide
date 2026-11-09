@@ -3576,6 +3576,9 @@ Returns the given object's copy ID in data for the specified player
 #### Return value
 `#!xs int`
 
+#### Related functions
+
+- [xsGetUnitCopyId](/general/xs/functions/functions.md#919-xsgetunitcopyid  "Jump To: XS → Functions → xsGetUnitCopyId()"): The same function but for alive/standing units
 
 ---
 
