@@ -1542,7 +1542,11 @@
                     "desc": "Specifies the train location entry mod when setting train location related attributes on techs and objects. When not set, defaults to using the train location entry mod value on the object itself"
                 }
             ],
-            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](xsfn:bitCastToFloat)."
+            "desc": "Change the specified attribute of the specified object or technology by the value for the specified player. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) require to be passed after being converted using [bitCastToFloat](xsfn:bitCastToFloat).",
+            "related": {
+                "xsGetObjectAttribute": "Gets the value of an object attribute",
+                "xsGetUnitAttribute": "Gets the value of an attribute of a unit"
+            }
         },
         {
             "name": "xsGetHandicapMultiplier",
@@ -1898,7 +1902,10 @@
                     "desc": "The player whose object to get the number of tasks for"
                 }
             ],
-            "desc": "Returns the number of tasks the specific object for the given player has"
+            "desc": "Returns the number of tasks the specific object for the given player has",
+            "related": {
+                "xsGetUnitTaskCount": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsGetUnitTaskCount",
@@ -1911,7 +1918,10 @@
                     "desc": "The ID of the object to get the number of tasks for"
                 }
             ],
-            "desc": "Returns the number of tasks the given unit has"
+            "desc": "Returns the number of tasks the given unit has",
+            "related": {
+                "xsGetObjectTaskCount": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsObjectTaskAmount",
@@ -1937,7 +1947,10 @@
                     "desc": "The ID (index) of the task to get"
                 }
             ],
-            "desc": "Copies the provided task of the specific object from the given player into XS' global task struct"
+            "desc": "Copies the provided task of the specific object from the given player into XS' global task struct",
+            "related": {
+                "xsUnitTaskAmount": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsUnitTaskAmount",
@@ -1957,7 +1970,10 @@
                     "desc": "The ID (index) of the task to get"
                 }
             ],
-            "desc": "Copies the provided task of the specific unit into XS' global task struct"
+            "desc": "Copies the provided task of the specific unit into XS' global task struct",
+            "related": {
+                "xsObjectTaskAmount": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsGetTaskAmount",
@@ -2002,7 +2018,10 @@
                     "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
                 }
             ],
-            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.\n\n- ID `N` will insert the task at index N\n- When `#!xs edit = true`, edit an existing task instead of inserting one.\n- ID `-(N+1)` will remove the task at index N"
+            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified object for the given player.\n\n- ID `N` will insert the task at index N\n- When `#!xs edit = true`, edit an existing task instead of inserting one.\n- ID `-(N+1)` will remove the task at index N",
+            "related": {
+                "xsModifyUnitTasks": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsModifyUnitTasks",
@@ -2028,7 +2047,10 @@
                     "desc": "If true, edit the task at the given index instead of inserting (ignored with negative indices)"
                 }
             ],
-            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.\n\n- ID `N` will insert the task at index N\n- When `#!xs edit = true`, edit an existing task instead of inserting one.\n- ID `-(N+1)` will remove the task at index N"
+            "desc": "A copy of the global XS task struct is inserted at the provided index in the task list of the specified unit.\n\n- ID `N` will insert the task at index N\n- When `#!xs edit = true`, edit an existing task instead of inserting one.\n- ID `-(N+1)` will remove the task at index N",
+            "related": {
+                "xsModifyObjectTasks": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsTask",
@@ -2202,7 +2224,11 @@
                     "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
                 }
             ],
-            "desc": "Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](xsfn:bitCastToInt) after being returned."
+            "desc": "Returns the attribute value for a specific unit on the map. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](xsfn:bitCastToInt) after being returned.",
+            "related": {
+                "xsGetObjectAttribute": "The same function but for objects in data (per player)",
+                "xsEffectAmount": "Modifies unit/object attributes"
+            }
         },
         {
             "name": "xsDoesUnitExist",
@@ -2286,7 +2312,10 @@
                     "desc": "Returns the internal name of the unit if set. `!#xs false` by default."
                 }
             ],
-            "desc": "Returns the current name of a given unit"
+            "desc": "Returns the current name of a given unit",
+            "related": {
+                "xsGetObjectName": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsGetUnitTargetUnitId",
@@ -2430,7 +2459,10 @@
                     "desc": "The unit to get the copy ID for"
                 }
             ],
-            "desc": "Returns the given unit's copy ID in data"
+            "desc": "Returns the given unit's copy ID in data",
+            "related": {
+                "xsGetObjectCopyId": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsGetUnitClass",
@@ -2443,7 +2475,10 @@
                     "desc": "The unit to get the class for"
                 }
             ],
-            "desc": "Returns the given unit's class See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")"
+            "desc": "Returns the given unit's class See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")",
+            "related": {
+                "xsGetObjectClass": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsGetUnitType",
@@ -2456,7 +2491,10 @@
                     "desc": "The unit to get the type for"
                 }
             ],
-            "desc": "Returns the given unit's type. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")"
+            "desc": "Returns the given unit's type. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")",
+            "related": {
+                "xsGetObjectType": "The same function but for objects in data (per player)"
+            }
         },
         {
             "name": "xsGetUnitAttributeTypesHeld",
@@ -2583,7 +2621,7 @@
                     "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to get the object count for"
+                    "desc": "The player to get the unit count for"
                 },
                 {
                     "name": "objectOrClassId",
@@ -2592,7 +2630,10 @@
                     "desc": "The ID of the object or class to get the count for"
                 }
             ],
-            "desc": "Returns the number of currently alive objects with the given ID of the specified player"
+            "desc": "Returns the number of currently alive units with the given object or class ID of the specified player",
+            "related": {
+                "xsGetObjectCountTotal": "Also counts queued units and foundations"
+            }
         },
         {
             "name": "xsGetObjectCountTotal",
@@ -2602,7 +2643,7 @@
                     "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player to get the object count for"
+                    "desc": "The player to get the unit count for"
                 },
                 {
                     "name": "objectOrClassId",
@@ -2611,7 +2652,10 @@
                     "desc": "The ID of the object or class to get the count for"
                 }
             ],
-            "desc": "Returns the number of currently alive/standing + queued/foundation objects with the given ID of the specified player"
+            "desc": "Returns the number of currently alive/standing + queued/foundation units with the given object or class ID of the specified player",
+            "related": {
+                "xsGetObjectCount": "Only counts alive/standing units"
+            }
         },
         {
             "name": "xsSetUnitGatherPoint",
@@ -3057,7 +3101,11 @@
                     "desc": "For use with armor/attack attributes - specifies which armor/attack class to get. Also specifies the train location entry mod when getting train location related attributes. When not set, defaults to using the train location entry mod value on the unit itself"
                 }
             ],
-            "desc": "Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](xsfn:bitCastToInt) after being returned."
+            "desc": "Returns the attribute value for an object. Note that values for certain attributes such as [sound events](../../constants/constants/#1185-cselectionsoundevent) must be converted using [bitCastToInt](xsfn:bitCastToInt) after being returned.",
+            "related": {
+                "xsGetUnitAttribute": "The same function but for alive/standing units",
+                "xsEffectAmount": "Modifies unit/object attributes"
+            }
         },
         {
             "name": "xsGetObjectName",
@@ -3082,7 +3130,10 @@
                     "desc": "Returns the internal name of the object if set. `!#xs false` by default."
                 }
             ],
-            "desc": "Returns the current name of the given object for the specified player."
+            "desc": "Returns the current name of the given object for the specified player.",
+            "related": {
+                "xsGetUnitName": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsIsObjectAvailable",
@@ -3142,7 +3193,10 @@
                     "desc": "The object to get the class for"
                 }
             ],
-            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")"
+            "desc": "Returns the given object's class for the specified player. See [cClass constants](../../constants/constants/#12-object-class \"Jump To: XS > Constant Reference > 12. Object Class\")",
+            "related": {
+                "xsGetUnitClass": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsGetObjectType",
@@ -3161,7 +3215,10 @@
                     "desc": "The object to get the type for"
                 }
             ],
-            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")"
+            "desc": "Returns the given object's type for the specified player. See [cObjectType constants](../../constants/constants/#18-object-type \"Jump To: XS > Constant Reference > 18. Object Type\")",
+            "related": {
+                "xsGetUnitType": "The same function but for alive/standing units"
+            }
         },
         {
             "name": "xsObjectHasAction",
@@ -3498,7 +3555,11 @@
                     "desc": "This value is inserted in place of any `%d` used in the message of the function"
                 }
             ],
-            "desc": "Shows the given message in the game chat"
+            "desc": "Shows the given message in the game chat",
+            "related": {
+                "fstr": "Formatting function to easily concat complex strings",
+                "xsSendChat": "Allows more advanced per-player and silent messages"
+            }
         },
         {
             "return_type": "int",
@@ -3821,7 +3882,10 @@
                     "desc": "If set, do not play the chat notification sound."
                 }
             ],
-            "desc": "Sends the given message in the game chat to all players, or only to the specified player."
+            "desc": "Sends the given message in the game chat to all players, or only to the specified player.",
+            "related": {
+                "fstr": "Formatting function to easily concat complex strings"
+            }
         },
         {
             "return_type": "int",
