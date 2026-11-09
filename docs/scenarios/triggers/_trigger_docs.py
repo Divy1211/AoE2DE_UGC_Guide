@@ -55,7 +55,7 @@ def generate(
     with urllib.request.urlopen(src) as response:
         entries = json.load(response)
 
-    with open(tricks_path, encoding="utf-8") as file:
+    with open(tricks_path, encoding='utf-8') as file:
         tricks_by_id = {entry["id"]: entry["tricks"] for entry in json.load(file)}
 
     # The `none` entry (id 0) is an empty placeholder, not a usable one.
@@ -121,5 +121,5 @@ def generate(
         if deprecated:
             out += "</details>\n"
 
-    with open(out_path, "w", encoding="utf-8") as file:
+    with open(out_path, "w", encoding='utf-8') as file:
         file.write(out)
