@@ -38,7 +38,7 @@ def _build_param_table(params: list) -> list[str]:
 
     for p_index, param in enumerate(params, 1):
         required = 'Required' if param['required'] else 'Optional'
-        desc = inject_links(param['desc']),
+        desc = inject_links(param['desc'])
 
         lines.append(f"| `#!xs {param['type']}` | {param['name']} | {desc} | _{required}_ |")
 
