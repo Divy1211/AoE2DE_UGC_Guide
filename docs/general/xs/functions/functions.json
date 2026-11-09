@@ -3816,7 +3816,7 @@
                     "desc": "If set, do not play the chat notification sound."
                 }
             ],
-            "desc": "Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!"
+            "desc": "Sends the given message in the game chat to all players, or only to the specified player."
         },
         {
             "return_type": "int",
@@ -4767,7 +4767,7 @@
                     "desc": "The string to convert to lowercase"
                 }
             ],
-            "desc": "Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected."
+            "desc": "Returns a new string that is the given string converted to lowercase. Note that only ASCII characters are affected."
         },
         {
             "name": "strReverse",
