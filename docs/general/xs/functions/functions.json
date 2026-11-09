@@ -238,7 +238,10 @@
                     "desc": "The value to set the X coordinate to"
                 }
             ],
-            "desc": "Returns a new vector with the X component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!"
+            "desc": "Returns a new vector with the X component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!",
+            "related": {
+                "xsVectorSet": "Allows assigning X, Y and Z in a single function call"
+            }
         },
         {
             "name": "xsVectorSetY",
@@ -257,7 +260,10 @@
                     "desc": "The value to set the Y coordinate to"
                 }
             ],
-            "desc": "Returns a new vector with the Y component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!"
+            "desc": "Returns a new vector with the Y component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!",
+            "related": {
+                "xsVectorSet": "Allows assigning X, Y and Z in a single function call"
+            }
         },
         {
             "name": "xsVectorSetZ",
@@ -276,7 +282,10 @@
                     "desc": "The value to set the Z coordinate to"
                 }
             ],
-            "desc": "Returns a new vector with the Z component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!"
+            "desc": "Returns a new vector with the Z component of the given vector changed to the given value. Note: This function DOES NOT modify the vector given as the parameter!",
+            "related": {
+                "xsVectorSet": "Allows assigning X, Y and Z in a single function call"
+            }
         },
         {
             "name": "xsVectorSet",
@@ -936,7 +945,10 @@
                     "desc": "The X coordinate of the point to find the X+ angle of"
                 }
             ],
-            "desc": "Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\\pi, \\pi]$"
+            "desc": "Returns the angle of the given point (x, y) made from the X+ axis, in the range $[-\\pi, \\pi]$",
+            "related": {
+                "atan2v": "The same function but accepts a vector (ignoring z) instead of separate (x, y) coordinates"
+            }
         },
         {
             "name": "atan2v",
@@ -975,7 +987,10 @@
                     "desc": "The value to find the ceil of"
                 }
             ],
-            "desc": "Returns $\\left \\lceil{x}\\right \\rceil$"
+            "desc": "Returns $\\left \\lceil{x}\\right \\rceil$",
+            "related": {
+                "xsCeilToInt": "The same function but returns an int"
+            }
         },
         {
             "name": "floor",
