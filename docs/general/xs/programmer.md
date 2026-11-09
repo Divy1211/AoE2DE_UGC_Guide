@@ -86,7 +86,7 @@ There are a total of 5 data types supported by XS, they are:
 |`#!xs bool`   | `#!xs bool a = true;`                  |
 |`#!xs vector` | `#!xs vector v = vector(1.2, 2.3, 3);` |
 
-Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scripting > Function Reference > Vectors") section of this guide for all the different functions that can be used on vectors.
+Refer to the [Vector Manipulation](../functions/functions/#2-vectors "Jump to: XS Scripting > Function Reference > Vectors") section of this guide for all the different functions that can be used on vectors.
 
 !!! Bug "No Vars in Vector Initialisation"
     Variables cannot be used in vector initialisation. For example: `#!xs vector v = vector(x, y, z);` does not work. Here `x`, `y`, `z` are floating point values. Use `#!xs vector v = xsVectorSet(x, y, z);` instead.
@@ -115,7 +115,7 @@ Refer to the [Vector Manipulation](../functions/#2-vectors "Jump to: XS Scriptin
 | Division       | `a/b`      |
 | Modulo         | `a%b`      |
 
-Refer to the [Mathematical Operations](../functions/#4-maths "Jump to: XS Scripting > Function Reference > Maths") section of this guide for useful mathematical functions.
+Refer to the [Mathematical Operations](../functions/functions/#4-maths "Jump to: XS Scripting > Function Reference > Maths") section of this guide for useful mathematical functions.
 
 !!! warning "Unary Negative"
     There is no unary negative operator in XS
@@ -318,7 +318,7 @@ include "absolute/or/relative/path/to/file.xs";
 
 ## 6. Arrays
 
-Refer to the [Array Manipulation](../functions/#3-arrays "Jump to: XS Scriptig > Function Reference > Arrays") section of this guide on how to use arrays.
+Refer to the [Array Manipulation](../functions/functions/#3-arrays "Jump to: XS Scripting > Function Reference > Arrays") section of this guide on how to use arrays.
 
 Standard syntax like `#!xs int a[] = new int[10];` or `#!xs a[2];` is not supported by XS.
 
@@ -373,7 +373,7 @@ rule chatTheValueOfA
 }
 ```
 
-There are a lot of built in XS functions that can interact with rules. Check the [Rules](../functions/#1-rules "Jump to: XS Scripting > Function Reference > Rules") Section of this guide.
+There are a lot of built in XS functions that can interact with rules. Check the [Rules](../functions/functions/#1-rules "Jump to: XS Scripting > Function Reference > Rules") Section of this guide.
 
 The variable `cActivationTime`, when used inside the block of a rule, gives the time of activation of the rule in seconds.
 

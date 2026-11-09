@@ -1046,7 +1046,7 @@ void main() {
 
 Function names follow the same laws and conventions that variable names do.
 
-A list of all inbuilt XS functions and their descriptions are provided in the [Fucntion Reference](../functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
+A list of all inbuilt XS functions and their descriptions are provided in the [Function Reference](../functions/functions/ "Jump to: XS Scripting > Function Reference") section of this guide.
 
 **Mutable Functions**
 
@@ -1420,7 +1420,7 @@ rule chatTheValueOfA
 }
 ```
 
-There are a lot of built in XS functions that can interact with rules. Check the [Rules](../functions/#1-rules "Jump to: XS Scripting > Function Reference > Rules") Section of this guide.
+There are a lot of built in XS functions that can interact with rules. Check the [Rules](../functions/functions/#1-rules "Jump to: XS Scripting > Function Reference > Rules") Section of this guide.
 
 The variable `cActivationTime`, when used inside the block of a rule, gives the time of activation of the rule in seconds.
 
