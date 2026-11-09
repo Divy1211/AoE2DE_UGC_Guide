@@ -1306,7 +1306,7 @@ If you know of any resources that are not written on this page, or if the descri
 
 - Purpose: Additional monk seconds needed before conversion by enemy monks is even possible
 
-- Note: A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West") by T-West
 
 ## 179. Convert Resist Max Adjustment
 
@@ -1314,7 +1314,7 @@ If you know of any resources that are not written on this page, or if the descri
 
 - Purpose: Additional monk seconds needed before conversion by enemy monks is forced
 
-- Note: A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=830 by T-West.
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West") by T-West.
 
 ## 180. Convert Building Min
 
@@ -1322,7 +1322,7 @@ If you know of any resources that are not written on this page, or if the descri
 
 - Purpose: Minimum time required to convert a building
 
-- Note: A great explanation of how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West
+- Note: A great explanation of how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
 
 ## 181. Convert Building Max
 
@@ -1330,7 +1330,7 @@ If you know of any resources that are not written on this page, or if the descri
 
 - Purpose: Maximum time required to convert a building
 
-- Note: A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West
+- Note: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
 
 ## 182. Convert Building Chance
 
@@ -1338,7 +1338,7 @@ If you know of any resources that are not written on this page, or if the descri
 
 - Purpose: Percent chance for monks to convert buildings
 
-- Note: A great explanation for how this works: https://youtu.be/-qRUaOHpbwI?t=902 by T-West
+- Note: A great explanation for how this works [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West") by T-West
 
 ## 183. Reveal Enemy
 

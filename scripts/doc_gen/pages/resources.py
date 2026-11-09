@@ -60,13 +60,17 @@ def generate():
         if data[resource]['note']:
             md += f"- Note: {inject_links(data[resource]['note'])}\n\n"
 
-    links = """ [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West")
-     [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West")
-     [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West")""".split("\n")
+    links = [
+        ' [here](https://youtu.be/-qRUaOHpbwI?t=870 "Explanatory video by T-West")',
+        ' [here](https://youtu.be/-qRUaOHpbwI?t=830 "Explanatory video by T-West")',
+        ' [here](https://youtu.be/-qRUaOHpbwI?t=902 "Explanatory video by T-West")',
+    ]
 
-    linkso = """: https://youtu.be/-qRUaOHpbwI?t=870
-    : https://youtu.be/-qRUaOHpbwI?t=830
-    : https://youtu.be/-qRUaOHpbwI?t=902""".split("\n")
+    linkso = [
+        ': https://youtu.be/-qRUaOHpbwI?t=870',
+        ': https://youtu.be/-qRUaOHpbwI?t=830',
+        ': https://youtu.be/-qRUaOHpbwI?t=902',
+    ]
 
     md = md.replace(">=", r"$\geq$")
     md = md.replace("<=", r"$\leq$")
