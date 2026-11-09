@@ -10,7 +10,7 @@ DOCS = Path(__file__).parent.parent.parent.parent / 'docs'
 
 @cache
 def _res_decs() -> dict:
-    return json.loads((DOCS / 'general' / 'resources' / 'res_desc.json').read_text(encoding="utf-8"))
+    return json.loads((DOCS / 'general' / 'resources' / 'res_desc.json').read_text(encoding='utf-8'))
 
 
 def to_title(string: str):
@@ -110,7 +110,7 @@ def generate():
         '',
     ]
 
-    const_docs = json.loads(input_file.read_text(encoding="utf-8"))
+    const_docs = json.loads(input_file.read_text(encoding='utf-8'))
 
     md = ""
     for index, (category, constants) in enumerate(const_docs.items(), 1):
@@ -136,7 +136,7 @@ def generate():
 
             md += body
 
-    output_file.write_text('\n'.join(top) + md, encoding="utf-8")
+    output_file.write_text('\n'.join(top) + md, encoding='utf-8')
 
 
 if __name__ == "__main__":

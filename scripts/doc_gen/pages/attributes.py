@@ -43,7 +43,7 @@ def generate():
         '',
     ]
 
-    attrs = json.loads(input_file.read_text(encoding="utf-8"))
+    attrs = json.loads(input_file.read_text(encoding='utf-8'))
 
     out = ""
     for id_, attr in attrs.items():
@@ -66,7 +66,7 @@ def generate():
         if len(attr['flags']) > 0:
             out += "\n"
 
-    output_file.write_text('\n'.join(top) + out, encoding="utf-8")
+    output_file.write_text('\n'.join(top) + out, encoding='utf-8')
 
 
 if __name__ == "__main__":

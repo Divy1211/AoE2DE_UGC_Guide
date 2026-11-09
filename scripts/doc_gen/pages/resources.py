@@ -45,7 +45,7 @@ def generate():
         '',
     ]
 
-    data = json.loads(input_file.read_text(encoding="utf-8"))
+    data = json.loads(input_file.read_text(encoding='utf-8'))
 
     md = ""
     for resource in data:
@@ -82,7 +82,7 @@ def generate():
     for i in range(len(linkso)):
         md = md.replace(linkso[i], links[i])
 
-    output_file.write_text('\n'.join(top) + md, encoding="utf-8")
+    output_file.write_text('\n'.join(top) + md, encoding='utf-8')
 
 
 if __name__ == "__main__":

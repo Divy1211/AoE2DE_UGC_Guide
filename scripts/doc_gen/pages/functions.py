@@ -6,7 +6,7 @@ from scripts.doc_gen.markdown_warning import markdown_edit_warning
 
 
 def _build_function_grid(function_docs) -> list[str]:
-    lines: list[str] = ["## All Available Functions"]
+    lines: list[str] = ['## All Available Functions']
 
     for cat_index, (category, functions) in enumerate(function_docs.items(), 1):
         lines += [
@@ -36,7 +36,7 @@ def _build_param_table(params: list) -> list[str]:
     ]
 
     for p_index, param in enumerate(params, 1):
-        required = "Required" if param['required'] else "Optional"
+        required = 'Required' if param['required'] else 'Optional'
         desc = inject_links(param['desc']),
 
         lines.append(f"| `#!xs {param['type']}` | {param['name']} | {desc} | _{required}_ |")
@@ -49,7 +49,7 @@ def generate():
     input_file = folder / 'functions.json'
     output_file = folder / 'functions.md'
 
-    function_docs = json.loads(input_file.read_text(encoding="utf-8"))
+    function_docs = json.loads(input_file.read_text(encoding='utf-8'))
 
     top = markdown_edit_warning() + [
         '*Written by: Alian713, Kramb, KSneijders*',
@@ -68,7 +68,7 @@ def generate():
         ]
 
         for f_index, func in enumerate(functions, 1):
-            is_deprecated: bool = func.get("deprecated", None) is not None
+            is_deprecated: bool = func.get('deprecated', None) is not None
 
             args = ', '.join(f"{param['type']} {param['name']}" for param in func['params'])
             definition = f"`#!xs {func['return_type']} {func['name']}({args})`"
@@ -114,7 +114,7 @@ def generate():
 
             md += ['', '---', '']
 
-    output_file.write_text('\n'.join(md), encoding="utf-8")
+    output_file.write_text('\n'.join(md), encoding='utf-8')
 
 
 if __name__ == "__main__":
