@@ -180,7 +180,6 @@ xsResetTaskAmount();
 xsTaskAmount(cTaskAttrWorkRange, range);
 xsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);
 xsTaskAmount(cTaskAttrTaskType, cTaskTypeGarrison);
-xsTaskAmount(cTaskAttrObjectId, -1);
 xsTaskAmount(cTaskAttrObjectClass, cWarshipClass);
 xsModifyObjectTasks(berserk, player);
 ```
