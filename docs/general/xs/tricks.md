@@ -265,7 +265,7 @@ void doubleTechCost() {
 ```
 The code above can be easily changed to any mathematical formula to change tech cost.
 
-## 6. Checking distance between 2 objects
+## 6. Checking distance between 2 units
 
 This function checks if any unit of the first object ID is within the given distance from any unit of the second object ID, both owned by the same player. Distance is measured as a straight line between the 2 units.
 
