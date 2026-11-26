@@ -267,30 +267,27 @@ The code above can be easily changed to any mathematical formula to change tech 
 
 ## 6. Checking distance between 2 objects
 
-This function checks if any scout is within 5 in game distance units from any outpost of the same player. Distance is measured as a straight line between the 2 objects.
+This function checks if any unit of the first object ID is within the given distance from any unit of the second object ID, both owned by the same player. Distance is measured as a straight line between the 2 units.
 
 ```xs
-bool isAnyScoutNearAnyOutpost(int player) {
-    const int scoutId = 448;
-    const int outpostId = 598;
-    const float distance = 5.0;
-    static int scouts = -1;
-    static int outposts = -1;
-    scouts = xsGetPlayerUnitIds(player, scoutId, scouts);
-    outposts = xsGetPlayerUnitIds(player, outpostId, outposts);
-    int numberOfScouts = xsArrayGetSize(scouts);
-    int numberOfOutposts = xsArrayGetSize(outposts);
-    for (s = 0; < numberOfScouts) {
-        int scout = xsArrayGetInt(scouts, s);
-        vector scoutPosition = xsGetUnitPosition(scout);
-        float scoutX = xsVectorGetX(scoutPosition);
-        float scoutY = xsVectorGetY(scoutPosition);
-        for (o = 0; < numberOfOutposts) {
-            int outpost = xsArrayGetInt(outposts, o);
-            vector outpostPosition = xsGetUnitPosition(outpost);
-            float outpostX = xsVectorGetX(outpostPosition);
-            float outpostY = xsVectorGetY(outpostPosition);
-            float currentDistance = sqrt(pow(scoutX - outpostX, 2.0) + pow(scoutY - outpostY, 2.0));
+bool areUnitsWithinDistance(int player = -1, int objectId1 = -1, int objectId2 = -1, float distance = 0.0) {
+    static int units1 = -1;
+    static int units2 = -1;
+    units1 = xsGetPlayerUnitIds(player, objectId1, units1);
+    units2 = xsGetPlayerUnitIds(player, objectId2, units2);
+    int numberOfUnits1 = xsArrayGetSize(units1);
+    int numberOfUnits2 = xsArrayGetSize(units2);
+    for (i = 0; < numberOfUnits1) {
+        int unit1 = xsArrayGetInt(units1, i);
+        vector position1 = xsGetUnitPosition(unit1);
+        float x1 = xsVectorGetX(position1);
+        float y1 = xsVectorGetY(position1);
+        for (j = 0; < numberOfUnits2) {
+            int unit2 = xsArrayGetInt(units2, j);
+            vector position2 = xsGetUnitPosition(unit2);
+            float x2 = xsVectorGetX(position2);
+            float y2 = xsVectorGetY(position2);
+            float currentDistance = sqrt(pow(x1 - x2, 2.0) + pow(y1 - y2, 2.0));
             if (currentDistance <= distance) {
                 return (true);
             }
@@ -299,3 +296,30 @@ bool isAnyScoutNearAnyOutpost(int player) {
     return (false);
 }
 ```
+
+For example, `areUnitsWithinDistance(1, 448, 598, 5.0)` checks if any player 1 scout (448) is within 5 distance from any player 1 outpost (598).
+
+## 7. Counting units in a square area
+
+This function counts how many units of the given object ID a player has inside a square area. The area goes from point (`x1`, `y1`) to point (`x2`, `y2`), where `x1 <= x2` and `y1 <= y2`.
+
+```xs
+int countUnitsInArea(int player = -1, int objectId = -1, float x1 = 0.0, float y1 = 0.0, float x2 = 0.0, float y2 = 0.0) {
+    static int units = -1;
+    units = xsGetPlayerUnitIds(player, objectId, units);
+    int numberOfUnits = xsArrayGetSize(units);
+    int count = 0;
+    for (i = 0; < numberOfUnits) {
+        int unit = xsArrayGetInt(units, i);
+        vector position = xsGetUnitPosition(unit);
+        float x = xsVectorGetX(position);
+        float y = xsVectorGetY(position);
+        if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
+            count = count + 1;
+        }
+    }
+    return (count);
+}
+```
+
+For example, `countUnitsInArea(1, 74, 10.0, 10.0, 20.0, 20.0)` counts player 1 militia units (74) in the area from (10.0, 10.0) to (20.0, 20.0).
