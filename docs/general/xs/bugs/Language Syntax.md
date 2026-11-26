@@ -239,7 +239,6 @@ void main() {
     }
     xsChatData("test after for loop");
 }
-
 ```
 3. Include the script in the scenario or RMS
 4. When a game is played all three chat data functions run and show on screen
@@ -306,7 +305,6 @@ static int a = 10;
 void main() {
     xsChatData("test "+a);
 }
-
 ```
 3. Include the script in the scenario or RMS
 4. When a game is played using the scenario or RMS, nothing is chatted to the screen
