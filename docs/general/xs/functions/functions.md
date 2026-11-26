@@ -2492,7 +2492,7 @@ A copy of the global XS task struct is inserted at the provided index in the tas
 | Type | Name | Description | Required |
 | :--- | :--- | :---------- | :------- |
 | `#!xs int` | objectId | The ID of the object to modify the task for | _Required_ |
-| `#!xs int` | playerId | The player whose object to modify the task for. Must be a single player; -1 does not target all players | _Required_ |
+| `#!xs int` | playerId | The player whose object to modify the task for. -1 does not target all players | _Required_ |
 | `#!xs int` | taskId | The index to insert the task at | _Optional_ |
 | `#!xs bool` | edit | If true, edit the task at the given index instead of inserting (ignored with negative indices) | _Optional_ |
 

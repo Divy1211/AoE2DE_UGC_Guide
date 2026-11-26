@@ -2012,7 +2012,7 @@
                     "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player whose object to modify the task for. Must be a single player; -1 does not target all players"
+                    "desc": "The player whose object to modify the task for. -1 does not target all players"
                 },
                 {
                     "name": "taskId",
