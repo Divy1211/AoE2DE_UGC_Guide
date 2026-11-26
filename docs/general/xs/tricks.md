@@ -315,7 +315,7 @@ int countUnitsInArea(int player = -1, int objectId = -1, float x1 = 0.0, float y
         float x = xsVectorGetX(position);
         float y = xsVectorGetY(position);
         if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
-            count = count + 1;
+            count++;
         }
     }
     return (count);
