@@ -77,28 +77,22 @@ bool xsAddAura(
     }
 
     /* Setting right combat ability flags */
-    float ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
+    int ca = 0 + xsGetObjectAttribute(player, auraUnit, cCombatAbility);
     if (ca < 0) {
         ca = 0;
     }
-    float caMod = 0;
-    float auraBit = (ca / 32) % 2;
-    if (auraBit == 0) {
-        caMod = 32;
+    int newCa = bitOr(ca, 32);
+    if (affectSelf) {
+        newCa = bitOr(newCa, 64);
+    } else {
+        newCa = bitAnd(newCa, -65);
     }
-    float selfBit = (ca / 64) % 2;
-    if (affectSelf && selfBit == 0) {
-        caMod = caMod + 64;
-    } else if (affectSelf == false && selfBit == 1) {
-        caMod = caMod - 64;
-    }
-    if (caMod != 0) {
-        xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
+    if (newCa != ca) {
+        xsEffectAmount(setCommand, auraUnit, cCombatAbility, 0.0 + newCa, player);
     }
 
     /* Setting temporary aura values if enabled */
-    int tempEffectBit = (auraEffectsBitField / 8) % 2;
-    if (tempEffectBit == 1) {
+    if (bitAnd(auraEffectsBitField, 8) != 0) {
         float maxCharge = 1;
         float cdRatio = 1000;
         if (tempAuraCooldown > 0) {
@@ -270,3 +264,62 @@ void doubleTechCost() {
 }
 ```
 The code above can be easily changed to any mathematical formula to change tech cost.
+
+## 6. Checking distance between 2 units
+
+This function checks if any unit of the first object ID is within the given distance from any unit of the second object ID, both owned by the same player. Distance is measured as a straight line between the 2 units.
+
+```xs
+bool areUnitsWithinDistance(int player = -1, int objectId1 = -1, int objectId2 = -1, float distance = 0.0) {
+    static int units1 = -1;
+    static int units2 = -1;
+    units1 = xsGetPlayerUnitIds(player, objectId1, units1);
+    units2 = xsGetPlayerUnitIds(player, objectId2, units2);
+    int numberOfUnits1 = xsArrayGetSize(units1);
+    int numberOfUnits2 = xsArrayGetSize(units2);
+    for (i = 0; < numberOfUnits1) {
+        int unit1 = xsArrayGetInt(units1, i);
+        vector position1 = xsGetUnitPosition(unit1);
+        float x1 = xsVectorGetX(position1);
+        float y1 = xsVectorGetY(position1);
+        for (j = 0; < numberOfUnits2) {
+            int unit2 = xsArrayGetInt(units2, j);
+            vector position2 = xsGetUnitPosition(unit2);
+            float x2 = xsVectorGetX(position2);
+            float y2 = xsVectorGetY(position2);
+            float currentDistance = sqrt(pow(x1 - x2, 2.0) + pow(y1 - y2, 2.0));
+            if (currentDistance <= distance) {
+                return (true);
+            }
+        }
+    }
+    return (false);
+}
+```
+
+For example, `areUnitsWithinDistance(1, 448, 598, 5.0)` checks if any player 1 scout (448) is within 5 distance from any player 1 outpost (598).
+
+## 7. Counting units in a square area
+
+This function counts how many units of the given object ID a player has inside a square area. The area goes from point (`x1`, `y1`) to point (`x2`, `y2`), where `x1 <= x2` and `y1 <= y2`.
+
+```xs
+int countUnitsInArea(int player = -1, int objectId = -1, float x1 = 0.0, float y1 = 0.0, float x2 = 0.0, float y2 = 0.0) {
+    static int units = -1;
+    units = xsGetPlayerUnitIds(player, objectId, units);
+    int numberOfUnits = xsArrayGetSize(units);
+    int count = 0;
+    for (i = 0; < numberOfUnits) {
+        int unit = xsArrayGetInt(units, i);
+        vector position = xsGetUnitPosition(unit);
+        float x = xsVectorGetX(position);
+        float y = xsVectorGetY(position);
+        if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
+            count++;
+        }
+    }
+    return (count);
+}
+```
+
+For example, `countUnitsInArea(1, 74, 10.0, 10.0, 20.0, 20.0)` counts player 1 militia units (74) in the area from (10.0, 10.0) to (20.0, 20.0).

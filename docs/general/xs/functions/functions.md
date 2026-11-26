@@ -1083,7 +1083,7 @@ Gets and returns the value of the given vector array at the specified index.
 
 `#!xs bool xsArrayResizeInt(int arrayId, int newSize)`
 
-Resizes the the given int array to the specified size and returns 1.
+Resizes the the given int array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements.
 
 #### Parameters
 
@@ -1102,7 +1102,7 @@ Resizes the the given int array to the specified size and returns 1.
 
 `#!xs bool xsArrayResizeFloat(int arrayId, int newSize)`
 
-Resizes the the given float array to the specified size and returns 1.
+Resizes the the given float array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements.
 
 #### Parameters
 
@@ -1121,7 +1121,7 @@ Resizes the the given float array to the specified size and returns 1.
 
 `#!xs bool xsArrayResizeBool(int arrayId, int newSize)`
 
-Resizes the the given bool array to the specified size and returns 1.
+Resizes the the given bool array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements.
 
 #### Parameters
 
@@ -1140,7 +1140,7 @@ Resizes the the given bool array to the specified size and returns 1.
 
 `#!xs bool xsArrayResizeString(int arrayId, int newSize)`
 
-Resizes the the given string array to the specified size and returns 1.
+Resizes the the given string array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements.
 
 #### Parameters
 
@@ -1159,7 +1159,7 @@ Resizes the the given string array to the specified size and returns 1.
 
 `#!xs bool xsArrayResizeVector(int arrayId, int newSize)`
 
-Resizes the the given vector array to the specified size and returns 1.
+Resizes the the given vector array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements.
 
 #### Parameters
 
@@ -2492,8 +2492,8 @@ A copy of the global XS task struct is inserted at the provided index in the tas
 | Type | Name | Description | Required |
 | :--- | :--- | :---------- | :------- |
 | `#!xs int` | objectId | The ID of the object to modify the task for | _Required_ |
-| `#!xs int` | playerId | The player whose object to modify the task for | _Required_ |
-| `#!xs int` | taskId | The index to insert the task at | _Required_ |
+| `#!xs int` | playerId | The player whose object to modify the task for. -1 does not target all players | _Required_ |
+| `#!xs int` | taskId | The index to insert the task at | _Optional_ |
 | `#!xs bool` | edit | If true, edit the task at the given index instead of inserting (ignored with negative indices) | _Optional_ |
 
 #### Return value
@@ -3083,7 +3083,7 @@ Returns the given object's type for the specified player. See [cObjectType const
 
 `#!xs int xsGetUnitAttributeTypesHeld(int unitId)`
 
-Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog.
+Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog. The returned array cannot be deleted, so avoid calling this in repeated code (e.g. rules or loops) as it can cause memory leaks.
 
 #### Parameters
 
@@ -3195,7 +3195,7 @@ Returns the ID of the unit in which this unit is garrisoned in
 
 `#!xs int xsGetGarrisonedUnitIds(int unitId)`
 
-Returns an int array which contains the IDs of all the units garrisoned inside this unit
+Returns an int array which contains the IDs of all the units garrisoned inside this unit. The returned array cannot be deleted, so avoid calling this in repeated code (e.g. rules or loops) as it can cause memory leaks.
 
 #### Parameters
 
@@ -4239,7 +4239,7 @@ Gets the time remaining for this timer in the specified unit. Note: If a playerI
 
 `#!xs bool xsSendChat(string msg, int playerId, bool silent)`
 
-Gets the time remaining for this timer in the specified unit. Note: If a playerId other than `-1` is used, it can possibly return different values for different players and will cause a desync! Use with caution!
+Sends the given message in the game chat to all players, or only to the specified player.
 
 #### Parameters
 
@@ -5190,7 +5190,7 @@ Removes the specified number of characters at the provided index in the given st
 
 `#!xs int strSplit(string str, string delimiter, int max)`
 
-Returns an int ID for an array of strings.
+Returns an int ID for an array of strings. The returned array cannot be deleted, so avoid calling this in repeated code (e.g. rules or loops) as it can cause memory leaks.
 
 #### Parameters
 
@@ -5301,7 +5301,7 @@ Returns a new string that is the given string converted to uppercase. Note that 
 
 `#!xs string strToLower(string str)`
 
-Returns a new string that is the given string converted to uppercase. Note that only ASCII characters are affected.
+Returns a new string that is the given string converted to lowercase. Note that only ASCII characters are affected.
 
 #### Parameters
 

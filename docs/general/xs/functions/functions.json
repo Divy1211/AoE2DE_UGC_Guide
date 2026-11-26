@@ -699,7 +699,7 @@
                     "desc": "The new size of the array"
                 }
             ],
-            "desc": "Resizes the the given int array to the specified size and returns 1."
+            "desc": "Resizes the the given int array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements."
         },
         {
             "name": "xsArrayResizeFloat",
@@ -719,7 +719,7 @@
                     "desc": "The new size of the array"
                 }
             ],
-            "desc": "Resizes the the given float array to the specified size and returns 1."
+            "desc": "Resizes the the given float array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements."
         },
         {
             "name": "xsArrayResizeBool",
@@ -739,7 +739,7 @@
                     "desc": "The new size of the array"
                 }
             ],
-            "desc": "Resizes the the given bool array to the specified size and returns 1."
+            "desc": "Resizes the the given bool array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements."
         },
         {
             "name": "xsArrayResizeString",
@@ -759,7 +759,7 @@
                     "desc": "The new size of the array"
                 }
             ],
-            "desc": "Resizes the the given string array to the specified size and returns 1."
+            "desc": "Resizes the the given string array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements."
         },
         {
             "name": "xsArrayResizeVector",
@@ -779,7 +779,7 @@
                     "desc": "The new size of the array"
                 }
             ],
-            "desc": "Resizes the the given vector array to the specified size and returns 1."
+            "desc": "Resizes the the given vector array to the specified size and returns 1. Shrinking the array does not free the memory used by the array or its removed elements."
         },
         {
             "name": "xsArrayGetSize",
@@ -2012,12 +2012,12 @@
                     "name": "playerId",
                     "type": "int",
                     "required": true,
-                    "desc": "The player whose object to modify the task for"
+                    "desc": "The player whose object to modify the task for. -1 does not target all players"
                 },
                 {
                     "name": "taskId",
                     "type": "int",
-                    "required": true,
+                    "required": false,
                     "desc": "The index to insert the task at"
                 },
                 {
@@ -2601,7 +2601,7 @@
                     "desc": "The unit to get the held resource types for"
                 }
             ],
-            "desc": "Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog."
+            "desc": "Returns the given unit's type of resources held as an array of ints. The only unit that this currently returns multiple values for is the trade cart/cog. The returned array cannot be deleted, so avoid calling this in repeated code (e.g. rules or loops) as it can cause memory leaks."
         },
         {
             "name": "xsGetUnitAttributeHeld",
@@ -2705,7 +2705,7 @@
                     "desc": "The unit to get the garrisoned objects for"
                 }
             ],
-            "desc": "Returns an int array which contains the IDs of all the units garrisoned inside this unit"
+            "desc": "Returns an int array which contains the IDs of all the units garrisoned inside this unit. The returned array cannot be deleted, so avoid calling this in repeated code (e.g. rules or loops) as it can cause memory leaks."
         },
         {
             "name": "xsGetObjectCount",
@@ -4683,7 +4683,7 @@
                     "desc": "The maximum number of splits to make."
                 }
             ],
-            "desc": "Returns an int ID for an array of strings."
+            "desc": "Returns an int ID for an array of strings. The returned array cannot be deleted, so avoid calling this in repeated code (e.g. rules or loops) as it can cause memory leaks."
         },
         {
             "name": "strJoin",

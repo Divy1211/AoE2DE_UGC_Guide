@@ -248,7 +248,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code gives player 1 longboats an ability to load and unload friendly berserkers as a transport ship with a capacity of 20. */\n\nconst int player = 1;\nconst int berserk = 692;\nconst int longboat = 250;\nconst float range = 1.0;\nconst int capacity = 20;\nconst int garrisonUnitTrait = 1;\nconst int shipUnitTrait = 2;\nconst int beachTerrain = 2;\nconst int gaiaYouAndAlly = 4;\n\nxsEffectAmount(cSetAttribute, longboat, cGarrisonCapacity, capacity, player);\nxsEffectAmount(cSetAttribute, longboat, cTraits, garrisonUnitTrait + shipUnitTrait, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrTerrain, beachTerrain);\nxsTask(longboat, cTaskTypeUnloadBoatLike, -1, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrWorkRange, range);\nxsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);\nxsTask(berserk, cTaskTypeGarrison, cWarshipClass, player);"
+            "/* This code gives player 1 longboats an ability to load and unload friendly berserkers as a transport ship with a capacity of 20. */\n\nconst int player = 1;\nconst int berserk = 692;\nconst int longboat = 250;\nconst float range = 1.0;\nconst int capacity = 20;\nconst int garrisonUnitTrait = 1;\nconst int shipUnitTrait = 2;\nconst int beachTerrain = 2;\nconst int gaiaYouAndAlly = 4;\n\nxsEffectAmount(cSetAttribute, longboat, cGarrisonCapacity, capacity, player);\nxsEffectAmount(cSetAttribute, longboat, cTraits, garrisonUnitTrait + shipUnitTrait, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrTerrain, beachTerrain);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeUnloadBoatLike);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\nxsModifyObjectTasks(longboat, player);\n\nxsResetTaskAmount();\nxsTaskAmount(cTaskAttrWorkRange, range);\nxsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeGarrison);\nxsTaskAmount(cTaskAttrObjectClass, cWarshipClass);\nxsModifyObjectTasks(berserk, player);"
         ]
     },
     "13": {
@@ -625,7 +625,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code gives player 1 teutonic knight an ability to heal units. The healing work rate multiplied was set to 5x. */\n\nconst int player = 1;\nconst int teutonicKnight = 25;\nconst float workRateMultiplier = 5.0;\nconst float conversionRange = 10.0;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrProceedingGraphic, 1160);\n\nxsTask(teutonicKnight, cTaskTypeHeal, -1, player);"
+            "/* This code gives player 1 teutonic knight an ability to heal units. The healing work rate multiplied was set to 5x. */\n\nconst int player = 1;\nconst int teutonicKnight = 25;\nconst float workRateMultiplier = 5.0;\nconst float conversionRange = 10.0;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrProceedingGraphic, 1160);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeHeal);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(teutonicKnight, player);"
         ]
     },
     "106": {
@@ -707,7 +707,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code gives player 1 obuch an ability to repair buildings and repairable units. the repair rate is 3 times the work rate. */\n\nconst int player = 1;\nconst int obuch = 1701;\nconst float workRateMultiplier = 3.0;\nconst int obuchAttackGraphic = 12311;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrProceedingGraphic, obuchAttackGraphic);\n\nxsTask(obuch, cTaskTypeRepair, -1, player);"
+            "/* This code gives player 1 obuch an ability to repair buildings and repairable units. the repair rate is 3 times the work rate. */\n\nconst int player = 1;\nconst int obuch = 1701;\nconst float workRateMultiplier = 3.0;\nconst int obuchAttackGraphic = 12311;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);\nxsTaskAmount(cTaskAttrProceedingGraphic, obuchAttackGraphic);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeRepair);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(obuch, player);"
         ]
     },
     "107": {
@@ -1148,7 +1148,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code gives player 1 knights an ability to charge enemy units, during which they increase their speed by 2.5 times and their attack by 5. This ability has a minimum range of 2, a max range of 7 and a cooldown of 30 seconds. */\n\nconst int player = 1;\nconst int knight = 38;\nconst float minDistance = 2;\nconst float maxDistance = 7;\nconst float speedMultiplier = 2.5;\nconst int taskEnableFlag = 2001;\nconst int chargeAbility = 3;\nconst int chargeEvent = 0;\nconst int chargeType = 1;\nconst float chargeAttackBonus = 5.0;\nconst float cooldownDuration = 30.0;\n\nxsEffectAmount(cSetAttribute, knight, cSpecialAbility, chargeAbility, player);\nxsEffectAmount(cSetAttribute, knight, cChargeType, chargeType);\nxsEffectAmount(cSetAttribute, knight, cChargeEvent, chargeEvent);\nxsEffectAmount(cSetAttribute, knight, cMaxCharge, chargeAttackBonus, player);\nxsEffectAmount(cSetAttribute, knight, cRechargeRate, chargeAttackBonus / cooldownDuration, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, minDistance);\nxsTaskAmount(cTaskAttrWorkValue2, maxDistance);\nxsTaskAmount(cTaskAttrWorkRange, speedMultiplier);\nxsTaskAmount(cTaskAttrWorkFlag2, taskEnableFlag);\n\nxsTask(knight, cTaskTypeChargeAttack, -1, player);"
+            "/* This code gives player 1 knights an ability to charge enemy units, during which they increase their speed by 2.5 times and their attack by 5. This ability has a minimum range of 2, a max range of 7 and a cooldown of 30 seconds. */\n\nconst int player = 1;\nconst int knight = 38;\nconst float minDistance = 2;\nconst float maxDistance = 7;\nconst float speedMultiplier = 2.5;\nconst int taskEnableFlag = 2001;\nconst int chargeAbility = 3;\nconst int chargeEvent = 0;\nconst int chargeType = 1;\nconst float chargeAttackBonus = 5.0;\nconst float cooldownDuration = 30.0;\n\nxsEffectAmount(cSetAttribute, knight, cSpecialAbility, chargeAbility, player);\nxsEffectAmount(cSetAttribute, knight, cChargeType, chargeType);\nxsEffectAmount(cSetAttribute, knight, cChargeEvent, chargeEvent);\nxsEffectAmount(cSetAttribute, knight, cMaxCharge, chargeAttackBonus, player);\nxsEffectAmount(cSetAttribute, knight, cRechargeRate, chargeAttackBonus / cooldownDuration, player);\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, minDistance);\nxsTaskAmount(cTaskAttrWorkValue2, maxDistance);\nxsTaskAmount(cTaskAttrWorkRange, speedMultiplier);\nxsTaskAmount(cTaskAttrWorkFlag2, taskEnableFlag);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeChargeAttack);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(knight, player);"
         ]
     },
     "134": {
@@ -1326,7 +1326,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code gives player 1 war elephant an ability to damage enemy units while moving in a 0.75 range twice per second for 2.5 damage */\n\nconst int player = 1;\nconst int elephant = 239;\nconst float damage = 2.5;\nconst float time = 0.5;\nconst float range = 0.75;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, damage);\nxsTaskAmount(cTaskAttrWorkValue2, time);\nxsTaskAmount(cTaskAttrWorkRange, range);\n\nxsTask(elephant, cTaskTypeMovementDamage, -1, player);"
+            "/* This code gives player 1 war elephant an ability to damage enemy units while moving in a 0.75 range twice per second for 2.5 damage */\n\nconst int player = 1;\nconst int elephant = 239;\nconst float damage = 2.5;\nconst float time = 0.5;\nconst float range = 0.75;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, damage);\nxsTaskAmount(cTaskAttrWorkValue2, time);\nxsTaskAmount(cTaskAttrWorkRange, range);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeMovementDamage);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(elephant, player);"
         ]
     },
     "153": {
@@ -1472,7 +1472,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code makes player 1 Attila the Hun gain 2 gold when killing enemy unit or destroying an enemy building */\n\nconst int player = 1;\nconst int attila = 777;\nconst float resourceGainRate = 2.0;\nconst int resourceToGain = cAttributeGold;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, resourceGainRate);\nxsTaskAmount(cTaskAttrResourceOut, resourceToGain);\n\nxsTask(attila, cTaskTypeLoot, -1, player);",
+            "/* This code makes player 1 Attila the Hun gain 2 gold when killing enemy unit or destroying an enemy building */\n\nconst int player = 1;\nconst int attila = 777;\nconst float resourceGainRate = 2.0;\nconst int resourceToGain = cAttributeGold;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, resourceGainRate);\nxsTaskAmount(cTaskAttrResourceOut, resourceToGain);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(attila, player);",
             "/* This code makes player 1 mangudai gain 1 attack every time they kill an infantry, archer, cavalry or siege unit to a maximum of 5 */\n\nconst int player = 1;\nconst int mangudai = 11;\nconst int maxNumberOfStatGains = 5;\nconst int gainAttributesFlag = 1;\nconst int attribute = cAttack;\nconst float amountToGain = 1.0;\nconst int levelUpGraphic = 12263;\nconst int statGainId = 1;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);\nxsTaskAmount(cTaskAttrWorkFlag2, maxNumberOfStatGains);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\nxsTaskAmount(cTaskAttrCombatLevelFlag, gainAttributesFlag);\nxsTaskAmount(cTaskAttrProceedingGraphic, levelUpGraphic);\nxsTaskAmount(cTaskAttrCarryCheck, statGainId);\nxsTaskAmount(cTaskAttrGatherType, amountToGain);\n\nxsTaskAmount(cTaskAttrObjectClass, cInfantryClass);\nxsModifyObjectTasks(mangudai, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cArcherClass);\nxsModifyObjectTasks(mangudai, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cCavalryClass);\nxsModifyObjectTasks(mangudai, player);\n\nxsTaskAmount(cTaskAttrObjectClass, cSiegeWeaponClass);\nxsModifyObjectTasks(mangudai, player);"
         ]
     },
@@ -1665,7 +1665,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code makes that every time a huskarl unit is spawned for player 1, 2 additional spearline units are also spawned from the same source. */\n\nconst int player = 1;\nconst int huskarl = 41;\nconst int spearman = 93;\nconst int amount = 2;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, spearman);\nxsTaskAmount(cTaskAttrWorkValue2, amount);\n\nxsTask(huskarl, cTaskTypeExtraSpawn, -1, player);"
+            "/* This code makes that every time a huskarl unit is spawned for player 1, 2 additional spearline units are also spawned from the same source. */\n\nconst int player = 1;\nconst int huskarl = 41;\nconst int spearman = 93;\nconst int amount = 2;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, spearman);\nxsTaskAmount(cTaskAttrWorkValue2, amount);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeExtraSpawn);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(huskarl, player);"
         ]
     },
     "157": {
@@ -1814,7 +1814,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code makes player 1 karambit warrior transform into a berserk when under 40% hp, and transform back when above 60% using level up graphic */\n\nconst int player = 1;\nconst int karambit = 1123;\nconst int berserk = 692;\nconst float transformAtPercent = -0.4;\nconst float transformBackPercent = 0.6;\nconst int multiplyFlag = 1;\nconst int levelUpGraphic = 12263;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, berserk);\nxsTaskAmount(cTaskAttrWorkValue2, transformAtPercent);\nxsTaskAmount(cTaskAttrCombatLevelFlag, multiplyFlag);\nxsTaskAmount(cTaskAttrProceedingGraphic, levelUpGraphic);\n\nxsTask(karambit, cTaskTypeHPTransform, -1, player);\n\nxsTaskAmount(cTaskAttrWorkValue1, karambit);\nxsTaskAmount(cTaskAttrWorkValue2, transformBackPercent);\n\nxsTask(berserk, cTaskTypeHPTransform, -1, player);"
+            "/* This code makes player 1 karambit warrior transform into a berserk when under 40% hp, and transform back when above 60% using level up graphic */\n\nconst int player = 1;\nconst int karambit = 1123;\nconst int berserk = 692;\nconst float transformAtPercent = -0.4;\nconst float transformBackPercent = 0.6;\nconst int multiplyFlag = 1;\nconst int levelUpGraphic = 12263;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, berserk);\nxsTaskAmount(cTaskAttrWorkValue2, transformAtPercent);\nxsTaskAmount(cTaskAttrCombatLevelFlag, multiplyFlag);\nxsTaskAmount(cTaskAttrProceedingGraphic, levelUpGraphic);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeHPTransform);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(karambit, player);\n\nxsTaskAmount(cTaskAttrWorkValue1, karambit);\nxsTaskAmount(cTaskAttrWorkValue2, transformBackPercent);\nxsModifyObjectTasks(berserk, player);"
         ]
     },
     "159": {
@@ -1925,7 +1925,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code makes player 1 throwing axeman unit gain +2 attack for each 20% of hp that it lost */\n\nconst int player = 1;\nconst int throwingAxeman = 281;\nconst int value = 2;\nconst float hpPercent = 0.2;\nconst int compareToTargetHp = 0;\nconst int attribute = cAttack;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkValue2, hpPercent);\nxsTaskAmount(cTaskAttrWorkRange, compareToTargetHp);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\n\nxsTask(throwingAxeman, cTaskTypeHPModifier, -1, player);"
+            "/* This code makes player 1 throwing axeman unit gain +2 attack for each 20% of hp that it lost */\n\nconst int player = 1;\nconst int throwingAxeman = 281;\nconst int value = 2;\nconst float hpPercent = 0.2;\nconst int compareToTargetHp = 0;\nconst int attribute = cAttack;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkValue2, hpPercent);\nxsTaskAmount(cTaskAttrWorkRange, compareToTargetHp);\nxsTaskAmount(cTaskAttrSearchWaitTime, attribute);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeHPModifier);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(throwingAxeman, player);"
         ]
     },
     "161": {
@@ -1971,7 +1971,7 @@
             }
         ],
         "xs_examples": [
-            "/* This code makes 10 gold be refunded to player 1 when a monk unit is killed */\n\nconst int player = 1;\nconst int monk = 125;\nconst int monkWithRelic = 286;\nconst int value = 10;\nconst int grantToKiller = 0;\nconst int valueIsFractionOfCost = 0;\nconst int resource = cAttributeGold;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkRange, grantToKiller);\nxsTaskAmount(cTaskAttrCombatLevelFlag, valueIsFractionOfCost);\nxsTaskAmount(cTaskAttrResourceOut, resource);\n\nxsTask(monk, cTaskTypeRefund, -1, player);\nxsTask(monkWithRelic, cTaskTypeRefund, -1, player);"
+            "/* This code makes 10 gold be refunded to player 1 when a monk unit is killed */\n\nconst int player = 1;\nconst int monk = 125;\nconst int monkWithRelic = 286;\nconst int value = 10;\nconst int grantToKiller = 0;\nconst int valueIsFractionOfCost = 0;\nconst int resource = cAttributeGold;\n\nxsResetTaskAmount();\n\nxsTaskAmount(cTaskAttrWorkValue1, value);\nxsTaskAmount(cTaskAttrWorkRange, grantToKiller);\nxsTaskAmount(cTaskAttrCombatLevelFlag, valueIsFractionOfCost);\nxsTaskAmount(cTaskAttrResourceOut, resource);\nxsTaskAmount(cTaskAttrTaskType, cTaskTypeRefund);\nxsTaskAmount(cTaskAttrObjectId, -1);\nxsTaskAmount(cTaskAttrObjectClass, -1);\n\nxsModifyObjectTasks(monk, player);\nxsModifyObjectTasks(monkWithRelic, player);"
         ]
     }
 }

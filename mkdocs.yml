@@ -99,6 +99,7 @@ nav:
     - Useful Resources:                             "general/xs/useful.md"
     - Known Bugs:
       -                                             "general/xs/bugs/index.md"
+      - Arrays:                                     "general/xs/bugs/Arrays.md"
       - Chat Data:                                  "general/xs/bugs/Chat Data.md"
       - Crashes:                                    "general/xs/bugs/Crashes.md"
       - Editor:                                     "general/xs/bugs/Editor.md"
@@ -106,7 +107,7 @@ nav:
       # - Fixed:                                    "general/xs/bugs/Fixed.md"
       - Important:                                  "general/xs/bugs/Important.md"
       - Language Syntax:                            "general/xs/bugs/Language Syntax.md"
-      - Task:                                       "general/xs/bugs/Individual Tech Modifiers.md"
+      - Individual Tech Modifiers:                  "general/xs/bugs/Individual Tech Modifiers.md"
   - Mods:
     -                                               "mods/index.md"
 #   - Data Mods
