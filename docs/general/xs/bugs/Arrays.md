@@ -16,6 +16,7 @@ void main() {
     xsChatData("result: " + xsArrayResizeVector(arr, 10));
     xsChatData("size: " + xsArrayGetSize(arr));
 }
+
 ```
 3. Include the script in the scenario
 4. When a game is played using the scenario, `0` is returned and the array is not resized

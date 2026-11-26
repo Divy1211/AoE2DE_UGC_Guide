@@ -49,7 +49,7 @@ for cat in data:
                 code = ""
                 if bug['Code File']:
                     with open(f"./bugged/{bug['Code File']}") as file:
-                        code = file.read().rstrip("\n")
+                        code = file.read()
                         code = f'{nl}```xs{nl}{code}{nl}```'
                 out_ls[cat]+=f"{step_no}. {step.replace(' INSERT_CODE_BLOCK_HERE', code)}{nl}"
                 step_no+=1
