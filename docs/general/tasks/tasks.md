@@ -171,12 +171,18 @@ xsEffectAmount(cSetAttribute, longboat, cTraits, garrisonUnitTrait + shipUnitTra
 
 xsResetTaskAmount();
 xsTaskAmount(cTaskAttrTerrain, beachTerrain);
-xsTask(longboat, cTaskTypeUnloadBoatLike, -1, player);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeUnloadBoatLike);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
+xsModifyObjectTasks(longboat, player);
 
 xsResetTaskAmount();
 xsTaskAmount(cTaskAttrWorkRange, range);
 xsTaskAmount(cTaskAttrOwnerType, gaiaYouAndAlly);
-xsTask(berserk, cTaskTypeGarrison, cWarshipClass, player);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeGarrison);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, cWarshipClass);
+xsModifyObjectTasks(berserk, player);
 ```
 
 ## 13. Guard
@@ -352,8 +358,11 @@ xsResetTaskAmount();
 
 xsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);
 xsTaskAmount(cTaskAttrProceedingGraphic, 1160);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeHeal);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(teutonicKnight, cTaskTypeHeal, -1, player);
+xsModifyObjectTasks(teutonicKnight, player);
 ```
 
 ## 106. Repair
@@ -396,8 +405,11 @@ xsResetTaskAmount();
 
 xsTaskAmount(cTaskAttrWorkValue1, workRateMultiplier);
 xsTaskAmount(cTaskAttrProceedingGraphic, obuchAttackGraphic);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeRepair);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(obuch, cTaskTypeRepair, -1, player);
+xsModifyObjectTasks(obuch, player);
 ```
 
 ## 107. Get auto-converted
@@ -625,8 +637,11 @@ xsTaskAmount(cTaskAttrWorkValue1, minDistance);
 xsTaskAmount(cTaskAttrWorkValue2, maxDistance);
 xsTaskAmount(cTaskAttrWorkRange, speedMultiplier);
 xsTaskAmount(cTaskAttrWorkFlag2, taskEnableFlag);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeChargeAttack);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(knight, cTaskTypeChargeAttack, -1, player);
+xsModifyObjectTasks(knight, player);
 ```
 
 ## 134. Transform unit
@@ -779,8 +794,11 @@ xsResetTaskAmount();
 xsTaskAmount(cTaskAttrWorkValue1, damage);
 xsTaskAmount(cTaskAttrWorkValue2, time);
 xsTaskAmount(cTaskAttrWorkRange, range);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeMovementDamage);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(elephant, cTaskTypeMovementDamage, -1, player);
+xsModifyObjectTasks(elephant, player);
 ```
 
 ## 153. Movable dropsite
@@ -837,8 +855,11 @@ xsResetTaskAmount();
 
 xsTaskAmount(cTaskAttrWorkValue1, resourceGainRate);
 xsTaskAmount(cTaskAttrResourceOut, resourceToGain);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(attila, cTaskTypeLoot, -1, player);
+xsModifyObjectTasks(attila, player);
 ```
 
 <h3>XS example 2</h3>
@@ -1035,8 +1056,11 @@ xsResetTaskAmount();
 
 xsTaskAmount(cTaskAttrWorkValue1, spearman);
 xsTaskAmount(cTaskAttrWorkValue2, amount);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeExtraSpawn);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(huskarl, cTaskTypeExtraSpawn, -1, player);
+xsModifyObjectTasks(huskarl, player);
 ```
 
 ## 157. Stinger
@@ -1141,13 +1165,15 @@ xsTaskAmount(cTaskAttrWorkValue1, berserk);
 xsTaskAmount(cTaskAttrWorkValue2, transformAtPercent);
 xsTaskAmount(cTaskAttrCombatLevelFlag, multiplyFlag);
 xsTaskAmount(cTaskAttrProceedingGraphic, levelUpGraphic);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeHPTransform);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(karambit, cTaskTypeHPTransform, -1, player);
+xsModifyObjectTasks(karambit, player);
 
 xsTaskAmount(cTaskAttrWorkValue1, karambit);
 xsTaskAmount(cTaskAttrWorkValue2, transformBackPercent);
-
-xsTask(berserk, cTaskTypeHPTransform, -1, player);
+xsModifyObjectTasks(berserk, player);
 ```
 
 ## 159. Amphibious
@@ -1203,8 +1229,11 @@ xsTaskAmount(cTaskAttrWorkValue1, value);
 xsTaskAmount(cTaskAttrWorkValue2, hpPercent);
 xsTaskAmount(cTaskAttrWorkRange, compareToTargetHp);
 xsTaskAmount(cTaskAttrSearchWaitTime, attribute);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeHPModifier);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(throwingAxeman, cTaskTypeHPModifier, -1, player);
+xsModifyObjectTasks(throwingAxeman, player);
 ```
 
 ## 161. Unit refund
@@ -1242,7 +1271,10 @@ xsTaskAmount(cTaskAttrWorkValue1, value);
 xsTaskAmount(cTaskAttrWorkRange, grantToKiller);
 xsTaskAmount(cTaskAttrCombatLevelFlag, valueIsFractionOfCost);
 xsTaskAmount(cTaskAttrResourceOut, resource);
+xsTaskAmount(cTaskAttrTaskType, cTaskTypeRefund);
+xsTaskAmount(cTaskAttrObjectId, -1);
+xsTaskAmount(cTaskAttrObjectClass, -1);
 
-xsTask(monk, cTaskTypeRefund, -1, player);
-xsTask(monkWithRelic, cTaskTypeRefund, -1, player);
+xsModifyObjectTasks(monk, player);
+xsModifyObjectTasks(monkWithRelic, player);
 ```

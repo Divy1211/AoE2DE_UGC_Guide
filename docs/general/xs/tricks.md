@@ -77,28 +77,22 @@ bool xsAddAura(
     }
 
     /* Setting right combat ability flags */
-    float ca = xsGetObjectAttribute(player, auraUnit, cCombatAbility);
+    int ca = 0 + xsGetObjectAttribute(player, auraUnit, cCombatAbility);
     if (ca < 0) {
         ca = 0;
     }
-    float caMod = 0;
-    float auraBit = (ca / 32) % 2;
-    if (auraBit == 0) {
-        caMod = 32;
+    int newCa = bitOr(ca, 32);
+    if (affectSelf) {
+        newCa = bitOr(newCa, 64);
+    } else {
+        newCa = bitAnd(newCa, -65);
     }
-    float selfBit = (ca / 64) % 2;
-    if (affectSelf && selfBit == 0) {
-        caMod = caMod + 64;
-    } else if (affectSelf == false && selfBit == 1) {
-        caMod = caMod - 64;
-    }
-    if (caMod != 0) {
-        xsEffectAmount(setCommand, auraUnit, cCombatAbility, ca + caMod, player);
+    if (newCa != ca) {
+        xsEffectAmount(setCommand, auraUnit, cCombatAbility, 0.0 + newCa, player);
     }
 
     /* Setting temporary aura values if enabled */
-    int tempEffectBit = (auraEffectsBitField / 8) % 2;
-    if (tempEffectBit == 1) {
+    if (bitAnd(auraEffectsBitField, 8) != 0) {
         float maxCharge = 1;
         float cdRatio = 1000;
         if (tempAuraCooldown > 0) {
@@ -270,3 +264,38 @@ void doubleTechCost() {
 }
 ```
 The code above can be easily changed to any mathematical formula to change tech cost.
+
+## 6. Checking distance between 2 objects
+
+This function checks if any scout is within 5 in game distance units from any outpost of the same player. Distance is measured as a straight line between the 2 objects.
+
+```xs
+bool isAnyScoutNearAnyOutpost(int player) {
+    const int scoutId = 448;
+    const int outpostId = 598;
+    const float distance = 5.0;
+    static int scouts = -1;
+    static int outposts = -1;
+    scouts = xsGetPlayerUnitIds(player, scoutId, scouts);
+    outposts = xsGetPlayerUnitIds(player, outpostId, outposts);
+    int numberOfScouts = xsArrayGetSize(scouts);
+    int numberOfOutposts = xsArrayGetSize(outposts);
+    for (s = 0; < numberOfScouts) {
+        int scout = xsArrayGetInt(scouts, s);
+        vector scoutPosition = xsGetUnitPosition(scout);
+        float scoutX = xsVectorGetX(scoutPosition);
+        float scoutY = xsVectorGetY(scoutPosition);
+        for (o = 0; < numberOfOutposts) {
+            int outpost = xsArrayGetInt(outposts, o);
+            vector outpostPosition = xsGetUnitPosition(outpost);
+            float outpostX = xsVectorGetX(outpostPosition);
+            float outpostY = xsVectorGetY(outpostPosition);
+            float currentDistance = sqrt(pow(scoutX - outpostX, 2.0) + pow(scoutY - outpostY, 2.0));
+            if (currentDistance <= distance) {
+                return (true);
+            }
+        }
+    }
+    return (false);
+}
+```

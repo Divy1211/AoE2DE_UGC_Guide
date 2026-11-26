@@ -498,22 +498,6 @@
             "show": true
         }
     ],
-    "Task": [
-        {
-            "Name": "`xsTask` does not check the Class field when comparing fields with existing tasks",
-            "Description" : "Attempting to add a task with multiple target unit classes to the same unit will only create one task and subsequent calls will override the class field of that single task",
-            "Expected Behaviour": "A new task should be created with otherwise identical fields for each target unit class",
-            "Reproduction Steps": [
-                "Create a new scenario or RMS",
-                "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
-                "Include the script in the scenario or RMS",
-                "When a game is played using the scenario or RMS, The Genghis Khan aura is only applied to cavalry units."
-            ],
-            "Code File": "task.xs",
-            "Version Fixed": "153015",
-            "show": false
-        }
-    ],
     "Individual Tech Modifiers": [
       {
         "Name": "`cSetTechCost`, `cAddTechCost`, `cModTechTime` and their gaia equivalent no longer work",
@@ -526,6 +510,21 @@
             "When a game is played using the scenario, Loom tech cost and time does not change"
         ],
         "Code File": "set_tech_cost.xs",
+        "show": true
+      }
+    ],
+    "Arrays": [
+      {
+        "Name": "`xsArrayResizeVector` Does Not Work",
+        "Description": "`xsArrayResizeVector` does not resize the array for any size and always returns `0`",
+        "Expected Behaviour": "The vector array should be resized to the given size and the function should return `1`, the same as the other `xsArrayResize*` functions",
+        "Reproduction Steps": [
+            "Create a new scenario",
+            "Create a new XS script with the following code: INSERT_CODE_BLOCK_HERE",
+            "Include the script in the scenario",
+            "When a game is played using the scenario, `0` is returned and the array is not resized"
+        ],
+        "Code File": "array_resize_vector.xs",
         "show": true
       }
     ]
